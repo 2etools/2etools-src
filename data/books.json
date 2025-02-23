@@ -1,7 +1,7 @@
 {
 	"book": [
 		{
-			"name": "Player's Handbook (2014)",
+			"name": "Player's Handbook (1989)",
 			"id": "PHB",
 			"source": "PHB",
 			"group": "core",
@@ -9,28 +9,37 @@
 				"type": "internal",
 				"path": "covers/PHB.webp"
 			},
-			"published": "2014-08-19",
-			"author": "Wizards RPG Team",
+			"published": "1989-02-01",
+			"author": "David \"Zeb\" Cook",
 			"contents": [
 				{
-					"name": "Introduction",
+					"name": "Foreword to The 2nd Edition"
+				},
+				{
+					"name": "Welcome to the 2nd Edition AD&D® Game",
 					"headers": [
-						"Worlds of Adventure",
-						"Using This Book",
-						"How to Play",
-						"Adventures"
+						"How the Books are",
+						"Required Materials",
+						"An Example of Play"
 					]
 				},
 				{
-					"name": "Step-by-Step Characters",
+					"name": "The Real Basics",
 					"headers": [
-						"1. Choose a Race",
-						"2. Choose a Class",
-						"3. Determine Ability Scores",
-						"4. Describe Your Character",
-						"5. Choose Equipment",
-						"6. Come Together",
-						"Beyond 1st Level"
+						"The Goal",
+						"Required Materials",
+						"An Example of Play"
+					]
+				},
+				{
+					"name": "Glossary"
+				},
+				{
+					"name": "Player Character Ability Scores",
+					"headers": [
+						"Rolling Ability Scores",
+						"The Ability Scores",
+						"What the Numbers Mean"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -38,7 +47,7 @@
 					}
 				},
 				{
-					"name": "Races",
+					"name": "Player Character Races",
 					"headers": [
 						"Choosing a Race"
 					],
@@ -48,21 +57,20 @@
 					}
 				},
 				{
-					"name": "Classes",
+					"name": "Player Character Classes",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 3
 					}
 				},
 				{
-					"name": "Personality and Background",
+					"name": "Alignment",
 					"headers": [
-						"Character Details",
-						"Personal Characteristics",
-						"Alignment",
-						"Languages",
-						"Inspiration",
-						"Backgrounds"
+						"Law, Neutrality, and Chaos",
+						"Good, Neutrality, and Evil",
+						"Alignment Combinations",
+						"Playing the Character's Alignment",
+						"Changing Alignment"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -70,21 +78,12 @@
 					}
 				},
 				{
-					"name": "Equipment",
+					"name": "Proficiencies (Optional)",
 					"headers": [
-						"Starting Equipment",
-						"Wealth",
-						"Armor and Shields",
-						"Weapons",
-						"Adventuring Gear",
-						"Tools",
-						"Mounts and Vehicles",
-						{
-							"index": 1,
-							"header": "Trade Goods"
-						},
-						"Expenses",
-						"Trinkets"
+						"Acquiring Proficiencies",
+						"Training",
+						"Weapon Proficiencies",
+						"Nonweapon Proficiencies"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -94,8 +93,10 @@
 				{
 					"name": "Customization Options",
 					"headers": [
-						"Multiclassing",
-						"Feats"
+						"Starting Money",
+						"Equipment Lists",
+						"Equipment Descriptions",
+						"Encumbrance (Optional Rule)"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -103,14 +104,13 @@
 					}
 				},
 				{
-					"name": "Using Ability Scores",
+					"name": "Magic",
 					"headers": [
-						"Ability Scores and Modifiers",
-						"Advantage and Disadvantage",
-						"Proficiency Bonus",
-						"Ability Checks",
-						"Using Each Ability",
-						"Saving Throws"
+						"Wizard Spells",
+						"Priest Spells",
+						"Casting Spells",
+						"Magical Research",
+						"Spell Descriptions"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -118,14 +118,12 @@
 					}
 				},
 				{
-					"name": "Adventuring",
+					"name": "Experience",
 					"headers": [
-						"Time",
-						"Movement",
-						"The Environment",
-						"Social Interaction",
-						"Resting",
-						"Between Adventures"
+						"Group Experience Awards",
+						"Individual Experience Awards",
+						"Training",
+						"Where's the Specific Info?"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -135,14 +133,28 @@
 				{
 					"name": "Combat",
 					"headers": [
-						"The Order of Combat",
-						"Movement and Position",
-						"Actions in Combat",
-						"Making an Attack",
-						"Cover",
-						"Damage and Healing",
-						"Mounted Combat",
-						"Underwater Combat"
+						"Definitions",
+						"The Attack Roll",
+						"Weapon Type vs. Armor Modifiers (Optional Rule)",
+						"Calculating THAC0",
+						"Combat and Encounters",
+						"The Combat Round",
+						"The Combat Sequence",
+						"Initiative",
+						"Attacking with Two Weapons",
+						"Movement in Combat",
+						"Attacking Without Killing",
+						"Touch Spells and Combat",
+						"Missile Weapons in Combat",
+						"Special Defenses",
+						"Parrying (Optional Rule)",
+						"The Saving Throw",
+						"Magic Resistance",
+						"Turning Undead",
+						"Injury and Wounds",
+						"Special Damage",
+						"Healing",
+						"Character Death"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -150,10 +162,11 @@
 					}
 				},
 				{
-					"name": "Spellcasting",
+					"name": "Treasure",
 					"headers": [
-						"What Is a Spell?",
-						"Casting a Spell"
+						"Treasure Types",
+						"Magical Items",
+						"Dividing and Storing Treasure"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -161,39 +174,133 @@
 					}
 				},
 				{
-					"name": "Spells",
+					"name": "Encounters",
+					"headers": [
+						"The Surprise Roll",
+						"Encounter Distance",
+						"Encounter Options"
+					],
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 11
 					}
 				},
 				{
-					"name": "Conditions",
-					"ordinal": {
-						"type": "appendix",
-						"identifier": "A"
-					}
-				},
-				{
-					"name": "Gods of the Multiverse",
-					"ordinal": {
-						"type": "appendix",
-						"identifier": "B"
-					}
-				},
-				{
-					"name": "The Planes of Existence",
+					"name": "NPCs",
 					"headers": [
-						"The Material Plane",
-						"Beyond the Material"
+						"Hirelings",
+						"Followers",
+						"Henchmen",
+						"Player Character Obligations"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 12
+					}
+				},
+				{
+					"name": "Vision and Light",
+					"headers": [
+						"Limits of Vision",
+						"Light",
+						"Infravision",
+						"Using Mirrors"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 13
+					}
+				},
+				{
+					"name": "Spells",
+					"headers": [
+						"Movement",
+						"Swimming",
+						"Climbing"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 14
+					}
+				},
+				{
+					"name": "Spell Lists",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": 1
+					}
+				},
+				{
+					"name": "Notes on Spells",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": 2
+					}
+				},
+				{
+					"name": "Wizard Spells",
+					"headers": [
+						"First-Level Spells",
+						"Second-Level Spells",
+						"Third-Level Spells",
+						"Fourth-Level Spells",
+						"Fifth-Level Spells",
+						"Sixth-Level Spells",
+						"Seventh-Level Spells",
+						"Eighth-Level Spells",
+						"Ninth-Level Spells"
 					],
 					"ordinal": {
 						"type": "appendix",
-						"identifier": "C"
+						"identifier": 3
 					}
 				},
 				{
-					"name": "Credits"
+					"name": "Priest Spells",
+					"headers": [
+						"First-Level Spells",
+						"Second-Level Spells",
+						"Third-Level Spells",
+						"Fourth-Level Spells",
+						"Fifth-Level Spells",
+						"Sixth-Level Spells",
+						"Seventh-Level Spells"
+					],
+					"ordinal": {
+						"type": "appendix",
+						"identifier": 4
+					}
+				},
+				{
+					"name": "Wizard Spells by School",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": 5
+					}
+				},
+				{
+					"name": "Priest Spells by Sphere",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": 6
+					}
+				},
+				{
+					"name": "Spell Index",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": 7
+					}
+				},
+				{
+					"name": "Compiled Character Generation Tables",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": 8
+					}
+				},
+				{
+					"name": "Index"
 				}
 			]
 		},
@@ -245,7 +352,7 @@
 			]
 		},
 		{
-			"name": "Dungeon Master's Guide (2014)",
+			"name": "Dungeon Master's Guide (1989)",
 			"id": "DMG",
 			"source": "DMG",
 			"group": "core",
@@ -5855,7 +5962,7 @@
 			]
 		},
 		{
-			"name": "Player's Handbook (2024)",
+			"name": "Player's Handbook Revised",
 			"id": "XPHB",
 			"source": "XPHB",
 			"group": "core",
@@ -5863,270 +5970,853 @@
 				"type": "internal",
 				"path": "covers/XPHB.webp"
 			},
-			"published": "2024-09-17",
+			"published": "1995-04-01",
 			"author": "Wizards RPG Team",
 			"contents": [
 				{
-					"name": "Introduction: Welcome to Adventure",
+					"name": "Foreword to the 2nd Edition & Credits"
+				},
+				{
+					"name": "Foreword"
+				},
+				{
+					"name": "Welcome to the 2nd Edition AD&D® Game",
 					"headers": [
-						"What You Need",
-						"Using This Book",
-						"Worlds of Adventure"
+						"How the Rule Books are Organized",
+						"Learning the Game",
+						"Coming from the D&D® Game",
+						"The AD&D Game Line",
+						"A Note About Pronouns"
 					]
 				},
 				{
-					"name": "Playing the Game",
+					"name": "The Real Basics",
+					"headers": [
+						"The Goal",
+						"Required Materials",
+						"An Example of Play"
+					]
+				},
+				{
+					"name": "Glossary"
+				},
+				{
+					"name": "Step-by-Step Player Character Generation"
+				},
+				{
+					"name": "Player Character Ability Scores",
+					"headers": [
+						"Rolling Ability Scores",
+						{
+							"depth": 1,
+							"header": "Alternative Dice-Rolling Methods"
+						},
+						"The Ability Scores",
+						{
+							"depth": 1,
+							"header": "Strength"
+						},
+						{
+							"depth": 1,
+							"header": "Dexterity"
+						},
+						{
+							"depth": 1,
+							"header": "Constitution"
+						},
+						{
+							"depth": 1,
+							"header": "Intelligence"
+						},
+						{
+							"depth": 1,
+							"header": "Wisdom"
+						},
+						{
+							"depth": 1,
+							"header": "Charisma"
+						},
+						"What the Numbers Mean"
+					],
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 1
-					},
-					"headers": [
-						"Player or DM?",
-						"Rhythm of Play",
-						"An Ongoing Game",
-						"Dice",
-						"The Six Abilities",
-						"D20 Tests",
-						{
-							"depth": 1,
-							"header": "Ability Checks"
-						},
-						{
-							"depth": 1,
-							"header": "Saving Throws"
-						},
-						{
-							"depth": 1,
-							"header": "Attack Rolls"
-						},
-						{
-							"depth": 1,
-							"header": "Advantage/Disadvantage"
-						},
-						"Proficiency",
-						"Actions",
-						{
-							"depth": 1,
-							"header": "Bonus Actions"
-						},
-						{
-							"depth": 1,
-							"header": "Reactions"
-						},
-						"Social Interaction",
-						"Exploration",
-						{
-							"depth": 1,
-							"header": "Vision and Light"
-						},
-						{
-							"depth": 1,
-							"header": "Hiding"
-						},
-						{
-							"depth": 1,
-							"header": "Interacting with Objects"
-						},
-						{
-							"depth": 1,
-							"header": "Hazards"
-						},
-						{
-							"depth": 1,
-							"header": "Travel"
-						},
-						"Combat",
-						{
-							"depth": 1,
-							"header": "The Order of Combat"
-						},
-						{
-							"depth": 1,
-							"header": "Movement and Position"
-						},
-						{
-							"depth": 1,
-							"header": "Making an Attack"
-						},
-						{
-							"depth": 1,
-							"header": "Ranged Attacks"
-						},
-						{
-							"depth": 1,
-							"header": "Melee Attacks"
-						},
-						{
-							"depth": 1,
-							"header": "Mounted Combat"
-						},
-						{
-							"depth": 1,
-							"header": "Underwater Combat"
-						},
-						"Damage and Healing",
-						{
-							"depth": 1,
-							"header": "Hit Points"
-						},
-						{
-							"depth": 1,
-							"header": "Damage Rolls"
-						},
-						{
-							"depth": 1,
-							"header": "Critical Hits"
-						},
-						{
-							"depth": 1,
-							"header": "Saving Throws and Damage"
-						},
-						{
-							"depth": 1,
-							"header": "Damage Types"
-						},
-						{
-							"depth": 1,
-							"header": "Resistance and Vulnerability"
-						},
-						{
-							"depth": 1,
-							"header": "Immunity"
-						},
-						{
-							"depth": 1,
-							"header": "Healing"
-						},
-						{
-							"depth": 1,
-							"header": "Dropping to 0 Hit Points"
-						},
-						{
-							"depth": 1,
-							"header": "Temporary Hit Points"
-						},
-						"Conditions"
-					]
+					}
 				},
 				{
-					"name": "Creating a Character",
+					"name": "Player Character Races",
+					"headers": [
+						{
+							"depth": 1,
+							"header": "Minimum and Maximum Ability Scores"
+						},
+						{
+							"depth": 1,
+							"header": "Racial Ability Adjustments"
+						},
+						{
+							"depth": 1,
+							"header": "Class Restrictions and Level Limits"
+						},
+						{
+							"depth": 1,
+							"header": "Languages"
+						},
+						"Dwarves",
+						"Elves",
+						"Gnomes",
+						"Half-Elves",
+						"Halflings",
+						"Humans",
+						"Other Characteristics"
+					],
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 2
-					},
-					"headers": [
-						"Get Ready",
-						"Create Your Character",
-						"Level Advancement",
-						"Starting at Higher Levels",
-						"Multiclassing",
-						"Trinkets"
-					]
+					}
 				},
 				{
-					"name": "Character Classes",
+					"name": "Player Character Classes",
+					"headers": [
+						{
+							"depth": 1,
+							"header": "Class Ability Score Requirements"
+						},
+						"Warrior",
+						{
+							"depth": 1,
+							"header": "Fighter"
+						},
+						{
+							"depth": 1,
+							"header": "Paladin"
+						},
+						{
+							"depth": 1,
+							"header": "Ranger"
+						},
+						"Wizard",
+						{
+							"depth": 1,
+							"header": "Mage"
+						},
+						{
+							"depth": 2,
+							"header": "The Schools of Magic"
+						},
+						{
+							"depth": 1,
+							"header": "Specialist Wizards"
+						},
+						{
+							"depth": 1,
+							"header": "Illusionist"
+						},
+						"Priest",
+						{
+							"depth": 1,
+							"header": "Cleric"
+						},
+						{
+							"depth": 1,
+							"header": "Priests of Specific Mythoi"
+						},
+						{
+							"depth": 2,
+							"header": "Requirements"
+						},
+						{
+							"depth": 2,
+							"header": "Weapons Allowed"
+						},
+						{
+							"depth": 2,
+							"header": "Spells Allowed"
+						},
+						{
+							"depth": 2,
+							"header": "Granted Powers"
+						},
+						{
+							"depth": 2,
+							"header": "Ethos"
+						},
+						{
+							"depth": 2,
+							"header": "Priest Titles"
+						},
+						{
+							"depth": 2,
+							"header": "Balancing It All"
+						},
+						{
+							"depth": 1,
+							"header": "Druid"
+						},
+						{
+							"depth": 2,
+							"header": "Druid Organization"
+						},
+						"Rogue",
+						{
+							"depth": 1,
+							"header": "Thief"
+						},
+						{
+							"depth": 1,
+							"header": "Bard"
+						},
+						"Multi-Class and Dual-Class Characters",
+						{
+							"depth": 1,
+							"header": "Multi-Class Combinations"
+						},
+						{
+							"depth": 1,
+							"header": "Multi-Class Benefits and Restrictions"
+						},
+						{
+							"depth": 1,
+							"header": "Dual-Class Benefits and Restrictions"
+						}
+					],
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 3
 					}
 				},
 				{
-					"name": "Character Origins",
+					"name": "Alignment",
+					"headers": [
+						"Law, Neutrality, and Chaos",
+						"Good, Neutrality, and Evil",
+						"Alignment Combinations",
+						{
+							"depth": 1,
+							"header": "Non-Aligned Creatures"
+						},
+						"Playing the Character's Alignment",
+						"Changing Alignment"
+					],
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 4
-					},
-					"headers": [
-						"Origin Components",
-						"Background Descriptions",
-						"Species Descriptions"
-					]
+					}
 				},
 				{
-					"name": "Feats",
+					"name": "Proficiencies (Optional)",
+					"headers": [
+						"Acquiring Proficiencies",
+						"Training",
+						"Weapon Proficiencies",
+						{
+							"depth": 1,
+							"header": "Effects of Weapon Proficiencies"
+						},
+						{
+							"depth": 1,
+							"header": "Related Weapon Bonus"
+						},
+						{
+							"depth": 1,
+							"header": "Weapon Specialization"
+						},
+						{
+							"depth": 2,
+							"header": "Cost of Specialization"
+						},
+						{
+							"depth": 2,
+							"header": "Effects of Specialization"
+						},
+						"Nonweapon Proficiencies",
+						{
+							"depth": 1,
+							"header": "Using What You Know"
+						},
+						{
+							"depth": 1,
+							"header": "Secondary Skills"
+						},
+						"Nonweapon Proficiencies",
+						{
+							"depth": 1,
+							"header": "Using Nonweapon Proficiencies"
+						},
+						{
+							"depth": 1,
+							"header": "Nonweapon Proficiency Descriptions"
+						}
+					],
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 5
-					},
-					"headers": [
-						"Feat Descriptions",
-						"Origin Feats",
-						"General Feats",
-						"Fighting Style Feats",
-						"Epic Boon Feats"
-					]
+					}
 				},
 				{
-					"name": "Equipment",
+					"name": "Money and Equipment",
+					"headers": [
+						"Starting Money",
+						"Equipment Lists",
+						{
+							"depth": 1,
+							"header": "Clothing"
+						},
+						{
+							"depth": 1,
+							"header": "Daily Food and Lodging"
+						},
+						{
+							"depth": 1,
+							"header": "Household Provisioning"
+						},
+						{
+							"depth": 1,
+							"header": "Transport"
+						},
+						{
+							"depth": 1,
+							"header": "Animals"
+						},
+						{
+							"depth": 1,
+							"header": "Services"
+						},
+						{
+							"depth": 1,
+							"header": "Tack and Harness"
+						},
+						{
+							"depth": 1,
+							"header": "Miscellaneous Equipment"
+						},
+						{
+							"depth": 1,
+							"header": "Armor"
+						},
+						{
+							"depth": 1,
+							"header": "Weapons"
+						},
+						"Equipment Descriptions",
+						{
+							"depth": 1,
+							"header": "Tack and Harness"
+						},
+						{
+							"depth": 1,
+							"header": "Transport"
+						},
+						{
+							"depth": 1,
+							"header": "Miscellaneous Equipment"
+						},
+						{
+							"depth": 1,
+							"header": "Weapons"
+						},
+						{
+							"depth": 1,
+							"header": "Armor"
+						},
+						{
+							"depth": 2,
+							"header": "Armor Size"
+						},
+						{
+							"depth": 2,
+							"header": "Getting Into and Out of Armor"
+						},
+						{
+							"depth": 2,
+							"header": "Creatures with Natural Armor Classes"
+						},
+						"Encumbrance (Optional Rule)",
+						{
+							"depth": 1,
+							"header": "Basic Encumbrance"
+						},
+						{
+							"depth": 1,
+							"header": "Specific Encumbrance"
+						},
+						{
+							"depth": 1,
+							"header": "Encumbrance and Mounts"
+						},
+						{
+							"depth": 1,
+							"header": "Magical Armor and Encumbrance"
+						},
+						{
+							"depth": 1,
+							"header": "Effects of Encumbrance"
+						}
+					],
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 6
-					},
-					"headers": [
-						"Coins",
-						"Weapons",
-						{
-							"depth": 1,
-							"header": "Properties"
-						},
-						{
-							"depth": 1,
-							"header": "Mastery Properties"
-						},
-						"Armor",
-						"Tools",
-						"Adventuring Gear",
-						"Mounts and Vehicles",
-						"Services",
-						"Magic Items",
-						"Crafting Equipment"
-					]
+					}
 				},
 				{
-					"name": "Spells",
+					"name": "Magic",
+					"headers": [
+						"Wizard Spells",
+						{
+							"depth": 1,
+							"header": "Schools of Magic"
+						},
+						{
+							"depth": 1,
+							"header": "Learning Spells"
+						},
+						{
+							"depth": 1,
+							"header": "Illusions"
+						},
+						"Priest Spells",
+						"Casting Spells",
+						{
+							"depth": 1,
+							"header": "Spell Components (Optional Rule)"
+						},
+						"Magical Research",
+						"Spell Descriptions"
+					],
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 7
-					},
-					"headers": [
-						"Gaining Spells",
-						"Casting Spells",
-						"Spell Descriptions"
-					]
-				},
-				{
-					"name": "The Multiverse",
-					"ordinal": {
-						"type": "appendix",
-						"identifier": "A"
-					},
-					"headers": [
-						"The Material Realms",
-						"Transitive Planes",
-						"The Inner Planes",
-						"The Outer Planes"
-					]
-				},
-				{
-					"name": "Creature Stat Blocks",
-					"ordinal": {
-						"type": "appendix",
-						"identifier": "B"
 					}
 				},
 				{
-					"name": "Rules Glossary",
+					"name": "Experience",
 					"headers": [
-						"Glossary Conventions",
-						"Rules Definitions"
+						"Group Experience Awards",
+						"Individual Experience Awards",
+						"Training",
+						"Where's the Specific Info?"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 8
+					}
+				},
+				{
+					"name": "Combat",
+					"headers": [
+						{
+							"depth": 1,
+							"header": "More Than Just Hack-and-Slash"
+						},
+						"Definitions",
+						"The Attack Roll",
+						{
+							"depth": 1,
+							"header": "Figuring the To-Hit Number"
+						},
+						{
+							"depth": 1,
+							"header": "Modifiers to the Attack Roll"
+						},
+						"Weapon Type vs. Armor Modifiers (Optional Rule)",
+						{
+							"depth": 1,
+							"header": "The Various Types of Weapons"
+						},
+						{
+							"depth": 1,
+							"header": "Impossible To-Hit Numbers"
+						},
+						"Calculating THAC0",
+						"Combat and Encounters",
+						"The Combat Round",
+						{
+							"depth": 1,
+							"header": "What You Can Do in One Round"
+						},
+						"The Combat Sequence",
+						"Initiative",
+						{
+							"depth": 1,
+							"header": "Standard Initiative Procedure"
+						},
+						{
+							"depth": 1,
+							"header": "Initiative Modifiers"
+						},
+						{
+							"depth": 1,
+							"header": "Group Initiative (Optional Rule)"
+						},
+						{
+							"depth": 1,
+							"header": "Individual Initiative (Optional Rule)"
+						},
+						{
+							"depth": 1,
+							"header": "Multiple Attacks and Initiative"
+						},
+						{
+							"depth": 1,
+							"header": "Spellcasting and Initiative"
+						},
+						{
+							"depth": 1,
+							"header": "Weapon Speed and Initiative (Optional Rule)"
+						},
+						{
+							"depth": 2,
+							"header": "Magical Weapon Speeds"
+						},
+						"Attacking with Two Weapons",
+						"Movement in Combat",
+						{
+							"depth": 1,
+							"header": "Movement in Melee"
+						},
+						{
+							"depth": 1,
+							"header": "Movement and Missile Combat"
+						},
+						{
+							"depth": 1,
+							"header": "Charging an Opponent"
+						},
+						{
+							"depth": 1,
+							"header": "Retreat"
+						},
+						"Attacking Without Killing",
+						{
+							"depth": 1,
+							"header": "Punching and Wrestling"
+						},
+						{
+							"depth": 1,
+							"header": "Overbearing"
+						},
+						{
+							"depth": 1,
+							"header": "Weapons in Nonlethal Combat"
+						},
+						{
+							"depth": 1,
+							"header": "Nonlethal Combat and Creatures"
+						},
+						"Touch Spells and Combat",
+						"Missile Weapons in Combat",
+						{
+							"depth": 1,
+							"header": "Range"
+						},
+						{
+							"depth": 1,
+							"header": "Rate of Fire"
+						},
+						{
+							"depth": 1,
+							"header": "Ability Modifiers in Missile Combat"
+						},
+						{
+							"depth": 1,
+							"header": "Firing into a Melee"
+						},
+						{
+							"depth": 1,
+							"header": "Taking Cover Against Missile Fire"
+						},
+						{
+							"depth": 1,
+							"header": "Grenadelike Missiles"
+						},
+						{
+							"depth": 1,
+							"header": "Types of Grenadelike Missiles"
+						},
+						"Special Defenses",
+						"Parrying (Optional Rule)",
+						"The Saving Throw",
+						{
+							"depth": 1,
+							"header": "Rolling Saving Throws"
+						},
+						{
+							"depth": 1,
+							"header": "Saving Throw Priority"
+						},
+						{
+							"depth": 1,
+							"header": "Voluntarily Failing Saving Throws "
+						},
+						{
+							"depth": 1,
+							"header": "Ability Checks as Saving Throws "
+						},
+						{
+							"depth": 1,
+							"header": "Modifying Saving Throws"
+						},
+						"Magic Resistance",
+						{
+							"depth": 1,
+							"header": "Effects of Magic Resistance"
+						},
+						{
+							"depth": 1,
+							"header": "When Magic Resistance Applies"
+						},
+						{
+							"depth": 1,
+							"header": "Successful Magic Resistance Rolls"
+						},
+						"Turning Undead",
+						{
+							"depth": 1,
+							"header": "Evil Priests and Undead"
+						},
+						"Injury and Death",
+						{
+							"depth": 1,
+							"header": "Wounds"
+						},
+						"Special Damage",
+						{
+							"depth": 1,
+							"header": "Falling"
+						},
+						{
+							"depth": 1,
+							"header": "Paralysis"
+						},
+						{
+							"depth": 1,
+							"header": "Energy Drain"
+						},
+						{
+							"depth": 1,
+							"header": "Poison"
+						},
+						{
+							"depth": 2,
+							"header": "Treating Poison Victims"
+						},
+						"Healing",
+						{
+							"depth": 1,
+							"header": "Natural Healing"
+						},
+						{
+							"depth": 1,
+							"header": "Magical Healing"
+						},
+						{
+							"depth": 1,
+							"header": "Herbalism and Healing Proficiencies"
+						},
+						"Character Death",
+						{
+							"depth": 1,
+							"header": "Death From Poison"
+						},
+						{
+							"depth": 1,
+							"header": "Death From Massive Damage"
+						},
+						{
+							"depth": 1,
+							"header": "Inescapable Death"
+						},
+						{
+							"depth": 1,
+							"header": "Raising the Dead"
+						}
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 9
+					}
+				},
+				{
+					"name": "Treasure",
+					"headers": [
+						"Treasure Types",
+						"Magical Items",
+						"Dividing and Storing Treasure"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 10
+					}
+				},
+				{
+					"name": "Encounters",
+					"headers": [
+						"The Surprise Roll",
+						{
+							"depth": 1,
+							"header": "Effects of Surprise"
+						},
+						"Encounter Distance",
+						"Encounter Options"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 11
+					}
+				},
+				{
+					"name": "NPCs",
+					"headers": [
+						"Hirelings",
+						"Followers",
+						"Henchmen",
+						"Player Character Obligations"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 12
+					}
+				},
+				{
+					"name": "Vision and Light",
+					"headers": [
+						"Limits of Vision",
+						"Light",
+						"Infravision",
+						"Using Mirrors"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 13
+					}
+				},
+				{
+					"name": "Time and Movement",
+					"headers": [
+						"Movement",
+						{
+							"depth": 1,
+							"header": "Jogging and Running (Optional Rule)"
+						},
+						{
+							"depth": 1,
+							"header": "Cross-Country Movement"
+						},
+						"Swimming",
+						{
+							"depth": 1,
+							"header": "Holding Your Breath"
+						},
+						"Climbing",
+						{
+							"depth": 1,
+							"header": "Calculating Success"
+						},
+						{
+							"depth": 1,
+							"header": "Climbing Rates"
+						},
+						{
+							"depth": 1,
+							"header": "Types of Surfaces"
+						},
+						{
+							"depth": 1,
+							"header": "Actions While Climbing"
+						},
+						{
+							"depth": 1,
+							"header": "Climbing Tools"
+						},
+						{
+							"depth": 1,
+							"header": "Getting Down"
+						}
+
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 14
+					}
+				},
+				{
+					"name": "Spell Lists",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": 1
+					}
+				},
+				{
+					"name": "Notes on Spells",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": 2
+					}
+				},
+				{
+					"name": "Wizard Spells",
+					"headers": [
+						"First-Level Spells",
+						"Second-Level Spells",
+						"Third-Level Spells",
+						"Fourth-Level Spells",
+						"Fifth-Level Spells",
+						"Sixth-Level Spells",
+						"Seventh-Level Spells",
+						"Eighth-Level Spells",
+						"Ninth-Level Spells"
 					],
 					"ordinal": {
 						"type": "appendix",
-						"identifier": "C"
+						"identifier": 3
 					}
 				},
 				{
-					"name": "Credits"
+					"name": "Priest Spells",
+					"headers": [
+						"First-Level Spells",
+						"Second-Level Spells",
+						"Third-Level Spells",
+						"Fourth-Level Spells",
+						"Fifth-Level Spells",
+						"Sixth-Level Spells",
+						"Seventh-Level Spells"
+					],
+					"ordinal": {
+						"type": "appendix",
+						"identifier": 4
+					}
+				},
+				{
+					"name": "Wizard Spells by School",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": 5
+					}
+				},
+				{
+					"name": "Priest Spells by Sphere",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": 6
+					}
+				},
+				{
+					"name": "Spell Index",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": 7
+					}
+				},
+				{
+					"name": "Compiled Character Generation Tables",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": 8
+					}
+				},
+				{
+					"name": "Index"
 				}
 			]
 		},
