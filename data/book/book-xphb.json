@@ -7425,9 +7425,9 @@
 								"{@b Herbalism:} Those with herbalist knowledge can identify plants and fungus and prepare nonmagical potions, poultices, powders, balms, salves, ointments, infusions, and plasters for medical and pseudo-medical purposes. They can also prepare natural plant poisons and purgatives. The DM must decide the exact strength of such poisons based on the poison rules in the DMG. A character with both herbalism and healing proficiencies gains bonuses when using his healing talent (see the Healing proficiency).",
 								"{@b Hunting:} When in wilderness settings, the character can attempt to stalk and bring down game. A proficiency check must be made with a –1 penalty to the ability score for every nonproficient hunter in the party. If the die roll is successful, the hunter (and those with him) have come within 101 to 200 yards ({@dice 100+1d100}) of an animal. The group can attempt to close the range, but a proficiency check must be made for each 20 yards closed. If the stalking is successful, the hunter automatically surprises the game. The type of animal stalked depends on the nature of the terrain and the whim of the DM.",
 								"{@b Juggling:} The character can juggle, a talent useful for entertainments, diversions, and certain rare emergencies. When juggling normally (to entertain or distract), no proficiency check is required. A check is made when trying spectacular tricks (“Watch me eat this apple in mid-air!”). However, juggling also enables the character to attempt desperate moves. On a successful attack roll vs. AC 0 (not a proficiency check), the character can catch small items thrown to harm him (as opposed to items thrown for him to catch). Thus, the character could catch a dagger or a dart before it hits. If this attack roll fails, however, the character automatically suffers damage (sticking your hand in the path of a dagger is likely to hurt).",
-								"{@b Jumping:} The character can attempt exceptional leaps both vertically and horizontally. If the character has at least a 20-foot running start, he can leap (broad jump) {@dice 2d6}+his level in feet. No character can broad jump more than six times his height, however. With the same start, he can leap vertically (high jump) {@dice 1d3} plus half his level in feet. No character can high jump more than 11⁄2 times his own height.",
+								"{@b Jumping:} The character can attempt exceptional leaps both vertically and horizontally. If the character has at least a 20-foot running start, he can leap (broad jump) {@dice 2d6}+his level in feet. No character can broad jump more than six times his height, however. With the same start, he can leap vertically (high jump) {@dice 1d3} plus half his level in feet. No character can high jump more than 1 1⁄2 times his own height.",
 								"From a standing start, a character with this proficiency can broad jump {@dice 1d6} plus half his level in feet and high jump only 3 feet.",
-								"The character can also attempt vaults using a pole. A vault requires at least a 30-foot running start. If a pole is used, it must be 4 to 10 feet longer than the character’s height. The vault spans a distance equal to 11⁄2 times the length of the pole. The character can clear heights equal to the height of the pole. He can also choose to land on his feet if the vault carries him over an obstacle no higher than 1⁄2 the height of his pole. Thus, using a 12-foot pole, the character could either vault through a window 12 feet off the ground (tumbling into the room beyond), land on his feet in an opening 6 feet off the ground, or vault across a moat 18 feet wide. In all cases, the pole is dropped at the end of the vault.",
+								"The character can also attempt vaults using a pole. A vault requires at least a 30-foot running start. If a pole is used, it must be 4 to 10 feet longer than the character’s height. The vault spans a distance equal to 1 1⁄2 times the length of the pole. The character can clear heights equal to the height of the pole. He can also choose to land on his feet if the vault carries him over an obstacle no higher than 1⁄2 the height of his pole. Thus, using a 12-foot pole, the character could either vault through a window 12 feet off the ground (tumbling into the room beyond), land on his feet in an opening 6 feet off the ground, or vault across a moat 18 feet wide. In all cases, the pole is dropped at the end of the vault.",
 								"{@b Languages, Ancient:} The character has mastered a difficult and obscure tongue, now primarily found in the writings of pedantic sages and sorcerers. The main use of the language is to read tomes of ancient secrets written by longdead mystics. This proficiency enables the character to either read and write or speak the language (his choice).",
 								"{@b Languages, Modern:} The character has learned to speak a language of the known world. To do so, there must be a teacher available. This could be another player character, an NPC hireling, or simply a local townsman.",
 								"{@b Leatherworking:} This proficiency enables a character to tan and treat leather and to make clothing and other leather objects. The character can make leather armor, as well as backpacks, saddlebags, saddles, and all sorts of harnesses.",
@@ -10859,7 +10859,7 @@
 										"{@b Voulge:} The voulge, like the bardiche, is a variation on the axe and the cleaver. The voulge is little more than a cleaver on the end of a long (7 to 8-foot) pole. It is a popular weapon, easy to make and simple to learn. It is also called the Lochaber axe.",
 										"{@b Scourge:} This wicked weapon is a short whip with several thongs or tails. Each thong is studded with metal barbs, resulting in a terrible lash. It is sometimes used as an instrument of execution.",
 										"{@b Sword, Bastard:} This sword is similar to a long sword in size and weight, but has a longer hilt. It can be used one- or two-handed. Use the speed factor and damage appropriate to the grip. If it is used two-handed, your character cannot employ a shield. Proficiency allows both uses.",
-										"{@b Sword, Khopesh:} This is an Egyptian weapon. A khopesh has about 6 inches of handle and quillons. Its blade is then straight from the quillons for about 2 feet. The blade becomes sickle-shaped at this point, being about 2 additional feet long but effectively extending the overall length of the sword by only 11⁄2 feet. This makes the khopesh both heavy and unwieldy, difficult to employ properly, and slow to recover, particularly after a badly missed blow. Its sickle-like portion can snag an opponent or an opposing weapon."
+										"{@b Sword, Khopesh:} This is an Egyptian weapon. A khopesh has about 6 inches of handle and quillons. Its blade is then straight from the quillons for about 2 feet. The blade becomes sickle-shaped at this point, being about 2 additional feet long but effectively extending the overall length of the sword by only 1 1⁄2 feet. This makes the khopesh both heavy and unwieldy, difficult to employ properly, and slow to recover, particularly after a badly missed blow. Its sickle-like portion can snag an opponent or an opposing weapon."
 									]
 								}
 							]
@@ -12043,9 +12043,9 @@
 										"Not all weapons perform the same. If they did, there would be no need for the wide variety of weapons that exists. Only one form of each weapon type, the most useful one, would be used throughout the world. This is obviously not the case.",
 										"Aside from the differences in size, weight, length, and shape, certain types of weapons are more useful against some types of armor than others. Indeed, the different armors and weapons of the world are the result of an ancient arms race. Every new weapon led to the development of a new type of armor designed to counter it. This led to new weapons, which led to new armor, and so on.",
 										"In the AD&D game, weapons fall into several categories, based on how they are used. The basic categories are slashing, piercing, and bludgeoning",
-										"{@b Slashing weapons}",
-										"{@b Piercing weapons}",
-										"{@b Bludgeoning weapons}",
+										"{@b Slashing weapons} include swords, axes, and knives. Damage is caused by the combination of weight, muscle, and a good sharp edge.",
+										"{@b Piercing weapons} (some swords, spears, pikes, arrows, javelins, etc.) rely on the penetrating power of a single sharp point and much less on the weight of the weapon.",
+										"{@b Bludgeoning weapons} (maces, hammers, and flails) depend almost entirely on the impact caused by weight and muscle.",
 										"A few weapons, particularly some of the more exotic polearms, fall into more than one of these categories. A halberd can be used as a pole-axe (a slashing weapon) or as a short pike (a piercing weapon). The versatility of these weapons provides the user with a combat advantage, in that the mode most favorable to the attacker can be used, depending upon the situation.",
 										"{@b Natural weapons} can also be classified according to their attack type. Claws are slashing weapons; a bite pierces; a tail attack bludgeons. The DM must decide which is most appropriate to the creature and method of attack.",
 										"{@b Armor types,} in turn, have different qualities. Field plate is more effective, overall, than other armors by virtue of the amount and thickness of the metal, but it still has specific weaknesses against certain classes of weapons.",
@@ -12167,8 +12167,8 @@
 						"For a character of level 1 through level 20, consult Table 53. This table lists the THAC0 number of each group through 20th level, so players don’t have to perform any calculations.",
 						{
 							"type": "table",
-							"caption": "Optional Caption",
-							"page": 0,
+							"caption": "Table 53: CALCULATED THAC0S",
+							"page": 121,
 							"colLabels": [
 								"",
 								"",
@@ -12336,8 +12336,8 @@
 						"For a character higher than 20th level, find the Improvement Rate for the character’s group in Table 54. There you’ll find the number of levels a character must advance to reduce his THAC0 by 1 (or more) points. Calculate the character’s THAC0 according to his level.",
 						{
 							"type": "table",
-							"caption": "Optional Caption",
-							"page": 0,
+							"caption": "Table 54: THAC0 Advancement",
+							"page": 121,
 							"colLabels": [
 								"Group",
 								"Improvement Rate Points/Level"
@@ -12493,7 +12493,7 @@
 							"page": 124,
 							"entries": [
 								"To determine the initiative order for a round of combat, roll {@dice 1d10} for each side in the battle. Normally, this means the DM rolls for the monsters (or NPCs), while one of the players rolls for the PC party. Low roll wins initiative. If more than two sides are involved in combat, the remaining sides act in ascending order of initiative.",
-								"If both (or all) sides roll the same number for initiative, everything happens simultaneously—all attack rolls, damage, spells, and other actions are completed before any results are applied. It is possible for a wizard to be slain by goblins who collapse from his sleep spell at the end of the round."
+								"If both (or all) sides roll the same number for initiative, everything happens simultaneously—all attack rolls, damage, spells, and other actions are completed before any results are applied. It is possible for a wizard to be slain by goblins who collapse from his {@i sleep} spell at the end of the round."
 							]
 						},
 						{
@@ -12561,10 +12561,10 @@
 								{
 									"type": "insetReadaloud",
 									"entries": [
-										"The DM decides that one initiative roll is sufficient for each group and no modifiers are needed for either group. (Although Rath is charging, the orcs and trolls are too busy rearranging their lines to be set to receive his charge and so the -2 to receive charge is not used.)",
-										"Harry, rolling for the player characters, gets a 7 on a 10-sided die. The DM rolls a 10. The player characters, having the lowest number, act first.",
-										"Delsenora’s acid arrow strikes one of the trolls just as Rath takes a swing at the last of the fleeing orcs. A bowshot from Rupert drops another one of the creatures as it takes its position in the second rank. Now the monsters strike back.",
-										"The orcs manage to finish forming their line. Enraged by the acid, the lead troll tears into Rath, hurting him badly. The others swarm around him, attempting to tear him limb from limb."
+										"{@i The DM decides that one initiative roll is sufficient for each group and no modifiers are needed for either group. (Although Rath is charging, the orcs and trolls are too busy rearranging their lines to be set to receive his charge and so the -2 to receive charge is not used.)}",
+										"{@i Harry, rolling for the player characters, gets a 7 on a 10-sided die. The DM rolls a 10. The player characters, having the lowest number, act first.}",
+										"{@i Delsenora’s acid arrow strikes one of the trolls just as Rath takes a swing at the last of the fleeing orcs. A bowshot from Rupert drops another one of the creatures as it takes its position in the second rank. Now the monsters strike back.}",
+										"{@i The orcs manage to finish forming their line. Enraged by the acid, the lead troll tears into Rath, hurting him badly. The others swarm around him, attempting to tear him limb from limb.}"
 									]
 								}
 							]
@@ -12895,7 +12895,7 @@
 					"name": "Attacking without Killing",
 					"page": 128,
 					"entries": [
-						"There are times when a character wants to defeat another being without killing it. A companion may have been charmed into attacking his friends (and his friends don’t want to kill him to save themselves!); an enemy may have information the PCs can get only by subduing him; characters may simply see the monetary value of bringing back a real, live monster. Whatever the case, sooner or later characters are going to try.",
+						"There are times when a character wants to defeat another being without killing it. A companion may have been charmed into attacking his friends (and his friends don’t want to kill him to save themselves!); an enemy may have information the PCs can get only by subduing him; characters may simply see the monetary value of bringing back a real, live monster. Whatever the case, sooner or later characters are going to try to defeat something without striking a fatal blow.",
 						"There are three types of nonlethal attacks—punching, wrestling, and overbearing. Punching is basic bare-fisted fighting. Wrestling is the classic combination of grappling, holds, and throws. Overbearing is simply trying to pull down an opponent by sheer mass or weight of numbers, pinning him to the ground.",
 						{
 							"type": "entries",
@@ -13132,7 +13132,7 @@
 								"To overbear an opponent, a normal attack roll is made. For every level of size difference (1 if a Large attacker takes on a Medium defender, for example), the attack roll is modified by 4 (+4 if the attacker is larger; -4 if the defender is larger).",
 								"The defender also gains a benefit if it has more than two legs: a -2 penalty to the attacker’s roll for every leg beyond two. There is no penalty to the defender if it has no legs. A lone orc attempting to pull down a horse and rider would have at least a -8 penalty applied to the attack roll (-4 for size and -4 for the horse’s four legs).",
 								"If the attack succeeds, the opponent is pulled down. A character can be pinned if further successful overbearing attacks are rolled each round. For pinning purposes, do not use the prone modifier to combat (from Table 51).",
-								"If multiple attackers are all attempting to pull down a single target, make only one attack roll with a +1 bonus for each attacker beyond the first. Always use the to-hit number of the 129 Combat Table 58: Punching and Wrestling Results Attack Roll Punch Damage % K.O. Wrestle 20+ Haymaker 2 10 Bear hug* 19 Wild swing 0 1 Arm twist 18 Rabbit punch 1 3 Kick 17 Kidney punch 1 5 Trip 16 Glancing blow 1 2 Elbow smash 15 Jab 2 6 Arm lock* 14 Uppercut 1 8 Leg twist 13 Hook 2 9 Leg lock 12 Kidney punch 1 5 Throw 11 Hook 2 10 Gouge 10 Glancing blow 1 3 Elbow smash 9 Combination 1 10 Leg lock* 8 Uppercut 1 9 Headlock* 7 Combination 2 10 Throw 6 Jab 2 8 Gouge 5 Glancing blow 1 3 Kick 4 Rabbit punch 2 5 Arm lock* 3 Hook 2 12 Gouge 2 Uppercut 2 15 Headlock* 1 Wild swing 0 2 Leg twist Less than 1 Haymaker 2 25 Bear hug* *Hold can be maintained from round to round, until broken.weakest attacker to figure the chance of success, since cooperation always depends on the weakest link. Modifiers for size should be figured for the largest attacker of the group.",
+								"If multiple attackers are all attempting to pull down a single target, make only one attack roll with a +1 bonus for each attacker beyond the first. Always use the to-hit number of the weakest attacker to figure the chance of success, since cooperation always depends on the weakest link. Modifiers for size should be figured for the largest attacker of the group.",
 								"{@i A giant and three pixies attempting to pull down a man would use the pixies’ attack roll, modified by +3 for three extra attackers and +8 for the size difference of the giant (Huge) and the man (Medium).}"
 							]
 						},
@@ -13241,7 +13241,7 @@
 								"Cover helps a potential target by giving the attacker a negative modifier to his attack roll. The exact modifier for concealment or cover depends on the degree to which it is being used as shelter. A character who stands behind a twofoot wall is a pretty obvious target, especially when compared to the character who lies down behind that wall and carefully peers over it. Table 59 lists the different modifiers for varying degrees of cover and concealment.",
 								{
 									"type": "table",
-									"caption": "Optional Caption",
+									"caption": "Table 59: Cover and Concealment Modifiers",
 									"page": 132,
 									"colLabels": [
 										"Target is:",
@@ -13274,9 +13274,6 @@
 											"-10",
 											"-4"
 										]
-									],
-									"footnotes": [
-										"Optional Footer"
 									]
 								},
 								"Cover also has an affect on saving throws, granting the character the modifier listed on Table 59 as a bonus to his saving throws against spells that cause physical damage (for example, {@i fireball, lightning bolt,} etc.)",
@@ -13685,8 +13682,8 @@
 								"Modifiers that increase the chance are given as a number preceded by a plus sign. Modifiers that make success more difficult are given as a number preceded by a minus sign (-1, -2, etc.).",
 								"Saving throw modifiers affect a character’s die roll, not the saving throw number needed. Thus, if Delsenora needed an 11 for a successful saving throw vs. petrification and had a +1 bonus to her save, she would still need to roll an 11 or higher after all adjustments were made (but the +1 bonus would be added to her die roll, so that effectively she needs to roll only a 10 on the die to reach her saving throw number of 11).",
 								"{@b High ability scores} in Dexterity and Wisdom sometimes give saving throw bonuses. A high Wisdom protects against illusions, charms, and other mental attacks. Dexterity, if high enough, can give a character a slightly higher chance of avoiding the effects of fireballs, lightning bolts, crushing boulders, and other attacks where nimbleness may be a help. (See Tables 2 and 5.)",
-								"{@b Magical items}",
-								"{@b Magical armor}",
+								"{@b Magical items} like cloaks and {@i rings of protection} give bonuses to a character’s saving throw (these are listed in the item descriptions in the appendices).",
+								"{@b Magical armor} allows a saving throw bonus only when the save is made necessary by something physical, whether normal or magical. Magical armor never gives a saving throw bonus against gas (which it cannot block), poison (which operates internally), and spells that are mental or that cause no physical damage.",
 								"For example, magical armor would not help a character’s saving throw against the sting of a giant scorpion, the choking effects of a {@i stinking cloud} spell, or the transformation effect of a {@i polymorph others} spell. Magical armor does extend its protective power to saving throws against acid sprays or splashes, disintegration, magical and normal fires, spells that cause damage, and falls (if any saving throw is allowed in this case). Other situations must be handled on a case-by-case basis by the DM.",
 								"{@b Specific spells and magical items} have effects, both good and ill, on a character’s saving throws. Often, spells force the victim to save with a penalty, which makes even the most innocuous spell quite dangerous. (Specific information can be found in the spell descriptions, for spells, or in the DMG’s Magical Items section, for magical items.)",
 								"{@b Minor poisons} of verminous creatures such as giant centipedes, while dangerous, are weak and unlikely to bring about death in a healthy man. To recreate this effect in the game, a saving throw bonus is allowed for anyone affected by these poisons. The DM has this information.",
@@ -14003,7 +14000,7 @@
 									]
 								},
 								"Attempting to turn counts as an action, requiring one round and occurring during the character’s turn in the initiative order (thus, the undead may get to act before the character can turn them). The mere presence of the character is not enough—a touch of drama from the character is important. Speech and gestures are important, so the character must have his hands free and be in a position to speak. However, turning is not like spellcasting and is not interrupted if the character is attacked during the attempt.",
-								"To resolve a turning attempt, look on Table 61. Crossindex the Hit Dice or type of the undead with the level of the character (two levels lower for a paladin). If there is a number listed, roll 1d20. If the number rolled is equal to or greater than that listed, the attempt is successful. If the letter “T” (for “turned”) appears, the attempt is automatically successful without a die roll. If the letter “D” (for “dispel”) is given, the turning utterly destroys the undead. A dash (—) means that a priest or paladin of that level cannot turn that type of undead. {@i A successful turn or dispel affects 2d6 undead. If the undead are a mixed group, the lowest Hit Dice creatures are turned first.}",
+								"To resolve a turning attempt, look on Table 61. Crossindex the Hit Dice or type of the undead with the level of the character (two levels lower for a paladin). If there is a number listed, roll {@dice 1d20}. If the number rolled is equal to or greater than that listed, the attempt is successful. If the letter “T” (for “turned”) appears, the attempt is automatically successful without a die roll. If the letter “D” (for “dispel”) is given, the turning utterly destroys the undead. A dash (—) means that a priest or paladin of that level cannot turn that type of undead. {@i A successful turn or dispel affects {@dice 2d6} undead. If the undead are a mixed group, the lowest Hit Dice creatures are turned first.}",
 								"Only one die is rolled regardless of the number of undead the character is attempting to turn in a given round. The result is read individually for each type of undead.",
 								"For example, Gorus, a 7th-level priest, and his party are attacked by two skeletons led by a wight and a spectre. The turning attempt is made, resulting in a roll of 12.",
 								"Gorus’s player reads the table for all three types of undead using the same {@i roll—12}—for all three. The skeletons are destroyed (as Gorus knew they would be). The wight is turned (a 4 or better was needed) and flees. The spectre, however, continues forward undaunted (since a 16 was needed to turn the spectre).",
@@ -14045,10 +14042,10 @@
 					"name": "Wounds",
 					"page": 139,
 					"entries": [
-						"",
-						"",
-						"",
-						""
+						"When a character hits a monster, or vice versa, damage is suffered by the victim. The amount of damage depends on the weapon or method of attack. In Table 44 of the Player’s Handbook, all weapons are rated for the amount of damage they inflict to Small, Medium, and Large targets. This is given as a die range ({@dice 1d8}, {@dice 2d6}, etc.)",
+						"Each time a hit is scored, the appropriate dice are rolled and the result—damage—is subtracted from the current hit points of the target. An orc that attacks with a sword, for example, causes damage according to the information given for the type of sword it uses. A troll that bites once and rends with one of its clawed hands causes {@dice 2d6} points of damage with its bite and {@dice 1d4 + 4} points with its claw. The DM gets this information from the {@i Monstrous Manual}.",
+						"Sometimes damage is listed as a die range along with a bonus of +1 or more. The troll’s claw attack, above, is a good example. This bonus may be due to high Strength, magical weapons, or the sheer ferocity of the creature’s attack. The bonus is added to whatever number comes up on the die roll, assuring that some minimum amount of damage is inflicted. Likewise, penalties also can be applied, but no successful attack can result in less than 1 point of damage.",
+						"Sometimes an attack has both a die roll and a damage multiplier. The number rolled on the dice is boosted by the multiplier to determine how much damage is inflicted. This occurs mainly in backstabbing attempts. In cases where damage is multiplied, only the base damage caused by the weapon is multiplied. Bonuses due to Strength or magic are not multiplied; they are added after the rolled damage is multiplied."
 					]
 				},
 				{
@@ -14065,7 +14062,7 @@
 								"Player characters have a marvelous (and, to the DM, vastly amusing) tendency to fall off things, generally from great heights and almost always onto hard surfaces. While the falling is harmless, the abrupt stop at the end tends to cause damage.",
 								"When a character falls, he suffers 1d6 points of damage for every 10 feet fallen, to a maximum of {@dice 20d6} (which for game purposes can be considered terminal velocity).",
 								"This method is simple and reasonably realistic. The distance fallen is not the only determining factor in how badly a person is hurt. Other factors may include elasticity of the falling body and the ground, angle of impact, shock wave through the falling body, dumb luck, and more.",
-								"This method is simple and reasonably realistic. The distance fallen is not the only determining factor in how badly a person is hurt. Other factors may include elasticity of the falling body and the ground, angle of impact, shock wave through the falling body, dumb luck, and more."
+								"People have actually fallen from great heights and survived, albeit very rarely. The current record-holder, Vesna Vulovic, survived a fall from a height of 33,330 feet in 1972, although she was severely injured. Flight-Sergeant Nicholas S. Alkemade actually fell 18,000 feet—almost 3.5 miles—without a parachute and landed uninjured!"
 							]
 						},
 						{
@@ -14074,7 +14071,7 @@
 							"page": 139,
 							"entries": [
 								"A character or creature affected by paralysis becomes totally immobile for the duration of the spell’s effect. The victim can breathe, think, see, and hear, but he is unable to speak or move in any manner. Coherent thought needed to trigger magical items or innate powers is still possible.",
-								"A character or creature affected by paralysis becomes totally immobile for the duration of the spell’s effect. The victim can breathe, think, see, and hear, but he is unable to speak or move in any manner. Coherent thought needed to trigger magical items or innate powers is still possible.",
+								"Paralysis affects only the general motor functions of the body and is not the ultimate destroyer of powerful creatures. It can be particularly potent on flying creatures, however.",
 								{
 									"type": "insetReadaloud",
 									"entries": [
@@ -14093,13 +14090,12 @@
 								"When a character is hit by an energy-draining creature, he suffers normal damage from the attack. In addition, the character loses one or more levels (and thus, Hit Dice and hit points). For each level lost, roll the Hit Dice appropriate to the character’s class and subtract that number of hit points from the character’s total (subtract the Constitution bonus also, if applicable). If the level(s) lost was one in which the character received a set number of hit points rather than a die roll, subtract the appropriate number of hit points. The adjusted hit point total is now the character’s maximum (i.e., hit points lost by energy drain are not taken as damage but are lost permanently).",
 								"The character’s experience points drop to halfway between the minimum needed for his new (post-drain) level and the minimum needed for the next level above his new level.",
 								"Multi-class and dual-class characters lose their highest level first. If both levels are equal, the one requiring the greater number of experience points is lost first.",
-								"Multi-class and dual-class characters lose their highest level first. If both levels are equal, the one requiring the greater number of experience points is lost first.",
 								"All powers and abilities gained by the player character by virtue of his former level are immediately lost, including spells. The character must instantly forget any spells that are in excess of those allowed for his new level. In addition, a wizard loses all understanding of spells in his spell books that are of higher level than he can now cast. Upon regaining his previous level, the spellcaster must make new rolls to see if he can relearn a spell, regardless of whether he knew it before.",
 								"If a character is drained to 0 level but still retains hit points (i.e., he is still alive), that character’s adventuring career is over. He cannot regain levels and has lost all benefits of a character class. The adventurer has become an ordinary person. A {@i restoration} or {@i wish} spell can be used to allow the character to resume his adventuring career. If a 0-level character suffers another energy drain, he is slain instantly, regardless of the number of hit points he has remaining.",
-								"If the character is drained to less than 0 levels (thereby slain by the undead), he returns as an undead of the same type as his slayer in 2d4 days. The newly risen undead has the same character class abilities it had in normal life, but with only half the experience it had at the beginning of its encounter with the undead who slew it.",
+								"If the character is drained to less than 0 levels (thereby slain by the undead), he returns as an undead of the same type as his slayer in {@dice 2d4} days. The newly risen undead has the same character class abilities it had in normal life, but with only half the experience it had at the beginning of its encounter with the undead who slew it.",
 								"The new undead is automatically an NPC! His goals and ambitions are utterly opposed to those he held before. He possesses great hatred and contempt for his former colleagues, weaklings who failed him in his time of need. Indeed, one of his main ambitions may be to destroy his former companions or cause them as much grief as possible.",
 								"Furthermore, the newly undead NPC is under the total control of the undead who slew it. If this master is slain, its undead minions gain one level for each level they drain from victims until they reach the maximum Hit Dice for their kind. Upon reaching full Hit Dice, these undead are able to acquire their own minions (by slaying characters).",
-								"Appropriate actions on the part of the other player characters can prevent a drained comrade from becoming undead. The steps necessary vary with each type of undead and are explained in the monster descriptions in the Monstrous Manual supplement."
+								"Appropriate actions on the part of the other player characters can prevent a drained comrade from becoming undead. The steps necessary vary with each type of undead and are explained in the monster descriptions in the {@i Monstrous Manual} supplement."
 							]
 						},
 						{
@@ -14271,7 +14267,7 @@
 			"entries": [
 				"Whenever a player character meets an NPC (nonplayer character), fights a monster, or even discovers a mysterious fountain in the woods, he is having an encounter. An encounter is any significant thing a character meets, sees, or interacts with during the course of a game. When a player character discovers a fountain of blue flame in the midst of the forest, its very strangeness forces the character to react and the player to think. Why is it here? Does it have a purpose? Is it beneficial or dangerous? Few characters are going to pass this by as just another flaming fountain in the forest.",
 				"Encounters are vital to the AD&D game, for without them nothing can really happen to the player character. An adventure without encounters is like sitting in a room all day with no one to talk to and little to look at. It certainly wouldn’t be very exciting. And who wants to play an unexciting role-playing game? Encounters provide danger, risk, mystery, information, intrigue, suspense, humor, and more.",
-				"For an encounter to provide excitement, it must also have an element of danger. A good deal of this comes from the fact that player characters don’t know how the encountered beings will react to them. Your DM is not going to say, “You meet a group of peasants and they are friendly.” (If he {@i does} say this, you ought to be suspicious.) Instead, he will say something like, “As you ride around the bend, you come upon an oxcart lumbering down the road. A young man in rough clothes is leading the cart. Peering over the sides are a woman and several dirty children. When the man sees you he nods, smiles, and says, “Hail, strangers. Have you news of Thornhampton-on-the-Hill?” You can probably guess they are peasants and they seem friendly, but your DM didn’t come out and say so. Not knowing for sure is what keeps you on your toes. They could be anything!",
+				"For an encounter to provide excitement, it must also have an element of danger. A good deal of this comes from the fact that player characters don’t know how the encountered beings will react to them. Your DM is not going to say, “You meet a group of peasants and they are friendly.” (If he {@i does} say this, you ought to be suspicious.) Instead, he will say something like, “As you ride around the bend, you come upon an oxcart lumbering down the road. A young man in rough clothes is leading the cart. Peering over the sides are a woman and several dirty ren. When the man sees you he nods, smiles, and says, “Hail, strangers. Have you news of Thornhampton-on-the-Hill?” You can probably guess they are peasants and they seem friendly, but your DM didn’t come out and say so. Not knowing for sure is what keeps you on your toes. They could be anything!",
 				"When your character travels or explores a dungeon, your DM will have prepared two general types of encounters. The first are {@i specific} {@i (planned)} encounters. These are meetings, events, or things the DM has chosen to place in the adventure to build on the story of the adventure.",
 				"For example, upon sneaking into the bugbear stronghold, your characters find a squalid cell filled with humans and elves. Your DM has placed them here for your character to rescue. Of course, he could also be playing a trick and the prisoners could actually be evil dopplegangers (creatures able to change their appearances at will).",
 				"Later, while in the hallway, your group bumps into a bugbear patrol. This is the second type of encounter, a {@i random encounter}, also called a wandering encounter. In this case, your DM has made die rolls to see if you come upon something and, if so, just what that something is.",
@@ -17030,7 +17026,7 @@
 					"page": 314,
 					"colStyles": [
 						"col- text-left",
-						"col- text-right"
+						"col-8 text-right"
 					],
 					"rows": [
 						[
@@ -18275,7 +18271,7 @@
 							"27"
 						],
 						[
-							"Complete Thief’s Handbook",
+							"Complete Fighter's Handbook",
 							"9"
 						],
 						[
@@ -18297,6 +18293,22 @@
 						[
 							"Concealment",
 							"132"
+						],
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"saving throw bonus",
+								"114"
+							]
+						},
+						[
+							"Conjuration/summoning spells",
+							"107"
+						],
+						[
+							"Constitution",
+							"20, 21"
 						],
 						{
 							"type": "row",
@@ -18498,7 +18510,7 @@
 							"55"
 						],
 						[
-							"Discretionary points",
+							"Diseases, curing",
 							"39, 81"
 						],
 						{
@@ -19693,7 +19705,7 @@
 							"type": "row",
 							"style": "row-indent-first",
 							"row": [
-								"spellcraft",
+								"scrolls",
 								"144"
 							]
 						},
@@ -19710,7 +19722,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"theories",
-								"85"
+								"107"
 							]
 						},
 						[
@@ -20282,7 +20294,7 @@
 							"type": "row",
 							"style": "row-indent-first",
 							"row": [
-								"spells, paladin casting ",
+								"spells, paladin casting",
 								"39"
 							]
 						},
@@ -20622,7 +20634,7 @@
 							"121"
 						],
 						[
-							"Rolling ability scores ",
+							"Rolling ability scores",
 							"16, 18"
 						],
 						[
@@ -21668,24 +21680,24 @@
 							"type": "row",
 							"style": "row-indent-first",
 							"row": [
-								"specialization",
-								"37, 71, 73"
+								"specialist",
+								"45"
 							]
 						},
 						{
 							"type": "row",
 							"style": "row-indent-first",
 							"row": [
-								"speed",
-								"127"
+								"spell book",
+								"43"
 							]
 						},
 						{
 							"type": "row",
 							"style": "row-indent-first",
 							"row": [
-								"type vs. armor",
-								"120, 121"
+								"spells",
+								"107, 164"
 							]
 						},
 						[
