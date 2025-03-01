@@ -6852,27 +6852,27 @@
 						"Choosing a Character Creation Method",
 						{
 							"depth": 1,
-							"header": "Method I (3d6, in order)"
+							"header": "Method I (3d6, In order):"
 						},
 						{
 							"depth": 1,
-							"header": "Method II (3d6 twice)"
+							"header": "Method II (3d6 twice, keep desired score):"
 						},
 						{
 							"depth": 1,
-							"header": "Method III (3d6, rearranged)"
+							"header": "Method III (3d6, arranged to taste):"
 						},
 						{
 							"depth": 1,
-							"header": "Method IV (3d6 twice, arranged)"
+							"header": "Method IV (3d6 twice, arranged to taste):"
 						},
 						{
 							"depth": 1,
-							"header": "Method V (4d6, drop lowest)"
+							"header": "Method V (4d6, drop lowest, arrange as desired):"
 						},
 						{
 							"depth": 1,
-							"header": "Method VI"
+							"header": "Method VI (points plus dice):"
 						},
 						"Super Characters",
 						{
@@ -7483,7 +7483,7 @@
 						"Critical Hits (Optional Rule)",
 						{
 							"depth": 1,
-							"header": "Critical Fumble"
+							"header": "Critical Fumbles"
 						},
 						"Parrying (Optional Rule)",
 						"Missile Weapons in Combat",
@@ -7579,11 +7579,11 @@
 						"Immunity to Weapons",
 						{
 							"depth": 1,
-							"header": "Effect of Weapon Hits"
+							"header": "Effects of Weapon Hits"
 						},
 						{
 							"depth": 1,
-							"header": "Silver Weapon"
+							"header": "Silver Weapons"
 						},
 						{
 							"depth": 1,
@@ -7635,7 +7635,7 @@
 						"Specific Injuries (Optional Rule)",
 						{
 							"depth": 1,
-							"header": "Treating Poison Victims"
+							"header": "Is This Injury Necessary?"
 						},
 						"Healing",
 						{
@@ -7702,15 +7702,11 @@
 						"Placement of Treasure",
 						{
 							"depth": 1,
-							"header": "Mounted Combat"
+							"header": "Who’s Got the Treasure?"
 						},
 						{
 							"depth": 1,
-							"header": "Aerial Combat (Optional Rule)"
-						},
-						{
-							"depth": 1,
-							"header": "Underwater Combat"
+							"header": "Planned and Random Encounter Treasures"
 						},
 						"Treasure Tables",
 						"Maintaining Balance",
@@ -7720,7 +7716,7 @@
 						},
 						{
 							"depth": 1,
-							"header": "Monty Haul Campaign"
+							"header": "Monty Haul Campaigns"
 						},						
 						"Magical Items",
 						{
@@ -7733,7 +7729,7 @@
 						},
 						{
 							"depth": 1,
-							"header": "Magic—Rare or Common"
+							"header": "Magic—Rare or Common?"
 						},
 						{
 							"depth": 1,
@@ -7755,14 +7751,14 @@
 						"Creating Other Magical Items",
 						"Recharging Magical Items",
 						"Destroying Magical Items",
-						"Artifacts and Relics (Optional Rule)",
+						"Artifacts and Relics (Optional Rules)",
 						{
 							"depth": 1,
 							"header": "Designing an Artifact or Relic"
 						},
 						{
 							"depth": 1,
-							"header": "Artifact and Relics"
+							"header": "Sample Artifact and Relics"
 						}
 					],
 					"ordinal": {
@@ -8070,14 +8066,14 @@
 							"depth": 1,
 							"header": "Other Magical Diseases"
 						},
-						"The Planes",
+						"The Planes of Existence",
 						{
 							"depth": 1,
 							"header": "The Prime Material Planes"
 						},
 						{
 							"depth": 1,
-							"header": "The Ethereal Plane"
+							"header": "The Ethereal Planes"
 						},
 						{
 							"depth": 1,
@@ -8098,7 +8094,7 @@
 					}
 				},
 				{
-					"name": "Spell Lists",
+					"name": "Treasure Tables",
 					"headers": [
 						{
 							"depth": 1,
@@ -8114,17 +8110,14 @@
 						}
 					],
 					"ordinal": {
-						"type": "chapter",
+						"type": "appendix",
 						"identifier": 1
 					}
 				},
 				{
-					"name": "Notes on Spells",
+					"name": "Magical Items Tables",
 					"headers": [
-						{
-							"depth": 1,
-							"header": "Magical Items"
-						},
+						"Magical Item Tables",
 						{
 							"depth": 1,
 							"header": "Armor and Shields"
@@ -8140,7 +8133,7 @@
 					}
 				},
 				{
-					"name": "Wizard Spells",
+					"name": "Magical Items Descriptions",
 					"headers": [
 						"Potions",
 						{
