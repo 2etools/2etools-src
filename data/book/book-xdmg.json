@@ -3155,7 +3155,7 @@
 										"Each horse has one or two traits that define its “personality.” In poor quality horses, these traits are generally undesirable, but even good horses can have unpleasant quirks. For each horse, determine the traits on Table 26, using the column appropriate to the quality of the horse. It is strongly recommended that you select the trait rather than rolling randomly, since these traits can really enhance the humor and color of your campaign.",
 										{
 											"type": "table",
-											"caption": "Optional Caption",
+											"caption": "Table 26: Horse Traits",
 											"page": 55,
 											"colLabels": [
 												"D10 Roll",
@@ -9761,11 +9761,11 @@
 							"rows": [
 								[
 									"Both groups surprised",
-									"3d6"
+									"{@dice 3d6}"
 								],
 								[
 									"One group surprised",
-									"4d6"
+									"{@dice 4d6}"
 								],
 								[
 									"No surprise:",
@@ -9776,7 +9776,7 @@
 									"style": "row-indent-first",
 									"row": [
 										"Smoke or heavy fog",
-										"6d6"
+										"{@dice 6d6}"
 									]
 								},
 								{
@@ -9784,7 +9784,7 @@
 									"style": "row-indent-first",
 									"row": [
 										"Jungle or dense forest",
-										"1d10 × 10"
+										"{@dice 1d10 × 10}"
 									]
 								},
 								{
@@ -9792,7 +9792,7 @@
 									"style": "row-indent-first",
 									"row": [
 										"Light forest",
-										"2d6 × 10"
+										"{@dice 2d6 × 10}"
 									]
 								},
 								{
@@ -9800,7 +9800,7 @@
 									"style": "row-indent-first",
 									"row": [
 										"Scrub, brush or bush",
-										"2d12 × 10"
+										"{@dice 2d12 × 10}"
 									]
 								},
 								{
@@ -9808,7 +9808,7 @@
 									"style": "row-indent-first",
 									"row": [
 										"Grassland, little cover",
-										"5d10 × 10"
+										"{@dice 5d10 × 10}"
 									]
 								},
 								{
@@ -10048,7 +10048,7 @@
 				"An NPC is any person or creature the player characters must deal with and that the DM has to role-play. The player characters must deal with a trap, but the DM doesn’t role-play a trap. It’s not an NPC. A charging dragon is an NPC—the DM acts out the part of the dragon and the players decide how their characters are going to react to it. There are times when the DM’s role-playing choices are simple (run away or charge), but often the DM’s roles are quite challenging.",
 				"For convenience, NPC encounters are generally divided into two broad categories: monsters (those living things that aren’t player character races) and full NPCs (races the player characters commonly deal with). The range of reactions in a monster encounter is generally less than in a full NPC encounter.",
 				"The DM has to think of himself as a master actor, quick-change artist, and impressionist. Each NPC is a different role or part the DM must quickly assume. While this may be difficult at first, practice makes the task much easier. Each DM develops certain stock characters and learns the personalities of frequently used NPCs.",
-				"The DM has to think of himself as a master actor, quick-change artist, and impressionist. Each NPC is a different role or part the DM must quickly assume. While this may be difficult at first, practice makes the task much easier. Each DM develops certain stock characters and learns the personalities of frequently used NPCs.",
+				"There are many different categories of NPCs, but the most frequently encountered are common, everyday folk. Player characters deal with innkeepers, stablers, blacksmiths, minstrels, watchmen, petty nobles, and others, many of whom can be employed by player characters. These NPCs are grouped together as hirelings.",
 				{
 					"type": "section",
 					"name": "Hirelings",
@@ -10066,7 +10066,7 @@
 								"Common and expert hirelings are listed on Table 60. This table, organized alphabetically, lists and describes common medieval occupations. Explanations are provided for the more obscure or unusual professions below. This list provides colorful titles and unusual occupations to make your ordinary hirelings more interesting.",
 								{
 									"type": "table",
-									"caption": "Optional Caption",
+									"caption": "Table 60: NPC Profession",
 									"page": 144,
 									"colStyles": [
 										"col- text-left"
@@ -12502,9 +12502,6 @@
 											"00",
 											"Warlike"
 										]
-									],
-									"footnotes": [
-										"Optional Footer"
 									]
 								}
 							]
@@ -13104,12 +13101,6 @@
 							"colStyles": [
 								"col- text-left",
 								"col- text-left"
-							],
-							"intro": [
-								"Optional intro entries."
-							],
-							"outro": [
-								"Optional outro entries."
 							],
 							"rows": [
 								[
@@ -18220,7 +18211,7 @@
 				{
 					"type": "section",
 					"name": "Scrolls",
-					"page": 195,
+					"page": 196,
 					"entries": [
 						"Scrolls are generally found in cylinders—tubes of are inscribed with magic runes or writing PCs must read in order to open the container. This is up to the DM. Taking this approach encourages players to select and use {@i read magic} or {@i comprehend language} spells. It also makes it possible to protect powerful scrolls with traps ({@i symbols, explosive runes}) and {@i curses}.",
 						"Each scroll is written in its own magical cypher. To understand what type of scroll has been found, the ability to read magic must be available. Once a scroll is read to determine its contents, a {@i read magic} spell is not needed at a subsequent time to invoke its magic. Even a scroll map will appear unreadable until the proper spell ({@i comprehend languages}) is used.",
@@ -18235,14 +18226,8 @@
 								"Scroll Type"
 							],
 							"colStyles": [
-								"col- text-",
-								"col- text-"
-							],
-							"intro": [
-								"Optional intro entries."
-							],
-							"outro": [
-								"Optional outro entries."
+								"col- text-center",
+								"col- text-left"
 							],
 							"rows": [
 								[
@@ -18907,8 +18892,7 @@
 										"{@item |source|Vacuous Grimoire}",
 										"{@item |source|Well of Many Worlds}",
 										"{@item |source|Wind Fan}",
-										"{@item |source|Wings of Flying}",
-										"{@item |source|optional text}"
+										"{@item |source|Wings of Flying}"
 									]
 								}
 							]
@@ -19615,7 +19599,6 @@
 				"This index cross-references both the Dungeon Master Guide and the Player's Handbook. Red entries are pages in the DMG.",
 				{
 					"type": "table",
-					"caption": "Optional Caption",
 					"page": 250,
 					"colStyles": [
 						"col- text-left",
@@ -20298,7 +20281,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"modifiers",
-								"{@color 7,82|ef1946}"
+								"{@color 7, 82|ef1946}"
 							]
 						},
 						{
@@ -20605,7 +20588,7 @@
 						],
 						[
 							"Changing alignment",
-							"{@color 4,42|ef1946}, 69"
+							"{@color 4, 42|ef1946}, 69"
 						],
 						[
 							"Chaos alignment",
@@ -24266,7 +24249,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"dust",
-								"223|ef1946}"
+								"{@color 223|ef1946}"
 							]
 						},
 						{
@@ -24274,7 +24257,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"eyes",
-								"213, 224|ef1946}"
+								"{@color 213, 224|ef1946}"
 							]
 						},
 						{
@@ -24290,7 +24273,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"gauntlets",
-								"225|ef1946}"
+								"{@color 225|ef1946}"
 							]
 						},
 						{
@@ -24298,7 +24281,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"gems",
-								"225|ef1946}"
+								"{@color 225|ef1946}"
 							]
 						},
 						{
@@ -24322,7 +24305,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"helms",
-								"227|ef1946}"
+								"{@color 227|ef1946}"
 							]
 						},
 						{
@@ -24330,7 +24313,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"horns",
-								"228|ef1946}"
+								"{@color 228|ef1946}"
 							]
 						},
 						{
@@ -24338,7 +24321,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"horseshoes",
-								"229|ef1946}"
+								"{@color 229|ef1946}"
 							]
 						},
 						{
@@ -24346,7 +24329,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"jewels",
-								"230|ef1946}"
+								"{@color 230|ef1946}"
 							]
 						},
 						{
@@ -24354,7 +24337,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"librams",
-								"230|ef1946}"
+								"{@color 230|ef1946}"
 							]
 						},
 						{
@@ -24378,7 +24361,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"mirrors",
-								"232|ef1946}"
+								"{@color 232|ef1946}"
 							]
 						},
 						{
@@ -24386,7 +24369,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"necklaces",
-								"232|ef1946}"
+								"{@color 232|ef1946}"
 							]
 						},
 						{
@@ -24394,7 +24377,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"pearls",
-								"233|ef1946}"
+								"{@color 233|ef1946}"
 							]
 						},
 						{

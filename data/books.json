@@ -5962,7 +5962,7 @@
 			]
 		},
 		{
-			"name": "Player's Handbook Revised",
+			"name": "Player's Handbook (Revised)",
 			"id": "XPHB",
 			"source": "XPHB",
 			"group": "core",
@@ -6821,7 +6821,7 @@
 			]
 		},
 		{
-			"name": "Dungeon Master Guide Revised",
+			"name": "Dungeon Master Guide (Revised)",
 			"id": "XDMG",
 			"source": "XDMG",
 			"group": "core",

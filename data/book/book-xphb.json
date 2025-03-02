@@ -34,7 +34,7 @@
 						"{@b Playtest Coordination:} Jon Pickens",
 						"{@b Editing:} Mike Breault, Jean Rabe, Thomas Reid, Steven Schend, and Ray Vallese",
 						"{@b Proofreading:} Jean Black, Teresa Reid, Curtis Smith, Valerie Vallese, and James Ward",
-						"{@b Art Coordinator:}  Peggy Cooper",
+						"{@b Art Coordinator:} Peggy Cooper",
 						"{@b Cover Illustration:} Jeff Easley",
 						"{@b Interior Illustrations:} Ned Dameron, Laura Lakey, Den Beauvais, Les Dorscheid, Jeff Easley, Ken Frank, Daniel Frazier, Carol Heyer, David O. Miller, Alan Pollack, Robh Ruppel, Tony Sczcudlo",
 						"{@b Graphics Coordinator:} Sarah Feggestad",
@@ -46,7 +46,6 @@
 						"This is a derivative work based on the original Advanced Dungeons & Dragons {@i Player’s Handbook®} and {@i Dungeon Master Guide™} by Gary Gygax and {@i Unearthed Arcana™} and other materials by Gary Gygax and others."
 					]
 				}
-				
 			]
 		},
 		{
@@ -83,7 +82,7 @@
 			"page": 8,
 			"entries": [
 				"You are reading the key to the most exciting hobby in the world—role-playing games.",
-				"These first few pages will introduce you to the 2nd edition of the most successful role-playing game ever published. If you are a novice role-player, stop right here and read the section labeled {@i The Real Basics} (on page 10). When you understand what role-playing and the AD&D game are all about, come back to this point and read the rest of the introduction. If you are an experienced role-player, skip {@i The Real Basics}.",
+				"These first few pages will introduce you to the 2nd edition of the most successful role-playing game ever published. If you are a novice role-player, stop right here and read the section labeled {@i {@book The Real Basics|XPHB|3}} (on page 10). When you understand what role-playing and the AD&D game are all about, come back to this point and read the rest of the introduction. If you are an experienced role-player, skip {@book The Real Basics|XPHB|3}.",
 				{
 					"type": "section",
 					"name": "How the Rule Books are Organized",
@@ -91,7 +90,7 @@
 					"entries": [
 						"The AD&D game rule books are intended primarily as reference books. They are designed so any specific rule can be found quickly and easily during a game.",
 						"Everything a player needs to know is in the {@i Player's Handbook®}. That's not to say that all the rules are in this book. But every rule that a player needs to know in order to play the game is in this book.",
-						"A few rules have been reserved for the {@i Dungeon Master Guide} (DMG). These either cover situations that very seldom arise or give the Dungeon Master (DM) information that players should not have beforehand. Everything else in the {@i DMG} is information that only the Dungeon Master needs. If the DM feels that players need to know something that is explained in the {@i DMG}, he will tell them.",
+						"A few rules have been reserved for the {@book {@i Dungeon Master Guide}|XDMG} (DMG). These either cover situations that very seldom arise or give the Dungeon Master (DM) information that players should not have beforehand. Everything else in the {@i DMG} is information that only the Dungeon Master needs. If the DM feels that players need to know something that is explained in the {@i DMG}, he will tell them.",
 						"Like the DMG, the {@i Monstrous Manual}™ supplement is the province of the DM. This gives complete and detailed information about the monsters, people, and other creatures inhabiting the AD&D world. Some DMs don't mind if players read this information, but the game is more fun if players don't know everything about their foes—it heightens the sense of discovery and danger of the unknown."
 					]
 				},
@@ -100,7 +99,7 @@
 					"name": "Learning the Game",
 					"page": 8,
 					"entries": [
-						"If you have played the AD&D game before, you know almost everything you need to play the 2nd Edition. We advise you to read the entire Player's Handbook, but the biggest changes are in these chapters: Character Classes, Combat, and Experience. Be sure to read at least those three chapters before sitting down to play.",
+						"If you have played the AD&D game before, you know almost everything you need to play the 2nd Edition. We advise you to read the entire Player's Handbook, but the biggest changes are in these chapters: {@book Character Classes|XPHB|8}, {@book Combat|XPHB|14}, and {@book Experience|XPHB|13}. Be sure to read at least those three chapters before sitting down to play.",
 						"If you come to a term you do not understand, look for it in the Glossary.",
 						"If you have never played the AD&D game before, the best way to learn to play the game is to find a group of experienced players and join them. They can get you immediately into the game and explain things as you need to know them. You don't need to read anything beforehand. In fact, it's best if you can play the game for several hours with experienced players before reading any of the rules. One of the amazing things about a role-playing game is that the concept is difficult to explain, but marvelously simple to demonstrate.",
 						"If none of your friends are involved in a game, the best place to find experienced players is through your local hobby store. Role-playing and general gaming clubs are common and are always eager to accept new members. Many hobby stores offer a bulletin board through which DMs can advertise for new players and new players can ask for information about new or ongoing games. If there is no hobby store in your area, check at the local library or school.",
@@ -659,14 +658,14 @@
 										"Notes"
 									],
 									"colStyles": [
-										"col-1 text-center",
-										"col-1 text-center",
-										"col-1 text-center",
-										"col-1 text-center",
-										"col-1 text-center",
-										"col-1 text-center",
-										"col-1 text-center",
-										"col-1 text-center"
+										"col- text-center",
+										"col- text-center",
+										"col- text-center",
+										"col- text-center",
+										"col- text-center",
+										"col- text-center",
+										"col- text-center",
+										"col- text-center"
 									],
 									"rows": [
 										[
@@ -4961,7 +4960,7 @@
 								},
 								{
 									"type": "entries",
-									"name": "Druids Organization",
+									"name": "Druid Organization",
 									"page": 52,
 									"entries": [
 										"Druids have a worldwide structure. At their upper levels (12th and above), only a few druids can hold each level."
@@ -7580,12 +7579,6 @@
 									"colStyles": [
 										"col- text-center",
 										"col- text-center"
-									],
-									"intro": [
-										"Optional intro entries."
-									],
-									"outro": [
-										"Optional outro entries."
 									],
 									"rows": [
 										[
@@ -10882,9 +10875,6 @@
 										"col- text-left",
 										"col- text-right"
 									],
-									"outro": [
-										"See “Shields” for more information on the defensive benefits of various shields."
-									],
 									"rows": [
 										[
 											"None",
@@ -10932,7 +10922,7 @@
 										]
 									],
 									"footnotes": [
-										"Optional Footer"
+										"See “Shields” for more information on the defensive benefits of various shields"
 									]
 								},
 								"Although there is some controversy historically over the different types of armor, all known or suspected types are included here. However, not all armor may be available if your DM has chosen to set his campaign in a particular historical era or locale. For example, full plate armor is not available to characters adventuring in an ancient Greek setting.",
@@ -14436,8 +14426,8 @@
 						"All ranges are given in yards.",
 						{
 							"type": "table",
-							"caption": "Optional Caption",
-							"page": 0,
+							"caption": "Table 62: Visibility Ranges",
+							"page": 155,
 							"colLabels": [
 								"Condition",
 								"Movement",
