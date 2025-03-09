@@ -1,0 +1,1189 @@
+{
+    "data": [
+        {
+            "type": "section",
+            "name": "Introduction",
+            "page": 1,
+            "entries": [
+                "The ADVANCED DUNGEONS & DRAGONS® 2nd Edition {@i {@book Player's Handbook|XPHB}} and {@i {@book Dungeon Master's Guide|XDMG}} told you all you needed to know about playing warriors in the game. But it could be that you want to know more than the bare minimum it takes to play the warrior classes.",
+                "That's where {@i The Complete Fighter's Handbook} comes in. In these pages, we're going to show you lots of interesting things you can do with the warrior classes...things that the {@i {@book Player's Handbook|XPHB}} and {@i {@book DMG|XDMG}} didn't have room to show you.",
+                "Do you want to play fighter characters other than Fighter, Paladin, and Ranger? Here we'll give you rules for characters like barbarians, samurai, gladiators, amazons--they're all subsets of the three main warrior classes, but they're here.",
+                "Do you want new combat rules? We have them. You'll find rules for different weapon styles, combat tactics, combat maneuvers, jousting, combat results, and many other fighter-oriented abilities within these pages.",
+                "Is it new equipment you're after? That, too, is present in copious quantities, from new armor and weapons to new magic items.",
+                "Or perhaps you want some role-playing and campaigning tips for your fighter characters—or your campaign in general. In these pages you'll find role-playing advice for fighter characters, and discussion of the role of the fighter in regular campaigns and in all-fighter campaigns.",
+                "Whether you're a player or DM, an intent rules lawyer or just someone wishing to add a little depth to your campaign or character, you'll find something here for you. Have fun.",
+                "* * *",
+                "Incidentally, {@i The Complete Fighter's Handbook} presumes that you're using the {@i AD&D® 2nd Edition} game rules for Weapon Proficiencies and Nonweapon Proficiencies. Many of the rules presented in this book depend on use of the proficiencies. So if you haven't been using them so far in your campaign, we highly recommend that you familiarize yourself with them and introduce them into your playing.",
+                "Here's a special note for those of you who are using this {@i Complete Fighter's Handbook} with your first edition {@i AD&D®} game instead of the new second edition: This supplement mentions a lot of page numbers from the {@i {@book Player's Handbook|XPHB}} and the {@i {@book Dungeon Master's Guide|XDMG}}. The page numbers cited are for the {@i second edition}, not the first; you'll have to ignore the page numbers given."
+            ]
+        },
+        {
+            "type": "section",
+            "name": "Character Creation",
+            "page": 4,
+            "entries": [
+                "In this chapter, we'll briefly present notes on character creation in the {@b AD&D®} game. This is material you already know. but we'll be talking about character creation as it specifically applies to warrior player characters (Fighters, Paladins, and Rangers).",
+                {
+                    "type": "section",
+                    "name": "Ability Scores",
+                    "page": 4,
+                    "entries": [
+                        "For a normal campaign, any of the six dice-rolling methods from the {@i {@book Player's Handbook|XPHB}} is acceptable.",
+                        "If you decide to run an all-warriors campaign (see the {@i {@book Role-Playing|PHBR1|3}} chapter of this book for details on such a thing), we recommend that you use one of the five Alternate Dice-Rolling Methods presented.",
+                        "Whether or not you run an all-warriors campaign, if you utilize the {@i {@book Warrior Kits|PHBR1|2}} chapter of this rule book, we recommend that you use Method VI to create the ability scores for your characters. Because characters using the Warrior Kits are so specialized, you'll find it helpful to be able to custom-design your character ability scores, which Method VI allows you to do."
+                    ]
+                },
+                {
+                    "type": "section",
+                    "name": "Races",
+                    "page": 4,
+                    "entries": [
+                        "Much of {@i The Complete Fighter's Handbook} is written with the human character in mind. However, most of the text is equally applicable to all the other player-character races as well, and can be used by them without any sort of adaptation necessary.",
+                        "All the normal rules for racial ability adjustments, class restrictions, level limits, languages, and miscellaneous bonuses and penalties will be used, and all the material in this book can be used for all the demihuman races {@i except where specifically noted in the text.}"
+                    ]
+                },
+                {
+                    "type": "section",
+                    "name": "Classes",
+                    "page": 4,
+                    "entries": [
+                        "The three warrior character classes (Fighter, Paladin, and Ranger) are still the only warrior character classes. However, those players who would like to have more specialized warrior classes will probably find what they want in the {@i {@book Warrior Kits|PHBR1|2}} chapter.",
+                        "When you're creating single-class warrior characters, we recommend that you start all first-level warriors with the maximum number of hit points they can have at that level—don't even bother to roll the dice. In other words, if you have a first-level Fighter with a Constitution of 16, he'd start with 12 hit points instead of rolling his {@dice 1d10} and adding +2 for his Constitution adjustment.",
+                        "This is for a couple of important reasons. First, it gives the warrior a slightly better chance for survival at lower experience levels. Second, it reflects the fact that warriors are simply tougher and hardier than other player-character classes.",
+                        "But remember: This is for {@i first level single-class warriors only.} Starting with second level, these Fighters, Paladins, and Rangers have to roll their hit points like everyone else. No other class gets this benefit, and multi-class warriors (such as warrior/thieves, warrior/mages, and the like) don't get to do this."
+                    ]
+                },
+                {
+                    "type": "section",
+                    "name": "Alignment",
+                    "page": 4,
+                    "entries": [
+                        "{@i The Complete Fighter's Handbook} follows all normal game rules for character alignments. Once the player has chosen an alignment for his character, he needs to have his choice approved by the DM; it may be that his choice will clash excessively with the alignments of other characters in the party, so the DM is within his rights to disapprove any alignment choice. (The chaotic evil fighter who wants to play with the troupe of wandering paladins {@i will} be a problem.)"
+                    ]
+                },
+                {
+                    "type": "section",
+                    "name": "Warrior Kits",
+                    "page": 4,
+                    "entries": [
+                        "Once you've worked up your character's ability scores, and then chosen his class and alignment, you can choose a {@i Warrior Kit} for the character. Warrior Kits are discussed in the {@i {@book Warrior Kits|PHBR1|2}} chapter of this book."
+                    ]
+                },
+                {
+                    "type": "section",
+                    "name": "Proficiencies",
+                    "page": 4,
+                    "entries": [
+                        "As the {@i {@book Introduction|PHBR1|0}} notes, use of the {@i {@book Proficiencies|XPHB|10}} section of the AD&D 2nd Edition Player's Handbook is not optional with {@i The Complete Fighter's Handbook}. The Proficiencies are necessary for you to customize and fine-tune your character, and for the use of the {@i {@book Warrior Kits|PHBR1|2}} chapter of this book.",
+                        "Use of the Weapon Proficiencies are pretty much self-evident after you read the {@i {@book Player's Handbook|XPHB}}. Later in this book, though, in the {@i {@book Combat|PHBR1|4}} chapter, you'll learn some interesting new things which you can do with weapon proficiencies.",
+                        "Don't forget that high Intelligence scores grant extra proficiencies (equal to the number of extra languages the character receives for the same score).",
+                        "Here, let's talk about three nonweapon proficiencies (Armorer, Bowyer/Fletcher, and Weaponsmithing) which are of particular use to the warrior player-character."
+                    ]
+                },
+                {
+                    "type": "section",
+                    "name": "Armorer",
+                    "page": 4,
+                    "entries": [
+                        "With the Armorer proficiency, a character knows how to build all varieties of armor. Armorer overlaps a couple of other proficiencies:",
+                        "The Armorer knows enough Blacksmithing to forge metal armor and craft scale and chain mail (though he cannot forge horseshoes, wrought iron gates, hardened metal tools, or any other useful items unless he also knows Blacksmithing);",
+                        "The Armorer knows enough Leatherworking to cut and shape boiled leather into leather armor, shield coverings, and the under-layers of scale mail and banded mail (though he cannot make dress jerkins, saddles, elaborate pouches or rucksacks, or any other useful leather items). The Armorer knows enough of the Tailor's art to manufacture padded armor and armor padding (but not enough to cut and sew any sort of good-looking garment).",
+                        "Naturally, the ordinary Blacksmith cannot forge metal armor, the Leatherworker is not experienced with making leather armors, and the Tailor isn't conversant with the making of padded armor, unless they also take the Armorer proficiency.",
+                        "The Armorer can repair existing armor that has taken damage (if you're using that optional rule), and can also craft barding (horse armor) through use of his proficiency.",
+                        "But what does all of this mean in a campaign?",
+                        {
+                            "type": "entries",
+                            "name": "The Workshop",
+                            "page": 5,
+                            "entries": [
+                                "To craft armor, the character must first have a {@i workshop} (a place to work and tools with which to do work).",
+                                {
+                                    "type": "entries",
+                                    "name": "Metal Armor",
+                                    "page": 5,
+                                    "entries": [
+                                        "If he intends to make any sort of all-metal armor (chain mail, field mail, full plate, plate mail, and helmets), the workshop is a smithy, complete with tools, bellows, a furnace, an anvil, tongs, cauldrons, casting molds, and all the other materials necessary to process unrefined metal into armor.",
+                                        "Such a workshop costs 200 gp, plus the cost of the shelter where it is set up: An additional 100 gp for a pavilion tent, an additional 300 gp for a well-crafted hut/workshop, or more as part of a larger dwelling, such as a mansion, villa or castle (these sorts of dwellings are priced at whatever sort of price scheme the DM prefers).",
+                                        "Included in the price of the smithy is the cost of the tools necessary to make leather hilt-wrappings, padded armor, armor linings and padding, and the simple leather straps used to hold all-metal armors together.)",
+                                        "This workshop is large enough to accommodate the character and up to two apprentices working full-time. (The apprentices, too, must have the Armorer proficiency; the character can always take in an apprentice without the proficiency and train him, but until he acquires the Armorer proficiency he doesn't count as a productive element of the workshop.)",
+                                        "In theory, the character could hire another three-man crew to work a second shift in the same workshop; thus the workshop would be occupied nearly 24 hours a day. (This presumes eight- to ten-hour shifts and a certain amount of necessary nonproductive time each day: Time for furnaces to cool and be cleaned, tools to be repaired and sharpened, etc.) No more than three people can work in this workshop effectively; with more than three people, the workshop suffers a loss of efficiency so that it produces goods just as though it were only manned by three armorers.",
+                                        "To expand the workshop costs an additional 50% for each +three workers. If the smithy costs 200 gp and is set up in a 300-gp hut, thus costing 500 gp, the builder could pay +250 gp. Then, the workshop would accommodate three more armorers at the same time. For another +250 gp, now totalling 1,000 gp, the shop can accommodate nine armorers at the same time."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Leather Armor",
+                                    "page": 5,
+                                    "entries": [
+                                        "If he intends to make any sort of all-leather armor (hide armor, leather armor, and armored leather caps), the workshop is a {@i leatherworker's shop}, including apparatus for leather soaking, scraping, tanning, boiling, boiling in wax, shaping, hole-punching, sewing, and all the other processes by which leather is transformed into armor.",
+                                        "Such a workshop costs 25 gp, plus the cost of the shelter where it is set up: An additional 25 gp for a large tent, an additional 75 gp for a well-crafted hut/workshop, or more as part of a larger dwelling (at whatever price scheme the DM prefers).",
+                                        "(Included in the price of the {@i leatherworker's shop} is the cost of the tools necessary to make padded armor and armor linings and padding.)",
+                                        "As with the smithy above, this price presumes one principal leatherworker and up to two apprentices may work together at the same time. Above that number costs 50% of the workshop and housing costs per additional three leatherworkers."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Metal and Leather Armor",
+                                    "page": 5,
+                                    "entries": [
+                                        "If he intends to make both sorts of armor, or armor which combines both metal and leather elements (banded mail, brigandine, bronze plate mail, ring mail, scale mail, shields, splint mail, and studded leather), a combined workshop is needed.",
+                                        "Such a workshop costs 250 gp, plus the cost of the shelter where it is set up: An additional 100 gp for a pavilion tent, an additional 300 gp for a well-crafted hut/workshop, or more as part of a larger dwelling (again, at whatever pricing the DM prefers).",
+                                        "(Included in the cost of the {@i armorer's shop} is the cost of the tools necessary to make wooden shield blanks and shield frames, padded armor, and all armor linings and padding necessary to the armored goods.)",
+                                        "As with the smithy above, this price presumes one principal armorer and up to two apprentices; above that number costs +50% of the workshop and housing costs per additional three armorers."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Apprentices and Overseers",
+                            "page": 6,
+                            "entries": [
+                                "The cost of the workshop constitutes only the set-up cost for the armoring operation. Maintenance of the workshop, pay for the employees, and cost of materials also come into play. Of course, so do the profits from the sale of manufactured goods.",
+                                "Each apprentice costs 2gp/week for food, upkeep, and training. And once an apprentices has reached young adulthood (age 16) and has achieved an Armorer ability check of 12 or better, he'll demand to be promoted to Overseer status (described immediately below) or will find better pickings elsewhere.",
+                                "Apprentices cannot run a workshop unsupervised. Supervision comes in the form of an Overseer, an adult with an Armorer ability check of 12 or better. Each Overseer costs 15 gp/week (the DM may wish to have the cost relate to the Overseer's Armorer ability check: 15 gp/week at a check of 12, +15 gp/week per +1 to his ability check; thus, if his ability check is 16, he costs 75 gp/week)."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Time to Craft armor",
+                            "page": 6,
+                            "entries": [
+                                "To determine the time it takes to make a piece of armor, take the armor's AC. The number that the AC is under 10, multiplied by two weeks, is the time it takes an apprentice (supervised and aided by an Overseer) to craft the item.",
+                                "Thus, a set of chain mail (AC 5) is calculated this way: 10 - 5 = 5; 5 x two weeks = ten weeks. It takes 10 weeks to make a suit of chain mail.",
+                                "For pieces of armor which don't grant specific AC benefits (like helmets), figure the time at 1 week per 7.5 gp value. Thus, a great helm would take four weeks to make (it costs 30 gp); a basinet, one week and a few hours of the eighth day (it costs 8 gp)."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Cost to Craft Armor",
+                            "page": 6,
+                            "entries": [
+                                "And it does cost money to craft armor. The cost is:",
+                                "(a) About half the \"retail value\" of the armor piece for materials; plus",
+                                "(b) The cost of maintaining one or two apprentices during the time it takes to make the piece; plus",
+                                "(c) Additional cost based on how much of the overseer's time and attention the project takes. (The project may take one or two overseers full-time on the project, may take only {@i half} one overseer's time on the project, or may take none of the overseer's time—the latter constitute projects that the apprentices can do all by themselves, mostly unsupervised.)",
+                                {
+                                    "type": "table",
+                                    "caption": "Standard Costs to Manufacture Armor",
+                                    "page": 6,
+                                    "colLabels": [
+                                        "Armor Piece",
+                                        "Retail Value",
+                                        "Materials Cost (gp)",
+                                        "Time Taken",
+                                        "Apprentice & Overseer",
+                                        "Total Cost"
+                                    ],
+                                    "colStyles": [
+                                        "col- text-left",
+                                        "col- text-center",
+                                        "col- text-center",
+                                        "col- text-center",
+                                        "col- text-center",
+                                        "col- text-center"
+                                    ],
+                                    "rows": [
+                                        [
+                                            "Banded Mail",
+                                            "200",
+                                            "100",
+                                            "12 wk",
+                                            "48 *",
+                                            ""
+                                        ],
+                                        [
+                                            "Brigandine",
+                                            "120",
+                                            "60",
+                                            "8 wk",
+                                            "32 *",
+                                            "92"
+                                        ],
+                                        [
+                                            "Bronze plate",
+                                            "400",
+                                            "200",
+                                            "12 wk",
+                                            "114 **",
+                                            "314"
+                                        ],
+                                        [
+                                            "Chain mail",
+                                            "75",
+                                            "38",
+                                            "10 wk",
+                                            "20 ***",
+                                            "58"
+                                        ],
+                                        [
+                                            "Field Plate",
+                                            "2000",
+                                            "1000",
+                                            "16 wk",
+                                            "304 +",
+                                            "1304"
+                                        ],
+                                        [
+                                            "Full plate",
+                                            "7000",
+                                            "3500",
+                                            "18 wk",
+                                            "342 +",
+                                            "3842"
+                                        ],
+                                        [
+                                            "Helm/great",
+                                            "30",
+                                            "15",
+                                            "4 wk",
+                                            "8 ***",
+                                            "23"
+                                        ],
+                                        [
+                                            "Helm/basinet",
+                                            "8",
+                                            "4",
+                                            "1 wk",
+                                            "2 ***",
+                                            "6"
+                                        ],
+                                        [
+                                            "Hide armor",
+                                            "15",
+                                            "7",
+                                            "8 wk",
+                                            "8 ++",
+                                            "15"
+                                        ],
+                                        [
+                                            "Leather armor",
+                                            "5",
+                                            "1 +++",
+                                            "4 wk",
+                                            "4 ++",
+                                            "5"
+                                        ],
+                                        [
+                                            "Padded armor",
+                                            "4",
+                                            "0 +++",
+                                            "4 wk",
+                                            "4 ++",
+                                            "4"
+                                        ],
+                                        [
+                                            "Plate mail",
+                                            "600",
+                                            "300",
+                                            "14 wk",
+                                            "133 **",
+                                            "433"
+                                        ],
+                                        [
+                                            "Ring mail",
+                                            "100",
+                                            "50",
+                                            "6 wk",
+                                            "24 *",
+                                            "74"
+                                        ],
+                                        [
+                                            "Scale mail",
+                                            "120",
+                                            "60",
+                                            "8 wk",
+                                            "32 *",
+                                            "92"
+                                        ],
+                                        [
+                                            "Shield/body",
+                                            "10",
+                                            "5",
+                                            "2 wk",
+                                            "4 ***",
+                                            "9"
+                                        ],
+                                        [
+                                            "Shield/buckler",
+                                            "1",
+                                            "0+++",
+                                            "2 wk",
+                                            "1 ++",
+                                            "1"
+                                        ],
+                                        [
+                                            "Shield/medium",
+                                            "7",
+                                            "3",
+                                            "2 wk",
+                                            "4 ***",
+                                            "7"
+                                        ],
+                                        [
+                                            "Shield/small",
+                                            "3",
+                                            "1",
+                                            "2 wk",
+                                            "2 ***",
+                                            "3"
+                                        ],
+                                        [
+                                            "Splint mail",
+                                            "80",
+                                            "40",
+                                            "12 wk",
+                                            "24 ***",
+                                            "64"
+                                        ],
+                                        [
+                                            "Studded lthr",
+                                            "20",
+                                            "10",
+                                            "6 wk",
+                                            "6 ++",
+                                            "16"
+                                        ],
+                                        [
+                                            "Barding:",
+                                            "",
+                                            "",
+                                            "",
+                                            "",
+                                            ""
+                                        ],
+                                        {
+                                            "type": "row",
+                                            "style": "row-indent-first",
+                                            "row": [
+                                                "Chain",
+                                                "500",
+                                                "250",
+                                                "10 wk",
+                                                "190 +",
+                                                "440"
+                                            ]
+                                        },
+                                        {
+                                            "type": "row",
+                                            "style": "row-indent-first",
+                                            "row": [
+                                                "Full plate",
+                                                "2000",
+                                                "1000",
+                                                "16 wk",
+                                                "304 +",
+                                                "1304"
+                                            ]
+                                        },
+                                        {
+                                            "type": "row",
+                                            "style": "row-indent-first",
+                                            "row": [
+                                                "Full scale",
+                                                "1000",
+                                                "500",
+                                                "304 +",
+                                                "1304",
+                                                "652"
+                                            ]
+                                        },
+                                        {
+                                            "type": "row",
+                                            "style": "row-indent-first",
+                                            "row": [
+                                                "Half brig.",
+                                                "500",
+                                                "250",
+                                                "6 wk",
+                                                "114 +",
+                                                "364"
+                                            ]
+                                        },
+                                        {
+                                            "type": "row",
+                                            "style": "row-indent-first",
+                                            "row": [
+                                                "Half padded",
+                                                "100",
+                                                "50",
+                                                "2 wk",
+                                                "38 +",
+                                                "88"
+                                            ]
+                                        },
+                                        {
+                                            "type": "row",
+                                            "style": "row-indent-first",
+                                            "row": [
+                                                "Half scale",
+                                                "500",
+                                                "250",
+                                                "8 wk",
+                                                "152 +",
+                                                "402"
+                                            ]
+                                        },
+                                        {
+                                            "type": "row",
+                                            "style": "row-indent-first",
+                                            "row": [
+                                                "Lthr/Padded",
+                                                "150",
+                                                "75",
+                                                "4 wk",
+                                                "75 +",
+                                                "150"
+                                            ]
+                                        }
+                                    ],
+                                    "footnotes": [
+                                        "* Two apprentices, no overseer",
+                                        "** One apprentice, ½ overseer",
+                                        "*** One apprentice, no overseer",
+                                        "+ Two apprentices, one overseer",
+                                        "++ ½ apprentice, no overseer",
+                                        "+++ Cost reduced because of easy availability of materials; cost of \"0 gp\" means cost is a negligible"
+                                    ]
+                                },
+                                "The previous table shows standard costs to manufacture armor.",
+                                "In usual circumstances, the difference between the Total Cost and the Retail Value is the shop's profit when it sells a piece of armor.",
+                                "As you can see from the table, hide armor, leather armor, padded armor, medium shields and small shields are little-to-no-profit propositions. However, they keep the apprentices paid and keep work in the shop."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Playing With These Numbers",
+                            "page": 7,
+                            "entries": [
+                                "Now, the costs given above are not the final word on how much it costs to make armor. With your DM's permission, you can skew these numbers around (both up and down) through the following means.",
+                                "First, you can put extra men on a job. (Important Note: If overseers are drafted to do apprentice-level work, one overseer counts as two apprentices.) You can only put extra men on a job in increments of the original number of men required for the job: In other words, if the job required two apprentices, you don't see an improvement in speed until you assign two more apprentices to the job. At that point, you cut the speed of the job in half.",
+                                "{@i Example: From the chart, you see it takes one apprentice with no overseer ten weeks to work up a set of chain mail. That's a standard in the armorer's industry; they'll always tell you it takes ten weeks to work up a chain mail hauberk. But in an emergency situation, they could put an extra apprentice on the job (either have two working on it at once, or have one on the \"day shift\" and one on the \"night shift\"). With twice the available manpower, it would only take half the time, or five weeks, to create the chain mail.}",
+                                "Second, if the Overseer is a player-character, he doesn't have to pay himself as much. This is usually the case with armorers when they first go into business for themselves: They pay the cost for materials and the cost for their apprentices, and whatever they have left over is their own salary, even if it is much less than the 15 gp/week standard mentioned above. (That number, 15 gp/week, represents a firm lower-middle-class standard of living; an armorer who earns less will be living at a lower-class standard of living.)",
+                                "With that in mind, we can re-interpret some of the numbers above. Let's say that we have one player-character armorer who wants to work up a set of hide armor.",
+                                "Hide armor normally takes up half the work-day of one apprentice for eight weeks. It costs 7 gp in materials, and he can sell it on the usual market for 15 gp. If just the chief armorer, who counts as an Overseer if his Armorer ability check is 12 or better, works on this item alone, it will take him only two weeks to make the hide armor (remember, an Overseer counts as two apprentices; therefore, he's putting four times the manpower on the task as it customarily requires, thus cutting the time required to one-fourth, or two weeks). If he can sell it for 15 gp, he's made 8 gp. He's earning a meager 4 gp a week, which is better than a poverty-level wage, but less than middle-class."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Chance of Failure",
+                            "page": 7,
+                            "entries": [
+                                "It would seem that the thing to do would be to set up an armorer's shop and just build field plate and full plate, which are the most profitable items of armor. However, that isn't necessarily so.",
+                                "This is because, for every item of armor you make, you have to make an Armorer Ability Check. At the end of the armor-making period, the most experienced (highest ability check) character who worked continuously on the project makes his Armorer ability check. If he passes the check, the armor is just fine. If he fails it, it's flawed.",
+                                "If the character missed his roll by 1, 2, 3, or 4, the armor looks just fine. The maker knows it's flawed, but this will not be obvious to anyone on casual inspection, and only another armorer will be able to detect that it's flawed . . . and only with careful inspection. This type of flawed armor functions at 1 AC higher than it should (thus flawed full plate would be AC 2 instead of 1). If the flawed armor is ever struck in real combat with a natural to-hit roll of 19 or 20, it \"breaks\" (caves in, splits open, etc.). Its AC goes up 4 (thus our flawed full plate would shoot from AC 2 to AC 6). And because it's broken and hanging wrong, it hinders the player; until he can take it off (this takes 1d4 rounds), he moves at half his normal rate and suffers a -4 penalty to all of his attack rolls.",
+                                "Obviously, most reputable armorers would never sell a piece of flawed armor. They have their reputations to protect, so they throw it away. They take a loss in money equal to the Total Cost of the armor from the chart above.",
+                                "If the character misses his roll by 5 or more, it's obvious to anyone, with casual inspection, that the armor is flawed. No one will buy it at the normal retail value. The armorer might be able to sell it at half the Total Cost value to someone desperate for cheap armor, someone who's willing to take the risk of wearing flawed armor. If he can't sell it, this too is a total loss.",
+                                "Finally, not all armor is the same in the level of difficulty it requires to manufacture. Some armor is simple enough that apprentices can work on it alone. Some is so complicated that only master armorers should oversee this work. And hiring a master armorer costs more than just hiring a normal overseer.",
+                                "The chart below shows the relative difficulty of manufacturing these different types of armor.",
+                                {
+                                    "type": "table",
+                                    "page": 8,
+                                    "colLabels": [
+                                        "Armor Type",
+                                        "Modifier to Armorer Proficiency Check"
+                                    ],
+                                    "colStyles": [
+                                        "col- text-left",
+                                        "col- text-center"
+                                    ],
+                                    "rows": [
+                                        [
+                                            "Banded Mail",
+                                            "+1"
+                                        ],
+                                        [
+                                            "Brigandine",
+                                            "+1"
+                                        ],
+                                        [
+                                            "Bronze plate",
+                                            "0"
+                                        ],
+                                        [
+                                            "Chain mail",
+                                            "+3"
+                                        ],
+                                        [
+                                            "Field Plate",
+                                            "-3"
+                                        ],
+                                        [
+                                            "Full plate",
+                                            "-3"
+                                        ],
+                                        [
+                                            "Helm/great",
+                                            "+3"
+                                        ],
+                                        [
+                                            "Helm/basinet",
+                                            "+3"
+                                        ],
+                                        [
+                                            "Hide armor",
+                                            "+3"
+                                        ],
+                                        [
+                                            "Leather armor",
+                                            "+3"
+                                        ],
+                                        [
+                                            "Padded armor",
+                                            "+3"
+                                        ],
+                                        [
+                                            "Plate mail",
+                                            "0"
+                                        ],
+                                        [
+                                            "Ring mail",
+                                            "+1"
+                                        ],
+                                        [
+                                            "Scale mail",
+                                            "+1"
+                                        ],
+                                        [
+                                            "Shield/body",
+                                            "+3"
+                                        ],
+                                        [
+                                            "Shield/buckler",
+                                            "+3"
+                                        ],
+                                        [
+                                            "Shield/medium",
+                                            "+3"
+                                        ],
+                                        [
+                                            "Shield/small",
+                                            "+3"
+                                        ],
+                                        [
+                                            "Splint mail",
+                                            "+3"
+                                        ],
+                                        [
+                                            "Studded leather",
+                                            "+3"
+                                        ],
+                                        [
+                                            "Barding:",
+                                            ""
+                                        ],
+                                        {
+                                            "type": "row",
+                                            "style": "row-indent-first",
+                                            "row": [
+                                                "Chain",
+                                                "0"
+                                            ]
+                                        },
+                                        {
+                                            "type": "row",
+                                            "style": "row-indent-first",
+                                            "row": [
+                                                "Full plate",
+                                                "-3"
+                                            ]
+                                        },
+                                        {
+                                            "type": "row",
+                                            "style": "row-indent-first",
+                                            "row": [
+                                                "Full scale",
+                                                "0"
+                                            ]
+                                        },
+                                        {
+                                            "type": "row",
+                                            "style": "row-indent-first",
+                                            "row": [
+                                                "Half brig.",
+                                                "0"
+                                            ]
+                                        },
+                                        {
+                                            "type": "row",
+                                            "style": "row-indent-first",
+                                            "row": [
+                                                "Half padded",
+                                                "0"
+                                            ]
+                                        },
+                                        {
+                                            "type": "row",
+                                            "style": "row-indent-first",
+                                            "row": [
+                                                "Half scale",
+                                                "0"
+                                            ]
+                                        },
+                                        {
+                                            "type": "row",
+                                            "style": "row-indent-first",
+                                            "row": [
+                                                "Lthr/Padded",
+                                                "0"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "As you can see, making field plate and full plate is a risky proposition. Only the best of independent armorers will undertake such a task because the potential losses are so great. (On the other hand, a hireling armorer will do it whenever his employer says, because all the financial risk is his employer's.) And player-character armorers run these same financial risks when they try to make field plate and full plate for themselves or their friends."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Added Expenses",
+                            "page": 8,
+                            "entries": [
+                                "If the DM wishes, he can add to the grief of a player-character armorer by confronting him with a lot of the hidden expenses of any such operation:",
+                                "{@b Bribery:} In many places, local officials will expect a little graft in order for them to process the necessary permits efficiently and regularly. If the PC doesn't pay up, those permits take a long, long time (months) to be processed, and during that time the PC can't operate a retail armorer's shop.",
+                                "{@b Theft:} Armorer's shops can be burglarized just like any other operation. Thieves are quite willing to steal some high-quality armor goods and fence them elsewhere in the city. Depending on the quality of the merchandise lying around in the shop, this can be a serious financial blow for the shop.",
+                                "{@b Unclaimed Goods:} Sometimes a patron who custom-orders a piece of armor never shows up to buy it. Maybe he's been killed in the meantime; maybe he ran low on funds and decided not even to tell the armorer of his misfortune. And if the custom piece of armor was decorated or fine-tuned to that specific customer (for example, if it bears his coat of arms or unusual decoration), it could be that no one else is willing to buy it...except at heavily discounted prices.",
+                                "{@b Unsold Stock:} Armorers don't just work up pieces of armor to order. The armorer fabricates numerous examples of the most common sorts of armor (leather and padded armor, shields) for the casual customer and as practice for the apprentices. Not all of this gets sold, and a piece that is never sold is a few gold pieces out of the shop's coffers."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Player-Character Workshops",
+                            "page": 8,
+                            "entries": [
+                                "Often, a PC Armorer who is also an adventurer will set up an armorer's shop and crew it with a single overseer and two apprentices. This shop's duty will be to keep the PC supplied in armor; also, whenever the PC returns home, he can, if he wishes, operate the shop, especially in the \"off-shift\" (whichever shift the regular crew is not operating it).",
+                                "If he does hire an overseer, he'll have to pay the rates according to the overseer's ability, as described above.",
+                                "Note that a PC Armorer can make armor for his friends. He can't avoid paying the minimum cost for the materials, of course. The character can carry a tent and leatherworker's shop on the back of a horse, so he can work on any sort of all-leather or padding armor while on the road. But on the road, he can only get in a couple of hours' work per day, so multiply all armor-making times by four to determine how long they take.",
+                                "The character who does all this extra work will be a little more tired than his fellows; reduce his Intelligence ability check to spot upcoming dangers."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Repairing Armor",
+                            "page": 9,
+                            "entries": [
+                                "If you use the optional rules for damaging armor found in this rule book's {@i {@book Combat|PHBR1|4}} chapter, you can also use the Armorer proficiency to repair damaged armor.",
+                                "It costs the armorer 1/100th the armor's retail value for each Damage Point that he repairs. Again, that's the cost to the {@i armorer}, which assumes that apprentices are doing the work, and unsupervised; apprentices can perform all armor-repair functions. The cost to the armorer, compared to the apprentice's wage, shows you how long it takes to repair (2 gp/week for one apprentice, remember).",
+                                "{@i Example: A set of chain mail has taken 10 points of damage in combat. The owner brings it in to be repaired. Retail value of chain mail is 75 gp, so the cost to repair each point of damage will be .75 gp, or 75 cp. The armorer repairs the 10 points of damage, which costs him 750 cp (75 sp). This is less than 1 gp, so the apprentice doing the repairs takes about two days to fix the chain maul hauberk.}",
+                                "Armorers typically charge a 50% profit on repair jobs. In the example above, the armorer's cost was 75 sp; therefore, he'd charge the customer about 115 sp for the repair job."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Repairing Magical Armor",
+                            "page": 9,
+                            "entries": [
+                                "Magical armor is repaired in exactly the same way. Base the cost for repairs on the normal retail value of the armor {@i as if it were not magical.}",
+                                "When magical armor is damaged, holes may be driven into it, but the basic enchantment is unchanged. Therefore, the armorer doesn't have to have repair materials enchanted to \"match\" the original armor; all he has to do is patch up the holes and the armor will be fixed. Typically, the armorer will not even know that he's working on magical armor.",
+                                "Of course, as we discuss in the {@i {@book Combat|PHBR1|4}} chapter, if a set of magical armor is damaged so severely that the enchantment is ruined, nothing a normal armorer can do will repair it. Armor that seriously damaged is ruined even as normal armor; an armorer won't be able to fix it."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "section",
+                    "name": "Bowyer/Fletcher",
+                    "page": 10,
+                    "entries": [
+                        "The material on the {@book Bowyer/Fletcher|XPHB|10|Nonweapon Proficiency Descriptions} proficiency from the Player’s Handbook, page 58, is all correct for use with this supplement.",
+                        "A set of bowyer/fletcher's tools, which can be used at maximum efficiency by one character, costs 10 gp. (It's 15 gp for a set which can be used simultaneously by three workers, and +7.5 gp per +3 workers which can work simultaneously.) The bowyer/fletcher is not required to set up a workshop; he can work by himself in the field, if he chooses. If he chooses to set up a permanent shop, tents and huts cost the same as what's listed for the leatherworker's shop (above, under \"Armorer\").",
+                        "Note that the construction times listed in the {@i Player's Handbook} presume that he's working a full week. If he's traveling or adventuring and working on bows and arrows in his spare time, multiply all crafting times by four. Thus, a long or short bow takes four weeks.",
+                        "Cost of materials for arrows and normal bows is negligible. If the character is trying to make a weapon of truly fine quality, he must either pay 50% of the weapon's normal retail value for exceptionally fine woods, or add an extra 100% to the time it takes to craft the weapon; the extra time constitutes him having to look for the perfect wood and materials in the wild."
+                    ]
+                },
+                {
+                    "type": "section",
+                    "name": "Weaponsmithing",
+                    "page": 10,
+                    "entries": [
+                        "The text on {@book Weaponsmithing|XPHB|10|Nonweapon Proficiency Descriptions} proficiency from the Player’s Handbook is basically correct, but let's elaborate on it.",
+                        "As mentioned, a weaponsmith does need to have a {@i smithy}. The costs for having a smithy are given above in this section, under \"Armorer.\" In fact, the same smithy can be used for armoring and weaponsmithing.",
+                        "The Weapon Construction numbers on {@book Weapon Construction table|XPHB|10|Nonweapon Proficiency Descriptions} on page 65 of the {@i Player's Handbook} are correct. It constitutes one Overseer-level weaponsmith working by himself and crafting weapons of average quality. An Overseer weaponsmith working with two apprentices cuts the time in half. The time indicated on the chart should be converted to weeks so that you can compare the weaponsmith's times with the armorer's; consider 5 days on the chart to constitute one week.",
+                        {
+                            "type": "entries",
+                            "name": "Weaponsmithing Failure",
+                            "page": 10,
+                            "entries": [
+                                "When constructing a weapon, at the end of the weapon-making process, the weaponsmith makes his Weaponsmithing proficiency ability check. He'll use the Proficiency Modifier based on the weapon and the weapon quality he's trying to achieve; see the chart below, under \"Weapon Quality,\" for that modifier.",
+                                "If he successfully makes his check, he's created the weapon he wanted to create.",
+                                "If he fails by 1, 2, 3, or 4, he's created a weapon that looks like what he intended to make. . . but he knows it has a serious structural flaw. In a real combat, if the wielder rolls a natural 5 or less on his attack roll, the weapon breaks and is useless. (For some reason, it just won't break in practice combats. . . only in the real thing.) He can still sell the weapon, of course, but eventually, after he's done this sort of thing a few times, his reputation as a craftsman will be utterly ruined. It's better just to break the item, sell it as a wall-hanger, etc.",
+                                "If he fails by 5 or more, the weapon breaks and is ruined during the last stages of the creation process (for example, when it's being cooled after heat-tempering)."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Weapon Quality",
+                            "page": 10,
+                            "entries": [
+                                "It is possible to construct weapons of different quality than just average.",
+                                "{@i Poor} quality weapons are shabbily made. They look bad, and like the flawed weapons described above, they break on a natural attack roll of 1 to 5. They don't hit as well (this is a penalty to the attack roll) or do as much damage (penalty to the damage) as their average-quality equivalents.",
+                                "{@i Average} quality weapons are not especially notable; they get the job done, they're reliable, and they're inexpensive. Unless otherwise noted, all (non-magical) weapons listed on charts in the {@i AD&D®} game are of average quality.",
+                                "{@i Fine} quality weapons are very well-made. Each will have one specific bonus: Either a +1 to attack rolls or a +1 to damage. This bonus is not magical; it comes from improved balance, sharpness, etc. (The weaponsmith determines, when he's making the weapon, whether he's trying to make it more accurate or make it hit harder.) They also cost a lot more than average weapons. Enchantments are typically made on weapons of at least Fine quality.",
+                                "{@i Exceptional} quality weapons are like fine weapons, but have both bonuses: They're +1 to attack rolls and +1 to damage. They're also very expensive.",
+                                "The following list, adapted from the list on page 65, shows the differences in cost and time to create weapons of these different levels of quality.",
+                                {
+                                    "type": "table",
+                                    "page": 11,
+                                    "colLabels": [
+                                        "",
+                                        "",
+                                        "Time to Construct",
+                                        "",
+                                        ""
+                                    ],
+                                    "colStyles": [
+                                        "col- text-left",
+                                        "col- text-center",
+                                        "col- text-center",
+                                        "col- text-center",
+                                        "col- text-center"
+                                    ],
+                                    "rows": [
+                                        [
+                                            "{@b Weapon Type}",
+                                            "{@b Poor}",
+                                            "{@b Average}",
+                                            "{@b Fine}",
+                                            "{@b Exceptional}"
+                                        ],
+                                        [
+                                            "Arrowhead",
+                                            "20/day",
+                                            "10/day",
+                                            "5/day",
+                                            "1/day"
+                                        ],
+                                        [
+                                            "Battle Axe",
+                                            "5 days",
+                                            "10 days",
+                                            "20 days",
+                                            "45 days"
+                                        ],
+                                        [
+                                            "Hand Axe",
+                                            "2 days",
+                                            "5 days",
+                                            "10 days",
+                                            "20 days"
+                                        ],
+                                        [
+                                            "Dagger",
+                                            "3 days",
+                                            "5 days",
+                                            "10 days",
+                                            "20 days"
+                                        ],
+                                        [
+                                            "H. Crossbow",
+                                            "10 days",
+                                            "20 days",
+                                            "45 days",
+                                            "90 days"
+                                        ],
+                                        [
+                                            "L. Crossbow",
+                                            "8 days",
+                                            "15 days",
+                                            "30 days",
+                                            "60 days"
+                                        ],
+                                        [
+                                            "Fork, Trident",
+                                            "10 days",
+                                            "20 days",
+                                            "45 days",
+                                            "90 days"
+                                        ],
+                                        [
+                                            "Spear, Lance",
+                                            "2 days",
+                                            "4 days",
+                                            "10 days",
+                                            "20 days"
+                                        ],
+                                        [
+                                            "Short Sword",
+                                            "10 days",
+                                            "20 days",
+                                            "45 days",
+                                            "90 days"
+                                        ],
+                                        [
+                                            "Long Sword",
+                                            "15 days",
+                                            "30 days",
+                                            "60 days",
+                                            "120 days"
+                                        ],
+                                        [
+                                            "Sword",
+                                            "20 days",
+                                            "45 days",
+                                            "90 days",
+                                            "180 days"
+                                        ]
+                                        
+                                    ]
+                                },
+                                {
+                                    "type": "table",
+                                    "page": 11,
+                                    "colLabels": [
+                                        "",
+                                        "Effects on Performance",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "colStyles": [
+                                        "col- text-left",
+                                        "col- text-center",
+                                        "col- text-center",
+                                        "col- text-center",
+                                        "col- text-center"
+                                    ],
+                                    "rows": [
+                                        [
+                                            "{@b Weapon Quality}",
+                                            "{@b Attack}",
+                                            "{@b Damage}",
+                                            "{@b Breaks}",
+                                            "{@b Mod. to Prof Check to Craft}"
+                                        ],
+                                        [
+                                            "Poor",
+                                            "-1",
+                                            "-1",
+                                            "1-5 on {@dice d20}",
+                                            "+2"
+                                        ],
+                                        [
+                                            "Average",
+                                            "0",
+                                            "0",
+                                            "1 on {@dice d20} *",
+                                            "0"
+                                        ],
+                                        [
+                                            "Fine",
+                                            "+1",
+                                            "+1",
+                                            "**",
+                                            "-2"
+                                        ],
+                                        [
+                                            "Exceptional",
+                                            "+1",
+                                            "+1",
+                                            "**",
+                                            "-4"
+                                        ]
+                                    ],
+                                    "footnotes": [
+                                        "* This isn't an automatic break; it breaks only if the DM feels like it.",
+                                        "** Fine weapons get {@i either} a +1 to attack rolls or +1 to damage, not both. Fine and Exceptional weapons break only in remarkable circumstances, as dictated by the DM (for example, a powerful enemy rolling a natural 20 when hitting the weapon, or the character rolling a natural 1 when striking at an artifact)."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Weapons Not Shown",
+                            "page": 11,
+                            "entries": [
+                                "If you're trying to construct a weapon not shown on this chart, compare it to the most similar weapon that {@i is} on the chart and use those values. (The DM has the final say on what is most similar.) For instance, if you're trying to create a halberd, that's closest to a fork or trident. If you're trying to create a bastard sword, that's closest to a long sword."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "section",
+                    "name": "Money and Equipment",
+                    "page": 11,
+                    "entries": [
+                        "{@i The Complete Fighter's Handbook} follows all the normal {@i {@book Player's Handbook|XPHB}} guidelines for the character's initial money and equipment . . . usually. Use of some of the Warrior Kits will dictate differences in the way some characters spend their beginning money."
+                    ]
+                },
+                {
+                    "type": "section",
+                    "name": "Magic",
+                    "page": 11,
+                    "entries": [
+                        "Some warrior characters (Paladins, Rangers, and multi-class Fighter/Mages and Fighter/Priests) do have spells. At this point in the character creation process, for the multi-class characters, you and the DM will have to determine the character's spells. (Paladins and Rangers wait until 9th and 8th levels, respectively, to get their spells, so you don't have to worry about them for a while.)"
+                    ]
+                },
+                {
+                    "type": "section",
+                    "name": "Experience",
+                    "page": 11,
+                    "entries": [
+                        "Here's an option you ought to think about if you're planning to run especially heroic, combat-heavy adventures or campaigns.",
+                        "You might wish to start all beginning player-characters out at 3rd experience level instead of 1st. This makes them a bit tougher, a bit more heroic, and a lot less fearful about dying with the first blow of their first fight.",
+                        "However, if you prefer to have your beginning characters a bit more nervous and defensive, then it's certainly more appropriate for you to start beginning characters at 1st level."
+                    ]
+                },
+                {
+                    "type": "section",
+                    "name": "Character Sheet",
+                    "page": 11,
+                    "entries": [
+                        "At the back of the book is a character sheet especially suited for use with {@i The Complete Fighter's Handbook.} Take a look at it, and then we'll discuss it in greater detail.",
+                        {
+                            "type": "entries",
+                            "name": "Front of the Sheet",
+                            "page": 11,
+                            "entries": [
+                                "In the top box of the character sheet's front, you put all the vital statistics of the character: His name, physical and racial characteristics, his character class, his Warrior Kit (if he uses one—see the Warrior Kits chapter), alignment, current experience level, his current experience earned, and the amount of experience it'll take him to reach the next level.",
+                                "In the second box, you put all the information relating to the character's six ability scores ({@book Strength|XPHB|6|Strength}, {@book Dexterity|XPHB|6|Dexterity}, {@book Constitution|XPHB|6|Constitution}, {@book Intelligence|XPHB|6|Intelligence}, {@book Wisdom|XPHB|6|Wisdom}, and {@book Charisma|XPHB|6|Charisma}). All this information comes from the charts in the {@i Player's Handbook}, pages 14-18.",
+                                "In the third, narrow, box, you write down any bonuses and abilities the character receives based on his race; for instance, if he's an elf, you'd put something like \"90% resistant to {@i {@spell sleep|XPHB}} and {@i {@spell charm|XPHB}}; +1 to attack rolls with bow, short sword, long sword; can surprise opponents; infravision; 1 on d6 to detect secret doors (1–2 on d6 when looking, 1–3 for portals).\"",
+                                "In the fourth box, you write down many of the character's game-mechanic notes: How many hit points he has, how his hit dice are calculated (with Fighters, you'd write \"{@dice d10}\"), what his AC is, what his THAC0 is, what his saving throws are, notes on his followers and any special abilities or restrictions from his character class choice (especially appropriate with paladins and rangers), and his Spell Progression (if any; this, too, is especially appropriate for paladins and rangers).",
+                                "In the fifth box, you note down any modifications made to the character by the Warrior Kit he chooses (again, see the Warrior Kits chapter for details).",
+                                "In the sixth (bottom) box, you record any of the character's skill-type abilities: His languages, his weapon proficiencies (and specializations!), and his nonweapon proficiencies."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Back of the Sheet",
+                            "page": 12,
+                            "entries": [
+                                "The back of the sheet is used mostly for equipment lists.",
+                                "The top box is used to record his weapons; here, you can put all the information found on the Weapons Table (Player’s Handbook, page 68).",
+                                "The second box is used for short descriptions of important equipment, especially magical items.",
+                                "The third box allows the player to indicate where all his character's important possessions are normally kept. The DM should insist that the players use these blanks; it helps prevents mistakes from being made in an adventure. (\"Of course I have my {@item Staff of the Magi|XDMG} along! I always have it taped to my Staff of Power! No, really!\")",
+                                "And in the bottom box you can make any other notes pertinent to the character."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "The Next Step In Character Creation",
+                            "page": 12,
+                            "entries": [
+                                "For the next step in our warrior-oriented character creation process, turn to the {@i {@book Warrior Kits|PHBR1|2}} chapter, which follows immediately."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "name": "Warrior Kits",
+            "page": 13,
+            "entries": [
+                "Sometimes it's just not enough to be a Fighter, Paladin or Ranger. Each of those classes is a lot of fun, but there's nothing which says you want to be restricted only to three types of fun.",
+                "So, here, we're going to show you how to create and play other sorts of warrior characters.",
+                {
+                    "type": "section",
+                    "name": "Kits and Warriors",
+                    "page": 13,
+                    "entries": [
+                        "Each special warrior described in this chapter is defined as a {@i Kit} of different characteristics. The {@i Kit} consists of the following elements:",
+                        "{@b Description:} This paragraph talks about what the warrior is. It's a general description of the appearance, manner, cultural background and use of the character in a campaign. It also lists any {@i requirements} necessary for the character to take the Kit; for instance, to be an Amazon, a character must be female. (Surprise!)",
+                        "{@b Role:} This paragraph describes the role of this warrior in the society that spawned him and in an ongoing campaign. A Samurai has a different cultural role from a Wilderness Warrior, even if both, say, are Paladins.",
+                        "{@b Secondary Skills:} If you're using the Secondary Skills rules from {@i AD&D® 2nd Edition}, then your Kit may require your warrior to take a specific skill; the character may not be able to choose or random-roll his Secondary Skill.",
+                        "{@b Weapon Proficiencies:} You must use the {@i AD&D® 2nd Edition} game rules for Weapon Proficiencies in order to use these Warrior Kits. Most of these Kits will require your warrior to take specific weapon proficiencies. A Samurai wouldn't be the same without his katana, or a Noble Warrior without his lance, for example.",
+                        "When required to take a specific Weapon Proficiency, the warrior must take that from the number of slots he has available to \"spend.\"",
+                        "{@b Nonweapon Proficiencies:} You also must use the Nonweapon Proficiencies rules from {@i AD&D® 2nd Edition}, as many Warrior Kits require your character to take specific nonweapon proficiencies. (For instance, it's foolish to be a Pirate without Seamanship, or a Wasteland Rider without Riding.)",
+                        "But these required Nonweapon Proficiencies are bonuses—given in addition to the nonweapon proficiency choices you normally choose. Sometimes a bonus proficiency will come from a group other than the General or Warrior groups, but, since it's a bonus, it doesn't matter how many extra slots it would otherwise be required to occupy.",
+                        "Some proficiencies will merely be recommended, not required. When a choice is recommended, it is not given to the character; if the character decides to take this nonweapon proficiency, he takes it from the number of choices he has.",
+                        "If you wish, you can use both Secondary Skills and Nonweapon Proficiencies in your campaign, but you'll find that character creation is simpler and more consistent if you use only the Proficiencies rules.",
+                        "{@b Equipment:} Some Warrior Kits gravitate toward certain types of equipment. Noble Warriors tend toward heavy armor and weapons such as swords and lances; Pirates lean toward cutlasses, throwing knives, light or no armor, and the like.",
+                        "These equipment listings aren't really restrictions or hard-and-fast rules. A Pirate on shore may wish to deck himself out in full plate, for instance. But in normal circumstances, a character should gravitate toward the types of equipment appropriate for him, and the DM must steer him toward such equipment types.",
+                        "For example, the pirate who keeps his full plate on while aboard ship will be knocked overboard time and time again as a reminder of why pirates don't usually wear such cumbersome stuff. As he's being dragged to the ocean bottom, he can reflect on his mistake. A noble warrior who wears leathers when jousting will almost certainly get what {@i he} deserves for his folly.",
+                        "{@b Special Benefits:} Most Warrior Kits have some special benefits that others don't. Often, they're defined as special reaction bonuses among certain classes of society, special rights in certain cultures, and so forth. Other benefits are more unusual or dramatic: The Berserker can call on hidden resources of strength and vitality when in combat, for instances.",
+                        "{@b Special Hindrances:} Likewise, each Warrior Kit has certain disadvantages which hinder him. Pirates are sought by the authorities; Amazons face discrimination in male-dominated societies.",
+                        "{@b Wealth Options:} Some Warrior Kits have special rules regarding their wealth. The Noble Warrior, for instance, will begin play with more starting gold than some other Warrior Kits. However, he's also required to maintain a higher standard of living than the others. If he fails to do so, he temporarily loses some of his Special Benefits.",
+                        "{@b Races:} Each of these Kits is written with the human character in mind, and this paragraph describes what happens when you have a demihuman character instead. The DM will have to ask himself if he wants certain race/Warrior Kit combinations (Savage Elves? Dwarf Amazons? Noble Halfling-Warriors?). If he does allow them, this paragraph will make notes on recommended racial modifications. For instance, the Noble Dwarf-Warrior will be required to be proficient with axe and hammer rather than sword and lance, and won't be required to be a rider.",
+                        {
+                            "type": "entries",
+                            "name": "An Important Note",
+                            "page": 14,
+                            "entries": [
+                                "In the following sections, several Warrior Kits get reaction bonuses and penalties as part of their Special Benefits and Special Hindrances. A word of caution needs to accompany them.",
+                                "In the AD&D® game, when a character is very charismatic, he gets what is called a \"reaction adjustment.\" (See the Player's Handbook, page 18.) When the character has a high Charisma and receives a bonus, it's expressed as a plus: +2, for instance. When he has a low Charisma and receives a penalty, it's expressed as a minus: -3, for example.",
+                                "However, when you roll the 2d10 for encounter reactions (see the Encounter Reactions Table, Dungeon Master's Guide) p. 103, {@i don't add the bonus (+) or subtract the penalty (-) from the die roll.} Do it the other way around. If the character has a Charisma of 16, and thus gets a +5 reaction adjustment, you subtract that number from the {@dice 2d10} die roll. (Otherwise the NPCs would be reacting even more badly because the character was charismatic!)"
+                            ]
+                        },
+                        ""
+                    ]
+                },
+                {
+                    "type": "section",
+                    "name": "Kits and the Warrior Classes",
+                    "page": 14,
+                    "entries": [
+                        ""
+                    ]
+                },
+                {
+                    "type": "section",
+                    "name": "Kits and Character Creation",
+                    "page": 14,
+                    "entries": [
+                        ""
+                    ]
+                },
+                {
+                    "type": "section",
+                    "name": "The Warrior Kits",
+                    "page": 14,
+                    "entries": [
+                        "",
+                        {
+                            "type": "entries",
+                            "name": "",
+                            "page": 0,
+                            "entries": [
+                                ""
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "",
+                            "page": 0,
+                            "entries": [
+                                ""
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "",
+                            "page": 0,
+                            "entries": [
+                                ""
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "",
+                            "page": 0,
+                            "entries": [
+                                ""
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "",
+                            "page": 0,
+                            "entries": [
+                                ""
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "",
+                            "page": 0,
+                            "entries": [
+                                ""
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "",
+                            "page": 0,
+                            "entries": [
+                                ""
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "",
+                            "page": 0,
+                            "entries": [
+                                ""
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "",
+                            "page": 0,
+                            "entries": [
+                                ""
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "",
+                            "page": 0,
+                            "entries": [
+                                ""
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "",
+                            "page": 0,
+                            "entries": [
+                                ""
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "",
+                            "page": 0,
+                            "entries": [
+                                ""
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "",
+                            "page": 0,
+                            "entries": [
+                                ""
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "",
+                            "page": 0,
+                            "entries": [
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "section",
+            "name": "Role-Playing",
+            "page": 39,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "type": "section",
+            "name": "Combat Rules",
+            "page": 56,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "type": "section",
+            "name": "Equipment",
+            "page": 93,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "type": "section",
+            "name": "Tables",
+            "page": 118,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "type": "section",
+            "name": "Forms",
+            "page": 120,
+            "entries": [
+                ""
+            ]
+        }
+    ]
+}

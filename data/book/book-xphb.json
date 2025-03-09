@@ -2986,7 +2986,7 @@
 						{
 							"type": "table",
 							"caption": "Table 16: Fighter's Followers",
-							"page": 0,
+							"page": 38,
 							"colLabels": [
 								"Die Roll",
 								"Leader (and suggested magical items)"
@@ -3150,7 +3150,7 @@
 								{
 									"type": "table",
 									"caption": "Table 17: Paladin Spell Progression",
-									"page": 0,
+									"page": 40,
 									"colLabels": [
 										"Paladin Level",
 										"Casting Level",
@@ -4824,7 +4824,7 @@
 											"type": "list",
 											"style": "list-hang",
 											"columns": 0,
-											"page": 0,
+											"page": 50,
 											"items": [
 												"{@i Incite Berserker Rage,} adding a +2 bonus to attack and damage rolls (War).",
 												"{@i Soothing Word,} able to remove fear and influence hostile reactions (Peace, Mercy, Healing).",
@@ -7571,7 +7571,7 @@
 								{
 									"type": "table",
 									"caption": "Table 40: Movement While Tracking",
-									"page": 0,
+									"page": 87,
 									"colLabels": [
 										"Chance to track",
 										"Movement Rate"
@@ -7644,11 +7644,10 @@
 								"Since ventriloquism relies on deception, people’s knowledge of speech, and assumptions about what should and shouldn’t talk, it is effective only on intelligent creatures. Thus, it has no effect on animals and the like. Furthermore, the audience must be watching the character since part of the deception is visual (“Hey, his lips don’t move!”). Using ventriloquism to get someone to look behind him does not work, since the voice is not actually behind him (this requires the {@i ventriloquism} spell). All but those with the gullibility of children realize what is truly happening. They may be amused—or they may not be.",
 								"{@b Weaponsmithing:} This highly specialized proficiency enables a character to perform the difficult and highly exacting work involved in making metal weapons, particularly those with blades. The character blends some of the skill of the blacksmith with an ability to create blades of strength and sharpness. A fully equipped smithy is necessary to use this proficiency.",
 								"The time and cost to make various types of weapons are listed on Table 41.",
-								
 								{
 									"type": "table",
 									"caption": "Table 41: Weapon Construction",
-									"page": 0,
+									"page": 87,
 									"colLabels": [
 										"Weapon",
 										"Construction Time",

@@ -5456,21 +5456,67 @@ html.is-faux-print .rd__h--1 {
 }
 
 .source__PHB {
-    color: #4a6898 !important;
-    border-color: #4a6898 !important;
-    text-decoration-color: #4a6898 !important
+    color: #db4c3c !important;
+    border-color: #db4c3c !important;
+    text-decoration-color: #db4c3c !important
 }
 
 .source__DMG {
-    color: purple !important;
-    border-color: purple !important;
-    text-decoration-color: purple !important
+    color: #2e6198 !important;
+    border-color: #2e6198 !important;
+    text-decoration-color: #2e6198 !important
 }
 
 .source__MM {
     color: green !important;
     border-color: green !important;
     text-decoration-color: green !important
+}
+
+.source__PHBR1,
+.source__PHBR2,
+.source__PHBR3,
+.source__PHBR4,
+.source__PHBR5,
+.source__PHBR6,
+.source__PHBR7,
+.source__PHBR8,
+.source__PHBR9,
+.source__PHBR10,
+.source__PHBR11,
+.source__PHBR12,
+.source__PHBR13,
+.source__PHBR14,
+.source__PHBR15 {
+    color: #621c2f !important;
+    border-color: #621c2f !important;
+    text-decoration-color: #621c2f !important
+}
+
+.source__DMGR1,
+.source__DMGR2,
+.source__DMGR3,
+.source__DMGR4,
+.source__DMGR5,
+.source__DMGR6,
+.source__DMGR7,
+.source__DMGR8,
+.source__DMGR9 {
+    color: #2c5168 !important;
+    border-color: #2c5168 !important;
+    text-decoration-color: #2c5168 !important
+}
+
+.source__HR1,
+.source__HR1,
+.source__HR1,
+.source__HR1,
+.source__HR1,
+.source__HR1,
+.source__HR1 {
+    color: #0c6438 !important;
+    border-color: #0c6438 !important;
+    text-decoration-color: #0c6438 !important
 }
 
 .source__SCAG {
@@ -5987,15 +6033,15 @@ html.is-faux-print .rd__h--1 {
 }
 
 .source__XPHB {
-    color: #ed7c00 !important;
-    border-color: #ed7c00 !important;
-    text-decoration-color: #ed7c00 !important
+    color: #ef1946 !important;
+    border-color: #ef1946 !important;
+    text-decoration-color: #ef1946 !important
 }
 
 .source__XDMG {
-    color: #c43c4c !important;
-    border-color: #c43c4c !important;
-    text-decoration-color: #c43c4c !important
+    color: #812a91 !important;
+    border-color: #812a91 !important;
+    text-decoration-color: #812a91 !important
 }
 
 .source__XMM {
@@ -6165,15 +6211,15 @@ html.is-faux-print .rd__h--1 {
 }
 
 .ve-night-mode .source__PHB {
-    color: #337ab7 !important;
-    border-color: #337ab7 !important;
-    text-decoration-color: #337ab7 !important
+    color: #db4c3c !important;
+    border-color: #db4c3c !important;
+    text-decoration-color: #db4c3c !important
 }
 
 .ve-night-mode .source__DMG {
-    color: #ba1eba !important;
-    border-color: #ba1eba !important;
-    text-decoration-color: #ba1eba !important
+    color: #2e6198 !important;
+    border-color: #2e6198 !important;
+    text-decoration-color: #2e6198 !important
 }
 
 .ve-night-mode .source__OGA {
@@ -6376,9 +6422,9 @@ html.is-faux-print .rd__h--1 {
 }
 
 .ve-night-mode .source__XPHB {
-    color: #d98d2a !important;
-    border-color: #d98d2a !important;
-    text-decoration-color: #d98d2a !important
+    color: #ef1946 !important;
+    border-color: #ef1946 !important;
+    text-decoration-color: #ef1946 !important
 }
 
 .ve-night-mode .itm__rarity-alt-common {
