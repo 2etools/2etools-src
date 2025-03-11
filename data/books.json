@@ -3093,7 +3093,7 @@
 						"Changing Personality Types",
 						"The Warrior Campaign",
 						{
-							"header": "Magical World vs. Nonmagical World",
+							"header": "Magical World vs. Non-Magical World",
 							"depth": 1
 						},
 						{
@@ -3101,11 +3101,11 @@
 							"depth": 1
 						},
 						{
-							"header": "Mostly Nonmagical World",
+							"header": "Mostly Non-Magical World",
 							"depth": 1
 						},
 						{
-							"header": "Strictly Nonmagical World",
+							"header": "Strictly Non-Magical World",
 							"depth": 1
 						},
 						"The Mixed-Warrior-Type Campaign",
@@ -3311,7 +3311,7 @@
 							"header": "Characters with Multiple Attacks",
 							"depth": 1
 						},
-						"BLA",
+						"Parry",
 						{
 							"header": "Choice of Parries",
 							"depth": 1
@@ -3683,7 +3683,7 @@
 							"depth": 1
 						},
 						{
-							"header": "Magical Armor",
+							"header": "About Magical Armor",
 							"depth": 1
 						},
 						{
