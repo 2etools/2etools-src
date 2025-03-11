@@ -19596,7 +19596,7 @@
 		{
 			"type": "section",
 			"name": "Index",
-			"page": 314,
+			"page": 250,
 			"entries": [
 				"This index cross-references both the Dungeon Master Guide and the Player's Handbook. Red entries are pages in the DMG.",
 				{
@@ -27200,7 +27200,8 @@
 								"of armor",
 								"101"
 							]
-						},{
+						},
+						{
 							"type": "row",
 							"style": "row-indent-first",
 							"row": [
@@ -27213,9 +27214,17 @@
 							"{@color 176|ef1946}"
 						],
 						[
-							"Were-creatures",
-							"{@color 135, 138|ef1946}"
+							"Wilderness",
+							""
 						],
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"encounters",
+								"{@color 135, 138|ef1946}"
+							]
+						},
 						[
 							"Wisdom",
 							"23, 114, 135"
@@ -27288,7 +27297,7 @@
 				},
 				{
 					"type": "table",
-					"caption": "V",
+					"caption": "X, Y, Z",
 					"page": 319,
 					"colStyles": [
 						"col- text-left",
