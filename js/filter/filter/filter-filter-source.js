@@ -1,6 +1,6 @@
 import {FilterItem} from "../filter-item.js";
 import {Filter} from "./filter-filter-generic.js";
-import {MISC_FILTER_VALUE__BASIC_RULES_2014, MISC_FILTER_VALUE__FREE_RULES_2024, MISC_FILTER_VALUE__SRD_5_1, MISC_FILTER_VALUE__SRD_5_2, PILL_STATE__IGNORE, PILL_STATE__YES, SOURCE_HEADER} from "../filter-constants.js";
+import {MISC_FILTER_VALUE__BASIC_RULES_2014, MISC_FILTER_VALUE__FREE_RULES_2024, PILL_STATE__IGNORE, PILL_STATE__YES, SOURCE_HEADER} from "../filter-constants.js";
 import {PageFilterBase} from "../filter-page-filter-base.js";
 
 export class SourceFilterItem extends FilterItem {
@@ -173,11 +173,6 @@ export class SourceFilter extends Filter {
 			),
 			null,
 			new ContextUtil.Action(
-				"Select SRD Sources",
-				() => this._doSetPinsSrd(),
-				{title: `Select System Reference Document Sources.`},
-			),
-			new ContextUtil.Action(
 				"Select Basic Rules Sources",
 				() => this._doSetPinsBasicRules(),
 			),
@@ -276,27 +271,6 @@ export class SourceFilter extends Filter {
 		Object.keys(this._state).forEach(k => this._state[k] = !SourceUtil.isPrereleaseSource(k) ? PILL_STATE__YES : PILL_STATE__IGNORE);
 	}
 
-	_doSetPinsSrd () {
-		SourceFilter._SRD_SOURCES = SourceFilter._SRD_SOURCES || new Set([Parser.SRC_PHB, Parser.SRC_MM, Parser.SRC_DMG, Parser.SRC_XPHB, Parser.SRC_XDMG, Parser.SRC_XMM]);
-
-		Object.keys(this._state).forEach(k => this._state[k] = SourceFilter._SRD_SOURCES.has(k) ? PILL_STATE__YES : PILL_STATE__IGNORE);
-
-		const srdFilter = this._filterBox.filters.find(it => it.isSrdFilter);
-		if (srdFilter) {
-			srdFilter.setValue(MISC_FILTER_VALUE__SRD_5_1, PILL_STATE__YES);
-			srdFilter.setValue(MISC_FILTER_VALUE__SRD_5_2, PILL_STATE__YES);
-		}
-
-		const basicRulesFilter = this._filterBox.filters.find(it => it.isBasicRulesFilter);
-		if (basicRulesFilter) {
-			basicRulesFilter.setValue(MISC_FILTER_VALUE__BASIC_RULES_2014, PILL_STATE__IGNORE);
-			basicRulesFilter.setValue(MISC_FILTER_VALUE__FREE_RULES_2024, PILL_STATE__IGNORE);
-		}
-
-		// also disable "Reprinted" otherwise some Deities are missing
-		const reprintedFilter = this._filterBox.filters.find(it => it.isReprintedFilter);
-		if (reprintedFilter) reprintedFilter.setValue("Reprinted", PILL_STATE__IGNORE);
-	}
 
 	_doSetPinsBasicRules () {
 		SourceFilter._BASIC_RULES_SOURCES = SourceFilter._BASIC_RULES_SOURCES || new Set([Parser.SRC_PHB, Parser.SRC_MM, Parser.SRC_DMG, Parser.SRC_XPHB, Parser.SRC_XDMG, Parser.SRC_XMM]);
@@ -307,12 +281,6 @@ export class SourceFilter extends Filter {
 		if (basicRulesFilter) {
 			basicRulesFilter.setValue(MISC_FILTER_VALUE__BASIC_RULES_2014, PILL_STATE__YES);
 			basicRulesFilter.setValue(MISC_FILTER_VALUE__FREE_RULES_2024, PILL_STATE__YES);
-		}
-
-		const srdFilter = this._filterBox.filters.find(it => it.isSrdFilter);
-		if (srdFilter) {
-			srdFilter.setValue(MISC_FILTER_VALUE__SRD_5_1, PILL_STATE__IGNORE);
-			srdFilter.setValue(MISC_FILTER_VALUE__SRD_5_2, PILL_STATE__IGNORE);
 		}
 
 		// also disable "Reprinted" otherwise some Deities are missing
@@ -619,5 +587,4 @@ SourceFilter._PILL_DISPLAY_MODE_LABELS = {
 	[SourceFilter._PILL_DISPLAY_MODE__AS_ABVS]: "As Abbreviations",
 	[SourceFilter._PILL_DISPLAY_MODE__AS_BOTH]: "As Names Plus Abbreviations",
 };
-SourceFilter._SRD_SOURCES = null;
 SourceFilter._BASIC_RULES_SOURCES = null;

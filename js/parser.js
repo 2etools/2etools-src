@@ -3214,7 +3214,6 @@ Parser.SRC_DoDk = "DoDk";
 Parser.SRC_ToB1_2023 = "ToB1-2023";
 Parser.SRC_XPHB = "XPHB";
 Parser.SRC_XDMG = "XDMG";
-Parser.SRC_XMM = "XMM";
 Parser.SRC_TD = "TD";
 Parser.SRC_SCREEN = "Screen";
 Parser.SRC_SCREEN_WILDERNESS_KIT = "ScreenWildernessKit";
@@ -3295,8 +3294,8 @@ Parser.AA_PREFIX = "Adventure Atlas: ";
 Parser.PHBR_PREFIX = "The Complete ";
 
 Parser.SOURCE_JSON_TO_FULL = {};
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHB] = "Player's Handbook (1989)";
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMG] = "Dungeon Master Guide (1989)";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHB] = "Player's Handbook";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMG] = "Dungeon Master Guide";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_MM] = "Monstrous Manual";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR1] = `${Parser.PHBR_PREFIX}Fighter's Handbook`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR2] = `${Parser.PHBR_PREFIX}Thief's Handbook`;
@@ -3426,9 +3425,8 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_VEoR] = "Vecna: Eve of Ruin";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_GHLoE] = "Grim Hollow: Lairs of Etharis";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DoDk] = "Dungeons of Drakkenheim";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_ToB1_2023] = "Tome of Beasts 1 (2023 Edition)";
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_XPHB] = "Player's Handbook (1995)";
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_XDMG] = "Dungeon Master Guide (1995)";
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_XMM] = "Monster Manual";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_XPHB] = "Player's Handbook (Revised)";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_XDMG] = "Dungeon Master Guide (Revised)";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_TD] = "Tarot Deck";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN] = "Dungeon Master's Screen";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN_WILDERNESS_KIT] = "Dungeon Master's Screen: Wilderness Kit";
@@ -3485,7 +3483,7 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_AATM] = `${Parser.AA_PREFIX}The Mortuary`;
 Parser.SOURCE_JSON_TO_ABV = {};
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHB] = "PHB'89";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMG] = "DMG'89";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_MM] = "MM'14";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_MM] = "MM";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR1] = "TCFH";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR2] = "TCTH";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR3] = "TCPrH";
@@ -3616,7 +3614,6 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DoDk] = "DoDk";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_ToB1_2023] = "ToB1'23";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_XPHB] = "PHB'95";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_XDMG] = "DMG'95";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_XMM] = "MM";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_TD] = "TD";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN] = "Scr'14";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN_WILDERNESS_KIT] = "ScrWild";
@@ -3803,7 +3800,6 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DoDk] = "2023-12-21";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_ToB1_2023] = "2023-05-31";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_XPHB] = "1995-04-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_XDMG] = "1995-04-01";
-Parser.SOURCE_JSON_TO_DATE[Parser.SRC_XMM] = "2025-02-18";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_TD] = "2022-05-24";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN] = "2015-01-20";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN_WILDERNESS_KIT] = "2020-11-17";
@@ -4016,7 +4012,6 @@ Parser.SOURCES_PARTNERED_WOTC = new Set([
 Parser.SOURCES_LEGACY_WOTC = new Set([
 	Parser.SRC_PHB,
 	Parser.SRC_DMG,
-	Parser.SRC_MM,
 	Parser.SRC_SCREEN,
 	Parser.SRC_EEPC,
 	Parser.SRC_MTF,
@@ -4024,14 +4019,16 @@ Parser.SOURCES_LEGACY_WOTC = new Set([
 
 // An opinionated set of source that could be considered "core-core"
 Parser.SOURCES_VANILLA = new Set([
-	// Parser.SRC_DMG, // "Legacy" source, removed in favor of XDMG
-	// Parser.SRC_MM, // "Legacy" source, removed in favor of XMM
-	// Parser.SRC_PHB, // "Legacy" source, removed in favor of XPHB
+	Parser.SRC_XPHB,
 	Parser.SRC_XDMG,
-	Parser.SRC_XMM,
+	Parser.SRC_MM,
+	Parser.SRC_XSCREEN,
+	Parser.SRC_SCREEN_WILDERNESS_KIT,
+	Parser.SRC_SCREEN_DUNGEON_KIT,
+	// Parser.SRC_DMG, // "Legacy" source, removed in favor of XDMG
+	// Parser.SRC_PHB, // "Legacy" source, removed in favor of XPHB
 	Parser.SRC_PHBR1,
 	Parser.SRC_VGM,
-	Parser.SRC_XPHB,
 	Parser.SRC_SCAG,
 	// Parser.SRC_TTP, // "Legacy" source, removed in favor of MPMM
 	// Parser.SRC_VGM, // "Legacy" source, removed in favor of MPMM
@@ -4044,9 +4041,6 @@ Parser.SOURCES_VANILLA = new Set([
 	Parser.SRC_FTD,
 	Parser.SRC_MPMM,
 	// Parser.SRC_SCREEN, // "Legacy" source, removed in favor of XSCREEN
-	Parser.SRC_XSCREEN,
-	Parser.SRC_SCREEN_WILDERNESS_KIT,
-	Parser.SRC_SCREEN_DUNGEON_KIT,
 	Parser.SRC_VD,
 	Parser.SRC_GotSF,
 	Parser.SRC_BGG,
@@ -4162,7 +4156,6 @@ Parser.SOURCES_AVAILABLE_DOCS_BOOK = {};
 	Parser.SRC_DMTCRG,
 	Parser.SRC_ToB1_2023,
 	Parser.SRC_XPHB,
-	Parser.SRC_XMM,
 	Parser.SRC_XDMG,
 	Parser.SRC_XSCREEN,
 	Parser.SRC_TD,

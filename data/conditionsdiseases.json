@@ -4,8 +4,6 @@
 			"name": "Blinded",
 			"source": "PHB",
 			"page": 290,
-			"srd": true,
-			"basicRules": true,
 			"otherSources": [
 				{
 					"source": "RMR",
@@ -62,8 +60,6 @@
 			"name": "Charmed",
 			"source": "PHB",
 			"page": 290,
-			"srd": true,
-			"basicRules": true,
 			"otherSources": [
 				{
 					"source": "RMR",
@@ -120,8 +116,7 @@
 			"name": "Deafened",
 			"source": "PHB",
 			"page": 290,
-			"srd": true,
-			"basicRules": true,
+			
 			"otherSources": [
 				{
 					"source": "RMR",
@@ -170,8 +165,7 @@
 			"name": "Exhaustion",
 			"source": "PHB",
 			"page": 291,
-			"srd": true,
-			"basicRules": true,
+			
 			"otherSources": [
 				{
 					"source": "RMR",
@@ -272,8 +266,7 @@
 			"name": "Frightened",
 			"source": "PHB",
 			"page": 290,
-			"srd": true,
-			"basicRules": true,
+			
 			"otherSources": [
 				{
 					"source": "RMR",
@@ -330,8 +323,7 @@
 			"name": "Grappled",
 			"source": "PHB",
 			"page": 290,
-			"srd": true,
-			"basicRules": true,
+			
 			"otherSources": [
 				{
 					"source": "RMR",
@@ -396,8 +388,7 @@
 			"name": "Incapacitated",
 			"source": "PHB",
 			"page": 290,
-			"srd": true,
-			"basicRules": true,
+			
 			"otherSources": [
 				{
 					"source": "RMR",
@@ -466,8 +457,7 @@
 			"name": "Invisible",
 			"source": "PHB",
 			"page": 291,
-			"srd": true,
-			"basicRules": true,
+			
 			"otherSources": [
 				{
 					"source": "RMR",
@@ -531,8 +521,7 @@
 			"name": "Paralyzed",
 			"source": "PHB",
 			"page": 291,
-			"srd": true,
-			"basicRules": true,
+			
 			"otherSources": [
 				{
 					"source": "RMR",
@@ -612,8 +601,7 @@
 			"name": "Petrified",
 			"source": "PHB",
 			"page": 291,
-			"srd": true,
-			"basicRules": true,
+			
 			"otherSources": [
 				{
 					"source": "RMR",
@@ -709,8 +697,7 @@
 			"name": "Poisoned",
 			"source": "PHB",
 			"page": 292,
-			"srd": true,
-			"basicRules": true,
+			
 			"otherSources": [
 				{
 					"source": "RMR",
@@ -759,8 +746,7 @@
 			"name": "Prone",
 			"source": "PHB",
 			"page": 292,
-			"srd": true,
-			"basicRules": true,
+			
 			"otherSources": [
 				{
 					"source": "RMR",
@@ -818,8 +804,7 @@
 			"name": "Restrained",
 			"source": "PHB",
 			"page": 292,
-			"srd": true,
-			"basicRules": true,
+			
 			"otherSources": [
 				{
 					"source": "RMR",
@@ -884,8 +869,7 @@
 			"name": "Stunned",
 			"source": "PHB",
 			"page": 292,
-			"srd": true,
-			"basicRules": true,
+			
 			"otherSources": [
 				{
 					"source": "RMR",
@@ -950,8 +934,7 @@
 			"name": "Unconscious",
 			"source": "PHB",
 			"page": 292,
-			"srd": true,
-			"basicRules": true,
+			
 			"otherSources": [
 				{
 					"source": "RMR",
@@ -1421,8 +1404,7 @@
 			"name": "Concentration",
 			"source": "PHB",
 			"page": 203,
-			"srd": true,
-			"basicRules": true,
+			
 			"reprintedAs": [
 				"Concentration|XPHB"
 			],
@@ -1480,8 +1462,7 @@
 			"name": "Surprised",
 			"source": "PHB",
 			"page": 189,
-			"srd": true,
-			"basicRules": true,
+			
 			"reprintedAs": [
 				"Surprised|XPHB"
 			],

@@ -3,36 +3,8 @@
 		"Air Bubble": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -47,10 +19,6 @@
 					"source": "PHB"
 				},
 				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -61,35 +29,11 @@
 		"Distort Value": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				},
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
 					"source": "XPHB"
 				}
 			]
@@ -97,24 +41,8 @@
 		"Fast Friends": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -125,16 +53,8 @@
 		"Gift of Gab": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -145,27 +65,11 @@
 		"Incite Greed": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				},
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
 					"source": "XPHB"
 				}
 			]
@@ -197,18 +101,6 @@
 		"Motivational Speech": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
 					"name": "Cleric",
 					"source": "XPHB"
 				}
@@ -219,28 +111,8 @@
 		"Linked Glyphs": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -253,28 +125,8 @@
 		"Ashardalon's Stride": {
 			"class": [
 				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -285,24 +137,8 @@
 		"Draconic Transformation": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -313,16 +149,8 @@
 		"Fizban's Platinum Shield": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -333,24 +161,8 @@
 		"Nathair's Mischief": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -361,32 +173,8 @@
 		"Raulothim's Psychic Lance": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -397,16 +185,8 @@
 		"Rime's Binding Ice": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -416,14 +196,6 @@
 		},
 		"Summon Draconic Spirit": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -461,16 +233,8 @@
 		"Flock of Familiars": {
 			"class": [
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -481,16 +245,8 @@
 		"Galder's Speedy Courier": {
 			"class": [
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -515,29 +271,13 @@
 		"Acid Splash": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Aid": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
 				{
 					"name": "Artificer",
 					"source": "TCE"
@@ -559,45 +299,21 @@
 		"Alarm": {
 			"class": [
 				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Alter Self": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Animal Friendship": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "PHB"
@@ -606,14 +322,6 @@
 		},
 		"Animal Messenger": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "PHB"
@@ -631,10 +339,6 @@
 		"Animate Dead": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -643,20 +347,8 @@
 		"Animate Objects": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -671,10 +363,6 @@
 		"Antimagic Field": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -682,10 +370,6 @@
 		},
 		"Antipathy/Sympathy": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -704,23 +388,11 @@
 				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Arcane Gate": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -732,10 +404,6 @@
 				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -758,19 +426,7 @@
 		"Astral Projection": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
-					"source": "PHB"
-				},
-				{
-					"name": "Monk",
 					"source": "PHB"
 				}
 			]
@@ -831,26 +487,10 @@
 					"name": "Paladin",
 					"source": "PHB"
 				}
-			],
-			"classVariant": [
-				{
-					"name": "Cleric",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				}
 			]
 		},
 		"Awaken": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
 				{
 					"name": "Druid",
 					"source": "PHB"
@@ -859,10 +499,6 @@
 		},
 		"Bane": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
 				{
 					"name": "Cleric",
 					"source": "PHB"
@@ -880,22 +516,6 @@
 		"Banishment": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -903,10 +523,6 @@
 		},
 		"Barkskin": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "PHB"
@@ -924,10 +540,6 @@
 		"Beast Sense": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "PHB"
 				}
@@ -935,14 +547,6 @@
 		},
 		"Bestow Curse": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -954,10 +558,6 @@
 				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			],
 			"classVariant": [
@@ -979,18 +579,6 @@
 		"Blade Ward": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -999,10 +587,6 @@
 		"Bless": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "PHB"
 				}
@@ -1010,18 +594,6 @@
 		},
 		"Blight": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -1039,18 +611,6 @@
 		"Blindness/Deafness": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -1059,32 +619,16 @@
 		"Blink": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Blur": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -1098,10 +642,6 @@
 		},
 		"Burning Hands": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -1119,10 +659,6 @@
 		"Calm Emotions": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
 					"name": "Cleric",
 					"source": "PHB"
 				}
@@ -1130,10 +666,6 @@
 		},
 		"Chain Lightning": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -1143,22 +675,6 @@
 		"Charm Person": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -1166,14 +682,6 @@
 		},
 		"Chill Touch": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -1183,10 +691,6 @@
 		"Chromatic Orb": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -1194,14 +698,6 @@
 		},
 		"Circle of Death": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -1219,18 +715,6 @@
 		"Clairvoyance": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -1247,18 +731,6 @@
 		"Cloud of Daggers": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -1267,10 +739,6 @@
 		"Cloudkill": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -1278,10 +746,6 @@
 		},
 		"Color Spray": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -1297,10 +761,6 @@
 		},
 		"Command": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
 				{
 					"name": "Paladin",
 					"source": "PHB"
@@ -1325,10 +785,6 @@
 		"Commune with Nature": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "PHB"
 				}
@@ -1344,18 +800,6 @@
 		},
 		"Comprehend Languages": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -1373,10 +817,6 @@
 		"Cone of Cold": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -1392,18 +832,6 @@
 		"Confusion": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -1411,10 +839,6 @@
 		},
 		"Conjure Animals": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "PHB"
@@ -1440,10 +864,6 @@
 		"Conjure Elemental": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -1452,10 +872,6 @@
 		"Conjure Fey": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Warlock",
 					"source": "PHB"
 				}
@@ -1463,10 +879,6 @@
 		},
 		"Conjure Minor Elementals": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -1484,10 +896,6 @@
 		"Conjure Woodland Beings": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "PHB"
 				}
@@ -1496,10 +904,6 @@
 		"Contact Other Plane": {
 			"class": [
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -1507,10 +911,6 @@
 		},
 		"Contagion": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
 				{
 					"name": "Druid",
 					"source": "PHB"
@@ -1528,16 +928,8 @@
 		"Continual Flame": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			],
 			"classVariant": [
@@ -1551,14 +943,6 @@
 		"Control Water": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -1566,14 +950,6 @@
 		},
 		"Control Weather": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -1591,14 +967,6 @@
 		"Counterspell": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -1606,14 +974,6 @@
 		},
 		"Create Food and Water": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
 				{
 					"name": "Artificer",
 					"source": "TCE"
@@ -1623,10 +983,6 @@
 		"Create or Destroy Water": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Druid",
 					"source": "PHB"
 				}
@@ -1634,14 +990,6 @@
 		},
 		"Create Undead": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -1651,33 +999,13 @@
 		"Creation": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Crown of Madness": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -1695,26 +1023,6 @@
 		"Cure Wounds": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
 					"name": "Artificer",
 					"source": "TCE"
 				}
@@ -1723,33 +1031,13 @@
 		"Dancing Lights": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Darkness": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -1759,45 +1047,13 @@
 		"Darkvision": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Daylight": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
 				{
 					"name": "Sorcerer",
 					"source": "PHB"
@@ -1807,10 +1063,6 @@
 		"Death Ward": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "PHB"
 				}
@@ -1819,10 +1071,6 @@
 		"Delayed Blast Fireball": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -1830,10 +1078,6 @@
 		},
 		"Demiplane": {
 			"class": [
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -1858,10 +1102,6 @@
 		"Detect Evil and Good": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "PHB"
 				}
@@ -1870,53 +1110,13 @@
 		"Detect Magic": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Detect Poison and Disease": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "PHB"
@@ -1926,14 +1126,6 @@
 		"Detect Thoughts": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -1941,18 +1133,6 @@
 		},
 		"Dimension Door": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -1962,29 +1142,13 @@
 		"Disguise Self": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Disintegrate": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -1994,10 +1158,6 @@
 		"Dispel Evil and Good": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "PHB"
 				}
@@ -2006,36 +1166,8 @@
 		"Dispel Magic": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -2086,10 +1218,6 @@
 		"Dominate Beast": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Sorcerer",
 					"source": "PHB"
 				}
@@ -2105,18 +1233,6 @@
 		"Dominate Monster": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -2124,14 +1240,6 @@
 		},
 		"Dominate Person": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -2149,14 +1257,6 @@
 		"Dream": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -2173,14 +1273,6 @@
 		"Earthquake": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Sorcerer",
 					"source": "PHB"
 				}
@@ -2196,10 +1288,6 @@
 		},
 		"Elemental Weapon": {
 			"class": [
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
 				{
 					"name": "Artificer",
 					"source": "TCE"
@@ -2221,22 +1309,6 @@
 		"Enhance Ability": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Artificer",
 					"source": "TCE"
 				}
@@ -2257,16 +1329,8 @@
 		"Enlarge/Reduce": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			],
 			"classVariant": [
@@ -2308,10 +1372,6 @@
 		"Enthrall": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
 					"name": "Warlock",
 					"source": "PHB"
 				}
@@ -2319,22 +1379,6 @@
 		},
 		"Etherealness": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -2352,37 +1396,13 @@
 		"Expeditious Retreat": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Eyebite": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -2394,23 +1414,11 @@
 				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Faerie Fire": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Artificer",
 					"source": "TCE"
@@ -2420,33 +1428,13 @@
 		"False Life": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Fear": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -2456,37 +1444,13 @@
 		"Feather Fall": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Feeblemind": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -2495,18 +1459,6 @@
 		},
 		"Feign Death": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -2532,14 +1484,6 @@
 		"Find the Path": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Druid",
 					"source": "PHB"
 				}
@@ -2547,14 +1491,6 @@
 		},
 		"Find Traps": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "PHB"
@@ -2564,14 +1500,6 @@
 		"Finger of Death": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -2580,16 +1508,8 @@
 		"Fire Bolt": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -2616,14 +1536,6 @@
 		"Fire Storm": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Sorcerer",
 					"source": "PHB"
 				}
@@ -2631,10 +1543,6 @@
 		},
 		"Fireball": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -2667,10 +1575,6 @@
 		"Flaming Sphere": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -2685,10 +1589,6 @@
 		},
 		"Flesh to Stone": {
 			"class": [
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -2710,37 +1610,13 @@
 		"Fly": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Fog Cloud": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -2758,14 +1634,6 @@
 		"Forcecage": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -2773,18 +1641,6 @@
 		},
 		"Foresight": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -2794,22 +1650,6 @@
 		"Freedom of Movement": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
 					"name": "Artificer",
 					"source": "TCE"
 				}
@@ -2817,18 +1657,6 @@
 		},
 		"Friends": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -2838,14 +1666,6 @@
 		"Gaseous Form": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -2853,14 +1673,6 @@
 		},
 		"Gate": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -2877,22 +1689,6 @@
 		"Geas": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -2900,10 +1696,6 @@
 		},
 		"Gentle Repose": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -2928,10 +1720,6 @@
 		"Glibness": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
 					"name": "Warlock",
 					"source": "PHB"
 				}
@@ -2939,10 +1727,6 @@
 		},
 		"Globe of Invulnerability": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -2952,29 +1736,13 @@
 		"Glyph of Warding": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Goodberry": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "PHB"
@@ -2983,10 +1751,6 @@
 		},
 		"Grasping Vine": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "PHB"
@@ -2998,10 +1762,6 @@
 				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			],
 			"classVariant": [
@@ -3015,14 +1775,6 @@
 		"Greater Invisibility": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -3030,18 +1782,6 @@
 		},
 		"Greater Restoration": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Artificer",
 					"source": "TCE"
@@ -3066,10 +1806,6 @@
 		"Guards and Wards": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -3077,14 +1813,6 @@
 		},
 		"Guidance": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Artificer",
 					"source": "TCE"
@@ -3101,14 +1829,6 @@
 		},
 		"Gust of Wind": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -3141,18 +1861,6 @@
 		"Hallucinatory Terrain": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -3169,25 +1877,13 @@
 		"Haste": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Heal": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
 				{
 					"name": "Druid",
 					"source": "PHB"
@@ -3197,14 +1893,6 @@
 		"Healing Word": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Druid",
 					"source": "PHB"
 				}
@@ -3212,14 +1900,6 @@
 		},
 		"Heat Metal": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Artificer",
 					"source": "TCE"
@@ -3237,10 +1917,6 @@
 		"Heroes' Feast": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Druid",
 					"source": "PHB"
 				}
@@ -3255,10 +1931,6 @@
 		},
 		"Heroism": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
 				{
 					"name": "Paladin",
 					"source": "PHB"
@@ -3276,18 +1948,6 @@
 		"Hold Monster": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -3295,26 +1955,6 @@
 		},
 		"Hold Person": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -3348,18 +1988,6 @@
 		"Hypnotic Pattern": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -3367,14 +1995,6 @@
 		},
 		"Ice Storm": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -3384,29 +2004,13 @@
 		"Identify": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Illusory Script": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -3416,10 +2020,6 @@
 		"Imprisonment": {
 			"class": [
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -3427,10 +2027,6 @@
 		},
 		"Incendiary Cloud": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -3455,14 +2051,6 @@
 		"Insect Plague": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Sorcerer",
 					"source": "PHB"
 				}
@@ -3471,61 +2059,21 @@
 		"Invisibility": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Jump": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Knock": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -3534,14 +2082,6 @@
 		},
 		"Legend Lore": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -3553,19 +2093,11 @@
 				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Leomund's Tiny Hut": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -3575,26 +2107,6 @@
 		"Lesser Restoration": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
 					"name": "Artificer",
 					"source": "TCE"
 				}
@@ -3603,40 +2115,16 @@
 		"Levitate": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Light": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -3651,10 +2139,6 @@
 		"Lightning Bolt": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -3662,14 +2146,6 @@
 		},
 		"Locate Animals or Plants": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "PHB"
@@ -3679,26 +2155,6 @@
 		"Locate Creature": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -3706,26 +2162,6 @@
 		},
 		"Locate Object": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -3735,33 +2171,13 @@
 		"Longstrider": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Mage Armor": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -3771,41 +2187,13 @@
 		"Mage Hand": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Magic Circle": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -3823,10 +2211,6 @@
 		"Magic Missile": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -3835,32 +2219,16 @@
 		"Magic Mouth": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Magic Weapon": {
 			"class": [
 				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			],
 			"classVariant": [
@@ -3879,18 +2247,6 @@
 		"Major Image": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -3898,14 +2254,6 @@
 		},
 		"Mass Cure Wounds": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
 				{
 					"name": "Druid",
 					"source": "PHB"
@@ -3938,18 +2286,6 @@
 		"Mass Suggestion": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -3965,10 +2301,6 @@
 		},
 		"Meld into Stone": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
 				{
 					"name": "Druid",
 					"source": "PHB"
@@ -3993,57 +2325,21 @@
 		"Mending": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Message": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Meteor Swarm": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -4053,10 +2349,6 @@
 		"Mind Blank": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -4064,18 +2356,6 @@
 		},
 		"Minor Illusion": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -4085,14 +2365,6 @@
 		"Mirage Arcane": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -4100,14 +2372,6 @@
 		},
 		"Mirror Image": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -4124,10 +2388,6 @@
 		"Mislead": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -4143,14 +2403,6 @@
 		"Misty Step": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -4158,10 +2410,6 @@
 		},
 		"Modify Memory": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -4181,19 +2429,11 @@
 				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Mordenkainen's Magnificent Mansion": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -4205,19 +2445,11 @@
 				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Mordenkainen's Sword": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -4227,14 +2459,6 @@
 		"Move Earth": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -4242,14 +2466,6 @@
 		},
 		"Nondetection": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -4284,19 +2500,11 @@
 				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Otto's Irresistible Dance": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -4305,10 +2513,6 @@
 		},
 		"Pass without Trace": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "PHB"
@@ -4325,14 +2529,6 @@
 		},
 		"Phantasmal Force": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -4373,18 +2569,6 @@
 		"Planar Binding": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -4400,22 +2584,6 @@
 		"Plane Shift": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -4423,14 +2591,6 @@
 		},
 		"Plant Growth": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "PHB"
@@ -4440,41 +2600,13 @@
 		"Poison Spray": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Polymorph": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -4499,18 +2631,6 @@
 		"Power Word Kill": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -4518,18 +2638,6 @@
 		},
 		"Power Word Stun": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -4554,33 +2662,13 @@
 		"Prestidigitation": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Prismatic Spray": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -4620,10 +2708,6 @@
 		"Programmed Illusion": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -4631,10 +2715,6 @@
 		},
 		"Project Image": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -4644,45 +2724,13 @@
 		"Protection from Energy": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Protection from Evil and Good": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -4699,22 +2747,6 @@
 		"Protection from Poison": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
 					"name": "Artificer",
 					"source": "TCE"
 				}
@@ -4723,18 +2755,6 @@
 		"Purify Food and Drink": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
 					"name": "Artificer",
 					"source": "TCE"
 				}
@@ -4742,14 +2762,6 @@
 		},
 		"Raise Dead": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
 				{
 					"name": "Paladin",
 					"source": "PHB"
@@ -4774,10 +2786,6 @@
 		"Ray of Enfeeblement": {
 			"class": [
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -4786,25 +2794,13 @@
 		"Ray of Frost": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Ray of Sickness": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -4813,14 +2809,6 @@
 		},
 		"Regenerate": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
 				{
 					"name": "Druid",
 					"source": "PHB"
@@ -4838,18 +2826,6 @@
 		"Remove Curse": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -4857,14 +2833,6 @@
 		},
 		"Resistance": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Artificer",
 					"source": "TCE"
@@ -4874,10 +2842,6 @@
 		"Resurrection": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
 					"name": "Cleric",
 					"source": "PHB"
 				}
@@ -4886,14 +2850,6 @@
 		"Reverse Gravity": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -4901,14 +2857,6 @@
 		},
 		"Revivify": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
 				{
 					"name": "Artificer",
 					"source": "TCE"
@@ -4932,10 +2880,6 @@
 				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -4950,10 +2894,6 @@
 		"Sanctuary": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Artificer",
 					"source": "TCE"
 				}
@@ -4962,10 +2902,6 @@
 		"Scorching Ray": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -4973,22 +2909,6 @@
 		},
 		"Scrying": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -5013,33 +2933,13 @@
 		"See Invisibility": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Seeming": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -5048,14 +2948,6 @@
 		},
 		"Sending": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -5073,10 +2965,6 @@
 		"Shapechange": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -5084,18 +2972,6 @@
 		},
 		"Shatter": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -5105,10 +2981,6 @@
 		"Shield": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -5116,10 +2988,6 @@
 		},
 		"Shield of Faith": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
 				{
 					"name": "Paladin",
 					"source": "PHB"
@@ -5137,29 +3005,13 @@
 		"Shocking Grasp": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Silence": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "PHB"
@@ -5168,14 +3020,6 @@
 		},
 		"Silent Image": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -5193,14 +3037,6 @@
 		"Sleep": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -5209,14 +3045,6 @@
 		"Sleet Storm": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -5224,10 +3052,6 @@
 		},
 		"Slow": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -5244,10 +3068,6 @@
 		"Spare the Dying": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Artificer",
 					"source": "TCE"
 				}
@@ -5256,14 +3076,6 @@
 		"Speak with Animals": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "PHB"
 				}
@@ -5271,10 +3083,6 @@
 		},
 		"Speak with Dead": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
 				{
 					"name": "Cleric",
 					"source": "PHB"
@@ -5291,14 +3099,6 @@
 		"Speak with Plants": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "PHB"
 				}
@@ -5307,29 +3107,13 @@
 		"Spider Climb": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Spike Growth": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "PHB"
@@ -5363,14 +3147,6 @@
 		"Stinking Cloud": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -5379,44 +3155,16 @@
 		"Stone Shape": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Stoneskin": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -5431,18 +3179,6 @@
 		"Suggestion": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -5450,14 +3186,6 @@
 		},
 		"Sunbeam": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -5473,14 +3201,6 @@
 		},
 		"Sunburst": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -5505,14 +3225,6 @@
 		"Symbol": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -5528,10 +3240,6 @@
 		"Tasha's Hideous Laughter": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -5539,10 +3247,6 @@
 		},
 		"Telekinesis": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -5560,14 +3264,6 @@
 		"Teleport": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -5575,14 +3271,6 @@
 		},
 		"Teleportation Circle": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -5615,10 +3303,6 @@
 		"Thorn Whip": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Artificer",
 					"source": "TCE"
 				}
@@ -5635,18 +3319,6 @@
 		"Thunderwave": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -5655,10 +3327,6 @@
 		"Time Stop": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -5666,22 +3334,6 @@
 		},
 		"Tongues": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -5699,10 +3351,6 @@
 		"Tree Stride": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "PHB"
 				}
@@ -5710,14 +3358,6 @@
 		},
 		"True Polymorph": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -5727,10 +3367,6 @@
 		"True Resurrection": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Druid",
 					"source": "PHB"
 				}
@@ -5739,22 +3375,6 @@
 		"True Seeing": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -5762,18 +3382,6 @@
 		},
 		"True Strike": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -5791,14 +3399,6 @@
 		"Unseen Servant": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -5806,10 +3406,6 @@
 		},
 		"Vampiric Touch": {
 			"class": [
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -5833,14 +3429,6 @@
 		},
 		"Wall of Fire": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -5866,20 +3454,8 @@
 		"Wall of Stone": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -5909,45 +3485,13 @@
 		"Water Breathing": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Water Walk": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Artificer",
 					"source": "TCE"
@@ -5957,16 +3501,8 @@
 		"Web": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -5996,10 +3532,6 @@
 		"Wind Wall": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "PHB"
 				}
@@ -6008,10 +3540,6 @@
 		"Wish": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -6019,14 +3547,6 @@
 		},
 		"Witch Bolt": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -6051,14 +3571,6 @@
 		},
 		"Zone of Truth": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
 				{
 					"name": "Paladin",
 					"source": "PHB"
@@ -6140,32 +3652,8 @@
 		"Borrowed Knowledge": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -6176,28 +3664,8 @@
 		"Kinetic Jaunt": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -6208,24 +3676,8 @@
 		"Silvery Barbs": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -6236,20 +3688,8 @@
 		"Vortex Warp": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -6260,24 +3700,8 @@
 		"Wither and Bloom": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -6323,10 +3747,6 @@
 		},
 		"Booming Blade": {
 			"class": [
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
 				{
 					"name": "Sorcerer",
 					"source": "PHB",
@@ -6437,10 +3857,6 @@
 		},
 		"Green-Flame Blade": {
 			"class": [
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
 				{
 					"name": "Sorcerer",
 					"source": "PHB",
@@ -6557,10 +3973,6 @@
 		},
 		"Lightning Lure": {
 			"class": [
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
 				{
 					"name": "Sorcerer",
 					"source": "PHB",
@@ -6843,10 +4255,6 @@
 		"Sword Burst": {
 			"class": [
 				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
 					"name": "Sorcerer",
 					"source": "PHB",
 					"definedInSource": "SCAG"
@@ -7003,26 +4411,6 @@
 		"Freedom of the Waves": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
 					"name": "Sorcerer",
 					"source": "XPHB"
 				}
@@ -7030,26 +4418,6 @@
 		},
 		"Freedom of the Winds": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "XPHB"
@@ -7061,16 +4429,8 @@
 		"Abi-Dalzim's Horrid Wilting": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7081,36 +4441,8 @@
 		"Absorb Elements": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7121,16 +4453,8 @@
 		"Aganazzar's Scorcher": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7141,18 +4465,6 @@
 		"Beast Bond": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "XPHB"
 				}
@@ -7162,10 +4474,6 @@
 			"class": [
 				{
 					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
 					"source": "XPHB"
 				}
 			]
@@ -7173,20 +4481,8 @@
 		"Catapult": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7197,28 +4493,8 @@
 		"Catnap": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7229,16 +4505,8 @@
 		"Cause Fear": {
 			"class": [
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7249,18 +4517,6 @@
 		"Ceremony": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
 				}
@@ -7270,32 +4526,12 @@
 			"class": [
 				{
 					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
 					"source": "XPHB"
 				}
 			]
 		},
 		"Charm Monster": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -7305,24 +4541,8 @@
 		"Control Flames": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7333,24 +4553,8 @@
 		"Control Winds": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7361,36 +4565,8 @@
 		"Create Bonfire": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7413,24 +4589,8 @@
 		"Crown of Stars": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7441,16 +4601,8 @@
 		"Danse Macabre": {
 			"class": [
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7461,16 +4613,8 @@
 		"Dawn": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7481,10 +4625,6 @@
 		"Dragon's Breath": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -7494,10 +4634,6 @@
 			"class": [
 				{
 					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
 					"source": "XPHB"
 				}
 			]
@@ -7505,24 +4641,8 @@
 		"Dust Devil": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7533,32 +4653,8 @@
 		"Earth Tremor": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7569,32 +4665,8 @@
 		"Earthbind": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7605,28 +4677,8 @@
 		"Elemental Bane": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7637,32 +4689,8 @@
 		"Enemies Abound": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7673,24 +4701,8 @@
 		"Enervation": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7701,24 +4713,8 @@
 		"Erupting Earth": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7729,24 +4725,8 @@
 		"Far Step": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7758,10 +4738,6 @@
 			"class": [
 				{
 					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
 					"source": "XPHB"
 				}
 			]
@@ -7769,36 +4745,8 @@
 		"Flame Arrows": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7809,36 +4757,8 @@
 		"Frostbite": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7849,18 +4769,6 @@
 		"Guardian of Nature": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "XPHB"
 				}
@@ -7869,24 +4777,8 @@
 		"Gust": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7897,18 +4789,6 @@
 		"Healing Spirit": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "XPHB"
 				}
@@ -7917,18 +4797,6 @@
 		"Holy Weapon": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Paladin",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
 				}
@@ -7936,14 +4804,6 @@
 		},
 		"Ice Knife": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -7965,16 +4825,8 @@
 		"Immolation": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -7985,16 +4837,8 @@
 		"Infernal Calling": {
 			"class": [
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8005,32 +4849,8 @@
 		"Infestation": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8041,32 +4861,8 @@
 		"Investiture of Flame": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8077,32 +4873,8 @@
 		"Investiture of Ice": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8113,32 +4885,8 @@
 		"Investiture of Stone": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8149,32 +4897,8 @@
 		"Investiture of Wind": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8197,16 +4921,8 @@
 		"Life Transference": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8217,16 +4933,8 @@
 		"Maddening Darkness": {
 			"class": [
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8238,32 +4946,12 @@
 			"class": [
 				{
 					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
 					"source": "XPHB"
 				}
 			]
 		},
 		"Magic Stone": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Warlock",
 					"source": "XPHB"
@@ -8273,24 +4961,8 @@
 		"Mass Polymorph": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8301,16 +4973,8 @@
 		"Maximilian's Earthen Grasp": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8321,16 +4985,8 @@
 		"Melf's Minute Meteors": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8341,24 +4997,8 @@
 		"Mental Prison": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8381,14 +5021,6 @@
 		"Mind Spike": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -8397,24 +5029,8 @@
 		"Mold Earth": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8425,16 +5041,8 @@
 		"Negative Energy Flood": {
 			"class": [
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8445,24 +5053,8 @@
 		"Power Word Pain": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8474,20 +5066,12 @@
 			"class": [
 				{
 					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
 					"source": "XPHB"
 				}
 			]
 		},
 		"Primordial Ward": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
 				{
 					"name": "Druid",
 					"source": "XPHB"
@@ -8497,32 +5081,8 @@
 		"Psychic Scream": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8533,28 +5093,8 @@
 		"Pyrotechnics": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8565,24 +5105,8 @@
 		"Scatter": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8593,24 +5117,8 @@
 		"Shadow Blade": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8622,10 +5130,6 @@
 			"class": [
 				{
 					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
 					"source": "XPHB"
 				}
 			]
@@ -8633,24 +5137,8 @@
 		"Shape Water": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8661,24 +5149,8 @@
 		"Sickening Radiance": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8689,28 +5161,8 @@
 		"Skill Empowerment": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8721,28 +5173,8 @@
 		"Skywrite": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8753,28 +5185,8 @@
 		"Snare": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8785,16 +5197,8 @@
 		"Snilloc's Snowball Swarm": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8805,16 +5209,8 @@
 		"Soul Cage": {
 			"class": [
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8825,10 +5221,6 @@
 		"Steel Wind Strike": {
 			"class": [
 				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -8837,16 +5229,8 @@
 		"Storm Sphere": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8857,16 +5241,8 @@
 		"Summon Greater Demon": {
 			"class": [
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8877,16 +5253,8 @@
 		"Summon Lesser Demons": {
 			"class": [
 				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8897,18 +5265,6 @@
 		"Synaptic Static": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -8916,10 +5272,6 @@
 		},
 		"Temple of the Gods": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
 				{
 					"name": "Cleric",
 					"source": "XPHB"
@@ -8941,24 +5293,8 @@
 		"Thunder Step": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -8969,52 +5305,16 @@
 		"Thunderclap": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Tidal Wave": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -9029,10 +5329,6 @@
 					"source": "PHB"
 				},
 				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -9040,14 +5336,6 @@
 		},
 		"Toll the Dead": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "PHB"
@@ -9057,20 +5345,8 @@
 		"Transmute Rock": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -9081,10 +5357,6 @@
 		"Vitriolic Sphere": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
 				}
@@ -9093,24 +5365,8 @@
 		"Wall of Light": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -9133,24 +5389,8 @@
 		"Wall of Water": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -9161,32 +5401,8 @@
 		"Warding Wind": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -9197,24 +5413,8 @@
 		"Watery Sphere": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -9225,24 +5425,8 @@
 		"Whirlwind": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
 				},
 				{
 					"name": "Wizard",
@@ -9261,18 +5445,6 @@
 		"Wrath of Nature": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "XPHB"
 				}
@@ -9280,10 +5452,6 @@
 		},
 		"Zephyr Strike": {
 			"class": [
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "XPHB"
@@ -10247,89 +6415,37 @@
 		"Acid Splash": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Aid": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Alarm": {
 			"class": [
 				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Alter Self": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Animal Friendship": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "XPHB"
@@ -10338,14 +6454,6 @@
 		},
 		"Animal Messenger": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "XPHB"
@@ -10363,10 +6471,6 @@
 		"Animate Dead": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -10375,20 +6479,8 @@
 		"Animate Objects": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -10403,10 +6495,6 @@
 		"Antimagic Field": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -10414,14 +6502,6 @@
 		},
 		"Antipathy/Sympathy": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -10433,23 +6513,11 @@
 				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Arcane Gate": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -10461,19 +6529,11 @@
 				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Arcane Vigor": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -10499,14 +6559,6 @@
 		"Astral Projection": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -10514,14 +6566,6 @@
 		},
 		"Augury": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -10531,10 +6575,6 @@
 		"Aura of Life": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
 				}
@@ -10542,10 +6582,6 @@
 		},
 		"Aura of Purity": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
 				{
 					"name": "Paladin",
 					"source": "XPHB"
@@ -10555,14 +6591,6 @@
 		"Aura of Vitality": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
 				}
@@ -10571,10 +6599,6 @@
 		"Awaken": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
 					"name": "Druid",
 					"source": "XPHB"
 				}
@@ -10582,14 +6606,6 @@
 		},
 		"Bane": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
 				{
 					"name": "Warlock",
 					"source": "XPHB"
@@ -10607,18 +6623,6 @@
 		"Banishment": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				},
@@ -10630,10 +6634,6 @@
 		},
 		"Barkskin": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "XPHB"
@@ -10651,10 +6651,6 @@
 		"Beast Sense": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "XPHB"
 				}
@@ -10662,18 +6658,6 @@
 		},
 		"Befuddlement": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -10683,14 +6667,6 @@
 		"Bestow Curse": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -10699,16 +6675,8 @@
 		"Bigby's Hand": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -10723,18 +6691,6 @@
 		"Blade Ward": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -10743,10 +6699,6 @@
 		"Bless": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
 				}
@@ -10754,18 +6706,6 @@
 		},
 		"Blight": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -10783,18 +6723,6 @@
 		"Blindness/Deafness": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -10803,41 +6731,21 @@
 		"Blink": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Blur": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Burning Hands": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -10855,10 +6763,6 @@
 		"Calm Emotions": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
 					"name": "Cleric",
 					"source": "XPHB"
 				}
@@ -10866,10 +6770,6 @@
 		},
 		"Chain Lightning": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -10879,22 +6779,6 @@
 		"Charm Monster": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -10902,22 +6786,6 @@
 		},
 		"Charm Person": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -10927,14 +6795,6 @@
 		"Chill Touch": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -10942,10 +6802,6 @@
 		},
 		"Chromatic Orb": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -10955,14 +6811,6 @@
 		"Circle of Death": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -10970,10 +6818,6 @@
 		},
 		"Circle of Power": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -10986,18 +6830,6 @@
 		},
 		"Clairvoyance": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -11015,18 +6847,6 @@
 		"Cloud of Daggers": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -11034,10 +6854,6 @@
 		},
 		"Cloudkill": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -11047,14 +6863,6 @@
 		"Color Spray": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -11062,14 +6870,6 @@
 		},
 		"Command": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
 				{
 					"name": "Paladin",
 					"source": "XPHB"
@@ -11087,10 +6887,6 @@
 		"Commune with Nature": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "XPHB"
 				}
@@ -11106,18 +6902,6 @@
 		},
 		"Comprehend Languages": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -11135,14 +6919,6 @@
 		"Cone of Cold": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -11151,18 +6927,6 @@
 		"Confusion": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -11170,10 +6934,6 @@
 		},
 		"Conjure Animals": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "XPHB"
@@ -11199,10 +6959,6 @@
 		"Conjure Elemental": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -11218,10 +6974,6 @@
 		},
 		"Conjure Minor Elementals": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -11239,10 +6991,6 @@
 		"Conjure Woodland Beings": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "XPHB"
 				}
@@ -11251,10 +6999,6 @@
 		"Contact Other Plane": {
 			"class": [
 				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -11262,10 +7006,6 @@
 		},
 		"Contagion": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
 				{
 					"name": "Druid",
 					"source": "XPHB"
@@ -11283,33 +7023,13 @@
 		"Continual Flame": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Control Water": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -11318,14 +7038,6 @@
 		},
 		"Control Weather": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -11343,14 +7055,6 @@
 		"Counterspell": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -11359,25 +7063,13 @@
 		"Create Food and Water": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Create or Destroy Water": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
 				{
 					"name": "Druid",
 					"source": "XPHB"
@@ -11387,14 +7079,6 @@
 		"Create Undead": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -11403,33 +7087,13 @@
 		"Creation": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Crown of Madness": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -11447,61 +7111,21 @@
 		"Cure Wounds": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Dancing Lights": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Darkness": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -11511,45 +7135,13 @@
 		"Darkvision": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Daylight": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Paladin",
 					"source": "XPHB"
@@ -11559,10 +7151,6 @@
 		"Death Ward": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
 				}
@@ -11571,10 +7159,6 @@
 		"Delayed Blast Fireball": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -11582,14 +7166,6 @@
 		},
 		"Demiplane": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -11607,10 +7183,6 @@
 		"Detect Evil and Good": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
 				}
@@ -11619,57 +7191,17 @@
 		"Detect Magic": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				},
 				{
 					"name": "Paladin",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Detect Poison and Disease": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
 				{
 					"name": "Paladin",
 					"source": "XPHB"
@@ -11679,14 +7211,6 @@
 		"Detect Thoughts": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -11694,18 +7218,6 @@
 		},
 		"Dimension Door": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -11715,29 +7227,13 @@
 		"Disguise Self": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Disintegrate": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -11747,10 +7243,6 @@
 		"Dispel Evil and Good": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
 				}
@@ -11759,40 +7251,12 @@
 		"Dispel Magic": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				},
 				{
 					"name": "Paladin",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -11806,14 +7270,6 @@
 		},
 		"Divination": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -11847,14 +7303,6 @@
 		"Dominate Beast": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
 					"name": "Sorcerer",
 					"source": "XPHB"
 				}
@@ -11862,18 +7310,6 @@
 		},
 		"Dominate Monster": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -11883,14 +7319,6 @@
 		"Dominate Person": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -11898,10 +7326,6 @@
 		},
 		"Dragon's Breath": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -11919,14 +7343,6 @@
 		"Dream": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -11942,14 +7358,6 @@
 		},
 		"Earthquake": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Sorcerer",
 					"source": "XPHB"
@@ -11967,33 +7375,13 @@
 		"Elemental Weapon": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Elementalism": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -12003,56 +7391,16 @@
 		"Enhance Ability": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Enlarge/Reduce": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -12067,10 +7415,6 @@
 		"Entangle": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "XPHB"
 				}
@@ -12079,10 +7423,6 @@
 		"Enthrall": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
 					"name": "Warlock",
 					"source": "XPHB"
 				}
@@ -12090,22 +7430,6 @@
 		},
 		"Etherealness": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -12123,37 +7447,13 @@
 		"Expeditious Retreat": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Eyebite": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -12165,23 +7465,11 @@
 				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Faerie Fire": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Artificer",
 					"source": "TCE"
@@ -12191,33 +7479,13 @@
 		"False Life": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Fear": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -12227,37 +7495,13 @@
 		"Feather Fall": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Feign Death": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -12283,14 +7527,6 @@
 		"Find the Path": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Druid",
 					"source": "XPHB"
 				}
@@ -12298,14 +7534,6 @@
 		},
 		"Find Traps": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "XPHB"
@@ -12315,14 +7543,6 @@
 		"Finger of Death": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -12331,29 +7551,13 @@
 		"Fire Bolt": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Fire Shield": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -12363,14 +7567,6 @@
 		"Fire Storm": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Sorcerer",
 					"source": "XPHB"
 				}
@@ -12379,10 +7575,6 @@
 		"Fireball": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -12390,10 +7582,6 @@
 		},
 		"Flame Blade": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Sorcerer",
 					"source": "XPHB"
@@ -12411,14 +7599,6 @@
 		"Flaming Sphere": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -12426,14 +7606,6 @@
 		},
 		"Flesh to Stone": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -12443,37 +7615,13 @@
 		"Fly": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Fog Cloud": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -12491,14 +7639,6 @@
 		"Forcecage": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -12506,18 +7646,6 @@
 		},
 		"Foresight": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -12527,10 +7655,6 @@
 		"Fount of Moonlight": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
 					"name": "Druid",
 					"source": "XPHB"
 				}
@@ -12538,22 +7662,6 @@
 		},
 		"Freedom of Movement": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
 				{
 					"name": "Artificer",
 					"source": "TCE"
@@ -12563,18 +7671,6 @@
 		"Friends": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -12582,14 +7678,6 @@
 		},
 		"Gaseous Form": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -12599,18 +7687,6 @@
 		"Gate": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -12618,18 +7694,6 @@
 		},
 		"Geas": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -12642,10 +7706,6 @@
 		},
 		"Gentle Repose": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -12667,10 +7727,6 @@
 		"Glibness": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
 					"name": "Warlock",
 					"source": "XPHB"
 				}
@@ -12678,10 +7734,6 @@
 		},
 		"Globe of Invulnerability": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -12691,29 +7743,13 @@
 		"Glyph of Warding": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Goodberry": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "XPHB"
@@ -12723,10 +7759,6 @@
 		"Grasping Vine": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "XPHB"
 				}
@@ -12735,29 +7767,13 @@
 		"Grease": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Greater Invisibility": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -12767,28 +7783,8 @@
 		"Greater Restoration": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -12803,10 +7799,6 @@
 		"Guards and Wards": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -12814,14 +7806,6 @@
 		},
 		"Guidance": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Artificer",
 					"source": "TCE"
@@ -12838,18 +7822,6 @@
 		},
 		"Gust of Wind": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -12875,18 +7847,6 @@
 		"Hallucinatory Terrain": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -12903,25 +7863,13 @@
 		"Haste": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Heal": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
 				{
 					"name": "Druid",
 					"source": "XPHB"
@@ -12931,14 +7879,6 @@
 		"Healing Word": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Druid",
 					"source": "XPHB"
 				}
@@ -12946,14 +7886,6 @@
 		},
 		"Heat Metal": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Artificer",
 					"source": "TCE"
@@ -12971,14 +7903,6 @@
 		"Heroes' Feast": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Druid",
 					"source": "XPHB"
 				}
@@ -12986,10 +7910,6 @@
 		},
 		"Heroism": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
 				{
 					"name": "Paladin",
 					"source": "XPHB"
@@ -13007,18 +7927,6 @@
 		"Hold Monster": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -13026,26 +7934,6 @@
 		},
 		"Hold Person": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13079,18 +7967,6 @@
 		"Hypnotic Pattern": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -13098,14 +7974,6 @@
 		},
 		"Ice Knife": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13115,14 +7983,6 @@
 		"Ice Storm": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -13131,29 +7991,13 @@
 		"Identify": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Illusory Script": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13163,10 +8007,6 @@
 		"Imprisonment": {
 			"class": [
 				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -13174,14 +8014,6 @@
 		},
 		"Incendiary Cloud": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13199,14 +8031,6 @@
 		"Insect Plague": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Sorcerer",
 					"source": "XPHB"
 				}
@@ -13215,33 +8039,13 @@
 		"Invisibility": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Jallarzi's Storm of Radiance": {
 			"class": [
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13251,37 +8055,13 @@
 		"Jump": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Knock": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13290,14 +8070,6 @@
 		},
 		"Legend Lore": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13309,19 +8081,11 @@
 				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Leomund's Tiny Hut": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13331,68 +8095,24 @@
 		"Lesser Restoration": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Levitate": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Light": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -13407,10 +8127,6 @@
 		"Lightning Bolt": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -13419,14 +8135,6 @@
 		"Locate Animals or Plants": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "XPHB"
 				}
@@ -13434,22 +8142,6 @@
 		},
 		"Locate Creature": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13463,22 +8155,6 @@
 		"Locate Object": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				},
@@ -13491,33 +8167,13 @@
 		"Longstrider": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Mage Armor": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13527,37 +8183,13 @@
 		"Mage Hand": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Magic Circle": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13579,10 +8211,6 @@
 		"Magic Missile": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -13591,29 +8219,13 @@
 		"Magic Mouth": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Magic Weapon": {
 			"class": [
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13621,27 +8233,11 @@
 				{
 					"name": "Paladin",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Major Image": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13650,14 +8246,6 @@
 		},
 		"Mass Cure Wounds": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
 				{
 					"name": "Druid",
 					"source": "XPHB"
@@ -13675,10 +8263,6 @@
 		"Mass Healing Word": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
 					"name": "Cleric",
 					"source": "XPHB"
 				}
@@ -13686,14 +8270,6 @@
 		},
 		"Mass Suggestion": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13711,14 +8287,6 @@
 		"Meld into Stone": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "XPHB"
 				}
@@ -13735,61 +8303,21 @@
 		"Mending": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Message": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Meteor Swarm": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13799,10 +8327,6 @@
 		"Mind Blank": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -13810,14 +8334,6 @@
 		},
 		"Mind Sliver": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13827,14 +8343,6 @@
 		"Mind Spike": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -13842,18 +8350,6 @@
 		},
 		"Minor Illusion": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13863,14 +8359,6 @@
 		"Mirage Arcane": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -13878,18 +8366,6 @@
 		},
 		"Mirror Image": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13899,14 +8375,6 @@
 		"Mislead": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -13915,14 +8383,6 @@
 		"Misty Step": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -13930,10 +8390,6 @@
 		},
 		"Modify Memory": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13953,19 +8409,11 @@
 				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Mordenkainen's Magnificent Mansion": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13977,19 +8425,11 @@
 				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Mordenkainen's Sword": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -13999,14 +8439,6 @@
 		"Move Earth": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -14014,14 +8446,6 @@
 		},
 		"Nondetection": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14039,10 +8463,6 @@
 		"Otiluke's Freezing Sphere": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -14053,19 +8473,11 @@
 				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Otto's Irresistible Dance": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14074,10 +8486,6 @@
 		},
 		"Pass without Trace": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "XPHB"
@@ -14095,14 +8503,6 @@
 		"Phantasmal Force": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -14110,10 +8510,6 @@
 		},
 		"Phantasmal Killer": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14139,22 +8535,6 @@
 		"Planar Binding": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -14162,22 +8542,6 @@
 		},
 		"Plane Shift": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14187,14 +8551,6 @@
 		"Plant Growth": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "XPHB"
 				}
@@ -14203,41 +8559,13 @@
 		"Poison Spray": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Polymorph": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14247,10 +8575,6 @@
 		"Power Word Fortify": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
 					"name": "Cleric",
 					"source": "XPHB"
 				}
@@ -14258,10 +8582,6 @@
 		},
 		"Power Word Heal": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
 				{
 					"name": "Cleric",
 					"source": "XPHB"
@@ -14271,18 +8591,6 @@
 		"Power Word Kill": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -14290,18 +8598,6 @@
 		},
 		"Power Word Stun": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14311,10 +8607,6 @@
 		"Prayer of Healing": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
 				}
@@ -14323,37 +8615,13 @@
 		"Prestidigitation": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Prismatic Spray": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14362,10 +8630,6 @@
 		},
 		"Prismatic Wall": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14383,10 +8647,6 @@
 		"Programmed Illusion": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -14394,10 +8654,6 @@
 		},
 		"Project Image": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14407,45 +8663,13 @@
 		"Protection from Energy": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Protection from Evil and Good": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14459,57 +8683,21 @@
 		"Protection from Poison": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Purify Food and Drink": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Raise Dead": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
 				{
 					"name": "Paladin",
 					"source": "XPHB"
@@ -14519,10 +8707,6 @@
 		"Rary's Telepathic Bond": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -14530,10 +8714,6 @@
 		},
 		"Ray of Enfeeblement": {
 			"class": [
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14543,25 +8723,13 @@
 		"Ray of Frost": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Ray of Sickness": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14570,14 +8738,6 @@
 		},
 		"Regenerate": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
 				{
 					"name": "Druid",
 					"source": "XPHB"
@@ -14595,14 +8755,6 @@
 		"Remove Curse": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				},
@@ -14615,14 +8767,6 @@
 		"Resistance": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Artificer",
 					"source": "TCE"
 				}
@@ -14630,10 +8774,6 @@
 		},
 		"Resurrection": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
 				{
 					"name": "Cleric",
 					"source": "XPHB"
@@ -14643,14 +8783,6 @@
 		"Reverse Gravity": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -14659,24 +8791,8 @@
 		"Revivify": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -14685,10 +8801,6 @@
 				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -14703,10 +8815,6 @@
 		"Sanctuary": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Artificer",
 					"source": "TCE"
 				}
@@ -14715,10 +8823,6 @@
 		"Scorching Ray": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -14726,22 +8830,6 @@
 		},
 		"Scrying": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14759,33 +8847,13 @@
 		"See Invisibility": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Seeming": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14794,14 +8862,6 @@
 		},
 		"Sending": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14819,10 +8879,6 @@
 		"Shapechange": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -14830,14 +8886,6 @@
 		},
 		"Shatter": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14847,10 +8895,6 @@
 		"Shield": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -14858,10 +8902,6 @@
 		},
 		"Shield of Faith": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
 				{
 					"name": "Paladin",
 					"source": "XPHB"
@@ -14887,29 +8927,13 @@
 		"Shocking Grasp": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Silence": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "XPHB"
@@ -14918,14 +8942,6 @@
 		},
 		"Silent Image": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14943,14 +8959,6 @@
 		"Sleep": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -14959,14 +8967,6 @@
 		"Sleet Storm": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -14974,14 +8974,6 @@
 		},
 		"Slow": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -14999,14 +8991,6 @@
 		"Spare the Dying": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Artificer",
 					"source": "TCE"
 				}
@@ -15014,18 +8998,6 @@
 		},
 		"Speak with Animals": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
 				{
 					"name": "Warlock",
 					"source": "XPHB"
@@ -15035,14 +9007,6 @@
 		"Speak with Dead": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -15050,14 +9014,6 @@
 		},
 		"Speak with Plants": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "XPHB"
@@ -15067,29 +9023,13 @@
 		"Spider Climb": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Spike Growth": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
 				{
 					"name": "Ranger",
 					"source": "XPHB"
@@ -15123,10 +9063,6 @@
 		"Starry Wisp": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
 					"name": "Druid",
 					"source": "XPHB"
 				}
@@ -15134,10 +9070,6 @@
 		},
 		"Steel Wind Strike": {
 			"class": [
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -15147,14 +9079,6 @@
 		"Stinking Cloud": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -15163,44 +9087,16 @@
 		"Stone Shape": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Stoneskin": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -15215,18 +9111,6 @@
 		"Suggestion": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -15234,10 +9118,6 @@
 		},
 		"Summon Aberration": {
 			"class": [
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -15247,10 +9127,6 @@
 		"Summon Beast": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "XPHB"
 				}
@@ -15258,10 +9134,6 @@
 		},
 		"Summon Celestial": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
 				{
 					"name": "Paladin",
 					"source": "XPHB"
@@ -15273,10 +9145,6 @@
 				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -15291,14 +9159,6 @@
 		"Summon Elemental": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -15306,18 +9166,6 @@
 		},
 		"Summon Fey": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -15327,10 +9175,6 @@
 		"Summon Fiend": {
 			"class": [
 				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -15338,10 +9182,6 @@
 		},
 		"Summon Undead": {
 			"class": [
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -15351,18 +9191,6 @@
 		"Sunbeam": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -15370,18 +9198,6 @@
 		},
 		"Sunburst": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -15399,18 +9215,6 @@
 		"Symbol": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -15418,18 +9222,6 @@
 		},
 		"Synaptic Static": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -15439,10 +9231,6 @@
 		"Tasha's Bubbling Cauldron": {
 			"class": [
 				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -15451,14 +9239,6 @@
 		"Tasha's Hideous Laughter": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -15466,10 +9246,6 @@
 		},
 		"Telekinesis": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -15487,14 +9263,6 @@
 		"Teleport": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -15502,18 +9270,6 @@
 		},
 		"Teleportation Circle": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -15539,10 +9295,6 @@
 		"Thorn Whip": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Artificer",
 					"source": "TCE"
 				}
@@ -15551,28 +9303,8 @@
 		"Thunderclap": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -15587,18 +9319,6 @@
 		"Thunderwave": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -15606,10 +9326,6 @@
 		},
 		"Time Stop": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -15619,14 +9335,6 @@
 		"Toll the Dead": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -15634,22 +9342,6 @@
 		},
 		"Tongues": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -15667,10 +9359,6 @@
 		"Tree Stride": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "XPHB"
 				}
@@ -15678,14 +9366,6 @@
 		},
 		"True Polymorph": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -15695,10 +9375,6 @@
 		"True Resurrection": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Druid",
 					"source": "XPHB"
 				}
@@ -15707,22 +9383,6 @@
 		"True Seeing": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -15730,18 +9390,6 @@
 		},
 		"True Strike": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -15759,14 +9407,6 @@
 		"Unseen Servant": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -15774,14 +9414,6 @@
 		},
 		"Vampiric Touch": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -15799,10 +9431,6 @@
 		"Vitriolic Sphere": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -15810,14 +9438,6 @@
 		},
 		"Wall of Fire": {
 			"class": [
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -15843,20 +9463,8 @@
 		"Wall of Stone": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
@@ -15871,10 +9479,6 @@
 		"Warding Bond": {
 			"class": [
 				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
 					"name": "Paladin",
 					"source": "XPHB"
 				}
@@ -15883,45 +9487,13 @@
 		"Water Breathing": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Water Walk": {
 			"class": [
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
-				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "XPHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
 				{
 					"name": "Artificer",
 					"source": "TCE"
@@ -15931,25 +9503,13 @@
 		"Web": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
 				}
 			]
 		},
 		"Weird": {
 			"class": [
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -15967,10 +9527,6 @@
 		"Wind Wall": {
 			"class": [
 				{
-					"name": "Druid",
-					"source": "XPHB"
-				},
-				{
 					"name": "Ranger",
 					"source": "XPHB"
 				}
@@ -15979,10 +9535,6 @@
 		"Wish": {
 			"class": [
 				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -15990,14 +9542,6 @@
 		},
 		"Witch Bolt": {
 			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "XPHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "XPHB"
-				},
 				{
 					"name": "Wizard",
 					"source": "XPHB"
@@ -16031,10 +9575,6 @@
 		"Yolande's Regal Presence": {
 			"class": [
 				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
 					"name": "Wizard",
 					"source": "XPHB"
 				}
@@ -16042,14 +9582,6 @@
 		},
 		"Zone of Truth": {
 			"class": [
-				{
-					"name": "Bard",
-					"source": "XPHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "XPHB"
-				},
 				{
 					"name": "Paladin",
 					"source": "XPHB"

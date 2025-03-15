@@ -87,8 +87,6 @@ export class CreatureBuilder extends BuilderBase {
 		}
 
 		delete creature.otherSources;
-		delete creature.srd;
-		delete creature.srd52;
 		delete creature.basicRules;
 		delete creature.freeRules2024;
 		delete creature.altArt;

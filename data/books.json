@@ -1,7 +1,7 @@
 {
 	"book": [
 		{
-			"name": "Player's Handbook (1989)",
+			"name": "Player's Handbook",
 			"id": "PHB",
 			"source": "PHB",
 			"group": "core",
@@ -13,14 +13,17 @@
 			"author": "David \"Zeb\" Cook",
 			"contents": [
 				{
-					"name": "Foreword to The 2nd Edition"
+					"name": "Foreword to the Second Edition"
 				},
 				{
 					"name": "Welcome to the 2nd Edition AD&D® Game",
 					"headers": [
-						"How the Books are",
-						"Required Materials",
-						"An Example of Play"
+						"Why a Second Edition?",
+						"How the Rule Books are Organized",
+						"Learning the Game",
+						"The Second Edition AD&D Game Line",
+						"A Note About Pronouns",
+						"Creating a Character"
 					]
 				},
 				{
@@ -212,7 +215,7 @@
 					}
 				},
 				{
-					"name": "Spells",
+					"name": "Time and Movement",
 					"headers": [
 						"Movement",
 						"Swimming",
@@ -305,7 +308,7 @@
 			]
 		},
 		{
-			"name": "Dungeon Master's Guide (1989)",
+			"name": "Dungeon Master's Guide",
 			"id": "DMG",
 			"source": "DMG",
 			"group": "core",
@@ -317,28 +320,81 @@
 			"author": "Wizards RPG Team",
 			"contents": [
 				{
+					"name": "Foreword"
+				},
+				{
 					"name": "Introduction",
 					"headers": [
-						"The Dungeon Master",
-						"How to Use This Book",
-						"Know Your Players"
+						"A Word About Organization",
+						"The Fine Art of Being a DM"
 					]
 				},
 				{
-					"name": "A World of Your Own",
+					"name": "Player Character Ability Scores",
 					"headers": [
-						"The Big Picture",
-						"Gods of Your World",
-						"Mapping Your Campaign",
-						"Settlements",
-						"Languages and Dialects",
-						"Factions and Organizations",
-						"Magic in Your World",
-						"Creating a Campaign",
-						"Campaign Events",
-						"Play Style",
-						"Tiers of Play",
-						"Flavors of Fantasy"
+						"Giving Players What They Want",
+						"Choosing a Character Creation Method",
+						{
+							"depth": 1,
+							"header": "Method I (3d6, In order):"
+						},
+						{
+							"depth": 1,
+							"header": "Method II (3d6 twice, keep desired score):"
+						},
+						{
+							"depth": 1,
+							"header": "Method III (3d6, arranged to taste):"
+						},
+						{
+							"depth": 1,
+							"header": "Method IV (3d6 twice, arranged to taste):"
+						},
+						{
+							"depth": 1,
+							"header": "Method V (4d6, drop lowest, arrange as desired):"
+						},
+						{
+							"depth": 1,
+							"header": "Method VI (points plus dice):"
+						},
+						"Super Characters",
+						{
+							"depth": 1,
+							"header": "Identifying Too-Powerful Characters"
+						},
+						{
+							"depth": 1,
+							"header": "Dealing with Too-Powerful Characters"
+						},
+						"Hopeless Characters",
+						{
+							"depth": 1,
+							"header": "Dealing with Hopeless Characters"
+						},
+						{
+							"depth": 1,
+							"header": "Dealing with Dissatisfied Players"
+						},
+						"Wishes and Ability Scores",
+						"Players with Multiple Characters",
+						{
+							"depth": 1,
+							"header": "Multiple Character Problems "
+						},
+						"Character Background",
+						{
+							"depth": 1,
+							"header": "Letting Players Do the Work"
+						},
+						{
+							"depth": 1,
+							"header": "Problem Backgrounds"
+						},
+						{
+							"depth": 1,
+							"header": "Background"
+						}
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -346,18 +402,23 @@
 					}
 				},
 				{
-					"name": "Creating a Multiverse",
+					"name": "Player Character Races",
 					"headers": [
-						"The Planes",
-						"Planar Travel",
-						"Astral Plane",
-						"Ethereal Plane",
-						"Feywild",
-						"Shadowfell",
-						"Inner Planes",
-						"Outer Planes",
-						"Other Planes",
-						"Known Worlds of the Material Plane"
+						"A Nonhuman World",
+						"Racial Level Restrictions",
+						{
+							"depth": 1,
+							"header": "Slow Advancement (Optional Rule)"
+						},
+						{
+							"depth": 1,
+							"header": "Standard Class and Level Limits"
+						},
+						{
+							"depth": 1,
+							"header": "Exceeding Level Limits (Optional Rule)"
+						},
+						"Creating New Player Character Races"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -365,15 +426,66 @@
 					}
 				},
 				{
-					"name": "Creating Adventures",
+					"name": "Player Character Classes",
 					"headers": [
-						"Elements of a Great Adventure",
-						"Published Adventures",
-						"Adventure Structure",
-						"Adventure Types",
-						"Complications",
-						"Creating Encounters",
-						"Random Encounters"
+						"Class, Level, and the Common Man",
+						"0-Level Characters",
+						"Adventurers and Society",
+						{
+							"depth": 1,
+							"header": "Fighters"
+						},
+						{
+							"depth": 1,
+							"header": "Paladins"
+						},
+						{
+							"depth": 1,
+							"header": "Rangers"
+						},
+						{
+							"depth": 1,
+							"header": "Wizards"
+						},
+						{
+							"depth": 1,
+							"header": "Priests"
+						},
+						{
+							"depth": 1,
+							"header": "Thieves"
+						},
+						{
+							"depth": 1,
+							"header": "Bards"
+						},
+						{
+							"depth": 1,
+							"header": "Character Classes in Your Campaign"
+						},
+						"High-Level Characters",
+						{
+							"depth": 1,
+							"header": "Defining “High Level”"
+						},
+						{
+							"depth": 1,
+							"header": "Changing Campaign Styles"
+						},
+						{
+							"depth": 1,
+							"header": "Above 20th Level"
+						},
+						"Beginning Character Levels",
+						{
+							"depth": 1,
+							"header": "Mixing New and Old Characters"
+						},
+						{
+							"depth": 1,
+							"header": "Pre-Rolled Characters"
+						},
+						"Creating a New Character Class (Optional Rule)"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -381,15 +493,81 @@
 					}
 				},
 				{
-					"name": "Creating Nonplayer Characters",
+					"name": "Alignment",
 					"headers": [
-						"Designing NPCs",
-						"NPC Party Members",
-						"Contacts",
-						"Hirelings",
-						"Extras",
-						"Villains",
-						"Villainous Class Options"
+						"Player Character Alignment",
+						{
+							"depth": 1,
+							"header": "Role-Playing Alignment"
+						},
+						"NPC Alignment",
+						{
+							"depth": 1,
+							"header": "The Limits of NPC Alignment"
+						},
+						"Society Alignment",
+						{
+							"depth": 1,
+							"header": "Using Area Alignments"
+						},
+						{
+							"depth": 1,
+							"header": "Varying Social Alignment"
+						},
+						{
+							"depth": 1,
+							"header": "Alignment of Religions"
+						},
+						"Alignment of Magical Items",
+						{
+							"depth": 1,
+							"header": "Magical Alignment Changes"
+						},
+						"Alignment as a World View",
+						{
+							"depth": 1,
+							"header": "Alignments in Conflict"
+						},
+						{
+							"depth": 1,
+							"header": "Never-ending Conflict"
+						},
+						"Alignment as a Tool",
+						"Detecting Alignment",
+						{
+							"depth": 1,
+							"header": "Asking"
+						},
+						{
+							"depth": 1,
+							"header": "Casting a Spell"
+						},
+						{
+							"depth": 1,
+							"header": "Class Abilities"
+						},
+						{
+							"depth": 1,
+							"header": "Keeping Players in the Dark"
+						},
+						"Changing Alignment",
+						{
+							"depth": 1,
+							"header": "Deliberate Change"
+						},
+						{
+							"depth": 1,
+							"header": "Unconscious Change"
+						},
+						{
+							"depth": 1,
+							"header": "Involuntary Change"
+						},
+						{
+							"depth": 1,
+							"header": "Charting the Changes"
+						},
+						"Effects of Changing Alignment"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -397,18 +575,12 @@
 					}
 				},
 				{
-					"name": "Adventure Environments",
+					"name": "Proficiencies (Optional)",
 					"headers": [
-						"Dungeons",
-						"Mapping a Dungeon",
-						"Wilderness",
-						"Mapping a Wilderness",
-						"Wilderness Survival",
-						"Settlement",
-						"Mapping a Settlement",
-						"Urban Encounters",
-						"Unusual Environments",
-						"Traps"
+						"Weapon Proficiencies",
+						"Min/Maxing",
+						"NPC Proficiencies",
+						"Adding New Proficiencies"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -416,12 +588,107 @@
 					}
 				},
 				{
-					"name": "Between Adventures",
+					"name": "Money and Equipment",
 					"headers": [
-						"Linking Adventures",
-						"Campaign Tracking",
-						"Recurring Expenses",
-						"Downtime Activities"
+						"Controlling the Money Supply",
+						"Monetary Systems",
+						"A Short History of Commerce",
+						{
+							"depth": 1,
+							"header": "Goods"
+						},
+						{
+							"depth": 1,
+							"header": "Letters of Credit"
+						},
+						{
+							"depth": 1,
+							"header": "Barter"
+						},
+						"Coins",
+						{
+							"depth": 1,
+							"header": "Types of Coins"
+						},
+						"Expenses",
+						{
+							"depth": 1,
+							"header": "Squalid Conditions"
+						},
+						{
+							"depth": 1,
+							"header": "Poor Conditions"
+						},
+						{
+							"depth": 1,
+							"header": "Middle-Class Conditions"
+						},
+						{
+							"depth": 1,
+							"header": "Wealthy Conditions"
+						},
+						"Draining the Coffers",
+						"Expanding the Equipment Lists",
+						"Altering Prices",
+						"Equipment by Time Period",
+						{
+							"depth": 1,
+							"header": "The Ancient World"
+						},
+						{
+							"depth": 1,
+							"header": "The Dark Ages"
+						},
+						{
+							"depth": 1,
+							"header": "The Middle Ages"
+						},
+						{
+							"depth": 1,
+							"header": "The Renaissance"
+						},
+						{
+							"depth": 1,
+							"header": "Adjusting Equipment Lists"
+						},
+						"Quality of Equipment",
+						{
+							"depth": 1,
+							"header": "Lock Quality"
+						},
+						{
+							"depth": 1,
+							"header": "Horse Quality"
+						},
+						{
+							"depth": 1,
+							"header": "Horse Traits (Optional Rule)"
+						},
+						{
+							"depth": 1,
+							"header": "Risks of Horse Buying"
+						},
+						{
+							"depth": 1,
+							"header": "Weapon Quality"
+						},
+						{
+							"depth": 1,
+							"header": "Ornamentation"
+						},
+						{
+							"depth": 1,
+							"header": "Armor Made of Unusual Metals (Optional Rule)"
+						},
+						"Damaging Equipment",
+						{
+							"depth": 1,
+							"header": "Item Saving Throws"
+						},
+						{
+							"depth": 1,
+							"header": "Attack Forms"
+						}
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -429,17 +696,103 @@
 					}
 				},
 				{
-					"name": "Treasure",
+					"name": "Magic",
 					"headers": [
-						"Types of Treasure",
-						"Random Treasure",
+						"Initial Wizard Spells",
 						{
-							"header": "Magic Items",
-							"index": 1
+							"depth": 1,
+							"header": "Player Choice"
 						},
-						"Sentient Magic Items",
-						"Artifacts",
-						"Other Rewards"
+						{
+							"depth": 1,
+							"header": "DM Choice"
+						},
+						{
+							"depth": 1,
+							"header": "Player/DM Collaboration"
+						},
+						"Acquisition of Spells",
+						{
+							"depth": 1,
+							"header": "Going Up in Levels"
+						},
+						{
+							"depth": 1,
+							"header": "Copying from Spell Books"
+						},
+						{
+							"depth": 1,
+							"header": "Scroll Research"
+						},
+						{
+							"depth": 1,
+							"header": "Study with a Mentor"
+						},
+						"DM Control of Spell Acquisition",
+						"Spell Books",
+						{
+							"depth": 1,
+							"header": "All Sizes and Shapes"
+						},
+						{
+							"depth": 1,
+							"header": "Spell Book Preparation"
+						},
+						{
+							"depth": 1,
+							"header": "Spell Book Cost"
+						},
+						{
+							"depth": 1,
+							"header": "How Many Pages in a Spell Book?"
+						},
+						"Expanding the Schools of Magic",
+						{
+							"depth": 1,
+							"header": "Adding New Spells"
+						},
+						{
+							"depth": 1,
+							"header": "Expansion Through Campaign Detail"
+						},
+						"Spell Research",
+						{
+							"depth": 1,
+							"header": "Suggesting a New Spell"
+						},
+						{
+							"depth": 1,
+							"header": "Analyzing a Spell"
+						},
+						{
+							"depth": 1,
+							"header": "Solving the Problems of a New Spell"
+						},
+						{
+							"depth": 1,
+							"header": "Setting a Spell’s Level"
+						},
+						{
+							"depth": 1,
+							"header": "Determining Spell Components (Optional Rule)"
+						},
+						{
+							"depth": 1,
+							"header": "Determining Research Time"
+						},
+						{
+							"depth": 1,
+							"header": "The Cost of Spell Research"
+						},
+						{
+							"depth": 1,
+							"header": "Adding a New Spell to the Spell Book"
+						},
+						{
+							"depth": 1,
+							"header": "Researching Extra Wizard Spells (Optional Rule)"
+						}
+						
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -447,21 +800,41 @@
 					}
 				},
 				{
-					"name": "Running the Game",
+					"name": "Experience",
 					"headers": [
-						"Table Rules",
-						"The Role of Dice",
-						"Using Ability Scores",
-						"Exploration",
-						"Social Interaction",
-						"Objects",
-						"Combat",
-						"Chases",
-						"Siege Equipment",
-						"Diseases",
-						"Poisons",
-						"Madness",
-						"Experience Points"
+						"The Importance of Experience",
+						"Too Little or Too Much",
+						"Constant Goals",
+						{
+							"depth": 1,
+							"header": "Fun"
+						},
+						{
+							"depth": 1,
+							"header": "Character Survival"
+						},
+						{
+							"depth": 1,
+							"header": "Improvement"
+						},
+						"Variable Goals",
+						{
+							"depth": 1,
+							"header": "Story Goals"
+						},
+						"Experience Point Awards",
+						{
+							"depth": 1,
+							"header": "Group Awards"
+						},
+						{
+							"depth": 1,
+							"header": "Individual Experience Awards"
+						},
+						"When to Award Experience Points",
+						"Effects of Experience",
+						"Training (Optional Rule)",
+						"Rate of Advancement"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -469,15 +842,336 @@
 					}
 				},
 				{
-					"name": "Dungeon Master's Workshop",
+					"name": "Combat",
 					"headers": [
-						"Ability Options",
-						"Adventuring Options",
-						"Combat Options",
-						"Creating a Monster",
-						"Creating a Spell",
-						"Creating a Magic Item",
-						"Creating New Character Options"
+						"Creating Vivid Combat Scenes",
+						{
+							"depth": 1,
+							"header": "More Than Just Hack-and-Slash"
+						},
+						"Definitions",
+						"The Attack Roll",
+						{
+							"depth": 1,
+							"header": "Figuring the To-Hit Number"
+						},
+						{
+							"depth": 1,
+							"header": "Modifiers to the Attack Roll"
+						},
+						"Weapon Type vs. Armor Modifiers (Optional Rule)",
+						{
+							"depth": 1,
+							"header": "The Various Types of Weapons"
+						},
+						{
+							"depth": 1,
+							"header": "Impossible To-Hit Numbers"
+						},
+						"Calculating THAC0",
+						"Combat and Encounters",
+						"The Combat Round",
+						{
+							"depth": 1,
+							"header": "What You Can Do in One Round"
+						},
+						"The Combat Sequence",
+						"Initiative",
+						{
+							"depth": 1,
+							"header": "Standard Initiative Procedure"
+						},
+						{
+							"depth": 1,
+							"header": "Initiative Modifiers"
+						},
+						{
+							"depth": 1,
+							"header": "Group Initiative (Optional Rule)"
+						},
+						{
+							"depth": 1,
+							"header": "Individual Initiative (Optional Rule)"
+						},
+						{
+							"depth": 1,
+							"header": "Multiple Attacks and Initiative"
+						},
+						{
+							"depth": 1,
+							"header": "Spellcasting and Initiative"
+						},
+						{
+							"depth": 1,
+							"header": "Weapon Speed and Initiative (Optional Rule)"
+						},
+						"Attacking",
+						{
+							"depth": 1,
+							"header": "Number of Attackers"
+						},
+						{
+							"depth": 1,
+							"header": "Facing"
+						},
+						{
+							"depth": 1,
+							"header": "Weapon Length"
+						},
+						{
+							"depth": 1,
+							"header": "Position of Attackers and Attack Rolls"
+						},
+						"Pole Arms and Weapon Frontage (Optional Rule)",
+						"Shields and Weapon Frontage (Optional Rule)",
+						"Hitting a Specific Target",
+						{
+							"depth": 1,
+							"header": "Called Shots"
+						},
+						"Movement in Combat",
+						{
+							"depth": 1,
+							"header": "Movement in Melee"
+						},
+						{
+							"depth": 1,
+							"header": "Movement and Missile Combat"
+						},
+						{
+							"depth": 1,
+							"header": "Charging an Opponent"
+						},
+						{
+							"depth": 1,
+							"header": "Retreat"
+						},
+						"Attacking Without Killing",
+						{
+							"depth": 1,
+							"header": "Punching and Wrestling"
+						},
+						{
+							"depth": 1,
+							"header": "Overbearing"
+						},
+						{
+							"depth": 1,
+							"header": "Weapons in Nonlethal Combat"
+						},
+						{
+							"depth": 1,
+							"header": "Nonlethal Combat and Creatures"
+						},
+						"Touch Spells and Combat",
+						"Critical Hits (Optional Rule)",
+						{
+							"depth": 1,
+							"header": "Critical Fumbles"
+						},
+						"Parrying (Optional Rule)",
+						"Missile Weapons in Combat",
+						{
+							"depth": 1,
+							"header": "Range"
+						},
+						{
+							"depth": 1,
+							"header": "Rate of Fire"
+						},
+						{
+							"depth": 1,
+							"header": "Ability Modifiers in Missile Combat"
+						},
+						{
+							"depth": 1,
+							"header": "Firing into a Melee"
+						},
+						{
+							"depth": 1,
+							"header": "Taking Cover Against Missile Fire"
+						},
+						{
+							"depth": 1,
+							"header": "Grenade-Like Missiles"
+						},
+						{
+							"depth": 1,
+							"header": "Types of Grenade-Like Missiles"
+						},
+						{
+							"depth": 1,
+							"header": "Boulders as Missile Weapons"
+						},
+						"Special Attacks",
+						{
+							"depth": 1,
+							"header": "Attacking With Charmed Creatures"
+						},
+						{
+							"depth": 1,
+							"header": "Gaze Attacks"
+						},
+						{
+							"depth": 1,
+							"header": "Innate Abilities"
+						},
+						{
+							"depth": 1,
+							"header": "Breath Weapons"
+						},
+						"Special Defenses",
+						"The Saving Throw",
+						{
+							"depth": 1,
+							"header": "Rolling Saving Throws"
+						},
+						{
+							"depth": 1,
+							"header": "Saving Throw Priority"
+						},
+						{
+							"depth": 1,
+							"header": "Voluntarily Failing Saving Throws"
+						},
+						{
+							"depth": 1,
+							"header": "Ability Checks as Saving Throws"
+						},
+						{
+							"depth": 1,
+							"header": "Modifying Saving Throws"
+						},
+						"Magic Resistance",
+						{
+							"depth": 1,
+							"header": "Effects of Magic Resistance"
+						},
+						{
+							"depth": 1,
+							"header": "When Magic Resistance Applies"
+						},
+						{
+							"depth": 1,
+							"header": "Successful Magic Resistance Rolls"
+						},
+						"Turning Undead",
+						{
+							"depth": 1,
+							"header": "Evil Priests and Undead"
+						},
+						"Immunity to Weapons",
+						{
+							"depth": 1,
+							"header": "Effects of Weapon Hits"
+						},
+						{
+							"depth": 1,
+							"header": "Silver Weapons"
+						},
+						{
+							"depth": 1,
+							"header": "Creature vs. Creature"
+						},
+						{
+							"depth": 1,
+							"header": "Using Immune Monsters in a Campaign"
+						},
+						"Morale",
+						{
+							"depth": 1,
+							"header": "The Role-Playing Solution"
+						},
+						{
+							"depth": 1,
+							"header": "Dicing for Morale"
+						},
+						{
+							"depth": 1,
+							"header": "How to Make a Morale Check"
+						},
+						{
+							"depth": 1,
+							"header": "Failing a Morale Check"
+						},
+						"Injury and Death",
+						{
+							"depth": 1,
+							"header": "Wounds"
+						},
+						"Special Damage",
+						{
+							"depth": 1,
+							"header": "Falling"
+						},
+						{
+							"depth": 1,
+							"header": "Paralysis"
+						},
+						{
+							"depth": 1,
+							"header": "Energy Drain"
+						},
+						{
+							"depth": 1,
+							"header": "Poison"
+						},
+						"Specific Injuries (Optional Rule)",
+						{
+							"depth": 1,
+							"header": "Is This Injury Necessary?"
+						},
+						"Healing",
+						{
+							"depth": 1,
+							"header": "Natural Healing"
+						},
+						{
+							"depth": 1,
+							"header": "Magical Healing"
+						},
+						{
+							"depth": 1,
+							"header": "Herbalism and Healing Proficiencies"
+						},
+						"Character Death",
+						{
+							"depth": 1,
+							"header": "Death From Poison"
+						},
+						{
+							"depth": 1,
+							"header": "Death From Massive Damage"
+						},
+						{
+							"depth": 1,
+							"header": "Inescapable Death"
+						},
+						{
+							"depth": 1,
+							"header": "Raising the Dead"
+						},
+						{
+							"depth": 1,
+							"header": "Hovering on Death's Door (Optional Rule)"
+						},
+						"Unusual Combat Situations",
+						{
+							"depth": 1,
+							"header": "Siege Damage"
+						},
+						{
+							"depth": 1,
+							"header": "Mounted Combat"
+						},
+						{
+							"depth": 1,
+							"header": "Aerial Combat (Optional Rule)"
+						},
+						{
+							"depth": 1,
+							"header": "Underwater Combat"
+						}
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -485,49 +1179,586 @@
 					}
 				},
 				{
-					"name": "Random Dungeons",
+					"name": "Treasure",
 					"headers": [
-						"Starting Area",
-						"Passages",
+						"Who Needs Money?",
+						"Forms of Treasure",
+						"Placement of Treasure",
+						{
+							"depth": 1,
+							"header": "Who’s Got the Treasure?"
+						},
+						{
+							"depth": 1,
+							"header": "Planned and Random Encounter Treasures"
+						},
+						"Treasure Tables",
+						"Maintaining Balance",
+						{
+							"depth": 1,
+							"header": "Too Little Treasure"
+						},
+						{
+							"depth": 1,
+							"header": "Monty Haul Campaigns"
+						},						
+						"Magical Items",
+						{
+							"depth": 1,
+							"header": "Creatures and Magical Items"
+						},
+						{
+							"depth": 1,
+							"header": "Buying Magical Items"
+						},
+						{
+							"depth": 1,
+							"header": "Magic—Rare or Common?"
+						},
+						{
+							"depth": 1,
+							"header": "Researching Magical Items"
+						},
+						{
+							"depth": 1,
+							"header": "The Nature of Magical Fabrication"
+						},
+						"Scrolls and Potions",
+						{
+							"depth": 1,
+							"header": "Scrolls"
+						},
+						{
+							"depth": 1,
+							"header": "Potions"
+						},
+						"Creating Other Magical Items",
+						"Recharging Magical Items",
+						"Destroying Magical Items",
+						"Artifacts and Relics (Optional Rules)",
+						{
+							"depth": 1,
+							"header": "Designing an Artifact or Relic"
+						},
+						{
+							"depth": 1,
+							"header": "Sample Artifact and Relics"
+						}
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 10
+					}
+				},
+				{
+					"name": "Encounters",
+					"headers": [
+						"What is an Encounter?",
+						"Planned Encounters",
+						{
+							"depth": 1,
+							"header": "Keys"
+						},
+						{
+							"depth": 1,
+							"header": "Triggers"
+						},
+						{
+							"depth": 1,
+							"header": "Combining Keys and Triggers"
+						},
+						"Random Encounters",
+						{
+							"depth": 1,
+							"header": "Should You Use Random Encounters?"
+						},
+						{
+							"depth": 1,
+							"header": "Characteristics of Random Encounter Tables"
+						},
+						"Creating Encounter Tables",
+						{
+							"depth": 1,
+							"header": "The 2–20 Table"
+						},
+						{
+							"depth": 1,
+							"header": "The Percentile Table"
+						},
+						{
+							"depth": 1,
+							"header": "Dungeon Encounter Tables"
+						},
+						{
+							"depth": 1,
+							"header": "Wilderness Encounter Tables"
+						},
+						{
+							"depth": 1,
+							"header": "Special Encounter Tables"
+						},
+						{
+							"depth": 1,
+							"header": "Spicing Up Encounter Tables"
+						},
+						"DMing Encounters",
+						{
+							"depth": 1,
+							"header": "Encounter Checks"
+						},
+						{
+							"depth": 1,
+							"header": "Is This Encounter Necessary?"
+						},
+						{
+							"depth": 1,
+							"header": "Encounter Size"
+						},
+						"Surprise",
+						"Encounter Distance",
+						"Encounter Reactions",
+						"Fixing Things in Play",
+						{
+							"depth": 1,
+							"header": "Encounter is Too Difficult"
+						},
+						{
+							"depth": 1,
+							"header": "Encounter Gave Away Too Much Treasure"
+						},
+						{
+							"depth": 1,
+							"header": "Encounter Was Too Easy"
+						}
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 11
+					}
+				},
+				{
+					"name": "NPCs",
+					"headers": [
+						"Hirelings",
+						{
+							"depth": 1,
+							"header": "Medieval Occupations"
+						},
+						"The Assassin, the Spy, and the Sage",
+						{
+							"depth": 1,
+							"header": "Assassins"
+						},
+						{
+							"depth": 1,
+							"header": "Spies"
+						},
+						{
+							"depth": 1,
+							"header": "Sages"
+						},
+						"Soldiers",
+						{
+							"depth": 1,
+							"header": "Description of Troop Types"
+						},
+						"Employing Hirelings",
+						{
+							"depth": 1,
+							"header": "Who Might Be Offended"
+						},
+						{
+							"depth": 1,
+							"header": "Depopulate at Your Own Risk"
+						},
+						{
+							"depth": 1,
+							"header": "Securing Permission"
+						},
+						{
+							"depth": 1,
+							"header": "Finding the Right People"
+						},
+						{
+							"depth": 1,
+							"header": "The Weekly Wage"
+						},
+						"Henchmen",
+						{
+							"depth": 1,
+							"header": "An NPC Becomes a Henchman"
+						},
+						{
+							"depth": 1,
+							"header": "The Player Takes Over"
+						},
+						{
+							"depth": 1,
+							"header": "Role-playing Henchmen"
+						},
+						{
+							"depth": 1,
+							"header": "Henchmen Bookkeeping"
+						},
+						"Officials and Social Rank",
+						{
+							"depth": 1,
+							"header": "Titles, Offices, and Positions"
+						},
+						"Spellcasters",
+						{
+							"depth": 1,
+							"header": "Finding a Spellcaster"
+						},
+						{
+							"depth": 1,
+							"header": "Convincing an NPC to Help"
+						},
+						{
+							"depth": 1,
+							"header": "NPC Magical Items"
+						},
+						"Personality",
+						{
+							"depth": 1,
+							"header": "Walk-On NPCs"
+						},
+						{
+							"depth": 1,
+							"header": "Significant NPCs"
+						},
+						{
+							"depth": 1,
+							"header": "Other NPC Characteristics"
+						},
+						{
+							"depth": 1,
+							"header": "Morale"
+						},
+						"Quick NPCs"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 12
+					}
+				},
+				{
+					"name": "Vision and Light",
+					"headers": [
+						"Effects of Light Sources",
+						{
+							"depth": 1,
+							"header": "Being Seen"
+						},
+						{
+							"depth": 1,
+							"header": "Creatures and Light Sources"
+						},
+						"Light Tricks and Traps",
+						"Infravision",
+						{
+							"depth": 1,
+							"header": "Standard Infravision"
+						},
+						{
+							"depth": 1,
+							"header": "Infravision (Optional Rule)"
+						},
+						"Other Forms of Sight",
+						"Darkness",
+						"Invisibility",
+						{
+							"depth": 1,
+							"header": "Detecting Invisible Creatures"
+						}
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 13
+					}
+				},
+				{
+					"name": "Time and Movement",
+					"headers": [
+						{
+							"depth": 1,
+							"header": "Detailed Timekeeping"
+						},
+						{
+							"depth": 1,
+							"header": "Preparing a Calendar"
+						},
+						{
+							"depth": 1,
+							"header": "Time as a Game-Balancer"
+						},
+						"Movement",
+						{
+							"depth": 1,
+							"header": "Mounted Overland Movement"
+						},
+						{
+							"depth": 1,
+							"header": "Care of Animals"
+						},
+						{
+							"depth": 1,
+							"header": "Vehicles"
+						},
+						"Terrain Effects on Movement (Optional Rule)",
+						{
+							"depth": 1,
+							"header": "Darkness and Ice"
+						},
+						{
+							"depth": 1,
+							"header": "Terrain Modifiers in Overland Movement"
+						},
+						{
+							"depth": 1,
+							"header": "Roads and Trails"
+						},
+						"Terrain Obstacles and Hindrances",
+						"Movement on Water",
+						{
+							"depth": 1,
+							"header": "Ocean Voyaging"
+						},
+						{
+							"depth": 1,
+							"header": "Weather and Ship Travel"
+						},
+						"Aerial Movement",
+						"Getting Lost"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 14
+					}
+				},
+				{
+					"name": "A DM's Miscellany",
+					"headers": [
+						"Listening",
 						"Doors",
-						"Chambers",
-						"Stairs",
-						"Connecting Areas",
-						"Stocking a Dungeon"
+						{
+							"depth": 1,
+							"header": "Concealed and Secret Doors"
+						},
+						"Lycanthropy",
+						{
+							"depth": 1,
+							"header": "Other Magical Diseases"
+						},
+						"The Planes of Existence",
+						{
+							"depth": 1,
+							"header": "The Prime Material Planes"
+						},
+						{
+							"depth": 1,
+							"header": "The Ethereal Planes"
+						},
+						{
+							"depth": 1,
+							"header": "The Inner Planes"
+						},
+						{
+							"depth": 1,
+							"header": "The Astral Plane"
+						},
+						{
+							"depth": 1,
+							"header": "The Outer Planes"
+						}
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 15
+					}
+				},
+				{
+					"name": "Treasure Tables",
+					"headers": [
+						{
+							"depth": 1,
+							"header": "Coins"
+						},
+						{
+							"depth": 1,
+							"header": "Gems"
+						},
+						{
+							"depth": 1,
+							"header": "Objects of Art"
+						}
 					],
 					"ordinal": {
 						"type": "appendix",
-						"identifier": "A"
+						"identifier": 1
 					}
 				},
 				{
-					"name": "Monster Lists",
+					"name": "Magical Items Tables",
+					"headers": [
+						"Magical Item Tables",
+						{
+							"depth": 1,
+							"header": "Armor and Shields"
+						},
+						{
+							"depth": 1,
+							"header": "Magical Weapons"
+						}
+					],
 					"ordinal": {
 						"type": "appendix",
-						"identifier": "B"
+						"identifier": 2
 					}
 				},
 				{
-					"name": "Maps",
+					"name": "Magical Items Descriptions",
+					"headers": [
+						"Potions",
+						{
+							"depth": 1,
+							"header": "Identifying Potions"
+						},
+						{
+							"depth": 1,
+							"header": "Combining Potions"
+						},
+						{
+							"depth": 1,
+							"header": "Potion Duration"
+						},
+						{
+							"depth": 1,
+							"header": "List of Potions"
+						},
+						"Scrolls",
+						{
+							"depth": 1,
+							"header": "Spell Level of Scroll Spells"
+						},
+						{
+							"depth": 1,
+							"header": "Magical Spell Failure"
+						},
+						{
+							"depth": 1,
+							"header": "Use of Scroll Spells"
+						},
+						{
+							"depth": 1,
+							"header": "Casting Scroll Effects"
+						},
+						{
+							"depth": 1,
+							"header": "Protection Scroll Effects"
+						},
+						{
+							"depth": 1,
+							"header": "Who Can Use Scroll Spells?"
+						},
+						{
+							"depth": 1,
+							"header": "Spell Level Range"
+						},
+						{
+							"depth": 1,
+							"header": "Cursed Scrolls"
+						},
+						{
+							"depth": 1,
+							"header": "Maps"
+						},
+						{
+							"depth": 1,
+							"header": "List of Protection Scrolls"
+						},
+						"Rings",
+						{
+							"depth": 1,
+							"header": "List of Rings"
+						},
+						"Rods",
+						{
+							"depth": 1,
+							"header": "Command Words"
+						},
+						{
+							"depth": 1,
+							"header": "List of Rods"
+						},
+						"Staves",
+						{
+							"depth": 1,
+							"header": "Command Words"
+						},
+						{
+							"depth": 1,
+							"header": "List of Staves"
+						},
+						"Wands",
+						{
+							"depth": 1,
+							"header": "Command Words"
+						},
+						{
+							"depth": 1,
+							"header": "List of Wands"
+						},
+						"Miscellaneous Magic",
+						{
+							"depth": 1,
+							"header": "Categories of Magical Items"
+						},
+						"Armor and Shields",
+						"Magical Weapons",
+						{
+							"depth": 1,
+							"header": "Light Generation"
+						},
+						{
+							"depth": 1,
+							"header": "Unknown or Unusual Qualities"
+						},
+						{
+							"depth": 1,
+							"header": "Magical Weapon List"
+						},
+						"Intelligent Weapons",
+						{
+							"depth": 1,
+							"header": "Intelligent Weapon Alignment"
+						},
+						{
+							"depth": 1,
+							"header": "Weapon Abilities"
+						},
+						{
+							"depth": 1,
+							"header": "Weapon Ego"
+						},
+						{
+							"depth": 1,
+							"header": "Weapons Versus Characters"
+						}
+
+					],
 					"ordinal": {
 						"type": "appendix",
-						"identifier": "C"
+						"identifier": 3
 					}
 				},
 				{
-					"name": "Dungeon Master Inspiration",
-					"ordinal": {
-						"type": "appendix",
-						"identifier": "D"
-					}
-				},
-				{
-					"name": "Credits"
+					"name": "Index"
 				}
 			]
 		},
 		{
-			"name": "Monster Manual (2014)",
+			"name": "Monstrous Manual",
 			"id": "MM",
 			"source": "MM",
 			"group": "core",
@@ -535,8 +1766,8 @@
 				"type": "internal",
 				"path": "covers/MM.webp"
 			},
-			"published": "2014-09-30",
-			"author": "Wizards RPG Team",
+			"published": "1993-06-01",
+			"author": "Tim Beach",
 			"contents": [
 				{
 					"name": "Introduction",
@@ -603,9 +1834,6 @@
 			"published": "1995-04-01",
 			"author": "David \"Zeb\" Cook",
 			"contents": [
-				{
-					"name": "Foreword to the 2nd Edition & Credits"
-				},
 				{
 					"name": "Foreword"
 				},
@@ -1463,9 +2691,6 @@
 			"author": "David \"Zeb\" Cook",
 			"contents": [
 				{
-					"name": "Foreword to the 2nd Edition & Credits"
-				},
-				{
 					"name": "Foreword"
 				},
 				{
@@ -1868,7 +3093,7 @@
 						},
 						{
 							"depth": 1,
-							"header": "Copying from Spell Books"
+							"header": "Scroll Research"
 						},
 						{
 							"depth": 1,
@@ -1892,7 +3117,7 @@
 							"depth": 1,
 							"header": "How Many Pages in a Spell Book?"
 						},
-						"Spell Descriptions",
+						"Expanding the Schools of Magic",
 						{
 							"depth": 1,
 							"header": "Adding New Spells"
@@ -1912,7 +3137,7 @@
 						},
 						{
 							"depth": 1,
-							"header": "Solving the Problems of a New Spell"
+							"header": "Solving the Problem of a New Spell"
 						},
 						{
 							"depth": 1,
@@ -9106,1072 +10331,6 @@
 						"Conditions",
 						"Tables"
 					]
-				}
-			]
-		},
-		{
-			"name": "Monster Manual (2025)",
-			"id": "XMM",
-			"source": "XMM",
-			"group": "core",
-			"cover": {
-				"type": "internal",
-				"path": "covers/XMM.webp"
-			},
-			"published": "2025-02-18",
-			"author": "Wizards RPG Team",
-			"contents": [
-				{
-					"name": "Introduction",
-					"headers": [
-						"How to Use a Monster",
-						"Stat Block Overview",
-						"Monster Entries",
-						"Parts of a Stat Block"
-					]
-				},
-				{
-					"name": "Monsters A to Z",
-					"headers": [
-						"Monsters (A)",
-						{
-							"header": "Aarakocra",
-							"depth": 1
-						},
-						{
-							"header": "Aboleth",
-							"depth": 1
-						},
-						{
-							"header": "Air Elemental",
-							"depth": 1
-						},
-						{
-							"header": "Animal Lord",
-							"depth": 1
-						},
-						{
-							"header": "Animated Objects",
-							"depth": 1
-						},
-						{
-							"header": "Ankheg",
-							"depth": 1
-						},
-						{
-							"header": "Arcanaloth",
-							"depth": 1
-						},
-						{
-							"header": "Arch-hag",
-							"depth": 1
-						},
-						{
-							"header": "Assassin",
-							"depth": 1
-						},
-						{
-							"header": "Awakened Plants",
-							"depth": 1
-						},
-						{
-							"header": "Axe Beaks",
-							"depth": 1
-						},
-						{
-							"header": "Azers",
-							"depth": 1
-						},
-						"Monsters (B)",
-						{
-							"header": "Balor",
-							"depth": 1
-						},
-						{
-							"header": "Bandits",
-							"depth": 1
-						},
-						{
-							"header": "Banshee",
-							"depth": 1
-						},
-						{
-							"header": "Barbed Devil",
-							"depth": 1
-						},
-						{
-							"header": "Barlgura",
-							"depth": 1
-						},
-						{
-							"header": "Basilisk",
-							"depth": 1
-						},
-						{
-							"header": "Bearded Devil",
-							"depth": 1
-						},
-						{
-							"header": "Behir",
-							"depth": 1
-						},
-						{
-							"header": "Beholder",
-							"depth": 1
-						},
-						{
-							"header": "Berserkers",
-							"depth": 1
-						},
-						{
-							"header": "Black Dragons",
-							"depth": 1
-						},
-						{
-							"header": "Black Pudding",
-							"depth": 1
-						},
-						{
-							"header": "Blights",
-							"depth": 1
-						},
-						{
-							"header": "Blink Dog",
-							"depth": 1
-						},
-						{
-							"header": "Blob of Annihilation",
-							"depth": 1
-						},
-						{
-							"header": "Blue Dragons",
-							"depth": 1
-						},
-						{
-							"header": "Bone Devil",
-							"depth": 1
-						},
-						{
-							"header": "Bone Naga",
-							"depth": 1
-						},
-						{
-							"header": "Brass Dragons",
-							"depth": 1
-						},
-						{
-							"header": "Bronze Dragons",
-							"depth": 1
-						},
-						{
-							"header": "Bugbears",
-							"depth": 1
-						},
-						{
-							"header": "Bulettes",
-							"depth": 1
-						},
-						{
-							"header": "Bullywugs",
-							"depth": 1
-						},
-						"Monsters (C)",
-						{
-							"header": "Cambion",
-							"depth": 1
-						},
-						{
-							"header": "Carrion Crawler",
-							"depth": 1
-						},
-						{
-							"header": "Centaurs",
-							"depth": 1
-						},
-						{
-							"header": "Chain Devil",
-							"depth": 1
-						},
-						{
-							"header": "Chasme",
-							"depth": 1
-						},
-						{
-							"header": "Chimera",
-							"depth": 1
-						},
-						{
-							"header": "Chuul",
-							"depth": 1
-						},
-						{
-							"header": "Clay Golem",
-							"depth": 1
-						},
-						{
-							"header": "Cloaker",
-							"depth": 1
-						},
-						{
-							"header": "Cloud Giant",
-							"depth": 1
-						},
-						{
-							"header": "Cockatrices",
-							"depth": 1
-						},
-						{
-							"header": "Colossus",
-							"depth": 1
-						},
-						{
-							"header": "Commoner",
-							"depth": 1
-						},
-						{
-							"header": "Copper Dragons",
-							"depth": 1
-						},
-						{
-							"header": "Couatl",
-							"depth": 1
-						},
-						{
-							"header": "Crawling Claws",
-							"depth": 1
-						},
-						{
-							"header": "Cultists",
-							"depth": 1
-						},
-						{
-							"header": "Cyclopes",
-							"depth": 1
-						},
-						"Monsters (D)",
-						{
-							"header": "Dao",
-							"depth": 1
-						},
-						{
-							"header": "Darkmantle",
-							"depth": 1
-						},
-						{
-							"header": "Death Dog",
-							"depth": 1
-						},
-						{
-							"header": "Death Knights",
-							"depth": 1
-						},
-						{
-							"header": "Death Tyrant",
-							"depth": 1
-						},
-						{
-							"header": "Demilich",
-							"depth": 1
-						},
-						{
-							"header": "Deva",
-							"depth": 1
-						},
-						{
-							"header": "Displacer Beast",
-							"depth": 1
-						},
-						{
-							"header": "Djinni",
-							"depth": 1
-						},
-						{
-							"header": "Doppelganger",
-							"depth": 1
-						},
-						{
-							"header": "Dracolich",
-							"depth": 1
-						},
-						{
-							"header": "Dragon Turtle",
-							"depth": 1
-						},
-						{
-							"header": "Dretches",
-							"depth": 1
-						},
-						{
-							"header": "Drider",
-							"depth": 1
-						},
-						{
-							"header": "Druid",
-							"depth": 1
-						},
-						{
-							"header": "Dryad",
-							"depth": 1
-						},
-						"Monsters (E)",
-						{
-							"header": "Earth Elemental",
-							"depth": 1
-						},
-						{
-							"header": "Efreeti",
-							"depth": 1
-						},
-						{
-							"header": "Elemental Cataclysm",
-							"depth": 1
-						},
-						{
-							"header": "Empyreans",
-							"depth": 1
-						},
-						{
-							"header": "Erinyes",
-							"depth": 1
-						},
-						{
-							"header": "Ettercap",
-							"depth": 1
-						},
-						{
-							"header": "Ettin",
-							"depth": 1
-						},
-						"Monsters (F)",
-						{
-							"header": "Faerie Dragons",
-							"depth": 1
-						},
-						{
-							"header": "Fire Elemental",
-							"depth": 1
-						},
-						{
-							"header": "Fire Giant",
-							"depth": 1
-						},
-						{
-							"header": "Flameskull",
-							"depth": 1
-						},
-						{
-							"header": "Flesh Golem",
-							"depth": 1
-						},
-						{
-							"header": "Flumph",
-							"depth": 1
-						},
-						{
-							"header": "Fomorian",
-							"depth": 1
-						},
-						{
-							"header": "Frost Giant",
-							"depth": 1
-						},
-						{
-							"header": "Fungi",
-							"depth": 1
-						},
-						"Monsters (G)",
-						{
-							"header": "Galeb Duhr",
-							"depth": 1
-						},
-						{
-							"header": "Gargoyle",
-							"depth": 1
-						},
-						{
-							"header": "Gelatinous Cube",
-							"depth": 1
-						},
-						{
-							"header": "Ghasts",
-							"depth": 1
-						},
-						{
-							"header": "Ghost",
-							"depth": 1
-						},
-						{
-							"header": "Ghouls",
-							"depth": 1
-						},
-						{
-							"header": "Gibbering Mouther",
-							"depth": 1
-						},
-						{
-							"header": "Githyanki",
-							"depth": 1
-						},
-						{
-							"header": "Githzerai",
-							"depth": 1
-						},
-						{
-							"header": "Glabrezu",
-							"depth": 1
-						},
-						{
-							"header": "Gladiator",
-							"depth": 1
-						},
-						{
-							"header": "Gnolls",
-							"depth": 1
-						},
-						{
-							"header": "Goblins",
-							"depth": 1
-						},
-						{
-							"header": "Gold Dragons",
-							"depth": 1
-						},
-						{
-							"header": "Gorgons",
-							"depth": 1
-						},
-						{
-							"header": "Goristro",
-							"depth": 1
-						},
-						{
-							"header": "Gray Oozes",
-							"depth": 1
-						},
-						{
-							"header": "Green Dragons",
-							"depth": 1
-						},
-						{
-							"header": "Green Hag",
-							"depth": 1
-						},
-						{
-							"header": "Grell",
-							"depth": 1
-						},
-						{
-							"header": "Gricks",
-							"depth": 1
-						},
-						{
-							"header": "Griffon",
-							"depth": 1
-						},
-						{
-							"header": "Grimlock",
-							"depth": 1
-						},
-						{
-							"header": "Guardian Naga",
-							"depth": 1
-						},
-						{
-							"header": "Guards",
-							"depth": 1
-						},
-						"Monsters (H)",
-						{
-							"header": "Half-Dragon",
-							"depth": 1
-						},
-						{
-							"header": "Harpy",
-							"depth": 1
-						},
-						{
-							"header": "Hell Hound",
-							"depth": 1
-						},
-						{
-							"header": "Helmed Horror",
-							"depth": 1
-						},
-						{
-							"header": "Hezrou",
-							"depth": 1
-						},
-						{
-							"header": "Hill Giant",
-							"depth": 1
-						},
-						{
-							"header": "Hippogriff",
-							"depth": 1
-						},
-						{
-							"header": "Hobgoblins",
-							"depth": 1
-						},
-						{
-							"header": "Homunculus",
-							"depth": 1
-						},
-						{
-							"header": "Hook Horror",
-							"depth": 1
-						},
-						{
-							"header": "Horned Devil",
-							"depth": 1
-						},
-						{
-							"header": "Hydra",
-							"depth": 1
-						},
-						"Monsters (I)",
-						{
-							"header": "Ice Devil",
-							"depth": 1
-						},
-						{
-							"header": "Imp",
-							"depth": 1
-						},
-						{
-							"header": "Incubus",
-							"depth": 1
-						},
-						{
-							"header": "Intellect Devourer",
-							"depth": 1
-						},
-						{
-							"header": "Invisible Stalker",
-							"depth": 1
-						},
-						{
-							"header": "Iron Golem",
-							"depth": 1
-						},
-						"Monsters (J)",
-						{
-							"header": "Jackalwere",
-							"depth": 1
-						},
-						"Monsters (K)",
-						{
-							"header": "Kenku",
-							"depth": 1
-						},
-						{
-							"header": "Knights",
-							"depth": 1
-						},
-						{
-							"header": "Kobolds",
-							"depth": 1
-						},
-						{
-							"header": "Kraken",
-							"depth": 1
-						},
-						{
-							"header": "Kuo-toa",
-							"depth": 1
-						},
-						"Monsters (L)",
-						{
-							"header": "Lamia",
-							"depth": 1
-						},
-						{
-							"header": "Larvae",
-							"depth": 1
-						},
-						{
-							"header": "Lemures",
-							"depth": 1
-						},
-						{
-							"header": "Lich",
-							"depth": 1
-						},
-						{
-							"header": "Lizardfolk",
-							"depth": 1
-						},
-						"Monsters (M)",
-						{
-							"header": "Mages",
-							"depth": 1
-						},
-						{
-							"header": "Magmin",
-							"depth": 1
-						},
-						{
-							"header": "Manes",
-							"depth": 1
-						},
-						{
-							"header": "Manticore",
-							"depth": 1
-						},
-						{
-							"header": "Marid",
-							"depth": 1
-						},
-						{
-							"header": "Marilith",
-							"depth": 1
-						},
-						{
-							"header": "Medusa",
-							"depth": 1
-						},
-						{
-							"header": "Mephits",
-							"depth": 1
-						},
-						{
-							"header": "Merfolk",
-							"depth": 1
-						},
-						{
-							"header": "Merrow",
-							"depth": 1
-						},
-						{
-							"header": "Mezzoloth",
-							"depth": 1
-						},
-						{
-							"header": "Mimic",
-							"depth": 1
-						},
-						{
-							"header": "Mind Flayers",
-							"depth": 1
-						},
-						{
-							"header": "Minotaur of Baphomet",
-							"depth": 1
-						},
-						{
-							"header": "Modrons",
-							"depth": 1
-						},
-						{
-							"header": "Mummies",
-							"depth": 1
-						},
-						{
-							"header": "Myconids",
-							"depth": 1
-						},
-						"Monsters (N)",
-						{
-							"header": "Nalfeshnee",
-							"depth": 1
-						},
-						{
-							"header": "Night Hag",
-							"depth": 1
-						},
-						{
-							"header": "Nightmare",
-							"depth": 1
-						},
-						{
-							"header": "Nobles",
-							"depth": 1
-						},
-						{
-							"header": "Nothic",
-							"depth": 1
-						},
-						{
-							"header": "Nycaloth",
-							"depth": 1
-						},
-						"Monsters (O)",
-						{
-							"header": "Ochre Jelly",
-							"depth": 1
-						},
-						{
-							"header": "Ogres",
-							"depth": 1
-						},
-						{
-							"header": "Oni",
-							"depth": 1
-						},
-						{
-							"header": "Otyugh",
-							"depth": 1
-						},
-						{
-							"header": "Owlbears",
-							"depth": 1
-						},
-						"Monsters (P)",
-						{
-							"header": "Pegasus",
-							"depth": 1
-						},
-						{
-							"header": "Performers",
-							"depth": 1
-						},
-						{
-							"header": "Peryton",
-							"depth": 1
-						},
-						{
-							"header": "Phase Spider",
-							"depth": 1
-						},
-						{
-							"header": "Piercer",
-							"depth": 1
-						},
-						{
-							"header": "Pirates",
-							"depth": 1
-						},
-						{
-							"header": "Pit Fiend",
-							"depth": 1
-						},
-						{
-							"header": "Pixies",
-							"depth": 1
-						},
-						{
-							"header": "Planetar",
-							"depth": 1
-						},
-						{
-							"header": "Poltergeist",
-							"depth": 1
-						},
-						{
-							"header": "Priests",
-							"depth": 1
-						},
-						{
-							"header": "Pseudodragon",
-							"depth": 1
-						},
-						{
-							"header": "Purple Worm",
-							"depth": 1
-						},
-						"Monsters (Q)",
-						{
-							"header": "Quaggoths",
-							"depth": 1
-						},
-						{
-							"header": "Quasit",
-							"depth": 1
-						},
-						"Monsters (R)",
-						{
-							"header": "Rakshasa",
-							"depth": 1
-						},
-						{
-							"header": "Red Dragons",
-							"depth": 1
-						},
-						{
-							"header": "Remorhazes",
-							"depth": 1
-						},
-						{
-							"header": "Revenants",
-							"depth": 1
-						},
-						{
-							"header": "Roc",
-							"depth": 1
-						},
-						{
-							"header": "Roper",
-							"depth": 1
-						},
-						{
-							"header": "Rust Monster",
-							"depth": 1
-						},
-						"Monsters (S)",
-						{
-							"header": "Sahuagin",
-							"depth": 1
-						},
-						{
-							"header": "Salamanders",
-							"depth": 1
-						},
-						{
-							"header": "Satyrs",
-							"depth": 1
-						},
-						{
-							"header": "Scarecrow",
-							"depth": 1
-						},
-						{
-							"header": "Scouts",
-							"depth": 1
-						},
-						{
-							"header": "Sea Hag",
-							"depth": 1
-						},
-						{
-							"header": "Shadow",
-							"depth": 1
-						},
-						{
-							"header": "Shadow Demon",
-							"depth": 1
-						},
-						{
-							"header": "Shadow Dragons",
-							"depth": 1
-						},
-						{
-							"header": "Shambling Mound",
-							"depth": 1
-						},
-						{
-							"header": "Shield Guardian",
-							"depth": 1
-						},
-						{
-							"header": "Silver Dragons",
-							"depth": 1
-						},
-						{
-							"header": "Skeletons",
-							"depth": 1
-						},
-						{
-							"header": "Slaadi",
-							"depth": 1
-						},
-						{
-							"header": "Solar",
-							"depth": 1
-						},
-						{
-							"header": "Spectator",
-							"depth": 1
-						},
-						{
-							"header": "Specter",
-							"depth": 1
-						},
-						{
-							"header": "Sphinxes",
-							"depth": 1
-						},
-						{
-							"header": "Spies",
-							"depth": 1
-						},
-						{
-							"header": "Spined Devil",
-							"depth": 1
-						},
-						{
-							"header": "Spirit Naga",
-							"depth": 1
-						},
-						{
-							"header": "Sprite",
-							"depth": 1
-						},
-						{
-							"header": "Stirges",
-							"depth": 1
-						},
-						{
-							"header": "Stone Giant",
-							"depth": 1
-						},
-						{
-							"header": "Stone Golem",
-							"depth": 1
-						},
-						{
-							"header": "Storm Giant",
-							"depth": 1
-						},
-						{
-							"header": "Succubus",
-							"depth": 1
-						},
-						"Monsters (T)",
-						{
-							"header": "Tarrasque",
-							"depth": 1
-						},
-						{
-							"header": "Thri-kreen",
-							"depth": 1
-						},
-						{
-							"header": "Toughs",
-							"depth": 1
-						},
-						{
-							"header": "Treant",
-							"depth": 1
-						},
-						{
-							"header": "Troglodyte",
-							"depth": 1
-						},
-						{
-							"header": "Troll",
-							"depth": 1
-						},
-						"Monsters (U)",
-						{
-							"header": "Ultroloth",
-							"depth": 1
-						},
-						{
-							"header": "Umber Hulk",
-							"depth": 1
-						},
-						{
-							"header": "Unicorn",
-							"depth": 1
-						},
-						"Monsters (V)",
-						{
-							"header": "Vampires",
-							"depth": 1
-						},
-						{
-							"header": "Vrock",
-							"depth": 1
-						},
-						"Monsters (W)",
-						{
-							"header": "Warriors",
-							"depth": 1
-						},
-						{
-							"header": "Water Elemental",
-							"depth": 1
-						},
-						{
-							"header": "Water Weird",
-							"depth": 1
-						},
-						{
-							"header": "Werebear",
-							"depth": 1
-						},
-						{
-							"header": "Wereboar",
-							"depth": 1
-						},
-						{
-							"header": "Wererat",
-							"depth": 1
-						},
-						{
-							"header": "Weretiger",
-							"depth": 1
-						},
-						{
-							"header": "Werewolf",
-							"depth": 1
-						},
-						{
-							"header": "White Dragons",
-							"depth": 1
-						},
-						{
-							"header": "Wight",
-							"depth": 1
-						},
-						{
-							"header": "Will-o'-Wisp",
-							"depth": 1
-						},
-						{
-							"header": "Winter Wolf",
-							"depth": 1
-						},
-						{
-							"header": "Worgs",
-							"depth": 1
-						},
-						{
-							"header": "Wraith",
-							"depth": 1
-						},
-						{
-							"header": "Wyvern",
-							"depth": 1
-						},
-						"Monsters (X)",
-						{
-							"header": "Xorn",
-							"depth": 1
-						},
-						"Monsters (Y)",
-						{
-							"header": "Yetis",
-							"depth": 1
-						},
-						{
-							"header": "Yochlol",
-							"depth": 1
-						},
-						{
-							"header": "Yuan-ti",
-							"depth": 1
-						},
-						"Monsters (Z)",
-						{
-							"header": "Zombies",
-							"depth": 1
-						}
-					]
-				},
-				{
-					"name": "Animals",
-					"ordinal": {
-						"type": "appendix",
-						"identifier": "A"
-					}
-				},
-				{
-					"name": "Monster Lists",
-					"ordinal": {
-						"type": "appendix",
-						"identifier": "B"
-					},
-					"headers": [
-						"Monster Conversions",
-						"Monsters by Habitat",
-						"Monsters by Creature Type",
-						"Monsters by Group",
-						"Monsters by Challenge Rating"
-					]
-				},
-				{
-					"name": "Credits"
 				}
 			]
 		}

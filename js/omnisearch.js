@@ -199,12 +199,8 @@ class Omnisearch {
 
 	/* -------------------------------------------- */
 
-	static async pGetFilteredResults (results, {isApplySrdFilter = false, isApplyPartneredFilter = false} = {}) {
+	static async pGetFilteredResults (results, {isApplyPartneredFilter = false} = {}) {
 		Omnisearch.initState();
-
-		if (isApplySrdFilter && this._state.isSrdOnly) {
-			results = results.filter(r => r.doc.r);
-		}
 
 		if (isApplyPartneredFilter && !this._state.isShowPartnered) {
 			results = results.filter(r => !r.doc.s || !r.doc.dP);
@@ -304,7 +300,7 @@ class Omnisearch {
 			syntaxMetasPageRange,
 		});
 
-		return this.pGetFilteredResults(results, {isApplySrdFilter: true, isApplyPartneredFilter: true});
+		return this.pGetFilteredResults(results, {isApplyPartneredFilter: true});
 	}
 
 	static _pGetResults_pGetBaseResults (
@@ -399,7 +395,6 @@ class Omnisearch {
 	static _btnToggleUa = null;
 	static _btnToggleBlocklisted = null;
 	static _btnToggleLegacy = null;
-	static _btnToggleSrd = null;
 
 	static _doInitBtnToggleFilter (
 		{
@@ -465,13 +460,6 @@ class Omnisearch {
 			text: "Legacy",
 		});
 
-		this._doInitBtnToggleFilter({
-			propState: "isSrdOnly",
-			propBtn: "_btnToggleSrd",
-			title: "Only show Systems Reference Document content results",
-			text: "SRD",
-		});
-
 		this._dispSearchOutput.empty();
 
 		const btnHelp = e_({
@@ -493,7 +481,6 @@ class Omnisearch {
 				${this._btnToggleBlocklisted}
 				${this._btnToggleLegacy}
 			</div>
-			${this._btnToggleSrd}
 			${btnHelp}
 		</div>`;
 
@@ -507,8 +494,6 @@ class Omnisearch {
 			const {
 				source,
 				page,
-				isSrd,
-				isSrd52,
 
 				ptStyle,
 				sourceAbv,
@@ -532,8 +517,6 @@ class Omnisearch {
 				${$link}
 				<div class="ve-flex-v-center">
 					${ptSource}
-					${isSrd ? `<span class="ve-muted omni__disp-srd help-subtle relative" title="Available in the Systems Reference Document (5.1)">[SRD]</span>` : ""}
-					${isSrd52 ? `<span class="ve-muted omni__disp-srd help-subtle relative" title="Available in the Systems Reference Document (5.2)">[SRD]</span>` : ""}
 					${Parser.sourceJsonToMarkerHtml(source, {isList: false, additionalStyles: "omni__disp-source-marker"})}
 					${ptPage ? `<span class="omni__wrp-page small-caps">${ptPage}</span>` : ""}
 				</div>
@@ -590,7 +573,6 @@ class Omnisearch {
 		isShowUa: true,
 		isShowBlocklisted: false,
 		isShowLegacy: false,
-		isSrdOnly: false,
 	};
 
 	static initState () {
@@ -606,14 +588,12 @@ class Omnisearch {
 			get isShowUa () { return this._state.isShowUa; }
 			get isShowBlocklisted () { return this._state.isShowBlocklisted; }
 			get isShowLegacy () { return this._state.isShowLegacy; }
-			get isSrdOnly () { return this._state.isSrdOnly; }
 
 			set isShowPartnered (val) { this._state.isShowPartnered = !!val; }
 			set isShowBrew (val) { this._state.isShowBrew = !!val; }
 			set isShowUa (val) { this._state.isShowUa = !!val; }
 			set isShowBlocklisted (val) { this._state.isShowBlocklisted = !!val; }
 			set isShowLegacy (val) { this._state.isShowLegacy = !!val; }
-			set isSrdOnly (val) { this._state.isSrdOnly = !!val; }
 		}
 		this._state = SearchState.fromObject(saved);
 		this._state._addHookAll("state", () => {
@@ -626,14 +606,12 @@ class Omnisearch {
 	static addHookUa (hk) { this._state._addHookBase("isShowUa", hk); }
 	static addHookBlocklisted (hk) { this._state._addHookBase("isShowBlocklisted", hk); }
 	static addHookLegacy (hk) { this._state._addHookBase("isShowLegacy", hk); }
-	static addHookSrdOnly (hk) { this._state._addHookBase("isSrdOnly", hk); }
 
 	static doTogglePartnered () { this._state.isShowPartnered = !this._state.isShowPartnered; }
 	static doToggleBrew () { this._state.isShowBrew = !this._state.isShowBrew; }
 	static doToggleUa () { this._state.isShowUa = !this._state.isShowUa; }
 	static doToggleBlocklisted () { this._state.isShowBlocklisted = !this._state.isShowBlocklisted; }
 	static doToggleLegacy () { this._state.isShowLegacy = !this._state.isShowLegacy; }
-	static doToggleSrdOnly () { this._state.isSrdOnly = !this._state.isSrdOnly; }
 
 	static get isShowPartnered () { return this._state.isShowPartnered; }
 	static get isShowBrew () { return this._state.isShowBrew; }
