@@ -300,8 +300,6 @@ export class RecursiveSearchStateClass extends _RecursiveSearchStateBase {
 		stacks.table.forEach(it => {
 			it.name = it.caption;
 			it.source = it._tmpMeta.subclassSource || it._tmpMeta.classSource;
-			it.srd = !!this._cls.srd;
-			it.srd52 = !!this._cls.srd52;
 			it.basicRules = !!this._cls.basicRules;
 			it.freeRules2024 = !!this._cls.freeRules2024;
 
@@ -334,8 +332,6 @@ export class RecursiveSearchStateSubclass extends _RecursiveSearchStateBase {
 		stacks.table.forEach(it => {
 			it.name = it.caption;
 			it.source = it._tmpMeta.subclassSource || it._tmpMeta.classSource;
-			it.srd = !!this._sc.srd;
-			it.srd52 = !!this._sc.srd52;
 			it.basicRules = !!this._sc.basicRules;
 			it.freeRules2024 = !!this._sc.freeRules2024;
 

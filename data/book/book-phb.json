@@ -25,16 +25,27 @@
 			"page": 8,
 			"entries": [
 				"You are reading the key to the most exciting hobby in the world—role-playing games.",
-				"These first few pages will introduce you to the 2nd edition of the most successful role-playing game ever published. If you are a novice role-player, stop right here and read the section labeled {@i {@book The Real Basics|XPHB|3}} (on page 10). When you understand what role-playing and the AD&D game are all about, come back to this point and read the rest of the introduction. If you are an experienced role-player, skip {@book The Real Basics|XPHB|3}.",
+				"These first few pages will introduce you to the 2nd edition of the most successful role-playing game ever published. If you are a novice role-player, stop right here and read the section labeled {@i {@book The Real Basics|PHB|3}} (on page 10). When you understand what role-playing and the AD&D game are all about, come back to this point and read the rest of the introduction. If you are an experienced role-player, skip {@i The Real Basics}.",
+				{
+					"type": "section",
+					"name": "Why a Second Edition?",
+					"page": 8,
+					"entries": [
+						"Before answering the question, let's define what the second edition of the AD&D game is and is not.",
+						"This second edition of the AD&D game is a lot different from the first edition. The presentation of the game has been cleaned up. The rules are reorganized, clarified, and streamlined. Where necessary, things that didn't work have been fixed. Things that did work haven't been changed.",
+						"The second edition of the AD&D game is not a statement of what any one person thinks the game should be. It is the result of more than three years of discussion, thought, consultation, review, and playtesting.",
+						"Now to the question of \"Why a second edition?\" The AD&D game evolved over the course of 16 years. During that time, the game grew tremendously through play. Changes and improvements (and a few mistakes) were made. These were published in subsequent volumes. By 1988, the game consisted of 12 hardcover rule books. It was physically and intellectually unwieldy (but still a lot of fun). The time was right to reorganize and recombine all that information into a manageable package. That package is the second edition."
+					]
+				},
 				{
 					"type": "section",
 					"name": "How the Rule Books are Organized",
 					"page": 8,
 					"entries": [
 						"The AD&D game rule books are intended primarily as reference books. They are designed so any specific rule can be found quickly and easily during a game.",
-						"Everything a player needs to know is in the {@i Player's Handbook®}. That's not to say that all the rules are in this book. But every rule that a player needs to know in order to play the game is in this book.",
-						"A few rules have been reserved for the {@book {@i Dungeon Master Guide}|XDMG} (DMG). These either cover situations that very seldom arise or give the Dungeon Master (DM) information that players should not have beforehand. Everything else in the {@i DMG} is information that only the Dungeon Master needs. If the DM feels that players need to know something that is explained in the {@i DMG}, he will tell them.",
-						"Like the DMG, the {@i Monstrous Manual}™ supplement is the province of the DM. This gives complete and detailed information about the monsters, people, and other creatures inhabiting the AD&D world. Some DMs don't mind if players read this information, but the game is more fun if players don't know everything about their foes—it heightens the sense of discovery and danger of the unknown."
+						"Everything a player needs to know is in the {@i Player's Handbook}. That's not to say that all the rules are in this book. But every rule that a player needs to know in order to play the game is in this book.",
+						"A few rules have been reserved for the {@i {@book Dungeon Master Guide|DMG} (DMG)}. These either cover situations that very seldom arise or give the Dungeon Master (DM) information that players should not have beforehand. Everything else in the {@i DMG} is information that only the Dungeon Master needs. If the DM feels that players need to know something that is explained in the {@i DMG}, he will tell them.",
+						"Like the DMG, the {@i Monstrous Compendium}™ supplement is the province of the DM. This gives complete and detailed information about the monsters, people, and other creatures inhabiting the AD&D world. Some DMs don't mind if players read this information, but the game is more fun if players don't know everything about their foes—it heightens the sense of discovery and danger of the unknown."
 					]
 				},
 				{
@@ -42,8 +53,8 @@
 					"name": "Learning the Game",
 					"page": 8,
 					"entries": [
-						"If you have played the AD&D game before, you know almost everything you need to play the 2nd Edition. We advise you to read the entire Player's Handbook, but the biggest changes are in these chapters: {@book Character Classes|XPHB|8}, {@book Combat|XPHB|14}, and {@book Experience|XPHB|13}. Be sure to read at least those three chapters before sitting down to play.",
-						"If you come to a term you do not understand, look for it in the Glossary.",
+						"If you have played the AD&D game before, you know almost everything you need to play the 2nd Edition. We advise you to read the entire {@i Player's Handbook}, but the biggest changes are in these chapters: {@book Character Classes|XPHB|8}, {@book Combat|XPHB|14}, and {@book Experience|XPHB|13}. Be sure to read at least those three chapters before sitting down to play.",
+						"If you come to a term you do not understand, look for it in the {@book Glossary|XPHB|3}, which begins on page 11.",
 						"If you have never played the AD&D game before, the best way to learn to play the game is to find a group of experienced players and join them. They can get you immediately into the game and explain things as you need to know them. You don't need to read anything beforehand. In fact, it's best if you can play the game for several hours with experienced players before reading any of the rules. One of the amazing things about a role-playing game is that the concept is difficult to explain, but marvelously simple to demonstrate.",
 						"If none of your friends are involved in a game, the best place to find experienced players is through your local hobby store. Role-playing and general gaming clubs are common and are always eager to accept new members. Many hobby stores offer a bulletin board through which DMs can advertise for new players and new players can ask for information about new or ongoing games. If there is no hobby store in your area, check at the local library or school.",
 						"If you can't find anyone else who knows the AD&D game, you can teach yourself. Read the Player's Handbook and create some characters. Try to create a variety of character classes. Then pick up a pre-packaged adventure module for low-level characters, round up two or three friends, and dive into it. You probably will make lots of mistakes and wonder constantly whether you are doing everything wrong. Even if you are, don't worry about it. The AD&D game is big, but eventually you'll bring it under control."
@@ -59,21 +70,30 @@
 				},
 				{
 					"type": "section",
-					"name": "The AD&D Game Line",
-					"page": 9,
+					"name": "The Second Edition AD&D Game Line",
+					"page": 8,
 					"entries": [
 						"Quite a few books and other products are published for the AD&D game. As a player, you need only one of them—this book. Every player and DM should have a copy of the {@i Player's Handbook}. Everything else is either optional or intended for the Dungeon Master.",
 						"The {@i Dungeon Master's Guide} is essential for the DM and it is for the DM only. Players who are not themselves DMs have no cause to read the {@i DMG}.",
-						"The {@i Monstrous Manual} supplement is not one, but several products. The book can be expanded whenever new compendiums are released. The first pack of monsters is essential to the game. It includes most commonly encountered monsters, mythical beasts, and legendary creatures Additional packs expand on these monsters and give the game more variety. Specialty compendiums—those for Greyhawk, the Forgotten Realms, Kara-Tur, etc.—are highly recommended for DMs who play in those settings.",
-						"Expanded character class books—{@i The Complete Fighter}, {@i The Complete Thief}, etc.—provide a lot more detail on these character classes than does the {@i Player's Handbook}. These books are entirely optional. They are for those players who really want a world of choice for their characters."
+						"The {@i Monstrous Compendium} supplement is not one, but several products. The book can be expanded whenever new compendiums are released. The first pack of monsters is essential to the game. It includes most commonly encountered monsters, mythical beasts, and legendary creatures. Additional packs expand on these monsters and give the game more variety. Specialty compendiums—those for Greyhawk, the Forgotten Realms, Kara-Tur, etc.—are highly recommended for DMs who play in those settings.",
+						"Expanded character class books—{@i {@book The Complete Fighter|PHBR1}}, {@i {@book The Complete Thief|PHBR2}}, etc.—provide a lot more detail on these character classes than does the {@i Player's Handbook}. These books are entirely optional. They are for those players who really want a world of choice for their characters.",
+						"Adventure modules contain complete game adventures. These are especially useful for DMs who aren't sure how to create their own adventures and for DMs who need an adventure quickly and don't have time to write one of their own."
 					]
 				},
 				{
 					"type": "section",
 					"name": "A Note About Pronouns",
-					"page": 9,
+					"page": 8,
 					"entries": [
 						"The male pronoun (he, him, his) is used exclusively throughout the second edition of the AD&D game rules. We hope this won't be construed by anyone to be an attempt to exclude females from the game or imply their exclusion. Centuries of use have neutered the male pronoun. In written material it is clear, concise, and familiar. Nothing else is."
+					]
+				},
+				{
+					"type": "section",
+					"name": "Creating a Character",
+					"page": 8,
+					"entries": [
+						"To create a character to play in the AD&D game, proceed, in order, through Chapters 1 through 6. (Chapter 5 is optional). These chapters will tell you how to generate your character's ability scores, race, and class, decide on his alignment, pick proficiencies, and buy equipment. Once you have done all this, your character is ready for adventure!"
 					]
 				}
 			]
@@ -199,37 +219,37 @@
 			"name": "Glossary",
 			"page": 13,
 			"entries": [
-				"{@b Ability}—any of the six natural traits that represent the basic definition of a player character: Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. A player character's abilities are determined at the beginning of a game by rolling 6-sided dice (d6s). The scores continue to be used throughout the game as a means of determining success or failure of many actions",
-				"{@b Ability check}—a 1d20 roll against one of your character's ability scores (modifiers may be added to or subtracted from the die roll). A result that is equal or less than your character's ilbiJity score indicates that the attempted action succeeds.",
-				"{@b AC}—abbreviation for Armor Class.",
+				"{@b Ability}—any of the six natural traits that represent the basic definition of a player character: Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. A player character's abilities are determined at the beginning of a game by rolling 6-sided dice ({@dice d6}s). The scores continue to be used throughout the game as a means of determining success or failure of many actions",
+				"{@b Ability check}—a {@dice 1d20} roll against one of your character's ability scores (modifiers may be added to or subtracted from the die roll). A result that is equal or less than your character's ilbiJity score indicates that the attempted action succeeds.",
+				"{@b AC}—abbreviation for Armor Class {@i (q.v.)}.",
 				"{@b Alignment}—a factor in defining a player character that reflects his basic attitude toward society and the forces of the universe. Basically there are nine categories demonstrating the character's relationship to order vs. chaos and good vs. evil. A player character's alignment is selected by the player when the character is created.",
 				"{@b Area of effect}—the area in which a magical spell or a breath weapon works on any creatures unless they make a saving throw.",
-				"{@b Armor class}—({@i abbr.} {@b AC})",
-				"{@b Attack roll}—the 1d20 roll used to determine if an attack is successful.",
+				"{@b Armor Class}—({@i abbr.} {@b AC})",
+				"{@b Attack roll}—the {@dice 1d20} roll used to determine if an attack is successful.",
 				"{@b Bend bars/lift gates roll}—the roll of percentile dice to determine whether a character succeeds in bending metal bars, lifting a heavy portcullis, or similar task. The result needed is a function of Strength and can be found in Table 1.",
 				"{@b Bonus spells}—extra spells at various spell levels that a priest is entitled to because of high Wisdom; shown in Table 5.",
 				"{@b Breath weapon}—the ability of a dragon or other creature to spew a substance out of its mouth just by breathing, without making an attack roll. Those in the area of effect must roll a saving throw.",
-				"{@b Cha}—abbreviation for Charisma.",
+				"{@b Cha}—abbreviation for Charisma {@i (q.v.)}.",
 				"{@b Chance of spell failure}—the percentage chance that a priest spell will fail when cast. Based on Wisdom, it is shown in Table 5.",
 				"{@b Chance to know spell}—the percentage chance for a wizard to learn a new spell. Based on Intelligence, it is shown in Table 4.",
 				"{@b Charisma} ({@i abbr.} {@b Cha})—an ability score representing a character's persuasiveness, personal magnetism, and ability to lead.",
 				"{@b Class}—A character's primary profession.",
 				"{@b Common}—the language that all player characters in the AD&D game world speak. Other languages may require the use of proficiency slots.",
-				"{@b Con}—abbreviation for Constitution.",
+				"{@b Con}—abbreviation for Constitution {@i (q.v.)}.",
 				"{@b Constitution} ({@i abbr.} {@b Con})—an ability score that represents a character's general physique, hardiness, and state of health.",
-				"{@b d}—abbreviation for dice or die. A roll that calls for 2d6, for example, means that the player rolls two six-sided dice.",
-				"{@b d3}—since there is no such thing as a three-sided die, a roll calling for d3 means to use a d6, making 1 and 2 be a 1, 3 and 4 be a 2, and 5 and 6 be a 3.",
+				"{@b d}—abbreviation for dice or die. A roll that calls for {@dice 2d6}, for example, means that the player rolls two six-sided dice.",
+				"{@b d3}—since there is no such thing as a three-sided die, a roll calling for {@dice d3} means to use a {@dice d6}, making 1 and 2 be a 1, 3 and 4 be a 2, and 5 and 6 be a 3.",
 				"{@b d4}—a four-sided die.",
 				"{@b d6}—a six-sided die.",
 				"{@b d8}—an eight-sided die.",
-				"{@b d10}—a ten-sided die. Two d10s can be used as percentile dice.",
+				"{@b d10}—a ten-sided die. Two d10s can be used as percentile dice {@i (q.v.)}.",
 				"{@b d12}—a twelve-sided die.",
 				"{@b d20}—a twenty-sided die.",
-				"{@b d100}—either an actual 100-sided die or two different-colored ten-sided dice to be rolled as percentile dice.",
+				"{@b d100}—either an actual 100-sided die or two different-colored ten-sided dice to be rolled as percentile dice {@i (q.v.)}.",
 				"{@b {@i DMG}}—a reference to the {@i Dungeon Master's Guide}.",
 				"{@b Damage}—the effect of a successful attack or other harmful situation, measured in hit points.",
 				"{@b Demihuman}—a player character who is not human: a dwarf, elf, gnome, half-elf, or halfling.",
-				"{@b Dex}—abbreviation for Dexterity.",
+				"{@b Dex}—abbreviation for Dexterity {@i (q.v.)}.",
 				"{@b Dexterity} ({@i abbr.} {@b Dex})—an ability score representing a combination of a character's agility, reflexes, hand-eye coordination, and the like.",
 				"{@b Dual-class character}—a human who switches character class after having already progressed several levels. Only humans can be dual-classed.",
 				"{@b Encumbrance}—he amount, in pounds, that a character is carrying. How much he can carry and how being encumbered affects his movement rate are based on Strength and are shown in Tables 47 and 48. Encumbrance is an optional rule.",
@@ -239,15 +259,16 @@
 				"{@b Gaze attack}—the ability of a creature, such as a basilisk, to attack simply by making eye contact with the victim.",
 				"{@b Henchmen}—nonplayer characters who work for a character mainly out of loyalty and love of adventure. The number of henchmen a character can have is based on Charisma and is shown in Table 6. The DM and the player share control of the henchmen.",
 				"{@b Hireling}—nonplayer characters who work for a character just for money. Hirelings are completely under the control of the DM.",
-				"{@b Hit dice}—the dice rolled to determine a character's hit points. Up to a certain level, one or more new Hit Dice are rolled each time a character attains a new class level. A fighter, for example, has only one 10-sided Hit Die (1d10) at 1st level, but when he rises to the 2nd level, the player rolls a second d10, increasing the character's hit points.",
-				"{@b Hit points}—a number representing: 1. how much damage a character can suffer before being killed, determined by Hit Dice. The hit points lost to injury can usually be regained by rest or healing; 2. how much damage a specific attack does, determined by weapon or monster statistics, and subtracted from a player's total.",
+				"{@b Hit dice}—the dice rolled to determine a character's hit points. Up to a certain level, one or more new Hit Dice are rolled each time a character attains a new class level. A fighter, for example, has only one 10-sided Hit Die ({@dice 1d10}) at 1st level, but when he rises to the 2nd level, the player rolls a second {@dice d10}, increasing the character's hit points.",
+				"{@b Hit points}—a number representing: 1. how much damage a character can suffer before being killed, determined by Hit Dice {@i (q.v.)}. The hit points lost to injury can usually be regained by rest or healing; 2. how much damage a specific attack does, determined by weapon or monster statistics, and subtracted from a player's total.",
 				"{@b Infravision}—the ability of certain character races or monsters to see in the dark. Infravision generally works up to 60 feet in the darkness.",
-				"{@b Initiative}—the right to attack first in a combat round, usually determined by the lowest roll of a 10-sided die. The initiative roll is eliminated if surprise. is achieved.",
-				"{@b Int}—abbreviation for Intelligence.",
+				"{@b Initiative}—the right to attack first in a combat round, usually determined by the lowest roll of a 10-sided die. The initiative roll is eliminated if surprise {@i (q.v.)} is achieved.",
+				"{@b Int}—abbreviation for Intelligence {@i (q.v.)}.",
 				"{@b Intelligence} ({@i abbr.} {@b Int})—an ability score representing a character's memory, reasoning, and learning ability.",
+				"{@i Italic type}—used primarily to indicate spells and magical items.",
 				"{@b Level}—any of several different game factors that are variable in degree, especially: 1. class level, a measure of the character's power, starting at the 1st level as a beginning adventurer and rising through the accumulation of experience points to the 20th level or higher. At each level attained, the character receives new powers. 2. spell level, a measure of the power of a magical spell. A magic-using character can use only those spells for which his class level qualifies him. Wizard spells come in nine levels (Table 21); priest spells in seven (Table 24).",
 				"{@b Loyalty base}—a bonus added to or a penalty subtracted from the probability that henchmen are going to stay around when the going gets tough. Based on the character's Charisma, it is shown in Table 6.",
-				"{@b M}—abbreviation for material component.",
+				"{@b M}—abbreviation for material component {@i (q.v.)}.",
 				"{@b Magical defense adjustment}—a bonus added to or a penalty subtracted from saving throws vs. spells that attack the mind. Based on Wisdom, it is shown in Table 5.",
 				"{@b Maneuverability class}—a ranking for flying creatures that reflects their ability to turn easily in aerial combat. Each class—from a top rank of A to a bottom rank of E—has specific statistical abilities in combat.",
 				"{@b Material component} ({@i abbr.} {@b M}) - any specific item that must be handled in some way during the casting of a magic spell.",
@@ -255,22 +276,23 @@
 				"{@b Melee}—combat in which characters are fighting in direct contact, such as with swords, claws, or fists, as opposed to fighting with missile weapons or spells",
 				"{@b Missile combat}—combat involving the use of weapons that shoot missiles or items that can be thrown. Because the combat is not \"toe-to-toe,\" the rules are slightly different than those for regular combat.",
 				"{@b Movement rate}—a number used in calculating how far and how fast a character can move in a round. This number is in units of 10 yards per round outdoors, but it represents 10 feet indoors. Thus, an MR of 6 is 60 yards per round in the wilderness, but only 60 feet per round in a dungeon.",
-				"{@b MR}—abbreviation for movement rate.",
+				"{@b MR}—abbreviation for movement rate {@i (q.v.)}.",
 				"{@b Multi-class character}—a demihuman who improves in two or more classes at the same time by dividing experience points between the different classes. Humans cannot be multi-classed.",
 				"{@b Mythos} ({@i pl.} {@b mythoi})—a complete body of belief particular to a certain time or place, including the pantheon of its gods.",
 				"{@b Neutrality}—a philosophical position, or alignment, of a character that is between belief in good or evil, order or chaos.",
 				"{@b Non-player character} ({@i abbr.} {@b NPC})—any character controlled by the DM instead of a player.",
-				"{@b NPC}—abbreviation for nonplayer character.",
+				"{@b NPC}—abbreviation for nonplayer character {@i (q.v.)}.",
 				"{@b Open doors roll}—the roll of a 20-sided die to see if a character succeeds in opening a heavy or stuck door or performing a similar task. The die roll at which the character succeeds can be found in Table 1.",
 				"{@b Opposition school}—a school of magic that is directly opposed to a specialist's school of choice, thus preventing him from learning spells from that school, as shown in Table 22.",
-				"{@b PC}—abbreviation for player character.",
-				"{@b Percentage (or percent) chance}—a number between 1 and 100 used to represent the probability of something happening. If a character is given an X percentage chance of an event occurring, the player rolls percentile dice.",
-				"{@b Percentile dice}—either a 100-sided die or two 10-sided dice used in rolling a percentage number. If 2d10 are used, they are of different colors, and one represents the tens digit while the other is the ones.",
+				"{@b PC}—abbreviation for player character {@i (q.v.)}.",
+				"{@b Percentage (or percent) chance}—a number between 1 and 100 used to represent the probability of something happening. If a character is given an X percentage chance of an event occurring, the player rolls percentile dice {@i (q.v.)}.",
+				"{@b Percentile dice}—either a 100-sided die or two 10-sided dice used in rolling a percentage number. If {@dice 2d10} are used, they are of different colors, and one represents the tens digit while the other is the ones.",
 				"{@b Player character} ({@i abbr.} {@b PC})—the characters in a role-playing game who are under the control of the players.",
 				"{@b Poison save}—a bonus or a penalty to a saving throw vs. poison. Based on Constitution, it is shown in Table 3.",
 				"{@b Prime requisite}—the ability score that is most important to a character class; for example, Strength to a fighter.",
 				"{@b Proficiency}—a character's learned skill not defined by his class but which gives him a greater percentage chance to accomplish a specific type of task during an adventure. Weapon and nonweapon proficiency slots are acquired as the character rises in level, as shown in Table 34. The use of proficiencies in the game is optional.",
 				"{@b Proficiency check}—the roll of a 20-sided die to see if a character succeeds in doing a task by comparing the die roll to the character's relevant ability score plus or minus any modifiers shown in Table 37 (the modified die roll must be equal to or less than the ability score for the action to succeed).",
+				"{@b q.v.}— \"which see,\" or \"turn to.\"",
 				"{@b Race}—a player character's species: human, elf, dwarf, gnome, half-elf, or halfling. Race puts some limitations on the PC's class.",
 				"{@b Rate of fire} ({@i abbr.} {@b ROF})—number of times a missile-firing or thrown weapon can be shot in a round.",
 				"{@b Reaction adjustment}—a bonus added to or penalty subtracted from a die roll used in determining the success of a character's action. Such an adjustment is used especially in reference to surprise (shown on Table 2 as a function of Dexterity) and the reaction of other intelligent beings to a character (shown on Table 6 as a function of Charisma).",
@@ -278,251 +300,29 @@
 				"{@b Resistance}—the innate ability of a being to withstand attack, such as by magic. Gnomes, for example, have a magic resistance that adds bonuses to their saving throws against magic (Table 9).",
 				"{@b Resurrection survival}—the percentage chance a character has of being magically raised from death. Based on Constitution, it is shown in Table 3.",
 				"{@b Reversible}—of a magical spell, able to be cast \"backwards,\" so that the opposite of the usual effect is achieved.",
-				"{@b ROF}—abbreviation for rate of fire.",
+				"{@b ROF}—abbreviation for rate of fire {@i (q.v.)}.",
 				"{@b Round}—in combat, a segment of time approximately 1 minute long, during which a character can accomplish one basic action. Ten combat rounds equal one turn.",
-				"{@b S}—abbreviation for somatic component.",
-				"{@b Saving throw}—a measure of a character's ability to resist (to \"save vs.\") special types of attacks, especially poison, paralyzation, magic, and breath weapons. Success is usually determined by the roll of 1d20.",
+				"{@b S}—abbreviation for somatic component {@i (q.v.)}.",
+				"{@b Saving throw}—a measure of a character's ability to resist (to \"save vs.\") special types of attacks, especially poison, paralyzation, magic, and breath weapons. Success is usually determined by the roll of {@dice 1d20}.",
 				"{@b School of magic}—One of nine different categories of magic, based on the type of magical energy utilized. Wizards who concentrate their work on a single school are called specialists. The specific school of which a spell is a part is shown after the name of the spell in the spell section at the end of the book.",
 				"{@b Somatic component} ({@i abbr.} {@b S})—the gestures that a spellcaster must use to cast a specific spell. A bound wizard cannot cast a spell requiring somatic components.",
-				"{@b Specialist} -a wizard who concentrates on a specific school of magic, as opposed to a mage, who studies all magic in general.",
+				"{@b Specialist} -a wizard who concentrates on a specific school of magic {@i (q.v.)}, as opposed to a mage, who studies all magic in general.",
 				"{@b Spell immunity}—protection that certain characters have against illusions or other specific spells, based on high Intelligence (Table 4) or Wisdom (Table 5) scores.",
 				"{@b Sphere of influence}—any of sixteen categories of priest spells to which a priest may have major access (he can eventaully learn them all) or minor access (he can learn only the lower level spells). The relevant sphere of influence is shown as the first item in the list of characteristics in the priest spells.",
-				"{@b Str}—abbreviation for Strength.",
+				"{@b Str}—abbreviation for Strength {@i (q.v.)}.",
 				"{@b Strength} ({@i abbr.} {@b Str})—an ability score representing a character's muscle power, endurance, and stamina.",
 				"{@b Surprise roll}—the roll of a ten-sided die by the Dungeon Master to determine if a character or group takes another by surprise. Successful surprise (a roll of 1, 2, or 3) cancels the roll for initiative on the first round of combat.",
 				"{@b System shock}—a percentage chance that a character survives major magical effects, such as being petrified. Based on Constitution, it is shown in Table 3.",
 				"{@b THAC0}—an acronym for \"To Hit Armor Class 0,\" the number that a character needs to roll in order to hit a target with AC 0.",
-				"{@b To-hit roll}—another name for attack roll.",
+				"{@b To-hit roll}—another name for attack roll {@i (q.v.)}.",
 				"{@b Turn}—in game time, approximately 10 minutes; used especially in figuring how long various magic spells may last. In combat, a turn consists of 10 rounds.",
 				"{@b Turn undead}—an ability of a cleric or paladin to turn away an undead creature, such as a skeleton or a vampire.",
-				"{@b V}—abbreviation for verbal component.",
+				"{@b V}—abbreviation for verbal component {@i (q.v.)}.",
 				"{@b Verbal component} ({@i abbr} {@b V})—specific words or sounds that must be uttered while casting a spell.",
 				"{@b Weapon speed}—an initiative modifier used in combat that accounts for the time required to get back into position to reuse a weapon.",
-				"{@b Wis}—abbreviation for Wisdom.",
+				"{@b Wis}—abbreviation for Wisdom {@i (q.v.)}.",
 				"{@b Wisdom} ({@i abbr.} {@b Wis})—an ability score representing a composite of a character's intuition, judgment, common sense, and will power.",
-				"{@b XP}—abbreviation for experience points."
-			]
-		},
-		{
-			"type": "section",
-			"name": "Step-by-Step Player Character Generation",
-			"page": 16,
-			"entries": [
-				"To create a character to play in the AD&D game, proceed, in order, through Chapters 1 through 6. (Chapter 5 is optional). These chapters will tell you how to generate your character's ability scores, race, and class, decide on his alignment, pick proficiencies, and buy equipment. The necessary steps are summarized here. Don't be concerned if you encounter terms you don't understand; they are fully explained in chapters 1 through 6. Once you've worked through this list, your character is ready for adventure!",
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Step 1: Roll Ability Scores (chapter 1)",
-							"page": 16,
-							"entries": [
-								"Your character needs scores for Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Step 2: Select a Race (chapter 2)",
-							"page": 16,
-							"entries": [
-								"See Table 7 for ability score requirements. Then adjust the character's scores according to the race chosen:",
-								{
-									"type": "table",
-									"colStyles": [
-										"col-1",
-										"col-8"
-									],
-									"isStriped": false,
-									"rows": [
-										[
-											"Dwarf",
-											"Con +1, Cha -1"
-										],
-										[
-											"Elf",
-											"Dex +1, Con -1"
-										],
-										[
-											"Gnome",
-											"Int +1, Wis -1"
-										],
-										[
-											"Half-elf",
-											"no adjustments"
-										],
-										[
-											"Halfling",
-											"Dex +1, Str -1"
-										],
-										[
-											"Human",
-											"no adjustments"
-										]
-									]
-								},
-								"Consult tables 1\u20136 and record the various bonuses and penalties the character receives for having particularly high or low scores.Consult tables 1\u20136 and record the various bonuses and penalties the character receives for having particularly high or low scores.",
-								"Consult the racial descriptions in chapter 2 and record the character's special racial abilities.",
-								"Finally, check Tables 10, 11, and 12 to determine the character's height, weight, starting age, and age effects."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Step 3: Select a Class (chapter 3)",
-							"page": 16,
-							"entries": [
-								"Select a class that is available to your character's race:",
-								{
-									"type": "table",
-									"colStyles": [
-										"col-1",
-										"col-8"
-									],
-									"isStriped": false,
-									"rows": [
-										[
-											"Dwarf",
-											"F, C, T, F/T, F/C"
-										],
-										[
-											"Elf",
-											"F, R, M, C, T, F/M, F/T, M/T, F/M/T"
-										],
-										[
-											"Gnome",
-											"F, I, C, T, F/C, F/I, F/T, C/I, C/T, I/T"
-										],
-										[
-											"Half-elf",
-											"F, R, M, C, D, T, B, F/C, F/T, F/D, F/M, C/R, C/M, T/M, F/M/C, F/M/T"
-										],
-										[
-											"Halfling",
-											"F, C, T, F/T"
-										],
-										[
-											"Human",
-											"F, P, R, M, I, C, D, T, B"
-										]
-									]
-								},
-								"Check Table 13 for class-based ability score restrictions. Read the class description and record special class abilities and restrictions.",
-								"If your character is a fighter, paladin, or ranger, is not a halfling, and has a Strength score of 18, roll d100 to determine exceptional Strength. Consult Table 1 and readjust those bonuses affected by exceptional Strength.",
-								"If your character is a mage, consult Table 4 and record his maximum spell level, chance to learn spells, and maximum number of spells per level. Ask your DM what spells the character knows.",
-								"If your character is a cleric, consult Table 5 and record bonus spells and his chance of spell failure. Note the spell spheres to which the PC has access.",
-								"If your character is a thief, record his base thieving skill scores from Table 26. Modify these scores according to Tables 27 and 28. Then apportion 60 points between those abilities, assigning no more than 30 points to any one score.",
-								"If your character is a bard, note his thief abilities from Table 33. Modify these percentages according to Tables 27 and 28. Then apportion 20 points between these abilities."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Step 4: Choose an Alignment  (chapter 4)",
-							"page": 16,
-							"entries": [
-								"In selecting your alignment, abide by class restrictions:",
-								{
-									"type": "table",
-									"colStyles": [
-										"col-1",
-										"col-8"
-									],
-									"isStriped": false,
-									"rows": [
-										[
-											"Paladin",
-											"lawful good"
-										],
-										[
-											"Ranger",
-											"lawful, neutral, or chaotic good"
-										],
-										[
-											"Mythos Priest",
-											"any acceptable to deity"
-										],
-										[
-											"Bard",
-											"any neutral combination"
-										],
-										[
-											"All others",
-											"any"
-										]
-									]
-								}
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Step 5: Record Saving Throws and THAC0  (chapter 9)",
-							"page": 16,
-							"entries": [
-								"Consult Table 60 to determine the base saving throws for your character. Consult Table 53 to determine your character's THAC0."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Step 6: Roll Hit Points (chapter 3)",
-							"page": 16,
-							"entries": [
-								"Roll the appropriate hit die for your character. If the character is multi-classed, roll all applicable hit dice and average the results.",
-								{
-									"type": "table",
-									"colStyles": [
-										"col-1",
-										"col-8"
-									],
-									"isStriped": false,
-									"rows": [
-										[
-											"Warrior",
-											"{@dice 1d10}"
-										],
-										[
-											"Priest",
-											"{@dice 1d8}"
-										],
-										[
-											"Rogue",
-											"{@dice 1d6}"
-										],
-										[
-											"Mage",
-											"{@dice 1d4}"
-										]
-									]
-								}
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Step 7: Record Base Movement  (chapter 14)",
-							"page": 16,
-							"entries": [
-								"Fine the character's base movement rate on Table 64 and record it. If the optional encumbrance rules are in effect, also record the encumbrance categories from Table 47 and modified movement rates and combat abilities."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Step 8: Select Proficiencies (chapter 5)",
-							"page": 16,
-							"entries": [
-								"Consult Table 34 to determine the character's weapon and nonweapon proficiency slots. Add the character's number of languages known (from Table 4) to his number of nonweapon proficiencies.",
-								"Select weapon proficiencies. If the character is a fighter, you may select a weapon specialization.",
-								"Select nonweapon proficiencies. Record their relevant abilities and check modifiers."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Step 9: Equip Your Character  (chapter 6)",
-							"page": 16,
-							"entries": [
-								"Consult Table 43 to determine your character's starting funds. Using Table 44, select and pay for your character's starting equipment.",
-								"Consult Table 46 to determine your character's armor class rating. Modify this base AC by his defensive adjustment.",
-								"Record the weight, size, damage, rate of fire, and range information for each weapon carried. Include type and speed factors if those optional rules are in play."
-							]
-						}
-					]
-				}
+				"{@b XP}—abbreviation for experience points {@i (q.v.)}."
 			]
 		},
 		{

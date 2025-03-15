@@ -1123,21 +1123,21 @@
     ],
     "book": [
         {
-            "name": "Player's Handbook (1989)",
+            "name": "Player's Handbook",
             "id": "PHB",
             "source": "PHB",
             "group": "core",
             "published": "1989-02-01"
         },
         {
-            "name": "Monster Manual (2014)",
+            "name": "Monstrous Manual",
             "id": "MM",
             "source": "MM",
             "group": "core",
-            "published": "2014-09-30"
+            "published": "1993-06-01"
         },
         {
-            "name": "Dungeon Master's Guide (1989)",
+            "name": "Dungeon Master's Guide",
             "id": "DMG",
             "source": "DMG",
             "group": "core",
@@ -1485,13 +1485,6 @@
             "source": "XScreen",
             "group": "screen",
             "published": "2024-11-12"
-        },
-        {
-            "name": "Monster Manual (2025)",
-            "id": "XMM",
-            "source": "XMM",
-            "group": "core",
-            "published": "2025-02-18"
         }
     ]
 }

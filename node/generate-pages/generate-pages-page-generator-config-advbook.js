@@ -28,7 +28,7 @@ class _PageGeneratorQuickref extends PageGeneratorAdventureBookBase {
 	_navbarTitle = "Quick Reference (2014)";
 	_navbarDescription = "Browse content. Press F to find, and G to go to page.";
 	_scriptIdentAdvBook = "quickreference";
-	_advBookPlaceholder = `Trans rights are human rights.`;
+	_advBookPlaceholder = `Forget human rights. Life, liberty and property is all you need.`;
 }
 
 class _PageGeneratorAdventures extends PageGeneratorAdventuresBooksBase {

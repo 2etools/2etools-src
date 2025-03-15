@@ -104,7 +104,6 @@
 	$rgb-source-XPHB: #ef1946;
 	$rgb-source-XDMG: #812a91;
 
-	$rgb-source-XMM: #5686b6;
 	$rgb-source-HFDoMM: #00817f;
 
 	// region Categories
@@ -567,10 +566,6 @@
 
 		&XDMG {
 			@include mix-source-color($rgb-source-XDMG);
-		}
-
-		&XMM {
-			@include mix-source-color($rgb-source-XMM);
 		}
 
 		&HFDoMM {

@@ -2,57 +2,6 @@
 	"data": [
 		{
 			"type": "section",
-			"name": "Foreword to the 2nd Edition & Credits",
-			"page": 2,
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Foreword to the 2nd Edition",
-					"page": 2,
-					"entries": [
-						{
-							"type": "quote",
-							"entries": [
-								"A foreword is normally the place where the author of a book expresses thanks and gratitude. I'm not going to do that here. It's not that everyone involved doesn't deserve congratulations and praise, it's just that I already said all those things in the foreword to the AD&D {@i Player's Handbook}. Everything I said there is true for this book, too. On to other things.",
-								"Let's assume that since you're reading this, your are, or plan to be, a Dungeon Master. By now, you should be familiar with the rules in the {@i Player's Handbook}. You've probably already noticed things you like or things you would have done differently. If you have, congratulations. You've got the spirit every Dungeon Master needs. As you go through this rule book, I encourage you to continue to make these choices.",
-								"Choice is what the AD&D game is all about. We've tried to offer you what we think are the best choices for your AD&D campaign, but each of us has different likes and dislikes. The game that I enjoy may be quite different from your own campaign. But it is not for me to say what is right or wrong for your game. True, I and everyone working on the AD&D game have had to make fundamental decisions, but we've tried to avoid being dogmatic and inflexible. The AD&D game is yours, it's mine, it's every player's game.",
-								"So is there an \"official\" AD&D game? Yes, but only when there needs to be. Although I don't have a crystal ball, it's likely that tournaments and other official events will use all of the core rules in these books. Optional rules may or may not be used, but it's fair to say that all players need to know about them even if they don't have the memorized.",
-								"The {@i Player's Handbook} and the {@i Dungeon Master Guide} give you what you're expected to know, but that doesn't mean the game begins and ends there. Your game will go in directions not yet explored and your players will try things others think strange. Sometimes these strange things will work; sometimes they won't. Just accept this, be ready for it, and enjoy it.",
-								"Take the time to have fun with the AD&D rules. Add, create, expand, and extrapolate. Don't just let the game sit there, and don't become a rules lawyer worrying about each piddly little detail. If you can't figure out the answer, MAKE IT UP! And whatever you do, don't fall into the trap of believing these rules are complete. They are not. You cannot sit back and let the rule book do everything for you. Take the time and effort to become not just a good DM, but a brilliant one.",
-								"At conventions, in letters, and over the phone I'm often asked for the instant answer to a fine point of the game rules. More often than not, I come back with a question—what do {@i you} feel is right? And the people asking the questions discover that not only can they create an answer, but that their answer is as good as anyone else's. The rules are only guidelines.",
-								"At the beginning of the first {@i Dungeon Master Guide}, Gary Gygax stressed that each of us, working from a common base, would make the AD&D game grow in a variety of different directions. That is more true today than ever. Don't be afraid of experimentation, but do be careful. As a Dungeon Master, you have great power, and \"with great power comes great responsibility.\" Use it wisely."
-							],
-							"by": [
-								"David “Zeb” Cook",
-								"2/9/89"
-							]
-						}
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Credits",
-					"page": 2,
-					"entries": [
-						"{@b 2nd Edition Design:} David “Zeb” Cook",
-						"{@b Development:} Steve Winter and Jon Pickens",
-						"{@b Playtest Coordination:} Jon Pickens",
-						"{@b Editing:} Warren Spector, Jean Rabe, Steven Schend",
-						"{@b Proofreading:} Jim Butler, Ray Vallese",
-						"{@b Typesetting:} Nancy J. Kerkstra",
-						"{@b Graphic Design:} Dee Barnett",
-						"{@b Art Coordination:} Peggy Cooper",
-						"{@b Cover Illustration:} Jeff Easley",
-						"{@b Interior Illustrations:} Ned Dameron, Laura Lakey, Les Dorscheid, Jeff Easley, Dana Knutson Roger Loveless, David O. Miller, Alan Pollack, Robh Ruppel",
-						"Hundreds of players assisted us in playtesting the AD&D 2nd Edition game. Their efforts were invaluable in improving the manuscript. The list that follows is not complete, but we would like to thank Mike Abraham, Jeff Albanese, Roger Anderson, Susan Anderson, Walter Bass, Scott Beck, Doug Behringer, John Bennie, Andrew Bethke, Don Bingle, Linda Bingle, Aaron Boaz, Teresa Boaz, Ray Booth, Rick Brewer, Jeff Broemmel, Dan Brown, Frank Cabanas, Bill Ciers, Robert Corn, Dennis Couch, Bill Curtis, Scott Daily, Phillip Dear, Frank and Terri Disarro, Errol Farstad, John Fitzpatrick, Bill Flatt, Cheryl Frech, Dewey Frech, John Gamble, Vince Garcia, Kyra Glass, John Goff, Peter Gregory, Greg Handleton, David Hansom, Gordon Holcomb, Rob Huebner, Ed Issac, Larry Johnson, Reynold C. Jones, Jeff Kelly, Jeff King, Jim Kirkley, Peter Kokinder, Dan Kramarsky, Ed Kramer, Paul Krausnick, Jon Kugath, Michael Lach, Todd Laing, Len Lakofka, Randall Lemon, David Machim, Jeff Martin, Theron Martin, Scott Mayo, Milton McGorril, Kevin Melka, John Mendez, Bill Mercer, Frank and Mary Meyer, Neal Meyer, Mark Middleton, Jim Milam, Frank Miller, Jim Moeller, Mike Mullen, Lance Murphy, Scott Needham, Stance Nixon, Kevin Norton, Steve Null, Ray Ouellette, Rembert Parker, Nathan Patronksy, Ed Peterson, Keith Polster, Bruce Rabe, Norm Ritchie, Kip Romaine, Tim Royapa, Marc Rush, Michael Ruzza, Paul Schmidt, Eugene Schumaker, Mark Schumaker, Greg Schwarz, Michael Simpson, Warren Snider, Michael J. Somers, Hal St. Clair, Jeff Stevens, Justin Stevens, Paul Stevens, Dorence Stovall, Brad Stump, Lourdes Sullivan, Ellen Terra, John Terra, Mark TeTai, William Tracy, Jay Tummelson, Robert Unglaub, Carl Van Devendeer, Steven Vaughn-Nichols, Virginia Vaughn-Nichols, Bryan Villareal, Mark Wallace, Mike Wahl, Peter Walker, Doris Wells, Kevin Wells, Colleen Wetzel, Dave Wetzel, Josh Whitmer, Jett Wherry, Skip Williams, James Williams, Peter Zinda, and the following groups: DragonCon Gaming Staff, Elflords of Eriador, Excalibre Gamers Association, Games Unlimited, and MACE.",
-						"Finally, credit must also be shared with anyone who has ever asked a question, offered a suggestion, written an article, or made a comment about the AD&D game.",
-						"This is a derivative work based on the original Advanced Dungeons & Dragons {@i Player’s Handbook®} and {@i Dungeon Master Guide™} by Gary Gygax and {@i Unearthed Arcana™} and other materials by Gary Gygax and others."
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
 			"name": "Foreword",
 			"page": 3,
 			"entries": [
@@ -1464,8 +1413,8 @@
 											"caption": "Table 11: Race",
 											"page": 33,
 											"colLabels": [
-												"",
-												""
+												"Race",
+												"Human"
 											],
 											"colStyles": [
 												"col- text-center",
@@ -2016,12 +1965,56 @@
 											],
 											"rows": [
 												[
-													"",
-													""
+													"Must be lawful",
+													"–1"
 												],
 												[
-													"",
-													""
+													"Must be neutral",
+													"–1"
+												],
+												[
+													"Must be good",
+													"–1"
+												],
+												[
+													"Cannot keep more than can carry",
+													"–0.5"
+												],
+												[
+													"Must donate 10% of treasure",
+													"–0.5"
+												],
+												[
+													"Nonhuman level limit of 9*",
+													"–1"
+												],
+												[
+													"Nonhuman level limit of 12*",
+													"–0.5"
+												],
+												[
+													"Has ethos that must be obeyed",
+													"–1"
+												],
+												[
+													"Cannot own more than 10 magical items",
+													"–0.5"
+												],
+												[
+													"Cannot own more than 6 magical items",
+													"–1"
+												],
+												[
+													"Cannot associate with one class",
+													"–1"
+												],
+												[
+													"Cannot associate with one alignment",
+													"–1"
+												],
+												[
+													"Ability use delayed to higher level**",
+													"–0.5"
 												]
 											],
 											"footnotes": [
@@ -2588,7 +2581,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Middle-Class",
+							"name": "Middle-Class Conditions",
 							"page": 51,
 							"entries": [
 								"Middle-class life tends to be safe and somewhat boring. Characters receive adequate protection and will not be the main target of most burglars. Thieves are generally attracted to the homes of the wealthy."
@@ -2674,28 +2667,28 @@
 									"✓"
 								],
 								[
-									"Awl Pike",
+									"Awl pike",
 									"—",
 									"—",
 									"✓",
 									"✓"
 								],
 								[
-									"Bastard Sword",
+									"Bastard sword",
 									"—",
 									"✓",
 									"✓",
 									"✓"
 								],
 								[
-									"Block and Tackle",
+									"Block and tackle",
 									"—",
 									"—",
 									"✓",
 									"✓"
 								],
 								[
-									"Bolt Case",
+									"Bolt case",
 									"—",
 									"—",
 									"✓",
@@ -2709,7 +2702,7 @@
 									"✓"
 								],
 								[
-									"Bronze Plate Mail",
+									"Bronze plate mail",
 									"✓",
 									"—",
 									"—",
@@ -2723,14 +2716,14 @@
 									"✓"
 								],
 								[
-									"Chain Mail",
+									"Chain mail",
 									"—",
 									"✓",
 									"✓",
 									"✓"
 								],
 								[
-									"Composite Long Bow",
+									"Composite long bow",
 									"—",
 									"—",
 									"✓",
@@ -2744,7 +2737,7 @@
 									"✓"
 								],
 								[
-									"Field Plate",
+									"Field plate",
 									"—",
 									"✓",
 									"✓",
@@ -2758,14 +2751,14 @@
 									"✓"
 								],
 								[
-									"Full Plate",
+									"Full plate",
 									"—",
 									"—",
 									"—",
 									"✓"
 								],
 								[
-									"Full Plate Barding",
+									"Full plate barding",
 									"—",
 									"—",
 									"—",
@@ -2786,42 +2779,42 @@
 									"✓"
 								],
 								[
-									"Glass Bottle",
+									"Glass bottle",
 									"—",
 									"—",
 									"✓",
 									"✓"
 								],
 								[
-									"Great Helm",
+									"Great helm",
 									"—",
 									"—",
 									"✓",
 									"✓"
 								],
 								[
-									"Greek Fire",
+									"Greek fire",
 									"—",
 									"✓",
 									"✓",
 									"✓"
 								],
 								[
-									"Heavy Horse Lance",
+									"Heavy horse lance",
 									"—",
 									"✓",
 									"✓",
 									"✓"
 								],
 								[
-									"Heavy War Horse",
+									"Heavy war horse",
 									"—",
 									"✓",
 									"✓",
 									"✓"
 								],
 								[
-									"Horse Yoke",
+									"Horse yoke",
 									"—",
 									"—",
 									"✓",
@@ -2835,14 +2828,14 @@
 									"✓"
 								],
 								[
-									"Jousting Lance",
+									"Jousting lance",
 									"—",
 									"—",
 									"✓",
 									"✓"
 								],
 								[
-									"Kopesh Sword",
+									"Kopesh sword",
 									"✓",
 									"—",
 									"—",
@@ -2870,7 +2863,7 @@
 									"✓"
 								],
 								[
-									"Magnifying Glass",
+									"Magnifying glass",
 									"—",
 									"—",
 									"—",
@@ -2884,7 +2877,7 @@
 									"✓"
 								],
 								[
-									"Morning Star",
+									"Morning star",
 									"—",
 									"✓",
 									"✓",
@@ -2905,35 +2898,35 @@
 									"—"
 								],
 								[
-									"Plate Mail",
+									"Plate mail",
 									"—",
 									"—",
 									"✓",
 									"✓"
 								],
 								[
-									"Pole arms, not pike",
+									"Pole arms (not pike)",
 									"—",
 									"✓",
 									"✓",
 									"✓"
 								],
 								[
-									"Pony Cart",
+									"Pony cart",
 									"—",
 									"—",
 									"✓",
 									"✓"
 								],
 								[
-									"Ring Mail",
+									"Ring mail",
 									"—",
 									"✓",
 									"✓",
 									"✓"
 								],
 								[
-									"Sailing ship",
+									"Sailing ship (non-oared)",
 									"—",
 									"—",
 									"✓",
@@ -2947,14 +2940,14 @@
 									"✓"
 								],
 								[
-									"Silk Clothes",
+									"Silk clothes",
 									"—",
 									"Very Rare",
 									"Rare",
 									"Rare"
 								],
 								[
-									"Silk Rope",
+									"Silk rope",
 									"—",
 									"Very Rare",
 									"Rare",
@@ -2968,7 +2961,7 @@
 									"✓"
 								],
 								[
-									"Two-Handed Sword",
+									"Two-handed sword",
 									"—",
 									"—",
 									"✓",
@@ -2983,7 +2976,7 @@
 								]
 							],
 							"footnotes": [
-								"— = Not available; ✓ = Available]"
+								"— = Not available; ✓ = Available"
 							]
 						},
 						{
@@ -3364,8 +3357,9 @@
 							"caption": "Table 28: Hit Points of Items",
 							"page": 56,
 							"colLabels": [
-								"",
-								""
+								"Item",
+								"Hit Point Range",
+								"Attack Modes"
 							],
 							"colStyles": [
 								"col- text-left",
@@ -3375,18 +3369,18 @@
 							"rows": [
 								[
 									"Chair",
-									"1d8+1",
+									"{@dice 1d8+1}",
 									"Bludgeon, Slash"
 								],
 								[
 									"Glass Bottle",
-									"2d4",
+									"{@dice 2d4}",
 									"Slash, Pierce"
 								],
 								[
 									"Glass Bottle",
-									"1d2",
-									"Bludgeon, Slash, Pierce"
+									"{@dice 1d2}",
+									"Bludgeon"
 								],
 								[
 									"Glass Pane, Mirror",
@@ -3395,17 +3389,17 @@
 								],
 								[
 									"Rope",
-									"1d4+1",
+									"{@dice 1d4+1}",
 									"Slash"
 								],
 								[
 									"Wooden Door",
-									"1d20+30",
+									"{@dice 1d20+30}",
 									"Slash"
 								],
 								[
 									"Wooden Pole",
-									"2d6",
+									"{@dice 2d6}",
 									"Slash"
 								]
 							]
@@ -3779,6 +3773,79 @@
 								"Each spell requires a number of pages equal to its level plus 0–5 ({@dice 1d6-1}) additional pages. The actual number of pages a spell takes differs for each wizard. Even if two or more wizards are recording the same spell, the number of pages varies, since there are differences in handwriting and notations.",
 								"Further, no spell book can have more than 100 pages, no ordinary non-magical scroll more than 25, and no traveling spell book more than 50. Thus, at best, a spell book filled with 9th-level spells could only hold 11 spells (99 pages), allowing only one blank page to hold a magical protection (such as a {@i fire trap} spell). All too likely, this spell book would be filled well before 11 spells had been entered.",
 								"For convenience in creating NPC spell books, the maximum and minimum number of spells for each level and type of spell book is given in Table 30. The table presumes that all the spells within a book are of the same level (which may or may not be the case, especially for traveling books).",
+								{
+									"type": "table",
+									"caption": "Table 30: Spell Book Capacities",
+									"page": 62,
+									"colLabels": [
+										"Level",
+										"Standard",
+										"Scrolls",
+										"Travelling"
+									],
+									"colStyles": [
+										"col- text-left",
+										"col- text-center",
+										"col- text-center",
+										"col- text-center"
+									],
+									"rows": [
+										[
+											"1st",
+											"16–100 spells",
+											"4–25 spells",
+											"8–50 spells"
+										],
+										[
+											"2nd",
+											"14–50 spells",
+											"3–12 spells",
+											"7–25 spells"
+										],
+										[
+											"3rd",
+											"12–33 spells",
+											"3–8 spells",
+											"6–16 spells"
+										],
+										[
+											"4th",
+											"11–25 spells",
+											"2–6 spells",
+											"5–12 spells"
+										],
+										[
+											"5th",
+											"10–20 spells",
+											"2–5 spells",
+											"5–10 spells"
+										],
+										[
+											"6th",
+											"9–16 spells",
+											"2–4 spells",
+											"4–8 spells"
+										],
+										[
+											"7th",
+											"2–3 spells",
+											"2–3 spells",
+											"4–7 spells"
+										],
+										[
+											"8th",
+											"7–12 spells",
+											"1–3 spells",
+											"3–6 spells"
+										],
+										[
+											"9th",
+											"7–11 spells",
+											"1–2 spells",
+											"3–5 spells"
+										]
+									]
+								},
 								"In addition, although a spell book never can have more than its maximum at a given spell level, there is no requirement that the book be filled even to its minimum number. The ranges given on the following table presume the spell book is filled as efficiently as possible with spells, leaving little or no room for protective devices."
 							]
 						}
@@ -4109,8 +4176,8 @@
 									"caption": "Table 32: Hit Dice Value Modifiers",
 									"page": 69,
 									"colLabels": [
-										"",
-										""
+										"Ability",
+										"Hit Die Modifier"
 									],
 									"colStyles": [
 										"col- text-left",
@@ -4131,7 +4198,7 @@
 										],
 										[
 											"Breath weapon (over 20 pts. max. dmg.)",
-											""
+											"+2"
 										],
 										[
 											"Causes disease",
@@ -4210,7 +4277,7 @@
 											"+2"
 										],
 										[
-											"Regeneration",
+											"Possesses magical items usable against PCs",
 											"+1"
 										],
 										[
@@ -4312,8 +4379,8 @@
 													"page": 70,
 													"rows": [
 														[
-															"",
-															""
+															"Warrior",
+															"Award"
 														]
 													]
 												},
@@ -4638,7 +4705,7 @@
 												{
 													"type": "table",
 													"caption": "Table 36: Weapon Type vs. Armor Modifiers",
-													"page": 121,
+													"page": 75,
 													"colLabels": [
 														"Armor Type",
 														"Slash",
@@ -4979,7 +5046,7 @@
 							],
 							"colStyles": [
 								"col- text-center",
-								"col- text-"
+								"col- text-center"
 							],
 							"rows": [
 								[
@@ -5240,7 +5307,7 @@
 										{
 											"type": "table",
 											"caption": "Table 41: Optional Modifiers to Initiative",
-											"page": 125,
+											"page": 79,
 											"colLabels": [
 												"Specific Situation",
 												"Modifier"
@@ -5590,7 +5657,7 @@
 					"page": 82,
 					"entries": [
 						"Since a round is roughly a minute long, it should be easy for a character to move just about anywhere he wants during the course of the round. After all, Olympic-class sprinters can cover vast amounts of ground in a minute.",
-						"However, a character in an AD&D game is not an Olympic sprinter running in a straight line. He is trying to maneuver through a battle without getting killed. He is keeping his eyes open for trouble, avoiding surprise, watching his back, 127 Combatwatching the backs of his partners, and looking for a good opening, while simultaneously planning his next move, sometimes through a haze of pain.",
+						"However, a character in an AD&D game is not an Olympic sprinter running in a straight line. He is trying to maneuver through a battle without getting killed. He is keeping his eyes open for trouble, avoiding surprise, watching his back, watching the backs of his partners, and looking for a good opening, while simultaneously planning his next move, sometimes through a haze of pain.",
 						"He may be carrying a load of equipment that slows him down significantly. Because of all these things, the distance a character can move is significantly less than players generally think.",
 						"In a combat round, a being can move up to 10 times its movement rating (see Chapter 14: Time and Movement) in feet. Thus, if a character has a movement rating of 9, he can move up to 90 feet in a round. However, the types of moves a character can make during combat are somewhat limited.",
 						{
@@ -5628,7 +5695,7 @@
 								"When making a withdrawal, a character carefully backs away from his opponent (who can choose to follow). The character moves up to 1⁄3 his normal movement rate.",
 								"{@b Fleeing:} To flee from combat, a character simply turns and runs up to his full movement rate. However, the fleeing character drops his defenses and turns his back to his opponent.",
 								"The enemy is allowed a free attack (or multiple attacks if the creature has several attacks per round) at the rear of the fleeing character. This attack is made the instant the character flees: It doesn’t count against the number of attacks that opponent is allowed during the round, and initiative is irrelevant.",
-								"lowed during the round, and initiative is irrelevant. The fleeing character can be pursued, unless a companion blocks the advance of the enemy."
+								"The fleeing character can be pursued, unless a companion blocks the advance of the enemy."
 							]
 						}
 					]
@@ -6017,7 +6084,7 @@
 								{
 									"type": "table",
 									"caption": "Table 44: Cover and Concealment Modifiers",
-									"page": 132,
+									"page": 88,
 									"colLabels": [
 										"Target is:",
 										"Cover",
@@ -6627,7 +6694,7 @@
 							"page": 94,
 							"entries": [
 								"A successful magic resistance check can have four different results, depending on the nature of the spell being resisted:",
-								"{@b Individually Targeted Spells:} By definition, these spells affect just one creature, and only the targeted creature rolls for magic resistance (if it has any). If a spell of this type is directed at several targets, each rolls independently of the others. (An example of this would be a {@b hold person} spell aimed at four creatures, with each creature getting a magic resistance roll, if they have magic resistance.)",
+								"{@b Individually Targeted Spells:} By definition, these spells affect just one creature, and only the targeted creature rolls for magic resistance (if it has any). If a spell of this type is directed at several targets, each rolls independently of the others. (An example of this would be a {@i {@spell hold person|XPHB}} spell aimed at four creatures, with each creature getting a magic resistance roll, if they have magic resistance.)",
 								"If the magic resistance roll is successful, the spell has no effect on that creature. If the spell is targeted only at the creature, the spell fails completely and disappears. If several targets are involved, the spell may still affect others who fail their magic resistance roll.",
 								"{@b Area-Effect Spells:} These spells are not targeted on a single creature, but on a point. The spell’s effect encompasses everything within a set distance of that point. A successful magic resistance check enables the creature to ignore the effect of the spell. However, the spell is not negated and still applies to all others in the area of effect.",
 								"{@b In-Place Spells:} These spells operate continuously in a particular place or on a particular creature, character, or item. {@i Protection from evil} is one example of this kind of spell.",
@@ -6649,8 +6716,8 @@
 						"When encountering undead, a priest or paladin can attempt to turn the creatures (remember that the paladin turns undead as if he was two levels lower—a 5th-level paladin uses the level 3 column in Table 61). Only one attempt can be made per character per encounter, but several different characters can make attempts at the same time (with the results determined individually).",
 						{
 							"type": "table",
-							"caption": "Table 61: Turning Undead",
-							"page": 137,
+							"caption": "Table 47: Turning Undead",
+							"page": 96,
 							"colLabels": [
 								"Type or Hit Dice of Undead",
 								"",
@@ -7100,7 +7167,7 @@
 										],
 										[
 											"Animal, normal predator",
-											"3"
+											"7"
 										],
 										[
 											"Animal intelligence monster",
@@ -8459,8 +8526,8 @@
 												"Cast a given 1st-level spell at will",
 												"Cast a 5th-level or lesser spell once per day or week",
 												"Cast a spell of 3rd level or less once or twice per day",
-												"{@i Cure serious wounds, disease, blindness,} or {@i deafness} one or more times per day",
-												"{@i Detect good/evil, invisibility, charm,} or {@i magic} at wil",
+												"{@i {@spell Cure serious wounds|XPHB}, {@spell Cure Disease|XPHB|disease}, {@spell Cure Blindness|XPHB|blindness},} or {@i {@spell Cure Deafness|XPHB|deafness}} one or more times per day",
+												"{@i {@spell Detect good/evil|XPHB}, {@spell Detect Invisibility|XPHB|invisibility}, {@spell Detect Charm|XPHB|charm},} or {@i {@spell Detect Magic|XPHB|magic}} at will",
 												"Double the character's movement rate",
 												"Freedom from hunger and fatigue",
 												"Fly",
@@ -8563,13 +8630,13 @@
 										"Since that time the Hand has appeared briefly in a number of widely scattered lands. Most of these appearances are unsubstantiated, but the corruption of the Paladin-King of Miro is a well-documented case. Foolishly fixing the Hand onto his own arm, the Paladin-King discovered too late that he could not remove it and in the end it destroyed him.",
 										"For the Hand to function, it must be touched to the stump of an arm, to which it grafts instantly. The grip is immensely strong (19 Strength, no attack roll or damage bonuses however).",
 										"At first, the Hand seems useful and harmless enough, but within it resides some portion of Vecna’s evil spirit. Gradually the owner comes to believe he is Vecna. Good characters becoming cruel and malevolent; evil characters become the embodiment of corruption, eventually turning on their friends and allies.",
-										"Suggested powers for the Hand include: death ray (no saving throw, once a day), {@i cause disease} (100-foot x 100- foot area/2 times per day), {@i animate dead} (1/day), {@i darkness} (at will), +2 protection, {@i web} (1/day), {@i disintegrate} (1/ day), {@i regenerate} 2 hp/turn, {@i lightning bolt} (12 dice, 1/day), and {@i time stop} (1/week).",
+										"Suggested powers for the Hand include: death ray (no saving throw, once a day), {@i {@spell cause disease}} (100-foot x 100- foot area/2 times per day), {@i {@spell animate dead}} (1/day), {@i {@spell darkness}} (at will), +2 protection, {@i {@spell web}} (1/day), {@i {@spell disintegrate}} (1/ day), {@i {@spell regenerate}} 2 hp/turn, {@i {@spell lightning bolt}} (12 dice, 1/day), and {@i {@spell time stop}} (1/week).",
 										"Aside from the fact that the Hand is corruptive, its other major drawbacks include the fact that it cannot be removed short of chopping off the arm and the fact that those who see the Hand will covet it, attempting to take it from its current owner. Finally, the Hand foresees the moment of its owner’s doom and its powers will fail just at that given time.",
 										"{@b The Rod of Seven Parts:} It is said that the Wind Dukes of Aaqa were the creators of this legendary artifact. Manifesting themselves upon the world at the battle of Pesh, where the powers of Chaos and Law arrayed themselves, the Dukes presented the Rod to the Captains of Law. In the battle, the Rod was supposedly sundered in the slaying of Miska, the Wolf-Spider, consort of the Queen of Chaos.",
 										"The Dukes, to prevent the Rod’s capture, snatched up the seven parts and scattered them throughout the world. Ever since, agents of the Queen have sought out the Rod. It is rumored that if she regains all the parts, she can return Miska to the realms of men.",
 										"The original rod was said to be about 5 feet long, but the pieces are irregular in length. The parts go together in a specific order, the first being narrowest and each later piece increasing in diameter. Assembling the Rod is difficult, however, because the item is still protected by the Wind Dukes. Each section conveys a sense of the direction to the next piece. Pieces assembled to each other in the correct order will bond together; however, if any piece is placed out of sequence, it will instantly disappear, to appear randomly somewhere else in the world. Upon assembling the first three pieces, the owner will refuse to part with the item at any time, even when sleeping, eating, bathing, or engaging in other personal activities.",
 										"Because it was once shattered, the Rod is fragile. There is a 5% chance that it will break apart (and be scattered by the Wind Dukes) each time its major power is used.",
-										"Each piece of the Rod has a minor power. Suggested powers are: immunity to one attack form, {@i fly at will}, {@i cure light wounds} (1/day), {@i true seeing} (1/day), hold monster (1/day), double character’s movement, {@i slow} (1/day). When completely assembled, the Rod can have major powers. Suggested powers are: {@i restoration} (1/day) and {@i shape change} (2/day).",
+										"Each piece of the Rod has a minor power. Suggested powers are: immunity to one attack form, {@i {@spell fly|XPHB} at will}, {@i {@spell cure light wounds|XPHB}} (1/day), {@i {@spell true seeing}} (1/day), hold monster (1/day), double character’s movement, {@i {@spell slow}} (1/day). When completely assembled, the Rod can have major powers. Suggested powers are: {@i {@spell restoration|XPHB}} (1/day) and {@i {@spell shape change|XPHB}} (2/day).",
 										"Created to the service of order, the Rod changes its user to an absolute follower of law, even more so than the most rigid lawful good. The character will feel compelled to intervene in all things to maintain the primacy of law over chaos, heedless of the effects for good or ill. Those not adhering to the Rod-holder’s strict views are perceived as enemies. Once all the parts are assembled, the Rod also radiates an aura of fearsome, icy law affecting all within a 20-foot radius. When its major powers are used, those who fail to save must flee in panic.",
 										"{@b Heward’s Mystical Organ:} In the Fables of Burdock readers find mention of a musical instrument, an organ of large size and mystical enchantment. It was said to have been fashioned by Heward, Patron of Bards, to teach mankind the art of song and to bring wonder and joy into the world. Through its keys and music, the Patron was able to spread the gifts of harmony, composing, grace, and beauty. Through his songs, Heward watched over and protected the lands, guiding the weather to glorious sunsets, rain to fall on parched soil, bread to rise firm and fresh, children to be happy, and indeed protecting all that mankind now loves.",
 										"Unfortunately, the Fables say, mice among the frets gnawed at the workings, causing sour notes to escape, giving voice to the harpies, sirens, and other evil creatures that entice and trap by song. Enraged, the Patron cursed the mice to remain forever lowly and meek of voice. Believing the Organ ruined, the Patron abandoned it (and took up the harp).",
@@ -9583,7 +9650,7 @@
 							"name": "Encounter Size",
 							"page": 138,
 							"entries": [
-								"If the DM decides that yes, this encounter should happen, he determines how many creatures or NPCs appear. There is no quick and easy formula for this. Experience is the best guide. The {@i Monstrous Manual} lists a typical encounter size for each monster. Use this as a guideline, especially when you’re first starting out as a DM, but don’t follow this inflexibly.",
+								"If the DM decides that yes, this encounter should happen, he determines how many creatures or NPCs appear. There is no quick and easy formula for this. Experience is the best guide. The {@book Monstrous Manual|MM} lists a typical encounter size for each monster. Use this as a guideline, especially when you’re first starting out as a DM, but don’t follow this inflexibly.",
 								"When uncertain, use a small encounter. It is far better for a random encounter to be easily defeated by the player characters than it is for the monster to overwhelm them. An easy PC victory gives the DM information and experience (so he’ll know to increase the difficulty of the next encounter) without harming the player characters and his campaign. A crushing PC defeat is almost impossible to correct without obvious manipulation once the encounter has begun.",
 								"As always, use common sense when determining how big an encounter is. Nature provides some guidelines. Bear these in mind when figuring encounter size.",
 								"Many predators, especially those that hunt by night, are solitary creatures. A nocturnal fantasy creature might show up alone, as well.",
@@ -10500,7 +10567,7 @@
 								"If the intended victim is an NPC, the DM should decide the effect of the assassination on his game. Sometimes, player characters do these things out of spite. At other times the deed may be motivated by simple greed. Neither of these is a particularly good motive to encourage in a campaign.",
 								"If the death of the NPC would result in a major reworking of the campaign for no good reason, consider seriously the idea of making the attempt fail. If the death of the NPC would allow the player characters to by-pass or breeze through an adventure you have planned, then it’s not a good idea. Don’t just tell the players, “Oh, that’d be bad for the game so you can’t even try to knock that guy off.” Work the attempt—and its failure—into the storyline.",
 								"{@b Precautions:} If you decide the attempt is legitimate, consider the precautions the intended NPC victim normally takes. These may make the job particularly difficult or easy. Kings, emperors, high priests, and other important officials tend to be very cautious and well-protected. Wizards, with wise magical precautions, can be virtually impossible to assassinate! Devise specific NPC precautions before you know the assassin’s plans.",
-								"Wizards make use of {@i magic mouth, alarm, explosive runes,} and other trap spells. Priests often rely on divinationoriented items to foresee the intentions of others. Both could have extra-dimensional or other-planar servants and guards. They may also have precautions to foil common spells such as {@i ESP, clairvoyance, and detect magic.} Kings, princes, and other nobles have the benefit of both magical and clerical protection in addition to a host of possibly fanatically loyal bodyguards. If the victim has advance warning or suspects an attempt, further precautions may be taken, and the job can become even more difficult.",
+								"Wizards make use of {@i {@spell magic mouth|XPHB}, {@spell alarm|XPHB}, {@spell explosive runes|XPHB},} and other trap spells. Priests often rely on divinationoriented items to foresee the intentions of others. Both could have extra-dimensional or other-planar servants and guards. They may also have precautions to foil common spells such as {@i {@spell ESP|XPHB}, {@spell clairvoyance|XPHB}, and {@spell detect magic|XPHB}.} Kings, princes, and other nobles have the benefit of both magical and clerical protection in addition to a host of possibly fanatically loyal bodyguards. If the victim has advance warning or suspects an attempt, further precautions may be taken, and the job can become even more difficult.",
 								"{@b The Plan:} After you have decided (secretly) what precautions are reasonable, have the player describe the plan he thinks would work best. This can be simple or involved, depending on the cunning of the player. This is the plan the assassin, not the player character, will use, therefore the player can presume some resources not available to the player character. However, you must decide if these resources are reasonable and truly exist.",
 								"For example, if the player says the assassin has a map of the castle, you must tell him if this is reasonable (and, unless the victim is extremely secretive and paranoid, it is). A plan involving a thousand men or an 18th-level thief is not reasonable. The player character hasn’t hired an entire arsenal!",
 								"Finally, compare what you know of the precautions to the plan and the success or failure will usually become clear. Ultimately, the DM should not allow assassinations to succeed if he doesn’t want them to succeed!",
@@ -10526,6 +10593,7 @@
 							"name": "Sages",
 							"page": 145,
 							"entries": [
+								"Unlike other expert hirelings, sages are experts in a single field of academic study. They are most useful to player characters in answering specific questions, solving riddles, or deciphering ancient lore. They are normally hired on a oneshot basis, to answer a single question or provide guidance for a specific problem. A sage’s knowledge can be in any area that fits within the limits of the campaign. Typical sage areas are listed on Table 61.",
 								{
 									"type": "table",
 									"caption": "Table 61: Field of Study",
@@ -10990,7 +11058,7 @@
 								"If the character is seeking a large number of unskilled men or soldiers, he can hire a crier to spread the word. (Printing, being undiscovered or in an infant state, is generally not a practical solution.) Fortunately, criers are easily found and can be hired without complicated searching. Indeed, even young children can be paid for this purpose.",
 								"At the same time, the player character would be wise to do his own advertising by leaving word with innkeepers, stablers, and the owners of public houses. Gradually, the DM makes applicants arrive.",
 								"If the player character is searching for a fairly common sort of hireling—laborers, most commonly—the response is equal to approximately 10% of the population in the area (given normal circumstances).",
-								"cIf the position being filled is uncommon, the response will be about 5% of the population. Openings for soldiers might get one or two respondents in a village of 50. In a city of 5,000 it wouldn’t be unusual to get 250 applicants, a respectable company.",
+								"If the position being filled is uncommon, the response will be about 5% of the population. Openings for soldiers might get one or two respondents in a village of 50. In a city of 5,000 it wouldn’t be unusual to get 250 applicants, a respectable company.",
 								"If searching for a particular craft or specialist—a blacksmith or armorer, for instance—the average response is 1% of the population or less. Thus, in a village of 50, the character just isn’t likely to find a smith in need of employment. In a slightly larger village, he might find the blacksmith’s apprenticed son willing to go with him.",
 								"Unusual circumstances such as a plague, a famine, a despotic tyrant, or a depressed economy can easily alter these percentages. In these cases, the DM decides what is most suitable for his campaign. Furthermore, the player character can increase the turnout by offering special inducements—higher pay, greater social status, or special rewards. These can increase the base percentage by 1% to 10% of the population.",
 								"The whole business becomes much more complicated when hiring exotic experts—sages, spies, assassins, and the like. Such talents are not found in every city. Sages live only where they can continue their studies and where men of learning are valued. Thus they tend to dwell in great cities and centers of culture, though they don’t always seek fame and notoriety there. Making discreet enquiries among the learned and wealthy is an effective way to find sages. Other experts make a point not to advertise at all.",
@@ -11575,7 +11643,7 @@
 							"name": "Convincing the NPC to Help",
 							"page": 152,
 							"entries": [
-								"Assuming the player characters know of a capable spellcaster, there is still the problem of convincing the NPC to cast the desired spell. Often the NPC won’t even have the spell ready when the characters need it. After all, it isn’t every day a cleric needs to cast a {@i raise dead} spell. He will need a day just to rest and memorize the desired spell.",
+								"Assuming the player characters know of a capable spellcaster, there is still the problem of convincing the NPC to cast the desired spell. Often the NPC won’t even have the spell ready when the characters need it. After all, it isn’t every day a cleric needs to cast a {@i {@spell raise dead|XPHB}} spell. He will need a day just to rest and memorize the desired spell.",
 								"{@b Religious Differences:} The faith of the player characters and the ethos of the NPC’s religion may pose an even greater problem than spell availability. It is quite possible for a cleric to refuse to cast a spell to aid an “unbeliever,’’ “heathen,’’ or “heretic.’’ Some may agree, but only at the cost of a donation, service, or conversion. A rare few accept any and all without passing any judgment. In general, it is best to seek the services of a like-minded cleric than to go to a stranger.",
 								"{@b Money:} For some clerical spellcasters and most nonclerical types, spellcasting is m o r e a m a t t e r o f finances than philosophies. If the characters find a capable spellcaster, they must be prepared to pay (and pay dearly) for his services. For a desperately needed service, the NPC knows he has the player characters over a barrel and will bargain accordingly.",
 								"Table 69 gives some idea of the costs for different spells. These costs are not set, by any means, and can be raised (but seldom lowered) for a variety of reasons.",
@@ -11593,67 +11661,67 @@
 									],
 									"rows": [
 										[
-											"{@spell Astral spell}",
+											"{@spell Astral spell|XPHB}",
 											"2,000 gp per person"
 										],
 										[
-											"{@spell Atonement}",
+											"{@spell Atonement|XPHB}",
 											"*"
 										],
 										[
-											"{@spell Augury}",
+											"{@spell Augury|XPHB}",
 											"200 gp"
 										],
 										[
-											"{@spell Bless}",
+											"{@spell Bless|XPHB}",
 											"*"
 										],
 										[
-											"{@spell Charm person}",
+											"{@spell Charm person|XPHB}",
 											"1,000 gp"
 										],
 										[
-											"{@spell Clairvoyance}",
+											"{@spell Clairvoyance|XPHB}",
 											"50 gp per level of caster"
 										],
 										[
-											"{@spell Commune}",
+											"{@spell Commune|XPHB}",
 											"*"
 										],
 										[
-											"{@spell Comprehend languages}",
+											"{@spell Comprehend languages|XPHB}",
 											"50 gp"
 										],
 										[
-											"{@spell Contact other plane}",
+											"{@spell Contact other plane|XPHB}",
 											"5,000 gp + 1,000 per question"
 										],
 										[
-											"{@spell Continual light}",
+											"{@spell Continual light|XPHB}",
 											"1,000 gp"
 										],
 										[
-											"{@spell Control weather}",
+											"{@spell Control weather|XPHB}",
 											"20,000 gp"
 										],
 										[
-											"{@spell Cure blindness}",
+											"{@spell Cure blindness|XPHB}",
 											"500 gp"
 										],
 										[
-											"{@spell Cure disease}",
+											"{@spell Cure disease|XPHB}",
 											"500 gp"
 										],
 										[
-											"{@spell Cure light wounds}",
+											"{@spell Cure light wounds|XPHB}",
 											"10 gp per point healed"
 										],
 										[
-											"{@spell Cure serious wounds}",
+											"{@spell Cure serious wounds|XPHB}",
 											"20 gp per point healed"
 										],
 										[
-											"{@spell Cure critical wounds}",
+											"{@spell Cure critical wounds|XPHB}",
 											"40 gp per point healed"
 										],
 										[
@@ -11661,159 +11729,159 @@
 											"100 gp"
 										],
 										[
-											"{@spell Dispel magic}",
+											"{@spell Dispel magic|XPHB}",
 											"100 gp per level of the caster"
 										],
 										[
-											"{@spell Divination}",
+											"{@spell Divination|XPHB}",
 											"500 gp"
 										],
 										[
-											"{@spell Earthquake}",
+											"{@spell Earthquake|XPHB}",
 											"500 gp"
 										],
 										[
-											"{@spell Enchant an Item}",
+											"{@spell Enchant an Item|XPHB}",
 											"20,000 gp plus other spells"
 										],
 										[
-											"{@spell ESP}",
+											"{@spell ESP|XPHB}",
 											"500 gp"
 										],
 										[
-											"{@spell Explosive runes}",
+											"{@spell Explosive runes|XPHB}",
 											"1,000 gp"
 										],
 										[
-											"{@spell Find the path}",
+											"{@spell Find the path|XPHB}",
 											"1,000 gp"
 										],
 										[
-											"{@spell Fire trap}",
+											"{@spell Fire trap|XPHB}",
 											"500 gp"
 										],
 										[
-											"{@spell Fools’ gold}",
+											"{@spell Fools’ gold|XPHB}",
 											"100 gp"
 										],
 										[
-											"{@spell Gate}",
+											"{@spell Gate|XPHB}",
 											"*"
 										],
 										[
-											"{@spell Glyph of warding}",
+											"{@spell Glyph of warding|XPHB}",
 											"100 gp per level of the caster"
 										],
 										[
-											"{@spell Heal}",
+											"{@spell Heal|XPHB}",
 											"50 gp per point healed"
 										],
 										[
-											"{@spell Identify}",
+											"{@spell Identify|XPHB}",
 											"1,000 gp per item or function"
 										],
 										[
-											"{@spell Invisible stalker}",
+											"{@spell Invisible stalker|XPHB}",
 											"5,000 gp"
 										],
 										[
-											"{@spell Invisibility}",
+											"{@spell Invisibility|XPHB}",
 											"500 gp"
 										],
 										[
-											"{@spell Legend Lore}",
+											"{@spell Legend Lore|XPHB}",
 											"1,000 gp"
 										],
 										[
-											"{@spell Limited wish}",
+											"{@spell Limited wish|XPHB}",
 											"20,000 gp **"
 										],
 										[
-											"{@spell Magic mouth}",
+											"{@spell Magic mouth|XPHB}",
 											"300 gp"
 										],
 										[
-											"{@spell Mass charm}",
+											"{@spell Mass charm|XPHB}",
 											"5,000 gp"
 										],
 										[
-											"{@spell Neutralize poison}",
+											"{@spell Neutralize poison|XPHB}",
 											"100 gp"
 										],
 										[
-											"{@spell Permanency}",
+											"{@spell Permanency|XPHB}",
 											"20,000 gp **"
 										],
 										[
-											"{@spell Plane shift}",
+											"{@spell Plane shift|XPHB}",
 											"*"
 										],
 										[
-											"{@spell Prayer}",
+											"{@spell Prayer|XPHB}",
 											"*"
 										],
 										[
-											"{@spell Protection from evil}",
+											"{@spell Protection from evil|XPHB}",
 											"20 gp per level of caster"
 										],
 										[
-											"{@spell Raise dead}",
+											"{@spell Raise dead|XPHB}",
 											"*"
 										],
 										[
-											"{@spell Read magic}",
+											"{@spell Read magic|XPHB}",
 											"200 gp"
 										],
 										[
-											"{@spell Regenerate}",
+											"{@spell Regenerate|XPHB}",
 											"20,000 gp"
 										],
 										[
-											"{@spell Reincarnation}",
+											"{@spell Reincarnation|XPHB}",
 											"*"
 										],
 										[
-											"{@spell Remove curse}",
+											"{@spell Remove curse|XPHB}",
 											"100 gp per level of caster"
 										],
 										[
-											"{@spell Restoration}",
+											"{@spell Restoration|XPHB}",
 											"*"
 										],
 										[
-											"{@spell Slow poison}",
+											"{@spell Slow poison|XPHB}",
 											"50 gp"
 										],
 										[
-											"{@spell Speak with dead}",
+											"{@spell Speak with dead|XPHB}",
 											"100 gp per level of caster"
 										],
 										[
-											"{@spell Suggestion}",
+											"{@spell Suggestion|XPHB}",
 											"600 gp"
 										],
 										[
-											"{@spell Symbol}",
+											"{@spell Symbol|XPHB}",
 											"1,000 gp per level of caster"
 										],
 										[
-											"{@spell Teleport}",
+											"{@spell Teleport|XPHB}",
 											"2,000 gp per person"
 										],
 										[
-											"{@spell Tongues}",
+											"{@spell Tongues|XPHB}",
 											"100 gp"
 										],
 										[
-											"{@spell True seeing}",
+											"{@spell True seeing|XPHB}",
 											"5,000 gp"
 										],
 										[
-											"{@spell Wish}",
+											"{@spell Wish|XPHB}",
 											"50,000 gp **"
 										],
 										[
-											"{@spell Wizard lock}",
+											"{@spell Wizard lock|XPHB}",
 											"50 gp per level of caster"
 										]
 									],
@@ -11830,7 +11898,7 @@
 							"name": "NPC Magical Items",
 							"page": 153,
 							"entries": [
-								"If player characters have the nerve to ask NPCs (not hirelings or henchmen) to use up valuable magical items or charges from these, they are going to get a very cold reaction. Consider how often player characters sell or give away the magic items they find during their adventures. Nonplayer characters will have about the same likelihood of selling (or giving!) powerful magic away. Offering to buy a charge from a {@i staff of healing} is just plain insulting. No NPC’s reaction is going to be improved by the offer."
+								"If player characters have the nerve to ask NPCs (not hirelings or henchmen) to use up valuable magical items or charges from these, they are going to get a very cold reaction. Consider how often player characters sell or give away the magic items they find during their adventures. Nonplayer characters will have about the same likelihood of selling (or giving!) powerful magic away. Offering to buy a charge from a {@i {@spell staff of healing}} is just plain insulting. No NPC’s reaction is going to be improved by the offer."
 							]
 						}
 					]

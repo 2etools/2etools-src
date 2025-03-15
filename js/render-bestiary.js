@@ -316,8 +316,6 @@ class _RenderBestiaryImplBase {
 		const srcCpy = {
 			source: mon.source,
 			page: mon.page,
-			srd: mon.srd,
-			srd52: mon.srd52,
 			sourceSub: mon.sourceSub,
 			otherSources: mon.otherSources,
 			additionalSources: mon.additionalSources,

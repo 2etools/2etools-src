@@ -4655,8 +4655,6 @@ globalThis.DataUtil = {
 		_MERGE_REQUIRES_PRESERVE_BASE: {
 			page: true,
 			otherSources: true,
-			srd: true,
-			srd52: true,
 			basicRules: true,
 			freeRules2024: true,
 			reprintedAs: true,
