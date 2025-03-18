@@ -5,8 +5,8 @@
             "name": "Introduction",
             "page": 1,
             "entries": [
-                "The ADVANCED DUNGEONS & DRAGONS® 2nd Edition {@i {@book Player's Handbook|XPHB}} and {@i {@book Dungeon Master's Guide|XDMG}} told you all you needed to know about playing warriors in the game. But it could be that you want to know more than the bare minimum it takes to play the warrior classes.",
-                "That's where {@i The Complete Fighter's Handbook} comes in. In these pages, we're going to show you lots of interesting things you can do with the warrior classes...things that the {@i {@book Player's Handbook|XPHB}} and {@i {@book DMG|XDMG}} didn't have room to show you.",
+                "The ADVANCED DUNGEONS & DRAGONS® 2nd Edition {@i {@book Player's Handbook|PHB}} and {@i {@book Dungeon Master's Guide|DMG}} told you all you needed to know about playing warriors in the game. But it could be that you want to know more than the bare minimum it takes to play the warrior classes.",
+                "That's where {@i The Complete Fighter's Handbook} comes in. In these pages, we're going to show you lots of interesting things you can do with the warrior classes...things that the {@i {@book Player's Handbook|PHB}} and {@i {@book DMG|DMG}} didn't have room to show you.",
                 "Do you want to play fighter characters other than Fighter, Paladin, and Ranger? Here we'll give you rules for characters like barbarians, samurai, gladiators, amazons--they're all subsets of the three main warrior classes, but they're here.",
                 "Do you want new combat rules? We have them. You'll find rules for different weapon styles, combat tactics, combat maneuvers, jousting, combat results, and many other fighter-oriented abilities within these pages.",
                 "Is it new equipment you're after? That, too, is present in copious quantities, from new armor and weapons to new magic items.",
@@ -14,7 +14,7 @@
                 "Whether you're a player or DM, an intent rules lawyer or just someone wishing to add a little depth to your campaign or character, you'll find something here for you. Have fun.",
                 "* * *",
                 "Incidentally, {@i The Complete Fighter's Handbook} presumes that you're using the {@i AD&D® 2nd Edition} game rules for Weapon Proficiencies and Nonweapon Proficiencies. Many of the rules presented in this book depend on use of the proficiencies. So if you haven't been using them so far in your campaign, we highly recommend that you familiarize yourself with them and introduce them into your playing.",
-                "Here's a special note for those of you who are using this {@i Complete Fighter's Handbook} with your first edition {@i AD&D®} game instead of the new second edition: This supplement mentions a lot of page numbers from the {@i {@book Player's Handbook|XPHB}} and the {@i {@book Dungeon Master's Guide|XDMG}}. The page numbers cited are for the {@i second edition}, not the first; you'll have to ignore the page numbers given."
+                "Here's a special note for those of you who are using this {@i Complete Fighter's Handbook} with your first edition {@i AD&D®} game instead of the new second edition: This supplement mentions a lot of page numbers from the {@i {@book Player's Handbook|PHB}} and the {@i {@book Dungeon Master's Guide|DMG}}. The page numbers cited are for the {@i second edition}, not the first; you'll have to ignore the page numbers given."
             ]
         },
         {
@@ -28,7 +28,7 @@
                     "name": "Ability Scores",
                     "page": 4,
                     "entries": [
-                        "For a normal campaign, any of the six dice-rolling methods from the {@i {@book Player's Handbook|XPHB}} is acceptable.",
+                        "For a normal campaign, any of the six dice-rolling methods from the {@i {@book Player's Handbook|PHB}} is acceptable.",
                         "If you decide to run an all-warriors campaign (see the {@i {@book Role-Playing|PHBR1|3}} chapter of this book for details on such a thing), we recommend that you use one of the five Alternate Dice-Rolling Methods presented.",
                         "Whether or not you run an all-warriors campaign, if you utilize the {@i {@book Warrior Kits|PHBR1|2}} chapter of this rule book, we recommend that you use Method VI to create the ability scores for your characters. Because characters using the Warrior Kits are so specialized, you'll find it helpful to be able to custom-design your character ability scores, which Method VI allows you to do."
                     ]
@@ -74,8 +74,8 @@
                     "name": "Proficiencies",
                     "page": 4,
                     "entries": [
-                        "As the {@i {@book Introduction|PHBR1|0}} notes, use of the {@i {@book Proficiencies|XPHB|10}} section of the AD&D 2nd Edition Player's Handbook is not optional with {@i The Complete Fighter's Handbook}. The Proficiencies are necessary for you to customize and fine-tune your character, and for the use of the {@i {@book Warrior Kits|PHBR1|2}} chapter of this book.",
-                        "Use of the Weapon Proficiencies are pretty much self-evident after you read the {@i {@book Player's Handbook|XPHB}}. Later in this book, though, in the {@i {@book Combat|PHBR1|4}} chapter, you'll learn some interesting new things which you can do with weapon proficiencies.",
+                        "As the {@i {@book Introduction|PHBR1|0}} notes, use of the {@i {@book Proficiencies|PHB|10}} section of the AD&D 2nd Edition Player's Handbook is not optional with {@i The Complete Fighter's Handbook}. The Proficiencies are necessary for you to customize and fine-tune your character, and for the use of the {@i {@book Warrior Kits|PHBR1|2}} chapter of this book.",
+                        "Use of the Weapon Proficiencies are pretty much self-evident after you read the {@i {@book Player's Handbook|PHB}}. Later in this book, though, in the {@i {@book Combat|PHBR1|4}} chapter, you'll learn some interesting new things which you can do with weapon proficiencies.",
                         "Don't forget that high Intelligence scores grant extra proficiencies (equal to the number of extra languages the character receives for the same score).",
                         "Here, let's talk about three nonweapon proficiencies (Armorer, Bowyer/Fletcher, and Weaponsmithing) which are of particular use to the warrior player-character."
                     ]
@@ -698,7 +698,7 @@
                     "name": "Bowyer/Fletcher",
                     "page": 10,
                     "entries": [
-                        "The material on the {@book Bowyer/Fletcher|XPHB|10|Nonweapon Proficiency Descriptions} proficiency from the Player’s Handbook, page 58, is all correct for use with this supplement.",
+                        "The material on the {@book Bowyer/Fletcher|PHB|10|Nonweapon Proficiency Descriptions} proficiency from the Player’s Handbook, page 58, is all correct for use with this supplement.",
                         "A set of bowyer/fletcher's tools, which can be used at maximum efficiency by one character, costs 10 gp. (It's 15 gp for a set which can be used simultaneously by three workers, and +7.5 gp per +3 workers which can work simultaneously.) The bowyer/fletcher is not required to set up a workshop; he can work by himself in the field, if he chooses. If he chooses to set up a permanent shop, tents and huts cost the same as what's listed for the leatherworker's shop (above, under \"Armorer\").",
                         "Note that the construction times listed in the {@i Player's Handbook} presume that he's working a full week. If he's traveling or adventuring and working on bows and arrows in his spare time, multiply all crafting times by four. Thus, a long or short bow takes four weeks.",
                         "Cost of materials for arrows and normal bows is negligible. If the character is trying to make a weapon of truly fine quality, he must either pay 50% of the weapon's normal retail value for exceptionally fine woods, or add an extra 100% to the time it takes to craft the weapon; the extra time constitutes him having to look for the perfect wood and materials in the wild."
@@ -709,9 +709,9 @@
                     "name": "Weaponsmithing",
                     "page": 10,
                     "entries": [
-                        "The text on {@book Weaponsmithing|XPHB|10|Nonweapon Proficiency Descriptions} proficiency from the Player’s Handbook is basically correct, but let's elaborate on it.",
+                        "The text on {@book Weaponsmithing|PHB|10|Nonweapon Proficiency Descriptions} proficiency from the Player’s Handbook is basically correct, but let's elaborate on it.",
                         "As mentioned, a weaponsmith does need to have a {@i smithy}. The costs for having a smithy are given above in this section, under \"Armorer.\" In fact, the same smithy can be used for armoring and weaponsmithing.",
-                        "The Weapon Construction numbers on {@book Weapon Construction table|XPHB|10|Nonweapon Proficiency Descriptions} on page 65 of the {@i Player's Handbook} are correct. It constitutes one Overseer-level weaponsmith working by himself and crafting weapons of average quality. An Overseer weaponsmith working with two apprentices cuts the time in half. The time indicated on the chart should be converted to weeks so that you can compare the weaponsmith's times with the armorer's; consider 5 days on the chart to constitute one week.",
+                        "The Weapon Construction numbers on {@book Weapon Construction table|PHB|10|Nonweapon Proficiency Descriptions} on page 65 of the {@i Player's Handbook} are correct. It constitutes one Overseer-level weaponsmith working by himself and crafting weapons of average quality. An Overseer weaponsmith working with two apprentices cuts the time in half. The time indicated on the chart should be converted to weeks so that you can compare the weaponsmith's times with the armorer's; consider 5 days on the chart to constitute one week.",
                         {
                             "type": "entries",
                             "name": "Weaponsmithing Failure",
@@ -914,7 +914,7 @@
                     "name": "Money and Equipment",
                     "page": 11,
                     "entries": [
-                        "{@i The Complete Fighter's Handbook} follows all the normal {@i {@book Player's Handbook|XPHB}} guidelines for the character's initial money and equipment...usually. Use of some of the Warrior Kits will dictate differences in the way some characters spend their beginning money."
+                        "{@i The Complete Fighter's Handbook} follows all the normal {@i {@book Player's Handbook|PHB}} guidelines for the character's initial money and equipment...usually. Use of some of the Warrior Kits will dictate differences in the way some characters spend their beginning money."
                     ]
                 },
                 {
@@ -947,8 +947,8 @@
                             "page": 11,
                             "entries": [
                                 "In the top box of the character sheet's front, you put all the vital statistics of the character: His name, physical and racial characteristics, his character class, his Warrior Kit (if he uses one—see the Warrior Kits chapter), alignment, current experience level, his current experience earned, and the amount of experience it'll take him to reach the next level.",
-                                "In the second box, you put all the information relating to the character's six ability scores ({@book Strength|XPHB|6|Strength}, {@book Dexterity|XPHB|6|Dexterity}, {@book Constitution|XPHB|6|Constitution}, {@book Intelligence|XPHB|6|Intelligence}, {@book Wisdom|XPHB|6|Wisdom}, and {@book Charisma|XPHB|6|Charisma}). All this information comes from the charts in the {@i Player's Handbook}, pages 14−18.",
-                                "In the third, narrow, box, you write down any bonuses and abilities the character receives based on his race; for instance, if he's an elf, you'd put something like \"90% resistant to {@i {@spell sleep|XPHB}} and {@i {@spell charm|XPHB}}; +1 to attack rolls with bow, short sword, long sword; can surprise opponents; infravision; 1 on d6 to detect secret doors (1–2 on d6 when looking, 1–3 for portals).\"",
+                                "In the second box, you put all the information relating to the character's six ability scores ({@book Strength|PHB|6|Strength}, {@book Dexterity|PHB|6|Dexterity}, {@book Constitution|PHB|6|Constitution}, {@book Intelligence|PHB|6|Intelligence}, {@book Wisdom|PHB|6|Wisdom}, and {@book Charisma|PHB|6|Charisma}). All this information comes from the charts in the {@i Player's Handbook}, pages 14−18.",
+                                "In the third, narrow, box, you write down any bonuses and abilities the character receives based on his race; for instance, if he's an elf, you'd put something like \"90% resistant to {@i {@spell sleep|PHB}} and {@i {@spell charm|PHB}}; +1 to attack rolls with bow, short sword, long sword; can surprise opponents; infravision; 1 on d6 to detect secret doors (1–2 on d6 when looking, 1–3 for portals).\"",
                                 "In the fourth box, you write down many of the character's game-mechanic notes: How many hit points he has, how his hit dice are calculated (with Fighters, you'd write \"{@dice d10}\"), what his AC is, what his THAC0 is, what his saving throws are, notes on his followers and any special abilities or restrictions from his character class choice (especially appropriate with paladins and rangers), and his Spell Progression (if any; this, too, is especially appropriate for paladins and rangers).",
                                 "In the fifth box, you note down any modifications made to the character by the Warrior Kit he chooses (again, see the Warrior Kits chapter for details).",
                                 "In the sixth (bottom) box, you record any of the character's skill-type abilities: His languages, his weapon proficiencies (and specializations!), and his nonweapon proficiencies."
@@ -962,7 +962,7 @@
                                 "The back of the sheet is used mostly for equipment lists.",
                                 "The top box is used to record his weapons; here, you can put all the information found on the Weapons Table (Player’s Handbook, page 68).",
                                 "The second box is used for short descriptions of important equipment, especially magical items.",
-                                "The third box allows the player to indicate where all his character's important possessions are normally kept. The DM should insist that the players use these blanks; it helps prevents mistakes from being made in an adventure. (\"Of course I have my {@item Staff of the Magi|XDMG} along! I always have it taped to my Staff of Power! No, really!\")",
+                                "The third box allows the player to indicate where all his character's important possessions are normally kept. The DM should insist that the players use these blanks; it helps prevents mistakes from being made in an adventure. (\"Of course I have my {@item Staff of the Magi|DMG} along! I always have it taped to my Staff of Power! No, really!\")",
                                 "And in the bottom box you can make any other notes pertinent to the character."
                             ]
                         },
@@ -2311,7 +2311,7 @@
                                     "name": "One-Handed Weapons Used Two-Handed",
                                     "page": 63,
                                     "entries": [
-                                        "",
+                                        "Some players don't realize that many other one-handed weapons can also be used two-handed. Sice these weapons don't do any more damage two-handed, there usally isn't much reason to use them this way; however, with Style Specialization in Two-Hander Style, now there's a reason.",
                                         "If you specialize in Two-Hander Style and then use a one-handed weapon in two hands, you also get a bonus of +1 to damage. Thus, if you take a Two-Hander Style Specialization, when using a long sword two-handed, you do {@dice 1d8+1} damage instead of the base {@dice 1d8} (or {@dice 1d12+1} vs. large targets, instead of the base {@dice 1d12}).",
                                         "The one-handed weapons which can be used two-handed in this fashion include: Battle axe, Club, Footman's flail, Footman's pick, Horseman's flail, Horseman's mace, Horseman's pick, Morning star, Long sword, Warhammer."
                                     ]
@@ -2825,7 +2825,7 @@
                         },
                         {
                             "type": "entries",
-                            "name": "Sheild-Punch",
+                            "name": "Shield-Punch",
                             "page": 72,
                             "entries": [
                                 "The shield-punch is a very basic maneuver. If you are using a buckler, small shield, or medium shield, you can use it to attack with as well as defend, by slamming it into your target's body.",
@@ -3979,9 +3979,9 @@
                             "name": "The Joust List",
                             "page": 86,
                             "entries": [
-                                "",
-                                "",
-                                ""
+                                "The field consists of a long strip of ground with a low fence along the middle of it: the jousters ride toward one another, each with the fence to his left, and make jousting passes until one or the other is dismounted.",
+                                "Along one or both long sides of the list, stands are set up for onlookers. There may be a box or special seating area for the local ruler and his retinue.",
+                                "At both ends of the list, where the horses turn around, are racks of lances for the riders' use. At one end of the list is an exit to the field where the knights and other participants have their tents set up."
                             ]
                         },
                         {
@@ -5467,8 +5467,6 @@
                                     "name": "Gaff/Hook",
                                     "page": 100,
                                     "entries": [
-                                        "",
-                                        "",
                                         "The gaff is a metal hook with a wooden or metal crossbar at the base; it's held in one hand, the hook protruding between the middle and ring fingers, and normally used to hook and land fish.",
                                         "However, like the belaying pin, it's in ready supply onboard a ship. Also, many pirates who lose a hand have a cup with a gaff on it attached to the stump, and so always have a weapon \"on hand\"—one that can't be dropped or Disarmed.",
                                         "Proficiency with the gaff is not related to any other proficiency. Specialization grants the usual benefits."
@@ -7012,12 +7010,12 @@
                         "{@b Cage of Shelter:} This object looks like a large bird-cage that has been neatly folded down into a package about the size of a medium shield.",
                         "The user, who can be of any character class, places it upon the ground, steps back from it, and claps his hands loudly either two or three times.",
                         "If he claps his hands twice, the cage grows up into a sturdy metal-framed tent which can house eight people—you can substitute one horse for four people. This tent confers no magical blessing on its inhabitants, but by using it and huddling together for warmth a party can survive a snowstorm that would kill an unprotected party; by erecting it in the desert, a party can avoid the danger and discomfort of a sandstorm.",
-                        "If the user claps his hands three times, the cage grows up into a strong 10' by 10' cell. The door to the cell has the equivalent of a {@i {@spell wizard lock|PHB}}; the cage's owner can open it any time he wishes, and any magician with the {@i {@spell knock|PHB}} spell can open it by using that spell. A person in the cell would have to make his Bend Bars/Lift Gates roll successfully (or use a knock) to escape; the door's lock cannot be picked.",
+                        "If the user claps his hands three times, the cage grows up into a strong 10' by 10' cell. The door to the cell has the equivalent of a {@i {@spell wizard lock}}; the cage's owner can open it any time he wishes, and any magician with the {@i {@spell knock}} spell can open it by using that spell. A person in the cell would have to make his Bend Bars/Lift Gates roll successfully (or use a knock) to escape; the door's lock cannot be picked.",
                         "To return the cage to its original form, the owner claps again, twice if it is in tent form, three times if it is in cage form. If someone is in it when it is a tent and begins collapsing, it opens up around the person inside; both he and it are unhurt. If someone is in it when it is a cage and begins collapsing, it collapses around him, inflicting {@dice 2d6} damage before it breaks open; thereafter, it is ruined forever.",
-                        "The {@i cage of shelter} knows its owner. If someone finds it in a treasure, he must carry it in his gear for a month for the cage to attune itself to him. If its true owner sells it to someone else in the cage's presence, the cage will obey the claps of its new owner immediately.",
+                        "The {@i {@item cage of shelter|PHBR1}} knows its owner. If someone finds it in a treasure, he must carry it in his gear for a month for the cage to attune itself to him. If its true owner sells it to someone else in the cage's presence, the cage will obey the claps of its new owner immediately.",
                         "The charm of favors does not radiate magic.",
-                        "{@b Charm of Favor:} When deities and other powerful beings are pleased with the deed of a mortal, they sometimes give him a {@i charm of favor}. This is a small charm or statuette, usually of semiprecious material and two or three inches in size, which represents the god or one of his aspects.",
-                        "The {@i charm} is rather like a {@i {@spell limited wish|PHB}}. It represents a favor which the deity will do for the character at some time in the future. To use it, the owner must throw the item on the ground so hard that it breaks, and then call out his request.",
+                        "{@b Charm of Favor:} When deities and other powerful beings are pleased with the deed of a mortal, they sometimes give him a {@i {@item charm of favor|PHBR1}}. This is a small charm or statuette, usually of semiprecious material and two or three inches in size, which represents the god or one of his aspects.",
+                        "The {@i charm} is rather like a {@i {@spell limited wish}}. It represents a favor which the deity will do for the character at some time in the future. To use it, the owner must throw the item on the ground so hard that it breaks, and then call out his request.",
                         "The request must have something to do with the attributes of the god: It's no use asking the Goddess of Love to dry up an oasis into a desert, or to ask the God of Earthquakes for a fog to hide the adventurers.",
                         "The god hears it when the favor is requested. And he, in the guise of the DM, evaluates the favor. If the favor is something which pertains to one of his attributes, and if the god does not think that the character is making the request out of mere greed or selfishness, and if bestowing the favor will not conflict with any of the god's other aims or desires, he will grant the favor.",
                         "So it would be appropriate to ask the God of Insects to send a cloud of bees to rout one's enemies, or to ask the Goddess of Love to cause some NPC to fall in love with the player-character, or to ask a deity of the Earth to cause fruit-trees to grow and save the characters from death by thirst and starvation.",
@@ -7148,8 +7146,8 @@
                         "These saddles may also be made for donkeys, camels, or any other ground animals. They don't work with pegasi, griffons, or other flying beasts.",
                         "{@b Shield of Medusae:} This magical item may only be used by warriors or priests (including multi-class and dual-class warriors or priests).",
                         "It is shaped like and works like a normal medium shield. But the outside (the side that faces the enemy) is mirror-reflective, and the inside (where the warrior's straps are) is crystal clear.",
-                        "To use the {@i shield of medusae}, the warrior holds it up before him, in front of his eyes, and looks through its clear surface. While he is doing so, he is immune to the stoning gazes of creatures such as the medusa and basilisk, and to magical items which duplicate their gazes. When the character carrying this shield confronts a stoning creature, he reflects their images back at them, and it is {@i they} who must make saving throws vs. petrification or be turned to stone.",
-                        "Unlike ordinary shields, the {@i shield of medusae} has only two damage points before it shatters. In other words, if it is hit twice, it is destroyed."
+                        "To use the {@i {@item shield of medusae|PHBR1}}, the warrior holds it up before him, in front of his eyes, and looks through its clear surface. While he is doing so, he is immune to the stoning gazes of creatures such as the medusa and basilisk, and to magical items which duplicate their gazes. When the character carrying this shield confronts a stoning creature, he reflects their images back at them, and it is {@i they} who must make saving throws vs. petrification or be turned to stone.",
+                        "Unlike ordinary shields, the {@i {@item shield of medusae|PHBR1}} has only two damage points before it shatters. In other words, if it is hit twice, it is destroyed."
                     ]
                 },
                 {

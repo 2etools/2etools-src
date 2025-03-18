@@ -140,15 +140,30 @@
 							]
 						},
 						"Flying creatures also have a Maneuverability Class from A to E. Class A creatures have virtually total command over their movements in the air; they can hover, face any direction in a given round, and attack each round. Class B creatures are very maneuverable; they can hover, turn 180 degrees in a round, and attack in each round. Class C creatures are somewhat agile in the air; they cannot move less than half their movement rate without falling, they can turn up to 90 degrees in a round, and attack aerially once every two rounds. Class D creatures are somewhat slow; they cannot move less than half their movement rate without falling, can turn only 60 degrees in a round, and can make a pass once every three rounds. Class E includes large, clumsy fliers; these cannot move less than half their movement rate without falling, can turn only 30 degrees in a round, and they can make one pass every six rounds. See {@book Chapter 9|source|chapter|heading} of the {@i DMG} for more information.",
-						"{@color HIT DICE|2596be}",
-						"{@color THAC0|2596be}",
-						"{@color NUMBER OF ATTACKS|2596be}",
-						"{@color DAMAGE/ATTACK|2596be}",
-						"{@color SPECIAL ATTACKS|2596be}",
-						"{@color SPECIAL DEFENSES|2596be}",
-						"{@color MAGIC RESISTANCE|2596be}",
-						"{@color SIZE|2596be}",
-						"",
+						"{@color HIT DICE|2596be} controls the number of hit points damage a creature can withstand before being killed. Unless otherwise stated, Hit Dice are 8-sided (1-8 hit points). The Hit Dice are rolled and the numbers shown are added to determine the monster's hit points. Some monsters have a hit point spread instead of Hit Dice, and some have additional points added to their Hit Dice. Thus, a creature with 4+4 Hit Dice has 4d8+4 hit points (8-36 total). Note that creatures with +3 or more hit points are considered the next higher Hit Die for purposes of attack rolls and saving throws.",
+						"{@color THAC0|2596be} is the attack roll the monster needs to hit Armor Class 0. This is always a function of Hit Dice, except in the case of very large, nonaggressive herbivores (such as some dinosaurs), or creatures which have certain innate combat abilities. A human or demihuman always uses a player character THAC0, regardless of whether they are player characters or \"monsters.\" The THAC0 does not include any special bonuses noted in the descriptions.",
+						"{@color NUMBER OF ATTACKS|2596be} shows the basic attacks the monster can make in a melee round, excluding special attacks. This number can be modified by hits that sever members, spells such as {@i {@spell haste}} and {@i {@spell slow}}, and so forth. Multiple attacks indicate several members, raking paws, multiple heads, etc.",
+						"{@color DAMAGE/ATTACK|2596be} shows the amount of damage a given attack causes, expressed as a spread of hit points (based on a die roll or combination of die rolls). If the monster uses weapons, the damage done by the typical weapon will be allowed by the parenthetical note \"weapon.\" Damage bonuses due to Strength are listed as a bonus following the damage range.",
+						"{@color SPECIAL ATTACKS|2596be} detail attack modes such as dragon breath, magic use, etc. These are explained in the monster description.",
+						"{@color SPECIAL DEFENSES|2596be} are precisely that, and are detailed in the monster description.",
+						"{@color MAGIC RESISTANCE|2596be} is the percentage chance that any magic cast upon the creature will fail to affect it, even if other creatures nearby are affected. If the magic penetrates the resistance, the creature is still entitled to any normal saving throw allowed. Creatures may have resistances to certain spells; this is not considered \"magic resistance\", which is effective against all spells.",
+						"{@color SIZE|2596be} is abbreviated as",
+						{
+							"type": "list",
+							"style": "list-hang",
+							"columns": 0,
+							"page": 4,
+							"name": "",
+							"items": [
+								"T = tiny (2' tall or less);",
+								"S = smaller than a typical human (2+' to 4');",
+								"M = man-sized (4+' to 7');",
+								"L = larger than man-sized (7+' to 12');",
+								"H = huge (12+' to 25'); and",
+								"G = gargantuan (25+')."
+							]
+						},
+						"Most creatures are measured in height or length; some are measured in diameter. Those measured in diameter may be given a different size category than indicated above. For instance, while a 6-foot tall humanoid is considered size M, a spherical creature 6 feet in diameter has much more mass, so is considered size L. Similarly, a creature 12 feet long with a very slender body (like a snake) might be considered only man-sized. Adjustments like these should not move a creature more than one size category in either direction.",
 						"{@color MORALE|2596be}",
 						{
 							"type": "table",
@@ -160,24 +175,48 @@
 							"isStriped": false,
 							"rows": [
 								[
-									"",
-									""
+									"2-4",
+									"Unreliable"
 								],
 								[
-									"",
-									""
+									"5-7",
+									"Unsteady"
+								],
+								[
+									"8-10",
+									"Average"
+								],
+								[
+									"11-12",
+									"Steady"
+								],
+								[
+									"13-14",
+									"Elite"
+								],
+								[
+									"15-16",
+									"Champion"
+								],
+								[
+									"17-18",
+									"Fanatic"
+								],
+								[
+									"19-20",
+									"Fearless"
 								]
 							]
 						},
-						"{@color XP VALUE|2596be}",
-						"{@color Combat|2596be}",
-						"{@color Habitat/Society|2596be}",
-						"{@color Ecology|2596be}",
-						"{@color Variations|2596be}",
-						"{@color Psionics|2596be}",
-						"{@color Level:|2596be}",
-						"{@color Dis/Sci/Dev:|2596be}",
-						"{@color Attack/Defense:|2596be}",
+						"{@color XP VALUE|2596be} is the number of experience points awarded for defeating, but not necessarily killing, the monster. This value is a guideline that can be modified by the DM for the degree of challenge, encounter situation, and for overall campaign balance.",
+						"{@color Combat|2596be} is the part of the description that discusses special combat abilities, arms and armor, and tactics.",
+						"{@color Habitat/Society|2596be} outlines the monster's general behavior, nature, social structure, and goals. In some cases, it further describes their lairs (the places they live in), breeding habits, and reproduction rates.",
+						"{@color Ecology|2596be} describes how the monster fits into the campaign world, gives any useful products or byproducts, and any other miscellaneous information.",
+						"{@color Variations|2596be} of a monster are given in a special section after the main monster entry. These can be found by consulting the index. For instance, the xorn entry also describes the xaren, a very similar creature.",
+						"{@color Psionics|2596be} are mental powers possessed by many creatures in the {@i Monstrous Manual}. The psionic listings are explained below:",
+						"{@color Level:|2596be} How tough the monster is in terms of psionic experience level.",
+						"{@color Dis/Sci/Dev:|2596be} How many disciplines the creature can access, followed by the total number of sciences and devotions the creature knows. Monsters can know sciences and devotions only from the disciplines they can access.",
+						"{@color Attack/Defense:|2596be} The telepathic attack and defense modes that the creature can use. Note that defense modes are not included in the total number of powers the creature knows. Abbreviations used are as follows:",
 						{
 							"type": "table",
 							"page": 4,
@@ -192,12 +231,44 @@
 							"isStriped": false,
 							"rows": [
 								[
-									"",
-									""
+									"PB",
+									"Psionic Blast"
 								],
 								[
-									"",
-									""
+									"MT",
+									"Mind Thrust"
+								],
+								[
+									"EW",
+									"Ego Whip"
+								],
+								[
+									"II",
+									"Id Insinuation"
+								],
+								[
+									"PsC",
+									"Psychic Crush"
+								],
+								[
+									"M-",
+									"Mind Blank"
+								],
+								[
+									"TS",
+									"Thought Shield"
+								],
+								[
+									"MB",
+									"Mental Barrier"
+								],
+								[
+									"IF",
+									"Intellect Fortress"
+								],
+								[
+									"TW",
+									"Tower of Iron Will"
 								]
 							]
 						},
@@ -221,14 +292,12 @@
 					"page": 5,
 					"name": "",
 					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
+						"Aarakocra",
+						"Aboleth",
+						"Ankheg",
+						"Arcane",
+						"Argos",
+						"Aurumvorax"
 					]
 				}
 			]
@@ -245,6 +314,16 @@
 					"page": 11,
 					"name": "",
 					"items": [
+						"Baatezu",
+						"Baatezu",
+						"Banshee",
+						"Basilisk",
+						"Bat",
+						"Bear",
+						"{@creature |source|optional text}",
+						"",
+						"",
+						"",
 						"",
 						"",
 						"",

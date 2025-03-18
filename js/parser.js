@@ -3076,19 +3076,14 @@ Parser.vehicleTypeToFull = function (vehicleType) {
 	return Parser._parse_aToB(Parser.VEHICLE_TYPE_TO_FULL, vehicleType);
 };
 
-// SOURCES =============================================================================================================
+// region SOURCES =============================================================================================================
 
 Parser.SRC_5ETOOLS_TMP = "SRC_5ETOOLS_TMP"; // Temp source, used as a placeholder value
 
-Parser.SRC_CoS = "CoS";
-Parser.SRC_DMG = "DMG";
-Parser.SRC_EEPC = "EEPC";
-Parser.SRC_EET = "EET";
-Parser.SRC_HotDQ = "HotDQ";
-Parser.SRC_LMoP = "LMoP";
-Parser.SRC_MM = "MM";
-Parser.SRC_OotA = "OotA";
 Parser.SRC_PHB = "PHB";
+Parser.SRC_DMG = "DMG";
+Parser.SRC_MM = "MM";
+Parser.SRC_PHBR = "PHBR";
 Parser.SRC_PHBR1 = "PHBR1";
 Parser.SRC_PHBR2 = "PHBR2";
 Parser.SRC_PHBR3 = "PHBR3";
@@ -3104,6 +3099,7 @@ Parser.SRC_PHBR12 = "PHBR12";
 Parser.SRC_PHBR13 = "PHBR13";
 Parser.SRC_PHBR14 = "PHBR14";
 Parser.SRC_PHBR15 = "PHBR15";
+Parser.SRC_DMGR = "DMGR";
 Parser.SRC_DMGR1 = "DMGR1";
 Parser.SRC_DMGR2 = "DMGR2";
 Parser.SRC_DMGR3 = "DMGR3";
@@ -3113,6 +3109,21 @@ Parser.SRC_DMGR6 = "DMGR6";
 Parser.SRC_DMGR7 = "DMGR7";
 Parser.SRC_DMGR8 = "DMGR8";
 Parser.SRC_DMGR9 = "DMGR9";
+Parser.SRC_HR = "HR";
+Parser.SRC_HR1 = "HR1";
+Parser.SRC_HR2 = "HR2";
+Parser.SRC_HR3 = "HR3";
+Parser.SRC_HR4 = "HR4";
+Parser.SRC_HR5 = "HR5";
+Parser.SRC_HR6 = "HR6";
+Parser.SRC_HR7 = "HR7";
+Parser.SRC_CoS = "CoS";
+Parser.SRC_CoS = "CoS";
+Parser.SRC_EEPC = "EEPC";
+Parser.SRC_EET = "EET";
+Parser.SRC_HotDQ = "HotDQ";
+Parser.SRC_LMoP = "LMoP";
+Parser.SRC_OotA = "OotA";
 Parser.SRC_PotA = "PotA";
 Parser.SRC_RoT = "RoT";
 Parser.SRC_RoTOS = "RoTOS";
@@ -3291,36 +3302,48 @@ Parser.NRH_NAME = "NERDS Restoring Harmony";
 Parser.MCVX_PREFIX = "Monstrous Compendium Volume ";
 Parser.MisMVX_PREFIX = "Misplaced Monsters: Volume ";
 Parser.AA_PREFIX = "Adventure Atlas: ";
-Parser.PHBR_PREFIX = "The Complete ";
+Parser.TC_PREFIX = "The Complete ";
+Parser.CS_SUFFIX = "Campaign Sourcebook"
 
 Parser.SOURCE_JSON_TO_FULL = {};
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHB] = "Player's Handbook";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMG] = "Dungeon Master Guide";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_MM] = "Monstrous Manual";
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR1] = `${Parser.PHBR_PREFIX}Fighter's Handbook`;
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR2] = `${Parser.PHBR_PREFIX}Thief's Handbook`;
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR3] = `${Parser.PHBR_PREFIX}Priest's Handbook`;
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR4] = `${Parser.PHBR_PREFIX}Wizard's Handbook`;
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR5] = `${Parser.PHBR_PREFIX}Psionics Handbook`;
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR6] = `${Parser.PHBR_PREFIX}Book of Dwarves`;
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR7] = `${Parser.PHBR_PREFIX}Bard's Handbook`;
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR8] = `${Parser.PHBR_PREFIX}Book of Elves`;
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR9] = `${Parser.PHBR_PREFIX}Book of Gnomes & Halflings`;
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR10] = `${Parser.PHBR_PREFIX}Book of Humanoids`;
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR11] = `${Parser.PHBR_PREFIX}Ranger's Handbook`;
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR12] = `${Parser.PHBR_PREFIX}Paladin's Handbook`;
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR13] = `${Parser.PHBR_PREFIX}Druid's Handbook`;
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR14] = `${Parser.PHBR_PREFIX}Barbarian's Handbook`;
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR15] = `${Parser.PHBR_PREFIX}Ninja's Handbook`;
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR1] = "Campaign Sourcebook and Catacomb Guide";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR] = `Player's Handbook Rules Supplement`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR1] = `${Parser.TC_PREFIX}Fighter's Handbook`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR2] = `${Parser.TC_PREFIX}Thief's Handbook`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR3] = `${Parser.TC_PREFIX}Priest's Handbook`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR4] = `${Parser.TC_PREFIX}Wizard's Handbook`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR5] = `${Parser.TC_PREFIX}Psionics Handbook`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR6] = `${Parser.TC_PREFIX}Book of Dwarves`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR7] = `${Parser.TC_PREFIX}Bard's Handbook`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR8] = `${Parser.TC_PREFIX}Book of Elves`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR9] = `${Parser.TC_PREFIX}Book of Gnomes & Halflings`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR10] = `${Parser.TC_PREFIX}Book of Humanoids`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR11] = `${Parser.TC_PREFIX}Ranger's Handbook`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR12] = `${Parser.TC_PREFIX}Paladin's Handbook`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR13] = `${Parser.TC_PREFIX}Druid's Handbook`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR14] = `${Parser.TC_PREFIX}Barbarian's Handbook`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR15] = `${Parser.TC_PREFIX}Ninja's Handbook`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR] = `Dungeon Master's Guide Rules Supplement`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR1] = `${Parser.CS_SUFFIX} and Catacomb Guide`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR2] = "The Castle Guide";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR3] = "Arms and Equipment Guide";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR4] = "Monster Mythology";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR5] = "Creative Campaigning";
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR6] = `${Parser.PHBR_PREFIX}Book of Villains`;
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR7] = `${Parser.PHBR_PREFIX}Book of Necromancers`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR6] = `${Parser.TC_PREFIX}Book of Villains`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR7] = `${Parser.TC_PREFIX}Book of Necromancers`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR8] = "Sages & Specialists";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR9] = "Of Ships and the Sea";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HR1] = `Vikings ${Parser.CS_SUFFIX}`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HR2] = `Charlemagne's Paladins ${Parser.CS_SUFFIX}`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HR3] = `Celts ${Parser.CS_SUFFIX}`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HR4] = `A Mighty Fortress ${Parser.CS_SUFFIX}`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HR5] = `Glory of Rome ${Parser.CS_SUFFIX}`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HR6] = `Age of Heroes ${Parser.CS_SUFFIX}`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HR7] = `Crusades ${Parser.CS_SUFFIX}`;
+
+
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_CoS] = "Curse of Strahd";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_EEPC] = "Elemental Evil Player's Companion";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_EET] = "Elemental Evil: Trinkets";
@@ -3484,6 +3507,7 @@ Parser.SOURCE_JSON_TO_ABV = {};
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHB] = "PHB'89";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMG] = "DMG'89";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_MM] = "MM";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR] = "PHBR";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR1] = "TCFH";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR2] = "TCTH";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR3] = "TCPrH";
@@ -3499,6 +3523,7 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR12] = "TCPaH";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR13] = "TCDH";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR14] = "TCBarbH";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR15] = "TCNH";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR] = "DMGR";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR1] = "CS&CG";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR2] = "TCG";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR3] = "A&EG";
@@ -3508,6 +3533,14 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR6] = "TCBoV";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR7] = "TCBoN";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR8] = "S&S";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR9] = "OS&TS";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR] = "HR";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR1] = "VCS";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR2] = "CeCS";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR3] = "CPCS";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR4] = "AMFCS";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR5] = "GoRCS";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR6] = "AoHCS";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR7] = "CrCS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CoS] = "CoS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_EEPC] = "EEPC";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_EET] = "EET";
@@ -3668,9 +3701,10 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_MisMV1] = "MisMV1";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_AATM] = "AATM";
 
 Parser.SOURCE_JSON_TO_DATE = {};
-Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHB] = "1989-04-19";
-Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMG] = "1989-06-09";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHB] = "1989-04-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMG] = "1989-06-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_MM] = "1993-06-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR] = "1989-12-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR1] = "1989-12-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR2] = "1989-12-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR3] = "1990-05-01";
@@ -3686,6 +3720,7 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR12] = "1994-05-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR13] = "1994-08-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR14] = "1995-01-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR15] = "1995-08-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMGR] = "1990-03-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMGR1] = "1990-03-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMGR2] = "1990-04-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMGR3] = "1991-07-01";
@@ -3695,6 +3730,14 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMGR6] = "1994-04-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMGR7] = "1995-03-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMGR8] = "1996-07-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMGR9] = "1997-09-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HR] = "1991-04-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HR1] = "1991-04-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HR2] = "1992-06-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HR3] = "1992-10-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HR4] = "1992-11-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HR5] = "1993-10-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HR6] = "1994-03-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HR7] = "1994-10-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_CoS] = "2016-03-15";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_EEPC] = "2015-03-10";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_EET] = "2015-03-10";
@@ -4027,7 +4070,10 @@ Parser.SOURCES_VANILLA = new Set([
 	Parser.SRC_SCREEN_DUNGEON_KIT,
 	// Parser.SRC_DMG, // "Legacy" source, removed in favor of XDMG
 	// Parser.SRC_PHB, // "Legacy" source, removed in favor of XPHB
+	Parser.SRC_PHBR,
 	Parser.SRC_PHBR1,
+	Parser.SRC_DMGR,
+	Parser.SRC_DMGR1,
 	Parser.SRC_VGM,
 	Parser.SRC_SCAG,
 	// Parser.SRC_TTP, // "Legacy" source, removed in favor of MPMM
@@ -4117,9 +4163,10 @@ Parser.SOURCES_NON_FR = new Set([
 Parser.SOURCES_AVAILABLE_DOCS_BOOK = {};
 [
 	Parser.SRC_PHB,
-	Parser.SRC_MM,
 	Parser.SRC_DMG,
+	Parser.SRC_MM,
 	Parser.SRC_PHBR1,
+	Parser.SRC_DMGR1,
 	Parser.SRC_SCAG,
 	Parser.SRC_VGM,
 	Parser.SRC_OGA,
