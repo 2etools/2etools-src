@@ -365,6 +365,7 @@ PropOrder._FOUNDRY_GENERIC = [
 
 	"type",
 	"system",
+	"activities",
 	"effects",
 	"flags",
 	"img",
@@ -383,12 +384,14 @@ PropOrder._FOUNDRY_GENERIC_FEATURE = [
 
 	"type",
 	"system",
+	"activities",
 	"actorDataMod",
 	"effects",
 	"flags",
 	"img",
 
 	"isIgnored",
+	
 
 	"entries",
 
@@ -417,6 +420,7 @@ PropOrder._MONSTER = [
 	"sourceSub",
 	"page",
 
+	
 	"basicRules",
 	"freeRules2024",
 	"additionalSources",
@@ -662,6 +666,7 @@ PropOrder._SPELL = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"additionalSources",
@@ -780,6 +785,7 @@ PropOrder._ACTION = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -855,6 +861,7 @@ PropOrder._BACKGROUND = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"additionalSources",
@@ -929,6 +936,7 @@ PropOrder._CLASS = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -995,6 +1003,7 @@ PropOrder._FOUNDRY_CLASS = [
 	"source",
 
 	"system",
+	"activities",
 	"effects",
 	"flags",
 	"img",
@@ -1004,6 +1013,7 @@ PropOrder._FOUNDRY_CLASS = [
 	"isChooseSystemRenderEntries",
 	"isChooseFlagsRenderEntries",
 	"isIgnored",
+	
 	"actorDataMod",
 	"actorTokenMod",
 
@@ -1018,6 +1028,7 @@ PropOrder._SUBCLASS = [
 	"classSource",
 
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -1095,6 +1106,7 @@ PropOrder._FOUNDRY_SUBCLASS = [
 	"classSource",
 
 	"system",
+	"activities",
 	"effects",
 	"flags",
 	"img",
@@ -1104,6 +1116,7 @@ PropOrder._FOUNDRY_SUBCLASS = [
 	"isChooseSystemRenderEntries",
 	"isChooseFlagsRenderEntries",
 	"isIgnored",
+	
 	"actorDataMod",
 	"actorTokenMod",
 
@@ -1136,6 +1149,7 @@ PropOrder._CLASS_FEATURE = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -1182,6 +1196,7 @@ PropOrder._SUBCLASS_FEATURE = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -1237,6 +1252,7 @@ PropOrder._FOUNDRY_CLASS_FEATURE = [
 	"level",
 
 	"system",
+	"activities",
 	"effects",
 	"flags",
 	"img",
@@ -1251,6 +1267,7 @@ PropOrder._FOUNDRY_CLASS_FEATURE = [
 	"isChooseSystemRenderEntries",
 	"isChooseFlagsRenderEntries",
 	"isIgnored",
+	
 	"actorDataMod",
 	"actorTokenMod",
 
@@ -1271,6 +1288,7 @@ PropOrder._FOUNDRY_SUBCLASS_FEATURE = [
 	"level",
 
 	"system",
+	"activities",
 	"effects",
 	"flags",
 	"img",
@@ -1285,6 +1303,7 @@ PropOrder._FOUNDRY_SUBCLASS_FEATURE = [
 	"isChooseSystemRenderEntries",
 	"isChooseFlagsRenderEntries",
 	"isIgnored",
+	
 	"actorDataMod",
 	"actorTokenMod",
 
@@ -1302,6 +1321,7 @@ PropOrder._LANGUAGE = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"additionalSources",
@@ -1343,6 +1363,7 @@ PropOrder._CONDITION = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -1363,6 +1384,7 @@ PropOrder._DISEASE = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -1387,6 +1409,7 @@ PropOrder._STATUS = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -1407,6 +1430,7 @@ PropOrder._CULT = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"additionalSources",
@@ -1427,6 +1451,7 @@ PropOrder._BOON = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"additionalSources",
@@ -1451,6 +1476,7 @@ PropOrder._DEITY = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"additionalSources",
@@ -1506,6 +1532,7 @@ PropOrder._FEAT = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"additionalSources",
@@ -1581,6 +1608,7 @@ PropOrder._VEHICLE = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -1653,6 +1681,7 @@ PropOrder._VEHICLE_UPGRADE = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -1682,6 +1711,7 @@ PropOrder._ITEM = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"additionalSources",
@@ -1892,6 +1922,7 @@ PropOrder._ITEM_MASTERY = [
 	"source",
 
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 
@@ -1905,6 +1936,7 @@ PropOrder._ITEM_PROPERTY = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"reprintedAs",
@@ -1936,6 +1968,7 @@ PropOrder._ITEM_TYPE = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"reprintedAs",
@@ -1986,6 +2019,7 @@ PropOrder._OBJECT = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -2020,6 +2054,9 @@ PropOrder._OBJECT = [
 	"token",
 	"tokenHref",
 	"tokenCredit",
+
+	"altArt",
+
 	"hasToken",
 	"hasFluff",
 	"hasFluffImages",
@@ -2034,6 +2071,7 @@ PropOrder._OPTIONALFEATURE = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -2112,6 +2150,8 @@ PropOrder._REWARD = [
 
 	"rarity",
 
+	"additionalSpells",
+
 	"entries",
 
 	"hasFluff",
@@ -2127,6 +2167,7 @@ PropOrder._VARIANTRULE = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"additionalSources",
@@ -2142,6 +2183,7 @@ PropOrder._VARIANTRULE = [
 ];
 PropOrder._RACE_SUBRACE = [
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"additionalSources",
@@ -2271,6 +2313,7 @@ PropOrder._FOUNDRY_RACE_FEATURE = [
 	}),
 
 	"system",
+	"activities",
 	"effects",
 	"flags",
 	"img",
@@ -2288,6 +2331,7 @@ PropOrder._TABLE = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -2321,6 +2365,7 @@ PropOrder._TRAP = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -2359,6 +2404,7 @@ PropOrder._HAZARD = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"additionalSources",
@@ -2434,6 +2480,7 @@ PropOrder._SKILL = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -2449,6 +2496,7 @@ PropOrder._SENSE = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -2462,6 +2510,7 @@ PropOrder._DECK = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -2488,6 +2537,7 @@ PropOrder._CARD = [
 	"source",
 	"set",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
@@ -2550,6 +2600,7 @@ PropOrder._FACILITY = [
 
 	"source",
 	"page",
+	
 	"basicRules",
 	"freeRules2024",
 	"otherSources",
