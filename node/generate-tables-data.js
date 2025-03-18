@@ -1,4 +1,4 @@
-import fs from "fs";
+node ./node/generate-tables-data.jsimport fs from "fs";
 import "../js/parser.js";
 import "../js/utils.js";
 import "../js/render.js";

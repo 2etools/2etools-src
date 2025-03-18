@@ -2236,12 +2236,12 @@ globalThis.Renderer = function () {
 			case "@area": {
 				const {areaId, displayText} = Renderer.tag.TAG_LOOKUP.area.getMeta(tag, text);
 
-				if (typeof BookUtil === "undefined") { // for the roll20 script
+				if (!globalThis.BookUtil) { // for the roll20 script
 					textStack[0] += displayText;
 				} else {
-					const area = BookUtil.curRender.headerMap[areaId] || {entry: {name: ""}}; // default to prevent rendering crash on bad tag
+					const area = globalThis.BookUtil.curRender.headerMap[areaId] || {entry: {name: ""}}; // default to prevent rendering crash on bad tag
 					const hoverMeta = Renderer.hover.getInlineHover(area.entry, {isLargeBookContent: true, depth: area.depth});
-					textStack[0] += `<a href="#${BookUtil.curRender.curBookId},${area.chapter},${UrlUtil.encodeForHash(area.entry.name)},0" ${hoverMeta.html}>${displayText}</a>`;
+					textStack[0] += `<a href="#${globalThis.BookUtil.curRender.curBookId},${area.chapter},${UrlUtil.encodeForHash(area.entry.name)},0" ${hoverMeta.html}>${displayText}</a>`;
 				}
 
 				break;
@@ -9363,6 +9363,7 @@ class _RenderCompactBestiaryImplBase {
 			key: "legendary",
 			depth: 2,
 			styleHint: this._style,
+			isHangingList: true,
 		});
 	}
 
@@ -9374,6 +9375,7 @@ class _RenderCompactBestiaryImplBase {
 			key: "mythic",
 			depth: 2,
 			styleHint: this._style,
+			isHangingList: true,
 		});
 	}
 
@@ -10066,12 +10068,17 @@ Renderer.monster = class {
 	static getCrScaleTarget (
 		{
 			win,
+			btnScale,
 			$btnScale,
 			initialCr,
 			cbRender,
 			isCompact,
 		},
 	) {
+		if (btnScale && $btnScale) throw new Error(`Only one of "$btnScale" and "btnScale" may be provided!`);
+
+		$btnScale ||= $(btnScale);
+
 		const evtName = "click.cr-scaler";
 
 		let slider;
@@ -10153,6 +10160,8 @@ Renderer.monster = class {
 		});
 	}
 
+	/* -------------------------------------------- */
+
 	static getCompactRenderedStringSection (
 		{
 			ent,
@@ -10161,6 +10170,7 @@ Renderer.monster = class {
 			key,
 			depth,
 			styleHint,
+			isHangingList = false,
 		},
 	) {
 		if (!ent[key]) return "";
@@ -10169,9 +10179,16 @@ Renderer.monster = class {
 
 		const noteKey = `${key}Note`;
 
-		const toRender = key === "lairActions" || key === "regionalEffects"
+		const entriesArr = key === "lairActions" || key === "regionalEffects"
 			? [{type: "entries", entries: ent[key]}]
 			: ent[key];
+
+		const content = Renderer.monster._getCompactRenderedStringSection_getRenderedContent({
+			renderer,
+			depth,
+			isHangingList,
+			entriesArr,
+		});
 
 		const ptHeader = ent[key] ? Renderer.monster.getSectionIntro(ent, {prop: key}) : "";
 		const isNonStatblock = key === "lairActions" || key === "regionalEffects";
@@ -10180,9 +10197,38 @@ Renderer.monster = class {
 		<tr><td colspan="6" class="pt-2 pb-2">
 		${key === "legendary" && Renderer.monster.hasLegendaryActions(ent) ? Renderer.monster.getLegendaryActionIntro(ent, {styleHint}) : ""}
 		${ptHeader ? `<p>${ptHeader}</p>` : ""}
-		${toRender.map(it => it.rendered || renderer.render(it, depth)).join("")}
+		${content}
 		</td></tr>`;
 	}
+
+	static _getCompactRenderedStringSection_getRenderedContent (
+		{
+			renderer,
+			depth,
+			isHangingList,
+			entriesArr,
+		},
+	) {
+		if (isHangingList) {
+			const toRender = {
+				type: "list",
+				style: "list-hang-notitle",
+				items: MiscUtil.copy(entriesArr)
+					.map(entSub => {
+						if (entSub.rendered) return {type: "wrappedHtml", html: entSub.rendered};
+
+						if (entSub.name && entSub.entries) entSub.type ||= "item";
+						return entSub;
+					}),
+			};
+
+			return renderer.render(toRender, depth);
+		}
+
+		return entriesArr.map(entSub => entSub.rendered || renderer.render(entSub, depth)).join("");
+	}
+
+	/* -------------------------------------------- */
 
 	static getTypeAlignmentPart (mon) {
 		const typeObj = Parser.monTypeToFullObj(mon.type);
@@ -10196,11 +10242,12 @@ Renderer.monster = class {
 		return `<span title="${ptTitle.qq()}" class="help-subtle">${initPassive}</span>`;
 	}
 
-	static getInitiativePart (mon) {
+	static getInitiativePart (mon, {isPlainText = false} = {}) {
 		const initBonus = this._getInitiativeBonus({mon});
 		const initPassive = this._getInitiativePassive({mon, initBonus});
 		if (initBonus == null || initPassive == null) return "\u2014";
-		return `${Renderer.get().render(`{@initiative ${initBonus}}`)} (${this._getInitiativePart_passive({mon, initPassive})})`;
+		const entry = `{@initiative ${initBonus}} (${this._getInitiativePart_passive({mon, initPassive})})`;
+		return isPlainText ? Renderer.stripTags(entry) : Renderer.get().render(entry);
 	}
 
 	static _getInitiativeBonus ({mon}) {
@@ -15893,8 +15940,9 @@ Renderer.hover = class {
 		if (!entry.entries) return "";
 
 		if (!isSkipRootName) {
+			Renderer.get().setFirstSection(true);
 			return `<tr><td colspan="6" class="pb-2">
-			${Renderer.get().setFirstSection(true).render(entry.entries)}
+			${entry.entries.map(ent => Renderer.get().render(ent)).join("")}
 			</td></tr>`;
 		}
 
@@ -15953,7 +16001,9 @@ Renderer.hover = class {
 		}
 	}
 
-	static getFnBindListenersCompact (page) {
+	static getFnBindListenersCompact (page, {overrides = {}} = {}) {
+		if (overrides[page]) return overrides[page];
+
 		switch (page) {
 			case UrlUtil.PG_BESTIARY: return Renderer.monster.bindListenersCompact.bind(Renderer.monster);
 			case UrlUtil.PG_RACES: return Renderer.race.bindListenersCompact.bind(Renderer.race);
