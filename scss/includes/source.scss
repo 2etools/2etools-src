@@ -19,13 +19,13 @@
 
 	$rgb-source-PHB: #db4c3c;
 	$rgb-source-DMG: #2e6198;
-
-	$rgb-source-PHBR1: #621c2f;
-	$rgb-source-DMGR1: #2c5168;
-	$rgb-source-HR1: #0c6438;
-
-
 	$rgb-source-MM: #008000;
+
+	$rgb-source-PHBR: #701c32;
+	$rgb-source-DMGR: #1c4b69;
+	$rgb-source-HR: #0c6438;
+
+
 	$rgb-source-SCAG: #76af76;
 	$rgb-source-VGM: #808080;
 	$rgb-source-OGA: #933d0f;
@@ -154,47 +154,56 @@
 			@include mix-source-color($rgb-source-DMG);
 		}
 
-		&PHBR1,
-		&PHBR2,
-		&PHBR3,
-		&PHBR4,
-		&PHBR5,
-		&PHBR6,
-		&PHBR7,
-		&PHBR8,
-		&PHBR9,
-		&PHBR10,
-		&PHBR11,
-		&PHBR12,
-		&PHBR13,
-		&PHBR14,
-		&PHBR15
-		{
-			@include mix-source-color($rgb-source-PHBR1)
+		&PHBR {
+			@include mix-source-color($rgb-source-PHBR);
+
+			&PHBR1,
+			&PHBR2,
+			&PHBR3,
+			&PHBR4,
+			&PHBR5,
+			&PHBR6,
+			&PHBR7,
+			&PHBR8,
+			&PHBR9,
+			&PHBR10,
+			&PHBR11,
+			&PHBR12,
+			&PHBR13,
+			&PHBR14,
+			&PHBR15 {
+				@include mix-source-color($rgb-source-PHBR);
+			}
 		}
 
-		&DMGR1,
-		&DMGR2,
-		&DMGR3,
-		&DMGR4,
-		&DMGR5,
-		&DMGR6,
-		&DMGR7,
-		&DMGR8,
-		&DMGR9
-		{
-			@include mix-source-color($rgb-source-DMGR1);
+		&DMGR {
+			@include mix-source-color($rgb-source-DMGR);
+
+			&DMGR1,
+			&DMGR2,
+			&DMGR3,
+			&DMGR4,
+			&DMGR5,
+			&DMGR6,
+			&DMGR7,
+			&DMGR8,
+			&DMGR9 {
+				@include mix-source-color($rgb-source-DMGR);
+			}
 		}
-		
-		&HR1,
-		&HR2,
-		&HR3,
-		&HR4,
-		&HR5,
-		&HR6,
-		&HR7
-		{
-			@include mix-source-color($rgb-source-HR1)
+
+		&HR {
+			@include mix-source-color($rgb-source-HR);
+
+			&HR1,
+			&HR2,
+			&HR3,
+			&HR4,
+			&HR5,
+			&HR6,
+			&HR7 {
+				@include mix-source-color($rgb-source-HR)
+			}
 		}
 
 		&MM {
@@ -214,7 +223,7 @@
 		}
 
 		&XGE,
-			// Tortles are counted as an XGE race for AL
+		// Tortles are counted as an XGE race for AL
 		&TTP {
 			@include mix-source-color($rgb-source-XGE);
 		}
@@ -572,6 +581,7 @@
 			@include mix-source-color($rgb-source-HFDoMM);
 		}
 	}
+
 	// endregion
 }
 

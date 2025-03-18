@@ -41,7 +41,35 @@
 					"name": "Player Character Ability Scores",
 					"headers": [
 						"Rolling Ability Scores",
+						{
+							"depth": 1,
+							"header": "Alternative Dice-Rolling Methods"
+						},
 						"The Ability Scores",
+						{
+							"depth": 1,
+							"header": "Strength"
+						},
+						{
+							"depth": 1,
+							"header": "Dexterity"
+						},
+						{
+							"depth": 1,
+							"header": "Constitution"
+						},
+						{
+							"depth": 1,
+							"header": "Intelligence"
+						},
+						{
+							"depth": 1,
+							"header": "Wisdom"
+						},
+						{
+							"depth": 1,
+							"header": "Charisma"
+						},
 						"What the Numbers Mean"
 					],
 					"ordinal": {
@@ -52,7 +80,29 @@
 				{
 					"name": "Player Character Races",
 					"headers": [
-						"Choosing a Race"
+						{
+							"depth": 1,
+							"header": "Minimum and Maximum Ability Scores"
+						},
+						{
+							"depth": 1,
+							"header": "Racial Ability Adjustments"
+						},
+						{
+							"depth": 1,
+							"header": "Class Restrictions and Level Limits"
+						},
+						{
+							"depth": 1,
+							"header": "Languages"
+						},
+						"Dwarves",
+						"Elves",
+						"Gnomes",
+						"Half-Elves",
+						"Halflings",
+						"Humans",
+						"Other Characteristics"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -61,6 +111,109 @@
 				},
 				{
 					"name": "Player Character Classes",
+					"headers": [
+						{
+							"depth": 1,
+							"header": "Class Ability Score Requirements"
+						},
+						"Warrior",
+						{
+							"depth": 1,
+							"header": "Fighter"
+						},
+						{
+							"depth": 1,
+							"header": "Paladin"
+						},
+						{
+							"depth": 1,
+							"header": "Ranger"
+						},
+						"Wizard",
+						{
+							"depth": 1,
+							"header": "Mage"
+						},
+						{
+							"depth": 2,
+							"header": "The Schools of Magic"
+						},
+						{
+							"depth": 1,
+							"header": "Specialist Wizards"
+						},
+						{
+							"depth": 1,
+							"header": "Illusionist"
+						},
+						"Priest",
+						{
+							"depth": 1,
+							"header": "Cleric"
+						},
+						{
+							"depth": 1,
+							"header": "Priests of Specific Mythoi"
+						},
+						{
+							"depth": 2,
+							"header": "Requirements"
+						},
+						{
+							"depth": 2,
+							"header": "Weapons Allowed"
+						},
+						{
+							"depth": 2,
+							"header": "Spells Allowed"
+						},
+						{
+							"depth": 2,
+							"header": "Granted Powers"
+						},
+						{
+							"depth": 2,
+							"header": "Ethos"
+						},
+						{
+							"depth": 2,
+							"header": "Priest Titles"
+						},
+						{
+							"depth": 2,
+							"header": "Balancing It All"
+						},
+						{
+							"depth": 1,
+							"header": "Druid"
+						},
+						{
+							"depth": 2,
+							"header": "Druid Organization"
+						},
+						"Rogue",
+						{
+							"depth": 1,
+							"header": "Thief"
+						},
+						{
+							"depth": 1,
+							"header": "Bard"
+						},
+						"Multi-Class and Dual-Class Characters",
+						{
+							"depth": 1,
+							"header": "Multi-Class Combinations"
+						},
+						{
+							"depth": 1,
+							"header": "Multi-Class Benefits and Restrictions"
+						},
+						{
+							"depth": 1,
+							"header": "Dual-Class Benefits and Restrictions"
+						}
+					],
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 3
@@ -72,6 +225,10 @@
 						"Law, Neutrality, and Chaos",
 						"Good, Neutrality, and Evil",
 						"Alignment Combinations",
+						{
+							"depth": 1,
+							"header": "Non-Aligned Creatures"
+						},
 						"Playing the Character's Alignment",
 						"Changing Alignment"
 					],
@@ -86,7 +243,44 @@
 						"Acquiring Proficiencies",
 						"Training",
 						"Weapon Proficiencies",
-						"Nonweapon Proficiencies"
+						{
+							"depth": 1,
+							"header": "Effects of Weapon Proficiencies"
+						},
+						{
+							"depth": 1,
+							"header": "Related Weapon Bonus"
+						},
+						{
+							"depth": 1,
+							"header": "Weapon Specialization"
+						},
+						{
+							"depth": 2,
+							"header": "Cost of Specialization"
+						},
+						{
+							"depth": 2,
+							"header": "Effects of Specialization"
+						},
+						"Nonweapon Proficiencies",
+						{
+							"depth": 1,
+							"header": "Using What You Know"
+						},
+						{
+							"depth": 1,
+							"header": "Secondary Skills"
+						},
+						"Nonweapon Proficiencies",
+						{
+							"depth": 1,
+							"header": "Using Nonweapon Proficiencies"
+						},
+						{
+							"depth": 1,
+							"header": "Nonweapon Proficiency Descriptions"
+						}
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -94,12 +288,104 @@
 					}
 				},
 				{
-					"name": "Customization Options",
+					"name": "Money and Equipment",
 					"headers": [
 						"Starting Money",
 						"Equipment Lists",
+						{
+							"depth": 1,
+							"header": "Clothing"
+						},
+						{
+							"depth": 1,
+							"header": "Daily Food and Lodging"
+						},
+						{
+							"depth": 1,
+							"header": "Household Provisioning"
+						},
+						{
+							"depth": 1,
+							"header": "Transport"
+						},
+						{
+							"depth": 1,
+							"header": "Animals"
+						},
+						{
+							"depth": 1,
+							"header": "Services"
+						},
+						{
+							"depth": 1,
+							"header": "Tack and Harness"
+						},
+						{
+							"depth": 1,
+							"header": "Miscellaneous Equipment"
+						},
+						{
+							"depth": 1,
+							"header": "Armor"
+						},
+						{
+							"depth": 1,
+							"header": "Weapons"
+						},
 						"Equipment Descriptions",
-						"Encumbrance (Optional Rule)"
+						{
+							"depth": 1,
+							"header": "Tack and Harness"
+						},
+						{
+							"depth": 1,
+							"header": "Transport"
+						},
+						{
+							"depth": 1,
+							"header": "Miscellaneous Equipment"
+						},
+						{
+							"depth": 1,
+							"header": "Weapons"
+						},
+						{
+							"depth": 1,
+							"header": "Armor"
+						},
+						{
+							"depth": 2,
+							"header": "Armor Size"
+						},
+						{
+							"depth": 2,
+							"header": "Getting Into and Out of Armor"
+						},
+						{
+							"depth": 2,
+							"header": "Creatures with Natural Armor Classes"
+						},
+						"Encumbrance (Optional Rule)",
+						{
+							"depth": 1,
+							"header": "Basic Encumbrance"
+						},
+						{
+							"depth": 1,
+							"header": "Specific Encumbrance"
+						},
+						{
+							"depth": 1,
+							"header": "Encumbrance and Mounts"
+						},
+						{
+							"depth": 1,
+							"header": "Magical Armor and Encumbrance"
+						},
+						{
+							"depth": 1,
+							"header": "Effects of Encumbrance"
+						}
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -110,8 +396,24 @@
 					"name": "Magic",
 					"headers": [
 						"Wizard Spells",
+						{
+							"depth": 1,
+							"header": "Schools of Magic"
+						},
+						{
+							"depth": 1,
+							"header": "Learning Spells"
+						},
+						{
+							"depth": 1,
+							"header": "Illusions"
+						},
 						"Priest Spells",
 						"Casting Spells",
+						{
+							"depth": 1,
+							"header": "Spell Components (Optional Rule)"
+						},
 						"Magical Research",
 						"Spell Descriptions"
 					],
@@ -136,28 +438,232 @@
 				{
 					"name": "Combat",
 					"headers": [
+						{
+							"depth": 1,
+							"header": "More Than Just Hack-and-Slash"
+						},
 						"Definitions",
 						"The Attack Roll",
+						{
+							"depth": 1,
+							"header": "Figuring the To-Hit Number"
+						},
+						{
+							"depth": 1,
+							"header": "Modifiers to the Attack Roll"
+						},
 						"Weapon Type vs. Armor Modifiers (Optional Rule)",
+						{
+							"depth": 1,
+							"header": "The Various Types of Weapons"
+						},
+						{
+							"depth": 1,
+							"header": "Impossible To-Hit Numbers"
+						},
 						"Calculating THAC0",
 						"Combat and Encounters",
 						"The Combat Round",
+						{
+							"depth": 1,
+							"header": "What You Can Do in One Round"
+						},
 						"The Combat Sequence",
 						"Initiative",
+						{
+							"depth": 1,
+							"header": "Standard Initiative Procedure"
+						},
+						{
+							"depth": 1,
+							"header": "Initiative Modifiers"
+						},
+						{
+							"depth": 1,
+							"header": "Group Initiative (Optional Rule)"
+						},
+						{
+							"depth": 1,
+							"header": "Individual Initiative (Optional Rule)"
+						},
+						{
+							"depth": 1,
+							"header": "Multiple Attacks and Initiative"
+						},
+						{
+							"depth": 1,
+							"header": "Spellcasting and Initiative"
+						},
+						{
+							"depth": 1,
+							"header": "Weapon Speed and Initiative (Optional Rule)"
+						},
+						{
+							"depth": 2,
+							"header": "Magical Weapon Speeds"
+						},
 						"Attacking with Two Weapons",
 						"Movement in Combat",
+						{
+							"depth": 1,
+							"header": "Movement in Melee"
+						},
+						{
+							"depth": 1,
+							"header": "Movement and Missile Combat"
+						},
+						{
+							"depth": 1,
+							"header": "Charging an Opponent"
+						},
+						{
+							"depth": 1,
+							"header": "Retreat"
+						},
 						"Attacking Without Killing",
+						{
+							"depth": 1,
+							"header": "Punching and Wrestling"
+						},
+						{
+							"depth": 1,
+							"header": "Overbearing"
+						},
+						{
+							"depth": 1,
+							"header": "Weapons in Nonlethal Combat"
+						},
+						{
+							"depth": 1,
+							"header": "Nonlethal Combat and Creatures"
+						},
 						"Touch Spells and Combat",
 						"Missile Weapons in Combat",
+						{
+							"depth": 1,
+							"header": "Range"
+						},
+						{
+							"depth": 1,
+							"header": "Rate of Fire"
+						},
+						{
+							"depth": 1,
+							"header": "Ability Modifiers in Missile Combat"
+						},
+						{
+							"depth": 1,
+							"header": "Firing into a Melee"
+						},
+						{
+							"depth": 1,
+							"header": "Taking Cover Against Missile Fire"
+						},
+						{
+							"depth": 1,
+							"header": "Grenadelike Missiles"
+						},
+						{
+							"depth": 1,
+							"header": "Types of Grenadelike Missiles"
+						},
 						"Special Defenses",
 						"Parrying (Optional Rule)",
 						"The Saving Throw",
+						{
+							"depth": 1,
+							"header": "Rolling Saving Throws"
+						},
+						{
+							"depth": 1,
+							"header": "Saving Throw Priority"
+						},
+						{
+							"depth": 1,
+							"header": "Voluntarily Failing Saving Throws "
+						},
+						{
+							"depth": 1,
+							"header": "Ability Checks as Saving Throws "
+						},
+						{
+							"depth": 1,
+							"header": "Modifying Saving Throws"
+						},
 						"Magic Resistance",
+						{
+							"depth": 1,
+							"header": "Effects of Magic Resistance"
+						},
+						{
+							"depth": 1,
+							"header": "When Magic Resistance Applies"
+						},
+						{
+							"depth": 1,
+							"header": "Successful Magic Resistance Rolls"
+						},
 						"Turning Undead",
-						"Injury and Wounds",
+						{
+							"depth": 1,
+							"header": "Evil Priests and Undead"
+						},
+						"Injury and Death",
+						{
+							"depth": 1,
+							"header": "Wounds"
+						},
 						"Special Damage",
+						{
+							"depth": 1,
+							"header": "Falling"
+						},
+						{
+							"depth": 1,
+							"header": "Paralysis"
+						},
+						{
+							"depth": 1,
+							"header": "Energy Drain"
+						},
+						{
+							"depth": 1,
+							"header": "Poison"
+						},
+						{
+							"depth": 2,
+							"header": "Treating Poison Victims"
+						},
 						"Healing",
-						"Character Death"
+						{
+							"depth": 1,
+							"header": "Natural Healing"
+						},
+						{
+							"depth": 1,
+							"header": "Magical Healing"
+						},
+						{
+							"depth": 1,
+							"header": "Herbalism and Healing Proficiencies"
+						},
+						"Character Death",
+						{
+							"depth": 1,
+							"header": "Death From Poison"
+						},
+						{
+							"depth": 1,
+							"header": "Death From Massive Damage"
+						},
+						{
+							"depth": 1,
+							"header": "Inescapable Death"
+						},
+						{
+							"depth": 1,
+							"header": "Raising the Dead"
+						}
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -180,6 +686,10 @@
 					"name": "Encounters",
 					"headers": [
 						"The Surprise Roll",
+						{
+							"depth": 1,
+							"header": "Effects of Surprise"
+						},
 						"Encounter Distance",
 						"Encounter Options"
 					],
@@ -218,8 +728,44 @@
 					"name": "Time and Movement",
 					"headers": [
 						"Movement",
+						{
+							"depth": 1,
+							"header": "Jogging and Running (Optional Rule)"
+						},
+						{
+							"depth": 1,
+							"header": "Cross-Country Movement"
+						},
 						"Swimming",
-						"Climbing"
+						{
+							"depth": 1,
+							"header": "Holding Your Breath"
+						},
+						"Climbing",
+						{
+							"depth": 1,
+							"header": "Calculating Success"
+						},
+						{
+							"depth": 1,
+							"header": "Climbing Rates"
+						},
+						{
+							"depth": 1,
+							"header": "Types of Surfaces"
+						},
+						{
+							"depth": 1,
+							"header": "Actions While Climbing"
+						},
+						{
+							"depth": 1,
+							"header": "Climbing Tools"
+						},
+						{
+							"depth": 1,
+							"header": "Getting Down"
+						}
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -792,7 +1338,6 @@
 							"depth": 1,
 							"header": "Researching Extra Wizard Spells (Optional Rule)"
 						}
-						
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -1201,7 +1746,7 @@
 						{
 							"depth": 1,
 							"header": "Monty Haul Campaigns"
-						},						
+						},
 						"Magical Items",
 						{
 							"depth": 1,
@@ -1745,7 +2290,6 @@
 							"depth": 1,
 							"header": "Weapons Versus Characters"
 						}
-
 					],
 					"ordinal": {
 						"type": "appendix",
@@ -1804,7 +2348,6 @@
 				}
 			]
 		},
-		
 		{
 			"name": "Dungeon Master's Screen",
 			"id": "Screen",
@@ -2590,7 +3133,6 @@
 							"depth": 1,
 							"header": "Getting Down"
 						}
-
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -3163,7 +3705,6 @@
 							"depth": 1,
 							"header": "Researching Extra Wizard Spells (Optional Rule)"
 						}
-						
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -3572,7 +4113,7 @@
 						{
 							"depth": 1,
 							"header": "Monty Haul Campaigns"
-						},						
+						},
 						"Magical Items",
 						{
 							"depth": 1,
@@ -4116,7 +4657,6 @@
 							"depth": 1,
 							"header": "Weapons Versus Characters"
 						}
-
 					],
 					"ordinal": {
 						"type": "appendix",
@@ -4395,7 +4935,7 @@
 							"header": "Wilderness Warriors",
 							"depth": 1
 						},
-						"The Miitary Campaign",
+						"The Military Campaign",
 						"Campaign vs. Mini-series"
 					]
 				},
@@ -4759,7 +5299,7 @@
 							"header": "Horseback Archery",
 							"depth": 1
 						},
-						"Tburnaments",
+						"Tournaments",
 						{
 							"header": "The Basic Tournament",
 							"depth": 1
@@ -4939,6 +5479,1150 @@
 			]
 		},
 		{
+			"name": "Campaign Sourcebook and Catacomb Guide",
+			"id": "DMGR1",
+			"source": "DMGR1",
+			"group": "supplement",
+			"author": "Paul Jaquays, William W. Connors",
+			"published": "1990-03-01",
+			"cover": {
+				"type": "internal",
+				"path": "covers/XDMG.webp"
+			},
+			"contents": [
+				{
+					"name": "Introduction"
+				},
+				{
+					"name": "Logistics of Play",
+					"headers": [
+						"Gaming Etiquette",
+						{
+							"header": "Be Prepared",
+							"depth": 1
+						},
+						{
+							"header": "Hosting a Game",
+							"depth": 1
+						},
+						{
+							"header": "Courtesy to the Host",
+							"depth": 1
+						},
+						{
+							"header": "Courtesy to Others",
+							"depth": 1
+						},
+						{
+							"header": "Prerolling Characters",
+							"depth": 1
+						},
+						{
+							"header": "Opening Ceremonies",
+							"depth": 1
+						},
+						{
+							"header": "Refreshments",
+							"depth": 1
+						},
+						{
+							"header": "Distractions",
+							"depth": 1
+						},
+						{
+							"header": "Be Kind to the DM",
+							"depth": 1
+						},
+						{
+							"header": "Be Kind to the Players",
+							"depth": 1
+						},
+						"The Administrative DM",
+						{
+							"header": "One World, Many DMs",
+							"depth": 1
+						},
+						{
+							"header": "One Player, Many Characters",
+							"depth": 1
+						},
+						{
+							"header": "Visitors from Other Worlds",
+							"depth": 1
+						},
+						{
+							"header": "New Players",
+							"depth": 1
+						},
+						{
+							"header": "Hosting One Shots",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "Styles of Play",
+					"headers": [
+						"General Delivery",
+						{
+							"header": "Don't Manipulate!",
+							"depth": 1
+						},
+						{
+							"header": "Never Favor Characters",
+							"depth": 1
+						},
+						{
+							"header": "Never Punish Characters",
+							"depth": 1
+						},
+						{
+							"header": "Never Choose Sides",
+							"depth": 1
+						},
+						{
+							"header": "Always Maintain Game Balance",
+							"depth": 1
+						},
+						"Styles of Play",
+						{
+							"header": "Hack-and-slash.",
+							"depth": 1
+						},
+						{
+							"header": "Thinker",
+							"depth": 1
+						},
+						{
+							"header": "Righteous Roleplayer",
+							"depth": 1
+						},
+						{
+							"header": "Historical Simulation",
+							"depth": 1
+						},
+						{
+							"header": "The Silly Game",
+							"depth": 1
+						},
+						{
+							"header": "Monty Haul",
+							"depth": 1
+						},
+						{
+							"header": "Novel Style Play",
+							"depth": 1
+						},
+						{
+							"header": "Wargamer",
+							"depth": 1
+						},
+						{
+							"header": "Political Play",
+							"depth": 1
+						},
+						{
+							"header": "Eclectic",
+							"depth": 1
+						},
+						"How to Prepare",
+						{
+							"header": "Scenario One:",
+							"depth": 1
+						},
+						{
+							"header": "Scenario Two:",
+							"depth": 1
+						},
+						{
+							"header": "Scenario Planning",
+							"depth": 1
+						},
+						{
+							"header": "Background Information",
+							"depth": 1
+						},
+						{
+							"header": "NPC Statistics",
+							"depth": 1
+						},
+						{
+							"header": "World Update",
+							"depth": 1
+						},
+						{
+							"header": "Character Update",
+							"depth": 1
+						},
+						{
+							"header": "Alternate Scenarios",
+							"depth": 1
+						},
+						"Be Prepared!",
+						{
+							"header": "Allow Time to Design",
+							"depth": 1
+						},
+						{
+							"header": "Get Organized",
+							"depth": 1
+						},
+						{
+							"header": "\"Know thy Stuff!\"",
+							"depth": 1
+						},
+						{
+							"header": "Establish a Background",
+							"depth": 1
+						},
+						{
+							"header": "Your Changing World",
+							"depth": 1
+						},
+						{
+							"header": "The Passage of Time",
+							"depth": 1
+						},
+						{
+							"header": "A Note On Alternative Scenarios",
+							"depth": 1
+						},
+						"Winging It",
+						"Player Preparation"
+					]
+				},
+				{
+					"name": "Pacing and Theatrics",
+					"headers": [
+						"Pacing the Play",
+						{
+							"header": "Scenario One",
+							"depth": 1
+						},
+						{
+							"header": "Scenario Two",
+							"depth": 1
+						},
+						{
+							"header": "Get the players moving",
+							"depth": 1
+						},
+						{
+							"header": "Create Unusual Puzzles",
+							"depth": 1
+						},
+						{
+							"header": "Dead or Alive?",
+							"depth": 1
+						},
+						{
+							"header": "Comic Relief",
+							"depth": 1
+						},
+						{
+							"header": "Keep things lively",
+							"depth": 1
+						},
+						{
+							"header": "Encourage Rapid Play",
+							"depth": 1
+						},
+						{
+							"header": "Avoid Splitting Up",
+							"depth": 1
+						},
+						{
+							"header": "Plan Breaks",
+							"depth": 1
+						},
+						{
+							"header": "Know When To Quit",
+							"depth": 1
+						},
+						{
+							"header": "Scripting an Adventure",
+							"depth": 1
+						},
+						"Building a Dramatic Environment",
+						{
+							"header": "Playing Pieces",
+							"depth": 1
+						},
+						{
+							"header": "Props",
+							"depth": 1
+						},
+						{
+							"header": "Mood Music",
+							"depth": 1
+						},
+						{
+							"header": "Smells",
+							"depth": 1
+						},
+						{
+							"header": "Player Handouts",
+							"depth": 1
+						},
+						"Suspenseful Disinformation.",
+						{
+							"header": "Misperceptions",
+							"depth": 1
+						},
+						{
+							"header": "Loose Lips Sink Ships",
+							"depth": 1
+						},
+						{
+							"header": "Messy Maps",
+							"depth": 1
+						},
+						{
+							"header": "Magical Misinformation",
+							"depth": 1
+						},
+						{
+							"header": "You Talk Too Much",
+							"depth": 1
+						},
+						{
+							"header": "Fear and Loathing",
+							"depth": 1
+						},
+						"Funny-Ha-Ha",
+						"DMing in Full Color",
+						{
+							"header": "Set the Scene",
+							"depth": 1
+						},
+						{
+							"header": "Effective Setting",
+							"depth": 1
+						},
+						{
+							"header": "Ineffective Setting",
+							"depth": 1
+						},
+						{
+							"header": "Effective Setting",
+							"depth": 1
+						},
+						{
+							"header": "Presenting NPCs.",
+							"depth": 1
+						},
+						"Make Encounters Dramatic",
+						"Ban Gamespeak",
+						"When Rules Get in the Way",
+						"Character Mortality",
+						{
+							"header": "Alternatives to Dying",
+							"depth": 1
+						},
+						"Fudging or Constructive Cheating"
+					]
+				},
+				{
+					"name": "Uses of Judgment",
+					"headers": [
+						"To Interpret the Law",
+						"Leaving the Rules Behind",
+						"Danger! Danger!",
+						"Presuming They are Heroes",
+						"When Reason Fails",
+						{
+							"header": "Basic Presumptions",
+							"depth": 1
+						},
+						{
+							"header": "Escaping from Monty Haul",
+							"depth": 1
+						},
+						{
+							"header": "Super Characters",
+							"depth": 1
+						},
+						{
+							"header": "Changing Reality",
+							"depth": 1
+						},
+						"Rules Lawyers",
+						"Player \"Personalities\"",
+						"Off Nights",
+						"Intra-party Treachery and Backstabbing",
+						"Player Feuds",
+						"Pettiness",
+						"Me-Against-Them Mentality",
+						"Experts",
+						"Know-it-alls",
+						"When Players Cheat",
+						"When DMs Cheat",
+						"Rudeness",
+						"When Nature Calls",
+						{
+							"header": "He's dead Jim!",
+							"depth": 1
+						},
+						{
+							"header": "Sleeping Beauty.",
+							"depth": 1
+						},
+						{
+							"header": "There's No Place Like Home",
+							"depth": 1
+						},
+						{
+							"header": "Into the Bermuda Triangle",
+							"depth": 1
+						},
+						{
+							"header": "Polymorph to NPC",
+							"depth": 1
+						},
+						{
+							"header": "Changing Hands",
+							"depth": 1
+						},
+						"Shut Up, You're Dead",
+						"Never Say Impossible",
+						"Overdone Independent Action",
+						"\"No, wait, I change my mind.\"",
+						{
+							"header": "Gaming Too Often",
+							"depth": 1
+						},
+						"Insufficient Players",
+						"The Too-big Party",
+						"DM Burnout"
+					]
+				},
+				{
+					"name": "Creating the Campaign",
+					"headers": [
+						"Dividing the Work",
+						"Involving the Players"
+					]
+				},
+				{
+					"name": "Creating the World",
+					"headers": [
+						"A Big Job Made Easy",
+						"Getting Started",
+						"Campaign Overview",
+						"Realism versus Fantasy",
+						"World Building",
+						{
+							"header": "Choose a Scale",
+							"depth": 1
+						},
+						{
+							"header": "Start at the Bottom",
+							"depth": 1
+						},
+						{
+							"header": "Work up to the top",
+							"depth": 1
+						},
+						{
+							"header": "Place It On the Planet",
+							"depth": 1
+						},
+						{
+							"header": "Just Add Water!",
+							"depth": 1
+						},
+						{
+							"header": "What's for Desert?",
+							"depth": 1
+						},
+						{
+							"header": "Planting Forests",
+							"depth": 1
+						},
+						{
+							"header": "Other Common Features",
+							"depth": 1
+						},
+						{
+							"header": "Large-scale Details",
+							"depth": 1
+						},
+						{
+							"header": "Points of Interest",
+							"depth": 1
+						},
+						{
+							"header": "Things Fantastic",
+							"depth": 1
+						},
+						"Zooming in for Detail",
+						"Filling up on Flora & Fauna",
+						{
+							"header": "Ecology Overview",
+							"depth": 1
+						},
+						{
+							"header": "Common Creatures",
+							"depth": 1
+						},
+						{
+							"header": "Big Animals",
+							"depth": 1
+						},
+						{
+							"header": "Major Predators",
+							"depth": 1
+						},
+						{
+							"header": "Placing Plants",
+							"depth": 1
+						},
+						"Populations",
+						{
+							"header": "Select the Races",
+							"depth": 1
+						},
+						{
+							"header": "Culture Levels",
+							"depth": 1
+						},
+						{
+							"header": "Building Cultural Character",
+							"depth": 1
+						},
+						{
+							"header": "Population Centers",
+							"depth": 1
+						},
+						"A Walk through History",
+						"Behold the Works of Man",
+						"Social Structure",
+						{
+							"header": "Social Class",
+							"depth": 1
+						},
+						{
+							"header": "Countries",
+							"depth": 1
+						},
+						{
+							"header": "Where Do Countries Come From",
+							"depth": 2
+						},
+						{
+							"header": "Name-calling",
+							"depth": 2
+						},
+						{
+							"header": "Wars and Rumors of War",
+							"depth": 2
+						},
+						{
+							"header": "Governments",
+							"depth": 1
+						},
+						{
+							"header": "Economics and Taxation",
+							"depth": 1
+						},
+						{
+							"header": "The Cost of Living",
+							"depth": 2
+						},
+						{
+							"header": "Taxation",
+							"depth": 2
+						},
+						{
+							"header": "Good & Evil Societies",
+							"depth": 1
+						},
+						"Mythology and the World",
+						{
+							"header": "Building a Mythos",
+							"depth": 1
+						},
+						{
+							"header": "Good versus Evil",
+							"depth": 1
+						},
+						{
+							"header": "Archetypal Gods",
+							"depth": 1
+						},
+						{
+							"header": "The Decadent Deity",
+							"depth": 1
+						},
+						{
+							"header": "Evil Deities",
+							"depth": 1
+						},
+						{
+							"header": "The Role of Mankind",
+							"depth": 1
+						},
+						{
+							"header": "Monsters & Mythology",
+							"depth": 1
+						},
+						{
+							"header": "Creating Religions",
+							"depth": 1
+						},
+						"Fantasy",
+						"Afterthoughts: Using Other Sources"
+					]
+				},
+				{
+					"name": "Maps and Map Making",
+					"headers": [
+						"Basic Mapping Considerations",
+						"Tools of the Trade",
+						"What Makes a Good Map?",
+						{
+							"header": "Map Scale",
+							"depth": 1
+						},
+						{
+							"header": "Map Grid",
+							"depth": 1
+						},
+						{
+							"header": "Encounter Area Numbers",
+							"depth": 1
+						},
+						{
+							"header": "Map Keys",
+							"depth": 1
+						},
+						{
+							"header": "Compass Rose",
+							"depth": 1
+						},
+						"Map Types",
+						{
+							"header": "World Maps",
+							"depth": 1
+						},
+						{
+							"header": "Regional Maps",
+							"depth": 1
+						},
+						{
+							"header": "Encounter Maps",
+							"depth": 1
+						},
+						{
+							"header": "Diagrams",
+							"depth": 1
+						},
+						"Mapping Scales",
+						"Maps without Grids",
+						"Mapping Symbols",
+						"Using Color",
+						"Simple Maps—Orthographic Mapping",
+						{
+							"header": "World Maps",
+							"depth": 1
+						},
+						{
+							"header": "Regional Maps",
+							"depth": 1
+						},
+						{
+							"header": "Encounter Maps",
+							"depth": 1
+						},
+						"Perspective Mapping",
+						{
+							"header": "Selecting a Starting Point",
+							"depth": 1
+						},
+						{
+							"header": "Drawing the Map",
+							"depth": 1
+						},
+						{
+							"header": "Mapping Symbols",
+							"depth": 1
+						},
+						{
+							"header": "Splitting the Grid",
+							"depth": 1
+						},
+						{
+							"header": "Technique 1: Tracing Method",
+							"depth": 2
+						},
+						{
+							"header": "Technique 2: Photocopy Method",
+							"depth": 2
+						},
+						{
+							"header": "Horizon Lines",
+							"depth": 1
+						},
+						"Tips & Tricks",
+						{
+							"header": "Consistency",
+							"depth": 1
+						},
+						{
+							"header": "Making Handouts",
+							"depth": 1
+						},
+						{
+							"header": "Superimposing grids on Maps",
+							"depth": 1
+						},
+						{
+							"header": "Real Maps",
+							"depth": 1
+						},
+						"Mapping with Authority",
+						{
+							"header": "Topographical Maps",
+							"depth": 1
+						},
+						{
+							"header": "Books on Caves",
+							"depth": 1
+						},
+						{
+							"header": "Books on Castles",
+							"depth": 1
+						},
+						{
+							"header": "Geography Books",
+							"depth": 1
+						},
+						{
+							"header": "Art History Text Books",
+							"depth": 1
+						},
+						{
+							"header": "Architectural History Books",
+							"depth": 1
+						},
+						{
+							"header": "Books on Ancient Civilizations",
+							"depth": 1
+						},
+						{
+							"header": "Other Sources",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "Creating the Adventure",
+					"headers": [
+						"Evaluating the Players",
+						{
+							"header": "Adventurers",
+							"depth": 1
+						},
+						{
+							"header": "Problem-Solvers",
+							"depth": 1
+						},
+						{
+							"header": "Role-players",
+							"depth": 1
+						},
+						"The Importance of Story",
+						{
+							"header": "Theme",
+							"depth": 1
+						},
+						{
+							"header": "The Tale is Told",
+							"depth": 1
+						},
+						{
+							"header": "Plots & Subplots",
+							"depth": 1
+						},
+						{
+							"header": "Personal Involvement",
+							"depth": 1
+						},
+						{
+							"header": "Plot Complications and Twists",
+							"depth": 1
+						},
+						{
+							"header": "Hooks",
+							"depth": 1
+						},
+						{
+							"header": "Story Development",
+							"depth": 1
+						},
+						{
+							"header": "Climax",
+							"depth": 1
+						},
+						{
+							"header": "Suspense, Drama, & Humor",
+							"depth": 1
+						},
+						{
+							"header": "Success or Failure",
+							"depth": 1
+						},
+						{
+							"header": "Multiple Story Lines",
+							"depth": 1
+						},
+						"Campaign Style",
+						{
+							"header": "The Linear Campaign",
+							"depth": 1
+						},
+						{
+							"header": "The Open Campaign",
+							"depth": 1
+						},
+						{
+							"header": "The Matrix Campaign",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "Making NPCs Live",
+					"headers": [
+						"Where to Start",
+						"Creating Character",
+						{
+							"header": "A Bit of Background",
+							"depth": 1
+						},
+						{
+							"header": "Producing a Past",
+							"depth": 1
+						},
+						{
+							"header": "Personality Traits",
+							"depth": 1
+						},
+						{
+							"header": "Motivations",
+							"depth": 1
+						},
+						{
+							"header": "Physical Appearance",
+							"depth": 1
+						},
+						"Portraying the Character",
+						"Believability",
+						"Acting at the Table",
+						{
+							"header": "Mug it Up",
+							"depth": 1
+						},
+						{
+							"header": "Move Those Hands",
+							"depth": 1
+						},
+						{
+							"header": "Speak In Character",
+							"depth": 1
+						},
+						{
+							"header": "Vary the volume",
+							"depth": 1
+						},
+						{
+							"header": "Hearing Voices",
+							"depth": 1
+						},
+						"Presenting Special Character Types",
+						{
+							"header": "Mundane Folk",
+							"depth": 1
+						},
+						{
+							"header": "Children",
+							"depth": 1
+						},
+						{
+							"header": "Persons in Power",
+							"depth": 1
+						},
+						{
+							"header": "Dernihurnans",
+							"depth": 1
+						},
+						{
+							"header": "Monsters",
+							"depth": 1
+						},
+						{
+							"header": "Magical Items",
+							"depth": 1
+						},
+						"Improvisation on the Fly",
+						"Going for the Funny Bone",
+						{
+							"header": "Broad Characterization",
+							"depth": 1
+						},
+						{
+							"header": "Slapstick",
+							"depth": 1
+						},
+						{
+							"header": "Situational Comedy",
+							"depth": 1
+						},
+						{
+							"header": "Parody",
+							"depth": 1
+						},
+						{
+							"header": "Satire",
+							"depth": 1
+						},
+						{
+							"header": "Puns",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "Dungeon Settings",
+					"headers": [
+						"The Disadvantages of Dungeons",
+						{
+							"header": "Construction Time",
+							"depth": 1
+						},
+						{
+							"header": "Expenses",
+							"depth": 1
+						},
+						{
+							"header": "Worker Safety",
+							"depth": 1
+						},
+						"Advantages of Dungeon Construction",
+						{
+							"header": "Aerial Attacks",
+							"depth": 1
+						},
+						{
+							"header": "Magic Spells",
+							"depth": 1
+						},
+						{
+							"header": "Defensibility",
+							"depth": 1
+						},
+						{
+							"header": "Traditional Siege Tactics",
+							"depth": 1
+						},
+						{
+							"header": "Refuge",
+							"depth": 1
+						},
+						{
+							"header": "Other Underground Structures",
+							"depth": 1
+						},
+						{
+							"header": "Mines",
+							"depth": 1
+						},
+						{
+							"header": "Animal Burrows",
+							"depth": 1
+						},
+						{
+							"header": "Natural Caverns",
+							"depth": 1
+						},
+						{
+							"header": "Unusual Dungeons",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "The Dungeon Campaign",
+					"headers": [
+						"The Psychological Environment",
+						{
+							"header": "Isolation",
+							"depth": 1
+						},
+						{
+							"header": "Alienation",
+							"depth": 1
+						},
+						{
+							"header": "The Home Field Advantage",
+							"depth": 1
+						},
+						{
+							"header": "Controllability",
+							"depth": 1
+						},
+						"The Physical Environment",
+						{
+							"header": "Cave-Ins",
+							"depth": 1
+						}
+						,
+						{
+							"header": "Darkness",
+							"depth": 1
+						}
+						,
+						{
+							"header": "Flooding",
+							"depth": 1
+						}
+						,
+						{
+							"header": "Oxygen",
+							"depth": 1
+						}
+						,
+						{
+							"header": "Fires",
+							"depth": 1
+						}
+						,
+						{
+							"header": "Noxious Gases",
+							"depth": 1
+						}
+						,
+						{
+							"header": "Toxic Gases",
+							"depth": 1
+						}
+						,
+						{
+							"header": "Explosive Gases",
+							"depth": 1
+						}
+						,
+						{
+							"header": "Low Temperature",
+							"depth": 1
+						}
+						,
+						{
+							"header": "High Temperature",
+							"depth": 1
+						},
+						{
+							"header": "Line of Sight",
+							"depth": 1
+						},
+						{
+							"header": "Loadstone",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "Generic Dungeons",
+					"headers": [
+						"The Great Pyramid",
+						{
+							"header": "Origin",
+							"depth": 1
+						},
+						{
+							"header": "Transformation",
+							"depth": 1
+						},
+						{
+							"header": "Map Key",
+							"depth": 1
+						},
+						"The Primitive Temple",
+						{
+							"header": "Origin",
+							"depth": 1
+						},
+						{
+							"header": "Transformation",
+							"depth": 1
+						},
+						{
+							"header": "Map Key",
+							"depth": 1
+						},
+						"The Modem Temple",
+						{
+							"header": "Origin",
+							"depth": 1
+						},
+						{
+							"header": "Transformation",
+							"depth": 1
+						},
+						{
+							"header": "Map Key",
+							"depth": 1
+						},
+						"The Limestone Cavern",
+						{
+							"header": "Origin",
+							"depth": 1
+						},
+						{
+							"header": "Transformation",
+							"depth": 1
+						},
+						{
+							"header": "Map Key",
+							"depth": 1
+						},
+						"The Beehive Fort",
+						{
+							"header": "Origin",
+							"depth": 1
+						},
+						{
+							"header": "Transformation",
+							"depth": 1
+						},
+						{
+							"header": "Map Key",
+							"depth": 1
+						},
+						"The Castle on Moors",
+						{
+							"header": "Origin",
+							"depth": 1
+						},
+						{
+							"header": "Transformation",
+							"depth": 1
+						},
+						{
+							"header": "Map Key",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "Typical Map Symbols"
+				},
+				{
+					"name": "Forced Perspective Map Grid"
+				}
+			]
+		},
+		{
 			"name": "Sword Coast Adventurer's Guide",
 			"id": "SCAG",
 			"source": "SCAG",
@@ -5052,7 +6736,6 @@
 				}
 			]
 		},
-		
 		{
 			"name": "Plane Shift: Zendikar",
 			"id": "PS-Z",
@@ -5416,7 +7099,6 @@
 				}
 			]
 		},
-		
 		{
 			"name": "Plane Shift: Ixalan",
 			"id": "PS-X",
@@ -10311,7 +11993,6 @@
 				}
 			]
 		},
-		
 		{
 			"name": "Dungeon Master's Screen (2024)",
 			"id": "XScreen",

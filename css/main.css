@@ -5473,6 +5473,13 @@ html.is-faux-print .rd__h--1 {
     text-decoration-color: green !important
 }
 
+
+.source__PHBR {
+    color: #701c32 !important;
+    border-color: #701c32 !important;
+    text-decoration-color: #701c32 !important
+}
+
 .source__PHBR1,
 .source__PHBR2,
 .source__PHBR3,
@@ -5488,9 +5495,15 @@ html.is-faux-print .rd__h--1 {
 .source__PHBR13,
 .source__PHBR14,
 .source__PHBR15 {
-    color: #621c2f !important;
-    border-color: #621c2f !important;
-    text-decoration-color: #621c2f !important
+    color: #701c32 !important;
+    border-color: #701c32 !important;
+    text-decoration-color: #701c32 !important
+}
+
+.source__DMGR {
+    color: #1c4b69 !important;
+    border-color: #1c4b69 !important;
+    text-decoration-color: #1c4b69 !important
 }
 
 .source__DMGR1,
@@ -5502,18 +5515,24 @@ html.is-faux-print .rd__h--1 {
 .source__DMGR7,
 .source__DMGR8,
 .source__DMGR9 {
-    color: #2c5168 !important;
-    border-color: #2c5168 !important;
-    text-decoration-color: #2c5168 !important
+    color: #1c4b69 !important;
+    border-color: #1c4b69 !important;
+    text-decoration-color: #1c4b69 !important
+}
+
+.source__HR {
+    color: #0c6438 !important;
+    border-color: #0c6438 !important;
+    text-decoration-color: #0c6438 !important
 }
 
 .source__HR1,
-.source__HR1,
-.source__HR1,
-.source__HR1,
-.source__HR1,
-.source__HR1,
-.source__HR1 {
+.source__HR2,
+.source__HR3,
+.source__HR4,
+.source__HR5,
+.source__HR6,
+.source__HR7 {
     color: #0c6438 !important;
     border-color: #0c6438 !important;
     text-decoration-color: #0c6438 !important
