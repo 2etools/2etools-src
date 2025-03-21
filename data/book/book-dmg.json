@@ -20156,7 +20156,7 @@
 						],
 						[
 							"Artifacts",
-							"{@b {@i }}, 107, 109"
+							"{@b {@i 89}}, 107, 109"
 						],
 						[
 							"Artistic ability proficiency",
@@ -20183,7 +20183,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"ability modifiers",
-								"9"
+								"99"
 							]
 						},
 						{
@@ -20306,11 +20306,11 @@
 							"74"
 						],
 						[
-							"Blacksmithing",
+							"Blacksmithing proficiencies",
 							"57"
 						],
 						[
-							"Blind-fighting",
+							"Blind-fighting proficiencies",
 							"57"
 						],
 						[
@@ -20381,7 +20381,7 @@
 							"type": "row",
 							"style": "row-indent-first",
 							"row": [
-								"fuiring and moving",
+								"firing and moving",
 								"96"
 							]
 						},
@@ -20457,8 +20457,8 @@
 							"{@b {@i 58}}"
 						],
 						[
-							"Calling his war horse, paladin",
-							"39"
+							"Calling his warhorse, paladin",
+							"28"
 						],
 						[
 							"Campaigns, alignment",
@@ -21397,7 +21397,7 @@
 						],
 						[
 							"Damage",
-							"{@b {@i 51, 72, 89}}, 103, 104"
+							"{@b {@i 51, 72}}, 89, 103, 104"
 						],
 						{
 							"type": "row",
@@ -21915,7 +21915,7 @@
 							"{@b {@i 132}}"
 						],
 						[
-							"Etiquette",
+							"Etiquette proficiencyGH",
 							"58"
 						],
 						[
@@ -22504,7 +22504,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"dual-class",
-								"{@b {@i 45}}"
+								"45"
 							]
 						},
 						[
@@ -22914,7 +22914,7 @@
 						},
 						[
 							"Leather armor",
-							"76"
+							"75"
 						],
 						[
 							"Leatherworking proficiency",
@@ -22926,7 +22926,7 @@
 						],
 						[
 							"Level drain",
-							"32"
+							"104"
 						],
 						[
 							"Level limits, racial",
@@ -23051,7 +23051,7 @@
 							"type": "row",
 							"style": "row-indent-first",
 							"row": [
-								"affecting alingment",
+								"affecting alignment",
 								"49"
 							]
 						},
@@ -24039,7 +24039,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"druidic",
-								"{@b {@i 37}}"
+								"37"
 							]
 						},
 						[
@@ -24173,7 +24173,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"turning undead",
-								"{@b {@i 103}}"
+								"103"
 							]
 						},
 						[
@@ -24350,7 +24350,7 @@
 						],
 						[
 							"Prices, increasing/decreasing",
-							"{@b {@i }}"
+							"{@b {@i 34}}"
 						],
 						{
 							"type": "row",
@@ -24653,7 +24653,7 @@
 						],
 						[
 							"Ranseur",
-							"99"
+							"74"
 						],
 						[
 							"Ransom",
@@ -24720,11 +24720,11 @@
 							]
 						},
 						[
-							"Reading lips",
+							"Reading lips proficiency",
 							"61"
 						],
 						[
-							"Reading, writing",
+							"Reading, writing proficiency",
 							"61"
 						],
 						[
@@ -24740,7 +24740,7 @@
 							"15"
 						],
 						[
-							"Related weapons",
+							"Related weapons bonus",
 							"52"
 						],
 						[
@@ -25011,7 +25011,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"cover bonus",
-								"{@b {@i }}, 132"
+								"99"
 							]
 						},
 						{
@@ -25192,7 +25192,7 @@
 						],
 						[
 							"Shapechange, druid ability",
-							"52"
+							"37"
 						],
 						[
 							"Sharing information",
@@ -25231,7 +25231,7 @@
 							"{@b {@i 76}}"
 						],
 						[
-							"Siege",
+							"Sight",
 							"{@b {@i 119}}, 117-118"
 						],
 						[
@@ -25802,7 +25802,7 @@
 							"style": "row-indent-first",
 							"row": [
 								"price list",
-								"{@b {@i 67}}"
+								"67"
 							]
 						},
 						[
