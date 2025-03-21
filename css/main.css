@@ -24,6 +24,55 @@
     src: local("Blambot-Casual"), url("../fonts/Blambot-Casual-Regular.woff2") format("woff2")
 }
 
+@font-face {
+    font-family: "ZapfCalligr BT";
+    font-style: italic;
+    font-style: normal;
+    src: local("ZapfCalligr BT") url("../fonts/zapfcalligr-bt-2.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "ZapfCalligr BT";
+    font-weight: bold;
+    font-style: normal;
+    src: local("ZapfCalligr BT")  url("../fonts/zapfcalligr-bt-3.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "ZapfCalligr BT";
+    font-style: normal;
+    font-weight: normal;
+    src: local("ZapfCalligr BT") url("../fonts/zapfcalligr-bt-4.woff2") format("woff2")
+}
+
+
+@font-face {
+    font-family: 'Friz Quadrata Std';
+    src: url('FrizQuadrataStd-Bold.eot');
+    src: local('Friz Quadrata Std Bold'), local('FrizQuadrataStd-Bold'),
+        url('FrizQuadrataStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FrizQuadrataStd-Bold.woff2') format('woff2'),
+        url('FrizQuadrataStd-Bold.woff') format('woff'),
+        url('FrizQuadrataStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Friz Quadrata Std';
+    src: url('FrizQuadrataStd.eot');
+    src: local('Friz Quadrata Std Medium'), local('FrizQuadrataStd'),
+        url('FrizQuadrataStd.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FrizQuadrataStd.woff2') format('woff2'),
+        url('FrizQuadrataStd.woff') format('woff'),
+        url('FrizQuadrataStd.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 @keyframes kf-fade-in {
     from {
         opacity: 0
@@ -4658,34 +4707,31 @@ input[type=range] {
 }
 
 .rd__h--0 {
-    color: #822000;
-    font-family: "Times New Roman", serif;
-    font-variant: small-caps;
-    font-weight: 500;
+    color: #1068a3;
+    font-family: "Friz Quadrata Std";
+    font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: var(--sz-font-h0)
-}
-
-.rd__h--1 {
-    color: #822000;
-    font-family: "Times New Roman", serif;
-    font-variant: small-caps;
-    font-weight: 500;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: var(--sz-font-h1);
-    border-bottom: 1px solid #822000;
+    border-bottom: 5px solid #252020;
+    font-size: var(--sz-font-h0);
     margin: 0 0 .2em
 }
 
+.rd__h--1 {
+    color: #1068a3;
+    font-family: "Friz Quadrata Std";
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--sz-font-h1)
+}
+
 .rd__h--2 {
-    color: #822000;
-    font-family: "Times New Roman", serif;
-    font-variant: small-caps;
-    font-weight: 500;
+    color: #1068a3;
+    font-family: "Friz Quadrata Std";
+    font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -4731,7 +4777,7 @@ input[type=range] {
 }
 
 .rd__h-toggle {
-    font-family: Arial, sans-serif;
+    font-family: "Friz Quadrata Std";
     font-size: 12px;
     opacity: .3;
     font-weight: normal
@@ -5079,11 +5125,11 @@ td>.rd__b:last-child {
 .ve-night-mode .rd__h--0,
 .ve-night-mode .rd__h--1,
 .ve-night-mode .rd__h--2 {
-    color: #d29a38
+    color: #1068a3
 }
 
-.ve-night-mode .rd__h--1 {
-    border-bottom-color: #d29a38
+.ve-night-mode .rd__h--0 {
+    border-bottom-color: #c2c2c2
 }
 
 .ve-night-mode .rd__h--4 {
@@ -9411,7 +9457,7 @@ input[type=checkbox].sidemenu__row__label__cb {
 
 .stats--book {
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: "ZapfCalligr BT";
     background: #fff
 }
 
@@ -9436,8 +9482,8 @@ input[type=checkbox].sidemenu__row__label__cb {
 
 .stats--book-large {
     --sz-font-h0: 2.5em;
-    --sz-font-h1: 1.9em;
-    --sz-font-h2: 1.6em;
+    --sz-font-h1: 2em;
+    --sz-font-h2: 1.5em;
     --h-mb-p: 15px;
     --h-mb-p-inline: var(--h-mb-p);
     --h-mb-quote-line: 10px;

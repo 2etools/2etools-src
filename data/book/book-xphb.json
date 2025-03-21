@@ -3476,8 +3476,8 @@
 								"Follower"
 							],
 							"colStyles": [
-								"col- text-",
-								"col- text-"
+								"col- text-center",
+								"col-8v text-left"
 							],
 							"isStriped": false,
 							"rows": [
@@ -6102,7 +6102,7 @@
 					"name": "Alignment Combinations",
 					"page": 65,
 					"entries": [
-						"",
+						"Nine different alignments result from combining these two sets. Each alignment varies from all others, sometimes in broad, obvious ways, and smoetimes in subtle ways. Each alignment is described in the following paragraphs.",
 						"{@b Lawful Good:} Characters of this alignment believe that an orderly, strong society with a well-organized government can work to make life better for the majority of the people. To ensure the quality of life, laws must be created and obeyed. When people respect the laws and try to help one another, society as a whole prospers. Therefore, lawful good characters strive for those things that will bring the greatest benefit to the most people and cause the least harm. An honest and hardworking serf, a kindly and wise king, or a stern but forthright minister of justice are all examples of lawful good people.",
 						"{@b Lawful Neutral:} Order and organization are of paramount importance to characters of this alignment. They believe in a strong, well-ordered government, whether that government is a tyranny or benevolent democracy. The benefits of organization and regimentation outweigh any moral questions raised by their actions. An inquisitor determined to ferret out traitors at any cost or a soldier who never questions his orders are good examples of lawful neutral behavior.",
 						"{@b Lawful Evil:} These characters believe in using society and its laws to benefit themselves. Structure and organization elevate those who deserve to rule as well as provide a clearly defined hierarchy between master and servant. To this end, lawful evil characters support laws and societies that protect their own concerns. If someone is hurt or suffers because of a law that benefits lawful evil characters, too bad. Lawful evil characters obey laws out of fear of punishment. Because they may be forced to honor an unfavorable contract or oath they have made, lawful evil characters are usually very careful about giving their word. Once given, they break their word only if they can find a way to do it legally, within the laws of the society. An iron-fisted tyrant and a devious, greedy merchant are examples of lawful evil beings.",
@@ -6479,29 +6479,6 @@
 										"Secondary Skill"
 									],
 									"colStyles": [
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
-										"col- text-left",
 										"col- text-left",
 										"col- text-left"
 									],		
@@ -7424,7 +7401,7 @@
 										"The character can leap from the back of his steed to the ground and make a melee attack against any character or creature within 10 feet. The player must roll a successful proficiency check with a -4 penalty to succeed. On a failed roll, the character fails to land on his feet, falls clumsily to the ground, and suffers {@dice 1d3} points of damage."
 									]
 								},
-								"{@b Rope Use:}This proficiency enables a character to accomplish amazing feats with rope. A character with rope use proficiency is familiar with all sorts of knots and can tie knots that slip, hold tightly, slide slowly, or loosen with a quick tug. If the character’s hands are bound and held with a knot, he can roll a proficiency check (with a -6 penalty) to escape the bonds.",
+								"{@b Rope Use:} This proficiency enables a character to accomplish amazing feats with rope. A character with rope use proficiency is familiar with all sorts of knots and can tie knots that slip, hold tightly, slide slowly, or loosen with a quick tug. If the character’s hands are bound and held with a knot, he can roll a proficiency check (with a -6 penalty) to escape the bonds.",
 								"This character gains a +2 bonus to all attacks made with a lasso. The character also receives a +10% bonus to all climbing checks made while he is using a rope, including attempts to belay (secure the end of a climbing rope to) companions.",
 								"{@b Running:} The character can move at twice his normal movement rate for a day. At the end of the day he must sleep for eight hours. After the first day’s movement, the character must roll a proficiency check for success. If the die roll succeeds, the character can continue his running movement the next day. If the die roll fails, the character cannot use his running ability the next day. If involved in a battle during a day he spent running, he suffers a -1 penalty to his attack rolls.",
 								"{@b Seamanship:} The character is familiar with boats and ships. He is qualified to work as a crewman, although he cannot actually navigate. Crews of trained seamen are necessary to manage any ship, and they improve the movement rates of inland boats by 50 percent.",
@@ -7558,8 +7535,8 @@
 										"Modifier"
 									],
 									"colStyles": [
-										"col- text-",
-										"col- text-"
+										"col- text-center",
+										"col-8 text-center"
 									],
 									"rows": [
 										[
@@ -7593,7 +7570,7 @@
 									]
 								},
 								"A successful proficiency check means the character has successfully deceived his audience. One check must be made for every sentence or response. The character is limited to sounds he could normally make (thus, the roar of a lion is somewhat beyond him).",
-								"Since ventriloquism relies on deception, people’s knowledge of speech, and assumptions about what should and shouldn’t talk, it is effective only on intelligent creatures. Thus, it has no effect on animals and the like. Furthermore, the audience must be watching the character since part of the deception is visual (\"Hey, his lips don’t move!\"). Using ventriloquism to get someone to look behind him does not work, since the voice is not actually behind him (this requires the {@i ventriloquism} spell). All but those with the gullibility of children realize what is truly happening. They may be amused—or they may not be.",
+								"Since ventriloquism relies on deception, people’s knowledge of speech, and assumptions about what should and shouldn’t talk, it is effective only on intelligent creatures. Thus, it has no effect on animals and the like. Furthermore, the audience must be watching the character since part of the deception is visual (\"Hey, his lips don’t move!\"). Using ventriloquism to get someone to look behind him does not work, since the voice is not actually behind him (this requires the {@i {@spell ventriloquism|XPHB}} spell). All but those with the gullibility of children realize what is truly happening. They may be amused—or they may not be.",
 								"{@b Weaponsmithing:} This highly specialized proficiency enables a character to perform the difficult and highly exacting work involved in making metal weapons, particularly those with blades. The character blends some of the skill of the blacksmith with an ability to create blades of strength and sharpness. A fully equipped smithy is necessary to use this proficiency.",
 								"The time and cost to make various types of weapons are listed on Table 41.",
 								{
@@ -8418,42 +8395,6 @@
 										],
 										[
 											"Dog",
-											"—"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Guard",
-												"25 gp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Hunting",
-												"17 gp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"War",
-												"20 gp"
-											]
-										},
-										[
-											"Carriage",
-											"—"
-										],
-										[
-											"Carriage",
-											"—"
-										],
-										[
-											"Carriage",
 											"—"
 										],
 										{
@@ -11775,27 +11716,27 @@
 					"page": 113,
 					"entries": [
 						"The spells are organized according to their group (priest or wizard) and level, listed in Appendices 3 and 4. Within each level, the spells are arranged alphabetically. At the start of each spell description is the following important game information:",
-						"{@b Name: Each spell is identified by name. In parentheses after the name is the school to which that spell belongs. When more than one is listed, that spell is common to all schools given.}",
-						"Some spells are reversible (they can be cast for an effect opposite to that of the standard spell). This is noted after the spell name. Priests with reversible spells must memorize the desired version. For example, a priest who desires a {@i cause light wounds} spell must petition for this form of the {@i cure light wounds} spell when meditating and praying. Note that severe penalties can result if the spell choice is at variance with the priest’s alignment (possible penalties include denial of specific spells, entire spell levels, or even all spells for a certain period). The exact result (if any) depends on the reaction of the priest’s patron deity, as determined by the DM.",
-						"Reversible wizard spells operate similarly. When the spell is learned, both forms are recorded in the wizard’s spell books. However, the wizard must decide which version of the spell he desires to cast when memorizing the spell, unless the spell description specifically states otherwise. For example, a wizard who has memorized {@i stone to flesh} and desires to cast {@i flesh to stone} must wait until the latter form of the spell can be memorized (i.e., rest eight hours and study). If he could memorize two 6th-level spells, he could memorize each version once or one version twice.",
-						"{@b School:} In parentheses after the spell name is the name of the school of magic to which the spell belongs. For wizard spells, this defines which spells a wizard specialist can learn, depending on the wizard’s school of specialization. For priest spells, the school notation is used only for reference purposes, to indicate which school the spell is considered to belong to, in case the DM needs to know for spell resistance (for example, elves’ resistance to charm spells).",
+						"{@b Name:} Each spell is identified by name. In parentheses after the name is the school to which that spell belongs. When more than one is listed, that spell is common to all schools given.",
+						"Some spells are reversible (they can be cast for an effect opposite to that of the standard spell). This is noted after the spell name. Priests with reversible spells must memorize the desired version. For example, a priest who desires a {@i {@spell cause light wounds|XPHB}} spell must petition for this form of the {@i {@spell cure light wounds|XPHB}} spell when meditating and praying. Note that severe penalties can result if the spell choice is at variance with the priest’s alignment (possible penalties include denial of specific spells, entire spell levels, or even all spells for a certain period). The exact result (if any) depends on the reaction of the priest’s patron deity, as determined by the DM.",
+						"Reversible wizard spells operate similarly. When the spell is learned, both forms are recorded in the wizard’s spell books. However, the wizard must decide which version of the spell he desires to cast when memorizing the spell, unless the spell description specifically states otherwise. For example, a wizard who has memorized {@i {@spell stone to flesh|XPHB}} and desires to cast {@i flesh to stone} must wait until the latter form of the spell can be memorized (i.e., rest eight hours and study). If he could memorize two 6th-level spells, he could memorize each version once or one version twice.",
+						"{@b School:} In parentheses after the spell name is the name of the school of magic to which the spell belongs. For wizard spells, this defines which spells a wizard specialist can learn, depending on the wizard’s school of specialization. For priest spells, the school notation is used only for reference purposes, to indicate which school the spell is considered to belong to, in case the DM needs to know for spell resistance (for example, elves’ resistance to {@i {@spell charm|XPHB}} spells).",
 						"{@b Sphere:} This entry appears only for priest spells and identifies the sphere or spheres into which that spell falls.",
 						"{@b Range:} This lists the distance from the caster at which the spell effect occurs or begins A \"0\" indicates the spell can be used on the caster only, with the effect embodied within or emanating from him. \"Touch\" means the caster can use the spell on others if he can physically touch them. Unless otherwise specified, all other spells are centered on a point visible to the caster and within the range of the spell. The point can be a creature or object if desired. In general, a spell that affects a limited number of creatures within an area affects those closest to the center of the area first, unless there are other parameters operating (such as level or Hit Dice). Spells can be cast through narrow openings only if both the caster’s vision and the spell energy can be directed simultaneously through the opening. A wizard standing behind an arrow slit can cast through it; sending a fireball through a small peephole he is peering through is another matter.",
 						"{@b Components:} This lists the category of components needed, V for verbal, S for somatic, and M for material. When material components are required, these are listed in the spell description. Spell components are expended as the spell is cast, unless otherwise noted. Priest holy symbols are not lost when a spell is cast. For cases in which material components are expended at the end of the spell ({@i free action, shapechange,} etc.), premature destruction of the components ends the spell.",
-						"{@b Duration:} This lists how long the magical energy of the spell lasts. Spells of instantaneous duration come and go the moment they are cast, although the results of these spells may be permanent and unchangeable by normal means. Spells of permanent duration last until the effects are negated by some means, usually by a {@i dispel magic}. Some spells have a variable duration. In most cases, the caster cannot choose the duration of spells. Spells with set durations (for example, 3 rounds/level) must be kept track of by the player. Spells of variable duration (for example, {@i 3 + 1d4} rounds) are secretly rolled and recorded by the DM. Your DM may warn you when spell durations are approaching expiration, but there is usually no sign that a spell is going to expire; check with your DM to determine exactly how he handles this issue.",
+						"{@b Duration:} This lists how long the magical energy of the spell lasts. Spells of instantaneous duration come and go the moment they are cast, although the results of these spells may be permanent and unchangeable by normal means. Spells of permanent duration last until the effects are negated by some means, usually by a {@i {@spell dispel magic|XPHB}}. Some spells have a variable duration. In most cases, the caster cannot choose the duration of spells. Spells with set durations (for example, 3 rounds/level) must be kept track of by the player. Spells of variable duration (for example, {@dice 3 + 1d4} rounds) are secretly rolled and recorded by the DM. Your DM may warn you when spell durations are approaching expiration, but there is usually no sign that a spell is going to expire; check with your DM to determine exactly how he handles this issue.",
 						"Certain spells can be ended at will by the caster. In order to dismiss these spells, the original caster must be within range of the spell’s center of effect—within the same range at which the spell can be cast. The caster also must be able to speak words of dismissal. Note that only the original caster can dismiss his spells in this way.",
 						"{@b Casting Time:} This entry is important, if the optional casting time rules are used. If only a number is given, the casting time is added to the caster’s initiative die rolls. If the spell requires a round or number of rounds to cast, it goes into effect at the end of the last round of casting time. If Delsenora casts a spell that takes one round, it goes into effect at the end of the round in which she begins casting. If the spell requires three rounds to cast, it goes into effect at the end of the third round. Spells requiring a turn or more go into effect at the end of the stated turn.",
 						"{@b Area of Effect:} This lists the creatures, volume, dimensions, weight, etc., that can be affected by the spell. Spells with an area or volume that can be shaped by the caster will have a minimum dimension of 10 feet in any direction, unless the spell description specifically states otherwise. Thus, a cloud that has a 10-foot cube per caster level might, when cast by a 12th-level caster, have dimensions 10’ = 10’ = 120’, 20’ = 20’ = 30’, or any similar combination that totals twelve 10-foot cubes. Combinations such as 5’ = 10’ = 240’ are not possible unless specifically allowed.",
-						"Some spells (such as {@i bless}) affect the friends or enemies of the caster. In all cases, this refers to the perception of the caster at the time the spell is cast. For example, a chaotic good character allied with a lawful neutral cleric would receive the benefits of the latter’s {@i bless} spell.",
+						"Some spells (such as {@i {@spell bless|XPHB}}) affect the friends or enemies of the caster. In all cases, this refers to the perception of the caster at the time the spell is cast. For example, a chaotic good character allied with a lawful neutral cleric would receive the benefits of the latter’s {@i {@spell bless|XPHB}} spell.",
 						"{@b Saving Throw:} This lists whether the spell allows the target a saving throw and the effect of a successful save: \"Neg.\" results in the spell having no effect; \"1⁄2\" means the character suffers half the normal amount of damage; \"none\" means no saving throw is allowed.",
 						"Wisdom adjustments to saving throws apply to enchantment/charm spells.",
 						"damage ",
-						"A creature that successfully saves against a spell with no apparent physical effect (such as a {@i charm, hold,} or {@i magic jar)} may feel a definite force or tingle that is characteristic of a magical attack, if the DM desires. But the exact hostile spell effect or creature ability used cannot be deduced from this tingle.",
+						"A creature that successfully saves against a spell with no apparent physical effect (such as a {@i {@spell charm|XPHB}, {@spell hold|XPHB},} or {@i {@spell magic jar)|XPHB}} may feel a definite force or tingle that is characteristic of a magical attack, if the DM desires. But the exact hostile spell effect or creature ability used cannot be deduced from this tingle.",
 						"A being’s carried equipment and possessions are assumed to make their saving throws against special attacks if the creature makes its saving throw, unless the spell specifically states otherwise. If the creature fails its saving throw, or if the attack form is particularly potent, the possessions may require saving throws using either item saving throws (see the DMG) or the being’s saving throw. The DM will inform you when this happens.",
-						"Any character can voluntarily forgo a saving throw. This allows a spell or similar attack that normally grants a saving throw to have full effect on the character. Likewise, any creature can voluntarily lower its magic resistance allowing a spell to automatically function when cast on it. Forgoing a saving throw or magic resistance roll need not always be voluntary. If a creature or character can be tricked into lowering its resistance, the spell will have full effect, even if it is not the spell the victim believed he was going to receive. The victim must consciously choose to lower his resistance; it is not sufficient that he is caught off guard. For example, a character would receive a saving throw if a wizard in the party suddenly attacked him with a fireball, even if the wizard had been friendly to that point. However, the same character would not receive a saving throw if the wizard convinced him that he was about to receive a {@i levitation} spell but cast a fireball instead. Your DM will decide when NPCs have lowered their resistances. You must tell your DM when your character is voluntarily lowering his resistance.",
+						"Any character can voluntarily forgo a saving throw. This allows a spell or similar attack that normally grants a saving throw to have full effect on the character. Likewise, any creature can voluntarily lower its magic resistance allowing a spell to automatically function when cast on it. Forgoing a saving throw or magic resistance roll need not always be voluntary. If a creature or character can be tricked into lowering its resistance, the spell will have full effect, even if it is not the spell the victim believed he was going to receive. The victim must consciously choose to lower his resistance; it is not sufficient that he is caught off guard. For example, a character would receive a saving throw if a wizard in the party suddenly attacked him with a fireball, even if the wizard had been friendly to that point. However, the same character would not receive a saving throw if the wizard convinced him that he was about to receive a {@i {@spell levitation|XPHB}} spell but cast a fireball instead. Your DM will decide when NPCs have lowered their resistances. You must tell your DM when your character is voluntarily lowering his resistance.",
 						"{@b Spell Description:} The text provides a complete description of how the spell functions and its game effects. It covers most typical uses of the spell, if there are more than one, but cannot deal with every possible application players might find. In these cases, the spell information in the text should provide guidance on how to adjudicate the situation.",
 						"Spells with multiple functions enable the caster to select which function he wants to use at the time of casting. Usually a single function of a multiple-function spell is weaker than a single-function spell of the same level.",
-						"Spell effects that give bonuses or penalties to abilities, attack rolls, damage rolls, saving throws, etc., are not usually cumulative with each other or with other magic: the strongest single effect applies. For example, a fighter drinks a {@i potion of giant strength} and then receives the 2nd-level wizard spell {@i strength}. Only the strongest magic (the potion) is effective. When the potion’s duration ends, however, the {@i strength} spell is still in effect, until its duration also expires."
+						"Spell effects that give bonuses or penalties to abilities, attack rolls, damage rolls, saving throws, etc., are not usually cumulative with each other or with other magic: the strongest single effect applies. For example, a fighter drinks a {@i {@item potion of giant strength|XPHB}} and then receives the 2nd-level wizard spell {@i {@spell strength|XPHB}}. Only the strongest magic (the potion) is effective. When the potion’s duration ends, however, the {@i {@spell strength|XPHB}} spell is still in effect, until its duration also expires."
 					]
 				}
 			]
@@ -12104,7 +12045,7 @@
 					"name": "Calculating THAC0",
 					"page": 121,
 					"entries": [
-						"o make an attack roll, the character’s THAC0 must be known. This depends on the group and level, if the attacker is a player character or NPC, or the Hit Dice if the attacker is a monster or an animal. All 1st-level characters have THAC0s of 20, regardless of class.",
+						"To make an attack roll, the character’s THAC0 must be known. This depends on the group and level, if the attacker is a player character or NPC, or the Hit Dice if the attacker is a monster or an animal. All 1st-level characters have THAC0s of 20, regardless of class.",
 						"For a character of level 1 through level 20, consult Table 53. This table lists the THAC0 number of each group through 20th level, so players don’t have to perform any calculations.",
 						{
 							"type": "table",
@@ -13587,7 +13528,7 @@
 							"page": 134,
 							"entries": [
 								"Sometimes the type of saving throw required by a situation or item isn’t clear, or more than one category of saving throw may seem appropriate. For this reason, the saving throw categories in Table 60 are listed in order of importance, beginning with paralyzation, poison, and death magic, and ending with spells.",
-								"Imagine that Rath is struck by the ray from a {@i wand of polymorphing}. Both a saving throw vs. wands and a saving throw vs. polymorph would be appropriate. But Rath must roll a saving throw vs. wands because that category has a higher priority than polymorph.",
+								"Imagine that Rath is struck by the ray from a {@i {@spell wand of polymorphing|XPHB}}. Both a saving throw vs. wands and a saving throw vs. polymorph would be appropriate. But Rath must roll a saving throw vs. wands because that category has a higher priority than polymorph.",
 								"The categories of saving throws are as follows:",
 								"{@b Save vs. Paralyzation, Poison, and Death Magic:} This is used whenever a character is affected by a paralyzing attack (regardless of source), poison (of any strength), or certain spells and magical items that otherwise kill the character outright (as listed in their descriptions). This saving throw can also be used in situations in which exceptional force of will or physical fortitude are needed.",
 								"{@b Save vs. Rod, Staff, or Wand:} As its name implies, this is used whenever a character is affected by the powers of a rod, staff, or wand, provided another save of higher priority isn’t called for. This saving throw is sometimes specified for situations in which a character faces a magical attack from an unusual source.",
@@ -13623,9 +13564,9 @@
 								"Modifiers that increase the chance are given as a number preceded by a plus sign. Modifiers that make success more difficult are given as a number preceded by a minus sign (-1, -2, etc.).",
 								"Saving throw modifiers affect a character’s die roll, not the saving throw number needed. Thus, if Delsenora needed an 11 for a successful saving throw vs. petrification and had a +1 bonus to her save, she would still need to roll an 11 or higher after all adjustments were made (but the +1 bonus would be added to her die roll, so that effectively she needs to roll only a 10 on the die to reach her saving throw number of 11).",
 								"{@b High ability scores} in Dexterity and Wisdom sometimes give saving throw bonuses. A high Wisdom protects against illusions, charms, and other mental attacks. Dexterity, if high enough, can give a character a slightly higher chance of avoiding the effects of fireballs, lightning bolts, crushing boulders, and other attacks where nimbleness may be a help. (See Tables 2 and 5.)",
-								"{@b Magical items} like cloaks and {@i rings of protection} give bonuses to a character’s saving throw (these are listed in the item descriptions in the appendices).",
+								"{@b Magical items} like cloaks and {@i {@item Ring of Protection|XPHB|rings of protection}} give bonuses to a character’s saving throw (these are listed in the item descriptions in the appendices).",
 								"{@b Magical armor} allows a saving throw bonus only when the save is made necessary by something physical, whether normal or magical. Magical armor never gives a saving throw bonus against gas (which it cannot block), poison (which operates internally), and spells that are mental or that cause no physical damage.",
-								"For example, magical armor would not help a character’s saving throw against the sting of a giant scorpion, the choking effects of a {@i stinking cloud} spell, or the transformation effect of a {@i polymorph others} spell. Magical armor does extend its protective power to saving throws against acid sprays or splashes, disintegration, magical and normal fires, spells that cause damage, and falls (if any saving throw is allowed in this case). Other situations must be handled on a case-by-case basis by the DM.",
+								"For example, magical armor would not help a character’s saving throw against the sting of a giant scorpion, the choking effects of a {@i {@spell stinking cloud|XPHB}} spell, or the transformation effect of a {@i {@spell Polymorph Other|XPHB|polymorph others}} spell. Magical armor does extend its protective power to saving throws against acid sprays or splashes, disintegration, magical and normal fires, spells that cause damage, and falls (if any saving throw is allowed in this case). Other situations must be handled on a case-by-case basis by the DM.",
 								"{@b Specific spells and magical items} have effects, both good and ill, on a character’s saving throws. Often, spells force the victim to save with a penalty, which makes even the most innocuous spell quite dangerous. (Specific information can be found in the spell descriptions, for spells, or in the DMG’s Magical Items section, for magical items.)",
 								"{@b Minor poisons} of verminous creatures such as giant centipedes, while dangerous, are weak and unlikely to bring about death in a healthy man. To recreate this effect in the game, a saving throw bonus is allowed for anyone affected by these poisons. The DM has this information.",
 								"{@b Unpredictable situations}  are sure to crop up. When this happens, the DM must determine whether saving throw modifiers are appropriate. As a guideline, modifiers for situations should range from -4 to +4. An evil cleric attacked in his shrine could very well have a +3 bonus to all his saving throws and a -3 penalty applied to those of his enemies. The powerful evil of the place could warrant the modifier."
@@ -13657,7 +13598,7 @@
 							"name": "When Magic Resistance Applies",
 							"page": 136,
 							"entries": [
-								"Magic resistance applies only if the successful casting of a spell would directly affect the resistant creature or item. Thus, magic resistance is effective against {@i magic missile} (targeted at a creature or item) or {@i fireball} (damaging the area the creature or item is in) spells.",
+								"Magic resistance applies only if the successful casting of a spell would directly affect the resistant creature or item. Thus, magic resistance is effective against {@i {@spell magic missile|XPHB}} (targeted at a creature or item) or {@i {@spell fireball|XPHB}} (damaging the area the creature or item is in) spells.",
 								"Magic resistance is not effective against an earthquake caused by a spell. While the creature may suffer injury or death falling into a chasm the spell opens under its feet, the magical energy of the spell was directed at the ground, not the creature. Magic resistant creatures are not immune to events that occur as the consequence of spells, only to the direct energy created or released by a spell.",
 								"Player characters do not normally have magic resistance (though they still get saving throws vs. magical spells and such); this ability is reserved mainly for special monsters."
 							]
@@ -13668,11 +13609,11 @@
 							"page": 136,
 							"entries": [
 								"A successful magic resistance check can have four different results, depending on the nature of the spell being resisted:",
-								"{@b Individually Targeted Spells:} By definition, these spells affect just one creature, and only the targeted creature rolls for magic resistance (if it has any). If a spell of this type is directed at several targets, each rolls independently of the others. (An example of this would be a {@b hold person} spell aimed at four creatures, with each creature getting a magic resistance roll, if they have magic resistance.)",
+								"{@b Individually Targeted Spells:} By definition, these spells affect just one creature, and only the targeted creature rolls for magic resistance (if it has any). If a spell of this type is directed at several targets, each rolls independently of the others. (An example of this would be a {@i {@spell hold person|XPHB}} spell aimed at four creatures, with each creature getting a magic resistance roll, if they have magic resistance.)",
 								"If the magic resistance roll is successful, the spell has no effect on that creature. If the spell is targeted only at the creature, the spell fails completely and disappears. If several targets are involved, the spell may still affect others who fail their magic resistance roll.",
 								"{@b Area-Effect Spells:} These spells are not targeted on a single creature, but on a point. The spell’s effect encompasses everything within a set distance of that point. A successful magic resistance check enables the creature to ignore the effect of the spell. However, the spell is not negated and still applies to all others in the area of effect.",
-								"{@b In-Place Spells:} These spells operate continuously in a particular place or on a particular creature, character, or item. {@i Protection from evil} is one example of this kind of spell.",
-								"Magic resistance comes into play only if a creature or item finds himself (or itself) in the place where the spell is in operation. Even then, magic resistance may not come into play—nothing happens if the spell isn’t of a type that affects the character. Thus, a {@i part water} spell would not collapse simply because a magic resistant creature walked through the area. A {@i protection from evil} spell, which could affect the creature, would be susceptible to magic resistance.",
+								"{@b In-Place Spells:} These spells operate continuously in a particular place or on a particular creature, character, or item. {@i {@spell protection from evil|XPHB}} is one example of this kind of spell.",
+								"Magic resistance comes into play only if a creature or item finds himself (or itself) in the place where the spell is in operation. Even then, magic resistance may not come into play—nothing happens if the spell isn’t of a type that affects the character. Thus, a {@i {@spell part water|XPHB}} spell would not collapse simply because a magic resistant creature walked through the area. A {@i {@spell protection from evil|XPHB}} spell, which could affect the creature, would be susceptible to magic resistance.",
 								"If the DM determines that a magic resistance roll is appropriate, and the roll succeeds, the in-place spell collapses (usually with a dramatic thunderclap and puff of smoke).",
 								"{@b Permanent Spells:} Magic resistance is insufficient to destroy a permanent spell. Instead, the spell is negated (within the same guidelines given for in-place spells) for as long as the magic resistant creature is in the area of effect.",
 								"Thus, a magic-resistant creature might be able to step through a permanent wall of force as if it weren’t there. However, the wall would spring back into existence as soon as the creature passed through (i.e., no one else can pass through)."
@@ -14194,7 +14135,7 @@
 						"Cash treasure is the easiest. The most direct and simplest method is equal shares for all player characters and full or half shares for all henchmen. A player may argue that his character’s contribution was greater than that of other characters, but these things average out in the long run. Besides, that player has no real idea of the contribution of others. A character who guarded the rear may have discouraged hidden opponents from springing an ambush on the group, something that only the DM knows.",
 						"Additional considerations include extraordinary costs. Some adventuring groups establish a special fund to pay the costs (if there are any) of healing, resurrecting, or restoring fellow player characters. Again this works on the principle that all faced the danger and therefore all should share equally in the expenses. Other groups make allowances for differing character levels (higher level characters assumedly shouldered more of the burden of the adventure, and so should be rewarded proportionately.) Some parties give special rewards to those who took greater chances or saved others. These encourage everyone in the group to take part.",
 						"Magical treasure is more difficult to divide up, since there is rarely enough to give a useful item to every character, nor are all items of equal value or power. Here you must rely more on your sense of fairness if you wish to maintain party harmony. Since magical items are worthwhile to a party only if they can be used, your first concern should normally be to get the right item into the right hands. A magical sword in the possession of a wizard is not nearly as useful as it would be in the hands of a fighter. Likewise, a wand does a fighter little good but could be a potent addition to a wizard. Therefore it is a good idea to match items to characters.",
-						"Alternatively, your party could determine the price an item would sell for, and then make it available to any PC who is willing to give the rest of the party that amount of money. If more than one player is willing to pay the price, the interested players could roll dice to see who gets the item. Or, for items that several characters could all use equally well (such as a {@i potion of healing} that is useful to all), the characters can bargain with each other and roll dice for choices. A player character may relinquish a claim on one magical item in exchange for another. A character who has already received a magical item may not be allowed another choice if there are not enough pieces to go around. If no other agreement can be reached, the players can roll dice and have their characters pick in descending order. It is a fair method (since people cannot rightfully complain about a random roll), but it can create imbalances. One or two characters could wind up with the bulk of the magical items over the course of several adventures. At this point, they would be wise to voluntarily withdraw from the selection process.",
+						"Alternatively, your party could determine the price an item would sell for, and then make it available to any PC who is willing to give the rest of the party that amount of money. If more than one player is willing to pay the price, the interested players could roll dice to see who gets the item. Or, for items that several characters could all use equally well (such as a {@i {@item potion of healing|XPHB}} that is useful to all), the characters can bargain with each other and roll dice for choices. A player character may relinquish a claim on one magical item in exchange for another. A character who has already received a magical item may not be allowed another choice if there are not enough pieces to go around. If no other agreement can be reached, the players can roll dice and have their characters pick in descending order. It is a fair method (since people cannot rightfully complain about a random roll), but it can create imbalances. One or two characters could wind up with the bulk of the magical items over the course of several adventures. At this point, they would be wise to voluntarily withdraw from the selection process.",
 						"There are tactical issues to think about when distributing treasure. It is simply not wise for one or two characters to carry the bulk of the party’s magical items. Successful adventurers spread their gear throughout their party. (This holds true even for explorers and special forces in the real world.) This way, if one character falls off the cliff and disappears forever or is spirited away by an invisible stalker, the party has not lost everything. To illustrate another consideration, you are better off to have the fighters, thieves, and mages carry the healing potions rather than let the cleric do it, since he has healing spells. If he has both the healing spells and the potions and should disappear into the mist, your party has lost all its healing ability. If it is spread around through the group, at worst you might lose the potions or the spells, but not both (unless disaster really strikes, in which case there is no way to prevent it anyway). In the end, you will find that it does not pay to be too greedy.",
 						"Once your characters have assembled a sizeable amount of treasure, they have to find some place to keep it. If your DM is running a fairly medieval campaign, one thing PCs are not going to find is a bank like today’s. Instead, your characters must find other ways to keep their money secure. Chests with strong locks are a good start, but there are still better methods. One choice is to make the treasure small enough that you can carry it with you at all times. (Of course, one good mugging and you’re broke.) There is also the difficulty of buying a drink with a 1,000-gp gem. A second choice is to place your money in the hands of someone you think you can trust. We all know what the risks are there. You could have your character give his fortune to a local lord or church and then hope to call in favors at a future date. This is not quite as foolish as it sounds. If the beneficiary of your largess refuses to honor your agreement, you’ll never give him money again and neither will anyone else, most likely. If no one gives him any money, where will he find the funds to support his lifestyle? No, such a person must seriously try to honor his commitments. Of course, he may not do as much as you would like. The best solution is that used throughout history—buy goods and chattels. Land, livestock, and trade goods are harder to steal and harder to lose. If you must keep a large fortune, it is best to keep it in something that can be carried easily and is unlikely to be stolen."
 					]
@@ -15271,7 +15212,7 @@
 										"{@spell Phantasmal Killer|XPHB}",
 										"{@spell Plant Growth|XPHB}",
 										"{@spell Polymorph Other|XPHB}",
-										"{@spell Polymorph Other|XPHB}",
+										"{@spell Polymorph Self|XPHB}",
 										"{@spell Rainbow Pattern|XPHB}",
 										"{@spell Rary’s Mnemonic Enhancer|XPHB}",
 										"{@spell Remove Curse} *",
