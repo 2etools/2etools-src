@@ -313,9 +313,18 @@
 							]
 						},
 						"{@creature Banshee|MM}",
-						"{@creature Lesser Basilisk|MM}",
-						"{@creature Greater Basilisk|MM}",
-						"{@creature Dracolisk|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 14,
+							"name": "Basilisk",
+							"items": [
+								"{@creature Lesser Basilisk|MM}",
+								"{@creature Greater Basilisk|MM}",
+								"{@creature Dracolisk|MM}"
+							]
+						},
 						{
 							"type": "list",
 							"style": "list",
@@ -493,7 +502,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list-hang",
+							"style": "list",
 							"columns": 0,
 							"page": 43,
 							"name": "Chimera",
@@ -790,7 +799,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list-hang",
+							"style": "list",
 							"columns": 0,
 							"page": 117,
 							"name": "Fish",
@@ -824,7 +833,7 @@
 							"style": "list",
 							"columns": 0,
 							"page": 119,
-							"name": "",
+							"name": "Frog",
 							"items": [
 								"{@creature Giant Frog|MM}",
 								"{@creature Killer Frog|MM}",
@@ -1037,7 +1046,7 @@
 						"{@creature Harpy|MM}",
 						{
 							"type": "list",
-							"style": "list-hang",
+							"style": "list",
 							"columns": 0,
 							"page": 185,
 							"name": "Hatori",
@@ -3028,21 +3037,28 @@
 					]
 				},
 				{
-					"type": "list",
-					"style": "list-hang",
-					"columns": 3,
-					"page": 377,
+					"type": "entries",
 					"name": "Terrain Guide",
-					"items": [
-						"{@b Plain:} downs, heath, meadow, moor, prairie, savanna, steppe, tundra",
-						"{@b Scrub:} brackens, brush, bush, thickets, veldt",
-						"{@b Forest:} copses, groves, jungle, rain forest, woods",
-						"{@b Rough:} badlands",
-						"{@b Hills:} bluffs, dunes, ridges (gorge, rift, valley, canyon)",
-						"{@b Mountains:} glacier, mesa, tor",
-						"{@b Desert:} barrens, flat, waste",
-						"{@b Swamp:} bog, fen, marsh, mire, morass, quagmire, slough",
-						"{@b Pond:} lake, pool, tarn"
+					"page": 0,
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang",
+							"columns": 3,
+							"page": 377,
+							"name": "",
+							"items": [
+								"{@b Plain:} downs, heath, meadow, moor, prairie, savanna, steppe, tundra",
+								"{@b Scrub:} brackens, brush, bush, thickets, veldt",
+								"{@b Forest:} copses, groves, jungle, rain forest, woods",
+								"{@b Rough:} badlands",
+								"{@b Hills:} bluffs, dunes, ridges (gorge, rift, valley, canyon)",
+								"{@b Mountains:} glacier, mesa, tor",
+								"{@b Desert:} barrens, flat, waste",
+								"{@b Swamp:} bog, fen, marsh, mire, morass, quagmire, slough",
+								"{@b Pond:} lake, pool, tarn"
+							]
+						}
 					]
 				},
 				{
