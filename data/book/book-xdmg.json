@@ -38,7 +38,7 @@
 				"A perfect example of this is the limit placed on experience levels for demihumans. A lot of people complained that these limits were too low. We agreed, and we raised the limits. The new limits were tested, examined, and adjusted until we decided they were right. But you may be one of the few people who prefer the older, lower limits. Or you may think there should be no limits. In the chapter on character classes, you'll find a discussion of this topic that considers the pros and cons of level limits. We don't ask you to blindly accept every limit we've established. But we do ask that before you make any changes you read this chapter and carefully consider what you are about to do. If, after weighing the evidence, you decide that a change is justified in your game, by all means make the change.",
 				"In short, follow the rules as they are written if doing so improves your game. But by the same token, break the rules only if doing so improves your game.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "A Word About Organization",
 					"page": 9,
 					"entries": [
@@ -47,7 +47,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "The Fine Art of Being a DM",
 					"page": 9,
 					"entries": [
@@ -67,7 +67,7 @@
 				"Each player is responsible for creating his character. As the DM, however, your decisions have a huge impact on the process. You have final approval over any player character that is created. This chapter outlines what you should consider about character creation and gives guidelines on how to deal with some of the common problems that arise during character creation.",
 				"Players in most AD&D games use the same character over many game sessions. Most players develop strong ties to their characters and get a thrill from watching them advance, grow, and become more successful and powerful. Your game’s success depends on how much your players care about their characters. For these reasons, it is important to let they players create the type of characters they really want to play",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Giving Players What They Want",
 					"page": 10,
 					"entries": [
@@ -76,7 +76,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Choosing a Character Creation Method",
 					"page": 11,
 					"entries": [
@@ -264,7 +264,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Method  III (3d6, arranged to taste):",
+							"name": "Method III (3d6, arranged to taste):",
 							"page": 11,
 							"entries": [
 								"This method gives the players more choice when creating their characters yet still ensures that, overall, ability scores are not excessive. Bad characters are still possible, especially if a player has several poor rolls. The majority of characters have average abilities.",
@@ -345,7 +345,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Method  IV (3d6 twice, arranged to taste):",
+							"name": "Method IV (3d6 twice, arranged to taste):",
 							"page": 13,
 							"entries": [
 								"This method has all the benefits of methods II and III. Few, if any, characters are likely to have poor scores. Most scores are above average. The individual score ranges are still not excessively high, so truly exceptional characters are still very rare. However, the majority of characters are significantly above the norm.",
@@ -596,7 +596,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Super Characters",
 					"page": 14,
 					"entries": [
@@ -626,7 +626,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Hopeless Characters",
 					"page": 14,
 					"entries": [
@@ -669,7 +669,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Wishes and Ability Scores",
 					"page": 16,
 					"entries": [
@@ -681,7 +681,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Players With Multiple Characters",
 					"page": 16,
 					"entries": [
@@ -709,7 +709,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Character Background",
 					"page": 18,
 					"entries": [
@@ -774,7 +774,7 @@
 				"First, the restrictions are intended to channel players into careers that make sense for the various races. Dwarves are, to a certain degree, anti-magical and incapable of shaping magical energy--they can't be wizards. Halflings, despite their ties to nature, lack the devotion and physical will to be druids. Similar situations exist for the other demihuman races.",
 				"Second, the demihuman races have advantages that are not available to humans. Flexibility, the ability to choose from among all the classes, is one of very few human advantages.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "A Nonhuman World",
 					"page": 21,
 					"entries": [
@@ -792,7 +792,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Racial Level Restrictions",
 					"page": 22,
 					"entries": [
@@ -1034,7 +1034,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Creating New Player Character Races",
 					"page": 24,
 					"entries": [
@@ -1055,7 +1055,7 @@
 						"Creatures of tiny (T) size have a -3 modifier to Strength. Creatures of small (S) size have a -1 modifier to Strength. Creatures of large (L) size have a +1 modifier to Strength. Huge (H) creatures gain a +2 to Strength and Gigantic (G) creatures have a +4.",
 						"Those with an Intelligence less than average (as determined by the DM or as listed in the {@i Monstrous Manual}) suffer a -1 penalty to Intelligence and those exceptionally Intelligent or greater gain a +1 bonus.",
 						"All other ability modifiers are assigned by the DM. Likely candidates include minuses to Charisma and Wisdom and plus or minus adjustments to Dexterity. In all cases, bonuses and penalties should balance out. If a creature has a +1 bonus to Strength, it should have a -1 penalty to another ability. With the exception of Strength, no creature can have a modifier greater than +2 or -2 to any score.",
-						"{@b Racial Ability Requirements:}  It is possible for a creature to have seemingly illogical ability scores. However, you can set minimums and maximums on these. Table 7 in the {@i Player's Handbook} shows these limits for the standard player character races. It is the DM's job to do the same for nonstandard races.",
+						"{@b Racial Ability Requirements:} It is possible for a creature to have seemingly illogical ability scores. However, you can set minimums and maximums on these. Table 7 in the {@i Player's Handbook} shows these limits for the standard player character races. It is the DM's job to do the same for nonstandard races.",
 						"As a guide, creatures of large size should have at least an 11 Strength and, unless they are described as agile or quick, should have a ceiling of 17 to Dexterity. Dull-witted creatures (those of low Intelligence) should have a limit of 16 to Intelligence.",
 						"The DM can waive any requirements if, for example, a player wants (or gets) a hill giant character with Strength 6. Some rationale should be offered, however. (In the case of the weakling hill giant, perhaps he was the runt of the family, cast out by his fellows, and forced to take up adventuring.)",
 						"{@b Character Classes:} The DM must judge what character classes the new race can be. Use the information in the next chapter as your guide, and start with a narrow range of options. You can always widen it later.",
@@ -1144,7 +1144,7 @@
 			"entries": [
 				"The {@i Player’s Handbook} covers the nuts and bolts of character classes, explaining the mechanics of how they work and what they can do, but there is more to being a DM than just knowing the hard and fast rules. Character classes form the heart of the AD&D game, so it is useful to understand some of the concepts and relationships that define classes and how they function.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Class, Level, and the Common Man",
 					"page": 26,
 					"entries": [
@@ -1158,7 +1158,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "0-Level Characters",
 					"page": 27,
 					"entries": [
@@ -1217,7 +1217,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Adventurers and Society",
 					"page": 27,
 					"entries": [
@@ -1316,7 +1316,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "High-Level Characters",
 					"page": 30,
 					"entries": [
@@ -1359,7 +1359,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Beginner Character Levels",
 					"page": 32,
 					"entries": [
@@ -2091,7 +2091,7 @@
 				"Alignment is a shorthand description of a complex moral code. It sketches out the basic attitudes of a person, place, or thing. It is a tool for the DM. In sudden or surprising situations, it guides the DM’s evaluation of NPC or creature reactions. By implication, it predicts the types of laws and enforcement found in a given area. It affects the use of certain highly specialized magical items.",
 				"For all the things alignment is, there are some very important things that it is not. It is not a hammer to pound over the heads of player characters who misbehave. It is not a code of behavior carved in stone. It is not absolute, but it can vary from place to place. Neither should alignment be confused with personality. It shapes personality, but there is more to a person than just alignment.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Player Character Alignment",
 					"page": 36,
 					"entries": [
@@ -2115,7 +2115,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "NPC Alignment",
 					"page": 37,
 					"entries": [
@@ -2133,7 +2133,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Society Alignment",
 					"page": 37,
 					"entries": [
@@ -2182,7 +2182,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Alignment of Magical Items",
 					"page": 38,
 					"entries": [
@@ -2200,7 +2200,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Alignment as a World View",
 					"page": 39,
 					"entries": [
@@ -2238,7 +2238,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Alignment as a Tool",
 					"page": 40,
 					"entries": [
@@ -2249,7 +2249,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Detecting Alignment",
 					"page": 40,
 					"entries": [
@@ -2293,7 +2293,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Changing Alignment",
 					"page": 41,
 					"entries": [
@@ -2339,7 +2339,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Effects of Changing Alignment",
 					"page": 42,
 					"entries": [
@@ -2362,7 +2362,7 @@
 		},
 		{
 			"type": "section",
-			"name": "Proficiencies",
+			"name": "Proficiencies (Optional)",
 			"page": 44,
 			"entries": [
 				"A character in the AD&D game, like anyone else, has a variety of skills and talents. He is good at some things (because they are used in his profession or hobby) and poor at those he has studied casually or not at all. These skills and talents are called proficiencies.",
@@ -2370,7 +2370,7 @@
 				"At the other end of the spectrum, weapon proficiencies tend to be very precise, highlighting the subtle differences between weapons. A long bow and a short bow differ in size, weight, pull, arrow length, and balance. Each demands different practices to get optimum utility.",
 				"When using proficiencies, remember that these rules are not intended to recreate reality. It might have been more realistic to list different proficiencies for each aspect of medieval botany—horticulture, herbalism, mycology, etc. But in the context of a game, these are much better grouped under a single proficiency. Individually, each proficiency would be of such limited usefulness that all of them would become worthless. Other proficiencies, particularly weapons, go to the other extreme.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Weapon Proficiencies",
 					"page": 45,
 					"entries": [
@@ -2384,7 +2384,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Min/Maxing",
 					"page": 45,
 					"entries": [
@@ -2396,7 +2396,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "NPC Proficiencies",
 					"page": 45,
 					"entries": [
@@ -2405,7 +2405,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Nonweapon Proficiencies",
 					"page": 45,
 					"entries": [
@@ -2426,7 +2426,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Adding New Proficiencies",
 					"page": 47,
 					"entries": [
@@ -2451,7 +2451,7 @@
 				"Worse still, they attempt to apply modern, capitalist ideas to a quasi-medieval world. They may try to hire an enormous staff of wizards to mass produce potions and scrolls. They may set up shops to make assembly-line armor. Advances in organization and production like these come slowly over time, not all at once. You may have to remind your players to limit themselves to the knowledge and attitudes of the times.",
 				"It is equally bad to keep your characters too poor. You are creating a game world for a fantasy role-playing game. If the characters are so poor that they must count every penny they spend, they are leading squalid and unhappy lives. Reward them when they accomplish things. You shouldn’t always frustrate their desire to get rich. It’s just that wealth should come slowly, matched to the level of the character.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Monetary Systems",
 					"page": 49,
 					"entries": [
@@ -2459,7 +2459,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "A Short History of Commerce",
 					"page": 49,
 					"entries": [
@@ -2496,7 +2496,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Coins",
 					"page": 49,
 					"entries": [
@@ -2523,7 +2523,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Expense",
 					"page": 50,
 					"entries": [
@@ -2599,7 +2599,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Draining the Coffers",
 					"page": 52,
 					"entries": [
@@ -2611,7 +2611,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Expanding the Equipment Lists",
 					"page": 52,
 					"entries": [
@@ -2622,7 +2622,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Altering Prices",
 					"page": 52,
 					"entries": [
@@ -2633,7 +2633,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Equipment by Time Period",
 					"page": 52,
 					"entries": [
@@ -3022,7 +3022,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Quality of Equipment",
 					"page": 54,
 					"entries": [
@@ -3339,7 +3339,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Damaging Equipment",
 					"page": 56,
 					"entries": [
@@ -3632,7 +3632,7 @@
 			"entries": [
 				"Of all the areas of the AD&D game that you will be called upon to judge, magic is perhaps the most diverse and demanding. Magic allows characters to break all the natural laws of the universe, a situation that can lead to unforeseen, but highly exciting, situations. Be sure you understand how magic works in the AD&D game and the different ways you can control its use.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Initial Wizard Spells",
 					"page": 60,
 					"entries": [
@@ -3670,7 +3670,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Acquisition of Spells Beyond 1st Level",
 					"page": 61,
 					"entries": [
@@ -3713,7 +3713,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "DM Control of Spell Acquisition",
 					"page": 61,
 					"entries": [
@@ -3724,7 +3724,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Spell Books",
 					"page": 62,
 					"entries": [
@@ -3852,7 +3852,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Expanding the Schools of Magic",
 					"page": 64,
 					"entries": [
@@ -3879,7 +3879,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Spell Research",
 					"page": 64,
 					"entries": [
@@ -3998,7 +3998,7 @@
 				"This chapter contains instructions for determining specific experience awards. It also gives guidelines about awarding experience in general. However, it does not provide absolute mathematical formulas for calculating experience in every situation.",
 				"Awarding experience points (XP) is one of the DM’s most difficult jobs. The job is difficult because there are only a few rules (and a lot of guidelines) for the DM to rely on. The DM must learn nearly everything he knows about experience points from running game sessions. There is no magical formula or die roll to determine if he is doing the right or wrong thing. Only time, instinct, and player reactions will tell.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "The Importance of Experience",
 					"page": 66,
 					"entries": [
@@ -4008,7 +4008,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Too Little or Too Much?",
 					"page": 66,
 					"entries": [
@@ -4019,7 +4019,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Constant Goals",
 					"page": 67,
 					"entries": [
@@ -4067,7 +4067,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Variable Goals",
 					"page": 67,
 					"entries": [
@@ -4085,7 +4085,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Experience Point Awards",
 					"page": 68,
 					"entries": [
@@ -4491,7 +4491,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "When to Award Experience Points",
 					"page": 70,
 					"entries": [
@@ -4502,7 +4502,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Effects of Experience",
 					"page": 71,
 					"entries": [
@@ -4530,7 +4530,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Rate of Advancement",
 					"page": 71,
 					"entries": [
@@ -4550,7 +4550,7 @@
 				"The AD&D game is an adventure game designed to give players a feeling of excitement and danger. Characters brave the unknown perils of moldering dungeons and thorn-covered wilderness, facing off against hideous monsters and evil villains. Thus, it is important for all players to know the basic rules for handling combat.",
 				"To create the proper sense of danger and excitement, the rules for combat must be thorough, but they must also be playable and exciting enough to create a vivid picture in the minds of the players. Combat in the AD&D game has to allow many different actions and outcomes—as many as the imagination can produce. Knowing that anything could happen next, because the rules allow it, creates excitement for everyone.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Creating Vivid Combat Scenes",
 					"page": 72,
 					"entries": [
@@ -4570,7 +4570,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Definitions",
 					"page": 73,
 					"entries": [
@@ -4592,7 +4592,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "The Attack Roll",
 					"page": 73,
 					"entries": [
@@ -4813,7 +4813,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Calculating THAC0",
 					"page": 75,
 					"entries": [
@@ -5094,7 +5094,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Combat and Encounters",
 					"page": 75,
 					"entries": [
@@ -5102,7 +5102,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "The Combat Round",
 					"page": 76,
 					"entries": [
@@ -5158,7 +5158,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "The Combat Sequence",
 					"page": 77,
 					"entries": [
@@ -5205,7 +5205,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Initiative",
 					"page": 78,
 					"entries": [
@@ -5559,7 +5559,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Attacking",
 					"page": 81,
 					"entries": [
@@ -5633,7 +5633,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Hitting a Specific Target",
 					"page": 82,
 					"entries": [
@@ -5652,7 +5652,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Movement in Combat",
 					"page": 82,
 					"entries": [
@@ -5701,7 +5701,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Attacking Without Killing",
 					"page": 84,
 					"entries": [
@@ -5929,7 +5929,7 @@
 								"If a character reaches 0 hit points due to punching attacks (or any combination of punching and normal attacks), he immediately falls unconscious.",
 								"A character can voluntarily pull his punch, not causing any hit point damage, provided he says so before the damage is applied to his enemy. There is still a chance of a knockout.",
 								"{@b % K.O.:} Although a punch does very little damage, there is a chance of knocking an opponent out. This chance is listed on the table as \"% K.O.\" If this number or less is rolled on percentile dice, the victim is stunned for {@dice 1d10} rounds.",
-								"{@b Wrestle:  This lists the action or type of grip the character managed to get. Wrestling moves marked with an asterisk (*) are holds maintained from round to round, unless they are broken. A hold is broken by a throw, a gouge, the assistance of another person, or the successful use of a weapon. (Penalties to the attack roll apply to weapon attacks by a character who is in a hold.)}",
+								"{@b Wrestle: This lists the action or type of grip the character managed to get. Wrestling moves marked with an asterisk (*) are holds maintained from round to round, unless they are broken. A hold is broken by a throw, a gouge, the assistance of another person, or the successful use of a weapon. (Penalties to the attack roll apply to weapon attacks by a character who is in a hold.)}",
 								"All wrestling moves inflict 1 point of damage plus Strength bonus (if the attacker desires), while continued holds cause cumulatively 1 more point of damage for each round they are held. A head lock held for six rounds would inflict 21 points of damage total (1+2+3+4+5+6). Remember, this is the equivalent of pressing hard on a full-nelson headlock for roughly six minutes!"
 							]
 						},
@@ -5973,12 +5973,12 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Touch Spells and Combat",
 					"page": 86,
 					"entries": [
 						"Many spells used by priests and wizards take effect only when the target is touched by the caster. Under normal circumstances, this is no problem—the spellcaster reaches out and touches the recipient. However, if the target is unwilling, or the spell is used in the midst of a general melee, the situation is much different.",
-						"{@b Unwilling Targets:}  The spellcaster must make a successful attack roll for the spell to have any effect. The wizard or priest calculates his to-hit number normally, according to the intended victim’s Armor Class and other protections. The DM can modify the roll if the victim is unprepared for or unaware of the attack. If the roll succeeds, the spellcaster touches the target and the normal spell effect occurs.",
+						"{@b Unwilling Targets:} The spellcaster must make a successful attack roll for the spell to have any effect. The wizard or priest calculates his to-hit number normally, according to the intended victim’s Armor Class and other protections. The DM can modify the roll if the victim is unprepared for or unaware of the attack. If the roll succeeds, the spellcaster touches the target and the normal spell effect occurs.",
 						"{@b Willing Targets:} When attempting to cast a spell on a willing target, the casting is automatic as long as both characters are not engaged in combat. For example, if a fighter withdraws from melee, a cleric could heal him the next round.",
 						"If the recipient of the spell attempts to do anything besides waiting for the spell to take effect, an attack roll against AC 10 must be made. However, no AC modifiers for Dexterity are applied, since the target is not trying to avoid the spell!",
 						"Whenever a touch spell is successful, the spellcaster suffers from any special defenses of his target, if they are continually in operation. A successful touch to a vampire would not result in energy drain, since the power only works when the vampire wills it, but touching a fire elemental would result in serious burns.",
@@ -6024,7 +6024,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Missile Weapons in Combat",
 					"page": 87,
 					"entries": [
@@ -6220,7 +6220,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Special Attacks",
 					"page": 89,
 					"entries": [
@@ -6290,7 +6290,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Special Defenses",
 					"page": 91,
 					"entries": [
@@ -6298,7 +6298,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "The Saving Throw",
 					"page": 91,
 					"entries": [
@@ -6654,13 +6654,13 @@
 								"For example, magical armor would not help a character’s saving throw against the sting of a giant scorpion, the choking effects of a {@i stinking cloud} spell, or the transformation effect of a {@i polymorph others} spell. Magical armor does extend its protective power to saving throws against acid sprays or splashes, disintegration, magical and normal fires, spells that cause damage, and falls (if any saving throw is allowed in this case). Other situations must be handled on a case-by-case basis by the DM.",
 								"{@b Specific spells and magical items} have effects, both good and ill, on a character’s saving throws. Often, spells force the victim to save with a penalty, which makes even the most innocuous spell quite dangerous. (Specific information can be found in the spell descriptions, for spells, or in the DMG’s Magical Items section, for magical items.)",
 								"{@b Minor poisons} of verminous creatures such as giant centipedes, while dangerous, are weak and unlikely to bring about death in a healthy man. To recreate this effect in the game, a saving throw bonus is allowed for anyone affected by these poisons. The DM has this information.",
-								"{@b Unpredictable situations}  are sure to crop up. When this happens, the DM must determine whether saving throw modifiers are appropriate. As a guideline, modifiers for situations should range from -4 to +4. An evil cleric attacked in his shrine could very well have a +3 bonus to all his saving throws and a -3 penalty applied to those of his enemies. The powerful evil of the place could warrant the modifier."
+								"{@b Unpredictable situations} are sure to crop up. When this happens, the DM must determine whether saving throw modifiers are appropriate. As a guideline, modifiers for situations should range from -4 to +4. An evil cleric attacked in his shrine could very well have a +3 bonus to all his saving throws and a -3 penalty applied to those of his enemies. The powerful evil of the place could warrant the modifier."
 							]
 						}
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Magic Resistance",
 					"page": 94,
 					"entries": [
@@ -6707,7 +6707,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Turning Undead",
 					"page": 94,
 					"entries": [
@@ -6988,7 +6988,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Immunity to Weapons",
 					"page": 96,
 					"entries": [
@@ -7001,7 +7001,7 @@
 							"page": 96,
 							"entries": [
 								"When a creature is hit by a weapon to which it is immune, the attack appears to leave a visible wound. However, no points of damage are inflicted.",
-								"For example, a vampire strides across the banquet hall toward the player characters. Fearfully, they loose a volley of arrows at him. Three hit, but he doesn’t even break his stride. They watch, aghast, as he disdainfully plucks the arrows from his body. Just as he closes with them, Targash swings and hits him with his {@i  sword +3}. The vampire’s smug look of overconfidence is transformed to one of snarling rage as he realizes with a shock that one of these sniveling humans has hurt him!"
+								"For example, a vampire strides across the banquet hall toward the player characters. Fearfully, they loose a volley of arrows at him. Three hit, but he doesn’t even break his stride. They watch, aghast, as he disdainfully plucks the arrows from his body. Just as he closes with them, Targash swings and hits him with his {@i sword +3}. The vampire’s smug look of overconfidence is transformed to one of snarling rage as he realizes with a shock that one of these sniveling humans has hurt him!"
 							]
 						},
 						{
@@ -7068,7 +7068,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Morale",
 					"page": 97,
 					"entries": [
@@ -7360,7 +7360,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Injury and Death",
 					"page": 99,
 					"entries": [
@@ -7388,7 +7388,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Special Damage",
 					"page": 100,
 					"entries": [
@@ -7563,7 +7563,7 @@
 									]
 								},
 								"{@b Method:} The method is the new way in which the poison must normally be used to have full effect. Injected and ingested have no effect on contact. Contact poisons have full effect even if swallowed or injected, since both are forms of contact. Injected or ingested poisons have half their normal effect if administered in the opposite manner, resulting in the save damage being applied if the saving throw is failed and no damage occurring if the saving throw is successful.",
-								"{@b Onset:}  Most poisons require time to work their way through the system to reach the areas they affect. Onset is the time that elapses before the poison’s effect is felt. The effect of immediate poisons is felt at the instant the poison is applied.",
+								"{@b Onset:} Most poisons require time to work their way through the system to reach the areas they affect. Onset is the time that elapses before the poison’s effect is felt. The effect of immediate poisons is felt at the instant the poison is applied.",
 								"{@b Strength:} The number before the slash lists the hit points of damage suffered if the saving throw is failed. The number after the slash lists the damage taken (if any) if the saving throw is successful. Where \"death\" is listed, all hit points are immediately lost, killing the victim. Note that in some cases a character may roll a successful saving throw and still die from the hit point loss.",
 								"Not all poisons need cause damage. Two other common effects of poison are to paralyze or debilitate a victim.",
 								"Paralytic poisons leave the character unable to move for {@dice 2d6} hours. His body is limp, making it difficult for others to move him. The character suffers no other ill effects from the poison, but his condition can lead to quite a few problems for his companions.",
@@ -7618,7 +7618,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Healing",
 					"page": 102,
 					"entries": [
@@ -7654,7 +7654,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Character Death",
 					"page": 103,
 					"entries": [
@@ -7723,7 +7723,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Unusual Combat Situations",
 					"page": 104,
 					"entries": [
@@ -8138,7 +8138,7 @@
 				"Characters in a role-playing game strive for many things—fame, glory, and experience among them. But for those who are not fully satisfied with such intangible rewards, there is one other goal—fortune.",
 				"Strands of glittering golden chains, stacks of silver coin, heaps of marten fur, bejeweled crowns, enameled sceptres, silken cloths, and powerful magical items all wait to be discovered—or wrested from the grasp of powerful monsters. With such treasures awaiting, how could any bold adventurer be content to remain peacefully at home?",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Who Needs Money?",
 					"page": 112,
 					"entries": [
@@ -8148,7 +8148,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Forms of Treasure",
 					"page": 112,
 					"entries": [
@@ -8164,7 +8164,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Placement of Treasure",
 					"page": 113,
 					"entries": [
@@ -8228,7 +8228,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Treasure Tables",
 					"page": 115,
 					"entries": [
@@ -8237,7 +8237,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Maintaining Balance",
 					"page": 115,
 					"entries": [
@@ -8271,7 +8271,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Magical Items",
 					"page": 116,
 					"entries": [
@@ -8340,7 +8340,7 @@
 								"This method has advantages, not the least being that it simplifies the DM’s task. When confronted by a player who wants to create some bizarre magical item, the DM need only list materials that seem appropriate to the magical effect.",
 								"At the same time, however, the practical method can be abused by clever players. They may figure out that every monster encountered has a potential usefulness to wizards and so begin collecting tissue samples, blood, hair, organs, and more. They become walking butcher shops—not at all what is desired!",
 								"Furthermore, players expect to find shops specializing in magical materials, both to sell and buy their needed goods. This defeats the need to adventure for one’s materials and ruins part of the role-playing involved in magical item creation.",
-								"{@b The fantastical approach}  takes a drastically different view of magical item construction. Here, when the player says, \"I want to create a {@i rope of climbing},\" the DM provides a list of impossible ingredients. It then becomes the player’s obligation to discover the means to collect each ingredient.",
+								"{@b The fantastical approach} takes a drastically different view of magical item construction. Here, when the player says, \"I want to create a {@i rope of climbing},\" the DM provides a list of impossible ingredients. It then becomes the player’s obligation to discover the means to collect each ingredient.",
 								"Thus, to make the {@i rope of climbing}, the DM could require a skein of unspun yarn, the voice of a spider, and the courage of a daring thief. The player would then have to discover the meaning of each ingredient or the means to produce it. This, in turn, could require more research and spells to accomplish the goal.",
 								"For the {@i rope of climbing}, the player might solve it by finding a magical sheep whose wool is so thick it needs no spinning. This he could form into a rope, casting spells to give a spider voice so it can say a few words over the cord. Finally, he could trick a renowned thief into using the unfinished rope on a dangerous mission. After all this, the wizard would cast the spells necessary to bind the various elements and, {@i viola}— a {@i rope of climbing} would be the result.",
 								"Folktales, myths, and legends are filled with instances of impossible tasks and impossible ingredients. To bind the Fenris Wolf of Norse mythology, the dwarves forged an unbreakable chain from such things as the roots of a mountain, the noise of a cat, and the breath of a fish. Folktales tell of heroes and heroines faced with impossible tasks—to plow the ocean or make a shirt without seams. Hercules was faced with Twelve Labors, deemed impossible by others. Cullhwch (of Celtic legend) had to produce sweet honey without bees. If the player characters aspire to such ranks of heroism and wonder, surely they can accomplish deeds such as these.",
@@ -8354,7 +8354,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Scrolls and Potions",
 					"page": 118,
 					"entries": [
@@ -8426,7 +8426,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Creating Other Magical Items",
 					"page": 120,
 					"entries": [
@@ -8437,7 +8437,7 @@
 						"These limitations notwithstanding, players should be invited to submit their own ideas for new or unique items. The possibilities for new items are limited only by the constraints of game balance. Perhaps the character wants an arrow that explodes in a flash of brilliant light or a wand that causes those touched to suffer amnesia.",
 						"Using the same give-and-take process described for new player spells, the DM should have the player write up a description of the desired item. The DM studies this, alters it as needed, and discusses the changes with the player. When both are in agreement, the character can begin the actual process of research and construction.",
 						"When a player announces his character’s desire to construct a given item, it is not the DM’s task to tell him whether this is within the character’s capabilities or not. It is the DM’s responsibility to decide the materials and steps needed to construct the item. The player can then have his character consult a sage, fellow spellcaster, or higher power to learn what he needs. In the process the character may discover he lacks the appropriate powers to create the item. This is one of the risks inherent in magical research.",
-						"{@b Finding the Right Materials:}  First the character needs appropriate materials. When constructing a magical item, no ordinary sword, stick, cloak, necklace, or whatever will do. The item must be extraordinary in some way. Weapons must be of high-quality craftsmanship. Woods must be rare, specially grown, or cut in a particular way at a particular time. Cloth must be woven to exacting specifications. The material itself may be of an impossible nature (a shirt without seams or a hammer forged in a volcano’s heart and quenched in the deepest ocean).",
+						"{@b Finding the Right Materials:} First the character needs appropriate materials. When constructing a magical item, no ordinary sword, stick, cloak, necklace, or whatever will do. The item must be extraordinary in some way. Weapons must be of high-quality craftsmanship. Woods must be rare, specially grown, or cut in a particular way at a particular time. Cloth must be woven to exacting specifications. The material itself may be of an impossible nature (a shirt without seams or a hammer forged in a volcano’s heart and quenched in the deepest ocean).",
 						"Often, the only way to ensure the appropriate vessel for the enchantment is for the spellcaster to fashion or gather the item himself. However it is obtained, the vessel should cost far more than a normal item of the same type. The price can range from 1,000 to 10,00 (or more!) gold pieces depending on the material.",
 						"{@b Preparing the Materials:} Once the vessel for the magic is obtained, the character will have to prepare it. A sword may need to be dipped in rare acids to burn away impurities. Bone may need to be picked clean by giant ants. Wood could require soaking in rare oils and herbs.",
 						"Though the item is, as yet, far from gaining any sorcerous power, this stage is vital—failure here means the spell will fail to take. Normally this stage takes from two weeks to a month just to prepare the vessel. Additional ingredients at this stage will cost at least 500 gold pieces, if not more.",
@@ -8462,7 +8462,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Recharging Magical Items",
 					"page": 122,
 					"entries": [
@@ -8472,7 +8472,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Destroying Magical Items",
 					"page": 122,
 					"entries": [
@@ -8488,7 +8488,7 @@
 					"type": "inset",
 					"entries": [
 						{
-							"type": "section",
+							"type": "entries",
 							"name": "Artifacts and Relics (Optional Rules)",
 							"page": 122,
 							"entries": [
@@ -8500,7 +8500,7 @@
 								"So, given all these warnings and admonitions, just what is it that makes artifacts and relics so potentially dangerous to use in a role-playing game?",
 								"At the top of the list is the fact that, in game terms, artifacts and relics are nothing more than excuses for the DM to break any and every rule he cares to. Upon learning the proper command, an artifact or relic might allow a character to raise all his ability scores immediately to their maximum or turn an enemy’s bones to jelly.",
 								"The artifact might allow the character to {@i summon meteor swarms}, utter a power word, resurrect, or stop time once per day at will. He might be able to summon powerful monsters and easily bend them to his will. He could discover the power to dominate the minds of others, enslaving them to his desires. And this might only be a small part of what the artifact would allow him to do. In short, there is no limit to what you, as the DM, decide an artifact can accomplish.",
-								"{@b Origins of Artifacts and Relics:}  All of these items have been handed down from ancient times and have histories shrouded in myth and legend. An artifact has the same background and aura about it as, for example, King Arthur’s Excalibur, the skin of the Nemean lion worn by Hercules, Pandora’s box, the Golden Fleece, the sword, jewels, and mirror of ancient Japan, or the Hammer of Thor.",
+								"{@b Origins of Artifacts and Relics:} All of these items have been handed down from ancient times and have histories shrouded in myth and legend. An artifact has the same background and aura about it as, for example, King Arthur’s Excalibur, the skin of the Nemean lion worn by Hercules, Pandora’s box, the Golden Fleece, the sword, jewels, and mirror of ancient Japan, or the Hammer of Thor.",
 								"These unique objects were once held and used by gods and mortals far greater and more powerful than normal men. Often these items existed for an express purpose—to be used by a particular hero, to fight a particular foe. So closely associated is an artifact with a person, time, or place that its powers can seldom be fully used except by specific individuals who meet certain standards. A weakling could not hurl Thor’s hammer, nor could just anyone command Baba Yaga’s hut. An artifact may show its full powers only to deal with particular, very specific, threats or dangers. Artifacts have purposes, sometimes fulfilled long in the past and sometimes never-ending.",
 								"{@b Introducing Artifacts and Relics into a Campaign:} Because the impact of an artifact is so great, you should use them only in the most earth-shaking adventures you can devise. You must always have a reason for bringing an artifact into your game. It should never appear just because you want to give the characters something bigger and better.",
 								"If discovered at the beginning of an adventure, it should be the prelude to some great threat to the kingdom, empire, continent, or world where the item will make a difference. Rather than simply giving the item to the characters, you can introduce the danger first and then set the player characters searching for the artifact that will defeat or stem the tide of evil that threatens to oversweep the land. Alternatively, the player characters could be faced with the worst of all situations—one in which the artifact is in the hands of the enemy and the players must get it away from them. Each of these creates an adventure or, more likely, a series of adventures centered around the device.",
@@ -8681,7 +8681,7 @@
 				},
 				"These are a big part of the DM’s duties in a role-playing game (in addition to the task of interpreting the rules and handling the mechanics of play).",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "What Is an Encounter?",
 					"page": 128,
 					"entries": [
@@ -8711,7 +8711,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Planned Encounters",
 					"page": 129,
 					"entries": [
@@ -8804,7 +8804,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Random Encounters",
 					"page": 131,
 					"entries": [
@@ -8857,7 +8857,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Creating Encounter Tables",
 					"page": 133,
 					"entries": [
@@ -9479,7 +9479,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "DMing Encounters",
 					"page": 138,
 					"entries": [
@@ -9662,7 +9662,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Surprise",
 					"page": 139,
 					"entries": [
@@ -9811,7 +9811,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Encounter Distance",
 					"page": 140,
 					"entries": [
@@ -9896,7 +9896,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Encounter Reactions",
 					"page": 140,
 					"entries": [
@@ -10076,7 +10076,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Fixing Things in Play",
 					"page": 141,
 					"entries": [
@@ -10120,7 +10120,7 @@
 				"The DM has to think of himself as a master actor, quick-change artist, and impressionist. Each NPC is a different role or part the DM must quickly assume. While this may be difficult at first, practice makes the task much easier. Each DM develops certain stock characters and learns the personalities of frequently used NPCs.",
 				"There are many different categories of NPCs, but the most frequently encountered are common, everyday folk. Player characters deal with innkeepers, stablers, blacksmiths, minstrels, watchmen, petty nobles, and others, many of whom can be employed by player characters. These NPCs are grouped together as hirelings.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Hirelings",
 					"page": 143,
 					"entries": [
@@ -10551,7 +10551,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "The Assassin, the Spy, and the Sage",
 					"page": 143,
 					"entries": [
@@ -10564,7 +10564,7 @@
 								"Assassination is not a discreet occupation per se, but a reprehensible mind-set. The assassin requires no special skills, though fighting, stealth, and even magic are useful. All that is really needed to be an assassin is the desire and the opportunity.",
 								"{@b Hiring an Assassin:} When a player character hires an assassin (which is not a good or lawful act), he is taking a chance. There is virtually no way to assure oneself of the reliability and dependability of such a person. Anyone willing to make a business out of murder is not likely to have a high degree of morals of any type. Clearly, this is a case of \"let the buyer beware!\"",
 								"Once a character has hired an assassin, it is up to the DM to determine the success of the deed. There are no simple tables or formulae to be followed.",
-								"{@b Consider the Intended Victim:}  Assassination attempts by one player character against another should not be allowed. This type of behavior only leads to bitterness, bickering, and anger among the players. NPC-sponsored assassination attempts against player characters should be used sparingly, and then only as plot motivators, not as punishment or player controls. Any time a player character is targeted, role-play the encounter fairly—give the PC a chance.",
+								"{@b Consider the Intended Victim:} Assassination attempts by one player character against another should not be allowed. This type of behavior only leads to bitterness, bickering, and anger among the players. NPC-sponsored assassination attempts against player characters should be used sparingly, and then only as plot motivators, not as punishment or player controls. Any time a player character is targeted, role-play the encounter fairly—give the PC a chance.",
 								"If the intended victim is an NPC, the DM should decide the effect of the assassination on his game. Sometimes, player characters do these things out of spite. At other times the deed may be motivated by simple greed. Neither of these is a particularly good motive to encourage in a campaign.",
 								"If the death of the NPC would result in a major reworking of the campaign for no good reason, consider seriously the idea of making the attempt fail. If the death of the NPC would allow the player characters to by-pass or breeze through an adventure you have planned, then it’s not a good idea. Don’t just tell the players, \"Oh, that’d be bad for the game so you can’t even try to knock that guy off.\" Work the attempt—and its failure—into the storyline.",
 								"{@b Precautions:} If you decide the attempt is legitimate, consider the precautions the intended NPC victim normally takes. These may make the job particularly difficult or easy. Kings, emperors, high priests, and other important officials tend to be very cautious and well-protected. Wizards, with wise magical precautions, can be virtually impossible to assassinate! Devise specific NPC precautions before you know the assassin’s plans.",
@@ -10880,7 +10880,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Soldiers",
 					"page": 146,
 					"entries": [
@@ -10987,18 +10987,18 @@
 								"{@b Artillerist:} These troops are more specialists than regular soldiers. Since their duty is to work and service heavy catapults and siege equipment, they don’t normally enter into combat. They dress and outfit themselves as they please. Artillerists stay with their equipment, which is found in the siege train.",
 								"{@b Bowmen, mounted:} These are normally light cavalry. They carry short bows, a long sword or scimitar, and leather armor, although armor up to chain is sometimes worn. Historically, most mounted bowmen came from nomadic tribes or areas of vast plains.",
 								"The most famous mounted bowmen were the Mongol horsemen, who commonly armed themselves with composite short bow, scimitar, mace, axe, and dagger. Some also carried light lances. They wore studded leathers or whatever else they could find and carried medium shields. Pecheneg horsemen used the composite short bow, hand axe, lasso, and light lance and wore scale armor. Russian troops carried the short bow and dagger and wore padded armor.",
-								"{@b Cavalry, heavy:}  The classic image of the heavy cavalryman is the mounted knight. Such men are typically armed with heavy lance, long sword, and mace. They wear plate mail or field plate armor. The horse is a heavy war horse and barded, although the type of barding varies.",
+								"{@b Cavalry, heavy:} The classic image of the heavy cavalryman is the mounted knight. Such men are typically armed with heavy lance, long sword, and mace. They wear plate mail or field plate armor. The horse is a heavy war horse and barded, although the type of barding varies.",
 								"Examples include the early Byzantine kataphractos, armed with medium lance, long sword, banded armor, and a large shield. They rode heavy war horses fitted with scale barding. The French Compagnies d’Ordonnance fitted with heavy lance, long sword, mace, and full plate on chain or plate barded horses were classic knights of the late medieval period.",
 								"In other lands, the Polish hussar was a dashing sight with his tiger-skin cloak fluttering in the charge. He wore plate mail armor and rode an unbarded horse but carried an arsenal of weapons—medium lance, long sword, scimitar, warhammer, and a brace of pistols (although the latter won’t normally appear in an AD&D game).",
 								"{@b Cavalry, light:} These are skirmishers whose role in combat is to gallop in quickly, make a sudden attack, and get away before they are attacked in force. They are also used as scouts and foragers, and to screen advances and retreats. They carry a wide variety of weapons, sometimes including a missile weapon. Their armor is nonexistent or very light—padded leathers and shields. Speed is their main strength. In many ways they are indistinguishable from mounted bowmen and often come from the same groups of people.",
 								"The stradiotii of the Italian Wars were unarmored and fought with javelins, saber, and shield. Hussars were armed with scimitar and lance. Byzantine trapezitos carried similar weapons, but wore padded armor and carried a medium shield. Turkish sipahis, noted light cavalrymen, carried a wide variety of weapons, usually a sword, mace, lance, short bow, and small shield.",
 								"{@b Cavalry, medium:} This trooper forms the backbone of most mounted forces—it’s cheaper to raise medium cavalry than heavy knights, and the medium cavalryman packs more punch than light cavalry. They normally ride unarmored horses and wear scale, chain, or banded armor. Typical arms include lance, long sword, mace, and medium shield.",
 								"A good example of medium cavalry was the Norman knight with lance, sword, chain mail, and kite shield. Others include the Burgundian coustillier (brigandine or splint, light lance, long sword, and dagger), Persian cavalry (chain mail, medium shield, mace, scimitar, and short bow), and Lithuanian boyars (scale, medium lance, long sword, and large shield).",
-								"{@b Crossbowmen, heavy:}  Only rarely used by medieval princes, heavy crossbowmen are normally assigned to garrison and siege duties. Each normally has a heavy crossbow, short sword, and dagger, and wears chain mail. The services of a shield bearer is often supplied to each man.",
+								"{@b Crossbowmen, heavy:} Only rarely used by medieval princes, heavy crossbowmen are normally assigned to garrison and siege duties. Each normally has a heavy crossbow, short sword, and dagger, and wears chain mail. The services of a shield bearer is often supplied to each man.",
 								"Venetian crossbowmen frequently served on galleys and wore chain or brigandine armor. Genoese men in German service sometimes wore scale armor for even greater protection.",
 								"{@b Crossbowmen, light:} Light crossbowmen are favored by some commanders, replacing regular archers in many armies. The crossbow requires less training than the bow and is easier to handle, making these soldiers cheaper in the long run to maintain. Each man normally has a light crossbow, short sword, and dagger. Usually they do not wear armor. Crossbowmen fight hand-to-hand only to save themselves and will fall back or flee from attackers.",
 								"Italian crossbowmen commonly wore padded armor and carried a long sword, buckler, and light crossbow. Burgundians wore a light coat of chain and carried no weapons other than their crossbows. Greek crossbowmen carried a variety of weapons including crossbow, sword, and spear or javelin.",
-								"{@b Crossbowmen, mounted:}  When possible, crossbowman are given horses, for extra mobility. All use light crossbows, since heavier ones cannot be cocked on horseback. The horse is unbarded, and the rider normally wears little or no armor. As with most light troops, the mounted crossbowman relies on speed to whisk him out of danger. An unusual example of a mounted crossbowman was the German mercenary (plate mail, light crossbow, and long sword).",
+								"{@b Crossbowmen, mounted:} When possible, crossbowman are given horses, for extra mobility. All use light crossbows, since heavier ones cannot be cocked on horseback. The horse is unbarded, and the rider normally wears little or no armor. As with most light troops, the mounted crossbowman relies on speed to whisk him out of danger. An unusual example of a mounted crossbowman was the German mercenary (plate mail, light crossbow, and long sword).",
 								"{@b Engineer:} This profession, like that of the artillerist, is highly specialized, and those skilled in it are not common soldiers. Engineers normally supervise siege operations, both inside and outside. They are responsible for mining castle walls, filling or draining moats, repairing damage, constructing siege engines, and building bridges. Since their skills are specialized and rare, engineers command a high wage. Furthermore, engineers expect rewards for successfully storming castles and towns or for repelling such attacks.",
 								"{@b Footman, heavy:} Depending on the army, heavy infantry either forms its backbone or is nonexistent. Heavy footmen normally have chain mail or better armor, a large shield, and any weapons.",
 								"Examples of heavy infantry include Byzantine skutatoi (scale mail, large shield, spear, and long sword), Norman footmen (chain mail, kite shield, and long sword), Varangian Guardsmen (chain mail, large shield, battle axe, long sword, and short sword), late German men-at-arms (plate mail, battle axe, long sword, and dagger), Flemish pikemen (plate mail, long sword, and pike), Italian mercenaries (plate mail, long sword, glaive, and dagger), Irish gallowglasses (chain mail, halberd, long sword, and darts), and Polish drabs (chain mail, scimitar, and halberd).",
@@ -11018,7 +11018,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Employing Hirelings",
 					"page": 149,
 					"entries": [
@@ -11249,7 +11249,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Henchmen",
 					"page": 151,
 					"entries": [
@@ -11307,7 +11307,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Officials and Social Rank",
 					"page": 152,
 					"entries": [
@@ -11625,7 +11625,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Spellcasters",
 					"page": 153,
 					"entries": [
@@ -11905,7 +11905,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Personality",
 					"page": 154,
 					"entries": [
@@ -11918,8 +11918,8 @@
 							"entries": [
 								"There are several shortcut methods that can be used when role-playing NPCs who only have brief appearances—the \"walk-ons\" and \"cameos\" of a role-playing adventure.",
 								"{@b Character Traits:}The DM can choose some particular character trait—cowardice, greed, optimism, precision, or whatever—and exaggerate it, take it to an extreme. This is most effective for creating comical (or frustrating) situations.",
-								"{@b Physical Traits:}  A particular physical trait—baldness, potbellied, bad teeth, wheezy, and more—can be stressed. This helps fix the appearance of the NPC in the players’ minds, especially useful if the characters must describe or find the NPC again.",
-								"{@b Habits:}  Like physical traits, simple habits—scratches his head, tugs on his beard, stares at the sky when talking, or mumbles—can be used. The DM can actually act out these simple habits at the table, adding a visual element to the roleplaying experience."
+								"{@b Physical Traits:} A particular physical trait—baldness, potbellied, bad teeth, wheezy, and more—can be stressed. This helps fix the appearance of the NPC in the players’ minds, especially useful if the characters must describe or find the NPC again.",
+								"{@b Habits:} Like physical traits, simple habits—scratches his head, tugs on his beard, stares at the sky when talking, or mumbles—can be used. The DM can actually act out these simple habits at the table, adding a visual element to the roleplaying experience."
 							]
 						},
 						{
@@ -12635,7 +12635,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Quick NPCs",
 					"page": 157,
 					"entries": [
@@ -12661,7 +12661,7 @@
 			"entries": [
 				"The ability of your player characters to see something and their ability to be seen are important to the play of the AD&D game. Characters unable to see monsters have a nasty tendency to be surprised. Characters stomping through the woods waving torches tend to give away their position, making it hard to surprise others. For these and other reasons, you should always be conscious of visibility and light sources when running an adventure.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Effects of Light Sources",
 					"page": 158,
 					"entries": [
@@ -12687,7 +12687,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Light Tricks and Traps",
 					"page": 159,
 					"entries": [
@@ -12697,7 +12697,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Infravision",
 					"page": 160,
 					"entries": [
@@ -12725,7 +12725,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Other Forms of Sight",
 					"page": 160,
 					"entries": [
@@ -12734,7 +12734,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Darkness",
 					"page": 160,
 					"entries": [
@@ -12790,7 +12790,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Invisibility",
 					"page": 161,
 					"entries": [
@@ -12887,7 +12887,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Movement",
 					"page": 164,
 					"entries": [
@@ -12935,7 +12935,7 @@
 								"All camels march better by night, when it is cooler. Dromedary camels are able to withstand a few days of cold weather (the temperature drops drastically in the desert at night), and some bactrian camels actually live in freezing and mountainous deserts.",
 								"Although camels can manage for long periods of time without water, they must be fed every day. They do not need special fodder so long as grazing is possible. On the average they should have water at least every four days, although they can be trained to do without for longer periods, even up to several months if green grass or leaves are available for grazing. Like horses, camels should be hobbled or tethered to prevent them from wandering off.",
 								"{@b Dogs:} Particularly tough breeds can be used to pull sleds and sledges. Some are suited to cold weather and will withstand a great deal of hardship. They require at least a pound of meat a day, so characters should pack dried meat for the dogs. If necessary, one dog can be killed to feed the others, but this is not recommended. Beyond the needs of feeding, sled dogs tend to care for themselves fairly well, although the characters may have to keep certain animals separated to prevent fighting.",
-								"{@b Elephants:}  As can be expected, elephants eat a prodigious amount of fodder every day. In thickly forested areas, this can be supplied without reducing the beasts’ already slow speed. Elephants can also be found in sparsely forested plains, though. Here, if left to graze for itself, the beast will move at 1⁄4 its normal movement rate. Except for the carrying capacity of the beast, the characters might as well walk at these speeds! Elephants should bathe (or be bathed) every day and will avail themselves of dust baths to keep biting flies away.",
+								"{@b Elephants:} As can be expected, elephants eat a prodigious amount of fodder every day. In thickly forested areas, this can be supplied without reducing the beasts’ already slow speed. Elephants can also be found in sparsely forested plains, though. Here, if left to graze for itself, the beast will move at 1⁄4 its normal movement rate. Except for the carrying capacity of the beast, the characters might as well walk at these speeds! Elephants should bathe (or be bathed) every day and will avail themselves of dust baths to keep biting flies away.",
 								"It should also come as no surprise that elephants can’t negotiate cliffs. They can bound down steep slopes— indeed, it is the only time they go fast—but only at great peril to themselves and their riders. If the beast fails a saving throw vs. breath weapon (used for general tests of dexterity), it stumbles, falls, and rolls the rest of the way down the slope. The fall may kill or severely injure the elephant; the choice is left to the DM. Elephants are affected only by the deepest mud, so the movement penalty for mud is ignored.",
 								"{@b Yaks:} Yaks are suited to the cold regions of high mountains. While slow, they are sturdy, unaffected by the cold. Their sure footing allows them to reduce all mountain movement rates by one. They can survive by grazing on a meagre amount of grass. Yaks also provide meat and milk for travelers. They live in cool regions and cannot survive long in warmer climates since they are prone to collapse from heat exhaustion."
 							]
@@ -13156,7 +13156,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Terrain Obstacles and Hindrances",
 					"page": 168,
 					"entries": [
@@ -13258,7 +13258,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Movement on Water",
 					"page": 169,
 					"entries": [
@@ -13610,7 +13610,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Aerial Movement",
 					"page": 171,
 					"entries": [
@@ -13657,7 +13657,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Getting Lost",
 					"page": 172,
 					"entries": [
@@ -13820,7 +13820,7 @@
 			"entries": [
 				"The previous chapters have presented a lot of rules and covered a lot of ground, but there are always a few things that don’t fit into neat little categories (or even big categories!). Some of these are situations that arise all the time during adventures. Others are situations or background facts you will need only occasionally. These \"left-overs,\" common and uncommon, are discussed below.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Listening",
 					"page": 174,
 					"entries": [
@@ -13865,7 +13865,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Doors",
 					"page": 175,
 					"entries": [
@@ -13900,7 +13900,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Lycanthropy",
 					"page": 176,
 					"entries": [
@@ -13928,7 +13928,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "The Planes of Existence",
 					"page": 178,
 					"entries": [
@@ -14771,7 +14771,7 @@
 			"page": 183,
 			"entries": [
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Magical Item Tables",
 					"page": 183,
 					"entries": [
@@ -18113,7 +18113,7 @@
 			"page": 191,
 			"entries": [
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Potions",
 					"page": 191,
 					"entries": [
@@ -18280,7 +18280,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Scrolls",
 					"page": 196,
 					"entries": [
@@ -18495,7 +18495,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Rings",
 					"page": 198,
 					"entries": [
@@ -18556,7 +18556,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Rods",
 					"page": 204,
 					"entries": [
@@ -18611,7 +18611,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Staves",
 					"page": 207,
 					"entries": [
@@ -18666,11 +18666,11 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Wands",
 					"page": 210,
 					"entries": [
-						"Wands are 1 1⁄4 feet long and slender. They are made of ivory, bone, or wood and are usually tipped with  something—metal, crystal, stone, etc. They are fragile and tend to break easily. Because of this, they are often kept in cases.",
+						"Wands are 1 1⁄4 feet long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, etc. They are fragile and tend to break easily. Because of this, they are often kept in cases.",
 						"Wands perform at 6th level of experience with respect to the damage they cause, range, duration, area of effect, etc., unless otherwise stated.",
 						"At the DM’s option, 1% of all wands can be trapped to backfire.",
 						"Wands are powered by charges, each use costing one or more charges (depending on the item). When created, a wand typically contains {@dice 1d20+80} charges. Captured wands taken from a defeated foe often have many fewer charges. Wands never have a greater number of charges than those listed. Most wands can be recharged according to the rules for making magical items.",
@@ -18726,7 +18726,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Miscellaneous Magic",
 					"page": 212,
 					"entries": [
@@ -18971,7 +18971,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Armor and Shields",
 					"page": 240,
 					"entries": [
@@ -19002,7 +19002,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Magical Weapons",
 					"page": 241,
 					"entries": [
@@ -19098,7 +19098,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Intelligent Weapons",
 					"page": 247,
 					"entries": [
@@ -21313,7 +21313,7 @@
 								"{@color 85|ef1946}, 128, 129"
 							]
 						},
-						
+
 						{
 							"type": "row",
 							"style": "row-indent-first",
@@ -22520,7 +22520,7 @@
 								"{@color 42|ef1946}"
 							]
 						}
-						
+
 					]
 				},
 				{
@@ -22994,7 +22994,7 @@
 							"Hirelings",
 							"{@color 143, 149|ef1946}, 151, 153"
 						],
-						
+
 						[
 							"Heward's mystical organ",
 							"{@color 52|ef1946}"

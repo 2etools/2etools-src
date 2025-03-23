@@ -24,6 +24,28 @@
     src: local("Blambot-Casual"), url("../fonts/Blambot-Casual-Regular.woff2") format("woff2")
 }
 
+/* 2e '89 Title & Header Font */
+@font-face {
+    font-family: 'Friz Quadrata Std';
+    src: url('FrizQuadrataStd-Bold.eot');
+    src: local('Friz Quadrata Std Bold'), local('FrizQuadrataStd-Bold'),
+        url('../fonts/FrizQuadrataStd-Bold.woff2') format('woff2'), ;
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Friz Quadrata Std';
+    src: url('FrizQuadrataStd.eot');
+    src: local('Friz Quadrata Std Medium'), local('FrizQuadrataStd'),
+        url('../fonts/FrizQuadrataStd.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 2e '89 Core Books Text Font */
 @font-face {
     font-family: "ZapfCalligr BT";
     font-style: italic;
@@ -35,7 +57,7 @@
     font-family: "ZapfCalligr BT";
     font-weight: bold;
     font-style: normal;
-    src: local("ZapfCalligr BT")  url("../fonts/zapfcalligr-bt-3.woff2") format("woff2")
+    src: local("ZapfCalligr BT") url("../fonts/zapfcalligr-bt-3.woff2") format("woff2")
 }
 
 @font-face {
@@ -45,33 +67,71 @@
     src: local("ZapfCalligr BT") url("../fonts/zapfcalligr-bt-4.woff2") format("woff2")
 }
 
-
+/* 2e Splatbook Text Font */
 @font-face {
-    font-family: 'Friz Quadrata Std';
-    src: url('FrizQuadrataStd-Bold.eot');
-    src: local('Friz Quadrata Std Bold'), local('FrizQuadrataStd-Bold'),
-        url('FrizQuadrataStd-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/FrizQuadrataStd-Bold.woff2') format('woff2'),
-        url('FrizQuadrataStd-Bold.woff') format('woff'),
-        url('FrizQuadrataStd-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-family: 'ITC Bookman';
+    src: local('ITC Bookman Demi'), local('ITC-Bookman-Demi'),
+        url('../fonts/BookmanStd-Demi.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Friz Quadrata Std';
-    src: url('FrizQuadrataStd.eot');
-    src: local('Friz Quadrata Std Medium'), local('FrizQuadrataStd'),
-        url('FrizQuadrataStd.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/FrizQuadrataStd.woff2') format('woff2'),
-        url('FrizQuadrataStd.woff') format('woff'),
-        url('FrizQuadrataStd.ttf') format('truetype');
+    font-family: 'ITC Bookman';
+    src: local('ITC Bookman Demi Italic'), local('ITC-Bookman-Demi-Italic'),
+        url('../fonts/BookmanStd-DemiItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ITC Bookman';
+    src: local('ITC Bookman Light'), local('ITC-Bookman-Light'),
+        url('../fonts/BookmanStd-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ITC Bookman';
+    src: local('ITC Bookman Light Italic'), local('ITC-Bookman-Light-Italic'),
+        url('../fonts/BookmanStd-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'ITC Bookman';
+    src: local('ITC Bookman Medium'), local('ITC-Bookman-Medium'),
+        url('../fonts/BookmanStd-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
-    font-display: swap;
 }
 
+@font-face {
+    font-family: 'ITC Bookman';
+    src: local('ITC Bookman Medium Italic'), local('ITC-Bookman-Medium-Italic'),
+        url('../fonts/BookmanStd-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ITC Bookman';
+    src: local('ITC Bookman Bold'), local('ITC-Bookman-Bold'),
+        url('../fonts/BookmanStd-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ITC Bookman';
+    src: local('ITC Bookman Bold Italic'), local('ITC-Bookman-Bold-Italic'),
+        url('../fonts/BookmanStd-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
 
 @keyframes kf-fade-in {
     from {
@@ -4777,7 +4837,7 @@ input[type=range] {
 }
 
 .rd__h-toggle {
-    font-family: "Friz Quadrata Std";
+    font-family: "ITC Bookman";
     font-size: 12px;
     opacity: .3;
     font-weight: normal
@@ -9457,7 +9517,9 @@ input[type=checkbox].sidemenu__row__label__cb {
 
 .stats--book {
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    font-family: "ZapfCalligr BT";
+    font-family: "ITC Bookman";
+    font-weight: 300;
+    font-style: normal;
     background: #fff
 }
 
