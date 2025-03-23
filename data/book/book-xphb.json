@@ -36,18 +36,18 @@
 				"You are reading the key to the most exciting hobby in the world—role-playing games.",
 				"These first few pages will introduce you to the 2nd edition of the most successful role-playing game ever published. If you are a novice role-player, stop right here and read the section labeled {@i {@book The Real Basics|XPHB|2}} (on page 10). When you understand what role-playing and the AD&D game are all about, come back to this point and read the rest of the introduction. If you are an experienced role-player, skip {@book The Real Basics|XPHB|3}.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "How the Rule Books are Organized",
 					"page": 8,
 					"entries": [
 						"The AD&D game rule books are intended primarily as reference books. They are designed so any specific rule can be found quickly and easily during a game.",
 						"Everything a player needs to know is in the {@i Player's Handbook®}. That's not to say that all the rules are in this book. But every rule that a player needs to know in order to play the game is in this book.",
 						"A few rules have been reserved for the {@book {@i Dungeon Master Guide}|XDMG} (DMG). These either cover situations that very seldom arise or give the Dungeon Master (DM) information that players should not have beforehand. Everything else in the {@i DMG} is information that only the Dungeon Master needs. If the DM feels that players need to know something that is explained in the {@i DMG}, he will tell them.",
-						"Like the DMG, the {@i Monstrous Manual}™ supplement is the province of the DM. This gives complete and detailed information about the monsters, people, and other creatures inhabiting the AD&D world. Some DMs don't mind if players read this information, but the game is more fun if players don't know everything about their foes—it heightens the sense of discovery and danger of the unknown."
+						"Like the DMG, the {@i {@book Monstrous Manual}}™ supplement is the province of the DM. This gives complete and detailed information about the monsters, people, and other creatures inhabiting the AD&D world. Some DMs don't mind if players read this information, but the game is more fun if players don't know everything about their foes—it heightens the sense of discovery and danger of the unknown."
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Learning the Game",
 					"page": 8,
 					"entries": [
@@ -59,7 +59,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Coming from the D&D® Game",
 					"page": 8,
 					"entries": [
@@ -67,7 +67,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "The AD&D Game Line",
 					"page": 9,
 					"entries": [
@@ -78,7 +78,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "A Note About Pronouns",
 					"page": 9,
 					"entries": [
@@ -107,7 +107,7 @@
 				"This is the heart of role-playing. The player adopts the role of a character and then guides that character through an adventure. The player makes decisions, interacts with other characters and players, and, essentially, \"pretends\" to be his character during the course of the game. That doesn't mean that the player must jump up and down, dash around, and act like his character. It means that whenever the character is called on to do something or make a decision, the player pretends that he is in that situation and chooses an appropriate course of action.",
 				"Physically, the players and referee (the DM) should be seated comfortably around a table with the referee at the head. Players need plenty of room for papers, pencils, dice, rule books, drinks, and snacks. The referee needs extra space for his maps, dice, rule books, and assorted notes.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "The Goal",
 					"page": 10,
 					"entries": [
@@ -118,7 +118,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Required Materials",
 					"page": 10,
 					"entries": [
@@ -132,7 +132,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "An Example of Play",
 					"page": 10,
 					"entries": [
@@ -313,7 +313,7 @@
 			]
 		},
 		{
-			"type": "section",
+			"type": "entries",
 			"name": "Step-by-Step Player Character Generation",
 			"page": 16,
 			"entries": [
@@ -424,7 +424,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Step 4: Choose an Alignment  (chapter 4)",
+							"name": "Step 4: Choose an Alignment (chapter 4)",
 							"page": 16,
 							"entries": [
 								"In selecting your alignment, abide by class restrictions:",
@@ -462,7 +462,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Step 5: Record Saving Throws and THAC0  (chapter 9)",
+							"name": "Step 5: Record Saving Throws and THAC0 (chapter 9)",
 							"page": 16,
 							"entries": [
 								"Consult Table 60 to determine the base saving throws for your character. Consult Table 53 to determine your character's THAC0."
@@ -504,7 +504,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Step 7: Record Base Movement  (chapter 14)",
+							"name": "Step 7: Record Base Movement (chapter 14)",
 							"page": 16,
 							"entries": [
 								"Fine the character's base movement rate on Table 64 and record it. If the optional encumbrance rules are in effect, also record the encumbrance categories from Table 47 and modified movement rates and combat abilities."
@@ -522,7 +522,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Step 9: Equip Your Character  (chapter 6)",
+							"name": "Step 9: Equip Your Character (chapter 6)",
 							"page": 16,
 							"entries": [
 								"Consult Table 43 to determine your character's starting funds. Using Table 44, select and pay for your character's starting equipment.",
@@ -543,51 +543,36 @@
 				"Each character in the AD&D game has six abilities: Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. The first three abilities represent the physical nature of the character, while the second three quantify his mental and personality traits.",
 				"In various places throughout these rules, the following abbreviations are used for the ability names: Strength—Str; Dexterity—Dex; Constitution—Con; Intelligence—Int; Wisdom—Wis; Charisma—Cha.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Rolling Ability Scores",
 					"page": 18,
 					"entries": [
 						"Let's first see how to generate ability scores for your character, after which definitions of each ability will be given.",
 						"The six ability scores are determined randomly by rolling sixsided dice to obtain a score from 3 to 18. There are several methods for rolling up these scores.",
-						{
-							"type": "list",
-							"items": [
-								"{@b Method I:} Roll three six-sided dice ({@dice 3d6}); the total shown on the dice is your character's Strength ability score. Repeat this for Dexterity, Constitution, Intelligence, Wisdom, and Charisma, in that order. This method gives a range of scores from 3 to 18, with most results in the 9 to 12 range. Only a few characters have high scores (15 and above), so you should treasure these characters."
-							]
-						},
+						"{@b • Method I:} Roll three six-sided dice ({@dice 3d6}); the total shown on the dice is your character's Strength ability score. Repeat this for Dexterity, Constitution, Intelligence, Wisdom, and Charisma, in that order. This method gives a range of scores from 3 to 18, with most results in the 9 to 12 range. Only a few characters have high scores (15 and above), so you should treasure these characters.",
 						{
 							"type": "entries",
 							"name": "Alternative Dice-Rolling Methods",
 							"page": 18,
 							"entries": [
 								"Method I creates characters whose ability scores are usually between 9 and 12. If you would rather play a character of truly heroic proportions, ask your DM if he allows players to use optional methods for rolling up characters. These optional methods are designed to produce above-average characters.",
-								{
-									"type": "list",
-									"items": [
-										"{@b Method II:} Roll 3d6 twice, noting the total of each roll. Use whichever result you prefer for your character's Strength score. Repeat this for Dexterity, Constitution, Intelligence, Wisdom, and Charisma. This allows you to pick the best score from each pair, generally ensuring that your character does not have any really low ability scores (but low ability scores are not all that bad anyway!).",
-										"{@b Method III:} Roll 3d6 six times and jot down the total for each roll. Assign the scores to your character's six abilities however you want. This gives you the chance to custom-tailor your character, although you are not guaranteed high scores.",
-										"{@b Method IV:}  Roll 3d6 twelve times and jot down all twelve totals. Choose six of these rolls (generally the six best rolls) and assign them to your character's abilities however you want. This combines the best of methods II and III, but takes somewhat longer."
-									]
-								},
+								"{@b • Method II:} Roll 3d6 twice, noting the total of each roll. Use whichever result you prefer for your character's Strength score. Repeat this for Dexterity, Constitution, Intelligence, Wisdom, and Charisma. This allows you to pick the best score from each pair, generally ensuring that your character does not have any really low ability scores (but low ability scores are not all that bad anyway!).",
+								"{@b • Method III:} Roll 3d6 six times and jot down the total for each roll. Assign the scores to your character's six abilities however you want. This gives you the chance to custom-tailor your character, although you are not guaranteed high scores.",
+								"{@b • Method IV:} Roll 3d6 twelve times and jot down all twelve totals. Choose six of these rolls (generally the six best rolls) and assign them to your character's abilities however you want. This combines the best of methods II and III, but takes somewhat longer.",
 								"As an example, Joan rolls 3d6 twelve times and gets results of 12, 5, 6, 8, 10, 15, 9, 12, 6, 11, 10, and 7. She chooses the six best rolls (15, 12, 12, 11, 10, and 10) and then assigns them to her character's abilities so as to create the strengths and weaknesses that she wants her character to have (see the ability descriptions following this section for explanations of the abilities).",
-								{
-									"type": "list",
-									"items": [
-										"{@b Method V:} Roll four six-sided dice ({@dice 4d6}). Discard the lowest die and total the remaining three. Repeat this five more times, then assign the six numbers to the character's abilities however you want. This is a fast method that gives you a good character, but you can still get low scores (after all, you could roll 1s on all four dice!).",
-										"{@b Method VI:} This method can be used if you want to create a specific type of character. It does not guarantee that you will get the character you want, but it will improve your chances."
-									]
-								},
+								"{@b • Method V:} Roll four six-sided dice ({@dice 4d6}). Discard the lowest die and total the remaining three. Repeat this five more times, then assign the six numbers to the character's abilities however you want. This is a fast method that gives you a good character, but you can still get low scores (after all, you could roll 1s on all four dice!).",
+								"{@b • Method VI:} This method can be used if you want to create a specific type of character. It does not guarantee that you will get the character you want, but it will improve your chances.",
 								"Each ability starts with a score of 8. Then roll seven dice. These dice can be added to your character's abilities as you wish. All the points on a die must be added to the same ability score. For example, if a 6 is rolled on one die, all 6 points must be assigned to one ability. You can add as many dice as you want to any ability, but no ability score can exceed 18 points. If you cannot make an 18 by exact count on the dice, you cannot have an 18 score."
 							]
 						}
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "The Ability Scores",
 					"page": 19,
 					"entries": [
-						"The six character abilities are described below. Each description gives an idea of what that ability encompasses. Specific game effects are also given. At the end of each ability description is the table giving all modifiers and game information for each ability score. The unshaded area of these The six character abilities are described below. Each description gives an idea of what that ability encompasses. Specific game effects are also given. At the end of each ability description is the table giving all modifiers and game information for each ability score. The unshaded area of these",
+						"The six character abilities are described below. Each description gives an idea of what that ability encompasses. Specific game effects are also given. At the end of each ability description is the table giving all modifiers and game information for each ability score. The unshaded area of these tables contains scores a player character can have naturally, without the aid of magical devices, spells, or divine intervention. The shaded ability scores can be obtained only by extraordinary means, whether by good fortune (finding a magical book that raises a score) or ill fortune (an attack by a creature that lowers a score).",
 						{
 							"type": "entries",
 							"name": "Strength",
@@ -1714,7 +1699,7 @@
 								"{@b Magical Defense Adjustment} listed on Table 5 applies to saving throws against magical spells that attack the mind: {@i beguiling, charm, fear, hypnosis, illusions, possession, suggestion,} etc. These bonuses and penalties are applied automatically, without any conscious effort from the character.",
 								"{@b Bonus Spells} indicates the number of additional spells a priest (and only a priest) is entitled to because of his extreme Wisdom. Note that these spells are available only when the priest is entitled to spells of the appropriate level. Bonus spells are cumulative, so a priest with a Wisdom of 15 is entitled to two 1st-level bonus spells and one 2nd-level bonus spell.",
 								"{@b Chance of Spell Failure} states the percentage chance that any particular spell fails when cast. Priests with low Wisdom scores run the risk of having their spells fizzle. Roll percentile dice every time the priest casts a spell; if the number rolled is less than or equal to the listed chance for spell failure, the spell is expended with absolutely no effect whatsoever. Note that priests with Wisdom scores of 13 or higher don’t need to worry about their spells failing.",
-								"{@b Spell Immunity}  gives those extremely wise characters complete protection from certain spells, spell-like abilities, and magical items as listed. These immunities are cumulative, so that a character with a Wisdom of 23 is immune to all listed spells up to and including those listed on the 23 Wisdom row."
+								"{@b Spell Immunity} gives those extremely wise characters complete protection from certain spells, spell-like abilities, and magical items as listed. These immunities are cumulative, so that a character with a Wisdom of 23 is immune to all listed spells up to and including those listed on the 23 Wisdom row."
 							]
 						},
 						{
@@ -1900,7 +1885,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "What the Numbers Mean",
 					"page": 25,
 					"entries": [
@@ -2103,7 +2088,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Dwarves",
 					"page": 27,
 					"entries": [
@@ -2190,7 +2175,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Elves",
 					"page": 28,
 					"entries": [
@@ -2209,7 +2194,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Gnomes",
 					"page": 30,
 					"entries": [
@@ -2253,7 +2238,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Half-Elves",
 					"page": 30,
 					"entries": [
@@ -2269,7 +2254,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Halflings",
 					"page": 31,
 					"entries": [
@@ -2289,7 +2274,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Humans",
 					"page": 32,
 					"entries": [
@@ -2300,7 +2285,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Other Characteristics",
 					"page": 32,
 					"entries": [
@@ -2718,7 +2703,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Warrior",
 					"page": 36,
 					"entries": [
@@ -3092,7 +3077,7 @@
 								"{@b A paladin using a holy sword projects a circle of power} 10 feet in diameter when the sword is unsheathed and held. This power dispels hostile magic of a level up to the paladin’s experience level. (A holy sword is a very special weapon; if your paladin acquires one, the DM will explain its other powers.)",
 								"{@b A paladin gains the power to turn undead and fiends} when he reaches 3rd level. He affects these monsters the same as does a cleric two levels lower—for example, at 3rd level he has the turning power of a 1st-level cleric. See the section on priests for more details on this ability.",
 								"{@b A paladin may call for his war horse} upon reaching 4th level, or anytime thereafter. This faithful steed need not be a horse; it may be whatever sort of creature is appropriate to the character (as decided by the DM). A paladin’s war horse is a very special animal, bonded by fate to the warrior. The paladin does not really \"call\" the animal, nor does the horse instantly appear in front of him. Rather, the character must find his war horse in some memorable way, most frequently by a specific quest.",
-								"{@b A paladin can cast priest spells}  once he reaches 9th level. He can cast only spells of the combat, divination, healing, and protective spheres. (Spheres are explained in the Priest section.) The acquisition and casting of these spells abide by the rules given for priests.",
+								"{@b A paladin can cast priest spells} once he reaches 9th level. He can cast only spells of the combat, divination, healing, and protective spheres. (Spheres are explained in the Priest section.) The acquisition and casting of these spells abide by the rules given for priests.",
 								"The spell progression and casting level are listed in Table 17. Unlike a priest, the paladin does not gain extra spells for a high Wisdom score. The paladin cannot cast spells from clerical or druidical scrolls nor can he use priest items unless they are allowed to the warrior group.",
 								"{@b A paladin may not possess more than 10 magical items.} Furthermore, these may not exceed one suit of armor, one shield, four weapons (arrows and bolts are not counted), and four other magical items.",
 								"{@b A paladin never retains wealth.} He may keep only enough treasure to support himself in a modest manner, pay his henchmen, men-at-arms, and servitors a reasonable rate, and to construct or maintain a small castle or keep (funds can be set aside for this purpose). All excess must be donated to the church or another worthy cause. This money can never be given to another player character or NPC controlled by a player.",
@@ -3589,7 +3574,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Wizard",
 					"page": 42,
 					"entries": [
@@ -4142,7 +4127,7 @@
 									]
 								},
 								"{@b Race} lists those races that, either through a natural tendency or a quirk of fate, are allowed to specialize in that art. Note that the gnome, though unable to be a regular mage, can specialize in illusions.",
-								"{@b Minimum Ability Score}  lists the ability minimums needed to study intensively in that school. All schools require at least the minimum Intelligence demanded of a mage and an additional prime requisite, as listed.",
+								"{@b Minimum Ability Score} lists the ability minimums needed to study intensively in that school. All schools require at least the minimum Intelligence demanded of a mage and an additional prime requisite, as listed.",
 								"{@b Opposition School(s)} always includes the school directly opposite the character’s school of study in the diagram. In addition, the schools to either side of this one may also be disallowed due to the nature of the character’s school. For example, an invoker cannot learn enchantment/charm or conjuration/summoning spells and cannot use magical items that duplicate spells from these schools.",
 								"Being a specialist does have significant advantages to balance the trade-offs the character must make. These are listed here:",
 								{
@@ -4205,7 +4190,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Priest",
 					"page": 47,
 					"entries": [
@@ -4751,10 +4736,10 @@
 										"{@b Astral} is a small sphere of spells that enable movement or communication between the different planes of existence. The masters of a plane or particularly meddlesome powers often grant spells from this sphere.",
 										"{@b Charm} spells are those that affect the attitudes and actions of people. Deities of love, beauty, trickery, and art often allow access to this sphere.",
 										"{@b Combat} spells are those that can be used to directly attack or harm the enemies of the priest or his mythos. These are often granted by deities of war or death.",
-										"{@b Creation}  spells enable the priest to produce something from nothing, often to benefit his followers. This sphere can fill many different roles, from a provider to a trickster.",
+										"{@b Creation} spells enable the priest to produce something from nothing, often to benefit his followers. This sphere can fill many different roles, from a provider to a trickster.",
 										"{@b Divination} enables the priest to learn the safest course of action in a particular situation, find a hidden item, or recover long-forgotten information. Deities of wisdom and knowledge typically have access to this sphere.",
 										"{@b Elemental} spells are all those that affect the four basic elements of creation—earth, air, fire, and water. Nature deities, elemental deities, those representing or protecting various crafts, and the deities of sailors would all draw spells from this sphere.",
-										"{@b Guardian}  spells place magical sentries over an item or person. These spells are more active than protection spells because they create an actual guardian creature of some type. Protective, healing, and trickster deities may all grant spells of this sphere.",
+										"{@b Guardian} spells place magical sentries over an item or person. These spells are more active than protection spells because they create an actual guardian creature of some type. Protective, healing, and trickster deities may all grant spells of this sphere.",
 										"{@b Healing} spells are those that cure diseases, remove afflictions, or heal wounds. These spells cannot restore life or regrow lost limbs. Healing spells can be reversed to cause injury, but such use is restricted to evil priests. Protective and merciful deities are most likely to grant these spells, while nature deities may have lesser access to them.",
 										"{@b Necromantic} spells restore to a creature some element of its life-force that has been totally destroyed. It might be life, a limb, or an experience level. These spells in reverse are powerfully destructive, and are used only by extremely evil priests. Deities of life or death are most likely to act in this sphere.",
 										"{@b Plant} spells affect plants, ranging from simple agriculture (improving crops and the like) to communicating with plantlike creatures. Agricultural and nature Powers grant spells in this sphere.",
@@ -4967,7 +4952,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Rogue",
 					"page": 54,
 					"entries": [
@@ -5437,7 +5422,7 @@
 									"name": "Skill Explainations",
 									"page": 55,
 									"entries": [
-										"{@b Pick Pockets:}  The thief uses this skill when filching small items from other peoples’ pockets, sleeves, girdles, packs, etc., when palming items (such as keys), and when performing simple sleight of hand.",
+										"{@b Pick Pockets:} The thief uses this skill when filching small items from other peoples’ pockets, sleeves, girdles, packs, etc., when palming items (such as keys), and when performing simple sleight of hand.",
 										"A failed attempt means the thief did not get an item, but it does not mean that his attempt was detected. To determine whether the victim noticed the thief’s indiscretion, subtract three times the victim’s level from 100. If the thief’s pick pockets roll was equal to or greater than this number, the attempt is detected. A 0th-level victim, for example, notices the attempt only if the roll was 00 (100), while a 13th-level character notices the attempt on a dice roll of 61 or more. In some cases, the attempt may succeed and be noticed at the same time.",
 										{
 											"type": "inset",
@@ -5909,7 +5894,7 @@
 								"{@b The music, poetry, and stories of the bard} can also be inspirational, rallying friends and allies. If the exact nature of an impending threat is known, the bard can heroically inspire his companions (immortalizing them in word and song), granting a +1 bonus to attack rolls, or a +1 bonus to saving throws, or a +2 bonus to morale (particularly useful in large battles) to those involved in melee. The bard must spend at least three full rounds singing or reciting before the battle begins. This affects those within a range of 10 feet per experience level of the bard.",
 								"The effect lasts one round per level. Once the effect wears off, it can’t be re newed if the recipients are still in battle. However, troops who have withdrawn from combat can be reinspired by the bard’s words. A troop of soldiers, inspired by Cwell, could charge into battle. After fighting a fierce fight, they retreat and the enemy does not pursue. Cwell, seeing them crestfallen and dispirited, once again rouses their will to fight. Reinvigorated, they charge back into battle with renewed spirit.",
 								"{@b Bards are also able to counter the effects of songs and poetry used as magical attacks.} Characters within 30 feet of the bard are immune to the attack as long as the bard sings a counter song (or recites a poem, etc.). While doing this, the bard can perform no other action except a slow walk. Furthermore, if he is struck or fails a saving throw, his effort is ruined. Success is checked by having the bard make a saving throw vs. spell. Success blocks the attack, failure means the attack has its normal effect (everyone affected rolls saving throws, normal damage is inflicted, etc.). The bard can use this ability once per encounter or battle. This power does not affect verbal spell components or command words; it is effective against spells that involve explanations, commands, or suggestions.",
-								"{@b Finally, bards learn a little bit of everything}  in their studies and travels. Thus, all bards can read and write their native tongue (if a written language exists) and all know local history (without cost if the optional proficiency rules are used). Furthermore, bards have a 5% chance per experience level to identify the general purpose and function of any magical item. The bard need not handle the item but must examine it closely. Even if successful, the exact function of the item is not revealed, only its general nature.",
+								"{@b Finally, bards learn a little bit of everything} in their studies and travels. Thus, all bards can read and write their native tongue (if a written language exists) and all know local history (without cost if the optional proficiency rules are used). Furthermore, bards have a 5% chance per experience level to identify the general purpose and function of any magical item. The bard need not handle the item but must examine it closely. Even if successful, the exact function of the item is not revealed, only its general nature.",
 								{
 									"type": "insetReadaloud",
 									"entries": [
@@ -5923,7 +5908,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Multi-Class and Dual-Class Characters",
 					"page": 61,
 					"entries": [
@@ -6075,7 +6060,7 @@
 				"The character’s alignment is a guide to his basic moral and ethical attitudes toward others, society, good, evil, and the forces of the universe in general. Use the chosen alignment as a guide to provide a clearer idea of how the character will handle moral dilemmas. Always consider alignment as a tool, not a straitjacket that restricts the character. Although alignment defines general attitudes, it certainly doesn’t prevent a character from changing his beliefs, acting irrationally, or behaving out of character.",
 				"Alignment is divided into two sets of attitudes: order and chaos, and good and evil. By combining the different variations within the two sets, nine distinct alignments are created. These nine alignments serve well to define the attitudes of most of the people in the world.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Law, Neutrality, and Chaos",
 					"page": 64,
 					"entries": [
@@ -6085,8 +6070,9 @@
 						"Philosophers of neutrality not only presuppose the existence of opposites, but they also theorize that the universe would vanish should one opposite completely destroy the other (since nothing can exist without its opposite). Fortunately for these philosophers (and all sentient life), the universe seems to be efficient at regulating itself. Only when a powerful, unbalancing force appears (which almost never happens) need the defenders of neutrality become seriously concerned.",
 						"The believers in chaos hold that there is no preordained order or careful balance of forces in the universe. Instead they see the universe as a collection of things and events, some related to each other and others completely independent. They tend to hold that individual actions account for the differences in things and that events in one area do not alter the fabric of the universe halfway across the galaxy. Chaotic philosophers believe in the power of the individual over his own destiny and are fond of anarchistic nations. Being more pragmatic, non-philosophers recognize the function of society in protecting their individual rights. Chaotics can be hard to govern as a group, since they place their own needs and desires above those of society."
 					]
-				},{
-					"type": "section",
+				},
+				{
+					"type": "entries",
 					"name": "Good, Neutrality, and Evil",
 					"page": 64,
 					"entries": [
@@ -6098,7 +6084,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Alignment Combinations",
 					"page": 65,
 					"entries": [
@@ -6112,7 +6098,7 @@
 						"{@b Neutral Evil:}Neutral evil characters are primarily concerned with themselves and their own advancement. They have no particular objection to working with others or, for that matter, going it on their own. Their only interest is in getting ahead. If there is a quick and easy way to gain a profit, whether it be legal, questionable, or obviously illegal, they take advantage of it. Although neutral evil characters do not have the every-man-for-himself attitude of chaotic characters, they have no qualms about betraying their friends and companions for personal gain. They typically base their allegiance on power and money, which makes them quite receptive to bribes. An unscrupulous mercenary, a common thief, and a double-crossing informer who betrays people to the authorities to protect and advance himself are typical examples of neutral evil characters.",
 						"{@b Chaotic Good:}Chaotic good characters are strong individualists marked by a streak of kindness and benevolence. They believe in all the virtues of goodness and right, but they have little use for laws and regulations. They have no use for people who \"try to push folk around and tell them what to do.\" Their actions are guided by their own moral compass which, although good, may not always be in perfect agreement with the rest of society. A brave frontiersman forever moving on as settlers follow in his wake is an example of a chaotic good character.",
 						"{@b Chaotic Neutral:} Chaotic neutral characters believe that there is no order to anything, including their own actions. With this as a guiding principle, they tend to follow whatever whim strikes them at the moment. Good and evil are irrelevant when making a decision. Chaotic neutral characters are extremely difficult to deal with. Such characters have been known to cheerfully and for no apparent purpose gamble away everything they have on the roll of a single die. They are almost totally unreliable. In fact, the only reliable thing about them is that they cannot be relied upon! This alignment is perhaps the most difficult to play. Lunatics and madmen tend toward chaotic neutral behavior.",
-						"{@b Chaotic Evil:}  These characters are the bane of all that is good and organized. Chaotic evil characters are motivated by the desire for personal gain and pleasure. They see absolutely nothing wrong with taking whatever they want by whatever means possible. Laws and governments are the tools of weaklings unable to fend for themselves. The strong have the right to take what they want, and the weak are there to be exploited. When chaotic evil characters band together, they are not motivated by a desire to cooperate, but rather to oppose powerful enemies. Such a group can be held together only by a strong leader capable of bullying his underlings into obedience. Since leadership is based on raw power, a leader is likely to be replaced at the first sign of weakness by anyone who can take his position away from him by any method. Bloodthirsty buccaneers and monsters of low Intelligence are fine examples of chaotic evil personalities.",
+						"{@b Chaotic Evil:} These characters are the bane of all that is good and organized. Chaotic evil characters are motivated by the desire for personal gain and pleasure. They see absolutely nothing wrong with taking whatever they want by whatever means possible. Laws and governments are the tools of weaklings unable to fend for themselves. The strong have the right to take what they want, and the weak are there to be exploited. When chaotic evil characters band together, they are not motivated by a desire to cooperate, but rather to oppose powerful enemies. Such a group can be held together only by a strong leader capable of bullying his underlings into obedience. Since leadership is based on raw power, a leader is likely to be replaced at the first sign of weakness by anyone who can take his position away from him by any method. Bloodthirsty buccaneers and monsters of low Intelligence are fine examples of chaotic evil personalities.",
 						{
 							"type": "entries",
 							"name": "Non-Aligned Creatures",
@@ -6124,7 +6110,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Playing the Character's Alignment",
 					"page": 66,
 					"entries": [
@@ -6157,7 +6143,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Changing Alignment",
 					"page": 69,
 					"entries": [
@@ -6185,7 +6171,7 @@
 				"All proficiency rules are additions to the game. Weapon proficiencies are tournament-level rules, optional in regular play, and nonweapon proficiencies are completely optional. Proficiencies are not necessary for a balanced game. They add an additional dimension to characters, however, and anything that enriches characterization is a bonus. If weapon proficiencies are used in your game, expect them to apply to all characters, including NPCs. Nonweapon proficiencies may be used by players who enjoy them and ignored by those who don’t without giving unfair advantages to anyone (provided your DM allows this; he’s the one who must deal with any problems).",
 				"Once a proficiency slot is filled, it can never be changed or reassigned.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Acquiring Proficiencies",
 					"page": 70,
 					"entries": [
@@ -6257,12 +6243,12 @@
 						"Thereafter, as the character advances in experience levels, he gains additional proficiency slots. The rate at which he gains them depends on the group he belongs to. Table 34 lists how many weapon and nonweapon proficiency slots the character starts with, and how many levels the character must gain before he earns another slot.",
 						"{@b Initial Weapon Proficiencies} is the number of weapon proficiency slots received by characters of that group at 1st level.",
 						"{@b # Levels} (for both weapon and nonweapon proficiencies) tells how quickly a character gains additional proficiency slots. A new proficiency slot is gained at every experience level that is evenly divisible by the number listed. Rath (a warrior), for example, gains one weapon proficiency slot at every level evenly divisible by 3. He gets one new slot at 3rd level, another at 6th, another at 9th, and so on. (Note that Rath also gains one nonweapon proficiency at 3rd, 6th, 9th, etc.)",
-						"{@b Penalty}  is the modifier to the character’s attack rolls when he fights using a weapon he is not proficient with. Rath, a dwarf, chose to be proficient with the warhammer. Finding himself in a desperate situation, he snatches up a flail, even though he knows little about it (he is not proficient with it). Using with weapon awkwardly, he has a -2 penalty to his chance to hit.",
+						"{@b Penalty} is the modifier to the character’s attack rolls when he fights using a weapon he is not proficient with. Rath, a dwarf, chose to be proficient with the warhammer. Finding himself in a desperate situation, he snatches up a flail, even though he knows little about it (he is not proficient with it). Using with weapon awkwardly, he has a -2 penalty to his chance to hit.",
 						"{@b Initial Nonweapon Proficiencies} is the number of nonweapon proficiency slots that character has at 1st level. Even if you are playing with weapon proficiencies, nonweapon proficiencies are optional."
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Training",
 					"page": 71,
 					"entries": [
@@ -6273,7 +6259,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Weapon Proficiencies",
 					"page": 71,
 					"entries": [
@@ -6401,7 +6387,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Nonweapon Proficiencies",
 					"page": 73,
 					"entries": [
@@ -6593,7 +6579,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Nonweapon Proficiencies",
 					"page": 74,
 					"entries": [
@@ -7310,7 +7296,7 @@
 								"{@b Astrology:} This proficiency gives the character some understanding of the supposed influences of the stars. Knowing the birth date and time of any person, the astrologer can study the stars and celestial events and then prepare a forecast of the future for that person. The astrologer’s insight into the future is limited to the next 30 days, and his knowledge is vague at best. If a successful proficiency check is made, the astrologer can foresee some general event—a great battle, a friend lost, a new friendship made, etc. The DM decides the exact prediction (based on his intentions for the next few gaming sessions). Note that the prediction does not guarantee the result—it only indicates the potential result. If the proficiency check is failed, no information is gained unless a 20 is rolled, in which case the prediction is wildly inaccurate.",
 								"Clearly this proficiency requires preparation and advance knowledge on the part of the DM. Because of this, it is permissible for the DM to avoid the question, although this shouldn’t be done all the time. Players who want to make their DM’s life easier (always a good idea) should consider using this proficiency at the end of a gaming session, giving the DM until the next session to come up with an answer. The DM can use this proficiency as a catalyst and guide for his adventures—something that will prompt the player characters to go to certain places or to try new things.",
 								"Characters with the astrology proficiency gain a +1 bonus to all navigation proficiency checks, provided the stars can be seen.",
-								"{@b Blacksmithing:}  A character with blacksmithing proficiency is capable of making tools and implements from iron. Use of the proficiency requires a forge with a coal-fed fire and bellows, as well as a hammer and anvil. The character cannot make armor or most weapons, but can craft crowbars, grappling hooks, horseshoes, nails, hinges, plows, and most other iron objects.",
+								"{@b Blacksmithing:} A character with blacksmithing proficiency is capable of making tools and implements from iron. Use of the proficiency requires a forge with a coal-fed fire and bellows, as well as a hammer and anvil. The character cannot make armor or most weapons, but can craft crowbars, grappling hooks, horseshoes, nails, hinges, plows, and most other iron objects.",
 								"{@b Blind-fighting:} A character with blind-fighting is skilled at fighting in conditions of poor or no light (but this proficiency does not allow spell use). In total darkness, the character suffers only a -2 penalty to his attack roll (as compared to a -4 penalty without this proficiency). Under starlight or moonlight, the character incurs only a -1 penalty. The character suffers no penalties to his AC because of darkness.",
 								"Furthermore, the character retains special abilities that would normally be lost in darkness, although the effectiveness of these are reduced by one-half (proficiency checks are made at half the normal score, etc.). This proficiency is effective only against opponents or threats within melee distance of the character. Blind-fighting does not grant any special protection from missile fire or anything outside the immediate range of the character’s melee weapon. Thus, AC penalties remain for missile fire. (By the time the character hears the whoosh of the arrow, for example, it is too late for him to react.)",
 								"While moving in darkness, the character suffers only half the normal movement penalty of those without this proficiency.",
@@ -7332,7 +7318,7 @@
 								"{@b Endurance:} A character with endurance proficiency is able to perform continual strenuous physical activity for twice as long as a normal character before becoming subject to the effects of fatigue and exhaustion. In those cases where extreme endurance is required, a successful proficiency check must be made. Note that this proficiency does not enable a character to extend the length of time that he can remain unaffected by a lack of food or water.",
 								"{@b Engineering:} The character is trained as a builder of both great and small things. Engineers can prepare plans for everything from simple machines (catapults, river locks, grist mills) to large buildings (fortresses, dams). A proficiency check is required only when designing something particularly complicated or unusual. An engineer must still find talented workmen to carry out his plan, but he is trained to supervise and manage their work.",
 								"An engineer is also familiar with the principles of siegecraft and can detect flaws in the defenses of a castle or similar construction. He knows how to construct and use siege weapons and machines, such as catapults, rams, and screws.",
-								"{@b Etiquette:}  This proficiency gives the character a basic understanding of the proper forms of behavior and address required in many different situations, especially those involving nobility and persons of rank. Thus, the character will know the correct title to use when addressing a duke, the proper steps of ceremony to greet visiting diplomats, gestures to avoid in the presence of dwarves, etc. For extremely unusual occurrences, a proficiency check must be made for the character to know the proper etiquette for the situation (an imperial visit, for example, is a sufficiently rare event).",
+								"{@b Etiquette:} This proficiency gives the character a basic understanding of the proper forms of behavior and address required in many different situations, especially those involving nobility and persons of rank. Thus, the character will know the correct title to use when addressing a duke, the proper steps of ceremony to greet visiting diplomats, gestures to avoid in the presence of dwarves, etc. For extremely unusual occurrences, a proficiency check must be made for the character to know the proper etiquette for the situation (an imperial visit, for example, is a sufficiently rare event).",
 								"However, having the character know what is correct and actually do what is correct are two different matters. The encounters must still be role-played by the character. Knowledge of etiquette does not give the character protection from a gaffe or faux pas; many people who know the correct thing still manage to do the exact opposite.",
 								"{@b Fire-building:} A character with fire-building proficiency does not normally need a tinderbox to start a fire. Given some dry wood and small pieces of tinder, he can start a fire in {@dice 2d20} minutes. Flint and steel are not required. Wet wood, high winds, or other adverse conditions increase the time to {@dice 3d20}, and a successful proficiency check must be rolled to start a fire.",
 								"{@b Fishing:} The character is skilled in the art of fishing, be it with hook and line, net, or spear. Each hour the character spends fishing, roll a proficiency check. If the roll is failed, no fish are caught that hour. Otherwise, a hook and line or a spear will land fish equal to the difference between the die roll and the character’s Wisdom score. A net will catch three times this amount.",
@@ -7369,7 +7355,7 @@
 								"{@b Pottery:} A character with this proficiency can create any type of clay vessel or container commonly used in the campaign world. The character requires a wheel and a kiln, as well as a supply of clay and glaze. The character can generally create two small- or medium-sized items or one large-sized item per day. The pieces of pottery must then be fired in the kiln for an additional day.",
 								"The raw materials involved cost 3 cp to make a small item, 5 cp to make a medium-sized item, and 1 sp to make a large item.",
 								"{@b Reading Lips:} The character can understand the speech of those he can see but not hear. When this proficiency is chosen, the player must specify what language the character can lip read (it must be a language the character can already speak). To use the proficiency, the character must be within 30 feet of the speaker and be able to see him speak. A proficiency check is made. If the check fails, nothing is learned. If the check is successful, 70% of the conversation is understood. Since certain sounds are impossible to differentiate, the understanding of a lip-read conversation is never better than this.",
-								"{@b Reading/Writing:}  The character can read and write a modern language he can speak, provided there is someone available to teach the character (another PC, a hireling, or an NPC). This proficiency does not enable the character to read ancient languages (see Languages, Ancient).",
+								"{@b Reading/Writing:} The character can read and write a modern language he can speak, provided there is someone available to teach the character (another PC, a hireling, or an NPC). This proficiency does not enable the character to read ancient languages (see Languages, Ancient).",
 								"{@b Religion:} Characters with religion proficiency know the common beliefs and cults of their homeland and the major faiths of neighboring regions. Ordinary information (type of religious symbol used, basic attitude of the faith, etc.) of any religion is automatically known by the character. Special information, such as how the clergy is organized or the significance of particular holy days, requires a proficiency check.",
 								"Additional proficiencies spent on religion enable the character either to expand his general knowledge into more distant regions (using the guidelines above) or to gain precise information about a single faith. If the latter is chosen, the character is no longer required to make a proficiency check when answering questions about that religion. Such expert knowledge is highly useful to priest characters when dealing with their own and rival faiths.",
 								"{@b Riding, Airborne:} The character is trained in handling a flying mount. The particular creature must be chosen when the proficiency is chosen. Additional proficiency slots can be used to learn how to handle other types of mounts. Unlike land-based riding, a character must have this proficiency (or ride with someone who does) to handle a flying mount. In addition, a proficient character can do the following:",
@@ -7703,7 +7689,7 @@
 							"Silver Piece (SP) =",
 							"10",
 							"1",
-							"1⁄",
+							"1⁄5",
 							"1⁄10",
 							"1⁄50"
 						],
@@ -7739,7 +7725,7 @@
 				"Furthermore, in your DM’s campaign, there may be special situations or considerations to bear in mind. The Kingdom of Gonfli may be at war with the neighboring Principality of Boosk. Patriotic Gonflians might refuse Boosk coins (probably because they think the coins are worthless). Practical Booskites might accept the Gonfli florin at half normal value (so they can melt them down and mint new Boosk drachmas). Of course, both groups would send your character to the local money changer (if there is one), who would cheerfully convert your foreign coins to the local tender. He will, of course, charge a small commission (10–30%) for this service.",
 				"Situations such as these can affect the value of any coin. If your characters start flashing about a lot of gold, pumping it into the local economy, merchants will quickly raise prices. As another example, the local lord may commandeer most of the region’s horses for his knights, making those left all that much more expensive.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Starting Money",
 					"page": 89,
 					"entries": [
@@ -7783,7 +7769,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Equipment Lists",
 					"page": 89,
 					"entries": [
@@ -10641,7 +10627,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Equipment Descriptions",
 					"page": 89,
 					"entries": [
@@ -10697,7 +10683,7 @@
 						{
 							"type": "entries",
 							"name": "Weapons",
-							"page":  96,
+							"page": 96,
 							"entries": [
 								"The Weapons Table lists more than just the price of each item. It also gives other game information. Since each weapon is different, you should note this information separately for each weapon your character purchases or finds.",
 								"{@b Weapon Size:} All weapons are classed according to a size category—S, M, L, G, or H. Small (S) weapons are approximately two feet or less in size; medium (M) weapons are two to five feet long; large (L) weapons are generally six feet or greater in length. Giant (G) and huge (H) weapons are not found on the lists, since these are items normally used by ogres, giants, and even greater creatures. They are not items of equipment a PC can normally buy!",
@@ -10724,13 +10710,13 @@
 										"{@b Mancatcher:} This item is a highly specialized type of polearm designed to capture without killing a victim. It consists of a long pole with a spring-loaded set of sharpened jaws at the end. The victim is caught between the arms, which then snap shut. The mancatcher is effective only on man-sized creatures. The target is always treated as AC 10, modified for Dexterity. If a hit is scored, the character is caught. The caught victim loses all shield and Dexterity bonuses and can be pushed and pulled about. This causes an automatic {@dice 1d2} points of damage per round and gives a 25% chance of pulling the victim to the ground. The victim can escape on a successful bend bars/lift gates roll, although this results in {@dice 1d2} points more damage. A common tactic is to use the weapon to pull horsemen off their mounts, then pin them to the ground.",
 										"{@b Polearms:} A popular group of weapons during the ancient and Medieval periods were the polearms. Their length was a distinct advantage and, for the peasant, they were a relatively easy weapon to make. Thus, there came to be an abundance of polearms of different sizes and shapes. Due to their numbers, there is no standard system for naming polearms. The names used in the AD&D game might possibly be applied to other weapons elsewhere.",
 										"Because of their length, all polearms are infantry weapons and require two hands to use. They are almost always the weapon of the common peasant and soldier, who, lacking a horse and heavy armor, needs some weapon to keep the enemy’s knights at bay. Thus, most polearms are intended to be used in close-packed formations that present a forest of sharp points and wicked blades to any knight foolish enough to charge.",
-										"{@b Awl Pike:}  Essentially this is a long spear 12 to 20 feet long ending in a spike point or tapered spear head. It was a popular weapon during the Renaissance. Since the pike stuck out in front, men could be packed side-by-side in dense formations, and several rows of men could fight. Large blocks of pikemen made formidable troops. However, once the pikemen engaged in close combat, they normally dropped their clumsy awl pikes and fought hand-to-hand with short swords.",
+										"{@b Awl Pike:} Essentially this is a long spear 12 to 20 feet long ending in a spike point or tapered spear head. It was a popular weapon during the Renaissance. Since the pike stuck out in front, men could be packed side-by-side in dense formations, and several rows of men could fight. Large blocks of pikemen made formidable troops. However, once the pikemen engaged in close combat, they normally dropped their clumsy awl pikes and fought hand-to-hand with short swords.",
 										"{@b Bardiche:} One of the simplest of polearms, the bardiche is an elongated battle axe. A large curving axe-head is mounted on the end of a shaft 5 to 8 feet long. It probably grew out of common peasant tools and was popular with them. One relative disadvantage is that the bardiche required more space to wield than a pike or a spear.",
 										"{@b Bec de corbin:} This was a highly specialized weapon of the upper classes during the Late Middle Ages and the early Renaissance. It is an early can-opener designed specifically to deal with plate armor. The pick or beak is made to punch through plate, while the hammer side can be used to give a stiff blow. The end is fitted with a short blade for dealing with unarmored or helpless foes. The weapon is about 8 feet long. Since the weapon relies on impact, a great deal of swinging space is needed.",
 										"{@b Bill-guisarme:} A particularly bizarre-looking combination weapon, the bill-guisarme is an outgrowth of the common bill hook. Mounted on a 7 to 8-foot-long pole, it has a combination of a heavy cleaver blade, a jutting back spike, and a hook or spike on the end. Thus, it can be used in several different ways. Like most polearms, it requires lots of room to use.",
 										"{@b Fauchard:} An outgrowth of the sickle and scythe, the fauchard is a long, inward curving blade mounted on a shaft 6 to 8 feet long. It can slash or thrust, although the inward curving point makes thrusting rather ineffective. Its advantage is that a peasant can easily convert his common scythe into this weapon of war.",
 										"{@b Fauchard-fork:} This is an attempted improvement on the fauchard, adding a long spike or fork to the back of the blade. Supposedly this improves the thrusting ability of the weapon. It is still an inefficient weapon.",
-										"{@b Glaive:}  One of the most basic polearms, the glaive is a single-edged blade mounted on an 8 to 10-foot-long shaft. While not the most efficient weapon, it is relatively easy to make and use. Normally the blade turns outward to increase the cutting area until it almost resembles a cleaver or axe.",
+										"{@b Glaive:} One of the most basic polearms, the glaive is a single-edged blade mounted on an 8 to 10-foot-long shaft. While not the most efficient weapon, it is relatively easy to make and use. Normally the blade turns outward to increase the cutting area until it almost resembles a cleaver or axe.",
 										"{@b Glaive-guisarme:}Another combination weapon, this one takes the basic glaive and adds a spike or hook to the back of the blade. In theory, this increases the usefulness of the weapon although its actual application is somewhat questionable.",
 										"{@b Guisarme:}Thought to have derived from a pruning hook, this is an elaborately curved heavy blade. While convenient and handy, it is not very effective.",
 										"{@b Guisarme-voulge:}This weapon has a modified axe blade mounted on an 8-foot-long shaft. The end of the blade tapers to a point for thrusting and a back spike is fitted for punching through armor. Sometimes this spike is replaced by a sharpened hook for dismounting riders.",
@@ -10752,7 +10738,7 @@
 						{
 							"type": "entries",
 							"name": "Armor",
-							"page":  99,
+							"page": 99,
 							"entries": [
 								"You are going to want your player character to buy armor, if he is allowed to use any. Armor is the easiest and cheapest way to improve your character’s chance of surviving the more violent dangers of the adventuring life. Clearly, the better the armor the character possesses, the less likely he is to be hurt. {@b Armor protection is measured by Armor Class (AC), a number rating; the lower the Armor Class number, the better the protection.} Table 46 lists the values for all the types of armor found in the equipment lists.",
 								{
@@ -10822,7 +10808,7 @@
 								"{@b Brigandine:} This armor is made from small metal plates sewn or riveted to a layer of canvas or leather and protected by an outer layer of cloth. It is rather stiff and does not provide adequate protection to the joints where the metal plates must be spaced widely or left off.",
 								"{@b Bronze plate mail:} This is a plate mail armor—a combination of metal plates, chain mail or brigandine, leather and padding— made of softer bronze. It is easier and cheaper to make than steel armor, but it does not protect as well. A large breastplate and other metal plates cover areas of the body, but the other materials must protect the joints and movable parts of the body. It is not the full plate armor of the heavy knight of the Late Middle Ages and the Renaissance.",
 								"{@b Chain mail:} This armor is made of interlocking metal rings. It is always worn with a layer of quilted fabric padding underneath to prevent painful chafing and to cushion the impact of blows. Several layers of mail are normally hung over vital areas. The links yield easily to blows, absorbing some of the shock. Most of the weight of this armor is carried on the shoulders and it is uncomfortable to wear for long periods of time.",
-								"{@b Field plate armor:}  This is the most common version of full plate armor, consisting of shaped and fitted metal plates riveted and interlocked to cover the entire body. It includes gauntlets, boots, and a visored helmet. A thick layer of padding must be worn underneath. However, the weight of the suit is well-distributed over the whole body. Such armor hampers movement only slightly. Aside from its expense, the main disadvantages are the lack of ventilation and the time required to put it on and take it off (see the \"Getting Into and Out of Armor\" section). Each suit of field plate must be individually fitted to its owner by a master armorer, although captured pieces can be resized to fit the new owner (unless such is patently absurd, such as a human trying to resize a halfling’s armor).",
+								"{@b Field plate armor:} This is the most common version of full plate armor, consisting of shaped and fitted metal plates riveted and interlocked to cover the entire body. It includes gauntlets, boots, and a visored helmet. A thick layer of padding must be worn underneath. However, the weight of the suit is well-distributed over the whole body. Such armor hampers movement only slightly. Aside from its expense, the main disadvantages are the lack of ventilation and the time required to put it on and take it off (see the \"Getting Into and Out of Armor\" section). Each suit of field plate must be individually fitted to its owner by a master armorer, although captured pieces can be resized to fit the new owner (unless such is patently absurd, such as a human trying to resize a halfling’s armor).",
 								"{@b Full Plate:} This is the impressive, high Gothic-style armor of the Late Middle Ages and Renaissance. It is perfectly forged and fitted. All the plates are interlocking and carefully angled to deflect blows. The surfaces are normally highly ornamented with etching and inlaid metals. Each suit must be carefully custom-fitted to the owner and there is only a 20% chance that a captured suit can be refitted to a new owner of approximately the same size. The metal plates are backed by padding and chain mail. The weight is welldistributed. The armor is hot, slow to don, and extremely expensive. Due to these factors, it tends to be used more for parades and triumphs than actual combat.",
 								"{@b Hide:} This is armor prepared from the extremely thick hide of a creature (such as an elephant) or from multiple layers of regular leather. It is stiff and hard to move in.",
 								"{@b Leather:} This armor is made of leather hardened in boiling oil and then shaped into breastplate and shoulder protectors. The remainder of the suit is fashioned from more flexible, somewhat softer materials.",
@@ -10836,7 +10822,7 @@
 								"The {@i medium shield} is carried in the same manner as the small shield. Its weight prevents the character from using his shield hand for other purposes. With a medium shield, a character can protect against any frontal or flank attacks.",
 								"The {@i body shield} is a massive shield reaching nearly from chin to toe. It must be firmly fastened to the forearm and the shield hand must grip it at all times. It provides a great deal of protection, improving the Armor Class of the character by 1 against melee attacks and by 2 against missile attacks, for attacks from the front or front flank sides. It is very heavy; the DM may wish to use the optional encumbrance system if he allows this shield.",
 								"{@b Splint Mail:} The existence of this armor has been questioned. It is claimed that the armor is made of narrow vertical strips riveted to a backing of leather and cloth padding. Since this is not flexible, the joints are protected by chain mail.",
-								"{@b Studded leather:}  This armor is made from leather (not hardened as with normal leather armor) reinforced with closeset metal rivets. In some ways it is very similar to brigandine, although the spacing between each metal piece is greater.",
+								"{@b Studded leather:} This armor is made from leather (not hardened as with normal leather armor) reinforced with closeset metal rivets. In some ways it is very similar to brigandine, although the spacing between each metal piece is greater.",
 								"In addition to the types of armor listed above, your DM may have special armors prepared from rare or exotic materials. Since it is highly unlikely that your character can afford these at the start, the DM will tell you when you need to know about such items.",
 								{
 									"type": "entries",
@@ -10876,7 +10862,7 @@
 					"type": "inset",
 					"entries": [
 						{
-							"type": "section",
+							"type": "entries",
 							"name": "",
 							"page": 102,
 							"entries": [
@@ -11587,7 +11573,7 @@
 				"A few character classes have a limited ability to cast spells. The ranger, through his close association with nature, is able to cast a few spells, though his choices are limited to his natural inclinations. The paladin, through his devotion and humility, can use some of the spells of the priest. The bard, through luck, happenstance, curiosity, and perseverance, can manage a few wizard spells, perhaps by persuading a lonely wizard to reveal his secrets.",
 				"Regardless of their source, all spells fall into the general categories of wizard or priest. Although some spells appear in both categories, in general the categories differ in how spells are acquired, stored, and cast.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Wizard Spells",
 					"page": 107,
 					"entries": [
@@ -11661,7 +11647,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Priest Spells",
 					"page": 111,
 					"entries": [
@@ -11674,7 +11660,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Casting Spells",
 					"page": 111,
 					"entries": [
@@ -11700,7 +11686,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Magical Research",
 					"page": 113,
 					"entries": [
@@ -11711,7 +11697,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Spell Descriptions",
 					"page": 113,
 					"entries": [
@@ -11753,7 +11739,7 @@
 				"However, a character also improves by increasing his power. Although the player can improve his play, he cannot arbitrarily give his character more hit points, more spells, or a better chance to hit with an attack. These gains are made by earning experience points (XP).",
 				"An experience point is a concrete measure of a character’s improvement. It represents a host of abstract factors: increased confidence, physical exercise, insight, and on-thejob training. When a character earns enough experience points to advance to the next experience level, these abstract factors translate into a measurable improvement in the abilities of the character. Just what areas improve and how quickly improvement occurs all depend on the character’s class.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Group Experience Awards",
 					"page": 117,
 					"entries": [
@@ -11761,7 +11747,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Individual Experience Awards",
 					"page": 117,
 					"entries": [
@@ -11771,7 +11757,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Training",
 					"page": 117,
 					"entries": [
@@ -11780,7 +11766,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Where's the Specific Info?",
 					"page": 117,
 					"entries": [
@@ -11806,7 +11792,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Definitions",
 					"page": 118,
 					"entries": [
@@ -11828,7 +11814,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "The Attack Roll",
 					"page": 119,
 					"entries": [
@@ -11918,7 +11904,7 @@
 							"name": "",
 							"entries": [
 								{
-									"type": "section",
+									"type": "entries",
 									"name": "Weapon Type vs. Armor Modifiers (Optional Rule)",
 									"page": 120,
 									"entries": [
@@ -12041,7 +12027,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Calculating THAC0",
 					"page": 121,
 					"entries": [
@@ -12251,7 +12237,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Combat and Encounters",
 					"page": 121,
 					"entries": [
@@ -12259,7 +12245,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "The Combat Round",
 					"page": 122,
 					"entries": [
@@ -12315,7 +12301,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "The Combat Sequence",
 					"page": 122,
 					"entries": [
@@ -12362,7 +12348,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Initiative",
 					"page": 124,
 					"entries": [
@@ -12714,7 +12700,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Attacking with Two Weapons",
 					"page": 127,
 					"entries": [
@@ -12725,7 +12711,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Movement in Combat",
 					"page": 127,
 					"entries": [
@@ -12773,7 +12759,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Attacking without Killing",
 					"page": 128,
 					"entries": [
@@ -13001,7 +12987,7 @@
 								"If a character reaches 0 hit points due to punching attacks (or any combination of punching and normal attacks), he immediately falls unconscious.",
 								"A character can voluntarily pull his punch, not causing any hit point damage, provided he says so before the damage is applied to his enemy. There is still a chance of a knockout.",
 								"{@b % K.O.:} Although a punch does very little damage, there is a chance of knocking an opponent out. This chance is listed on the table as \"% K.O.\" If this number or less is rolled on percentile dice, the victim is stunned for {@dice 1d10} rounds.",
-								"{@b Wrestle:  This lists the action or type of grip the character managed to get. Wrestling moves marked with an asterisk (*) are holds maintained from round to round, unless they are broken. A hold is broken by a throw, a gouge, the assistance of another person, or the successful use of a weapon. (Penalties to the attack roll apply to weapon attacks by a character who is in a hold.)}",
+								"{@b Wrestle: This lists the action or type of grip the character managed to get. Wrestling moves marked with an asterisk (*) are holds maintained from round to round, unless they are broken. A hold is broken by a throw, a gouge, the assistance of another person, or the successful use of a weapon. (Penalties to the attack roll apply to weapon attacks by a character who is in a hold.)}",
 								"All wrestling moves inflict 1 point of damage plus Strength bonus (if the attacker desires), while continued holds cause cumulatively 1 more point of damage for each round they are held. A head lock held for six rounds would inflict 21 points of damage total (1+2+3+4+5+6). Remember, this is the equivalent of pressing hard on a full-nelson headlock for roughly six minutes!"
 							]
 						},
@@ -13045,12 +13031,12 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Touch Spells and Combat",
 					"page": 131,
 					"entries": [
 						"Many spells used by priests and wizards take effect only when the target is touched by the caster. Under normal circumstances, this is no problem—the spellcaster reaches out and touches the recipient. However, if the target is unwilling, or the spell is used in the midst of a general melee, the situation is much different.",
-						"{@b Unwilling Targets:}  The spellcaster must make a successful attack roll for the spell to have any effect. The wizard or priest calculates his to-hit number normally, according to the intended victim’s Armor Class and other protections. The DM can modify the roll if the victim is unprepared for or unaware of the attack. If the roll succeeds, the spellcaster touches the target and the normal spell effect occurs.",
+						"{@b Unwilling Targets:} The spellcaster must make a successful attack roll for the spell to have any effect. The wizard or priest calculates his to-hit number normally, according to the intended victim’s Armor Class and other protections. The DM can modify the roll if the victim is unprepared for or unaware of the attack. If the roll succeeds, the spellcaster touches the target and the normal spell effect occurs.",
 						"{@b Willing Targets:} When attempting to cast a spell on a willing target, the casting is automatic as long as both characters are not engaged in combat. For example, if a fighter withdraws from melee, a cleric could heal him the next round.",
 						"If the recipient of the spell attempts to do anything besides waiting for the spell to take effect, an attack roll against AC 10 must be made. However, no AC modifiers for Dexterity are applied, since the target is not trying to avoid the spell!",
 						"Whenever a touch spell is successful, the spellcaster suffers from any special defenses of his target, if they are continually in operation. A successful touch to a vampire would not result in energy drain, since the power only works when the vampire wills it, but touching a fire elemental would result in serious burns.",
@@ -13058,7 +13044,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Missile Weapons in Combat",
 					"page": 131,
 					"entries": [
@@ -13192,7 +13178,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Special Defenses",
 					"page": 133,
 					"entries": [
@@ -13217,7 +13203,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "The Saving Throw",
 					"page": 133,
 					"entries": [
@@ -13569,13 +13555,13 @@
 								"For example, magical armor would not help a character’s saving throw against the sting of a giant scorpion, the choking effects of a {@i {@spell stinking cloud|XPHB}} spell, or the transformation effect of a {@i {@spell Polymorph Other|XPHB|polymorph others}} spell. Magical armor does extend its protective power to saving throws against acid sprays or splashes, disintegration, magical and normal fires, spells that cause damage, and falls (if any saving throw is allowed in this case). Other situations must be handled on a case-by-case basis by the DM.",
 								"{@b Specific spells and magical items} have effects, both good and ill, on a character’s saving throws. Often, spells force the victim to save with a penalty, which makes even the most innocuous spell quite dangerous. (Specific information can be found in the spell descriptions, for spells, or in the DMG’s Magical Items section, for magical items.)",
 								"{@b Minor poisons} of verminous creatures such as giant centipedes, while dangerous, are weak and unlikely to bring about death in a healthy man. To recreate this effect in the game, a saving throw bonus is allowed for anyone affected by these poisons. The DM has this information.",
-								"{@b Unpredictable situations}  are sure to crop up. When this happens, the DM must determine whether saving throw modifiers are appropriate. As a guideline, modifiers for situations should range from -4 to +4. An evil cleric attacked in his shrine could very well have a +3 bonus to all his saving throws and a -3 penalty applied to those of his enemies. The powerful evil of the place could warrant the modifier."
+								"{@b Unpredictable situations} are sure to crop up. When this happens, the DM must determine whether saving throw modifiers are appropriate. As a guideline, modifiers for situations should range from -4 to +4. An evil cleric attacked in his shrine could very well have a +3 bonus to all his saving throws and a -3 penalty applied to those of his enemies. The powerful evil of the place could warrant the modifier."
 							]
 						}
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Magic Resistance",
 					"page": 135,
 					"entries": [
@@ -13622,7 +13608,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Turning Undead",
 					"page": 136,
 					"entries": [
@@ -13903,7 +13889,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Injury and Death",
 					"page": 137,
 					"entries": [
@@ -13920,7 +13906,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Wounds",
 					"page": 139,
 					"entries": [
@@ -13931,7 +13917,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Special Damage",
 					"page": 139,
 					"entries": [
@@ -13997,7 +13983,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Healing",
 					"page": 140,
 					"entries": [
@@ -14034,7 +14020,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Character Death",
 					"page": 141,
 					"entries": [
@@ -14089,7 +14075,7 @@
 			"entries": [
 				"Hidden out there in the campaign world are great treasures awaiting discovery. Ancient dragons rest on huge hoards of gold, silver, and gems. Orc chieftains greedily garner the loot from the latest raid. Mindless jellies ooze through the bones and armor of unfortunate souls. Foul lords of darkness cunningly leave small fortunes apparently unguarded, like spiders luring in the flies. Stooped wizards assemble shelves of arcane magical items. Some treasures, like those of dragons, are gathered and hoarded for reasons fully understood only by their collectors. Others are gathered for more mundane purposes—power, luxury, and security. A rare few troves date from eons before, their owners long dead and forgotten. Some treasure hoards are small, such as the pickings of a yellow mold. Others are enormous, such as the Tyrant King’s treasury. Treasures may be free for the taking or fiercely trapped and watched over.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Treasure Types",
 					"page": 142,
 					"entries": [
@@ -14101,7 +14087,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Magical Items",
 					"page": 143,
 					"entries": [
@@ -14113,20 +14099,20 @@
 						"A rare few weapons have even greater powers. These may allow your character to sense danger, heal wounds, float in midair, or have the most amazing luck. The rarest of the rare can actually communicate with your character and are imbued with an otherworldly intelligence. While the most powerful of magical weapons, these clever instruments of destruction sometimes seek to impose their wills on their owners.",
 						"When you find a magical weapon, more than likely you do not know its properties. Some functions, such as the advantage it gives you in combat, can be learned by trial and error. Other properties must be learned through research and spells. Ancient histories and legend lore spells can provide information on the properties of your weapon. On rare occasions, properties are discovered through blind luck. Simply commanding the weapon to activate one power after another (hoping it will suddenly spring to life) works only for the most minor abilities—detecting danger, spotting secret doors, or locating treasure. Greater abilities require that specific commands be uttered, perhaps in long-forgotten languages.",
 						"{@b Magical Armor:} Enchanted armors are the complements to magical weapons. These armors have a +1 or better bonus to their normal Armor Class, being made of stuff stronger and finer than nonmagical armor. Furthermore, these armors grant some measure of protection against attacks that normal armors would not stop. Chain mail +1, for instance, improves the character’s saving throw against the fiery breath of a dragon by 1, thus providing more than just a physical shield. In rare instances, armor may possess extraordinary powers. Although such armors are generally finely made and elaborately engraved. characters can discover the armors’ powers only by the same methods they use to discover the powers of magical weapons.",
-						"{@b Potions and Oils:}  Magical potions and oils are easily found but hard to identify. They come in small bottles, jugs, pots, or vials and clearly radiate magic if a detection spell is used. However, the effect of any potion is unknown until some brave soul tries a small sample. The results can be quite varied. The imbiber may discover he can float or fly, resist great heat or cold, heal grievous wounds, or fearlessly face the greatest dangers. He may also find himself hopelessly smitten by the first creature he sees or struck dead by a powerful poison. It is a risk that must be taken to learn the nature of the potion.",
+						"{@b Potions and Oils:} Magical potions and oils are easily found but hard to identify. They come in small bottles, jugs, pots, or vials and clearly radiate magic if a detection spell is used. However, the effect of any potion is unknown until some brave soul tries a small sample. The results can be quite varied. The imbiber may discover he can float or fly, resist great heat or cold, heal grievous wounds, or fearlessly face the greatest dangers. He may also find himself hopelessly smitten by the first creature he sees or struck dead by a powerful poison. It is a risk that must be taken to learn the nature of the potion.",
 						"{@b Scrolls:} Scrolls are a convenience and luxury for spellcasters. By reading the incantation written on the pages, the priest or wizard can instantly cast that spell. He does not need to memorize it, have the material components handy, or do any of the things normal spellcasting requires. Experienced and powerful wizards normally spend their evenings preparing such scrolls for their own adventuring use.",
 						"Some scrolls are usable by all characters, granting special but temporary protections from various dangers—evil creatures, werewolves, powerful beings from other planes, etc. Other scrolls bear hideous or humorous curses, brought into effect at the mere reading of their titles. Unfortunately, the only way to know what a scroll contains is to silently scan its contents. For scrolls containing wizard spells, this requires the use of a read magic spell. Other scrolls can be read by all. This scan does not cast the spell written on the scroll, but it tells the character what is written there (and exposes him to the effects of curses). Once the scroll is read, it can be used at any time in the future by that character.",
 						"{@b Rings:} Magical rings are usable by many different classes and bestow a wide range of powers, from pyrotechnic displays to wishes. While the aura of a magical ring can be detected, its properties cannot be discovered until it is worn and the command word is uttered. (The command word is most commonly found inscribed on the inside of the band.) As with all magical items, some rings can harm your character. Worse still, cursed rings can be removed only with the aid of spells!",
 						"{@b Wands, Staves, and Rods:} These are among the most powerful of standard magical items. Wands are commonly used by wizards, allowing them to cast powerful spells with the flick of a wrist. Staves can be used by either a wizard or a priest. Staves can be truly destructive, dwarfing even the potential of a wand. Rods are the rarest of all, the accouterments of witch-kings and great lords. With rods come dominance and power.",
 						"Fortunately for your character, few of these items are cursed or dangerous to handle. But all must be operated by a command word—a specific word or phrase that triggers the power within. No wand, stave, or rod shows any indication of its powers by mere sight or handling. Careful research and probing are most often needed to tap the potential stored within.",
 						"Wands, staves, and rods are not limitless in their power. Each use drains them slightly, using up a charge. There is no power gauge or meter showing what is left. A character discovers his wand is drained only when it no longer functions or suddenly crumbles into useless dust.",
-						"{@b Miscellaneous Magic:}  Miscellaneous magical items are where the true variety of magical treasures lies. Each item possesses some unique power. There are horseshoes to make your horse go faster, brooms to ride, sacks that hold more than they should, paints that create real things, girdles that grant great strength, caps to make your character smarter, books that increase ability scores, and much, much more. Each item is different and not all can be identified in the same way. The effects of some become obvious the instant the item is handled, donned, or opened. Others require research and questioning to learn the command word needed to activate them. All are quite valuable and rare.",
+						"{@b Miscellaneous Magic:} Miscellaneous magical items are where the true variety of magical treasures lies. Each item possesses some unique power. There are horseshoes to make your horse go faster, brooms to ride, sacks that hold more than they should, paints that create real things, girdles that grant great strength, caps to make your character smarter, books that increase ability scores, and much, much more. Each item is different and not all can be identified in the same way. The effects of some become obvious the instant the item is handled, donned, or opened. Others require research and questioning to learn the command word needed to activate them. All are quite valuable and rare.",
 						"{@b Artifacts and Relics:} Finally, there are artifacts and relics. Don’t count on your PC ever finding one of these rarest of all magical items. Even if your character does find one, think carefully before you decide to let him keep it permanently. Artifacts are the most powerful magical items in the game. Indeed, many are powerful enough to alter the course of history! They are all unique and have unique histories. You can never find more than one Hand of Vecna in a world. Because it is unique, each artifact has special and significant powers. Artifacts never appear by accident; they are always placed by the DM.",
 						"Finding artifacts is always the result of a very special adventure. Your DM has placed that artifact for a reason. It is not likely that he really intends for your characters to keep it. Instead, he has something arranged in which you need that artifact for a specific purpose. The problem with keeping artifacts is that they are too powerful. Not only do they unbalance your character in the short run, they also eventually corrupt and destroy him. The magical power of artifacts is such that they destroy their owners sooner or later. There is a price to be paid for power, and it is not a cheap one."
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Dividing and Storing Treasure",
 					"page": 145,
 					"entries": [
@@ -14157,7 +14143,7 @@
 				"Specific encounters generally have more choices of action—your DM may want you to discover some important information or set up a particularly difficult battle. Specific encounters usually yield greater treasures and more magical items. Creatures may be placed by the DM to guard the armory or prevent the characters from reaching the throne room.",
 				"Sometimes encounters are not with people or monsters but with things. The fountain in the forest is an encounter, but your characters cannot fight it or talk to it (well, maybe not). So what are you supposed to do? In these cases, the encounter is more of a puzzle. You have to figure out why this fountain is here, what it can do, and if it is important to your adventure. It may be a red herring—something placed there just to confuse you; it may be a set up for a future adventure—later on your characters may learn that the flaming fountain they saw is important to their latest mission. It may be a deadly trap. To find out, though, you will have to deal with the thing in some way. You could throw stones into the pool, drink the glowing water, try to walk through the flames, or use spells to learn more. By doing these things, you may get more information from your DM. Of course, you may not like the answer! (\"You drank the water? Oh, dear. Tsk, tsk, tsk.\")",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "The Surprise Roll",
 					"page": 147,
 					"entries": [
@@ -14182,7 +14168,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Encounter Distance",
 					"page": 148,
 					"entries": [
@@ -14190,7 +14176,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Encounter Options",
 					"page": 148,
 					"entries": [
@@ -14199,9 +14185,9 @@
 						"Sometimes you want to avoid an encounter simply because it will take too much time. While riding with an urgent message for his lord, your character rides into a group of wandering pilgrims. Paying them no mind, he lashes his horse and gallops past.",
 						"Evading or avoiding an encounter is not always successful. Some monsters pursue; others do not. In the examples above, Frazznargth the Impious (being a prudent commander) orders a mounted patrol to chase the characters and bring them in for questioning. The pilgrims, on the other hand, shout a few oaths as your galloping horse splashes mud on them and then continue on their way. Your character’s success at evading capture will depend on movement rates, determination of pursuit, terrain, and just a little luck. Sometimes when he really should be caught, your character gets lucky. At other times, well, he just has to stand his ground.",
 						"{@b Talk:} Your character doesn’t run from encounters all the time, and attacking everything you meet eventually leads to problems. Sometimes the best thing to do is talk, whether it’s casual conversation, hardball negotiation, jovial rumor-swapping, or intimidating threats. In fact, talking is often better than fighting. To solve the problems your DM has created for your character, you need information. Asking the right questions, developing contacts, and putting out the word are all useful ways to use an encounter. Not everything you meet, human or otherwise, is out to kill your character. Help often appears in the most surprising forms. Thus it often pays to take the time to talk to creatures.",
-						"{@b Fight:}  Of course, there are times when you don’t want to or can’t run away. (Running all the time is not that heroic.) And there are times when you know talking is not a good idea. Sooner or later, your character will have to fight. The real trick is knowing when to fight and when to talk or run. If you attack every creature you meet, the first thing that will happen is that nobody will want to meet with your character. Your character will also manage to kill or chase off everyone who might want to help him. Finally, sooner or later your DM is going to get tired of this and send an incredibly powerful group of monsters after your character. Given the fact that you’ve been killing everything in sight, he’s justified in doing this.",
+						"{@b Fight:} Of course, there are times when you don’t want to or can’t run away. (Running all the time is not that heroic.) And there are times when you know talking is not a good idea. Sooner or later, your character will have to fight. The real trick is knowing when to fight and when to talk or run. If you attack every creature you meet, the first thing that will happen is that nobody will want to meet with your character. Your character will also manage to kill or chase off everyone who might want to help him. Finally, sooner or later your DM is going to get tired of this and send an incredibly powerful group of monsters after your character. Given the fact that you’ve been killing everything in sight, he’s justified in doing this.",
 						"So it is important always to know who you are attacking and why. As with the best police in the world today, the trick is to figure out who are the bad guys and who are the good guys. Make mistakes and you pay. You may kill an NPC who has a vital clue, or unintentionally anger a baron far more powerful than yourself. NPCs will be reluctant to associate with your character, and the law will find fewer and fewer reasons to protect him. It is always best to look on combat as a last resort.",
-						"{@b Wait:}  Sometimes when you encounter another group, you don’t know what you should do. You don’t want to attack them in case they are friendly, but you don’t want to say anything to provoke them. What you can do is wait and see how they react. Waiting is a perfectly sensible option. However, there is the risk that in waiting, you lose the advantage should the other side suddenly decide to attack. Waiting for a reaction so that you can decide what to do causes a +1 penalty to the first initiative roll for your group, if the other side attacks.",
+						"{@b Wait:} Sometimes when you encounter another group, you don’t know what you should do. You don’t want to attack them in case they are friendly, but you don’t want to say anything to provoke them. What you can do is wait and see how they react. Waiting is a perfectly sensible option. However, there is the risk that in waiting, you lose the advantage should the other side suddenly decide to attack. Waiting for a reaction so that you can decide what to do causes a +1 penalty to the first initiative roll for your group, if the other side attacks.",
 						"Of course, in any given encounter, there may be many other options open to your character. The only limit is your imagination (and common sense). Charging a band of orcs to break through their lines and flee may work. Talking them down with an elaborate bluff about the army coming up behind you might scare them off. Clever use of spells could end the encounter in sudden and unexpected ways. The point is, this is a role-playing game and the options are as varied as you wish to make them."
 					]
 				}
@@ -14216,7 +14202,7 @@
 				"{@i An NPC is any person, creature, or monster that is controlled by the DM.} Most NPCs are either people (intelligent races that live in local society) or monsters (intelligent and unintelligent creatures that aren’t normally found in towns and villages). The term \"monster\" is only a convenient label. It doesn’t mean the creature is automatically dangerous or hostile. Likewise, NPCs who are people aren’t uniformly helpful and cooperative. As with all things, the range of possible reactions of NPCs to PCs covers the entire spectrum.",
 				"In the course of their adventures, player characters will be most concerned with three groups of NPCs: hirelings, followers, and henchmen. It is their aid that helps player characters vanquish deadly monsters and accomplish mighty deeds. As their names imply, these NPCs can be persuaded in various ways to join the player characters in their adventures. The most common methods of persuasion are money and loyalty.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Hirelings",
 					"page": 151,
 					"entries": [
@@ -14255,7 +14241,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Followers",
 					"page": 151,
 					"entries": [
@@ -14266,7 +14252,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Henchmen",
 					"page": 151,
 					"entries": [
@@ -14284,7 +14270,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Player Character Obligations",
 					"page": 153,
 					"entries": [
@@ -14304,7 +14290,7 @@
 			"entries": [
 				"Before a character can do anything in the dungeon or the wilderness, he has to be able to see what he is doing. If a character can’t see a target, his chances of hitting it are very small. If he can’t see, he can’t read a scroll or a large \"Keep Out\" sign on the wall. In the AD&D game, characters can see set distances and often by fantastic means that defy logic.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Limits of Vision",
 					"page": 154,
 					"entries": [
@@ -14411,7 +14397,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Light",
 					"page": 155,
 					"entries": [
@@ -14492,7 +14478,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Infravision",
 					"page": 155,
 					"entries": [
@@ -14500,7 +14486,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Using Mirrors",
 					"page": 155,
 					"entries": [
@@ -14521,7 +14507,7 @@
 					"type": "insetReadaloud",
 					"entries": [
 						"{@i Louise (Delsenora’s player):} \"Delsenora’s going to research her new spell.\"",
-						"{@i DM:}  \"OK, it’ll take three weeks. Nothing happens to her. While she’s doing that, the rest of you get a chance to heal your wounds and do some stuff that you’ve been ignoring. Johann [pointing at another player], you’d better spend some time at the church. The patriarch’s been a little upset that you haven’t been attending ceremonies.\"",
+						"{@i DM:} \"OK, it’ll take three weeks. Nothing happens to her. While she’s doing that, the rest of you get a chance to heal your wounds and do some stuff that you’ve been ignoring. Johann [pointing at another player], you’d better spend some time at the church. The patriarch’s been a little upset that you haven’t been attending ceremonies.\"",
 						"{@i Jon (Johann’s player):} \"Can’t I go out and earn some more experience?\"",
 						"{@i DM (Not wanting to deal with a split-up group):} \"The patriarch mumbles something about failing in your duties to your deity, and he rubs his holy symbol a lot. You know, it’s not very often that low levels like you have personal audiences with the patriarch. What do you think?\"",
 						"{@i Jon:} \"Marvelous. Subtle hint. I’ll stay and be a good boy.\"",
@@ -14533,7 +14519,7 @@
 				"Campaign time is measured just as it is in real life: years, months, weeks, days, hours, minutes, and seconds. But, since this is a fantasy game, the DM can create entirely different calendars for his world. There may be only 10 months in the year or 63 days to a month. When beginning play, these things are not tremendously important, so players need not worry about them right away. With continued adventuring, players eventually become familiar with the calendar of the campaign.",
 				"Campaign time is measured just as it is in real life: years, months, weeks, days, hours, minutes, and seconds. But, since this is a fantasy game, the DM can create entirely different calendars for his world. There may be only 10 months in the year or 63 days to a month. When beginning play, these things are not tremendously important, so players need not worry about them right away. With continued adventuring, players eventually become familiar with the calendar of the campaign.",
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Movement",
 					"page": 157,
 					"entries": [
@@ -14615,7 +14601,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Swimming",
 					"page": 158,
 					"entries": [
@@ -14658,7 +14644,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Climbing",
 					"page": 160,
 					"entries": [
@@ -14943,7 +14929,7 @@
 							"page": 162,
 							"entries": [
 								"{@i Very smooth} surfaces include expanses of smooth, uncracked rock, flush-fitted wooden walls, and welded or bolted metal walls. Completely smooth walls, unbroken by any feature, cannot be climbed by anyone without tools",
-								"{@i Smooth and cracked}  walls include most types of well-built masonry, cavern walls, maintained castle walls, and slightly eroded cliff faces.",
+								"{@i Smooth and cracked} walls include most types of well-built masonry, cavern walls, maintained castle walls, and slightly eroded cliff faces.",
 								"{@i Rough} faces are most natural cliffs, poorly maintained or badly built masonry, and typical wooden walls or stockades. Any natural stone surface is a rough face.",
 								"{@i Rough with ledges} is similar to rough faces but is dotted with grips 3 inches or more wide. Frost-eroded cliffs and natural chimneys are in this category, as are mason ry buildings falling into ruin.",
 								"{@i Ice walls} are cliffs or faces made entirely of frozen ice. These are different from very smooth and smooth surfaces in that there are still many natural cracks and protrusions. They are extremely dangerous to climb, so a Climbing check should be made every round for any character attempting it without tools.",
@@ -14997,7 +14983,7 @@
 			"page": 164,
 			"entries": [
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Wizard Spells",
 					"page": 164,
 					"entries": [
@@ -15022,11 +15008,11 @@
 										"{@spell Charm Person|XPHB}",
 										"{@spell Chill Touch|XPHB}",
 										"{@spell Color Spray|XPHB}",
-										"{@spell Comprehend Languages|XPHB} *",
+										"{@i {@spell Comprehend Languages|XPHB}}",
 										"{@spell Dancing Lights|XPHB}",
 										"{@spell Detect Magic|XPHB}",
 										"{@spell Detect Undead|XPHB}",
-										"{@spell Enlarge|XPHB} *",
+										"{@i {@spell Enlarge|XPHB}}",
 										"{@spell Erase|XPHB}",
 										"{@spell Feather Fall|XPHB}",
 										"{@spell Find Familiar|XPHB}",
@@ -15044,7 +15030,7 @@
 										"{@spell Mount|XPHB}",
 										"{@spell Nystul’s Magical Aura|XPHB}",
 										"{@spell Phantasmal Force|XPHB}",
-										"{@spell Protection From Evil|XPHB} *",
+										"{@i {@spell Protection From Evil|XPHB}}",
 										"{@spell Read Magic|XPHB}",
 										"{@spell Shield|XPHB}",
 										"{@spell Shocking Grasp|XPHB}",
@@ -15077,7 +15063,7 @@
 										"{@spell Bind|XPHB}",
 										"{@spell Blindness|XPHB}",
 										"{@spell Blur|XPHB}",
-										"{@spell Continual Light|XPHB} *",
+										"{@i {@spell Continual Light|XPHB}}",
 										"{@spell Darkness, 15’ Radius|XPHB}",
 										"{@spell Deafness|XPHB}",
 										"{@spell Deeppockets|XPHB}",
@@ -15093,11 +15079,11 @@
 										"{@spell Improved Phantasmal Force|XPHB}",
 										"{@spell Invisibility|XPHB}",
 										"{@spell Irritation|XPHB}",
-										"{@spell Knock|XPHB} *",
-										"{@spell Know Alignment|XPHB} *",
+										"{@i {@spell Knock|XPHB}}",
+										"{@i {@spell Know Alignment|XPHB}}",
 										"{@spell Leomund’s Trap|XPHB}",
 										"{@spell Levitate|XPHB}",
-										"{@spell Locate Object|XPHB} *",
+										"{@i {@spell Locate Object|XPHB}}",
 										"{@spell Magic Mouth|XPHB}",
 										"{@spell Melf’s Acid Arrow|XPHB}",
 										"{@spell Mirror Image|XPHB}",
@@ -15155,16 +15141,16 @@
 										"{@spell Monster Summoning I|XPHB}",
 										"{@spell Nondetection|XPHB}",
 										"{@spell Phantom Steed|XPHB}",
-										"{@spell Protection From Evil, 10’ Radius|XPHB} *",
+										"{@i {@spell Protection From Evil, 10’ Radius|XPHB}}",
 										"{@spell Protection From Normal Missiles|XPHB}",
 										"{@spell Secret Page|XPHB}",
 										"{@spell Sepia Snake Sigil|XPHB}",
 										"{@spell Slow|XPHB}",
 										"{@spell Spectral Force|XPHB}",
 										"{@spell Suggestion|XPHB}",
-										"{@spell Tongues|XPHB} *",
+										"{@i {@spell Tongues|XPHB}}",
 										"{@spell Vampiric Touch|XPHB}",
-										"{@spell Water Breathing|XPHB} *",
+										"{@i {@spell Water Breathing|XPHB}}",
 										"{@spell Wind Wall|XPHB}",
 										"{@spell Wraithform|XPHB}"
 									]
@@ -15215,7 +15201,7 @@
 										"{@spell Polymorph Self|XPHB}",
 										"{@spell Rainbow Pattern|XPHB}",
 										"{@spell Rary’s Mnemonic Enhancer|XPHB}",
-										"{@spell Remove Curse} *",
+										"{@i {@spell Remove Curse}}",
 										"{@spell Shadow Monsters|XPHB}",
 										"{@spell Shout|XPHB}",
 										"{@spell Solid Fog|XPHB}",
@@ -15241,9 +15227,9 @@
 									"items": [
 										"{@spell Advanced Illusion|XPHB}",
 										"{@spell Airy Water|XPHB}",
-										"{@spell Animal Growth} *",
+										"{@i {@spell Animal Growth}}",
 										"{@spell Animate Dead|XPHB}",
-										"{@spell Avoidance} *",
+										"{@i {@spell Avoidance}}",
 										"{@spell Bigby’s Interposing Hand|XPHB}",
 										"{@spell Chaos|XPHB}",
 										"{@spell Cloudkill|XPHB}",
@@ -15254,7 +15240,7 @@
 										"{@spell Dismissal|XPHB}",
 										"{@spell Distance Distortion|XPHB}",
 										"{@spell Domination|XPHB}",
-										"{@spell Dream} *",
+										"{@i {@spell Dream}}",
 										"{@spell Extension II|XPHB}",
 										"{@spell Fabricate|XPHB}",
 										"{@spell False Vision|XPHB}",
@@ -15275,7 +15261,7 @@
 										"{@spell Summon Shadow|XPHB}",
 										"{@spell Telekinesis|XPHB}",
 										"{@spell Teleport|XPHB}",
-										"{@spell Transmute Rock to Mud|XPHB} *",
+										"{@i {@spell Transmute Rock to Mud|XPHB}}",
 										"{@spell Wall of Force|XPHB}",
 										"{@spell Wall of Iron|XPHB}",
 										"{@spell Wall of Stone|XPHB}"
@@ -15314,7 +15300,7 @@
 										"{@spell Guards and Wards|XPHB}",
 										"{@spell Invisible Stalker|XPHB}",
 										"{@spell Legend Lore|XPHB}",
-										"{@spell Lower Water|XPHB} *",
+										"{@i {@spell Lower Water|XPHB}}",
 										"{@spell Mass Suggestion|XPHB}",
 										"{@spell Mirage Arcana|XPHB}",
 										"{@spell Mislead|XPHB}",
@@ -15329,9 +15315,9 @@
 										"{@spell Reincarnation|XPHB}",
 										"{@spell Repulsion|XPHB}",
 										"{@spell Shades|XPHB}",
-										"{@spell Stone to Flesh|XPHB} *",
+										"{@i {@spell Stone to Flesh|XPHB}}",
 										"{@spell Tenser’s Transformation|XPHB}",
-										"{@spell Transmute Water to Dust|XPHB} *",
+										"{@i {@spell Transmute Water to Dust|XPHB}}",
 										"{@spell True Seeing|XPHB}",
 										"{@spell Veil|XPHB}"
 									]
@@ -15433,7 +15419,7 @@
 										"{@spell Energy Drain|XPHB}",
 										"{@spell Foresight|XPHB}",
 										"{@spell Gate|XPHB}",
-										"{@spell Imprisonment|XPHB}} *",
+										"{@i {@spell Imprisonment|XPHB}}}",
 										"{@spell Meteor Swarm|XPHB}",
 										"{@spell Monster Summoning VII|XPHB}",
 										"{@spell Mordenkainen’s Disjunction|XPHB}",
@@ -15453,7 +15439,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Priest Spells",
 					"page": 166,
 					"entries": [
@@ -15469,12 +15455,12 @@
 									"page": 166,
 									"items": [
 										"{@spell Animal Friendship|XPHB}",
-										"{@spell Bless|XPHB} *",
+										"{@i {@spell Bless|XPHB}}",
 										"{@spell Combine|XPHB}",
 										"{@spell Command|XPHB}",
-										"{@spell Create Water|XPHB} *",
-										"{@spell Cure Light Wounds|XPHB} *",
-										"{@spell Detect Evil} *",
+										"{@i {@spell Create Water|XPHB}}",
+										"{@i {@spell Cure Light Wounds|XPHB}}",
+										"{@i {@spell Detect Evil}}",
 										"{@spell Detect Magic|XPHB}",
 										"{@spell Detect Poison|XPHB}",
 										"{@spell Detect Snares & Pits|XPHB}",
@@ -15483,13 +15469,13 @@
 										"{@spell Faerie Fire|XPHB}",
 										"{@spell Invisibility to Animals|XPHB}",
 										"{@spell Invisibility to Undead|XPHB}",
-										"{@spell Light|XPHB} *",
+										"{@i {@spell Light|XPHB}}",
 										"{@spell Locate Animals or Plants|XPHB}",
 										"{@spell Magical Stone|XPHB}",
 										"{@spell Pass Without Trace|XPHB}",
-										"{@spell Protection From Evil|XPHB} *",
-										"{@spell Purify Food & Drink|XPHB} *",
-										"{@spell Remove Fear|XPHB} *",
+										"{@i {@spell Protection From Evil|XPHB}}",
+										"{@i {@spell Purify Food & Drink|XPHB}}",
+										"{@i {@spell Remove Fear|XPHB}}",
 										"{@spell Sanctuary|XPHB}",
 										"{@spell Shillelagh|XPHB}"
 									]
@@ -15512,16 +15498,16 @@
 										"{@spell Barkskin|XPHB}",
 										"{@spell Chant|XPHB}",
 										"{@spell Charm Person or Mammal|XPHB}",
-										"{@spell Detect Charm|XPHB} *",
+										"{@i {@spell Detect Charm|XPHB}}",
 										"{@spell Dust Devil|XPHB}",
 										"{@spell Enthrall|XPHB}",
 										"{@spell Find Traps|XPHB}",
 										"{@spell Fire Trap|XPHB}",
 										"{@spell Flame Blade|XPHB}",
-										"{@spell Goodberry|XPHB} *",
-										"{@spell Heat Metal|XPHB} *",
+										"{@i {@spell Goodberry|XPHB}}",
+										"{@i {@spell Heat Metal|XPHB}}",
 										"{@spell Hold Person|XPHB}",
-										"{@spell Know Alignment|XPHB} *",
+										"{@i {@spell Know Alignment|XPHB}}",
 										"{@spell Messenger|XPHB}",
 										"{@spell Obscurement|XPHB}",
 										"{@spell Produce Flame|XPHB}",
@@ -15532,7 +15518,7 @@
 										"{@spell Snake Charm|XPHB}",
 										"{@spell Snake Charm|XPHB}",
 										"{@spell Trip|XPHB}",
-										"{@spell Warp Wood|XPHB} *",
+										"{@i {@spell Warp Wood|XPHB}}",
 										"{@spell Withdraw|XPHB}",
 										"{@spell Wyvern Watch|XPHB}"
 									]
@@ -15552,16 +15538,16 @@
 									"items": [
 										"{@spell Animate Dead|XPHB}",
 										"{@spell Call Lightning|XPHB}",
-										"{@spell Continual Light} *",
+										"{@i {@spell Continual Light}}",
 										"{@spell Create Food & Water|XPHB}",
-										"{@spell Cure Blindness or Deafness|XPHB} *",
-										"{@spell Cure Disease|XPHB} *",
+										"{@i {@spell Cure Blindness or Deafness|XPHB}}",
+										"{@i {@spell Cure Disease|XPHB}}",
 										"{@spell Dispel Magic|XPHB}",
 										"{@spell Feign Death|XPHB}",
 										"{@spell Flame Walk|XPHB}",
 										"{@spell Glyph of Warding|XPHB}",
 										"{@spell Hold Animal|XPHB}",
-										"{@spell Locate Object|XPHB} *",
+										"{@i {@spell Locate Object|XPHB}}",
 										"{@spell Magical Vestment|XPHB}",
 										"{@spell Meld Into Stone|XPHB}",
 										"{@spell Negative Plane Protection|XPHB}",
@@ -15569,7 +15555,7 @@
 										"{@spell Prayer|XPHB}",
 										"{@spell Protection From Fire|XPHB}",
 										"{@spell Pyrotechnics|XPHB}",
-										"{@spell Remove Curse|XPHB} *",
+										"{@i {@spell Remove Curse|XPHB}}",
 										"{@spell Remove Paralysis|XPHB}",
 										"{@spell Snare|XPHB}",
 										"{@spell Speak With Dead|XPHB}",
@@ -15578,7 +15564,7 @@
 										"{@spell Stone Shape|XPHB}",
 										"{@spell Summon Insects|XPHB}",
 										"{@spell Tree|XPHB}",
-										"{@spell Water Breathing|XPHB} *",
+										"{@i {@spell Water Breathing|XPHB}}",
 										"{@spell Water Walk|XPHB}"
 									]
 								}
@@ -15598,28 +15584,28 @@
 										"{@spell Abjure|XPHB}",
 										"{@spell Animal Summoning I|XPHB}",
 										"{@spell Call Woodland Beings|XPHB}",
-										"{@spell Cloak of Bravery|XPHB} *",
+										"{@i {@spell Cloak of Bravery|XPHB}}",
 										"{@spell Control Temperature, 10’ Radius|XPHB}",
-										"{@spell Cure Serious Wounds|XPHB} *",
-										"{@spell Detect Lie|XPHB} *",
+										"{@i {@spell Cure Serious Wounds|XPHB}}",
+										"{@i {@spell Detect Lie|XPHB}}",
 										"{@spell Divination|XPHB}",
 										"{@spell Free Action|XPHB}",
-										"{@spell Giant Insect|XPHB} *",
-										"{@spell Hallucinatory Forest|XPHB} *",
+										"{@i {@spell Giant Insect|XPHB}}",
+										"{@i {@spell Hallucinatory Forest|XPHB}}",
 										"{@spell Hold Plant|XPHB}",
 										"{@spell Imbue With Spell Ability|XPHB}",
-										"{@spell Lower Water|XPHB} *",
-										"{@spell Neutralize Poison|XPHB} *",
+										"{@i {@spell Lower Water|XPHB}}",
+										"{@i {@spell Neutralize Poison|XPHB}}",
 										"{@spell Plant Door|XPHB}",
-										"{@spell Produce Fire|XPHB} *",
-										"{@spell Protection From Evil, 10’ Radius|XPHB} *",
+										"{@i {@spell Produce Fire|XPHB}}",
+										"{@i {@spell Protection From Evil, 10’ Radius|XPHB}}",
 										"{@spell Protection From Lightning|XPHB}",
 										"{@spell Reflecting Pool|XPHB}",
 										"{@spell Repel Insects|XPHB}",
 										"{@spell Speak With Plants|XPHB}",
 										"{@spell Spell Immunity|XPHB}",
-										"{@spell Sticks to Snakes|XPHB} *",
-										"{@spell Tongues|XPHB} *"
+										"{@i {@spell Sticks to Snakes|XPHB}}",
+										"{@i {@spell Tongues|XPHB}}"
 									]
 								}
 							]
@@ -15636,15 +15622,15 @@
 									"page": 166,
 									"items": [
 										"{@spell Air Walk|XPHB}",
-										"{@spell Animal Growth|XPHB} *",
+										"{@i {@spell Animal Growth|XPHB}}",
 										"{@spell Animal Summoning II|XPHB}",
 										"{@spell Antiplant Shell|XPHB}",
 										"{@spell Atonement|XPHB}",
 										"{@spell Commune|XPHB}",
 										"{@spell Commune With Nature|XPHB}",
 										"{@spell Control Winds|XPHB}",
-										"{@spell Cure Critical Wounds|XPHB} *",
-										"{@spell Dispel Evil|XPHB} *",
+										"{@i {@spell Cure Critical Wounds|XPHB}}",
+										"{@i {@spell Dispel Evil|XPHB}}",
 										"{@spell Flame Strike|XPHB}",
 										"{@spell Insect Plague|XPHB}",
 										"{@spell Magic Font|XPHB}",
@@ -15653,10 +15639,10 @@
 										"{@spell Plane Shift|XPHB}",
 										"{@spell Quest|XPHB}",
 										"{@spell Rainbow|XPHB}",
-										"{@spell Raise Dead|XPHB} *",
+										"{@i {@spell Raise Dead|XPHB}}",
 										"{@spell Spike Stones|XPHB}",
-										"{@spell Transmute Rock to Mud|XPHB} *",
-										"{@spell True Seeing|XPHB} *",
+										"{@i {@spell Transmute Rock to Mud|XPHB}}",
+										"{@i {@spell True Seeing|XPHB}}",
 										"{@spell Wall of Fire|XPHB}"
 									]
 								}
@@ -15679,17 +15665,17 @@
 										"{@spell Antianimal Shell|XPHB}",
 										"{@spell Blade Barrier|XPHB}",
 										"{@spell Conjure Animals|XPHB}",
-										"{@spell Conjure Fire Elemental|XPHB} *",
-										"{@spell Find the Path|XPHB} *",
+										"{@i {@spell Conjure Fire Elemental|XPHB}}",
+										"{@i {@spell Find the Path|XPHB}}",
 										"{@spell Fire Seeds|XPHB}",
 										"{@spell Forbiddance|XPHB}",
-										"{@spell Heal|XPHB} *",
+										"{@i {@spell Heal|XPHB}}",
 										"{@spell Heroes’ Feast|XPHB}",
 										"{@spell Liveoak|XPHB}",
 										"{@spell Part Water|XPHB}",
 										"{@spell Speak With Monsters|XPHB}",
 										"{@spell Stone Tell|XPHB}",
-										"{@spell Transmute Water to Dust|XPHB} *",
+										"{@i {@spell Transmute Water to Dust|XPHB}}",
 										"{@spell Transport Via Plants|XPHB}",
 										"{@spell Turn Wood|XPHB}",
 										"{@spell Wall of Thorns|XPHB}",
@@ -15715,19 +15701,19 @@
 										"{@spell Changestaff|XPHB}",
 										"{@spell Chariot of Sustarre|XPHB}",
 										"{@spell Confusion|XPHB}",
-										"{@spell Conjure Earth Elemental|XPHB} *",
+										"{@i {@spell Conjure Earth Elemental|XPHB}}",
 										"{@spell Control Weather|XPHB}",
 										"{@spell Creeping Doom|XPHB}",
 										"{@spell Earthquake|XPHB}",
 										"{@spell Exaction|XPHB}",
-										"{@spell Fire Storm|XPHB} *",
+										"{@i {@spell Fire Storm|XPHB}}",
 										"{@spell Gate|XPHB}",
-										"{@spell Holy Word|XPHB} *",
-										"{@spell Regenerate|XPHB} *",
+										"{@i {@spell Holy Word|XPHB}}",
+										"{@i {@spell Regenerate|XPHB}}",
 										"{@spell Reincarnate|XPHB}",
-										"{@spell Restoration|XPHB} *",
-										"{@spell Resurrection|XPHB} *",
-										"{@spell Succor|XPHB} *",
+										"{@i {@spell Restoration|XPHB}}",
+										"{@i {@spell Resurrection|XPHB}}",
+										"{@i {@spell Succor|XPHB}}",
 										"{@spell Sunray|XPHB}",
 										"{@spell Symbol|XPHB}",
 										"{@spell Transmute Metal to Wood|XPHB}",
@@ -15747,8 +15733,8 @@
 			"page": 168,
 			"entries": [
 				"The spells are organized according to their group (priest or wizard) and level. Within each level, the spells are arranged alphabetically. At the start of each spell description are the following important game statistics:",
-				"Some spells are reversible (they can be cast for an effect opposite to that of the standard spell). This is noted after the spell name. Priests with reversible spells must memorize the desired version. For example, a priest who desires a {@i cause light wounds} spell must petition for this form of the spell when meditating and praying. Note that severe penalties can result if the spell choice is at variance with the priest’s alignment (possible penalties include denial of specific spells, entire spell levels, or even all spells for a certain period). The exact result (if any) depends on the reaction of the priest’s patron deity, as determined by the DM.",
-				"Reversible wizard spells operate similarly. When the spell is learned, both forms are recorded in the wizard’s spell books. However, the wizard must decide which version of the spell he desires to cast when memorizing the spell, unless the spell description specifically states otherwise. For example, a wizard who has memorized {@i stone to flesh} and desires to cast {@i flesh to stone} must wait until the latter form of the spell can be memorized (i.e., rest eight hours and study). If he can memorize two 6th-level spells, he could memorize each version once or one version twice.",
+				"Some spells are reversible (they can be cast for an effect opposite to that of the standard spell). This is noted after the spell name. Priests with reversible spells must memorize the desired version. For example, a priest who desires a {@i {@spell cause light wounds|XPHB}} spell must petition for this form of the spell when meditating and praying. Note that severe penalties can result if the spell choice is at variance with the priest’s alignment (possible penalties include denial of specific spells, entire spell levels, or even all spells for a certain period). The exact result (if any) depends on the reaction of the priest’s patron deity, as determined by the DM.",
+				"Reversible wizard spells operate similarly. When the spell is learned, both forms are recorded in the wizard’s spell books. However, the wizard must decide which version of the spell he desires to cast when memorizing the spell, unless the spell description specifically states otherwise. For example, a wizard who has memorized {@i {@spell stone to flesh|XPHB}} and desires to cast {@i flesh to stone} must wait until the latter form of the spell can be memorized (i.e., rest eight hours and study). If he can memorize two 6th-level spells, he could memorize each version once or one version twice.",
 				"{@b School:} In parentheses after the spell name is the name of the school of magic to which the spell belongs. For wizard spells, this defines which spells a wizard specialist can learn, depending on the wizard’s school of specialization. For priest spells, the school notation is used only for reference purposes, to indicate which school the spell is considered to belong to, in case the DM needs to know for spell resistance (for example, elves’ resistance to charm spells).",
 				"{@b Sphere:} This entry appears only for priest spells and identifies the sphere or spheres into which each spell falls.",
 				"{@b Range:} This lists the distance from the caster at which the spell effect occurs or begins. A \"0\" indicates the spell can be used on the caster only, with the effect embodied within or emanating from him. \"Touch\" means the caster can use the spell on others if he can physically touch them. Unless otherwise specified, all other spells are centered on a point visible to the caster and within the range of the spell. The point can be a creature or object if desired. In general, a spell that affects a limited number of creatures within an area affects those closest to the center first, unless there are other parameters operating (such as level or Hit Dice). Spells can be cast through narrow openings only if both the caster’s vision and the spell energy can be directed simultaneously through the opening. A wizard standing behind an arrow slit can cast through it; sending a fireball through a small peephole he is peering through is another matter.",
@@ -15756,16 +15742,16 @@
 				"Certain spells can be ended at will by the caster. In order to dismiss these spells, the original caster must be within range of the spell’s center of effect—within the same range at which the spell can be cast. The caster also must be able to speak words of dismissal. Note that only the original caster can dismiss his spells in this way.",
 				"{@b Casting Time:} This entry is important, if the optional casting time modifier to initiative is used. If only a number is given, the casting time is added to the caster’s initiative die rolls. If the spell requires a round or number of rounds to cast, it goes into effect at the end of the last round of casting time. If Delsenora casts a spell that takes one round, it goes into effect at the end of the round in which she begins casting. If the spell requires three rounds to cast, it goes into effect at the end of the third round. Spells requiring a turn or more go into effect at the end of the stated turn.",
 				"{@b Area of Effect:} This lists the creatures, volume, dimensions, weight, etc., that can be affected by the spell. Spells with an area or volume that can be shaped by the caster will, unless the spell description specifically states otherwise, have a minimum dimension of 10 feet in any direction. Thus, a cloud that has a 10-foot cube per caster level might, when cast by a 12th-level caster, be 10-foot × 10-foot × 120-foot, 20-foot × 20-foot × 30-foot, or any similar combination that totals 12 10-foot cubes. Combinations such as 5-foot × 10-foot × 240-foot are not possible unless specifically stated.",
-				"Some spells (such as {@i bless}) affect the friends or enemies of the caster. In all cases, this refers to the perception of the caster at the time the spell is cast. For example, a chaotic good character allied with a lawful neutral cleric would receive the benefits of the latter’s {@i bless} spell.",
+				"Some spells (such as {@i {@spell bless|XPHB}}) affect the friends or enemies of the caster. In all cases, this refers to the perception of the caster at the time the spell is cast. For example, a chaotic good character allied with a lawful neutral cleric would receive the benefits of the latter’s {@i {@spell bless|XPHB}} spell.",
 				"{@b Saving Throw:} This lists whether the spell allows the target a saving throw and explains the effect of a successful save: \"Neg.\" results in the spell having no effect; \"½\" means the character suffers half the normal amount of damage; \"none\" means no saving throw is allowed. Wisdom adjustments to saving throws apply only to enchantment/charm spells.",
 				"Solid physical barriers provide saving throw bonuses and damage reduction. Cover and concealment may affect saving throws and damage (the DM has additional information about this).",
-				"A creature that successfully saves against a spell with no apparent physical effect (such as a {@i charm, hold,} or {@i magic jar}) may feel a definite force or tingle that is characteristic of a magical attack, if the DM desires. But the exact hostile spell effect or creature ability used cannot be deduced from this tingle.",
-				"A being’s carried equipment and possessions are assumed to make their saving throws against special attacks if the creature makes its saving throw, unless the spell specifically states otherwise. If the creature fails its saving throw, or if the attack form is particularly potent, saving throws may have to be rolled to see if any possessions survive, using either item saving throws (see Chapter 6 of the {@i DMG}) or the being’s saving throw. The DM will inform you when this happens.",
+				"A creature that successfully saves against a spell with no apparent physical effect (such as a {@i {@spell charm|XPHB}, {@spell hold|XPHB},} or {@i {@spell magic jar|XPHB}}) may feel a definite force or tingle that is characteristic of a magical attack, if the DM desires. But the exact hostile spell effect or creature ability used cannot be deduced from this tingle.",
+				"A being’s carried equipment and possessions are assumed to make their saving throws against special attacks if the creature makes its saving throw, unless the spell specifically states otherwise. If the creature fails its saving throw, or if the attack form is particularly potent, saving throws may have to be rolled to see if any possessions survive, using either item saving throws (see Chapter 6 of the {@i {@book DMG|XDMG}}) or the being’s saving throw. The DM will inform you when this happens.",
 				"Any character can voluntarily forgo a saving throw. This allows a spell or similar attack that normally grants a saving throw to have full effect on the character. Likewise, any creature can voluntarily lower its magic resistance, allowing a spell to automatically function when cast on it. Foregoing a saving throw or magic resistance roll need not always be voluntary. If a creature or character can be tricked into lowering its resistance, the spell will have full effect, even if it is not the spell the victim believed he was going to receive. The victim must consciously choose to lower his resistance; it is not sufficient that he is caught off guard.",
-				"For example, a character would receive a saving throw if a wizard in the party suddenly attacked him with a fireball, even if the wizard had been friendly to that point. However, the same character would not receive a saving throw if the wizard convinced him that he was about to receive a {@i levitation} spell but cast a fireball instead. Your DM will decide when NPCs have lowered their resistances. You must tell your DM when your character is lowering his resistance.",
+				"For example, a character would receive a saving throw if a wizard in the party suddenly attacked him with a fireball, even if the wizard had been friendly to that point. However, the same character would not receive a saving throw if the wizard convinced him that he was about to receive a {@i {@spell levitation|XPHB}} spell but cast a fireball instead. Your DM will decide when NPCs have lowered their resistances. You must tell your DM when your character is lowering his resistance.",
 				"{@b Spell Description:} The text provides a complete description of how the spell functions and its game effects. It covers most typical uses of the spell, if there are more than one, but cannot deal with every possible application players might find. In these cases, the spell information in the text should provide guidance on how to adjudicate the situation.",
 				"Spells with multiple functions enable the caster to select which function he wants to use at the time of casting. Usually a single function of a multiple-function spell is weaker than a single-function spell of the same level.",
-				"Spell effects that give bonuses or penalties to abilities, attack rolls, damage rolls, saving throws, etc., are not usually cumulative with each other or with other magic: The strongest single effect applies. For example, a fighter drinks a {@i potion of giant strength} and then receives the 2nd-level wizard spell {@i strength}. Only the strongest magic (the potion) is effective. When the potion’s duration ends, however, the {@i strength} spell is still in effect, until its duration also expires.",
+				"Spell effects that give bonuses or penalties to abilities, attack rolls, damage rolls, saving throws, etc., are not usually cumulative with each other or with other magic: The strongest single effect applies. For example, a fighter drinks a {@i {@item potion of giant strength|XDMG}} and then receives the 2nd-level wizard spell {@i {@spell strength|XPHB}}. Only the strongest magic (the potion) is effective. When the potion’s duration ends, however, the {@i {@spell strength|XPHB}} spell is still in effect, until its duration also expires.",
 				{
 					"type": "entries",
 					"name": "Adjudicating Illusions",
@@ -15793,7 +15779,7 @@
 			"page": 170,
 			"entries": [
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "First-Level Spells",
 					"page": 170,
 					"entries": [
@@ -15809,7 +15795,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Second-Level Spells",
 					"page": 180,
 					"entries": [
@@ -15817,7 +15803,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Third-Level Spells",
 					"page": 190,
 					"entries": [
@@ -15825,7 +15811,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Fourth-Level Spells",
 					"page": 198,
 					"entries": [
@@ -15833,7 +15819,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Fifth-Level Spells",
 					"page": 209,
 					"entries": [
@@ -15841,7 +15827,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Sixth-Level Spells",
 					"page": 220,
 					"entries": [
@@ -15849,7 +15835,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Seventh-Level Spells",
 					"page": 232,
 					"entries": [
@@ -15857,7 +15843,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Eighth-Level Spells",
 					"page": 238,
 					"entries": [
@@ -15865,7 +15851,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Ninth-Level Spells",
 					"page": 245,
 					"entries": [
@@ -15880,14 +15866,14 @@
 			"page": 252,
 			"entries": [
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "First-Level Spells",
 					"page": 252,
 					"entries": [
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Second-Level Spells",
 					"page": 257,
 					"entries": [
@@ -15895,7 +15881,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Third-Level Spells",
 					"page": 265,
 					"entries": [
@@ -15903,7 +15889,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Fourth-Level Spells",
 					"page": 273,
 					"entries": [
@@ -15911,7 +15897,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Fifth-Level Spells",
 					"page": 280,
 					"entries": [
@@ -15919,7 +15905,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Sixth-Level Spells",
 					"page": 287,
 					"entries": [
@@ -15927,7 +15913,7 @@
 					]
 				},
 				{
-					"type": "section",
+					"type": "entries",
 					"name": "Seventh-Level Spells",
 					"page": 292,
 					"entries": [

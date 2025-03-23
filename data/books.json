@@ -2314,37 +2314,45 @@
 			"author": "Tim Beach",
 			"contents": [
 				{
-					"name": "Introduction",
-					"headers": [
-						"How to Use This Book",
-						"What Is a Monster?",
-						"Statistics",
-						"Legendary Creatures",
-						"Shadow Dragon Template",
-						"Half-Dragon Template",
-						"Spore Servant Template"
-					]
+					"name": "How To Use This Book"
 				},
 				{
-					"name": "Miscellaneous Creatures",
+					"name": "Monsters A to Z"
+				},
+				{
+					"name": "Instructions for the Blank Monster Form",
 					"ordinal": {
 						"type": "appendix",
-						"identifier": "A"
+						"identifier": "I"
 					}
 				},
 				{
-					"name": "Nonplayer Characters",
+					"name": "Monster Summoning Tables",
 					"headers": [
-						"Customizing NPCs",
-						"NPC Descriptions"
+						"Conjured Animals",
+						"Terrain Guide",
+						"Aquatic Monster Summoning, Salt Water",
+						"Aquatic Monster Summoning, Fresh Water"
 					],
 					"ordinal": {
 						"type": "appendix",
-						"identifier": "B"
+						"identifier": "II"
 					}
 				},
 				{
-					"name": "Credits"
+					"name": "NPCs",
+					"headers": [
+						"NPC Parties",
+						"Magical Items for NPC Parties",
+						"Magical Items for Character Encounters"
+					],
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "III"
+					}
+				},
+				{
+					"name": "Monstrous Manual Index"
 				}
 			]
 		},
@@ -6475,48 +6483,39 @@
 						{
 							"header": "Cave-Ins",
 							"depth": 1
-						}
-						,
+						},
 						{
 							"header": "Darkness",
 							"depth": 1
-						}
-						,
+						},
 						{
 							"header": "Flooding",
 							"depth": 1
-						}
-						,
+						},
 						{
 							"header": "Oxygen",
 							"depth": 1
-						}
-						,
+						},
 						{
 							"header": "Fires",
 							"depth": 1
-						}
-						,
+						},
 						{
 							"header": "Noxious Gases",
 							"depth": 1
-						}
-						,
+						},
 						{
 							"header": "Toxic Gases",
 							"depth": 1
-						}
-						,
+						},
 						{
 							"header": "Explosive Gases",
 							"depth": 1
-						}
-						,
+						},
 						{
 							"header": "Low Temperature",
 							"depth": 1
-						}
-						,
+						},
 						{
 							"header": "High Temperature",
 							"depth": 1

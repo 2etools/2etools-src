@@ -11,278 +11,279 @@
 				"To find a monster in this book, flip through the pages or look in the index, which contains listings for the common name(s) of every monster in the book, referenced to the correct page.",
 				"All of the monsters described here are typical for their type. DMs should note that unusual variations are encouraged, but they are most effective when they depart from the expected. Likewise, entries describe typical lairs for creatures, from the dungeon complexes they inhabit to the tree houses they build; changing the look of these can make a monster encounter unique.",
 				{
-					"type": "section",
-					"name": "Contents",
-					"page": 3,
+					"type": "entries",
 					"entries": [
-						"This introduction describes how to interpret the monsters in this book. In addition, there are three small appendices in the back of the book. The first deals with making monsters . The second covers monster summoning and includes tables for random determination of summoned creatures; to make random encounter charts for a campaign, the DM should refer to Chapter 11 of the DMG. The third appendix is concerned with creating NPC parties."
-					]
-				},
-				{
-					"type": "section",
-					"name": "Other Worlds",
-					"page": 3,
-					"entries": [
-						"Several of the monsters in this book have been imported from specialized game worlds, such as the SPELLJAMMER™ campaign setting, the FORGOTTEN REALMS® setting, or the DARK SUN® world. The monsters in this book may be used in any setting; if a campaign setting is noted, it simply describes where the monster was first encountered, or where it is the most common. A particular monster still may not be encountered in a specific campaign world; this is up to the DM. For monsters from one of the specific worlds, the DM should consult the appropriate MONSTROUS COMPENDIUM appendices."
-					]
-				},
-				{
-					"type": "section",
-					"name": "The Monsters",
-					"page": 3,
-					"entries": [
-						"Each monster is described fully, with entries that describe behavior, combat modes, and so on. These are explained in the following text.",
-						"{@color CLIMATE/TERRAIN|2596be} defines where the creature is most often found. Climates include arctic, sub-arctic, temperate, and tropical. Typical terrain includes plain/scrub, forest, rough/hill, mountain, swamp, and desert. In some cases, a range is given; for instance, \"cold\" implies arctic, sub-arctic, and colder temperate regions.",
-						"{@color FREQUENCY|2596be} is the likelihood of encountering a creature in an area. Chances can be adjusted for special areas.",
 						{
-							"type": "table",
+							"type": "entries",
+							"name": "Contents",
 							"page": 3,
-							"colStyles": [
-								"col-1 text-left",
-								"col-8 text-left"
-							],
-							"isStriped": false,
-							"rows": [
-								[
-									"Very Rare",
-									"= 4% chance"
-								],
-								[
-									"Rare",
-									"= 11% chance"
-								],
-								[
-									"Uncommon",
-									"= 20% chance"
-								],
-								[
-									"Common",
-									"= 65% chance"
-								]
+							"entries": [
+								"This introduction describes how to interpret the monsters in this book. In addition, there are three small appendices in the back of the book. The first deals with making monsters. The second covers monster summoning and includes tables for random determination of summoned creatures; to make random encounter charts for a campaign, the DM should refer to Chapter 11 of the DMG. The third appendix is concerned with creating NPC parties."
 							]
 						},
-						"{@color ORGANIZATION|2596be} is the general social structure the monster adopts. \"Solitary\" includes small family groups.",
-						"{@color ACTIVITY CYCLE|2596be} is the time of day when the monster is most active. Those active at night can be active at any time in subterranean settings. These are general guidelines and exceptions are fairly common.",
-						"{@color DIET|2596be} shows what the creature usually eats. Carnivores eat meat, herbivores eat plants, and omnivores eat either. Scavengers primarily eat carrion. If a monster does not fit any of these categories, the substances it does eat are described in the entry or in the text.",
-						"{@color INTELLIGENCE|2596be} is the equivalent of human \"IQ.\" Certain monsters are instinctively cunning; these are noted in the monster descriptions. Ratings correspond roughly to the following Intelligence ability scores:",
 						{
-							"type": "table",
+							"type": "entries",
+							"name": "Other Worlds",
 							"page": 3,
-							"colStyles": [
-								"col-1 text-left",
-								"col-8 text-left"
-							],
-							"isStriped": false,
-							"rows": [
-								[
-									"0",
-									"Nonintelligent or not ratable"
-								],
-								[
-									"1",
-									"Animal intelligence"
-								],
-								[
-									"2-4",
-									"Semi-intelligent"
-								],
-								[
-									"5-7",
-									"Low intelligence"
-								],
-								[
-									"8-10",
-									"Average (human) intelligence"
-								],
-								[
-									"11-12",
-									"Very intelligent"
-								],
-								[
-									"13-14",
-									"Highly intelligent"
-								],
-								[
-									"15-16",
-									"Exceptionally intelligent"
-								],
-								[
-									"17-18",
-									"Genius"
-								],
-								[
-									"19-20",
-									"Supra-genius"
-								],
-								[
-									"21+",
-									"Godlike intelligence"
-								]
+							"entries": [
+								"Several of the monsters in this book have been imported from specialized game worlds, such as the SPELLJAMMER™ campaign setting, the FORGOTTEN REALMS® setting, or the DARK SUN® world. The monsters in this book may be used in any setting; if a campaign setting is noted, it simply describes where the monster was first encountered, or where it is the most common. A particular monster still may not be encountered in a specific campaign world; this is up to the DM. For monsters from one of the specific worlds, the DM should consult the appropriate MONSTROUS COMPENDIUM appendices."
 							]
 						},
-						"{@color TREASURE|2596be} refers to the treasure tables in the {@i {@book DUNGEON MASTER Guide|DMG}}. If individual treasure is indicated, each individual may carry it (or not, at the DM's discretion). Major treasures are usually found in the monster's lair; these are most often designed and placed by the DM. Intelligent monsters will use the magical items present and try to carry off their most valuable treasures if hard pressed. If treasure is assigned randomly, roll for each type possible; if all rolls fail, no treasure of any type is found. Treasure should be adjusted downward if a few monsters are encountered. Large treasures are noted by a multiplier (x10, for example); this should not be confused with treasure type X. Treasure types listed in parentheses are treasures found in the creatures' lair. Do not use the tables to place dungeon treasure, since the numbers encountered underground will be much smaller.",
-						"{@color ALIGNMENT|2596be} shows the general behavior of the average monster of that type. Exceptions, though uncommon, may be encountered.",
-						"{@color NO. APPEARING|2596be} indicates an average encounter size for a wilderness encounter. The DM should alter this to fit the circumstances as the need arises. This should not be used for dungeon encounters.",
-						"Note that some solitary creatures are found in small groups; this means they are found in very small family units, or that several may happen to be found together, but do not cooperate with one another.",
-						"{@color ARMOR CLASS|2596be} is the general protection worn by humans and humanoids, protection due to physical structure or magical nature, or difficulty in hitting due to speed, reflexes, etc. Humans and humanoids of roughly man-size that wear armor will have an unarmored rating in parentheses. Listed AC does not include any special bonuses noted in the description.",
-						"{@color MOVEMENT|2596be} shows the relative speed rating of the creature. Higher speeds may be possible for short periods. Human, demihuman, and humanoid movement rate is often determined by armor type (unarmored rates are given in parentheses). Movements in different mediums are abbreviated as follows:",
 						{
-							"type": "list",
-							"style": "list-hang",
-							"columns": 0,
+							"type": "entries",
+							"name": "The Monsters",
 							"page": 3,
-							"items": [
-								"Fl = flying",
-								"Sw = swimming",
-								"Br = burrowing",
-								"Cl = climbing",
-								"Wb = moving across webs"
+							"entries": [
+								"Each monster is described fully, with entries that describe behavior, combat modes, and so on. These are explained in the following text.",
+								"{@color CLIMATE/TERRAIN|1169a3} defines where the creature is most often found. Climates include arctic, sub-arctic, temperate, and tropical. Typical terrain includes plain/scrub, forest, rough/hill, mountain, swamp, and desert. In some cases, a range is given; for instance, \"cold\" implies arctic, sub-arctic, and colder temperate regions.",
+								"{@color FREQUENCY|1169a3} is the likelihood of encountering a creature in an area. Chances can be adjusted for special areas.",
+								{
+									"type": "table",
+									"page": 3,
+									"colStyles": [
+										"col-1 text-left",
+										"col-8 text-left"
+									],
+									"isStriped": false,
+									"rows": [
+										[
+											"Very Rare",
+											"= 4% chance"
+										],
+										[
+											"Rare",
+											"= 11% chance"
+										],
+										[
+											"Uncommon",
+											"= 20% chance"
+										],
+										[
+											"Common",
+											"= 65% chance"
+										]
+									]
+								},
+								"{@color ORGANIZATION|1169a3} is the general social structure the monster adopts. \"Solitary\" includes small family groups.",
+								"{@color ACTIVITY CYCLE|1169a3} is the time of day when the monster is most active. Those active at night can be active at any time in subterranean settings. These are general guidelines and exceptions are fairly common.",
+								"{@color DIET|1169a3} shows what the creature usually eats. Carnivores eat meat, herbivores eat plants, and omnivores eat either. Scavengers primarily eat carrion. If a monster does not fit any of these categories, the substances it does eat are described in the entry or in the text.",
+								"{@color INTELLIGENCE|1169a3} is the equivalent of human \"IQ.\" Certain monsters are instinctively cunning; these are noted in the monster descriptions. Ratings correspond roughly to the following Intelligence ability scores:",
+								{
+									"type": "table",
+									"page": 3,
+									"colStyles": [
+										"col-1 text-left",
+										"col-8 text-left"
+									],
+									"isStriped": false,
+									"rows": [
+										[
+											"0",
+											"Nonintelligent or not ratable"
+										],
+										[
+											"1",
+											"Animal intelligence"
+										],
+										[
+											"2-4",
+											"Semi-intelligent"
+										],
+										[
+											"5-7",
+											"Low intelligence"
+										],
+										[
+											"8-10",
+											"Average (human) intelligence"
+										],
+										[
+											"11-12",
+											"Very intelligent"
+										],
+										[
+											"13-14",
+											"Highly intelligent"
+										],
+										[
+											"15-16",
+											"Exceptionally intelligent"
+										],
+										[
+											"17-18",
+											"Genius"
+										],
+										[
+											"19-20",
+											"Supra-genius"
+										],
+										[
+											"21+",
+											"Godlike intelligence"
+										]
+									]
+								},
+								"{@color TREASURE|1169a3} refers to the treasure tables in the {@i {@book DUNGEON MASTER Guide|DMG}}. If individual treasure is indicated, each individual may carry it (or not, at the DM's discretion). Major treasures are usually found in the monster's lair; these are most often designed and placed by the DM. Intelligent monsters will use the magical items present and try to carry off their most valuable treasures if hard pressed. If treasure is assigned randomly, roll for each type possible; if all rolls fail, no treasure of any type is found. Treasure should be adjusted downward if a few monsters are encountered. Large treasures are noted by a multiplier (x10, for example); this should not be confused with treasure type X. Treasure types listed in parentheses are treasures found in the creatures' lair. Do not use the tables to place dungeon treasure, since the numbers encountered underground will be much smaller.",
+								"{@color ALIGNMENT|1169a3} shows the general behavior of the average monster of that type. Exceptions, though uncommon, may be encountered.",
+								"{@color NO. APPEARING|#169a3} indicates an average encounter size for a wilderness encounter. The DM should alter this to fit the circumstances as the need arises. This should not be used for dungeon encounters.",
+								"Note that some solitary creatures are found in small groups; this means they are found in very small family units, or that several may happen to be found together, but do not cooperate with one another.",
+								"{@color ARMOR CLASS|1169a3} is the general protection worn by humans and humanoids, protection due to physical structure or magical nature, or difficulty in hitting due to speed, reflexes, etc. Humans and humanoids of roughly man-size that wear armor will have an unarmored rating in parentheses. Listed AC does not include any special bonuses noted in the description.",
+								"{@color MOVEMENT|1169a3} shows the relative speed rating of the creature. Higher speeds may be possible for short periods. Human, demihuman, and humanoid movement rate is often determined by armor type (unarmored rates are given in parentheses). Movements in different mediums are abbreviated as follows:",
+								{
+									"type": "list",
+									"style": "list-hang",
+									"columns": 0,
+									"page": 3,
+									"items": [
+										"Fl = flying",
+										"Sw = swimming",
+										"Br = burrowing",
+										"Cl = climbing",
+										"Wb = moving across webs"
+									]
+								},
+								"Flying creatures also have a Maneuverability Class from A to E. Class A creatures have virtually total command over their movements in the air; they can hover, face any direction in a given round, and attack each round. Class B creatures are very maneuverable; they can hover, turn 180 degrees in a round, and attack in each round. Class C creatures are somewhat agile in the air; they cannot move less than half their movement rate without falling, they can turn up to 90 degrees in a round, and attack aerially once every two rounds. Class D creatures are somewhat slow; they cannot move less than half their movement rate without falling, can turn only 60 degrees in a round, and can make a pass once every three rounds. Class E includes large, clumsy fliers; these cannot move less than half their movement rate without falling, can turn only 30 degrees in a round, and they can make one pass every six rounds. See {@book Chapter 9|source|chapter|heading} of the {@i DMG} for more information.",
+								"{@color HIT DICE|#1169a3} controls the number of hit points damage a creature can withstand before being killed. Unless otherwise stated, Hit Dice are 8-sided (1-8 hit points). The Hit Dice are rolled and the numbers shown are added to determine the monster's hit points. Some monsters have a hit point spread instead of Hit Dice, and some have additional points added to their Hit Dice. Thus, a creature with 4+4 Hit Dice has 4d8+4 hit points (8-36 total). Note that creatures with +3 or more hit points are considered the next higher Hit Die for purposes of attack rolls and saving throws.",
+								"{@color THAC0|#1169a3} is the attack roll the monster needs to hit Armor Class 0. This is always a function of Hit Dice, except in the case of very large, nonaggressive herbivores (such as some dinosaurs), or creatures which have certain innate combat abilities. A human or demihuman always uses a player character THAC0, regardless of whether they are player characters or \"monsters.\" The THAC0 does not include any special bonuses noted in the descriptions.",
+								"{@color NUMBER OF ATTACKS|#1169a3} shows the basic attacks the monster can make in a melee round, excluding special attacks. This number can be modified by hits that sever members, spells such as {@i {@spell haste}} and {@i {@spell slow}}, and so forth. Multiple attacks indicate several members, raking paws, multiple heads, etc.",
+								"{@color DAMAGE/ATTACK|#1169a3} shows the amount of damage a given attack causes, expressed as a spread of hit points (based on a die roll or combination of die rolls). If the monster uses weapons, the damage done by the typical weapon will be allowed by the parenthetical note \"weapon.\" Damage bonuses due to Strength are listed as a bonus following the damage range.",
+								"{@color SPECIAL ATTACKS|#1169a3} detail attack modes such as dragon breath, magic use, etc. These are explained in the monster description.",
+								"{@color SPECIAL DEFENSES|#1169a3} are precisely that, and are detailed in the monster description.",
+								"{@color MAGIC RESISTANCE|#1169a3} is the percentage chance that any magic cast upon the creature will fail to affect it, even if other creatures nearby are affected. If the magic penetrates the resistance, the creature is still entitled to any normal saving throw allowed. Creatures may have resistances to certain spells; this is not considered \"magic resistance\", which is effective against all spells.",
+								"{@color SIZE|#1169a3} is abbreviated as",
+								{
+									"type": "list",
+									"style": "list-hang",
+									"columns": 0,
+									"page": 4,
+									"name": "",
+									"items": [
+										"T = tiny (2' tall or less);",
+										"S = smaller than a typical human (2+' to 4');",
+										"M = man-sized (4+' to 7');",
+										"L = larger than man-sized (7+' to 12');",
+										"H = huge (12+' to 25'); and",
+										"G = gargantuan (25+')."
+									]
+								},
+								"Most creatures are measured in height or length; some are measured in diameter. Those measured in diameter may be given a different size category than indicated above. For instance, while a 6-foot tall humanoid is considered size M, a spherical creature 6 feet in diameter has much more mass, so is considered size L. Similarly, a creature 12 feet long with a very slender body (like a snake) might be considered only man-sized. Adjustments like these should not move a creature more than one size category in either direction.",
+								"{@color MORALE|#1169a3}",
+								{
+									"type": "table",
+									"page": 0,
+									"colStyles": [
+										"col-1 text-left",
+										"col-8 text-left"
+									],
+									"isStriped": false,
+									"rows": [
+										[
+											"2-4",
+											"Unreliable"
+										],
+										[
+											"5-7",
+											"Unsteady"
+										],
+										[
+											"8-10",
+											"Average"
+										],
+										[
+											"11-12",
+											"Steady"
+										],
+										[
+											"13-14",
+											"Elite"
+										],
+										[
+											"15-16",
+											"Champion"
+										],
+										[
+											"17-18",
+											"Fanatic"
+										],
+										[
+											"19-20",
+											"Fearless"
+										]
+									]
+								},
+								"{@color XP VALUE|1169a3} is the number of experience points awarded for defeating, but not necessarily killing, the monster. This value is a guideline that can be modified by the DM for the degree of challenge, encounter situation, and for overall campaign balance.",
+								"{@color Combat|1169a3} is the part of the description that discusses special combat abilities, arms and armor, and tactics.",
+								"{@color Habitat/Society|1169a3} outlines the monster's general behavior, nature, social structure, and goals. In some cases, it further describes their lairs (the places they live in), breeding habits, and reproduction rates.",
+								"{@color Ecology|1169a3} describes how the monster fits into the campaign world, gives any useful products or byproducts, and any other miscellaneous information.",
+								"{@color Variations|1169a3} of a monster are given in a special section after the main monster entry. These can be found by consulting the index. For instance, the xorn entry also describes the xaren, a very similar creature.",
+								"{@color Psionics|1169a3} are mental powers possessed by many creatures in the {@i Monstrous Manual}. The psionic listings are explained below:",
+								"{@color Level:|1169a3} How tough the monster is in terms of psionic experience level.",
+								"{@color Dis/Sci/Dev:|1169a3} How many disciplines the creature can access, followed by the total number of sciences and devotions the creature knows. Monsters can know sciences and devotions only from the disciplines they can access.",
+								"{@color Attack/Defense:|1169a3} The telepathic attack and defense modes that the creature can use. Note that defense modes are not included in the total number of powers the creature knows. Abbreviations used are as follows:",
+								{
+									"type": "table",
+									"page": 4,
+									"colStyles": [
+										"col-left text-",
+										"col-left text-8"
+									],
+									"isStriped": false,
+									"rows": [
+										[
+											"PB",
+											"Psionic Blast"
+										],
+										[
+											"MT",
+											"Mind Thrust"
+										],
+										[
+											"EW",
+											"Ego Whip"
+										],
+										[
+											"II",
+											"Id Insinuation"
+										],
+										[
+											"PsC",
+											"Psychic Crush"
+										],
+										[
+											"M-",
+											"Mind Blank"
+										],
+										[
+											"TS",
+											"Thought Shield"
+										],
+										[
+											"MB",
+											"Mental Barrier"
+										],
+										[
+											"IF",
+											"Intellect Fortress"
+										],
+										[
+											"TW",
+											"Tower of Iron Will"
+										]
+									]
+								},
+								"{@color Power Score:|1169a3} The creature's usual score when using a power that is not automatically successful.",
+								"{@color PSPs:|1169a3} The creature's total pool of psionic strength points (the maximum available to it).",
+								"The rest of the listing indicates, by discipline, which powers the creature has, sometimes listing the most common powers, sometimes listing only the powers that all members of the species have. Unless otherwise noted, the creature always knows powers marked by an asterisk.",
+								"For information regarding psionic powers, see PHBR5, {@book The Complete Psionics Handbook|PHBR5}. If the DM chooses not to use psionics in the campaign, the powers can be changed to magical equivalents or simply ignored, though the latter severely impedes certain monsters."
 							]
-						},
-						"Flying creatures also have a Maneuverability Class from A to E. Class A creatures have virtually total command over their movements in the air; they can hover, face any direction in a given round, and attack each round. Class B creatures are very maneuverable; they can hover, turn 180 degrees in a round, and attack in each round. Class C creatures are somewhat agile in the air; they cannot move less than half their movement rate without falling, they can turn up to 90 degrees in a round, and attack aerially once every two rounds. Class D creatures are somewhat slow; they cannot move less than half their movement rate without falling, can turn only 60 degrees in a round, and can make a pass once every three rounds. Class E includes large, clumsy fliers; these cannot move less than half their movement rate without falling, can turn only 30 degrees in a round, and they can make one pass every six rounds. See {@book Chapter 9|source|chapter|heading} of the {@i DMG} for more information.",
-						"{@color HIT DICE|2596be} controls the number of hit points damage a creature can withstand before being killed. Unless otherwise stated, Hit Dice are 8-sided (1-8 hit points). The Hit Dice are rolled and the numbers shown are added to determine the monster's hit points. Some monsters have a hit point spread instead of Hit Dice, and some have additional points added to their Hit Dice. Thus, a creature with 4+4 Hit Dice has 4d8+4 hit points (8-36 total). Note that creatures with +3 or more hit points are considered the next higher Hit Die for purposes of attack rolls and saving throws.",
-						"{@color THAC0|2596be} is the attack roll the monster needs to hit Armor Class 0. This is always a function of Hit Dice, except in the case of very large, nonaggressive herbivores (such as some dinosaurs), or creatures which have certain innate combat abilities. A human or demihuman always uses a player character THAC0, regardless of whether they are player characters or \"monsters.\" The THAC0 does not include any special bonuses noted in the descriptions.",
-						"{@color NUMBER OF ATTACKS|2596be} shows the basic attacks the monster can make in a melee round, excluding special attacks. This number can be modified by hits that sever members, spells such as {@i {@spell haste}} and {@i {@spell slow}}, and so forth. Multiple attacks indicate several members, raking paws, multiple heads, etc.",
-						"{@color DAMAGE/ATTACK|2596be} shows the amount of damage a given attack causes, expressed as a spread of hit points (based on a die roll or combination of die rolls). If the monster uses weapons, the damage done by the typical weapon will be allowed by the parenthetical note \"weapon.\" Damage bonuses due to Strength are listed as a bonus following the damage range.",
-						"{@color SPECIAL ATTACKS|2596be} detail attack modes such as dragon breath, magic use, etc. These are explained in the monster description.",
-						"{@color SPECIAL DEFENSES|2596be} are precisely that, and are detailed in the monster description.",
-						"{@color MAGIC RESISTANCE|2596be} is the percentage chance that any magic cast upon the creature will fail to affect it, even if other creatures nearby are affected. If the magic penetrates the resistance, the creature is still entitled to any normal saving throw allowed. Creatures may have resistances to certain spells; this is not considered \"magic resistance\", which is effective against all spells.",
-						"{@color SIZE|2596be} is abbreviated as",
-						{
-							"type": "list",
-							"style": "list-hang",
-							"columns": 0,
-							"page": 4,
-							"name": "",
-							"items": [
-								"T = tiny (2' tall or less);",
-								"S = smaller than a typical human (2+' to 4');",
-								"M = man-sized (4+' to 7');",
-								"L = larger than man-sized (7+' to 12');",
-								"H = huge (12+' to 25'); and",
-								"G = gargantuan (25+')."
-							]
-						},
-						"Most creatures are measured in height or length; some are measured in diameter. Those measured in diameter may be given a different size category than indicated above. For instance, while a 6-foot tall humanoid is considered size M, a spherical creature 6 feet in diameter has much more mass, so is considered size L. Similarly, a creature 12 feet long with a very slender body (like a snake) might be considered only man-sized. Adjustments like these should not move a creature more than one size category in either direction.",
-						"{@color MORALE|2596be}",
-						{
-							"type": "table",
-							"page": 0,
-							"colStyles": [
-								"col-1 text-left",
-								"col-8 text-left"
-							],
-							"isStriped": false,
-							"rows": [
-								[
-									"2-4",
-									"Unreliable"
-								],
-								[
-									"5-7",
-									"Unsteady"
-								],
-								[
-									"8-10",
-									"Average"
-								],
-								[
-									"11-12",
-									"Steady"
-								],
-								[
-									"13-14",
-									"Elite"
-								],
-								[
-									"15-16",
-									"Champion"
-								],
-								[
-									"17-18",
-									"Fanatic"
-								],
-								[
-									"19-20",
-									"Fearless"
-								]
-							]
-						},
-						"{@color XP VALUE|2596be} is the number of experience points awarded for defeating, but not necessarily killing, the monster. This value is a guideline that can be modified by the DM for the degree of challenge, encounter situation, and for overall campaign balance.",
-						"{@color Combat|2596be} is the part of the description that discusses special combat abilities, arms and armor, and tactics.",
-						"{@color Habitat/Society|2596be} outlines the monster's general behavior, nature, social structure, and goals. In some cases, it further describes their lairs (the places they live in), breeding habits, and reproduction rates.",
-						"{@color Ecology|2596be} describes how the monster fits into the campaign world, gives any useful products or byproducts, and any other miscellaneous information.",
-						"{@color Variations|2596be} of a monster are given in a special section after the main monster entry. These can be found by consulting the index. For instance, the xorn entry also describes the xaren, a very similar creature.",
-						"{@color Psionics|2596be} are mental powers possessed by many creatures in the {@i Monstrous Manual}. The psionic listings are explained below:",
-						"{@color Level:|2596be} How tough the monster is in terms of psionic experience level.",
-						"{@color Dis/Sci/Dev:|2596be} How many disciplines the creature can access, followed by the total number of sciences and devotions the creature knows. Monsters can know sciences and devotions only from the disciplines they can access.",
-						"{@color Attack/Defense:|2596be} The telepathic attack and defense modes that the creature can use. Note that defense modes are not included in the total number of powers the creature knows. Abbreviations used are as follows:",
-						{
-							"type": "table",
-							"page": 4,
-							"colLabels": [
-								"",
-								""
-							],
-							"colStyles": [
-								"col- text-",
-								"col- text-"
-							],
-							"isStriped": false,
-							"rows": [
-								[
-									"PB",
-									"Psionic Blast"
-								],
-								[
-									"MT",
-									"Mind Thrust"
-								],
-								[
-									"EW",
-									"Ego Whip"
-								],
-								[
-									"II",
-									"Id Insinuation"
-								],
-								[
-									"PsC",
-									"Psychic Crush"
-								],
-								[
-									"M-",
-									"Mind Blank"
-								],
-								[
-									"TS",
-									"Thought Shield"
-								],
-								[
-									"MB",
-									"Mental Barrier"
-								],
-								[
-									"IF",
-									"Intellect Fortress"
-								],
-								[
-									"TW",
-									"Tower of Iron Will"
-								]
-							]
-						},
-						"{@color Power Score:|2596be} The creature's usual score when using a power that is not automatically successful.",
-						"{@color PSPs:|2596be} The creature's total pool of psionic strength points (the maximum available to it).",
-						"The rest of the listing indicates, by discipline, which powers the creature has, sometimes listing the most common powers, sometimes listing only the powers that all members of the species have. Unless otherwise noted, the creature always knows powers marked by an asterisk.",
-						"For information regarding psionic powers, see PHBR5, {@book The Complete Psionics Handbook|PHBR5}. If the DM chooses not to use psionics in the campaign, the powers can be changed to magical equivalents or simply ignored, though the latter severely impedes certain monsters."
+						}
 					]
 				}
 			]
 		},
 		{
 			"type": "section",
-			"name": "A",
+			"name": "Monsters A to Z",
 			"page": 5,
 			"entries": [
 				{
@@ -292,664 +293,1698 @@
 					"page": 5,
 					"name": "",
 					"items": [
-						"Aarakocra",
-						"Aboleth",
-						"Ankheg",
-						"Arcane",
-						"Argos",
-						"Aurumvorax"
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "B",
-			"page": 11,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 11,
-					"name": "",
-					"items": [
-						"Baatezu",
-						"Baatezu",
-						"Banshee",
-						"Basilisk",
-						"Bat",
-						"Bear",
-						"{@creature |source|optional text}",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "C",
-			"page": 35,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 35,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "D",
-			"page": 52,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 52,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"Dragon, General",
+						"{@creature Aarakocra|MM}",
+						"{@creature Aboleth|MM}",
+						"{@creature Ankheg|MM}",
+						"{@creature Arcane|MM}",
+						"{@creature Argos|MM}",
+						"{@creature Aurumvorax|MM}",
 						{
 							"type": "list",
 							"style": "list",
-							"columns": 4,
+							"columns": 0,
+							"page": 11,
+							"name": "Baatezu",
+							"items": [
+								"{@creature Pit Fiend|MM|Baatezu, Pit Fiend}",
+								"{@creature Black Abishai|MM|Baatezu, Black Abishai}",
+								"{@creature Green Abishai|MM|Baatezu, Green Abishai}",
+								"{@creature Red Abishai|MM|Baatezu, Red Abishai}"
+							]
+						},
+						"{@creature Banshee|MM}",
+						"{@creature Lesser Basilisk|MM}",
+						"{@creature Greater Basilisk|MM}",
+						"{@creature Dracolisk|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 15,
+							"name": "Bat",
+							"items": [
+								"{@creature Common Bat|MM}",
+								"{@creature Large Bat|MM}",
+								"{@creature Huge Bat|MM}",
+								"{@creature Azmyth|MM}",
+								"{@creature Night Hunter|MM}",
+								"{@creature Sinister|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 17,
+							"name": "",
+							"items": [
+								"{@creature Black Bear|MM}",
+								"{@creature Brown Bear|MM}",
+								"{@creature Cave Bear|MM}",
+								"{@creature Polar Bear|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 18,
+							"name": "",
+							"items": [
+								"{@creature Bombardier Beetle|MM}",
+								"{@creature Boring Beetle|MM}",
+								"{@creature Fire Beetle|MM}",
+								"{@creature Rhinoceros Beetle|MM}",
+								"{@creature Stag Beetle|MM}",
+								"{@creature Water Beetle|MM}"
+							]
+						},
+						"{@creature Behir|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 21,
+							"name": "Beholder and Beholder-kin",
+							"items": [
+								"{@creature Beholder|MM}",
+								"{@creature Death Kiss|MM} (beholder-kin)",
+								"{@creature Eye of the Deep|MM} (beholder-kin)",
+								"{@creature Gauth|MM} (beholder-kin)",
+								"{@creature Spectator|MM} (beholder-kin)",
+								"{@creature Undead Beholder|MM} (Death Tyrant)",
+								"{@creature Hive Mother|MM} (beholder-kin)",
+								"{@creature Director|MM} (abomination)",
+								"{@creature Examiner|MM} (abomination)",
+								"{@creature Lensman|MM} (abomination)",
+								"{@creature Overseer|MM} (beholder-kin)",
+								"{@creature Watcher|MM} (abomination)",
+								"Beholder Mage",
+								"Elder Orb",
+								"Orbus",
+								"Doomsphere",
+								"Kasharin",
+								"Astereater",
+								"Gorbel"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 27,
+							"name": "",
+							"items": [
+								"{@creature Blood Hawk|MM}",
+								"{@creature Boobrie|MM}",
+								"{@creature Condor|MM}",
+								"Crow (See Raven)",
+								"{@creature Eblis|MM}",
+								"{@creature Giant Eagle|MM}",
+								"{@creature Wild Eagle|MM}",
+								"{@creature Falcon|MM}",
+								"{@creature Flightless Bird|MM}",
+								"{@creature Hawk|MM}",
+								"{@creature Owl|MM}",
+								"{@creature Giant Owl|MM}",
+								"{@creature Talking Owl|MM}",
+								"{@creature Raven|MM}",
+								"{@creature Huge Raven|MM}",
+								"{@creature Giant Raven|MM}",
+								"{@creature Skyfisher|MM}",
+								"{@creature Swan|MM}",
+								"{@creature Vulture|MM}",
+								"{@creature Giant Vulture|MM}",
+								"'Wari"
+							]
+						},
+						"{@creature Brain Mole|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 30,
+							"name": "Broken One",
+							"items": [
+								"{@creature Common Broken One|MM}",
+								"{@creature Greater Broken One|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 31,
+							"name": "",
+							"items": [
+								"{@creature Brownie|MM}",
+								"{@creature Killmoulis|MM}"
+							]
+						},
+						"{@creature Bugbear|MM}",
+						"{@creature Bulette|MM}",
+						"{@creature Bullywug|MM}",
+						"{@creature Carrion Crawler|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 36,
+							"name": "Cat, Great",
+							"items": [
+								"{@creature Cheetah|MM}",
+								"{@creature Jaguar|MM}",
+								"{@creature Leopard|MM}",
+								"{@creature Common Lion|MM}",
+								"{@creature Mountain Lion|MM}",
+								"{@creature Spotted Lion|MM}",
+								"{@creature Giant Lynx|MM}",
+								"{@creature Wild Tiger|MM}",
+								"{@creature Smilodon|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 38,
+							"name": "Cat, Small",
+							"items": [
+								"{@creature Domestic Cat|MM}",
+								"{@creature Wild Cat|MM}",
+								"{@creature Elven Cat|MM}"
+							]
+						},
+						"{@creature Catoblepas|MM}",
+						"{@creature Cave Fisher|MM}",
+						"{@creature Centaur|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 42,
+							"name": "Centipede",
+							"items": [
+								"{@creature Giant Centipede|MM}",
+								"{@creature Huge Centipede|MM}",
+								"{@creature Megalo-centipede|MM}",
+								"{@creature Tunnel Worm|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang",
+							"columns": 0,
+							"page": 43,
+							"name": "Chimera",
+							"items": [
+								"{@creature Chimera|MM}",
+								"{@creature Gorgimera|MM}"
+							]
+						},
+						"{@creature Cloaker|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 45,
+							"name": "Cockatrice",
+							"items": [
+								"{@creature Cockatrice|MM}",
+								"{@creature Pyrolisk|MM}"
+							]
+						},
+						"{@creature Couatl|MM}",
+						"{@creature Crabman|MM}",
+						"{@creature Crawling Claw|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 49,
+							"name": "Crocodile",
+							"items": [
+								"{@creature Crocodile|MM}",
+								"{@creature Giant Crocodile|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 50,
+							"name": "Crustacean, Giant",
+							"items": [
+								"{@creature Giant Crab|MM}",
+								"{@creature Giant Crayfish|MM}"
+							]
+						},
+						"{@creature Crypt Thing|MM}",
+						"{@creature Death Knight|MM}",
+						"{@creature Deepspawn|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 54,
+							"name": "Dinosaur",
+							"items": [
+								"{@creature Ankylosaurus|MM}",
+								"{@creature Deinonychus|MM}",
+								"{@creature Diplodocus|MM}",
+								"{@creature Elasmosaurus|MM}",
+								"{@creature Lambeosaurus|MM}",
+								"{@creature Pteranodon|MM}",
+								"{@creature Stegosaurus|MM}",
+								"{@creature Triceratops|MM}",
+								"{@creature Tyrannosaurus|MM}"
+							]
+						},
+						"{@creature Displacer Beast|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 57,
+							"name": "Dog",
+							"items": [
+								"{@creature Wild Dog|MM}",
+								"{@creature War Dog|MM}",
+								"{@creature Blink Dog|MM}",
+								"{@creature Death Dog|MM}"
+							]
+						},
+						"{@creature Moon Dog|MM|Dog, Moon}",
+						"{@creature Dolphin|MM}",
+						"{@creature Doppelganger|MM}",
+						"{@creature Dracolich|MM}",
+						"{@creature Dragon, General}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
 							"page": 65,
 							"name": "Dragon, Chromatic",
 							"items": [
-								""
+								"{@creature Black Dragon|MM}",
+								"{@creature Blue Dragon|MM}",
+								"{@creature Green Dragon|MM}",
+								"{@creature Red Dragon|MM}",
+								"{@creature White Dragon|MM}"
 							]
 						},
 						{
 							"type": "list",
 							"style": "list",
-							"columns": 4,
+							"columns": 0,
 							"page": 70,
 							"name": "Dragon, Gem",
 							"items": [
-								""
+								"{@creature Amethyst Dragon|MM}",
+								"{@creature Crystal Dragon|MM}",
+								"{@creature Emerald Dragon|MM}",
+								"{@creature Sapphire Dragon|MM}",
+								"{@creature Topaz Dragon|MM}"
 							]
 						},
 						{
 							"type": "list",
 							"style": "list",
-							"columns": 4,
+							"columns": 0,
 							"page": 75,
 							"name": "Dragon, Metallic",
 							"items": [
-								""
+								"{@creature Brass Dragon|MM}",
+								"{@creature Bronze Dragon|MM}",
+								"{@creature Copper Dragon|MM}",
+								"{@creature Gold Dragon|MM}",
+								"{@creature Silver Dragon|MM}"
+							]
+						},
+						"{@creature Brown Dragon|MM}",
+						"{@creature Cloud Dragon|MM}",
+						"{@creature Deep Dragon|MM}",
+						"{@creature Mercury Dragon|MM}",
+						"{@creature Mist Dragon|MM}",
+						"{@creature Shadow Dragon|MM}",
+						"{@creature Steel Dragon|MM}",
+						"{@creature Yellow Dragon|MM}",
+						"{@creature Dragon Turtle|MM}",
+						"{@creature Faerie Dragon|MM|Dragonet, Faerie Dragon}",
+						"{@creature Firedrake|MM|Dragonet, Firedrake}",
+						"{@creature Pseudodragon|MM|Dragonet, Pseudodragon}",
+						"{@creature Dragonne|MM}",
+						"{@creature Dryad|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 94,
+							"name": "Dwarf",
+							"items": [
+								"{@creature Hill Dwarf|MM}",
+								"{@creature Mountain Dwarf|MM}"
 							]
 						},
 						{
 							"type": "list",
 							"style": "list",
-							"columns": 4,
-							"page": 80,
-							"name": "Dragon, Others",
+							"columns": 0,
+							"page": 96,
+							"name": "Dwarf, Derro/Duergar",
 							"items": [
-								""
+								"{@creature Derro|MM}",
+								"{@creature Duergar|MM}"
 							]
 						},
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "E",
-			"page": 98,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 98,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "E",
-			"page": 98,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 98,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "F",
-			"page": 116,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 116,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "G",
-			"page": 122,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 122,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "H",
-			"page": 181,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 181,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "I",
-			"page": 201,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 201,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "J",
-			"page": 210,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 210,
-					"name": "",
-					"items": [
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "K",
-			"page": 211,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 211,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "L",
-			"page": 217,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 217,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "M",
-			"page": 241,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 241,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "N",
-			"page": 266,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 266,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "O",
-			"page": 266,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 266,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "P",
-			"page": 285,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 285,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "P",
-			"page": 285,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 285,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "Q",
-			"page": 298,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 298,
-					"name": "",
-					"items": [
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "R",
-			"page": 299,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 299,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "S",
-			"page": 306,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 306,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "T",
-			"page": 335,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 335,
-					"name": "",
-					"items": [
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "U",
-			"page": 352,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 352,
-					"name": "",
-					"items": [
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "V",
-			"page": 355,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 355,
-					"name": "",
-					"items": [
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "W",
-			"page": 357,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 357,
-					"name": "",
-					"items": [
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "X",
-			"page": 367,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 367,
-					"name": "",
-					"items": [
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "Y",
-			"page": 368,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 368,
-					"name": "",
-					"items": [
-						"",
-						"",
-						""
-					]
-				}
-			]
-		},
-		{
-			"type": "section",
-			"name": "Z",
-			"page": 372,
-			"entries": [
-				{
-					"type": "list",
-					"style": "list",
-					"columns": 4,
-					"page": 372,
-					"name": "",
-					"items": [
-						"",
-						"",
-						""
+						"Elemental, Generic Information",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 99,
+							"name": "Elemental, Air/Earth",
+							"items": [
+								"{@creature Air Elemental|MM}",
+								"{@creature Earth Elemental|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 100,
+							"name": "Elemental, Fire/Water",
+							"items": [
+								"{@creature Fire Elemental|MM}",
+								"{@creature Water Elemental|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 101,
+							"name": "Elemental, Air Kin",
+							"items": [
+								"{@creature Sylph|MM}",
+								"{@creature Aerial Servant|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 102,
+							"name": "Elemental, Earth Kin",
+							"items": [
+								"{@creature Pech|MM}",
+								"{@creature Sandling|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 103,
+							"name": "Elemental, Fire Kin",
+							"items": [
+								"{@creature Salamander|MM}",
+								"{@creature Fire Snake|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 104,
+							"name": "",
+							"items": [
+								"{@creature Nereid|MM}",
+								"{@creature Water Weird|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 105,
+							"name": "Elemental, Composite",
+							"items": [
+								"{@creature Tempest|MM}",
+								"{@creature Skriaxit|MM}",
+								"Arctic Tempest",
+								"Black Cloud of Vengeance"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 107,
+							"name": "Elephant",
+							"items": [
+								"{@creature Elephant|MM} (African)",
+								"{@creature Mammoth|MM}",
+								"{@creature Mastodon|MM}",
+								"{@creature Oliphant|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 108,
+							"name": "Elf",
+							"items": [
+								"{@creature High Elf|MM|Elf}",
+								"{@creature Grey Elf|MM} (Faerie)",
+								"{@creature Wood Elf|MM}",
+								"{@creature Half-Elf|MM}"
+							]
+						},
+						"{@creature Aquatic Elf|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 112,
+							"name": "",
+							"items": [
+								"{@creature Drow|MM}",
+								"{@creature Drider|MM}"
+							]
+						},
+						"{@creature Ettercap|MM}",
+						"{@creature Eyewing|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 116,
+							"name": "Feyr",
+							"items": [
+								"{@creature Feyr|MM}",
+								"{@creature Great Feyr|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang",
+							"columns": 0,
+							"page": 117,
+							"name": "Fish",
+							"items": [
+								"{@creature Barracuda|MM}",
+								"{@creature Giant Carp|MM|Carp, Giant}",
+								"{@creature Giant Catfish|MM|Catfish, Giant}",
+								"{@creature Dragonfish|MM}",
+								"{@creature Electric Eel|MM|Eel, Electric}",
+								"{@creature Giant Eel|MM|Eel, Giant}",
+								"{@creature Marine Eel|MM|Eel, Marine}",
+								"{@creature Weed Eel|MM|Eel, Weed}",
+								"{@creature Giant Gar|MM|Gar, Giant}",
+								"{@creature Ixitxachitl|MM}",
+								"{@creature Lamprey|MM}",
+								"{@creature Land Lamprey|MM|Lamprey, Land}",
+								"{@creature Manta Ray|MM}",
+								"{@creature Giant Pike|MM|Pike, Giant}",
+								"{@creature Piranha|MM}",
+								"{@creature Giant Piranha|MM|Piranha, Giant}",
+								"{@creature Pungi Ray|MM}",
+								"{@creature Quipper|MM}",
+								"{@creature Giant Seahorse|MM|Seahorse, Giant}",
+								"{@creature Shark|MM}",
+								"{@creature Giant Shark|MM|Shark, Giant}",
+								"{@creature Sting Ray|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 119,
+							"name": "",
+							"items": [
+								"{@creature Giant Frog|MM}",
+								"{@creature Killer Frog|MM}",
+								"{@creature Poisonous Frog|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 120,
+							"name": "Fungus",
+							"items": [
+								"{@creature Ordinary Fungus|MM}",
+								"{@creature Violet Fungus|MM}",
+								"{@creature Shrieker|MM}",
+								"{@creature Phycomid|MM}",
+								"{@creature Ascomoid|MM}",
+								"{@creature Gas Spore|MM}"
+							]
+						},
+						"{@creature Galeb Duhr|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 123,
+							"name": "Gargantua",
+							"items": [
+								"{@creature Reptilian Gargantua|MM}",
+								"{@creature Humanoid Gargantua|MM}",
+								"{@creature Insectoid Gargantua|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 125,
+							"name": "Gargoyle",
+							"items": [
+								"{@creature Gargoyle|MM}",
+								"{@creature Kapoacinth|MM}",
+								"{@creature Margoyle|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 0,
+							"name": "Genie",
+							"items": [
+								"{@creature Djinn|MM}",
+								"{@creature Dao|MM}",
+								"{@creature Efreeti|MM}",
+								"{@creature Marid|MM}",
+								"{@creature Jann|MM}"
+							]
+						},
+						"{@creature Ghost|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 131,
+							"name": "Ghoul",
+							"items": [
+								"{@creature Ghoul|MM}",
+								"{@creature Lacedon|MM}",
+								"{@creature Ghast|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 132,
+							"name": "Giant",
+							"items": [
+								"{@creature Cloud Giant|MM|Giant, Cloud}",
+								"{@creature Cyclopskin|MM}",
+								"{@creature Cyclops|MM}",
+								"{@creature Giant, Desert|MM}",
+								"{@creature Giant, Ettin|MM}",
+								"{@creature Firbolg|MM|Giant, Firbolg}",
+								"{@creature Fire Giant|MM|Giant, Fire}",
+								"{@creature Fog Giant|MM|Giant, Fog}",
+								"{@creature Fomorian|MM|Giant, Fomorian}",
+								"{@creature Frost Giant|MM|Giant, Frost}",
+								"{@creature Hill Giant|MM|Giant, Hill}",
+								"{@creature Jungle Giant|MM|Giant, Jungle}",
+								"{@creature Mountain Giant|MM|Giant, Mountain}",
+								"{@creature Reef Giant|MM|Giant, Reef}",
+								"{@creature Stone Giant|MM|Giant, Stone}",
+								"{@creature Storm Giant|MM|Giant, Storm}",
+								"{@creature Verbeeg|MM|Giant, Verbeeg}",
+								"{@creature Wood Giant|MM|Giant, Wood (Voadkyn)}"
+							]
+						},
+						"{@creature Gibberling|MM}",
+						"{@creature Giff|MM}",
+						"{@creature Gith|MM}",
+						"{@creature Gith, Pirate|MM}",
+						"{@creature Githyanki|MM}",
+						"{@creature Githzerai|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 157,
+							"name": "Gloomwing",
+							"items": [
+								"{@creature Gloomwing Moth|MM}",
+								"{@creature Tenebrous Worm|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 158,
+							"name": "Gnoll",
+							"items": [
+								"{@creature Gnoll|MM}",
+								"{@creature Flind|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 159,
+							"name": "Gnome",
+							"items": [
+								"{@creature Rock Gnome|MM}",
+								"{@creature Svirfneblin|MM} (Deep Gnome)",
+								"{@creature Tinker Gnome|MM} (Minoi)",
+								"{@creature Forest Gnome|MM}"
+							]
+						},
+						"{@creature Spriggan|MM|Gnome, Spriggan}",
+						"{@creature Goblin|MM}",
+						"Golem, General",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 164,
+							"name": "Golem",
+							"items": [
+								"{@creature Stone Golem|MM}",
+								"{@creature Iron Golem|MM}",
+								"{@creature Flesh Golem|MM}",
+								"{@creature Clay Golem|MM}",
+								"{@creature Bone Golem|MM}",
+								"{@creature Doll Golem|MM}",
+								"{@creature Gargoyle Golem|MM}",
+								"{@creature Glass Golem|MM}",
+								"{@creature Necrophidius|MM}",
+								"{@creature Scarecrow|MM}",
+								"{@creature Caryatid Column|MM}",
+								"{@creature Juggernaut|MM}",
+								"{@creature Stone Guardian|MM}"
+							]
+						},
+						"{@creature Gorgon|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 174,
+							"name": "Gremlin",
+							"items": [
+								"{@creature Gremlin|MM}",
+								"{@creature Fremlin|MM}",
+								"{@creature Galltrit|MM}",
+								"{@creature Mite|MM}",
+								"{@creature Snyad|MM}"
+							]
+						},
+						"{@creature Jermlaine|MM|Gremlin, Jermlaine}",
+						"{@creature Griffon|MM}",
+						"{@creature Grimlock|MM}",
+						"{@creature Grippli|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 181,
+							"name": "Hag",
+							"items": [
+								"{@creature Annis|MM}",
+								"{@creature Greenhag|MM}",
+								"{@creature Sea Hag|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 183,
+							"name": "Halfling",
+							"items": [
+								"{@creature Hairfoot Halfling|MM}",
+								"{@creature Tallfellow Halfling|MM}",
+								"{@creature Stout Halfling|MM}"
+							]
+						},
+						"{@creature Harpy|MM}",
+						{
+							"type": "list",
+							"style": "list-hang",
+							"columns": 0,
+							"page": 185,
+							"name": "Hatori",
+							"items": [
+								"{@creature Lesser Hatori|MM}",
+								"{@creature Greater Hatori|MM}"
+							]
+						},
+						"{@creature Haunt|MM}",
+						"{@creature Hell Hound|MM}",
+						"{@creature Heucuva|MM}",
+						"{@creature Hippocampus|MM}",
+						"{@creature Hippogriff|MM}",
+						"{@creature Hobgoblin|MM}",
+						"{@creature Koalinth|MM}",
+						"{@creature Homonculous|MM}",
+						"{@creature Hook Horror|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 194,
+							"name": "Horses",
+							"items": [
+								"{@creature Draft Horse|MM}",
+								"{@creature Heavy Warhorse|MM}",
+								"{@creature Medium Warhorse|MM}",
+								"{@creature Light Warhorse|MM}",
+								"{@creature Pony|MM}",
+								"{@creature Wild Horse|MM}",
+								"{@creature Riding Horse|MM}",
+								"{@creature Mule|MM}",
+								"{@creature Steppe Pony|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 196,
+							"name": "Human",
+							"items": [
+								"{@creature Aborigine/Caveman|MM}",
+								"{@creature Adventurer|MM}",
+								"{@creature Bandit/Brigand|MM}",
+								"{@creature Barbarian/Nomad|MM}",
+								"{@creature Berserker/Dervish|MM}",
+								"{@creature Farmer/Herder|MM}",
+								"{@creature Gentry|MM}",
+								"{@creature Knight|MM}",
+								"{@creature Mercenary Soldier|MM}",
+								"{@creature Merchant Sailor/Fisherman|MM}",
+								"{@creature Merchant/Trader|MM}",
+								"{@creature Middle Class|MM}",
+								"{@creature Peasant/Serf|MM}",
+								"{@creature Pilgrim|MM}",
+								"{@creature Pirate/Buccaneer|MM}",
+								"{@creature Police/Constabulary|MM}",
+								"{@creature Priest|MM}",
+								"{@creature Sailor|MM}",
+								"{@creature Slaver|MM}",
+								"{@creature Soldier|MM}",
+								"{@creature Thief/Thug|MM}",
+								"{@creature Tradesfolk/Craftspeople|MM}",
+								"{@creature Tribal Culture|MM}",
+								"{@creature Wizard|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 200,
+							"name": "Hydra",
+							"items": [
+								"{@creature Hydra|MM}",
+								"{@creature Lernaean Hydra|MM}",
+								"{@creature Pyrohydra|MM}",
+								"{@creature Cryohydra|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 201,
+							"name": "Imp",
+							"items": [
+								"{@creature Imp|MM}",
+								"{@creature Quasit|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 202,
+							"name": "Imp, Mephit",
+							"items": [
+								"{@creature Fire Mephit|MM}",
+								"{@creature Ice Mephit|MM}",
+								"{@creature Lava Mephit|MM}",
+								"{@creature Mist Mephit|MM}",
+								"{@creature Smoke Mephit|MM}",
+								"{@creature Steam Mephit|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 204,
+							"name": "Insect",
+							"items": [
+								"{@creature |MM|Ant, Giant}",
+								"{@creature |MM|Ant Lion, Giant}",
+								"{@creature Aratha|MM}",
+								"{@creature |MM|Aspis, Cow}",
+								"{@creature |MM|Aspis, Drone}",
+								"{@creature |MM|Aspis, Larva}",
+								"{@creature Assassin Bug|MM}",
+								"{@creature |MM|Bee, Worker}",
+								"{@creature |MM|Bee, Soldier}",
+								"{@creature Bumblebee|MM}",
+								"{@creature Cave Cricket|MM}",
+								"{@creature Dragonfly|MM}",
+								"{@creature Dragonfly Larva|MM|}",
+								"{@creature Ear Seeker|MM}",
+								"{@creature Firefriend|MM|Firefriend (Giant Firefly)}",
+								"{@creature Giant Bluebottle|MM|Fly, Giant Bluebottle}",
+								"{@creature Giant Horsefly|MM|Fly, Giant Horsefly}",
+								"{@creature Fyrefly|MM}",
+								"{@creature Horax|MM}",
+								"{@creature Giant Hornet|MM|Hornet, Giant}",
+								"{@creature Pernicon|MM}",
+								"{@creature Gargantuan Praying Mantis|MM|Praying Mantis, Gargantuan}",
+								{
+									"type": "list",
+									"style": "list",
+									"columns": 0,
+									"page": 205,
+									"name": "Termite, Giant Harvester",
+									"items": [
+										"{@creature King Termite|MM}",
+										"{@creature Queen Termite|MM}",
+										"{@creature Soldier Termite|MM}",
+										"{@creature Worker Termite|MM}"
+									]
+								},
+								"{@creature Giant Tick|MM|Tick, Giant}",
+								"{@creature Giant Wasp|MM|Wasp, Giant}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 206,
+							"name": "Insect Swarm",
+							"items": [
+								"{@creature Velvet Ants|MM}",
+								"{@creature Grasshoppers and Locusts|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 207,
+							"name": "Intellect Devourer",
+							"items": [
+								"{@creature Intellect Devourer|MM}",
+								"{@creature Ustilagor|MM}"
+							]
+						},
+						"{@creature Invisible Stalker|MM}",
+						"{@creature Ixitxachitl|MM}",
+						"{@creature Jackalwere|MM}",
+						"{@creature Kenku|MM}",
+						"{@creature Ki-rin|MM}",
+						"{@creature Kirre|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 214,
+							"name": "",
+							"items": [
+								"{@creature Kobold|MM}",
+								"{@creature Urd|MM}"
+							]
+						},
+						"{@creature Kuo-Toa|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 217,
+							"name": "Lamia",
+							"items": [
+								"{@creature Lamia|MM}",
+								"{@creature Lamia Noble|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 218,
+							"name": "Lammasu",
+							"items": [
+								"{@creature Lesser Lammasu|MM}",
+								"{@creature Greater Lammasu|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 219,
+							"name": "Leech",
+							"items": [
+								"{@creature Giant Leech|MM}",
+								"{@creature Throat Leech|MM}",
+								"{@creature Leech Swarm|MM}"
+							]
+						},
+						"{@creature Leprechaun|MM}",
+						"{@creature Leucrotta|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 222,
+							"name": "Lich",
+							"items": [
+								"{@creature Lich|MM}",
+								"{@creature Demilich|MM}",
+								"{@creature Archlich|MM}"
+							]
+						},
+						"{@creature Living Wall|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 226,
+							"name": "Lizard",
+							"items": [
+								"{@creature Fire Lizard|MM}",
+								"{@creature Giant Lizard|MM}",
+								"{@creature Minotaur Lizard|MM}",
+								"{@creature Subterranean Lizards|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 227,
+							"name": "Lizard Man",
+							"items": [
+								"{@creature Lizard Man|MM}",
+								"{@creature Lizard King|MM}"
+							]
+						},
+						"{@creature Locathah|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 229,
+							"name": "Lurker",
+							"items": [
+								"{@creature Lurker|MM}",
+								"{@creature Trapper|MM}",
+								"{@creature Forest Trapper|MM} (Miner)"
+							]
+						},
+						"{@creature Lycanthrope, General|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 229,
+							"name": "Lycanthrope",
+							"items": [
+								"{@creature Seawolf|MM}",
+								"{@creature Werebat|MM}",
+								"{@creature Werebear|MM}",
+								"{@creature Wereboar|MM}",
+								"{@creature Werefox|MM} (Foxwoman)",
+								"{@creature Wererat|MM}",
+								"{@creature Wereraven|MM}",
+								"{@creature Weretiger|MM}",
+								"{@creature Werewolf|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 241,
+							"name": "Mammal",
+							"items": [
+								"{@creature Carnivorous Ape|MM|Ape, Carnivorous}",
+								"{@creature Wild Baboon|MM|Baboon, Wild}",
+								"{@creature Badger|MM}",
+								"{@creature Banderlog|MM}",
+								"{@creature Bhaergala|MM}",
+								"{@creature Wild Boar|MM|Boar, Wild}",
+								"{@creature Chattur|MM}",
+								"{@creature Cooshee|MM}",
+								"{@creature Dakon|MM}",
+								"{@creature Debbi|MM}",
+								"{@creature Goat|MM}",
+								"{@creature Gorilla|MM}",
+								"{@creature Hsing-sing|MM}",
+								"{@creature Hyena|MM}",
+								"{@creature Jackal|MM}",
+								"{@creature Losel|MM}",
+								"{@creature Monkey Spider|MM}",
+								"{@creature Porcupine|MM}",
+								"{@creature Rothé|MM}",
+								"{@creature Skunk|MM}",
+								"{@creature Sleek|MM}",
+								"{@creature Wild Stag|MM|Stag, Wild}",
+								"{@creature Stench Kow|MM}",
+								"{@creature Taer|MM}",
+								"{@creature Tyrg|MM}",
+								"{@creature Warthog|MM}",
+								"{@creature Weasel|MM}",
+								"{@creature Wolverine|MM}",
+								"Minimal Mammals",
+								"Giant Mammals"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 243,
+							"name": "Mammal, Herd",
+							"items": [
+								"{@creature Camel|MM}",
+								"{@creature Cattle|MM}",
+								"{@creature Buffalo|MM}",
+								"{@creature Antelope|MM}",
+								"{@creature Sheep|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 244,
+							"name": "Mammal, Small",
+							"items": [
+								"{@creature Beaver|MM}",
+								"{@creature Chipmunk|MM}",
+								"{@creature Ferret|MM}",
+								"{@creature Fox|MM}",
+								"{@creature Gopher|MM}",
+								"{@creature Hedgehog|MM}",
+								"{@creature Mink|MM}",
+								"{@creature Mole|MM}",
+								"{@creature Mouse|MM}",
+								"{@creature Muskrat|MM}",
+								"{@creature Opossum|MM}",
+								"{@creature Otter|MM}",
+								"{@creature Sea Otter|MM}",
+								"{@creature Giant Otter|MM}",
+								"{@creature Domestic Pig|MM}",
+								"{@creature Wild Pig|MM}",
+								"{@creature Rabbit|MM}",
+								"{@creature Raccoon|MM}",
+								"{@creature Squirrel|MM}",
+								"{@creature Flying Squirrel|MM}",
+								"{@creature Giant Black Squirrel|MM}",
+								"{@creature Woodchucks|MM}"
+							]
+						},
+						"{@creature Manscorpion|MM}",
+						"{@creature Manticore|MM}",
+						"{@creature Medusa|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 247,
+							"name": "Medusa",
+							"items": [
+								"{@creature Medusa|MM}",
+								"{@creature Greater Medusa|MM} (Serpentine)"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 248,
+							"name": "Medusa, Maedar",
+							"items": [
+								"{@creature Maedar|MM}",
+								"{@creature Glyptar|MM}"
+							]
+						},
+						"{@creature Merman|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 250,
+							"name": "Mimic",
+							"items": [
+								"{@creature Common Mimic|MM}",
+								"{@creature Killer Mimic|MM}"
+							]
+						},
+						"{@creature Mind Flayer|MM} (Illithid)",
+						"{@creature Minotaur|MM}",
+						"{@creature Crimson Death Mist|MM|Mist, Crimson Death}",
+						"{@creature Vampiric Mist|MM|Mist, Vampiric}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 255,
+							"name": "Mold",
+							"items": [
+								"{@creature Brown Mold|MM}",
+								"{@creature Russet Mold|MM}",
+								"{@creature Yellow Mold|MM}"
+							]
+						},
+						"{@creature Mold Man |MM} (Vegepygmy)",
+						"{@creature Mongrelman|MM}",
+						"{@creature Morkoth|MM}",
+						"{@creature Muckdweller|MM}",
+						"{@creature Mudman|MM}",
+						"{@creature Mummy|MM}",
+						"{@creature Greater Mummy|MM|Mummy, Greater}",
+						"{@creature Myconid|MM} (Fungus Man)",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 266,
+							"name": "Naga",
+							"items": [
+								"{@creature Guardian Naga|MM}",
+								"{@creature Spirit Naga|MM}",
+								"{@creature Water Naga|MM}"
+							]
+						},
+						"{@creature Dark Naga|MM|Naga, Dark}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 268,
+							"name": "Neogi",
+							"items": [
+								"{@creature Neogi|MM}",
+								"{@creature Great Old Master|MM}"
+							]
+						},
+						"{@creature Nightmare|MM}",
+						"{@creature Nymph|MM}",
+						"{@creature Giant Octopus|MM|Octopus, Giant}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 272,
+							"name": "Ogre",
+							"items": [
+								"{@creature Ogre|MM}",
+								"{@creature Ogre Leader|MM}",
+								"{@creature Ogre Chieftain|MM}",
+								"{@creature Ogre Mage|MM}",
+								"{@creature Merrow|MM} (Aquatic Ogre)"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 274,
+							"name": "Half-Ogre",
+							"items": [
+								"{@creature Half-Ogre|MM}",
+								"{@creature Ogrillon|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 276,
+							"name": "Ooze/Slime/Jelly",
+							"items": [
+								"{@creature Olive Slime|MM}",
+								"{@creature Olive Slime Creature |MM}",
+								"{@creature Mustard Jelly|MM}",
+								"{@creature Stunjelly|MM}",
+								"{@creature Ochre Jelly|MM}",
+								"{@creature Gray Ooze|MM}",
+								"{@creature Crystal Ooze|MM}",
+								"{@creature Gelatinous Cube|MM}",
+								"{@creature Green Slime|MM}"
+							]
+						},
+						"{@creature Slithering Tracker|MM|Ooze/Slime/Jelly, Slithering Tracker}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 281,
+							"name": "Orc",
+							"items": [
+								"{@creature Orc|MM}",
+								"{@creature Orog|MM}",
+								"{@creature Half-orc|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "lsit",
+							"columns": 0,
+							"page": 283,
+							"name": "Otyugh",
+							"items": [
+								"{@creature Otyugh|MM}",
+								"{@creature Neo-otyugh|MM}"
+							]
+						},
+						"{@creature Owlbear|MM}",
+						"{@creature Pegasus|MM}",
+						"{@creature Peryton|MM}",
+						"{@creature Phantom|MM}",
+						"{@creature Phoenix|MM}",
+						"{@creature Piercer|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 291,
+							"name": "Plant, Dangerous",
+							"items": [
+								"{@creature Choke Creeper|MM}",
+								"{@creature Mantrap|MM}",
+								"{@creature Retch Plant|MM}",
+								"{@creature Snapper-Saw|MM}",
+								"{@creature Thornslinger|MM}",
+								"{@creature Tri-flower Frond|MM}",
+								"{@creature Yellow Musk Creeper|MM}",
+								"{@creature Yellow Musk Zombie|MM}",
+								"{@creature Hangman Tree|MM}",
+								"{@creature Kelpie|MM}",
+								"{@creature Obliviax|MM}",
+								"{@creature Quickwood|MM}",
+								"{@creature Shambling Mound|MM}",
+								"{@creature Strangleweed|MM}",
+								"{@creature Giant Sundew|MM}",
+								"{@creature Thorny|MM}"
+							]
+						},
+						"{@creature Poltergeist|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 297,
+							"name": "Pudding, Deadly",
+							"items": [
+								"{@creature Black Pudding|MM}",
+								"{@creature White Pudding|MM}",
+								"{@creature Dun Pudding|MM}",
+								"{@creature Brown Pudding|MM}"
+							]
+						},
+						"{@creature Quaggoth|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 299,
+							"name": "Rakshasa",
+							"items": [
+								"{@creature Rakshasa|MM}",
+								"{@creature Greater Rakshasa|MM|Rakshasa, Greater}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 300,
+							"name": "Rat",
+							"items": [
+								"{@creature Brush Rat|MM}",
+								"{@creature Giant Rat|MM|Rat, Giant}",
+								"{@creature Osquip|MM}"
+							]
+						},
+						"{@creature Remorhaz|MM}",
+						"{@creature Revenant|MM}",
+						"{@creature Roc|MM}",
+						"{@creature Roper|MM}",
+						"{@creature Rust Monster|MM}",
+						"{@creature Sahuagin|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 308,
+							"name": "Satyr",
+							"items": [
+								"{@creature Satyr|MM}",
+								"{@creature Korred|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 309,
+							"name": "Scorpion",
+							"items": [
+								"{@creature Large Scorpions|MM}",
+								"{@creature Huge Scorpions|MM}",
+								"{@creature Giant Scorpions|MM}"
+							]
+						},
+						"{@creature Sea Lion|MM}",
+						"{@creature Selkie|MM}",
+						"{@creature Shadow|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 313,
+							"name": "Shedu",
+							"items": [
+								"{@creature Lesser Shedu|MM}",
+								"{@creature Greater Shedu|MM}"
+							]
+						},
+						"{@creature Sirine|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 315,
+							"name": "Skeleton",
+							"items": [
+								"{@creature Skeleton|MM}",
+								"{@creature Animal Skeleton|MM}",
+								"{@creature Monster Skeleton|MM}"
+							]
+						},
+						"{@creature Giant Skeleton|MM|Skeleton, Giant}",
+						"{@creature Skeleton Warrior|MM|Skeleton, Warrior}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 318,
+							"name": "Slaad",
+							"items": [
+								"{@creature Red Slaad|MM}",
+								"{@creature Blue Slaad|MM}",
+								"{@creature Green Slaad|MM}",
+								"{@creature Gray Slaad|MM}",
+								"{@creature Death Slaad|MM}"
+							]
+						},
+						"{@creature Slug, Giant|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 320,
+							"name": "Snake",
+							"items": [
+								"{@creature Amphisbaena|MM}",
+								"{@creature Boalisk|MM}",
+								"{@creature Constrictor Snake|MM}",
+								"{@creature Giant Constrictor Snake|MM}",
+								"{@creature Heway|MM}",
+								"{@creature Poisonous Snake|MM}",
+								"{@creature Giant Poisonous Snake|MM}",
+								"{@creature Giant Sea Snake|MM}",
+								"{@creature Spitting Snak|MM}",
+								"{@creature Jaculi (Tree Snakes)|MM}",
+								"{@creature Elder Serpents|MM}"
+							]
+						},
+						"{@creature Winged Snake|MM|Snake, Winged}",
+						"{@creature Spectre|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 324,
+							"name": "Sphinx",
+							"items": [
+								"{@creature Androsphinx|MM}",
+								"{@creature Criosphinxes|MM}",
+								"{@creature Gynosphinxes|MM}",
+								"{@creature Hieracosphinxes|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 326,
+							"name": "Spider",
+							"items": [
+								"{@creature Hairy Spider|MM}",
+								"{@creature Large Spider|MM}",
+								"{@creature Huge Spider|MM}",
+								"{@creature Giant Spider|MM}",
+								"{@creature Phase Spider|MM}",
+								"{@creature Sword Spider|MM}",
+								"{@creature Gargantuan Spider|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 328,
+							"name": "Sprite",
+							"items": [
+								"{@creature Sprite|MM}",
+								"{@creature Sea Sprite|MM}",
+								"{@creature Pixie|MM}",
+								"{@creature Nixie|MM}",
+								"{@creature Atomie|MM}",
+								"{@creature Grig|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 331,
+							"name": "Squid, Giant",
+							"items": [
+								"{@creature Giant Squid|MM|Squid, Giant}",
+								"{@creature Kraken|MM}"
+							]
+						},
+						"{@creature Stirge|MM}",
+						"{@creature Su-Monster|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 334,
+							"name": "Swanmay",
+							"items": [
+								"{@creature Swanmay|MM}",
+								"{@creature Bird Maiden|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 335,
+							"name": "Swanmay",
+							"items": [
+								"{@creature Tabaxi|MM}",
+								"{@creature Tabaxi Lord|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 336,
+							"name": "Tako",
+							"items": [
+								"{@creature Male Tako|MM}",
+								"{@creature Female Tako|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 337,
+							"name": "Tanar’ri",
+							"items": [
+								"{@creature Balor|MM} (True Tanar'ri)",
+								"{@creature Marilith|MM} (True Tanar'ri)"
+							]
+						},
+						"{@creature Tarrasque|MM}",
+						"{@creature Tasloi|MM}",
+						"{@creature Thought Eater|MM}",
+						"{@creature Thri-Kreen|MM}",
+						"{@creature Titan|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 345,
+							"name": "Toad, Giant",
+							"items": [
+								"{@creature Giant Toad|MM}",
+								"{@creature Fire Toad|MM}",
+								"{@creature Ice Toad|MM}",
+								"{@creature Poisonous Toad|MM}"
+							]
+						},
+						"{@creature Treant|MM}",
+						"{@creature Triton|MM}",
+						"{@creature Troglodyte|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 349,
+							"name": "Troll",
+							"items": [
+								"{@creature Troll|MM}",
+								"{@creature Giant Two-Headed Troll|MM}",
+								"{@creature Freshwater Troll|MM} (Scrag)",
+								"{@creature Saltwater Troll|MM} (Marine Scrag)",
+								"{@creature Desert Trolls|MM}",
+								"{@creature Spectral Troll|MM} (Troll Wraith)",
+								"{@creature Giant Trolls|MM}",
+								"{@creature Ice Troll|MM}",
+								"{@creature Spirit Trolls|MM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 352,
+							"name": "Umber Hulk",
+							"items": [
+								"{@creature Umber Hulk|MM}",
+								"{@creature Vodyanoi|MM}"
+							]
+						},
+						"{@creature Unicorn|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 354,
+							"name": "Urchin",
+							"items": [
+								"{@creature Black Urchin|MM}",
+								"{@creature Green Urchin|MM}",
+								"{@creature Red Urchin|MM}",
+								"{@creature Silver Urchin|MM}",
+								"{@creature Yellow Urchin|MM}",
+								"{@creature Land Urchin|MM}"
+							]
+						},
+						"{@creature Vampire|MM}",
+						"{@creature Wemic|MM}",
+						"{@creature Whale|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 358,
+							"name": "",
+							"items": [
+								"{@creature Common Whale|MM}",
+								"{@creature Giant Whale|MM}",
+								"{@creature Leviathan|MM}",
+								"{@creature Killer Whale|MM} (Orca)",
+								"{@creature Narwhal|MM}"
+							]
+						},
+						"{@creature Wight|MM}",
+						"{@creature Will o’wisp|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 362,
+							"name": "Wolf",
+							"items": [
+								"{@creature Wolf|MM}",
+								"{@creature Dire Wolf|MM}",
+								"{@creature Worg|MM}",
+								"{@creature Winter Wolf|MM}"
+							]
+						},
+						"{@creature Wolfwere|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 364,
+							"name": "Worm",
+							"items": [
+								"{@creature Purple Worm|MM}",
+								"{@creature Giant Bloodworm|MM}",
+								"{@creature Bookworm|MM}",
+								"{@creature Rot Grub|MM}"
+							]
+						},
+						"{@creature Wraith|MM}",
+						"{@creature Wyvern|MM}",
+						"{@creature Xorn|MM}",
+						"{@creature Yeti|MM}",
+						"{@creature Yuan-ti|MM}",
+						"{@creature Histachii|MM|Yuan-ti, Histachii}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 371,
+							"name": "Yugoloth, Guardian",
+							"items": [
+								"{@creature Least Yugoloth|MM}",
+								"{@creature Lesser Yugoloth|MM}",
+								"{@creature Greater Yugoloth|MM}"
+							]
+						},
+						"{@creature Zaratan|MM}",
+						{
+							"type": "list",
+							"style": "list",
+							"columns": 0,
+							"page": 373,
+							"name": "Zombie",
+							"items": [
+								"{@creature Common Zombie|MM}",
+								"{@creature Monster Zombie|MM}",
+								"{@creature Ju-ju Zombie|MM}",
+								"{@creature Zombie Lord|MM}",
+								"{@creature Sea Zombie|MM}"
+							]
+						}
 					]
 				}
 			]
@@ -959,7 +1994,28 @@
 			"name": "Instructions for the Blank Monster Form",
 			"page": 375,
 			"entries": [
-				""
+				"When designing a monster, avoid extremes. It is a common mistake to make a monster incredibly tough for no reason. Really tough monsters are very rare! If a monster has an extreme ability or combat statistic, there should be a good reason. In the same light, fit the monster's abilities to its description. Players need a fair chance to anticipate what the monster might do. For example, a monster that can fly should have wings, or else usually be encountered aloft. If a monster will have a surprising ability, keep it to just one, and have a good reason for the surprise.",
+				"Not all monsters have to be evil. There are many other reasons a monster can be dangerous without arbitrarily making it evil. For example, any creature will fight to protect its family or territory whether it is good or evil.",
+				"Characters should be able to negoitate with or intimidate many creatures, but negotiating with a monster does not always mean giving it treasure. Most animals will put off an attack if tossed a free meal they can eat in peace; intelligent creatures have many different motivations. Try not to force characters into having to kill every monster they meet. If a monster is left alive after an enounter, it might be encountered again, and become a regular part of the campaign.",
+				"{@color CLIMATE/TERRAIN:|1169a3} Restrict your monsters reasonably. As a rule, only tool-making creatures can be found in every climate or every terrain. Remember that the physical design of a monster should make sense for the climate and the terrain.",
+				"{@color FREQUENCY:|1169a3} Monsters should not dominate the landscape unless your campaign plot requires them to. Most monsters avoid settled areas because organized groups of humans and demihumans tend to kill them.",
+				"{@color ORGANIZATION:|1169a3} Give a lot of thought to this entry; it determines the group tendencies of the monster. A pack can be controlled by controlling its leader. A flock, on the other hand, has no leader, but it does have a pecking order.",
+				"{@color ACTIVITY CYCLE:|1169a3} Most monsters need to rest. When are they out and about? When are they sleeping? These habits should make sense with the diet and climate/terrain of the monster.",
+				"{@color DIET:|1169a3} What does the monster eat? Not every monster is a man-eater. A wild bull is just as dangerous as a tiger, but it does not eat meat. Remember, fangs and claws imply carnivores, tusks and horns imply herbivores.",
+				"{@color INTELLIGENCE:|1169a3} Avoid the tendency to make monsters too intelligent or too stupid. A creature living in the middle of the jungle with no manipulative organs is not likely to be intelligent. Really high intelligence usually implies civilization, or at least sophisticated tools. On the other hand, monsters that must fight to survive must have enough intelligence or other natural ability to conquer their foes.",
+				"{@color TREASURE:|1169a3} Treasure is usually collected only by intelligent creatures. An animal type may guard a treasure for another creature, but the treasure itself belongs to the intelligence that set it there as a guard. Monsters that care little for riches and magical items might still have some as a result of encounters, but things will be scattered and ill-kept, often rusting away to worthlessness. Intelligent monsters, on the other hand, will use their magical treasures to their best advantage -- which may be no help at all to the characters!",
+				"{@color ALIGNMENT:|1169a3} This is a broad description of the moral and ethical tendencies of the monster. A creature of animal intelligence has no morals or ethics, and hence is of neutral alignment. In general, try to avoid extremes, unless these fit the monster.",
+				"{@color NO. APPEARING:|1169a3} This includes such values as Hit Dice and Armor Class. They should match the physical description of the monster. A well-designed monster fights the way it looks. A small, fuzzy creature with big, soft eyes should not have 25 Hit Dice, an Armor Class of -8, and swoop through the air to attack. The amount of damage done should reflect the weapon being used. Avoid the tendency to give monsters excessive Hit Dice and damage capabilities. The DM is the only person who gets a kick from seeing a PC suffer 40 points of damage in one round; players don't find that amusing at all.",
+				"{@color COMBAT STATISTICS:|1169a3} See Chapter 9 of the {@i {@book DMG}} to determine THAC0 for monsters.",
+				"",
+				"{@color APPEARANCE:|1169a3} Include in the physical description of the monster its size, weight, color (skin, hair, eyes, etc.), smell, noises, type of movement (graceful walk, shambling gait, etc.), typical clothing, and preferred weapons.",
+				"{@color COMBAT:|1169a3} Include any special combat abilities or disabilities. Be sure to cover any basic strategies or tactics the monster might use. Remember, smart monsters use smart tactics. The strategies should reflect their natural advantages and disadvantages.",
+				"{@color HABITAT/SOCIETY:|1169a3} How does the monster relate to others of its kind, and to strangers? When do they work together and when do they fight? How do they choose leaders and how do these leaders rule? What are the goals of these monsters? Where do they live and how does this affect their behavior? Do they use or make tools? If so, what types and how are they made? Why does this monster have treasure? How does it get it? What is the nature of the family, and how many live together? Does the monster have special guards or allies and how frequently are they found together?",
+				"{@color ECOLOGY:|1169a3} This should include the types of food eaten -- as well as what eats them, if anything. Any useful by-products should be listed, such as fur or edible parts. You may list uses for magical items or spells. On the other hand, don't turn your monster descriptions into shopping lists. The PCs are heroes, not butchers or fur trappers. List other creatures that live in harmony with the monster or compete against it, along with information about the size and nature of its territory.",
+				"{@color VARIANTS:|1169a3} If there are major subraces, they should be detailed here. This may be a stronger leader type, an inferior servant race, or a DM special, such as skeletons that hurl their finger joints like {@spell Magic Missile|PHB|magic missiles}.",
+				"{@color XP VALUE:|1169a3} Guidelines for awarding experience are found in Chapter 8 of the {@i {@book DMG}}. Hit Dice Value Modifiers for psionic monsters are +1 if the creature has access to only devotions, +2 if the creature has both sciences and devotions.",
+				"In addition to the Hit Dice Value Modifiers listed for monsters in the {@i {@book DMG}}, consider the following optional modifiers: +1 for any special movement which gives an advantage, not just flying; +2 for magic resistance over 50%, +1 for magic resistance of 50% or under; +2 for breath weapons which can cause more than 20 points damage per attack, +1 for other breath weapons.",
+				"BLANK MONSTER FORM WEBP GOES HERE"
 			]
 		},
 		{
@@ -967,7 +2023,1646 @@
 			"name": "Monster Summoning Tables",
 			"page": 377,
 			"entries": [
-				""
+				{
+					"type": "tableGroup",
+					"name": "",
+					"page": 377,
+					"tables": [
+						{
+							"type": "table",
+							"caption": "Monster Summoning I",
+							"page": 377,
+							"colStyles": [
+								"col- text-center",
+								"col- text-left"
+							],
+							"rows": [
+								[
+									"1",
+									"Ant, giant"
+								],
+								[
+									"2",
+									"Bat, huge"
+								],
+								[
+									"3",
+									"Beetle, fire"
+								],
+								[
+									"4",
+									"Bullywug"
+								],
+								[
+									"5",
+									"Goblin"
+								],
+								[
+									"6",
+									"Hobgoblin"
+								],
+								[
+									"7",
+									"Jermlaine (3d4 appear)"
+								],
+								[
+									"8",
+									"Kobold (3d4 appear)"
+								],
+								[
+									"9",
+									"Leech, giant (1 HD)"
+								],
+								[
+									"10",
+									"Muckdweller"
+								],
+								[
+									"11",
+									"Orc"
+								],
+								[
+									"12",
+									"Rat, giant (3d4 appear)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Monster Summoning II",
+							"page": 377,
+							"colStyles": [
+								"col- text-center",
+								"col- text-left"
+							],
+							"rows": [
+								[
+									"1",
+									"Beetle, bombardier"
+								],
+								[
+									"2",
+									"Centipede, giant"
+								],
+								[
+									"3",
+									"Frog, giant or killer"
+								],
+								[
+									"4",
+									"Gnoll or flind"
+								],
+								[
+									"5",
+									"Lamprey, land"
+								],
+								[
+									"6",
+									"Lizard man"
+								],
+								[
+									"7",
+									"Mongrelmen (2 HD)"
+								],
+								[
+									"8",
+									"Mudmen"
+								],
+								[
+									"9",
+									"Spider, large"
+								],
+								[
+									"10",
+									"Stirge"
+								],
+								[
+									"11",
+									"Toad, giant"
+								],
+								[
+									"12",
+									"Troglodyte"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Monster Summoning III",
+							"page": 377,
+							"colStyles": [
+								"col- text-center",
+								"col- text-left"
+							],
+							"rows": [
+								[
+									"1",
+									"Ankheg (3-4 HD)"
+								],
+								[
+									"2",
+									"Bat, giant (mobat)"
+								],
+								[
+									"3",
+									"Beetle, boring"
+								],
+								[
+									"4",
+									"Bugbear"
+								],
+								[
+									"5",
+									"Centipede, megalo-"
+								],
+								[
+									"6",
+									"Crab, giant"
+								],
+								[
+									"7",
+									"Crocodile, wild"
+								],
+								[
+									"8",
+									"Dog, death"
+								],
+								[
+									"9",
+									"Gelatinous cube"
+								],
+								[
+									"10",
+									"Ghoul"
+								],
+								[
+									"11",
+									"Lizard, giant"
+								],
+								[
+									"12",
+									"Lyc., rat"
+								],
+								[
+									"13",
+									"Orc, orog"
+								],
+								[
+									"14",
+									"Osquip"
+								],
+								[
+									"15",
+									"Sandling"
+								],
+								[
+									"16",
+									"Scorpion, large"
+								],
+								[
+									"17",
+									"Snake, constrictor"
+								],
+								[
+									"18",
+									"Spider, huge"
+								],
+								[
+									"19",
+									"Weasel, giant"
+								],
+								[
+									"20",
+									"Urchin, land"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Monster Summoning IV",
+							"page": 377,
+							"colStyles": [
+								"col- text-center",
+								"col- text-left"
+							],
+							"rows": [
+								[
+									"1",
+									"Ankheg (5-6 HD)"
+								],
+								[
+									"2",
+									"Ape, carnivorous"
+								],
+								[
+									"3",
+									"Banderlog"
+								],
+								[
+									"4",
+									"Ettercap"
+								],
+								[
+									"5",
+									"Gargoyle"
+								],
+								[
+									"6",
+									"Ghast"
+								],
+								[
+									"7",
+									"Hell hound"
+								],
+								[
+									"8",
+									"Huecuva"
+								],
+								[
+									"9",
+									"Hydra, 5 heads"
+								],
+								[
+									"10",
+									"Lyc., wolf"
+								],
+								[
+									"11",
+									"Ogre"
+								],
+								[
+									"12",
+									"Ooze, gray"
+								],
+								[
+									"13",
+									"Owlbear"
+								],
+								[
+									"14",
+									"Scorpion, huge"
+								],
+								[
+									"15",
+									"Snake, giant const."
+								],
+								[
+									"16",
+									"Toad, poisonous"
+								],
+								[
+									"17",
+									"Toad, fire"
+								],
+								[
+									"18",
+									"Wasp, giant"
+								],
+								[
+									"19",
+									"Wolf, worg"
+								],
+								[
+									"20",
+									"Yeti"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Monster Summoning V",
+							"page": 377,
+							"colStyles": [
+								"col- text-center",
+								"col- text-left"
+							],
+							"rows": [
+								[
+									"1",
+									"Ankheg (7-8 HD)"
+								],
+								[
+									"2",
+									"Cockatrice"
+								],
+								[
+									"3",
+									"Displacer beast"
+								],
+								[
+									"4",
+									"Doppleganger"
+								],
+								[
+									"5",
+									"Hornet, giant"
+								],
+								[
+									"6",
+									"Hydra, 7 heads"
+								],
+								[
+									"7",
+									"Hydra, 5 heads, cryo- or pyro-"
+								],
+								[
+									"8",
+									"Leucrotta"
+								],
+								[
+									"9",
+									"Lizard, subterranean"
+								],
+								[
+									"10",
+									"Lyc., boar"
+								],
+								[
+									"11",
+									"Margoyle"
+								],
+								[
+									"12",
+									"Minotaur"
+								],
+								[
+									"13",
+									"Ochre jelly"
+								],
+								[
+									"14",
+									"Rust monster"
+								],
+								[
+									"15",
+									"Slithering tracker"
+								],
+								[
+									"16",
+									"Snake, giant, pois. or spitting"
+								],
+								[
+									"17",
+									"Spider, giant"
+								],
+								[
+									"18",
+									"Giantkin, verbeeg"
+								],
+								[
+									"19",
+									"Wolf, winter"
+								],
+								[
+									"20",
+									"Zombie, ju-ju"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Monster Summoning VI",
+							"page": 377,
+							"colStyles": [
+								"col- text-center",
+								"col- text-left"
+							],
+							"rows": [
+								[
+									"1",
+									"Basilisk"
+								],
+								[
+									"2",
+									"Beetle, stag"
+								],
+								[
+									"3",
+									"Carrion crawler"
+								],
+								[
+									"4",
+									"Dracolisk"
+								],
+								[
+									"5",
+									"Drider"
+								],
+								[
+									"6",
+									"Griffon"
+								],
+								[
+									"7",
+									"Hydra, 8 heads"
+								],
+								[
+									"8",
+									"Lizard, minotaur"
+								],
+								[
+									"9",
+									"Lyc., tiger"
+								],
+								[
+									"10",
+									"Manticore"
+								],
+								[
+									"11",
+									"Ogre mage"
+								],
+								[
+									"12",
+									"Otyugh"
+								],
+								[
+									"13",
+									"Pyrolisk"
+								],
+								[
+									"14",
+									"Salamander"
+								],
+								[
+									"15",
+									"Spider, phase"
+								],
+								[
+									"16",
+									"Troll"
+								],
+								[
+									"17",
+									"Wolfwere"
+								],
+								[
+									"18",
+									"Wraith"
+								],
+								[
+									"19",
+									"Wyvern"
+								],
+								[
+									"20",
+									"Yuan-ti, halfbreed"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Monster Summoning VII",
+							"page": 377,
+							"colStyles": [
+								"col- text-center",
+								"col- text-left"
+							],
+							"rows": [
+								[
+									"1",
+									"Basilisk, greater"
+								],
+								[
+									"2",
+									"Behir or tunnel worm"
+								],
+								[
+									"3",
+									"Bulette"
+								],
+								[
+									"4",
+									"Chimera"
+								],
+								[
+									"5",
+									"Ettin or hill giant"
+								],
+								[
+									"6",
+									"Golem, flesh"
+								],
+								[
+									"7",
+									"Gorgon"
+								],
+								[
+									"8",
+									"Hydra, 10 heads"
+								],
+								[
+									"9",
+									"Hydra, 10 heads"
+								],
+								[
+									"10",
+									"Lizard, fire"
+								],
+								[
+									"11",
+									"Mummy"
+								],
+								[
+									"12",
+									"Neo-otyugh"
+								],
+								[
+									"13",
+									"Pudding, black"
+								],
+								[
+									"14",
+									"Roper"
+								],
+								[
+									"15",
+									"Shambling mound"
+								],
+								[
+									"16",
+									"Slug, giant"
+								],
+								[
+									"17",
+									"Sphinx, hieraco-"
+								],
+								[
+									"18",
+									"Troll, 2-headed"
+								],
+								[
+									"19",
+									"Umber hulk"
+								],
+								[
+									"20",
+									"Xorn"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Monster Summoning VIII",
+							"page": 377,
+							"colStyles": [
+								"col- text-center",
+								"col- text-left"
+							],
+							"rows": [
+								[
+									"1",
+									"Beetle, rhinoceros"
+								],
+								[
+									"2",
+									"Giant, fireor frost"
+								],
+								[
+									"3",
+									"Giant, fomorian"
+								],
+								[
+									"4",
+									"Golem, stone"
+								],
+								[
+									"5",
+									"Gorgimera"
+								],
+								[
+									"6",
+									"Hydra, 12 heads"
+								],
+								[
+									"7",
+									"Hydra, lernaean, 8 heads"
+								],
+								[
+									"8",
+									"Pudding, brown"
+								],
+								[
+									"9",
+									"Remorhaz"
+								],
+								[
+									"10",
+									"Rust monster"
+								],
+								[
+									"11",
+									"Will o'wisp"
+								],
+								[
+									"12",
+									"Worm, purple"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Conjured Animals",
+					"page": 377,
+					"colLabels": [
+						"HD",
+						"Roll",
+						"Animal",
+						"Value"
+					],
+					"colStyles": [
+						"col- text-center",
+						"col- text-center",
+						"col- text-left",
+						"col- text-center"
+					],
+					"rows": [
+						[
+							"1",
+							"01-10",
+							"Baboon",
+							"1¼"
+						],
+						[
+							"",
+							"11-25",
+							"Dog, wild",
+							"1¼"
+						],
+						[
+							"",
+							"26-35",
+							"Hawk, large",
+							"1"
+						],
+						[
+							"",
+							"36-40",
+							"Hawk, blood",
+							"1¼"
+						],
+						[
+							"",
+							"41-50",
+							"Jackal",
+							"½"
+						],
+						[
+							"",
+							"51-55",
+							"Mammal, small",
+							"varies"
+						],
+						[
+							"",
+							"56-60",
+							"Mammal",
+							"varies"
+						],
+						[
+							"",
+							"61-65",
+							"Otter",
+							"¾"
+						],
+						[
+							"",
+							"66-70",
+							"Otter, sea",
+							"1¼"
+						],
+						[
+							"",
+							"71-80",
+							"Owl, common",
+							"1"
+						],
+						[
+							"",
+							"81-90",
+							"Rat, giant",
+							"½"
+						],
+						[
+							"",
+							"91-00",
+							"Skunk",
+							"¼"
+						],
+						[
+							"2",
+							"01-70",
+							"Animal, herd",
+							"2"
+						],
+						[
+							"",
+							"71-80",
+							"Badger",
+							"1½"
+						],
+						[
+							"",
+							"81-00",
+							"Horse, wild",
+							"2"
+						],
+						[
+							"3",
+							"01-05",
+							"Badger, giant",
+							"3"
+						],
+						[
+							"",
+							"06-10",
+							"Boar, warthog",
+							"3"
+						],
+						[
+							"",
+							"11-15",
+							"Cattle, wild",
+							"2½"
+						],
+						[
+							"",
+							"16-20",
+							"Cheetah",
+							"3"
+						],
+						[
+							"",
+							"21-30",
+							"Dog, war",
+							"2½"
+						],
+						[
+							"",
+							"31-35",
+							"Hyena, wild",
+							"3"
+						],
+						[
+							"",
+							"36-45",
+							"Lion, mountain",
+							"3¼"
+						],
+						[
+							"",
+							"46-50",
+							"Lynx, giant",
+							"2½"
+						],
+						[
+							"",
+							"51-60",
+							"Mule",
+							"3"
+						],
+						[
+							"",
+							"61-70",
+							"Camel",
+							"3"
+						],
+						[
+							"",
+							"71-80",
+							"Stag",
+							"3"
+						],
+						[
+							"",
+							"81-90",
+							"Wolf",
+							"2½"
+						],
+						[
+							"",
+							"91-00",
+							"Wolverine",
+							"3"
+						],
+						[
+							"4",
+							"01-10",
+							"Bear, black",
+							"3¾"
+						],
+						[
+							"",
+							"11-25",
+							"Boar, wild",
+							"3¾"
+						],
+						[
+							"",
+							"26-40",
+							"Eagle, giant",
+							"4"
+						],
+						[
+							"",
+							"41-50",
+							"Jaguar",
+							"4¼"
+						],
+						[
+							"",
+							"51-60",
+							"Leopard",
+							"3½"
+						],
+						[
+							"",
+							"61-75",
+							"Owl, giant",
+							"4"
+						],
+						[
+							"",
+							"76-90",
+							"Weasel, giant",
+							"3¾"
+						],
+						[
+							"",
+							"91-00",
+							"Wolf, dire",
+							"3¾"
+						],
+						[
+							"5",
+							"01-15",
+							"Ape, carnivorous",
+							"5"
+						],
+						[
+							"",
+							"16-25",
+							"Buffalo",
+							"5"
+						],
+						[
+							"",
+							"26-40",
+							"Hyena, giant",
+							"5"
+						],
+						[
+							"",
+							"41-55",
+							"Otter, giant",
+							"5"
+						],
+						[
+							"",
+							"56-70",
+							"Skunk, giant",
+							"5"
+						],
+						[
+							"",
+							"71-85",
+							"Stag, giant",
+							"5"
+						],
+						[
+							"",
+							"86-00",
+							"Wolverine, giant",
+							"5"
+						],
+						[
+							"6",
+							"01-25",
+							"Bear, brown",
+							"6¼"
+						],
+						[
+							"",
+							"26-50",
+							"Lion",
+							"5½"
+						],
+						[
+							"",
+							"51-75",
+							"Porcupine, giant",
+							"6"
+						],
+						[
+							"",
+							"76-00",
+							"Tiger",
+							"6¼"
+						],
+						[
+							"7",
+							"01-50",
+							"Boar, giant",
+							"7"
+						],
+						[
+							"",
+							"51-00",
+							"Lion, spotted",
+							"6½"
+						],
+						[
+							"8",
+							"01-50",
+							"Bear, cave",
+							"7½"
+						],
+						[
+							"",
+							"51-00",
+							"Tiger, sabre-tooth",
+							"7½"
+						],
+						[
+							"9",
+							"—",
+							"Oliphant",
+							"8½"
+						],
+						[
+							"10",
+							"—",
+							"Bear, polar",
+							"10"
+						],
+						[
+							"11",
+							"—",
+							"Elephant (African)",
+							"11"
+						],
+						[
+							"12",
+							"—",
+							"Mastodon",
+							"12"
+						],
+						[
+							"13",
+							"—",
+							"Mammoth",
+							"13"
+						],
+						[
+							"14+",
+							"—",
+							"Whale",
+							"(to 36)"
+						]
+					],
+					"footnotes": [
+						"{@b Stag:} This is a large male deer that can butt for 2-8 or strike with its hooves for 1-3/1-3.",
+						"{@b Giant stag:} A very large stag, 7' at the shoulder and weighing about 1,500 pounds. It can butt for 4-16 ({@dice 4d4}) or strike with its hooves for 1-4/1-4."
+					]
+				},
+				{
+					"type": "list",
+					"style": "list-hang",
+					"columns": 3,
+					"page": 377,
+					"name": "Terrain Guide",
+					"items": [
+						"{@b Plain:} downs, heath, meadow, moor, prairie, savanna, steppe, tundra",
+						"{@b Scrub:} brackens, brush, bush, thickets, veldt",
+						"{@b Forest:} copses, groves, jungle, rain forest, woods",
+						"{@b Rough:} badlands",
+						"{@b Hills:} bluffs, dunes, ridges (gorge, rift, valley, canyon)",
+						"{@b Mountains:} glacier, mesa, tor",
+						"{@b Desert:} barrens, flat, waste",
+						"{@b Swamp:} bog, fen, marsh, mire, morass, quagmire, slough",
+						"{@b Pond:} lake, pool, tarn"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Aquatic Monster Summoning, Salt Water",
+					"page": 378,
+					"entries": [
+						{
+							"type": "tableGroup",
+							"name": "Aquatic Monster Summoning, Salt Water",
+							"page": 378,
+							"tables": [
+								{
+									"type": "table",
+									"caption": "Monster Summoning I",
+									"page": 378,
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"intro": [
+										"{@b Special Encounters:} Roll on the appropriate table. If the encounter is not suitable, then none occurs.",
+										"{@b Surface Encounters:} Unintelligent monsters are 75% likely to be driven off by flaming oil nearby, 90% if actually burned by it. Large amounts of food thrown overboard are 50% likely to end such an encounter.",
+										"{@b Fish School:} This is a large group of one type of fish, the aquatic version of herd animals. They usually do not attack unless commanded by magical means. If panicked, they might mill about, obstructing vision and movement. If large enough, they might cause buffeting damage (1-2 to 1-8, depending on size).",
+										"{@b Ghost Ship:} This is a lost ship manned by undead. Although it can be seen at any time, it usually attacks only at night, when its masters are at full power. Roll percentile dice once for the crew and once for their leaders. {@i Crew:} 01-40 = 10-40 skeletons; 41-80 = 10-40 zombies; 81-00 = 10-20 ju-ju zombies. {@i Leaders:} 01-30 = 1-4 wights; 31-60 = 1-3 wraiths; 61-80 = 1-2 spectres; 81-95 = 1-2 ghosts; 95-00 = 1 lich.",
+										"{@b Hazard (ice):} This can be a single huge ice mountain or 10-20 smaller, grinding floes. Hard contact with ice reduces seaworthiness by 5% and is 10% likely to require a seaworthiness check to avoid sinking.",
+										"{@b Seaweed:} This includes both floating masses of weed and beds on the bottom. The former slows ships by 50%. The latter are 30-300' high and reduce vision to 10 feet. Both provide a 40% chance for another encounter if moved through or investigated.",
+										"{@b Sunken Ship:} This is a victim of a storm, ice, or hostile action. Sometimes these have their original cargo, and may be inhabited. Roll percentile dice: 01-10 = Has merchant treasure (see Men, merchant ); 11-20 = No treasure; 21-60 = 2-24 lacedons (original crew); 61-00 = Monster (roll on appropriate encounter table).",
+										"{@b Special Encounters:} These can include morkoth, mottled worms, shipwreck survivors, an eye of the deep, sudden storms, seaweed that allows underwater breathing when eaten, giant clams, aquatic versions of carnivorous plants, storm giants, and so on."
+									],
+									"rows": [
+										[
+											"1",
+											"Barracuda (1 HD)"
+										],
+										[
+											"2",
+											"Lamprey, common"
+										],
+										[
+											"3",
+											"Merman"
+										],
+										[
+											"4",
+											"Otter, sea"
+										],
+										[
+											"5",
+											"Piranha (3d4 appear)"
+										],
+										[
+											"6",
+											"Urchin, black"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Monster Summoning II",
+									"page": 378,
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"rows": [
+										[
+											"1",
+											"Barracuda (2 HD)"
+										],
+										[
+											"2",
+											"Dolphin"
+										],
+										[
+											"3",
+											"Locathah"
+										],
+										[
+											"4",
+											"Ray, ixitxachitl"
+										],
+										[
+											"5",
+											"Ray, sting"
+										],
+										[
+											"6",
+											"Sea horse"
+										],
+										[
+											"7",
+											"Seawolf, lesser"
+										],
+										[
+											"8",
+											"Urchin, green"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Monster Summoning III",
+									"page": 378,
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"rows": [
+										[
+											"1",
+											"Barracuda (3 HD)"
+										],
+										[
+											"2",
+											"Crab, giant"
+										],
+										[
+											"3",
+											"Lacedon (ghoul)"
+										],
+										[
+											"4",
+											"Sahuagin"
+										],
+										[
+											"5",
+											"Selkie"
+										],
+										[
+											"6",
+											"Urchin, red"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Monster Summoning IV",
+									"page": 378,
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"rows": [
+										[
+											"1",
+											"Hippocampus"
+										],
+										[
+											"2",
+											"Kapoacinth (gargoyle)"
+										],
+										[
+											"3",
+											"Lobster, giant (crayfish)"
+										],
+										[
+											"4",
+											"Merrow, ogre"
+										],
+										[
+											"5",
+											"Otter, giant"
+										],
+										[
+											"6",
+											"Shark (3-5 HD)"
+										],
+										[
+											"7",
+											"Triton"
+										],
+										[
+											"8",
+											"Urchin, yellow"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Monster Summoning V",
+									"page": 378,
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"rows": [
+										[
+											"1",
+											"Crocodile, giant"
+										],
+										[
+											"2",
+											"Lamprey, sea"
+										],
+										[
+											"3",
+											"Scrag (troll)"
+										],
+										[
+											"4",
+											"Sea lion"
+										],
+										[
+											"5",
+											"Selkie"
+										],
+										[
+											"6",
+											"Shark (5-6 HD)"
+										],
+										[
+											"7",
+											"Spider, giant marine"
+										],
+										[
+											"8",
+											"Water weird"
+										],
+										[
+											"9",
+											"Urchin, silver"
+										],
+										[
+											"0",
+											"Roll again with {@dice 1d8}"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Monster Summoning VI",
+									"page": 378,
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"rows": [
+										[
+											"1",
+											"Eel, marine"
+										],
+										[
+											"2",
+											"Narwhal"
+										],
+										[
+											"3",
+											"Octopus"
+										],
+										[
+											"4",
+											"Seawolf, greater"
+										],
+										[
+											"5",
+											"Shark (7-8 HD)"
+										],
+										[
+											"6",
+											"Snake, giant sea (8 HD)"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Monster Summoning VII",
+									"page": 378,
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"rows": [
+										[
+											"1",
+											"Ray, manta"
+										],
+										[
+											"2",
+											"Slug, giant sea"
+										],
+										[
+											"3",
+											"Snake, giant sea (10 HD)"
+										],
+										[
+											"4",
+											"Squid, giant"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Monster Summoning VIII",
+									"page": 378,
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"rows": [
+										[
+											"1",
+											"Eye of the deep"
+										],
+										[
+											"2",
+											"Dragon turtle (12 HD)"
+										],
+										[
+											"3",
+											"Kraken*"
+										],
+										[
+											"4",
+											"Shark, giant"
+										],
+										[
+											"5",
+											"Vodyanoi (16 HD)*"
+										],
+										[
+											"6",
+											"Whale, killer"
+										],
+										[
+											"7",
+											"Whale, small herbivore (12 HD)"
+										],
+										[
+											"8",
+											"Worm, mottled (purple)"
+										]
+									],
+									"footnotes": [
+										"* This creature has a 10% chance to become free-willed for the duration of the spell if ordered to act against its nature or inclinations."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Aquatic Monster Summoning, Fresh Water",
+					"page": 378,
+					"entries": [
+						{
+							"type": "tableGroup",
+							"name": "Aquatic Monster Summoning, Fresh Water",
+							"page": 378,
+							"tables": [
+								{
+									"type": "table",
+									"caption": "Monster Summoning I",
+									"page": 378,
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"intro": [
+										"{@b Special Encounters:} Roll on the appropriate table. If the encounter is not suitable, then none occurs.",
+										"{@b Surface Encounters:} Unintelligent monsters are 75% likely to be driven off by flaming oil nearby, 90% if actually burned by it. Large amounts of food thrown overboard are 50% likely to end such an encounter.",
+										"{@b Fish School:} This is a large group of one type of fish, the aquatic version of herd animals. They usually do not attack, unless commanded by magical means. If panicked they might mill about, obstructing vision and movement. If large enough, they might cause buffeting damage (1-2 to 1-8, depending on size).",
+										"{@b Ghost Ship:} This is a lost ship manned by undead. Although it can be seen at any time, it will usually attack only at night, when its masters are at full power. Roll percentile dice once for the crew and once for their leaders. {@i Crew:} 01-40 = 10-40 skeletons; 41-80 = 10-40 zombies; 81-00 = 10-20 juju zombies. {@i Leaders:} 01-30 = 1-4 wights; 31-60 = 1-3 wraiths; 61-80 = 1-2 spectres; 81-95 = 1-2 ghosts; 95-00 = 1 lich.",
+										"{@b Hazard (navigational):} This can ground or damage a vessel that does not have aboard a pilot familiar with the waters. Such hazards as sandbars and submerged logs often change position.",
+										"{@b Seaweed:} This includes both floating masses of weed and beds on the bottom. The former slows ships by 50%. The latter are 30-300' high and reduce vision to 10 feet. Both provide a 40% chance for another encounter if moved through or investigated.",
+										"{@b Special Encounters:} These can include morkoth, mottled worms, shipwreck survivors, an eye of the deep, pearl beds, sudden storms, seaweed that allows underwater breathing when eaten, giant clams, aquatic versions of carnivorous plants, storm giants, and so on."
+									],
+									"rows": [
+										[
+											"1",
+											"Frog, giant (1 HD)"
+										],
+										[
+											"2",
+											"Koalinth (hobgoblin)"
+										],
+										[
+											"3",
+											"Lamprey, common"
+										],
+										[
+											"4",
+											"Nixie (3d4 appear)"
+										],
+										[
+											"5",
+											"Otter, common"
+										],
+										[
+											"6",
+											"Piranha (3d4 appear)"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Monster Summoning II",
+									"page": 378,
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"rows": [
+										[
+											"1",
+											"Eel, electric"
+										],
+										[
+											"2",
+											"Frog, giant (2 HD)"
+										],
+										[
+											"3",
+											"Kuo-toa"
+										],
+										[
+											"4",
+											"Leech, giant (2 HD)"
+										],
+										[
+											"5",
+											"Lizard man"
+										],
+										[
+											"6",
+											"Piranha, giant"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Monster Summoning III",
+									"page": 378,
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"rows": [
+										[
+											"1",
+											"Crab, giant"
+										],
+										[
+											"2",
+											"Crocodile, common"
+										],
+										[
+											"3",
+											"Frog, giant (3 HD)"
+										],
+										[
+											"4",
+											"Lacedon (ghoul)"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Monster Summoning IV",
+									"page": 378,
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"rows": [
+										[
+											"1",
+											"Beetle, giant water"
+										],
+										[
+											"2",
+											"Crayfish, giant"
+										],
+										[
+											"3",
+											"Kapoacinth (gargoyle)"
+										],
+										[
+											"4",
+											"Kelpie"
+										],
+										[
+											"5",
+											"Merrow, ogre"
+										],
+										[
+											"6",
+											"Otter, giant"
+										],
+										[
+											"7",
+											"Pike, giant"
+										],
+										[
+											"8",
+											"Spider, giant water"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Monster Summoning V",
+									"page": 378,
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"rows": [
+										[
+											"1",
+											"Crocodile, giant"
+										],
+										[
+											"2",
+											"Eel, giant electric"
+										],
+										[
+											"3",
+											"Scrag (troll)"
+										],
+										[
+											"4",
+											"Water weird"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Monster Summoning VI",
+									"page": 378,
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"rows": [
+										[
+											"1",
+											"Eel, marine"
+										],
+										[
+											"2",
+											"Gar, giant"
+										],
+										[
+											"3",
+											"Octopus"
+										],
+										[
+											"4",
+											"Seawolf, greater"
+										],
+										[
+											"5",
+											"Snake, giant sea (8 HD)"
+										],
+										[
+											"6",
+											"Vodyanoi (8 HD)"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Monster Summoning VII",
+									"page": 378,
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"rows": [
+										[
+											"1",
+											"Catfish, giant"
+										],
+										[
+											"2",
+											"Greenhag"
+										],
+										[
+											"3",
+											"Naga, water"
+										],
+										[
+											"4",
+											"Snake, giant sea (10 HD)"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Monster Summoning VIII",
+									"page": 378,
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"rows": [
+										[
+											"1",
+											"Slug, giant sea"
+										],
+										[
+											"2",
+											"Dragon turtle (12 HD)"
+										],
+										[
+											"3",
+											"Kuo-toan monitor"
+										],
+										[
+											"4",
+											"Worn, mottled (purple)"
+										]
+									]
+								}
+							]
+						}
+					]
+				}
 			]
 		},
 		{
@@ -975,7 +3670,704 @@
 			"name": "NPCs",
 			"page": 379,
 			"entries": [
-				""
+				{
+					"type": "entries",
+					"name": "",
+					"page": 379,
+					"entries": [
+						{
+							"type": "entries",
+							"name": "NPC Parties",
+							"page": 379,
+							"entries": [
+								"To avoid delays, create NPC parties before play. The tables allow such parties to be set up quickly and impartially, and the DM is encouraged to make any changes that will enhance play. The tables should be considered a starting point.",
+								"A typical NPC party has 2-12 members — 2-5 major characters and the rest henchmen or men-at-arms.",
+								"{@b Characters:} The Character Subtable provides a typical party structure by limiting number and classes of the NPC characters encountered. Determine character race (20% demihuman) and demihuman multiclasses on the Racial Subtable (multiclass results can exceed the Character Subtable limits).",
+								"{@b Character Level and Equipment:} These will usually be comparable to those of the player characters, but NPC level will rarely exceed 12th. Arms, armor, and equipment will be typical: a 1st level warrior would have scale or chain armor and minimal gear. At 2nd level, banded or plate mail is typical, weapons profuse, and equipment complete (much oil, holy water, mirrors, etc.). NPC magic will be used if a fight breaks out. Note that if the NPCs are defeated, their magical items will enter your campaign.",
+								"{@b Character spells:} These are selected by the DM according to those most suited to the NPC party. Wizards are subject to the limits of spells known. Henchmen spellcasters are treated likewise.",
+								"{@b Henchmen:} The major NPCs will have a total of 2-5 henchmen, up to the party size, with any remainder men-at-arms. If the encounter is below the 3rd dungeon level, all those with the major NPCs will be henchmen.",
+								"Henchman class and race is determined as for the major characters. Major NPCs are assigned henchmen in order of Charisma, allowing for compatibility (e.g., a paladin would not follow a thief, nor would a ranger below 8th level have henchmen). A henchman's level is one-third of that of his master (round up or down). If the master's level is above 8th, the henchman has 1 additional level per 3 full levels of the master. Thus, a 5th level mage would have a 2nd level henchman, while an 11th level mage would have a 5th level henchman (4 + 1). Henchmen are armed much as major NPCs, though they are not as heavily armored. Their magic is assigned as for major NPCs, but is usually less powerful.",
+								"{@b Men-at-Arms:} Little detail is needed for these other than hit points. They often have poor armor and few weapons: for example, studded leather, crossbow and dagger, or (at best) scale mail, shield, spear, long sword, and backpack. They are seldom found underground below the 3rd dungeon level.",
+								{
+									"type": "tableGroup",
+									"name": "",
+									"page": 379,
+									"tables": [
+										{
+											"type": "table",
+											"caption": "Character Subtable",
+											"page": 379,
+											"colStyles": [
+												"col- text-center",
+												"col- text-left",
+												"col- text-center"
+											],
+											"colLabels": [
+												"Dice Score",
+												"Character Type*",
+												"Maximum Number in Party"
+											],
+											"rows": [
+												[
+													"01-17",
+													"Cleric",
+													"3"
+												],
+												[
+													"18-20",
+													"{@i Druid}",
+													"2"
+												],
+												[
+													"21-60",
+													"Fighter",
+													"5"
+												],
+												[
+													"61-62",
+													"{@i Paladin}",
+													"2"
+												],
+												[
+													"63-65",
+													"{@i Ranger}",
+													"2"
+												],
+												[
+													"66-86",
+													"Wizard",
+													"3"
+												],
+												[
+													"87-88",
+													"{@i Specialist}",
+													"1"
+												],
+												[
+													"89-98",
+													"Thief",
+													"4"
+												],
+												[
+													"99-00",
+													"{@i Bard}",
+													"1"
+												]
+											],
+											"footnotes": [
+												"* Typically, 20% of these will be non-human."
+											]
+										},
+										{
+											"type": "table",
+											"caption": "Race Subtable",
+											"page": 379,
+											"colStyles": [
+												"col- text-center",
+												"col- text-left",
+												"col- text-center"
+											],
+											"colLabels": [
+												"Dice Score",
+												"Race",
+												"% of Multiclass"
+											],
+											"rows": [
+												[
+													"01-30",
+													"Dwarves*",
+													"15%"
+												],
+												[
+													"31-55",
+													"Elf",
+													"85%**"
+												],
+												[
+													"56-65",
+													"Gnomes*",
+													"25%"
+												],
+												[
+													"66-90",
+													"Half-Elf*",
+													"85%**"
+												],
+												[
+													"91-00",
+													"Halflings*",
+													"10%"
+												]
+											],
+											"footnotes": [
+												"* In an evilly aligned party, these will be half-orcs (elves will be renegade drow). The chance for a multiclass half-orc is 50%: fighter-thief (01-33), fighter-cleric (34-45), or cleric-thief (45-50).",
+												"** If the roll for multiclass is 01-20, the character is triple-classed."
+											]
+										}
+									]
+								},
+								"{@b Multiclass levels:} For two classes, subtract 1 level; for three classes, subtract 2 levels. Adjust each class downward to the racial maximum, if applicable."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Magical Items for NPC Parties",
+							"page": 379,
+							"entries": [
+								{
+									"type": "table",
+									"page": 379,
+									"colLabels": [
+										"Level",
+										"Chance/No. of Items/Table"
+									],
+									"colStyles": [
+										"col- text-left",
+										"col-16 text-center"
+									],
+									"rows": [
+										[
+											"1st",
+											"10% / 1 / I"
+										],
+										[
+											"2nd",
+											"20% / 2 / I"
+										],
+										[
+											"3rd",
+											"30% / 2 / I"
+										],
+										[
+											"",
+											"10% / 1 / II"
+										],
+										[
+											"4th",
+											"40% / 2 / I"
+										],
+										[
+											"",
+											"20% / 1 / II"
+										],
+										[
+											"5th",
+											"50% / 2 / I"
+										],
+										[
+											"",
+											"30% / 1 / II"
+										],
+										[
+											"6th",
+											"60% / 3 / I"
+										],
+										[
+											"",
+											"40% / 2 / II"
+										],
+										[
+											"7th",
+											"70% / 3 / I"
+										],
+										[
+											"",
+											"50% / 2 / II"
+										],
+										[
+											"",
+											"10% / 1 / III"
+										],
+										[
+											"8th",
+											"80% / 3 / I"
+										],
+										[
+											"",
+											"60% / 2 / II"
+										],
+										[
+											"",
+											"20% / 1 / III"
+										],
+										[
+											"9th",
+											"70% / 2 / II"
+										],
+										[
+											"",
+											"70% / 2 / II"
+										],
+										[
+											"",
+											"30% / 1 / III"
+										],
+										[
+											"10th",
+											"* / 3 / I"
+										],
+										[
+											"",
+											"80% / 2 / II"
+										],
+										[
+											"",
+											"40% / 1 / III"
+										],
+										[
+											"11th",
+											"* / 3 / I"
+										],
+										[
+											"",
+											"90% / 2 / II"
+										],
+										[
+											"",
+											"50% / 1 / III"
+										],
+										[
+											"",
+											"10% / 1 / IV"
+										],
+										[
+											"12th",
+											"* / 3 / I"
+										],
+										[
+											"",
+											"* / 2 / II"
+										],
+										[
+											"",
+											"60% / 1 / III"
+										],
+										[
+											"",
+											"20% / 1 / IV"
+										],
+										[
+											"13th+",
+											"* / 3 / I"
+										],
+										[
+											"",
+											"* / 2 / II"
+										],
+										[
+											"",
+											"* / 1 / III"
+										],
+										[
+											"",
+											"60% / 1 / IV"
+										]
+									],
+									"footnotes": [
+										"* Automatically has this with no roll needed. Use random determination only when any general magical item would be suitable to the individual. Note that some items are in groups or multiples."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Magical Items for Character Encounters",
+							"page": 379,
+							"entries": [
+								{
+									"type": "tableGroup",
+									"name": "",
+									"page": 379,
+									"tables": [
+										{
+											"type": "table",
+											"caption": "Table I",
+											"page": 379,
+											"colStyles": [
+												"col- text-center",
+												"col- text-left"
+											],
+											"colLabels": [
+												"Die",
+												"Item ({@dice d20})"
+											],
+											"rows": [
+												[
+													"1",
+													"2 Potions: {@i flying, healing}"
+												],
+												[
+													"2",
+													"2 Potions: {@i extra-healing, polymorph (self)}"
+												],
+												[
+													"3",
+													"2 Potions: {@i fire resistance, speed}"
+												],
+												[
+													"4",
+													"2 Potions: {@i healing, hill giant strength}"
+												],
+												[
+													"5",
+													"2 Potions: {@i heroism, invulnerability}"
+												],
+												[
+													"6",
+													"2 Potions: {@i human control, levitation}"
+												],
+												[
+													"7",
+													"2 Potions: {@i animal control, diminution}"
+												],
+												[
+													"8",
+													"1 Scroll: {@i 1 spell Level 1-6}"
+												],
+												[
+													"9",
+													"1 Scroll: 2 spells Level 1-4"
+												],
+												[
+													"10",
+													"1 Scroll: protection from magic"
+												],
+												[
+													"11",
+													"1 Ring: mammal control"
+												],
+												[
+													"12",
+													"1 Ring: protection +1"
+												],
+												[
+													"13",
+													"1 Armor: +1 leather"
+												],
+												[
+													"14",
+													"1 Shield: +1"
+												],
+												[
+													"15",
+													"1 Sword: +1 (no special abilities)"
+												],
+												[
+													"16",
+													"10 Arrows: +1"
+												],
+												[
+													"17",
+													"4 Bolts: +1"
+												],
+												[
+													"18",
+													"1 Dagger: +1"
+												],
+												[
+													"19",
+													"1 Dagger: +1"
+												],
+												[
+													"20",
+													"1 Mace: +1"
+												]
+											]
+										},
+										{
+											"type": "table",
+											"caption": "Table II",
+											"page": 379,
+											"colStyles": [
+												"col- text-center",
+												"col- text-left"
+											],
+											"colLabels": [
+												"Die",
+												"Item ({@dice d20})"
+											],
+											"rows": [
+												[
+													"1",
+													"2 Potions: oil of etherealness, superheroism"
+												],
+												[
+													"2",
+													"2 Potions: ESP, gaseous form"
+												],
+												[
+													"3",
+													"1 Scroll: 3 spells 2-9 or 3-7"
+												],
+												[
+													"4",
+													"2 Rings: fire resistance, invisibility"
+												],
+												[
+													"5",
+													"1 Ring: protection +2"
+												],
+												[
+													"6",
+													"1 Staff: striking"
+												],
+												[
+													"7",
+													"1 Wand: magic missiles"
+												],
+												[
+													"8",
+													"1 Wand: wonder"
+												],
+												[
+													"9",
+													"1 bracers of defense AC 4"
+												],
+												[
+													"10",
+													"1 brooch of shielding"
+												],
+												[
+													"11",
+													"1 cloak of elvenkind"
+												],
+												[
+													"12",
+													"1 dust of appearance"
+												],
+												[
+													"13",
+													"1 figurine: serpentine owl"
+												],
+												[
+													"14",
+													"3 javelins of lightning"
+												],
+												[
+													"15",
+													"1 jar keoghtom's ointment"
+												],
+												[
+													"16",
+													"1 robe of useful items"
+												],
+												[
+													"17",
+													"1 set: chain mail +1, shield +2"
+												],
+												[
+													"18",
+													"1 set: chain mail +3"
+												],
+												[
+													"19",
+													"1 Sword: +2 (or +1 with abilities*)"
+												],
+												[
+													"20",
+													"2 Weapons: crossbow of speed, hammer +1"
+												]
+											]
+										},
+										{
+											"type": "table",
+											"caption": "Table III",
+											"page": 379,
+											"colStyles": [
+												"col- text-center",
+												"col- text-left"
+											],
+											"colLabels": [
+												"Die",
+												"Item ({@dice d20})"
+											],
+											"rows": [
+												[
+													"1",
+													"1 Ring: spell storing"
+												],
+												[
+													"2",
+													"1 Ring: mind shielding"
+												],
+												[
+													"3",
+													"1 Rod: cancellation"
+												],
+												[
+													"4",
+													"1 Staff: command"
+												],
+												[
+													"5",
+													"1 Wand: fear"
+												],
+												[
+													"6",
+													"1 Wand: negation"
+												],
+												[
+													"7",
+													"1 Wand: negation"
+												],
+												[
+													"8",
+													"1 boots of speed"
+												],
+												[
+													"9",
+													"1 boots of speed"
+												],
+												[
+													"10",
+													"1 boots of speed"
+												],
+												[
+													"11",
+													"1 necklace of missiles"
+												],
+												[
+													"12",
+													"1 pipes of the sewers"
+												],
+												[
+													"13",
+													"1 rope of climbing"
+												],
+												[
+													"14",
+													"1 rope of entanglement"
+												],
+												[
+													"15",
+													"1 scarab of protection"
+												],
+												[
+													"16",
+													"1 set: plate mail +2, shield +3"
+												],
+												[
+													"17",
+													"1 Shield: +5"
+												],
+												[
+													"18",
+													"1 Sword: +3 (or +2 with abilities*)"
+												],
+												[
+													"19",
+													"1 Mace or hammer: +2"
+												],
+												[
+													"20",
+													"1 Spear: +2"
+												]
+											]
+										},
+										{
+											"type": "table",
+											"caption": "Table IV",
+											"page": 379,
+											"colStyles": [
+												"col- text-center",
+												"col- text-left"
+											],
+											"colLabels": [
+												"Die",
+												"Item ({@dice d20})"
+											],
+											"rows": [
+												[
+													"1",
+													"1 Ring: djinni summoning"
+												],
+												[
+													"2",
+													"1 Ring: human influence"
+												],
+												[
+													"3",
+													"1 Ring: spell turning"
+												],
+												[
+													"4",
+													"1 Rod: smiting"
+												],
+												[
+													"5",
+													"1 Rod: terror"
+												],
+												[
+													"6",
+													"1 Wand: lightning or fire"
+												],
+												[
+													"7",
+													"1 Wand: lightning or fire"
+												],
+												[
+													"8",
+													"1 Staff: thunder & lightning"
+												],
+												[
+													"9",
+													"1 amulet of life protection"
+												],
+												[
+													"10",
+													"1 cube of force"
+												],
+												[
+													"11",
+													"1 deck of illusions"
+												],
+												[
+													"12",
+													"1 eyes of charming"
+												],
+												[
+													"13",
+													"1 helm of teleportation"
+												],
+												[
+													"14",
+													"1 helm of teleportation"
+												],
+												[
+													"15",
+													"1 robe of blending"
+												],
+												[
+													"16",
+													"1 stone of good luck"
+												],
+												[
+													"17",
+													"1 set: plate mail +3, shield +4"
+												],
+												[
+													"18",
+													"1 Sword: +4 (or +3 with abilities*)"
+												],
+												[
+													"19",
+													"1 Arrow: of slaying (character class)"
+												],
+												[
+													"20",
+													"1 Net: of entrapment"
+												]
+											],
+											"footnotes": [
+												"* Intelligence, if any, will not exceed 16."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
 			]
 		},
 		{
