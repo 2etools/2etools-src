@@ -7,38 +7,37 @@ export class UtilsFoundryItem {
 	static _TYPE_LOOT = "loot";
 
 	static _ITEM_EQUIPMENT_NAME_RES = [
-		"amulet of",
 		"badge of",
 		"band of",
-		"belt of",
-		"boots of",
-		"bracelet of",
-		"bracer of",
-		"bracers of",
-		"brooch of",
-		"cape of",
-		"circlet of",
-		"clothes of",
-		"crown of",
 		"eyes of",
-		"gauntlets of",
-		"gloves of",
-		"goggles of",
-		"hat of",
-		"headband of",
 		"helm of",
 		"mantle of",
 		"mask of",
-		"necklace of",
-		"periapt of",
-		"ring of",
-		"rings of",
-		"robe of",
-		"slippers of",
+		"rings? of",
+
+		"amulet",
+		"belt",
+		"boots",
+		"bracelet",
+		"bracers?",
+		"brooch",
+		"cape",
+		"circlet",
+		"cloth(?:es|ing)",
+		"crown",
+		"gauntlets?",
+		"gloves?",
+		"goggles",
+		"hat",
+		"headband",
+		"necklace",
+		"periapt",
+		"robe",
+		"slippers?",
 		"signet",
 	].map(it => new RegExp(`\\b${it}\\b`, "i"));
 
-	static getFoundryItemType (item) {
+	static getFoundryItemType(item) {
 		const itemTypeAbv = item.type ? DataUtil.itemType.unpackUid(item.type).abbreviation : null;
 
 		if (
@@ -119,7 +118,7 @@ export class UtilsFoundryItem {
  * Ports/re-implementations of Foundry utilities.
  */
 export class UtilsFoundry {
-	static getType (val) {
+	static getType(val) {
 		if (val === null) return "null";
 		const to = typeof val;
 		if (to !== "object") return to;
@@ -127,7 +126,7 @@ export class UtilsFoundry {
 		return "Object";
 	}
 
-	static isEmpty (val) {
+	static isEmpty(val) {
 		if (val == null) return true;
 		switch (this.getType(val)) {
 			case "Array": return !val.length;
@@ -136,7 +135,7 @@ export class UtilsFoundry {
 		return false;
 	}
 
-	static flattenObject (obj) {
+	static flattenObject(obj) {
 		const out = {};
 
 		for (const [k, v] of Object.entries(obj)) {

@@ -5,18 +5,17 @@ import "../js/render-dice.js";
 import "../js/utils-dataloader.js";
 import "../js/hist.js";
 import "../js/utils-config.js";
-import {Command} from "commander";
-import {getAllJson} from "./util-json-files.js";
-import {listJsonFiles, writeJsonSync} from "5etools-utils/lib/UtilFs.js";
+import { Command } from "commander";
+import { getAllJson } from "./util-json-files.js";
+import { listJsonFiles, writeJsonSync } from "5etools-utils/lib/UtilFs.js";
 import * as ut from "./util.js";
-import {FoundryDataMigrator, UNHANDLED_KEYS} from "../js/foundry/foundry-migrate-data.js";
-
-const isSiteFoundryFile = filename => /\/foundry(?:-[^/]+)?\.json$/.test(filename);
+import { FoundryDataMigrator, UNHANDLED_KEYS } from "../js/foundry/foundry-migrate-data.js";
+import { isSiteFoundryFile } from "./util.js";
 
 const program = new Command()
 	.option("--file <file...>", `Input files`)
 	.option("--dir <dir...>", `Input directories`)
-;
+	;
 
 program.parse(process.argv);
 const params = program.opts();
@@ -32,20 +31,20 @@ if (!dirs.length && !files.length) {
 	);
 }
 
-async function main () {
+async function main() {
 	ut.patchLoadJson();
 
 	console.log(`Running Foundry data migration...`);
 
-	await getAllJson({dirs, files})
-		.pSerialAwaitMap(async ({path, json}) => {
+	await getAllJson({ dirs, files })
+		.pSerialAwaitMap(async ({ path, json }) => {
 			const isPrefixProps = isSiteFoundryFile(path);
 
-			const foundryMigrator = new FoundryDataMigrator({json, isPrefixProps});
+			const foundryMigrator = new FoundryDataMigrator({ json, isPrefixProps });
 
 			await foundryMigrator.pMutMigrate();
 
-			writeJsonSync(path, json, {isClean: true});
+			writeJsonSync(path, json, { isClean: true });
 
 			console.log(`\tMigrated "${path}"...`);
 		});

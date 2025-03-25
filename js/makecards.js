@@ -1,7 +1,7 @@
 "use strict";
 
 class MakeCards extends BaseComponent {
-	static async pInit () {
+	static async pInit() {
 		await Promise.all([
 			PrereleaseUtil.pInit(),
 			BrewUtil2.pInit(),
@@ -15,23 +15,23 @@ class MakeCards extends BaseComponent {
 		window.dispatchEvent(new Event("toolsLoaded"));
 	}
 
-	constructor () {
+	constructor() {
 		super();
 
 		this._list = null;
 
-		this._modalFilterItems = new ModalFilterItems({namespace: "makecards.items"});
-		this._modalFilterBestiary = new ModalFilterBestiary({namespace: "makecards.bestiary"});
-		this._modalFilterSpells = new ModalFilterSpells({namespace: "makecards.spells"});
-		this._modalFilterRaces = new ModalFilterRaces({namespace: "makecards.race"});
-		this._modalFilterBackgrounds = new ModalFilterBackgrounds({namespace: "makecards.background"});
-		this._modalFilterFeats = new ModalFilterFeats({namespace: "makecards.feat"});
-		this._modalFilterOptionalFeatures = new ModalFilterOptionalFeatures({namespace: "makecards.optionalfeatures"});
+		this._modalFilterItems = new ModalFilterItems({ namespace: "makecards.items" });
+		this._modalFilterBestiary = new ModalFilterBestiary({ namespace: "makecards.bestiary" });
+		this._modalFilterSpells = new ModalFilterSpells({ namespace: "makecards.spells" });
+		this._modalFilterRaces = new ModalFilterRaces({ namespace: "makecards.race" });
+		this._modalFilterBackgrounds = new ModalFilterBackgrounds({ namespace: "makecards.background" });
+		this._modalFilterFeats = new ModalFilterFeats({ namespace: "makecards.feat" });
+		this._modalFilterOptionalFeatures = new ModalFilterOptionalFeatures({ namespace: "makecards.optionalfeatures" });
 
 		this._doSaveStateDebounced = MiscUtil.debounce(() => this._pDoSaveState(), 50);
 	}
 
-	async pInit () {
+	async pInit() {
 		await SearchUiUtil.pDoGlobalInit();
 		// Do this asynchronously, to avoid blocking the load
 		SearchWidget.pDoGlobalInit();
@@ -39,14 +39,14 @@ class MakeCards extends BaseComponent {
 		this.render();
 	}
 
-	render () {
+	render() {
 		this._addHookAll("state", () => this._doSaveStateDebounced());
 
 		this._render_configSection();
 		this._render_cardList();
 	}
 
-	_render_configSection () {
+	_render_configSection() {
 		const $wrpConfig = $(`#wrp_config`).empty();
 
 		const $btnResetDefaults = $(`<button class="ve-btn ve-btn-default ve-btn-xs">Reset</button>`)
@@ -94,7 +94,7 @@ class MakeCards extends BaseComponent {
 		Object.keys(MakeCards._AVAILABLE_TYPES).forEach(it => $getColorIconConfigRow(it).appendTo($wrpConfig));
 	}
 
-	_render_cardList () {
+	_render_cardList() {
 		const $wrpContainer = $(`#wrp_main`).empty();
 
 		// region Search bar/add button
@@ -105,7 +105,7 @@ class MakeCards extends BaseComponent {
 			.click(evt => ContextUtil.pOpenMenu(evt, menuSearch));
 		const $btnReset = $(`<button class="ve-btn ve-btn-danger mr-2"><span class="glyphicon glyphicon-trash"></span> Reset</button>`)
 			.click(async () => {
-				if (!await InputUiUtil.pGetUserBoolean({title: "Reset", htmlDescription: "Are you sure?", textYes: "Yes", textNo: "Cancel"})) return;
+				if (!await InputUiUtil.pGetUserBoolean({ title: "Reset", htmlDescription: "Are you sure?", textYes: "Yes", textNo: "Cancel" })) return;
 				this._list.removeAllItems();
 				this._list.update();
 				this._doSaveStateDebounced();
@@ -124,7 +124,7 @@ class MakeCards extends BaseComponent {
 						tags: entityMeta.fnGetTags(it.values.entity),
 					};
 				});
-				DataUtil.userDownload("rpg-cards", toDownload, {isSkipAdditionalMetadata: true});
+				DataUtil.userDownload("rpg-cards", toDownload, { isSkipAdditionalMetadata: true });
 			});
 		$$`<div class="w-100 no-shrink ve-flex-v-center mb-3">${$iptSearch}${$btnAdd}${$btnReset}${$btnExport}</div>`.appendTo($wrpContainer);
 		// endregion
@@ -133,7 +133,7 @@ class MakeCards extends BaseComponent {
 		const getSelCards = () => {
 			const out = this._list.visibleItems.filter(it => it.data.$cbSel.prop("checked"));
 			if (!out.length) {
-				JqueryUtil.doToast({content: "Please select some cards first!", type: "warning"});
+				JqueryUtil.doToast({ content: "Please select some cards first!", type: "warning" });
 				return null;
 			}
 			return out;
@@ -145,7 +145,7 @@ class MakeCards extends BaseComponent {
 				async () => {
 					const sel = getSelCards();
 					if (!sel) return;
-					const rgb = await InputUiUtil.pGetUserColor({default: MiscUtil.randomColor()});
+					const rgb = await InputUiUtil.pGetUserColor({ default: MiscUtil.randomColor() });
 					if (rgb) sel.forEach(it => it.data.setColor(rgb));
 				},
 			),
@@ -196,12 +196,12 @@ class MakeCards extends BaseComponent {
 		const $wrpList = $(`<div class="w-100 h-100"></div>`);
 		$$`<div class="ve-flex-col h-100 w-100 ve-overflow-y-auto mt-2 ve-overflow-x-hidden">${$wrpList}</div>`.appendTo($wrpContainer);
 
-		this._list = new List({$iptSearch, $wrpList, isUseJquery: true});
+		this._list = new List({ $iptSearch, $wrpList, isUseJquery: true });
 		this._list.init();
 		// endregion
 	}
 
-	_render_getContextMenuOptions () {
+	_render_getContextMenuOptions() {
 		return [
 			...this._render_getContextMenuOptionsSearch(),
 			null,
@@ -211,7 +211,7 @@ class MakeCards extends BaseComponent {
 		];
 	}
 
-	_render_getContextMenuOptionsSearch () {
+	_render_getContextMenuOptionsSearch() {
 		return Object.entries(MakeCards._AVAILABLE_TYPES).map(([entityType, it]) => new ContextUtil.Action(
 			`Search for ${it.searchTitle}`,
 			async () => {
@@ -225,7 +225,7 @@ class MakeCards extends BaseComponent {
 					return this._doSaveStateDebounced();
 				}
 
-				const listItem = await this._pGetListItem({page: fromSearch.page, source: fromSearch.source, hash: fromSearch.hash, entityType}, true);
+				const listItem = await this._pGetListItem({ page: fromSearch.page, source: fromSearch.source, hash: fromSearch.hash, entityType }, true);
 				this._list.addItem(listItem);
 				this._list.update();
 				this._doSaveStateDebounced();
@@ -233,7 +233,7 @@ class MakeCards extends BaseComponent {
 		));
 	}
 
-	_render_getContextMenuOptionsFilter () {
+	_render_getContextMenuOptionsFilter() {
 		return Object.entries(MakeCards._AVAILABLE_TYPES).map(([entityType, type]) => new ContextUtil.Action(
 			`Filter for ${type.searchTitle}`,
 			async () => {
@@ -256,7 +256,7 @@ class MakeCards extends BaseComponent {
 				const len = selected.length;
 				for (let i = 0; i < len; ++i) {
 					const filterListItem = selected[i];
-					const listItem = await this._pGetListItem({page: type.page, source: filterListItem.values.sourceJson, hash: filterListItem.values.hash, entityType}, true);
+					const listItem = await this._pGetListItem({ page: type.page, source: filterListItem.values.sourceJson, hash: filterListItem.values.hash, entityType }, true);
 					this._list.addItem(listItem);
 				}
 				this._list.update();
@@ -265,7 +265,7 @@ class MakeCards extends BaseComponent {
 		));
 	}
 
-	_render_getContextMenuOptionsSublist () {
+	_render_getContextMenuOptionsSublist() {
 		return Object.entries(MakeCards._AVAILABLE_TYPES).map(([entityType, type]) => new ContextUtil.Action(
 			`Load from ${type.pageTitle}${type.isPageTitleSkipSuffix ? "" : " Page"} Pinned List`,
 			async () => {
@@ -273,12 +273,12 @@ class MakeCards extends BaseComponent {
 				const pinnedList = await StorageUtil.pGet(storageKey);
 
 				if (!(pinnedList && pinnedList.items && pinnedList.items.length)) {
-					return JqueryUtil.doToast({content: "Nothing to add! Please visit the page and add/pin some data first.", type: "warning"});
+					return JqueryUtil.doToast({ content: "Nothing to add! Please visit the page and add/pin some data first.", type: "warning" });
 				}
 
 				const listItems = await Promise.all(pinnedList.items.map(it => {
 					const [_, source] = it.h.split(HASH_PART_SEP)[0].split(HASH_LIST_SEP);
-					return this._pGetListItem({page: type.page, source, hash: it.h, entityType}, true);
+					return this._pGetListItem({ page: type.page, source, hash: it.h, entityType }, true);
 				}));
 
 				listItems.forEach(it => this._list.addItem(it));
@@ -288,19 +288,19 @@ class MakeCards extends BaseComponent {
 		));
 	}
 
-	_getStateForType (entityType) {
+	_getStateForType(entityType) {
 		const kColor = `color_${entityType}`;
 		const kIcon = `icon_${entityType}`;
 		const color = this._state[kColor];
 		const icon = this._state[kIcon];
-		return {color, icon};
+		return { color, icon };
 	}
 
-	async _pGetListItem (cardMeta, isNewCard) {
+	async _pGetListItem(cardMeta, isNewCard) {
 		const uid = CryptUtil.uid();
 
 		if (isNewCard) {
-			const {color, icon} = this._getStateForType(cardMeta.entityType);
+			const { color, icon } = this._getStateForType(cardMeta.entityType);
 			cardMeta.color = cardMeta.color || color;
 			cardMeta.icon = cardMeta.icon || icon;
 		}
@@ -334,7 +334,7 @@ class MakeCards extends BaseComponent {
 
 		const $iptCount = $(`<input class="form-control form-control--minimal input-xs ve-text-center">`)
 			.change(() => {
-				const asNum = UiUtil.strToInt($iptCount.val(), 1, {min: 1, fallbackOnNaN: 1});
+				const asNum = UiUtil.strToInt($iptCount.val(), 1, { min: 1, fallbackOnNaN: 1 });
 				listItem.values.count = asNum;
 				$iptCount.val(asNum);
 				this._doSaveStateDebounced();
@@ -380,7 +380,7 @@ class MakeCards extends BaseComponent {
 
 		const $ele = $$`<label class="ve-flex-v-center my-1 w-100 lst__row lst__row-border lst__row-inner">
 			<div class="ve-col-1 mr-2 ve-flex-vh-center">${$cbSel}</div>
-			<div class="ve-col-3 mr-2 ve-flex-v-center">${loaded.name}</div>
+			<div class="ve-col-3 mr-2 ve-flex-v-center">${Renderer.get().render(`{@${Parser.getPropTag(cardMeta.entityType)} ${DataUtil.proxy.getUid(loaded.__prop, loaded, { isMaintainCase: true })}}`)}</div>
 			<div class="ve-col-1-5 mr-2 ve-flex-vh-center ${Parser.sourceJsonToSourceClassname(loaded.source)}" title="${Parser.sourceJsonToFull(loaded.source)}" ${Parser.sourceJsonToStyle(loaded.source)}>${Parser.sourceJsonToAbv(loaded.source)}</div>
 			<div class="ve-col-1-5 mr-2 ve-flex-vh-center">${Parser.getPropDisplayName(cardMeta.entityType)}</div>
 			<div class="ve-col-1-1 mr-2 ve-flex-vh-center">${$iptRgb}</div>
@@ -415,21 +415,21 @@ class MakeCards extends BaseComponent {
 	}
 
 	// region contents
-	static _ct_subtitle (val) { return `subtitle | ${val}`; }
-	static _ct_rule () { return `rule`; }
-	static _ct_property (title, val) { return `property | ${title} | ${val}`; }
-	static _ct_fill (size) { return `fill ${size}`; }
-	static _ct_text (val) { return `text | ${val}`; }
-	static _ct_section (val) { return `section | ${val}`; }
-	static _ct_description (title, val) { return `description | ${title} | ${val}`; }
-	static _ct_bullet (val) { return `bullet | ${val}`; }
-	static _ct_boxes (count, size = 1.2) { return `boxes | ${count} | ${size}`; }
-	static _ct_dndstats (...attrs) { return `dndstats | ${attrs.join(" | ")}`; }
+	static _ct_subtitle(val) { return `subtitle | ${val}`; }
+	static _ct_rule() { return `rule`; }
+	static _ct_property(title, val) { return `property | ${title} | ${val}`; }
+	static _ct_fill(size) { return `fill ${size}`; }
+	static _ct_text(val) { return `text | ${val}`; }
+	static _ct_section(val) { return `section | ${val}`; }
+	static _ct_description(title, val) { return `description | ${title} | ${val}`; }
+	static _ct_bullet(val) { return `bullet | ${val}`; }
+	static _ct_boxes(count, size = 1.2) { return `boxes | ${count} | ${size}`; }
+	static _ct_dndstats(...attrs) { return `dndstats | ${attrs.join(" | ")}`; }
 
-	static _ct_htmlToText (html) {
+	static _ct_htmlToText(html) {
 		return $(`<div>${html}</div>`).text().trim();
 	}
-	static _ct_renderEntries (entries, depth = 0) {
+	static _ct_renderEntries(entries, depth = 0) {
 		if (!entries || !entries.length) return [];
 
 		return entries.map(ent => {
@@ -438,7 +438,7 @@ class MakeCards extends BaseComponent {
 		}).flat();
 	}
 
-	static _getCardContents_creature (mon) {
+	static _getCardContents_creature(mon) {
 		const renderer = RendererCard.get();
 
 		const {
@@ -448,7 +448,7 @@ class MakeCards extends BaseComponent {
 			entsReaction,
 			entsLegendaryAction,
 			entsMythicAction,
-		} = Renderer.monster.getSubEntries(mon, {renderer});
+		} = Renderer.monster.getSubEntries(mon, { renderer });
 
 		return [
 			this._ct_subtitle(Renderer.monster.getTypeAlignmentPart(mon)),
@@ -467,7 +467,7 @@ class MakeCards extends BaseComponent {
 			mon.resist ? this._ct_property("Damage Resistances", this._ct_htmlToText(Parser.getFullImmRes(mon.resist))) : null,
 			mon.immune ? this._ct_property("Damage Immunities", this._ct_htmlToText(Parser.getFullImmRes(mon.immune))) : null,
 			mon.conditionImmune ? this._ct_property("Condition Immunities", this._ct_htmlToText(Parser.getFullCondImm(mon.conditionImmune))) : null,
-			this._ct_property("Senses", this._ct_htmlToText(Renderer.monster.getSensesPart(mon, {isForcePassive: true}))),
+			this._ct_property("Senses", this._ct_htmlToText(Renderer.monster.getSensesPart(mon, { isForcePassive: true }))),
 			this._ct_property("Languages", this._ct_htmlToText(Renderer.monster.getRenderedLanguages(mon.languages))),
 			this._ct_property("Challenge", this._ct_htmlToText(Renderer.monster.getChallengeRatingPart(mon))),
 			this._ct_rule(),
@@ -479,15 +479,15 @@ class MakeCards extends BaseComponent {
 			entsReaction?.length ? this._ct_section("Reactions") : null,
 			...(entsReaction?.length ? this._ct_renderEntries(entsReaction, 2) : []),
 			entsLegendaryAction?.length ? this._ct_section("Legendary Actions") : null,
-			entsLegendaryAction?.length ? this._ct_text(this._ct_htmlToText(Renderer.monster.getLegendaryActionIntro(mon, {renderer}))) : null,
+			entsLegendaryAction?.length ? this._ct_text(this._ct_htmlToText(Renderer.monster.getLegendaryActionIntro(mon, { renderer }))) : null,
 			...(entsLegendaryAction?.length ? this._ct_renderEntries(entsLegendaryAction, 2) : []),
 			entsMythicAction?.length ? this._ct_section("Mythic Actions") : null,
-			entsMythicAction ? this._ct_text(this._ct_htmlToText(Renderer.monster.getSectionIntro(mon, {renderer, prop: "mythic"}))) : null,
+			entsMythicAction ? this._ct_text(this._ct_htmlToText(Renderer.monster.getSectionIntro(mon, { renderer, prop: "mythic" }))) : null,
 			...(entsMythicAction?.length ? this._ct_renderEntries(entsMythicAction, 2) : []),
 		].filter(Boolean);
 	}
 
-	static _getCardContents_spell (sp) {
+	static _getCardContents_spell(sp) {
 		const higherLevel = sp.entriesHigherLevel ? (() => {
 			const ents = sp.entriesHigherLevel.length === 1 && sp.entriesHigherLevel[0].name && sp.entriesHigherLevel[0].name.toLowerCase() === "at higher levels"
 				? sp.entriesHigherLevel[0].entries
@@ -504,20 +504,20 @@ class MakeCards extends BaseComponent {
 			this._ct_rule(),
 			this._ct_property("Casting Time", Parser.spTimeListToFull(sp.time, sp.meta)),
 			this._ct_property("Range", Parser.spRangeToFull(sp.range)),
-			this._ct_property("Components", Parser.spComponentsToFull(sp.components, sp.level, {isPlainText: true})),
-			this._ct_property("Duration", Parser.spDurationToFull(sp.duration, {isPlainText: true})),
+			this._ct_property("Components", Parser.spComponentsToFull(sp.components, sp.level, { isPlainText: true })),
+			this._ct_property("Duration", Parser.spDurationToFull(sp.duration, { isPlainText: true })),
 			this._ct_rule(),
 			...this._ct_renderEntries(sp.entries, 2),
 			...(higherLevel || []),
 		].filter(Boolean);
 	}
 
-	static _getCardContents_item (item) {
+	static _getCardContents_item(item) {
 		MakeCards.utils.enhanceItemAlt(item);
 
 		const [typeRarityText, subTypeText, tierText] = Renderer.item.getTypeRarityAndAttunementText(item);
 		const [ptDamage, ptProperties] = Renderer.item.getRenderedDamageAndProperties(item);
-		const ptMastery = Renderer.item.getRenderedMastery(item, {isSkipPrefix: true});
+		const ptMastery = Renderer.item.getRenderedMastery(item, { isSkipPrefix: true });
 		const ptWeight = Parser.itemWeightToFull(item);
 		const ptValue = Parser.itemValueToFullMultiCurrency(item);
 		const ptDamageCt = this._ct_htmlToText(ptDamage);
@@ -547,7 +547,7 @@ class MakeCards extends BaseComponent {
 		].filter(Boolean);
 	}
 
-	static _getCardContents_race (race) {
+	static _getCardContents_race(race) {
 		return [
 			this._ct_property("Ability Scores", Renderer.getAbilityData(race.ability).asText),
 			this._ct_property("Size", (race.size || [Parser.SZ_VARIES]).map(sz => Parser.sizeAbvToFull(sz)).join("/")),
@@ -557,26 +557,29 @@ class MakeCards extends BaseComponent {
 		].filter(Boolean);
 	}
 
-	static _getCardContents_background (bg) {
+	static _getCardContents_background(bg) {
 		return [
 			...this._ct_renderEntries(bg.entries, 2),
 		].filter(Boolean);
 	}
 
-	static _getCardContents_feat (feat) {
-		const prerequisite = Renderer.utils.prerequisite.getHtml(feat.prerequisite, {isListMode: true});
-		const ptRepeatable = Renderer.utils.getRepeatableHtml(feat, {isListMode: true});
+	static _getCardContents_feat(feat) {
+		const prerequisite = Renderer.feat.getJoinedCategoryPrerequisites(
+			feat.category,
+			Renderer.utils.prerequisite.getHtml(feat.prerequisite, { isListMode: true }),
+		);
+		const ptRepeatable = Renderer.utils.getRepeatableHtml(feat, { isListMode: true });
 		Renderer.feat.initFullEntries(feat);
 		return [
-			(prerequisite && prerequisite !== "\u2014") ? this._ct_property("Prerequisites", prerequisite) : null,
+			(prerequisite && prerequisite !== "\u2014") ? this._ct_property("Type/Prerequisites", prerequisite) : null,
 			(ptRepeatable && ptRepeatable !== "\u2014") ? this._ct_property("Repeatable", ptRepeatable) : null,
 			(prerequisite || ptRepeatable) ? this._ct_rule() : null,
 			...this._ct_renderEntries(feat._fullEntries || feat.entries, 2),
 		].filter(Boolean);
 	}
 
-	static _getCardContents_optionalfeature (optfeat) {
-		const prerequisite = Renderer.utils.prerequisite.getHtml(optfeat.prerequisite, {isListMode: true});
+	static _getCardContents_optionalfeature(optfeat) {
+		const prerequisite = Renderer.utils.prerequisite.getHtml(optfeat.prerequisite, { isListMode: true });
 		Renderer.feat.initFullEntries(optfeat);
 		return [
 			prerequisite ? this._ct_property("Prerequisites", prerequisite) : null,
@@ -586,7 +589,7 @@ class MakeCards extends BaseComponent {
 	}
 	// endregion
 
-	static _getIconPath (iconName) {
+	static _getIconPath(iconName) {
 		const classIconNames = [
 			"class-barbarian",
 			"class-bard",
@@ -620,7 +623,7 @@ class MakeCards extends BaseComponent {
 		return `https://rpg-cards.vercel.app/icons/${iconName}.svg`;
 	}
 
-	static _pGetUserIcon (initialVal) {
+	static _pGetUserIcon(initialVal) {
 		return new Promise(resolve => {
 			const $iptStr = $(`<input class="form-control mb-2">`)
 				.keydown(async evt => {
@@ -644,7 +647,7 @@ class MakeCards extends BaseComponent {
 
 			const $btnOk = $(`<button class="ve-btn ve-btn-default">Confirm</button>`)
 				.click(() => doClose(true));
-			const {$modalInner, doClose} = UiUtil.getShowModal({
+			const { $modalInner, doClose } = UiUtil.getShowModal({
 				title: "Enter Icon",
 				isMinHeight0: true,
 				cbClose: (isDataEntered) => {
@@ -662,17 +665,17 @@ class MakeCards extends BaseComponent {
 	}
 
 	// region persistence
-	async _pDoSaveState () {
+	async _pDoSaveState() {
 		const toSave = this.getSaveableState();
 		await StorageUtil.pSetForPage(MakeCards._STORAGE_KEY, toSave);
 	}
 
-	async _pDoLoadState () {
+	async _pDoLoadState() {
 		const toLoad = await StorageUtil.pGetForPage(MakeCards._STORAGE_KEY);
 		if (toLoad != null) this.setStateFrom(toLoad);
 	}
 
-	getSaveableState () {
+	getSaveableState() {
 		return {
 			state: this.getBaseSaveableState(),
 			listItems: this._list.items.map(it => ({
@@ -687,7 +690,7 @@ class MakeCards extends BaseComponent {
 		};
 	}
 
-	setStateFrom (toLoad) {
+	setStateFrom(toLoad) {
 		this.setBaseSaveableStateFrom(toLoad.state);
 		Promise.all(toLoad.listItems.map(async toLoad => this._pGetListItem(toLoad)))
 			.then(initialListItems => {
@@ -699,7 +702,7 @@ class MakeCards extends BaseComponent {
 	}
 	// endregion
 
-	_getDefaultState () {
+	_getDefaultState() {
 		const cpy = MiscUtil.copy(MakeCards._DEFAULT_STATE);
 		Object.entries(MakeCards._AVAILABLE_TYPES).forEach(([k, v]) => {
 			const kColor = `color_${k}`;
@@ -829,7 +832,7 @@ MakeCards._ = null;
 window.addEventListener("load", () => MakeCards.pInit());
 
 MakeCards.utils = class {
-	static async pLoadReducedData () {
+	static async pLoadReducedData() {
 		const data = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/makecards.json`);
 		data.reducedItemProperty.forEach(p => MakeCards.utils._addItemProperty(p));
 		data.reducedItemType.forEach(t => {
@@ -844,7 +847,7 @@ MakeCards.utils = class {
 	}
 
 	// region items
-	static _addItemProperty (ent) {
+	static _addItemProperty(ent) {
 		const lookupSource = ent.source.toLowerCase();
 		const lookupAbv = ent.abbreviation.toLowerCase();
 
@@ -862,7 +865,7 @@ MakeCards.utils = class {
 		MiscUtil.set(MakeCards.utils._itemPropertyMap, lookupSource, lookupAbv, {});
 	}
 
-	static _addItemType (ent) {
+	static _addItemType(ent) {
 		const lookupSource = ent.source.toLowerCase();
 		const lookupAbv = ent.abbreviation.toLowerCase();
 
@@ -875,11 +878,11 @@ MakeCards.utils = class {
 		});
 	}
 
-	static enhanceItemAlt (item) {
+	static enhanceItemAlt(item) {
 		delete item._fullEntries;
 
 		if (item.type) {
-			const {abbreviation, source} = DataUtil.itemType.unpackUid(item.type, {isLower: true});
+			const { abbreviation, source } = DataUtil.itemType.unpackUid(item.type, { isLower: true });
 			const fromCustom = MiscUtil.get(MakeCards.utils._itemTypeMap, source, abbreviation);
 			if (fromCustom || Renderer.item.getType(item.type)) {
 				Renderer.item._initFullEntries(item);
@@ -890,7 +893,7 @@ MakeCards.utils = class {
 		if (item.property) {
 			item.property.forEach(p => {
 				const uid = p?.uid || p;
-				const {abbreviation, source} = DataUtil.itemProperty.unpackUid(uid, {isLower: true});
+				const { abbreviation, source } = DataUtil.itemProperty.unpackUid(uid, { isLower: true });
 
 				const fromCustom = MiscUtil.get(MakeCards.utils._itemPropertyMap, source, abbreviation);
 				if (fromCustom) {
