@@ -1,5 +1,5 @@
-import {BrewUtil2Base} from "./utils-brew-base.js";
-import {BrewDoc} from "./utils-brew-models.js";
+import { BrewUtil2Base } from "./utils-brew-base.js";
+import { BrewDoc } from "./utils-brew-models.js";
 
 export class BrewUtil2_ extends BrewUtil2Base {
 	_STORAGE_KEY_LEGACY = "HOMEBREW_STORAGE";
@@ -26,10 +26,11 @@ export class BrewUtil2_ extends BrewUtil2Base {
 	DEFAULT_AUTHOR = "";
 	STYLE_BTN = "ve-btn-info";
 	IS_PREFER_DATE_ADDED = true;
+	IS_ADD_BTN_ALL_PARTNERED = true;
 
 	/* -------------------------------------------- */
 
-	_pInit_doBindDragDrop () {
+	_pInit_doBindDragDrop() {
 		document.body.addEventListener("drop", async evt => {
 			if (EventUtil.isInInput(evt)) return;
 
@@ -52,7 +53,7 @@ export class BrewUtil2_ extends BrewUtil2Base {
 							return resolve(null);
 						}
 
-						resolve({name: file.name, json});
+						resolve({ name: file.name, json });
 					};
 
 					reader.readAsText(files[i]);
@@ -60,8 +61,8 @@ export class BrewUtil2_ extends BrewUtil2Base {
 			});
 
 			const fileMetas = (await Promise.allSettled(pFiles))
-				.filter(({status}) => status === "fulfilled")
-				.map(({value}) => value)
+				.filter(({ status }) => status === "fulfilled")
+				.map(({ value }) => value)
 				.filter(Boolean);
 
 			await this.pAddBrewsFromFiles(fileMetas);
@@ -79,30 +80,30 @@ export class BrewUtil2_ extends BrewUtil2Base {
 
 	/* -------------------------------------------- */
 
-	async pGetSourceIndex (urlRoot) { return DataUtil.brew.pLoadSourceIndex(urlRoot); }
+	async pGetSourceIndex(urlRoot) { return DataUtil.brew.pLoadSourceIndex(urlRoot); }
 
-	getFileUrl (path, urlRoot) { return DataUtil.brew.getFileUrl(path, urlRoot); }
+	getFileUrl(path, urlRoot) { return DataUtil.brew.getFileUrl(path, urlRoot); }
 
-	pLoadTimestamps (urlRoot) { return DataUtil.brew.pLoadTimestamps(urlRoot); }
+	pLoadTimestamps(urlRoot) { return DataUtil.brew.pLoadTimestamps(urlRoot); }
 
-	pLoadPropIndex (urlRoot) { return DataUtil.brew.pLoadPropIndex(urlRoot); }
+	pLoadPropIndex(urlRoot) { return DataUtil.brew.pLoadPropIndex(urlRoot); }
 
-	pLoadMetaIndex (urlRoot) { return DataUtil.brew.pLoadMetaIndex(urlRoot); }
+	pLoadMetaIndex(urlRoot) { return DataUtil.brew.pLoadMetaIndex(urlRoot); }
 
-	pLoadAdventureBookIdsIndex (urlRoot) { return DataUtil.brew.pLoadAdventureBookIdsIndex(urlRoot); }
+	pLoadAdventureBookIdsIndex(urlRoot) { return DataUtil.brew.pLoadAdventureBookIdsIndex(urlRoot); }
 
 	/* -------------------------------------------- */
 
 	// region Editable
-	async pGetEditableBrewDoc () {
-		return this._findEditableBrewDoc({brewRaw: await this._pGetBrewRaw()});
+	async pGetEditableBrewDoc() {
+		return this._findEditableBrewDoc({ brewRaw: await this._pGetBrewRaw() });
 	}
 
-	_findEditableBrewDoc ({brewRaw}) {
+	_findEditableBrewDoc({ brewRaw }) {
 		return brewRaw.find(it => it.head.isEditable);
 	}
 
-	async pGetOrCreateEditableBrewDoc () {
+	async pGetOrCreateEditableBrewDoc() {
 		const existing = await this.pGetEditableBrewDoc();
 		if (existing) return existing;
 
@@ -113,7 +114,7 @@ export class BrewUtil2_ extends BrewUtil2Base {
 		return brew;
 	}
 
-	async pSetEditableBrewDoc (brew) {
+	async pSetEditableBrewDoc(brew) {
 		if (!brew?.head?.docIdLocal || !brew?.body) throw new Error(`Invalid editable brew document!`); // Sanity check
 		await this.pUpdateBrew(brew);
 	}
@@ -123,7 +124,7 @@ export class BrewUtil2_ extends BrewUtil2Base {
 	 * @param uniqueId
 	 * @param isDuplicate If the entity should be a duplicate, i.e. have a new `uniqueId`.
 	 */
-	async pGetEditableBrewEntity (prop, uniqueId, {isDuplicate = false} = {}) {
+	async pGetEditableBrewEntity(prop, uniqueId, { isDuplicate = false } = {}) {
 		if (!uniqueId) throw new Error(`A "uniqueId" must be provided!`);
 
 		const brew = await this.pGetOrCreateEditableBrewDoc();
@@ -136,7 +137,7 @@ export class BrewUtil2_ extends BrewUtil2Base {
 		return out;
 	}
 
-	async pPersistEditableBrewEntity (prop, ent) {
+	async pPersistEditableBrewEntity(prop, ent) {
 		if (!ent.uniqueId) throw new Error(`Entity did not have a "uniqueId"!`);
 
 		const brew = await this.pGetOrCreateEditableBrewDoc();
@@ -157,7 +158,7 @@ export class BrewUtil2_ extends BrewUtil2Base {
 		await this.pUpdateBrew(nxt);
 	}
 
-	async pRemoveEditableBrewEntity (prop, uniqueId) {
+	async pRemoveEditableBrewEntity(prop, uniqueId) {
 		if (!uniqueId) throw new Error(`A "uniqueId" must be provided!`);
 
 		const brew = await this.pGetOrCreateEditableBrewDoc();
@@ -172,7 +173,7 @@ export class BrewUtil2_ extends BrewUtil2Base {
 		await this.pUpdateBrew(nxt);
 	}
 
-	async pAddSource (sourceObj) {
+	async pAddSource(sourceObj) {
 		const existing = await this.pGetEditableBrewDoc();
 
 		if (existing) {
@@ -185,13 +186,13 @@ export class BrewUtil2_ extends BrewUtil2Base {
 			return;
 		}
 
-		const json = {_meta: {sources: [sourceObj]}};
-		const brew = this._getBrewDoc({json, isEditable: true});
+		const json = { _meta: { sources: [sourceObj] } };
+		const brew = this._getBrewDoc({ json, isEditable: true });
 		const brews = [...MiscUtil.copyFast(await this._pGetBrewRaw()), brew];
 		await this.pSetBrew(brews);
 	}
 
-	async pEditSource (sourceObj) {
+	async pEditSource(sourceObj) {
 		const existing = await this.pGetEditableBrewDoc();
 		if (!existing) throw new Error(`Editable brew document does not exist!`);
 
@@ -206,7 +207,7 @@ export class BrewUtil2_ extends BrewUtil2Base {
 		await this.pUpdateBrew(nxt);
 	}
 
-	async pIsEditableSourceJson (sourceJson) {
+	async pIsEditableSourceJson(sourceJson) {
 		const brew = await this.pGetEditableBrewDoc();
 		if (!brew) return false;
 
@@ -218,7 +219,7 @@ export class BrewUtil2_ extends BrewUtil2Base {
 	 * Move the brews containing a given source to the editable document. If a brew cannot be moved to the editable
 	 *   document, copy the source to the editable document instead.
 	 */
-	async pMoveOrCopyToEditableBySourceJson (sourceJson) {
+	async pMoveOrCopyToEditableBySourceJson(sourceJson) {
 		if (await this.pIsEditableSourceJson(sourceJson)) return;
 
 		// Fetch all candidate brews
@@ -226,34 +227,34 @@ export class BrewUtil2_ extends BrewUtil2Base {
 		const brewsLocal = (await this._pGetBrew_pGetLocalBrew()).filter(brew => (brew.body._meta?.sources || []).some(src => src.json === sourceJson));
 
 		// Arbitrarily select one, preferring non-local
-		let brew = brews.find(brew => BrewDoc.isOperationPermitted_moveToEditable({brew}));
-		if (!brew) brew = brewsLocal.find(brew => BrewDoc.isOperationPermitted_moveToEditable({brew, isAllowLocal: true}));
+		let brew = brews.find(brew => BrewDoc.isOperationPermitted_moveToEditable({ brew }));
+		if (!brew) brew = brewsLocal.find(brew => BrewDoc.isOperationPermitted_moveToEditable({ brew, isAllowLocal: true }));
 
 		if (!brew) return;
 
-		if (brew.head.isLocal) return this.pCopyToEditable({brews: [brew]});
+		if (brew.head.isLocal) return this.pCopyToEditable({ brews: [brew] });
 
-		return this.pMoveToEditable({brews: [brew]});
+		return this.pMoveToEditable({ brews: [brew] });
 	}
 
-	async pMoveToEditable ({brews}) {
-		const out = await this.pCopyToEditable({brews});
+	async pMoveToEditable({ brews }) {
+		const out = await this.pCopyToEditable({ brews });
 		await this.pDeleteBrews(brews);
 		return out;
 	}
 
-	async pCopyToEditable ({brews}) {
+	async pCopyToEditable({ brews }) {
 		const brewEditable = await this.pGetOrCreateEditableBrewDoc();
 
-		const cpyBrewEditableDoc = BrewDoc.fromObject(brewEditable, {isCopy: true});
-		brews.forEach((brew, i) => cpyBrewEditableDoc.mutMerge({json: brew.body, isLazy: i !== brews.length - 1}));
+		const cpyBrewEditableDoc = BrewDoc.fromObject(brewEditable, { isCopy: true });
+		brews.forEach((brew, i) => cpyBrewEditableDoc.mutMerge({ json: brew.body, isLazy: i !== brews.length - 1 }));
 
 		await this.pSetEditableBrewDoc(cpyBrewEditableDoc.toObject());
 
 		return cpyBrewEditableDoc;
 	}
 
-	async pHasEditableSourceJson () {
+	async pHasEditableSourceJson() {
 		const brewsStored = await this._pGetBrewRaw();
 		if (!brewsStored?.length) return false;
 

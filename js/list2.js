@@ -8,7 +8,7 @@ class ListItem {
 	 * @param values A dictionary of indexed values for this item.
 	 * @param [data] An optional dictionary of additional data to store with the item (not indexed).
 	 */
-	constructor (ix, ele, name, values, data) {
+	constructor(ix, ele, name, values, data) {
 		this.ix = ix;
 		this.ele = ele;
 		this.name = name;
@@ -21,7 +21,7 @@ class ListItem {
 		this._isSelected = false;
 	}
 
-	mutRegenSearchText () {
+	mutRegenSearchText() {
 		let searchText = `${this.name} - `;
 		for (const k in this.values) {
 			const v = this.values[k]; // unsafe for performance
@@ -31,7 +31,7 @@ class ListItem {
 		this.searchText = searchText.toAscii().toLowerCase();
 	}
 
-	set isSelected (val) {
+	set isSelected(val) {
 		if (this._isSelected === val) return;
 		this._isSelected = val;
 
@@ -44,7 +44,7 @@ class ListItem {
 		}
 	}
 
-	get isSelected () { return this._isSelected; }
+	get isSelected() { return this._isSelected; }
 }
 
 class _ListSearch {
@@ -54,21 +54,21 @@ class _ListSearch {
 	#fn = null;
 	#items = null;
 
-	constructor ({term, fn, items}) {
+	constructor({ term, fn, items }) {
 		this.#term = term;
 		this.#fn = fn;
 		this.#items = [...items];
 	}
 
-	interrupt () { this.#isInterrupted = true; }
+	interrupt() { this.#isInterrupted = true; }
 
-	async pRun () {
+	async pRun() {
 		const out = [];
 		for (const item of this.#items) {
 			if (this.#isInterrupted) break;
 			if (await this.#fn(item, this.#term)) out.push(item);
 		}
-		return {isInterrupted: this.#isInterrupted, searchedItems: out};
+		return { isInterrupted: this.#isInterrupted, searchedItems: out };
 	}
 }
 
@@ -90,7 +90,7 @@ class List {
 	 * @param [opts.isSkipSearchKeybindingEnter]
 	 * @param {array} [opts.helpText]
 	 */
-	constructor (opts) {
+	constructor(opts) {
 		if (opts.fnSearch && opts.isFuzzy) throw new Error(`The options "fnSearch" and "isFuzzy" are mutually incompatible!`);
 
 		this._$iptSearch = opts.$iptSearch;
@@ -130,19 +130,19 @@ class List {
 		// endregion
 	}
 
-	get items () { return this._items; }
-	get visibleItems () { return this._sortedItems; }
-	get sortBy () { return this._sortBy; }
-	get sortDir () { return this._sortDir; }
-	set nextList (list) { this._nextList = list; }
-	set prevList (list) { this._prevList = list; }
+	get items() { return this._items; }
+	get visibleItems() { return this._sortedItems; }
+	get sortBy() { return this._sortBy; }
+	get sortDir() { return this._sortDir; }
+	set nextList(list) { this._nextList = list; }
+	set prevList(list) { this._prevList = list; }
 
-	setFnSearch (fn) {
+	setFnSearch(fn) {
 		this._fnSearch = fn;
 		this._isDirty = true;
 	}
 
-	init ({isLazySearch = false} = {}) {
+	init({ isLazySearch = false } = {}) {
 		if (this._isInit) return;
 
 		// This should only be run after all the elements are ready from page load
@@ -159,8 +159,8 @@ class List {
 			const helpText = [
 				...(this._helpText || []),
 				...Object.values(this._syntax || {})
-					.filter(({help}) => help)
-					.map(({help}) => help),
+					.filter(({ help }) => help)
+					.map(({ help }) => help),
 			];
 
 			if (helpText.length) this._$iptSearch.title(helpText.join(" "));
@@ -171,7 +171,7 @@ class List {
 		this._isInit = true;
 	}
 
-	_init_bindKeydowns () {
+	_init_bindKeydowns() {
 		this._$iptSearch
 			.on("keydown", evt => {
 				// Avoid handling the same event multiple times, if there are multiple lists bound to one input
@@ -184,7 +184,7 @@ class List {
 			});
 	}
 
-	_handleKeydown_escape (evt) {
+	_handleKeydown_escape(evt) {
 		evt._List__isHandled = true;
 
 		if (!this._$iptSearch.val()) {
@@ -196,10 +196,10 @@ class List {
 		this.search("");
 	}
 
-	_handleKeydown_enter (evt) {
+	_handleKeydown_enter(evt) {
 		if (this._isSkipSearchKeybindingEnter) return;
 
-		if (IS_VTT) return;
+		if (globalThis.IS_VTT) return;
 		if (!EventUtil.noModifierKeys(evt)) return;
 
 		const firstVisibleItem = this.visibleItems[0];
@@ -211,7 +211,7 @@ class List {
 		if (firstVisibleItem.values.hash) window.location.hash = firstVisibleItem.values.hash;
 	}
 
-	_initFuzzySearch () {
+	_initFuzzySearch() {
 		elasticlunr.clearStopWords();
 		this._fuzzySearch = elasticlunr(function () {
 			this.addField("s");
@@ -220,25 +220,25 @@ class List {
 		SearchUtil.removeStemmer(this._fuzzySearch);
 	}
 
-	update ({isForce = false} = {}) {
+	update({ isForce = false } = {}) {
 		if (!this._isInit || !this._isDirty || isForce) return false;
 		this._doSearch();
 		return true;
 	}
 
-	_doSearch () {
+	_doSearch() {
 		this._doSearch_doInterruptExistingSearch();
 		this._doSearch_doSearchTerm();
 		this._doSearch_doPostSearchTerm();
 	}
 
-	_doSearch_doInterruptExistingSearch () {
+	_doSearch_doInterruptExistingSearch() {
 		if (!this.#activeSearch) return;
 		this.#activeSearch.interrupt();
 		this.#activeSearch = null;
 	}
 
-	_doSearch_doSearchTerm () {
+	_doSearch_doSearchTerm() {
 		if (this._doSearch_doSearchTerm_preSyntax()) return;
 
 		const matchingSyntax = this._doSearch_getMatchingSyntax();
@@ -263,20 +263,20 @@ class List {
 		this._searchedItems = this._items.filter(it => this.constructor.isVisibleDefaultSearch(it, this._searchTerm));
 	}
 
-	_doSearch_doSearchTerm_preSyntax () {
+	_doSearch_doSearchTerm_preSyntax() {
 		if (!this._searchTerm && !this._fnSearch) {
 			this._searchedItems = [...this._items];
 			return true;
 		}
 	}
 
-	_doSearch_getMatchingSyntax () {
+	_doSearch_getMatchingSyntax() {
 		const [command, term] = this._searchTerm.split(/^([a-z]+):/).filter(Boolean);
 		if (!command || !term || !this._syntax?.[command]) return null;
-		return {term: this._doSearch_getSyntaxSearchTerm(term), syntax: this._syntax[command]};
+		return { term: this._doSearch_getSyntaxSearchTerm(term), syntax: this._syntax[command] };
 	}
 
-	_doSearch_getSyntaxSearchTerm (term) {
+	_doSearch_getSyntaxSearchTerm(term) {
 		if (!term.startsWith("/") || !term.endsWith("/")) return term;
 		try {
 			return new RegExp(term.slice(1, -1));
@@ -285,14 +285,14 @@ class List {
 		}
 	}
 
-	_doSearch_doSearchTerm_syntax ({term, syntax: {fn, isAsync}}) {
+	_doSearch_doSearchTerm_syntax({ term, syntax: { fn, isAsync } }) {
 		if (isAsync) return false;
 
 		this._searchedItems = this._items.filter(it => fn(it, term));
 		return true;
 	}
 
-	async _doSearch_doSearchTerm_pSyntax ({term, syntax: {fn, isAsync}}) {
+	async _doSearch_doSearchTerm_pSyntax({ term, syntax: { fn, isAsync } }) {
 		if (!isAsync) return false;
 
 		this.#activeSearch = new _ListSearch({
@@ -300,22 +300,22 @@ class List {
 			fn,
 			items: this._items,
 		});
-		const {isInterrupted, searchedItems} = await this.#activeSearch.pRun();
+		const { isInterrupted, searchedItems } = await this.#activeSearch.pRun();
 
 		if (isInterrupted) return false;
 		this._searchedItems = searchedItems;
 		return true;
 	}
 
-	static isVisibleDefaultSearch (li, searchTerm) { return li.searchText.includes(searchTerm); }
+	static isVisibleDefaultSearch(li, searchTerm) { return li.searchText.includes(searchTerm); }
 
-	_doSearch_doSearchTerm_fuzzy () {
+	_doSearch_doSearchTerm_fuzzy() {
 		const results = this._fuzzySearch
 			.search(
 				this._searchTerm,
 				{
 					fields: {
-						s: {expand: true},
+						s: { expand: true },
 					},
 					bool: "AND",
 					expand: true,
@@ -325,14 +325,14 @@ class List {
 		return results.map(res => this._items[res.doc.ix]);
 	}
 
-	_doSearch_doPostSearchTerm () {
+	_doSearch_doPostSearchTerm() {
 		// Never show excluded items
 		this._searchedItems = this._searchedItems.filter(it => !it.data.isExcluded);
 
 		this._doFilter();
 	}
 
-	getFilteredItems ({items = null, fnFilter} = {}) {
+	getFilteredItems({ items = null, fnFilter } = {}) {
 		items = items || this._searchedItems;
 		fnFilter = fnFilter || this._fnFilter;
 
@@ -341,12 +341,12 @@ class List {
 		return items.filter(it => fnFilter(it));
 	}
 
-	_doFilter () {
+	_doFilter() {
 		this._filteredItems = this.getFilteredItems();
 		this._doSort();
 	}
 
-	getSortedItems ({items = null} = {}) {
+	getSortedItems({ items = null } = {}) {
 		items = items || [...this._filteredItems];
 
 		const opts = {
@@ -361,12 +361,12 @@ class List {
 		return items;
 	}
 
-	_doSort () {
+	_doSort() {
 		this._sortedItems = this.getSortedItems();
 		this._doRender();
 	}
 
-	_doRender () {
+	_doRender() {
 		const len = this._sortedItems.length;
 
 		if (this._isUseJquery) {
@@ -383,20 +383,20 @@ class List {
 		this._trigger("updated");
 	}
 
-	search (searchTerm) {
+	search(searchTerm) {
 		const nextTerm = List.getCleanSearchTerm(searchTerm);
 		if (nextTerm === this._searchTerm) return;
 		this._searchTerm = nextTerm;
 		return this._doSearch();
 	}
 
-	filter (fnFilter) {
+	filter(fnFilter) {
 		if (this._fnFilter === fnFilter) return;
 		this._fnFilter = fnFilter;
 		this._doFilter();
 	}
 
-	sort (sortBy, sortDir) {
+	sort(sortBy, sortDir) {
 		if (this._sortBy !== sortBy || this._sortDir !== sortDir) {
 			this._sortBy = sortBy;
 			this._sortDir = sortDir;
@@ -404,7 +404,7 @@ class List {
 		}
 	}
 
-	reset () {
+	reset() {
 		if (this._searchTerm !== List._DEFAULTS.searchTerm) {
 			this._searchTerm = List._DEFAULTS.searchTerm;
 			return this._doSearch();
@@ -414,19 +414,19 @@ class List {
 		}
 	}
 
-	addItem (listItem) {
+	addItem(listItem) {
 		this._isDirty = true;
 		this._items.push(listItem);
 
-		if (this._isFuzzy) this._fuzzySearch.addDoc({ix: listItem.ix, s: listItem.searchText});
+		if (this._isFuzzy) this._fuzzySearch.addDoc({ ix: listItem.ix, s: listItem.searchText });
 	}
 
-	removeItem (listItem) {
+	removeItem(listItem) {
 		const ixItem = this._items.indexOf(listItem);
 		return this.removeItemByIndex(listItem.ix, ixItem);
 	}
 
-	removeItemByIndex (ix, ixItem) {
+	removeItemByIndex(ix, ixItem) {
 		ixItem = ixItem ?? this._items.findIndex(it => it.ix === ix);
 		if (!~ixItem) return;
 
@@ -438,27 +438,27 @@ class List {
 		return removed[0];
 	}
 
-	removeItemBy (valueName, value) {
+	removeItemBy(valueName, value) {
 		const ixItem = this._items.findIndex(it => it.values[valueName] === value);
 		return this.removeItemByIndex(ixItem, ixItem);
 	}
 
-	removeItemByData (dataName, value) {
+	removeItemByData(dataName, value) {
 		const ixItem = this._items.findIndex(it => it.data[dataName] === value);
 		return this.removeItemByIndex(ixItem, ixItem);
 	}
 
-	removeAllItems () {
+	removeAllItems() {
 		this._isDirty = true;
 		this._items = [];
 		if (this._isFuzzy) this._initFuzzySearch();
 	}
 
-	on (eventName, handler) {
+	on(eventName, handler) {
 		(this._eventHandlers[eventName] = this._eventHandlers[eventName] || []).push(handler);
 	}
 
-	off (eventName, handler) {
+	off(eventName, handler) {
 		if (!this._eventHandlers[eventName]) return false;
 		const ix = this._eventHandlers[eventName].indexOf(handler);
 		if (!~ix) return false;
@@ -466,7 +466,7 @@ class List {
 		return true;
 	}
 
-	_trigger (eventName) { (this._eventHandlers[eventName] || []).forEach(fn => fn()); }
+	_trigger(eventName) { (this._eventHandlers[eventName] || []).forEach(fn => fn()); }
 
 	// region hacks
 	/**
@@ -481,7 +481,7 @@ class List {
 	 * @param [opts.fnGetData] Function which gets list data from a listItem and dataSource item.
 	 * @param [opts.fnBindListeners] Function which binds event listeners to the list.
 	 */
-	doAbsorbItems (dataArr, opts) {
+	doAbsorbItems(dataArr, opts) {
 		const children = [...this._$wrpList[0].children];
 
 		const len = children.length;
@@ -505,7 +505,7 @@ class List {
 	// endregion
 
 	// region selection
-	doSelect (item, evt) {
+	doSelect(item, evt) {
 		if (evt && evt.shiftKey) {
 			evt.preventDefault(); // Stop a new window from being opened
 			// Don't update the last selection, as we want to be able to "pivot" the multi-selection off the first selection
@@ -523,7 +523,7 @@ class List {
 		} else this._doSelect_doSingle(item);
 	}
 
-	_doSelect_doSingle (item) {
+	_doSelect_doSingle(item) {
 		if (this._isMultiSelection) {
 			this.deselectAll();
 			if (this._prevList) this._prevList.deselectAll();
@@ -534,7 +534,7 @@ class List {
 		this._lastSelection = item;
 	}
 
-	_doSelect_doMulti (item) {
+	_doSelect_doMulti(item) {
 		this._selectFromItemToItem(this._lastSelection, item);
 
 		if (this._prevList && this._prevList._isMultiSelection) {
@@ -546,7 +546,7 @@ class List {
 		}
 	}
 
-	_selectFromItemToEnd (item, isKeepLastSelection = false) {
+	_selectFromItemToEnd(item, isKeepLastSelection = false) {
 		this.deselectAll(isKeepLastSelection);
 		this._isMultiSelection = true;
 		const ixStart = this.visibleItems.indexOf(item);
@@ -556,7 +556,7 @@ class List {
 		}
 	}
 
-	_selectToItemFromStart (item, isKeepLastSelection = false) {
+	_selectToItemFromStart(item, isKeepLastSelection = false) {
 		this.deselectAll(isKeepLastSelection);
 		this._isMultiSelection = true;
 		const ixEnd = this.visibleItems.indexOf(item);
@@ -565,7 +565,7 @@ class List {
 		}
 	}
 
-	_selectFromItemToItem (item1, item2) {
+	_selectFromItemToItem(item1, item2) {
 		this.deselectAll(true);
 
 		if (item1 === item2) {
@@ -585,13 +585,13 @@ class List {
 		}
 	}
 
-	deselectAll (isKeepLastSelection = false) {
+	deselectAll(isKeepLastSelection = false) {
 		if (!isKeepLastSelection) this._lastSelection = null;
 		this._isMultiSelection = false;
 		this._items.forEach(it => it.isSelected = false);
 	}
 
-	updateSelected (item) {
+	updateSelected(item) {
 		if (this.visibleItems.includes(item)) {
 			if (this._isMultiSelection) this.deselectAll(true);
 
@@ -602,12 +602,12 @@ class List {
 		} else this.deselectAll();
 	}
 
-	getSelected () {
+	getSelected() {
 		return this.visibleItems.filter(it => it.isSelected);
 	}
 	// endregion
 
-	static getCleanSearchTerm (str) {
+	static getCleanSearchTerm(str) {
 		return (str || "").toAscii().trim().toLowerCase().split(/\s+/g).join(" ");
 	}
 }

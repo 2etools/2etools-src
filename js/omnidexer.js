@@ -1,26 +1,26 @@
-import {UtilsFoundryItem} from "./foundry/foundry-utils.js";
+import { UtilsFoundryItem } from "./foundry/foundry-utils.js";
 
 class FoundryOmnidexerUtils {
-	static getPackedFoundryExtras ({prop, ent}) {
+	static getPackedFoundryExtras({ prop, ent }) {
 		switch (prop) {
-			case "spell": return this._getPackedFoundryExtras_spell({ent});
+			case "spell": return this._getPackedFoundryExtras_spell({ ent });
 
 			case "item":
-			case "baseitem": return this._getPackedFoundryExtras_item({ent});
+			case "baseitem": return this._getPackedFoundryExtras_item({ ent });
 		}
 	}
 
-	static _getPackedFoundryExtras_spell ({ent}) {
-		return {l: ent.level};
+	static _getPackedFoundryExtras_spell({ ent }) {
+		return { l: ent.level };
 	}
 
-	static _getPackedFoundryExtras_item ({ent}) {
-		return {ft: UtilsFoundryItem.getFoundryItemType(ent)};
+	static _getPackedFoundryExtras_item({ ent }) {
+		return { ft: UtilsFoundryItem.getFoundryItemType(ent) };
 	}
 
 	/* -------------------------------------------- */
 
-	static unpackFoundryExtras (packed) {
+	static unpackFoundryExtras(packed) {
 		if (!packed) return null;
 
 		return {
@@ -33,7 +33,7 @@ class FoundryOmnidexerUtils {
 globalThis.FoundryOmnidexerUtils = FoundryOmnidexerUtils;
 
 class Omnidexer {
-	constructor (id = 0) {
+	constructor(id = 0) {
 		/**
 		 * Produces index of the form:
 		 * {
@@ -65,15 +65,15 @@ class Omnidexer {
 		this._metaIndices = {};
 	}
 
-	getIndex () {
+	getIndex() {
 		return {
 			x: this._index,
 			m: this._metaMap,
 		};
 	}
 
-	static decompressIndex (indexGroup) {
-		const {x: index, m: metadata} = indexGroup;
+	static decompressIndex(indexGroup) {
+		const { x: index, m: metadata } = indexGroup;
 
 		const props = new Set();
 
@@ -92,7 +92,7 @@ class Omnidexer {
 		return index;
 	}
 
-	static getProperty (obj, withDots) {
+	static getProperty(obj, withDots) {
 		return MiscUtil.get(obj, ...withDots.split("."));
 	}
 
@@ -108,7 +108,7 @@ class Omnidexer {
 	 * @param [options.isIncludeImg]
 	 * @param [options.isIncludeExtendedSourceInfo]
 	 */
-	async pAddToIndex (arbiter, json, options) {
+	async pAddToIndex(arbiter, json, options) {
 		options = options || {};
 		const index = this._index;
 
@@ -117,7 +117,7 @@ class Omnidexer {
 		const dataArr = Omnidexer.getProperty(json, arbiter.listProp);
 		if (!dataArr) return;
 
-		const state = {arbiter, index, options};
+		const state = { arbiter, index, options };
 
 		let ixOffset = 0;
 		for (let ix = 0; ix < dataArr.length; ++ix) {
@@ -126,15 +126,6 @@ class Omnidexer {
 			const name = Omnidexer.getProperty(it, arbiter.primary || "name");
 			await this._pAddToIndex_pHandleItem(state, it, ix + ixOffset, name);
 
-			if (typeof it.srd === "string") {
-				ixOffset++;
-				await this._pAddToIndex_pHandleItem(state, it, ix + ixOffset, it.srd);
-			}
-
-			if (typeof it.srd52 === "string") {
-				ixOffset++;
-				await this._pAddToIndex_pHandleItem(state, it, ix + ixOffset, it.srd52);
-			}
 
 			if (it.alias?.length) {
 				for (const a of it.alias) {
@@ -145,27 +136,27 @@ class Omnidexer {
 		}
 	}
 
-	async _pAddToIndex_pHandleItem (state, ent, ix, name) {
+	async _pAddToIndex_pHandleItem(state, ent, ix, name) {
 		if (ent.noDisplay) return;
 
-		const {arbiter, index, options} = state;
+		const { arbiter, index, options } = state;
 
 		if (name) name = name.toAscii();
 
-		const toAdd = await this._pAddToIndex_pGetToAdd(state, ent, {n: name}, ix);
+		const toAdd = await this._pAddToIndex_pGetToAdd(state, ent, { n: name }, ix);
 
 		if ((options.isNoFilter || (!arbiter.include && !(arbiter.filter && arbiter.filter(ent))) || (!arbiter.filter && (!arbiter.include || arbiter.include(ent)))) && !arbiter.isOnlyDeep) index.push(toAdd);
 
-		const primary = {it: ent, ix: ix, parentName: name};
-		const deepItems = await arbiter.pGetDeepIndex(this, primary, ent, {name});
+		const primary = { it: ent, ix: ix, parentName: name };
+		const deepItems = await arbiter.pGetDeepIndex(this, primary, ent, { name });
 		for (const item of deepItems) {
 			const toAdd = await this._pAddToIndex_pGetToAdd(state, ent, item);
 			if (!arbiter.filter || !arbiter.filter(ent)) index.push(toAdd);
 		}
 	}
 
-	async _pAddToIndex_pGetToAdd (state, ent, toMerge, i) {
-		const {arbiter, options} = state;
+	async _pAddToIndex_pGetToAdd(state, ent, toMerge, i) {
+		const { arbiter, options } = state;
 
 		const src = Omnidexer.getProperty(ent, arbiter.source || "source");
 
@@ -184,8 +175,6 @@ class Omnidexer {
 		if (src != null) indexDoc.s = this.getMetaId("s", src);
 		if (arbiter.isHover) indexDoc.h = 1;
 		if (arbiter.isFauxPage) indexDoc.hx = 1;
-		if (ent.srd) indexDoc.r = 1;
-		if (ent.srd52) indexDoc.r2 = 1;
 
 		if (src) {
 			if (SourceUtil.isPartneredSourceWotc(src)) indexDoc.dP = 1;
@@ -207,7 +196,7 @@ class Omnidexer {
 				}
 
 				if (!indexDoc.m) {
-					const fluff = await Renderer.hover.pGetHoverableFluff(arbiter.fluffBaseListProp || arbiter.listProp, src, hash, {isSilent: true});
+					const fluff = await Renderer.hover.pGetHoverableFluff(arbiter.fluffBaseListProp || arbiter.listProp, src, hash, { isSilent: true });
 					if (fluff?.images?.length) {
 						indexDoc.m = Renderer.utils.getEntryMediaUrl(fluff.images[0], "href", "img");
 					}
@@ -228,7 +217,7 @@ class Omnidexer {
 			}
 
 			if (options.isIncludeFoundryExtras) {
-				const extras = FoundryOmnidexerUtils.getPackedFoundryExtras({prop: arbiter.listProp, ent});
+				const extras = FoundryOmnidexerUtils.getPackedFoundryExtras({ prop: arbiter.listProp, ent });
 				if (extras) indexDoc.xF = extras;
 			}
 		}
@@ -246,12 +235,12 @@ class Omnidexer {
 	 * Directly add a pre-computed index item.
 	 * @param item
 	 */
-	pushToIndex (item) {
+	pushToIndex(item) {
 		item.id = this.id++;
 		this._index.push(item);
 	}
 
-	getMetaId (k, v) {
+	getMetaId(k, v) {
 		this._metaMap[k] = this._metaMap[k] || {};
 		// store the index in "inverted" format to prevent extra quote characters around numbers
 		if (this._metaMap[k][v] != null) return this._metaMap[k][v];
@@ -283,7 +272,7 @@ class IndexableDirectory {
 	 * @param [opts.pFnPreProcBrew] An un-bound function
 	 * @param [opts.fnGetToken]
 	 */
-	constructor (opts) {
+	constructor(opts) {
 		this.category = opts.category;
 		this.dir = opts.dir;
 		this.primary = opts.primary;
@@ -298,11 +287,11 @@ class IndexableDirectory {
 		this.fnGetToken = opts.fnGetToken;
 	}
 
-	pGetDeepIndex () { return []; }
+	pGetDeepIndex() { return []; }
 }
 
 class IndexableDirectoryBestiary extends IndexableDirectory {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_CREATURE,
 			dir: "bestiary",
@@ -320,7 +309,7 @@ class IndexableDirectoryBestiary extends IndexableDirectory {
 }
 
 class IndexableDirectorySpells extends IndexableDirectory {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_SPELL,
 			dir: "spells",
@@ -341,7 +330,7 @@ class IndexableDirectorySpells extends IndexableDirectory {
 }
 
 class IndexableDirectoryClass extends IndexableDirectory {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_CLASS,
 			dir: "class",
@@ -355,7 +344,7 @@ class IndexableDirectoryClass extends IndexableDirectory {
 }
 
 class IndexableDirectorySubclass extends IndexableDirectory {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_SUBCLASS,
 			dir: "class",
@@ -369,7 +358,7 @@ class IndexableDirectorySubclass extends IndexableDirectory {
 		});
 	}
 
-	pGetDeepIndex (indexer, primary, sc, {name}) {
+	pGetDeepIndex(indexer, primary, sc, { name }) {
 		name ||= sc.name;
 
 		return [
@@ -377,7 +366,7 @@ class IndexableDirectorySubclass extends IndexableDirectory {
 				b: name,
 				n: `${name} (${sc.className})`,
 				s: indexer.getMetaId("s", sc.source),
-				u: `${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({name: sc.className, source: sc.classSource})}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart({subclass: sc})}`,
+				u: `${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({ name: sc.className, source: sc.classSource })}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart({ subclass: sc })}`,
 				p: sc.page,
 			},
 		];
@@ -385,7 +374,7 @@ class IndexableDirectorySubclass extends IndexableDirectory {
 }
 
 class IndexableDirectoryClassFeature extends IndexableDirectory {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_CLASS_FEATURE,
 			dir: "class",
@@ -398,10 +387,10 @@ class IndexableDirectoryClassFeature extends IndexableDirectory {
 		});
 	}
 
-	async pGetDeepIndex (indexer, primary, it) {
+	async pGetDeepIndex(indexer, primary, it) {
 		// TODO(Future) this could pull in the class data to get an accurate feature index; default to 0 for now
 		const ixFeature = 0;
-		const classPageHash = `${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({name: it.className, source: it.classSource})}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart({feature: {ixLevel: it.level - 1, ixFeature}})}`;
+		const classPageHash = `${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({ name: it.className, source: it.classSource })}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart({ feature: { ixLevel: it.level - 1, ixFeature } })}`;
 		return [
 			{
 				n: `${it.className} ${it.level}; ${it.name}`,
@@ -415,7 +404,7 @@ class IndexableDirectoryClassFeature extends IndexableDirectory {
 }
 
 class IndexableDirectorySubclassFeature extends IndexableDirectory {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_SUBCLASS_FEATURE,
 			dir: "class",
@@ -428,13 +417,13 @@ class IndexableDirectorySubclassFeature extends IndexableDirectory {
 		});
 	}
 
-	async pGetDeepIndex (indexer, primary, it) {
+	async pGetDeepIndex(indexer, primary, it) {
 		const ixFeature = 0;
 		const pageStateOpts = {
-			subclass: {shortName: it.subclassShortName, source: it.source},
-			feature: {ixLevel: it.level - 1, ixFeature},
+			subclass: { shortName: it.subclassShortName, source: it.source },
+			feature: { ixLevel: it.level - 1, ixFeature },
 		};
-		const classPageHash = `${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({name: it.className, source: it.classSource})}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart(pageStateOpts)}`;
+		const classPageHash = `${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({ name: it.className, source: it.classSource })}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart(pageStateOpts)}`;
 		return [
 			{
 				n: `${it.subclassShortName} ${it.className} ${it.level}; ${it.name}`,
@@ -480,7 +469,7 @@ class IndexableFile {
 	 * @param [opts.fnGetToken]
 	 * @param [opts.isFauxPage]
 	 */
-	constructor (opts) {
+	constructor(opts) {
 		this.category = opts.category;
 		this.file = opts.file;
 		this.primary = opts.primary;
@@ -506,11 +495,11 @@ class IndexableFile {
 	/**
 	 * A function which returns an additional "deep" list of index docs.
 	 */
-	pGetDeepIndex () { return []; }
+	pGetDeepIndex() { return []; }
 }
 
 class IndexableFileBackgrounds extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_BACKGROUND,
 			file: "backgrounds.json",
@@ -522,7 +511,7 @@ class IndexableFileBackgrounds extends IndexableFile {
 }
 
 class IndexableFileItemsBase extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_ITEM,
 			file: "items-base.json",
@@ -535,7 +524,7 @@ class IndexableFileItemsBase extends IndexableFile {
 }
 
 class IndexableFileItemMasteries extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_ITEM_MASTERY,
 			file: "items-base.json",
@@ -548,7 +537,7 @@ class IndexableFileItemMasteries extends IndexableFile {
 }
 
 class IndexableFileItems extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_ITEM,
 			file: "items.json",
@@ -560,7 +549,7 @@ class IndexableFileItems extends IndexableFile {
 }
 
 class IndexableFileItemGroups extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_ITEM,
 			file: "items.json",
@@ -573,7 +562,7 @@ class IndexableFileItemGroups extends IndexableFile {
 }
 
 class IndexableFileMagicVariants extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_ITEM,
 			file: "magicvariants.json",
@@ -589,7 +578,7 @@ class IndexableFileMagicVariants extends IndexableFile {
 				item: async (indexer, rawVariants) => {
 					const specVars = await (async () => {
 						const baseItemJson = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/items-base.json`);
-						const rawBaseItems = {...baseItemJson, baseitem: [...baseItemJson.baseitem]};
+						const rawBaseItems = { ...baseItemJson, baseitem: [...baseItemJson.baseitem] };
 
 						const prerelease = typeof PrereleaseUtil !== "undefined" ? await PrereleaseUtil.pGetBrewProcessed() : {};
 						if (prerelease.baseitem) rawBaseItems.baseitem.push(...prerelease.baseitem);
@@ -625,7 +614,7 @@ class IndexableFileMagicVariants extends IndexableFile {
 }
 
 class IndexableFileConditions extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_CONDITION,
 			file: "conditionsdiseases.json",
@@ -637,7 +626,7 @@ class IndexableFileConditions extends IndexableFile {
 }
 
 class IndexableFileDiseases extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_DISEASE,
 			file: "conditionsdiseases.json",
@@ -649,7 +638,7 @@ class IndexableFileDiseases extends IndexableFile {
 }
 
 class IndexableFileStatuses extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_STATUS,
 			file: "conditionsdiseases.json",
@@ -661,7 +650,7 @@ class IndexableFileStatuses extends IndexableFile {
 }
 
 class IndexableFileFeats extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_FEAT,
 			file: "feats.json",
@@ -674,7 +663,7 @@ class IndexableFileFeats extends IndexableFile {
 
 // region Optional features
 class IndexableFileOptFeatures_EldritchInvocations extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_ELDRITCH_INVOCATION,
 			file: "optionalfeatures.json",
@@ -687,7 +676,7 @@ class IndexableFileOptFeatures_EldritchInvocations extends IndexableFile {
 }
 
 class IndexableFileOptFeatures_Metamagic extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_METAMAGIC,
 			file: "optionalfeatures.json",
@@ -700,7 +689,7 @@ class IndexableFileOptFeatures_Metamagic extends IndexableFile {
 }
 
 class IndexableFileOptFeatures_ManeuverBattlemaster extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_MANEUVER_BATTLEMASTER,
 			file: "optionalfeatures.json",
@@ -713,7 +702,7 @@ class IndexableFileOptFeatures_ManeuverBattlemaster extends IndexableFile {
 }
 
 class IndexableFileOptFeatures_ManeuverCavalier extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_MANEUVER_CAVALIER,
 			file: "optionalfeatures.json",
@@ -726,7 +715,7 @@ class IndexableFileOptFeatures_ManeuverCavalier extends IndexableFile {
 }
 
 class IndexableFileOptFeatures_ArcaneShot extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_ARCANE_SHOT,
 			file: "optionalfeatures.json",
@@ -739,7 +728,7 @@ class IndexableFileOptFeatures_ArcaneShot extends IndexableFile {
 }
 
 class IndexableFileOptFeatures_Other extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_OPTIONAL_FEATURE_OTHER,
 			file: "optionalfeatures.json",
@@ -755,7 +744,7 @@ class IndexableFileOptFeatures_Other extends IndexableFile {
 }
 
 class IndexableFileOptFeatures_FightingStyle extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_FIGHTING_STYLE,
 			file: "optionalfeatures.json",
@@ -768,7 +757,7 @@ class IndexableFileOptFeatures_FightingStyle extends IndexableFile {
 }
 
 class IndexableFileOptFeatures_PactBoon extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_PACT_BOON,
 			file: "optionalfeatures.json",
@@ -781,7 +770,7 @@ class IndexableFileOptFeatures_PactBoon extends IndexableFile {
 }
 
 class IndexableFileOptFeatures_ElementalDiscipline extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_ELEMENTAL_DISCIPLINE,
 			file: "optionalfeatures.json",
@@ -794,7 +783,7 @@ class IndexableFileOptFeatures_ElementalDiscipline extends IndexableFile {
 }
 
 class IndexableFileOptFeatures_ArtificerInfusion extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_ARTIFICER_INFUSION,
 			file: "optionalfeatures.json",
@@ -807,7 +796,7 @@ class IndexableFileOptFeatures_ArtificerInfusion extends IndexableFile {
 }
 
 class IndexableFileOptFeatures_OnomancyResonant extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_ONOMANCY_RESONANT,
 			file: "optionalfeatures.json",
@@ -820,7 +809,7 @@ class IndexableFileOptFeatures_OnomancyResonant extends IndexableFile {
 }
 
 class IndexableFileOptFeatures_RuneKnightRune extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_RUNE_KNIGHT_RUNE,
 			file: "optionalfeatures.json",
@@ -833,7 +822,7 @@ class IndexableFileOptFeatures_RuneKnightRune extends IndexableFile {
 }
 
 class IndexableFileOptFeatures_AlchemicalFormula extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_ALCHEMICAL_FORMULA,
 			file: "optionalfeatures.json",
@@ -846,7 +835,7 @@ class IndexableFileOptFeatures_AlchemicalFormula extends IndexableFile {
 }
 
 class IndexableFileOptFeatures_Maneuver extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_MANEUVER,
 			file: "optionalfeatures.json",
@@ -860,7 +849,7 @@ class IndexableFileOptFeatures_Maneuver extends IndexableFile {
 // endregion
 
 class IndexableFilePsionics extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_PSIONIC,
 			file: "psionics.json",
@@ -870,14 +859,14 @@ class IndexableFilePsionics extends IndexableFile {
 		});
 	}
 
-	pGetDeepIndex (indexer, primary, it) {
+	pGetDeepIndex(indexer, primary, it) {
 		if (!it.modes) return [];
-		return it.modes.map(m => ({d: 1, n: `${primary.parentName}; ${m.name}`}));
+		return it.modes.map(m => ({ d: 1, n: `${primary.parentName}; ${m.name}` }));
 	}
 }
 
 class IndexableFileRaces extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_RACE,
 			file: "races.json",
@@ -885,21 +874,21 @@ class IndexableFileRaces extends IndexableFile {
 			baseUrl: "races.html",
 			isHover: true,
 			postLoad: data => {
-				return DataUtil.race.getPostProcessedSiteJson(data, {isAddBaseRaces: true});
+				return DataUtil.race.getPostProcessedSiteJson(data, { isAddBaseRaces: true });
 			},
 			pFnPreProcBrew: async prereleaseBrew => {
 				if (!prereleaseBrew.race?.length && !prereleaseBrew.subrace?.length) return prereleaseBrew;
 
 				const site = await DataUtil.race.loadRawJSON();
 
-				return DataUtil.race.getPostProcessedPrereleaseBrewJson(site, prereleaseBrew, {isAddBaseRaces: true});
+				return DataUtil.race.getPostProcessedPrereleaseBrewJson(site, prereleaseBrew, { isAddBaseRaces: true });
 			},
 		});
 	}
 }
 
 class IndexableFileRewards extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_OTHER_REWARD,
 			file: "rewards.json",
@@ -912,7 +901,7 @@ class IndexableFileRewards extends IndexableFile {
 
 // region Variant rules
 class IndexableFileVariantRules extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_VARIANT_OPTIONAL_RULE,
 			file: "variantrules.json",
@@ -923,7 +912,7 @@ class IndexableFileVariantRules extends IndexableFile {
 	}
 }
 class IndexableFileVariantRulesGenerated extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_VARIANT_OPTIONAL_RULE,
 			file: "generated/gendata-variantrules.json",
@@ -937,7 +926,7 @@ class IndexableFileVariantRulesGenerated extends IndexableFile {
 // endregion
 
 class IndexableFileAdventures extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_ADVENTURE,
 			file: "adventures.json",
@@ -948,7 +937,7 @@ class IndexableFileAdventures extends IndexableFile {
 }
 
 class IndexableFileBooks extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_BOOK,
 			file: "books.json",
@@ -959,7 +948,7 @@ class IndexableFileBooks extends IndexableFile {
 }
 
 class IndexableFileQuickReference extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_QUICKREF,
 			file: "generated/bookref-quick.json",
@@ -973,9 +962,9 @@ class IndexableFileQuickReference extends IndexableFile {
 		this._walker = MiscUtil.getWalker();
 	}
 
-	static getChapterNameMetas (it, {isRequireQuickrefFlag = true} = {}) {
+	static getChapterNameMetas(it, { isRequireQuickrefFlag = true } = {}) {
 		const trackedNames = [];
-		Renderer.get().withDepthTracker(trackedNames, ({renderer}) => renderer.render(it));
+		Renderer.get().withDepthTracker(trackedNames, ({ renderer }) => renderer.render(it));
 
 		const nameCounts = {};
 		trackedNames.forEach(meta => {
@@ -994,7 +983,7 @@ class IndexableFileQuickReference extends IndexableFile {
 			});
 	}
 
-	pGetDeepIndex (indexer, primary, it) {
+	pGetDeepIndex(indexer, primary, it) {
 		const out = it.entries
 			.map(it => {
 				return IndexableFileQuickReference.getChapterNameMetas(it).map(nameMeta => {
@@ -1016,7 +1005,7 @@ class IndexableFileQuickReference extends IndexableFile {
 		});
 	}
 
-	static _getDeepDoc (indexer, primary, nameMeta, alias) {
+	static _getDeepDoc(indexer, primary, nameMeta, alias) {
 		const hash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_QUICKREF]({
 			name: nameMeta.name,
 			ixChapter: primary.ix,
@@ -1035,7 +1024,7 @@ class IndexableFileQuickReference extends IndexableFile {
 globalThis.IndexableFileQuickReference = IndexableFileQuickReference;
 
 class IndexableFileDeities extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_DEITY,
 			file: "deities.json",
@@ -1049,7 +1038,7 @@ class IndexableFileDeities extends IndexableFile {
 }
 
 class IndexableFileObjects extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_OBJECT,
 			file: "objects.json",
@@ -1065,7 +1054,7 @@ class IndexableFileObjects extends IndexableFile {
 }
 
 class IndexableFileTraps extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_TRAP,
 			file: "trapshazards.json",
@@ -1077,7 +1066,7 @@ class IndexableFileTraps extends IndexableFile {
 }
 
 class IndexableFileHazards extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_HAZARD,
 			file: "trapshazards.json",
@@ -1089,7 +1078,7 @@ class IndexableFileHazards extends IndexableFile {
 }
 
 class IndexableFileCults extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_CULT,
 			file: "cultsboons.json",
@@ -1101,7 +1090,7 @@ class IndexableFileCults extends IndexableFile {
 }
 
 class IndexableFileBoons extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_BOON,
 			file: "cultsboons.json",
@@ -1114,7 +1103,7 @@ class IndexableFileBoons extends IndexableFile {
 
 // region Tables
 class IndexableFileTables extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_TABLE,
 			file: "tables.json",
@@ -1126,7 +1115,7 @@ class IndexableFileTables extends IndexableFile {
 }
 
 class IndexableFileTablesGenerated extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_TABLE,
 			file: "generated/gendata-tables.json",
@@ -1139,7 +1128,7 @@ class IndexableFileTablesGenerated extends IndexableFile {
 }
 
 class IndexableFileTableGroups extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_TABLE_GROUP,
 			file: "generated/gendata-tables.json",
@@ -1152,7 +1141,7 @@ class IndexableFileTableGroups extends IndexableFile {
 // endregion
 
 class IndexableFileVehicles extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_VEHICLE,
 			file: "vehicles.json",
@@ -1168,7 +1157,7 @@ class IndexableFileVehicles extends IndexableFile {
 }
 
 class IndexableFileVehicles_ShipUpgrade extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_SHIP_UPGRADE,
 			file: "vehicles.json",
@@ -1181,7 +1170,7 @@ class IndexableFileVehicles_ShipUpgrade extends IndexableFile {
 }
 
 class IndexableFileVehicles_InfernalWarMachineUpgrade extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_INFERNAL_WAR_MACHINE_UPGRADE,
 			file: "vehicles.json",
@@ -1194,7 +1183,7 @@ class IndexableFileVehicles_InfernalWarMachineUpgrade extends IndexableFile {
 }
 
 class IndexableFileActions extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_ACTION,
 			file: "actions.json",
@@ -1206,7 +1195,7 @@ class IndexableFileActions extends IndexableFile {
 }
 
 class IndexableFileLanguages extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_LANGUAGE,
 			file: "languages.json",
@@ -1216,7 +1205,7 @@ class IndexableFileLanguages extends IndexableFile {
 		});
 	}
 
-	pGetDeepIndex (indexer, primary, it) {
+	pGetDeepIndex(indexer, primary, it) {
 		return (it.dialects || []).map(d => ({
 			n: d,
 		}));
@@ -1224,7 +1213,7 @@ class IndexableFileLanguages extends IndexableFile {
 }
 
 class IndexableFileCharCreationOptions extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_CHAR_CREATION_OPTIONS,
 			file: "charcreationoptions.json",
@@ -1236,7 +1225,7 @@ class IndexableFileCharCreationOptions extends IndexableFile {
 }
 
 class IndexableFileRecipes extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_RECIPES,
 			file: "recipes.json",
@@ -1248,7 +1237,7 @@ class IndexableFileRecipes extends IndexableFile {
 }
 
 class IndexableFileSkills extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_SKILLS,
 			file: "skills.json",
@@ -1261,7 +1250,7 @@ class IndexableFileSkills extends IndexableFile {
 }
 
 class IndexableFileSenses extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_SENSES,
 			file: "senses.json",
@@ -1274,7 +1263,7 @@ class IndexableFileSenses extends IndexableFile {
 }
 
 class IndexableFileCards extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_CARD,
 			file: "decks.json",
@@ -1287,7 +1276,7 @@ class IndexableFileCards extends IndexableFile {
 }
 
 class IndexableFileDecks extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_DECK,
 			file: "decks.json",
@@ -1299,7 +1288,7 @@ class IndexableFileDecks extends IndexableFile {
 }
 
 class IndexableFileFacilities extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_FACILITY,
 			file: "bastions.json",
@@ -1311,7 +1300,7 @@ class IndexableFileFacilities extends IndexableFile {
 }
 
 class IndexableLegendaryGroups extends IndexableFile {
-	constructor () {
+	constructor() {
 		super({
 			category: Parser.CAT_ID_LEGENDARY_GROUP,
 			file: "bestiary/legendarygroups.json",
@@ -1386,11 +1375,11 @@ Omnidexer.TO_INDEX = [
 ];
 
 class IndexableSpecial {
-	pGetIndex () { throw new Error(`Unimplemented!`); }
+	pGetIndex() { throw new Error(`Unimplemented!`); }
 }
 
 class IndexableSpecialPages extends IndexableSpecial {
-	pGetIndex () {
+	pGetIndex() {
 		return Object.entries(UrlUtil.PG_TO_NAME)
 			.filter(([page]) => !UrlUtil.FAUX_PAGES[page])
 			.map(([page, name]) => ({

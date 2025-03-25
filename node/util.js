@@ -1,7 +1,7 @@
 import fs from "fs";
 import https from "https";
 
-function readJson (path) {
+function readJson(path) {
 	try {
 		const data = fs.readFileSync(path, "utf8")
 			.replace(/^\uFEFF/, ""); // strip BOM
@@ -12,7 +12,7 @@ function readJson (path) {
 	}
 }
 
-function isDirectory (path) {
+function isDirectory(path) {
 	return fs.lstatSync(path).isDirectory();
 }
 
@@ -46,7 +46,7 @@ const DIR_BLOCKLIST = [
  * @param [opts.allowlistDirs] Directory allowlist.
  * @param [opts.blocklistDirs] Directory blocklist.
  */
-function listFiles (opts) {
+function listFiles(opts) {
 	opts = opts || {};
 	opts.dir = opts.dir ?? "./data";
 	opts.blocklistFilePrefixes = opts.blocklistFilePrefixes === undefined ? FILE_PREFIX_BLOCKLIST : opts.blocklistFilePrefixes;
@@ -71,13 +71,13 @@ function listFiles (opts) {
 		.map(file => `${opts.dir}/${file}`);
 
 	return dirContent.reduce((acc, file) => {
-		if (isDirectory(file)) acc.push(...listFiles({...opts, dir: file}));
+		if (isDirectory(file)) acc.push(...listFiles({ ...opts, dir: file }));
 		else acc.push(file);
 		return acc;
 	}, []);
 }
 
-function rmDirRecursiveSync (dir) {
+function rmDirRecursiveSync(dir) {
 	if (fs.existsSync(dir)) {
 		fs.readdirSync(dir).forEach(file => {
 			const curPath = `${dir}/${file}`;
@@ -96,7 +96,7 @@ class PatchLoadJson {
 
 	static _CACHE_HTTP_REQUEST = {};
 
-	static async _pLoadUrl (url) {
+	static async _pLoadUrl(url) {
 		if (!url.startsWith("http")) return this._CACHE_HTTP_REQUEST[url] = readJson(url);
 
 		if (process.env.HOMEBREW_REPO_DIR && DataUtil.brew.isUrlUnderDefaultRoot(url)) {
@@ -123,7 +123,7 @@ class PatchLoadJson {
 		});
 	}
 
-	static patchLoadJson () {
+	static patchLoadJson() {
 		if (this._PATCH_STACK++) return;
 
 		PatchLoadJson._CACHED = PatchLoadJson._CACHED || DataUtil.loadJSON.bind(DataUtil);
@@ -133,7 +133,7 @@ class PatchLoadJson {
 			if (!loadJsonCache[url]) {
 				loadJsonCache[url] = (async () => {
 					const data = await this._pLoadUrl(url);
-					await DataUtil.pDoMetaMerge(url, data, {isSkipMetaMergeCache: true});
+					await DataUtil.pDoMetaMerge(url, data, { isSkipMetaMergeCache: true });
 					return data;
 				})();
 			}
@@ -144,7 +144,7 @@ class PatchLoadJson {
 		DataUtil.loadRawJSON = async (url) => this._pLoadUrl(url);
 	}
 
-	static unpatchLoadJson () {
+	static unpatchLoadJson() {
 		if (--this._PATCH_STACK) return;
 
 		if (PatchLoadJson._CACHED) DataUtil.loadJSON = PatchLoadJson._CACHED;
@@ -155,19 +155,19 @@ class Timer {
 	static _ID = 0;
 	static _RUNNING = {};
 
-	static start () {
+	static start() {
 		const id = this._ID++;
 		this._RUNNING[id] = this._getSecs();
 		return id;
 	}
 
-	static stop (id, {isFormat = true} = {}) {
+	static stop(id, { isFormat = true } = {}) {
 		const out = this._getSecs() - this._RUNNING[id];
 		delete this._RUNNING[id];
 		return isFormat ? `${out.toFixed(3)}s` : out;
 	}
 
-	static _getSecs () {
+	static _getSecs() {
 		const [s, ns] = process.hrtime();
 		return s + (ns / 1000000000);
 	}
@@ -175,6 +175,8 @@ class Timer {
 
 export const patchLoadJson = PatchLoadJson.patchLoadJson.bind(PatchLoadJson);
 export const unpatchLoadJson = PatchLoadJson.unpatchLoadJson.bind(PatchLoadJson);
+
+export const isSiteFoundryFile = filename => /\/foundry(?:-[^/]+)?\.json$/.test(filename);
 
 export {
 	readJson,

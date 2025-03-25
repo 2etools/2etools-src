@@ -1,6 +1,6 @@
-import {RenderBestiary} from "./render-bestiary.js";
-import {RenderSpells} from "./render-spells.js";
-import {RenderItems} from "./render-items.js";
+import { RenderBestiary } from "./render-bestiary.js";
+import { RenderSpells } from "./render-spells.js";
+import { RenderItems } from "./render-items.js";
 
 const onLoadSeo = async () => {
 	const fullPage = `${globalThis._SEO_PAGE}.html`;
@@ -28,13 +28,13 @@ const onLoadSeo = async () => {
 	});
 
 	switch (globalThis._SEO_PAGE) {
-		case "spells": $content.append(RenderSpells.$getRenderedSpell(it)); break;
+		case "spells": $content.append(RenderSpells.$getRenderedSpell(it, { isSkipExcludesRender: true })); break;
 		case "bestiary": {
 			Renderer.utils.bindPronounceButtons();
-			$content.append(RenderBestiary.$getRenderedCreature(it, {isSkipTokenRender: true}));
+			$content.append(RenderBestiary.$getRenderedCreature(it, { isSkipTokenRender: true, isSkipExcludesRender: true }));
 			break;
 		}
-		case "items": $content.append(RenderItems.$getRenderedItem(it)); break;
+		case "items": $content.append(RenderItems.$getRenderedItem(it, { isSkipExcludesRender: true })); break;
 
 		// TODO expand this as required
 		// case "races": {
@@ -47,14 +47,12 @@ const onLoadSeo = async () => {
 		const fluff = await DataLoader.pCacheAndGet(`${fullPage}fluff`, globalThis._SEO_SOURCE, globalThis._SEO_HASH);
 		if (fluff) {
 			$$`<div class="mt-5 py-2">
-				${Renderer.hover.$getHoverContent_fluff(globalThis._SEO_PAGE, fluff, null, {isSkipNameRow: true, isSkipPageRow: true}).addClass("shadow-big stats--book stats--book-large")}
+				${Renderer.hover.$getHoverContent_fluff(globalThis._SEO_PAGE, fluff, null, { isSkipNameRow: true, isSkipPageRow: true }).addClass("shadow-big stats--book stats--book-large")}
 			</div>`.insertAfter($wrpContent);
 		}
 	}
 };
 
 window.addEventListener("load", () => {
-	// Attempt to sneak this in before the navigation onload fires
-	Renderer.get().setBaseUrl("/");
 	onLoadSeo().then(null);
 });

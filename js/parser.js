@@ -31,97 +31,97 @@ Parser.attrChooseToFull = function (attList) {
 	}
 };
 
-Parser.numberToText = function (number, {isOrdinalForm = false} = {}) {
+Parser.numberToText = function (number, { isOrdinalForm = false } = {}) {
 	if (number == null) throw new TypeError(`undefined or null object passed to parser`);
 	if (Math.abs(number) >= 100) return isOrdinalForm ? Parser.getOrdinalForm(number) : `${number}`;
 
-	return `${number < 0 ? "negative " : ""}${Parser.numberToText._getPositiveNumberAsText({number: Math.abs(number), isOrdinalForm})}`;
+	return `${number < 0 ? "negative " : ""}${Parser.numberToText._getPositiveNumberAsText({ number: Math.abs(number), isOrdinalForm })}`;
 };
 
-Parser.numberToText._getPositiveNumberAsText = ({number, isOrdinalForm}) => {
+Parser.numberToText._getPositiveNumberAsText = ({ number, isOrdinalForm }) => {
 	const [preDotRaw, postDotRaw] = `${number}`.split(".");
 
-	if (!postDotRaw) return Parser.numberToText._getPositiveIntegerAsText({number, isOrdinalForm});
+	if (!postDotRaw) return Parser.numberToText._getPositiveIntegerAsText({ number, isOrdinalForm });
 
 	if (isOrdinalForm) return `${preDotRaw}.${Parser.getOrdinalForm(postDotRaw)}`;
 
-	const {str: strPostDot, isPretty: isPrettyPostDot} = Parser.numberToText._getPostDot({postDotRaw});
+	const { str: strPostDot, isPretty: isPrettyPostDot } = Parser.numberToText._getPostDot({ postDotRaw });
 
 	if (!isPrettyPostDot) return `${number}`;
 
 	return preDotRaw === "0"
 		? strPostDot
-		: `${Parser.numberToText._getPositiveIntegerAsText({number: Math.trunc(number), isOrdinalForm})} and ${strPostDot}`;
+		: `${Parser.numberToText._getPositiveIntegerAsText({ number: Math.trunc(number), isOrdinalForm })} and ${strPostDot}`;
 };
 
-Parser.numberToText._getPostDot = ({postDotRaw}) => {
+Parser.numberToText._getPostDot = ({ postDotRaw }) => {
 	// See also: `Parser.numberToVulgar`
 	switch (postDotRaw) {
-		case "125": return {str: `one-eighth`, isPretty: true};
-		case "2": return {str: `one-fifth`, isPretty: true};
-		case "25": return {str: `one-quarter`, isPretty: true};
-		case "375": return {str: `three-eighths`, isPretty: true};
-		case "4": return {str: `two-fifths`, isPretty: true};
-		case "5": return {str: `one-half`, isPretty: true};
-		case "6": return {str: `three-fifths`, isPretty: true};
-		case "625": return {str: `five-eighths`, isPretty: true};
-		case "75": return {str: `three-quarters`, isPretty: true};
-		case "8": return {str: `four-fifths`, isPretty: true};
-		case "875": return {str: `seven-eighths`, isPretty: true};
+		case "125": return { str: `one-eighth`, isPretty: true };
+		case "2": return { str: `one-fifth`, isPretty: true };
+		case "25": return { str: `one-quarter`, isPretty: true };
+		case "375": return { str: `three-eighths`, isPretty: true };
+		case "4": return { str: `two-fifths`, isPretty: true };
+		case "5": return { str: `one-half`, isPretty: true };
+		case "6": return { str: `three-fifths`, isPretty: true };
+		case "625": return { str: `five-eighths`, isPretty: true };
+		case "75": return { str: `three-quarters`, isPretty: true };
+		case "8": return { str: `four-fifths`, isPretty: true };
+		case "875": return { str: `seven-eighths`, isPretty: true };
 
 		default: {
 			// Handle recursive
 			const asNum = Number(`0.${postDotRaw}`);
 
-			if (asNum.toFixed(2) === (1 / 3).toFixed(2)) return {str: `one-third`, isPretty: true};
-			if (asNum.toFixed(2) === (2 / 3).toFixed(2)) return {str: `two-thirds`, isPretty: true};
+			if (asNum.toFixed(2) === (1 / 3).toFixed(2)) return { str: `one-third`, isPretty: true };
+			if (asNum.toFixed(2) === (2 / 3).toFixed(2)) return { str: `two-thirds`, isPretty: true };
 
-			if (asNum.toFixed(2) === (1 / 6).toFixed(2)) return {str: `one-sixth`, isPretty: true};
-			if (asNum.toFixed(2) === (5 / 6).toFixed(2)) return {str: `five-sixths`, isPretty: true};
+			if (asNum.toFixed(2) === (1 / 6).toFixed(2)) return { str: `one-sixth`, isPretty: true };
+			if (asNum.toFixed(2) === (5 / 6).toFixed(2)) return { str: `five-sixths`, isPretty: true };
 
-			return {str: `${postDotRaw}`, isPretty: false};
+			return { str: `${postDotRaw}`, isPretty: false };
 		}
 	}
 };
 
-Parser.numberToText._getPositiveIntegerAsText = ({number, isOrdinalForm}) => {
+Parser.numberToText._getPositiveIntegerAsText = ({ number, isOrdinalForm }) => {
 	switch (number) {
-		case 0: return Parser.numberToText._getOptionallyOrdinal({number, str: "zero", isOrdinalForm});
-		case 1: return Parser.numberToText._getOptionallyOrdinal({number, str: "one", isOrdinalForm});
-		case 2: return Parser.numberToText._getOptionallyOrdinal({number, str: "two", isOrdinalForm});
-		case 3: return Parser.numberToText._getOptionallyOrdinal({number, str: "three", isOrdinalForm});
-		case 4: return Parser.numberToText._getOptionallyOrdinal({number, str: "four", isOrdinalForm});
-		case 5: return Parser.numberToText._getOptionallyOrdinal({number, str: "five", isOrdinalForm});
-		case 6: return Parser.numberToText._getOptionallyOrdinal({number, str: "six", isOrdinalForm});
-		case 7: return Parser.numberToText._getOptionallyOrdinal({number, str: "seven", isOrdinalForm});
-		case 8: return Parser.numberToText._getOptionallyOrdinal({number, str: "eight", isOrdinalForm});
-		case 9: return Parser.numberToText._getOptionallyOrdinal({number, str: "nine", isOrdinalForm});
-		case 10: return Parser.numberToText._getOptionallyOrdinal({number, str: "ten", isOrdinalForm});
-		case 11: return Parser.numberToText._getOptionallyOrdinal({number, str: "eleven", isOrdinalForm});
-		case 12: return Parser.numberToText._getOptionallyOrdinal({number, str: "twelve", isOrdinalForm});
-		case 13: return Parser.numberToText._getOptionallyOrdinal({number, str: "thirteen", isOrdinalForm});
-		case 14: return Parser.numberToText._getOptionallyOrdinal({number, str: "fourteen", isOrdinalForm});
-		case 15: return Parser.numberToText._getOptionallyOrdinal({number, str: "fifteen", isOrdinalForm});
-		case 16: return Parser.numberToText._getOptionallyOrdinal({number, str: "sixteen", isOrdinalForm});
-		case 17: return Parser.numberToText._getOptionallyOrdinal({number, str: "seventeen", isOrdinalForm});
-		case 18: return Parser.numberToText._getOptionallyOrdinal({number, str: "eighteen", isOrdinalForm});
-		case 19: return Parser.numberToText._getOptionallyOrdinal({number, str: "nineteen", isOrdinalForm});
-		case 20: return Parser.numberToText._getOptionallyOrdinal({number, str: "twenty", isOrdinalForm});
-		case 30: return Parser.numberToText._getOptionallyOrdinal({number, str: "thirty", isOrdinalForm});
-		case 40: return Parser.numberToText._getOptionallyOrdinal({number, str: "forty", isOrdinalForm});
-		case 50: return Parser.numberToText._getOptionallyOrdinal({number, str: "fifty", isOrdinalForm});
-		case 60: return Parser.numberToText._getOptionallyOrdinal({number, str: "sixty", isOrdinalForm});
-		case 70: return Parser.numberToText._getOptionallyOrdinal({number, str: "seventy", isOrdinalForm});
-		case 80: return Parser.numberToText._getOptionallyOrdinal({number, str: "eighty", isOrdinalForm});
-		case 90: return Parser.numberToText._getOptionallyOrdinal({number, str: "ninety", isOrdinalForm});
+		case 0: return Parser.numberToText._getOptionallyOrdinal({ number, str: "zero", isOrdinalForm });
+		case 1: return Parser.numberToText._getOptionallyOrdinal({ number, str: "one", isOrdinalForm });
+		case 2: return Parser.numberToText._getOptionallyOrdinal({ number, str: "two", isOrdinalForm });
+		case 3: return Parser.numberToText._getOptionallyOrdinal({ number, str: "three", isOrdinalForm });
+		case 4: return Parser.numberToText._getOptionallyOrdinal({ number, str: "four", isOrdinalForm });
+		case 5: return Parser.numberToText._getOptionallyOrdinal({ number, str: "five", isOrdinalForm });
+		case 6: return Parser.numberToText._getOptionallyOrdinal({ number, str: "six", isOrdinalForm });
+		case 7: return Parser.numberToText._getOptionallyOrdinal({ number, str: "seven", isOrdinalForm });
+		case 8: return Parser.numberToText._getOptionallyOrdinal({ number, str: "eight", isOrdinalForm });
+		case 9: return Parser.numberToText._getOptionallyOrdinal({ number, str: "nine", isOrdinalForm });
+		case 10: return Parser.numberToText._getOptionallyOrdinal({ number, str: "ten", isOrdinalForm });
+		case 11: return Parser.numberToText._getOptionallyOrdinal({ number, str: "eleven", isOrdinalForm });
+		case 12: return Parser.numberToText._getOptionallyOrdinal({ number, str: "twelve", isOrdinalForm });
+		case 13: return Parser.numberToText._getOptionallyOrdinal({ number, str: "thirteen", isOrdinalForm });
+		case 14: return Parser.numberToText._getOptionallyOrdinal({ number, str: "fourteen", isOrdinalForm });
+		case 15: return Parser.numberToText._getOptionallyOrdinal({ number, str: "fifteen", isOrdinalForm });
+		case 16: return Parser.numberToText._getOptionallyOrdinal({ number, str: "sixteen", isOrdinalForm });
+		case 17: return Parser.numberToText._getOptionallyOrdinal({ number, str: "seventeen", isOrdinalForm });
+		case 18: return Parser.numberToText._getOptionallyOrdinal({ number, str: "eighteen", isOrdinalForm });
+		case 19: return Parser.numberToText._getOptionallyOrdinal({ number, str: "nineteen", isOrdinalForm });
+		case 20: return Parser.numberToText._getOptionallyOrdinal({ number, str: "twenty", isOrdinalForm });
+		case 30: return Parser.numberToText._getOptionallyOrdinal({ number, str: "thirty", isOrdinalForm });
+		case 40: return Parser.numberToText._getOptionallyOrdinal({ number, str: "forty", isOrdinalForm });
+		case 50: return Parser.numberToText._getOptionallyOrdinal({ number, str: "fifty", isOrdinalForm });
+		case 60: return Parser.numberToText._getOptionallyOrdinal({ number, str: "sixty", isOrdinalForm });
+		case 70: return Parser.numberToText._getOptionallyOrdinal({ number, str: "seventy", isOrdinalForm });
+		case 80: return Parser.numberToText._getOptionallyOrdinal({ number, str: "eighty", isOrdinalForm });
+		case 90: return Parser.numberToText._getOptionallyOrdinal({ number, str: "ninety", isOrdinalForm });
 		default: {
 			const str = String(number);
-			return `${Parser.numberToText._getPositiveIntegerAsText({number: Number(`${str[0]}0`)})}-${Parser.numberToText._getPositiveIntegerAsText({number: Number(str[1]), isOrdinalForm})}`;
+			return `${Parser.numberToText._getPositiveIntegerAsText({ number: Number(`${str[0]}0`) })}-${Parser.numberToText._getPositiveIntegerAsText({ number: Number(str[1]), isOrdinalForm })}`;
 		}
 	}
 };
 
-Parser.numberToText._getOptionallyOrdinal = ({number, str, isOrdinalForm}) => {
+Parser.numberToText._getOptionallyOrdinal = ({ number, str, isOrdinalForm }) => {
 	if (!isOrdinalForm) return str;
 	switch (number) {
 		case 1: return "first";
@@ -169,7 +169,7 @@ Parser.textToNumber = function (str) {
 	return NaN;
 };
 
-Parser.numberToVulgar = function (number, {isFallbackOnFractional = true} = {}) {
+Parser.numberToVulgar = function (number, { isFallbackOnFractional = true } = {}) {
 	const isNeg = number < 0;
 	const spl = `${number}`.replace(/^-/, "").split(".");
 	if (spl.length === 1) return number;
@@ -280,13 +280,13 @@ Parser.getAbilityModifier = function (abilityScore) {
 	return `${modifier}`;
 };
 
-Parser.getSpeedString = (ent, {isMetric = false, isSkipZeroWalk = false, isLongForm = false, styleHint = null} = {}) => {
+Parser.getSpeedString = (ent, { isMetric = false, isSkipZeroWalk = false, isLongForm = false, styleHint = null } = {}) => {
 	if (ent.speed == null) return "\u2014";
 
 	styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
 
 	const unit = isMetric
-		? Parser.metric.getMetricUnit({originalUnit: "ft.", isShortForm: !isLongForm})
+		? Parser.metric.getMetricUnit({ originalUnit: "ft.", isShortForm: !isLongForm })
 		: isLongForm ? "feet" : "ft.";
 	if (typeof ent.speed === "object") {
 		const stack = [];
@@ -294,41 +294,41 @@ Parser.getSpeedString = (ent, {isMetric = false, isSkipZeroWalk = false, isLongF
 
 		Parser.SPEED_MODES
 			.filter(mode => !ent.speed.hidden?.includes(mode))
-			.forEach(mode => Parser._getSpeedString_addSpeedMode({ent, prop: mode, stack, isMetric, isSkipZeroWalk, unit, styleHint}));
+			.forEach(mode => Parser._getSpeedString_addSpeedMode({ ent, prop: mode, stack, isMetric, isSkipZeroWalk, unit, styleHint }));
 
 		if (ent.speed.choose && !ent.speed.hidden?.includes("choose")) {
 			joiner = "; ";
-			stack.push(`${ent.speed.choose.from.sort().map(prop => Parser._getSpeedString_getSpeedName({prop, styleHint})).joinConjunct(", ", " or ")} ${ent.speed.choose.amount} ${unit}${ent.speed.choose.note ? ` ${ent.speed.choose.note}` : ""}`);
+			stack.push(`${ent.speed.choose.from.sort().map(prop => Parser._getSpeedString_getSpeedName({ prop, styleHint })).joinConjunct(", ", " or ")} ${ent.speed.choose.amount} ${unit}${ent.speed.choose.note ? ` ${ent.speed.choose.note}` : ""}`);
 		}
 
 		return stack.join(joiner) + (ent.speed.note ? ` ${ent.speed.note}` : "");
 	}
 
-	return (isMetric ? Parser.metric.getMetricNumber({originalValue: ent.speed, originalUnit: Parser.UNT_FEET}) : ent.speed)
+	return (isMetric ? Parser.metric.getMetricNumber({ originalValue: ent.speed, originalUnit: Parser.UNT_FEET }) : ent.speed)
 		+ (ent.speed === "Varies" ? "" : ` ${unit} `);
 };
-Parser._getSpeedString_addSpeedMode = ({ent, prop, stack, isMetric, isSkipZeroWalk, unit, styleHint}) => {
-	if (ent.speed[prop] || (!isSkipZeroWalk && prop === "walk")) Parser._getSpeedString_addSpeed({prop, speed: ent.speed[prop] || 0, isMetric, unit, stack, styleHint});
-	if (ent.speed.alternate && ent.speed.alternate[prop]) ent.speed.alternate[prop].forEach(speed => Parser._getSpeedString_addSpeed({prop, speed, isMetric, unit, stack, styleHint}));
+Parser._getSpeedString_addSpeedMode = ({ ent, prop, stack, isMetric, isSkipZeroWalk, unit, styleHint }) => {
+	if (ent.speed[prop] || (!isSkipZeroWalk && prop === "walk")) Parser._getSpeedString_addSpeed({ prop, speed: ent.speed[prop] || 0, isMetric, unit, stack, styleHint });
+	if (ent.speed.alternate && ent.speed.alternate[prop]) ent.speed.alternate[prop].forEach(speed => Parser._getSpeedString_addSpeed({ prop, speed, isMetric, unit, stack, styleHint }));
 };
-Parser._getSpeedString_addSpeed = ({prop, speed, isMetric, unit, stack, styleHint}) => {
-	const ptName = Parser._getSpeedString_getSpeedName({prop, styleHint});
-	const ptValue = Parser._getSpeedString_getVal({prop, speed, isMetric});
+Parser._getSpeedString_addSpeed = ({ prop, speed, isMetric, unit, stack, styleHint }) => {
+	const ptName = Parser._getSpeedString_getSpeedName({ prop, styleHint });
+	const ptValue = Parser._getSpeedString_getVal({ prop, speed, isMetric });
 	const ptUnit = speed === true ? "" : ` ${unit}`;
-	const ptCondition = Parser._getSpeedString_getCondition({speed});
+	const ptCondition = Parser._getSpeedString_getCondition({ speed });
 	stack.push([ptName, ptValue, ptUnit, ptCondition].join(""));
 };
-Parser._getSpeedString_getVal = ({prop, speed, isMetric}) => {
+Parser._getSpeedString_getVal = ({ prop, speed, isMetric }) => {
 	if (speed === true && prop !== "walk") return "equal to your walking speed";
 
 	const num = speed === true
 		? 0
 		: speed.number != null ? speed.number : speed;
 
-	return isMetric ? Parser.metric.getMetricNumber({originalValue: num, originalUnit: Parser.UNT_FEET}) : num;
+	return isMetric ? Parser.metric.getMetricNumber({ originalValue: num, originalUnit: Parser.UNT_FEET }) : num;
 };
-Parser._getSpeedString_getCondition = ({speed}) => speed.condition ? ` ${Renderer.get().render(speed.condition)}` : "";
-Parser._getSpeedString_getSpeedName = ({prop, styleHint}) => prop === "walk" ? "" : `${prop[styleHint === "classic" ? "toString" : "toTitleCase"]()} `;
+Parser._getSpeedString_getCondition = ({ speed }) => speed.condition ? ` ${Renderer.get().render(speed.condition)}` : "";
+Parser._getSpeedString_getSpeedName = ({ prop, styleHint }) => prop === "walk" ? "" : `${prop[styleHint === "classic" ? "toString" : "toTitleCase"]()} `;
 
 Parser.SPEED_MODES = ["walk", "burrow", "climb", "fly", "swim"];
 
@@ -357,7 +357,7 @@ Parser.raceCreatureTypesToFull = function (creatureTypes) {
 		.joinConjunct(hasSubOptions ? "; " : ", ", " and ");
 };
 
-Parser.crToXp = function (cr, {isDouble = false} = {}) {
+Parser.crToXp = function (cr, { isDouble = false } = {}) {
 	if (cr != null && cr.xp) return (isDouble ? cr.xp * 2 : cr.xp).toLocaleString();
 
 	const toConvert = cr ? (cr.cr || cr) : null;
@@ -395,7 +395,7 @@ Parser.isValidCr = function (cr) {
 };
 
 Parser.crToNumber = function (cr, opts = {}) {
-	const {isDefaultNull = false} = opts;
+	const { isDefaultNull = false } = opts;
 
 	if (cr === "Unknown" || cr === "\u2014" || cr == null) return isDefaultNull ? null : VeCt.CR_UNKNOWN;
 	if (cr.cr) return Parser.crToNumber(cr.cr, opts);
@@ -521,7 +521,7 @@ Parser.LANGUAGES_ALL = [
 	...Parser.LANGUAGES_SECRET,
 ].sort();
 
-Parser.acToFull = function (ac, {renderer = null, isHideFrom = false} = {}) {
+Parser.acToFull = function (ac, { renderer = null, isHideFrom = false } = {}) {
 	if (typeof ac === "string") return ac; // handle classic format
 
 	renderer ||= Renderer.get();
@@ -620,7 +620,7 @@ Parser._buildSourceCache = function (dict) {
 };
 Parser._sourceJsonCache = null;
 Parser.hasSourceJson = function (source) {
-	Parser._sourceJsonCache = Parser._sourceJsonCache || Parser._buildSourceCache(Object.keys(Parser.SOURCE_JSON_TO_FULL).mergeMap(k => ({[k]: k})));
+	Parser._sourceJsonCache = Parser._sourceJsonCache || Parser._buildSourceCache(Object.keys(Parser.SOURCE_JSON_TO_FULL).mergeMap(k => ({ [k]: k })));
 	return !!Parser._sourceJsonCache[source.toLowerCase()];
 };
 Parser._sourceFullCache = null;
@@ -702,7 +702,7 @@ Parser.sourceJsonToStylePart = function (source) {
 	return "";
 };
 
-Parser.sourceJsonToMarkerHtml = function (source, {isList = true, isAddBrackets = null, additionalStyles = ""} = {}) {
+Parser.sourceJsonToMarkerHtml = function (source, { isList = true, isAddBrackets = null, additionalStyles = "" } = {}) {
 	source = Parser._getSourceStringFromSource(source);
 	// TODO(Future) consider enabling this
 	// if (SourceUtil.isPartneredSourceWotc(source)) return `<span class="help-subtle ve-source-marker ${isList ? `ve-source-marker--list` : ""} ve-source-marker--partnered ${additionalStyles}" title="D&amp;D Partnered Source">${isList ? "" : "["}✦${isList ? "" : "]"}</span>`;
@@ -720,7 +720,7 @@ Parser.stringToCasedSlug = function (str) {
 
 Parser.ITEM_SPELLCASTING_FOCUS_CLASSES = ["Artificer", "Bard", "Cleric", "Druid", "Paladin", "Ranger", "Sorcerer", "Warlock", "Wizard"];
 
-Parser.itemValueToFull = function (item, opts = {isShortForm: false, isSmallUnits: false}) {
+Parser.itemValueToFull = function (item, opts = { isShortForm: false, isSmallUnits: false }) {
 	return Parser._moneyToFull(item, "value", "valueMult", opts);
 };
 
@@ -731,35 +731,35 @@ Parser.itemValueToFull = function (item, opts = {isShortForm: false, isSmallUnit
  * @param {?boolean} [opts.isSmallUnits]
  * @param {?number} [opts.multiplier]
  */
-Parser.itemValueToFullMultiCurrency = function (item, opts = {isShortForm: false, isSmallUnits: false, multiplier: null}) {
+Parser.itemValueToFullMultiCurrency = function (item, opts = { isShortForm: false, isSmallUnits: false, multiplier: null }) {
 	return Parser._moneyToFullMultiCurrency(item, "value", "valueMult", opts);
 };
 
 Parser.itemVehicleCostsToFull = function (item, isShortForm) {
 	return {
-		travelCostFull: Parser._moneyToFull(item, "travelCost", "travelCostMult", {isShortForm}),
-		shippingCostFull: Parser._moneyToFull(item, "shippingCost", "shippingCostMult", {isShortForm}),
+		travelCostFull: Parser._moneyToFull(item, "travelCost", "travelCostMult", { isShortForm }),
+		shippingCostFull: Parser._moneyToFull(item, "shippingCost", "shippingCostMult", { isShortForm }),
 	};
 };
 
 Parser.spellComponentCostToFull = function (item, isShortForm) {
-	return Parser._moneyToFull(item, "cost", "costMult", {isShortForm});
+	return Parser._moneyToFull(item, "cost", "costMult", { isShortForm });
 };
 
 Parser.vehicleCostToFull = function (item, isShortForm) {
-	return Parser._moneyToFull(item, "cost", "costMult", {isShortForm});
+	return Parser._moneyToFull(item, "cost", "costMult", { isShortForm });
 };
 
-Parser._moneyToFull = function (it, prop, propMult, opts = {isShortForm: false, isSmallUnits: false}) {
+Parser._moneyToFull = function (it, prop, propMult, opts = { isShortForm: false, isSmallUnits: false }) {
 	if (it[prop] == null && it[propMult] == null) return "";
 	if (it[prop] != null) {
-		const {coin, mult} = Parser.getCurrencyAndMultiplier(it[prop], it.currencyConversion);
-		return `${(it[prop] * mult).toLocaleString(undefined, {maximumFractionDigits: 5})}${opts.isSmallUnits ? `<span class="small ml-1">${coin}</span>` : ` ${coin}`}`;
+		const { coin, mult } = Parser.getCurrencyAndMultiplier(it[prop], it.currencyConversion);
+		return `${(it[prop] * mult).toLocaleString(undefined, { maximumFractionDigits: 5 })}${opts.isSmallUnits ? `<span class="small ml-1">${coin}</span>` : ` ${coin}`}`;
 	} else if (it[propMult] != null) return opts.isShortForm ? `×${it[propMult]}` : `base value ×${it[propMult]}`;
 	return "";
 };
 
-Parser._moneyToFullMultiCurrency = function (it, prop, propMult, {isShortForm, multiplier} = {}) {
+Parser._moneyToFullMultiCurrency = function (it, prop, propMult, { isShortForm, multiplier } = {}) {
 	if (it[prop]) {
 		const conversionTable = Parser.getCurrencyConversionTable(it.currencyConversion);
 
@@ -780,7 +780,7 @@ Parser._moneyToFullMultiCurrency = function (it, prop, propMult, {isShortForm, m
 		return [...conversionTable]
 			.reverse()
 			.filter(meta => simplified[meta.coin])
-			.map(meta => `${simplified[meta.coin].toLocaleString(undefined, {maximumFractionDigits: 5})} ${meta.coin}`)
+			.map(meta => `${simplified[meta.coin].toLocaleString(undefined, { maximumFractionDigits: 5 })} ${meta.coin}`)
 			.join(", ");
 	}
 
@@ -870,7 +870,7 @@ Parser.coinAbvToFull = function (coin) {
  * @param currency Object of the form `{pp: <n>, gp: <m>, ... }`.
  * @param isDisplayEmpty If "empty" values (i.e., those which are 0) should be displayed.
  */
-Parser.getDisplayCurrency = function (currency, {isDisplayEmpty = false} = {}) {
+Parser.getDisplayCurrency = function (currency, { isDisplayEmpty = false } = {}) {
 	return [...Parser.COIN_ABVS]
 		.reverse()
 		.filter(abv => isDisplayEmpty ? currency[abv] != null : currency[abv])
@@ -886,11 +886,11 @@ Parser.itemWeightToFull = function (item, isShortForm) {
 		const integerPart = Math.floor(item.weight);
 
 		// Attempt to render the amount as (a number +) a vulgar
-		const vulgarGlyph = Parser.numberToVulgar(item.weight - integerPart, {isFallbackOnFractional: false});
+		const vulgarGlyph = Parser.numberToVulgar(item.weight - integerPart, { isFallbackOnFractional: false });
 		if (vulgarGlyph) return `${integerPart || ""}${vulgarGlyph} lb.${(item.weightNote ? ` ${item.weightNote}` : "")}`;
 
 		// Fall back on decimal pounds or ounces
-		return `${(item.weight < 1 ? item.weight * 16 : item.weight).toLocaleString(undefined, {maximumFractionDigits: 5})} ${item.weight < 1 ? "oz" : "lb"}.${(item.weightNote ? ` ${item.weightNote}` : "")}`;
+		return `${(item.weight < 1 ? item.weight * 16 : item.weight).toLocaleString(undefined, { maximumFractionDigits: 5 })} ${item.weight < 1 ? "oz" : "lb"}.${(item.weightNote ? ` ${item.weightNote}` : "")}`;
 	}
 	if (item.weightMult) return isShortForm ? `×${item.weightMult}` : `base weight ×${item.weightMult}`;
 	return "";
@@ -1117,7 +1117,7 @@ Parser.weightValueToNumber = function (value) {
 	else throw new Error(`Badly formatted value ${value}`);
 };
 
-Parser.dmgTypeToFull = function (dmgType, {styleHint = null} = {}) {
+Parser.dmgTypeToFull = function (dmgType, { styleHint = null } = {}) {
 	if (!dmgType) return dmgType;
 
 	styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
@@ -1127,7 +1127,7 @@ Parser.dmgTypeToFull = function (dmgType, {styleHint = null} = {}) {
 	return out;
 };
 
-Parser.skillProficienciesToFull = function (skillProficiencies, {styleHint = null} = {}) {
+Parser.skillProficienciesToFull = function (skillProficiencies, { styleHint = null } = {}) {
 	styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
 
 	const ptSourceDefault = styleHint === "classic" ? Parser.SRC_PHB : Parser.SRC_XPHB;
@@ -1146,7 +1146,7 @@ Parser.skillProficienciesToFull = function (skillProficiencies, {styleHint = nul
 		.map(skProf => {
 			if (skProf.any) {
 				skProf = MiscUtil.copyFast(skProf);
-				skProf.choose = {"from": Object.keys(Parser.SKILL_TO_ATB_ABV), "count": skProf.any};
+				skProf.choose = { "from": Object.keys(Parser.SKILL_TO_ATB_ABV), "count": skProf.any };
 				delete skProf.any;
 			}
 
@@ -1217,12 +1217,12 @@ Parser.spSchoolAbvToStyle = function (school) { // For prerelease/homebrew
 };
 
 Parser.spSchoolAbvToStylePart = function (school) { // For prerelease/homebrew
-	return Parser._spSchoolAbvToStylePart_prereleaseBrew({school, brewUtil: PrereleaseUtil})
-		|| Parser._spSchoolAbvToStylePart_prereleaseBrew({school, brewUtil: BrewUtil2})
+	return Parser._spSchoolAbvToStylePart_prereleaseBrew({ school, brewUtil: PrereleaseUtil })
+		|| Parser._spSchoolAbvToStylePart_prereleaseBrew({ school, brewUtil: BrewUtil2 })
 		|| "";
 };
 
-Parser._spSchoolAbvToStylePart_prereleaseBrew = function ({school, brewUtil}) {
+Parser._spSchoolAbvToStylePart_prereleaseBrew = function ({ school, brewUtil }) {
 	const rawColor = brewUtil.getMetaLookup("spellSchools")?.[school]?.color;
 	if (!rawColor || !rawColor.trim()) return "";
 	const validColor = BrewUtilShared.getValidColor(rawColor);
@@ -1250,7 +1250,7 @@ Parser.getArticle = function (str) {
 	return /^[aeiou]/i.test(str) ? "an" : "a";
 };
 
-Parser.spLevelToFullLevelText = function (level, {isDash = false, isPluralCantrips = true} = {}) {
+Parser.spLevelToFullLevelText = function (level, { isDash = false, isPluralCantrips = true } = {}) {
 	return `${Parser.spLevelToFull(level)}${(level === 0 ? (isPluralCantrips ? "s" : "") : `${isDash ? "-" : " "}level`)}`;
 };
 
@@ -1275,25 +1275,25 @@ Parser.spMetaToFull = function (meta) {
 	return "";
 };
 
-Parser._spLevelSchoolMetaToFull_level = ({level, styleHint}) => {
+Parser._spLevelSchoolMetaToFull_level = ({ level, styleHint }) => {
 	if (styleHint === "classic") return level === 0 ? Parser.spLevelToFull(level).toLowerCase() : `${Parser.spLevelToFull(level)}-level`;
 	return level === 0 ? Parser.spLevelToFull(level) : `Level ${level}`;
 };
 
-Parser._spLevelSchoolMetaToFull_levelSchool = ({level, school, styleHint, ptLevel}) => {
+Parser._spLevelSchoolMetaToFull_levelSchool = ({ level, school, styleHint, ptLevel }) => {
 	if (level === 0) return `${Parser.spSchoolAbvToFull(school)} ${ptLevel}`;
 
 	if (styleHint === "classic") return `${ptLevel} ${Parser.spSchoolAbvToFull(school).toLowerCase()}`;
 	return `${ptLevel} ${Parser.spSchoolAbvToFull(school)}`;
 };
 
-Parser.spLevelSchoolMetaToFull = function (level, school, meta, subschools, {styleHint = null} = {}) {
+Parser.spLevelSchoolMetaToFull = function (level, school, meta, subschools, { styleHint = null } = {}) {
 	styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
 
-	const ptLevel = Parser._spLevelSchoolMetaToFull_level({level, styleHint});
-	const ptLevelSchool = Parser._spLevelSchoolMetaToFull_levelSchool({level, school, styleHint, ptLevel});
+	const ptLevel = Parser._spLevelSchoolMetaToFull_level({ level, styleHint });
+	const ptLevelSchool = Parser._spLevelSchoolMetaToFull_levelSchool({ level, school, styleHint, ptLevel });
 
-	const metaArr = Parser.spMetaToArr(meta, {styleHint})
+	const metaArr = Parser.spMetaToArr(meta, { styleHint })
 		.filter(k => styleHint === "classic" || k !== "ritual");
 
 	if (metaArr.length || subschools?.length) {
@@ -1364,18 +1364,18 @@ Parser.spTimeToShort = function (time, isHtml) {
 		: `${time.number} ${isHtml ? `<span class="ve-small">` : ""}${Parser.spTimeUnitToAbv(time.unit)}${isHtml ? `</span>` : ""}${time.condition ? "*" : ""}`;
 };
 
-Parser.spTimeListToFull = function (times, meta, {isStripTags = false, styleHint = null} = {}) {
+Parser.spTimeListToFull = function (times, meta, { isStripTags = false, styleHint = null } = {}) {
 	styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
 
 	return [
 		...times,
 		...styleHint === "classic" || !meta?.ritual
 			? []
-			: [{"number": 1, "unit": "ritual"}],
+			: [{ "number": 1, "unit": "ritual" }],
 	]
 		.map(time => {
 			return [
-				Parser.getTimeToFull(time, {styleHint}),
+				Parser.getTimeToFull(time, { styleHint }),
 				time.condition ? `, ${isStripTags ? Renderer.stripTags(time.condition) : Renderer.get().render(time.condition)}` : "",
 				time.note ? ` (${isStripTags ? Renderer.stripTags(time.note) : Renderer.get().render(time.note)})` : "",
 			]
@@ -1392,7 +1392,7 @@ Parser._TIME_UNITS_SHORTHAND = new Set([
 	"ritual", // faux unit added during rendering
 ]);
 
-Parser._getTimeToFull_number = ({time, styleHint}) => {
+Parser._getTimeToFull_number = ({ time, styleHint }) => {
 	if (!time.number) return "";
 	if (styleHint === "classic") return `${time.number} `;
 
@@ -1400,15 +1400,15 @@ Parser._getTimeToFull_number = ({time, styleHint}) => {
 	return `${time.number} `;
 };
 
-Parser.getTimeToFull = function (time, {styleHint = null} = {}) {
+Parser.getTimeToFull = function (time, { styleHint = null } = {}) {
 	styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
 
-	const ptNumber = Parser._getTimeToFull_number({time, styleHint});
+	const ptNumber = Parser._getTimeToFull_number({ time, styleHint });
 	const ptUnit = (time.unit === Parser.SP_TM_B_ACTION ? "bonus action" : time.unit)[(styleHint === "classic" || ptNumber) ? "toString" : "uppercaseFirst"]();
 	return `${ptNumber}${ptUnit}${time.number > 1 ? "s" : ""}`;
 };
 
-Parser.getMinutesToFull = function (mins, {isShort = false} = {}) {
+Parser.getMinutesToFull = function (mins, { isShort = false } = {}) {
 	const days = Math.floor(mins / (24 * 60));
 	mins = mins % (24 * 60);
 
@@ -1516,9 +1516,9 @@ Parser.SP_RANGE_TO_ICON = {
 	[Parser.RNG_CYLINDER]: "fa-database",
 	[Parser.RNG_SELF]: "fa-street-view",
 	[Parser.RNG_SIGHT]: "fa-eye",
-	[Parser.RNG_UNLIMITED_SAME_PLANE]: "fa-globe-americas",
+	[Parser.RNG_UNLIMITED_SAME_PLANE]: "fa-earth-americas",
 	[Parser.RNG_UNLIMITED]: "fa-infinity",
-	[Parser.RNG_TOUCH]: "fa-hand-paper",
+	[Parser.RNG_TOUCH]: "fa-hand",
 };
 
 Parser.spRangeTypeToIcon = function (range) {
@@ -1621,10 +1621,10 @@ Parser.getSingletonUnit = function (unit, isShort) {
 		case Parser.UNT_MILES:
 			return isShort ? "mi." : "mile";
 		default: {
-			const fromPrerelease = Parser._getSingletonUnit_prereleaseBrew({unit, isShort, brewUtil: PrereleaseUtil});
+			const fromPrerelease = Parser._getSingletonUnit_prereleaseBrew({ unit, isShort, brewUtil: PrereleaseUtil });
 			if (fromPrerelease) return fromPrerelease;
 
-			const fromBrew = Parser._getSingletonUnit_prereleaseBrew({unit, isShort, brewUtil: BrewUtil2});
+			const fromBrew = Parser._getSingletonUnit_prereleaseBrew({ unit, isShort, brewUtil: BrewUtil2 });
 			if (fromBrew) return fromBrew;
 
 			if (unit.charAt(unit.length - 1) === "s") return unit.slice(0, -1);
@@ -1633,12 +1633,12 @@ Parser.getSingletonUnit = function (unit, isShort) {
 	}
 };
 
-Parser._getSingletonUnit_prereleaseBrew = function ({unit, isShort, brewUtil}) {
+Parser._getSingletonUnit_prereleaseBrew = function ({ unit, isShort, brewUtil }) {
 	const fromBrew = brewUtil.getMetaLookup("spellDistanceUnits")?.[unit]?.["singular"];
 	if (fromBrew) return fromBrew;
 };
 
-Parser.getInchesToFull = function (inches, {isShort = false} = {}) {
+Parser.getInchesToFull = function (inches, { isShort = false } = {}) {
 	const feet = Math.floor(inches / 12);
 	inches = inches % 12;
 
@@ -1649,7 +1649,7 @@ Parser.getInchesToFull = function (inches, {isShort = false} = {}) {
 		.join(" ");
 };
 
-Parser.spComponentsToFull = function (comp, level, {isPlainText = false} = {}) {
+Parser.spComponentsToFull = function (comp, level, { isPlainText = false } = {}) {
 	if (!comp) return "None";
 	const out = [];
 	if (comp.v) out.push("V");
@@ -1671,20 +1671,20 @@ Parser.spEndTypeToFull = function (type) {
 	return Parser._parse_aToB(Parser.SP_END_TYPE_TO_FULL, type);
 };
 
-Parser.spDurationToFull = function (durations, {isPlainText = false, styleHint} = {}) {
+Parser.spDurationToFull = function (durations, { isPlainText = false, styleHint } = {}) {
 	styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
 
-	const entriesMeta = Renderer.generic.getRenderableDurationEntriesMeta(durations, {styleHint});
+	const entriesMeta = Renderer.generic.getRenderableDurationEntriesMeta(durations, { styleHint });
 
 	if (isPlainText) return Renderer.stripTags(entriesMeta.entryDuration);
 	return Renderer.get().render(entriesMeta.entryDuration);
 };
 
 Parser.DURATION_TYPES = [
-	{type: "instant", full: "Instantaneous"},
-	{type: "timed", hasAmount: true},
-	{type: "permanent", hasEnds: true},
-	{type: "special"},
+	{ type: "instant", full: "Instantaneous" },
+	{ type: "timed", hasAmount: true },
+	{ type: "permanent", hasEnds: true },
+	{ type: "special" },
 ];
 
 Parser.DURATION_AMOUNT_TYPES = [
@@ -1698,16 +1698,16 @@ Parser.DURATION_AMOUNT_TYPES = [
 	"year",
 ];
 
-Parser.spClassesToFull = function (sp, {isTextOnly = false, subclassLookup = {}} = {}) {
+Parser.spClassesToFull = function (sp, { isTextOnly = false, subclassLookup = {} } = {}) {
 	const fromSubclassList = Renderer.spell.getCombinedClasses(sp, "fromSubclass");
-	const fromSubclasses = Parser.spSubclassesToFull(fromSubclassList, {isTextOnly, subclassLookup});
+	const fromSubclasses = Parser.spSubclassesToFull(fromSubclassList, { isTextOnly, subclassLookup });
 	const fromClassList = Renderer.spell.getCombinedClasses(sp, "fromClassList");
-	return `${Parser.spMainClassesToFull(fromClassList, {isTextOnly})}${fromSubclasses ? `, ${fromSubclasses}` : ""}`;
+	return `${Parser.spMainClassesToFull(fromClassList, { isTextOnly })}${fromSubclasses ? `, ${fromSubclasses}` : ""}`;
 };
 
-Parser.spMainClassesToFull = function (fromClassList, {isTextOnly = false} = {}) {
+Parser.spMainClassesToFull = function (fromClassList, { isTextOnly = false } = {}) {
 	return fromClassList
-		.map(clsStub => ({hash: UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES](clsStub), clsStub}))
+		.map(clsStub => ({ hash: UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES](clsStub), clsStub }))
 		.filter(it => !ExcludeUtil.isInitialised || !ExcludeUtil.isExcluded(it.hash, "class", it.clsStub.source))
 		.sort((a, b) => SortUtil.ascSort(a.clsStub.name, b.clsStub.name))
 		.map(it => {
@@ -1721,7 +1721,7 @@ Parser.spMainClassesToFull = function (fromClassList, {isTextOnly = false} = {})
 		.join(", ") || "";
 };
 
-Parser.spSubclassesToFull = function (fromSubclassList, {isTextOnly = false, subclassLookup = {}} = {}) {
+Parser.spSubclassesToFull = function (fromSubclassList, { isTextOnly = false, subclassLookup = {} } = {}) {
 	return fromSubclassList
 		.filter(mt => {
 			if (!ExcludeUtil.isInitialised) return true;
@@ -1737,18 +1737,18 @@ Parser.spSubclassesToFull = function (fromSubclassList, {isTextOnly = false, sub
 				}),
 				"subclass",
 				mt.subclass.source,
-				{isNoCount: true},
+				{ isNoCount: true },
 			);
 		})
 		.sort((a, b) => {
 			const byName = SortUtil.ascSort(a.class.name, b.class.name);
 			return byName || SortUtil.ascSort(a.subclass.name, b.subclass.name);
 		})
-		.map(c => Parser._spSubclassItem({fromSubclass: c, isTextOnly}))
+		.map(c => Parser._spSubclassItem({ fromSubclass: c, isTextOnly }))
 		.join(", ") || "";
 };
 
-Parser._spSubclassItem = function ({fromSubclass, isTextOnly}) {
+Parser._spSubclassItem = function ({ fromSubclass, isTextOnly }) {
 	const c = fromSubclass.class;
 	const sc = fromSubclass.subclass;
 	const text = `${sc.shortName}${sc.subSubclass ? ` (${sc.subSubclass})` : ""}`;
@@ -1862,8 +1862,8 @@ Parser.monTypeToFullObj = function (type) {
 
 	const tagMetas = Parser.monTypeToFullObj._getTagMetas(type.tags);
 	if (tagMetas.length) {
-		out.tags.push(...tagMetas.map(({filterTag}) => filterTag));
-		const ptTags = ` (${tagMetas.map(({displayTag}) => displayTag).join(", ")})`;
+		out.tags.push(...tagMetas.map(({ filterTag }) => filterTag));
+		const ptTags = ` (${tagMetas.map(({ displayTag }) => displayTag).join(", ")})`;
 		out.asText += ptTags;
 		out.asTextShort += ptTags;
 	}
@@ -1877,8 +1877,8 @@ Parser.monTypeToFullObj = function (type) {
 
 		const tagMetas = Parser.monTypeToFullObj._getTagMetas(type.sidekickTags);
 		if (tagMetas.length) {
-			out.tagsSidekick.push(...tagMetas.map(({filterTag}) => filterTag));
-			if (!type.sidekickHidden) out.asTextSidekick += ` (${tagMetas.map(({displayTag}) => displayTag).join(", ")})`;
+			out.tagsSidekick.push(...tagMetas.map(({ filterTag }) => filterTag));
+			if (!type.sidekickHidden) out.asTextSidekick += ` (${tagMetas.map(({ displayTag }) => displayTag).join(", ")})`;
 		}
 	}
 	// endregion
@@ -1922,25 +1922,25 @@ Parser._getFullImmRes_isSimpleTerm = val => {
 
 Parser._getFullImmRes_getNextProp = obj => obj.immune ? "immune" : obj.resist ? "resist" : obj.vulnerable ? "vulnerable" : null;
 
-Parser._getFullImmRes_getRenderedString = (str, {isPlainText = false, isTitleCase = false} = {}) => {
+Parser._getFullImmRes_getRenderedString = (str, { isPlainText = false, isTitleCase = false } = {}) => {
 	if (isTitleCase) str = str.toTitleCase();
 	return isPlainText ? Renderer.stripTags(`${str}`) : Renderer.get().render(`${str}`);
 };
 
-Parser._getFullImmRes_getRenderedObject = (obj, {isPlainText = false, isTitleCase = false} = {}) => {
+Parser._getFullImmRes_getRenderedObject = (obj, { isPlainText = false, isTitleCase = false } = {}) => {
 	const stack = [];
 
-	if (obj.preNote) stack.push(Parser._getFullImmRes_getRenderedString(obj.preNote, {isPlainText}));
+	if (obj.preNote) stack.push(Parser._getFullImmRes_getRenderedString(obj.preNote, { isPlainText }));
 
 	const prop = Parser._getFullImmRes_getNextProp(obj);
-	if (prop) stack.push(Parser._getFullImmRes_getRenderedArray(obj[prop], {isPlainText, isTitleCase, isGroup: true}));
+	if (prop) stack.push(Parser._getFullImmRes_getRenderedArray(obj[prop], { isPlainText, isTitleCase, isGroup: true }));
 
-	if (obj.note) stack.push(Parser._getFullImmRes_getRenderedString(obj.note, {isPlainText}));
+	if (obj.note) stack.push(Parser._getFullImmRes_getRenderedString(obj.note, { isPlainText }));
 
 	return stack.join(" ");
 };
 
-Parser._getFullImmRes_getRenderedArray = (values, {isPlainText = false, isTitleCase = false, isGroup = false} = {}) => {
+Parser._getFullImmRes_getRenderedArray = (values, { isPlainText = false, isTitleCase = false, isGroup = false } = {}) => {
 	if (values.length === Parser.DMG_TYPES.length && CollectionUtil.deepEquals(Parser.DMG_TYPES, values)) {
 		return "all damage"[isTitleCase ? "toTitleCase" : "toString"]();
 	}
@@ -1951,9 +1951,9 @@ Parser._getFullImmRes_getRenderedArray = (values, {isPlainText = false, isTitleC
 
 			const rendCur = isSimpleCur
 				? val.special
-					? Parser._getFullImmRes_getRenderedString(val.special, {isPlainText, isTitleCase: false})
-					: Parser._getFullImmRes_getRenderedString(val, {isPlainText, isTitleCase})
-				: Parser._getFullImmRes_getRenderedObject(val, {isPlainText, isTitleCase});
+					? Parser._getFullImmRes_getRenderedString(val.special, { isPlainText, isTitleCase: false })
+					: Parser._getFullImmRes_getRenderedString(val, { isPlainText, isTitleCase })
+				: Parser._getFullImmRes_getRenderedObject(val, { isPlainText, isTitleCase });
 
 			if (i === arr.length - 1) return rendCur;
 
@@ -1967,14 +1967,14 @@ Parser._getFullImmRes_getRenderedArray = (values, {isPlainText = false, isTitleC
 		.join("");
 };
 
-Parser.getFullImmRes = function (values, {isPlainText = false, isTitleCase = false} = {}) {
+Parser.getFullImmRes = function (values, { isPlainText = false, isTitleCase = false } = {}) {
 	if (!values?.length) return "";
-	return Parser._getFullImmRes_getRenderedArray(values, {isPlainText, isTitleCase});
+	return Parser._getFullImmRes_getRenderedArray(values, { isPlainText, isTitleCase });
 };
 
 /* -------------------------------------------- */
 
-Parser.getFullCondImm = function (condImm, {isPlainText = false, isEntry = false, isTitleCase = false} = {}) {
+Parser.getFullCondImm = function (condImm, { isPlainText = false, isEntry = false, isTitleCase = false } = {}) {
 	if (isPlainText && isEntry) throw new Error(`Options "isPlainText" and "isEntry" are mutually exclusive!`);
 
 	if (!condImm?.length) return "";
@@ -2252,8 +2252,8 @@ Parser.psiTypeToFull = type => Parser.psiTypeToMeta(type).full;
 
 Parser.psiTypeToMeta = type => {
 	let out = {};
-	if (type === Parser.PSI_ABV_TYPE_TALENT) out = {hasOrder: false, full: "Talent"};
-	else if (type === Parser.PSI_ABV_TYPE_DISCIPLINE) out = {hasOrder: true, full: "Discipline"};
+	if (type === Parser.PSI_ABV_TYPE_TALENT) out = { hasOrder: false, full: "Talent" };
+	else if (type === Parser.PSI_ABV_TYPE_DISCIPLINE) out = { hasOrder: true, full: "Discipline" };
 	else if (PrereleaseUtil.getMetaLookup("psionicTypes")?.[type]) out = MiscUtil.copyFast(PrereleaseUtil.getMetaLookup("psionicTypes")[type]);
 	else if (BrewUtil2.getMetaLookup("psionicTypes")?.[type]) out = MiscUtil.copyFast(BrewUtil2.getMetaLookup("psionicTypes")[type]);
 	out.full = out.full || "Unknown";
@@ -2265,7 +2265,7 @@ Parser.psiOrderToFull = (order) => {
 	return order === undefined ? Parser.PSI_ORDER_NONE : order;
 };
 
-Parser.prereqSpellToFull = function (spell, {isTextOnly = false} = {}) {
+Parser.prereqSpellToFull = function (spell, { isTextOnly = false } = {}) {
 	if (spell) {
 		const [text, suffix] = spell.split("#");
 		if (!suffix) return isTextOnly ? spell : Renderer.get().render(`{@spell ${spell}}`);
@@ -2290,6 +2290,7 @@ Parser.prereqPatronToShort = function (patron) {
 };
 
 Parser.FEAT_CATEGORY_TO_FULL = {
+	"D": "Dragonmark",
 	"G": "General",
 	"O": "Origin",
 	"FS": "Fighting Style",
@@ -2657,14 +2658,14 @@ Parser.spClassesToCurrentAndLegacy = function (fromClassList) {
  * all the legacy/superseded subclasses
  */
 Parser.spSubclassesToCurrentAndLegacyFull = function (sp, subclassLookup) {
-	return Parser._spSubclassesToCurrentAndLegacyFull({sp, subclassLookup, prop: "fromSubclass"});
+	return Parser._spSubclassesToCurrentAndLegacyFull({ sp, subclassLookup, prop: "fromSubclass" });
 };
 
 Parser.spVariantSubclassesToCurrentAndLegacyFull = function (sp, subclassLookup) {
-	return Parser._spSubclassesToCurrentAndLegacyFull({sp, subclassLookup, prop: "fromSubclassVariant"});
+	return Parser._spSubclassesToCurrentAndLegacyFull({ sp, subclassLookup, prop: "fromSubclassVariant" });
 };
 
-Parser._spSubclassesToCurrentAndLegacyFull = ({sp, subclassLookup, prop}) => {
+Parser._spSubclassesToCurrentAndLegacyFull = ({ sp, subclassLookup, prop }) => {
 	const fromSubclass = Renderer.spell.getCombinedClasses(sp, prop);
 	if (!fromSubclass.length) return ["", ""];
 
@@ -2675,10 +2676,10 @@ Parser._spSubclassesToCurrentAndLegacyFull = ({sp, subclassLookup, prop}) => {
 	fromSubclass
 		.filter(c => {
 			const excludeClass = ExcludeUtil.isExcluded(
-				UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({name: c.class.name, source: c.class.source}),
+				UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({ name: c.class.name, source: c.class.source }),
 				"class",
 				c.class.source,
-				{isNoCount: true},
+				{ isNoCount: true },
 			);
 			if (excludeClass) return false;
 
@@ -2691,11 +2692,11 @@ Parser._spSubclassesToCurrentAndLegacyFull = ({sp, subclassLookup, prop}) => {
 				}),
 				"subclass",
 				c.subclass.source,
-				{isNoCount: true},
+				{ isNoCount: true },
 			);
 			if (excludeSubclass) return false;
 
-			return !Renderer.spell.isExcludedSubclassVariantSource({classDefinedInSource: c.class.definedInSource});
+			return !Renderer.spell.isExcludedSubclassVariantSource({ classDefinedInSource: c.class.definedInSource });
 		})
 		.sort((a, b) => {
 			const byName = SortUtil.ascSort(a.subclass.name, b.subclass.name);
@@ -2705,7 +2706,7 @@ Parser._spSubclassesToCurrentAndLegacyFull = ({sp, subclassLookup, prop}) => {
 			const nm = c.subclass.name;
 			const src = c.subclass.source;
 
-			const toAdd = Parser._spSubclassItem({fromSubclass: c, isTextOnly: false});
+			const toAdd = Parser._spSubclassItem({ fromSubclass: c, isTextOnly: false });
 
 			const fromLookup = MiscUtil.get(
 				subclassLookup,
@@ -2721,7 +2722,7 @@ Parser._spSubclassesToCurrentAndLegacyFull = ({sp, subclassLookup, prop}) => {
 				const cleanName = Parser._spSubclassesToCurrentAndLegacyFull.mapClassShortNameToMostRecent(
 					nm.split("(")[0].trim().split(/v\d+/)[0].trim(),
 				);
-				toCheck.push({"name": cleanName, "ele": toAdd});
+				toCheck.push({ "name": cleanName, "ele": toAdd });
 			} else {
 				current.push(toAdd);
 				curNames.add(nm);
@@ -2790,7 +2791,7 @@ Parser._TIER_TO_LEVEL_RANGE = {
 	"3": [11, 16],
 	"4": [17, 20],
 };
-Parser.tierToFullLevel = function (tier, {styleHint} = {}) {
+Parser.tierToFullLevel = function (tier, { styleHint } = {}) {
 	const range = Parser._parse_aToB(Parser._TIER_TO_LEVEL_RANGE, tier);
 	if (!range) return `Tier ${tier}`;
 
@@ -2813,19 +2814,19 @@ Parser.ATK_TYPE_TO_FULL = {};
 Parser.ATK_TYPE_TO_FULL["MW"] = "Melee Weapon Attack";
 Parser.ATK_TYPE_TO_FULL["RW"] = "Ranged Weapon Attack";
 
-Parser.bookOrdinalToAbv = (ordinal, {isPreNoSuff = false, isPlainText = false} = {}) => {
+Parser.bookOrdinalToAbv = (ordinal, { isPreNoSuff = false, isPlainText = false } = {}) => {
 	if (ordinal === undefined) return "";
 	switch (ordinal.type) {
-		case "part": return `${isPreNoSuff ? " " : ""}${Parser._bookOrdinalToAbv_getPt({ordinal, isPlainText})} ${ordinal.identifier}${isPreNoSuff ? "" : " \u2014 "}`;
-		case "chapter": return `${isPreNoSuff ? " " : ""}${Parser._bookOrdinalToAbv_getPt({ordinal, isPlainText})} ${ordinal.identifier}${isPreNoSuff ? "" : ": "}`;
-		case "episode": return `${isPreNoSuff ? " " : ""}${Parser._bookOrdinalToAbv_getPt({ordinal, isPlainText})} ${ordinal.identifier}${isPreNoSuff ? "" : ": "}`;
-		case "appendix": return `${isPreNoSuff ? " " : ""}${Parser._bookOrdinalToAbv_getPt({ordinal, isPlainText})}${ordinal.identifier != null ? ` ${ordinal.identifier}` : ""}${isPreNoSuff ? "" : ": "}`;
-		case "level": return `${isPreNoSuff ? " " : ""}${Parser._bookOrdinalToAbv_getPt({ordinal, isPlainText})} ${ordinal.identifier}${isPreNoSuff ? "" : ": "}`;
+		case "part": return `${isPreNoSuff ? " " : ""}${Parser._bookOrdinalToAbv_getPt({ ordinal, isPlainText })} ${ordinal.identifier}${isPreNoSuff ? "" : " \u2014 "}`;
+		case "chapter": return `${isPreNoSuff ? " " : ""}${Parser._bookOrdinalToAbv_getPt({ ordinal, isPlainText })} ${ordinal.identifier}${isPreNoSuff ? "" : ": "}`;
+		case "episode": return `${isPreNoSuff ? " " : ""}${Parser._bookOrdinalToAbv_getPt({ ordinal, isPlainText })} ${ordinal.identifier}${isPreNoSuff ? "" : ": "}`;
+		case "appendix": return `${isPreNoSuff ? " " : ""}${Parser._bookOrdinalToAbv_getPt({ ordinal, isPlainText })}${ordinal.identifier != null ? ` ${ordinal.identifier}` : ""}${isPreNoSuff ? "" : ": "}`;
+		case "level": return `${isPreNoSuff ? " " : ""}${Parser._bookOrdinalToAbv_getPt({ ordinal, isPlainText })} ${ordinal.identifier}${isPreNoSuff ? "" : ": "}`;
 		default: throw new Error(`Unhandled ordinal type "${ordinal.type}"`);
 	}
 };
 
-Parser._bookOrdinalToAbv_getPt = ({ordinal, isPlainText = false}) => {
+Parser._bookOrdinalToAbv_getPt = ({ ordinal, isPlainText = false }) => {
 	switch (ordinal.type) {
 		case "part": return `Part`;
 		case "chapter": return isPlainText ? `Ch.` : `<span title="Chapter">Ch.</span>`;
@@ -2850,7 +2851,7 @@ Parser.nameToTokenName = function (name) {
 		.replace(/"/g, "");
 };
 
-Parser.bytesToHumanReadable = function (bytes, {fixedDigits = 2} = {}) {
+Parser.bytesToHumanReadable = function (bytes, { fixedDigits = 2 } = {}) {
 	if (bytes == null) return "";
 	if (!bytes) return "0 B";
 	const e = Math.floor(Math.log(bytes) / Math.log(1024));
@@ -3083,40 +3084,71 @@ Parser.SRC_5ETOOLS_TMP = "SRC_5ETOOLS_TMP"; // Temp source, used as a placeholde
 Parser.SRC_PHB = "PHB";
 Parser.SRC_DMG = "DMG";
 Parser.SRC_MM = "MM";
+Parser.SRC_XPHB = "XPHB";
+Parser.SRC_XDMG = "XDMG";
+
 Parser.SRC_PHBR = "PHBR";
-Parser.SRC_PHBR1 = "PHBR1";
-Parser.SRC_PHBR2 = "PHBR2";
-Parser.SRC_PHBR3 = "PHBR3";
-Parser.SRC_PHBR4 = "PHBR4";
-Parser.SRC_PHBR5 = "PHBR5";
-Parser.SRC_PHBR6 = "PHBR6";
-Parser.SRC_PHBR7 = "PHBR7";
-Parser.SRC_PHBR8 = "PHBR8";
-Parser.SRC_PHBR9 = "PHBR9";
-Parser.SRC_PHBR10 = "PHBR10";
-Parser.SRC_PHBR11 = "PHBR11";
-Parser.SRC_PHBR12 = "PHBR12";
-Parser.SRC_PHBR13 = "PHBR13";
-Parser.SRC_PHBR14 = "PHBR14";
-Parser.SRC_PHBR15 = "PHBR15";
+Parser.SRC_PHBR_PREFIX = `${Parser.SRC_PHBR}`;
+
+Parser.SRC_PHBR1 = `${Parser.SRC_PHBR}1`;
+Parser.SRC_PHBR2 = `${Parser.SRC_PHBR}2`;
+Parser.SRC_PHBR3 = `${Parser.SRC_PHBR}3`;
+Parser.SRC_PHBR4 = `${Parser.SRC_PHBR}4`;
+Parser.SRC_PHBR5 = `${Parser.SRC_PHBR}5`;
+Parser.SRC_PHBR6 = `${Parser.SRC_PHBR}6`;
+Parser.SRC_PHBR7 = `${Parser.SRC_PHBR}7`;
+Parser.SRC_PHBR8 = `${Parser.SRC_PHBR}8`;
+Parser.SRC_PHBR9 = `${Parser.SRC_PHBR}9`;
+Parser.SRC_PHBR10 = `${Parser.SRC_PHBR}10`;
+Parser.SRC_PHBR11 = `${Parser.SRC_PHBR}11`;
+Parser.SRC_PHBR12 = `${Parser.SRC_PHBR}12`;
+Parser.SRC_PHBR13 = `${Parser.SRC_PHBR}13`;
+Parser.SRC_PHBR14 = `${Parser.SRC_PHBR}14`;
+Parser.SRC_PHBR15 = `${Parser.SRC_PHBR}15`;
+
+Parser.SRC_CGR = "CRG"
+Parser.SRC_CGR_PREFIX = `${Parser.SRC_CGR}`
+
+Parser.SRC_CGR1 = `${Parser.SRC_CGR}1`
+Parser.SRC_CGR2 = `${Parser.SRC_CGR}2`
+Parser.SRC_CGR3 = `${Parser.SRC_CGR}3`
+
 Parser.SRC_DMGR = "DMGR";
-Parser.SRC_DMGR1 = "DMGR1";
-Parser.SRC_DMGR2 = "DMGR2";
-Parser.SRC_DMGR3 = "DMGR3";
-Parser.SRC_DMGR4 = "DMGR4";
-Parser.SRC_DMGR5 = "DMGR5";
-Parser.SRC_DMGR6 = "DMGR6";
-Parser.SRC_DMGR7 = "DMGR7";
-Parser.SRC_DMGR8 = "DMGR8";
-Parser.SRC_DMGR9 = "DMGR9";
+Parser.SRC_DMGR_PREFIX = `${Parser.SRC_DMGR}`;
+
+Parser.SRC_DMGR1 = `${Parser.SRC_DMGR}1`;
+Parser.SRC_DMGR2 = `${Parser.SRC_DMGR}2`;
+Parser.SRC_DMGR3 = `${Parser.SRC_DMGR}3`;
+Parser.SRC_DMGR4 = `${Parser.SRC_DMGR}4`;
+Parser.SRC_DMGR5 = `${Parser.SRC_DMGR}5`;
+Parser.SRC_DMGR6 = `${Parser.SRC_DMGR}6`;
+Parser.SRC_DMGR7 = `${Parser.SRC_DMGR}7`;
+Parser.SRC_DMGR8 = `${Parser.SRC_DMGR}8`;
+Parser.SRC_DMGR9 = `${Parser.SRC_DMGR}9`;
+Parser.SRC_LL = "LL";
+Parser.SRC_TM = "TM";
+Parser.SRC_BA = "BA";
+
+Parser.SRC_MCVX_PREFIX = "MCV";
+Parser.SRC_MCV1SC = `${Parser.SRC_MCVX_PREFIX}1SC`;
+Parser.SRC_MCV2DC = `${Parser.SRC_MCVX_PREFIX}2DC`;
+Parser.SRC_MCV3MC = `${Parser.SRC_MCVX_PREFIX}3MC`;
+Parser.SRC_MCV4EC = `${Parser.SRC_MCVX_PREFIX}4EC`;
+
+
 Parser.SRC_HR = "HR";
-Parser.SRC_HR1 = "HR1";
-Parser.SRC_HR2 = "HR2";
-Parser.SRC_HR3 = "HR3";
-Parser.SRC_HR4 = "HR4";
-Parser.SRC_HR5 = "HR5";
-Parser.SRC_HR6 = "HR6";
-Parser.SRC_HR7 = "HR7";
+Parser.SRC_HR_PREFIX = `${Parser.SRC_HR}`;
+
+Parser.SRC_HR1 = `${Parser.SRC_HR}1`;
+Parser.SRC_HR2 = `${Parser.SRC_HR}2`;
+Parser.SRC_HR3 = `${Parser.SRC_HR}3`;
+Parser.SRC_HR4 = `${Parser.SRC_HR}4`;
+Parser.SRC_HR5 = `${Parser.SRC_HR}5`;
+Parser.SRC_HR6 = `${Parser.SRC_HR}6`;
+Parser.SRC_HR7 = `${Parser.SRC_HR}7`;
+
+
+// 5e Sources below
 Parser.SRC_CoS = "CoS";
 Parser.SRC_CoS = "CoS";
 Parser.SRC_EEPC = "EEPC";
@@ -3223,8 +3255,6 @@ Parser.SRC_VEoR = "VEoR";
 Parser.SRC_GHLoE = "GHLoE";
 Parser.SRC_DoDk = "DoDk";
 Parser.SRC_ToB1_2023 = "ToB1-2023";
-Parser.SRC_XPHB = "XPHB";
-Parser.SRC_XDMG = "XDMG";
 Parser.SRC_TD = "TD";
 Parser.SRC_SCREEN = "Screen";
 Parser.SRC_SCREEN_WILDERNESS_KIT = "ScreenWildernessKit";
@@ -3278,15 +3308,10 @@ Parser.SRC_PSD = `${Parser.SRC_PS_PREFIX}D`;
 
 Parser.SRC_UA_PREFIX = "UA";
 Parser.SRC_UA_ONE_PREFIX = "XUA";
-Parser.SRC_MCVX_PREFIX = "MCV";
 Parser.SRC_MisMVX_PREFIX = "MisMV";
 Parser.SRC_AA_PREFIX = "AA";
 
 Parser.SRC_UATMC = `${Parser.SRC_UA_PREFIX}TheMysticClass`;
-Parser.SRC_MCV1SC = `${Parser.SRC_MCVX_PREFIX}1SC`;
-Parser.SRC_MCV2DC = `${Parser.SRC_MCVX_PREFIX}2DC`;
-Parser.SRC_MCV3MC = `${Parser.SRC_MCVX_PREFIX}3MC`;
-Parser.SRC_MCV4EC = `${Parser.SRC_MCVX_PREFIX}4EC`;
 Parser.SRC_MisMV1 = `${Parser.SRC_MisMVX_PREFIX}1`;
 Parser.SRC_AATM = `${Parser.SRC_AA_PREFIX}TM`;
 
@@ -3309,6 +3334,8 @@ Parser.SOURCE_JSON_TO_FULL = {};
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHB] = "Player's Handbook";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMG] = "Dungeon Master Guide";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_MM] = "Monstrous Manual";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_XPHB] = "Player's Handbook (Revised)";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_XDMG] = "Dungeon Master Guide (Revised)";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR] = `Player's Handbook Rules Supplement`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR1] = `${Parser.TC_PREFIX}Fighter's Handbook`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR2] = `${Parser.TC_PREFIX}Thief's Handbook`;
@@ -3325,6 +3352,10 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR12] = `${Parser.TC_PREFIX}Paladin's Ha
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR13] = `${Parser.TC_PREFIX}Druid's Handbook`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR14] = `${Parser.TC_PREFIX}Barbarian's Handbook`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHBR15] = `${Parser.TC_PREFIX}Ninja's Handbook`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_CGR] = `Campaign Reference`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_CGR1] = `${Parser.TC_PREFIX}Spacefarer's Handbook`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_CGR2] = `${Parser.TC_PREFIX}Gladiator's Handbook`;
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_CGR3] = `${Parser.TC_PREFIX}Sha'ir's Handbook`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR] = `Dungeon Master's Guide Rules Supplement`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR1] = `${Parser.CS_SUFFIX} and Catacomb Guide`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR2] = "The Castle Guide";
@@ -3335,6 +3366,10 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR6] = `${Parser.TC_PREFIX}Book of Villa
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR7] = `${Parser.TC_PREFIX}Book of Necromancers`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR8] = "Sages & Specialists";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMGR9] = "Of Ships and the Sea";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_LL] = "Legends & Lore";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_TM] = "Tome of Magic";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_BA] = "Book of Artifacts";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HR] = `Historical Reference`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HR1] = `Vikings ${Parser.CS_SUFFIX}`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HR2] = `Charlemagne's Paladins ${Parser.CS_SUFFIX}`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HR3] = `Celts ${Parser.CS_SUFFIX}`;
@@ -3342,8 +3377,9 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HR4] = `A Mighty Fortress ${Parser.CS_SUFF
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HR5] = `Glory of Rome ${Parser.CS_SUFFIX}`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HR6] = `Age of Heroes ${Parser.CS_SUFFIX}`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HR7] = `Crusades ${Parser.CS_SUFFIX}`;
-
-
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN] = "Dungeon Master's Screen";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_XSCREEN] = "Dungeon Master's Screen (Revised)";
+// 5e titles below
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_CoS] = "Curse of Strahd";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_EEPC] = "Elemental Evil Player's Companion";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_EET] = "Elemental Evil: Trinkets";
@@ -3448,14 +3484,10 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_VEoR] = "Vecna: Eve of Ruin";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_GHLoE] = "Grim Hollow: Lairs of Etharis";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DoDk] = "Dungeons of Drakkenheim";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_ToB1_2023] = "Tome of Beasts 1 (2023 Edition)";
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_XPHB] = "Player's Handbook (Revised)";
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_XDMG] = "Dungeon Master Guide (Revised)";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_TD] = "Tarot Deck";
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN] = "Dungeon Master's Screen";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN_WILDERNESS_KIT] = "Dungeon Master's Screen: Wilderness Kit";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN_DUNGEON_KIT] = "Dungeon Master's Screen: Dungeon Kit";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN_SPELLJAMMER] = "Dungeon Master's Screen: Spelljammer";
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_XSCREEN] = "Dungeon Master's Screen (2024)";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HF] = "Heroes' Feast";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HFFotM] = "Heroes' Feast: Flavors of the Multiverse";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HFStCM] = "Heroes' Feast: Saving the Childrens Menu";
@@ -3507,6 +3539,10 @@ Parser.SOURCE_JSON_TO_ABV = {};
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHB] = "PHB'89";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMG] = "DMG'89";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_MM] = "MM";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_XPHB] = "PHB'95";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_XDMG] = "DMG'95";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN] = "Scr'89";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_XSCREEN] = "Scr'95";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR] = "PHBR";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR1] = "TCFH";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR2] = "TCTH";
@@ -3523,6 +3559,10 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR12] = "TCPaH";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR13] = "TCDH";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR14] = "TCBarbH";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR15] = "TCNH";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CGR] = `CGR`;
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CGR1] = `TCSH`;
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CGR2] = `TCGH`;
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CGR3] = `TCShH`;
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR] = "DMGR";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR1] = "CS&CG";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR2] = "TCG";
@@ -3533,6 +3573,9 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR6] = "TCBoV";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR7] = "TCBoN";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR8] = "S&S";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR9] = "OS&TS";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_LL] = "L&L";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_TM] = "TM";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_BA] = "BA";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR] = "HR";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR1] = "VCS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR2] = "CeCS";
@@ -3541,6 +3584,7 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR4] = "AMFCS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR5] = "GoRCS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR6] = "AoHCS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR7] = "CrCS";
+// 5e abbreviations
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CoS] = "CoS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_EEPC] = "EEPC";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_EET] = "EET";
@@ -3645,14 +3689,10 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_VEoR] = "VEoR";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_GHLoE] = "GHLoE";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DoDk] = "DoDk";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_ToB1_2023] = "ToB1'23";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_XPHB] = "PHB'95";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_XDMG] = "DMG'95";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_TD] = "TD";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN] = "Scr'14";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN_WILDERNESS_KIT] = "ScrWild";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN_DUNGEON_KIT] = "ScrDun";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN_SPELLJAMMER] = "ScrSJ";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_XSCREEN] = "Scr'95";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HF] = "HF";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HFFotM] = "HFFotM";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HFStCM] = "HFStCM";
@@ -3704,9 +3744,11 @@ Parser.SOURCE_JSON_TO_DATE = {};
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHB] = "1989-04-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMG] = "1989-06-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_MM] = "1993-06-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_XPHB] = "1995-04-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_XDMG] = "1995-04-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR] = "1989-12-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR1] = "1989-12-01";
-Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR2] = "1989-12-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR2] = "1989-12-02";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR3] = "1990-05-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR4] = "1990-06-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR5] = "1991-01-01";
@@ -3720,6 +3762,10 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR12] = "1994-05-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR13] = "1994-08-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR14] = "1995-01-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PHBR15] = "1995-08-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_CRG] = "1992-11-02";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_CRG1] = "1992-11-02";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_CRG2] = "1993-06-02";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_CRG3] = "1994-08-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMGR] = "1990-03-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMGR1] = "1990-03-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMGR2] = "1990-04-01";
@@ -3730,6 +3776,9 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMGR6] = "1994-04-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMGR7] = "1995-03-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMGR8] = "1996-07-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DMGR9] = "1997-09-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_LL] = "1990-07-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_TM] = "1991-05-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_BA] = "1993-09-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HR] = "1991-04-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HR1] = "1991-04-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HR2] = "1992-06-01";
@@ -3738,6 +3787,9 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HR4] = "1992-11-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HR5] = "1993-10-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HR6] = "1994-03-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HR7] = "1994-10-01";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN] = "2015-01-20";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_XSCREEN] = "2024-11-12";
+// 5e Dates
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_CoS] = "2016-03-15";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_EEPC] = "2015-03-10";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_EET] = "2015-03-10";
@@ -3841,14 +3893,10 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_VEoR] = "2024-05-21";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_GHLoE] = "2023-11-30";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DoDk] = "2023-12-21";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_ToB1_2023] = "2023-05-31";
-Parser.SOURCE_JSON_TO_DATE[Parser.SRC_XPHB] = "1995-04-01";
-Parser.SOURCE_JSON_TO_DATE[Parser.SRC_XDMG] = "1995-04-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_TD] = "2022-05-24";
-Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN] = "2015-01-20";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN_WILDERNESS_KIT] = "2020-11-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN_DUNGEON_KIT] = "2020-09-21";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN_SPELLJAMMER] = "2022-08-16";
-Parser.SOURCE_JSON_TO_DATE[Parser.SRC_XSCREEN] = "2024-11-12";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HF] = "2020-10-27";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HFFotM] = "2023-11-07";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HFStCM] = "2023-11-21";
@@ -4165,6 +4213,10 @@ Parser.SOURCES_AVAILABLE_DOCS_BOOK = {};
 	Parser.SRC_PHB,
 	Parser.SRC_DMG,
 	Parser.SRC_MM,
+	Parser.SRC_XPHB,
+	Parser.SRC_XDMG,
+	Parser.SRC_SCREEN,
+	Parser.SRC_XSCREEN,
 	Parser.SRC_PHBR1,
 	Parser.SRC_DMGR1,
 	Parser.SRC_SCAG,
@@ -4188,7 +4240,6 @@ Parser.SOURCES_AVAILABLE_DOCS_BOOK = {};
 	Parser.SRC_AAG,
 	Parser.SRC_BAM,
 	Parser.SRC_HAT_TG,
-	Parser.SRC_SCREEN,
 	Parser.SRC_SCREEN_WILDERNESS_KIT,
 	Parser.SRC_SCREEN_DUNGEON_KIT,
 	Parser.SRC_SCREEN_SPELLJAMMER,
@@ -4202,22 +4253,19 @@ Parser.SOURCES_AVAILABLE_DOCS_BOOK = {};
 	Parser.SRC_BMT,
 	Parser.SRC_DMTCRG,
 	Parser.SRC_ToB1_2023,
-	Parser.SRC_XPHB,
-	Parser.SRC_XDMG,
-	Parser.SRC_XSCREEN,
 	Parser.SRC_TD,
 ].forEach(src => {
 	Parser.SOURCES_AVAILABLE_DOCS_BOOK[src] = src;
 	Parser.SOURCES_AVAILABLE_DOCS_BOOK[src.toLowerCase()] = src;
 });
 [
-	{src: Parser.SRC_PSA, id: "PS-A"},
-	{src: Parser.SRC_PSI, id: "PS-I"},
-	{src: Parser.SRC_PSK, id: "PS-K"},
-	{src: Parser.SRC_PSZ, id: "PS-Z"},
-	{src: Parser.SRC_PSX, id: "PS-X"},
-	{src: Parser.SRC_PSD, id: "PS-D"},
-].forEach(({src, id}) => {
+	{ src: Parser.SRC_PSA, id: "PS-A" },
+	{ src: Parser.SRC_PSI, id: "PS-I" },
+	{ src: Parser.SRC_PSK, id: "PS-K" },
+	{ src: Parser.SRC_PSZ, id: "PS-Z" },
+	{ src: Parser.SRC_PSX, id: "PS-X" },
+	{ src: Parser.SRC_PSD, id: "PS-D" },
+].forEach(({ src, id }) => {
 	Parser.SOURCES_AVAILABLE_DOCS_BOOK[src] = id;
 	Parser.SOURCES_AVAILABLE_DOCS_BOOK[src.toLowerCase()] = id;
 });
@@ -4370,14 +4418,14 @@ Parser.PROP_TO_DISPLAY_NAME = {
 	"lairActions": "Lair Action",
 	"regionalEffects": "Regional Effect",
 };
-Parser.getPropDisplayName = function (prop, {suffix = ""} = {}) {
+Parser.getPropDisplayName = function (prop, { suffix = "" } = {}) {
 	if (Parser.PROP_TO_DISPLAY_NAME[prop]) return `${Parser.PROP_TO_DISPLAY_NAME[prop]}${suffix}`;
 
 	const mFluff = /Fluff$/.exec(prop);
-	if (mFluff) return Parser.getPropDisplayName(prop.slice(0, -mFluff[0].length), {suffix: " Fluff"});
+	if (mFluff) return Parser.getPropDisplayName(prop.slice(0, -mFluff[0].length), { suffix: " Fluff" });
 
 	const mFoundry = /^foundry(?<prop>[A-Z].*)$/.exec(prop);
-	if (mFoundry) return Parser.getPropDisplayName(mFoundry.groups.prop.lowercaseFirst(), {suffix: " Foundry Data"});
+	if (mFoundry) return Parser.getPropDisplayName(mFoundry.groups.prop.lowercaseFirst(), { suffix: " Foundry Data" });
 
 	return `${prop.split(/([A-Z][a-z]+)/g).filter(Boolean).join(" ").uppercaseFirst()}${suffix}`;
 };
@@ -4402,10 +4450,10 @@ Parser.DMG_TYPES = ["acid", "bludgeoning", "cold", "fire", "force", "lightning",
 Parser.CONDITIONS = ["blinded", "charmed", "deafened", "exhaustion", "frightened", "grappled", "incapacitated", "invisible", "paralyzed", "petrified", "poisoned", "prone", "restrained", "stunned", "unconscious"];
 
 Parser.SENSES = [
-	{"name": "blindsight", "source": Parser.SRC_PHB},
-	{"name": "darkvision", "source": Parser.SRC_PHB},
-	{"name": "tremorsense", "source": Parser.SRC_MM},
-	{"name": "truesight", "source": Parser.SRC_PHB},
+	{ "name": "blindsight", "source": Parser.SRC_PHB },
+	{ "name": "darkvision", "source": Parser.SRC_PHB },
+	{ "name": "tremorsense", "source": Parser.SRC_MM },
+	{ "name": "truesight", "source": Parser.SRC_PHB },
 ];
 
 Parser.NUMBERS_ONES = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
@@ -4428,7 +4476,7 @@ Parser.metric = {
 	 * @param {string} originalUnit
 	 * @param {?boolean} toFixed
 	 */
-	getMetricNumber ({originalValue, originalUnit, toFixed = null}) {
+	getMetricNumber({ originalValue, originalUnit, toFixed = null }) {
 		if (originalValue == null || isNaN(originalValue)) return originalValue;
 
 		originalValue = Number(originalValue);
@@ -4453,7 +4501,7 @@ Parser.metric = {
 	 * @param {boolean} isShortForm
 	 * @param {isPlural} isShortForm
 	 */
-	getMetricUnit ({originalUnit, isShortForm = false, isPlural = true}) {
+	getMetricUnit({ originalUnit, isShortForm = false, isPlural = true }) {
 		switch (Parser.getNormalizedUnit(originalUnit)) {
 			case Parser.UNT_INCHES: return isShortForm ? "cm" : `centimeter`[isPlural ? "toPlural" : "toString"]();
 			case Parser.UNT_FEET: return isShortForm ? "m" : `meter`[isPlural ? "toPlural" : "toString"]();

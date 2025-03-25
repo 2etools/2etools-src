@@ -1,15 +1,15 @@
-import {StatGenUi} from "./statgen/statgen-ui.js";
-import {VetoolsConfig} from "./utils-config/utils-config-config.js";
-import {UtilsEntityBackground} from "./utils/utils-entity-background.js";
-import {UtilsEntityRace} from "./utils/utils-entity-race.js";
+import { StatGenUi } from "./statgen/statgen-ui.js";
+import { VetoolsConfig } from "./utils-config/utils-config-config.js";
+import { UtilsEntityBackground } from "./utils/utils-entity-background.js";
+import { UtilsEntityRace } from "./utils/utils-entity-race.js";
 
 class StatGenPage {
-	constructor () {
+	constructor() {
 		this._statGenUi = null;
 		this._isIgnoreHashChanges = false;
 	}
 
-	async pInit () {
+	async pInit() {
 		await Promise.all([
 			PrereleaseUtil.pInit(),
 			BrewUtil2.pInit(),
@@ -45,7 +45,7 @@ class StatGenPage {
 		window.dispatchEvent(new Event("toolsLoaded"));
 	}
 
-	_getAdditionalTabMetas () {
+	_getAdditionalTabMetas() {
 		return [
 			new TabUiUtil.TabMeta({
 				type: "buttons",
@@ -54,7 +54,7 @@ class StatGenPage {
 						html: `<span class="glyphicon glyphicon-download"></span>`,
 						title: "Save to File",
 						pFnClick: () => {
-							DataUtil.userDownload("statgen", this._statGenUi.getSaveableState(), {fileType: "statgen"});
+							DataUtil.userDownload("statgen", this._statGenUi.getSaveableState(), { fileType: "statgen" });
 						},
 					},
 				],
@@ -66,7 +66,7 @@ class StatGenPage {
 						html: `<span class="glyphicon glyphicon-upload"></span>`,
 						title: "Load from File",
 						pFnClick: async () => {
-							const {jsons, errors} = await InputUiUtil.pGetUserUploadJson({expectedFileTypes: ["statgen"]});
+							const { jsons, errors } = await InputUiUtil.pGetUserUploadJson({ expectedFileTypes: ["statgen"] });
 
 							DataUtil.doHandleFileLoadErrorsGeneric(errors);
 
@@ -97,19 +97,26 @@ class StatGenPage {
 						html: `<span class="glyphicon glyphicon-refresh"></span>`,
 						title: "Reset All",
 						type: "danger",
-						pFnClick: () => this._statGenUi.doResetAll(),
+						pFnClick: async () => {
+							if (!await InputUiUtil.pGetUserBoolean({
+								title: "Reset All",
+								htmlDescription: `<div>This will reset all inputs in all tabs.<br>Are you sure?</div>`,
+							})) return;
+
+							this._statGenUi.doResetAll();
+						},
 					},
 				],
 			}),
 		];
 	}
 
-	async _pDoSaveState () {
+	async _pDoSaveState() {
 		const statGenState = this._statGenUi.getSaveableState();
 		await StorageUtil.pSetForPage(StatGenPage._STORAGE_KEY_STATE, statGenState);
 	}
 
-	async _pLoadRaces () {
+	async _pLoadRaces() {
 		const cpyRaces = MiscUtil.copyFast(
 			[
 				...(await DataLoader.pCacheAndGetAllSite(UrlUtil.PG_RACES)),
@@ -123,12 +130,12 @@ class StatGenPage {
 		);
 
 		const styleHint = VetoolsConfig.get("styleSwitcher", "style");
-		cpyRaces.forEach(ent => UtilsEntityRace.mutMigrateForVersion(ent, {styleHint}));
+		cpyRaces.forEach(ent => UtilsEntityRace.mutMigrateForVersion(ent, { styleHint }));
 
 		return cpyRaces;
 	}
 
-	async _pLoadBackgrounds () {
+	async _pLoadBackgrounds() {
 		const cpyBackgrounds = MiscUtil.copyFast(
 			[
 				...(await DataLoader.pCacheAndGetAllSite(UrlUtil.PG_BACKGROUNDS)),
@@ -142,12 +149,12 @@ class StatGenPage {
 		);
 
 		const styleHint = VetoolsConfig.get("styleSwitcher", "style");
-		cpyBackgrounds.forEach(ent => UtilsEntityBackground.mutMigrateForVersion(ent, {styleHint}));
+		cpyBackgrounds.forEach(ent => UtilsEntityBackground.mutMigrateForVersion(ent, { styleHint }));
 
 		return cpyBackgrounds;
 	}
 
-	async _pLoadFeats () {
+	async _pLoadFeats() {
 		return [
 			...(await DataLoader.pCacheAndGetAllSite(UrlUtil.PG_FEATS)),
 			...(await DataLoader.pCacheAndGetAllPrerelease(UrlUtil.PG_FEATS)),
@@ -159,20 +166,20 @@ class StatGenPage {
 			});
 	}
 
-	_setTabFromHash (tabName) {
+	_setTabFromHash(tabName) {
 		this._isIgnoreHashChanges = true;
 		const ixTab = this._statGenUi.MODES.indexOf(tabName);
 		this._statGenUi.ixActiveTab = ~ixTab ? ixTab : 0;
 		this._isIgnoreHashChanges = false;
 	}
 
-	_setHashFromTab () {
+	_setHashFromTab() {
 		this._isIgnoreHashChanges = true;
 		window.location.hash = this._statGenUi.MODES[this._statGenUi.ixActiveTab];
 		this._isIgnoreHashChanges = false;
 	}
 
-	_handleHashChange () {
+	_handleHashChange() {
 		if (this._isIgnoreHashChanges) return false;
 
 		const hash = (window.location.hash.slice(1) || "").trim().toLowerCase();
@@ -198,13 +205,13 @@ class StatGenPage {
 			this._statGenUi.setStateFrom(saved);
 			return true;
 		} catch (e) {
-			JqueryUtil.doToast({type: "danger", content: `Failed to load state from URL!`});
+			JqueryUtil.doToast({ type: "danger", content: `Failed to load state from URL!` });
 			setTimeout(() => { throw e; });
 			return false;
 		}
 	}
 
-	_doSilentHashChange (mode) {
+	_doSilentHashChange(mode) {
 		window.history.replaceState(
 			{},
 			document.title,

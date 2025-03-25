@@ -4860,11 +4860,11 @@ input[type=range] {
 .rd__b-inset {
     margin: 7px 15px;
     padding: 5px 10px;
-    box-shadow: 0 0 4px 0 #988e7c;
-    border: 1px solid #656565;
-    border-top: 2px solid #656565;
-    border-bottom: 2px solid #656565;
-    background-color: #e9ecda;
+    box-shadow: 0 0 4px 0 #9b9b9b;
+    border: 2px solid #242021;
+    border-top: 2px solid #242021;
+    border-bottom: 2px solid #242021;
+    background-color: #d1e7f1;
     text-indent: initial
 }
 
@@ -4873,11 +4873,11 @@ input[type=range] {
 }
 
 .rd__b-inset--readaloud {
-    box-shadow: 0 0 4px 0 #988e7c;
-    border: 1px solid #656565;
-    border-left: 2px solid #656565;
-    border-right: 2px solid #656565;
-    background-color: #eef0f3
+    box-shadow: 0 0 4px 0 #9b9b9b;
+    border: 2px solid #242021;
+    border-left: 2px solid #242021;
+    border-right: 2px solid #242021;
+    background-color: #ffffff00
 }
 
 .rd__b-inset--comic-speaker::after {
@@ -5205,11 +5205,11 @@ td>.rd__b:last-child {
 }
 
 .ve-night-mode .rd__b-inset {
-    background-color: #323431
+    background-color: #1c3a4e
 }
 
 .ve-night-mode .rd__b-inset--readaloud {
-    background-color: #28303a
+    background-color: #28303a00
 }
 
 .ve-night-mode .rd__th-skewer::after {
