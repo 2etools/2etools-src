@@ -633,7 +633,8 @@
             "parentSource": "HR",
             "parentName": "Historical Reference",
             "group": "setting-alt",
-            "published": "1991-04-01"
+            "published": "1991-04-01",
+            "publishedOrder": 1
         },
         {
             "name": "Charlemagne's Paladins Campaign Sourcebook",
@@ -652,7 +653,8 @@
             "parentSource": "HR",
             "parentName": "Historical Reference",
             "group": "setting-alt",
-            "published": "1992-10-01"
+            "published": "1992-10-01",
+            "publishedOrder": 3
         },
         {
             "name": "A Mighty Fortress Campaign Sourcebook",
@@ -661,7 +663,8 @@
             "parentSource": "HR",
             "parentName": "Historical Reference",
             "group": "setting-alt",
-            "published": "1992-11-01"
+            "published": "1992-11-01",
+            "publishedOrder": 4
         },
         {
             "name": "The Glory of Rome Campaign Sourcebook",
@@ -670,7 +673,8 @@
             "parentSource": "HR",
             "parentName": "Historical Reference",
             "group": "setting-alt",
-            "published": "1993-10-02"
+            "published": "1993-10-02",
+            "publishedOrder": 5
         },
         {
             "name": "Age of Heroes Campaign Sourcebook",
@@ -679,7 +683,8 @@
             "parentSource": "HR",
             "parentName": "Historical Reference",
             "group": "setting-alt",
-            "published": "1994-03-02"
+            "published": "1994-03-02",
+            "publishedOrder": 6
         },
         {
             "name": "The Crusades Campaign Sourcebook",
@@ -688,7 +693,8 @@
             "parentSource": "HR",
             "parentName": "Historical Reference",
             "group": "setting-alt",
-            "published": "1994-10-02"
+            "published": "1994-10-02",
+            "publishedOrder": 7
         },
         {
             "name": "Legends & Lore",
