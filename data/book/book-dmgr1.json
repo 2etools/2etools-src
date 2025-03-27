@@ -135,8 +135,6 @@
 							"name": "One Player, Many Characters",
 							"page": 6,
 							"entries": [
-								"",
-								"",
 								"Nowhere is it carved in granite that each player shall play but one character. If it suits the needs of the game, allow as many characters per player as the DM sees fit. Many players and DMs find it convenient to have multiple characters. If one hero is off on an unfinished quest, his backup character can go on another adventure in the same world.",
 								"If a player is competent enough to play each character as an individual (rather than elements of a group mind), he may even play more than one character within a single adventuring party. This is tricky, but extremely useful when the number of players is far less than the number of characters needed for good adventuring.",
 								"In such situations, both the players and the DM must keep in mind that even characters controlled by the same player will not freely share or give up personal belongings. The player is encouraged to roleplay the personna of each individual character. If a player insists on playing his characters \"out-of-character,\" remove one (or more) secondary characters from his control and make them into DMcontrolled NPCs for the remainder of the adventure."
@@ -193,7 +191,7 @@
 					"name": "General Delivery",
 					"page": 8,
 					"entries": [
-						"Developing the rut of a masterful delivery requires both patience and experience. As a OM's playing skills mature, he learns what fails and what works as he slowly acquires new tricks from other OMs and from his own players. One of the most difficult challenges facing the DM will be that of maintaining neutrality, walking that fine 1ine between being either the enemy or a benevolent guide. Each DM's ultilnate style, approach, and technique will be highly personal. More often than not a OM's style will be SOlnewhere to the left or right of perfect neutrality. It's a hard path to follow, yet there exist general rules that most successful OMs follow, whether they realize it or not.",
+						"Developing the rut of a masterful delivery requires both patience and experience. As a OM's playing skills mature, he learns what fails and what works as he slowly acquires new tricks from other OMs and from his own players. One of the most difficult challenges facing the DM will be that of maintaining neutrality, walking that fine line between being either the enemy or a benevolent guide. Each DM's ultilnate style, approach, and technique will be highly personal. More often than not a OM's style will be SOlnewhere to the left or right of perfect neutrality. It's a hard path to follow, yet there exist general rules that most successful OMs follow, whether they realize it or not.",
 						{
 							"type": "entries",
 							"name": "Don't Manipulate!",
@@ -304,7 +302,7 @@
 							"name": "Novel Style Play",
 							"page": 11,
 							"entries": [
-								"The DM has a great idea for an adventure...and unfortunately...he often already knows the outcome. He uses the player characters to write the scenes for his great American fantasy novel. To its credit, this style of play often has great plot lines and a gripping theme for its adventures. The characters' actions feel as if they are part ofa book. The danger with this style is that the DM may be tempted to manipulate the players in favor of a better story (or the DM's predetermined outcome). This style is usually most successful when the players are on the fringes of the story instead of the main focus. The DM can make the story line move as he desires, while the players are able to make their own choices, free of the DM's manipulation."
+								"The DM has a great idea for an adventure...and unfortunately...he often already knows the outcome. He uses the player characters to write the scenes for his great American fantasy novel. To its credit, this style of play often has great plot lines and a gripping theme for its adventures. The characters' actions feel as if they are part of a book. The danger with this style is that the DM may be tempted to manipulate the players in favor of a better story (or the DM's predetermined outcome). This style is usually most successful when the players are on the fringes of the story instead of the main focus. The DM can make the story line move as he desires, while the players are able to make their own choices, free of the DM's manipulation."
 							]
 						},
 						{
@@ -323,7 +321,7 @@
 							"entries": [
 								"This style of play involves the characters in a web of intrigue as the players side with one or more rival factions in a political struggle. These factions can be rival guilds, political candidates, barons, towns, even countries. Thegoals of these factions (whether good, evil, or neutral) are to increase their own spheres of power to the exclusion of all others. Political factions within a town, dungeon or country can be a reservoir of potential problems for a group to solve.",
 								"Everything the player characters do affects the politics of the area, maybe only locally or perhaps, worldwide. For example, the characters kill a sheep-eating dragon (or just convince it to change its diet), it might unbalance the tenuous relations of the sheepherders and the cattlemen. The townspeople may in return, eject one of the characters mayor, order the return of all the treasures found in the dragon's lair to the proper owners, or the dragon might have been the pet of a prominent wizard...",
-								"Wars are an aspect of political gaming, along with the diplomatic missions to avoid them. Politics give the DM a lot of latitude in the direction ofan adventure.",
+								"Wars are an aspect of political gaming, along with the diplomatic missions to avoid them. Politics give the DM a lot of latitude in the direction of an adventure.",
 								"To use this style successfully, great care must be taken to make the players influential in the political situations and not just pawns. There are often a mirage of subplots, and treachery is the ever present danger. Players and OMs are attracted to the mystery and intrigue created when characters enter the murky world of the quest for power. Players seldom know who they can trust or which side is the right side. When faced with an army, the choices are easy. When faced with diplomats and politicians grappling for more power, the choices are more difficult."
 							]
 						},
@@ -413,7 +411,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Be Prepared",
+					"name": "Be Prepared!",
 					"page": 13,
 					"entries": [
 						"Clearly, the more preparation time spent on planning the scenario, the more detailed it will become (up to a point). Each DM will have his own style of preparation. Some WIn prepare adventures far in advance while others frantically get ready just before game time. SoMe DMs write out their adventures in minute detail, much like commercial adventure modules, while others make simple listings of room contents and still others scrawl out crude maps and write cryptic notes to themselves to jog their memories about what they intended. Each method is correct so long as the DM has enough material to smoothly and enjoyably run his adventure session.",
@@ -440,7 +438,6 @@
 									"style": "list",
 									"columns": 0,
 									"page": 14,
-									"name": "",
 									"items": [
 										"Make \"at-a-glance\" reference sheets for the non-player characters and monsters to be encountered. Record their vital statistics in a manner that is easy to use. Include armor class, hit dice, hit points for each creature, the number of attacks and the damage caused, movement rate, alignment, THAC0, the source material from which the monster was taken (for more complete details), and whether it has any special attacks or defenses. For NPCs, also give a brief listing of personality, appearance, unportant possessions, and {@i speech} patterns.",
 										"Do the same thing for the player characters. It's very hard to secretly make a check against a character's Intelligence attribute if you have to ask for it",
@@ -459,7 +456,7 @@
 							"page": 14,
 							"entries": [
 								"In spite of the DM's skills at adventure creation or how efficiently he organizes his notes, he must KNOW the adventure scenario before the game session, otherwise his players will quickly tire of \"Wait a minute while I see what's supposed to be here.\" Read and review all relevant campaign materials ahead of time. Know where the players are and what they were doing last game, be familiar with their foes and up-to-date on the status of the world.",
-								"As stated previously, advance review is especially important with purchased or borrowed scenarios. When rulU1ing a game that is not of his own creation, the DM must spend enough time to become thoroughly familiar with its details. When a DM creates his own world and adventures, he usually has more background information in mind than he actually writes down. With a purchased or borrowed adventure, this is not the case. The information is present, but may be in such abundance that important details can be overlooked. Make notes in the margins (or on those little adhesive backed note papers) to highlight details or scenario alterations."
+								"As stated previously, advance review is especially important with purchased or borrowed scenarios. When running a game that is not of his own creation, the DM must spend enough time to become thoroughly familiar with its details. When a DM creates his own world and adventures, he usually has more background information in mind than he actually writes down. With a purchased or borrowed adventure, this is not the case. The information is present, but may be in such abundance that important details can be overlooked. Make notes in the margins (or on those little adhesive backed note papers) to highlight details or scenario alterations."
 							]
 						},
 						{
@@ -467,7 +464,7 @@
 							"name": "Establish a Background",
 							"page": 15,
 							"entries": [
-								"Creating background information can easily become as involved as plalU1ing the scenario itself (if not more so). Background information encompasses the cast of significant NPCs (with individual descriptions, personal histories, and motivations for major NPCs see Making NPCs Live), player handouts, stories and legends that may be heard from the local folk, surrounding natural and unnatural environment, political and social situations, and any other special features that are not intrinsic to the DM's chosen adventure scenario. Most of this information should center around the town or setting in which the adventure begins (beyond that which the DM set forth in his creation of his world).",
+								"Creating background information can easily become as involved as planning the scenario itself (if not more so). Background information encompasses the cast of significant NPCs (with individual descriptions, personal histories, and motivations for major NPCs see Making NPCs Live), player handouts, stories and legends that may be heard from the local folk, surrounding natural and unnatural environment, political and social situations, and any other special features that are not intrinsic to the DM's chosen adventure scenario. Most of this information should center around the town or setting in which the adventure begins (beyond that which the DM set forth in his creation of his world).",
 								"Detailing the personalities that the characters are likely to interact with, will prevent the necessity of impromptu creations during the game. The motivations and histories of NPCs can become the basis for future adventures."
 							]
 						},
@@ -485,7 +482,7 @@
 							"page": 15,
 							"entries": [
 								"Organized DMs usually keep a calendar of events for their world. They plot the times of recurring major events such as seasonal changes, full moons, eclipses, holy days, festivals, gatherings, and so forth. From here the DM can go on to plot the future of the campaign, primarily those things outside the control of the characters, like wars, invasions, troop movements, earthquakes, volcanoes, floods, and so on. Characters always run the danger of blundering into one or more of these events. Furthermore, some of the occurrences in a DM's adventure plots may be time dependent. These too should be recorded as they occur, including any movements by major NPCs.",
-								"Thus, it is critical that the DM update the world situation from time to time to determine if the characters lllight be in a position to be affected by or encounter a time dependent event. Note that troop movements are often wider in scope than the location of the actual army. Recruiting may be taking place in the pes town, foraging for supplies may bring troops into their area, or scouts may be spying in the area and assume that all armed personnel are the enemy and report the characters' position to their commander. Thus characters may innocently become involved in a war they want no part in, but where treasonable desertion may be punishable by death.",
+								"Thus, it is critical that the DM update the world situation from time to time to determine if the characters lllight be in a position to be affected by or encounter a time dependent event. Note that troop movements are often wider in scope than the location of the actual army. Recruiting may be taking place in the PCs town, foraging for supplies may bring troops into their area, or scouts may be spying in the area and assume that all armed personnel are the enemy and report the characters' position to their commander. Thus characters may innocently become involved in a war they want no part in, but where treasonable desertion may be punishable by death.",
 								"The world calendar must also be updated to include any changes caused by the characters (such as the previous example of the dragon). It is possible that a small group of adventurers could alter world events significantly. Most generals must depend on their couriers to coordinate attack and movements. Capture of a courier could have dire effects on the ensuing battle and alter the entire world situation. If the characters were to capture or prevent the capture of such a courier, they have significantly altered their world, not necessarily for the better."
 							]
 						},
@@ -616,11 +613,11 @@
 									"page": 19,
 									"items": [
 										"Keep the player group small, no more than six players and only six to eight characters.",
-										"For each turn or rOlU1d of combat, give the players a short time period to mutually discuss options. For combat rounds, the time should be very brief.",
+										"For each turn or round of combat, give the players a short time period to mutually discuss options. For combat rounds, the time should be very brief.",
 										"Discourage unnecessary chatter during a game. Establish a what you say is what you do atmosphere. If a player says it, his character says it.",
 										"Have a predetermined order in which players take their turns. During this time, keep discussion to a minimum.",
 										"Make sure all needed dice are on the table. If possible, encourage players to bring their own dice.",
-										"Be wi11ing to make rules up. No OM can know every rule. Rather than look up obscure rules, make an on the spot judgement call. Use common sense and take situational factors into account. Make sure penalties for failure are fairly balanced by the potential reward for success (and vice versa).",
+										"Be willing to make rules up. No OM can know every rule. Rather than look up obscure rules, make an on the spot judgement call. Use common sense and take situational factors into account. Make sure penalties for failure are fairly balanced by the potential reward for success (and vice versa).",
 										"Be willing to fudge a die roll or overlook an obscure rule if it would damage the pace of play."
 									]
 								}
@@ -698,7 +695,6 @@
 									"style": "list",
 									"columns": 0,
 									"page": 21,
-									"name": "",
 									"items": [
 										"A cardboard box or jewelry chest that can be used to represent a trapped treasure chest. The players can show, instead of tell, the DM how they will go about opening it.",
 										"Chess boards always seem to find their way into game adventures. Having a board and pieces available allows the adventurers to either play out a chess problem or puzzle out a room based on a chess board (without having to draw the board).",
@@ -709,7 +705,7 @@
 										"Use models of castles, buildings and even dungeons to depict and layout encounter areas. This can be fun even if miniatures are not used during play.",
 										"Use wood blocks or locking plastic bricks to build walls, rooms and even entire castles. Use playing pieces from board games to represent treasure, monsters or odd artifacts.",
 										"Make player handouts, including maps, scrolls, wanted posters and deeds.",
-										"Provide sample items from a typical adventurer's inventory; like mirrors, flasks, hammers, magic wands, spikes, and so on. Whi1e sitting at the table, the players can show how they might use them."
+										"Provide sample items from a typical adventurer's inventory; like mirrors, flasks, hammers, magic wands, spikes, and so on. While sitting at the table, the players can show how they might use them."
 									]
 								}
 							]
@@ -965,7 +961,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 27,
 							"entries": [
 								"{@i The statue you were fiddling around with animates and swings its fist at you.}"
@@ -974,7 +969,6 @@
 						"Described like this, the eerie magics that breathe life into an eight-foot-tall being of cold stone seem somehow mundane, as if it happened every day. Think how much more exciting it would be for the players if they were told:",
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 27,
 							"entries": [
 								"{@i As you attempt to remove the gems from the statue, the blood red ruby sinks inward as if it were a button being pressed. With a sharp snapping sound the statue's eyelids slide up to reveal jewels that glow like lanterns through green glass. Its cold stone flesh suddenly becomes almost hot, like a sunbaked rock and a hiss of vapor escapes its mouth. Its limbs move with unnatural speed as it swings a mallet-like fist at your character.}"
@@ -987,7 +981,6 @@
 							"style": "list",
 							"columns": 0,
 							"page": 28,
-							"name": "",
 							"items": [
 								"Stress the fantastic or the unusual in every encounter. Try to make each encounter unique in some way, even if the characters are encountering something they already know about.",
 								"Make the foes seem unbeatable. Their numbers or apparent abilities make the chance of failure and death an all-too-possible reality.",
@@ -1001,7 +994,7 @@
 							"name": "The Threat of Failure",
 							"page": 28,
 							"entries": [
-								"If life, death, or the fate of the universe hangs on the outcome of the player's actions, the threat of failure adds significant drama to any situation. When it's impossible for the characters to fail or if the pes are immortal (or nearly so), the drama is gone.",
+								"If life, death, or the fate of the universe hangs on the outcome of the player's actions, the threat of failure adds significant drama to any situation. When it's impossible for the characters to fail or if the PCs are immortal (or nearly so), the drama is gone.",
 								"In real life, risk taking is an addictive, but deadly form of entertainment enjoyed by a few, but appreciated by many. Every day, men and women jump out of airplanes and drop earthward, drive automobiles at breakneck speeds around the hairpin curves of racetracks, dangle precariously from wind whipped icy rocks at altitudes where oxygen is a rare commodity, and challenge lightning-quick martial artists in combat-all in the name of sport and enjoyment. Part of the excitement in these activities is the risk factorthrilling and chilling realization that a single misstep means injury or death.",
 								"Since most of us do not risk our lives for the sheer thrill of it, a significant attraction to role-play gaining is the ability to vicariously partake in risky activity-without any personal danger (other than the threat of writers cramp or danger of overeating).",
 								"Therefore, increase the drama of an encounter by putting the characters at risk of personal injury, death, or loss. Possibly have their failure inflict injury or death on someone else (remember the legend of William Tell and the apple he had to shoot off his son's head?). Make the players aware of the consequences of failure (at least the immediate ones). Of course, the rewards should be equal to the risk."
@@ -1017,7 +1010,6 @@
 						"There exists a tendency in adventure gaming for both the DM and the players to sacrifice the color and richness of roleplaying for the expedience of advancing the game. The DM forgets that he is a storyteller and becomes a rules judge. The players forget that they are characters in a drama and behave like board garners calling out combat results. Instead of talking descriptively about actions and their outcolnes, the participants refer to dice rolls and game statistics. An exchange might go:",
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 29,
 							"entries": [
 								"{@i DM: \"The orcs see you and advance 20 feet to attack. Somebody give me an initiative roll.\"}",
@@ -1035,7 +1027,6 @@
 						"The action comes across, but without any particular emphasis on the setting, the characters, or their foes. Wanda and Bruno are played as generic characters who encounter a band of equally generic monsters. One set of numerical statistics has met another and exchanged a round of randomly generated numbers. Now try the same encounter with a little color and role-play.",
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 29,
 							"entries": [
 								"{@i DM: \"A pair of heavily armored, low-browed humanoids round the comer. They see Wanda and Bruno and they don't look happy to see them here. The big one growls out something that sounds like orcish to Wanda.\"}",
@@ -1092,7 +1083,6 @@
 									"style": "list",
 									"columns": 0,
 									"page": 31,
-									"name": "",
 									"items": [
 										"The character collapses into unconsciousness only to awaken later, his wounds mysteriously healed. Usually, there is a price to pay for this later. This is one of those situations where the DM is allowed to meddle with a character, taking away something, giving him something, or changing him in some way. Often, whoever does the healing will demand a payment of service.",
 										"Instead of killing the character, his foe's last blow stuns him and he is taken captive.",
@@ -1107,7 +1097,6 @@
 									"style": "list",
 									"columns": 0,
 									"page": 31,
-									"name": "",
 									"items": [
 										"Reduce the amount of experience points gained from the adventure. Have the character survive, but be captured until he is rescued or escapes on his own, usually without any of the goodies he has been collecting during his adventures.",
 										"Have the character acquire a liability due to his mistake. Possibly his wounds leave him with a limp that reduces his speed, or internal injuries cause a drop in his constitution score. Maybe his depth perception is gone due to the loss of an eye, or he becomes one handed when his sword hand is lopped off.",
@@ -1125,11 +1114,11 @@
 					"page": 32,
 					"entries": [
 						"Imagine that during the course of the game, the player characters have just barely survived the climactic encounter with the Baron Skorditch, Wizardlord of the Kroolons, escaped with the cumbersome princess Natasia and discovered the lost secret of double-entry bookkeeping. All that stands between them and glory is 100 feet of corridor. Unfortunately, the DM had decided long ago (more likely at 3 A.M. the night before) that this corridor would be filled with deadly Snargon gas. Since none of the players thinks to check for traps, the DM secretly makes the die rolls for them.",
-						"All-too-suddenly, the hot dice-rolling that allowed the pes to so handily overcome their earlier obstacles goes sour. No one detects the gas. If the party continues, they will all die! And, of course, they continue...",
+						"All-too-suddenly, the hot dice-rolling that allowed the PCs to so handily overcome their earlier obstacles goes sour. No one detects the gas. If the party continues, they will all die! And, of course, they continue...",
 						"While the DM should not feel that he must protect his precious plot lines or make sure that the desired outcome of a story takes place, he does have a responsibility to his players. He owes them a good time.",
 						"Having the entire party wiped out as the denouement of an adventure is rarely considered a good time. In situations like these, it's OK for the DM to cheat.",
 						"Throughout these chapters on DMing, it will be stressed time and time again that the DM must remain impartial. He should not take the side of the monsters against the PCs or side with the player characters in their battle against their fiendish foes.",
-						"So now we tell the DM to cheat! What should the fair DM do in such a situation? Well, a hard-hearted DM would let the pes walk into his trap, blow their saving rolls, and die. He may also see his players suggest, that they have better things to do with their time from now on.",
+						"So now we tell the DM to cheat! What should the fair DM do in such a situation? Well, a hard-hearted DM would let the PCs walk into his trap, blow their saving rolls, and die. He may also see his players suggest, that they have better things to do with their time from now on.",
 						"At the other extreme, the DM could just say to himself \"there's no trap here\" and let the PCs proceed on their way, not realizing that the DM just compromised his design to let them live. This too is a mistake, because by doing so, the DM has assumed that the players are unable to deal with challenges.",
 						"A wiser solution would be to suggest to the players that something does not seem right in the corridor ahead or to let an NPC reveal the trap, even though it costs his life. The DM might even improvise an ambush attack that diverts the characters to another exit.",
 						"In a sense, whenever a situation arises in which the outcome of the entire adventure seems to hang on a single die roll, and that die roll fails, the DM is encouraged to fudge-to cheat in a constructive manner. Rather than see an entire gaming session, even an entire campaign wasted because of one stupid incident, the DM may wish to create alternative outcomes on the fly, ones that require roleplaying instead of \"roll-playing.\""
@@ -1178,7 +1167,6 @@
 						"Similarly, the DM may find himself in situations where the player's must make a skill test to discover something in his game. If they fail the test, the characters miss out on what the DM has in store for thein. Rather than rely on the dice, the DM simply allows the characters to fimd the door. Yet, if he does it right, the situation adds more to the game than the rolling of dice.",
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 35,
 							"entries": [
 								"{@i DM: \"The blood trail ends near the south wall.\"}",
@@ -1209,7 +1197,6 @@
 						"Magic use is another sensitive area. Stick to the rules for both sides of an encounter. As shown below, the players may not appreciate the DM's creativity:",
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 36,
 							"entries": [
 								"{@i DM: \"Waldemar glares at you from his perch atop the statue. He waves his hands in a dizzying pattern over his head and casts his spell. You are all encircled in sparkling lights and suddenly realize that Waldemar is your friend.\"}",
@@ -1223,7 +1210,6 @@
 						"Proficiency and attribute check rolls are another area of ambiguity. If the DM has gotten in the habit of overlooking them during play in favor of his storytelling, he may have a hard time asking the players to make them in life-or-death situations.",
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 36,
 							"entries": [
 								"{@i DM: \"Thuenor, if you're going to cross the rope bridge, make a Dexterity check for me.\"}",
@@ -1255,8 +1241,8 @@
 					"entries": [
 						"If a set of rules could be written to cover every situation possibly it would reseemble a law library with stack after stack of volumes documenting important scenarios and the \"correct\" interpretation for each occurrence. The DM would become, in fact, what some games refer to him as—a judge. Unfortunately, DMs might also need to charge professional fees for their time.",
 						"Instead, much is left to the judgment skills of the DM. If the rules don't exactly cover a situation, he and his players must resolve the dispute via a mutual agreement (or a definitive declaration by the DM). The hints and tips that have been presented so far have been provided to help the DM deal with any ambiguities or difficulties that develop between his campaign and the \"official\" game rules. So long as everyone is satisfied with the decision (or at least not intensely grumpy about it), the game can continue without incident. Given the vast creativity of the players and DMs in this world, 99.9% of the problems that arise can be solved in this mutually agreeable manner.",
-						"Still, that little 0.1% remains and, of course, these are the ones that cause DMs to go prematurely gray or question why they ever gave up their hobby of collecting 01d shoe boxes for all this. For some situations, no interpretation of the rules seems to apply. In fact some of them are directly related to interpreting the rules.",
-						"Worse yet, problems are going to arise that have nothing to do with the game, but involve the people playing the game. The DM will rapid1y find that people who enjoy playing the AD&D® game often have \"interesting\" personalities. Strong personalities seem to inevitably clash. So, along with running the game, the DM may find himself moderating \"discussions\" between players.",
+						"Still, that little 0.1% remains and, of course, these are the ones that cause DMs to go prematurely gray or question why they ever gave up their hobby of collecting old shoe boxes for all this. For some situations, no interpretation of the rules seems to apply. In fact some of them are directly related to interpreting the rules.",
+						"Worse yet, problems are going to arise that have nothing to do with the game, but involve the people playing the game. The DM will rapidly find that people who enjoy playing the AD&D® game often have \"interesting\" personalities. Strong personalities seem to inevitably clash. So, along with running the game, the DM may find himself moderating \"discussions\" between players.",
 						"With this in mind, a number of potential problems, sticky situations, unpleasant scenarios and dire dilemmas have been provided, along with possible ways for the DM to handle the situation and the people involved. Whenever possible, the solution \"kick the player out of the game\" has been avoided.",
 						{
 							"type": "entries",
@@ -1277,7 +1263,6 @@
 							"entries": [
 								{
 									"type": "insetReadaloud",
-									"name": "",
 									"page": 37,
 									"entries": [
 										"\"After Daniella slays all J 2 of the kobolds with her multi-barrel wand of megadeath the rest of the party finds about 100,000 gold pieces, 33 potions, about 243 gems, 900 pieces of jewelry, a sword that glows almost as brightly as Daring Dirk's frost brand, a suit of well-maintained power armor with markings of the old Imperium and two mounted projectile throwers on it, about four cases-full of short range rockets, a rod of lordly might, and a shadow box hanging on the wall that contains about 20 different figurines of wondrous power.\"",
@@ -1305,7 +1290,6 @@
 							"entries": [
 								{
 									"type": "insetReadaloud",
-									"name": "",
 									"page": 38,
 									"entries": [
 										"{@i \"Both ancient dragons rear back and spew fire at Clarissa the Mighty. That's 192 points of fiery megadeath.\"}",
@@ -1322,7 +1306,6 @@
 									"style": "list",
 									"columns": 0,
 									"page": 39,
-									"name": "",
 									"items": [
 										"An immortal hunter seeks prey, ignoring small-fry in favor of real challenges.",
 										"Create situations where a character's super weapons are turned into super slag.",
@@ -1342,7 +1325,6 @@
 							"entries": [
 								{
 									"type": "insetReadaloud",
-									"name": "",
 									"page": 39,
 									"entries": [
 										"{@i \"OK, before we get going, I want to let you know that I've given some thought to how Jenny's fighter used her {@item ring of fire resistance} last week and I've decided to modify the way we play invisibility from now on. When a character is invisible, anybody near him gets a chance to sense his presence, regardless of monster level.\"}",
@@ -1363,7 +1345,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 39,
 							"entries": [
 								"{@i \"I don't care if you think it should work that way, that's not the way the rules say it works. Look right there on page 112 of the Player's Manual.\"}"
@@ -1381,7 +1362,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 40,
 							"entries": [
 								"{@i \"Hey, can I have a little of your attention people? Kevin, finish painting the miniatures for the next game, OK? That was real good Mark, but I'm not certain I want to see how close you can put your roundhouse kick to my nose again tonight. Ron, Randy, if you need the stuff in those mere'magazines, you can get them out later. Uh, Lawrence, my wife was saving that gelatin dessert for a dinner party tomorrow. I'd prefer we used a miniature for the green slime instead.\"}"
@@ -1398,7 +1378,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 41,
 							"entries": [
 								"{@i \"Look, I'm running this game! If I say your stupid dwarf is dead, then he's dead.\"}",
@@ -1419,12 +1398,11 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 41,
 							"entries": [
 								"{@i \"You round the corner, following Lychor. Suddenly, you are surrounded by gnoll warriors. Your 'friend' Lychor is nowhere to be seen.\"}",
 								"{@i \"Grrrrr, that rat! We attack!\"}",
-								"{@i \"Before your group CaJ1 do anything, Thuenor is struck by a dart, one of Lychor's black ones. As he feels its poison course through his veins, the dwarf hears 'that's for selling my spell book to the gnomes, you little wart'.\"}"
+								"{@i \"Before your group can do anything, Thuenor is struck by a dart, one of Lychor's black ones. As he feels its poison course through his veins, the dwarf hears 'that's for selling my spell book to the gnomes, you little wart'.\"}"
 							]
 						},
 						"Playing adventurers \"in character\" often leads to situations where the motivations and personality of one character lead him into direct conflict with another. If so, the DM may find himself Inoderating a tit for tat encounter which readily escalates to an all-out war between the characters (and quite possibly their players, too).",
@@ -1438,7 +1416,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 41,
 							"entries": [
 								"{@i \"Cindy, will you tell that piece of shit over there that if his retarded dwarf ever tries that stunt again, he's fuckin' toast.\"}",
@@ -1455,7 +1432,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 41,
 							"entries": [
 								"{@i \"The orcs attack the party while the fire giant goes after Sherimar.\"}",
@@ -1476,14 +1452,12 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 43,
 							"entries": [
 								"{@i \"OK, so you trash the high priest and his pals. <Well{@sup [sic]}, just as the old guy is dying from Thuenor's sword thrust, he pulls on a hidden cord. The loud gong summons every priest in the castle, and they all appear in were-beast form. Meanwhile, an 18 inch thick steel plate blocks the exit.\"}",
 								"{@i \"I think she's mad at us, Frank, what do think?\"}"
 							]
 						},
-						"",
 						"This is an extension {@i en masse} of DM pettiness. Maybe the players ganged up on the DM, foiling his best plans or backing up a fellow player's disagreement with a judgement call. So the DM retaliates. Neutrality is cast aside and the game becomes a shooting match, one that the DM can always win.",
 						"When someone realizes what's going on, either DM or player, they should speak up and stop the madness! Take a break, NOW! During the break, re-establish a policy of fair and informed decision making and mutually discussed disagreements. Consider replaying events that occurred after things got out of hand, allowing the DM some leeway to account for player knowledge of the situation."
 					]
@@ -1495,7 +1469,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 43,
 							"entries": [
 								"{@i \"The martial artist leaps up at the three fighters, does a spinning side kick and knocks two of you down. B'rolfs hit points are reduced by twelve and Eyegor's by nine. He then...\"}",
@@ -1517,7 +1490,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 43,
 							"entries": [
 								"{@i Four times during the game session, Rudy has informed the DM that the rules either don't reflect reality or that if the DM knew what he knew on the subject, the DM would obviously make a different decision. Each time, the subject was different and the player felt obliged to clarify the subject matter for all involved.}"
@@ -1536,10 +1508,9 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 44,
 							"entries": [
-								"{@i \"Allright, Grimbor hits again and does 12 points of damage. You want to see my roll? Um, I think I knocked the dice over just after 1 rolled them...uh, yeah that's the ticket.\"}"
+								"{@i \"Allright, Grimbor hits again and does 12 points of damage. You want to see my roll? Um, I think I knocked the dice over just after I rolled them...uh, yeah that's the ticket.\"}"
 							]
 						},
 						"Somehow, for some reason, some players think that it's OK to make up their own dice results. Yes, it improves the game outcome for their character, but is a character who always wins, who always does what he needs to do as wen as it could be done, as fun to playas one who occasionally messes up? What about the drama involved in missing a die roll and then knowing that the next one has to be made or it's all over, and the glorious relief and excitement when that next roll succeeds. Character creation is often where the cheating begins. Instead of rolling dice for character stats (or using some other method generally approved of by the group), the player makes sure that his favorite character attributes and money or background rolls are loaded with the best possible results.",
@@ -1554,7 +1525,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 44,
 							"entries": [
 								"{@i The dice fall-sixteen, eighteen, and twenty-one, uh oh. The DM looks at his notes and back to the dice again. If he uses those results, half the party is dead. Still, they are the results of a fair dice roll. So close, yet so far. Still, instead of killing the characters outright, he could throw something else at them, something equally deadly, but which will give them a chance to survive—if they're clever.}"
@@ -1576,7 +1546,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 45,
 							"entries": [
 								"{@i Randy: \"Herb, wait until it's your turn.\"}",
@@ -1597,7 +1566,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 45,
 							"entries": [
 								"{@i \"Yikes, it's eight o'clock! I was supposed to be home at 7:30! I'm in for it now. See you next week, guys.\"}",
@@ -1666,7 +1634,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 46,
 							"entries": [
 								"{@i \"Sandy, have Clarissa the mighty open the left side of the box first.\"}",
@@ -1688,7 +1655,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 46,
 							"entries": [
 								"{@i \"My Dwarf fighter, Thuenor, throws his mattock so it lands on top of the wall, steps back, and. with a short run, leaps up to grab the top of the wall. He gets his weapon, dives into the water, and swims to the far shore.\"}",
@@ -1709,7 +1675,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 47,
 							"entries": [
 								"{@i \"OK, Gary, the three fighters Hank around to the left, Sherimar the thief works her way across the wall above the door, and the wizard, Lychor, walks up the middle as if he suspected nothing.\"}",
@@ -1736,7 +1701,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 47,
 							"entries": [
 								"{@i \"Bruno says 'Go eat sjelkunga berries, scroggly face' to the old man.\"}",
@@ -1757,7 +1721,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 48,
 							"entries": [
 								"{@i Dear John: Think back When did we last spend a Saturday together? Can't remember? Well, all your Saturdays are free from now on. My lawyer will call next week. With regrets, your soon-to-be-ex-wife, Sharon.}"
@@ -1773,7 +1736,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 48,
 							"entries": [
 								"{@i \"Shouldn't they have all been here by now?...If we don't start soon, there won't be enough time to do anything...I doubt if Clarissa the mighty and Whandar can take on this quest by themselves tonight...I've tried calling, but nobody's home... I'm certain they knew there was a game tonight. \"}"
@@ -1793,7 +1755,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 49,
 							"entries": [
 								"{@i \"Table number three, I'll take the statements of intent from your characters now. Please be quick, I'd like to get in at least three rounds of com bat tonight. And now for the RPGA scoring...\"}"
@@ -1810,7 +1771,6 @@
 					"entries": [
 						{
 							"type": "insetReadaloud",
-							"name": "",
 							"page": 49,
 							"entries": [
 								"{@i The DM sat staring at his game notes. Before him lay a sheet of note paper, blank except for an aimless doodle. For nearly an hour, no inspiration had come for Saturday's game, making tonight a dismal repeat of last night. In fact even running the game seemed like a terminal chore.}"
@@ -1890,7 +1850,6 @@
 							"style": "list",
 							"columns": 0,
 							"page": 54,
-							"name": "",
 							"items": [
 								"World Building: Its geology & ecology",
 								"Filling with Fauna: Its beasts",
@@ -1919,7 +1878,6 @@
 							"style": "list",
 							"columns": 0,
 							"page": 54,
-							"name": "",
 							"items": [
 								"What is the dominant sentient race?",
 								"What other races dwell in the world?",
@@ -2199,7 +2157,7 @@
 									"name": "Barbarians",
 									"page": 62,
 									"entries": [
-										"These primitive people often dwell at the edge of the known world and manage to survive in a most primitive state. Occasionally, they may develop an extensive culture. Barbarians rarely have a written language more complex than pictographs and do not bui1d anything larger than their roughly fortified villages. They hunt, fish, and gather their food. More advanced barbarians may farm or raise livestock. Barbarians have limited metal technology, but readily work stone, wood and bone for their tools and weapons.",
+										"These primitive people often dwell at the edge of the known world and manage to survive in a most primitive state. Occasionally, they may develop an extensive culture. Barbarians rarely have a written language more complex than pictographs and do not build anything larger than their roughly fortified villages. They hunt, fish, and gather their food. More advanced barbarians may farm or raise livestock. Barbarians have limited metal technology, but readily work stone, wood and bone for their tools and weapons.",
 										"They are ruled by the best warriors in the tribe or clan and their religious leaders are witch doctors and shamans. Otherwise, they hate and even fear the trappings of magic use. Ancestor worship and beast totem cults are the religion of the superstitious barbarians. Religious structures are often mounds or rough stone temples (like Stonehenge). The artifacts of \"higher\" culture levels are often feared. Sample barbarian cultures may include cavemen, tribesmen, lizard men, goblins, ores, ogres, and hill giants."
 									]
 								},
@@ -2208,7 +2166,7 @@
 									"name": "Nomads",
 									"page": 63,
 									"entries": [
-										"A nomadic culture depends on its ability to move from place to place, as seasons and resources dictate. They depend heavily on mobile livestock, hunting, and gathering. They build no pennanent structures (although portable ones are common) and agriculture is just not practica1. They are often mounted or use beasts to transport their belongings.",
+										"A nomadic culture depends on its ability to move from place to place, as seasons and resources dictate. They depend heavily on mobile livestock, hunting, and gathering. They build no pennanent structures (although portable ones are common) and agriculture is just not practical. They are often mounted or use beasts to transport their belongings.",
 										"Metal working nomads are rare, but warrior bands are plentiful. Nomads are often ruled by charismatic chieftains, who are both mighty warriors and clever leaders. Nomads are often strongly, even fanatically religious, and dote upon the teachings of their shamans. Sample nomad cultures include dervishes, gypsies, gnolls, and locathah."
 									]
 								},
@@ -2285,7 +2243,7 @@
 					"name": "Behold the Works of Man",
 					"page": 66,
 					"entries": [
-						"Until now, we'1've discussed developing the personality of cultures and placing them on the map. Now we let them build. Begin by deciding which population centers will become major cities and which will be minor. On the regional maps, designate the farmlands around each population center. Remember that much of the area around cities towns and villages must be open for cultivation. Food must be grown, otherwise the people starve.",
+						"Until now, we've discussed developing the personality of cultures and placing them on the map. Now we let them build. Begin by deciding which population centers will become major cities and which will be minor. On the regional maps, designate the farmlands around each population center. Remember that much of the area around cities towns and villages must be open for cultivation. Food must be grown, otherwise the people starve.",
 						"Draw roads and trails to connect population centers. Indicate the location of bridges or fords across rivers. Remember that roads will rarely cross mountains, except through passes. Locate fortresses that are separate from population centers. Forts and castles often guard passes, oases, and bridges. It was common practice to make castles more defensible by placing them on rocky outcroppings over rivers.",
 						"Place a few isolated temples and monasteries. Don't worry about which gods they will be dedicated to, but do remember that they need farmlands too. Also include the abandoned guard posts and isolated temples of any lost civilizations.",
 						"Does the world have any features like Hadrian's wall or the great wall of China? What about necropolises (cities of the dead)? These were often placed near major cities, but could easily be separate cities, far from civilization. Finally, place a few inns and roadhouses along the highways, especially where traffic between major population areas might be heavy."
@@ -2314,7 +2272,7 @@
 							"name": "Countries",
 							"page": 67,
 							"entries": [
-								"Just as there are numerous peoples in the DM's world, there will be numerous political organizations called countries. Most of these will be small, sometimes nothing more than relatively large walled cities, and usual1y represent the reach of a single ruler's influence. Some will be larger, either as the territory of a large cultural group, or the unified efforts of one or more of those smaller countries.",
+								"Just as there are numerous peoples in the DM's world, there will be numerous political organizations called countries. Most of these will be small, sometimes nothing more than relatively large walled cities, and usually represent the reach of a single ruler's influence. Some will be larger, either as the territory of a large cultural group, or the unified efforts of one or more of those smaller countries.",
 								{
 									"type": "entries",
 									"name": "Where Do Countries Come From?",
@@ -2323,7 +2281,7 @@
 										"Countries form when leaders within a people declare their control over a geographic region to be supreme and exclusive of all other influence. Establishing the boundaries of that region is another matter altogether.",
 										"Any area that is physically isolated win tend to be politically independent (at least initially). Its boundaries will extend as far as the geographic features that cut it off from the rest of the world. High mountain valleys, islands, and peninsulas are potential examples of this. In a similar manner, the lands on opposite sides of a vast desert will usually not belong to the same country, since it is difficult for a central government to exert its authority across so large an expanse of desolate terrain.",
 										"Rivers, more than any other geographical feature, often serve as political boundaries. With rivers, there is no doubt where one country ends and another begins. Islands in the middle of rivers are a problem though. High mountain ranges can serve as boundaries also, but deciding on actual borders can be somewhat ambiguous and easily disputed.",
-										"As a side note, the higher the culture level of a people, the greater the chance that they will extend their reach to place surrounding peoples and lands lU1der their control. Also, remember that in more primitive cultures (including most fantasy worlds like the FORGOTTEN REALMS® world), there are few hard political boundaries. Most states will have only a vague border which can be easily disputed.",
+										"As a side note, the higher the culture level of a people, the greater the chance that they will extend their reach to place surrounding peoples and lands under their control. Also, remember that in more primitive cultures (including most fantasy worlds like the FORGOTTEN REALMS® world), there are few hard political boundaries. Most states will have only a vague border which can be easily disputed.",
 										"Begin drawing in country borders on the world and regional maps. Leave a few borders indefinite and disputed, keeping in mind that the countries on either side of those borders will probably be at odds about it."
 									]
 								},
@@ -2361,7 +2319,6 @@
 									"style": "list",
 									"columns": 0,
 									"page": 68,
-									"name": "",
 									"items": [
 										"{@b Autocracy:} Government which rests in self-derived, absolute power, typified by a hereditary king or emperor.",
 										"{@b Bureaucracy:} Government by department, ruled by the heads of those departments and conducted through layers and layers of lesser administrators.",
@@ -2442,7 +2399,6 @@
 									"style": "list",
 									"columns": 0,
 									"page": 69,
-									"name": "",
 									"items": [
 										"What is the role of good and evil in the world? Which moral alignment is currently more powerful (has the largest or most influential following)?",
 										"Who are the gods and what influence do they have?",
@@ -2604,8 +2560,8 @@
 			"name": "Maps and Map Making",
 			"entries": [
 				"Maps are the bones of a fantasy universe. They define the physical situations in which the adventures will take place. They are a concrete, visual representation of the DM's imagined world. Everything else is eventually built upon them. For this reason, the DM, whether novice or experienced, must give them the attention and care in creation that they are due.",
-				"A beginning DM typically prepares a large map of his world showing the major geographical and political features (see the previous chapter on world design), maps out a small village or town for adventurers to dwell in, then creates one or more detailed adventures and the maps that go with them. These maps are \"secret,\" never to be seen by players, since they contain infomation that the pes could not know. Unfortunately, many of these maps should remain secret forever, hidden away and never used.",
-				"Too often, during the process of world and adventure creation, a DM will hurriedly slap together a wilderness that bears no relationship to real geography, a cavern complex that more closely resembles a rabbit warren, or a castle that totally ignores plausible (or even magical!) construction methods, and then cannot understand why his players are unable to suspend their \"disbelief\" when he runs his adventure. Even more tragic is the DM who spends COlll1tless hours on his maps, yet still accomplishes the same, unbelievable end.",
+				"A beginning DM typically prepares a large map of his world showing the major geographical and political features (see the previous chapter on world design), maps out a small village or town for adventurers to dwell in, then creates one or more detailed adventures and the maps that go with them. These maps are \"secret,\" never to be seen by players, since they contain infomation that the PCs could not know. Unfortunately, many of these maps should remain secret forever, hidden away and never used.",
+				"Too often, during the process of world and adventure creation, a DM will hurriedly slap together a wilderness that bears no relationship to real geography, a cavern complex that more closely resembles a rabbit warren, or a castle that totally ignores plausible (or even magical!) construction methods, and then cannot understand why his players are unable to suspend their \"disbelief\" when he runs his adventure. Even more tragic is the DM who spends countless hours on his maps, yet still accomplishes the same, unbelievable end.",
 				"Map making is important and the time invested in researching and making clear, realistic, even visually exciting maps is time well spent Making maps that look good and play well does take time. Yet making good maps need not dominate the DM's design time. It is possible to make good maps, even great maps, without having to become a professional cartographer or needing to invest half one's lifetime in their creation.",
 				"What follows is an accelerated course in adventure game map making with a particular focus on making maps for AD&O® games. The goals of this course are to teach beginning DMs how to make fun, visually interesting, but most of all believable maps and to give experienced DMs some pointers to bring new life into their campaign worlds through clever, realistic mapping techniques.",
 				{
@@ -2630,7 +2586,6 @@
 							"style": "list",
 							"columns": 0,
 							"page": 75,
-							"name": "",
 							"items": [
 								"A pad of graph paper (4, 6, 8, or 10 squares to the inch).",
 								"A pad of tracing paper Hex grids (paper divided into six-sided hexagons-a variety of sizes exist)",
@@ -2729,14 +2684,7 @@
 							"name": "Encounter Maps",
 							"page": 77,
 							"entries": [
-								"",
-								"",
-								"",
-								"",
-								"",
-								"",
-								"",
-								""
+								"These maps depict individual encounter areas. The scale is very small, usually not more than five to ten feet per square or hex (or about 40 feet to the linear inch). Examples of encounter maps include dungeons, monster lairs, ruins, towns, taverns, towers, castles, and caverns. Most adventures that the DM creates will require one or more encounter maps."
 							]
 						},
 						{
@@ -2818,7 +2766,7 @@
 						"The features of the map are drawn as if seen from directly overhead, often in the form of a floor plan. Height and depth are indicated by topography lines or notes written on the map (such as \"The floor slopes down here towards the north at a 30 degree angel.\") Mapping symbols are used to show map features. Special notes for the different types of maps are given below.",
 						{
 							"type": "entries",
-							"name": "Wor1d Maps",
+							"name": "World Maps",
 							"page": 79,
 							"entries": [
 								"World mapping is closely tied to the process of world creation described in an earlier chapter. Much of it will actually be done as the DM makes notes about his world and its contents. This is often best done on something other than hexagon paper. If necessary, a hex grid can be superimposed later (see Tips & Tricks section later in the chapter).",
@@ -2841,7 +2789,7 @@
 							"entries": [
 								"More often than not, this map will be an interior space—the floorplan of a building, cavern, or dungeon. It also may represent the layout of a village, ruin, or a monster encampment. It can also be used for ships, forest clearings, or ambush sites. As the DM draws the plan he needs, special consideration must be given to how it might look and function if it were real. If the encounter takes place in a \"made\" area then it was economically feasible for someone to have built it.",
 								"The DM needs to ask himself if a building based upon his floor plan could stand by itself. What supports the r.oof?{@sup [sic]} Are the walls thick enough to actually be made out of stone? How are any secret passageways or doors hidden in the construction? Is there any provision for heat, light, or sanitation?",
-								"Next he needs to consider the game aspects of the map and the ways it can enhance play. Does it guide or restrict movement in a desirable manner? Does it provide opportunities for strategic maneuvering by the pes and their foes? Is it an interesting backdrop for the action? If the answer is \"no\" to any of the above, the DM should get out his eraser and make modifications as needed."
+								"Next he needs to consider the game aspects of the map and the ways it can enhance play. Does it guide or restrict movement in a desirable manner? Does it provide opportunities for strategic maneuvering by the PCs and their foes? Is it an interesting backdrop for the action? If the answer is \"no\" to any of the above, the DM should get out his eraser and make modifications as needed."
 							]
 						}
 					]
@@ -2893,28 +2841,40 @@
 							"entries": [
 								"When a multiple level area is designed, the DM may wish to mimic minor changes in altitude by cutting the grid (we recommend using a tracing or a photocopy) into the appropriate pieces and shifting the individual pieces up or down slightly to show the level changes. Two techniques, one using tracing paper and the other photocopies, are described in step-by-step sequence below:",
 								{
-									"type": "list",
-									"style": "list-decimal",
-									"columns": 0,
-									"page": 81,
+									"type": "entries",
 									"name": "Technique 1: Tracing Method",
-									"items": [
-										"Draw the main floor grid on tracing paper, except for the areas to be raised or lowered.",
-										"Look at the grid through the tracing paper and find the grid area to be elevated. Pull the tracing paper down until the grid area appears to be at the correct (scaled) height above the main floor.",
-										"Draw this grid area in its correct location on the tracing paper.",
-										"For areas below the main floor of the level, move the tracing paper up until the correct grid area is below the main floor. Trace this grid onto your paper in its proper location."
+									"page": 81,
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-decimal",
+											"columns": 0,
+											"page": 81,
+											"items": [
+												"Draw the main floor grid on tracing paper, except for the areas to be raised or lowered.",
+												"Look at the grid through the tracing paper and find the grid area to be elevated. Pull the tracing paper down until the grid area appears to be at the correct (scaled) height above the main floor.",
+												"Draw this grid area in its correct location on the tracing paper.",
+												"For areas below the main floor of the level, move the tracing paper up until the correct grid area is below the main floor. Trace this grid onto your paper in its proper location."
+											]
+										}
 									]
 								},
 								{
-									"type": "list",
-									"style": "list-decimal",
-									"columns": 0,
-									"page": 81,
+									"type": "entries",
 									"name": "Technique 2: Photocopy Method",
-									"items": [
-										"From a photocopy of the grid being used, cut out all of the grid areas that need not be raised or lowered.",
-										"Glue or tape the rest of the grid to another piece of paper. This protects the holes cut in the grid, and allows one to draw or paste symbols over them.",
-										"Put the small cut-out grids on the sheet created in step 2. Judge how high or low they need to be to indicate the proper elevation. The horizontal lines of the grid should help to make this calculation. For example, if each square equals 10 feet, and a platform is supposed to be 20 feet tall, simply measure the front of a square along the cut line and place the platform grid twice that distance above the cut line."
+									"page": 81,
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-decimal",
+											"columns": 0,
+											"page": 81,
+											"items": [
+												"From a photocopy of the grid being used, cut out all of the grid areas that need not be raised or lowered.",
+												"Glue or tape the rest of the grid to another piece of paper. This protects the holes cut in the grid, and allows one to draw or paste symbols over them.",
+												"Put the small cut-out grids on the sheet created in step 2. Judge how high or low they need to be to indicate the proper elevation. The horizontal lines of the grid should help to make this calculation. For example, if each square equals 10 feet, and a platform is supposed to be 20 feet tall, simply measure the front of a square along the cut line and place the platform grid twice that distance above the cut line."
+											]
+										}
 									]
 								}
 							]
@@ -3066,7 +3026,6 @@
 					"style": "list",
 					"columns": 0,
 					"page": 84,
-					"name": "",
 					"items": [
 						"They play like good fiction reads, but avoid following a predetermined path.",
 						"They draw the PCs into a well-woven web of activities, often personally involving the characters in the outcome of the adventure.",
@@ -3093,7 +3052,7 @@
 							"entries": [
 								"These are the bright-eyed, enthusiastic players that most of us were when we first played the game. Many players retain an interest in this style of play for as long as they game.",
 								"To Adventurers, a good game is full of physical challenges that their character abilities allow them to overcome. Combat is their top choice for action and they rate their characters' quality by the amount of sheer mayhem and carnage they can cause.",
-								"The needs of the Adventurer are easily met. Monsters to fight and booty to haul can satisfy them for weeks on end. The lure of treasure and potentia1 mayhem are all the DM needs as hooks to draw them into his adventures. To keep the game fresh for these hack-and-slash heroes, make the monsters use smarter combat tactics or try variations on existing monsters like adding poison or magic to those creatures the PCs are used to using as sword fodder."
+								"The needs of the Adventurer are easily met. Monsters to fight and booty to haul can satisfy them for weeks on end. The lure of treasure and potential mayhem are all the DM needs as hooks to draw them into his adventures. To keep the game fresh for these hack-and-slash heroes, make the monsters use smarter combat tactics or try variations on existing monsters like adding poison or magic to those creatures the PCs are used to using as sword fodder."
 							]
 						},
 						{
@@ -3123,7 +3082,7 @@
 					"name": "The Importance of Story",
 					"page": 85,
 					"entries": [
-						"First, it must be stressed that it is entirely possible to p1ay adventures that have been designed without an underlying theme or unifying scenario, and that have no plot, subplots, or their complications. Players (particularly Adventurer types) can be satisfied without them...for a while. Yet it is not so difficult to create adventures that do contain these elements.",
+						"First, it must be stressed that it is entirely possible to play adventures that have been designed without an underlying theme or unifying scenario, and that have no plot, subplots, or their complications. Players (particularly Adventurer types) can be satisfied without them...for a while. Yet it is not so difficult to create adventures that do contain these elements.",
 						"If the DM can bring himself to think of his campaign as a story with an unwritten ending, he has made the first logical step in successful campaign design. Players, regardless of type, want to do more than just slay endless streams of monsters or loot bottomless treasure hoards. They want to be heroes who perform legendary deeds like the characters in fantasy fiction or film. To do this, they need a vehicle where their characters can grow strong and become famous. The vehicle for this is the game campaign.",
 						{
 							"type": "entries",
@@ -3141,7 +3100,7 @@
 							"name": "The Tale is Told",
 							"page": 86,
 							"entries": [
-								"The structure of each adventure should develop like a story. It begins with a hook, something that piques the characters' curiosity, focuses their attention on a problem and then grabs and runs with their imaginations. The story develops as the pes hunt for details that reveal the plot and important subplots to them. Tension increases as plot complications occur until the PCs arrive at a predetermined climax and the players realize that success or failure depends solely upon their actions in this encounter. The climax resolves one or more of the maj or conflicts presented by the plot, often a showdown between the characters and their major opponent. This is where successful characters get to be heroes and the players have to keep wiping the sweat off their palms. After the climactic encounter, the story closes with a denouement, a short period of retrospection in which the victors can count their spoils and review their deeds, while the vanquished shake their heads and count their losses. It should be a pleasant, relaxing period of relative safety (for both the PCs and their players) before conflict arises anew and tension builds once again."
+								"The structure of each adventure should develop like a story. It begins with a hook, something that piques the characters' curiosity, focuses their attention on a problem and then grabs and runs with their imaginations. The story develops as the PCs hunt for details that reveal the plot and important subplots to them. Tension increases as plot complications occur until the PCs arrive at a predetermined climax and the players realize that success or failure depends solely upon their actions in this encounter. The climax resolves one or more of the maj or conflicts presented by the plot, often a showdown between the characters and their major opponent. This is where successful characters get to be heroes and the players have to keep wiping the sweat off their palms. After the climactic encounter, the story closes with a denouement, a short period of retrospection in which the victors can count their spoils and review their deeds, while the vanquished shake their heads and count their losses. It should be a pleasant, relaxing period of relative safety (for both the PCs and their players) before conflict arises anew and tension builds once again."
 							]
 						},
 						{
@@ -3159,7 +3118,6 @@
 									"style": "list-hang",
 									"columns": 0,
 									"page": 87,
-									"name": "",
 									"items": [
 										"{@b {@i Episode one:}} The PCs scout the area. They encounter several hideous monsters in the area.",
 										"{@b {@i Episode two:}} The monsters organize a return ambush in an empty village.",
@@ -3175,7 +3133,6 @@
 									"style": "list-hang",
 									"columns": 0,
 									"page": 87,
-									"name": "",
 									"items": [
 										"{@b {@i Episode two:}} At night, the PCs are challenged by angry villagers who do riot want them here. Many villagers are strange-looking, even ugly, but in the firelight its difficult to say why. The encounter may end in a fight.",
 										"{@b {@i Episode three:}} A frightened villager seeks shelter in the PCs camp, but disappears during the night.",
@@ -3212,7 +3169,6 @@
 									"style": "list",
 									"columns": 0,
 									"page": 88,
-									"name": "",
 									"items": [
 										"All is not What it Seems: What the PCs are told about something or someone is apparently not true. Who is lying and who is telling the truth?",
 										"The Set Up: The PCs are set up to do something that no one else wants to and then find out why.",
@@ -3265,7 +3221,7 @@
 								"Like fantasy literature itself, the elements of the story need not be limited strictly to blood and thunder action, obscure puzzle solving, or subtle role-playing. Fantasy stories often borrow elements from murder mysteries, tales of horror, and humorous stories. The DM may wish to add variety to his adventures by changing the tone of the game.",
 								"Suspense is created when the players know that something is happening or going to happen, but do not know what or when. It involves playing up the fear of the unknown. Whatever is going to happen will directly affect the PCs. The setting can enhance the feeling of suspense, playing upon the uncertainty. Darkness or deep shadows, unfamiliarity with the surroundings, and separation from friends all build suspense.",
 								"Suspense moves into fear and horror when the unknown becomes a threat to life and limb. Unknown quantities develop a feeling of paranoia in the players. Don't describe monsters right out of the {@i Monstrous Compendiums} or even give out their names. Describe only what the players see, hear, or smell. Let them first experience monsters by their hideous deeds. Keep the foe a secret as long as possible and build the tension by dealing horrible death to henchmen and other NPCs.",
-								"Humor in an adventure can balance horror and suspense by breaking the grip of tension on the players. Humor is not silliness, such as using puns for NPC names or making horrifying monsters into pink and purple polka dot absurdities that blow bubbles (although silliness does have its place in gaming). Humor is essential1y a way to make light of tragedy. It depends heavily on the DM's playing style and really can't be anticipated.",
+								"Humor in an adventure can balance horror and suspense by breaking the grip of tension on the players. Humor is not silliness, such as using puns for NPC names or making horrifying monsters into pink and purple polka dot absurdities that blow bubbles (although silliness does have its place in gaming). Humor is essentially a way to make light of tragedy. It depends heavily on the DM's playing style and really can't be anticipated.",
 								"Humor should arise from the situation. A character is shrunken until he becomes trapped underneath his helmet. A terrible thing to happen, unless one happens to find him pounding angrily on the inside the helmet and running from the head I ice that didn't shrink with him.",
 								"Often it derives from the slapstick outcome of the solution to a problem, such as placing glass marbles on a stair to foil pursuit and listening to the enemies shouts as they tumble backwards into a pile of noisome goo.",
 								"NPCs are a wonderful source of comic relief as their singlemindedness, slowness of wit, or peculiar habits take their toll on the characters' patience. A tubby halfling hireling whose goal in life is to sample the world's cuisine may never provide much help in combat but he's worth his weight in gold the first time he staunchly defends his larder with a sturdy sausage."
@@ -3333,7 +3289,7 @@
 			"page": 92,
 			"name": "Making NPCs Live",
 			"entries": [
-				"No game would be complete (or even playable, real1y) without nonplayer characters (NPCs). Simply put, NPCs are any characters not directly controlled by the players. They are encountered during the course of an adventure and may range from shedu to shop keepers, trolls to trollops, and korred to kings.",
+				"No game would be complete (or even playable, really) without nonplayer characters (NPCs). Simply put, NPCs are any characters not directly controlled by the players. They are encountered during the course of an adventure and may range from shedu to shop keepers, trolls to trollops, and korred to kings.",
 				"NPCs are fun; fun to watch, fun to play. More than any other facet of design or play, they affect the game's sheer entertainment value. If played enthusiastically, NPCs can bring vibrant life to a game.",
 				{
 					"type": "entries",
@@ -3530,7 +3486,7 @@
 							"name": "Monsters",
 							"page": 98,
 							"entries": [
-								"All too often, a DM will place monsters in his adventures in order to give the characters something to dice into hamburger (or vice versa). Horrible monsters reveal their inner personalities and motivations by instantly attacking the pes. If the DM does give a personality to a monster, that being will obviously be a friend or ally to the PCs. The players quickly learn that if something doesn't talk, kill it.",
+								"All too often, a DM will place monsters in his adventures in order to give the characters something to dice into hamburger (or vice versa). Horrible monsters reveal their inner personalities and motivations by instantly attacking the PCs. If the DM does give a personality to a monster, that being will obviously be a friend or ally to the PCs. The players quickly learn that if something doesn't talk, kill it.",
 								"Yet monsters are a wonderful source for intriguing NPCs. With a little thought, the DM can make his monsters more than ravening murder machines. Sentient monsters have personalities and a reason for existence, just like the player characters. Maybe that ogre would rather be left alone and is so frustrated that she breaks down in tears when the PCs invade her lair. That evil, but lonely dragon might prefer the pleasure of talking to someone who doesn't immediately run away or try to stick a sword in his eye.",
 								"Like demihumans, monsters are usually the product of an alien culture. More often than not, monster cultures consider humans and demihumans as little more than animals. Thus, they do not see a problem in eating humans or using them like beasts. Monsters may have a hefty selection of personality quirks, particularly ones that make them even more unacceptable to society.",
 								"Remember that intelligent monsters will act in an intelligent manner before, during, and after encounters. They will use their environment to their advantage, including known traps, hiding places, and other monsters."
@@ -3978,7 +3934,6 @@
 				"In the section that follows, we have provided you, the dungeon master, with an assortment of unusual dungeons. Each of these is presented in a standard format and is intended to make your job easier. After all, if there's one thing a DM never seems to have enough of, it's preparation time.",
 				{
 					"type": "entries",
-					"name": "",
 					"page": 113,
 					"entries": [
 						{
@@ -4026,7 +3981,6 @@
 						},
 						{
 							"type": "entries",
-							"name": "",
 							"page": 115,
 							"entries": [
 								{
@@ -4055,7 +4009,6 @@
 											"style": "list-decimal",
 											"columns": 0,
 											"page": 115,
-											"name": "",
 											"items": [
 												"{@b Mastabas:} The Great Pyramid is surrounded by a small city of lesser tombs known as mastabas. These low, flat structures served to house the bodies of the workers who built the pyramid. More often than not, these were slaves or prisoners of war. Because they knew the secrets of the pyramid's internal layout, they were ritually slaughtered after it was completed. The mastabas might make excellent locations for encounters with low level undead creatures.",
 												"{@b Lesser Pyramids:} A number of lesser pyramids were also built adjacent to the main structure. These served as tombs for the officials who oversaw the construction of the pyramid. Once the slaves were killed, so too were their task masters. Like the mastabas, these areas make excellent locations for encounters with undead, although they are likely to be more powerful than those found in the former area.",
@@ -4090,7 +4043,6 @@
 						},
 						{
 							"type": "entries",
-							"name": "",
 							"page": 117,
 							"entries": [
 								{
@@ -4120,7 +4072,6 @@
 											"style": "list-decimal",
 											"columns": 0,
 											"page": 117,
-											"name": "",
 											"items": [
 												"{@b Courtyard:} Just outside the archway which admits the faithful to the temple was an area which had been cleared and landscaped to some extent. Six statues were erected here, one for each of the deities sacred to the temple builders.",
 												"{@b Temple of Earth:} The first shrine which those entering the temple encountered was this one. It was devoted to a primitive earth spirit which was symbolized by a figure of a large, pregnant goddess. Carvings and paintings in this room celebrated the earth as a source of life and power.",
@@ -4154,7 +4105,6 @@
 						},
 						{
 							"type": "entries",
-							"name": "",
 							"page": 119,
 							"entries": [
 								{
@@ -4183,7 +4133,6 @@
 											"style": "list-decimal",
 											"columns": 0,
 											"page": 119,
-											"name": "",
 											"items": [
 												"{@b Temple Offices:} These chambers were the business offices of the temple. A number of desks, scroll racks, book cases, and similar office equipment were found here. Of course, depending on the amount of time which has passed since the shrine was entombed, these may be noting more than piles of dust and rotting wood. A secret door allows easy entrance to or escape from the office area in the event of an emergency.",
 												"{@b Library:} This served as both a filing area and a book depository. The numerous shelves and racks here were filled with books, scrolls, maps, and similar documents. Depending on the condition of this room, it could be a sage's dream come true.",
@@ -4224,7 +4173,6 @@
 						},
 						{
 							"type": "entries",
-							"name": "",
 							"page": 121,
 							"entries": [
 								{
@@ -4254,7 +4202,6 @@
 											"style": "list-decimal",
 											"columns": 0,
 											"page": 121,
-											"name": "",
 											"items": [
 												"{@b Entrance:} This chamber is notable for its high, arched ceiling and the numerous stalactites which dangle from it. The walls have all been worn smooth through ages of natural erosion by the river. A thin band of shore (about 1 yard wide) runs along each side of the water, making walking possible, but very difficult. The water runs very quickly through this region, but can still be navigated by a raft or boat.",
 												"{@b Upper Lake:} A secondary stream curves around from the main river to form a large lake in this room. The ceiling is a high, domed affair with a number of stalactites visible on it. A wide shore surrounds the lake which has a slight whirlpool visible in its currents. The whirlpool is not so swift as to be hazardous to boats, but swimmers may be at risk.",
@@ -4289,7 +4236,6 @@
 						},
 						{
 							"type": "entries",
-							"name": "",
 							"page": 123,
 							"entries": [
 								{
@@ -4320,7 +4266,6 @@
 											"style": "list-decimal",
 											"columns": 0,
 											"page": 123,
-											"name": "",
 											"items": [
 												"{@b Family Chambers:} This portion of the city housed the farmers and their loved ones. Each chamber was home to an extended family, ranging in size from 7 to 12 persons. Raised platforms around the perimeter served as both beds and sofas. In many cultures, the dead were buried beneath the floor of the chamber they had once lived in.",
 												"{@b Barracks:} Single men and members of the guard lived in these chambers which were very much like the military barracks one might expect to find in a modern fort. There was little provision for comfort, and almost no chance for individual privacy.",
@@ -4353,7 +4298,6 @@
 						},
 						{
 							"type": "entries",
-							"name": "",
 							"page": 125,
 							"entries": [
 								{
@@ -4383,7 +4327,6 @@
 											"style": "list-decimal",
 											"columns": 0,
 											"page": 125,
-											"name": "",
 											"items": [
 												"{@b Storage:} Located on the lowest level of the castle, this large chamber was used to house great quantities of goods and materials for use by the structure's inhabitants. Kegs of ale, bottles of wine, wheels of cheese, and many other supplies were kept here, although the passing of the years has almost certainly ruined them.",
 												"{@b Kitchen:} This cooking room was home to any number of cooking utensils and devices. A large oven and stove occupied a large portion of the area and there was more than enough space to prepare a feast for dozens of guests in the great hall.",

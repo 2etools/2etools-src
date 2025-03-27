@@ -6,12 +6,21 @@
 			"page": 3,
 			"entries": [
 				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/XDMG/000.webp"
+					},
+					"maxWidth": 800,
+					"credit": "Jeff Easley"
+				},
+				{
 					"type": "quote",
 					"entries": [
 						"One of the toughest challenges facing a DM (and I can only assume that everyone reading this either is, or wants to be, a DM) is keeping his game sessions fresh and exciting.",
 						"Those of us who produce new material for the AD&D game as a whole have a more or less similar task, although on a larger scale. We are constantly searching for ways to make adventures and game accessories unique, or at least original and distinctive. Like Sir Isaac Newton, we've learned from experience that when faced with multiple choices, the simplest alternative is often the best.",
 						"Hence the book you hold in your hands.",
-						"After six years, it was time for the {@i Player's Handbook} and {@i Dungeon Master Guide}, the two most important AD&D rule books, to get freshened up. What could be better and simpler than a new coat of paint? Products that we publish today don't look like products we published in 1989, or even in 1993. We haven't changed the game in any substantial way (aside from the usual clarifications and corrections that go along with any reprint). But we have let these books catch up to our new standards. They're larger, more colorful, and more readable, all with an eye toward making your DMing job easier.",
+						"After six years, it was time for the {@i {@book Player's Handbook|XPHB}} and {@i Dungeon Master Guide}, the two most important AD&D rule books, to get freshened up. What could be better and simpler than a new coat of paint? Products that we publish today don't look like products we published in 1989, or even in 1993. We haven't changed the game in any substantial way (aside from the usual clarifications and corrections that go along with any reprint). But we have let these books catch up to our new standards. They're larger, more colorful, and more readable, all with an eye toward making your DMing job easier.",
 						"Bringing this project together rekindled a lot of memories. In particular, one day from 1987 stands out in my mind. I remember it vividly because it was the day when Dave Cook and I drew up the very first outline and schedule for the 2nd Edition of the Advanced Dungeons & Dragons game. What needed to be done, and how it should be done, looked clear and simple on our neat, four-page report. In fact, that massive undertaking occupied almost two years of our lives, and I've spent most of my time since then caring for the AD&D game.",
 						"That's a job that we enjoy, or we wouldn't be doing it. Most of us feel that we have a stake, to one extent or another, in every AD&D campaign out there. When you and your players get together, the months (often years) of designing, discussing, playtesting, redesigning, arguing, editing, sketching, and head scratching disappear into the background. But no matter whether you play by the books or with a binder full of home rules, we're all in this together, united by the common thread of the AD&D game."
 					],
@@ -29,7 +38,7 @@
 			"entries": [
 				"You are one of a very special group of people: AD&D® game Dungeon Masters. Your job is not an easy one. It requires wit, imagination, and the ability to think and act extemporaneously. A really good Dungeon Master is essential to a good game.",
 				"The {@i Dungeon Master Guide} is reserved for Dungeon Masters. Discourage players from reading this book, and certainly don't let players consult it during the game. As long as the players don't know exactly what's in the {@i Dungeon Master Guide}, they'll always wonder what you know that they don't. It doesn't matter whether you have secret information; even if you don't, as long as the players think you do, their sense of mystery and uncertainty is maintained.",
-				"Also, this book contains essential rules that are not discussed in the {@i Player's Handbook}. Some of these rules the players will learn quickly during play—special combat situations, the costs of hiring NPCs, etc. Others, however, cover more esoteric or mysterious situations, such as the nature of artifacts and other magical items. This information is in the {@i Dungeon Master Guide} so the DM can control the players' (and hence the characters') access to certain bits of knowledge. In a fantasy world, as in this world, information is power. What the characters don't know {@i can} hurt them (or lead them on a merry chase to nowhere). While the players aren't your enemies, they aren't your allies, either, and you aren't obligated to give anything away for nothing. If characters go hunting wererats without doing any research beforehand, feel free to throw lots of curves their way. Reward those characters who take the time to do some checking.",
+				"Also, this book contains essential rules that are not discussed in the {@i {@book Player's Handbook|XPHB}}. Some of these rules the players will learn quickly during play—special combat situations, the costs of hiring NPCs, etc. Others, however, cover more esoteric or mysterious situations, such as the nature of artifacts and other magical items. This information is in the {@i Dungeon Master Guide} so the DM can control the players' (and hence the characters') access to certain bits of knowledge. In a fantasy world, as in this world, information is power. What the characters don't know {@i can} hurt them (or lead them on a merry chase to nowhere). While the players aren't your enemies, they aren't your allies, either, and you aren't obligated to give anything away for nothing. If characters go hunting wererats without doing any research beforehand, feel free to throw lots of curves their way. Reward those characters who take the time to do some checking.",
 				"Besides rules, you'll find a large portion of this book devoted to discussions of the principles behind the rules. Along with this are examinations of the pros and cons of changing the rules to fit your campaign. The purpose of this book, after all, is to better prepare you for your role as game moderator and referee. The better you understand the game, the better equipped you'll be to handle unforeseen developments and unusual circumstances.",
 				"One of the principles guiding this project from the very beginning, and which is expressed throughout this book, is this: The DM has the primary responsibility for the success of his campaign, and he must take an active hand in guiding it. That is an important concept. If you are skimming through this introduction, slow down and read it again. It is crucial you understand what you are getting into.",
 				"The DM's \"active hand\" extends even to the rules. Many decisions about your campaign can be made by only one person: you. Tailor your campaign to fit your own style and the style of your players.",
@@ -42,7 +51,7 @@
 					"name": "A Word About Organization",
 					"page": 9,
 					"entries": [
-						"Everything in this book is based on the assumption that you are familiar with the {@i Player's Handbook}. To make your job easier, the {@i Player's Handbook} and {@i Dungeon Master Guide} have parallel organization. Chapters appear in the same order in both books. That means if you know where to find something in the {@i Player's Handbook}, you also know where to find it in this book.",
+						"Everything in this book is based on the assumption that you are familiar with the {@i {@book Player's Handbook|XPHB}}. To make your job easier, the {@i Player's Handbook} and {@i Dungeon Master Guide} have parallel organization. Chapters appear in the same order in both books. That means if you know where to find something in the {@i Player's Handbook}, you also know where to find it in this book.",
 						"Also, the index in this book also covers both the {@i Player's Handbook}. You can find all the references to any specific topic by checking this index."
 					]
 				},
@@ -54,8 +63,15 @@
 						"Being a good Dungeon Master involves a lot more than knowing the rules. It calls for quick wit, theatrical flair, and a good sense of dramatic timing—among other things. Most of us can claim these attributes to some degree, but there's always room for improvement.",
 						"Fortunately, skills like these can be learned and improved with practice. There are hundreds of tricks, shortcuts, and simple principles that can make you a better, more dramatic, and more creative game master.",
 						"But you won't find them in the {@i Dungeon Master Guide}. This is a reference book for running the AD&D game. We tried to minimize material that doesn't pertain to the immediate conduct of the game. If you are interested in reading more about this aspect of refereeing, we refer you to Dragon® Magazine, published monthly by TSR, Inc. Dragon Magazine is devoted to role-playing in general and the AD&D game in particular. For more than 16 years, Dragon Magazine has published articles on every facet of role-playing. It is invaluable for DMs and players.",
-						"If you have never played a role-playing game before but are eager to learn, our advice from the {@i Player's Handbook} is still the best: Find a group of people who already play the game and join them for a few sessions. If that is impractical, the best alternative is to get a copy of the {@i Introduction to Advanced Dungeons & Dragons Game}. It covers all the basics of fantasy role-playing with the AD&D game, but in a much simpler presentation which teaches as you play. It includes several introductory role-playing adventures. These will show you what goes on during the game and give you step-by-step instructions on how to set up and run a game with your friends."
+						"If you have never played a role-playing game before but are eager to learn, our advice from the {@i {@book Player's Handbook|XPHB}} is still the best: Find a group of people who already play the game and join them for a few sessions. If that is impractical, the best alternative is to get a copy of the {@i Introduction to Advanced Dungeons & Dragons Game}. It covers all the basics of fantasy role-playing with the AD&D game, but in a much simpler presentation which teaches as you play. It includes several introductory role-playing adventures. These will show you what goes on during the game and give you step-by-step instructions on how to set up and run a game with your friends."
 					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/XDMG/001.webp"
+					}
 				}
 			]
 		},
@@ -340,6 +356,14 @@
 											"11"
 										]
 									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/002.webp"
+									},
+									"credit": "Stephen A. Daniele"
 								}
 							]
 						},
@@ -665,6 +689,13 @@
 									]
 								}
 							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/003.webp"
+							}
 						}
 					]
 				},
@@ -699,7 +730,7 @@
 							"entries": [
 								"Playing the role of a single character in depth is more than enough work for one person. Adding a second character usually means that both become lists of numbers rather than personalities.",
 								"{@b Shared Items:} One single player/multiple character problem that needs to be nipped in the bud is that of shared equipment. Some players will trade magical items, treasure, maps, and gear back and forth among their characters.",
-								"For example, when Phaedre goes adventuring she takes along Bertramm's {@i ring of invisibility} Bertramm, in exchange, gets the use of Phaedre's {@i boots of speed}. In short, each character has the accumulated treasure of two adventurers to draw on.",
+								"For example, when Phaedre goes adventuring she takes along Bertramm's {@i {@item ring of invisibility|XDMG}} Bertramm, in exchange, gets the use of Phaedre's {@i {@item boots of speed|XDMG}}. In short, each character has the accumulated treasure of two adventurers to draw on.",
 								"Do not allow this! Even though one player controls both characters, those characters are not clones. Their equipment and treasure is extremely valuable. Would Phaedre loan her boots to a character controlled by another player? How about an NPC? Probably not, on both counts. Unless the character is (foolishly) generous in all aspects of his personality, you have every right (some might call it a duty) to disallow this sort of behavior.",
 								"{@b Shared Information:} Information is a much more difficult problem. Your players must understand the distinction between what they know as players and what their characters know. Your players have read the rules and shared stories about each other's games. They've torn out their hair as the entire party of adventurers was turned into lawn ornaments by the medusa who lives beyond the black gateway. That is all player information. No other characters know what happened to that group, except this: they went through the black gateway and never returned.",
 								"The problem of player knowledge/character knowledge is always present, but it is much worse when players control more than one character in the same region. It takes good players to ignore information their characters have no way of knowing, especially if it concerns something dangerous. The best solution is to avoid the situation. If it comes up and players seem to be taking advantage of knowledge they shouldn't have, you can discourage them by changing things a bit. Still, prevention is the best cure.",
@@ -709,12 +740,19 @@
 					]
 				},
 				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/XDMG/004.webp"
+					}
+				},
+				{
 					"type": "entries",
 					"name": "Character Background",
 					"page": 18,
 					"entries": [
 						"When you look at a completed character, you will notice there are still many unanswered questions: Who were the character's parents? Are they still alive? Does the character have brothers and sisters? Where was he born? Does he have any notable friends or enemies? Are his parents wealthy or are they poor? Does he have a family home? Is he an outcast? Is he civilized and cultured, or barbaric and primitive? In short, just how does this character fit into the campaign world?",
-						"There are no rules to answer these questions. The {@i Player's Handbook} and {@i Dungeon Master Guide} are designed to help you unlock your imagination. The AD&D® rules do not presume to tell you exactly what your campaign world will be like. These decisions are left to you.",
+						"There are no rules to answer these questions. The {@i {@book Player's Handbook|XPHB}} and {@i Dungeon Master Guide} are designed to help you unlock your imagination. The AD&D® rules do not presume to tell you exactly what your campaign world will be like. These decisions are left to you.",
 						"Consider what would happen if the rules dictated answers to the questions above. For example, suppose the rules said that 50% of all characters come from primitive, barbaric backgrounds...and you're running a campaign set in a huge, sophisticated city (the New Rome of your world). Even more ridiculous would be the reverse, where the rules say 50% of the characters are city dwellers and your campaign is set in a barbaric wilderness. Or how would you explain things if 20% of all characters were seafarers and you had set your adventures in the heart of a desert larger than the Sahara?",
 						"These pages contain guidelines and advice about how to create a campaign, but there is nothing that says exactly where this campaign must be set or what it must be like. This does not mean that a character's background shouldn't be developed—such background adds a lot to the depth and role-playing of your players and their characters. However, it is up to you to tailor character backgrounds to the needs of your campaign.",
 						{
@@ -723,6 +761,13 @@
 							"page": 18,
 							"entries": [
 								"Of course, you don't have to do all the work. Your players can provide most of the energy, enthusiasm, and ideas needed. Your task is to provide direction and control.",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/005.webp"
+									}
+								},
 								"Allow your players to decide what kind of people their characters are. One could be a rough nomad, another an over-civilized fop, others, homespun farmboys or salty seadogs. Let the players decide, and then tell them if, and how, their characters fit into your campaign world.",
 								"When a player says, \"My dwarf's a rude and tough little guy who doesn't like humans or elves,\" you can respond with \"Fine, he's probably one of the Thangor Clan from the deep mountain regions.\" This type of cooperation spurs your creativity, and involves the players in your world right from the start. You must come up with answers to their questions and ways to make their desires work in the campaign. The will be rewarded with the feeling of getting the characters they want.",
 								"A carefully well-crafted character background can do more than just provide emotional satisfaction. It can also provide motivation for the player characters to undertake specific adventures:",
@@ -760,6 +805,13 @@
 							"entries": [
 								"A character’s background is a role-playing tool. It provides the player with more information about his character, more beginning personality on which to build. It should complement your campaign and spur it forward. Background details should stay there—in the background. What your characters are doing now and will do in the future is more important than what they were and what they did."
 							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/006.webp"
+							}
 						}
 					]
 				}
@@ -773,6 +825,13 @@
 				"Many factors affect a character's background. Two of the most important are his race and his character class (see Chapter 3, \"Player Character Classes\"). In a sense, a character's class is his profession. Some characters are fighters, some are mages, some are clerics, and so on. A character's race affects which character classes are available to him. Only humans have unlimited class options. All non-human races are limited to some extent. There are two reasons for this:",
 				"First, the restrictions are intended to channel players into careers that make sense for the various races. Dwarves are, to a certain degree, anti-magical and incapable of shaping magical energy--they can't be wizards. Halflings, despite their ties to nature, lack the devotion and physical will to be druids. Similar situations exist for the other demihuman races.",
 				"Second, the demihuman races have advantages that are not available to humans. Flexibility, the ability to choose from among all the classes, is one of very few human advantages.",
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/XDMG/007.webp"
+					}
+				},
 				{
 					"type": "entries",
 					"name": "A Nonhuman World",
@@ -817,6 +876,13 @@
 									]
 								}
 							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/008.webp"
+							}
 						},
 						{
 							"type": "entries",
@@ -1142,7 +1208,7 @@
 			"name": "Player Character Classes",
 			"page": 26,
 			"entries": [
-				"The {@i Player’s Handbook} covers the nuts and bolts of character classes, explaining the mechanics of how they work and what they can do, but there is more to being a DM than just knowing the hard and fast rules. Character classes form the heart of the AD&D game, so it is useful to understand some of the concepts and relationships that define classes and how they function.",
+				"The {@i {@book Player’s Handbook|XPHB}} covers the nuts and bolts of character classes, explaining the mechanics of how they work and what they can do, but there is more to being a DM than just knowing the hard and fast rules. Character classes form the heart of the AD&D game, so it is useful to understand some of the concepts and relationships that define classes and how they function.",
 				{
 					"type": "entries",
 					"name": "Class, Level, and the Common Man",
@@ -1255,6 +1321,13 @@
 							]
 						},
 						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/009.webp"
+							}
+						},
+						{
 							"type": "entries",
 							"name": "Wizards",
 							"page": 28,
@@ -1355,6 +1428,13 @@
 								"Every once in a while the old adventuring group may have to reassemble to deal with some threat to the kingdom or the world. It’s the chance to show those upstart new characters just what a really powerful group can do! It also gives the players the opportunity to role-play some the their old favorites.",
 								"If the players see the opportunity to use their powerful characters, even infrequently, they will be less reluctant to spend most of their playing time with new, lower-level characters."
 							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/010.webp"
+							}
 						}
 					]
 				},
@@ -2076,6 +2156,13 @@
 										},
 										"You can’t reconstruct the existing character classes using this method. The standard classes give players advantages over custom-designed classes. Standard class characters advance in levels more quickly and, generally, have better abilities than custom-designed characters."
 									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/011.webp"
+									}
 								}
 							]
 						}
@@ -2213,6 +2300,13 @@
 							"name": "Alignments in Conflict",
 							"page": 39,
 							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/012.webp"
+									}
+								},
 								"There are advantages and disadvantages to building a campaign around alignment struggles. On the plus side, players always have a goal, even if they’re not always aware of it. This goal is useful when constructing adventures. It motivates player characters and provides a continuing storyline; it ensures that characters always have something to do (\"Restore the balance of Law, loyal followers!\"). Also, a sense of heroism permeates the game. Players know that their characters are doing something important, something that has an effect on the history of the campaign world.",
 								"There are disadvantages to this approach, too, but none that can’t be avoided by a clever DM. First is the question of boredom. If every adventure revolves around maintaining balance or crusading for the cause, players might get tired of the whole thing.",
 								"The solution is simply to make sure adventures are varied in goal and theme. Sometimes characters strive in the name of the great cause. Other times they adventure for their own benefit. Not every battle needs to be a titanic struggle of good vs. evil or light vs. darkness.",
@@ -2348,6 +2442,13 @@
 						"Most often this occurs with low-level characters. The player character’s alignment may prove to be incompatible with the rest of the party. A player character may simply be more interesting for everyone if his alignment were different. Inexperienced players may select an alignment without fully understanding its ramifications. Discovering they simply do not like the alignment, they may ask to change. Such changes must be made with mutual agreement. As DM, try to accommodate the desires of your players.",
 						"In the second type of voluntary change, the case cannot be made that the alignment change would be for the good of the game. This generally involves more established characters who have been played according to one alignment for some time. Here, the effects of alignment change are severe and noticeable.",
 						"The instant a character voluntarily changes alignment, the experience point cost to gain the next level (or levels in the case of multi-class characters) is doubled. To determine the number of experience points needed to gain the next level (and only the next level), double the number of experience points listed on the appropriate Experience Levels table.",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/013.webp"
+							}
+						},
 						"For example, Delsenora the mage began the game neutral good. However, as she adventured, she regularly supported the downtrodden and the oppressed, fighting for their rights and their place in society. About the time she reached 5th level, it was clear to the DM that Delsenora was behaving more as a lawful good character and he enforced an alignment change. Normally, a mage needs 40,000 experience points—20,000 points beyond 5th level—to reach 6th level. Delsenora must earn 40,000 additional experience points, instead of the normal 20,000. Every two experience points counts as one toward advancement.",
 						"Delsenora started the adventure with 20,000 experience points. At its conclusion, the DM awarded her 5,300 points, bringing her total to 25,300. Instead of needing just 14,700 points to reach the next level, she now needs 34,700 because of her alignment change!",
 						"If an alignment change is involuntary, the doubled experience penalty is not enforced. Instead, the character earns no experience whatever until his former alignment is regained. This assumes, of course, that the character wants to regain his former alignment.",
@@ -2357,6 +2458,14 @@
 						"A character can change alignment any number of times. If more than one change occurs per level, however, the severity of the penalty increases. (The character is obviously suffering from severe mental confusion, akin to a modern-day personality crisis.) When a character makes a second or subsequent alignment change at a given level, all experience points earned toward the next level are immediately lost. The character must still earn double the normal experience.",
 						"Delsenora drifted into lawful good. Now she finds lawful good too restrictive. She is confused. She doesn’t know what she believes in. Her head hurts. The character reverts to her earlier neutral good habits. Bedeviled by indecision, she loses the 5,300 experience points she had already gained and now has to earn 40,000 to achieve 6th level!"
 					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/XDMG/014.webp"
+					},
+					"credit": "Les Dorscheid"
 				}
 			]
 		},
@@ -2409,6 +2518,13 @@
 					"name": "Nonweapon Proficiencies",
 					"page": 45,
 					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/015.webp"
+							}
+						},
 						"Nonweapon proficiencies are optional, but, if chosen, can be very useful. If you are uncertain whether to use these proficiencies, the following points should make the decision easier:",
 						"{@b Nonweapon proficiencies help determine the success of character actions} beyond what is defined by the basic abilities of the character races and classes. They provide a useful gauge when a character tries to build a boat or behave properly at court. This frees the DM to think about more important parts of the story instead of little, perhaps even insignificant, details.",
 						"Not everyone agrees with this! Some DMs prefer to handle by themselves all the situations covered by proficiencies. This requires a quick wit and good memory. In return, the DM is freed from the restraints of rules. He can create the scene he wants without worrying whether it breaks the rules. But tread softly here—this is not an easy way to judge a game! Try this only if you are experienced at DMing or are a spontaneous and entertaining storyteller.",
@@ -2437,7 +2553,14 @@
 						"The majority of new proficiencies are going to be those related to trades. Most of these have a very minor game effect, if any at all. They give the character specialized knowledge, but it is up to the player to make some use of it.",
 						"A character with the skills of a glazier (glass-maker) does not gain a great advantage. Although, if necessary, he could support himself by making small glass vials and other items for local mages and adventurers. Still, there might come a day when knowledge of glass and glassmaking becomes vital to the success of an adventure. A clever player is always looking for a way to turn knowledge to his advantage.",
 						"When a player proposes a new proficiency, have him prepare a description of what the proficiency entails and allows. Then consider what the character could gain from it. This is not to say that the player is trying to pull a fast one (some will, but give them the benefit of the doubt). Instead, it is useful to imagine ways the proficiency could be abused. If something horrible or game-busting comes to mind, fix it. Never allow a proficiency into the game if it seems too powerful.",
-						"Make whatever changes are necessary in the description and then offer it to the player. If he still likes it (after all the secret powers are stripped out), introduce it into the game and have fun. Sometimes the only thing that can be kept is the name of the proficiency. Don’t be distressed by this. Most players will be satisfied with DM changes, content simply to contribute something to the game."
+						"Make whatever changes are necessary in the description and then offer it to the player. If he still likes it (after all the secret powers are stripped out), introduce it into the game and have fun. Sometimes the only thing that can be kept is the name of the proficiency. Don’t be distressed by this. Most players will be satisfied with DM changes, content simply to contribute something to the game.",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/016.webp"
+							}
+						}
 					]
 				}
 			]
@@ -2595,6 +2718,13 @@
 								"Wealthy people receive the greatest benefits, but they must also deal with the highest level of deceit, trickery, and treachery. Nearly all with wealth are drawn into dangerous political maneuverings, mainly to protect their own privileges.",
 								"Upon building or claiming his own stronghold, a player character suddenly acquires a whole new set of expenses. The character no longer pays living expenses but must pay for the maintenance of his property."
 							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/017.webp"
+							}
 						}
 					]
 				},
@@ -3353,6 +3483,13 @@
 						"Finally, when attempting to hit a very specific spot, the additional penalty for a called shot must be applied. Shooting at the bullseye of a target or slitting the backpack of an enemy in combat are difficult feats because of the precision needed.",
 						"You must also decide how much damage the item can take before it is broken. Table 28 gives the standard range for some common items and materials. The final column on the table lists the types of attack most likely to cause damage to the item, although other types may also be effective. Using these as guidelines, you can decide the number of hit points to assign to most materials.",
 						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/018.webp"
+							}
+						},
+						{
 							"type": "table",
 							"caption": "Table 28: Hit Points of Items",
 							"page": 56,
@@ -3620,6 +3757,14 @@
 								"{@b Lightning bolt} (Light.) applies to attacks by the spell or spell-like power of the same name.",
 								"{@b Electrical} (Elec) is for those electrical attacks that do not carry the wallop of the {@i lightning bolt}. Electric eels and magical traps fall into this category."
 							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/019.webp"
+							},
+							"credit": "Alan Pollack"
 						}
 					]
 				}
@@ -3753,7 +3898,14 @@
 								"Compounding the problem, the bizarre formulas and diagrams found in a spell book can’t be reproduced by normal medieval printing methods. Spell book work must be done slowly and laboriously by hand. The standard amount of time required to prepare a spell book is one to two days of work per spell level of the spell being entered.",
 								"Occasionally, prepared spell books can be found for sale, but few wizards choose to trust the success or failure of their magical efforts to the work of others. Rare is the wizard who doesn’t prepare his own spell books.",
 								"Materials used in a spell book must be of the highest quality. No wizard wants to run the risk of dampness causing his ink to run, a blot on the parchment causing a spell to be misinterpreted, bookworms making a feast of page six, the wind blowing a loose page away, or a spilled retort turning the whole book into a sodden mass.",
-								"Careful treatment, common sense, and quality materials are essential to prevent these disasters. Strong bindings or cases are used to protect the interiors. Clear sheets are needed to record the spells. The best bold inks and the sharpest pens must be used for writing. Aromatic compounds are recommended to deter bookworms and moths, while other preparations should be used to protect against mold, mildew, and dry rot. All this costs money."
+								"Careful treatment, common sense, and quality materials are essential to prevent these disasters. Strong bindings or cases are used to protect the interiors. Clear sheets are needed to record the spells. The best bold inks and the sharpest pens must be used for writing. Aromatic compounds are recommended to deter bookworms and moths, while other preparations should be used to protect against mold, mildew, and dry rot. All this costs money.",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/020.webp"
+									}
+								}
 							]
 						},
 						{
@@ -3899,7 +4051,7 @@
 							"entries": [
 								"When the player presents his suggested spell, talk it over with him. What does the player really want to accomplish? Is this the same as what he claims the spell will do? Sometimes what is written for a spell description and what was intended are two different things. This should become clear in talking to the player.",
 								"{@b Are there already spells or combinations of spells that can do the same thing?} If a spell exists in the character’s group that does the same thing, no research should be allowed. If the new spell is a combination of several spells or a more powerful version of a weaker spell, it can be allowed, although it will be difficult to research. Weaker versions of a more powerful spell are certainly possible.",
-								"{@b Is the player trying to gain a special advantage over the normal rules?} Sometimes players propose new spells with the unspoken purpose of \"breaking the system,\" and, while spell research does let a player character get an edge, it is not a way to cheat. New spells should fall within the realm and style of existing spells. Clerics casting {@i fireball} spells or mages healing injured characters is contrary to the styles of the two classes.",
+								"{@b Is the player trying to gain a special advantage over the normal rules?} Sometimes players propose new spells with the unspoken purpose of \"breaking the system,\" and, while spell research does let a player character get an edge, it is not a way to cheat. New spells should fall within the realm and style of existing spells. Clerics casting {@i {@spell fireball|XPHB}} spells or mages healing injured characters is contrary to the styles of the two classes.",
 								"Spells allowing changes in the game rules, god-like abilities, or guaranteed success are not good and shouldn’t be allowed in a campaign. Fortunately, this problem doesn’t come up too often. What limits does the player think the spell has?",
 								"In their desire to have their spells approved, players often create more limitations and conditions on a spell than the DM would normally require. Be sure to ask the player what limits he thinks the spell has."
 							]
@@ -3985,6 +4137,13 @@
 									]
 								}
 							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/021.webp"
+							}
 						}
 					]
 				}
@@ -4320,7 +4479,14 @@
 								"Finally, you can award points on the basis of survival. The amount awarded is entirely up to you. However, such awards should be kept small and reserved for truly momentous occasions. Survival is its own reward. Since story and survival awards go hand in hand, you may be able to factor the survival bonus into the amount you give for completing the adventure.",
 								"Once you have calculated all the experience points due your group of player characters (and you should do this, not your players), divide the total by the number of surviving and (at the DM’s option) resurrected player characters. This is the amount each surviving character gets.",
 								"Although characters who died during the course of an adventure normally earn no experience (one of the penalties of dying), you can allow a character to earn some experience for actions taken before he died, particularly if the character died nobly, through no fault of his own, or at the very end of the adventure. In such a case, it is simpler to give the character a flat award than to try to determine separate experience totals for those actions the character was involved in and those he was not.",
-								"As an option, the DM can award XP for the cash value of non-magical treasures. One XP can be given per gold piece found. However, overuse of this option can increase the tendency to give out too much treasure in the campaign."
+								"As an option, the DM can award XP for the cash value of non-magical treasures. One XP can be given per gold piece found. However, overuse of this option can increase the tendency to give out too much treasure in the campaign.",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/022.webp"
+									}
+								}
 							]
 						},
 						{
@@ -5113,7 +5279,7 @@
 						"Now imagine the same thing in the middle of a fight. The potion is safely stowed in the character’s backpack. First he takes stock of the situation to see if anyone else can get the potion out for him. However, not surprisingly, everyone is rather busy. So, sword in one hand, he shrugs one strap of the pack off his shoulder. Then, just as two orcs leap toward him, the other strap threatens to slip down, entangling his sword arm. Already the loose strap keeps him from fully using his shield.",
 						"Now imagine the same thing in the middle of a fight. The potion is safely stowed in the character’s backpack. First he takes stock of the situation to see if anyone else can get the potion out for him. However, not surprisingly, everyone is rather busy. So, sword in one hand, he shrugs one strap of the pack off his shoulder. Then, just as two orcs leap toward him, the other strap threatens to slip down, entangling his sword arm. Already the loose strap keeps him from fully using his shield.",
 						"Rummaging through the pack, he finally finds the potion, pulls it out, and, huddling behind his shield, works the cork free. Just then there is a flash of flame all around him—a fireball! He grits his teeth against the heat, shock, and pain and tries not to crush or spill the potion vial. Biting back the pain of the flames, he is relieved to see the potion is intact.",
-						"He quickly gulps it down, reclaims his sword, kicks his backpack out of the way, and runs back up to the front line. In game terms, the character withdrew, was missed by one attacker, made a successful saving throw vs. spell (from the {@i fireball} spell), drank a potion, and was ready for combat the next round.",
+						"He quickly gulps it down, reclaims his sword, kicks his backpack out of the way, and runs back up to the front line. In game terms, the character withdrew, was missed by one attacker, made a successful saving throw vs. spell (from the {@i {@spell fireball|XPHB}} spell), drank a potion, and was ready for combat the next round.",
 						{
 							"type": "entries",
 							"name": "What You Can Do in One Round",
@@ -5140,6 +5306,13 @@
 										"Hammer in a spike",
 										"Recover a dropped weapon"
 									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/023.webp"
+									}
 								},
 								"There are also actions that take a negligible amount of time, things the character does without affecting his ability to perform a more important task. Examples of these include the following:",
 								{
@@ -5581,7 +5754,14 @@
 								"Each character or creature is assumed to have a front, flanks, and rear. When creatures of equal size are battling, up to six can surround a single figure.",
 								"Normally, a defender attempts to keep his opponents in sight. Thus, if there are no special circumstances (such as a thief moving silently behind the defender), opponents first occupy the front, then the flanks, and finally the rear. It’s assumed that the defender will try to keep attackers from getting around him.",
 								"Normally, a defender attempts to keep his opponents in sight. Thus, if there are no special circumstances (such as a thief moving silently behind the defender), opponents first occupy the front, then the flanks, and finally the rear. It’s assumed that the defender will try to keep attackers from getting around him.",
-								"Thus, a hill giant attacking Horace the fighter would fill two of the spaces, allowing only four orcs to join the attack. If there were two giants attacking, only two orcs could join the combat. When attacking a small creature, one giant and two orcs could make the attack. Any more than this and the attackers would just get in each other’s way."
+								"Thus, a hill giant attacking Horace the fighter would fill two of the spaces, allowing only four orcs to join the attack. If there were two giants attacking, only two orcs could join the combat. When attacking a small creature, one giant and two orcs could make the attack. Any more than this and the attackers would just get in each other’s way.",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/024.webp"
+									}
+								}
 							]
 						},
 						{
@@ -5667,6 +5847,14 @@
 							"entries": [
 								"The basic move is to get closer for combat—move close enough to an enemy to attack. This is neither a blind rush nor a casual stroll. Instead, the character approaches quickly but with caution. When closing for combat, a character can move up to half his allowed distance and still make a melee attack."
 							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/025.webp"
+							},
+							"credit": "Robh Ruppel"
 						},
 						{
 							"type": "entries",
@@ -6139,7 +6327,13 @@
 									"name": "Scatter Diagram",
 									"page": 88,
 									"entries": [
-										"INSERT SCATTER DIAGRAM HERE",
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/XDMG/026.webp"
+											}
+										},
 										"Next determine how far off the mark the throw is. If the throw is at short range, use a 6-sided die. If the range is medium, use a 10-sided die. If thrown to long range, roll {@dice 2d10}. The number rolled is the number of feet away from the intended target the missile lands.",
 										"The damage taken from a grenade-like attacks depends on whether a direct hit was scored or the target was in the splash area. Table 45 lists the area of effect for a direct hit and damages from direct and splash hits.",
 										{
@@ -6286,6 +6480,13 @@
 							"entries": [
 								"Various creatures in the AD&D game possess breath weapons, the most memorable being the roaring gout of flame spewed out by a red dragon. These weapons normally affect a cone-shaped area. One point is the dragon’s mouth, and the breath widens as it extends outward. No attack roll is required for a breath weapon. All characters and creatures within the area of effect must make the appropriate saving throw and suffer the consequences of a successful breath attack."
 							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/027.webp"
+							}
 						}
 					]
 				},
@@ -6975,6 +7176,13 @@
 						"Free-willed undead attempt to flee the area of the turning character, until out of his sight. If unable to escape, they circle at a distance, no closer than 10 feet to the character, provided he continues to maintain his turning (no further die rolls are needed).",
 						"If the character forces the free-willed undead to come closer than 10 feet (by pressing them into a corner, for example) the turning is broken and the undead attack normally.",
 						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/028.webp"
+							}
+						},
+						{
 							"type": "entries",
 							"name": "Evil Priests and Undead",
 							"page": 95,
@@ -7634,6 +7842,13 @@
 							]
 						},
 						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/029.webp"
+							}
+						},
+						{
 							"type": "entries",
 							"name": "Magical Healing",
 							"page": 103,
@@ -7908,6 +8123,14 @@
 							]
 						},
 						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/030.webp"
+							},
+							"credit": "Ned Dameron"
+						},
+						{
 							"type": "inset",
 							"entries": [
 								{
@@ -8033,6 +8256,13 @@
 											]
 										}
 									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/031.webp"
+									}
 								}
 							]
 						},
@@ -8074,7 +8304,14 @@
 									"page": 110,
 									"entries": [
 										"The vision guidelines above assume a bright, sunlit day on the surface overhead. On overcast days, the distance a character sees can be reduced by half or more. On moonless nights a character’s range of vision is virtually nil.",
-										"Artificial light sources function underwater (although players will have to think fast to keep torches and lanterns lit). Artificial light sources illuminate half the space under water that they would light on the surface."
+										"Artificial light sources function underwater (although players will have to think fast to keep torches and lanterns lit). Artificial light sources illuminate half the space under water that they would light on the surface.",
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/XDMG/032.webp"
+											}
+										}
 									]
 								},
 								{
@@ -8127,6 +8364,14 @@
 							]
 						}
 					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/XDMG/033.webp"
+					},
+					"credit": "Alan Pollack"
 				}
 			]
 		},
@@ -8329,20 +8574,27 @@
 							]
 						},
 						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/034.webp"
+							}
+						},
+						{
 							"type": "entries",
 							"name": "The Nature of Magical Fabrication",
 							"page": 118,
 							"entries": [
 								"The construction of magical items is a realm of the AD&D rules open to broad DM interpretation. Just how the DM decides to approach it will affect the way magic is viewed in his game. There are two basic attitudes toward the making of magical items: The practical method and the fantastic method.",
 								"{@b The practical method} says that magical item manufacture is somehow tied to common sense; the materials needed to make the item reflect the properties of the item being constructed, and the steps required are fairly welldefined.",
-								"For example, a {@i potion of climbing} might require the hair of a climbing creature such as a giant spider or the legs of a giant insect. A {@i wand of lightning} bolts might have to be carved from the heart wood of an oak struck by lightning. {@i Petrification} might require the scales of a basilisk, a snake from a medusa, or a feather from a live cockatrice. {@i Fear} might require a drop of dragon sweat or the grave earth of a ghost. In each case, the relationship between the items needed and the object desired is relatively clear.",
+								"For example, a {@i {@item potion of climbing|XDMG}} might require the hair of a climbing creature such as a giant spider or the legs of a giant insect. A {@i {@item wand of lightning|XDMG}} bolts might have to be carved from the heart wood of an oak struck by lightning. {@i Petrification} might require the scales of a basilisk, a snake from a medusa, or a feather from a live cockatrice. {@i Fear} might require a drop of dragon sweat or the grave earth of a ghost. In each case, the relationship between the items needed and the object desired is relatively clear.",
 								"Furthermore, the component items themselves are physical and understandable. They may be rare, but they can’t be gathered without special preparations (other than those required for normal adventuring). In essence, the DM creates a \"grocery list\" that the player character must fill. The character goes out adventuring, seeking out the creatures or things that will provide him with the materials he needs.",
 								"This method has advantages, not the least being that it simplifies the DM’s task. When confronted by a player who wants to create some bizarre magical item, the DM need only list materials that seem appropriate to the magical effect.",
 								"At the same time, however, the practical method can be abused by clever players. They may figure out that every monster encountered has a potential usefulness to wizards and so begin collecting tissue samples, blood, hair, organs, and more. They become walking butcher shops—not at all what is desired!",
 								"Furthermore, players expect to find shops specializing in magical materials, both to sell and buy their needed goods. This defeats the need to adventure for one’s materials and ruins part of the role-playing involved in magical item creation.",
-								"{@b The fantastical approach} takes a drastically different view of magical item construction. Here, when the player says, \"I want to create a {@i rope of climbing},\" the DM provides a list of impossible ingredients. It then becomes the player’s obligation to discover the means to collect each ingredient.",
+								"{@b The fantastical approach} takes a drastically different view of magical item construction. Here, when the player says, \"I want to create a {@i {@item rope of climbing|XDMG}},\" the DM provides a list of impossible ingredients. It then becomes the player’s obligation to discover the means to collect each ingredient.",
 								"Thus, to make the {@i rope of climbing}, the DM could require a skein of unspun yarn, the voice of a spider, and the courage of a daring thief. The player would then have to discover the meaning of each ingredient or the means to produce it. This, in turn, could require more research and spells to accomplish the goal.",
-								"For the {@i rope of climbing}, the player might solve it by finding a magical sheep whose wool is so thick it needs no spinning. This he could form into a rope, casting spells to give a spider voice so it can say a few words over the cord. Finally, he could trick a renowned thief into using the unfinished rope on a dangerous mission. After all this, the wizard would cast the spells necessary to bind the various elements and, {@i viola}— a {@i rope of climbing} would be the result.",
+								"For the {@i rope of climbing}, the player might solve it by finding a magical sheep whose wool is so thick it needs no spinning. This he could form into a rope, casting spells to give a spider voice so it can say a few words over the cord. Finally, he could trick a renowned thief into using the unfinished rope on a dangerous mission. After all this, the wizard would cast the spells necessary to bind the various elements and, {@i viola}—{@sup [sic]} a {@i rope of climbing} would be the result.",
 								"Folktales, myths, and legends are filled with instances of impossible tasks and impossible ingredients. To bind the Fenris Wolf of Norse mythology, the dwarves forged an unbreakable chain from such things as the roots of a mountain, the noise of a cat, and the breath of a fish. Folktales tell of heroes and heroines faced with impossible tasks—to plow the ocean or make a shirt without seams. Hercules was faced with Twelve Labors, deemed impossible by others. Cullhwch (of Celtic legend) had to produce sweet honey without bees. If the player characters aspire to such ranks of heroism and wonder, surely they can accomplish deeds such as these.",
 								"The fantastical method gives the campaign a high fantasy element, for such impossible tasks are part of the wonder and enchantment of such a world. Furthermore, it ensures that each ingredient or step will be an adventure. Wizards won’t casually assemble their ingredients at the local magic supply warehouse. It also provides the DM with a means to control the time required (since assembling components can be quite a task) and a method for draining excess cash from the character’s accounts.",
 								"At the same time, players can perceive this method as too difficult and too restrictive. They may become discouraged by the DM’s demands. To alleviate this, at least partially, the DM should balance the requirements against the potency of the item being created.",
@@ -8483,6 +8735,13 @@
 						"For some items, particularly some staves, there are specific rules that define the effects of the item’s destruction. Such cases are rare and the effects are devastating, so they are recommended only for those in the area. You might, for example, dictate that characters within 1 foot, 5 feet, or even 10 feet suffer {@i 1d8} points of damage.",
 						"This is just an example—the actual damage can vary, at your discretion. Remember, however, that such damage should only be used for effect; it should never kill or seriously injure a character. After all, killing the character in the explosion of his own magical sword is piling injury upon insult; the loss of a prized magical treasure is bad enough!"
 					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/XDMG/035.webp"
+					}
 				},
 				{
 					"type": "inset",
@@ -8631,13 +8890,13 @@
 										"Since that time the Hand has appeared briefly in a number of widely scattered lands. Most of these appearances are unsubstantiated, but the corruption of the Paladin-King of Miro is a well-documented case. Foolishly fixing the Hand onto his own arm, the Paladin-King discovered too late that he could not remove it and in the end it destroyed him.",
 										"For the Hand to function, it must be touched to the stump of an arm, to which it grafts instantly. The grip is immensely strong (19 Strength, no attack roll or damage bonuses however).",
 										"At first, the Hand seems useful and harmless enough, but within it resides some portion of Vecna’s evil spirit. Gradually the owner comes to believe he is Vecna. Good characters becoming cruel and malevolent; evil characters become the embodiment of corruption, eventually turning on their friends and allies.",
-										"Suggested powers for the Hand include: death ray (no saving throw, once a day), {@i {@spell cause disease}} (100-foot x 100- foot area/2 times per day), {@i {@spell animate dead}} (1/day), {@i {@spell darkness}} (at will), +2 protection, {@i {@spell web}} (1/day), {@i {@spell disintegrate}} (1/ day), {@i {@spell regenerate}} 2 hp/turn, {@i {@spell lightning bolt}} (12 dice, 1/day), and {@i {@spell time stop}} (1/week).",
+										"Suggested powers for the Hand include: death ray (no saving throw, once a day), {@i {@spell cause disease|XPHB}} (100-foot x 100- foot area/2 times per day), {@i {@spell animate dead|XPHB}} (1/day), {@i {@spell darkness|XPHB}} (at will), +2 protection, {@i {@spell web|XPHB}} (1/day), {@i {@spell disintegrate|XPHB}} (1/ day), {@i {@spell regenerate|XPHB}} 2 hp/turn, {@i {@spell lightning bolt|XPHB}} (12 dice, 1/day), and {@i {@spell time stop|XPHB}} (1/week).",
 										"Aside from the fact that the Hand is corruptive, its other major drawbacks include the fact that it cannot be removed short of chopping off the arm and the fact that those who see the Hand will covet it, attempting to take it from its current owner. Finally, the Hand foresees the moment of its owner’s doom and its powers will fail just at that given time.",
 										"{@b The Rod of Seven Parts:} It is said that the Wind Dukes of Aaqa were the creators of this legendary artifact. Manifesting themselves upon the world at the battle of Pesh, where the powers of Chaos and Law arrayed themselves, the Dukes presented the Rod to the Captains of Law. In the battle, the Rod was supposedly sundered in the slaying of Miska, the Wolf-Spider, consort of the Queen of Chaos.",
 										"The Dukes, to prevent the Rod’s capture, snatched up the seven parts and scattered them throughout the world. Ever since, agents of the Queen have sought out the Rod. It is rumored that if she regains all the parts, she can return Miska to the realms of men.",
 										"The original rod was said to be about 5 feet long, but the pieces are irregular in length. The parts go together in a specific order, the first being narrowest and each later piece increasing in diameter. Assembling the Rod is difficult, however, because the item is still protected by the Wind Dukes. Each section conveys a sense of the direction to the next piece. Pieces assembled to each other in the correct order will bond together; however, if any piece is placed out of sequence, it will instantly disappear, to appear randomly somewhere else in the world. Upon assembling the first three pieces, the owner will refuse to part with the item at any time, even when sleeping, eating, bathing, or engaging in other personal activities.",
 										"Because it was once shattered, the Rod is fragile. There is a 5% chance that it will break apart (and be scattered by the Wind Dukes) each time its major power is used.",
-										"Each piece of the Rod has a minor power. Suggested powers are: immunity to one attack form, {@i {@spell fly|XPHB} at will}, {@i {@spell cure light wounds|XPHB}} (1/day), {@i {@spell true seeing}} (1/day), hold monster (1/day), double character’s movement, {@i {@spell slow}} (1/day). When completely assembled, the Rod can have major powers. Suggested powers are: {@i {@spell restoration|XPHB}} (1/day) and {@i {@spell shape change|XPHB}} (2/day).",
+										"Each piece of the Rod has a minor power. Suggested powers are: immunity to one attack form, {@i {@spell fly|XPHB} at will}, {@i {@spell cure light wounds|XPHB}} (1/day), {@i {@spell true seeing|XPHB}} (1/day), hold monster (1/day), double character’s movement, {@i {@spell slow}|XPHB} (1/day). When completely assembled, the Rod can have major powers. Suggested powers are: {@i {@spell restoration|XPHB}} (1/day) and {@i {@spell shape change|XPHB}} (2/day).",
 										"Created to the service of order, the Rod changes its user to an absolute follower of law, even more so than the most rigid lawful good. The character will feel compelled to intervene in all things to maintain the primacy of law over chaos, heedless of the effects for good or ill. Those not adhering to the Rod-holder’s strict views are perceived as enemies. Once all the parts are assembled, the Rod also radiates an aura of fearsome, icy law affecting all within a 20-foot radius. When its major powers are used, those who fail to save must flee in panic.",
 										"{@b Heward’s Mystical Organ:} In the Fables of Burdock readers find mention of a musical instrument, an organ of large size and mystical enchantment. It was said to have been fashioned by Heward, Patron of Bards, to teach mankind the art of song and to bring wonder and joy into the world. Through its keys and music, the Patron was able to spread the gifts of harmony, composing, grace, and beauty. Through his songs, Heward watched over and protected the lands, guiding the weather to glorious sunsets, rain to fall on parched soil, bread to rise firm and fresh, children to be happy, and indeed protecting all that mankind now loves.",
 										"Unfortunately, the Fables say, mice among the frets gnawed at the workings, causing sour notes to escape, giving voice to the harpies, sirens, and other evil creatures that entice and trap by song. Enraged, the Patron cursed the mice to remain forever lowly and meek of voice. Believing the Organ ruined, the Patron abandoned it (and took up the harp).",
@@ -8647,11 +8906,19 @@
 										"When a tune is played, the magic takes effect. Just what magical result occurs is left to the DM. He should base this upon the quality of the playing, the tastefulness and mastery of the music, and the desires of the player.",
 										"Theoretically, Heward’s Mystical Organ can have as many powers as there are settings and tunes to be played. With such a broad range, the DM can create virtually any result. The press of a key may cause flowers or straw to rain over a small village 100 miles away, while a fugue may result in the sinking of several islands off the coast or the reshaping of the organist into a newt (especially if he hits a bad note).",
 										"Unlike other artifacts (which possess powers the character must discover), users of the Organ should decide upon the effect they wish to create and then research the notes and stops needed to create it. The DM can, of course, alter the end result (mortals playing with the toys of gods seldom get what they really want) and a check should be made to see if any errors (a missed note or beat) occur in the playing.",
-										"If an error is made, the DM can have drawbacks and unfortunate results prepared. Some of these can include: permanently {@i polymorphing} the player into a small lizard or insect, permanent deafness or madness, or immediate alignment change. The character could be endowed with a voice equal to a {@i horn of blasting} (so he can’t speak without causing harm), or he might be forever compelled to speak in rhyme or in song. One or more levels might be drained by the Organ. All magical items within 100 feet could be permanently negated. The organist could be teleported to another planet, etc.",
+										"If an error is made, the DM can have drawbacks and unfortunate results prepared. Some of these can include: permanently {@i polymorphing} the player into a small lizard or insect, permanent deafness or madness, or immediate alignment change. The character could be endowed with a voice equal to a {@i {@item horn of blasting|XDMG}} (so he can’t speak without causing harm), or he might be forever compelled to speak in rhyme or in song. One or more levels might be drained by the Organ. All magical items within 100 feet could be permanently negated. The organist could be teleported to another planet, etc.",
 										"In addition, the tones of the Organ, no matter how badly set or played, are of unearthly beauty. Whenever it is played, all hearing it (including the organist) must roll a successful saving throw vs. spell or be enchanted forever.",
 										"Those so stricken cannot abide any other sound. Deprived of its tones, they despair and see no wonder or greatness (in either good or evil) in the world. Gradually, those enchanted take less and less interest in life until they finally reach the point where even the finest food is an anathema to them. These slowly wasting creatures are truly piteous sights.",
 										"The location of the Organ is constantly changing. All the legends agree that it exists nowhere in the world, but in some misty other realm. Noteworthy too is the fact that those who leave its hall are never able to find it again."
 									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/036.webp"
+									},
+									"credit": "Den Beauvais"
 								}
 							]
 						}
@@ -8780,6 +9047,14 @@
 								},
 								"Here everything is dependent upon previous and current choices of action. Is a character awake? Will the characters investigate? How will they react to the kidnappers? Each decision molds subsequent events. The characters might leap to the young woman's rescue or they might rouse themselves only in time to see the kidnappers gallop off with her tied to the saddle. Their actions could alter planned events. Coming to her aid, the characters rescue the lady. As DM you must be ready to tell her story. Why was she attacked? Who were they? Are there any clues the characters can find?",
 								"To write this type of encounter, first outline the basic sequence of events that would happen if the characters did not interfere. Next, think like a player and try to anticipate what the characters might do. Would they aid the lady? If so, you will need combat information—how the attackers will fight and what weapons and tactics they will use. What happens if the characters try to sound the alarm or talk to the kidnappers? What will the lady say if rescued? At least a brief note should be made to account for the probable reactions of the player characters.",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/037.webp"
+									},
+									"credit": "Ned Dameron"
+								},
 								"As complete as you make them, triggers are not without their weaknesses. While very good at describing a scene, a trigger does not provide much background information. In the event above, there is no description of the room, the attackers, the lady's history, etc. There could be, but including it would be extra work, and description would also get in the way of the action.",
 								"A less critical problem is that DMs can't anticipate every action of the player characters. No matter how carefully a trigger is constructed, there is always something the characters can do to upset the situation. In the example above, what if the characters panic and a mage launches a fireball at the attackers? In a flash of flame, they and their victim are killed and the building is on fire. Prescient is the DM who can anticipate this event!",
 								"There is no simple solution for unpredictable players (nor would you want one!). As a DM you are never going to be able to predict every player decision. Experience, both as a player and a DM, teaches you what the most likely actions are. Beyond these you must improvise, relying on your skill as a DM.",
@@ -9315,7 +9590,14 @@
 									]
 								},
 								"When constructing the encounter table, creatures with a greater or lesser power than the table being designed can be used. However, each level of difference between creature and table decreases the frequency of appearance by one (a common creature becomes uncommon, a rare creature would be very rare, and so on). Creatures less powerful than the given level seldom venture into such dangerous territory. Creatures more powerful are seldom met to ensure the player characters have a decent chance of survival. After adjustment, these creatures can be added to the table.",
-								"In addition, there is a chance that an encountered creature will be more powerful than expected: When designing a 2–20 table, the 20 result could be \"Use next highest table\"; if a percentile table is used, 98–100 could bump the DM to the next table. Thus, players would never be assured of safety or good odds."
+								"In addition, there is a chance that an encountered creature will be more powerful than expected: When designing a 2–20 table, the 20 result could be \"Use next highest table\"; if a percentile table is used, 98–100 could bump the DM to the next table. Thus, players would never be assured of safety or good odds.",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/038.webp"
+									}
+								}
 							]
 						},
 						{
@@ -10072,7 +10354,14 @@
 						"{@b Cautious:} Suspicious, wary, dubious, paranoid, guarded, untrusting, or mildly conciliatory.",
 						"{@b Threatening:} Boastful, bravado, blustering, intimidating, short-tempered, or bluffing.",
 						"{@b Hostile:} Irritable, hot-tempered, aggressive, or violent.",
-						"Of course, a DM should never use a reaction he can’t justify. If the DM can’t see any reason for an evil efreeti to surrender to the charging player characters, it shouldn’t. The table is meant to be an aid to the DM, not an absolute decision-maker."
+						"Of course, a DM should never use a reaction he can’t justify. If the DM can’t see any reason for an evil efreeti to surrender to the charging player characters, it shouldn’t. The table is meant to be an aid to the DM, not an absolute decision-maker.",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/039.webp"
+							}
+						}
 					]
 				},
 				{
@@ -10987,6 +11276,13 @@
 								"{@b Artillerist:} These troops are more specialists than regular soldiers. Since their duty is to work and service heavy catapults and siege equipment, they don’t normally enter into combat. They dress and outfit themselves as they please. Artillerists stay with their equipment, which is found in the siege train.",
 								"{@b Bowmen, mounted:} These are normally light cavalry. They carry short bows, a long sword or scimitar, and leather armor, although armor up to chain is sometimes worn. Historically, most mounted bowmen came from nomadic tribes or areas of vast plains.",
 								"The most famous mounted bowmen were the Mongol horsemen, who commonly armed themselves with composite short bow, scimitar, mace, axe, and dagger. Some also carried light lances. They wore studded leathers or whatever else they could find and carried medium shields. Pecheneg horsemen used the composite short bow, hand axe, lasso, and light lance and wore scale armor. Russian troops carried the short bow and dagger and wore padded armor.",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/040.webp"
+									}
+								},
 								"{@b Cavalry, heavy:} The classic image of the heavy cavalryman is the mounted knight. Such men are typically armed with heavy lance, long sword, and mace. They wear plate mail or field plate armor. The horse is a heavy war horse and barded, although the type of barding varies.",
 								"Examples include the early Byzantine kataphractos, armed with medium lance, long sword, banded armor, and a large shield. They rode heavy war horses fitted with scale barding. The French Compagnies d’Ordonnance fitted with heavy lance, long sword, mace, and full plate on chain or plate barded horses were classic knights of the late medieval period.",
 								"In other lands, the Polish hussar was a dashing sight with his tiger-skin cloak fluttering in the charge. He wore plate mail armor and rode an unbarded horse but carried an arsenal of weapons—medium lance, long sword, scimitar, warhammer, and a brace of pistols (although the latter won’t normally appear in an AD&D game).",
@@ -12681,7 +12977,15 @@
 							"page": 159,
 							"entries": [
 								"Light sources, particularly fires, tend either to attract or chase away creatures. Wild animals tend to avoid lights and fires, especially if hunters frequent the area. On the other hand, animals that hunt player characters (or horse meat) will be attracted to a fire. They have learned that fires signal a source of food.",
-								"Intelligent creatures always approach a light source with caution. Friendly NPCs don’t know if they are approaching the camp of a friend or foe. Hostile NPCs will likewise get as close as they can without revealing themselves, in order to learn the strength and numbers of the enemy. Only a few NPCs—those wishing to avoid all danger—flee at the sight of a fire, generally heading away from it in the opposite direction."
+								"Intelligent creatures always approach a light source with caution. Friendly NPCs don’t know if they are approaching the camp of a friend or foe. Hostile NPCs will likewise get as close as they can without revealing themselves, in order to learn the strength and numbers of the enemy. Only a few NPCs—those wishing to avoid all danger—flee at the sight of a fire, generally heading away from it in the opposite direction.",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/041.webp"
+									},
+									"credit": "Den Beauvais"
+								}
 							]
 						}
 					]
@@ -12920,6 +13224,13 @@
 									]
 								}
 							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/042.webp"
+							}
 						},
 						{
 							"type": "entries",
@@ -13341,6 +13652,13 @@
 						"When sailing downstream, characters must be wary of unexpected hazards. While a good map can show the location of waterfalls and rapids, only a knowledgeable guide or pilot knows the location of hidden sandbars, snags, and dangerous eddies. While these are easy to avoid when traveling upstream (all one need do is stop paddling), unprepared boaters can quickly be swept into them going downstream.",
 						"Once characters find themselves in a dangerous situation, they must make a Wisdom check (modified for seamanship proficiency, if this is used) to prevent capsizing. Capsized boats and goods are swept downstream, although hazards like waterfalls and particularly strong rapids will smash most craft.",
 						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/043.webp"
+							}
+						},
+						{
 							"type": "entries",
 							"name": "Ocean Voyaging",
 							"page": 170,
@@ -13604,7 +13922,15 @@
 										"* Hurricanes occur only if the previous day’s weather was gale. If not, treat the result as a gale."
 									]
 								},
-								"{@b Adverse winds} are determined by rolling 1d6. On a 5 or 6, the winds are unfavorable. When adverse winds are storm strength or greater, the ship will be blown off-course by at least half its movement under those conditions, regardless of whether it is a sailing ship or galley."
+								"{@b Adverse winds} are determined by rolling 1d6. On a 5 or 6, the winds are unfavorable. When adverse winds are storm strength or greater, the ship will be blown off-course by at least half its movement under those conditions, regardless of whether it is a sailing ship or galley.",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/044.webp"
+									},
+									"credit": "Ned Dameron"
+								}
 							]
 						}
 					]
@@ -13806,7 +14132,14 @@
 								"Their chance of getting lost is 15%—40 for being in wooded hills minus 15 because they’ve got a landmark minus 10 because they’re on a trail (40 - 15 - 10 = 15). The DM checks to see if they become lost and rolls a 07. They’re lost, but they don’t know it!",
 								"The players announce that their characters are marching to the west (to follow the landmark), but, unknown to them, the path takes them somewhat southwest. As the characters get close to their landmark, they sight a new one in a straight line beyond it. They think they are still headed west, but their new course is now northwest.",
 								"The player characters are likely to realize that they are off course only when they don’t find the village at the end of three days’ marching. At that point, they don’t know just when they got off course and so they are hopelessly lost.",
-								"Remember that the best defense against getting lost is not to try to go anywhere in particular. There is little point in checking to see if characters get lost if they don’t have a goal. It is perfectly possible for characters just to strike out \"to see what can be seen.\" If one has no place to be and no concern about ever getting back, one cannot get lost."
+								"Remember that the best defense against getting lost is not to try to go anywhere in particular. There is little point in checking to see if characters get lost if they don’t have a goal. It is perfectly possible for characters just to strike out \"to see what can be seen.\" If one has no place to be and no concern about ever getting back, one cannot get lost.",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/045.webp"
+									}
+								}
 							]
 						}
 					]
@@ -13914,6 +14247,14 @@
 						"Remember that during the period of the change the player has no control over his character. Neither will he be identifiable to his friends and companions unless they are familiar with his curse or can recognize him by some personal effect.",
 						"At the end of each change, the character returns to his normal form (perhaps to his embarrassment). At the same time, he heals 10% to 60% ({@dice 1d6×10}) of any wounds he has suffered. While the character may know or suspect that he has done something terrible, he does not have clear memories of the preceding night. Good characters will be tormented at the thought of what they may have done, and paladins will find they have, at least temporarily, fallen from grace.",
 						"Freeing a character from the grip of lycanthropy is not the simple task of casting a spell. A {@i cure disease} has no effect on the character. A {@i remove curse} allows the character to make a saving throw to free himself from the lycanthropy, but this must be cast on one of the nights when the actual change occurs. If the character makes his saving throw vs. polymorph, the lycanthropy is broken and will not affect the character again (unless, of course, he is infected by a lycanthrope once again).",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/046.webp"
+							},
+							"credit": "Ned Dameron"
+						},
 						{
 							"type": "entries",
 							"name": "Other Magical Diseases",
@@ -14027,6 +14368,13 @@
 								"For example, an oriental-type world might see the Outer Planes not as a series of separate regions, but as a single mass throughout which are scattered different agencies of the Celestial Bureaucracy. The Celestial Emperor might reside on one plane, while his Minister of State operated from another.",
 								"A Nordic land would see the plane of Ysgard as dominant over all others, in accordance with the importance they ascribe the powers there. These things are left to your discretion, as the DM. The planes can be molded to meet the needs of your campaign."
 							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/047.webp"
+							}
 						}
 					]
 				}
@@ -14494,6 +14842,13 @@
 				"To use Table 84, first find the letter given under the monster listing. On that row each column then lists the percentage chance of a particular type of treasure appearing and the size range for that particular type. Treasures with no percentage listed are automatically present. Either choose to have that particular treasure present (and the amount) or roll randomly to determine the result.",
 				"The first part of the table (letters A-I) lists treasures that are found in lairs only. These are sizeable treasures accumulated by social creatures (humans, orcs, hobgoblins, etc.) or by those creatures notorious for the size of their treasure hoards (especially dragons).",
 				"The second part of the table lists treasures likely to be owned by intelligent individuals or to be found in the lairs of animal intelligence or less monsters. These treasures are small. Intelligent creatures seldom carry large amounts of cash, while unintelligent ones seldom make the effort to collect it. When an individual or lair treasure warrants being larger than normal, several smaller entries can be listed to create an overall larger hoard.",
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/XDMG/048.webp"
+					}
+				},
 				{
 					"type": "entries",
 					"name": "Coins",
@@ -17092,6 +17447,14 @@
 							]
 						},
 						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/049.webp"
+							},
+							"credit": "Den Beauvais"
+						},
+						{
 							"type": "tableGroup",
 							"name": "Table 104: Miscellaneous Magic: The Weird Stuff (D6)",
 							"tables": [
@@ -18552,6 +18915,13 @@
 									]
 								}
 							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/050.webp"
+							}
 						}
 					]
 				},
@@ -18646,22 +19016,29 @@
 									"page": 207,
 									"name": "",
 									"items": [
-										"{@item |XDMG|Staff-Mace}",
-										"{@item |XDMG|Staff-Spear}",
-										"{@item |XDMG|Staff of Command}",
-										"{@item |XDMG|Staff of Curing}",
-										"{@item |XDMG|Staff of the Magi}",
-										"{@item |XDMG|Staff of Power}",
-										"{@item |XDMG|Staff of the Serpent}",
-										"{@item |XDMG|Staff of Slinging}",
-										"{@item |XDMG|Staff of Striking}",
-										"{@item |XDMG|Staff of Swarming Insects}",
-										"{@item |XDMG|Staff of Thunder and Lightning}",
-										"{@item |XDMG|Staff of Withering}",
-										"{@item |XDMG|Staff of the Woodlands}"
+										"{@item Staff-Mace|XDMG}",
+										"{@item Staff-Spear|XDMG}",
+										"{@item Staff of Command|XDMG}",
+										"{@item Staff of Curing|XDMG}",
+										"{@item Staff of the Magi|XDMG}",
+										"{@item Staff of Power|XDMG}",
+										"{@item Staff of the Serpent|XDMG}",
+										"{@item Staff of Slinging|XDMG}",
+										"{@item Staff of Striking|XDMG}",
+										"{@item Staff of Swarming Insects|XDMG}",
+										"{@item Staff of Thunder and Lightning|XDMG}",
+										"{@item Staff of Withering|XDMG}",
+										"{@item Staff of the Woodlands|XDMG}"
 									]
 								}
 							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XDMG/051.webp"
+							}
 						}
 					]
 				},
@@ -18965,6 +19342,14 @@
 										"{@item Wind Fan|XDMG}",
 										"{@item Wings of Flying|XDMG}"
 									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/052.webp"
+									},
+									"credit": "Den Beauvais"
 								}
 							]
 						}
@@ -19092,6 +19477,14 @@
 										"{@item Trident of Warning|XDMG}",
 										"{@item Trident of Yearning|XDMG}"
 									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XDMG/053.webp"
+									},
+									"credit": "Den Beauvais"
 								}
 							]
 						}
@@ -21313,7 +21706,6 @@
 								"{@color 85|ef1946}, 128, 129"
 							]
 						},
-
 						{
 							"type": "row",
 							"style": "row-indent-first",
@@ -22520,7 +22912,6 @@
 								"{@color 42|ef1946}"
 							]
 						}
-
 					]
 				},
 				{
@@ -22994,7 +23385,6 @@
 							"Hirelings",
 							"{@color 143, 149|ef1946}, 151, 153"
 						],
-
 						[
 							"Heward's mystical organ",
 							"{@color 52|ef1946}"
