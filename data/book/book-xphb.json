@@ -6,14 +6,22 @@
 			"page": 3,
 			"entries": [
 				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/XPHB/000.webp"
+					},
+					"maxWidth": 800,
+					"credit": "Jeff Easley"
+				},
+				{
 					"type": "quote",
 					"entries": [
 						"Before we even start, I want to make sure everyone understands one very important fact:",
 						{
 							"type": "entries",
 							"name": "This is not AD&D 3rd Edition!",
-							"entries": [
-							]
+							"entries": []
 						},
 						"There, everyone can breathe again.",
 						"Rest assured that this is still the same version of the AD&D game that your friends, classmates, and business partners have been playing for years.",
@@ -23,8 +31,10 @@
 						"Since the 2nd Edition was released, the AD&D game has grown in ways we never anticipated. We’ve traveled to a multitude of fabulous worlds, from the misty horror of Ravenloft®, to the exotic bazaars of Al-Qadim™, and across the burning face of Dark Sun®. Now the endless horizons of Planescape™ beckon to us, and beyond even that we see spearpoints and banners waving above the gathering armies of Birthright™. And, of course, presiding over it all is the grand and legendary Forgotten Realms®.",
 						"Products change, but our goal stays the same: to publish things that make fantasy gamers exclaim, \"That’s just what I was looking for!\" And we do it for the same reason that you play: because it’s fun!"
 					],
-					"by": ["Steve Winter",
-					"February 6, 1995"]
+					"by": [
+						"Steve Winter",
+						"February 6, 1995"
+					]
 				}
 			]
 		},
@@ -84,6 +94,14 @@
 					"entries": [
 						"The male pronoun (he, him, his) is used exclusively throughout the second edition of the AD&D game rules. We hope this won't be construed by anyone to be an attempt to exclude females from the game or imply their exclusion. Centuries of use have neutered the male pronoun. In written material it is clear, concise, and familiar. Nothing else is."
 					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/XPHB/001.webp"
+					},
+					"credit": "Ned Dameron"
 				}
 			]
 		},
@@ -250,6 +268,13 @@
 				"{@b Hireling}—nonplayer characters who work for a character just for money. Hirelings are completely under the control of the DM.",
 				"{@b Hit dice}—the dice rolled to determine a character's hit points. Up to a certain level, one or more new Hit Dice are rolled each time a character attains a new class level. A fighter, for example, has only one 10-sided Hit Die (1d10) at 1st level, but when he rises to the 2nd level, the player rolls a second d10, increasing the character's hit points.",
 				"{@b Hit points}—a number representing: 1. how much damage a character can suffer before being killed, determined by Hit Dice. The hit points lost to injury can usually be regained by rest or healing; 2. how much damage a specific attack does, determined by weapon or monster statistics, and subtracted from a player's total.",
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/XPHB/002.webp"
+					}
+				},
 				"{@b Infravision}—the ability of certain character races or monsters to see in the dark. Infravision generally works up to 60 feet in the darkness.",
 				"{@b Initiative}—the right to attack first in a combat round, usually determined by the lowest roll of a 10-sided die. The initiative roll is eliminated if surprise. is achieved.",
 				"{@b Int}—abbreviation for Intelligence.",
@@ -529,6 +554,14 @@
 								"Consult Table 46 to determine your character's armor class rating. Modify this base AC by his defensive adjustment.",
 								"Record the weight, size, damage, rate of fire, and range information for each weapon carried. Include type and speed factors if those optional rules are in play."
 							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/003.webp"
+							},
+							"credit": "Carol Heyer"
 						}
 					]
 				}
@@ -1247,7 +1280,7 @@
 							"type": "entries",
 							"name": "Intelligence",
 							"page": 22,
-							"entries":[
+							"entries": [
 								"Intelligence (Int) represents a character's memory, reasoning, and learning ability, including areas outside those measured by the written word. Intelligence dictates the number of languages a character can learn. Intelligence is the prime requisite of wizards, who must have keen minds to understand and memorize magical spells. A wizard with an Intelligence score of 16 or higher gains a 10% bonus to experience points earned. The wizard's Intelligence dictates which spells he can learn and the number of spells he can memorize at one time. Only those of the highest Intelligence can comprehend the mighty magic of 9th-level spells.",
 								"This ability gives only a general indication of a character's mental acuity. A semi-intelligent character (Int 3 or 4) can speak (with difficulty) and is apt to react instinctively and impulsively. He is not hopeless as a player character (PC), but playing such a character correctly is not easy. A character with low Intelligence (Int 5-7) could also be called dull-witted or slow. A very intelligent person (Int 11 or 12) picks up new ideas quickly and learns easily. A highly intelligent character (Int 13 or 14) is one who can solve most problems without even trying very hard. One with exceptional intelligence (Int 15 or 16) is noticeably above the norm. A genius character is brilliant (Int 17 or 18). A character beyond genius is potentially more clever and more brilliant than can possibly be imagined.",
 								"However, the true capabilities of a mind lie not in numbers—I.Q., Intelligence score, or whatever. Many intelligent, even brilliant, people in the real world fail to apply their minds creatively and usefully, thus falling far below their own potential. Don't rely too heavily on your character's Intelligence score; you must provide your character with the creativity and energy he supposedly possesses!",
@@ -1473,7 +1506,6 @@
 											"7th-level"
 										],
 										""
-										
 									],
 									"footnotes": [
 										"* While unable to speak a language, the character can communicate with grunts and gestures."
@@ -1498,7 +1530,7 @@
 							"type": "entries",
 							"name": "Wisdom",
 							"page": 23,
-							"entries":[
+							"entries": [
 								"Wisdom (Wis) describes a composite of the character’s enlightenment, judgment, guile, willpower, common sense, and intuition. It can affect the character’s resistance to magical attack. It is the prime requisite of priests; those with a Wisdom score of 16 or higher gain a 10% bonus to experience points earned. Clerics, druids, and other priests with Wisdom scores of 13 or higher also gain bonus spells over and above the number they are normally allowed to use.",
 								{
 									"type": "table",
@@ -1703,10 +1735,17 @@
 							]
 						},
 						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/004.webp"
+							}
+						},
+						{
 							"type": "entries",
 							"name": "Charisma",
 							"page": 23,
-							"entries":[
+							"entries": [
 								"The Charisma (Cha) score measures a character's persuasiveness, personal magnetism, and ability to lead. It is not a reflection of physical attractiveness, although attractiveness certainly plays a role. It is important to all characters, but especially to those who must deal with nonplayer characters (NPCs), mercenary hirelings, retainers, and intelligent monsters. It dictates the total number of henchmen a character can retain and affects the loyalty of henchmen, hirelings, and retainers.",
 								{
 									"type": "table",
@@ -1892,47 +1931,47 @@
 						"Now that you have finished creating the ability scores for your character, stop and take a look at them. What does all this mean?",
 						"Suppose you decide to name your character \"Rath\" and you rolled the following ability scores for him:",
 						{
-						"type": "table",
-						"colStyles": [
-							"col-1 text-middle",
-							"col-8 text-left"
-						],
-						"isStriped": false,
-						"rows": [
-							[
-								"Strength",
-								"8"
+							"type": "table",
+							"colStyles": [
+								"col-1 text-middle",
+								"col-8 text-left"
 							],
-							[
-								"Dexterity",
-								"14"
-							],
-							[
-								"Constitution",
-								"13"
-							],
-							[
-								"Intelligence",
-								"13"
-							],
-							[
-								"Wisdom",
-								"7"
-							],
-							[
-								"Charisma",
-								"6"
+							"isStriped": false,
+							"rows": [
+								[
+									"Strength",
+									"8"
+								],
+								[
+									"Dexterity",
+									"14"
+								],
+								[
+									"Constitution",
+									"13"
+								],
+								[
+									"Intelligence",
+									"13"
+								],
+								[
+									"Wisdom",
+									"7"
+								],
+								[
+									"Charisma",
+									"6"
+								]
 							]
-						]
-					},
-					"Rath has strengths and weaknesses, but it is up to you to interpret what the numbers mean. Here are just two different ways these numbers could be interpreted.",
-					"1) Although Rath is in good health (Con 13), he’s not very strong (Str 8) because he’s just plain lazy—he never wanted to exercise as a youth and now it’s too late. His low Wisdom and Charisma scores (7, 6) show that he lacks the common sense to apply himself properly and projects a slothful, \"I’m not going to bother\" attitude (which tends to irritate others). Fortunately, Rath’s natural wit (Int 13) and Dexterity (14) keep him from being a total loss.",
-					"Thus, you might play Rath as an irritating, smart-alecky twerp forever ducking just out of range of those who want to squash him.",
-					"2) Rath has several good points—he has studied hard (Int 13) and practiced his manual skills (Dex 14). Unfortunately, his Strength is low (8) from a lack of exercise (all those hours spent reading books). Despite that, Rath’s health is still good (Con 13). His low Wisdom and Charisma (7, 6) are a result of his lack of contact and involvement with people outside the realm of academics.",
-					"Looking at the scores this way, you could play Rath as a kindly, naive, and shy professorial type who’s a good tinkerer, always fiddling with new ideas and inventions.",
-					"Obviously, Rath’s ability scores (often called \"stats\") are not the greatest in the world. Yet it is possible to turn these \"disappointing\" stats into a character who is both interesting and fun to play. Too often players become obsessed with \"good\" stats. These players immediately give up on a character if he doesn’t have a majority of above-average scores. There are even those who feel a character is hopeless if he does not have at least one ability of 17 or higher! Needless to say, these players would never consider playing a character with an ability score of 6 or 7.",
-					"In truth, Rath’s survivability has a lot less to do with his ability scores than with your desire to role-play him. If you give up on him, of course he won’t survive! But if you take an interest in the character and role-play him well, then even a character with the lowest possible scores can present a fun, challenging, and all-around exciting time. Does he have a Charisma of 5? Why? Maybe he’s got an ugly scar. His table manners could be atrocious. He might mean well but always manage to say the wrong thing at the wrong time. He could be bluntly honest to the point of rudeness, something not likely to endear him to most people. His Dexterity is a 3? Why? Is he naturally clumsy or blind as a bat?",
-					"Don’t give up on a character just because he has a low score. Instead, view it as an opportunity to role-play, to create a unique and entertaining personality in the game. Not only will you have fun creating that personality, but other players and the DM will have fun reacting to him."
+						},
+						"Rath has strengths and weaknesses, but it is up to you to interpret what the numbers mean. Here are just two different ways these numbers could be interpreted.",
+						"1) Although Rath is in good health (Con 13), he’s not very strong (Str 8) because he’s just plain lazy—he never wanted to exercise as a youth and now it’s too late. His low Wisdom and Charisma scores (7, 6) show that he lacks the common sense to apply himself properly and projects a slothful, \"I’m not going to bother\" attitude (which tends to irritate others). Fortunately, Rath’s natural wit (Int 13) and Dexterity (14) keep him from being a total loss.",
+						"Thus, you might play Rath as an irritating, smart-alecky twerp forever ducking just out of range of those who want to squash him.",
+						"2) Rath has several good points—he has studied hard (Int 13) and practiced his manual skills (Dex 14). Unfortunately, his Strength is low (8) from a lack of exercise (all those hours spent reading books). Despite that, Rath’s health is still good (Con 13). His low Wisdom and Charisma (7, 6) are a result of his lack of contact and involvement with people outside the realm of academics.",
+						"Looking at the scores this way, you could play Rath as a kindly, naive, and shy professorial type who’s a good tinkerer, always fiddling with new ideas and inventions.",
+						"Obviously, Rath’s ability scores (often called \"stats\") are not the greatest in the world. Yet it is possible to turn these \"disappointing\" stats into a character who is both interesting and fun to play. Too often players become obsessed with \"good\" stats. These players immediately give up on a character if he doesn’t have a majority of above-average scores. There are even those who feel a character is hopeless if he does not have at least one ability of 17 or higher! Needless to say, these players would never consider playing a character with an ability score of 6 or 7.",
+						"In truth, Rath’s survivability has a lot less to do with his ability scores than with your desire to role-play him. If you give up on him, of course he won’t survive! But if you take an interest in the character and role-play him well, then even a character with the lowest possible scores can present a fun, challenging, and all-around exciting time. Does he have a Charisma of 5? Why? Maybe he’s got an ugly scar. His table manners could be atrocious. He might mean well but always manage to say the wrong thing at the wrong time. He could be bluntly honest to the point of rudeness, something not likely to endear him to most people. His Dexterity is a 3? Why? Is he naturally clumsy or blind as a bat?",
+						"Don’t give up on a character just because he has a low score. Instead, view it as an opportunity to role-play, to create a unique and entertaining personality in the game. Not only will you have fun creating that personality, but other players and the DM will have fun reacting to him."
 					]
 				}
 			]
@@ -2092,86 +2131,86 @@
 					"name": "Dwarves",
 					"page": 27,
 					"entries": [
-					"Dwarves are short, stocky fellows, easily average 4 to 41⁄2 feet tall. They have ruddy cheeks, dark eyes, and dark hair. Dwarves generally live for 350 years.",
-					"Dwarves tend to be dour and taciturn. They are given to hard work and care little for most humor. They are strong and brave. They enjoy beer, ale, mead, and even stronger drink. Their chief love, however, is precious metal, particularly gold. They prize gems, of course, especially diamonds and opaque gems (except pearls, which they do not like). Dwarves like the earth and dislike the sea. Not overly fond of elves, they have a fierce hatred of orcs and goblins. Their short, stocky builds make them ill-suited for riding horses or other large mounts (although ponies present no difficulty), so they tend to be a trifle dubious and wary of these creatures. They are ill-disposed toward magic and have little talent for it, but revel in fighting, warcraft, and scientific arts such as engineering.",
-					"Though dwarves are suspicious and avaricious, their courage and tenacity more than compensate for these shortcomings.",
-					"Dwarves typically dwell in hilly or mountainous regions. They prefer life in the comforting gloom and solidness that is found underground. They have several special abilities that relate to their underground life, and they are noted for being particularly resistant to magics and poisons.",
-					"A character of the dwarven race can be a cleric, a fighter, or a thief. He can also choose to be a fighter/cleric or fighter/thief.",
-					"From living underground, dwarves have found it useful to learn the languages of several of their neighbors, both friendly and hostile. The initial languages a dwarf can learn are common, dwarf, gnome, goblin, kobold, orc, and any others your DM allows. The actual number of languages is limited by the Intelligence of the player character (see Table 4) or by the proficiency slots he allots to languages (if that optional system is used).",
-					"By nature, dwarves are nonmagical and never use magical spells (priest spells are allowed however). This gives a bonus to dwarves’ saving throws against attacks from magical wands, staves, rods, and spells. This bonus is +1 for every 31⁄2 points of Constitution score. Thus, for example, if a dwarf has a Constitution score of 7 he gains +2 on saving throws. These bonuses are summarized on Table 9.",
-					"Similarly, dwarves have exceptional resistance to toxic substances. All dwarven characters make saving throws against poison with the same bonuses that they get against magical attacks (see Table 9).",
-					{
-						"type": "table",
-						"caption": "Table 9: Constitution Saving Throw Bonuses",
-						"page": 28,
-						"colLabels": [
-							"Constitution Score",
-							"Saving Throw Bonus"
-						],
-						"colStyles": [
-							"col-1 text-center",
-							"col-1 text-center"
-						],
-						"rows": [
-							[
-								"4—6",
-								"+1"
+						"Dwarves are short, stocky fellows, easily average 4 to 41⁄2 feet tall. They have ruddy cheeks, dark eyes, and dark hair. Dwarves generally live for 350 years.",
+						"Dwarves tend to be dour and taciturn. They are given to hard work and care little for most humor. They are strong and brave. They enjoy beer, ale, mead, and even stronger drink. Their chief love, however, is precious metal, particularly gold. They prize gems, of course, especially diamonds and opaque gems (except pearls, which they do not like). Dwarves like the earth and dislike the sea. Not overly fond of elves, they have a fierce hatred of orcs and goblins. Their short, stocky builds make them ill-suited for riding horses or other large mounts (although ponies present no difficulty), so they tend to be a trifle dubious and wary of these creatures. They are ill-disposed toward magic and have little talent for it, but revel in fighting, warcraft, and scientific arts such as engineering.",
+						"Though dwarves are suspicious and avaricious, their courage and tenacity more than compensate for these shortcomings.",
+						"Dwarves typically dwell in hilly or mountainous regions. They prefer life in the comforting gloom and solidness that is found underground. They have several special abilities that relate to their underground life, and they are noted for being particularly resistant to magics and poisons.",
+						"A character of the dwarven race can be a cleric, a fighter, or a thief. He can also choose to be a fighter/cleric or fighter/thief.",
+						"From living underground, dwarves have found it useful to learn the languages of several of their neighbors, both friendly and hostile. The initial languages a dwarf can learn are common, dwarf, gnome, goblin, kobold, orc, and any others your DM allows. The actual number of languages is limited by the Intelligence of the player character (see Table 4) or by the proficiency slots he allots to languages (if that optional system is used).",
+						"By nature, dwarves are nonmagical and never use magical spells (priest spells are allowed however). This gives a bonus to dwarves’ saving throws against attacks from magical wands, staves, rods, and spells. This bonus is +1 for every 31⁄2 points of Constitution score. Thus, for example, if a dwarf has a Constitution score of 7 he gains +2 on saving throws. These bonuses are summarized on Table 9.",
+						"Similarly, dwarves have exceptional resistance to toxic substances. All dwarven characters make saving throws against poison with the same bonuses that they get against magical attacks (see Table 9).",
+						{
+							"type": "table",
+							"caption": "Table 9: Constitution Saving Throw Bonuses",
+							"page": 28,
+							"colLabels": [
+								"Constitution Score",
+								"Saving Throw Bonus"
 							],
-							[
-								"7—10",
-								"+2"
+							"colStyles": [
+								"col-1 text-center",
+								"col-1 text-center"
 							],
-							[
-								"11—13",
-								"+3"
-							],
-							[
-								"14—17",
-								"+4"
-							],
-							[
-								"18—19",
-								"+5"
+							"rows": [
+								[
+									"4—6",
+									"+1"
+								],
+								[
+									"7—10",
+									"+2"
+								],
+								[
+									"11—13",
+									"+3"
+								],
+								[
+									"14—17",
+									"+4"
+								],
+								[
+									"18—19",
+									"+5"
+								]
 							]
-						]
-					},
-					"Also because of their nonmagical nature, however, dwarves have trouble using magical items. All magical items that are not specifically suited to the character’s class have a 20% chance to malfunction when used by a dwarf. This check is made each time a dwarf uses a magical item. A malfunction affects only the current use; the item may work properly next time. For devices that are continually in operation, the check is made the first time the device is used during an encounter. If the check is passed, the device functions normally until it is turned off. Thus, a dwarf would have to check upon donning a {@i robe of blending} but would not check again until he had taken the robe off and then put it on again. If a cursed item malfunctions, the character recognizes its cursed nature and can dispose of the item. Malfunction applies to rods, staves, wands, rings, amulets, potions, horns, jewels, and all other magical items except weapons, shields, armor, gauntlets, and girdles. This penalty does not apply to dwarven clerics using priest items.",
-					"In melee, dwarves add 1 to their dice rolls to hit orcs, half-orcs, goblins, and hobgoblins. When ogres, trolls, ogre magi, giants, or titans attack dwarves, these monsters must subtract 4 from their attack rolls because of the dwarves’ small size and combat ability against these much bigger creatures.",
-					"Dwarven infravision enables them to see up to 60 feet in the dark.",
-					"Dwarves are miners of great skill. While underground, they can detect the following information when within 10 feet of the particular phenomenon (but they can determine their approximate depth below the surface at any time).",
-					{
-						"type": "table",
-						"page": 28,
-						"colStyles": [
-							"col-1 text-left",
-							"col-2 text-left"
-						],
-						"isStriped": false,
-						"rows": [
-							[
-								"Detect grade or slope in passage",
-								"1–5 on {@dice 1d6}"
+						},
+						"Also because of their nonmagical nature, however, dwarves have trouble using magical items. All magical items that are not specifically suited to the character’s class have a 20% chance to malfunction when used by a dwarf. This check is made each time a dwarf uses a magical item. A malfunction affects only the current use; the item may work properly next time. For devices that are continually in operation, the check is made the first time the device is used during an encounter. If the check is passed, the device functions normally until it is turned off. Thus, a dwarf would have to check upon donning a {@i robe of blending} but would not check again until he had taken the robe off and then put it on again. If a cursed item malfunctions, the character recognizes its cursed nature and can dispose of the item. Malfunction applies to rods, staves, wands, rings, amulets, potions, horns, jewels, and all other magical items except weapons, shields, armor, gauntlets, and girdles. This penalty does not apply to dwarven clerics using priest items.",
+						"In melee, dwarves add 1 to their dice rolls to hit orcs, half-orcs, goblins, and hobgoblins. When ogres, trolls, ogre magi, giants, or titans attack dwarves, these monsters must subtract 4 from their attack rolls because of the dwarves’ small size and combat ability against these much bigger creatures.",
+						"Dwarven infravision enables them to see up to 60 feet in the dark.",
+						"Dwarves are miners of great skill. While underground, they can detect the following information when within 10 feet of the particular phenomenon (but they can determine their approximate depth below the surface at any time).",
+						{
+							"type": "table",
+							"page": 28,
+							"colStyles": [
+								"col-1 text-left",
+								"col-2 text-left"
 							],
-							[
-								"Detect new tunnel/passage construction",
-								"1–5 on {@dice 1d6}"
-							],
-							[
-								"Detect sliding/shifting walls or rooms",
-								"1–4 on {@dice 1d6}"
-							],
-							[
-								"Detect stonework traps, pits, and deadfalls",
-								"1–3 on {@dice 1d6}"
-							],
-							[
-								"Determine approximate depth underground",
-								"1–3 on {@dice 1d6}"
+							"isStriped": false,
+							"rows": [
+								[
+									"Detect grade or slope in passage",
+									"1–5 on {@dice 1d6}"
+								],
+								[
+									"Detect new tunnel/passage construction",
+									"1–5 on {@dice 1d6}"
+								],
+								[
+									"Detect sliding/shifting walls or rooms",
+									"1–4 on {@dice 1d6}"
+								],
+								[
+									"Detect stonework traps, pits, and deadfalls",
+									"1–3 on {@dice 1d6}"
+								],
+								[
+									"Determine approximate depth underground",
+									"1–3 on {@dice 1d6}"
+								]
 							]
-						]
-					},
-					"Note that the dwarf must deliberately try to make these determinations; the information does not simply spring to mind unbidden",
-					"Because of their sturdy builds, dwarves add 1 to their initial Constitution scores. Their dour and suspicious natures cause them to subtract 1 from their initial Charisma scores."
+						},
+						"Note that the dwarf must deliberately try to make these determinations; the information does not simply spring to mind unbidden",
+						"Because of their sturdy builds, dwarves add 1 to their initial Constitution scores. Their dour and suspicious natures cause them to subtract 1 from their initial Charisma scores."
 					]
 				},
 				{
@@ -2192,6 +2231,13 @@
 						"Secret doors (those constructed so as to be hard to notice) and concealed doors (those hidden from sight by screens, curtains, or the like) are difficult to hide from elves. Merely passing within 10 feet of a concealed door gives an elven character a one-in-six chance (roll a 1 on 1d6) to notice it. If actively searching for such doors, elven characters have a one-in-three chance (roll a 1 or 2 on 1d6) to find a secret door and a one-in-two chance (roll a 1, 2, or 3 on 1d6) to discover a concealed portal.",
 						"As stated previously, elven characters add 1 to their initial Dexterity scores. Likewise, as elves are not as sturdy as humans, they deduct 1 from their initial Constitution scores."
 					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/XPHB/005.webp"
+					}
 				},
 				{
 					"type": "entries",
@@ -2272,6 +2318,13 @@
 						"Similarly, halflings with any Stoutish blood can note if a passage is an up or down grade with 75% accuracy (roll a 1, 2, or 3 on 1d4). They can determine direction half the time (roll a 1, 2, or 3 on 1d6). These abilities function only when the character is concentrating on the desired information to the exclusion of all else, and only if the character is pure or partially Stout.",
 						"Halfling characters have a penalty of -1 to their initially generated Strength scores, and they gain a bonus of +1 to Dexterity."
 					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/XPHB/006.webp"
+					}
 				},
 				{
 					"type": "entries",
@@ -2515,7 +2568,6 @@
 						"There are a number of other personal characteristics your character has—hair and eye color, body shape, voice, noticeable features, and general personality. There are no tables for these things, nor should there be. Your job, as a player, is to add these details, thereby creating the type of character you want. You probably know some from the start (do you want to play a towering, robust warrior, or a slim, unassuming swordsman?); others, especially your character’s personality, will grow and take form as you play. Remember, you are an actor and your character is your role!"
 					]
 				}
-
 			]
 		},
 		{
@@ -2699,7 +2751,6 @@
 						"Some DMs may require that a character spend a certain amount of time or money training before rising to the next experience level. Your DM will tell you the requirements for advancement when the time comes.",
 						"{@b Level} is a measure of the character’s power. A beginning character starts at 1st level. To advance to the next level, the character must earn a requisite number of experience points. Different character classes improve at different rates. Each increase in level improves the character’s survivability and skills.",
 						"{@b Prime Requesite} is the ability score or scores that are most important to a particular class. A fighter must be strong and a wizard must be intelligent; their prime requisites, therefore, are Strength and Intelligence, respectively. Some character classes have more than one prime requisite. Any character who has a score of 16 or more in all his prime requisites gains a 10% bonus to his experience point awards."
-						
 					]
 				},
 				{
@@ -2889,7 +2940,7 @@
 									"page": 36,
 									"colStyles": [
 										"col- text-left",
-										"col-8 text-left"
+										"col-9 text-left"
 									],
 									"isStriped": false,
 									"rows": [
@@ -2906,120 +2957,128 @@
 											"All"
 										]
 									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XPHB/007.webp"
+									},
+									"credit": "Ned Dameron"
+								},
+								"The principal attribute of a fighter is Strength. To become a fighter, a character must have a minimum Strength score of 9. A good Dexterity rating is highly desirable.",
+								"A fighter who has a Strength score (his prime requisite) of 16 or more gains a 10% bonus to the experience points he earns.",
+								"Also, high Strength gives the fighter a better chance to hit an opponent and enables him to cause more damage.",
+								"The fighter is a warrior, an expert in weapons and, if he is clever, tactics and strategy. There are many famous fighters from legend: Hercules, Perseus, Hiawatha, Beowulf, Siegfried, Cuchulain, Little John, Tristan, and Sinbad. History is crowded with great generals and warriors: El Cid, Hannibal, Alexander the Great, Charlemagne, Spartacus, Richard the Lionheart, and Belisarius. Your fighter could be modeled after any of these, or he could be unique. A visit to your local library can uncover many heroic fighters.",
+								"Fighters can have any alignment: good or evil, lawful or chaotic, or neutral.",
+								"As a master of weapons, the fighter is the only character able to have weapon specialization (explained in Chapter 5). Weapon specialization enables the fighter to use a particular weapon with exceptional skill, improving his chances to hit and cause damage with that weapon. A fighter character is not required to specialize in a weapon; the choice is up to the player. No other character class—not even ranger or paladin—is allowed weapon specialization.",
+								"While fighters cannot cast magical spells, they can use many magical items, including potions, protection scrolls, most rings, and all forms of enchanted armor, weapons, and shields.",
+								"When a fighter attains 9th level (becomes a \"Lord\"), he can automatically attract men-atarms. These soldiers, having heard of the fighter, come for the chance to gain fame, adventure, and cash. They are loyal as long as they are well-treated, successful, and paid well. Abusive treatment or a disastrous campaign can lead to grumbling, desertion, and possibly mutiny. To attract the men, the fighter must have a castle or stronghold and sizeable manor lands around it. As he claims and rules this land, soldiers journey to his domain, thereby increasing his power. Furthermore, the fighter can tax and develop these lands, gaining a steady income from them. Your DM has information about gaining and running a barony.",
+								"In addition to regular men-at-arms, the 9th-level fighter also attracts an elite bodyguard (his \"household guards\"). Although these soldiers are still mercenaries, they have greater loyalty to their Lord than do common soldiers. In return, they expect better treatment and more pay than the common soldier receives. Although the elite unit can be chosen randomly, it is better to ask your DM what unit your fighter attracts. This allows him to choose a troop consistent with the campaign.",
+								"The DM may design other tables that are more appropriate to his campaign. Check with your DM upon reaching 9th level.",
+								"A fighter can hold property, including a castle or stronghold, long before he reaches 9th level. However, it is only when he reaches this level that his name is so widely known that he attracts the loyalty of other warriors.",
+								{
+									"type": "table",
+									"caption": "Table 16: Fighter's Followers",
+									"page": 38,
+									"colLabels": [
+										"Die Roll",
+										"Leader (and suggested magical items)"
+									],
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"intro": [
+										"{@b Roll percentile dice on each of the following subtables of Table 16: once for the leader of the troops, once for troops, and once for a bodyguard (household guards) unit.}"
+									],
+									"rows": [
+										[
+											"01–40",
+											"5th-level fighter, plate mail, shield, {@i battle axe +2}"
+										],
+										[
+											"41–75",
+											"6th-level fighter, plate mail, {@i shield +1, spear +1, dagger +1}"
+										],
+										[
+											"76–95",
+											"6th-level fighter, {@i plate mail +1,} shield, {@i spear +1, dagger +1,} plus 3rd-level fighter, splint mail, shield, {@i crossbow of distance}"
+										],
+										[
+											"96–99",
+											"7th-level fighter, {@i plate mail +1, shield +1, broad sword +2,} heavy war horse with {@i horseshoes of speed}"
+										],
+										[
+											"00",
+											"DM's Option"
+										],
+										[
+											" ",
+											" "
+										],
+										[
+											"{@b Die Roll}",
+											"{@b Troops/Followers (all 0th-level)}"
+										],
+										[
+											"01–50",
+											"20 cavalry with ring mail, shield, 3 javelins, long sword, hand axe; 100 infantry with scale mail, polearm (chosen by player), club"
+										],
+										[
+											"51–75",
+											"20 infantry with splint mail, morning star, hand axe; 60 infantry with leather armor, pike, short sword"
+										],
+										[
+											"76–90",
+											"40 infantry with chain mail, heavy crossbow, short sword; 20 infantry with chain mail, light crossbow, military fork"
+										],
+										[
+											"91–99",
+											"10 cavalry with banded mail, shield, lance, bastard sword, mace; 20 cavalry with scale mail, shield, lance, long sword, mace; 30 cavalry with studded leather armor, shield, lance, long sword"
+										],
+										[
+											"00",
+											"DM’s Option (Barbarians, headhunters, armed peasants, extra-heavy cavalry, etc.)"
+										],
+										[
+											"*Player selects type",
+											""
+										],
+										[
+											"{@b Die Roll}",
+											"{@b Elite Units}"
+										],
+										[
+											"01–10",
+											"10 mounted knights: 1st-level fighters with field plate, large shield, lance, broad sword, morning star, and heavy war horse with full barding"
+										],
+										[
+											"11–20",
+											"10 1st-level elven fighter/mages with chain mail, long sword, long bow, dagger"
+										],
+										[
+											"21–30",
+											"15 wardens: 1st-level rangers with scale mail, shield, long sword, spear, long bow"
+										],
+										[
+											"31–40",
+											"20 berserkers: 2nd-level fighters with leather armor, shield, battle axe, broad sword, dagger (berserkers receive +1 bonus to attack and damage rolls)"
+										],
+										[
+											"41–65",
+											"20 expert archers: 1st-level fighters with studded leather armor, long bows or crossbows (+2 to hit, or bow specialization, if using that optional rule)"
+										],
+										[
+											"66–99",
+											"30 infantry: 1st-level fighters with plate mail, body shield, spear, short sword"
+										],
+										[
+											"00",
+											"DM’s Option (pegasi cavalry, eagle riders, demihumans, siege train, etc.)"
+										]
+									]
 								}
-							]
-						},
-						"The principal attribute of a fighter is Strength. To become a fighter, a character must have a minimum Strength score of 9. A good Dexterity rating is highly desirable.",
-						"A fighter who has a Strength score (his prime requisite) of 16 or more gains a 10% bonus to the experience points he earns.",
-						"Also, high Strength gives the fighter a better chance to hit an opponent and enables him to cause more damage.",
-						"The fighter is a warrior, an expert in weapons and, if he is clever, tactics and strategy. There are many famous fighters from legend: Hercules, Perseus, Hiawatha, Beowulf, Siegfried, Cuchulain, Little John, Tristan, and Sinbad. History is crowded with great generals and warriors: El Cid, Hannibal, Alexander the Great, Charlemagne, Spartacus, Richard the Lionheart, and Belisarius. Your fighter could be modeled after any of these, or he could be unique. A visit to your local library can uncover many heroic fighters.",
-						"Fighters can have any alignment: good or evil, lawful or chaotic, or neutral.",
-						"As a master of weapons, the fighter is the only character able to have weapon specialization (explained in Chapter 5). Weapon specialization enables the fighter to use a particular weapon with exceptional skill, improving his chances to hit and cause damage with that weapon. A fighter character is not required to specialize in a weapon; the choice is up to the player. No other character class—not even ranger or paladin—is allowed weapon specialization.",
-						"While fighters cannot cast magical spells, they can use many magical items, including potions, protection scrolls, most rings, and all forms of enchanted armor, weapons, and shields.",
-						"When a fighter attains 9th level (becomes a \"Lord\"), he can automatically attract men-atarms. These soldiers, having heard of the fighter, come for the chance to gain fame, adventure, and cash. They are loyal as long as they are well-treated, successful, and paid well. Abusive treatment or a disastrous campaign can lead to grumbling, desertion, and possibly mutiny. To attract the men, the fighter must have a castle or stronghold and sizeable manor lands around it. As he claims and rules this land, soldiers journey to his domain, thereby increasing his power. Furthermore, the fighter can tax and develop these lands, gaining a steady income from them. Your DM has information about gaining and running a barony.",
-						"In addition to regular men-at-arms, the 9th-level fighter also attracts an elite bodyguard (his \"household guards\"). Although these soldiers are still mercenaries, they have greater loyalty to their Lord than do common soldiers. In return, they expect better treatment and more pay than the common soldier receives. Although the elite unit can be chosen randomly, it is better to ask your DM what unit your fighter attracts. This allows him to choose a troop consistent with the campaign.",
-						"The DM may design other tables that are more appropriate to his campaign. Check with your DM upon reaching 9th level.",
-						"A fighter can hold property, including a castle or stronghold, long before he reaches 9th level. However, it is only when he reaches this level that his name is so widely known that he attracts the loyalty of other warriors.",
-						{
-							"type": "table",
-							"caption": "Table 16: Fighter's Followers",
-							"page": 38,
-							"colLabels": [
-								"Die Roll",
-								"Leader (and suggested magical items)"
-							],
-							"colStyles": [
-								"col- text-center",
-								"col- text-left"
-							],
-							"intro": [
-								"{@b Roll percentile dice on each of the following subtables of Table 16: once for the leader of the troops, once for troops, and once for a bodyguard (household guards) unit.}"
-							],
-							"rows": [
-								[
-									"01–40",
-									"5th-level fighter, plate mail, shield, {@i battle axe +2}"
-								],
-								[
-									"41–75",
-									"6th-level fighter, plate mail, {@i shield +1, spear +1, dagger +1}"
-								],
-								[
-									"76–95",
-									"6th-level fighter, {@i plate mail +1,} shield, {@i spear +1, dagger +1,} plus 3rd-level fighter, splint mail, shield, {@i crossbow of distance}"
-								],
-								[
-									"96–99",
-									"7th-level fighter, {@i plate mail +1, shield +1, broad sword +2,} heavy war horse with {@i horseshoes of speed}"
-								],
-								[
-									"00",
-									"DM's Option"
-								],
-								[
-									" ",
-									" "
-								],
-								[
-									"{@b Die Roll}",
-									"{@b Troops/Followers (all 0th-level)}"
-								],
-								[
-									"01–50",
-									"20 cavalry with ring mail, shield, 3 javelins, long sword, hand axe; 100 infantry with scale mail, polearm (chosen by player), club"
-								],
-								[
-									"51–75",
-									"20 infantry with splint mail, morning star, hand axe; 60 infantry with leather armor, pike, short sword"
-								],
-								[
-									"76–90",
-									"40 infantry with chain mail, heavy crossbow, short sword; 20 infantry with chain mail, light crossbow, military fork"
-								],
-								[
-									"91–99",
-									"10 cavalry with banded mail, shield, lance, bastard sword, mace; 20 cavalry with scale mail, shield, lance, long sword, mace; 30 cavalry with studded leather armor, shield, lance, long sword"
-								],
-								[
-									"00",
-									"DM’s Option (Barbarians, headhunters, armed peasants, extra-heavy cavalry, etc.)"
-								],
-								[
-									"*Player selects type",
-									""
-								],
-								[
-									"{@b Die Roll}",
-									"{@b Elite Units}"
-								],
-								[
-									"01–10",
-									"10 mounted knights: 1st-level fighters with field plate, large shield, lance, broad sword, morning star, and heavy war horse with full barding"
-								],
-								[
-									"11–20",
-									"10 1st-level elven fighter/mages with chain mail, long sword, long bow, dagger"
-								],
-								[
-									"21–30",
-									"15 wardens: 1st-level rangers with scale mail, shield, long sword, spear, long bow"
-								],
-								[
-									"31–40",
-									"20 berserkers: 2nd-level fighters with leather armor, shield, battle axe, broad sword, dagger (berserkers receive +1 bonus to attack and damage rolls)"
-								],
-								[
-									"41–65",
-									"20 expert archers: 1st-level fighters with studded leather armor, long bows or crossbows (+2 to hit, or bow specialization, if using that optional rule)"
-								],
-								[
-									"66–99",
-									"30 infantry: 1st-level fighters with plate mail, body shield, spear, short sword"
-								],
-								[
-									"00",
-									"DM’s Option (pegasi cavalry, eagle riders, demihumans, siege train, etc.)"
-								]
 							]
 						},
 						{
@@ -3061,6 +3120,14 @@
 											"Human"
 										]
 									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XPHB/008.webp"
+									},
+									"credit": "Ned Dameron"
 								},
 								"The paladin is a noble and heroic warrior, the symbol of all that is right and true in the world. As such, he has high ideals that he must maintain at all times. Throughout legend and history there are many heroes who could be called paladins: Roland and the 12 Peers of Charlemagne, Sir Lancelot, Sir Gawain, and Sir Galahad are all examples of the class. However, many brave and heroic soldiers have tried and failed to live up to the ideals of the paladin. It is not an easy task!",
 								"Only a human may become a paladin. He must have minimum ability scores of Strength 12, Constitution 9, Wisdom 13, and Charisma 17. Strength and Charisma are the prime requisites of the paladin. A paladin must be lawful good in alignment and must always remain lawful good. A paladin who changes alignment, either deliberately or inadvertently, loses all his special powers—sometimes only temporarily and sometimes forever. He can use any weapon and wear any type of armor.",
@@ -3253,322 +3320,322 @@
 											"Human, Elf, Half-elf"
 										]
 									]
+								},
+								"The ranger is a hunter and woodsman who lives by not only his sword, but also his wits. Robin Hood, Orion, Jack the giant killer, and the huntresses of Diana are examples of rangers from history and legend. The abilities of the ranger make him particularly good at tracking, woodcraft, and spying.",
+								"The ranger must have scores not less than 13 in Strength, 14 in Constitution, 13 in Dexterity, and 14 in Wisdom. The prime requisites of the ranger are Strength, Dexterity, and Wisdom. Rangers are always good, but they can be lawful, neutral, or chaotic. It is in the ranger’s heart to do good, but not always by the rules.",
+								"A ranger who has Strength, Dexterity, and Wisdom scores of 16 or more gains a 10% bonus to the experience points he earns.",
+								"Although the ranger can use any weapon and wear any armor, several of his special abilities are usable only when he is wearing studded leather or lighter armor.",
+								"Although he has the basic skills of a warrior, the ranger also has several advantages. When wearing studded leather or lighter armor, a ranger can fight two-handed with no penalty to his attack rolls (see \"Attacking with Two Weapons\" in Chapter 9: Combat). Obviously, the ranger cannot use a shield when fighting this way. A ranger can still fight with two weapons while wearing heavier armor than studded leather, but he suffers the standard attack roll penalties.",
+								"The ranger is a skilled woodsman. Even if the optional proficiency rules are not used, the ranger has tracking proficiency. If the proficiency rules are used in your campaign, the ranger knows tracking without expending any points. Furthermore, this skill improves by +1 for every three levels the ranger has earned (3rd to 5th level, +1; 6th to 8th level, +2, etc.). While wearing studded leather or lighter armor, the ranger can try to move silently and hide in shadows. His chance to succeed in natural surroundings is given on Table 18 (modified by the ranger’s race and Dexterity, as given on Tables 27 and 28). When attempting these actions in nonnatural surroundings (a musty crypt or city streets) the chance of success is halved. Hiding in shadows and moving silently are not possible in any armor heavier than studded leather—the armor is inflexible and makes too much noise.",
+								"In their roles as protectors of good, rangers tend to focus their efforts against some particular creature, usually one that marauds their homeland. Before advancing to 2nd level, every ranger must select a species enemy. Typical enemies include giants, orcs, lizard men, trolls, or ghouls; your DM has final approval on the choice. Thereafter, whenever the ranger encounters that enemy, he gains a +4 bonus to his attack rolls. This enmity can be concealed only with great difficulty, so the ranger suffers a -4 penalty on all encounter reactions with creatures of the hated type. Furthermore, the ranger will actively seek out this enemy in combat in preference to all other foes unless someone else presents a much greater danger",
+								"{@b Rangers are adept with both trained and untamed creatures,} having a limited degree of animal empathy. If a ranger carefully approaches or tends any natural animal, he can try to modify the animal’s reactions. (A natural animal is one that can be found in the real world—a bear, snake, zebra, etc.)",
+								"When dealing with domestic or non-hostile animals, a ranger can approach the animal and befriend it automatically. He can easily discern the qualities of the creature (spotting the best horse in the corral or seeing that the runt of the litter actually has great promise).",
+								"When dealing with a wild animal or an animal trained to attack, the animal must roll a saving throw vs. rods to resist the ranger’s overtures. (This table is used even though the ranger’s power is nonmagical.) The ranger imposes a -1 penalty on the die roll for every three experience levels he has earned (-1 at 1st to 3rd, -2 at 4th to 6th, etc.). If the creature fails the saving throw, its reaction can be shifted one category as the ranger chooses. Of course, the ranger must be at the front of the party and must approach the creature fearlessly.",
+								"For example, Beornhelm, a 7th-level ranger, is leading his friends through the woods. On entering a clearing, he spots a hungry black bear blocking the path on the other side. Signaling his friends to wait, Beornhelm approaches the beast, whispering soothing words. The DM rolls a saving throw vs. rods for the bear, modified by -3 for Beornhelm’s level. The bear’s normal reaction is unfriendly, but Beornhelm’s presence reduces this to neutral. The party waits patiently until the bear wanders off to seek its dinner elsewhere.",
+								"Later, Beornhelm goes to the horse market to get a new mount. The dealer shows him a spirited horse, notorious for being vicious and stubborn. Beornhelm approaches it carefully, again speaking soothingly, and mounts the stallion with no difficulty. Ridden by Beornhelm, the horse is spirited but well-behaved. Approached by anyone else, the horse reverts to its old ways.",
+								"{@b A ranger can learn priest spells,} but only those of the plant or animal spheres (see \"Priest\" later in this chapter), when he reaches 8th level (see Table 18). He gains and uses his spells according to the rules given for priests. He does not gain bonus spells for a high Wisdom score, nor is he ever able to use priest scrolls or magical items unless specially noted otherwise.",
+								{
+									"type": "table",
+									"caption": "Table 18: Ranger Abilities",
+									"page": 41,
+									"colLabels": [
+										"Ranger Level",
+										"Hide in Shadows",
+										"Move Silently",
+										"Casting Levels",
+										"",
+										"Priest Spell Levels",
+										""
+									],
+									"colStyles": [
+										"col- text-center",
+										"col- text-center",
+										"col- text-center",
+										"col- text-center",
+										"col- text-center",
+										"col- text-center",
+										"col- text-center"
+									],
+									"rows": [
+										[
+											"",
+											"",
+											"",
+											"",
+											"{@b 1}",
+											"{@b 2}",
+											"{@b 3}"
+										],
+										[
+											"1",
+											"10%",
+											"15%",
+											"—",
+											"—",
+											"—",
+											"—"
+										],
+										[
+											"2",
+											"10%",
+											"21%",
+											"—",
+											"—",
+											"—",
+											"—"
+										],
+										[
+											"3",
+											"20%",
+											"27%",
+											"—",
+											"—",
+											"—",
+											"—"
+										],
+										[
+											"4",
+											"25%",
+											"33%",
+											"—",
+											"—",
+											"—",
+											"—"
+										],
+										[
+											"5",
+											"31%",
+											"40%",
+											"—",
+											"—",
+											"—",
+											"—"
+										],
+										[
+											"6",
+											"37%",
+											"47%",
+											"—",
+											"—",
+											"—",
+											"—"
+										],
+										[
+											"7",
+											"143%",
+											"55%",
+											"—",
+											"—",
+											"—",
+											"—"
+										],
+										[
+											"8",
+											"49%",
+											"62%",
+											"1",
+											"1",
+											"—",
+											"—"
+										],
+										[
+											"9",
+											"56%",
+											"70%",
+											"2",
+											"2",
+											"—",
+											"—"
+										],
+										[
+											"10",
+											"63%",
+											"78%",
+											"3",
+											"2",
+											"1",
+											"—"
+										],
+										[
+											"11",
+											"70%",
+											"86%",
+											"4",
+											"2",
+											"2",
+											"—"
+										],
+										[
+											"12",
+											"77%",
+											"94%",
+											"5",
+											"2",
+											"2",
+											"1"
+										],
+										[
+											"13",
+											"85%",
+											"99%*",
+											"6",
+											"3",
+											"2",
+											"1"
+										],
+										[
+											"14",
+											"93%",
+											"99%",
+											"7",
+											"3",
+											"2",
+											"2"
+										],
+										[
+											"15",
+											"99%*",
+											"99%",
+											"8",
+											"3",
+											"3",
+											"2"
+										],
+										[
+											"16",
+											"99%",
+											"99%",
+											"9*",
+											"3*",
+											"3*",
+											"3*"
+										]
+									],
+									"footnotes": [
+										"* Maximum attainable"
+									]
+								},
+								"{@b Rangers can build castles, forts, or strongholds,} but do not gain any special followers by doing so.",
+								"{@b At 10th level, a ranger attracts 2d6 followers.} These followers might be normal humans, but they are often animals or even stranger denizens of the land. Table 19 can be used to determine these, or your DM may assign specific followers.",
+								{
+									"type": "table",
+									"caption": "Table 19: Ranger's Followers",
+									"page": 41,
+									"colLabels": [
+										"Die Roll",
+										"Follower"
+									],
+									"colStyles": [
+										"col- text-center",
+										"col-8v text-left"
+									],
+									"isStriped": false,
+									"rows": [
+										[
+											"01–10",
+											"Bear, black"
+										],
+										[
+											"11–20",
+											"Bear, brown"
+										],
+										[
+											"21",
+											"Brownie*"
+										],
+										[
+											"22–26",
+											"Cleric (human)"
+										],
+										[
+											"27–38",
+											"Dog/wolf"
+										],
+										[
+											"39–40",
+											"Druid"
+										],
+										[
+											"41–50",
+											"Falcon"
+										],
+										[
+											"51–53",
+											"Fighter (elf)"
+										],
+										[
+											"54–55",
+											"Fighter (gnome)"
+										],
+										[
+											"56–57",
+											"Fighter (halfling)"
+										],
+										[
+											"58–65",
+											"Fighter (human)"
+										],
+										[
+											"66",
+											"Fighter/mage (elf)*"
+										],
+										[
+											"67–72",
+											"Great cat (tiger, lion, etc.)*"
+										],
+										[
+											"73",
+											"Hippogriff"
+										],
+										[
+											"74",
+											"Pegasus*"
+										],
+										[
+											"75",
+											"Pixie*"
+										],
+										[
+											"76–80",
+											"Ranger (half–elf)"
+										],
+										[
+											"81–90",
+											"Ranger (human)"
+										],
+										[
+											"91–94",
+											"Raven"
+										],
+										[
+											"95",
+											"Satyr*"
+										],
+										[
+											"96",
+											"Thief (halfling)"
+										],
+										[
+											"97",
+											"Thief (human)"
+										],
+										[
+											"98",
+											"Treant*"
+										],
+										[
+											"99",
+											"Werebear/weretiger*"
+										],
+										[
+											"00",
+											"Other wilderness creature (chosen by the DM)"
+										]
+									],
+									"footnotes": [
+										"*If the ranger already has a follower of this type, ignore this result and roll again."
+									]
 								}
-							]
-						},
-						"The ranger is a hunter and woodsman who lives by not only his sword, but also his wits. Robin Hood, Orion, Jack the giant killer, and the huntresses of Diana are examples of rangers from history and legend. The abilities of the ranger make him particularly good at tracking, woodcraft, and spying.",
-						"The ranger must have scores not less than 13 in Strength, 14 in Constitution, 13 in Dexterity, and 14 in Wisdom. The prime requisites of the ranger are Strength, Dexterity, and Wisdom. Rangers are always good, but they can be lawful, neutral, or chaotic. It is in the ranger’s heart to do good, but not always by the rules.",
-						"A ranger who has Strength, Dexterity, and Wisdom scores of 16 or more gains a 10% bonus to the experience points he earns.",
-						"Although the ranger can use any weapon and wear any armor, several of his special abilities are usable only when he is wearing studded leather or lighter armor.",
-						"Although he has the basic skills of a warrior, the ranger also has several advantages. When wearing studded leather or lighter armor, a ranger can fight two-handed with no penalty to his attack rolls (see \"Attacking with Two Weapons\" in Chapter 9: Combat). Obviously, the ranger cannot use a shield when fighting this way. A ranger can still fight with two weapons while wearing heavier armor than studded leather, but he suffers the standard attack roll penalties.",
-						"The ranger is a skilled woodsman. Even if the optional proficiency rules are not used, the ranger has tracking proficiency. If the proficiency rules are used in your campaign, the ranger knows tracking without expending any points. Furthermore, this skill improves by +1 for every three levels the ranger has earned (3rd to 5th level, +1; 6th to 8th level, +2, etc.). While wearing studded leather or lighter armor, the ranger can try to move silently and hide in shadows. His chance to succeed in natural surroundings is given on Table 18 (modified by the ranger’s race and Dexterity, as given on Tables 27 and 28). When attempting these actions in nonnatural surroundings (a musty crypt or city streets) the chance of success is halved. Hiding in shadows and moving silently are not possible in any armor heavier than studded leather—the armor is inflexible and makes too much noise.",
-						"In their roles as protectors of good, rangers tend to focus their efforts against some particular creature, usually one that marauds their homeland. Before advancing to 2nd level, every ranger must select a species enemy. Typical enemies include giants, orcs, lizard men, trolls, or ghouls; your DM has final approval on the choice. Thereafter, whenever the ranger encounters that enemy, he gains a +4 bonus to his attack rolls. This enmity can be concealed only with great difficulty, so the ranger suffers a -4 penalty on all encounter reactions with creatures of the hated type. Furthermore, the ranger will actively seek out this enemy in combat in preference to all other foes unless someone else presents a much greater danger",
-						"{@b Rangers are adept with both trained and untamed creatures,} having a limited degree of animal empathy. If a ranger carefully approaches or tends any natural animal, he can try to modify the animal’s reactions. (A natural animal is one that can be found in the real world—a bear, snake, zebra, etc.)",
-						"When dealing with domestic or non-hostile animals, a ranger can approach the animal and befriend it automatically. He can easily discern the qualities of the creature (spotting the best horse in the corral or seeing that the runt of the litter actually has great promise).",
-						"When dealing with a wild animal or an animal trained to attack, the animal must roll a saving throw vs. rods to resist the ranger’s overtures. (This table is used even though the ranger’s power is nonmagical.) The ranger imposes a -1 penalty on the die roll for every three experience levels he has earned (-1 at 1st to 3rd, -2 at 4th to 6th, etc.). If the creature fails the saving throw, its reaction can be shifted one category as the ranger chooses. Of course, the ranger must be at the front of the party and must approach the creature fearlessly.",
-						"For example, Beornhelm, a 7th-level ranger, is leading his friends through the woods. On entering a clearing, he spots a hungry black bear blocking the path on the other side. Signaling his friends to wait, Beornhelm approaches the beast, whispering soothing words. The DM rolls a saving throw vs. rods for the bear, modified by -3 for Beornhelm’s level. The bear’s normal reaction is unfriendly, but Beornhelm’s presence reduces this to neutral. The party waits patiently until the bear wanders off to seek its dinner elsewhere.",
-						"Later, Beornhelm goes to the horse market to get a new mount. The dealer shows him a spirited horse, notorious for being vicious and stubborn. Beornhelm approaches it carefully, again speaking soothingly, and mounts the stallion with no difficulty. Ridden by Beornhelm, the horse is spirited but well-behaved. Approached by anyone else, the horse reverts to its old ways.",
-						"{@b A ranger can learn priest spells,} but only those of the plant or animal spheres (see \"Priest\" later in this chapter), when he reaches 8th level (see Table 18). He gains and uses his spells according to the rules given for priests. He does not gain bonus spells for a high Wisdom score, nor is he ever able to use priest scrolls or magical items unless specially noted otherwise.",
-						{
-							"type": "table",
-							"caption": "Table 18: Ranger Abilities",
-							"page": 41,
-							"colLabels": [
-								"Ranger Level",
-								"Hide in Shadows",
-								"Move Silently",
-								"Casting Levels",
-								"",
-								"Priest Spell Levels",
-								""
-							],
-							"colStyles": [
-								"col- text-center",
-								"col- text-center",
-								"col- text-center",
-								"col- text-center",
-								"col- text-center",
-								"col- text-center",
-								"col- text-center"
-							],
-							"rows": [
-								[
-									"",
-									"",
-									"",
-									"",
-									"{@b 1}",
-									"{@b 2}",
-									"{@b 3}"
-								],
-								[
-									"1",
-									"10%",
-									"15%",
-									"—",
-									"—",
-									"—",
-									"—"
-								],
-								[
-									"2",
-									"10%",
-									"21%",
-									"—",
-									"—",
-									"—",
-									"—"
-								],
-								[
-									"3",
-									"20%",
-									"27%",
-									"—",
-									"—",
-									"—",
-									"—"
-								],
-								[
-									"4",
-									"25%",
-									"33%",
-									"—",
-									"—",
-									"—",
-									"—"
-								],
-								[
-									"5",
-									"31%",
-									"40%",
-									"—",
-									"—",
-									"—",
-									"—"
-								],
-								[
-									"6",
-									"37%",
-									"47%",
-									"—",
-									"—",
-									"—",
-									"—"
-								],
-								[
-									"7",
-									"143%",
-									"55%",
-									"—",
-									"—",
-									"—",
-									"—"
-								],
-								[
-									"8",
-									"49%",
-									"62%",
-									"1",
-									"1",
-									"—",
-									"—"
-								],
-								[
-									"9",
-									"56%",
-									"70%",
-									"2",
-									"2",
-									"—",
-									"—"
-								],
-								[
-									"10",
-									"63%",
-									"78%",
-									"3",
-									"2",
-									"1",
-									"—"
-								],
-								[
-									"11",
-									"70%",
-									"86%",
-									"4",
-									"2",
-									"2",
-									"—"
-								],
-								[
-									"12",
-									"77%",
-									"94%",
-									"5",
-									"2",
-									"2",
-									"1"
-								],
-								[
-									"13",
-									"85%",
-									"99%*",
-									"6",
-									"3",
-									"2",
-									"1"
-								],
-								[
-									"14",
-									"93%",
-									"99%",
-									"7",
-									"3",
-									"2",
-									"2"
-								],
-								[
-									"15",
-									"99%*",
-									"99%",
-									"8",
-									"3",
-									"3",
-									"2"
-								],
-								[
-									"16",
-									"99%",
-									"99%",
-									"9*",
-									"3*",
-									"3*",
-									"3*"
-								]
-							],
-							"footnotes": [
-								"* Maximum attainable"
-							]
-						},
-						"{@b Rangers can build castles, forts, or strongholds,} but do not gain any special followers by doing so.",
-						"{@b At 10th level, a ranger attracts 2d6 followers.} These followers might be normal humans, but they are often animals or even stranger denizens of the land. Table 19 can be used to determine these, or your DM may assign specific followers.",
-						{
-							"type": "table",
-							"caption": "Table 19: Ranger's Followers",
-							"page": 41,
-							"colLabels": [
-								"Die Roll",
-								"Follower"
-							],
-							"colStyles": [
-								"col- text-center",
-								"col-8v text-left"
-							],
-							"isStriped": false,
-							"rows": [
-								[
-									"01–10",
-									"Bear, black"
-								],
-								[
-									"11–20",
-									"Bear, brown"
-								],
-								[
-									"21",
-									"Brownie*"
-								],
-								[
-									"22–26",
-									"Cleric (human)"
-								],
-								[
-									"27–38",
-									"Dog/wolf"
-								],
-								[
-									"39–40",
-									"Druid"
-								],
-								[
-									"41–50",
-									"Falcon"
-								],
-								[
-									"51–53",
-									"Fighter (elf)"
-								],
-								[
-									"54–55",
-									"Fighter (gnome)"
-								],
-								[
-									"56–57",
-									"Fighter (halfling)"
-								],
-								[
-									"58–65",
-									"Fighter (human)"
-								],
-								[
-									"66",
-									"Fighter/mage (elf)*"
-								],
-								[
-									"67–72",
-									"Great cat (tiger, lion, etc.)*"
-								],
-								[
-									"73",
-									"Hippogriff"
-								],
-								[
-									"74",
-									"Pegasus*"
-								],
-								[
-									"75",
-									"Pixie*"
-								],
-								[
-									"76–80",
-									"Ranger (half–elf)"
-								],
-								[
-									"81–90",
-									"Ranger (human)"
-								],
-								[
-									"91–94",
-									"Raven"
-								],
-								[
-									"95",
-									"Satyr*"
-								],
-								[
-									"96",
-									"Thief (halfling)"
-								],
-								[
-									"97",
-									"Thief (human)"
-								],
-								[
-									"98",
-									"Treant*"
-								],
-								[
-									"99",
-									"Werebear/weretiger*"
-								],
-								[
-									"00",
-									"Other wilderness creature (chosen by the DM)"
-								]
-							],
-							"footnotes": [
-								"*If the ranger already has a follower of this type, ignore this result and roll again."
 							]
 						}
 					]
@@ -4022,6 +4089,14 @@
 										]
 									]
 								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XPHB/009.webp"
+									},
+									"credit": "Ned Dameron"
+								},
 								"Mages are the most versatile types of wizards, those who choose not to specialize in any single school of magic. This is both an advantage and disadvantage. On the positive side, the mage’s selection of spells enables him to deal with many different situations. (Wizards who study within a single school of magic learn highly specialized spells, but at the expense of spells from other areas.) The other side of the coin is that the mage’s ability to learn specialized spells is limited compared to the specialist’s.",
 								"Mages have no historical counterparts; they exist only in legend and myth. However, players can model their characters after such legendary figures as Merlin, Circe, or Medea. Accounts of powerful wizards and sorceresses are rare, since their reputations are based in no small part on the mystery that surrounds them. These legendary figures worked toward secret ends, seldom confiding in the normal folk around them.",
 								"A mage who has an Intelligence score of 16 or higher gains a 10% bonus to the experience points he earns.",
@@ -4033,7 +4108,15 @@
 										"Spells are divided into nine different categories, or schools, according to the types of magical energy they utilize. Each school has its own special methods and practices.",
 										"Although they are called schools, schools of magic are not organized places where a person goes to study. The word \"school\" identifies a magical discipline. A school is an approach to magic and spellcasting that emphasizes a particular sort of spell. Practitioners of a school of magic may set up a magical university to teach their methods to beginners, but this is not necessary. Many powerful wizards learned their craft studying under reclusive masters in distant lands.",
 										"The nine schools of magic are {@b Abjuration, Alteration, Conjuration/Summoning, Enchantment/Charm, Greater Divination, Illusion, Invocation/Evocation, Necromancy, and Lesser Divination.}",
-										"{@b INSERT IMAGE FROM PAGE 45 HERE LATER}",
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/XPHB/010.webp"
+											},
+											"maxWidth": 350,
+											"credit": "Diesel"
+										},
 										"The diagram illustrates the schools that oppose each other. See Table 22 and its entry descriptions for more information.",
 										"Of these schools, eight are greater schools while the ninth, lesser divination, is a minor school. The minor school of lesser divination includes all divination spells of the 4th spell level or less (available to all wizards). Greater divinations are those divination spells of the 5th level or higher."
 									]
@@ -4136,7 +4219,7 @@
 									"columns": 0,
 									"page": 45,
 									"items": [
-										"A specialist gains one spell per spell level, provided the additional spell is taken in the specialist’s school. Thus, a 1st-level illusionist could have two spells—one being any spell he knows and the other limited to spells of the illusion school.",			
+										"A specialist gains one spell per spell level, provided the additional spell is taken in the specialist’s school. Thus, a 1st-level illusionist could have two spells—one being any spell he knows and the other limited to spells of the illusion school.",
 										"Because specialists have an enhanced understanding of spells within their school, they receive a +1 bonus when making saving throws against those spells when cast by other wizards. Likewise, other characters suffer a -1 penalty when making saving throws against a specialist casting spells within his school. Both of these modifiers can be in effect at the same time—for example, when an enchanter casts an enchantment spell at another enchanter, the modifiers cancel each other out.",
 										"Specialists receive a bonus of +15% when learning spells from their school and a penalty of –15% when learning spells from other schools. The bonus or penalty is applied to the percentile dice roll the player must make when the character tries to learn a new spell (see Table 4).",
 										"Whenever a specialist reaches a new spell level, he automatically gains one spell of his school to add to his spell books. This spell can be selected by the DM or he can allow the player to pick. No roll for learning the spell need be made. It is assumed that the character has discovered this new spell during the course of his research and study.",
@@ -4176,6 +4259,14 @@
 											"Human, Gnome"
 										]
 									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XPHB/011.webp"
+									},
+									"credit": "Ned Dameron"
 								},
 								"The illusionist is an example of a specialist. The description of the illusionist given here can be used as a guide for creating wizards specializing in other magical schools.",
 								"First, the school of illusion is a very demanding field of study. To specialize as an illusionist, a wizard needs a Dexterity score of at least 16.",
@@ -4365,224 +4456,225 @@
 							],
 							"footnotes": [
 								"* Usable only by priests with 17 or greater Wisdom",
-								"** Usable only by priests with 18 or greater Wisdom"],
-								"rows": [
-									[
-										"",
-										"{@b 1}",
-										"{@b 2}",
-										"{@b 3}",
-										"{@b 4}",
-										"{@b 5}",
-										"{@b 6}",
-										"{@b 7}"
-									],
-									[
-										"1",
-										"1",
-										"—",
-										"—",
-										"—",
-										"—",
-										"—",
-										"—"
-									],
-									[
-										"2",
-										"2",
-										"—",
-										"—",
-										"—",
-										"—",
-										"—",
-										"—"
-									],
-									[
-										"3",
-										"2",
-										"1",
-										"—",
-										"—",
-										"—",
-										"—",
-										"—"
-									],
-									[
-										"4",
-										"3",
-										"2",
-										"—",
-										"—",
-										"—",
-										"—",
-										"—"
-									],
-									[
-										"5",
-										"3",
-										"3",
-										"1",
-										"—",
-										"—",
-										"—",
-										"—"
-									],
-									[
-										"6",
-										"3",
-										"3",
-										"2",
-										"—",
-										"—",
-										"—",
-										"—"
-									],
-									[
-										"7",
-										"3",
-										"3",
-										"2",
-										"1",
-										"—",
-										"—",
-										"—"
-									],
-									[
-										"8",
-										"3",
-										"3",
-										"3",
-										"2",
-										"—",
-										"—",
-										"—"
-									],
-									[
-										"9",
-										"4",
-										"4",
-										"3",
-										"2",
-										"1",
-										"—",
-										"—"
-									],
-									[
-										"10",
-										"4",
-										"4",
-										"3",
-										"3",
-										"2",
-										"—",
-										"—"
-									],
-									[
-										"11",
-										"5",
-										"4",
-										"4",
-										"3",
-										"2",
-										"1",
-										"—"
-									],
-									[
-										"12",
-										"6",
-										"5",
-										"5",
-										"3",
-										"2",
-										"2",
-										"—"
-									],
-									[
-										"13",
-										"6",
-										"6",
-										"6",
-										"4",
-										"2",
-										"2",
-										"—"
-									],
-									[
-										"14",
-										"6",
-										"6",
-										"6",
-										"5",
-										"3",
-										"2",
-										"1"
-									],
-									[
-										"15",
-										"6",
-										"6",
-										"6",
-										"6",
-										"4",
-										"2",
-										"1"
-									],
-									[
-										"16",
-										"7",
-										"7",
-										"7",
-										"6",
-										"4",
-										"3",
-										"2"
-									],
-									[
-										"17",
-										"7",
-										"7",
-										"7",
-										"5",
-										"5",
-										"3",
-										"2"
-									],
-									[
-										"18",
-										"8",
-										"8",
-										"8",
-										"8",
-										"6",
-										"4",
-										"2"
-									],
-									[
-										"19",
-										"9",
-										"9",
-										"8",
-										"8",
-										"6",
-										"4",
-										"2"
-									],
-									[
-										"20",
-										"9",
-										"9",
-										"9",
-										"8",
-										"7",
-										"5",
-										"2"
-									]
+								"** Usable only by priests with 18 or greater Wisdom"
+							],
+							"rows": [
+								[
+									"",
+									"{@b 1}",
+									"{@b 2}",
+									"{@b 3}",
+									"{@b 4}",
+									"{@b 5}",
+									"{@b 6}",
+									"{@b 7}"
+								],
+								[
+									"1",
+									"1",
+									"—",
+									"—",
+									"—",
+									"—",
+									"—",
+									"—"
+								],
+								[
+									"2",
+									"2",
+									"—",
+									"—",
+									"—",
+									"—",
+									"—",
+									"—"
+								],
+								[
+									"3",
+									"2",
+									"1",
+									"—",
+									"—",
+									"—",
+									"—",
+									"—"
+								],
+								[
+									"4",
+									"3",
+									"2",
+									"—",
+									"—",
+									"—",
+									"—",
+									"—"
+								],
+								[
+									"5",
+									"3",
+									"3",
+									"1",
+									"—",
+									"—",
+									"—",
+									"—"
+								],
+								[
+									"6",
+									"3",
+									"3",
+									"2",
+									"—",
+									"—",
+									"—",
+									"—"
+								],
+								[
+									"7",
+									"3",
+									"3",
+									"2",
+									"1",
+									"—",
+									"—",
+									"—"
+								],
+								[
+									"8",
+									"3",
+									"3",
+									"3",
+									"2",
+									"—",
+									"—",
+									"—"
+								],
+								[
+									"9",
+									"4",
+									"4",
+									"3",
+									"2",
+									"1",
+									"—",
+									"—"
+								],
+								[
+									"10",
+									"4",
+									"4",
+									"3",
+									"3",
+									"2",
+									"—",
+									"—"
+								],
+								[
+									"11",
+									"5",
+									"4",
+									"4",
+									"3",
+									"2",
+									"1",
+									"—"
+								],
+								[
+									"12",
+									"6",
+									"5",
+									"5",
+									"3",
+									"2",
+									"2",
+									"—"
+								],
+								[
+									"13",
+									"6",
+									"6",
+									"6",
+									"4",
+									"2",
+									"2",
+									"—"
+								],
+								[
+									"14",
+									"6",
+									"6",
+									"6",
+									"5",
+									"3",
+									"2",
+									"1"
+								],
+								[
+									"15",
+									"6",
+									"6",
+									"6",
+									"6",
+									"4",
+									"2",
+									"1"
+								],
+								[
+									"16",
+									"7",
+									"7",
+									"7",
+									"6",
+									"4",
+									"3",
+									"2"
+								],
+								[
+									"17",
+									"7",
+									"7",
+									"7",
+									"5",
+									"5",
+									"3",
+									"2"
+								],
+								[
+									"18",
+									"8",
+									"8",
+									"8",
+									"8",
+									"6",
+									"4",
+									"2"
+								],
+								[
+									"19",
+									"9",
+									"9",
+									"8",
+									"8",
+									"6",
+									"4",
+									"2"
+								],
+								[
+									"20",
+									"9",
+									"9",
+									"9",
+									"8",
+									"7",
+									"5",
+									"2"
 								]
-							},
-							"All priest spells are divided into 16 categories called {@i spheres of influence}. Different types of priests have access to different spheres; no priest can cast spells from every sphere of influence. The 16 spheres of influence are as follows: All, Animal, Astral, Charm, Combat, Creation, Divination, Elemental, Guardian, Healing, Necromantic, Plant, Protection, Summoning, Sun, and Weather.",
-							"In addition, a priest has either major or minor access to a sphere. A priest with major access to a sphere can (eventually) cast all spells in the sphere. A priest with minor access to a sphere can cast only 1st-, 2nd-, and 3rd-level spells from that sphere.",
-							"All priests gain one eight-sided Hit Die ({@dice 1d8}) per level from 1st through 9th. {@i After 9th level, priests earn 2 hit points per level and they no longer gain additional hit point bonuses for high Constitution scores.}",
-							{
+							]
+						},
+						"All priest spells are divided into 16 categories called {@i spheres of influence}. Different types of priests have access to different spheres; no priest can cast spells from every sphere of influence. The 16 spheres of influence are as follows: All, Animal, Astral, Charm, Combat, Creation, Divination, Elemental, Guardian, Healing, Necromantic, Plant, Protection, Summoning, Sun, and Weather.",
+						"In addition, a priest has either major or minor access to a sphere. A priest with major access to a sphere can (eventually) cast all spells in the sphere. A priest with minor access to a sphere can cast only 1st-, 2nd-, and 3rd-level spells from that sphere.",
+						"All priests gain one eight-sided Hit Die ({@dice 1d8}) per level from 1st through 9th. {@i After 9th level, priests earn 2 hit points per level and they no longer gain additional hit point bonuses for high Constitution scores.}",
+						{
 							"type": "entries",
 							"name": "Cleric",
 							"page": 48,
@@ -4609,6 +4701,14 @@
 											"All"
 										]
 									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XPHB/012.webp"
+									},
+									"credit": "Ned Dameron"
 								},
 								"The most common type of priest is the cleric. The cleric may be an adherent of any religion (though if the DM designs a specific mythos, the cleric’s abilities and spells may be changed—see following). Clerics are generally good, but are not restricted to good; they can have any alignment acceptable to their order. A cleric must have a Wisdom score of 9 or more. High Constitution and Charisma are also particularly useful.",
 								"A cleric who has a Wisdom of 16 or more gains a 10% bonus to the experience points he earns.",
@@ -4649,7 +4749,7 @@
 												"col- text-left",
 												"col-8 text-left"
 											],
-											"colLabels":[
+											"colLabels": [
 												"Deity",
 												"Weapon"
 											],
@@ -4815,7 +4915,6 @@
 								{
 									"type": "table",
 									"page": 51,
-									
 									"colStyles": [
 										"col- text-left",
 										"col-8 text-left"
@@ -4839,6 +4938,14 @@
 											"Human, Half-elf"
 										]
 									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XPHB/013.webp"
+									},
+									"credit": "Ned Dameron"
 								},
 								"Historically, druids lived among the Germanic tribes of Western Europe and Britain during the days of the Roman Empire. They acted as advisors to chieftains and held great influence over the tribesmen. Central to their thinking was the belief that the earth was the mother and source of all life. They revered many natural things—the sun, moon, and certain trees—as deities. Druids in the AD&D game, however, are only loosely patterned after these historical figures. They are not required to behave like or follow the beliefs of historical druids.",
 								"The druid is an example of a priest designed for a specific mythos. His powers and beliefs are different from those of the cleric. The druid is a priest of nature and guardian of the wilderness, be it forest, plains, or jungle.",
@@ -5076,7 +5183,6 @@
 									"2,200,000",
 									"10+20"
 								]
-								
 							]
 						},
 						"All rogues gain one six-sided Hit Die ({@dice 1d6}) per level from 1st through 10th. {@i After 10th level, rogues earn 2 hit points per level and no longer receive additional hit point bonuses for high Constitution scores.}",
@@ -5107,6 +5213,14 @@
 											"All"
 										]
 									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XPHB/014.webp"
+									},
+									"credit": "Ned Dameron"
 								},
 								"Thieves come in all sizes and shapes, ready to live off the fat of the land by the easiest means possible. In some ways they are the epitome of roguishness.",
 								"The profession of thief is not honorable, yet it is not entirely dishonorable, either. Many famous folk heroes have been more than a little larcenous— Reynard the Fox, Robin Goodfellow, and Ali Baba are but a few. At his best, the thief is a romantic hero fired by noble purpose but a little wanting in strength of character. Such a person may truly strive for good but continually run afoul of temptation.",
@@ -5193,7 +5307,7 @@
 										[
 											"Open Locks",
 											"+10%",
-											"-5%",
+											"–5%",
 											"+5%",
 											"—",
 											"+5%"
@@ -5232,19 +5346,19 @@
 										],
 										[
 											"Climb Walls",
-											"-10%",
+											"–10%",
 											"—",
-											"-15%",
+											"–15%",
 											"—",
 											""
 										],
 										[
 											"Read Languages",
-											"-5%",
+											"–5%",
 											"—",
 											"—",
 											"—",
-											"-5%"
+											"–5%"
 										]
 									]
 								},
@@ -5271,26 +5385,26 @@
 									"rows": [
 										[
 											"9",
-											"-15%",
-											"-10%",
-											"-10%",
-											"-20%",
-											"-10%"
+											"–15%",
+											"–10%",
+											"–10%",
+											"–20%",
+											"–10%"
 										],
 										[
 											"10",
-											"-10%",
-											"-5%",
-											"-10%",
-											"-15%",
-											"-5%"
+											"–10%",
+											"–5%",
+											"–10%",
+											"–15%",
+											"–5%"
 										],
 										[
 											"11",
-											"-5%",
+											"–5%",
 											"—",
-											"-5%",
-											"-10%",
+											"–5%",
+											"–10%",
 											"—"
 										],
 										[
@@ -5298,7 +5412,7 @@
 											"—",
 											"—",
 											"—",
-											"-5%",
+											"–5%",
 											"—"
 										],
 										[
@@ -5359,7 +5473,7 @@
 										"col- text-center",
 										"col- text-center"
 									],
-									"footnotes":[
+									"footnotes": [
 										"* Bards (only) in non-elven chain mail suffer an additional -5% penalty."
 									],
 									"rows": [
@@ -5588,7 +5702,6 @@
 													"Other (DM selection)",
 													"—"
 												]
-												
 											]
 										},
 										"Thieves tend to be very jealous of their territory. If more than one thief starts a gang in the same area, the result is usually a war. The feud continues until one side or the other is totally eliminated or forced to move its operation elsewhere."
@@ -5630,6 +5743,13 @@
 											"Human, Half-elf"
 										]
 									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XPHB/015.webp"
+									}
 								},
 								"The bard is an optional character class that can be used if your DM allows. He makes his way in life by his charm, talent, and wit. A good bard should be glib of tongue, light of heart, and fleet of foot (when all else fails).",
 								"In precise historical terms, the title \"bard\" applies only to certain groups of Celtic poets who sang the history of their tribes in long, recitative poems. These bards, found mainly in Ireland, Wales, and Scotland, filled many important roles in their society. They were storehouses of tribal history, reporters of news, messengers, and even ambassadors to other tribes. However, in the AD&D game, the bard is a more generalized character. Historical and legendary examples of the type include Alan-a-Dale, Will Scarlet, Amergin, and even Homer. Indeed, every culture has its storyteller or poet, whether he is called bard, skald, fili, jongleur, or something else.",
@@ -5876,7 +5996,7 @@
 										]
 									]
 								},
-								"Since bards are dabblers rather than full-time wizards, their spells tend to be gained by serendipity and happenstance. In no case can a bard choose to specialize in a school of magic. Beginning bards do not have a selection of spells. A 2nd-level bard begins with one to four spells, chosen either randomly or by the DM. (An Intelligence check must still be made to see if the bard can learn a given spell.) The bard is not guaranteed to know {@i read magic}, as this is not needed to read the writings in his spell book. The bard can add new spells to his spell book as he finds them, but he does not automatically gain additional spells as he advances in level. All spells beyond those he starts with must be found during the course of adventuring. The bard’s casting level is equal to his current level.",
+								"Since bards are dabblers rather than full-time wizards, their spells tend to be gained by serendipity and happenstance. In no case can a bard choose to specialize in a school of magic. Beginning bards do not have a selection of spells. A 2nd-level bard begins with one to four spells, chosen either randomly or by the DM. (An Intelligence check must still be made to see if the bard can learn a given spell.) The bard is not guaranteed to know {@i {@spell read magic|XPHB}}, as this is not needed to read the writings in his spell book. The bard can add new spells to his spell book as he finds them, but he does not automatically gain additional spells as he advances in level. All spells beyond those he starts with must be found during the course of adventuring. The bard’s casting level is equal to his current level.",
 								"Combat and spells, however, are not the main strength of the bard. His expertise is in dealing and communicating with others. To this end, the bard has a number of special powers. The base percentage for each power is listed on Table 33. This base percentage must be adjusted for the race and Dexterity of the bard as given in the Thief description. After all adjustments are made, the player must distribute (however he chooses) 20 additional percentage points to the various special abilities. Thereafter, each time the character advances a level, he receives an additional 15 points to distribute.",
 								"Bard abilities are subject to modifiers for situation and armor as per the thief.",
 								"{@b Climb Walls} enables the bard to climb near sheer surfaces without the aid of tools, just like the thief.",
@@ -6043,12 +6163,18 @@
 									"entries": [
 										"{@i Tarus is a 4th-level cleric/3rd-level fighter. He is struck by a wight and loses one level from his cleric class, since it is his highest level. If struck again, he would lose one level from his fighter class. Thereafter he could regain his lost levels, but would have to choose to act as either a fighter or cleric. Once he earned enough experience to regain his previous fighter level, he would not be allowed to advance further in it (restoring himself to his previous level only). But he could still advance as a cleric and use his 3rd-level fighter abilities.}"
 									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XPHB/016.webp"
+									}
 								}
 							]
 						}
 					]
 				}
-
 			]
 		},
 		{
@@ -6155,7 +6281,14 @@
 						"Changing the way a character behaves and thinks will cost him experience points and slow his advancement. Part of a character’s experience comes from learning how his own behavior affects him and the world around him. In real life, for example, a person learns that he doesn’t like horror movies only by going to see a few of them. Based on that experience, he learns to avoid certain types of movies. Changing behavior means discarding things the character learned previously. Relearning things takes time. This costs the character experience.",
 						"There are other, more immediate effects of changing alignment. Certain character classes require specific alignments. A paladin who is no longer lawful good is no longer a paladin. A character may have magical items usable only to specific alignments (intelligent swords, etc.). Such items don’t function (and may even prove dangerous) in the hands of a differently aligned character.",
 						"News of a character’s change in behavior will certainly get around to friends and acquaintances. Although some people he never considered friendly may now warm to him, others may take exception to his new attitudes. A few may even try to help him \"see the error of his ways.\" The local clergy, on whom he relies for healing, may look askance on his recent behavior, denying him their special services (while at the same time sermonizing on his plight). The character who changes alignment often finds himself unpopular, depending on the attitudes of the surrounding people. People do not understand him. If the character drifts into chaotic neutral behavior in a highly lawful city, the townspeople might decide that the character is afflicted and needs close supervision, even confinement, for his own good!",
-						"Ultimately, the player is advised to pick an alignment he can play comfortably, one that fits in with those of the rest of the group, and he should stay with that alignment for the course of the character’s career. There will be times when the DM, especially if he is clever, creates situations to test the character’s resolve and ethics. But finding the right course of action within the character’s alignment is part of the fun and challenge of role-playing."
+						"Ultimately, the player is advised to pick an alignment he can play comfortably, one that fits in with those of the rest of the group, and he should stay with that alignment for the course of the character’s career. There will be times when the DM, especially if he is clever, creates situations to test the character’s resolve and ethics. But finding the right course of action within the character’s alignment is part of the fun and challenge of role-playing.",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/017.webp"
+							}
+						}
 					]
 				}
 			]
@@ -6263,6 +6396,13 @@
 					"name": "Weapon Proficiencies",
 					"page": 71,
 					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/018.webp"
+							}
+						},
 						"A weapon proficiency measures a character’s knowledge and training with a specific weapon. When a character is created, the player checks Table 34 to see how many weapon proficiency slots the character has. These initial slots must be filled immediately, before the character embarks on his first adventure. Any slots that aren’t filled by then are lost.",
 						"Each weapon proficiency slot must be assigned to a particular weapon, not just a class of weapons. Each weapon listed in Table 44 (Weapons) requires its own proficiency; each has its own special tricks and quirks that must be mastered before the weapon can be handled properly and effectively. A fencer who is master of the epee, for example, is not necessarily skilled with a saber; the two weapons look similar, but the fighting styles they are designed for are entirely different. A player character could become proficient with a long bow or a short bow, but not with all bows in general (unless he devotes a proficiency slot to each individually). Furthermore, a character can assign weapon proficiency slots only to those weapons allowed to his character class.",
 						"As a character reaches higher experience levels, he also earns additional weapon proficiencies. The rate at which proficiencies are gained depends on the character’s class. Warriors, who concentrate on their martial skills, learn to handle a great number of weapons. They gain weapon proficiencies quickly. Wizards, who spend their time studying forgotten magical arts, have little time to practice with weapons. They gain additional weapon proficiencies very slowly. Multi-class characters can use the most beneficial line on Table 34 to determine their initial proficiencies and when they gain new proficiencies.",
@@ -6467,7 +6607,7 @@
 									"colStyles": [
 										"col- text-left",
 										"col- text-left"
-									],		
+									],
 									"rows": [
 										[
 											"01–02",
@@ -6812,7 +6952,6 @@
 										"col- text-center"
 									],
 									"rows": [
-										
 										[
 											"Ancient History",
 											"1",
@@ -7127,9 +7266,7 @@
 										"col- text-left",
 										"col- text-center"
 									],
-									
 									"rows": [
-										
 										[
 											"Ancient History",
 											"1",
@@ -7190,7 +7327,6 @@
 											"Intelligence",
 											"-2"
 										]
-
 									]
 								}
 							]
@@ -7265,7 +7401,14 @@
 								},
 								"When two proficient characters work together on the same task, the highest ability score is used (the one with the greatest chance of success). Furthermore, a +1 bonus is added for the other character’s assistance. The bonus can never be more than +1, as having too many assistants is sometimes worse than having none.",
 								"Nonweapon proficiencies can also be improved beyond the ability score the character starts with. For every additional proficiency slot a character spends on a nonweapon proficiency, he gains a +1 bonus to those proficiency checks. Thus, Rath (were he not an adventurer) might spend his additional proficiency slots on blacksmithing, to become a very good blacksmith, gaining a +1, +2, +3, or greater bonus to his ability checks.",
-								"Many nonplayer craftsmen are more accomplished in their fields than player characters, having devoted all their energies to improving a single proficiency. Likewise, old masters normally have more talent than young apprentices—unless the youth has an exceptional ability score! However, age is no assurance of talent. Remember that knowing a skill and being good at it are two different things. There are bad potters, mediocre potters, and true craftsmen. All this has much less to do with age than with dedication and talent."
+								"Many nonplayer craftsmen are more accomplished in their fields than player characters, having devoted all their energies to improving a single proficiency. Likewise, old masters normally have more talent than young apprentices—unless the youth has an exceptional ability score! However, age is no assurance of talent. Remember that knowing a skill and being good at it are two different things. There are bad potters, mediocre potters, and true craftsmen. All this has much less to do with age than with dedication and talent.",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XPHB/019.webp"
+									}
+								}
 							]
 						},
 						{
@@ -7403,6 +7546,13 @@
 								"{@b Survival:} This proficiency must be applied to a specific environment—i.e., a specific type of terrain and weather factors. Typical environments include arctic, woodland, desert, steppe, mountain, or tropical. The character has basic survival knowledge for that terrain type. Additional proficiency slots can be used to add more types of terrain.",
 								"A character skilled in survival has a basic knowledge of the hazards he might face in that land. He understands the effects of the weather and knows the proper steps to lessen the risk of exposure. He knows the methods to locate or gather drinkable water. He knows how to find basic, not necessarily appetizing, food where none is apparent, thus staving off starvation. Furthermore, a character with the survival skill can instruct and aid others in the same situation. When using the proficiency to find food or water, the character must roll a proficiency check. If the check is failed, no more attempts can be made that day.",
 								"The survival skill in no way releases the player characters from the hardships and horrors of being lost in the wilderness. At best it alleviates a small portion of the suffering. The food found is barely adequate, and water is discovered in minuscule amounts. It is still quite possible for a character with survival knowledge to die in the wilderness. Indeed, the little knowledge the character has may lead to overconfidence and doom!",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XPHB/020.webp"
+									}
+								},
 								"{@b Swimming:} A character with swimming proficiency knows how to swim and can move according to the rules given in the Swimming section (Chapter 14: Time and Movement). Those without this proficiency cannot swim. They can hold their breath and float, but they cannot move themselves about in the water.",
 								"{@b Tightrope Walking:} The character can attempt to walk narrow ropes or beams with greater than normal chances of success. He can negotiate any narrow surface not angled up or down greater than 45 degrees. Each round the character can walk 60 feet. One proficiency check is made every 60 feet (or part thereof), with failure indicating a fall. The check is made with a -10 penalty to the ability score if the surface is 1 inch or less in width (a rope), a -5 penalty if 2 inches to 6 inches wide, and unmodified if 7 inches to 12 inches wide. Wider than 1 foot requires no check for proficient characters under normal circumstances. Every additional proficiency spent on tightrope walking reduces these penalties by 1. Use of a balancing rod reduces the penalties by 2. Winds or vibrations in the line increases the penalties by 2 to 6.",
 								"The character can attempt to fight while on a tightrope, but he suffers a –5 penalty to his attack roll and must roll a successful proficiency check at the beginning of each round to avoid falling off. Since the character cannot maneuver, he gains no adjustments to his Armor Class for Dexterity. If he is struck while on the rope, he must roll an immediate proficiency check to retain his balance.",
@@ -7638,7 +7788,6 @@
 						}
 					]
 				}
-
 			]
 		},
 		{
@@ -8735,7 +8884,7 @@
 												"3 gp",
 												"5 lbs."
 											]
-										},		
+										},
 										[
 											"Saddle blanket",
 											"3 sp",
@@ -9595,13 +9744,13 @@
 										],
 										[
 											"Crossbow",
-												"—",
-												"—",
-												"—",
-												"—",
-												"—",
-												"—",
-												"—"
+											"—",
+											"—",
+											"—",
+											"—",
+											"—",
+											"—",
+											"—"
 										],
 										{
 											"type": "row",
@@ -10685,6 +10834,14 @@
 							"name": "Weapons",
 							"page": 96,
 							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XPHB/021.webp"
+									},
+									"credit": "Ned Dameron"
+								},
 								"The Weapons Table lists more than just the price of each item. It also gives other game information. Since each weapon is different, you should note this information separately for each weapon your character purchases or finds.",
 								"{@b Weapon Size:} All weapons are classed according to a size category—S, M, L, G, or H. Small (S) weapons are approximately two feet or less in size; medium (M) weapons are two to five feet long; large (L) weapons are generally six feet or greater in length. Giant (G) and huge (H) weapons are not found on the lists, since these are items normally used by ogres, giants, and even greater creatures. They are not items of equipment a PC can normally buy!",
 								"A character can always wield a weapon equal to his own size or less. Normally this requires only one hand, except for some missile weapons (bows and crossbows in particular). A character can also use a weapon one size greater than himself although it must be gripped with two hands. Beyond this size limit, the weapon is not usable without special means (most often magical).",
@@ -10710,6 +10867,13 @@
 										"{@b Mancatcher:} This item is a highly specialized type of polearm designed to capture without killing a victim. It consists of a long pole with a spring-loaded set of sharpened jaws at the end. The victim is caught between the arms, which then snap shut. The mancatcher is effective only on man-sized creatures. The target is always treated as AC 10, modified for Dexterity. If a hit is scored, the character is caught. The caught victim loses all shield and Dexterity bonuses and can be pushed and pulled about. This causes an automatic {@dice 1d2} points of damage per round and gives a 25% chance of pulling the victim to the ground. The victim can escape on a successful bend bars/lift gates roll, although this results in {@dice 1d2} points more damage. A common tactic is to use the weapon to pull horsemen off their mounts, then pin them to the ground.",
 										"{@b Polearms:} A popular group of weapons during the ancient and Medieval periods were the polearms. Their length was a distinct advantage and, for the peasant, they were a relatively easy weapon to make. Thus, there came to be an abundance of polearms of different sizes and shapes. Due to their numbers, there is no standard system for naming polearms. The names used in the AD&D game might possibly be applied to other weapons elsewhere.",
 										"Because of their length, all polearms are infantry weapons and require two hands to use. They are almost always the weapon of the common peasant and soldier, who, lacking a horse and heavy armor, needs some weapon to keep the enemy’s knights at bay. Thus, most polearms are intended to be used in close-packed formations that present a forest of sharp points and wicked blades to any knight foolish enough to charge.",
+										{
+											"type": "image",
+											"href": {
+												"type": "internal",
+												"path": "book/XPHB/022.webp"
+											}
+										},
 										"{@b Awl Pike:} Essentially this is a long spear 12 to 20 feet long ending in a spike point or tapered spear head. It was a popular weapon during the Renaissance. Since the pike stuck out in front, men could be packed side-by-side in dense formations, and several rows of men could fight. Large blocks of pikemen made formidable troops. However, once the pikemen engaged in close combat, they normally dropped their clumsy awl pikes and fought hand-to-hand with short swords.",
 										"{@b Bardiche:} One of the simplest of polearms, the bardiche is an elongated battle axe. A large curving axe-head is mounted on the end of a shaft 5 to 8 feet long. It probably grew out of common peasant tools and was popular with them. One relative disadvantage is that the bardiche required more space to wield than a pike or a spear.",
 										"{@b Bec de corbin:} This was a highly specialized weapon of the upper classes during the Late Middle Ages and the early Renaissance. It is an early can-opener designed specifically to deal with plate armor. The pick or beak is made to punch through plate, while the hammer side can be used to give a stiff blow. The end is fitted with a short blade for dealing with unarmored or helpless foes. The weapon is about 8 feet long. Since the weapon relies on impact, a great deal of swinging space is needed.",
@@ -10717,10 +10881,10 @@
 										"{@b Fauchard:} An outgrowth of the sickle and scythe, the fauchard is a long, inward curving blade mounted on a shaft 6 to 8 feet long. It can slash or thrust, although the inward curving point makes thrusting rather ineffective. Its advantage is that a peasant can easily convert his common scythe into this weapon of war.",
 										"{@b Fauchard-fork:} This is an attempted improvement on the fauchard, adding a long spike or fork to the back of the blade. Supposedly this improves the thrusting ability of the weapon. It is still an inefficient weapon.",
 										"{@b Glaive:} One of the most basic polearms, the glaive is a single-edged blade mounted on an 8 to 10-foot-long shaft. While not the most efficient weapon, it is relatively easy to make and use. Normally the blade turns outward to increase the cutting area until it almost resembles a cleaver or axe.",
-										"{@b Glaive-guisarme:}Another combination weapon, this one takes the basic glaive and adds a spike or hook to the back of the blade. In theory, this increases the usefulness of the weapon although its actual application is somewhat questionable.",
-										"{@b Guisarme:}Thought to have derived from a pruning hook, this is an elaborately curved heavy blade. While convenient and handy, it is not very effective.",
-										"{@b Guisarme-voulge:}This weapon has a modified axe blade mounted on an 8-foot-long shaft. The end of the blade tapers to a point for thrusting and a back spike is fitted for punching through armor. Sometimes this spike is replaced by a sharpened hook for dismounting riders.",
-										"{@b Halberd:}After the awl pike and the bill, this was one of the most popular weapons of the Middle Ages. Fixed on a shaft 5 to 8 feet long is a large axe blade, angled for maximum impact. The end of the blade tapers to a long spear point or awl pike. On the back is a hook for attacking armor or dismounting riders. Originally intended to defeat cavalry, it is not tremendously successful in that role since it lacks the reach of the pike and needs considerable room to swing. It found new life against blocks of pikemen. Should the advance of the main attack stall, halberdiers issue out of the formation and attack the flanks of the enemy. The pikemen with their overlong weapons are nearly defenseless in such close combat.",
+										"{@b Glaive-guisarme:} Another combination weapon, this one takes the basic glaive and adds a spike or hook to the back of the blade. In theory, this increases the usefulness of the weapon although its actual application is somewhat questionable.",
+										"{@b Guisarme:} Thought to have derived from a pruning hook, this is an elaborately curved heavy blade. While convenient and handy, it is not very effective.",
+										"{@b Guisarme-voulge:} This weapon has a modified axe blade mounted on an 8-foot-long shaft. The end of the blade tapers to a point for thrusting and a back spike is fitted for punching through armor. Sometimes this spike is replaced by a sharpened hook for dismounting riders.",
+										"{@b Halberd:} After the awl pike and the bill, this was one of the most popular weapons of the Middle Ages. Fixed on a shaft 5 to 8 feet long is a large axe blade, angled for maximum impact. The end of the blade tapers to a long spear point or awl pike. On the back is a hook for attacking armor or dismounting riders. Originally intended to defeat cavalry, it is not tremendously successful in that role since it lacks the reach of the pike and needs considerable room to swing. It found new life against blocks of pikemen. Should the advance of the main attack stall, halberdiers issue out of the formation and attack the flanks of the enemy. The pikemen with their overlong weapons are nearly defenseless in such close combat.",
 										"{@b Hook fauchard:} This combination weapon is another attempted improvement to the fauchard. A back hook is fitted to the back of the blade, supposedly to dismount horsemen. Like the fauchard, this is not a tremendously successful weapon.",
 										"{@b Lucern hammer:} This weapon is similar to the bec de corbin. Fitted with a shaft up to 10 feet long, it is usually found in the hands of the common soldier. Like the bec de corbin, its main purpose is to punch through armor. The end is fitted with the long point of an awl pike to hold off enemy cavalry.",
 										"{@b Military fork:} This is one of the simplest modifications of a peasant’s tool since it is little more than a pitchfork fixed to a longer shaft. With tines strengthened and straightened, the military fork serves well. The need for cutting and cleaving eventually often results in combining the fork with other weapons",
@@ -10740,6 +10904,13 @@
 							"name": "Armor",
 							"page": 99,
 							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XPHB/023.webp"
+									}
+								},
 								"You are going to want your player character to buy armor, if he is allowed to use any. Armor is the easiest and cheapest way to improve your character’s chance of surviving the more violent dangers of the adventuring life. Clearly, the better the armor the character possesses, the less likely he is to be hurt. {@b Armor protection is measured by Armor Class (AC), a number rating; the lower the Armor Class number, the better the protection.} Table 46 lists the values for all the types of armor found in the equipment lists.",
 								{
 									"type": "table",
@@ -11557,6 +11728,14 @@
 									]
 								}
 							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/024.webp"
+							},
+							"credit": "Ken Frank"
 						}
 					]
 				}
@@ -11633,7 +11812,15 @@
 								"The most believable illusion may be that of a solid wall in a dungeon, transforming a passage into a dead end. Unless the victim is familiar with these hallways, he has no reason not to believe that the wall is there.",
 								"Of course, in a fantasy world many more things can be believed than in the real world. Flames do not spring out of nowhere in the real world, but this can happen in a fantasy world. The presence of magic in a fantasy world makes victims more willing to accept things our logic tells us cannot happen. A creature appearing out of nowhere could be an illusion or it could be summoned. At the same time, you must remember that a properly role-played character is familiar with the laws of his world. If a wall of flames appears out of nowhere, he will look for the spellcaster. A wall blocking a corridor may cause him to check for secret doors. If the illusion doesn’t conform to his idea of how things work, the character should become suspicious. This is something youhave to provide for your character and something you must remember when your character attempts to use illusions.",
 								"This then leads to the third factor in the believability of an illusion, how appropriate the illusion is for the situation. As mentioned before, the victim is going to have certain expectations about any given encounter. The best illusions reinforce these expectations to your character’s advantage. Imagine that your group runs into a war party of orcs in the local forest. What could you do that would reinforce what the orcs might already believe? They see your group, armed and ready for battle. They do not know if you are alone or are the advance guard for a bigger troop. A good illusion could be the glint of metal and spear points coming up behind your party. Subtlety has its uses. The orcs will likely interpret your illusion as reinforcements to your group, enough to discourage them from attacking.",
-								"However, the limitations of each spell must be considered when judging appropriateness. A {@i phantasmal force} spell creates vision only. It does not provide sound, light, or heat. In the preceding situation, creating a troop of soldiers galloping up behind you would not have been believable. Where is the thunder of hooves, the creak of saddle leather, the shouts of your allies, the clank of drawn metal, or the whinny of horses? Orcs may not be tremendously bright, but they are not fooled that easily. Likewise, a dragon that suddenly appears without a thunderous roar and dragonish stench isn’t likely to be accepted as real. A wise spellcaster always considers the limitations of his illusions and finds ways to hide their weaknesses from the enemy.",
+								"However, the limitations of each spell must be considered when judging appropriateness. A {@i {@spell phantasmal force|XPHB}} spell creates vision only. It does not provide sound, light, or heat. In the preceding situation, creating a troop of soldiers galloping up behind you would not have been believable. Where is the thunder of hooves, the creak of saddle leather, the shouts of your allies, the clank of drawn metal, or the whinny of horses? Orcs may not be tremendously bright, but they are not fooled that easily. Likewise, a dragon that suddenly appears without a thunderous roar and dragonish stench isn’t likely to be accepted as real. A wise spellcaster always considers the limitations of his illusions and finds ways to hide their weaknesses from the enemy.",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XPHB/025.webp"
+									},
+									"credit": "Ned Dameron"
+								},
 								"An illusion spell, therefore, depends on its believability. Believability is determined by the situation and a saving throw. Under normal circumstances, those observing the illusion are allowed a saving throw vs. spell if they actively disbelieve the illusion. For player characters, disbelieving is an action in itself and takes a round. For NPCs and monsters, a normal saving throw is made if the DM deems it appropriate. The DM can give bonuses or penalties to this saving throw as he thinks appropriate. If the caster has cleverly prepared a realistic illusion, this certainly results in penalties on the victim’s saving throw. If the victim were to rely more on scent than sight, on the other hand, it could gain bonuses to its saving throw. If the saving throw is passed, the victim sees the illusion for what it is. If the saving throw is failed, the victim believes the illusion. A good indication of when player characters should receive a positive modifier to their saving throws is when they say they don’t believe what they see, especially if they can give reasons why.",
 								"There are rare instances when the saving throw may automatically succeed or fail. There are times when the illusion created is either so perfect or so utterly fantastic as to be impossible even in a fantasy world. Be warned, these occasions are very rare and you should not expect your characters to benefit from them more than once or twice.",
 								"In many encounters, some party members will believe an illusion while others see it for what it really is. In these cases, revealing the truth to those deluded by the spell is not a simple matter of telling them. The magic of the spell has seized their minds. Considered from their point of view, they see a horrible monster (or whatever) while a friend is telling them it isn’t real. They know magic can affect people’s minds, but whose mind has been affected in this case? At best, having an illusion pointed out grants another saving throw with a +4 bonus.",
@@ -11664,9 +11851,16 @@
 					"name": "Casting Spells",
 					"page": 111,
 					"entries": [
-						"Both wizards and priests use the same rules for casting spells. To cast a spell, the character must first have the spell memorized. If it is not memorized, the spell cannot be cast. The caster must be able to speak (not under the effects of a {@i silence} spell or gagged) and have both arms free. (Note that the optional spell component rule [following section] can modify these conditions.) If the spell is targeted on a person, place, or thing, the caster must be able to see the target. It is not enough to cast a fireball 150 feet ahead into the darkness; the caster must be able to see the point of explosion and the intervening distance. Likewise, a magic missile (which always hits its target) cannot be fired into a group of bandits with the instruction to strike the leader; the caster must be able to identify and see the leader.",
+						"Both wizards and priests use the same rules for casting spells. To cast a spell, the character must first have the spell memorized. If it is not memorized, the spell cannot be cast. The caster must be able to speak (not under the effects of a {@i {@spell silence|XPHB}} spell or gagged) and have both arms free. (Note that the optional spell component rule [following section] can modify these conditions.) If the spell is targeted on a person, place, or thing, the caster must be able to see the target. It is not enough to cast a fireball 150 feet ahead into the darkness; the caster must be able to see the point of explosion and the intervening distance. Likewise, a magic missile (which always hits its target) cannot be fired into a group of bandits with the instruction to strike the leader; the caster must be able to identify and see the leader.",
 						"Once the casting has begun, the character must stand still. Casting cannot be accomplished while riding a roughly moving beast or a vehicle, unless special efforts are made to stabilize and protect the caster. Thus, a spell cannot be cast from the back of a galloping horse under any conditions, nor can a wizard or priest cast a spell on the deck of a ship during a storm. However, if the caster were below decks, protected from the wind and surging waves, he could cast a spell. While it is not normally possible to cast a spell from a moving chariot, a character who was steadied and supported by others could do so. Your DM will have to make a ruling in these types of extraordinary conditions.",
 						"During the round in which the spell is cast, the caster cannot move to dodge attacks. Therefore, no AC benefit from Dexterity is gained by spellcasters while casting spells. Furthermore, if the spellcaster is struck by a weapon or fails to make a saving throw before the spell is cast, the caster’s concentration is disrupted. The spell is lost in a fizzle of useless energy and is wiped clean from the memory of the caster until it can be rememorized. Spellcasters are well advised not to stand at the front of any battle, at least if they want to be able to cast any spells!",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/026.webp"
+							}
+						},
 						{
 							"type": "inset",
 							"name": "Spell Components (Optional Rule)",
@@ -11722,7 +11916,15 @@
 						"Any character can voluntarily forgo a saving throw. This allows a spell or similar attack that normally grants a saving throw to have full effect on the character. Likewise, any creature can voluntarily lower its magic resistance allowing a spell to automatically function when cast on it. Forgoing a saving throw or magic resistance roll need not always be voluntary. If a creature or character can be tricked into lowering its resistance, the spell will have full effect, even if it is not the spell the victim believed he was going to receive. The victim must consciously choose to lower his resistance; it is not sufficient that he is caught off guard. For example, a character would receive a saving throw if a wizard in the party suddenly attacked him with a fireball, even if the wizard had been friendly to that point. However, the same character would not receive a saving throw if the wizard convinced him that he was about to receive a {@i {@spell levitation|XPHB}} spell but cast a fireball instead. Your DM will decide when NPCs have lowered their resistances. You must tell your DM when your character is voluntarily lowering his resistance.",
 						"{@b Spell Description:} The text provides a complete description of how the spell functions and its game effects. It covers most typical uses of the spell, if there are more than one, but cannot deal with every possible application players might find. In these cases, the spell information in the text should provide guidance on how to adjudicate the situation.",
 						"Spells with multiple functions enable the caster to select which function he wants to use at the time of casting. Usually a single function of a multiple-function spell is weaker than a single-function spell of the same level.",
-						"Spell effects that give bonuses or penalties to abilities, attack rolls, damage rolls, saving throws, etc., are not usually cumulative with each other or with other magic: the strongest single effect applies. For example, a fighter drinks a {@i {@item potion of giant strength|XPHB}} and then receives the 2nd-level wizard spell {@i {@spell strength|XPHB}}. Only the strongest magic (the potion) is effective. When the potion’s duration ends, however, the {@i {@spell strength|XPHB}} spell is still in effect, until its duration also expires."
+						"Spell effects that give bonuses or penalties to abilities, attack rolls, damage rolls, saving throws, etc., are not usually cumulative with each other or with other magic: the strongest single effect applies. For example, a fighter drinks a {@i {@item potion of giant strength|XPHB}} and then receives the 2nd-level wizard spell {@i {@spell strength|XPHB}}. Only the strongest magic (the potion) is effective. When the potion’s duration ends, however, the {@i {@spell strength|XPHB}} spell is still in effect, until its duration also expires.",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/027.webp"
+							},
+							"credit": "Ned Dameron"
+						}
 					]
 				}
 			]
@@ -12344,6 +12546,13 @@
 								"{@i Anne: \"Got it!—Acid arrow spell at the lead troll.\"}",
 								"{@i DM: \"Fine. Harry, Rath is in front. Roll for initiative.\"}"
 							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/028.webp"
+							}
 						}
 					]
 				},
@@ -13001,12 +13210,19 @@
 								"The defender also gains a benefit if it has more than two legs: a -2 penalty to the attacker’s roll for every leg beyond two. There is no penalty to the defender if it has no legs. A lone orc attempting to pull down a horse and rider would have at least a -8 penalty applied to the attack roll (-4 for size and -4 for the horse’s four legs).",
 								"If the attack succeeds, the opponent is pulled down. A character can be pinned if further successful overbearing attacks are rolled each round. For pinning purposes, do not use the prone modifier to combat (from Table 51).",
 								"If multiple attackers are all attempting to pull down a single target, make only one attack roll with a +1 bonus for each attacker beyond the first. Always use the to-hit number of the weakest attacker to figure the chance of success, since cooperation always depends on the weakest link. Modifiers for size should be figured for the largest attacker of the group.",
-								"{@i A giant and three pixies attempting to pull down a man would use the pixies’ attack roll, modified by +3 for three extra attackers and +8 for the size difference of the giant (Huge) and the man (Medium).}"
+								"{@i A giant and three pixies attempting to pull down a man would use the pixies’ attack roll, modified by +3 for three extra attackers and +8 for the size difference of the giant (Huge) and the man (Medium).}",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/XPHB/029.webp"
+									}
+								}
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Weapon In Nonlethal Combat",
+							"name": "Weapons In Nonlethal Combat",
 							"page": 130,
 							"entries": [
 								"As you might expect, weapons have their place in nonlethal combat, whether a character is defending or pressing the attack.",
@@ -13612,269 +13828,269 @@
 					"name": "Turning Undead",
 					"page": 136,
 					"entries": [
-								"One important, and potentially life-saving, combat ability available to priests and paladins is the ability to turn undead. This is a special power granted by the character’s deity. Druids {@i cannot} turn undead; priests of specific mythoi may be able to at the DM’s option.",
-								"Through the priest or paladin, the deity manifests a portion of its power, terrifying evil, undead creatures or blasting them right out of existence. However, since the power must be channeled through a mortal vessel, success is not always assured.",
-								"When encountering undead, a priest or paladin can attempt to turn the creatures (remember that the paladin turns undead as if he was two levels lower—a 5th-level paladin uses the level 3 column in Table 61). Only one attempt can be made per character per encounter, but several different characters can make attempts at the same time (with the results determined individually).",
-								{
-									"type": "table",
-									"caption": "Table 61: Turning Undead",
-									"page": 137,
-									"colLabels": [
-										"Type or Hit Dice of Undead",
-										"",
-										"",
-										"",
-										"",
-										"",
-										"",
-										"",
-										"",
-										"",
-										"",
-										"",
-										"Level of Priest†"
-									],
-									"colStyles": [
-										"col- text-left",
-										"col- text-center",
-										"col- text-center",
-										"col- text-center",
-										"col- text-center",
-										"col- text-center",
-										"col- text-center",
-										"col- text-center",
-										"col- text-center",
-										"col- text-center",
-										"col- text-center",
-										"col- text-center",
-										"col- text-center"
-									],
-									"rows": [
-										[
-											"",
-											"{@b 1}",
-											"{@b 2}",
-											"{@b 3}",
-											"{@b 4}",
-											"{@b 5}",
-											"{@b 6}",
-											"{@b 7}",
-											"{@b 8}",
-											"{@b 9}",
-											"{@b 10-11}",
-											"{@b 12-13}",
-											"{@b 14+}"
-										],
-										[
-											"Skeleton or 1 HD",
-											"10",
-											"7",
-											"4",
-											"T",
-											"T",
-											"D",
-											"D",
-											"D*",
-											"D*",
-											"D*",
-											"D*",
-											"D*"
-										],
-										[
-											"Zombie",
-											"13",
-											"10",
-											"7",
-											"4",
-											"T",
-											"T",
-											"D",
-											"D",
-											"D*",
-											"D*",
-											"D*",
-											"D*"
-										],
-										[
-											"Ghoul or 2 HD",
-											"16",
-											"13",
-											"10",
-											"7",
-											"4",
-											"T",
-											"T",
-											"D",
-											"D",
-											"D*",
-											"D*",
-											"D*"
-										],
-										[
-											"Shadow or 3–4 HD",
-											"19",
-											"16",
-											"13",
-											"10",
-											"7",
-											"4",
-											"T",
-											"T",
-											"D",
-											"D",
-											"D*",
-											"D*"
-										],
-										[
-											"Wight or 5 HD",
-											"20",
-											"19",
-											"16",
-											"13",
-											"10",
-											"7",
-											"4",
-											"T",
-											"T",
-											"D",
-											"D",
-											"D*"
-										],
-										[
-											"Ghast",
-											"—",
-											"20",
-											"19",
-											"16",
-											"13",
-											"10",
-											"7",
-											"4",
-											"T",
-											"T",
-											"D",
-											"D"
-										],
-										[
-											"Wraith or 6 HD",
-											"—",
-											"—",
-											"20",
-											"19",
-											"16",
-											"13",
-											"10",
-											"7",
-											"4",
-											"T",
-											"T",
-											"D"
-										],
-										[
-											"Mummy or 7 HD",
-											"—",
-											"—",
-											"—",
-											"20",
-											"19",
-											"16",
-											"13",
-											"10",
-											"7",
-											"4",
-											"T",
-											"T"
-										],
-										[
-											"Spectre or 8 HD",
-											"—",
-											"—",
-											"—",
-											"—",
-											"20",
-											"19",
-											"16",
-											"13",
-											"10",
-											"7",
-											"4",
-											"T"
-										],
-										[
-											"Vampire or 9 HD",
-											"—",
-											"—",
-											"—",
-											"—",
-											"—",
-											"20",
-											"19",
-											"16",
-											"13",
-											"10",
-											"7",
-											"4"
-										],
-										[
-											"Ghost or 10 HD",
-											"—",
-											"—",
-											"—",
-											"—",
-											"—",
-											"—",
-											"20",
-											"19",
-											"16",
-											"13",
-											"10",
-											"7"
-										],
-										[
-											"Lich or 11+ HD",
-											"—",
-											"—",
-											"—",
-											"—",
-											"—",
-											"—",
-											"—",
-											"20",
-											"19",
-											"16",
-											"13",
-											"10"
-										],
-										[
-											"Special**",
-											"—",
-											"—",
-											"—",
-											"—",
-											"—",
-											"—",
-											"—",
-											"—",
-											"20",
-											"19",
-											"16",
-											"13"
-										]
-									],
-									"footnotes": [
-										"* An additional {@dice 2d4} creatures of this type are turned.",
-										"** Special creatures include unique undead, free-willed undead of the Negative Material Plane, certain Greater and Lesser Powers, and those undead that dwell in the Outer Planes.",
-										"† Paladins turn undead as priests who are two levels lower."
-									]
-								},
-								"Attempting to turn counts as an action, requiring one round and occurring during the character’s turn in the initiative order (thus, the undead may get to act before the character can turn them). The mere presence of the character is not enough—a touch of drama from the character is important. Speech and gestures are important, so the character must have his hands free and be in a position to speak. However, turning is not like spellcasting and is not interrupted if the character is attacked during the attempt.",
-								"To resolve a turning attempt, look on Table 61. Crossindex the Hit Dice or type of the undead with the level of the character (two levels lower for a paladin). If there is a number listed, roll {@dice 1d20}. If the number rolled is equal to or greater than that listed, the attempt is successful. If the letter \"T\" (for \"turned\") appears, the attempt is automatically successful without a die roll. If the letter \"D\" (for \"dispel\") is given, the turning utterly destroys the undead. A dash (—) means that a priest or paladin of that level cannot turn that type of undead. {@i A successful turn or dispel affects {@dice 2d6} undead. If the undead are a mixed group, the lowest Hit Dice creatures are turned first.}",
-								"Only one die is rolled regardless of the number of undead the character is attempting to turn in a given round. The result is read individually for each type of undead.",
-								"For example, Gorus, a 7th-level priest, and his party are attacked by two skeletons led by a wight and a spectre. The turning attempt is made, resulting in a roll of 12.",
-								"Gorus’s player reads the table for all three types of undead using the same {@i roll—12}—for all three. The skeletons are destroyed (as Gorus knew they would be). The wight is turned (a 4 or better was needed) and flees. The spectre, however, continues forward undaunted (since a 16 was needed to turn the spectre).",
-								"Turned undead bound by the orders of another (for example, skeletons) simply retreat and allow the character and those with him to pass or complete their actions.",
-								"Free-willed undead attempt to flee the area of the turning character, until out of his sight. If unable to escape, they circle at a distance, no closer than 10 feet to the character, provided he continues to maintain his turning (no further die rolls are needed).",
-								"If the character forces the free-willed undead to come closer than 10 feet (by pressing them into a corner, for example) the turning is broken and the undead attack normally.",
+						"One important, and potentially life-saving, combat ability available to priests and paladins is the ability to turn undead. This is a special power granted by the character’s deity. Druids {@i cannot} turn undead; priests of specific mythoi may be able to at the DM’s option.",
+						"Through the priest or paladin, the deity manifests a portion of its power, terrifying evil, undead creatures or blasting them right out of existence. However, since the power must be channeled through a mortal vessel, success is not always assured.",
+						"When encountering undead, a priest or paladin can attempt to turn the creatures (remember that the paladin turns undead as if he was two levels lower—a 5th-level paladin uses the level 3 column in Table 61). Only one attempt can be made per character per encounter, but several different characters can make attempts at the same time (with the results determined individually).",
+						{
+							"type": "table",
+							"caption": "Table 61: Turning Undead",
+							"page": 137,
+							"colLabels": [
+								"Type or Hit Dice of Undead",
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								"Level of Priest†"
+							],
+							"colStyles": [
+								"col- text-left",
+								"col- text-center",
+								"col- text-center",
+								"col- text-center",
+								"col- text-center",
+								"col- text-center",
+								"col- text-center",
+								"col- text-center",
+								"col- text-center",
+								"col- text-center",
+								"col- text-center",
+								"col- text-center",
+								"col- text-center"
+							],
+							"rows": [
+								[
+									"",
+									"{@b 1}",
+									"{@b 2}",
+									"{@b 3}",
+									"{@b 4}",
+									"{@b 5}",
+									"{@b 6}",
+									"{@b 7}",
+									"{@b 8}",
+									"{@b 9}",
+									"{@b 10-11}",
+									"{@b 12-13}",
+									"{@b 14+}"
+								],
+								[
+									"Skeleton or 1 HD",
+									"10",
+									"7",
+									"4",
+									"T",
+									"T",
+									"D",
+									"D",
+									"D*",
+									"D*",
+									"D*",
+									"D*",
+									"D*"
+								],
+								[
+									"Zombie",
+									"13",
+									"10",
+									"7",
+									"4",
+									"T",
+									"T",
+									"D",
+									"D",
+									"D*",
+									"D*",
+									"D*",
+									"D*"
+								],
+								[
+									"Ghoul or 2 HD",
+									"16",
+									"13",
+									"10",
+									"7",
+									"4",
+									"T",
+									"T",
+									"D",
+									"D",
+									"D*",
+									"D*",
+									"D*"
+								],
+								[
+									"Shadow or 3–4 HD",
+									"19",
+									"16",
+									"13",
+									"10",
+									"7",
+									"4",
+									"T",
+									"T",
+									"D",
+									"D",
+									"D*",
+									"D*"
+								],
+								[
+									"Wight or 5 HD",
+									"20",
+									"19",
+									"16",
+									"13",
+									"10",
+									"7",
+									"4",
+									"T",
+									"T",
+									"D",
+									"D",
+									"D*"
+								],
+								[
+									"Ghast",
+									"—",
+									"20",
+									"19",
+									"16",
+									"13",
+									"10",
+									"7",
+									"4",
+									"T",
+									"T",
+									"D",
+									"D"
+								],
+								[
+									"Wraith or 6 HD",
+									"—",
+									"—",
+									"20",
+									"19",
+									"16",
+									"13",
+									"10",
+									"7",
+									"4",
+									"T",
+									"T",
+									"D"
+								],
+								[
+									"Mummy or 7 HD",
+									"—",
+									"—",
+									"—",
+									"20",
+									"19",
+									"16",
+									"13",
+									"10",
+									"7",
+									"4",
+									"T",
+									"T"
+								],
+								[
+									"Spectre or 8 HD",
+									"—",
+									"—",
+									"—",
+									"—",
+									"20",
+									"19",
+									"16",
+									"13",
+									"10",
+									"7",
+									"4",
+									"T"
+								],
+								[
+									"Vampire or 9 HD",
+									"—",
+									"—",
+									"—",
+									"—",
+									"—",
+									"20",
+									"19",
+									"16",
+									"13",
+									"10",
+									"7",
+									"4"
+								],
+								[
+									"Ghost or 10 HD",
+									"—",
+									"—",
+									"—",
+									"—",
+									"—",
+									"—",
+									"20",
+									"19",
+									"16",
+									"13",
+									"10",
+									"7"
+								],
+								[
+									"Lich or 11+ HD",
+									"—",
+									"—",
+									"—",
+									"—",
+									"—",
+									"—",
+									"—",
+									"20",
+									"19",
+									"16",
+									"13",
+									"10"
+								],
+								[
+									"Special**",
+									"—",
+									"—",
+									"—",
+									"—",
+									"—",
+									"—",
+									"—",
+									"—",
+									"20",
+									"19",
+									"16",
+									"13"
+								]
+							],
+							"footnotes": [
+								"* An additional {@dice 2d4} creatures of this type are turned.",
+								"** Special creatures include unique undead, free-willed undead of the Negative Material Plane, certain Greater and Lesser Powers, and those undead that dwell in the Outer Planes.",
+								"† Paladins turn undead as priests who are two levels lower."
+							]
+						},
+						"Attempting to turn counts as an action, requiring one round and occurring during the character’s turn in the initiative order (thus, the undead may get to act before the character can turn them). The mere presence of the character is not enough—a touch of drama from the character is important. Speech and gestures are important, so the character must have his hands free and be in a position to speak. However, turning is not like spellcasting and is not interrupted if the character is attacked during the attempt.",
+						"To resolve a turning attempt, look on Table 61. Crossindex the Hit Dice or type of the undead with the level of the character (two levels lower for a paladin). If there is a number listed, roll {@dice 1d20}. If the number rolled is equal to or greater than that listed, the attempt is successful. If the letter \"T\" (for \"turned\") appears, the attempt is automatically successful without a die roll. If the letter \"D\" (for \"dispel\") is given, the turning utterly destroys the undead. A dash (—) means that a priest or paladin of that level cannot turn that type of undead. {@i A successful turn or dispel affects {@dice 2d6} undead. If the undead are a mixed group, the lowest Hit Dice creatures are turned first.}",
+						"Only one die is rolled regardless of the number of undead the character is attempting to turn in a given round. The result is read individually for each type of undead.",
+						"For example, Gorus, a 7th-level priest, and his party are attacked by two skeletons led by a wight and a spectre. The turning attempt is made, resulting in a roll of 12.",
+						"Gorus’s player reads the table for all three types of undead using the same {@i roll—12}—for all three. The skeletons are destroyed (as Gorus knew they would be). The wight is turned (a 4 or better was needed) and flees. The spectre, however, continues forward undaunted (since a 16 was needed to turn the spectre).",
+						"Turned undead bound by the orders of another (for example, skeletons) simply retreat and allow the character and those with him to pass or complete their actions.",
+						"Free-willed undead attempt to flee the area of the turning character, until out of his sight. If unable to escape, they circle at a distance, no closer than 10 feet to the character, provided he continues to maintain his turning (no further die rolls are needed).",
+						"If the character forces the free-willed undead to come closer than 10 feet (by pressing them into a corner, for example) the turning is broken and the undead attack normally.",
 						{
 							"type": "entries",
 							"name": "Evil Priests and Undead",
@@ -13893,6 +14109,14 @@
 					"name": "Injury and Death",
 					"page": 137,
 					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/030.webp"
+							},
+							"credit": "David O' Miller"
+						},
 						"Sometimes, no degree of luck, skill, ability, or resistance to various attacks can prevent harm from coming to a character. The adventuring life carries with it unavoid able risks. Sooner or later a character is going to be hurt.",
 						"To allow characters to be heroic (and for ease of play), damage is handled abstractly in the AD&D game. All characters and monsters have a number of hit points. The more hit points a creature has, the harder it is to defeat.",
 						"Damage is subtracted from a character’s (or creature’s) hit points. Should one of the player characters hit an ogre in the side of the head for 8 points of damage, those 8 points are subtracted from the ogre’s total hit points. The damage isn’t applied to the head, or divided among different areas of the body.",
@@ -14188,7 +14412,14 @@
 						"{@b Fight:} Of course, there are times when you don’t want to or can’t run away. (Running all the time is not that heroic.) And there are times when you know talking is not a good idea. Sooner or later, your character will have to fight. The real trick is knowing when to fight and when to talk or run. If you attack every creature you meet, the first thing that will happen is that nobody will want to meet with your character. Your character will also manage to kill or chase off everyone who might want to help him. Finally, sooner or later your DM is going to get tired of this and send an incredibly powerful group of monsters after your character. Given the fact that you’ve been killing everything in sight, he’s justified in doing this.",
 						"So it is important always to know who you are attacking and why. As with the best police in the world today, the trick is to figure out who are the bad guys and who are the good guys. Make mistakes and you pay. You may kill an NPC who has a vital clue, or unintentionally anger a baron far more powerful than yourself. NPCs will be reluctant to associate with your character, and the law will find fewer and fewer reasons to protect him. It is always best to look on combat as a last resort.",
 						"{@b Wait:} Sometimes when you encounter another group, you don’t know what you should do. You don’t want to attack them in case they are friendly, but you don’t want to say anything to provoke them. What you can do is wait and see how they react. Waiting is a perfectly sensible option. However, there is the risk that in waiting, you lose the advantage should the other side suddenly decide to attack. Waiting for a reaction so that you can decide what to do causes a +1 penalty to the first initiative roll for your group, if the other side attacks.",
-						"Of course, in any given encounter, there may be many other options open to your character. The only limit is your imagination (and common sense). Charging a band of orcs to break through their lines and flee may work. Talking them down with an elaborate bluff about the army coming up behind you might scare them off. Clever use of spells could end the encounter in sudden and unexpected ways. The point is, this is a role-playing game and the options are as varied as you wish to make them."
+						"Of course, in any given encounter, there may be many other options open to your character. The only limit is your imagination (and common sense). Charging a band of orcs to break through their lines and flee may work. Talking them down with an elaborate bluff about the army coming up behind you might scare them off. Clever use of spells could end the encounter in sudden and unexpected ways. The point is, this is a role-playing game and the options are as varied as you wish to make them.",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/031.webp"
+							}
+						}
 					]
 				}
 			]
@@ -14259,6 +14490,13 @@
 						"Henchmen are much that hirelings serve out of loyalty. They are willing to risk their lives for those they respect. They are also hard to find.",
 						"Henchmen are powerful allies to a player character. Unlike hirelings, they have the nerve and ability to become powerful adventurers. Although they expect their share of treasure, they do not usually join a player character for money. They are attracted to the PC because of his reputation or other qualities he possesses. As such, henchmen cannot be expected to flock to the banner of a neophyte adventurer. He may gain himself one or two companions, but others come only when he has earned a greater reputation, met more people, and proven himself a true friend and ally to these NPCs.",
 						"Henchmen can come from any source. Most often they are at first mere hirelings or followers who, through distinctive actions, come to the attention of the player character. Some may be higher level, more skilled hirelings who develop a bond to the player character through long employment. Others may be followers who have sound advice for the player character.",
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/032.webp"
+							}
+						},
 						"A henchman is always of lower level than the PC. Should he ever equal or surpass the PC’s level, the henchman leaves forever; it is time for him to try his luck in the real world. In some ways, the player character is the mentor and the henchman his student. When the student has learned as much as the teacher, it is time for him to go out on his own.",
 						"Henchmen are more than just loyal followers; they are friends and allies. Naturally, they expect to be treated as such. They have little need for those who do not trust them or treat them coldly. Abusiveness or taking advantage of the friendship quickly ends the relationship. Just as players must with their own friends, player characters must be sensitive to the needs and feelings of their henchmen. Furthermore, henchmen attach themselves to a particular player character, not a group of player characters. Thus it is only under the direst of circumstances that a henchman accepts the orders of another PC. Should his friend (the player character) fall, the henchman sees to his needs. He doesn’t abandon him and continue on with the other player characters unless this is clearly the only way to aid his friend.",
 						"A PC’s Charisma determines the maximum number of henchmen he can have. This is a lifetime limit, not just a maximum possible at any given time. In a world where the fallen can be restored to life, it is expected that a man would make this effort for his dearest friends, both player characters and henchmen. For example, Rupert the half-elf has had seven henchmen, but all have fallen for one reason or another. Rupert’s Charisma is 15, so with the death of his latest henchman, no more come to join him. (Word has obviously gotten around that Rupert’s friends tend to meet unpleasant ends, and he doesn’t even have the decency to bring them back to life! Even if he had tried to raise his henchmen and failed, Rupert would still be viewed as a jinx, bad luck for those around him.)",
@@ -14631,6 +14869,13 @@
 							]
 						},
 						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/033.webp"
+							}
+						},
+						{
 							"type": "entries",
 							"name": "Holding Your Breath",
 							"page": 160,
@@ -14792,7 +15037,7 @@
 										],
 										[
 											"Surface condition:",
-												""
+											""
 										],
 										{
 											"type": "row",
@@ -14922,6 +15167,13 @@
 								},
 								"For example, Ragnar the thief and his companion Rupert (a half-elf) are climbing a cliff with rough ledges. A recent rain has left the surface slightly slippery. Ragnar has a movement rate of 12 and Rupert’s is 8. Ragnar can cover 12 feet per round (12 × 1 since he is a thief), but Rupert struggles along at the pace of 4 feet per round (8 × 1⁄2). If Ragnar had gone up first and lowered a rope to Rupert, the half-elf could have climbed at the rate of 8 feet per round using rope and wall (8 × 1)."
 							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/034.webp"
+							}
 						},
 						{
 							"type": "entries",
@@ -15057,8 +15309,7 @@
 									"style": "list-decimal",
 									"columns": 0,
 									"page": 164,
-									"items": 
-									[
+									"items": [
 										"{@spell Alter Self|XPHB}",
 										"{@spell Bind|XPHB}",
 										"{@spell Blindness|XPHB}",
@@ -15724,6 +15975,14 @@
 						},
 						"* {@i Italicized} spells are reversible."
 					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/XPHB/035.webp"
+					},
+					"credit": "Les Dorscheid"
 				}
 			]
 		},
@@ -15785,12 +16044,19 @@
 					"entries": [
 						{
 							"type": "list",
-							"style": "list-lower-roman",
+							"style": "list",
 							"columns": 0,
 							"page": 0,
 							"name": "",
-							"items": [
-							]
+							"items": []
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/036.webp"
+							},
+							"credit": "Den Beauvais"
 						}
 					]
 				},
@@ -15799,7 +16065,14 @@
 					"name": "Second-Level Spells",
 					"page": 180,
 					"entries": [
-					
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/037.webp"
+							},
+							"credit": "Den Beauvais"
+						}
 					]
 				},
 				{
@@ -15807,7 +16080,14 @@
 					"name": "Third-Level Spells",
 					"page": 190,
 					"entries": [
-						""
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/038.webp"
+							},
+							"credit": "Den Beauvais"
+						}
 					]
 				},
 				{
@@ -15815,7 +16095,14 @@
 					"name": "Fourth-Level Spells",
 					"page": 198,
 					"entries": [
-						""
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/039.webp"
+							},
+							"credit": "Den Beauvais"
+						}
 					]
 				},
 				{
@@ -15823,7 +16110,20 @@
 					"name": "Fifth-Level Spells",
 					"page": 209,
 					"entries": [
-						""
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/040.webp"
+							}
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/041.webp"
+							}
+						}
 					]
 				},
 				{
@@ -15831,7 +16131,14 @@
 					"name": "Sixth-Level Spells",
 					"page": 220,
 					"entries": [
-						""
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/042.webp"
+							},
+							"credit": "Den Beauvais"
+						}
 					]
 				},
 				{
@@ -15839,7 +16146,14 @@
 					"name": "Seventh-Level Spells",
 					"page": 232,
 					"entries": [
-						""
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/043.webp"
+							},
+							"credit": "Den Beauvais"
+						}
 					]
 				},
 				{
@@ -15855,7 +16169,22 @@
 					"name": "Ninth-Level Spells",
 					"page": 245,
 					"entries": [
-						""
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/044.webp"
+							},
+							"credit": "Jeff Easley"
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/045.webp"
+							},
+							"credit": "Ned Dameron"
+						}
 					]
 				}
 			]
@@ -15869,15 +16198,21 @@
 					"type": "entries",
 					"name": "First-Level Spells",
 					"page": 252,
-					"entries": [
-					]
+					"entries": []
 				},
 				{
 					"type": "entries",
 					"name": "Second-Level Spells",
 					"page": 257,
 					"entries": [
-						""
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/046.webp"
+							},
+							"credit": "Den Beauvais"
+						}
 					]
 				},
 				{
@@ -15885,7 +16220,21 @@
 					"name": "Third-Level Spells",
 					"page": 265,
 					"entries": [
-						""
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/047.webp"
+							}
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/048.webp"
+							},
+							"credit": "Den Beauvais"
+						}
 					]
 				},
 				{
@@ -15893,7 +16242,14 @@
 					"name": "Fourth-Level Spells",
 					"page": 273,
 					"entries": [
-						""
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/049.webp"
+							},
+							"credit": "Ned Dameron"
+						}
 					]
 				},
 				{
@@ -15901,7 +16257,13 @@
 					"name": "Fifth-Level Spells",
 					"page": 280,
 					"entries": [
-						""
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/050.webp"
+							}
+						}
 					]
 				},
 				{
@@ -15917,7 +16279,13 @@
 					"name": "Seventh-Level Spells",
 					"page": 292,
 					"entries": [
-						""
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/XPHB/052.webp"
+							}
+						}
 					]
 				}
 			]
@@ -16548,7 +16916,7 @@
 							"type": "list",
 							"style": "list-hang",
 							"columns": 4,
-							"items":[
+							"items": [
 								"{@spell Detect Magic|XPHB} (1st)",
 								"{@spell Detect Poison|XPHB} (1st)",
 								"{@spell Detect Snares & Pits|XPHB} (1st)",
@@ -16570,7 +16938,7 @@
 								"{@spell True Seeing|XPHB} (5th)",
 								"{@spell Find the Path|XPHB} (6th)",
 								"{@spell Speak With Monsters|XPHB} (6th)"
-							] 
+							]
 						}
 					]
 				},
@@ -16583,7 +16951,7 @@
 							"type": "list",
 							"style": "list-hang",
 							"columns": 4,
-							"items":[
+							"items": [
 								"{@spell Detect Magic|XPHB} (1st)",
 								"{@spell Detect Poison|XPHB} (1st)",
 								"{@spell Detect Snares & Pits|XPHB} (1st)",
@@ -16605,7 +16973,7 @@
 								"{@spell True Seeing|XPHB} (5th)",
 								"{@spell Find the Path|XPHB} (6th)",
 								"{@spell Speak With Monsters|XPHB} (6th)"
-							] 
+							]
 						}
 					]
 				},
@@ -16618,7 +16986,7 @@
 							"type": "list",
 							"style": "list-hang",
 							"columns": 4,
-							"items":[
+							"items": [
 								"{@spell Create Water|XPHB} (1st)",
 								"{@spell Dust Devil|XPHB} (1st)",
 								"{@spell Fire Trap|XPHB} (2nd)",
@@ -16651,8 +17019,8 @@
 								"{@spell Earthquake |XPHB} (7th)",
 								"{@spell Fire Storm|XPHB} (7th)",
 								"{@spell Transmute Metal to Wood|XPHB} (7th)",
-								"{@spell Wind Walk|XPHB} (7th)" 
-							] 
+								"{@spell Wind Walk|XPHB} (7th)"
+							]
 						}
 					]
 				},
@@ -17081,7 +17449,6 @@
 							"Armor, bard restrictions",
 							"58"
 						],
-						
 						{
 							"type": "row",
 							"style": "row-indent-first",
@@ -17098,7 +17465,6 @@
 								"48"
 							]
 						},
-						
 						{
 							"type": "row",
 							"style": "row-indent-first",
@@ -17115,7 +17481,6 @@
 								"99"
 							]
 						},
-						
 						{
 							"type": "row",
 							"style": "row-indent-first",
@@ -17132,7 +17497,6 @@
 								"100"
 							]
 						},
-						
 						{
 							"type": "row",
 							"style": "row-indent-first",
@@ -17149,7 +17513,6 @@
 								"101"
 							]
 						},
-						
 						{
 							"type": "row",
 							"style": "row-indent-first",
@@ -17182,7 +17545,6 @@
 								"120"
 							]
 						},
-						
 						{
 							"type": "row",
 							"style": "row-indent-first",
@@ -17211,7 +17573,6 @@
 								"128"
 							]
 						},
-						
 						{
 							"type": "row",
 							"style": "row-indent-first",
@@ -17881,7 +18242,8 @@
 								"multiple attacks",
 								"126"
 							]
-						},{
+						},
+						{
 							"type": "row",
 							"style": "row-indent-first",
 							"row": [
@@ -18001,7 +18363,6 @@
 								"119, 147"
 							]
 						},
-
 						{
 							"type": "row",
 							"style": "row-indent-first",
