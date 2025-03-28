@@ -4,12 +4,12 @@ import { UtilsEntityBackground } from "./utils/utils-entity-background.js";
 import { UtilsEntityRace } from "./utils/utils-entity-race.js";
 
 class StatGenPage {
-	constructor() {
+	constructor () {
 		this._statGenUi = null;
 		this._isIgnoreHashChanges = false;
 	}
 
-	async pInit() {
+	async pInit () {
 		await Promise.all([
 			PrereleaseUtil.pInit(),
 			BrewUtil2.pInit(),
@@ -45,7 +45,7 @@ class StatGenPage {
 		window.dispatchEvent(new Event("toolsLoaded"));
 	}
 
-	_getAdditionalTabMetas() {
+	_getAdditionalTabMetas () {
 		return [
 			new TabUiUtil.TabMeta({
 				type: "buttons",
@@ -111,12 +111,12 @@ class StatGenPage {
 		];
 	}
 
-	async _pDoSaveState() {
+	async _pDoSaveState () {
 		const statGenState = this._statGenUi.getSaveableState();
 		await StorageUtil.pSetForPage(StatGenPage._STORAGE_KEY_STATE, statGenState);
 	}
 
-	async _pLoadRaces() {
+	async _pLoadRaces () {
 		const cpyRaces = MiscUtil.copyFast(
 			[
 				...(await DataLoader.pCacheAndGetAllSite(UrlUtil.PG_RACES)),
@@ -135,7 +135,7 @@ class StatGenPage {
 		return cpyRaces;
 	}
 
-	async _pLoadBackgrounds() {
+	async _pLoadBackgrounds () {
 		const cpyBackgrounds = MiscUtil.copyFast(
 			[
 				...(await DataLoader.pCacheAndGetAllSite(UrlUtil.PG_BACKGROUNDS)),
@@ -154,7 +154,7 @@ class StatGenPage {
 		return cpyBackgrounds;
 	}
 
-	async _pLoadFeats() {
+	async _pLoadFeats () {
 		return [
 			...(await DataLoader.pCacheAndGetAllSite(UrlUtil.PG_FEATS)),
 			...(await DataLoader.pCacheAndGetAllPrerelease(UrlUtil.PG_FEATS)),
@@ -166,20 +166,20 @@ class StatGenPage {
 			});
 	}
 
-	_setTabFromHash(tabName) {
+	_setTabFromHash (tabName) {
 		this._isIgnoreHashChanges = true;
 		const ixTab = this._statGenUi.MODES.indexOf(tabName);
 		this._statGenUi.ixActiveTab = ~ixTab ? ixTab : 0;
 		this._isIgnoreHashChanges = false;
 	}
 
-	_setHashFromTab() {
+	_setHashFromTab () {
 		this._isIgnoreHashChanges = true;
 		window.location.hash = this._statGenUi.MODES[this._statGenUi.ixActiveTab];
 		this._isIgnoreHashChanges = false;
 	}
 
-	_handleHashChange() {
+	_handleHashChange () {
 		if (this._isIgnoreHashChanges) return false;
 
 		const hash = (window.location.hash.slice(1) || "").trim().toLowerCase();
@@ -211,7 +211,7 @@ class StatGenPage {
 		}
 	}
 
-	_doSilentHashChange(mode) {
+	_doSilentHashChange (mode) {
 		window.history.replaceState(
 			{},
 			document.title,

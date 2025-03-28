@@ -32,7 +32,7 @@ class OmnisearchUi {
 	/* -------------------------------------------- */
 
 	static _RenderState = class {
-		constructor(
+		constructor (
 			{
 				iptSearch,
 				wrpSearchInput,
@@ -52,7 +52,7 @@ class OmnisearchUi {
 
 	/* -------------------------------------------- */
 
-	static render() {
+	static render () {
 		if (globalThis.IS_VTT) return;
 
 		const rdState = this._render_getElements();
@@ -61,7 +61,7 @@ class OmnisearchUi {
 		this._render_doBindBodyListeners({ rdState });
 	}
 
-	static _render_getElements() {
+	static _render_getElements () {
 		const eleNavbar = document.getElementById("navbar");
 
 		const iptSearch = e_({
@@ -133,7 +133,7 @@ class OmnisearchUi {
 		return rdState;
 	}
 
-	static _render_doBindElementListeners({ rdState }) {
+	static _render_doBindElementListeners ({ rdState }) {
 		rdState.dispSearchOutput
 			.onClick(evt => {
 				evt.stopPropagation();
@@ -197,7 +197,7 @@ class OmnisearchUi {
 			});
 	}
 
-	static _render_doBindScrollHandler({ rdState }) {
+	static _render_doBindScrollHandler ({ rdState }) {
 		window.addEventListener("scroll", evt => {
 			if (Renderer.hover.isSmallScreen(evt)) {
 				rdState.iptSearch.attr("placeholder", this._PLACEHOLDER_TEXT);
@@ -219,7 +219,7 @@ class OmnisearchUi {
 		});
 	}
 
-	static _render_doBindBodyListeners({ rdState }) {
+	static _render_doBindBodyListeners ({ rdState }) {
 		document.body.addEventListener(
 			"click",
 			() => this._doCleanup({ rdState }),
@@ -239,21 +239,21 @@ class OmnisearchUi {
 
 	/* -------------------------------------------- */
 
-	static _hasPagePrev({ results, ixPage }) {
+	static _hasPagePrev ({ results, ixPage }) {
 		return ixPage > 0;
 	}
 
-	static _hasPageNext({ results, ixPage }) {
+	static _hasPageNext ({ results, ixPage }) {
 		return (results.length - (ixPage * this._MAX_RESULTS) > this._MAX_RESULTS);
 	}
 
-	static _getNumPages({ results }) {
+	static _getNumPages ({ results }) {
 		return Math.ceil(results.length / this._MAX_RESULTS);
 	}
 
 	/* -------------------------------------------- */
 
-	static async _handleClick_pSubmit({ evt, rdState }) {
+	static async _handleClick_pSubmit ({ evt, rdState }) {
 		if (evt) evt.stopPropagation();
 		await this._pDoSearch({ rdState });
 		Renderer.hover.cleanTempWindows();
@@ -261,7 +261,7 @@ class OmnisearchUi {
 
 	/* -------------------------------------------- */
 
-	static _handleKeydown_link({ rdState, evt, results, ixPage, rowMetas, ixInPage }) {
+	static _handleKeydown_link ({ rdState, evt, results, ixPage, rowMetas, ixInPage }) {
 		Renderer.hover.cleanTempWindows();
 		switch (evt.key) {
 			case "ArrowLeft":
@@ -321,7 +321,7 @@ class OmnisearchUi {
 		}
 	}
 
-	static _doCleanup({ rdState }) {
+	static _doCleanup ({ rdState }) {
 		rdState.lastRender = null;
 		rdState.wrpSearchOutput.hideVe();
 	}
@@ -329,12 +329,12 @@ class OmnisearchUi {
 	/* -------------------------------------------- */
 
 	// region Search
-	static async _pDoSearch({ rdState }) {
+	static async _pDoSearch ({ rdState }) {
 		const results = await OmnisearchBacking.pGetResults(CleanUtil.getCleanString(rdState.iptSearch.val()));
 		this._pDoSearch_renderLinks({ rdState, results });
 	}
 
-	static _getBtnToggleFilter({ rdState, btnMeta }) {
+	static _getBtnToggleFilter ({ rdState, btnMeta }) {
 		const btn = ee`<button class="ve-btn ve-btn-default ve-btn-xs" tabindex="-1" title="${btnMeta.title.qq()}">${btnMeta.text.qq()}</button>`
 			.onn("click", () => OmnisearchState[btnMeta.propOmnisearch] = !OmnisearchState[btnMeta.propOmnisearch]);
 
@@ -346,13 +346,13 @@ class OmnisearchUi {
 		return btn;
 	}
 
-	static _pDoSearch_renderLinks({ rdState, results, ixPage = 0 }) {
+	static _pDoSearch_renderLinks ({ rdState, results, ixPage = 0 }) {
 		const out = this._pDoSearch_renderLinks_({ rdState, results, ixPage });
 		rdState.lastRender = out;
 		return out;
 	}
 
-	static _pDoSearch_renderLinks_({ rdState, results, ixPage }) {
+	static _pDoSearch_renderLinks_ ({ rdState, results, ixPage }) {
 		const [
 			btnTogglePartnered,
 			btnToggleBrew,
@@ -408,7 +408,6 @@ class OmnisearchUi {
 					source,
 					page,
 
-
 					ptStyle,
 					sourceAbv,
 					sourceFull,
@@ -450,7 +449,7 @@ class OmnisearchUi {
 		return { rowMetas, results, ixPage };
 	}
 
-	static _pDoSearch_renderLinks_getWrpPagination(
+	static _pDoSearch_renderLinks_getWrpPagination (
 		{
 			rdState,
 			results,

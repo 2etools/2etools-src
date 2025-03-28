@@ -31,7 +31,7 @@ if (!dirs.length && !files.length) {
 	);
 }
 
-async function main() {
+async function main () {
 	ut.patchLoadJson();
 
 	console.log(`Running Foundry data migration...`);

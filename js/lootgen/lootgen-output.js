@@ -3,7 +3,7 @@ import { TOOLTIP_NOTHING } from "./lootgen-const.js";
 export class LootGenOutput {
 	static _TIERS = ["other", "minor", "major"];
 
-	constructor(
+	constructor (
 		{
 			type,
 			name,
@@ -25,7 +25,7 @@ export class LootGenOutput {
 		this._datetimeGenerated = Date.now();
 	}
 
-	_$getEleTitleSplit() {
+	_$getEleTitleSplit () {
 		const $btnRivet = !globalThis.IS_VTT && ExtensionUtil.ACTIVE
 			? $(`<button title="Send to Foundry (SHIFT for Temporary Import)" class="ve-btn ve-btn-xs ve-btn-default"><span class="glyphicon glyphicon-send"></span></button>`)
 				.click(evt => this._pDoSendToFoundry({ isTemp: !!evt.shiftKey }))
@@ -40,7 +40,7 @@ export class LootGenOutput {
 		</div>`;
 	}
 
-	render($parent) {
+	render ($parent) {
 		const $eleTitleSplit = this._$getEleTitleSplit();
 
 		const $dispTitle = $$`<h4 class="mt-1 mb-2 split-v-center ve-draggable">
@@ -80,19 +80,19 @@ export class LootGenOutput {
 		this._pGetFoundryForm().then(it => dropData = it);
 	}
 
-	async _pDoSendToFoundry({ isTemp } = {}) {
+	async _pDoSendToFoundry ({ isTemp } = {}) {
 		const toSend = await this._pGetFoundryForm();
 		if (isTemp) toSend.isTemp = isTemp;
 		if (toSend.currency || toSend.entityInfos) return ExtensionUtil.pDoSend({ type: "5etools.lootgen.loot", data: toSend });
 		JqueryUtil.doToast({ content: `Nothing to send!`, type: "warning" });
 	}
 
-	async _pDoSaveAsJson() {
+	async _pDoSaveAsJson () {
 		const serialized = await this._pGetFoundryForm();
 		await DataUtil.userDownload("loot", serialized);
 	}
 
-	async _pGetFoundryForm() {
+	async _pGetFoundryForm () {
 		const toSend = { name: this._name, type: this._type, dateTimeGenerated: this._datetimeGenerated };
 
 		if (this._coins) toSend.currency = this._coins;
@@ -135,7 +135,7 @@ export class LootGenOutput {
 		return toSend;
 	}
 
-	async _pDoSendToFoundry_getGemsArtObjectsMetas({ loot }) {
+	async _pDoSendToFoundry_getGemsArtObjectsMetas ({ loot }) {
 		const uidToCount = {};
 		const specialItemMetas = {}; // For any rows which don't actually map to an item
 
@@ -196,7 +196,7 @@ export class LootGenOutput {
 		return out;
 	}
 
-	_render_$getPtValueSummary() {
+	_render_$getPtValueSummary () {
 		if ([this._coins, this._gems, this._artObjects].filter(Boolean).length <= 1) return null;
 
 		const totalValue = [
@@ -208,7 +208,7 @@ export class LootGenOutput {
 		return $(`<li class="italic ve-muted">A total of ${(totalValue / 100).toLocaleString()} gp worth of coins, art objects, and/or gems, as follows:</li>`);
 	}
 
-	_render_$getPtCoins() {
+	_render_$getPtCoins () {
 		if (!this._coins) return null;
 
 		const total = CurrencyUtil.getAsCopper(this._coins);
@@ -225,7 +225,7 @@ export class LootGenOutput {
 		`;
 	}
 
-	_render_$getPtDragonMundaneItems() {
+	_render_$getPtDragonMundaneItems () {
 		if (!this._dragonMundaneItems) return null;
 
 		return $$`
@@ -236,7 +236,7 @@ export class LootGenOutput {
 		`;
 	}
 
-	_render_$getPtGemsArtObjects({ loot, name }) {
+	_render_$getPtGemsArtObjects ({ loot, name }) {
 		if (!loot?.length) return [];
 
 		return loot.map(lt => {
@@ -249,7 +249,7 @@ export class LootGenOutput {
 		});
 	}
 
-	_render_$getPtMagicItems() {
+	_render_$getPtMagicItems () {
 		if (!this._magicItemsByTable?.length) return [];
 
 		return [...this._magicItemsByTable]
@@ -293,15 +293,15 @@ export class LootGenOutput {
 			});
 	}
 
-	doRemove() {
+	doRemove () {
 		if (this._$wrp) this._$wrp.remove();
 	}
 
-	static _ascSortTier(a, b) { return LootGenOutput._TIERS.indexOf(a) - LootGenOutput._TIERS.indexOf(b); }
+	static _ascSortTier (a, b) { return LootGenOutput._TIERS.indexOf(a) - LootGenOutput._TIERS.indexOf(b); }
 }
 
 export class LootGenOutputGemsArtObjects {
-	constructor(
+	constructor (
 		{
 			type,
 			typeRoll,
@@ -321,7 +321,7 @@ export class LootGenOutputGemsArtObjects {
 }
 
 export class LootGenOutputDragonMundaneItems {
-	constructor(
+	constructor (
 		{
 			count,
 			breakdown,
@@ -333,7 +333,7 @@ export class LootGenOutputDragonMundaneItems {
 }
 
 export class LootGenOutputMagicItems {
-	constructor(
+	constructor (
 		{
 			type,
 			count,

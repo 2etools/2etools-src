@@ -28,39 +28,39 @@ export class PrereleaseUtil_ extends BrewUtil2Base {
 
 	/* -------------------------------------------- */
 
-	_pInit_doBindDragDrop() { /* No-op */ }
+	_pInit_doBindDragDrop () { /* No-op */ }
 
 	/* -------------------------------------------- */
 
-	async pGetSourceIndex(urlRoot) { return DataUtil.prerelease.pLoadSourceIndex(urlRoot); }
+	async pGetSourceIndex (urlRoot) { return DataUtil.prerelease.pLoadSourceIndex(urlRoot); }
 
-	getFileUrl(path, urlRoot) { return DataUtil.prerelease.getFileUrl(path, urlRoot); }
+	getFileUrl (path, urlRoot) { return DataUtil.prerelease.getFileUrl(path, urlRoot); }
 
-	pLoadTimestamps(urlRoot) { return DataUtil.prerelease.pLoadTimestamps(urlRoot); }
+	pLoadTimestamps (urlRoot) { return DataUtil.prerelease.pLoadTimestamps(urlRoot); }
 
-	pLoadPropIndex(urlRoot) { return DataUtil.prerelease.pLoadPropIndex(urlRoot); }
+	pLoadPropIndex (urlRoot) { return DataUtil.prerelease.pLoadPropIndex(urlRoot); }
 
-	pLoadMetaIndex(urlRoot) { return DataUtil.prerelease.pLoadMetaIndex(urlRoot); }
+	pLoadMetaIndex (urlRoot) { return DataUtil.prerelease.pLoadMetaIndex(urlRoot); }
 
-	pLoadAdventureBookIdsIndex(urlRoot) { return DataUtil.prerelease.pLoadAdventureBookIdsIndex(urlRoot); }
+	pLoadAdventureBookIdsIndex (urlRoot) { return DataUtil.prerelease.pLoadAdventureBookIdsIndex(urlRoot); }
 
 	/* -------------------------------------------- */
 
 	// region Editable
 
-	pGetEditableBrewDoc(brew) { return super.pGetEditableBrewDoc(brew); }
-	pGetOrCreateEditableBrewDoc() { return super.pGetOrCreateEditableBrewDoc(); }
-	pSetEditableBrewDoc() { return super.pSetEditableBrewDoc(); }
-	pGetEditableBrewEntity(prop, uniqueId, { isDuplicate = false } = {}) { return super.pGetEditableBrewEntity(prop, uniqueId, { isDuplicate }); }
-	pPersistEditableBrewEntity(prop, ent) { return super.pPersistEditableBrewEntity(prop, ent); }
-	pRemoveEditableBrewEntity(prop, uniqueId) { return super.pRemoveEditableBrewEntity(prop, uniqueId); }
-	pAddSource(sourceObj) { return super.pAddSource(sourceObj); }
-	pEditSource(sourceObj) { return super.pEditSource(sourceObj); }
-	pIsEditableSourceJson(sourceJson) { return super.pIsEditableSourceJson(sourceJson); }
-	pMoveOrCopyToEditableBySourceJson(sourceJson) { return super.pMoveOrCopyToEditableBySourceJson(sourceJson); }
-	pMoveToEditable({ brews }) { return super.pMoveToEditable({ brews }); }
-	pCopyToEditable({ brews }) { return super.pCopyToEditable({ brews }); }
-	async pHasEditableSourceJson() { return false; }
+	pGetEditableBrewDoc (brew) { return super.pGetEditableBrewDoc(brew); }
+	pGetOrCreateEditableBrewDoc () { return super.pGetOrCreateEditableBrewDoc(); }
+	pSetEditableBrewDoc () { return super.pSetEditableBrewDoc(); }
+	pGetEditableBrewEntity (prop, uniqueId, { isDuplicate = false } = {}) { return super.pGetEditableBrewEntity(prop, uniqueId, { isDuplicate }); }
+	pPersistEditableBrewEntity (prop, ent) { return super.pPersistEditableBrewEntity(prop, ent); }
+	pRemoveEditableBrewEntity (prop, uniqueId) { return super.pRemoveEditableBrewEntity(prop, uniqueId); }
+	pAddSource (sourceObj) { return super.pAddSource(sourceObj); }
+	pEditSource (sourceObj) { return super.pEditSource(sourceObj); }
+	pIsEditableSourceJson (sourceJson) { return super.pIsEditableSourceJson(sourceJson); }
+	pMoveOrCopyToEditableBySourceJson (sourceJson) { return super.pMoveOrCopyToEditableBySourceJson(sourceJson); }
+	pMoveToEditable ({ brews }) { return super.pMoveToEditable({ brews }); }
+	pCopyToEditable ({ brews }) { return super.pCopyToEditable({ brews }); }
+	async pHasEditableSourceJson () { return false; }
 
 	// endregion
 }

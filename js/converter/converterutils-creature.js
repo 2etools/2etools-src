@@ -9,7 +9,7 @@ export class AcConvert {
 	static _ITEM_LOOKUP = null;
 	static _ITEM_LOOKUP_CLASSIC = null;
 
-	static tryPostProcessAc({ mon, cbMan, cbErr, styleHint }) {
+	static tryPostProcessAc ({ mon, cbMan, cbErr, styleHint }) {
 		const traitNames = new Set(
 			(mon.trait || [])
 				.map(it => it.name ? it.name.toLowerCase() : null)
@@ -207,7 +207,7 @@ export class AcConvert {
 		mon.ac = nuAc;
 	}
 
-	static _tryPostProcessAc_special(mon, cbMan, cbErr) {
+	static _tryPostProcessAc_special (mon, cbMan, cbErr) {
 		mon.ac = mon.ac.trim();
 
 		const mPlusSpecial = /^(\d+) (plus|\+) (?:PB|the level of the spell|the spell's level|your [^ ]+ modifier|\d+ per spell level)(?: (\+\s*\d )?\([^)]+\))?$/i.exec(mon.ac);
@@ -219,7 +219,7 @@ export class AcConvert {
 		return false;
 	}
 
-	static _getSimpleFrom({ fromLow, traitNames, styleHint }) {
+	static _getSimpleFrom ({ fromLow, traitNames, styleHint }) {
 		const lookup = styleHint === SITE_STYLE__CLASSIC ? AcConvert._ITEM_LOOKUP_CLASSIC : AcConvert._ITEM_LOOKUP;
 
 		switch (fromLow) {
@@ -292,14 +292,14 @@ export class AcConvert {
 			// Humblewood Tales
 			case "shadowed leather armor":
 				return fromLow;
-			// endregion
+				// endregion
 
 			// region au naturel
 			case "natural armor":
 			case "natural armour":
 			case "natural":
 				return "natural armor";
-			// endregion
+				// endregion
 
 			// region spells
 			case "foresight bonus": return `{@spell foresight} bonus`;
@@ -360,7 +360,7 @@ export class AcConvert {
 		}
 	}
 
-	static init(items) {
+	static init (items) {
 		const handleBaseName = ({ item, lowName, isClassicSource }) => {
 			AcConvert._ITEM_LOOKUP[lowName] = { source: item.source, isExact: true };
 			if (isClassicSource) AcConvert._ITEM_LOOKUP_CLASSIC[lowName] = AcConvert._ITEM_LOOKUP[lowName];
@@ -412,15 +412,15 @@ export class AcConvert {
 class _CreatureImmunityResistanceVulnerabilityConverterBase {
 	static _modProp;
 
-	static _getCleanIpt({ ipt }) {
+	static _getCleanIpt ({ ipt }) {
 		return ipt
 			.replace(/^none\b/i, "") // Thanks.
 			.replace(/\.+\s*$/, "")
 			.trim()
-			;
+		;
 	}
 
-	static _getSplitInput({ ipt }) {
+	static _getSplitInput ({ ipt }) {
 		return ipt
 			// Split e.g.
 			// "Bludgeoning and Piercing from nonmagical attacks, Acid, Fire, Lightning"
@@ -433,20 +433,20 @@ class _CreatureImmunityResistanceVulnerabilityConverterBase {
 			.flatMap(pt => pt.split(";"))
 			.map(it => it.trim())
 			.filter(Boolean)
-			;
+		;
 	}
 
 	/**
 	 * @abstract
 	 * @return {?object}
 	 */
-	static _getSpecialFromPart({ pt }) { throw new Error("Unimplemented!"); }
+	static _getSpecialFromPart ({ pt }) { throw new Error("Unimplemented!"); }
 
-	static _getIxPreNote({ pt }) { return -1; }
+	static _getIxPreNote ({ pt }) { return -1; }
 
-	static _getUid(name) { return name.toLowerCase(); }
+	static _getUid (name) { return name.toLowerCase(); }
 
-	static getParsed(ipt, opts) {
+	static getParsed (ipt, opts) {
 		ipt = this._getCleanIpt({ ipt });
 		if (!ipt) return null;
 
@@ -536,23 +536,23 @@ class _CreatureImmunityResistanceVulnerabilityConverterBase {
 }
 
 class _CreatureDamageImmunityResistanceVulnerabilityConverter extends _CreatureImmunityResistanceVulnerabilityConverterBase {
-	static _getCleanIpt({ ipt }) {
+	static _getCleanIpt ({ ipt }) {
 		return super._getCleanIpt({ ipt })
 			// Handle parens used instead of commas (e.g. "Hobgoblin Smokebinder" from Flee, Mortals!)
 			.replace(/(?:^|,? )\(([^)]+ in [^)]+ form)\)/gi, ", $1")
 			// handle the case where a comma is mistakenly used instead of a semicolon
 			.replace(/, (bludgeoning, piercing, and slashing from)/gi, "; $1")
-			;
+		;
 	}
 
-	static _getSpecialFromPart({ pt }) {
+	static _getSpecialFromPart ({ pt }) {
 		// region `"damage from spells"`
 		const mDamageFromThing = /^damage from .*$/i.exec(pt);
 		if (mDamageFromThing) return { special: pt };
 		// endregion
 	}
 
-	static _getIxPreNote({ pt }) {
+	static _getIxPreNote ({ pt }) {
 		return Math.min(...Parser.DMG_TYPES.map(it => pt.toLowerCase().indexOf(it)).filter(ix => ~ix));
 	}
 }
@@ -572,9 +572,9 @@ export class CreatureDamageImmunityConverter extends _CreatureDamageImmunityResi
 export class CreatureConditionImmunityConverter extends _CreatureImmunityResistanceVulnerabilityConverterBase {
 	static _modProp = "conditionImmune";
 
-	static _getSpecialFromPart({ pt }) { return null; }
+	static _getSpecialFromPart ({ pt }) { return null; }
 
-	static _getUid(name) {
+	static _getUid (name) {
 		return TagCondition.getConditionUid(name);
 	}
 }
@@ -603,11 +603,11 @@ export class TagCreatureSubEntryInto {
 
 	static _WALKER = null;
 
-	static tryRun(m, cbMan) {
+	static tryRun (m, cbMan) {
 		this._PROPS.forEach(prop => this._handleProp({ m, prop, cbMan }));
 	}
 
-	static _handleProp({ m, prop, cbMan }) {
+	static _handleProp ({ m, prop, cbMan }) {
 		if (!m[prop]) return;
 
 		this._WALKER ||= MiscUtil.getWalker({ keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST });
@@ -654,7 +654,7 @@ export class TagCreatureSubEntryInto {
 									return `{@actSaveFail ${Parser.textToNumber(m.at(-1).ordinal)}}`;
 								})
 								.replace(/(?<=^|[.!?;] )(Failure:)(?= )/g, (...m) => `{@actSaveFail}`)
-								;
+							;
 						},
 					},
 				);
@@ -663,11 +663,11 @@ export class TagCreatureSubEntryInto {
 }
 
 export class TagHit {
-	static tryTagHits(m) {
+	static tryTagHits (m) {
 		TagHit._PROPS.forEach(prop => this._handleProp({ m, prop }));
 	}
 
-	static _handleProp({ m, prop }) {
+	static _handleProp ({ m, prop }) {
 		if (!m[prop]) return;
 
 		m[prop]
@@ -688,11 +688,11 @@ export class TagHit {
 TagHit._PROPS = ["action", "reaction", "bonus", "trait", "legendary", "mythic", "variant"];
 
 export class TagDc {
-	static tryTagDcs(m) {
+	static tryTagDcs (m) {
 		TagDc._PROPS.forEach(prop => this._handleProp({ m, prop }));
 	}
 
-	static _handleProp({ m, prop }) {
+	static _handleProp ({ m, prop }) {
 		if (!m[prop]) return;
 
 		m[prop] = m[prop]
@@ -706,7 +706,7 @@ export class TagDc {
 TagDc._PROPS = ["action", "reaction", "bonus", "trait", "legendary", "mythic", "variant", "spellcasting"];
 
 export class AlignmentConvert {
-	static tryConvertAlignment(stats, cbMan) {
+	static tryConvertAlignment (stats, cbMan) {
 		const { alignmentPrefix, alignment } = AlignmentUtil.tryGetConvertedAlignment(stats.alignment, { cbMan });
 
 		stats.alignment = alignment;
@@ -831,12 +831,12 @@ export class TraitActionTag {
 		},
 	};
 
-	static _doAdd({ tags, tag, allowlist }) {
+	static _doAdd ({ tags, tag, allowlist }) {
 		if (allowlist && !allowlist.has(tag)) return;
 		tags.add(tag);
 	}
 
-	static _doTag({ m, cbMan, prop, tags, allowlist }) {
+	static _doTag ({ m, cbMan, prop, tags, allowlist }) {
 		if (!m[prop]) return;
 
 		const lookup = this._TAGS[prop] || this._TAGS._other;
@@ -871,7 +871,7 @@ export class TraitActionTag {
 			});
 	}
 
-	static _doTagDeep({ m, prop, tags, allowlist }) {
+	static _doTagDeep ({ m, prop, tags, allowlist }) {
 		if (!m[prop]) return;
 
 		const lookup = this._TAGS_DEEP[prop] || this._TAGS_DEEP._other;
@@ -887,14 +887,14 @@ export class TraitActionTag {
 		});
 	}
 
-	static _doTagDeepRoot_trait({ m, tags, allowlist }) {
+	static _doTagDeepRoot_trait ({ m, tags, allowlist }) {
 		if (m.senses?.some(s => /\bunimpeded by magical darkness\b/i.test(Renderer.stripTags(s)))) return this._doAdd({ tags, tag: "Devil's Sight", allowlist });
 	}
 
-	static _isTraits(prop) { return prop === "trait"; }
-	static _isActions(prop) { return prop === "action"; }
+	static _isTraits (prop) { return prop === "trait"; }
+	static _isActions (prop) { return prop === "action"; }
 
-	static tryRun(m, { cbMan, allowlistTraitTags, allowlistActionTags } = {}) {
+	static tryRun (m, { cbMan, allowlistTraitTags, allowlistActionTags } = {}) {
 		const traitTags = new Set(m.traitTags || []);
 		const actionTags = new Set(m.actionTags || []);
 
@@ -920,7 +920,7 @@ export class LanguageTag {
 	 * @param [opt.cbTracked] Callback to run on every tracked language.
 	 * @param [opt.isAppendOnly] If tags should only be added, not removed.
 	 */
-	static tryRun(m, opt) {
+	static tryRun (m, opt) {
 		opt = opt || {};
 
 		const tags = new Set();
@@ -1044,7 +1044,7 @@ LanguageTag.LANGUAGE_MAP = {
 };
 
 export class SenseFilterTag {
-	static tryRun(m, cbAll) {
+	static tryRun (m, cbAll) {
 		if (m.senses) {
 			m.senses = m.senses.filter(it => !TagUtil.isNoneOrEmpty(it));
 			if (!m.senses.length) delete m.senses;
@@ -1076,7 +1076,7 @@ SenseFilterTag.TAGS = {
 };
 
 export class SpellcastingTypeTag {
-	static tryRun(m, cbAll) {
+	static tryRun (m, cbAll) {
 		if (!m.spellcasting) {
 			delete m.spellcastingTags;
 		} else {
@@ -1136,7 +1136,7 @@ class _PrimaryLegendarySpellsTaggerBase {
 
 	static _BLOCKLIST_NAMES = null;
 
-	static _init() {
+	static _init () {
 		if (this._IS_INIT) return true;
 		this._IS_INIT = true;
 		this._WALKER = MiscUtil.getWalker({ isNoModification: true, keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST });
@@ -1147,11 +1147,11 @@ class _PrimaryLegendarySpellsTaggerBase {
 	 * @abstract
 	 * @return void
 	 */
-	static _handleString({ m = null, str, outSet }) {
+	static _handleString ({ m = null, str, outSet }) {
 		throw new Error("Unimplemented!");
 	}
 
-	static _handleEntries({ m = null, entries, outSet }) {
+	static _handleEntries ({ m = null, entries, outSet }) {
 		this._WALKER.walk(
 			entries,
 			{
@@ -1160,7 +1160,7 @@ class _PrimaryLegendarySpellsTaggerBase {
 		);
 	}
 
-	static _handleProp({ m, prop, outSet }) {
+	static _handleProp ({ m, prop, outSet }) {
 		if (!m[prop]) return;
 
 		m[prop].forEach(it => {
@@ -1176,7 +1176,7 @@ class _PrimaryLegendarySpellsTaggerBase {
 		});
 	}
 
-	static _setPropOut(
+	static _setPropOut (
 		{
 			outSet,
 			m,
@@ -1189,7 +1189,7 @@ class _PrimaryLegendarySpellsTaggerBase {
 		m[propOut] = [...outSet].sort(SortUtil.ascSortLower);
 	}
 
-	static tryRun(m, { isAppendOnly = false } = {}) {
+	static tryRun (m, { isAppendOnly = false } = {}) {
 		this._init();
 
 		const outSet = new Set();
@@ -1204,11 +1204,11 @@ class _PrimaryLegendarySpellsTaggerBase {
 	 * @abstract
 	 * @return void
 	 */
-	static _handleSpell({ spell, outSet }) {
+	static _handleSpell ({ spell, outSet }) {
 		throw new Error("Unimplemented!");
 	}
 
-	static tryRunSpells(m, { cbMan, isAppendOnly = false } = {}) {
+	static tryRunSpells (m, { cbMan, isAppendOnly = false } = {}) {
 		if (!m.spellcasting) return;
 
 		this._init();
@@ -1222,7 +1222,7 @@ class _PrimaryLegendarySpellsTaggerBase {
 		this._setPropOut({ outSet, m, propOut: this._PROP_SPELLS, isAppendOnly });
 	}
 
-	static tryRunRegionalsLairs(m, { cbMan, isAppendOnly = false } = {}) {
+	static tryRunRegionalsLairs (m, { cbMan, isAppendOnly = false } = {}) {
 		if (!m.legendaryGroup) return;
 
 		this._init();
@@ -1242,7 +1242,7 @@ class _PrimaryLegendarySpellsTaggerBase {
 	}
 
 	/** Attempt to detect an e.g. TCE summon creature. */
-	static _isSummon(m) {
+	static _isSummon (m) {
 		if (!m) return false;
 
 		let isSummon = false;
@@ -1284,12 +1284,12 @@ export class DamageTypeTag extends _PrimaryLegendarySpellsTaggerBase {
 		"vampire weaknesses",
 	]);
 
-	static _init() {
+	static _init () {
 		if (super._init()) return;
 		Object.entries(Parser.DMGTYPE_JSON_TO_FULL).forEach(([k, v]) => this._TYPE_LOOKUP[v] = k);
 	}
 
-	static _handleString({ m = null, str, outSet }) {
+	static _handleString ({ m = null, str, outSet }) {
 		str.replace(RollerUtil.REGEX_DAMAGE_DICE, (m0, average, prefix, diceExp, suffix) => {
 			suffix.replace(ConverterConst.RE_DAMAGE_TYPE, (m0, type) => outSet.add(this._TYPE_LOOKUP[type.toLowerCase()]));
 		});
@@ -1315,7 +1315,7 @@ export class DamageTypeTag extends _PrimaryLegendarySpellsTaggerBase {
 		}
 	}
 
-	static _handleSpell({ spell, outSet }) {
+	static _handleSpell ({ spell, outSet }) {
 		if (!spell.damageInflict) return;
 		spell.damageInflict.forEach(it => outSet.add(DamageTypeTag._TYPE_LOOKUP[it]));
 	}
@@ -1333,7 +1333,7 @@ export class MiscTag {
 	static _IS_INIT = false;
 	static _WALKER = null;
 
-	static init({ items }) {
+	static init ({ items }) {
 		if (this._IS_INIT) return;
 		this._IS_INIT = true;
 
@@ -1358,7 +1358,7 @@ export class MiscTag {
 	/* -------------------------------------------- */
 
 	/** @return empty string for easy use in `.replace` */
-	static _addTag({ tagSet, allowlistTags, tag }) {
+	static _addTag ({ tagSet, allowlistTags, tag }) {
 		if (allowlistTags != null && !allowlistTags.has(tag)) return "";
 		tagSet.add(tag);
 		return "";
@@ -1366,7 +1366,7 @@ export class MiscTag {
 
 	/* -------------------------------------------- */
 
-	static _handleProp({ m, prop, tagSet, allowlistTags }) {
+	static _handleProp ({ m, prop, tagSet, allowlistTags }) {
 		if (!m[prop]) return;
 
 		m[prop].forEach(subEntry => {
@@ -1379,7 +1379,7 @@ export class MiscTag {
 
 	/* --------------------- */
 
-	static _handleProp_attacks(
+	static _handleProp_attacks (
 		{
 			subEntry,
 			tagSet,
@@ -1457,7 +1457,7 @@ export class MiscTag {
 
 	/* --------------------- */
 
-	static _handleProp_curse(
+	static _handleProp_curse (
 		{
 			subEntry,
 			tagSet,
@@ -1511,7 +1511,7 @@ export class MiscTag {
 		/\buntil the disease is cured\b/i,
 	];
 
-	static _handleProp_disease(
+	static _handleProp_disease (
 		{
 			subEntry,
 			tagSet,
@@ -1530,7 +1530,7 @@ export class MiscTag {
 
 	/* --------------------- */
 
-	static _handleProp_other(
+	static _handleProp_other (
 		{
 			subEntry,
 			tagSet,
@@ -1554,7 +1554,7 @@ export class MiscTag {
 
 	/* -------------------------------------------- */
 
-	static tryRun(m, { isAdditiveOnly = false, allowlistTags = null } = {}) {
+	static tryRun (m, { isAdditiveOnly = false, allowlistTags = null } = {}) {
 		const tagSet = new Set(isAdditiveOnly ? m.miscTags || [] : []);
 		MiscTag._handleProp({ m, prop: "action", tagSet, allowlistTags });
 		MiscTag._handleProp({ m, prop: "trait", tagSet, allowlistTags });
@@ -1572,7 +1572,7 @@ export class SpellcastingTraitConvert {
 	static _SPELL_SRC_MAP_CLASSIC = {};
 	static SPELL_SRD_MAP = {};
 
-	static init(spellData) {
+	static init (spellData) {
 		spellData.forEach(sp => {
 			this._SPELL_SRC_MAP[sp.name.toLowerCase()] = sp.source;
 			if (SourceUtil.isClassicSource(sp.source)) this._SPELL_SRC_MAP_CLASSIC[sp.name.toLowerCase()] = sp.source;
@@ -1582,7 +1582,7 @@ export class SpellcastingTraitConvert {
 		});
 	}
 
-	static tryParseSpellcasting(ent, { isMarkdown, cbMan, cbErr, prop, displayAs, actions, reactions, styleHint }) {
+	static tryParseSpellcasting (ent, { isMarkdown, cbMan, cbErr, prop, displayAs, actions, reactions, styleHint }) {
 		const spellcastingEntry = {
 			"name": ent.name,
 			"type": "spellcasting",
@@ -1674,7 +1674,7 @@ export class SpellcastingTraitConvert {
 		return spellcastingEntry;
 	}
 
-	static _getFirstHeaderEntry({ entName, entHeaderInput, cbMan, prop, spellcastingEntry, styleHint }) {
+	static _getFirstHeaderEntry ({ entName, entHeaderInput, cbMan, prop, spellcastingEntry, styleHint }) {
 		const entFaux = { name: entName, type: "entries", entries: [entHeaderInput] };
 
 		const usagePath = this.getMutUsagePropPath({ entry: entFaux, prop })
@@ -1764,7 +1764,7 @@ export class SpellcastingTraitConvert {
 	static _USES_RE_INFOS_ENTRY = this._USES_RE_INFOS_NAME
 		.map(({ re, prop }) => ({ re: new RegExp(`^${re.source}`, "i"), prop }));
 
-	static _getReFrequencyMatchMeta({ res, str }) {
+	static _getReFrequencyMatchMeta ({ res, str }) {
 		const metasPerDurationName = res
 			.map(({ re, prop }) => ({ m: re.exec(str), prop }))
 			.filter(({ m }) => !!m);
@@ -1781,12 +1781,12 @@ export class SpellcastingTraitConvert {
 		return null;
 	}
 
-	static getMutUsagePropPath({ entry, prop }) {
+	static getMutUsagePropPath ({ entry, prop }) {
 		return this._getMutUsagePropPath_fromName({ entry, prop })
 			|| this._getMutUsagePropPath_fromEntries({ entry, prop });
 	}
 
-	static _getMutUsagePropPath_fromName({ entry, prop }) {
+	static _getMutUsagePropPath_fromName ({ entry, prop }) {
 		if (!entry.name) return null;
 
 		const frequencyMeta = this._getReFrequencyMatchMeta({ res: this._USES_RE_INFOS_NAME, str: entry.name });
@@ -1805,7 +1805,7 @@ export class SpellcastingTraitConvert {
 		}
 	}
 
-	static _getMutUsagePropPath_fromEntries({ entry, prop }) {
+	static _getMutUsagePropPath_fromEntries ({ entry, prop }) {
 		if (!entry.entries?.length) return null;
 
 		const walker = MiscUtil.getWalker();
@@ -1827,7 +1827,7 @@ export class SpellcastingTraitConvert {
 				}
 
 				return str;
-			}
+			},
 		});
 
 		return outWalker;
@@ -1835,7 +1835,7 @@ export class SpellcastingTraitConvert {
 
 	/* -------------------------------------------- */
 
-	static _getParsedSpells({ line, isMarkdown, styleHint }) {
+	static _getParsedSpells ({ line, isMarkdown, styleHint }) {
 		const mLabelSep = /(?::| -) /.exec(line);
 		let spellPart = line.substring((mLabelSep?.index || 0) + (mLabelSep?.[0]?.length || 0)).trim();
 
@@ -1862,7 +1862,7 @@ export class SpellcastingTraitConvert {
 		return spellPart.split(StrUtil.COMMAS_NOT_IN_PARENTHESES_REGEX).map(it => this._parseSpell(it, { styleHint }));
 	}
 
-	static _parseSpell(str, { styleHint }) {
+	static _parseSpell (str, { styleHint }) {
 		str = str.trim();
 
 		const ptsSuffix = [];
@@ -1899,7 +1899,7 @@ export class SpellcastingTraitConvert {
 			.join(" ");
 	}
 
-	static _parseSpell_getNonSrdSpellName(spellName) {
+	static _parseSpell_getNonSrdSpellName (spellName) {
 		const nonSrdName = SpellcastingTraitConvert.SPELL_SRD_MAP[spellName.toLowerCase().trim()];
 		if (!nonSrdName) return spellName;
 
@@ -1909,33 +1909,33 @@ export class SpellcastingTraitConvert {
 		return spellName;
 	}
 
-	static _parseSpell_getSourcePart(spellName, { styleHint }) {
+	static _parseSpell_getSourcePart (spellName, { styleHint }) {
 		const source = SpellcastingTraitConvert._getSpellSource(spellName, { styleHint });
 		return `${source && source !== Parser.SRC_PHB ? `|${source}` : ""}`;
 	}
 
-	static _parseToHit(line) {
+	static _parseToHit (line) {
 		return line
 			.replace(/ (?<op>[-+])(?<num>\d+)(?<suffix> to hit with spell)/g, (...m) => {
 				const { op, num, suffix } = m.at(-1);
 				return ` {@hit ${op === "-" ? "-" : ""}${num}}${suffix}`;
 			})
-			;
+		;
 	}
 
-	static mutSpellcastingAbility(spellcastingEntry) {
+	static mutSpellcastingAbility (spellcastingEntry) {
 		if (spellcastingEntry.headerEntries) {
 			const m = /strength|dexterity|constitution|charisma|intelligence|wisdom/gi.exec(JSON.stringify(spellcastingEntry.headerEntries));
 			if (m) spellcastingEntry.ability = m[0].substring(0, 3).toLowerCase();
 		}
 	}
 
-	static _mutDisplayAs(spellcastingEntry, displayAs) {
+	static _mutDisplayAs (spellcastingEntry, displayAs) {
 		if (!displayAs || displayAs === "trait") return;
 		spellcastingEntry.displayAs = displayAs;
 	}
 
-	static _getSpellSource(spellName, { styleHint }) {
+	static _getSpellSource (spellName, { styleHint }) {
 		const lookup = styleHint === SITE_STYLE__CLASSIC ? this._SPELL_SRC_MAP_CLASSIC : this._SPELL_SRC_MAP;
 		if (spellName && lookup[spellName.toLowerCase()]) return lookup[spellName.toLowerCase()];
 		return null;
@@ -1947,7 +1947,7 @@ export class SpellcastingTraitConvert {
 	 * - "Shocking Grasp (Cantrip)"
 	 * - "Shield (1st-Level Spell; 3/Day)"
 	 * as hidden spells (if they don't already exist). */
-	static _addSplitOutSpells({ spellcastingEntry, arrayOther, styleHint }) {
+	static _addSplitOutSpells ({ spellcastingEntry, arrayOther, styleHint }) {
 		if (!arrayOther?.length) return;
 		arrayOther.forEach(ent => {
 			if (!ent.name) return;
@@ -1983,7 +1983,7 @@ export class SpellcastingTraitConvert {
 		});
 	}
 
-	static _getSpellUids(str) {
+	static _getSpellUids (str) {
 		const uids = [];
 		str.replace(/{@spell ([^}]+)}/gi, (...m) => {
 			const [name, source = Parser.SRC_PHB.toLowerCase()] = m[1].toLowerCase().split("|").map(it => it.trim());
@@ -1992,7 +1992,7 @@ export class SpellcastingTraitConvert {
 		return uids;
 	}
 
-	static _isExistingSpell(spellArray, uids) {
+	static _isExistingSpell (spellArray, uids) {
 		return spellArray.some(it => {
 			const str = (it.entry || it).toLowerCase().trim();
 			const existingUids = this._getSpellUids(str);
@@ -2005,12 +2005,12 @@ export class SpellcastingTraitHiddenConvert {
 	static _WALKER;
 	static _RE_SPELL = /{@spell (?<text>[^}]+)}(?<ptLevel> \(level \d+ version\))?/g;
 
-	static _getSpellUid(text) {
+	static _getSpellUid (text) {
 		const unpacked = DataUtil.proxy.unpackUid("spell", text, "spell", { isLower: true });
 		return DataUtil.proxy.getUid("spell", unpacked);
 	}
 
-	static _getSpellUidsExisting({ stats }) {
+	static _getSpellUidsExisting ({ stats }) {
 		const spellUidsExisting = new Set();
 		if (!stats.spellcasting?.length) return spellUidsExisting;
 
@@ -2018,26 +2018,26 @@ export class SpellcastingTraitHiddenConvert {
 			string: str => {
 				[...str.matchAll(this._RE_SPELL)]
 					.forEach(m => spellUidsExisting.add(this._getSpellUid(m.groups.text)));
-			}
+			},
 		});
 
 		return spellUidsExisting;
 	}
 
-	static _mutStatblockProp_getSpellcastingSameAbility({ stats, entSub }) {
+	static _mutStatblockProp_getSpellcastingSameAbility ({ stats, entSub }) {
 		let spellcastingTraitNameLower = null;
 		this._WALKER.walk(entSub.entries, {
 			string: str => {
 				const mUsesTheSame = /using the same spellcasting ability as (?<name>[^.!?]+)/i.exec(str);
 				if (mUsesTheSame) return spellcastingTraitNameLower = mUsesTheSame.groups.name.trim().toLowerCase();
-			}
+			},
 		});
 		if (!spellcastingTraitNameLower) return null;
 
 		return stats.spellcasting?.find(entExisting => entExisting.name.toLowerCase().trim() === spellcastingTraitNameLower);
 	}
 
-	static _mutStatblockProp_getOtherAbility({ stats, entSub }) {
+	static _mutStatblockProp_getOtherAbility ({ stats, entSub }) {
 		let abil = null;
 		this._WALKER.walk(entSub.entries, {
 			string: str => {
@@ -2045,12 +2045,12 @@ export class SpellcastingTraitHiddenConvert {
 				if (!mUsing) return;
 
 				return abil = mUsing.groups.abilRaw.toLowerCase().slice(0, 3);
-			}
+			},
 		});
 		return abil;
 	}
 
-	static _mutStatblockProp({ stats, prop, spellUidsExisting }) {
+	static _mutStatblockProp ({ stats, prop, spellUidsExisting }) {
 		stats[prop] = stats[prop]
 			.map(entSub => {
 				if (!entSub.name || !entSub.entries?.length) return entSub;
@@ -2073,7 +2073,7 @@ export class SpellcastingTraitHiddenConvert {
 								const { name, source } = DataUtil.proxy.unpackUid("spell", text, "spell");
 								spellTags.push(`{@spell ${name}|${source}}${ptLevel || ""}`);
 							});
-					}
+					},
 				});
 
 				if (!spellTags.length) return entSub;
@@ -2098,7 +2098,7 @@ export class SpellcastingTraitHiddenConvert {
 			.filter(Boolean);
 	}
 
-	static mutStatblock({ stats, props, styleHint }) {
+	static mutStatblock ({ stats, props, styleHint }) {
 		if (styleHint === SITE_STYLE__CLASSIC && !stats.spellcasting?.length) return;
 
 		this._WALKER ||= MiscUtil.getWalker({ isNoModification: true, isBreakOnReturn: true });
@@ -2113,7 +2113,7 @@ export class SpellcastingTraitHiddenConvert {
 }
 
 export class RechargeConvert {
-	static tryConvertRecharge(traitOrAction, cbAll, cbMan) {
+	static tryConvertRecharge (traitOrAction, cbAll, cbMan) {
 		if (traitOrAction.name) {
 			traitOrAction.name = traitOrAction.name.replace(/\((Recharge )(\d.*?)\)$/gi, (...m) => {
 				if (cbAll) cbAll(m[2]);
@@ -2132,7 +2132,7 @@ export class RechargeConvert {
 export class SpeedConvert {
 	static _SPEED_TYPES = new Set(Parser.SPEED_MODES);
 
-	static _splitSpeed(str) {
+	static _splitSpeed (str) {
 		const cSplitter = str.includes(";") ? ";" : ",";
 
 		let ret = [];
@@ -2164,14 +2164,14 @@ export class SpeedConvert {
 		return ret.map(it => it.trim()).filter(Boolean);
 	}
 
-	static _tagHover(mon) {
+	static _tagHover (mon) {
 		if (!mon.speed?.fly?.condition) return;
 
 		mon.speed.fly.condition = mon.speed.fly.condition.trim();
 		if (mon.speed.fly.condition.toLowerCase().includes("hover")) mon.speed.canHover = true;
 	}
 
-	static tryConvertSpeed(mon, cbMan) {
+	static tryConvertSpeed (mon, cbMan) {
 		if (typeof mon.speed !== "string") return;
 
 		let line = mon.speed.trim().replace(/^speed[:.]?\s*/i, "");
@@ -2270,12 +2270,12 @@ export class SpeedConvert {
 }
 
 export class DetectNamedCreature {
-	static tryRun(mon) {
+	static tryRun (mon) {
 		if (this._tryRun_nickname(mon)) return;
 		this._tryRun_heuristic(mon);
 	}
 
-	static _tryRun_nickname(mon) {
+	static _tryRun_nickname (mon) {
 		if (
 			/^[^"]+ "[^"]+" [^"]+/.test(mon.name)
 			|| /^[^']+ '[^']+' [^']+/.test(mon.name)
@@ -2286,7 +2286,7 @@ export class DetectNamedCreature {
 		return false;
 	}
 
-	static _tryRun_heuristic(mon) {
+	static _tryRun_heuristic (mon) {
 		const totals = { yes: 0, no: 0 };
 
 		this._doCheckProp(mon, totals, "trait");
@@ -2302,7 +2302,7 @@ export class DetectNamedCreature {
 		return true;
 	}
 
-	static _doCheckProp(mon, totals, prop) {
+	static _doCheckProp (mon, totals, prop) {
 		if (!mon.name) return;
 		if (mon.isNamedCreature) return;
 		if (!mon[prop]) return;
@@ -2325,19 +2325,19 @@ export class DetectNamedCreature {
 }
 
 export class TagImmResVulnConditional {
-	static tryRun(mon) {
+	static tryRun (mon) {
 		this._handleProp(mon, "resist");
 		this._handleProp(mon, "immune");
 		this._handleProp(mon, "vulnerable");
 		this._handleProp(mon, "conditionImmune");
 	}
 
-	static _handleProp(mon, prop) {
+	static _handleProp (mon, prop) {
 		if (!mon[prop] || !(mon[prop] instanceof Array)) return;
 		mon[prop].forEach(it => this._handleProp_recurse(it, prop));
 	}
 
-	static _handleProp_recurse(obj, prop) {
+	static _handleProp_recurse (obj, prop) {
 		if (obj.note) {
 			const note = obj.note.toLowerCase().trim().replace(/^\(/, "").replace(/^damage/, "").trim();
 			if (
@@ -2360,7 +2360,7 @@ export class TagImmResVulnConditional {
 }
 
 export class DragonAgeTag {
-	static tryRun(mon) {
+	static tryRun (mon) {
 		const type = mon.type?.type ?? mon.type;
 		if (type !== "dragon") return;
 
@@ -2373,7 +2373,7 @@ export class DragonAgeTag {
 export class AttachedItemTag {
 	static _WEAPON_DETAIL_CACHE;
 
-	static init({ items }) {
+	static init ({ items }) {
 		this._WEAPON_DETAIL_CACHE ||= {};
 
 		for (const item of items) {
@@ -2414,7 +2414,7 @@ export class AttachedItemTag {
 		}
 	}
 
-	static _isLikelyWeapon(act) {
+	static _isLikelyWeapon (act) {
 		if (!act.entries?.length || typeof act.entries[0] !== "string") return false;
 		const mAtk = /^{@atkr? ([^}]+)}/.exec(act.entries[0].trim());
 		if (!mAtk) return;
@@ -2425,7 +2425,7 @@ export class AttachedItemTag {
 	//   - for creatures with a known "book" source, never use items from a known "adventure" source
 	//   - for creatures with a known "adventure" source, never use items from a *different* "adventure" source
 	//   - for a creature from a known source, never tag items from a more recent known source
-	static tryRun(mon, { cbNotFound = null, isAddOnly = false } = {}) {
+	static tryRun (mon, { cbNotFound = null, isAddOnly = false } = {}) {
 		if (!this._WEAPON_DETAIL_CACHE) throw new Error(`Attached item cache was not initialized!`);
 
 		if (!mon.action?.length) return;
@@ -2456,7 +2456,7 @@ export class CreatureSavingThrowTagger extends _PrimaryLegendarySpellsTaggerBase
 	static _PROP_SPELLS = "savingThrowForcedSpell";
 	static _PROP_LEGENDARY = "savingThrowForcedLegendary";
 
-	static _handleString({ m = null, str, outSet }) {
+	static _handleString ({ m = null, str, outSet }) {
 		str
 			.replace(/{@dc (?<save>[^|}]+)(?:\|[^}]+)?}\s+(?<abil>Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma) saving throw/i, (...m) => {
 				outSet.add(m.last().abil.toLowerCase());
@@ -2465,10 +2465,10 @@ export class CreatureSavingThrowTagger extends _PrimaryLegendarySpellsTaggerBase
 			.replace(/{@actSave (?<abil>str|dex|con|int|wis|cha)}/g, (...m) => {
 				outSet.add(Parser.attAbvToFull(m.at(-1).abil.toLowerCase()).toLowerCase());
 			})
-			;
+		;
 	}
 
-	static _handleSpell({ spell, outSet }) {
+	static _handleSpell ({ spell, outSet }) {
 		if (!spell.savingThrow) return;
 		spell.savingThrow.forEach(it => outSet.add(it));
 	}
@@ -2479,7 +2479,7 @@ export class CreatureSpecialEquipmentTagger {
 	 * @param mon
 	 * @param {"classic" | "one" | null} styleHint
 	 */
-	static tryRun(mon, { styleHint = null } = {}) {
+	static tryRun (mon, { styleHint = null } = {}) {
 		if (!mon.trait) return;
 
 		styleHint ||= VetoolsConfig.get("styleSwitcher", "style");

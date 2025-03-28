@@ -1,11 +1,11 @@
-node ./node/generate-tables-data.jsimport fs from "fs";
+import fs from "fs";
 import "../js/parser.js";
 import "../js/utils.js";
 import "../js/render.js";
 import * as ut from "./util.js";
 import "../js/utils-dataloader.js";
 import "../js/hist.js";
-import {UtilGenTables} from "../js/generate-tables-data/generate-tables-data-utils.js";
+import { UtilGenTables } from "../js/generate-tables-data/generate-tables-data-utils.js";
 
 class GenTables {
 	static _GenState = class {
@@ -38,7 +38,7 @@ class GenTables {
 		}
 
 		getOutput () {
-			return {table: this._tables, tableGroup: this._tableGroups};
+			return { table: this._tables, tableGroup: this._tableGroups };
 		}
 	};
 
@@ -127,13 +127,13 @@ class GenTables {
 		ut.unpatchLoadJson();
 
 		classData.class.forEach(cls => {
-			const {table: foundTables, tableGroup: foundTableGroups} = UtilGenTables.getClassTables(cls);
+			const { table: foundTables, tableGroup: foundTableGroups } = UtilGenTables.getClassTables(cls);
 			genState.addTables(foundTables);
 			genState.addTableGroups(foundTableGroups);
 		});
 
 		classData.subclass.forEach(sc => {
-			const {table: foundTables, tableGroup: foundTableGroups} = UtilGenTables.getSubclassTables(sc);
+			const { table: foundTables, tableGroup: foundTableGroups } = UtilGenTables.getSubclassTables(sc);
 			genState.addTables(foundTables);
 			genState.addTableGroups(foundTableGroups);
 		});
@@ -169,7 +169,7 @@ class GenTables {
 		props.forEach(prop => {
 			jsonData[prop].forEach(it => {
 				// Note that this implicitly requires each table to have a `"tableInclude"`
-				const {table: foundTables} = UtilGenTables.getGenericTables(it, prop, "entries");
+				const { table: foundTables } = UtilGenTables.getGenericTables(it, prop, "entries");
 				genState.addTables(foundTables);
 			});
 		});

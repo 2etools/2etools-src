@@ -8,7 +8,7 @@ export class ObjectKey {
 	 * Takes precedence over `.order`.
 	 * @param [opts.order] Ordering to apply to objects with this key.
 	 */
-	constructor(key, opts) {
+	constructor (key, opts) {
 		opts = opts || {};
 
 		this.key = key;
@@ -20,7 +20,7 @@ export class ObjectKey {
 	 * @param {?Array<string>} identKeys
 	 * @param {function} fnGetModOrder
 	 */
-	static getCopyKey({ identKeys = null, fnGetModOrder }) {
+	static getCopyKey ({ identKeys = null, fnGetModOrder }) {
 		return new this("_copy", {
 			order: [
 				...(
@@ -49,7 +49,7 @@ export class ArrayKey {
 	 * @param [opts.order] Ordering to apply to objects with this key.
 	 * @param [opts.fnSort] Function to sort arrays with this key.
 	 */
-	constructor(key, opts) {
+	constructor (key, opts) {
 		opts = opts || {};
 
 		this.key = key;
@@ -58,7 +58,7 @@ export class ArrayKey {
 		this.fnSort = opts.fnSort;
 	}
 
-	static getRootKey(propToList, prop) {
+	static getRootKey (propToList, prop) {
 		return new this(
 			prop,
 			{
@@ -70,7 +70,7 @@ export class ArrayKey {
 }
 
 export class IgnoredKey {
-	constructor(key) {
+	constructor (key) {
 		this.key = key;
 	}
 }

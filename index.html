@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<meta name="mobile-web-app-capable" content="yes">
 
-	<title>2etools</title>
+	<title>5etools</title>
 
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/fontawesome.css">
@@ -30,7 +30,7 @@
 
 	<!-- Chrome Web App Icons -->
 	<link rel="manifest" href="manifest.webmanifest">
-	<meta name="application-name" content="5etools">
+	<meta name="application-name" content="2etools">
 	<meta name="theme-color" content="#006bc4">
 
 	<!-- Windows Start Menu tiles -->
@@ -64,8 +64,8 @@
 
 <header class="hidden-xs hidden-sm page__header">
 	<div class="container ve-flex-v-baseline">
-		<h1 class="page__title no-wrap my-0 page__title--home" id="page__title">2e<span>tools</span></h1>
-		<p class="page__subtitle no-wrap my-0" id="page__subtitle">A suite of tools for 2th Edition Advanced Dungeons &amp; Dragons players and Dungeon Masters.</p>
+		<h1 class="page__title no-wrap my-0 page__title--home" id="page__title">5e<span>tools</span></h1>
+		<p class="page__subtitle no-wrap my-0" id="page__subtitle">A suite of tools for 5th Edition Dungeons &amp; Dragons players and Dungeon Masters.</p>
 	</div>
 </header>
 
@@ -74,22 +74,31 @@
 </nav>
 
 <div class="container">
-	<div class="alert alert-warning my-3"><p><strong>Note:</strong> this is a mirror, and is not guaranteed to be up-to-date. Use at your own risk. If you can, please use the main site at <a class="alert-link" href="https://5e.tools/" target="_blank">5e.tools</a>.</p></div>
+	<!--GITHUB_DISCLAIMER-->
 	<!--	<div class="alert alert-warning">-->
 	<!--		<p><strong>Discord update:</strong> A recent bot-hijack resulted in many accounts being banned from our Discord server, along with a general server reset. Besides bans, no user accounts were affected, and the server has largely been restored to its former state. <a class="alert-link" href="https://discord.gg/5etools" target="_blank" rel="noopener noreferrer">You can rejoin here.</a></p>-->
 	<!--	</div>-->
 </div>
 
-<div class="cancer__wrp-sidebar cancer__wrp-sidebar-lhs cancer__wrp-sidebar-lhs--scrolling-page cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__sidebar-inner cancer__sidebar-inner--top cancer__wrp-interactive"><!--5ETOOLS_AD_LEFT_1--></div><div class="cancer__sidebar-inner cancer__sidebar-inner--bottom cancer__wrp-interactive"><!--5ETOOLS_AD_LEFT_2--></div></div>
-<div class="cancer__wrp-sidebar cancer__wrp-sidebar-rhs cancer__wrp-sidebar-rhs--scrolling-page cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__sidebar-inner cancer__sidebar-inner--top cancer__wrp-interactive"><!--5ETOOLS_AD_RIGHT_1--></div><div class="cancer__sidebar-inner cancer__sidebar-inner--bottom cancer__wrp-interactive"><!--5ETOOLS_AD_RIGHT_2--></div></div>
-
+<div class="cancer__wrp-sidebar cancer__wrp-sidebar-lhs cancer__wrp-sidebar-lhs--scrolling-page cancer__anchor">
+    <div class="cancer__disp-cancer"></div>
+    <div class="cancer__sidebar-inner cancer__sidebar-inner--top cancer__wrp-interactive"><!--5ETOOLS_AD_LEFT_1--></div>
+    <div class="cancer__sidebar-inner cancer__sidebar-inner--bottom cancer__wrp-interactive"><!--5ETOOLS_AD_LEFT_2-->
+    </div>
+</div><div class="cancer__wrp-sidebar cancer__wrp-sidebar-rhs cancer__wrp-sidebar-rhs--scrolling-page cancer__anchor">
+    <div class="cancer__disp-cancer"></div>
+    <div class="cancer__sidebar-inner cancer__sidebar-inner--top cancer__wrp-interactive"><!--5ETOOLS_AD_RIGHT_1-->
+    </div>
+    <div class="cancer__sidebar-inner cancer__sidebar-inner--bottom cancer__wrp-interactive"><!--5ETOOLS_AD_RIGHT_2-->
+    </div>
+</div>
 <div class="home__stripe">
 	<div class="home__split relative">
 		<div class="home__stripe-header ve-text-right home__h-player"><div class="w-100 ve-text-left mobile__text-center">Players</div></div>
 		<div class="ve-flex ve-flex-wrap relative home__split-spaced home__split-spaced--gutter home__split-spaced--no-header home__wrp-buttons">
 			<a class="home__btn-page ve-btn ve-btn-default mr-3 home__btn-player" href="races.html">
 				<div class="fal fa-users home__icn-page"></div>
-				<h4 class="ve-text-center home__lbl-page">Races</h4>
+				<h4 class="ve-text-center home__lbl-page">Species</h4>
 			</a>
 			<a class="home__btn-page ve-btn ve-btn-default mr-3 home__btn-player" href="classes.html" title="Quickly browse the official classes, and their associated subclasses.
 Unearthed Arcana content can be accessed by cycling the &quot;All Sources&quot; button.">
@@ -198,13 +207,20 @@ Unearthed Arcana content can be accessed by cycling the &quot;All Sources&quot; 
 </div>
 
 <main class="container">
-	<div class="cancer__wrp-leaderboard cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__wrp-leaderboard-inner cancer__wrp-interactive"><!--5ETOOLS_AD_LEADERBOARD--></div></div>
-
+	<div class="cancer__wrp-leaderboard cancer__anchor">
+	    <div class="cancer__disp-cancer"></div>
+	    <div class="cancer__wrp-leaderboard-inner cancer__wrp-interactive"><!--5ETOOLS_AD_LEADERBOARD--></div>
+	</div>
 	<div class="w-100">
 		<div class="mb-2" id="wrp-patreon"></div>
 
 		<h3>Use Discord?</h3>
 		<p>Join the <a href="https://discord.gg/5etools" target="_blank" rel="noopener noreferrer">fan server</a> for announcements, updates, and feature voting.</p>
+
+		<h3>Use <a href="https://foundryvtt.com/" rel="noopener">Foundry</a>?</h3>
+		<p>No? <span class="help" title="Please note that Foundry Gaming, LLC. and The Norr Group Ltd. are in no way affiliated, and that Foundry Gaming, LLC. does not condone the use of their software in violation of your local laws.">Well, you should!</span> Foundry is a modernized, better-than replacement for Roll20, which prioritizes modding support. It is the 5etools platform of choice for VTT integrations.</p>
+		<p>To install the <a href="plutonium.html">Plutonium</a> module, and start using all of 5etools' content in your game, paste the manifest URL<sup class="ve-small">[<a title="Plutonium manifest URL for most recent supported Foundry version" href="https://raw.githubusercontent.com/TheGiddyLimit/plutonium-next/master/module.json" target="_blank" rel="noopener noreferrer">current</a>/<a title="Plutonium manifest URL for Foundry v12" href="https://raw.githubusercontent.com/TheGiddyLimit/plutonium-next/master/module-foundry12.json" target="_blank" rel="noopener noreferrer">v12</a>/<a title="Plutonium manifest URL for Foundry v11" href="https://raw.githubusercontent.com/TheGiddyLimit/plutonium-next/master/module-foundry11.json" target="_blank" rel="noopener noreferrer">v11</a>]</sup> into your Foundry server's module installer. See the <a href="plutonium.html">Plutonium Features</a> page for an overview of the functionality the module provides.</p>
+		<p>You can also install the <a href="plutonium.html#rivet-browser-extension">Rivet</a> browser extension (<a rel="noopener noreferrer" href="https://chrome.google.com/webstore/detail/rivet/igmilfmbmkmpkjjgoabaagaoohhhbjde">Chrome</a>/<a rel="noopener noreferrer" href="https://addons.mozilla.org/en-GB/firefox/addon/rivet/">Firefox</a>) to import content from the site with a single click.</p>
 
 		<h3>Use Roll20?</h3>
 		<p>Install <a href="https://ssstormy.github.io/roll20-enhancement-suite/" rel="noopener noreferrer">
@@ -227,7 +243,7 @@ Unearthed Arcana content can be accessed by cycling the &quot;All Sources&quot; 
 		<p>You can host a copy of 5etools on anything that can run a basic webserver&mdash;examples include <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server" rel="noopener noreferrer">your computer</a>, <a href="https://play.google.com/store/apps/details?id=com.sylkat.apache" rel="noopener noreferrer">your phone</a>, a <a href="https://www.raspberrypi.org/products/" rel="noopener noreferrer">Raspberry Pi</a>, or a free <a href="https://aws.amazon.com/free" rel="noopener noreferrer">EC2</a>/<a href="https://cloud.google.com/free" rel="noopener noreferrer">Compute Engine</a> instance. <a href="https://github.com/5etools-mirror-3/5etools-src/releases/latest" rel="noopener noreferrer">Download the files</a> and <a href="https://github.com/5etools-mirror-3/5etools-img/releases/latest" rel="noopener noreferrer">images</a>, <a href="https://wiki.tercept.net/en/5eTools/InstallGuide" rel="noopener noreferrer">copy them into your server's root directory</a>, and enjoy!</p>
 
 		<h3 title=":^)">Disclaimer</h3>
-		<p title=":^)">2etools is intended as an easily-accessible digital reference for products you already own. Please ensure you only access content in accordance with your local laws.</p>
+		<p title=":^)">5etools is intended as an easily-accessible digital reference for products you already own. Please ensure you only access content in accordance with your local laws.</p>
 	</div>
 </main>
 <footer class="container">
@@ -241,7 +257,7 @@ Unearthed Arcana content can be accessed by cycling the &quot;All Sources&quot; 
 			<span data-ccpa-link="1"></span>
 		</div>
 		<div class="mt-2">
-			<i>2etools&reg; is not affiliated with or endorsed by Hasbro Inc.</i>
+			<i>5etools&reg; is a Registered Trademark of The Norr Group Ltd. All rights reserved.</i>
 		</div>
 	</div>
 </footer>

@@ -37,7 +37,7 @@ export class UtilsFoundryItem {
 		"signet",
 	].map(it => new RegExp(`\\b${it}\\b`, "i"));
 
-	static getFoundryItemType(item) {
+	static getFoundryItemType (item) {
 		const itemTypeAbv = item.type ? DataUtil.itemType.unpackUid(item.type).abbreviation : null;
 
 		if (
@@ -118,7 +118,7 @@ export class UtilsFoundryItem {
  * Ports/re-implementations of Foundry utilities.
  */
 export class UtilsFoundry {
-	static getType(val) {
+	static getType (val) {
 		if (val === null) return "null";
 		const to = typeof val;
 		if (to !== "object") return to;
@@ -126,7 +126,7 @@ export class UtilsFoundry {
 		return "Object";
 	}
 
-	static isEmpty(val) {
+	static isEmpty (val) {
 		if (val == null) return true;
 		switch (this.getType(val)) {
 			case "Array": return !val.length;
@@ -135,7 +135,7 @@ export class UtilsFoundry {
 		return false;
 	}
 
-	static flattenObject(obj) {
+	static flattenObject (obj) {
 		const out = {};
 
 		for (const [k, v] of Object.entries(obj)) {

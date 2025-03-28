@@ -146,7 +146,7 @@ const toGenerate = [
 
 const siteMapData = {};
 
-async function main() {
+async function main () {
 	ut.patchLoadJson();
 
 	let total = 0;
