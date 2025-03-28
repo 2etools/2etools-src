@@ -6,7 +6,7 @@ import { ManageExternalUtils } from "../manageexternal/manageexternal-utils.js";
 
 export class ManageBrewUi {
 	static _RenderState = class {
-		constructor() {
+		constructor () {
 			this.$stgBrewList = null;
 			this.list = null;
 			this.listSelectClickHandler = null;
@@ -16,7 +16,7 @@ export class ManageBrewUi {
 		}
 	};
 
-	constructor({ brewUtil, isModal = false } = {}) {
+	constructor ({ brewUtil, isModal = false } = {}) {
 		this._brewUtil = brewUtil;
 		this._isModal = isModal;
 	}
@@ -25,7 +25,7 @@ export class ManageBrewUi {
 
 	static _CONTEXT_MENU_BTNGROUP_MANAGER = null;
 
-	static bindBtngroupManager(btngroup) {
+	static bindBtngroupManager (btngroup) {
 		btngroup
 			.first(`[name="manage-content"]`)
 			.onn("click", evt => this._pOnClickBtnManageContent({ evt }));
@@ -39,13 +39,13 @@ export class ManageBrewUi {
 			.onn("click", evt => this._onClickBtnManagePrereleaseBrew({ brewUtil: BrewUtil2, isGoToPage: evt.shiftKey }));
 	}
 
-	static bindBtnOpen($btn, { brewUtil = null } = {}) {
+	static bindBtnOpen ($btn, { brewUtil = null } = {}) {
 		brewUtil = brewUtil || BrewUtil2;
 
 		$btn.click(evt => this._onClickBtnManagePrereleaseBrew({ brewUtil, isGoToPage: evt.shiftKey }));
 	}
 
-	static _pOnClickBtnManageContent({ evt }) {
+	static _pOnClickBtnManageContent ({ evt }) {
 		this._CONTEXT_MENU_BTNGROUP_MANAGER ||= ContextUtil.getMenu([
 			new ContextUtil.Action(
 				"Manage Prerelease Content",
@@ -78,12 +78,12 @@ export class ManageBrewUi {
 		return ContextUtil.pOpenMenu(evt, this._CONTEXT_MENU_BTNGROUP_MANAGER);
 	}
 
-	static _onClickBtnManagePrereleaseBrew({ brewUtil, isGoToPage }) {
+	static _onClickBtnManagePrereleaseBrew ({ brewUtil, isGoToPage }) {
 		if (isGoToPage) return window.location = brewUtil.PAGE_MANAGE;
 		return this.pDoManageBrew({ brewUtil });
 	}
 
-	static async pOnClickBtnLoadAllPartnered() {
+	static async pOnClickBtnLoadAllPartnered () {
 		const brewDocs = [];
 		try {
 			const [brewDocsPrerelease, brewDocsHomebrew] = await Promise.all([
@@ -105,7 +105,7 @@ export class ManageBrewUi {
 		if (BrewUtil2.isReloadRequired()) BrewUtil2.doLocationReload();
 	}
 
-	static async _pOnClickBtnDeleteAllLoadedContent() {
+	static async _pOnClickBtnDeleteAllLoadedContent () {
 		if (
 			!await InputUiUtil.pGetUserBoolean({
 				title: `Delete All Loaded ${PrereleaseUtil.DISPLAY_NAME.toTitleCase()} and ${BrewUtil2.DISPLAY_NAME.toTitleCase()}`,
@@ -134,7 +134,7 @@ export class ManageBrewUi {
 
 	/* -------------------------------------------- */
 
-	static async pOnClickBtnExportListAsUrl({ ele }) {
+	static async pOnClickBtnExportListAsUrl ({ ele }) {
 		const url = await ManageExternalUtils.pGetUrl();
 		await MiscUtil.pCopyTextToClipboard(url);
 		JqueryUtil.showCopiedEffect(ele);
@@ -149,7 +149,7 @@ export class ManageBrewUi {
 
 	/* -------------------------------------------- */
 
-	static async pDoManageBrew({ brewUtil = null } = {}) {
+	static async pDoManageBrew ({ brewUtil = null } = {}) {
 		brewUtil = brewUtil || BrewUtil2;
 
 		const ui = new this({ isModal: true, brewUtil });
@@ -172,7 +172,7 @@ export class ManageBrewUi {
 		await ui.pRender($modalInner, { rdState });
 	}
 
-	_$getBtnDeleteAll(rdState) {
+	_$getBtnDeleteAll (rdState) {
 		const brewUtilOther = this._brewUtil === PrereleaseUtil ? BrewUtil2 : PrereleaseUtil;
 
 		return $(`<button class="ve-btn ve-btn-danger" title="SHIFT to also delete all ${brewUtilOther.DISPLAY_NAME.toTitleCase()}">Delete All</button>`)
@@ -200,7 +200,7 @@ export class ManageBrewUi {
 			});
 	}
 
-	_$getBtnPullAll(rdState) {
+	_$getBtnPullAll (rdState) {
 		const $btn = $(`<button class="ve-btn ve-btn-default">Update All</button>`)
 			.addClass(this._isModal ? "ve-btn-xs w-70p" : "ve-btn-sm w-80p")
 			.click(async () => {
@@ -221,14 +221,14 @@ export class ManageBrewUi {
 		return $btn;
 	}
 
-	async _pDoDeleteAll(rdState) {
+	async _pDoDeleteAll (rdState) {
 		await this._brewUtil.pSetBrew([]);
 
 		rdState.list.removeAllItems();
 		rdState.list.update();
 	}
 
-	async _pDoPullAll({ rdState, brews = null }) {
+	async _pDoPullAll ({ rdState, brews = null }) {
 		if (brews && !brews.length) return;
 
 		let cntPulls;
@@ -244,7 +244,7 @@ export class ManageBrewUi {
 		JqueryUtil.doToast(`Update complete! ${cntPulls} ${cntPulls === 1 ? `${this._brewUtil.DISPLAY_NAME} was` : `${this._brewUtil.DISPLAY_NAME_PLURAL} were`} updated.`);
 	}
 
-	async pRender($wrp, { rdState = null } = {}) {
+	async pRender ($wrp, { rdState = null } = {}) {
 		rdState = rdState || new this.constructor._RenderState();
 
 		rdState.$stgBrewList = $(`<div class="manbrew__current_brew ve-flex-col h-100 mt-1 min-h-0"></div>`);
@@ -317,12 +317,12 @@ export class ManageBrewUi {
 		}
 	}
 
-	async _pHandleClick_btnLoadPartnered(rdState) {
+	async _pHandleClick_btnLoadPartnered (rdState) {
 		await this._brewUtil.pAddBrewsPartnered();
 		await this._pRender_pBrewList(rdState);
 	}
 
-	async _pHandleClick_btnLoadFromFile(rdState) {
+	async _pHandleClick_btnLoadFromFile (rdState) {
 		const { files, errors } = await InputUiUtil.pGetUserUploadJson({ isMultiple: true, expectedFileTypes: [] });
 
 		DataUtil.doHandleFileLoadErrorsGeneric(errors);
@@ -331,7 +331,7 @@ export class ManageBrewUi {
 		await this._pRender_pBrewList(rdState);
 	}
 
-	async _pHandleClick_btnLoadFromUrl(rdState) {
+	async _pHandleClick_btnLoadFromUrl (rdState) {
 		const enteredUrl = await InputUiUtil.pGetUserString({
 			title: `${this._brewUtil.DISPLAY_NAME.toTitleCase()} URL`,
 			htmlDescription: `<p>
@@ -361,7 +361,7 @@ export class ManageBrewUi {
 		await this._pRender_pBrewList(rdState);
 	}
 
-	static _getParsedCustomUrl(enteredUrl) {
+	static _getParsedCustomUrl (enteredUrl) {
 		try {
 			return new URL(enteredUrl);
 		} catch (e) {
@@ -369,12 +369,12 @@ export class ManageBrewUi {
 		}
 	}
 
-	async _pHandleClick_btnGetBrew(rdState) {
+	async _pHandleClick_btnGetBrew (rdState) {
 		await GetBrewUi.pDoGetBrew({ brewUtil: this._brewUtil, isModal: this._isModal });
 		await this._pRender_pBrewList(rdState);
 	}
 
-	async _pHandleClick_btnSetCustomRepo() {
+	async _pHandleClick_btnSetCustomRepo () {
 		const customBrewUtl = await this._brewUtil.pGetCustomUrl();
 
 		const nxtUrl = await InputUiUtil.pGetUserString({
@@ -391,7 +391,7 @@ export class ManageBrewUi {
 		await this._brewUtil.pSetCustomUrl(nxtUrl);
 	}
 
-	async _pRender_pBrewList(rdState) {
+	async _pRender_pBrewList (rdState) {
 		rdState.$stgBrewList.empty();
 		rdState.rowMetas.splice(0, rdState.rowMetas.length)
 			.forEach(({ menu }) => ContextUtil.deleteMenu(menu));
@@ -446,14 +446,14 @@ export class ManageBrewUi {
 		$iptSearch.focus();
 	}
 
-	get _LBL_LIST_UPDATE() { return "Update"; }
-	get _LBL_LIST_MANAGE_CONTENTS() { return "Manage Contents"; }
-	get _LBL_LIST_EXPORT() { return "Export"; }
-	get _LBL_LIST_VIEW_JSON() { return "View JSON"; }
-	get _LBL_LIST_DELETE() { return "Delete"; }
-	get _LBL_LIST_MOVE_TO_EDITABLE() { return `Move to Editable ${this._brewUtil.DISPLAY_NAME.toTitleCase()} Document`; }
+	get _LBL_LIST_UPDATE () { return "Update"; }
+	get _LBL_LIST_MANAGE_CONTENTS () { return "Manage Contents"; }
+	get _LBL_LIST_EXPORT () { return "Export"; }
+	get _LBL_LIST_VIEW_JSON () { return "View JSON"; }
+	get _LBL_LIST_DELETE () { return "Delete"; }
+	get _LBL_LIST_MOVE_TO_EDITABLE () { return `Move to Editable ${this._brewUtil.DISPLAY_NAME.toTitleCase()} Document`; }
 
-	_initListMassMenu({ rdState }) {
+	_initListMassMenu ({ rdState }) {
 		if (rdState.menuListMass) return;
 
 		const getSelBrews = ({ fnFilter = null } = {}) => {
@@ -504,16 +504,16 @@ export class ManageBrewUi {
 		].filter(Boolean));
 	}
 
-	_isBrewOperationPermitted_update(brew) { return this._brewUtil.isPullable(brew); }
-	_isBrewOperationPermitted_moveToEditable(brew) { return BrewDoc.isOperationPermitted_moveToEditable({ brew }); }
-	_isBrewOperationPermitted_delete(brew) { return !brew.head.isLocal; }
+	_isBrewOperationPermitted_update (brew) { return this._brewUtil.isPullable(brew); }
+	_isBrewOperationPermitted_moveToEditable (brew) { return BrewDoc.isOperationPermitted_moveToEditable({ brew }); }
+	_isBrewOperationPermitted_delete (brew) { return !brew.head.isLocal; }
 
-	async _pHandleClick_btnListMass({ evt, rdState }) {
+	async _pHandleClick_btnListMass ({ evt, rdState }) {
 		this._initListMassMenu({ rdState });
 		await ContextUtil.pOpenMenu(evt, rdState.menuListMass);
 	}
 
-	static _getBrewName(brew) {
+	static _getBrewName (brew) {
 		const sources = brew.body._meta?.sources || [];
 
 		return sources
@@ -522,7 +522,7 @@ export class ManageBrewUi {
 			.join(", ");
 	}
 
-	_pRender_getLoadedRowMeta(rdState, brew, ix) {
+	_pRender_getLoadedRowMeta (rdState, brew, ix) {
 		const sources = brew.body._meta?.sources || [];
 
 		const rowsSubMetas = sources
@@ -735,7 +735,7 @@ export class ManageBrewUi {
 		return rowMeta;
 	}
 
-	static _pRender_getBtnPlaceholder() {
+	static _pRender_getBtnPlaceholder () {
 		return e_({
 			tag: "button",
 			clazz: `ve-btn ve-btn-default ve-btn-xs mobile__hidden w-24p`,
@@ -744,7 +744,7 @@ export class ManageBrewUi {
 			.attr("disabled", true);
 	}
 
-	_pRender_getBtnPull({ rdState, brew }) {
+	_pRender_getBtnPull ({ rdState, brew }) {
 		if (!this._isBrewOperationPermitted_update(brew)) return null;
 
 		const btnPull = e_({
@@ -763,7 +763,7 @@ export class ManageBrewUi {
 		return btnPull;
 	}
 
-	_pRender_getBtnEdit({ rdState, brew }) {
+	_pRender_getBtnEdit ({ rdState, brew }) {
 		if (!brew.head.isEditable) return null;
 
 		return e_({
@@ -780,7 +780,7 @@ export class ManageBrewUi {
 		});
 	}
 
-	async _pRender_pDoPullBrew({ rdState, brew }) {
+	async _pRender_pDoPullBrew ({ rdState, brew }) {
 		const isPull = await this._brewUtil.pPullBrew(brew);
 
 		JqueryUtil.doToast(
@@ -794,7 +794,7 @@ export class ManageBrewUi {
 		await this._pRender_pBrewList(rdState);
 	}
 
-	async _pRender_pDoEditBrew({ rdState, brew }) {
+	async _pRender_pDoEditBrew ({ rdState, brew }) {
 		const { isDirty, brew: nxtBrew } = await ManageEditableBrewContentsUi.pDoOpen({ brewUtil: this._brewUtil, brew, isModal: this._isModal });
 		if (!isDirty) return;
 
@@ -802,7 +802,7 @@ export class ManageBrewUi {
 		await this._pRender_pBrewList(rdState);
 	}
 
-	async _pRender_pDoDownloadBrew({ brew, brewName = null }) {
+	async _pRender_pDoDownloadBrew ({ brew, brewName = null }) {
 		const filename = (brew.head.filename || "").split(".").slice(0, -1).join(".");
 
 		// For the editable brew, if there are multiple sources, present the user with a selection screen. We then filter
@@ -859,7 +859,7 @@ export class ManageBrewUi {
 	/**
 	 * The editable brew may contain `uniqueId` references from the builder, which should be stripped before export.
 	 */
-	static _mutExportableEditableData({ json }) {
+	static _mutExportableEditableData ({ json }) {
 		Object.values(json)
 			.forEach(arr => {
 				if (arr == null || !(arr instanceof Array)) return;
@@ -868,12 +868,12 @@ export class ManageBrewUi {
 		return json;
 	}
 
-	static _getBrewJsonTitle({ brew, brewName }) {
+	static _getBrewJsonTitle ({ brew, brewName }) {
 		brewName = brewName || this._getBrewName(brew);
 		return brew.head.filename || brewName;
 	}
 
-	_pRender_doViewBrew({ evt, brew, brewName }) {
+	_pRender_doViewBrew ({ evt, brew, brewName }) {
 		const title = this.constructor._getBrewJsonTitle({ brew, brewName });
 		const $content = Renderer.hover.$getHoverContent_statsCode(brew.body, { isSkipClean: true, title });
 		Renderer.hover.getShowWindow(
@@ -887,13 +887,13 @@ export class ManageBrewUi {
 		);
 	}
 
-	async _pRender_pDoOpenBrewMenu({ evt, rdState, brew, brewName, rowMeta }) {
+	async _pRender_pDoOpenBrewMenu ({ evt, rdState, brew, brewName, rowMeta }) {
 		rowMeta.menu = rowMeta.menu || this._pRender_getBrewMenu({ rdState, brew, brewName });
 
 		await ContextUtil.pOpenMenu(evt, rowMeta.menu);
 	}
 
-	_pRender_getBrewMenu({ rdState, brew, brewName }) {
+	_pRender_getBrewMenu ({ rdState, brew, brewName }) {
 		const menuItems = [];
 
 		if (this._isBrewOperationPermitted_update(brew)) {
@@ -944,7 +944,7 @@ export class ManageBrewUi {
 		return ContextUtil.getMenu(menuItems);
 	}
 
-	_pGetUserBoolean_isMoveBrewsToEditable({ brews }) {
+	_pGetUserBoolean_isMoveBrewsToEditable ({ brews }) {
 		return InputUiUtil.pGetUserBoolean({
 			title: `Move to Editable ${this._brewUtil.DISPLAY_NAME.toTitleCase()} Document`,
 			htmlDescription: `Moving ${brews.length === 1 ? `this ${this._brewUtil.DISPLAY_NAME}` : `these
@@ -954,7 +954,7 @@ export class ManageBrewUi {
 		});
 	}
 
-	async _pRender_pDoMoveToEditable({ rdState, brews }) {
+	async _pRender_pDoMoveToEditable ({ rdState, brews }) {
 		if (!brews?.length) return;
 
 		if (!await this._pGetUserBoolean_isMoveBrewsToEditable({ brews })) return;
@@ -966,7 +966,7 @@ export class ManageBrewUi {
 		JqueryUtil.doToast(`${`${brews.length === 1 ? this._brewUtil.DISPLAY_NAME : this._brewUtil.DISPLAY_NAME_PLURAL}`.uppercaseFirst()} moved to editable document!`);
 	}
 
-	_pGetUserBoolean_isDeleteBrews({ brews }) {
+	_pGetUserBoolean_isDeleteBrews ({ brews }) {
 		if (!brews.some(brew => brew.head.isEditable)) return true;
 
 		const htmlDescription = brews.length === 1
@@ -981,7 +981,7 @@ export class ManageBrewUi {
 		});
 	}
 
-	async _pRender_pDoDelete({ rdState, brews }) {
+	async _pRender_pDoDelete ({ rdState, brews }) {
 		if (!brews?.length) return;
 
 		if (!await this._pGetUserBoolean_isDeleteBrews({ brews })) return;
@@ -991,7 +991,7 @@ export class ManageBrewUi {
 		await this._pRender_pBrewList(rdState);
 	}
 
-	_pRender_getProcBrew(brew) {
+	_pRender_getProcBrew (brew) {
 		brew = MiscUtil.copyFast(brew);
 		brew.body._meta.sources.sort((a, b) => SortUtil.ascSortLower(a.full || "", b.full || ""));
 		return brew;

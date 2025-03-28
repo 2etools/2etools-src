@@ -1,7 +1,7 @@
 import { ConverterConst } from "./converterutils-const.js";
 
 class DamageTagger {
-	static _addDamageTypeToSet(set, str, options) {
+	static _addDamageTypeToSet (set, str, options) {
 		str = str.toLowerCase().trim();
 		if (str === "less" || str === "more") return;
 		if (str === "all" || str === "one" || str === "a") Parser.DMG_TYPES.forEach(it => set.add(it));
@@ -11,7 +11,7 @@ class DamageTagger {
 }
 
 export class DamageInflictTagger extends DamageTagger {
-	static tryRun(sp, options) {
+	static tryRun (sp, options) {
 		const tags = new Set();
 
 		JSON.stringify([sp.entries, sp.entriesHigherLevel]).replace(/(?:{@damage [^}]+}|\d+) (\w+)((?:, \w+)*)(,? or \w+)? damage/ig, (...m) => {
@@ -26,11 +26,11 @@ export class DamageInflictTagger extends DamageTagger {
 }
 
 class DamageResVulnImmuneTagger extends DamageTagger {
-	static get _RE() {
+	static get _RE () {
 		return (this.__RE ||= new RegExp(`${this._TYPE} to (?<ptBase>\\w+)(?<ptList>(?:, \\w+)*)(?<ptConj>,? or \\w+)? damage`, "gi"));
 	}
 
-	static tryRun(sp, options) {
+	static tryRun (sp, options) {
 		const tags = new Set();
 
 		JSON.stringify([sp.entries, sp.entriesHigherLevel]).replace(this._RE, (...m) => {
@@ -61,7 +61,7 @@ export class DamageImmuneTagger extends DamageResVulnImmuneTagger {
 }
 
 export class SavingThrowTagger {
-	static tryRun(sp, options) {
+	static tryRun (sp, options) {
 		sp.savingThrow = [];
 		JSON.stringify([sp.entries, sp.entriesHigherLevel]).replace(/(Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma) saving throw/ig, (...m) => sp.savingThrow.push(m[1].toLowerCase()));
 		if (!sp.savingThrow.length) delete sp.savingThrow;
@@ -70,7 +70,7 @@ export class SavingThrowTagger {
 }
 
 export class AbilityCheckTagger {
-	static tryRun(sp, options) {
+	static tryRun (sp, options) {
 		sp.abilityCheck = [];
 		JSON.stringify([sp.entries, sp.entriesHigherLevel]).replace(/a (Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma) check/ig, (...m) => sp.abilityCheck.push(m[1].toLowerCase()));
 		if (!sp.abilityCheck.length) delete sp.abilityCheck;
@@ -79,7 +79,7 @@ export class AbilityCheckTagger {
 }
 
 export class SpellAttackTagger {
-	static tryRun(sp, options) {
+	static tryRun (sp, options) {
 		sp.spellAttack = [];
 		JSON.stringify([sp.entries, sp.entriesHigherLevel]).replace(/make (?:a|up to [^ ]+) (ranged|melee) spell attack/ig, (...m) => sp.spellAttack.push(m[1][0].toUpperCase()));
 		if (!sp.spellAttack.length) delete sp.spellAttack;
@@ -90,16 +90,16 @@ export class SpellAttackTagger {
 // TODO areaTags
 
 export class MiscTagsTagger {
-	static _addTag({ tags, tag, options }) {
+	static _addTag ({ tags, tag, options }) {
 		if (options?.allowlistTags && !options?.allowlistTags.has(tag)) return;
 		tags.add(tag);
 	}
 
-	static _mutTags_SGT({ tags, str, stripped, options }) {
+	static _mutTags_SGT ({ tags, str, stripped, options }) {
 		if (/you can see/ig.test(stripped)) this._addTag({ tags, tag: "SGT", options });
 	}
 
-	static tryRun(sp, options) {
+	static tryRun (sp, options) {
 		const tags = new Set(sp.miscTags || []);
 
 		MiscTagsTagger._WALKER = MiscTagsTagger._WALKER || MiscUtil.getWalker({ isNoModification: true, keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST });
@@ -205,7 +205,7 @@ MiscTagsTagger._WALKER = null;
 export class ScalingLevelDiceTagger {
 	static _WALKER_BOR = MiscUtil.getWalker({ keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST, isNoModification: true, isBreakOnReturn: true });
 
-	static _isParseFirstSecondLineRolls({ sp }) {
+	static _isParseFirstSecondLineRolls ({ sp }) {
 		// Two "flat" paragraphs; first is spell text, second is cantrip scaling text
 		if (!sp.entriesHigherLevel) return sp.entries.length === 2 && sp.entries.filter(it => typeof it === "string").length === 2;
 
@@ -218,7 +218,7 @@ export class ScalingLevelDiceTagger {
 			&& typeof sp.entriesHigherLevel[0].entries[0] === "string";
 	}
 
-	static _getRollsFirstSecondLine({ firstLine, secondLine }) {
+	static _getRollsFirstSecondLine ({ firstLine, secondLine }) {
 		const rollsFirstLine = [];
 		const rollsSecondLine = [];
 
@@ -235,7 +235,7 @@ export class ScalingLevelDiceTagger {
 
 	static _RE_DAMAGE_TYPE = new RegExp(`\\b${ConverterConst.STR_RE_DAMAGE_TYPE}\\b`, "i");
 
-	static _getLabel({ sp, options }) {
+	static _getLabel ({ sp, options }) {
 		let label;
 
 		const handlers = {
@@ -260,7 +260,7 @@ export class ScalingLevelDiceTagger {
 		return "NO_LABEL";
 	}
 
-	static tryRun(sp, options) {
+	static tryRun (sp, options) {
 		if (sp.level !== 0) return;
 
 		// Prefer `entriesHigherLevel`, as we may have e.g. a `"Cantrip Upgrade"` header
@@ -322,7 +322,7 @@ export class ScalingLevelDiceTagger {
 }
 
 export class AffectedCreatureTypeTagger {
-	static tryRun(sp, options) {
+	static tryRun (sp, options) {
 		const setAffected = new Set();
 		const setNotAffected = new Set();
 
@@ -371,7 +371,7 @@ export class AffectedCreatureTypeTagger {
 							.replace(/can't heal (.*)/g, (...m) => {
 								m[1].replace(AffectedCreatureTypeTagger._RE_TYPES, (...n) => this._doAddType({ set: setNotAffected, type: n[1] }));
 							})
-							;
+						;
 						// endregion
 
 						// region Affected
@@ -450,7 +450,7 @@ export class AffectedCreatureTypeTagger {
 							.replace(/\bsoul of (.*?) as it dies/g, (...m) => {
 								m[1].replace(AffectedCreatureTypeTagger._RE_TYPES, (...n) => this._doAddType({ set: setAffected, type: n[1] }));
 							})
-							;
+						;
 						// endregion
 					});
 				},
@@ -469,7 +469,7 @@ export class AffectedCreatureTypeTagger {
 		if (!sp.affectsCreatureType.length) delete sp.affectsCreatureType;
 	}
 
-	static _doAddType({ set, type }) {
+	static _doAddType ({ set, type }) {
 		type = Parser._parse_bToA(Parser.MON_TYPE_TO_PLURAL, type, type);
 		set.add(type);
 		return "";

@@ -51,7 +51,7 @@ const EVT_NAMESPACE = ".dm_screen";
 const TITLE_LOADING = "Loading...";
 
 class Board {
-	constructor() {
+	constructor () {
 		this.panels = {};
 		this.exiledPanels = [];
 		this.$creen = $(`.dm-screen`);
@@ -77,37 +77,37 @@ class Board {
 		this._pDoSaveStateDebounced = MiscUtil.debounce(() => StorageUtil.pSet(VeCt.STORAGE_DMSCREEN, this.getSaveableState()), 25);
 	}
 
-	getInitialWidth() {
+	getInitialWidth () {
 		const scW = this.$creen.width();
 		return Math.floor(scW / 360);
 	}
 
-	getInitialHeight() {
+	getInitialHeight () {
 		const scH = this.$creen.height();
 		return Math.floor(scH / 280);
 	}
 
-	getNextId() {
+	getNextId () {
 		return this.nextId++;
 	}
 
-	get$creen() {
+	get$creen () {
 		return this.$creen;
 	}
 
-	getWidth() {
+	getWidth () {
 		return this.width;
 	}
 
-	getHeight() {
+	getHeight () {
 		return this.height;
 	}
 
-	getConfirmTabClose() {
+	getConfirmTabClose () {
 		return this.$cbConfirmTabClose == null ? false : this.$cbConfirmTabClose.prop("checked");
 	}
 
-	setDimensions(width, height) {
+	setDimensions (width, height) {
 		const oldWidth = this.width;
 		const oldHeight = this.height;
 		if (width) this.width = Math.max(width, 1);
@@ -121,7 +121,7 @@ class Board {
 		this.$creen.trigger("panelResize");
 	}
 
-	doCullPanels(oldWidth, oldHeight) {
+	doCullPanels (oldWidth, oldHeight) {
 		for (let x = oldWidth - 1; x >= 0; x--) {
 			for (let y = oldHeight - 1; y >= 0; y--) {
 				const p = this.getPanel(x, y);
@@ -142,14 +142,14 @@ class Board {
 		}
 	}
 
-	doAdjust$creenCss() {
+	doAdjust$creenCss () {
 		// assumes 7px grid spacing
 		this.$creen.css({
 			marginTop: this.isFullscreen ? 0 : 3,
 		});
 	}
 
-	getPanelDimensions() {
+	getPanelDimensions () {
 		const w = this.$creen.outerWidth();
 		const h = this.$creen.outerHeight();
 		return {
@@ -158,7 +158,7 @@ class Board {
 		};
 	}
 
-	doShowLoading() {
+	doShowLoading () {
 		$(`<div class="dm-screen-loading"><span class="initial-message initial-message--large">Loading...</span></div>`).css({
 			gridColumnStart: "1",
 			gridColumnEnd: String(this.width + 1),
@@ -167,7 +167,7 @@ class Board {
 		}).appendTo(this.$creen);
 	}
 
-	doToggleFullscreen() {
+	doToggleFullscreen () {
 		this.isFullscreen = !this.isFullscreen;
 		$(document.body).toggleClass("is-fullscreen", this.isFullscreen);
 		this.doAdjust$creenCss();
@@ -175,11 +175,11 @@ class Board {
 		this.$creen.trigger("panelResize");
 	}
 
-	doHideLoading() {
+	doHideLoading () {
 		this.$creen.find(`.dm-screen-loading`).remove();
 	}
 
-	async pInitialise() {
+	async pInitialise () {
 		this.doAdjust$creenCss();
 		this.doShowLoading();
 
@@ -215,11 +215,11 @@ class Board {
 		window.dispatchEvent(new Event("toolsLoaded"));
 	}
 
-	initGlobalHandlers() {
+	initGlobalHandlers () {
 		window.onhashchange = () => this.pDoLoadUrlState();
 	}
 
-	async _pLoadTempData() {
+	async _pLoadTempData () {
 		const temp = await StorageUtil.pGet(VeCt.STORAGE_DMSCREEN_TEMP_SUBLIST);
 		if (!temp) return;
 
@@ -230,7 +230,7 @@ class Board {
 		}
 	}
 
-	async _pLoadTempData_({ temp }) {
+	async _pLoadTempData_ ({ temp }) {
 		const entityInfos = await ListUtil.pGetSublistEntities_fromHover({
 			exportedSublist: temp.exportedSublist,
 			page: temp.page,
@@ -248,7 +248,7 @@ class Board {
 		});
 	}
 
-	async pLoadIndex() {
+	async pLoadIndex () {
 		await SearchUiUtil.pDoGlobalInit();
 
 		// region rules
@@ -325,7 +325,7 @@ class Board {
 		this.doHideLoading();
 	}
 
-	async _pDoBuildAdventureOrBookIndex(
+	async _pDoBuildAdventureOrBookIndex (
 		{
 			adventureOrBookIdToSource,
 			dataPath,
@@ -385,14 +385,14 @@ class Board {
 		((await BrewUtil2.pGetBrewProcessed())[dataProp] || []).forEach(adventureOrBook => handleAdventureOrBook(adventureOrBook, true));
 	}
 
-	getPanel(x, y) {
+	getPanel (x, y) {
 		return Object.values(this.panels).find(p => {
 			// x <= pX < x+w && y <= pY < y+h
 			return (p.x <= x) && (x < (p.x + p.width)) && (p.y <= y) && (y < (p.y + p.height));
 		});
 	}
 
-	getPanels(x, y, w = 1, h = 1) {
+	getPanels (x, y, w = 1, h = 1) {
 		const out = [];
 		for (let wOffset = 0; wOffset < w; ++wOffset) {
 			for (let hOffset = 0; hOffset < h; ++hOffset) {
@@ -402,21 +402,21 @@ class Board {
 		return out.filter(it => it);
 	}
 
-	getPanelPx(xPx, hPx) {
+	getPanelPx (xPx, hPx) {
 		const dim = this.getPanelDimensions();
 		return this.getPanel(Math.floor(xPx / dim.pxWidth), Math.floor(hPx / dim.pxHeight));
 	}
 
-	setHoveringPanel(panel) {
+	setHoveringPanel (panel) {
 		this.hoveringPanel = panel;
 	}
 
-	setVisiblyHoveringPanel(isVis) {
+	setVisiblyHoveringPanel (isVis) {
 		Object.values(this.panels).forEach(p => p.removeHoverClass());
 		if (isVis && this.hoveringPanel) this.hoveringPanel.addHoverClass();
 	}
 
-	exilePanel(id) {
+	exilePanel (id) {
 		const panelK = Object.keys(this.panels).find(k => this.panels[k].id === id);
 		if (!panelK) return;
 
@@ -433,7 +433,7 @@ class Board {
 		this.doSaveStateDebounced();
 	}
 
-	recallPanel(panel) {
+	recallPanel (panel) {
 		const ix = this.exiledPanels.findIndex(p => p.id === panel.id);
 		if (~ix) this.exiledPanels.splice(ix, 1);
 		this.panels[panel.id] = panel;
@@ -441,13 +441,13 @@ class Board {
 		this.doSaveStateDebounced();
 	}
 
-	destroyPanel(id) {
+	destroyPanel (id) {
 		const panelK = Object.keys(this.panels).find(k => this.panels[k].id === id);
 		if (panelK) delete this.panels[panelK];
 		this.doSaveStateDebounced();
 	}
 
-	doCheckFillSpaces({ isSkipSave = false } = {}) {
+	doCheckFillSpaces ({ isSkipSave = false } = {}) {
 		const panelsToRender = [];
 
 		for (let x = 0; x < this.width; x++) {
@@ -466,11 +466,11 @@ class Board {
 		if (!isSkipSave) this.doSaveStateDebounced();
 	}
 
-	hasSavedStateUrl() {
+	hasSavedStateUrl () {
 		return window.location.hash.length;
 	}
 
-	async pDoLoadUrlState() {
+	async pDoLoadUrlState () {
 		if (window.location.hash.length) {
 			const toLoad = JSON.parse(decodeURIComponent(window.location.hash.slice(1)));
 			this.doReset();
@@ -479,11 +479,11 @@ class Board {
 		window.location.hash = "";
 	}
 
-	async pHasSavedState() {
+	async pHasSavedState () {
 		return !!await StorageUtil.pGet(VeCt.STORAGE_DMSCREEN);
 	}
 
-	getSaveableState() {
+	getSaveableState () {
 		return {
 			w: this.width,
 			h: this.height,
@@ -495,11 +495,11 @@ class Board {
 		};
 	}
 
-	doSaveStateDebounced() {
+	doSaveStateDebounced () {
 		this._pDoSaveStateDebounced();
 	}
 
-	async pDoLoadStateFrom(toLoad) {
+	async pDoLoadStateFrom (toLoad) {
 		if (this.$cbConfirmTabClose) this.$cbConfirmTabClose.prop("checked", !!toLoad.ctc);
 		if (this.$btnFullscreen && (toLoad.fs !== !!this.isFullscreen)) this.$btnFullscreen.click();
 		if (this.$btnLockPanels && (toLoad.lk !== !!this.isLocked)) this.$btnLockPanels.click();
@@ -529,7 +529,7 @@ class Board {
 		this.setDimensions(toLoad.w, toLoad.h);
 	}
 
-	async pDoLoadState() {
+	async pDoLoadState () {
 		let toLoad;
 		try {
 			toLoad = await StorageUtil.pGet(VeCt.STORAGE_DMSCREEN);
@@ -550,7 +550,7 @@ class Board {
 		}
 	}
 
-	async _pDoLoadState_pHandleError({ toLoad, e }) {
+	async _pDoLoadState_pHandleError ({ toLoad, e }) {
 		setTimeout(() => { throw e; });
 
 		const { $modalInner, doClose, pGetResolved } = UiUtil.getShowModal({
@@ -605,7 +605,7 @@ class Board {
 		return pGetResolved();
 	}
 
-	doReset() {
+	doReset () {
 		this.exiledPanels.forEach(p => p.destroy());
 		this.exiledPanels = [];
 		this.sideMenu.doUpdateHistory();
@@ -614,30 +614,30 @@ class Board {
 		this.setDimensions(this.getInitialWidth(), this.getInitialHeight());
 	}
 
-	setHoveringButton(panel) {
+	setHoveringButton (panel) {
 		this.resetHoveringButton(panel);
 		panel.$btnAddInner.addClass("faux-hover");
 	}
 
-	resetHoveringButton(panel) {
+	resetHoveringButton (panel) {
 		Object.values(this.panels).forEach(p => {
 			if (panel && panel.id === p.id) return;
 			p.$btnAddInner.removeClass("faux-hover");
 		});
 	}
 
-	addPanel(panel) {
+	addPanel (panel) {
 		this.panels[panel.id] = panel;
 		panel.render();
 		this.fireBoardEvent({ type: "panelIdSetActive", payload: { type: panel.type } });
 		this.doSaveStateDebounced();
 	}
 
-	disablePanelMoves() {
+	disablePanelMoves () {
 		Object.values(this.panels).forEach(p => p.toggleMovable(false));
 	}
 
-	doBindAlertOnNavigation() {
+	doBindAlertOnNavigation () {
 		if (this.isAlertOnNav) return;
 		this.isAlertOnNav = true;
 		$(window).on("beforeunload", evt => {
@@ -647,11 +647,11 @@ class Board {
 		});
 	}
 
-	getPanelsByType(type) {
+	getPanelsByType (type) {
 		return Object.values(this.panels).filter(p => p.tabDatas.length && p.tabDatas.find(td => td.type === type));
 	}
 
-	doMassPopulate_Entities(
+	doMassPopulate_Entities (
 		{
 			page,
 			entities,
@@ -705,13 +705,13 @@ class Board {
 		}
 	}
 
-	_doMassPopulate_Entities_doPopulatePanel({ page, ent, panel, hash }) {
+	_doMassPopulate_Entities_doPopulatePanel ({ page, ent, panel, hash }) {
 		ent?._scaledCr
 			? panel.doPopulate_StatsScaledCr(page, ent.source, hash, ent._scaledCr)
 			: panel.doPopulate_Stats(page, ent.source, hash);
 	}
 
-	_doMassPopulate_Entities_forPanel(
+	_doMassPopulate_Entities_forPanel (
 		{
 			page,
 			entities,
@@ -730,7 +730,7 @@ class Board {
 	 * @param {string} opts.type
 	 * @param {?object} opts.payload
 	 */
-	fireBoardEvent(opts) {
+	fireBoardEvent (opts) {
 		const { type } = opts;
 
 		if (!type) throw new Error(`Event type must be specified!`);
@@ -742,13 +742,13 @@ class Board {
 			.forEach(panel => this._fireBoardEvent_panel({ panel, ...opts }));
 	}
 
-	_fireBoardEvent_panel({ panel, ...opts }) {
+	_fireBoardEvent_panel ({ panel, ...opts }) {
 		panel.fireBoardEvent({ ...opts });
 	}
 }
 
 class SideMenu {
-	constructor(board) {
+	constructor (board) {
 		this.board = board;
 		this.$mnu = $(`.sidemenu`);
 
@@ -763,7 +763,7 @@ class SideMenu {
 		this.$wrpHistory = null;
 	}
 
-	render() {
+	render () {
 		const renderDivider = () => this.$mnu.append(`<hr class="w-100 hr-2 sidemenu__row__divider">`);
 
 		const $wrpResizeW = $(`<div class="w-100 mb-2 split-v-center"><div class="sidemenu__row__label">Width</div></div>`).appendTo(this.$mnu);
@@ -846,12 +846,12 @@ class SideMenu {
 		this.$wrpHistory = $(`<div class="sidemenu__history ve-overflow-y-auto ve-overflow-x-hidden"></div>`).appendTo(this.$mnu);
 	}
 
-	doUpdateDimensions() {
+	doUpdateDimensions () {
 		this.$iptWidth.val(this.board.width);
 		this.$iptHeight.val(this.board.height);
 	}
 
-	doUpdateHistory() {
+	doUpdateHistory () {
 		this.board.exiledPanels.forEach(p => p.get$ContentWrapper().detach());
 		this.$wrpHistory.children().remove();
 		if (this.board.exiledPanels.length) {
@@ -944,7 +944,7 @@ class SideMenu {
 }
 
 class Panel {
-	constructor(board, x, y, width = 1, height = 1, title = "") {
+	constructor (board, x, y, width = 1, height = 1, title = "") {
 		this.id = board.getNextId();
 		this.board = board;
 		this.x = x;
@@ -976,7 +976,7 @@ class Panel {
 		this.$pnlTabs = null;
 	}
 
-	static async fromSavedState(board, saved) {
+	static async fromSavedState (board, saved) {
 		const existing = board.getPanels(saved.x, saved.y, saved.w, saved.h);
 		if (saved.t === PANEL_TYP_EMPTY && existing.length) return null; // cull empties
 		else if (existing.length) existing.forEach(p => p.destroy()); // prefer more recent panels
@@ -1132,11 +1132,11 @@ class Panel {
 		return panel;
 	}
 
-	static _get$eleLoading(message = "Loading") {
+	static _get$eleLoading (message = "Loading") {
 		return $(`<div class="panel-content-wrapper-inner"><div class="ui-search__message loading-spinner"><i>${message}...</i></div></div>`);
 	}
 
-	static setMovingCss(evt, $ele, w, h, offsetX, offsetY, zIndex) {
+	static setMovingCss (evt, $ele, w, h, offsetX, offsetY, zIndex) {
 		$ele.css({
 			width: w,
 			height: h,
@@ -1150,7 +1150,7 @@ class Panel {
 		});
 	}
 
-	static unsetMovingCss($ele) {
+	static unsetMovingCss ($ele) {
 		$ele.css({
 			width: "",
 			height: "",
@@ -1164,7 +1164,7 @@ class Panel {
 		});
 	}
 
-	static bindMovingEvents(board, $content, offsetX, offsetY) {
+	static bindMovingEvents (board, $content, offsetX, offsetY) {
 		$(document).off(`mousemove${EVT_NAMESPACE} touchmove${EVT_NAMESPACE}`).off(`mouseup${EVT_NAMESPACE} touchend${EVT_NAMESPACE}`);
 		$(document).on(`mousemove${EVT_NAMESPACE} touchmove${EVT_NAMESPACE}`, (e) => {
 			board.setVisiblyHoveringPanel(true);
@@ -1175,17 +1175,17 @@ class Panel {
 		});
 	}
 
-	static isNonExilableType(type) {
+	static isNonExilableType (type) {
 		return type === PANEL_TYP_ROLLBOX || type === PANEL_TYP_TUBE || type === PANEL_TYP_TWITCH;
 	}
 
 	// region Panel population
 
-	doPopulate_Empty(ixOpt) {
+	doPopulate_Empty (ixOpt) {
 		this.close$TabContent(ixOpt);
 	}
 
-	doPopulate_Loading(message) {
+	doPopulate_Loading (message) {
 		return this.set$ContentTab(
 			PANEL_TYP_EMPTY,
 			null,
@@ -1194,7 +1194,7 @@ class Panel {
 		);
 	}
 
-	doPopulate_Stats(page, source, hash, skipSetTab, title) { // FIXME skipSetTab is never used
+	doPopulate_Stats (page, source, hash, skipSetTab, title) { // FIXME skipSetTab is never used
 		const meta = { p: page, s: source, u: hash };
 		const ix = this.set$TabLoading(
 			PANEL_TYP_STATS,
@@ -1234,7 +1234,7 @@ class Panel {
 		});
 	}
 
-	_stats_bindCrScaleClickHandler(mon, meta, $contentInner, $contentStats) {
+	_stats_bindCrScaleClickHandler (mon, meta, $contentInner, $contentStats) {
 		const self = this;
 		$contentStats.off("click", ".mon__btn-scale-cr").on("click", ".mon__btn-scale-cr", function (evt) {
 			evt.stopPropagation();
@@ -1292,7 +1292,7 @@ class Panel {
 		});
 	}
 
-	_stats_bindSummonScaleClickHandler(mon, meta, $contentInner, $contentStats) {
+	_stats_bindSummonScaleClickHandler (mon, meta, $contentInner, $contentStats) {
 		const self = this;
 
 		$contentStats
@@ -1382,7 +1382,7 @@ class Panel {
 			});
 	}
 
-	_stats_doUpdateSummonScaleDropdowns(scaledMon, $contentStats) {
+	_stats_doUpdateSummonScaleDropdowns (scaledMon, $contentStats) {
 		$contentStats
 			.find(`[name="mon__sel-summon-spell-level"]`)
 			.val(scaledMon._summonedBySpell_level != null ? `${scaledMon._summonedBySpell_level}` : "-1");
@@ -1392,7 +1392,7 @@ class Panel {
 			.val(scaledMon._summonedByClass_level != null ? `${scaledMon._summonedByClass_level}` : "-1");
 	}
 
-	doPopulate_StatsScaledCr(page, source, hash, targetCr, skipSetTab, title) { // FIXME skipSetTab is never used
+	doPopulate_StatsScaledCr (page, source, hash, targetCr, skipSetTab, title) { // FIXME skipSetTab is never used
 		const meta = { p: page, s: source, u: hash, cr: targetCr };
 		const ix = this.set$TabLoading(
 			PANEL_TYP_CREATURE_SCALED_CR,
@@ -1423,7 +1423,7 @@ class Panel {
 		});
 	}
 
-	doPopulate_StatsScaledSpellSummonLevel(page, source, hash, summonSpellLevel, skipSetTab, title) { // FIXME skipSetTab is never used
+	doPopulate_StatsScaledSpellSummonLevel (page, source, hash, summonSpellLevel, skipSetTab, title) { // FIXME skipSetTab is never used
 		const meta = { p: page, s: source, u: hash, ssl: summonSpellLevel };
 		const ix = this.set$TabLoading(
 			PANEL_TYP_CREATURE_SCALED_SPELL_SUMMON,
@@ -1456,7 +1456,7 @@ class Panel {
 		});
 	}
 
-	doPopulate_StatsScaledClassSummonLevel(page, source, hash, summonClassLevel, skipSetTab, title) { // FIXME skipSetTab is never used
+	doPopulate_StatsScaledClassSummonLevel (page, source, hash, summonClassLevel, skipSetTab, title) { // FIXME skipSetTab is never used
 		const meta = { p: page, s: source, u: hash, csl: summonClassLevel };
 		const ix = this.set$TabLoading(
 			PANEL_TYP_CREATURE_SCALED_CLASS_SUMMON,
@@ -1489,7 +1489,7 @@ class Panel {
 		});
 	}
 
-	doPopulate_Rules(book, chapter, header, skipSetTab, title) { // FIXME skipSetTab is never used
+	doPopulate_Rules (book, chapter, header, skipSetTab, title) { // FIXME skipSetTab is never used
 		const meta = { b: book, c: chapter, h: header };
 		const ix = this.set$TabLoading(
 			PANEL_TYP_RULES,
@@ -1510,7 +1510,7 @@ class Panel {
 		});
 	}
 
-	doPopulate_Adventures(adventure, chapter, skipSetTab, title) { // FIXME skipSetTab is never used
+	doPopulate_Adventures (adventure, chapter, skipSetTab, title) { // FIXME skipSetTab is never used
 		const meta = { a: adventure, c: chapter };
 		const ix = this.set$TabLoading(
 			PANEL_TYP_ADVENTURES,
@@ -1531,7 +1531,7 @@ class Panel {
 		});
 	}
 
-	doPopulate_Books(book, chapter, skipSetTab, title) { // FIXME skipSetTab is never used
+	doPopulate_Books (book, chapter, skipSetTab, title) { // FIXME skipSetTab is never used
 		const meta = { b: book, c: chapter };
 		const ix = this.set$TabLoading(
 			PANEL_TYP_BOOKS,
@@ -1552,12 +1552,12 @@ class Panel {
 		});
 	}
 
-	set$ContentTab(type, contentMeta, $content, title, tabCanRename, tabRenamed) {
+	set$ContentTab (type, contentMeta, $content, title, tabCanRename, tabRenamed) {
 		const ix = this.isTabs ? this.getNextTabIndex() : 0;
 		return this.set$Tab(ix, type, contentMeta, $content, title, tabCanRename, tabRenamed);
 	}
 
-	doPopulate_Rollbox(title) {
+	doPopulate_Rollbox (title) {
 		this.set$ContentTab(
 			PANEL_TYP_ROLLBOX,
 			null,
@@ -1568,7 +1568,7 @@ class Panel {
 		);
 	}
 
-	doPopulate_Counter(state = {}, title) {
+	doPopulate_Counter (state = {}, title) {
 		this.set$ContentTab(
 			PANEL_TYP_COUNTER,
 			state,
@@ -1578,7 +1578,7 @@ class Panel {
 		);
 	}
 
-	doPopulate_UnitConverter(state = {}, title) {
+	doPopulate_UnitConverter (state = {}, title) {
 		this.set$ContentTab(
 			PANEL_TYP_UNIT_CONVERTER,
 			state,
@@ -1588,7 +1588,7 @@ class Panel {
 		);
 	}
 
-	doPopulate_MoneyConverter(state = {}, title) {
+	doPopulate_MoneyConverter (state = {}, title) {
 		this.set$ContentTab(
 			PANEL_TYP_MONEY_CONVERTER,
 			state,
@@ -1598,7 +1598,7 @@ class Panel {
 		);
 	}
 
-	doPopulate_TimeTracker(state = {}, title) {
+	doPopulate_TimeTracker (state = {}, title) {
 		this.set$ContentTab(
 			PANEL_TYP_TIME_TRACKER,
 			state,
@@ -1608,7 +1608,7 @@ class Panel {
 		);
 	}
 
-	doPopulate_TextBox(content, title = "Notes") {
+	doPopulate_TextBox (content, title = "Notes") {
 		this.set$ContentTab(
 			PANEL_TYP_TEXTBOX,
 			null,
@@ -1618,7 +1618,7 @@ class Panel {
 		);
 	}
 
-	doPopulate_YouTube(url, title = "YouTube") {
+	doPopulate_YouTube (url, title = "YouTube") {
 		const meta = { u: url };
 		this.set$ContentTab(
 			PANEL_TYP_TUBE,
@@ -1629,7 +1629,7 @@ class Panel {
 		);
 	}
 
-	doPopulate_Twitch(url, title = "Twitch") {
+	doPopulate_Twitch (url, title = "Twitch") {
 		const meta = { u: url };
 		this.set$ContentTab(
 			PANEL_TYP_TWITCH,
@@ -1640,7 +1640,7 @@ class Panel {
 		);
 	}
 
-	doPopulate_TwitchChat(url, title = "Twitch Chat") {
+	doPopulate_TwitchChat (url, title = "Twitch Chat") {
 		const meta = { u: url };
 		const channelId = url.split("/").map(it => it.trim()).filter(Boolean).slice(-2)[0];
 		this.set$ContentTab(
@@ -1652,7 +1652,7 @@ class Panel {
 		);
 	}
 
-	doPopulate_GenericEmbed(url, title = "Embed") {
+	doPopulate_GenericEmbed (url, title = "Embed") {
 		const meta = { u: url };
 		this.set$ContentTab(
 			PANEL_TYP_GENERIC_EMBED,
@@ -1663,7 +1663,7 @@ class Panel {
 		);
 	}
 
-	doPopulate_Image(url, title = "Image") {
+	doPopulate_Image (url, title = "Image") {
 		const meta = { u: url };
 		const $wrpPanel = $(`<div class="panel-content-wrapper-inner"></div>`);
 		const $wrpImage = $(`<div class="panel-content-wrapper-img"></div>`).appendTo($wrpPanel);
@@ -1686,7 +1686,7 @@ class Panel {
 		});
 	}
 
-	doPopulate_AdventureBookDynamicMap(state, title = "Map Viewer") {
+	doPopulate_AdventureBookDynamicMap (state, title = "Map Viewer") {
 		this.set$ContentTab(
 			PANEL_TYP_ADVENTURE_DYNAMIC_MAP,
 			state,
@@ -1696,7 +1696,7 @@ class Panel {
 		);
 	}
 
-	doPopulate_Error(state, title = "") {
+	doPopulate_Error (state, title = "") {
 		this.set$ContentTab(
 			PANEL_TYP_ERROR,
 			state,
@@ -1706,7 +1706,7 @@ class Panel {
 		);
 	}
 
-	doPopulate_Blank(title = "") {
+	doPopulate_Blank (title = "") {
 		const meta = {};
 		this.set$ContentTab(
 			PANEL_TYP_BLANK,
@@ -1721,7 +1721,7 @@ class Panel {
 
 	// region Mass panel population
 
-	async pDoMassPopulate_Entities(evt) {
+	async pDoMassPopulate_Entities (evt) {
 		evt.stopPropagation();
 
 		const page = await InputUiUtil.pGetUserEnum({
@@ -1782,27 +1782,27 @@ class Panel {
 
 	// region Get neighbours
 
-	getTopNeighbours() {
+	getTopNeighbours () {
 		return [...new Array(this.width)]
 			.map((blank, i) => i + this.x).map(x => this.board.getPanel(x, this.y - 1))
 			.filter(p => p);
 	}
 
-	getRightNeighbours() {
+	getRightNeighbours () {
 		const rightmost = this.x + this.width;
 		return [...new Array(this.height)].map((blank, i) => i + this.y)
 			.map(y => this.board.getPanel(rightmost, y))
 			.filter(p => p);
 	}
 
-	getBottomNeighbours() {
+	getBottomNeighbours () {
 		const lowest = this.y + this.height;
 		return [...new Array(this.width)].map((blank, i) => i + this.x)
 			.map(x => this.board.getPanel(x, lowest))
 			.filter(p => p);
 	}
 
-	getLeftNeighbours() {
+	getLeftNeighbours () {
 		return [...new Array(this.height)].map((blank, i) => i + this.y)
 			.map(y => this.board.getPanel(this.x - 1, y))
 			.filter(p => p);
@@ -1812,19 +1812,19 @@ class Panel {
 
 	// region Location checkers
 
-	hasRowTop() {
+	hasRowTop () {
 		return this.y > 0;
 	}
 
-	hasColumnRight() {
+	hasColumnRight () {
 		return (this.x + this.width) < this.board.getWidth();
 	}
 
-	hasRowBottom() {
+	hasRowBottom () {
 		return (this.y + this.height) < this.board.getHeight();
 	}
 
-	hasColumnLeft() {
+	hasColumnLeft () {
 		return this.x > 0;
 	}
 
@@ -1832,22 +1832,22 @@ class Panel {
 
 	// region Available space checkers
 
-	hasSpaceTop() {
+	hasSpaceTop () {
 		const hasLockedNeighbourTop = this.getTopNeighbours().filter(p => p.getLocked()).length;
 		return this.hasRowTop() && !hasLockedNeighbourTop;
 	}
 
-	hasSpaceRight() {
+	hasSpaceRight () {
 		const hasLockedNeighbourRight = this.getRightNeighbours().filter(p => p.getLocked()).length;
 		return this.hasColumnRight() && !hasLockedNeighbourRight;
 	}
 
-	hasSpaceBottom() {
+	hasSpaceBottom () {
 		const hasLockedNeighbourBottom = this.getBottomNeighbours().filter(p => p.getLocked()).length;
 		return this.hasRowBottom() && !hasLockedNeighbourBottom;
 	}
 
-	hasSpaceLeft() {
+	hasSpaceLeft () {
 		const hasLockedNeighbourLeft = this.getLeftNeighbours().filter(p => p.getLocked()).length;
 		return this.hasColumnLeft() && !hasLockedNeighbourLeft;
 	}
@@ -1856,19 +1856,19 @@ class Panel {
 
 	// region Shrink checkers
 
-	canShrinkTop() {
+	canShrinkTop () {
 		return this.height > 1 && !this.getLocked();
 	}
 
-	canShrinkRight() {
+	canShrinkRight () {
 		return this.width > 1 && !this.getLocked();
 	}
 
-	canShrinkBottom() {
+	canShrinkBottom () {
 		return this.height > 1 && !this.getLocked();
 	}
 
-	canShrinkLeft() {
+	canShrinkLeft () {
 		return this.width > 1 && !this.getLocked();
 	}
 
@@ -1876,26 +1876,26 @@ class Panel {
 
 	// region Shrinkers
 
-	doShrinkTop() {
+	doShrinkTop () {
 		this.height -= 1;
 		this.y += 1;
 		this.setDirty(true);
 		this.render();
 	}
 
-	doShrinkRight() {
+	doShrinkRight () {
 		this.width -= 1;
 		this.setDirty(true);
 		this.render();
 	}
 
-	doShrinkBottom() {
+	doShrinkBottom () {
 		this.height -= 1;
 		this.setDirty(true);
 		this.render();
 	}
 
-	doShrinkLeft() {
+	doShrinkLeft () {
 		this.width -= 1;
 		this.x += 1;
 		this.setDirty(true);
@@ -1906,26 +1906,26 @@ class Panel {
 
 	// region Bump checkers
 
-	canBumpTop() {
+	canBumpTop () {
 		if (!this.hasRowTop()) return false; // if there's no row above, we can't bump up a row
 		if (!this.getTopNeighbours().filter(p => !p.getEmpty()).length) return true; // if there's a row above and it's empty, we can bump
 		// if there's a row above and it has non-empty panels, we can bump if they can all bump
 		return !this.getTopNeighbours().filter(p => !p.getEmpty()).filter(p => !p.canBumpTop()).length;
 	}
 
-	canBumpRight() {
+	canBumpRight () {
 		if (!this.hasColumnRight()) return false;
 		if (!this.getRightNeighbours().filter(p => !p.getEmpty()).length) return true;
 		return !this.getRightNeighbours().filter(p => !p.getEmpty()).filter(p => !p.canBumpRight()).length;
 	}
 
-	canBumpBottom() {
+	canBumpBottom () {
 		if (!this.hasRowBottom()) return false;
 		if (!this.getBottomNeighbours().filter(p => !p.getEmpty()).length) return true;
 		return !this.getBottomNeighbours().filter(p => !p.getEmpty()).filter(p => !p.canBumpBottom()).length;
 	}
 
-	canBumpLeft() {
+	canBumpLeft () {
 		if (!this.hasColumnLeft()) return false;
 		if (!this.getLeftNeighbours().filter(p => !p.getEmpty()).length) return true;
 		return !this.getLeftNeighbours().filter(p => !p.getEmpty()).filter(p => !p.canBumpLeft()).length;
@@ -1935,7 +1935,7 @@ class Panel {
 
 	// region Bumpers
 
-	doBumpTop() {
+	doBumpTop () {
 		this.getTopNeighbours().filter(p => p.getEmpty()).forEach(p => p.destroy());
 		this.getTopNeighbours().filter(p => !p.getEmpty()).forEach(p => p.doBumpTop());
 		this.y -= 1;
@@ -1943,7 +1943,7 @@ class Panel {
 		this.render();
 	}
 
-	doBumpRight() {
+	doBumpRight () {
 		this.getRightNeighbours().filter(p => p.getEmpty()).forEach(p => p.destroy());
 		this.getRightNeighbours().filter(p => !p.getEmpty()).forEach(p => p.doBumpRight());
 		this.x += 1;
@@ -1951,7 +1951,7 @@ class Panel {
 		this.render();
 	}
 
-	doBumpBottom() {
+	doBumpBottom () {
 		this.getBottomNeighbours().filter(p => p.getEmpty()).forEach(p => p.destroy());
 		this.getBottomNeighbours().filter(p => !p.getEmpty()).forEach(p => p.doBumpBottom());
 		this.y += 1;
@@ -1959,7 +1959,7 @@ class Panel {
 		this.render();
 	}
 
-	doBumpLeft() {
+	doBumpLeft () {
 		this.getLeftNeighbours().filter(p => p.getEmpty()).forEach(p => p.destroy());
 		this.getLeftNeighbours().filter(p => !p.getEmpty()).forEach(p => p.doBumpLeft());
 		this.x -= 1;
@@ -1969,7 +1969,7 @@ class Panel {
 
 	// endregion
 
-	getPanelMeta() {
+	getPanelMeta () {
 		return {
 			type: this.type,
 			contentMeta: this.contentMeta,
@@ -1982,52 +1982,52 @@ class Panel {
 		};
 	}
 
-	setPanelMeta(type, contentMeta) {
+	setPanelMeta (type, contentMeta) {
 		this.type = type;
 		this.contentMeta = contentMeta;
 	}
 
-	getEmpty() {
+	getEmpty () {
 		return this.$content == null;
 	}
 
-	getLocked() {
+	getLocked () {
 		return this.isLocked;
 	}
 
-	getMousedown() {
+	getMousedown () {
 		return this.isMousedown;
 	}
 
-	setMousedown(isMousedown) {
+	setMousedown (isMousedown) {
 		this.isMousedown = isMousedown;
 	}
 
-	setDirty(dirty) {
+	setDirty (dirty) {
 		this.isDirty = dirty;
 	}
 
-	setIsTabs(isTabs) {
+	setIsTabs (isTabs) {
 		this.isTabs = isTabs;
 		this.doRenderTabs();
 	}
 
-	setContentDirty(dirty) {
+	setContentDirty (dirty) {
 		this.setDirty.bind(this)(dirty);
 		this.isContentDirty = true;
 	}
 
-	doShowJoystick() {
+	doShowJoystick () {
 		this.joyMenu.doShow();
 		this.$pnl.addClass(`panel-mode-move`);
 	}
 
-	doHideJoystick() {
+	doHideJoystick () {
 		this.joyMenu.doHide();
 		this.$pnl.removeClass(`panel-mode-move`);
 	}
 
-	doRenderTitle() {
+	doRenderTitle () {
 		const displayText = this.title !== TITLE_LOADING
 			&& (this.type === PANEL_TYP_STATS || this.type === PANEL_TYP_CREATURE_SCALED_CR || this.type === PANEL_TYP_CREATURE_SCALED_SPELL_SUMMON || this.type === PANEL_TYP_CREATURE_SCALED_CLASS_SUMMON || this.type === PANEL_TYP_RULES || this.type === PANEL_TYP_ADVENTURES || this.type === PANEL_TYP_BOOKS) ? this.title : "";
 
@@ -2036,7 +2036,7 @@ class Panel {
 		else this.$pnlTitle.removeClass("hidden");
 	}
 
-	doRenderTabs() {
+	doRenderTabs () {
 		if (this.isTabs) {
 			this.$pnlWrpTabs.showVe();
 			this.$pnlWrpContent.addClass("panel-content-wrapper-tabs");
@@ -2048,7 +2048,7 @@ class Panel {
 		}
 	}
 
-	getReplacementPanel() {
+	getReplacementPanel () {
 		const replacement = new Panel(this.board, this.x, this.y, this.width, this.height);
 
 		if (this.tabDatas.length > 1 && this.tabDatas.filter(it => !it.isDeleted && (Panel.isNonExilableType(it.type))).length) {
@@ -2070,18 +2070,18 @@ class Panel {
 		return replacement;
 	}
 
-	toggleMovable(val) {
+	toggleMovable (val) {
 		this.$pnl.find(`.panel-control-move`).toggle(val);
 		// TODO this
 		this.$pnl.toggleClass(`panel-mode-move`, val);
 		this.$pnl.find(`.panel-control-bar`).toggleClass("move-expand-active", val);
 	}
 
-	isMovable() {
+	isMovable () {
 		this.$pnl.hasClass(`panel-mode-move`);
 	}
 
-	render() {
+	render () {
 		const doApplyPosCss = ($ele) => {
 			// indexed from 1 instead of zero...
 			return $ele.css({
@@ -2100,7 +2100,7 @@ class Panel {
 			else if (this.board.menu.getActiveTab().pDoTransitionActive) await this.board.menu.getActiveTab().pDoTransitionActive();
 		};
 
-		function doInitialRender() {
+		function doInitialRender () {
 			const $pnl = $(`<div data-panelId="${this.id}" class="dm-screen-panel min-w-0 min-h-0" empty="true"></div>`);
 			this.$pnl = $pnl;
 			const $ctrlBar = $(`<div class="panel-control-bar"></div>`).appendTo($pnl);
@@ -2188,7 +2188,7 @@ class Panel {
 		}
 	}
 
-	getPos() {
+	getPos () {
 		const offset = this.$pnl.offset();
 		return {
 			top: offset.top,
@@ -2198,7 +2198,7 @@ class Panel {
 		};
 	}
 
-	getAddButtonPos() {
+	getAddButtonPos () {
 		const offset = this.$btnAddInner.offset();
 		return {
 			top: offset.top,
@@ -2208,7 +2208,7 @@ class Panel {
 		};
 	}
 
-	doCloseTab(ixOpt) {
+	doCloseTab (ixOpt) {
 		if (this.isTabs) {
 			this.close$TabContent(ixOpt);
 		}
@@ -2225,11 +2225,11 @@ class Panel {
 		}
 	}
 
-	close$TabContent(ixOpt = 0) {
+	close$TabContent (ixOpt = 0) {
 		return this.set$Tab(-1 * (ixOpt + 1), PANEL_TYP_EMPTY, null, null, null, false);
 	}
 
-	set$Content(type, contentMeta, $content, title, tabCanRename, tabRenamed) {
+	set$Content (type, contentMeta, $content, title, tabCanRename, tabRenamed) {
 		this.type = type;
 		this.contentMeta = contentMeta;
 		this.$content = $content;
@@ -2253,7 +2253,7 @@ class Panel {
 		this.doRenderTabs();
 	}
 
-	setFromPeer(hisMeta, $hisContent, isMovable) {
+	setFromPeer (hisMeta, $hisContent, isMovable) {
 		this.isTabs = hisMeta.isTabs;
 		this.tabIndex = hisMeta.tabIndex;
 		this.tabDatas = hisMeta.tabDatas;
@@ -2274,11 +2274,11 @@ class Panel {
 		this.toggleMovable(isMovable);
 	}
 
-	getNextTabIndex() {
+	getNextTabIndex () {
 		return this.tabDatas.length;
 	}
 
-	set$TabLoading(type, contentMeta) {
+	set$TabLoading (type, contentMeta) {
 		return this.set$ContentTab(
 			type,
 			contentMeta,
@@ -2287,7 +2287,7 @@ class Panel {
 		);
 	}
 
-	_get$BtnSelTab(ix, title, tabCanRename) {
+	_get$BtnSelTab (ix, title, tabCanRename) {
 		title = title || "[Untitled]";
 
 		const doCloseTabWithConfirmation = async () => {
@@ -2326,11 +2326,11 @@ class Panel {
 		return $btnSelTab;
 	}
 
-	getTabTitle(ix) {
+	getTabTitle (ix) {
 		return (this.tabDatas[ix] || {}).title;
 	}
 
-	setTabTitle(ix, nuTitle) {
+	setTabTitle (ix, nuTitle) {
 		const tabData = this.tabDatas[ix];
 
 		tabData.$tabButton.find(`.content-tab-title`).text(nuTitle).title(nuTitle);
@@ -2345,13 +2345,13 @@ class Panel {
 		this.board.doSaveStateDebounced();
 	}
 
-	_doUpdatePanelTitleDisplay(nuTitle) {
+	_doUpdatePanelTitleDisplay (nuTitle) {
 		nuTitle = Renderer.stripTags(nuTitle);
 		this.$pnlTitle.text(nuTitle);
 		this.$pnl.attr("data-roll-name-ancestor-roller", nuTitle);
 	}
 
-	set$Tab(ix, type, contentMeta, $content, title, tabCanRename, tabRenamed) {
+	set$Tab (ix, type, contentMeta, $content, title, tabCanRename, tabRenamed) {
 		if (ix === null) ix = 0;
 		if (ix < 0) {
 			const ixPos = Math.abs(ix + 1);
@@ -2388,7 +2388,7 @@ class Panel {
 		return ix;
 	}
 
-	setActiveTab(ix) {
+	setActiveTab (ix) {
 		if (ix < 0) {
 			const handleNoTabs = () => {
 				this.isTabs = false;
@@ -2412,15 +2412,15 @@ class Panel {
 		this.board.doSaveStateDebounced();
 	}
 
-	get$ContentWrapper() {
+	get$ContentWrapper () {
 		return this.$pnlWrpContent;
 	}
 
-	get$Content() {
+	get$Content () {
 		return this.$content;
 	}
 
-	exile() {
+	exile () {
 		if (Panel.isNonExilableType(this.type)) this.destroy();
 		else {
 			if (this.$pnl) this.$pnl.detach();
@@ -2428,7 +2428,7 @@ class Panel {
 		}
 	}
 
-	destroy() {
+	destroy () {
 		// do cleanup
 		if (this.type === PANEL_TYP_ROLLBOX) Renderer.dice.unbindDmScreenPanel();
 
@@ -2442,15 +2442,15 @@ class Panel {
 		this.board.fireBoardEvent({ type: "panelDestroy" });
 	}
 
-	addHoverClass() {
+	addHoverClass () {
 		this.$pnl.addClass("faux-hover");
 	}
 
-	removeHoverClass() {
+	removeHoverClass () {
 		this.$pnl.removeClass("faux-hover");
 	}
 
-	getSaveableState() {
+	getSaveableState () {
 		const out = {
 			x: this.x,
 			y: this.y,
@@ -2630,7 +2630,7 @@ class Panel {
 		return out;
 	}
 
-	fireBoardEvent(boardEvt) {
+	fireBoardEvent (boardEvt) {
 		if (!this.$content) return;
 
 		const fnHandleBoardEvent = $(this.$content.children()[0]).data("onBoardEvent");
@@ -2641,14 +2641,14 @@ class Panel {
 }
 
 class JoystickMenu {
-	constructor(board, panel) {
+	constructor (board, panel) {
 		this.board = board;
 		this.panel = panel;
 
 		this.$ctrls = null;
 	}
 
-	initialise() {
+	initialise () {
 		this.panel.$pnl.on("mouseover", () => this.panel.board.setHoveringPanel(this.panel));
 		this.panel.$pnl.on("mouseout", () => this.panel.board.setHoveringPanel(null));
 
@@ -2721,7 +2721,7 @@ class JoystickMenu {
 			});
 		});
 
-		function xpandHandler(dir, evt) {
+		function xpandHandler (dir, evt) {
 			evt.preventDefault();
 			MiscUtil.clearSelection();
 			$(`body`).css("userSelect", "none");
@@ -2946,17 +2946,17 @@ class JoystickMenu {
 			.append($ctrlBtnDone);
 	}
 
-	doShow() {
+	doShow () {
 		this.$ctrls.forEach($c => $c.show());
 	}
 
-	doHide() {
+	doHide () {
 		this.$ctrls.forEach($c => $c.hide());
 	}
 }
 
 class AddMenu {
-	constructor() {
+	constructor () {
 		this.tabs = [];
 
 		this._$menuInner = null;
@@ -2967,17 +2967,17 @@ class AddMenu {
 		this._doClose = null;
 	}
 
-	addTab(tab) {
+	addTab (tab) {
 		tab.setMenu(this);
 		this.tabs.push(tab);
 		return this;
 	}
 
-	getTab({ label }) {
+	getTab ({ label }) {
 		return this.tabs.find(it => it.label === label);
 	}
 
-	async pSetActiveTab(tab) {
+	async pSetActiveTab (tab) {
 		$(document.activeElement).blur();
 
 		this._$menuInner.find(`.panel-addmenu-tab-head`).attr(`active`, false);
@@ -2989,20 +2989,20 @@ class AddMenu {
 		if (tab.pDoTransitionActive) await tab.pDoTransitionActive();
 	}
 
-	hasActiveTab() {
+	hasActiveTab () {
 		return this.activeTab !== null;
 	}
 
-	getActiveTab() {
+	getActiveTab () {
 		return this.activeTab;
 	}
 
-	async pSetFirstTabActive() {
+	async pSetFirstTabActive () {
 		const t = this.tabs[0];
 		await this.pSetActiveTab(t);
 	}
 
-	async pRender() {
+	async pRender () {
 		if (this._$menuInner) return;
 
 		this._$menuInner = $(`<div class="ve-flex-col w-100 h-100">`);
@@ -3022,15 +3022,15 @@ class AddMenu {
 			});
 	}
 
-	setPanel(pnl) {
+	setPanel (pnl) {
 		this.pnl = pnl;
 	}
 
-	doClose() {
+	doClose () {
 		if (this._doClose) this._doClose();
 	}
 
-	doOpen() {
+	doOpen () {
 		const { $modalInner, doClose } = UiUtil.getShowModal({
 			cbClose: () => {
 				this._$menuInner.detach();
@@ -3048,7 +3048,7 @@ class AddMenu {
 }
 
 class AddMenuTab {
-	constructor({ board, label }) {
+	constructor ({ board, label }) {
 		this._board = board;
 		this.label = label;
 
@@ -3056,26 +3056,26 @@ class AddMenuTab {
 		this.menu = null;
 	}
 
-	get$Tab() {
+	get$Tab () {
 		return this.$tab;
 	}
 
-	genTabId(type) {
+	genTabId (type) {
 		return `tab-${type}-${this.label.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "_")}`;
 	}
 
-	setMenu(menu) {
+	setMenu (menu) {
 		this.menu = menu;
 	}
 }
 
 class AddMenuVideoTab extends AddMenuTab {
-	constructor({ ...opts }) {
+	constructor ({ ...opts }) {
 		super({ ...opts, label: "Embed" });
 		this.tabId = this.genTabId("tube");
 	}
 
-	async pRender() {
+	async pRender () {
 		if (!this.$tab) {
 			const $tab = $(`<div class="ui-search__wrp-output underline-tabs" id="${this.tabId}"></div>`);
 
@@ -3171,12 +3171,12 @@ class AddMenuVideoTab extends AddMenuTab {
 }
 
 class AddMenuImageTab extends AddMenuTab {
-	constructor({ ...opts }) {
+	constructor ({ ...opts }) {
 		super({ ...opts, label: "Image" });
 		this.tabId = this.genTabId("image");
 	}
 
-	async pRender() {
+	async pRender () {
 		if (!this.$tab) {
 			const $tab = $(`<div class="ui-search__wrp-output underline-tabs" id="${this.tabId}"></div>`);
 
@@ -3273,12 +3273,12 @@ class AddMenuImageTab extends AddMenuTab {
 }
 
 class AddMenuSpecialTab extends AddMenuTab {
-	constructor({ ...opts }) {
+	constructor ({ ...opts }) {
 		super({ ...opts, label: "Special" });
 		this.tabId = this.genTabId("special");
 	}
 
-	async pRender() {
+	async pRender () {
 		if (!this.$tab) {
 			const $tab = $(`<div class="ui-search__wrp-output underline-tabs ve-overflow-y-auto pr-1" id="${this.tabId}"></div>`);
 
@@ -3412,7 +3412,7 @@ class AddMenuSpecialTab extends AddMenuTab {
 }
 
 class AddMenuSearchTab extends AddMenuTab {
-	static _getTitle(subType) {
+	static _getTitle (subType) {
 		switch (subType) {
 			case "content": return "Content";
 			case "rule": return "Rules";
@@ -3428,7 +3428,7 @@ class AddMenuSearchTab extends AddMenuTab {
 	 * @param {?object} adventureOrBookIdToSource
 	 * @param opts
 	 */
-	constructor({ indexes, subType = "content", adventureOrBookIdToSource = null, ...opts }) {
+	constructor ({ indexes, subType = "content", adventureOrBookIdToSource = null, ...opts }) {
 		super({ ...opts, label: AddMenuSearchTab._getTitle(subType) });
 		this.tabId = this.genTabId(subType);
 		this.indexes = indexes;
@@ -3444,7 +3444,7 @@ class AddMenuSearchTab extends AddMenuTab {
 		this._$ptrRows = null;
 	}
 
-	_getSearchOptions() {
+	_getSearchOptions () {
 		switch (this.subType) {
 			case "content": return {
 				fields: {
@@ -3475,7 +3475,7 @@ class AddMenuSearchTab extends AddMenuTab {
 		}
 	}
 
-	_$getRow(r) {
+	_$getRow (r) {
 		switch (this.subType) {
 			case "content": return $(`
 				<div class="ui-search__row" tabindex="0">
@@ -3500,7 +3500,7 @@ class AddMenuSearchTab extends AddMenuTab {
 		}
 	}
 
-	_getAllTitle() {
+	_getAllTitle () {
 		switch (this.subType) {
 			case "content": return "All Categories";
 			case "rule": return "All Categories";
@@ -3510,7 +3510,7 @@ class AddMenuSearchTab extends AddMenuTab {
 		}
 	}
 
-	_getCatOptionText(key) {
+	_getCatOptionText (key) {
 		switch (this.subType) {
 			case "content": return key;
 			case "rule": return key;
@@ -3523,7 +3523,7 @@ class AddMenuSearchTab extends AddMenuTab {
 		}
 	}
 
-	async pRender() {
+	async pRender () {
 		const flags = {
 			doClickFirst: false,
 			isWait: false,
@@ -3650,14 +3650,14 @@ class AddMenuSearchTab extends AddMenuTab {
 		}
 	}
 
-	async pDoTransitionActive() {
+	async pDoTransitionActive () {
 		this.$srch.val("").focus();
 		if (this._pDoSearch) await this._pDoSearch();
 	}
 }
 
 class RuleLoader {
-	static async pFill(book) {
+	static async pFill (book) {
 		const $$$ = RuleLoader.cache;
 		if ($$$[book]) return $$$[book];
 
@@ -3674,14 +3674,14 @@ class RuleLoader {
 		});
 	}
 
-	static getFromCache(book, chapter, header) {
+	static getFromCache (book, chapter, header) {
 		return RuleLoader.cache[book][chapter][header];
 	}
 }
 RuleLoader.cache = {};
 
 class AdventureOrBookLoader {
-	constructor(type) {
+	constructor (type) {
 		this._type = type;
 		this._cache = {};
 		this._pLoadings = {};
@@ -3690,13 +3690,13 @@ class AdventureOrBookLoader {
 		this._indexOfficial = null;
 	}
 
-	async pInit() {
+	async pInit () {
 		const indexPath = this._getIndexPath();
 		this._indexOfficial = await DataUtil.loadJSON(indexPath);
 		this._indexOfficial[this._type].forEach(meta => this._availableOfficial.add(meta.id.toLowerCase()));
 	}
 
-	_getIndexPath() {
+	_getIndexPath () {
 		switch (this._type) {
 			case "adventure": return `${Renderer.get().baseUrl}data/adventures.json`;
 			case "book": return `${Renderer.get().baseUrl}data/books.json`;
@@ -3704,7 +3704,7 @@ class AdventureOrBookLoader {
 		}
 	}
 
-	_getJsonPath(bookOrAdventure) {
+	_getJsonPath (bookOrAdventure) {
 		switch (this._type) {
 			case "adventure": return `${Renderer.get().baseUrl}data/adventure/adventure-${bookOrAdventure.toLowerCase()}.json`;
 			case "book": return `${Renderer.get().baseUrl}data/book/book-${bookOrAdventure.toLowerCase()}.json`;
@@ -3712,15 +3712,15 @@ class AdventureOrBookLoader {
 		}
 	}
 
-	async _pGetPrereleaseData({ advBookId, prop }) {
+	async _pGetPrereleaseData ({ advBookId, prop }) {
 		return this._pGetPrereleaseBrewData({ advBookId, prop, brewUtil: PrereleaseUtil });
 	}
 
-	async _pGetBrewData({ advBookId, prop }) {
+	async _pGetBrewData ({ advBookId, prop }) {
 		return this._pGetPrereleaseBrewData({ advBookId, prop, brewUtil: BrewUtil2 });
 	}
 
-	async _pGetPrereleaseBrewData({ advBookId, prop, brewUtil }) {
+	async _pGetPrereleaseBrewData ({ advBookId, prop, brewUtil }) {
 		const searchFor = advBookId.toLowerCase();
 		const brew = await brewUtil.pGetBrewProcessed();
 		switch (this._type) {
@@ -3732,7 +3732,7 @@ class AdventureOrBookLoader {
 		}
 	}
 
-	async pFill(advBookId) {
+	async pFill (advBookId) {
 		if (!this._pLoadings[advBookId]) {
 			this._pLoadings[advBookId] = (async () => {
 				this._cache[advBookId] = {};
@@ -3754,7 +3754,7 @@ class AdventureOrBookLoader {
 		await this._pLoadings[advBookId];
 	}
 
-	getFromCache(adventure, chapter, { isAllowMissing = false } = {}) {
+	getFromCache (adventure, chapter, { isAllowMissing = false } = {}) {
 		const outHead = this._cache?.[adventure]?.head;
 		const outBody = this._cache?.[adventure]?.chapters?.[chapter];
 		if (outHead && outBody) return { chapter: outBody, head: outHead };
@@ -3770,14 +3770,14 @@ AdventureOrBookLoader._NOT_FOUND = {
 	],
 };
 
-class AdventureLoader extends AdventureOrBookLoader { constructor() { super("adventure"); } }
-class BookLoader extends AdventureOrBookLoader { constructor() { super("book"); } }
+class AdventureLoader extends AdventureOrBookLoader { constructor () { super("adventure"); } }
+class BookLoader extends AdventureOrBookLoader { constructor () { super("book"); } }
 
 const adventureLoader = new AdventureLoader();
 const bookLoader = new BookLoader();
 
 class NoteBox {
-	static make$Notebox(board, content) {
+	static make$Notebox (board, content) {
 		const $iptText = $(`<textarea class="panel-content-textarea" placeholder="Supports inline rolls and content tags (CTRL-q with the caret in the text to activate the embed):\n • Inline rolls,  [[1d20+2]]\n • Content tags (as per the Demo page), {@creature goblin}, {@spell fireball}\n • Link tags, {@link https://5e.tools}">${content || ""}</textarea>`)
 			.on("keydown", async evt => {
 				const key = EventUtil.getKeyIgnoreCapsLock(evt);
@@ -3869,7 +3869,7 @@ class NoteBox {
 }
 
 class UnitConverter {
-	static make$Converter(board, state) {
+	static make$Converter (board, state) {
 		const units = [
 			new UnitConverterUnit("Inches", "2.54", "Centimetres", "0.394"),
 			new UnitConverterUnit("Feet", "0.305", "Metres", "3.28"),
@@ -3975,7 +3975,7 @@ class UnitConverter {
 }
 
 class UnitConverterUnit {
-	constructor(n1, x1, n2, x2) {
+	constructor (n1, x1, n2, x2) {
 		this.n1 = n1;
 		this.x1 = x1;
 		this.n2 = n2;
@@ -3984,7 +3984,7 @@ class UnitConverterUnit {
 }
 
 class AdventureOrBookView {
-	constructor(prop, panel, loader, tabIx, contentMeta) {
+	constructor (prop, panel, loader, tabIx, contentMeta) {
 		this._prop = prop;
 		this._panel = panel;
 		this._loader = loader;
@@ -3997,7 +3997,7 @@ class AdventureOrBookView {
 		this._$titleNext = null;
 	}
 
-	$getEle() {
+	$getEle () {
 		this._$titlePrev = $(`<div class="dm-book__controls-title ve-overflow-ellipsis ve-text-right"></div>`);
 		this._$titleNext = $(`<div class="dm-book__controls-title ve-overflow-ellipsis"></div>`);
 
@@ -4022,7 +4022,7 @@ class AdventureOrBookView {
 		return $wrp;
 	}
 
-	_handleButtonClick(direction) {
+	_handleButtonClick (direction) {
 		this._contentMeta.c += direction;
 		const hasRenderedData = this._render({ isSkipMissingData: true });
 		if (!hasRenderedData) this._contentMeta.c -= direction;
@@ -4032,7 +4032,7 @@ class AdventureOrBookView {
 		}
 	}
 
-	_getData(chapter, { isAllowMissing = false } = {}) {
+	_getData (chapter, { isAllowMissing = false } = {}) {
 		return this._loader.getFromCache(this._contentMeta[this._prop], chapter, { isAllowMissing });
 	}
 
@@ -4041,7 +4041,7 @@ class AdventureOrBookView {
 		"b": UrlUtil.PG_BOOK,
 	};
 
-	_render({ isSkipMissingData = false } = {}) {
+	_render ({ isSkipMissingData = false } = {}) {
 		const hasData = !!this._getData(this._contentMeta.c, { isAllowMissing: true });
 		if (!hasData && isSkipMissingData) return false;
 

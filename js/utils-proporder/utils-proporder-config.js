@@ -65,7 +65,6 @@ const PROPORDER_FOUNDRY_GENERIC_FEATURE = [
 
 	"isIgnored",
 
-
 	"entries",
 
 	new ObjectKey("entryData", {
@@ -92,7 +91,6 @@ const PROPORDER_MONSTER = [
 	"source",
 	"sourceSub",
 	"page",
-
 
 	"basicRules",
 	"freeRules2024",

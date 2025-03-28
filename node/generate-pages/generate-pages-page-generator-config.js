@@ -1,9 +1,9 @@
-import {PAGE_GENERATORS_LISTPAGE} from "./generate-pages-page-generator-config-list.js";
-import {PAGE_GENERATORS_REDIRECT} from "./generate-pages-page-generator-config-redirect.js";
-import {PAGE_GENERATORS_ADVENTURE_BOOK} from "./generate-pages-page-generator-config-advbook.js";
-import {PageGeneratorGeneric} from "./generate-pages-page-generator.js";
-import {PAGE_GENERATORS_TABLEPAGE} from "./generate-pages-page-generator-config-tablepage.js";
-import {PAGE_GENERATORS_MANAGER} from "./generate-pages-page-generator-config-manager.js";
+import { PAGE_GENERATORS_LISTPAGE } from "./generate-pages-page-generator-config-list.js";
+import { PAGE_GENERATORS_REDIRECT } from "./generate-pages-page-generator-config-redirect.js";
+import { PAGE_GENERATORS_ADVENTURE_BOOK } from "./generate-pages-page-generator-config-advbook.js";
+import { PageGeneratorGeneric } from "./generate-pages-page-generator.js";
+import { PAGE_GENERATORS_TABLEPAGE } from "./generate-pages-page-generator-config-tablepage.js";
+import { PAGE_GENERATORS_MANAGER } from "./generate-pages-page-generator-config-manager.js";
 
 class _PageGeneratorMaps extends PageGeneratorGeneric {
 	_filename = "page/template-page-maps.hbs";
@@ -133,7 +133,7 @@ class _PageGeneratorIndex extends PageGeneratorGeneric {
 	_page = "index.html";
 	_pageDescription = "A suite of tools for 5th Edition Dungeons & Dragons players and Dungeon Masters.";
 
-	_navbarTitleHtml = `5e<span>tools</span>`;
+	_navbarTitleHtml = `2e<span>tools</span>`;
 	_navbarDescription = "A suite of tools for 5th Edition Dungeons & Dragons players and Dungeon Masters.";
 	_navbarPageTitleStyleAdditional = "page__title--home";
 
@@ -401,7 +401,7 @@ class _PageGeneratorStatgen extends PageGeneratorGeneric {
 	];
 }
 
-export const PAGE_GENERATORS = 	[
+export const PAGE_GENERATORS = [
 	...PAGE_GENERATORS_LISTPAGE,
 	...PAGE_GENERATORS_REDIRECT,
 	...PAGE_GENERATORS_ADVENTURE_BOOK,

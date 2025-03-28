@@ -4,7 +4,7 @@ import { VetoolsConfig } from "../utils-config/utils-config-config.js";
 import { SITE_STYLE__CLASSIC } from "../consts.js";
 
 export class StatGenUiCompAsi extends BaseComponent {
-	constructor({ parent }) {
+	constructor ({ parent }) {
 		super();
 		this._parent = parent;
 
@@ -16,9 +16,9 @@ export class StatGenUiCompAsi extends BaseComponent {
 	/**
 	 * Add this to UI interactions rather than state hooks, as there is a copy of this component per tab.
 	 */
-	_doPulse_() { this._parent.state.common_pulseAsi = !this._parent.state.common_pulseAsi; }
+	_doPulse_ () { this._parent.state.common_pulseAsi = !this._parent.state.common_pulseAsi; }
 
-	_render_renderAsiFeatSection(propCnt, namespace, $wrpRows) {
+	_render_renderAsiFeatSection (propCnt, namespace, $wrpRows) {
 		const hk = () => {
 			let ix = 0;
 
@@ -163,7 +163,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 		hk();
 	}
 
-	_render_renderAdditionalFeatSection({ namespace, $wrpRows, propEntity }) {
+	_render_renderAdditionalFeatSection ({ namespace, $wrpRows, propEntity }) {
 		const fnsCleanupEnt = [];
 		const fnsCleanupGroup = [];
 
@@ -278,7 +278,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 	 * @param {?string} category Category feat is to be chosen from, e.g. `O` ("Origin").
 	 * @private
 	 */
-	_render_getMetaFeat({ featStatic = null, propIxFeat = null, propIxFeatAbility, propFeatAbilityChooseFrom, category = null }) {
+	_render_getMetaFeat ({ featStatic = null, propIxFeat = null, propIxFeatAbility, propFeatAbilityChooseFrom, category = null }) {
 		if (featStatic && propIxFeat) throw new Error(`Cannot combine static feat and feat property!`);
 		if (featStatic == null && propIxFeat == null) throw new Error(`Either a static feat or a feat property must be specified!`);
 
@@ -439,7 +439,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 		return { $btnChooseFeat, $stgFeat, hkIxFeat, cleanup };
 	}
 
-	render($wrpAsi) {
+	render ($wrpAsi) {
 		const $wrpRowsAsi = $(`<div class="ve-flex-col w-100 ve-overflow-y-auto"></div>`);
 		const $wrpRowsRace = $(`<div class="ve-flex-col w-100 ve-overflow-y-auto"></div>`);
 		const $wrpRowsBackground = $(`<div class="ve-flex-col w-100 ve-overflow-y-auto"></div>`);
@@ -492,7 +492,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 		`;
 	}
 
-	_render_$getStageCntAsi() {
+	_render_$getStageCntAsi () {
 		if (!this._parent.isCharacterMode) {
 			const $iptCountAsi = ComponentUiUtil.$getIptInt(this._parent, "common_cntAsi", 0, { min: 0, max: 20 })
 				.addClass("w-100p ve-text-center");
@@ -506,7 +506,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 		return $out;
 	}
 
-	_getFormData_getForNamespace_basic(outs, outIsFormCompletes, outFeats, propCnt, namespace) {
+	_getFormData_getForNamespace_basic (outs, outIsFormCompletes, outFeats, propCnt, namespace) {
 		for (let i = 0; i < this._parent.state[propCnt]; ++i) {
 			const { propMode, propIxFeat, propIxAsiPointOne, propIxAsiPointTwo, propIxFeatAbility, propFeatAbilityChooseFrom } = this._parent.getPropsAsi(i, namespace);
 
@@ -542,7 +542,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 		}
 	}
 
-	_getFormData_getForNamespace_additional(outs, outIsFormCompletes, outFeats, namespace) {
+	_getFormData_getForNamespace_additional (outs, outIsFormCompletes, outFeats, namespace) {
 		const ent = this._parent[namespace]; // e.g. `this._parent.race`
 		if (!ent?.feats?.length) return;
 
@@ -607,7 +607,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 		});
 	}
 
-	_getFormData_doAddFeatMeta({ namespace, outFeats, propIxFeat = null, featStatic = null, propIxFeatAbility, propFeatAbilityChooseFrom, featsAdditionType }) {
+	_getFormData_doAddFeatMeta ({ namespace, outFeats, propIxFeat = null, featStatic = null, propIxFeatAbility, propFeatAbilityChooseFrom, featsAdditionType }) {
 		if (featStatic && propIxFeat) throw new Error(`Cannot combine static feat and feat property!`);
 		if (featStatic == null && propIxFeat == null) throw new Error(`Either a static feat or a feat property must be specified!`);
 
@@ -649,7 +649,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 		return { isFormComplete, out };
 	}
 
-	getFormData() {
+	getFormData () {
 		const outs = [];
 		const isFormCompletes = [];
 		const feats = { ability: [], race: [], background: [], custom: [] };

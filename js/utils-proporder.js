@@ -2,7 +2,7 @@ import { ArrayKey, IgnoredKey, ObjectKey } from "./utils-proporder/utils-propord
 import { PROPORDER_PROP_TO_LIST, PROPORDER_ROOT } from "./utils-proporder/utils-proporder-config.js";
 
 export class PropOrder {
-	static _getKeyProp(keyInfo) {
+	static _getKeyProp (keyInfo) {
 		return typeof keyInfo === "string" ? keyInfo : keyInfo.key;
 	}
 
@@ -15,13 +15,13 @@ export class PropOrder {
 	 * @param [opts.isFoundryPrefixProps] If root keys should be treated as having a "foundry" prefix.
 	 * @param [opts.isNoSortRootArrays] If root arrays should not be sorted.
 	 */
-	static getOrderedRoot(obj, opts) {
+	static getOrderedRoot (obj, opts) {
 		opts ||= {};
 
 		return this._getOrdered(obj, PROPORDER_ROOT, opts, "root");
 	}
 
-	static hasOrderRoot(obj) {
+	static hasOrderRoot (obj) {
 		return PROPORDER_ROOT
 			.filter(keyInfo => !(keyInfo instanceof IgnoredKey))
 			.some(keyInfo => obj[this._getKeyProp(keyInfo)] != null);
@@ -35,7 +35,7 @@ export class PropOrder {
 	 * @param [opts] Options object.
 	 * @param [opts.fnUnhandledKey] Function to call on each unhandled key.
 	 */
-	static getOrdered(obj, dataProp, opts) {
+	static getOrdered (obj, dataProp, opts) {
 		opts ||= {};
 
 		const order = PROPORDER_PROP_TO_LIST[dataProp];
@@ -44,7 +44,7 @@ export class PropOrder {
 		return this._getOrdered(obj, order, opts, dataProp);
 	}
 
-	static _getModifiedProp({ keyInfo, isFoundryPrefixProps }) {
+	static _getModifiedProp ({ keyInfo, isFoundryPrefixProps }) {
 		const prop = this._getKeyProp(keyInfo);
 
 		if (!isFoundryPrefixProps || prop.startsWith("_")) return prop;
@@ -52,7 +52,7 @@ export class PropOrder {
 		return prop.replace(/^foundry/, "").lowercaseFirst();
 	}
 
-	static _getOrdered(obj, order, opts, logPath) {
+	static _getOrdered (obj, order, opts, logPath) {
 		const out = {};
 		const keySet = new Set(Object.keys(obj));
 		const seenKeys = new Set();
@@ -123,5 +123,5 @@ export class PropOrder {
 		return out;
 	}
 
-	static hasOrder(dataProp) { return !!PROPORDER_PROP_TO_LIST[dataProp]; }
+	static hasOrder (dataProp) { return !!PROPORDER_PROP_TO_LIST[dataProp]; }
 }

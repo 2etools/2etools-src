@@ -1,7 +1,7 @@
 "use strict";
 
 class MakeCards extends BaseComponent {
-	static async pInit() {
+	static async pInit () {
 		await Promise.all([
 			PrereleaseUtil.pInit(),
 			BrewUtil2.pInit(),
@@ -15,7 +15,7 @@ class MakeCards extends BaseComponent {
 		window.dispatchEvent(new Event("toolsLoaded"));
 	}
 
-	constructor() {
+	constructor () {
 		super();
 
 		this._list = null;
@@ -31,7 +31,7 @@ class MakeCards extends BaseComponent {
 		this._doSaveStateDebounced = MiscUtil.debounce(() => this._pDoSaveState(), 50);
 	}
 
-	async pInit() {
+	async pInit () {
 		await SearchUiUtil.pDoGlobalInit();
 		// Do this asynchronously, to avoid blocking the load
 		SearchWidget.pDoGlobalInit();
@@ -39,14 +39,14 @@ class MakeCards extends BaseComponent {
 		this.render();
 	}
 
-	render() {
+	render () {
 		this._addHookAll("state", () => this._doSaveStateDebounced());
 
 		this._render_configSection();
 		this._render_cardList();
 	}
 
-	_render_configSection() {
+	_render_configSection () {
 		const $wrpConfig = $(`#wrp_config`).empty();
 
 		const $btnResetDefaults = $(`<button class="ve-btn ve-btn-default ve-btn-xs">Reset</button>`)
@@ -94,7 +94,7 @@ class MakeCards extends BaseComponent {
 		Object.keys(MakeCards._AVAILABLE_TYPES).forEach(it => $getColorIconConfigRow(it).appendTo($wrpConfig));
 	}
 
-	_render_cardList() {
+	_render_cardList () {
 		const $wrpContainer = $(`#wrp_main`).empty();
 
 		// region Search bar/add button
@@ -201,7 +201,7 @@ class MakeCards extends BaseComponent {
 		// endregion
 	}
 
-	_render_getContextMenuOptions() {
+	_render_getContextMenuOptions () {
 		return [
 			...this._render_getContextMenuOptionsSearch(),
 			null,
@@ -211,7 +211,7 @@ class MakeCards extends BaseComponent {
 		];
 	}
 
-	_render_getContextMenuOptionsSearch() {
+	_render_getContextMenuOptionsSearch () {
 		return Object.entries(MakeCards._AVAILABLE_TYPES).map(([entityType, it]) => new ContextUtil.Action(
 			`Search for ${it.searchTitle}`,
 			async () => {
@@ -233,7 +233,7 @@ class MakeCards extends BaseComponent {
 		));
 	}
 
-	_render_getContextMenuOptionsFilter() {
+	_render_getContextMenuOptionsFilter () {
 		return Object.entries(MakeCards._AVAILABLE_TYPES).map(([entityType, type]) => new ContextUtil.Action(
 			`Filter for ${type.searchTitle}`,
 			async () => {
@@ -265,7 +265,7 @@ class MakeCards extends BaseComponent {
 		));
 	}
 
-	_render_getContextMenuOptionsSublist() {
+	_render_getContextMenuOptionsSublist () {
 		return Object.entries(MakeCards._AVAILABLE_TYPES).map(([entityType, type]) => new ContextUtil.Action(
 			`Load from ${type.pageTitle}${type.isPageTitleSkipSuffix ? "" : " Page"} Pinned List`,
 			async () => {
@@ -288,7 +288,7 @@ class MakeCards extends BaseComponent {
 		));
 	}
 
-	_getStateForType(entityType) {
+	_getStateForType (entityType) {
 		const kColor = `color_${entityType}`;
 		const kIcon = `icon_${entityType}`;
 		const color = this._state[kColor];
@@ -296,7 +296,7 @@ class MakeCards extends BaseComponent {
 		return { color, icon };
 	}
 
-	async _pGetListItem(cardMeta, isNewCard) {
+	async _pGetListItem (cardMeta, isNewCard) {
 		const uid = CryptUtil.uid();
 
 		if (isNewCard) {
@@ -415,21 +415,21 @@ class MakeCards extends BaseComponent {
 	}
 
 	// region contents
-	static _ct_subtitle(val) { return `subtitle | ${val}`; }
-	static _ct_rule() { return `rule`; }
-	static _ct_property(title, val) { return `property | ${title} | ${val}`; }
-	static _ct_fill(size) { return `fill ${size}`; }
-	static _ct_text(val) { return `text | ${val}`; }
-	static _ct_section(val) { return `section | ${val}`; }
-	static _ct_description(title, val) { return `description | ${title} | ${val}`; }
-	static _ct_bullet(val) { return `bullet | ${val}`; }
-	static _ct_boxes(count, size = 1.2) { return `boxes | ${count} | ${size}`; }
-	static _ct_dndstats(...attrs) { return `dndstats | ${attrs.join(" | ")}`; }
+	static _ct_subtitle (val) { return `subtitle | ${val}`; }
+	static _ct_rule () { return `rule`; }
+	static _ct_property (title, val) { return `property | ${title} | ${val}`; }
+	static _ct_fill (size) { return `fill ${size}`; }
+	static _ct_text (val) { return `text | ${val}`; }
+	static _ct_section (val) { return `section | ${val}`; }
+	static _ct_description (title, val) { return `description | ${title} | ${val}`; }
+	static _ct_bullet (val) { return `bullet | ${val}`; }
+	static _ct_boxes (count, size = 1.2) { return `boxes | ${count} | ${size}`; }
+	static _ct_dndstats (...attrs) { return `dndstats | ${attrs.join(" | ")}`; }
 
-	static _ct_htmlToText(html) {
+	static _ct_htmlToText (html) {
 		return $(`<div>${html}</div>`).text().trim();
 	}
-	static _ct_renderEntries(entries, depth = 0) {
+	static _ct_renderEntries (entries, depth = 0) {
 		if (!entries || !entries.length) return [];
 
 		return entries.map(ent => {
@@ -438,7 +438,7 @@ class MakeCards extends BaseComponent {
 		}).flat();
 	}
 
-	static _getCardContents_creature(mon) {
+	static _getCardContents_creature (mon) {
 		const renderer = RendererCard.get();
 
 		const {
@@ -487,7 +487,7 @@ class MakeCards extends BaseComponent {
 		].filter(Boolean);
 	}
 
-	static _getCardContents_spell(sp) {
+	static _getCardContents_spell (sp) {
 		const higherLevel = sp.entriesHigherLevel ? (() => {
 			const ents = sp.entriesHigherLevel.length === 1 && sp.entriesHigherLevel[0].name && sp.entriesHigherLevel[0].name.toLowerCase() === "at higher levels"
 				? sp.entriesHigherLevel[0].entries
@@ -512,7 +512,7 @@ class MakeCards extends BaseComponent {
 		].filter(Boolean);
 	}
 
-	static _getCardContents_item(item) {
+	static _getCardContents_item (item) {
 		MakeCards.utils.enhanceItemAlt(item);
 
 		const [typeRarityText, subTypeText, tierText] = Renderer.item.getTypeRarityAndAttunementText(item);
@@ -547,7 +547,7 @@ class MakeCards extends BaseComponent {
 		].filter(Boolean);
 	}
 
-	static _getCardContents_race(race) {
+	static _getCardContents_race (race) {
 		return [
 			this._ct_property("Ability Scores", Renderer.getAbilityData(race.ability).asText),
 			this._ct_property("Size", (race.size || [Parser.SZ_VARIES]).map(sz => Parser.sizeAbvToFull(sz)).join("/")),
@@ -557,13 +557,13 @@ class MakeCards extends BaseComponent {
 		].filter(Boolean);
 	}
 
-	static _getCardContents_background(bg) {
+	static _getCardContents_background (bg) {
 		return [
 			...this._ct_renderEntries(bg.entries, 2),
 		].filter(Boolean);
 	}
 
-	static _getCardContents_feat(feat) {
+	static _getCardContents_feat (feat) {
 		const prerequisite = Renderer.feat.getJoinedCategoryPrerequisites(
 			feat.category,
 			Renderer.utils.prerequisite.getHtml(feat.prerequisite, { isListMode: true }),
@@ -578,7 +578,7 @@ class MakeCards extends BaseComponent {
 		].filter(Boolean);
 	}
 
-	static _getCardContents_optionalfeature(optfeat) {
+	static _getCardContents_optionalfeature (optfeat) {
 		const prerequisite = Renderer.utils.prerequisite.getHtml(optfeat.prerequisite, { isListMode: true });
 		Renderer.feat.initFullEntries(optfeat);
 		return [
@@ -589,7 +589,7 @@ class MakeCards extends BaseComponent {
 	}
 	// endregion
 
-	static _getIconPath(iconName) {
+	static _getIconPath (iconName) {
 		const classIconNames = [
 			"class-barbarian",
 			"class-bard",
@@ -623,7 +623,7 @@ class MakeCards extends BaseComponent {
 		return `https://rpg-cards.vercel.app/icons/${iconName}.svg`;
 	}
 
-	static _pGetUserIcon(initialVal) {
+	static _pGetUserIcon (initialVal) {
 		return new Promise(resolve => {
 			const $iptStr = $(`<input class="form-control mb-2">`)
 				.keydown(async evt => {
@@ -665,17 +665,17 @@ class MakeCards extends BaseComponent {
 	}
 
 	// region persistence
-	async _pDoSaveState() {
+	async _pDoSaveState () {
 		const toSave = this.getSaveableState();
 		await StorageUtil.pSetForPage(MakeCards._STORAGE_KEY, toSave);
 	}
 
-	async _pDoLoadState() {
+	async _pDoLoadState () {
 		const toLoad = await StorageUtil.pGetForPage(MakeCards._STORAGE_KEY);
 		if (toLoad != null) this.setStateFrom(toLoad);
 	}
 
-	getSaveableState() {
+	getSaveableState () {
 		return {
 			state: this.getBaseSaveableState(),
 			listItems: this._list.items.map(it => ({
@@ -690,7 +690,7 @@ class MakeCards extends BaseComponent {
 		};
 	}
 
-	setStateFrom(toLoad) {
+	setStateFrom (toLoad) {
 		this.setBaseSaveableStateFrom(toLoad.state);
 		Promise.all(toLoad.listItems.map(async toLoad => this._pGetListItem(toLoad)))
 			.then(initialListItems => {
@@ -702,7 +702,7 @@ class MakeCards extends BaseComponent {
 	}
 	// endregion
 
-	_getDefaultState() {
+	_getDefaultState () {
 		const cpy = MiscUtil.copy(MakeCards._DEFAULT_STATE);
 		Object.entries(MakeCards._AVAILABLE_TYPES).forEach(([k, v]) => {
 			const kColor = `color_${k}`;
@@ -832,7 +832,7 @@ MakeCards._ = null;
 window.addEventListener("load", () => MakeCards.pInit());
 
 MakeCards.utils = class {
-	static async pLoadReducedData() {
+	static async pLoadReducedData () {
 		const data = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/makecards.json`);
 		data.reducedItemProperty.forEach(p => MakeCards.utils._addItemProperty(p));
 		data.reducedItemType.forEach(t => {
@@ -847,7 +847,7 @@ MakeCards.utils = class {
 	}
 
 	// region items
-	static _addItemProperty(ent) {
+	static _addItemProperty (ent) {
 		const lookupSource = ent.source.toLowerCase();
 		const lookupAbv = ent.abbreviation.toLowerCase();
 
@@ -865,7 +865,7 @@ MakeCards.utils = class {
 		MiscUtil.set(MakeCards.utils._itemPropertyMap, lookupSource, lookupAbv, {});
 	}
 
-	static _addItemType(ent) {
+	static _addItemType (ent) {
 		const lookupSource = ent.source.toLowerCase();
 		const lookupAbv = ent.abbreviation.toLowerCase();
 
@@ -878,7 +878,7 @@ MakeCards.utils = class {
 		});
 	}
 
-	static enhanceItemAlt(item) {
+	static enhanceItemAlt (item) {
 		delete item._fullEntries;
 
 		if (item.type) {

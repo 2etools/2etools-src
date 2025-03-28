@@ -141,8 +141,6 @@ export class OmnisearchBacking {
 	/* -------------------------------------------- */
 
 	static async pGetFilteredResults(results, { isApplyPartneredFilter = false } = {}) {
-
-
 		if (isApplyPartneredFilter && !OmnisearchState.isShowPartnered) {
 			results = results.filter(r => !r.doc.s || !r.doc.dP);
 		}

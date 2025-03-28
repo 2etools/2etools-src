@@ -8,14 +8,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<meta name="mobile-web-app-capable" content="yes">
 
-	<title>{{#if pageTitle}}{{pageTitle}} - 5etools{{else}}5etools{{/if}}</title>
+	<title>{{#if pageTitle}}{{pageTitle}} - 2etools{{else}}2etools{{/if}}</title>
 
 	<link rel="stylesheet" href="css/bootstrap.css">
-{{#if isFontAwesome}}	<link rel="stylesheet" href="css/fontawesome.css">
-{{/if}}
+	{{#if isFontAwesome}}
+	<link rel="stylesheet" href="css/fontawesome.css">
+	{{/if}}
 	<link rel="stylesheet" href="css/main.css">
-{{#each stylesheets}}	<link rel="stylesheet" href="css/{{this}}.css">
-{{/each}}
+	{{#each stylesheets}}
+	<link rel="stylesheet" href="css/{{this}}.css">
+	{{/each}}
 
 	<!-- Favicons -->
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -33,7 +35,7 @@
 	<meta name="theme-color" content="#006bc4">
 
 	<!-- Windows Start Menu tiles -->
-	<meta name="msapplication-config" content="browserconfig.xml"/>
+	<meta name="msapplication-config" content="browserconfig.xml" />
 	<meta name="msapplication-TileColor" content="#006bc4">
 
 	<!-- Apple Touch Icons -->
@@ -53,11 +55,11 @@
 	<script type="text/javascript" src="sw-injector.js"></script>
 
 	<script type="text/javascript" src="js/styleswitch.js"></script>
-{{#if redirectHref}}
+	{{#if redirectHref}}
 
-	<meta http-equiv="refresh" content="0; URL={{redirectHref}}"/>
-{{else}}
+	<meta http-equiv="refresh" content="0; URL={{redirectHref}}" />
+	{{else}}
 	<script type="text/javascript" src="js/navigation.js"></script>
 	<script type="module" src="js/browsercheck.js"></script>
-{{/if}}
+	{{/if}}
 </head>

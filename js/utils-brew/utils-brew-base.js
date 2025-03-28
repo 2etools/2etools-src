@@ -48,7 +48,7 @@ export class BrewUtil2Base {
 	/**
 	 * @param {?BrewUtil2Base} parent
 	 */
-	constructor({ parent = null } = {}) {
+	constructor ({ parent = null } = {}) {
 		this._parent = parent;
 	}
 
@@ -56,7 +56,7 @@ export class BrewUtil2Base {
 
 	_pActiveInit = null;
 
-	pInit() {
+	pInit () {
 		this._pActiveInit ||= (async () => {
 			// region Ensure the local homebrew cache is hot, to allow us to fetch from it later in a sync manner.
 			//   This is necessary to replicate the "meta" caching done for non-local brew.
@@ -70,9 +70,9 @@ export class BrewUtil2Base {
 	}
 
 	/** @abstract */
-	_pInit_doBindDragDrop() { throw new Error("Unimplemented!"); }
+	_pInit_doBindDragDrop () { throw new Error("Unimplemented!"); }
 
-	async _pInit_pDoLoadFonts() {
+	async _pInit_pDoLoadFonts () {
 		const fontFaces = Object.entries(
 			(this._getBrewMetas() || [])
 				.map(({ _meta }) => _meta?.fonts || {})
@@ -100,9 +100,9 @@ export class BrewUtil2Base {
 
 	/* -------------------------------------------- */
 
-	async pGetCustomUrl() { return this._storage.pGet(this._STORAGE_KEY_CUSTOM_URL); }
+	async pGetCustomUrl () { return this._storage.pGet(this._STORAGE_KEY_CUSTOM_URL); }
 
-	async pSetCustomUrl(val) {
+	async pSetCustomUrl (val) {
 		await (!val
 			? this._storage.pRemove(this._STORAGE_KEY_CUSTOM_URL)
 			: this._storage.pSet(this._STORAGE_KEY_CUSTOM_URL, val));
@@ -112,9 +112,9 @@ export class BrewUtil2Base {
 
 	/* -------------------------------------------- */
 
-	isReloadRequired() { return this._isDirty; }
+	isReloadRequired () { return this._isDirty; }
 
-	doLocationReload({ isRetainHash = false } = {}) {
+	doLocationReload ({ isRetainHash = false } = {}) {
 		if (!isRetainHash) {
 			if (typeof Hist !== "undefined") Hist.doPreLocationReload();
 			else window.location.hash = "";
@@ -123,20 +123,20 @@ export class BrewUtil2Base {
 		location.reload();
 	}
 
-	_getBrewMetas() {
+	_getBrewMetas () {
 		return [
 			...(this._storage.syncGet(this._STORAGE_KEY_META) || []),
 			...(this._cache_brewsLocal || []).map(brew => this._getBrewDocReduced(brew)),
 		];
 	}
 
-	_setBrewMetas(val) {
+	_setBrewMetas (val) {
 		this._cache_metas = null;
 		return this._storage.syncSet(this._STORAGE_KEY_META, val);
 	}
 
 	/** Fetch the brew as though it has been loaded from site URL. */
-	async pGetBrewProcessed() {
+	async pGetBrewProcessed () {
 		if (this._cache_brewsProc) return this._cache_brewsProc; // Short-circuit if the cache is already available
 
 		try {
@@ -151,7 +151,7 @@ export class BrewUtil2Base {
 		return this._cache_brewsProc;
 	}
 
-	async _pGetBrewProcessed_({ lockToken }) {
+	async _pGetBrewProcessed_ ({ lockToken }) {
 		const cpyBrews = MiscUtil.copyFast([
 			...await this.pGetBrew({ lockToken }),
 			...this._brewsTemp,
@@ -173,14 +173,14 @@ export class BrewUtil2Base {
 	}
 
 	/** Homebrew files can contain embedded blocklists. */
-	async _pGetBrewProcessed_pDoBlocklistExtension({ cpyBrews }) {
+	async _pGetBrewProcessed_pDoBlocklistExtension ({ cpyBrews }) {
 		for (const { body } of cpyBrews) {
 			if (!body?.blocklist?.length || !(body.blocklist instanceof Array)) continue;
 			await ExcludeUtil.pExtendList(body.blocklist);
 		}
 	}
 
-	_pGetBrewProcessed_mutDiagnostics({ head, body }) {
+	_pGetBrewProcessed_mutDiagnostics ({ head, body }) {
 		if (!head.filename) return;
 
 		for (const arr of Object.values(body)) {
@@ -192,7 +192,7 @@ export class BrewUtil2Base {
 		}
 	}
 
-	_pGetBrewProcessed_getMergedOutput({ cpyBrews }) {
+	_pGetBrewProcessed_getMergedOutput ({ cpyBrews }) {
 		return BrewDoc.mergeObjects(undefined, ...cpyBrews.map(({ body }) => body));
 	}
 
@@ -200,14 +200,14 @@ export class BrewUtil2Base {
 	 * TODO refactor such that this is not necessary
 	 * @deprecated
 	 */
-	getBrewProcessedFromCache(prop) {
+	getBrewProcessedFromCache (prop) {
 		return this._cache_brewsProc?.[prop] || [];
 	}
 
 	/* -------------------------------------------- */
 
 	/** Fetch the raw brew from storage. */
-	async pGetBrew({ lockToken } = {}) {
+	async pGetBrew ({ lockToken } = {}) {
 		if (this._cache_brews) return this._cache_brews;
 
 		try {
@@ -229,14 +229,14 @@ export class BrewUtil2Base {
 
 	/* -------------------------------------------- */
 
-	async pGetBrewBySource(source, { lockToken } = {}) {
+	async pGetBrewBySource (source, { lockToken } = {}) {
 		const brews = await this.pGetBrew({ lockToken });
 		return brews.find(brew => brew?.body?._meta?.sources?.some(src => src?.json === source));
 	}
 
 	/* -------------------------------------------- */
 
-	async _pGetBrew_pGetLocalBrew({ lockToken } = {}) {
+	async _pGetBrew_pGetLocalBrew ({ lockToken } = {}) {
 		if (this._cache_brewsLocal) return this._cache_brewsLocal;
 		if (globalThis.IS_VTT || IS_DEPLOYED || typeof window === "undefined") return this._cache_brewsLocal = [];
 
@@ -249,7 +249,7 @@ export class BrewUtil2Base {
 		}
 	}
 
-	async _pGetBrew_pGetLocalBrew_() {
+	async _pGetBrew_pGetLocalBrew_ () {
 		// auto-load from `prerelease/` and `homebrew/`, for custom versions of the site
 		const indexLocal = await DataUtil.loadJSON(`${Renderer.get().baseUrl}${this._PATH_LOCAL_INDEX}`);
 		if (!indexLocal?.toImport?.length) return this._cache_brewsLocal = [];
@@ -275,7 +275,7 @@ export class BrewUtil2Base {
 
 	/* -------------------------------------------- */
 
-	async _pGetBrewRaw({ lockToken } = {}) {
+	async _pGetBrewRaw ({ lockToken } = {}) {
 		try {
 			await this._LOCK.pLock({ token: lockToken });
 			return (await this._pGetBrewRaw_());
@@ -284,7 +284,7 @@ export class BrewUtil2Base {
 		}
 	}
 
-	async _pGetBrewRaw_() {
+	async _pGetBrewRaw_ () {
 		const brewRaw = (await this._storage.pGet(this._STORAGE_KEY)) || [];
 
 		// Assume that any potential migration has been completed if the user has new homebrew
@@ -323,14 +323,14 @@ export class BrewUtil2Base {
 		return this._storage.pGet(this._STORAGE_KEY);
 	}
 
-	_getNewEditableBrewDoc() {
+	_getNewEditableBrewDoc () {
 		const json = { _meta: { sources: [] } };
 		return this._getBrewDoc({ json, isEditable: true });
 	}
 
 	/* -------------------------------------------- */
 
-	async _pGetMigrationInfo() {
+	async _pGetMigrationInfo () {
 		// If there is no migration support, return default info
 		if (!this._STORAGE_KEY_LEGACY && !this._STORAGE_KEY_LEGACY_META) return { version: this._VERSION, existingBrew: null, existingMeta: null };
 
@@ -351,11 +351,11 @@ export class BrewUtil2Base {
 
 	/* -------------------------------------------- */
 
-	getCacheIteration() { return this._cache_iteration; }
+	getCacheIteration () { return this._cache_iteration; }
 
 	/* -------------------------------------------- */
 
-	async pSetBrew(val, { lockToken } = {}) {
+	async pSetBrew (val, { lockToken } = {}) {
 		try {
 			await this._LOCK.pLock({ token: lockToken });
 			await this._pSetBrew_({ val });
@@ -364,7 +364,7 @@ export class BrewUtil2Base {
 		}
 	}
 
-	async _pSetBrew_({ val, isInitialMigration }) {
+	async _pSetBrew_ ({ val, isInitialMigration }) {
 		this._mutBrewsForSet(val);
 
 		if (!isInitialMigration) {
@@ -377,7 +377,7 @@ export class BrewUtil2Base {
 		if (!isInitialMigration) this._isDirty = true;
 	}
 
-	_mutBrewsForSet(val) {
+	_mutBrewsForSet (val) {
 		if (!(val instanceof Array)) throw new Error(`${this.DISPLAY_NAME.uppercaseFirst()} array must be an array!`);
 
 		this._setBrewMetas(val.map(brew => this._getBrewDocReduced(brew)));
@@ -385,13 +385,13 @@ export class BrewUtil2Base {
 
 	/* -------------------------------------------- */
 
-	_getBrewId(brew) {
+	_getBrewId (brew) {
 		if (brew.head.url) return brew.head.url;
 		if (brew.body._meta?.sources?.length) return brew.body._meta.sources.map(src => (src.json || "").toLowerCase()).sort(SortUtil.ascSortLower).join(" :: ");
 		return null;
 	}
 
-	_getNextBrews(brews, brewsToAdd) {
+	_getNextBrews (brews, brewsToAdd) {
 		const idsToAdd = new Set(brewsToAdd.map(brews => this._getBrewId(brews)).filter(Boolean));
 		brews = brews.filter(brew => {
 			const id = this._getBrewId(brew);
@@ -403,7 +403,7 @@ export class BrewUtil2Base {
 
 	/* -------------------------------------------- */
 
-	async _pLoadParentDependencies({ unavailableSources }) {
+	async _pLoadParentDependencies ({ unavailableSources }) {
 		if (!unavailableSources?.length) return false;
 		if (!this._parent) return false;
 
@@ -419,7 +419,7 @@ export class BrewUtil2Base {
 
 	/* -------------------------------------------- */
 
-	async _pGetBrewDependencies({ brewDocs, brewsRaw = null, brewsRawLocal = null, isIgnoreNetworkErrors = false, lockToken }) {
+	async _pGetBrewDependencies ({ brewDocs, brewsRaw = null, brewsRawLocal = null, isIgnoreNetworkErrors = false, lockToken }) {
 		try {
 			lockToken = await this._LOCK.pLock({ token: lockToken });
 			return (await this._pGetBrewDependencies_({ brewDocs, brewsRaw, brewsRawLocal, isIgnoreNetworkErrors, lockToken }));
@@ -428,7 +428,7 @@ export class BrewUtil2Base {
 		}
 	}
 
-	async _pGetBrewDependencies_({ brewDocs, brewsRaw = null, brewsRawLocal = null, isIgnoreNetworkErrors = false, lockToken }) {
+	async _pGetBrewDependencies_ ({ brewDocs, brewsRaw = null, brewsRawLocal = null, isIgnoreNetworkErrors = false, lockToken }) {
 		const urlRoot = await this.pGetCustomUrl();
 		const brewIndex = await this._pGetBrewDependencies_getBrewIndex({ urlRoot, isIgnoreNetworkErrors });
 
@@ -473,18 +473,18 @@ export class BrewUtil2Base {
 		};
 	}
 
-	_pGetBrewDependencies_mutAddLoaded({ loadedSources, brewDoc }) {
+	_pGetBrewDependencies_mutAddLoaded ({ loadedSources, brewDoc }) {
 		(brewDoc.body._meta?.sources || [])
 			.filter(src => src.json)
 			.forEach(src => loadedSources.add(src.json));
 	}
 
-	_pGetBrewDependencies_mutAddToLoad({ loadedSources, toLoadSources, src }) {
+	_pGetBrewDependencies_mutAddToLoad ({ loadedSources, toLoadSources, src }) {
 		if (loadedSources.has(src) || toLoadSources.includes(src)) return;
 		toLoadSources.push(src);
 	}
 
-	async _pGetBrewDependencies_getBrewIndex({ urlRoot, isIgnoreNetworkErrors = false }) {
+	async _pGetBrewDependencies_getBrewIndex ({ urlRoot, isIgnoreNetworkErrors = false }) {
 		try {
 			return (await this.pGetSourceIndex(urlRoot));
 		} catch (e) {
@@ -494,7 +494,7 @@ export class BrewUtil2Base {
 		}
 	}
 
-	async pGetSourceUrl(source) {
+	async pGetSourceUrl (source) {
 		const urlRoot = await this.pGetCustomUrl();
 		const brewIndex = await this.pGetSourceIndex(urlRoot);
 
@@ -511,19 +511,19 @@ export class BrewUtil2Base {
 	/* -------------------------------------------- */
 
 	/** @abstract */
-	async pGetSourceIndex(urlRoot) { throw new Error("Unimplemented!"); }
+	async pGetSourceIndex (urlRoot) { throw new Error("Unimplemented!"); }
 	/** @abstract */
-	getFileUrl(path, urlRoot) { throw new Error("Unimplemented!"); }
+	getFileUrl (path, urlRoot) { throw new Error("Unimplemented!"); }
 	/** @abstract */
-	pLoadTimestamps(urlRoot) { throw new Error("Unimplemented!"); }
+	pLoadTimestamps (urlRoot) { throw new Error("Unimplemented!"); }
 	/** @abstract */
-	pLoadPropIndex(urlRoot) { throw new Error("Unimplemented!"); }
+	pLoadPropIndex (urlRoot) { throw new Error("Unimplemented!"); }
 	/** @abstract */
-	pLoadMetaIndex(urlRoot) { throw new Error("Unimplemented!"); }
+	pLoadMetaIndex (urlRoot) { throw new Error("Unimplemented!"); }
 	/** @abstract */
-	pLoadAdventureBookIdsIndex(urlRoot) { throw new Error("Unimplemented!"); }
+	pLoadAdventureBookIdsIndex (urlRoot) { throw new Error("Unimplemented!"); }
 
-	async pGetCombinedIndexes() {
+	async pGetCombinedIndexes () {
 		const urlRoot = await this.pGetCustomUrl();
 
 		const indexes = await this._pGetCombinedIndexes_pGetIndexes({ urlRoot });
@@ -581,7 +581,7 @@ export class BrewUtil2Base {
 			.sort((a, b) => SortUtil.ascSortLower(a._brewName, b._brewName));
 	}
 
-	async _pGetCombinedIndexes_pGetIndexes({ urlRoot }) {
+	async _pGetCombinedIndexes_pGetIndexes ({ urlRoot }) {
 		try {
 			const [timestamps, propIndex, metaIndex, sourceIndex] = await Promise.all([
 				this.pLoadTimestamps(urlRoot),
@@ -607,7 +607,7 @@ export class BrewUtil2Base {
 	_PROPS_DEPS = ["dependencies", "includes"];
 	_PROPS_DEPS_DEEP = ["otherSources"];
 
-	_getBrewDependencySources({ brewDoc, brewIndex }) {
+	_getBrewDependencySources ({ brewDoc, brewIndex }) {
 		const sources = new Set();
 
 		this._PROPS_DEPS.forEach(prop => {
@@ -633,7 +633,7 @@ export class BrewUtil2Base {
 		return { available, unavailable };
 	}
 
-	async pAddBrewFromUrl(url, { isLazy } = {}) {
+	async pAddBrewFromUrl (url, { isLazy } = {}) {
 		let brewDocs = []; let unavailableSources = [];
 
 		try {
@@ -648,12 +648,12 @@ export class BrewUtil2Base {
 		return brewDocs;
 	}
 
-	async _pGetBrewDocFromUrl({ url }) {
+	async _pGetBrewDocFromUrl ({ url }) {
 		const json = await DataUtil.loadRawJSON(url);
 		return this._getBrewDoc({ json, url, filename: UrlUtil.getFilename(url) });
 	}
 
-	async _pAddBrewFromUrl({ url, lockToken, isLazy }) {
+	async _pAddBrewFromUrl ({ url, lockToken, isLazy }) {
 		const brewDoc = await this._pGetBrewDocFromUrl({ url });
 
 		if (isLazy) {
@@ -685,7 +685,7 @@ export class BrewUtil2Base {
 		return { brewDocs, unavailableSources };
 	}
 
-	async pAddBrewsFromFiles(files) {
+	async pAddBrewsFromFiles (files) {
 		let brewDocs = []; let unavailableSources = [];
 
 		try {
@@ -703,7 +703,7 @@ export class BrewUtil2Base {
 		return brewDocs;
 	}
 
-	async _pAddBrewsFromFiles({ files, lockToken }) {
+	async _pAddBrewsFromFiles ({ files, lockToken }) {
 		const brewDocs = files.map(file => this._getBrewDoc({ json: file.json, filename: file.name }));
 
 		const brews = MiscUtil.copyFast(await this._pGetBrewRaw({ lockToken }));
@@ -717,7 +717,7 @@ export class BrewUtil2Base {
 		return { brewDocs, unavailableSources };
 	}
 
-	async pAddBrewsLazyFinalize() {
+	async pAddBrewsLazyFinalize () {
 		let brewDocs = []; let unavailableSources = [];
 
 		try {
@@ -735,7 +735,7 @@ export class BrewUtil2Base {
 		return brewDocs;
 	}
 
-	async _pAddBrewsLazyFinalize_({ lockToken }) {
+	async _pAddBrewsLazyFinalize_ ({ lockToken }) {
 		const brewsRaw = await this._pGetBrewRaw({ lockToken });
 		const { brewDocsDependencies, unavailableSources } = await this._pGetBrewDependencies({ brewDocs: this._addLazy_brewsTemp, brewsRaw, lockToken });
 		const brewDocs = MiscUtil.copyFast(brewDocsDependencies);
@@ -745,7 +745,7 @@ export class BrewUtil2Base {
 		return { brewDocs, unavailableSources };
 	}
 
-	async pPullAllBrews({ brews } = {}) {
+	async pPullAllBrews ({ brews } = {}) {
 		try {
 			const lockToken = await this._LOCK.pLock();
 			return (await this._pPullAllBrews_({ lockToken, brews }));
@@ -754,7 +754,7 @@ export class BrewUtil2Base {
 		}
 	}
 
-	async _pPullAllBrews_({ lockToken, brews }) {
+	async _pPullAllBrews_ ({ lockToken, brews }) {
 		let cntPulls = 0;
 
 		brews = brews || MiscUtil.copyFast(await this._pGetBrewRaw({ lockToken }));
@@ -778,9 +778,9 @@ export class BrewUtil2Base {
 		return cntPulls;
 	}
 
-	isPullable(brew) { return !brew.head.isEditable && !!brew.head.url; }
+	isPullable (brew) { return !brew.head.isEditable && !!brew.head.url; }
 
-	async pPullBrew(brew) {
+	async pPullBrew (brew) {
 		try {
 			const lockToken = await this._LOCK.pLock();
 			return (await this._pPullBrew_({ brew, lockToken }));
@@ -789,7 +789,7 @@ export class BrewUtil2Base {
 		}
 	}
 
-	async _pPullBrew_({ brew, lockToken }) {
+	async _pPullBrew_ ({ brew, lockToken }) {
 		const brews = await this._pGetBrewRaw({ lockToken });
 		if (!brews?.length) return;
 
@@ -814,7 +814,7 @@ export class BrewUtil2Base {
 		return isPull;
 	}
 
-	async pAddBrewFromLoaderTag(ele) {
+	async pAddBrewFromLoaderTag (ele) {
 		const $ele = $(ele);
 		if (!$ele.hasClass("rd__wrp-loadbrew--ready")) return; // an existing click is being handled
 		let jsonPath = ele.dataset.rdLoaderPath;
@@ -835,7 +835,7 @@ export class BrewUtil2Base {
 		setTimeout(() => $ele.html(cached).addClass("rd__wrp-loadbrew--ready").title(cachedTitle), 500);
 	}
 
-	async pAddBrewsPartnered({ isSilent = false } = {}) {
+	async pAddBrewsPartnered ({ isSilent = false } = {}) {
 		const combinedIndexes = await this.pGetCombinedIndexes();
 
 		const brewInfos = combinedIndexes.filter(it => it._brewIsPartnered);
@@ -864,7 +864,7 @@ export class BrewUtil2Base {
 		return brewDocsAdded;
 	}
 
-	_getBrewDoc({ json, url = null, filename = null, isLocal = false, isEditable = false }) {
+	_getBrewDoc ({ json, url = null, filename = null, isLocal = false, isEditable = false }) {
 		return BrewDoc.fromValues({
 			head: {
 				json,
@@ -877,9 +877,9 @@ export class BrewUtil2Base {
 		}).toObject();
 	}
 
-	_getBrewDocReduced(brewDoc) { return { docIdLocal: brewDoc.head.docIdLocal, _meta: brewDoc.body._meta }; }
+	_getBrewDocReduced (brewDoc) { return { docIdLocal: brewDoc.head.docIdLocal, _meta: brewDoc.body._meta }; }
 
-	async pDeleteBrews(brews) {
+	async pDeleteBrews (brews) {
 		try {
 			const lockToken = await this._LOCK.pLock();
 			await this._pDeleteBrews_({ brews, lockToken });
@@ -888,7 +888,7 @@ export class BrewUtil2Base {
 		}
 	}
 
-	async _pDeleteBrews_({ brews, lockToken }) {
+	async _pDeleteBrews_ ({ brews, lockToken }) {
 		const brewsStored = await this._pGetBrewRaw({ lockToken });
 		if (!brewsStored?.length) return;
 
@@ -898,7 +898,7 @@ export class BrewUtil2Base {
 		await this.pSetBrew(nxtBrews, { lockToken });
 	}
 
-	async pDeleteUneditableBrews() {
+	async pDeleteUneditableBrews () {
 		try {
 			const lockToken = await this._LOCK.pLock();
 			await this._pDeleteUneditableBrews_({ lockToken });
@@ -907,7 +907,7 @@ export class BrewUtil2Base {
 		}
 	}
 
-	async _pDeleteUneditableBrews_({ lockToken }) {
+	async _pDeleteUneditableBrews_ ({ lockToken }) {
 		const brewsStored = await this._pGetBrewRaw({ lockToken });
 		if (!brewsStored?.length) return;
 
@@ -915,7 +915,7 @@ export class BrewUtil2Base {
 		await this.pSetBrew(nxtBrews, { lockToken });
 	}
 
-	async pUpdateBrew(brew) {
+	async pUpdateBrew (brew) {
 		try {
 			const lockToken = await this._LOCK.pLock();
 			await this._pUpdateBrew_({ brew, lockToken });
@@ -924,7 +924,7 @@ export class BrewUtil2Base {
 		}
 	}
 
-	async _pUpdateBrew_({ brew, lockToken }) {
+	async _pUpdateBrew_ ({ brew, lockToken }) {
 		const brews = await this._pGetBrewRaw({ lockToken });
 		if (!brews?.length) return;
 
@@ -934,31 +934,31 @@ export class BrewUtil2Base {
 
 	// region Editable
 	/** @abstract */
-	pGetEditableBrewDoc(brew) { throw new Error("Unimplemented"); }
+	pGetEditableBrewDoc (brew) { throw new Error("Unimplemented"); }
 	/** @abstract */
-	pGetOrCreateEditableBrewDoc() { throw new Error("Unimplemented"); }
+	pGetOrCreateEditableBrewDoc () { throw new Error("Unimplemented"); }
 	/** @abstract */
-	pSetEditableBrewDoc() { throw new Error("Unimplemented"); }
+	pSetEditableBrewDoc () { throw new Error("Unimplemented"); }
 	/** @abstract */
-	pGetEditableBrewEntity(prop, uniqueId, { isDuplicate = false } = {}) { throw new Error("Unimplemented"); }
+	pGetEditableBrewEntity (prop, uniqueId, { isDuplicate = false } = {}) { throw new Error("Unimplemented"); }
 	/** @abstract */
-	pPersistEditableBrewEntity(prop, ent) { throw new Error("Unimplemented"); }
+	pPersistEditableBrewEntity (prop, ent) { throw new Error("Unimplemented"); }
 	/** @abstract */
-	pRemoveEditableBrewEntity(prop, uniqueId) { throw new Error("Unimplemented"); }
+	pRemoveEditableBrewEntity (prop, uniqueId) { throw new Error("Unimplemented"); }
 	/** @abstract */
-	pAddSource(sourceObj) { throw new Error("Unimplemented"); }
+	pAddSource (sourceObj) { throw new Error("Unimplemented"); }
 	/** @abstract */
-	pEditSource(sourceObj) { throw new Error("Unimplemented"); }
+	pEditSource (sourceObj) { throw new Error("Unimplemented"); }
 	/** @abstract */
-	pIsEditableSourceJson(sourceJson) { throw new Error("Unimplemented"); }
+	pIsEditableSourceJson (sourceJson) { throw new Error("Unimplemented"); }
 	/** @abstract */
-	pMoveOrCopyToEditableBySourceJson(sourceJson) { throw new Error("Unimplemented"); }
+	pMoveOrCopyToEditableBySourceJson (sourceJson) { throw new Error("Unimplemented"); }
 	/** @abstract */
-	pMoveToEditable({ brews }) { throw new Error("Unimplemented"); }
+	pMoveToEditable ({ brews }) { throw new Error("Unimplemented"); }
 	/** @abstract */
-	pCopyToEditable({ brews }) { throw new Error("Unimplemented"); }
+	pCopyToEditable ({ brews }) { throw new Error("Unimplemented"); }
 	/** @abstract */
-	pHasEditableSourceJson() { throw new Error("Unimplemented"); }
+	pHasEditableSourceJson () { throw new Error("Unimplemented"); }
 	// endregion
 
 	// region Rendering/etc.
@@ -1003,7 +1003,7 @@ export class BrewUtil2Base {
 		[UrlUtil.PG_BASTIONS]: ["facility", "facilityFluff"],
 	};
 
-	getPageProps({ page, isStrict = false, fallback = null } = {}) {
+	getPageProps ({ page, isStrict = false, fallback = null } = {}) {
 		page = this._getBrewPage(page);
 
 		const out = this._PAGE_TO_PROPS[page];
@@ -1015,18 +1015,18 @@ export class BrewUtil2Base {
 		return null;
 	}
 
-	getPropPages() {
+	getPropPages () {
 		return Object.entries(this._PAGE_TO_PROPS)
 			.map(([page, props]) => [page, props.filter(it => it !== "*")])
 			.filter(([, props]) => props.length)
 			.map(([page]) => page);
 	}
 
-	_getBrewPage(page) {
+	_getBrewPage (page) {
 		return page || (globalThis.IS_VTT ? this.PAGE_MANAGE : UrlUtil.getCurrentPage());
 	}
 
-	getDirProp(dir) {
+	getDirProp (dir) {
 		switch (dir) {
 			case "creature": return "monster";
 			case "makebrew": return "makebrewCreatureTrait";
@@ -1034,7 +1034,7 @@ export class BrewUtil2Base {
 		return dir;
 	}
 
-	getPropDisplayName(prop) {
+	getPropDisplayName (prop) {
 		switch (prop) {
 			case "adventure": return "Adventure Contents/Info";
 			case "book": return "Book Contents/Info";
@@ -1044,7 +1044,7 @@ export class BrewUtil2Base {
 	// endregion
 
 	// region Sources
-	_doCacheMetas() {
+	_doCacheMetas () {
 		if (this._cache_metas) return;
 
 		this._cache_metas = {};
@@ -1074,82 +1074,82 @@ export class BrewUtil2Base {
 			});
 	}
 
-	hasSourceJson(source) {
+	hasSourceJson (source) {
 		if (!source) return false;
 		source = source.toLowerCase();
 		return !!this.getMetaLookup("_sources")[source];
 	}
 
-	sourceJsonToFull(source) {
+	sourceJsonToFull (source) {
 		if (!source) return "";
 		source = source.toLowerCase();
 		return this.getMetaLookup("_sources")[source]?.full || source;
 	}
 
-	sourceJsonToAbv(source) {
+	sourceJsonToAbv (source) {
 		if (!source) return "";
 		source = source.toLowerCase();
 		return this.getMetaLookup("_sources")[source]?.abbreviation || source;
 	}
 
-	sourceJsonToDate(source) {
+	sourceJsonToDate (source) {
 		if (!source) return "";
 		source = source.toLowerCase();
 		return this.getMetaLookup("_sources")[source]?.dateReleased || "1970-01-01";
 	}
 
-	sourceJsonToSource(source) {
+	sourceJsonToSource (source) {
 		if (!source) return null;
 		source = source.toLowerCase();
 		return this.getMetaLookup("_sources")[source];
 	}
 
-	sourceJsonToStyle(source) {
+	sourceJsonToStyle (source) {
 		const stylePart = this.sourceJsonToStylePart(source);
 		if (!stylePart) return stylePart;
 		return `style="${stylePart}"`;
 	}
 
-	sourceToStyle(source) {
+	sourceToStyle (source) {
 		const stylePart = this.sourceToStylePart(source);
 		if (!stylePart) return stylePart;
 		return `style="${stylePart}"`;
 	}
 
-	sourceJsonToStylePart(source) {
+	sourceJsonToStylePart (source) {
 		if (!source) return "";
 		const color = this.sourceJsonToColor(source);
 		if (color) return MiscUtil.getColorStylePart(color);
 		return "";
 	}
 
-	sourceToStylePart(source) {
+	sourceToStylePart (source) {
 		if (!source) return "";
 		const color = this.sourceToColor(source);
 		if (color) return MiscUtil.getColorStylePart(color);
 		return "";
 	}
 
-	sourceJsonToColor(source) {
+	sourceJsonToColor (source) {
 		if (!source) return "";
 		source = source.toLowerCase();
 		if (!this.getMetaLookup("_sources")[source]?.color) return "";
 		return BrewUtilShared.getValidColor(this.getMetaLookup("_sources")[source].color);
 	}
 
-	sourceToColor(source) {
+	sourceToColor (source) {
 		if (!source?.color) return "";
 		return BrewUtilShared.getValidColor(source.color);
 	}
 
-	getSources() {
+	getSources () {
 		this._doCacheMetas();
 		return Object.values(this._cache_metas["_sources"]);
 	}
 	// endregion
 
 	// region Other meta
-	getMetaLookup(type) {
+	getMetaLookup (type) {
 		if (!type) return null;
 		this._doCacheMetas();
 		return this._cache_metas[type];
@@ -1161,7 +1161,7 @@ export class BrewUtil2Base {
 	 * @param data
 	 * @param homebrew
 	 */
-	getMergedData(data, homebrew) {
+	getMergedData (data, homebrew) {
 		const out = {};
 		Object.entries(data)
 			.forEach(([prop, val]) => {
@@ -1182,7 +1182,7 @@ export class BrewUtil2Base {
 	/**
 	 * Get data in a format similar to the main search index
 	 */
-	async pGetSearchIndex({ id = 0, isDecompress = true, isIncludeExtendedSourceInfo = false } = {}) {
+	async pGetSearchIndex ({ id = 0, isDecompress = true, isIncludeExtendedSourceInfo = false } = {}) {
 		const indexer = new Omnidexer(id);
 
 		const brew = await this.pGetBrewProcessed();
@@ -1208,7 +1208,7 @@ export class BrewUtil2Base {
 		return Omnidexer.decompressIndex(index);
 	}
 
-	async pGetAdditionalSearchIndices(highestId, addiProp) {
+	async pGetAdditionalSearchIndices (highestId, addiProp) {
 		const indexer = new Omnidexer(highestId + 1);
 
 		const brew = await this.pGetBrewProcessed();
@@ -1227,7 +1227,7 @@ export class BrewUtil2Base {
 		return Omnidexer.decompressIndex(indexer.getIndex());
 	}
 
-	async pGetAlternateSearchIndices(highestId, altProp) {
+	async pGetAlternateSearchIndices (highestId, altProp) {
 		const indexer = new Omnidexer(highestId + 1);
 
 		const brew = await this.pGetBrewProcessed();
@@ -1247,7 +1247,7 @@ export class BrewUtil2Base {
 	// endregion
 
 	// region Export to URL
-	async pGetUrlExportableSources() {
+	async pGetUrlExportableSources () {
 		const brews = await this._pGetBrewRaw();
 		const brewsExportable = brews
 			.filter(brew => !brew.head.isEditable && !brew.head.isLocal);

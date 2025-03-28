@@ -1,5 +1,5 @@
 export class UtilsAdditionalSpells {
-	static async _pGetMigratedBlock_pGetMigratedUid(uid) {
+	static async _pGetMigratedBlock_pGetMigratedUid (uid) {
 		const [uidClean, ...rest] = uid.split("#");
 
 		const redirected = await Renderer.redirect.pGetRedirectByUid("spell", uidClean);
@@ -9,7 +9,7 @@ export class UtilsAdditionalSpells {
 		return [uidRedirected, ...rest].join("#");
 	}
 
-	static async _pGetMigratedBlock(
+	static async _pGetMigratedBlock (
 		{
 			additionalSpellBlock,
 		},
@@ -39,7 +39,7 @@ export class UtilsAdditionalSpells {
 		return cpy;
 	}
 
-	static async _pGetMigratedBlock_pGetMigratedAdditionMeta({ additionMeta }) {
+	static async _pGetMigratedBlock_pGetMigratedAdditionMeta ({ additionMeta }) {
 		await Object.entries(additionMeta)
 			.pSerialAwaitMap(async ([levelKey, levelMeta]) => {
 				if (levelMeta instanceof Array) {
@@ -55,7 +55,7 @@ export class UtilsAdditionalSpells {
 		return additionMeta;
 	}
 
-	static async _pGetMigratedBlock_pGetMigratedSpellItem({ spellItem }) {
+	static async _pGetMigratedBlock_pGetMigratedSpellItem ({ spellItem }) {
 		if (typeof spellItem === "string") {
 			return this._pGetMigratedBlock_pGetMigratedUid(spellItem);
 		}
@@ -79,7 +79,7 @@ export class UtilsAdditionalSpells {
 		throw new Error(`Unhandled additional spell format: "${JSON.stringify(spellItem)}"`);
 	}
 
-	static async _pGetMigratedBlock_pGetMigratedRechargeBlock(opts) {
+	static async _pGetMigratedBlock_pGetMigratedRechargeBlock (opts) {
 		const { rechargeType, levelMetaInner } = opts;
 
 		switch (rechargeType) {
@@ -106,7 +106,7 @@ export class UtilsAdditionalSpells {
 
 	/* ----- */
 
-	static async pGetMigratedAdditionalSpells(additionalSpells) {
+	static async pGetMigratedAdditionalSpells (additionalSpells) {
 		if (!additionalSpells) return additionalSpells;
 		return additionalSpells.pSerialAwaitMap(additionalSpellBlock => this._pGetMigratedBlock({ additionalSpellBlock }));
 	}

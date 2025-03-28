@@ -3106,12 +3106,12 @@ Parser.SRC_PHBR13 = `${Parser.SRC_PHBR}13`;
 Parser.SRC_PHBR14 = `${Parser.SRC_PHBR}14`;
 Parser.SRC_PHBR15 = `${Parser.SRC_PHBR}15`;
 
-Parser.SRC_CGR = "CRG"
-Parser.SRC_CGR_PREFIX = `${Parser.SRC_CGR}`
+Parser.SRC_CGR = "CRG";
+Parser.SRC_CGR_PREFIX = `${Parser.SRC_CGR}`;
 
-Parser.SRC_CGR1 = `${Parser.SRC_CGR}1`
-Parser.SRC_CGR2 = `${Parser.SRC_CGR}2`
-Parser.SRC_CGR3 = `${Parser.SRC_CGR}3`
+Parser.SRC_CGR1 = `${Parser.SRC_CGR}1`;
+Parser.SRC_CGR2 = `${Parser.SRC_CGR}2`;
+Parser.SRC_CGR3 = `${Parser.SRC_CGR}3`;
 
 Parser.SRC_DMGR = "DMGR";
 Parser.SRC_DMGR_PREFIX = `${Parser.SRC_DMGR}`;
@@ -3135,7 +3135,6 @@ Parser.SRC_MCV2DC = `${Parser.SRC_MCVX_PREFIX}2DC`;
 Parser.SRC_MCV3MC = `${Parser.SRC_MCVX_PREFIX}3MC`;
 Parser.SRC_MCV4EC = `${Parser.SRC_MCVX_PREFIX}4EC`;
 
-
 Parser.SRC_HR = "HR";
 Parser.SRC_HR_PREFIX = `${Parser.SRC_HR}`;
 
@@ -3146,7 +3145,6 @@ Parser.SRC_HR4 = `${Parser.SRC_HR}4`;
 Parser.SRC_HR5 = `${Parser.SRC_HR}5`;
 Parser.SRC_HR6 = `${Parser.SRC_HR}6`;
 Parser.SRC_HR7 = `${Parser.SRC_HR}7`;
-
 
 // 5e Sources below
 Parser.SRC_CoS = "CoS";
@@ -3328,11 +3326,11 @@ Parser.MCVX_PREFIX = "Monstrous Compendium Volume ";
 Parser.MisMVX_PREFIX = "Misplaced Monsters: Volume ";
 Parser.AA_PREFIX = "Adventure Atlas: ";
 Parser.TC_PREFIX = "The Complete ";
-Parser.CS_SUFFIX = "Campaign Sourcebook"
+Parser.CS_SUFFIX = "Campaign Sourcebook";
 
 Parser.SOURCE_JSON_TO_FULL = {};
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PHB] = "Player's Handbook";
-Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMG] = "Dungeon Master Guide";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DMG] = "Dungeon Master's Guide";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_MM] = "Monstrous Manual";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_XPHB] = "Player's Handbook (Revised)";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_XDMG] = "Dungeon Master Guide (Revised)";
@@ -4141,7 +4139,7 @@ Parser.SOURCES_VANILLA = new Set([
 	Parser.SRC_MaBJoV,
 	Parser.SRC_CoA,
 	Parser.SRC_BMT,
-	Parser.SRC_DMTCRG
+	Parser.SRC_DMTCRG,
 ]);
 
 // Any opinionated set of sources that are """hilarious, dude"""
@@ -4476,7 +4474,7 @@ Parser.metric = {
 	 * @param {string} originalUnit
 	 * @param {?boolean} toFixed
 	 */
-	getMetricNumber({ originalValue, originalUnit, toFixed = null }) {
+	getMetricNumber ({ originalValue, originalUnit, toFixed = null }) {
 		if (originalValue == null || isNaN(originalValue)) return originalValue;
 
 		originalValue = Number(originalValue);
@@ -4501,7 +4499,7 @@ Parser.metric = {
 	 * @param {boolean} isShortForm
 	 * @param {isPlural} isShortForm
 	 */
-	getMetricUnit({ originalUnit, isShortForm = false, isPlural = true }) {
+	getMetricUnit ({ originalUnit, isShortForm = false, isPlural = true }) {
 		switch (Parser.getNormalizedUnit(originalUnit)) {
 			case Parser.UNT_INCHES: return isShortForm ? "cm" : `centimeter`[isPlural ? "toPlural" : "toString"]();
 			case Parser.UNT_FEET: return isShortForm ? "m" : `meter`[isPlural ? "toPlural" : "toString"]();

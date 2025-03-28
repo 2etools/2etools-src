@@ -5,7 +5,7 @@
 			"name": "How to Use This Book",
 			"page": 3,
 			"entries": [
-				"This hardcover {@i Monstrous Manual}™ was created in response to the many requests to gather monsters into a single, durable volume which would be convenient to carry. With the {@i {@book DUNGEON MASTER™ Guide|DMG}} (DMG) and the {@i {@book Player’s Handbook®|PHB} (PHB)}, the {@i Monstrous Manual} forms the core of the AD&D™ 2nd Edition game.",
+				"This hardcover {@i Monstrous Manual}™ was created in response to the many requests to gather monsters into a single, durable volume which would be convenient to carry. With the {@i {@book DUNGEON MASTER™ Guide|DMG}} (DMG) and the {@i {@book Player's Handbook®|PHB} (PHB)}, the {@i Monstrous Manual} forms the core of the AD&D™ 2nd Edition game.",
 				"Every monster from the MONSTROUS COMPENDIUM® Volumes One and Two are contained within, as well as a few creatures from later volumes. The monsters in the {@i Monstrous Manual} have been revised, edited, and updated. Statistics for many of the creatures have been corrected, new information has been added to many of the entries, and many monsters have been reclassified. There are some new beasts, as well. In cases of conflicting information, the {@i Monstrous Manual} supersedes all previously published data.",
 				"Certain entries have been greatly condensed from MONSTROUS COMPENDIUM entries, to make this book as complete as possible without increasing its size or price. For instance, there is a full-page description of ravens in the MONSTROUS COMPENDIUM appendix for the GREYHAWK® campaign setting; in this book, ravens are given only a few lines in the \"Bird\" entry. This provides enough information to use the creatures for a short encounter, and it allows a page to be devoted to another adversary.",
 				"To find a monster in this book, flip through the pages or look in the index, which contains listings for the common name(s) of every monster in the book, referenced to the correct page.",
@@ -288,7 +288,7 @@
 			"entries": [
 				{
 					"type": "list",
-					"style": "list",
+					"style": "list-hang",
 					"columns": 4,
 					"page": 5,
 					"name": "",
@@ -301,7 +301,7 @@
 						"{@creature Aurumvorax|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 11,
 							"name": "Baatezu",
@@ -315,7 +315,7 @@
 						"{@creature Banshee|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 14,
 							"name": "Basilisk",
@@ -327,7 +327,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 15,
 							"name": "Bat",
@@ -342,7 +342,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 17,
 							"name": "",
@@ -355,7 +355,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 18,
 							"name": "",
@@ -371,7 +371,7 @@
 						"{@creature Behir|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 21,
 							"name": "Beholder and Beholder-kin",
@@ -399,7 +399,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 27,
 							"name": "",
@@ -430,7 +430,7 @@
 						"{@creature Brain Mole|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 30,
 							"name": "Broken One",
@@ -441,7 +441,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 31,
 							"name": "",
@@ -456,7 +456,7 @@
 						"{@creature Carrion Crawler|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 36,
 							"name": "Cat, Great",
@@ -474,7 +474,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 38,
 							"name": "Cat, Small",
@@ -489,7 +489,7 @@
 						"{@creature Centaur|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 42,
 							"name": "Centipede",
@@ -502,7 +502,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 43,
 							"name": "Chimera",
@@ -514,7 +514,7 @@
 						"{@creature Cloaker|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 45,
 							"name": "Cockatrice",
@@ -528,7 +528,7 @@
 						"{@creature Crawling Claw|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 49,
 							"name": "Crocodile",
@@ -539,7 +539,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 50,
 							"name": "Crustacean, Giant",
@@ -553,7 +553,7 @@
 						"{@creature Deepspawn|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 54,
 							"name": "Dinosaur",
@@ -572,7 +572,7 @@
 						"{@creature Displacer Beast|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 57,
 							"name": "Dog",
@@ -590,7 +590,7 @@
 						"{@creature Dragon, General}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 65,
 							"name": "Dragon, Chromatic",
@@ -604,7 +604,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 70,
 							"name": "Dragon, Gem",
@@ -618,7 +618,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 75,
 							"name": "Dragon, Metallic",
@@ -646,7 +646,7 @@
 						"{@creature Dryad|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 94,
 							"name": "Dwarf",
@@ -657,7 +657,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 96,
 							"name": "Dwarf, Derro/Duergar",
@@ -669,7 +669,7 @@
 						"Elemental, Generic Information",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 99,
 							"name": "Elemental, Air/Earth",
@@ -680,7 +680,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 100,
 							"name": "Elemental, Fire/Water",
@@ -691,7 +691,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 101,
 							"name": "Elemental, Air Kin",
@@ -702,7 +702,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 102,
 							"name": "Elemental, Earth Kin",
@@ -713,7 +713,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 103,
 							"name": "Elemental, Fire Kin",
@@ -724,7 +724,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 104,
 							"name": "",
@@ -735,7 +735,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 105,
 							"name": "Elemental, Composite",
@@ -748,7 +748,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 107,
 							"name": "Elephant",
@@ -761,7 +761,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 108,
 							"name": "Elf",
@@ -775,7 +775,7 @@
 						"{@creature Aquatic Elf|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 112,
 							"name": "",
@@ -788,7 +788,7 @@
 						"{@creature Eyewing|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 116,
 							"name": "Feyr",
@@ -799,7 +799,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 117,
 							"name": "Fish",
@@ -830,7 +830,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 119,
 							"name": "Frog",
@@ -842,7 +842,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 120,
 							"name": "Fungus",
@@ -858,7 +858,7 @@
 						"{@creature Galeb Duhr|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 123,
 							"name": "Gargantua",
@@ -870,7 +870,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 125,
 							"name": "Gargoyle",
@@ -882,7 +882,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 0,
 							"name": "Genie",
@@ -897,7 +897,7 @@
 						"{@creature Ghost|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 131,
 							"name": "Ghoul",
@@ -909,7 +909,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 132,
 							"name": "Giant",
@@ -942,7 +942,7 @@
 						"{@creature Githzerai|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 157,
 							"name": "Gloomwing",
@@ -953,7 +953,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 158,
 							"name": "Gnoll",
@@ -964,7 +964,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 159,
 							"name": "Gnome",
@@ -980,7 +980,7 @@
 						"Golem, General",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 164,
 							"name": "Golem",
@@ -1003,7 +1003,7 @@
 						"{@creature Gorgon|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 174,
 							"name": "Gremlin",
@@ -1021,7 +1021,7 @@
 						"{@creature Grippli|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 181,
 							"name": "Hag",
@@ -1033,7 +1033,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 183,
 							"name": "Halfling",
@@ -1046,7 +1046,7 @@
 						"{@creature Harpy|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 185,
 							"name": "Hatori",
@@ -1066,7 +1066,7 @@
 						"{@creature Hook Horror|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 194,
 							"name": "Horses",
@@ -1084,7 +1084,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 196,
 							"name": "Human",
@@ -1117,7 +1117,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 200,
 							"name": "Hydra",
@@ -1130,7 +1130,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 201,
 							"name": "Imp",
@@ -1141,7 +1141,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 202,
 							"name": "Imp, Mephit",
@@ -1156,7 +1156,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 204,
 							"name": "Insect",
@@ -1185,7 +1185,7 @@
 								"{@creature Gargantuan Praying Mantis|MM|Praying Mantis, Gargantuan}",
 								{
 									"type": "list",
-									"style": "list",
+									"style": "list-hang",
 									"columns": 0,
 									"page": 205,
 									"name": "Termite, Giant Harvester",
@@ -1202,7 +1202,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 206,
 							"name": "Insect Swarm",
@@ -1213,7 +1213,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 207,
 							"name": "Intellect Devourer",
@@ -1230,7 +1230,7 @@
 						"{@creature Kirre|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 214,
 							"name": "",
@@ -1242,7 +1242,7 @@
 						"{@creature Kuo-Toa|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 217,
 							"name": "Lamia",
@@ -1253,7 +1253,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 218,
 							"name": "Lammasu",
@@ -1264,7 +1264,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 219,
 							"name": "Leech",
@@ -1278,7 +1278,7 @@
 						"{@creature Leucrotta|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 222,
 							"name": "Lich",
@@ -1291,7 +1291,7 @@
 						"{@creature Living Wall|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 226,
 							"name": "Lizard",
@@ -1304,7 +1304,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 227,
 							"name": "Lizard Man",
@@ -1316,7 +1316,7 @@
 						"{@creature Locathah|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 229,
 							"name": "Lurker",
@@ -1329,7 +1329,7 @@
 						"{@creature Lycanthrope, General|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 229,
 							"name": "Lycanthrope",
@@ -1347,7 +1347,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 241,
 							"name": "Mammal",
@@ -1386,7 +1386,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 243,
 							"name": "Mammal, Herd",
@@ -1400,7 +1400,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 244,
 							"name": "Mammal, Small",
@@ -1434,7 +1434,7 @@
 						"{@creature Medusa|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 247,
 							"name": "Medusa",
@@ -1445,7 +1445,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 248,
 							"name": "Medusa, Maedar",
@@ -1457,7 +1457,7 @@
 						"{@creature Merman|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 250,
 							"name": "Mimic",
@@ -1472,7 +1472,7 @@
 						"{@creature Vampiric Mist|MM|Mist, Vampiric}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 255,
 							"name": "Mold",
@@ -1492,7 +1492,7 @@
 						"{@creature Myconid|MM} (Fungus Man)",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 266,
 							"name": "Naga",
@@ -1505,7 +1505,7 @@
 						"{@creature Dark Naga|MM|Naga, Dark}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 268,
 							"name": "Neogi",
@@ -1519,7 +1519,7 @@
 						"{@creature Giant Octopus|MM|Octopus, Giant}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 272,
 							"name": "Ogre",
@@ -1533,7 +1533,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 274,
 							"name": "Half-Ogre",
@@ -1544,7 +1544,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 276,
 							"name": "Ooze/Slime/Jelly",
@@ -1563,7 +1563,7 @@
 						"{@creature Slithering Tracker|MM|Ooze/Slime/Jelly, Slithering Tracker}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 281,
 							"name": "Orc",
@@ -1575,7 +1575,7 @@
 						},
 						{
 							"type": "list",
-							"style": "lsit",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 283,
 							"name": "Otyugh",
@@ -1592,7 +1592,7 @@
 						"{@creature Piercer|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 291,
 							"name": "Plant, Dangerous",
@@ -1618,7 +1618,7 @@
 						"{@creature Poltergeist|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 297,
 							"name": "Pudding, Deadly",
@@ -1632,7 +1632,7 @@
 						"{@creature Quaggoth|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 299,
 							"name": "Rakshasa",
@@ -1643,7 +1643,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 300,
 							"name": "Rat",
@@ -1661,7 +1661,7 @@
 						"{@creature Sahuagin|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 308,
 							"name": "Satyr",
@@ -1672,7 +1672,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 309,
 							"name": "Scorpion",
@@ -1687,7 +1687,7 @@
 						"{@creature Shadow|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 313,
 							"name": "Shedu",
@@ -1699,7 +1699,7 @@
 						"{@creature Sirine|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 315,
 							"name": "Skeleton",
@@ -1713,7 +1713,7 @@
 						"{@creature Skeleton Warrior|MM|Skeleton, Warrior}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 318,
 							"name": "Slaad",
@@ -1728,7 +1728,7 @@
 						"{@creature Slug, Giant|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 320,
 							"name": "Snake",
@@ -1750,7 +1750,7 @@
 						"{@creature Spectre|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 324,
 							"name": "Sphinx",
@@ -1763,7 +1763,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 326,
 							"name": "Spider",
@@ -1779,7 +1779,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 328,
 							"name": "Sprite",
@@ -1794,7 +1794,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 331,
 							"name": "Squid, Giant",
@@ -1807,7 +1807,7 @@
 						"{@creature Su-Monster|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 334,
 							"name": "Swanmay",
@@ -1818,7 +1818,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 335,
 							"name": "Swanmay",
@@ -1829,7 +1829,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 336,
 							"name": "Tako",
@@ -1840,10 +1840,10 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 337,
-							"name": "Tanar’ri",
+							"name": "Tanar'ri",
 							"items": [
 								"{@creature Balor|MM} (True Tanar'ri)",
 								"{@creature Marilith|MM} (True Tanar'ri)"
@@ -1856,7 +1856,7 @@
 						"{@creature Titan|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 345,
 							"name": "Toad, Giant",
@@ -1872,7 +1872,7 @@
 						"{@creature Troglodyte|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 349,
 							"name": "Troll",
@@ -1890,7 +1890,7 @@
 						},
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 352,
 							"name": "Umber Hulk",
@@ -1902,7 +1902,7 @@
 						"{@creature Unicorn|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 354,
 							"name": "Urchin",
@@ -1920,7 +1920,7 @@
 						"{@creature Whale|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 358,
 							"name": "",
@@ -1933,10 +1933,10 @@
 							]
 						},
 						"{@creature Wight|MM}",
-						"{@creature Will o’wisp|MM}",
+						"{@creature Will o'wisp|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 362,
 							"name": "Wolf",
@@ -1950,7 +1950,7 @@
 						"{@creature Wolfwere|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 364,
 							"name": "Worm",
@@ -1969,7 +1969,7 @@
 						"{@creature Histachii|MM|Yuan-ti, Histachii}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 371,
 							"name": "Yugoloth, Guardian",
@@ -1982,7 +1982,7 @@
 						"{@creature Zaratan|MM}",
 						{
 							"type": "list",
-							"style": "list",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 373,
 							"name": "Zombie",
@@ -2996,37 +2996,37 @@
 						],
 						[
 							"9",
-							"—",
+							"\u2014",
 							"Oliphant",
 							"8½"
 						],
 						[
 							"10",
-							"—",
+							"\u2014",
 							"Bear, polar",
 							"10"
 						],
 						[
 							"11",
-							"—",
+							"\u2014",
 							"Elephant (African)",
 							"11"
 						],
 						[
 							"12",
-							"—",
+							"\u2014",
 							"Mastodon",
 							"12"
 						],
 						[
 							"13",
-							"—",
+							"\u2014",
 							"Mammoth",
 							"13"
 						],
 						[
 							"14+",
-							"—",
+							"\u2014",
 							"Whale",
 							"(to 36)"
 						]
@@ -3039,7 +3039,7 @@
 				{
 					"type": "entries",
 					"name": "Terrain Guide",
-					"page": 0,
+					"page": 377,
 					"entries": [
 						{
 							"type": "list",
@@ -3070,6 +3070,16 @@
 							"type": "tableGroup",
 							"name": "Aquatic Monster Summoning, Salt Water",
 							"page": 378,
+							"intro": [
+								"{@b Special Encounters:} Roll on the appropriate table. If the encounter is not suitable, then none occurs.",
+								"{@b Surface Encounters:} Unintelligent monsters are 75% likely to be driven off by flaming oil nearby, 90% if actually burned by it. Large amounts of food thrown overboard are 50% likely to end such an encounter.",
+								"{@b Fish School:} This is a large group of one type of fish, the aquatic version of herd animals. They usually do not attack unless commanded by magical means. If panicked, they might mill about, obstructing vision and movement. If large enough, they might cause buffeting damage (1-2 to 1-8, depending on size).",
+								"{@b Ghost Ship:} This is a lost ship manned by undead. Although it can be seen at any time, it usually attacks only at night, when its masters are at full power. Roll percentile dice once for the crew and once for their leaders. {@i Crew:} 01-40 = 10-40 skeletons; 41-80 = 10-40 zombies; 81-00 = 10-20 ju-ju zombies. {@i Leaders:} 01-30 = 1-4 wights; 31-60 = 1-3 wraiths; 61-80 = 1-2 spectres; 81-95 = 1-2 ghosts; 95-00 = 1 lich.",
+								"{@b Hazard (ice):} This can be a single huge ice mountain or 10-20 smaller, grinding floes. Hard contact with ice reduces seaworthiness by 5% and is 10% likely to require a seaworthiness check to avoid sinking.",
+								"{@b Seaweed:} This includes both floating masses of weed and beds on the bottom. The former slows ships by 50%. The latter are 30-300' high and reduce vision to 10 feet. Both provide a 40% chance for another encounter if moved through or investigated.",
+								"{@b Sunken Ship:} This is a victim of a storm, ice, or hostile action. Sometimes these have their original cargo, and may be inhabited. Roll percentile dice: 01-10 = Has merchant treasure (see Men, merchant ); 11-20 = No treasure; 21-60 = 2-24 lacedons (original crew); 61-00 = Monster (roll on appropriate encounter table).",
+								"{@b Special Encounters:} These can include morkoth, mottled worms, shipwreck survivors, an eye of the deep, sudden storms, seaweed that allows underwater breathing when eaten, giant clams, aquatic versions of carnivorous plants, storm giants, and so on."
+							],
 							"tables": [
 								{
 									"type": "table",
@@ -3078,16 +3088,6 @@
 									"colStyles": [
 										"col- text-center",
 										"col- text-left"
-									],
-									"intro": [
-										"{@b Special Encounters:} Roll on the appropriate table. If the encounter is not suitable, then none occurs.",
-										"{@b Surface Encounters:} Unintelligent monsters are 75% likely to be driven off by flaming oil nearby, 90% if actually burned by it. Large amounts of food thrown overboard are 50% likely to end such an encounter.",
-										"{@b Fish School:} This is a large group of one type of fish, the aquatic version of herd animals. They usually do not attack unless commanded by magical means. If panicked, they might mill about, obstructing vision and movement. If large enough, they might cause buffeting damage (1-2 to 1-8, depending on size).",
-										"{@b Ghost Ship:} This is a lost ship manned by undead. Although it can be seen at any time, it usually attacks only at night, when its masters are at full power. Roll percentile dice once for the crew and once for their leaders. {@i Crew:} 01-40 = 10-40 skeletons; 41-80 = 10-40 zombies; 81-00 = 10-20 ju-ju zombies. {@i Leaders:} 01-30 = 1-4 wights; 31-60 = 1-3 wraiths; 61-80 = 1-2 spectres; 81-95 = 1-2 ghosts; 95-00 = 1 lich.",
-										"{@b Hazard (ice):} This can be a single huge ice mountain or 10-20 smaller, grinding floes. Hard contact with ice reduces seaworthiness by 5% and is 10% likely to require a seaworthiness check to avoid sinking.",
-										"{@b Seaweed:} This includes both floating masses of weed and beds on the bottom. The former slows ships by 50%. The latter are 30-300' high and reduce vision to 10 feet. Both provide a 40% chance for another encounter if moved through or investigated.",
-										"{@b Sunken Ship:} This is a victim of a storm, ice, or hostile action. Sometimes these have their original cargo, and may be inhabited. Roll percentile dice: 01-10 = Has merchant treasure (see Men, merchant ); 11-20 = No treasure; 21-60 = 2-24 lacedons (original crew); 61-00 = Monster (roll on appropriate encounter table).",
-										"{@b Special Encounters:} These can include morkoth, mottled worms, shipwreck survivors, an eye of the deep, sudden storms, seaweed that allows underwater breathing when eaten, giant clams, aquatic versions of carnivorous plants, storm giants, and so on."
 									],
 									"rows": [
 										[
@@ -3697,7 +3697,7 @@
 							"page": 379,
 							"entries": [
 								"To avoid delays, create NPC parties before play. The tables allow such parties to be set up quickly and impartially, and the DM is encouraged to make any changes that will enhance play. The tables should be considered a starting point.",
-								"A typical NPC party has 2-12 members — 2-5 major characters and the rest henchmen or men-at-arms.",
+								"A typical NPC party has 2-12 members\u20142-5 major characters and the rest henchmen or men-at-arms.",
 								"{@b Characters:} The Character Subtable provides a typical party structure by limiting number and classes of the NPC characters encountered. Determine character race (20% demihuman) and demihuman multiclasses on the Racial Subtable (multiclass results can exceed the Character Subtable limits).",
 								"{@b Character Level and Equipment:} These will usually be comparable to those of the player characters, but NPC level will rarely exceed 12th. Arms, armor, and equipment will be typical: a 1st level warrior would have scale or chain armor and minimal gear. At 2nd level, banded or plate mail is typical, weapons profuse, and equipment complete (much oil, holy water, mirrors, etc.). NPC magic will be used if a fight breaks out. Note that if the NPCs are defeated, their magical items will enter your campaign.",
 								"{@b Character spells:} These are selected by the DM according to those most suited to the NPC party. Wizards are subject to the limits of spells known. Henchmen spellcasters are treated likewise.",
