@@ -4766,6 +4766,8 @@ input[type=range] {
     line-height: inherit
 }
 
+/* Header 0 */
+
 .rd__h--0 {
     color: #1068a3;
     font-family: "Friz Quadrata Std";
@@ -4778,6 +4780,8 @@ input[type=range] {
     margin: 0 0 .2em
 }
 
+/* Header 1 */
+
 .rd__h--1 {
     color: #1068a3;
     font-family: "Friz Quadrata Std";
@@ -4787,6 +4791,8 @@ input[type=range] {
     align-items: center;
     font-size: var(--sz-font-h1)
 }
+
+/* Header 2 */
 
 .rd__h--2 {
     color: #1068a3;
@@ -4827,9 +4833,10 @@ input[type=range] {
     margin: 0
 }
 
+/* Header 3 */
 .rd__h--3 {
-    font-weight: bold;
-    font-style: italic
+    color: #1068a3;
+    font-weight: bold
 }
 
 .rd__h--4 {
@@ -5196,8 +5203,10 @@ td>.rd__b:last-child {
     color: #c2c2c2
 }
 
+/* Header 3 */
+
 .ve-night-mode .rd__h--3 {
-    color: #c2c2c2
+    color: #1068a3
 }
 
 .ve-night-mode .rd__-image-title-inner {

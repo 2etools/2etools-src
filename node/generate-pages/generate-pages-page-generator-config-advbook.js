@@ -1,5 +1,5 @@
-import {PageGeneratorAdventureBookBase, PageGeneratorAdventuresBooksBase} from "./generate-pages-page-generator.js";
-import {HtmlGeneratorListButtons} from "./generate-pages-html-generator.js";
+import { PageGeneratorAdventureBookBase, PageGeneratorAdventuresBooksBase } from "./generate-pages-page-generator.js";
+import { HtmlGeneratorListButtons } from "./generate-pages-html-generator.js";
 
 class _PageGeneratorAdventure extends PageGeneratorAdventureBookBase {
 	_page = UrlUtil.PG_ADVENTURE;
@@ -41,11 +41,11 @@ class _PageGeneratorAdventures extends PageGeneratorAdventuresBooksBase {
 	_searchName = "adventure";
 
 	_btnsList = [
-		HtmlGeneratorListButtons.getBtn({width: "1-3", sortIdent: "group", text: "Type"}),
-		HtmlGeneratorListButtons.getBtn({width: "5-5", sortIdent: "name", text: "Name"}),
-		HtmlGeneratorListButtons.getBtn({width: "2-5", sortIdent: "storyline", text: "Storyline"}),
-		HtmlGeneratorListButtons.getBtn({width: "1", sortIdent: "level", text: "Levels"}),
-		HtmlGeneratorListButtons.getBtn({width: "1-7", sortIdent: "published", text: "Published"}),
+		HtmlGeneratorListButtons.getBtn({ width: "1-3", sortIdent: "group", text: "Type" }),
+		HtmlGeneratorListButtons.getBtn({ width: "5-5", sortIdent: "name", text: "Name" }),
+		HtmlGeneratorListButtons.getBtn({ width: "2-5", sortIdent: "storyline", text: "Storyline" }),
+		HtmlGeneratorListButtons.getBtn({ width: "1", sortIdent: "level", text: "Levels" }),
+		HtmlGeneratorListButtons.getBtn({ width: "1-7", sortIdent: "published", text: "Published" }),
 	];
 }
 
@@ -59,9 +59,10 @@ class _PageGeneratorBooks extends PageGeneratorAdventuresBooksBase {
 	_searchName = "book";
 
 	_btnsList = [
-		HtmlGeneratorListButtons.getBtn({width: "1-3", sortIdent: "group", text: "Type"}),
-		HtmlGeneratorListButtons.getBtn({width: "8-5", sortIdent: "name", text: "Name"}),
-		HtmlGeneratorListButtons.getBtn({sortIdent: "published", text: "Published"}),
+		HtmlGeneratorListButtons.getBtn({ width: "1-3", sortIdent: "group", text: "Type" }),
+		HtmlGeneratorListButtons.getBtn({ width: "8-5", sortIdent: "name", text: "Name" }),
+		HtmlGeneratorListButtons.getBtn({ width: "3-5", sortIdent: "storyline", text: "Series" }),
+		HtmlGeneratorListButtons.getBtn({ width: "1-4", sortIdent: "published", text: "Published" }),
 	];
 }
 

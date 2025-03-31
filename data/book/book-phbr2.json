@@ -1,0 +1,761 @@
+{
+	"data": [
+		{
+			"type": "section",
+			"name": "Introduction",
+			"page": 4,
+			"entries": [
+				"The world of the thief is a world of darkness and stealth, hidden from the eyes of respectable folk, yet often under the scrutiny of the zealous enforcers of the law. It is a world of courage and fear, of bravado and cowardice, of violence and treachery.",
+				"Yet it is also a world of color and laughter, lively parties and bustling markets. The thief, more than any other character class, practices his arts among his fellow men (or halflings, or elves, or whatever). He seeks the gatherings of population, the confluence of wealth and avarice, where treasures are there for the taking.",
+				"To be sure, many a thief has proven his worth time and again in the darkest reaches of a forgotten dungeon, among the snowy peaks of the bleakest of wild vistas, or within the halls of a fortress or military camp. Quests into the wild contain as much appeal for the thief as they do for other characters. In fact, should the prospect of treasure appear significant enough, many a thief will lead the way in encouraging his companions to embark on such a mission.",
+				"But when the adventurers return to the sheltering walls of their homes, wherever these may be, and rejoin the population, the thief is best equipped to find adventure there. And when such adventure is discovered, it is thiefly skills that are most often called into play.",
+				{
+					"type": "entries",
+					"name": "The Purpose of the Complete Thief's Handbook",
+					"page": 4,
+					"entries": [
+						"This book provides information of use to players of thief characters, and to DMs running campaigns including thieves. The emphasis lies heavily upon a campaign where many Pcs are thieves, but there is no reason provisions in this book cannot be employed by groups with but a single thief among them.",
+						"None of the information here changes any existing AD&D® 2nd Edition rule. Instead, the idea is to amplify and detail those rules for players who are interested in playing thief characters. Indeed, it is possible and in fact quite easy to play a thief character without the information herein.",
+						"However, the player who wishes to develop his player character thief in a unique fashion, or who seeks aid in deepening and broadening the character's personality, goals, and motivations, will find helpful suggestions and ideas in the {@i Complete Thief's Handbook}.",
+						"But the book is a guide for DMs as well. Information on organizing thieves' guilds, for example, is essential to any ongoing thief campaign. If no guild is present, consistent information on other societal sanctions needs to be determined by the DM—and the information must be available to players as well.",
+						"Consequently, no portion of this book is prohibited to player viewing, nor is any part of it irrelevant to the activities of a good DM.",
+						"New rules and procedures only become official campaign rules in a campaign where the DM so declares. Players who wish to employ some of these materials can certainly ask the DM to use them, but as always, the Dungeon Master has the last word."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "The Role of the Thief",
+					"page": 4,
+					"entries": [
+						"The skulking burglar pilfering through the night is perhaps the most common picture of the thief. Neither players nor Dungeon Masters should blind themselves to other possibilities, some of them more useful (and socially acceptable) than common theft.",
+						"The thief character kits introduced in Chapter 3 provide a variety of thief types. These are not new character classes by any means, but the kits can help players define thieves in one of several areas of specialty. Some of these include:",
+						"{@b The Spy}, long a noble practitioner of the thiefly skills. Indeed, lockpicking, moving silently, hiding in shadows, and the like are all skills of prime importance to the Spy.",
+						"{@b The Scout} can do for an adventuring party what skirmishing troops do for an army: he is a fast, lightly armored individual who can utilize stealth and speed to study terrain and watch for ambush. Thief-scouts and rangers in combination make splendid reconnaissance bands.",
+						"Other kits include the {@b Troubleshooter} (the dungeon-crawling thief){@b , Acrobats, Beggars, Bounty Hunters, Swindlers}, and many more.",
+						"Typical thiefly personalities are also provided, allowing players to create detailed PCs based upon these archetypes, but also providing useful pieces of imaginative roleplaying information for many long-lived, high-level PCs.",
+						"Chapter 2 describes additional nonweapon proficiencies of particular use to thief characters. New equipment types, both magical and mundane, are introduced in later chapters. And a few new rules cover areas of concern to thieves—lethal and non-lethal poisons, for example, and how to determine the quality of workmanship used to build a lock or trap.",
+						"A section on running a thief campaign provides players, and most particularly DMs, with suggestions and guidelines on ways to tailor the campaign toward the thief PCs' areas of interest and expertise.",
+						"Whatever area of the book yields the most use, players and DMs alike who wish to expand the domain of the thief in their campaign world should find many things of interest between these covers."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Thieves and the Law",
+					"page": 4,
+					"entries": [
+						"{@i Geraldor slipped through the alley, his black cloak masking his progress through the filthy passage. Reassuring himself that he was not pursued, he stepped boldly onto the Golden Way. With a nervous gesture he smoothed his oily black hair and attempted to stroke his wispy mustache.}",
+						"{@i Sighing, Geraldor realized that any attempt to look like a gentleman was doomed to failure. He hoped his guildmaster's plan was intact.}",
+						"{@i Sighing, Geraldor realized that any attempt to look like a gentleman was doomed to failure. He hoped his guildmaster's plan was intact.}",
+						"{@i And there before him was the Highgate! Geraldor's heart pounded as he examined the brawny men at arms, four in number, manning the post. As the only public route into the city's Golden Quarter—home of all the wealthiest merchants, most powerful lords, and influential ambassadors in all the land—the Highgate was usually guarded well.}",
+						"{@i But not tonight. Geraldor recognized the giant, hulking form of Morto, sergeant-at-arms of the city watch. As Geraldor had expected—nay, hoped—Morto commanded the detachment at the Highgate.}",
+						"{@i With a barely concealed nod of recognition, Geraldor stalked to the gate and stood impatiently as Morto made a pretense of examining his \"pass.\" In reality, this crudely forged slip would fool no one with any capacity for comprehending script.}",
+						"{@i But Morto's reading ability was not the issue tonight. Instead, the guard's loyalty to the guildmaster was the force behind Morto's curt nod and his gesture ushering Geraldor through the Highgate. Geraldor fairly skipped through the great stone arch. He had entered the Golden Quarter!}",
+						"{@i Now his movements took on the shadowy aspect of the master thief at work. Though he remained alert, he knew that the major obstacle had been passed at the gate. The hefty bribes offered to Morto and his associates had paved the way to riches. It only remained for Geraldor to haul those riches away.}",
+						"{@i The wiry thief found the mansion that had been selected by the guildmaster. Family and servants all slept, and they had no dog. In a matter of minutes Geraldor had collected the lady's gems. He spent several more minutes seeking the strongbox, finally discovering it in a small, luxurious sitting room. He picked the lock and pulled out only the most valuable coinage, platinum and gold, before soundlessly slipping toward the exit.}",
+						"{@i In the house he saw magnificent silver candelabra, a huge and obviously enchanted sword, and other wonders. All of these he disdained as too bulky for his current mission. After all, Geraldor was a professional!}",
+						"{@i Scarcely suppressing an urge to whistle, Geraldor sauntered back along the Golden Way. He would pass through the Highgate again and immediately disappear into the clustered neighborhoods that crowded both banks of the muddy river.}",
+						"{@i He saw Morto at the guardpost and nodded casually, passing under the great stone arch again on his way out of the Golden Quarter. Only then did he notice something wrong: Morto stood mute, with his hands shackled before him.}",
+						"{@i At that same instant a heavy gauntlet fell upon Geraldor's shoulder and a massive arm propelled him into the stone wall of the gatehouse.}",
+						"{@i \"What have we here?\" growled an unfamiliar voice. Terrified, Geraldor saw that it issued from beneath the shiny cap of a watch captain.}",
+						"{@i \"J-just going home, m-my lord!\" he stammered, wriggling in a futile attempt to break away.}",
+						"{@i The captain laughed, having already found and discarded Geraldor's fake pass. The man's gloved hands continued to poke through Geraldor's clothes and pouches, retrieving object after object, often with a low chuckle.}",
+						"{@i \"The lady Allorana's diadem, I see—perhaps she loaned it to you!\" The captain roared with hilarity, joined by the guffaws of a full company of guardsmen that Geraldor now saw in the shadows.}",
+						"{@i Then the captain's voice lowered as his hand tightened around Geraldor's throat. \"Now, thief, you will find out what the laws are in our town. And you will have time to learn them while you rot in gaol!\"}",
+						"From even before the time, thousands of years ago, when the Code of Hammurabi first defined the legal system of a body of government, and extending to the present day, societies have created procedures for defining personal possessions. An inherent part of this definition includes the penalties due those who violate these procedures. Odd as it may sound, thieves cannot exist without some kind of legal framework.",
+						"And from the time in any culture when personal possessions come into being, there have been those who seek to remove the possessions of others and make them their own. It is for players of characters who attempt this perilous exchange of wealth, and to their Dungeon Masters, that this tome is intended.",
+						"Of course, some thievery occurs under the guise of authority, and as such falls beyond the scope of this book. Tax collectors, for example, may steal from those who regard such claims as thievery. So do conquerors. But these are not AD&D® thieves. While they may approach the category of bandits, their \"theft\" demands more fighting skill and aggression than stealth.",
+						"By far the more common type of thievery, and the one that generally comes to mind when discussing the character type, is the furtive pilfering described in the incident above. Poor Geraldor has suffered the fate known to many of these wrongdoers as he is taken by the long arm of the law. But if that law did not exist, then Geraldor's task would become meaningless.",
+						"This point is one that should be well remembered by those who play thieves as well as those who run the campaigns. Regardless of how chaotic the setting, a structure at least vaguely approximating a legal system is necessary before the thief can really begin to ply his trade."
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Role-Playing Thieves",
+			"page": 7,
+			"entries": [
+				"Thieves are perhaps the most fascinating and diverse class of player-characters in the AD&D® game—or at least they can be, if played properly. The thief has a certain innate, charming flair, which the {@i Player's Handbook} describes: \"Thieves are people who feel that the world (and everyone in it) somehow owes them a living. They get by day by day, living in the highest style they can afford and doing as little work as possible...\"",
+				"This is an accurate description of many thieves, but not all; and there are many exceptions. You will find that the character—that is, the personality—of your thief character will be very important, vital to making the thief a living, breathing person. It makes them more fun to play, too.",
+				"Personality, then, is the topic of this chapter. It comes before the chapters of technical information on kits, new abilities and so forth, because we believe that when you are designing a thief character, perhaps even more so than with other classes, personality considerations should come first. Who is this character? Where is he from? Why is he a thief—has he stolen bread crumbs all his life just to survive, or is he an idle fop who moonlights as a burglar just for thrills?",
+				"After asking yourself such questions, and answering them, you will then be better able to proceed into the technical details. Your character will exist in your mind, and the task will then be just a matter of translating that vision into working game terms.",
+				"There are three basic things to consider when putting together your thief's background and personality: setting, social background, and motivations.",
+				{
+					"type": "entries",
+					"name": "Setting",
+					"page": 7,
+					"entries": [
+						"",
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"items": [
+								{
+									"type": "item",
+									"name": "City:",
+									"entries": [
+										"Any place where people gather in large numbers, there will be those who live off the sweat and toil of others. Besides politicians, thieves are often among this group. A city background will open many possibilities of specialization for your thief. Because a city is a complicated web of many people, each person tends to have more specialized functions. This is true for thieves as well as normal, respectable citizens.",
+										"Note that thieves in cities, especially those who have very specialized skills and abilities, are most likely connected with a thieves' guild; or, if they are not, they will surely run afoul of one sooner or later. If your thief hails from an urban center, be sure to figure out what his relationship to the local thieves' guild (or, in some places, guilds) is."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Countryside:",
+									"entries": [
+										"A few thieves are able to make a living in a single populated, rural area. They tend to be quite different from their city-dwelling cousins—pickpocketing, for instance, is probably not going to be practiced much without the shelter and anonymity of the urban crowds. Extortion, banditry, burglary, and various similar thefts are more typical means of making a living from the peasants and their rulers in the countryside. Fences also may work the countryside, selling wares that may have been stolen in distant cities.",
+										"Thieves' guilds often have an active hand in populated rural regions, though it is not as firm as in the cities."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Wilderness:",
+									"entries": [
+										"Thieves are, by definition, those who garner their living from others, so few are to be found making their permanent abode in the wilderness, far from human settlement. Those who do are usually bandits, with a stronghold set up somewhere secure, from which they can make raids on nearby settlements or trade routes. In AD&D fantasy settings, there are also innumerable possibilities for thieves who survive by taking liberties in their relationships with the local non-humans.",
+										"While few thieves' guilds would claim any wilderness as \"territory,\" thieves from these regions are typically affiliated with one or another organized band of miscreants. These bandit groups don't have the organization or sophistication of the urban guilds, but they are still formidable, and their rivalries may run as deep as any among the big city guilds.",
+										"A great many demihuman thieves originally hail from a wilderness setting, although they do not necessarily fit the \"bandit\" mold common among humans. (See the section on demihumans, below, for more information.)"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Wandering:",
+									"entries": [
+										"Finally, some thieves have never called any place \"home.\" They travel town and village, city and wilderness, wherever they think fortune might grant them better opportunities. Charlatans, those who make their living by duping others with all sorts of fraud, are often wanderers: They will stay in one place as long as there's money to be made, but they hope to be long gone, preying on others' gullibility, before their scams are uncovered."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Social Background",
+					"page": 7,
+					"entries": [
+						"After you have chosen a setting for your character, you should decide his social background. At the start this need only be done in a general way: select a poor (or unknown), middle, wealthy or noble class background. This background will have important effects on what resources are available to the character. Also be sure to consider how it relates to the thief's motivation (below).",
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"items": [
+								{
+									"type": "item",
+									"name": "Poor/unknown:",
+									"entries": [
+										"Most thieves are from a poor background. Most people would just as well make an honest living, if they can. For some in the lower classes, however, there is simply no such opportunity, and so crime becomes a means of survival. The vast majority of such criminals spend their lives as petty thieves, picking pockets, mugging people foolish enough to walk the streets at night alone, perhaps even planning and executing a burglary. These poverty-born thieves form the backbone of most thieves' guilds. The guild regulates their activities as well as it can, and uses it as a pool, from which are drawn the most talented and promising. Because skill and cunning are the ultimate determining factors, many a famous thief—whether in esteem or power among guild comrades, or outside of the underworld—rose from the most humble beginnings.",
+										"An \"unknown\" background usually fits in with the poorer classes. This means the character was an orphan, and does not know his ancestry; his parents may have been criminals, middle-class artisans, or even wealthy merchants or nobles. Dickens' Oliver Twist is a classic example of a thief of unknown ancestry. For all practical purposes, the character is one of the poor people, like everyone with whom he grew up. However, a hook in the campaign may be the search for, or accidental discovery of, a character's ancestry.",
+										"Player characters from a poor background may, at the DM's option, have a smaller amount of starting money than they would otherwise (perhaps {@dice 2d4 × 10} gp). If a player character is part of a guild, however, he has probably been accepted as someone who shows promise, and the guild may provide standard equipment and money for its apprentice—the equivalent of the usual {@dice 2d6 × 10} gp."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Middle:",
+									"entries": [
+										"A few thieves may hail from the middle classes, perhaps from families of artisans and petty merchants. Such characters are less likely to be stealing for survival, though desperate financial straits may bring people to seek illegal solutions, which could tie into a whole net of crime.",
+										"Imagine, for instance, a locksmith who needs money to support his ailing mother. The landlord threatens eviction, and so forth; in desperation, the locksmith turns to the thieves' guild for a quick, easy, high-interest loan. As the family gets more and more entangled by their debts, the guild decides to accept as partial payment the locksmith's daughter (and apprentice), to become an apprentice thief.",
+										"But greed is a more typical motivation. Many swindlers come from the middle class; they decided that there are better profits to be made through dishonesty than hard work.",
+										"Thieves of middle-class origin usually have standard initial funds."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Wealthy/Noble:",
+									"entries": [
+										"Still fewer thieves are from affluent families. This is partly because people with ample funds have little motivation to pick pockets; but even more, it is because thievery is very much socially unacceptable at this level. There are exceptions, of course. Wealthy privateers, raiding the trade lanes of rival nations for glory and plunder, may enjoy a high and respected profile for a time. And wealthy families of crime lords are a different matter entirely.",
+										"In any case, a thief from a wealthy family is expected to distinguish himself in some way or other—flamboyance, daring, audacity, charm—even if he hides his identity during his roguish endeavors. Otherwise, what is the point of risking life and reputation?",
+										"This question might be asked of any character, of course. And so we turn to the topic of motivations."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Motivation",
+					"page": 8,
+					"entries": [
+						"Why is the thief what he is? You can ask this question even before you know specifically what his area of expertise or technical interest is. A person primarily motivated by greed could be a troubleshooter or a cat burglar, for instance, provided the job pays well.",
+						"We suggest six basic motivations: fame (or infamy), greed, justice, loyalty, survival, and whim. These are of course generalizations, and any particular character probably has motivations more complex than one of these simple descriptions. Also, characters often have more than one motivation, and different motivations can apply to different situations.",
+						"This may sound so convoluted that you may wonder why we should even approach the issue. It is useful to choose a basic motivation, however, as the basis for role-playing. As you play the character, more motivations will arise—and old ones may vanish. In this way a character may come to life.",
+						"A character who starts with the greed motivation may, in the course of his adventures, encounter a great deal of injustice wrought by the rulers of the land. He may even trace his own selfishness to the perverted values of the rulers. As he organizes his activities to oppose the rulers, then, his motivation may subtly swing towards justice. It is unlikely, however, that he would be so \"converted\" as to lose entirely the greed that drove him for so long. New conflicts and role-playing opportunities may arise within the character between his greed and his new-found sense of justice.",
+						"Be sure to keep your character's motivations in mind when you select his alignment. The description below of each general motivation includes a word on appropriate, related alignments. Note also that as the character develops in play and motivation shifts, alignment too may undergo change. (For a thorough discussion of alignment changes, see the AD&D® 2nd Edition {@i Player's Handbook}, p. 49, and the {@i Dungeon Master's Guide}, pp. 28-29.)",
+						"The motivation description may also include suggestions on thief kits appropriate to this motivation. The thief kits are fully detailed in Chapter 3.",
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"items": [
+								{
+									"type": "item",
+									"name": "Fame/Infamy:",
+									"entries": [
+										"The fabled charm of a thief's life attracts many an adventurer in search of glory. In our own real world, many thieves have achieved great fame, and in literature even more such figures abound. Infamy surely accompanies the career of many a successful thief; for some it may even be their ultimate goal. If this is the case with your character, you must be certain to bring it out while role-playing. Every action should be considered in terms of how it may increase the world's knowledge of the thief's amazing exploits."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Greed:",
+									"entries": [
+										"The simplest and perhaps most stereotypical motive behind the thief's life is greed. Combining greed with sloth, the thief shuns \"real\" work, and lightens his load by lightening others' purses. Or, the character simply loves wealth, but is unable to get it through acceptable channels.",
+										"Characters with greed as their primary motivation surely would not be of good alignment. Although even good thieves may have a certain element of greed, it would not be the biggest factor shaping their lives."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Justice:",
+									"entries": [
+										"This is a rare and peculiar motivation, since thieves are generally considered to be anything but good. The classic example of the thief motivated by justice is Robin Hood—at least as popularly portrayed, if not in historical reality. Such a character must arise in a region or nation where injustice rules, though it need not do so officially. For instance, in one town the rulers may be blatantly evil and corrupt; a thief motivated by justice may devote himself to fighting those rulers.",
+										"Characters motivated by justice will probably be of good, lawful neutral, or true neutral alignments. Remember that each alignment has its own idea of what constitutes \"justice\"; to a true neutral thief, for instance, justice means maintaining the balances between good and evil, law and chaos."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Loyalty:",
+									"entries": [
+										"Some connection in the character's past has drawn him onto the road of the thief, and he follows it faithfully out of loyalty or debt to that past. For instance, one character might have been born into a family of crimelords; he became a thief as a matter of family loyalty. Another thief may have been an orphan, sheltered and raised by the thieves' guild. Even though his moral sensibilities may lead him to question his benefactors' and even his own behavior, his loyalty and gratitude for the life and opportunity they gave him may (at least for the moment) outweigh his doubts.",
+										"Loyalty is most appropriate as the primary motivation of lawful characters. The conflicts of loyalty versus moral imperatives may lead to some very interesting role-playing."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Survival:",
+									"entries": [
+										"Many thieves from the lower strata of society engage in theft and the like for the simple purpose of survival. Player-character adventurers are prone to garner more wealth than they need for mere survival, so (unless the Dungeon Master works diligently to keep them poor) they might need a new motivation after a few successful adventures. Probably a secondary motivation (such as greed, or even justice) would come to the fore and become primary.",
+										"Thieves who steal for survival usually don't have lawful alignments, though lawful evil is possible."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Whim:",
+									"entries": [
+										"Some thieves engage in their activities for the sheer thrill of it. They can survive (materially) without it, they don't need or desire the money as such, and they are indifferent to fame. They simply desire to steal, to deceive people, to pull off the most impossible heist or scam—this grants them supreme pleasure. Whim-motivated thieves range from the ennui-stricken rich man's son to the compulsive shoplifter whose desire to steal may push him to the very edge of sanity.",
+										"This motivation is most appropriate for chaotic alignments."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sample Archetypes",
+					"page": 10,
+					"entries": [
+						"By combining assorted settings, social backgrounds and motivations, you can create a worldful of distinct thieves. Another way of making a character is to start with a whole concept of what sort of thief he is, rather than building him from the individual blocks we described above.",
+						"But where do you get such a concept? History, folklore and literature all provide colorful examples of thieves. From these you can abstract a model, an archetype, on which you base your beginning character. Like the elements we described above, these archetypes are rough and general. Through effective role-playing you will expand your thief into a more detailed, interesting, and believable character.",
+						"Below are a number of sample archetypes that you may have encountered in books, movies, and so forth. Experienced role-players will probably find that thieves they've played in the past are similar to one of these archetypes, or are a fusion of two or more.",
+						"Remember that these archetypes, like the background options presented above, are meant to inspire role-playing, not to limit it. The personality you create should provide the basis of your character, but it would be wrong to define every possible choice beforehand. Part of the pleasure of role-playing is seeing your characters change and grow; like real people, they should be full of surprises, ready to adapt and change with new situations.",
+						{
+							"type": "item",
+							"name": "The Artist:",
+							"entries": [
+								"This thief is searching for \"the perfect crime.\" He chooses jobs for their challenge and aesthetic pleasure, not strictly for their payoff in wealth.",
+								"A drunken duke who is stumbling down an alley late at night, heavily laden with jewels and gold, would be of little interest as a target for the Artist. In fact, the Artist would be offended if someone were to suggest that he perform such a ludicrously easy theft, since it would be so far \"below\" the Artist's caliber.",
+								"However, the Artist might take advantage of the situation if it might play into a bigger, grander scheme. For instance, he might play the part of a \"Good Samaritan,\" escorting the foolish noble to his residence, and thereby gaining the duke's confidence. This gives the Artist special privileges, not the least of which is the duke's unquestioning trust. (After all, how could the Artist have been a thief if he escorted the duke safely home, rather than mugging him?) From this position, then, the Artist may plan a truly exceptional theft, the sort that would stir up an extraordinary amount of public interest, but could go unsolved for decades.",
+								"The Artist is usually found in an urban setting or, less frequently, wandering. His family was surely above the poverty level, and probably even wealthy; theft for the Artist is chiefly a pastime, though it may have also become a source of livelihood. He is egotistical, motivated by whim or a desire for fame—if not fame for himself, than for his crimes, since he probably will remain anonymous."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Desperado:",
+							"entries": [
+								"For some reason or another, this character is running from the law—or, perhaps even worse, the unwritten law of the underworld. In any case, he is ready and willing to do whatever is necessary, however drastic, to preserve his life—he knows all too well how soon its end may be. Delicacy and rational forethought are not the forte of the Desperado. This is the sort of character that, when discovered pickpocketing, might knife his target, lest his face be identified.",
+								"The Desperado character may be of any social background, although poor is most likely. His motivation is simple survival, and he may be found in any setting. You must be certain that you know what circumstances have led to his desperation. Desperadoes are often short-lived; either whatever's chasing them catches up and gets them, or (rarely) they eliminate the threat and are able to shift to a less high-strung lifestyle. The Desperado either dies or changes to something else...though surely his old habits die hard.",
+								"",
+								""
+							]
+						},
+						{
+							"type": "item",
+							"name": "Folk Hero:",
+							"entries": [
+								"When the system itself is unjust, those labeled \"criminals\" are sometimes in fact the good guys. The Folk Hero will not sit idly by while tyrants rule. He musters all his charisma and roguish skills, and leads the fight to right wrongs and, if he can, topple the evil regime. Robin Hood is a Folk Hero of great fame. According to legend he stole from the wealthy nobles and clergy, and gave the money to the poor, overtaxed peasants.",
+								"Robin Hood was of noble lineage, and his band did their work in the countryside, but a Folk Hero could operate in any setting and be of any social background. Imagine, for instance, a thief from the lower classes who lives in a city ruled by an evil tyrant. He and his compatriots devote themselves to the freeing of maltreated slaves and falsely convicted prisoners, smuggling them to safety beyond the evil kingdom's borders. The chief motivation of the Folk Hero is, of course, justice (or at least so it must appear to the public eye)."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Kleptomaniac:",
+							"entries": [
+								"The kleptomaniac is a character with a compulsion, perhaps entirely uncontrollable, to steal. This compulsion might be at odds with the rest of the character's personality; interesting role-playing may arise as the character has an internal conflict between his driving desire to steal and a guilty conscience that never stops telling him how wrong and evil his actions are. This character may be of any background and setting. His motivation might be classified (very loosely) as whim, since it lacks a rational reason."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Mobster:",
+							"entries": [
+								"This character was literally raised in crime. Perhaps he hails from a family of elite criminals, leaders of organized crime. Over the years they have developed their own codes of behavior and a twisted sense of honor. A mobster is found in the city, and may be of any background. (Crime families may have considerable wealth, but if their illegal activities are well known, or at least the topic for common rumors, they may have considerably lower esteem in the eyes of good citizens than those of comparable yet honestly-earned wealth.) His primary motivation is usually greed or loyalty, and his alignment is most often lawful neutral or lawful evil. Characters of this sort often make up the backbone of the more powerful thieves' guilds."
+							]
+						},
+						{
+							"type": "item",
+							"name": "The Professional:",
+							"entries": [
+								"Thievery is simply a job for this character. He is often aloof from other, \"lesser\" thieves: He has little tolerance for flamboyant fools, like the Artist and Trickster; Desperadoes and Kleptomaniacs, desperate and obsessed, are sloppy and crude in comparison to his refined talents and balanced temperament; Folk Heroes are just silly. The Vigilante is a dangerous foe for the Professional, in part because he is incomprehensible to him. The Mobster would seem to be the Professional's kindred spirit, but they are too tightly bound (in the Professional's opinion) by honor and family loyalty and such trash. The Professional is bound to no absolute codes, except perhaps a contract and a clean, efficient theft. He has honor and honesty inasmuch as it is necessary to maintain his reputation for dependability.",
+								"The Professional's motivation is hard to pinpoint. Clearly it is neither justice nor loyalty; and he knows that greed, whim and the lust for fame can cloud judgement and lead to fatal sloppiness. Perhaps then \"survival\" would be the best description of the Professional's motive; though any Professional worth his salt does better than merely survive. Of all the archetypes, he is perhaps most likely to have a businesslike, middle-class background, though any of the others is possible. The Professional is usually based in a city, or wanders, and his services are usually for hire. He may be associated with a guild, but would prefer to be as independent as possible—other people's involvement in his work is more often hindrance than help."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Street Urchin/Victim of Circumstances:",
+							"entries": [
+								"This thief grew up in an impoverished, harsh environment. There he learned that if you need something you have to take it, because no one will give it to you. People may tell him that stealing is wrong, but he cannot believe it—to him, stealing has always meant survival. He long ago lost any sense of regret for his actions. He was driven to a life of crime so long ago that it seems to him the only life possible.",
+								"This character invariably knows his setting (typically a city) inside and out, and probably has many useful connections. His social background is always lower class or unknown. Street Urchins that continue the thief's life may develop into a different archetype as they grow older; the Professional, for instance, may blossom from such a solitary young thief."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Trickster:",
+							"entries": [
+								"This is a thrillseeker, a character who delights in pulling off the most outrageous and amazing scams. Deception and pranks are his food and drink; flirting with danger grants him an incomparable thrill. Thieves, such as Reynard the Fox, are often portrayed this way in fairy and folk tales.",
+								"In role-playing, you may wish to make a Trickster thief more complicated. Why does he seem so light and frivolous? Does he hide something beneath it all? Is he in fact driven, obsessed with proving himself the most clever of all? Such a character could even become dangerous to those around him if his insecurities were brought out and played upon. What if people are impressed by his antics? What if they manage to outwit his pranks, or don't find them amusing? Does he need attention, or is the thrill alone enough to satisfy him? Might the trickster be cowed into quiet humility, or pushed into rage or frustration?"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Vigilante:",
+							"entries": [
+								"The Vigilante is a loner, a curious sort of thief whose life is preoccupied with defeating the schemes of criminals. He finds the law too restrictive, or unenforced, and so he goes outside it to bring about his vision of justice. Ironically, the Vigilante trains himself in the very skills of the thieves he opposes; he comes to know their ways and their minds as though he were one of them.",
+								"Though he fights on the side of law, the law does not often appreciate the Vigilante. He is unsupervised, unpredictable—and therefore dangerous. This is especially true in the case of locales where the leadership is a bit on the shady side itself, perhaps riddled with bribery, graft, connections with crime, and other such corruption. The Vigilante leads a dangerous life, for he can have many powerful enemies.",
+								"On the other hand, the Vigilante may attain a revered status similar to that of a Folk Hero, if his successes become popular knowledge. Popularity might do little to ward off a powerful thieves' guild, but it can cow the more fearful of public officials into tacit approval of his extralegal exploits.",
+								"A Vigilante will, of course, not be part of a thieves' guild—that is his antithesis. He may, however, be part of some secret society devoted to justice. Such a society may consist entirely of Vigilante-type thieves, or it could include adventurers of many diverse classes.",
+								"The Vigilante may be of any social background. He might work in any setting, but the city is most common. His primary motivation is usually justice, but one could imagine it being fame, loyalty (perhaps to comrades or relatives killed or ruined by criminals), or possibly even whim.",
+								"Some comic books do a great job of illustrating the complex psychologies found in characters of the Vigilante archetype. They make excellent inspirational reading."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Demihumans",
+					"page": 12,
+					"entries": [
+						"Another factor to consider when you create the personality of your thief is race. Thieves are one of the two AD&D® game classes that are open to any race (the other is fighter), so there's a great deal of racial diversity among the ranks.",
+						"Humans are assumed to be the norm throughout this book, but we'll include the occasional note when special conditions or rules apply to nonhuman thieves.",
+						"Below, for instance, we have some observations on the behavior of thieves of the various demihuman races. These suggestions are mere guidelines, generalizations; it is by no means required that PC thieves should conform to these models. PCs are exceptional in many ways, after all, not the least of which is personality. These predispositions, as you might call them, may nonetheless be useful as a starting point for conceptualizing your demihuman thief.",
+						"Reference is made below to the types of \"thief kits\" that the various races are likely to take; thief kits are fully explained in Chapter 3, starting on p. 22.",
+						{
+							"type": "entries",
+							"name": "Dwarf",
+							"page": 12,
+							"entries": [
+								"Many dwarven thieves are not stealers, as such; but rather experts in mechanical things, such as locks, traps and so on, that are used to thwart thieves. The dwarven thief, then, is often an installer of such items, or an advisor on security matters. And, naturally, knowledge of how to put something together is also useful for taking it apart...",
+								"The kit most favored by dwarven thieves is, naturally, the troubleshooter. Here he can make use of his knowledge and skills without engaging in the dishonorable activity of genuine theft. If you want to check how secure your jewels actually are, or whether your prison is in fact inescapable, a dwarven troubleshooter is probably the best way to find out.",
+								"Bounty hunters also are found in the ranks of dwarven thieves. They may serve the kings under the mountains, bringing back scoundrels and criminals who have somehow escaped dwarven justice—and such characters are the only bounty hunters permitted to be of lawful alignment. Other dwarven bounty hunters specialize as repossessors. They use the full range of thieves' skills to recover stolen items; and they are careful to take nothing else, thereby keeping their honor and reputation impeccable.",
+								"It may be dangerous to call either of these sorts of dwarves a thief—a grave insult in dwarven culture, in which tradition absolutely prohibits one dwarf from stealing from another. Theft within a dwarven community is punishable by banishment at the very least, and sometimes death.",
+								"The prohibition does not extend to stealing from other races, however (especially goblins), but stealing is still less than honorable and a known thief is usually viewed with caution and suspicion by his neighbors.",
+								"Dwarven thieves living outside the dwarven world either became tired of that suspicion, or were expelled from their homes for theft or another transgression. They still tend to retain a great deal of honor and the professional attitude characteristic of their race; a former criminal may even have learned from his crimes and youthful excesses, and could be a very reliable companion. A very dangerous few, however, have abandoned their racial legacy, and become treacherous and unpredictable.",
+								"Any dwarf found in a thieves' guild can be assumed to be an outcast from dwarven society."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Elf",
+							"page": 12,
+							"entries": [
+								"Elven thieves are sometimes characterized as eavesdroppers or spies. Elven culture has shown relatively little interest in personal, material property; with their incredibly long lifespans, they are more aware than most of the transitory nature of things.",
+								"But while material things come and go, knowledge is eternal, and it is what the elven thief covets above all. With their higher chances for finding secret doors, and superior senses in general, elves are excellent at gathering information. Of the various thief kits, they are most likely to become spies. An elf raised in a larger human community might be inclined to take the investigator kit, but this is a rare situation. The adventurer kit is also popular, especially for the elven thief who wishes to traverse the world in search of exotic knowledge. (Note that multi-class thieves cannot take a kit, however.)",
+								"Elves are careful with preparations; they can have patience that amazes other races. They like to do research before a mission is undertaken, whether it be a relatively simple burglary or a dive into a deep dungeon to track some precious artifact.",
+								"Because of their heritage, elves are more likely than other thieves to recognize the value of archaic or obscure items, such as books and artwork. (If you are using the nonweapon proficiency system, you might let an elf check information gathering or a similar proficiency to identify or estimate the value of such an object.) An elf is also more likely to know where to fence the item—although he would probably want to keep it for himself.",
+								"When elves do desire material goods, they are sure to be beautiful and innovative ones. Elves take a special interest in items that are long-lasting and of intellectual value (art, rare books, etc.).",
+								"Though enthralled by knowledge, elves are not overly secretive. They find information exciting, and may delight in sharing it with their friends.",
+								"Finally, elves are dependable. You can usually expect an elf to behave as a professional (though he might not be recognized as such) or a reliable guildsman (though elves prefer to be independent of such organizations)."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Gnome",
+							"page": 13,
+							"entries": [
+								"\"Prankster\" and \"thrillseeker\" are words that best describe the gnomish thief. He takes delight in stealing, not out of greed but because it is like an exciting game—a trial of puzzles and challenges, with a valuable prize if you succeed. Thievery is recreation rather than a profession—but the reader knows well how devoted and involved people can become with their games and recreation!",
+								"Gnomes are fond of burglary, though wall-climbing is difficult on account of their small stature. They may be infallible \"box-men\" (experts at lock-opening and trap-disarmament), having technical expertise comparable to dwarves', but being more willing to put it to larcenous use.",
+								"Some have compared gnomish thieves to pack rats: Show one something shiny and interesting, and he'll likely be so overcome by curiosity that he'll drop everything in eagerness to discover a way to put the object of interest in his own little paws.",
+								"Bulky treasures, such as coins or awkward items that must be fenced, are avoided by gnomes. They are collectors, hobbyists who like to admire their trophies: gems, jewelry and (perhaps favorite of all) fascinating magical devices.",
+								"Also, gnomes love to put their magic items to clever use. They delight more than any other race in practical jokes. They may make themselves a nuisance to fellow adventurers and thieving partners; but, though embarrassing or amusing, such pranks are harmless. And at heart, a gnome, well-treated, is a most loyal and reliable adventuring companion."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Half-elf",
+							"page": 14,
+							"entries": [
+								"Half-elves live between two worlds—and perhaps this gives them a special affinity for thievery, taking the best that both have to offer.",
+								"Some half-elves favor the world of one parent or the other, if raised and accepted by that parent's society. But many more are wanderers, never quite feeling at home or accepted in either society.",
+								"By seeing and understanding two diverse cultural viewpoints, half-elves are acutely aware of peoples' differences in point of view—and how to capitalize on those differences. This helps develop a well-honed ability to shade the truth and, combined with the elven affinity for knowledge, makes half-elves excellent swindlers. Targets are sometimes further impressed by a half-elf's exotic appearance (pointed ears, lithe build, and so forth).",
+								"It is very easy, for instance, for a half-elf to enter a new town, find a likely target, discover what that person needs or desires, and then appear at the target's doorstep with a fake for sale. A half-elf swindler will milk a town or area for however much it's worth, and move on when things get a little too hot. Between towns he may link up with adventurers for protection (and perhaps con {@i them}, too), but eventually he'll move on when he has found new territory.",
+								"Many half-elves are loners and wanderers, which is not conducive to guild affiliation. The ties of a half-elf thief to a guild are loose, at best, unless the character has been raised in the guild structure and well-indoctrinated into its mentality."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Halfling",
+							"page": 14,
+							"entries": [
+								"Sometimes portrayed as consummate burglars, halfling thieves are really motivated by curiosity. The average halfling is content to lead a simple, safe, comfortable life. But the thief longs to see and experience the world beyond the hills and burrows of his home shire.",
+								"\"Adventurer\" is probably still too strong a word, for even halfling thieves have their race's characteristic shy caution, plus a healthy dislike for danger, discomfort, and uncertainty. Halflings make careful preparations whenever possible, and use their skills of self-concealment liberally. Careful scouting is always a must, and frontal assaults (whether in combat or robbery) anathema.",
+								"Many halflings have remarkably little interest in money, which can be burdensome (especially for a small person). They'll take a good amount of loot, certainly—at least enough for a pleasant period of ease and comfort before work is made mandatory—but they are hardly motivated by greed.",
+								"Of great puzzlement to sages is the question: Where do halflings get their extraordinary talent for thieves' skills? There is precious little locksmithing or metalwork found in their culture, and thievery amongst the halflings themselves is virtually unheard of—yet the halfling thief has an amazing knack for almost all thieves' skills.",
+								"Coupling this knack and the attitudes just described, plus a fierce loyalty for their friends, the halfling thief is understandably in high demand for adventuring expeditions."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Other Nonhuman Races",
+							"page": 14,
+							"entries": [
+								"As the Dungeon Master's Guide mentions (p. 15), it is possible to design new character races for your campaign. Some of these characters likely will end up joining the thief class.",
+								"The races most commonly adapted for characters are humanoid—ogres, orcs, and half-breeds of those races; goblins, kobolds, and possibly even hobgoblins or bugbears. As thieves, these characters favor the kits of highwaymen (that is, bandits) and thugs—they prefer armed robbery, where no great deal of finesse, delicacy, or dexterity is required."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Demihumans, Cities and Guilds",
+							"page": 14,
+							"entries": [
+								"The entries above describe demihumans who were raised among their own kind, and have picked up most of their race's cultural trappings. Some demihumans, however, are found in other settings, such as human cities. Most such demihumans still originally lived among their own people, but some campaigns may include second- or even third-generation displaced demihumans. This particularly happens in large cities, where there may be ghettoes of demihumans, or where thieves' guilds have purposely raised demihumans in their midst to take advantage of their races' special abilities and benefits, while suppressing natural and cultural inclinations (dwarven honor, halfling peacefulness, half-elven wanderlust, and so on).",
+								"Ghetto-born demihumans undoubtedly still exhibit some stamp of their \"homeland,\" but the tendencies are weaker. In fact, a guild-raised demihuman's personality might hardly be recognized for what it is, if the conditioning was done well. (There could even be such oddities as a claustrophobic dwarf or a repressed elf.)",
+								"Interesting role-playing could arise from an alienated, city-born demihuman thief breaking away from the guild that was the only parent he knew, and trying to find himself in the unfamiliar lands of his ancestors."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Code of the Professional",
+			"page": 15,
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"Do you think that a city, an army, or bandits, or thieves, or any other group that attempted any action in common, could accomplish anything if they wronged one another?"
+					],
+					"by": "{@i Plato's Republic, Book I}"
+				},
+				"One of the things that distinguishes a \"professional\" thief from the more common, vulgar variety is his understanding, like Plato's, of the delicate balance of justice that even thieves must maintain among themselves to be successful.",
+				"Many thieves wish to be regarded as professionals. It is a privileged status, indicating success and the respect of the underworld. It can be an asset for business, bringing more and more lucrative jobs. Even in places not claimed as territory by guilds, there are circles of professional thieves, form the elite of the underworld.",
+				"The most basic qualification of a professional is that he is recognized as such by other professionals. This recognition is not easy to gain. A thief must build a reputation for excellence, reliability, and honor among his business partners.",
+				"A would-be professional also needs to hang out in the \"right spots\", taverns and such establishments, particular places where the professional clique gathers. There they relax, share information, and make contacts and arrangements for professional cooperation with other thieves.",
+				"Attitude is the first element to be adopted by the aspiring professional. The professional attitude says thieving is a business, and should be conducted as neither more nor less than one. The professional is not contemptuous of his victims; they simply failed to protect their property adequately, and suffered the economic consequences.",
+				"Professionals develop an unwritten code of conduct, guidelines for behavior. Its exact contents vary from place to place; the only universal rule seems to be the prohibition of \"squealing.\" A typical \"code\" is as follows, with its elements listed in order of importance:",
+				{
+					"type": "list",
+					"style": "list-decimal",
+					"items": [
+						"A professional thief does not \"squeal\": If captureD by authorities in the course or as a consequence of a job, he must not reveal the identities of his partners, fences, informants, or other professional contacts.",
+						"A professional thief will honestly report how much money or valuables are taken in a job; he will not \"burn\" his partners.",
+						"A mob of professional thieves will share their score equally among themselves, or according to the contribution of each to the job, arranged and agreed upon beforehand.",
+						"A professional thief will share some of his earnings with other professional thieves who have been incarcerated (to help pay fines, bribe officials, etc.).",
+						"If a professional thief has valuable information (e.g., attractive targets, location of traps, and the activities of the town watch), he will share it with other professionals.",
+						"Professional thieves will help one another, even in spite of personal differences or enmity between them."
+					]
+				},
+				"As stated above, not all of these rules are recognized in each circle of professional thieves; but some sense of honor is vital to the attitude and behavior that mark a professional and gain him the recognition as a \"good burglar.\" The penalty for breaking the professional code can be at least as severe as breaking the law. A few transgression may be overlooked by the criminal community, but a pattern of consistent disregard for the code will cause a character's reputation to deteriorate. Other thiees will not invite the character to be a partner in jobs; silence and cold stares will greet him at his favorite social establishments; and fences may even refuse to purchase the goods he acquires. He also runs the risk of former associates squealing on him.",
+				"In the worst situation—say, a thief burns his partners, squeals on them, and then skips town for some foreign port—the offending thief could not only be expect his professional reputation to be ruined, but he had better keep an eye over his shoulder, watching for assassins and bounty hunters hired by his former associates, or by their friends or families.",
+				"On the other hand, there are considerable benefits for the thief who adheres to the code. He will gain the respect and trust of his associates. He is not immune from dishonorable thieves, who may try to burn him or squeal on him; but he will have the support and approval of others in exacting revenge on those who wrong him. Also, if he is captured and imprisoned by authorities, he can expect the privilege of the fix; the guild contacts (or less formal contacts) may arrange his release through bribes or favors. Even if the professional does not have access to the money needed, other thieves, knowing that he'd do the same for them, will pitch in until the necessary amount has been gathered."
+			]
+		},
+		{
+			"type": "section",
+			"name": "Proficiencies",
+			"page": 16,
+			"entries": [
+				"The use of nonweapon proficiencies in your campaign is highly recommended, especially if you are going to make use of the thief kits that we present in this book. Proficiencies are the best way to quantify the various talents that distinguish one thief kit from another.",
+				"This chapter is entirely devoted to nonweapon proficiencies. It includes a reference table with a complete list of proficiencies available to thieves, including several that are new. The new proficiencies are described below.",
+				{
+					"type": "table",
+					"caption": "Optional Caption",
+					"page": 16,
+					"colLabels": [
+						"GENERAL PROFICIENCIES*",
+						"THIEF PROFICIENCIES*",
+						"NEW THIEF PROFICIENCIES**"
+					],
+					"colStyles": [
+						"col- text-left",
+						"col- text-left",
+						"col- text-left"
+					],
+					"rows": [
+						[
+							"Agriculture",
+							"Ancient History",
+							"Alertness***"
+						],
+						[
+							"Animal Handling",
+							"Appraising",
+							"Animal Noise"
+						],
+						[
+							"Animal Training",
+							"Blind-fighting",
+							"Astrology"
+						],
+						[
+							"Artistic Ability",
+							"Disguise",
+							"Begging"
+						],
+						[
+							"Blacksmithing",
+							"Forgery",
+							"Boating***"
+						],
+						[
+							"Brewing",
+							"Gaming",
+							"Endurance"
+						],
+						[
+							"Carpentry",
+							"Gem Cutting",
+							"Fast-talking"
+						],
+						[
+							"Cobbling",
+							"Juggling",
+							"Fortune Telling"
+						],
+						[
+							"Cooking",
+							"Jumping",
+							"Herbalism"
+						],
+						[
+							"Dancing",
+							"Local History",
+							"Hunting"
+						],
+						[
+							"Direction Sense",
+							"Musical Instrument",
+							"Information Gathering"
+						],
+						[
+							"Etiquette",
+							"Reading Lips",
+							"Intimidation"
+						],
+						[
+							"Fire-building",
+							"Set Snares",
+							"Locksmithing"
+						],
+						[
+							"Fishing",
+							"Tightrope Walking",
+							"Looting"
+						],
+						[
+							"Heraldry",
+							"Tumbling",
+							"Navigation"
+						],
+						[
+							"Languages, Modern",
+							"Ventriloquism",
+							"Observation***"
+						],
+						[
+							"Leatherworking",
+							"Reading/Writing",
+							""
+						],
+						[
+							"Mining",
+							"Religion",
+							""
+						],
+						[
+							"Pottery",
+							"Survival",
+							""
+						],
+						[
+							"Riding, Airborne",
+							"Tracking",
+							""
+						],
+						[
+							"Riding, Land-based",
+							"Trailing",
+							""
+						],
+						[
+							"Rope Use",
+							"Voice Mimicry",
+							""
+						],
+						[
+							"Seamanship",
+							"",
+							""
+						],
+						[
+							"Seamstress/Tailor",
+							"",
+							""
+						],
+						[
+							"Singing",
+							"",
+							""
+						],
+						[
+							"Stonemasonry",
+							"",
+							""
+						],
+						[
+							"Swimming",
+							"",
+							""
+						],
+						[
+							"Weather Sense",
+							"",
+							""
+						],
+						[
+							"Weaving",
+							"",
+							""
+						]
+					],
+					"footnotes": [
+						"* Proficiencies listed in this column are fully described in the AD&D® 2nd Edition Player's Handbook, pp. 56-65.",
+						"** These new proficiencies for thieves are described in the text of this chapter.",
+						"*** If the DM so wishes, these may be considered general proficiencies, available to characters of any class without additional nonweapon proficiency slot cost."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "New Proficiencies",
+					"page": 16,
+					"entries": [
+						"Each description below starts with the following information: the name of the proficiency, the number of slots required for its selection, the relevant character statistic (e.g., Intelligence), the check modifier for using the proficiency, and the thief kit(s) for which this proficiency is appropriate (i.e., required or recommended).",
+						"Thieves of any kit may choose any of these new proficiencies. However, if the kit is not listed as appropriate in the proficiency's description, then an additional proficiency slot beyond the number listed is required, just as if the proficiency were restricted to another class (cf. Player's Handbook, p. 54). This is why a \"# of slots required\" is always listed, even though a given proficiency may not cost any slots to thieves who take certain kits.",
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"items": [
+								"Alertness",
+								"Animal Noise",
+								"Begging",
+								"Boating",
+								"Endurance",
+								"Fast-Talking",
+								"Fortune Telling",
+								"Herbalism",
+								"Hunting",
+								"Information Gathering",
+								"Intimidation",
+								"Locksmithing",
+								"Looting",
+								"Navigation",
+								"Observation",
+								"Reading/Writing",
+								"Survival",
+								"Tracking",
+								"Trailing",
+								"Voice Mimicry"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Demihumans and Nonweapon Proficiencies",
+					"page": 21,
+					"entries": [
+						"",
+						"",
+						"",
+						"",
+						""
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Thiefs Kits",
+			"page": 22,
+			"entries": [
+				""
+			]
+		},
+		{
+			"type": "section",
+			"name": "Role-Playing",
+			"page": 51,
+			"entries": [
+				""
+			]
+		},
+		{
+			"type": "section",
+			"name": "Tools of the Trade",
+			"page": 90,
+			"entries": [
+				""
+			]
+		},
+		{
+			"type": "section",
+			"name": "The Arts of Deceptions",
+			"page": 109,
+			"entries": [
+				""
+			]
+		},
+		{
+			"type": "section",
+			"name": "New Rules for Thieves",
+			"page": 111,
+			"entries": [
+				""
+			]
+		},
+		{
+			"type": "section",
+			"name": "The Thief Campaign",
+			"page": 116,
+			"entries": [
+				"",
+				{
+					"type": "entries",
+					"name": "Complete Fighter's Character Sheet",
+					"page": 117,
+					"entries": [
+						""
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Complete Fighter's Combat Sheet (PC Side)",
+					"page": 177,
+					"entries": [
+						""
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Complete Fighter's Combat Sheet (DM Side)",
+					"page": 117,
+					"entries": [
+						""
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Complete Fighter's Character Sheet",
+					"page": 118,
+					"entries": [
+						""
+					]
+				}
+			]
+		}
+	]
+}

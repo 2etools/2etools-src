@@ -12,11 +12,11 @@ class Hist {
 	static _pLoadHash = null;
 	static _pLoadSubHash = null;
 
-	static setFnHandleUnknownHash (fn) { this._pHandleUnknownHash = fn; }
-	static setFnLoadHash (fn) { this._pLoadHash = fn; }
-	static setFnLoadSubhash (fn) { this._pLoadSubHash = fn; }
+	static setFnHandleUnknownHash(fn) { this._pHandleUnknownHash = fn; }
+	static setFnLoadHash(fn) { this._pLoadHash = fn; }
+	static setFnLoadSubhash(fn) { this._pLoadSubHash = fn; }
 
-	static hashChange ({isForceLoad, isBlankFilterLoad = false} = {}) {
+	static hashChange({ isForceLoad, isBlankFilterLoad = false } = {}) {
 		if (this.isHistorySuppressed) return this.setSuppressHistory(false);
 
 		const [link, ...sub] = this.getHashParts();
@@ -44,7 +44,7 @@ class Hist {
 				else {
 					this.lastLoadedId = listItem.ix;
 					this._pLoadHash(listItem.ix);
-					document.title = `${listItem.name ? `${listItem.name} - ` : ""}5etools`;
+					document.title = `${listItem.name ? `${listItem.name} - ` : ""}2etools`;
 				}
 			}
 		}
@@ -53,8 +53,8 @@ class Hist {
 		if (isBlankFilterLoad) this._freshLoad();
 	}
 
-	static init (initialLoadComplete) {
-		window.onhashchange = () => Hist.hashChange({isForceLoad: true});
+	static init(initialLoadComplete) {
+		window.onhashchange = () => Hist.hashChange({ isForceLoad: true });
 		if (window.location.hash.length) {
 			Hist.hashChange();
 		} else {
@@ -67,29 +67,29 @@ class Hist {
 	 * Allows the hash to be modified without triggering a hashchange
 	 * @param val
 	 */
-	static setSuppressHistory (val) {
+	static setSuppressHistory(val) {
 		Hist.isHistorySuppressed = val;
 	}
 
 	static _listPage = null;
 
-	static setListPage (listPage) { this._listPage = listPage; }
+	static setListPage(listPage) { this._listPage = listPage; }
 
-	static getSelectedListItem () {
+	static getSelectedListItem() {
 		const [link] = Hist.getHashParts();
 		return Hist.getActiveListItem(link);
 	}
 
-	static getSelectedListElementWithLocation () {
+	static getSelectedListElementWithLocation() {
 		const [link] = Hist.getHashParts();
 		return Hist.getActiveListItem(link, true);
 	}
 
-	static getHashParts () {
+	static getHashParts() {
 		return Hist.util.getHashParts(window.location.hash);
 	}
 
-	static getActiveListItem (link, getIndex) {
+	static getActiveListItem(link, getIndex) {
 		const primaryLists = this._listPage.primaryLists;
 		if (primaryLists && primaryLists.length) {
 			for (let x = 0; x < primaryLists.length; ++x) {
@@ -97,14 +97,14 @@ class Hist {
 
 				const foundItemIx = list.items.findIndex(it => it.values.hash === link);
 				if (~foundItemIx) {
-					if (getIndex) return {item: list.items[foundItemIx], x: x, y: foundItemIx, list};
+					if (getIndex) return { item: list.items[foundItemIx], x: x, y: foundItemIx, list };
 					return list.items[foundItemIx];
 				}
 			}
 		}
 	}
 
-	static _freshLoad () {
+	static _freshLoad() {
 		// Wait for any unknown hash handling to resolve. This avoids the case where an async homebrew load
 		//   fails to reload the page, as the hash was over-eagerly reset while the load took place.
 		(this._pLoadingUnknownHash || Promise.resolve())
@@ -128,11 +128,11 @@ class Hist {
 	 *  - "unknown hash" flow triggers for that hash; deleted homebrew is re-loaded by source; page reloads
 	 *  - user is presented with the same statblock, from the source they just tried to delete.
 	 */
-	static doPreLocationReload () {
+	static doPreLocationReload() {
 		const [link] = this.getHashParts();
 		if (link === HASH_BLANK) return;
 
-		const {source} = UrlUtil.autoDecodeHash(link);
+		const { source } = UrlUtil.autoDecodeHash(link);
 		if (!source) return;
 
 		// If the hash has a site source, do nothing; site data is always present...
@@ -149,17 +149,17 @@ class Hist {
 		window.location.hash = "";
 	}
 
-	static cleanSetHash (toSet) {
+	static cleanSetHash(toSet) {
 		window.location.hash = Hist.util.getCleanHash(toSet);
 	}
 
-	static getHashSource () {
+	static getHashSource() {
 		const [link] = Hist.getHashParts();
 		// by convention, the source is the last hash segment
 		return link ? link.split(HASH_LIST_SEP).last() : null;
 	}
 
-	static getSubHash (key) {
+	static getSubHash(key) {
 		return Hist.util.getSubHash(window.location.hash, key);
 	}
 
@@ -168,17 +168,17 @@ class Hist {
 	 * @param key Subhash key.
 	 * @param val Subhash value. Passing a nully object removes the k/v pair.
 	 */
-	static setSubhash (key, val) {
+	static setSubhash(key, val) {
 		const nxtHash = Hist.util.setSubhash(window.location.hash, key, val);
 		Hist.cleanSetHash(nxtHash);
 	}
 
-	static setMainHash (hash) {
+	static setMainHash(hash) {
 		const subHashPart = Hist.util.getHashParts(window.location.hash, key, val).slice(1).join(HASH_PART_SEP);
 		Hist.cleanSetHash([hash, subHashPart].filter(Boolean).join(HASH_PART_SEP));
 	}
 
-	static replaceHistoryHash (hash) {
+	static replaceHistoryHash(hash) {
 		window.history.replaceState(
 			{},
 			document.title,
@@ -188,13 +188,13 @@ class Hist {
 }
 
 Hist.util = class {
-	static getCleanHash (hash) {
+	static getCleanHash(hash) {
 		return hash.replace(/,+/g, ",").replace(/,$/, "").toLowerCase();
 	}
 
 	static _SYMS_NO_ENCODE = [/(,)/g, /(:)/g, /(=)/g];
 
-	static getHashParts (location, {isReturnEncoded = false} = {}) {
+	static getHashParts(location, { isReturnEncoded = false } = {}) {
 		if (location[0] === "#") location = location.slice(1);
 
 		// Handle junk from external ads
@@ -221,7 +221,7 @@ Hist.util = class {
 			.split(HASH_PART_SEP);
 	}
 
-	static getSubHash (location, key) {
+	static getSubHash(location, key) {
 		const [link, ...sub] = Hist.util.getHashParts(location);
 		const hKey = `${key}${HASH_SUB_KV_SEP}`;
 		const part = sub.find(it => it.startsWith(hKey));
@@ -229,7 +229,7 @@ Hist.util = class {
 		return null;
 	}
 
-	static setSubhash (location, key, val) {
+	static setSubhash(location, key, val) {
 		if (key.endsWith(HASH_SUB_KV_SEP)) key = key.slice(0, -1);
 
 		const [link, ...sub] = Hist.util.getHashParts(location);
