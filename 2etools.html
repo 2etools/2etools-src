@@ -1,23 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
 	<!--5ETOOLS_CMP-->
 	<!--5ETOOLS_ANALYTICS-->
 	<!--5ETOOLS_ADCODE-->
 	<meta charset="utf-8">
-	<meta name="description" content="{{pageDescription}}">
+	<meta name="description" content="A suite of browser-based tools for 5th Edition Dungeons &amp; Dragons players and Dungeon Masters.">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<meta name="mobile-web-app-capable" content="yes">
 
-	<title>{{#if pageTitle}}{{pageTitle}} - 2etools{{else}}2etools{{/if}}</title>
+	<title>2etools</title>
 
 	<link rel="stylesheet" href="css/bootstrap.css">
-	{{#if isFontAwesome}}
-	<link rel="stylesheet" href="css/fontawesome.css">
-	{{/if}}
 	<link rel="stylesheet" href="css/main.css">
-	{{#each stylesheets}}
-	<link rel="stylesheet" href="css/{{this}}.css">
-	{{/each}}
 
 	<!-- Favicons -->
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -55,11 +52,17 @@
 	<script type="text/javascript" src="sw-injector.js"></script>
 
 	<script type="text/javascript" src="js/styleswitch.js"></script>
-	{{#if redirectHref}}
 
-	<meta http-equiv="refresh" content="0; URL={{redirectHref}}" />
-	{{else}}
-	<script type="text/javascript" src="js/navigation.js"></script>
-	<script type="module" src="js/browsercheck.js"></script>
-	{{/if}}
+	<meta http-equiv="refresh" content="0; URL=index.html" />
 </head>
+<body>
+
+<div class="overlay-noise no-print"></div>
+
+<main class="container ve-flex-vh-center w-100w h-100h">
+	<h3>
+		Click <a href="index.html">here</a> to be redirected to the homepage.
+	</h3>
+</main>
+</body>
+</html>

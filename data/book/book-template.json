@@ -2,10 +2,31 @@
 	"data": [
 		{
 			"type": "section",
-			"name": "",
+			"name": "Header 1",
 			"page": 0,
 			"entries": [
-				""
+				{
+					"type": "entries",
+					"name": "Header 2",
+					"page": 0,
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Header 3",
+							"page": 0,
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Header 4",
+									"page": 0,
+									"entries": [
+										""
+									]
+								}
+							]
+						}
+					]
+				}
 			]
 		}
 	]

@@ -6471,16 +6471,6 @@
 							"tables": [
 								{
 									"type": "table",
-									"caption": "Table 37: Nonweapon Proficiency Groups",
-									"page": 54,
-									"rows": [
-										[
-											""
-										]
-									]
-								},
-								{
-									"type": "table",
 									"caption": "General",
 									"page": 54,
 									"colLabels": [

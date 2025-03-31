@@ -4677,16 +4677,18 @@
 			]
 		},
 		{
-			"name": "The Complete Fighter's Handbook",
+			"name": "PHBR1 - The Complete Fighter's Handbook",
 			"id": "PHBR1",
 			"source": "PHBR1",
+			"parentSource": "PHBR",
 			"group": "supplement",
 			"author": "Aaron Allston",
 			"published": "1989-12-01",
 			"cover": {
-				"type": "external",
-				"url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388293631i/497307.jpg"
+				"type": "internal",
+				"path": "nothing.webp"
 			},
+			"storyline": "Player's Handbook Rules Supplement",
 			"contents": [
 				{
 					"name": "Introduction"
@@ -5487,9 +5489,279 @@
 			]
 		},
 		{
-			"name": "Campaign Sourcebook and Catacomb Guide",
+			"name": "PHBR2 - The Complete Thief's Handbook",
+			"id": "PHBR2",
+			"source": "PHBR2",
+			"parentSource": "PHBR",
+			"group": "supplement",
+			"author": "John Nephew, Carl Sargeant, Douglas Niles",
+			"published": "1989-12-02",
+			"cover": {
+				"type": "internal",
+				"path": "nothing.webp"
+			},
+			"storyline": "Player's Handbook Rules Supplement",
+			"contents": [
+				{
+					"name": "Introduction",
+					"headers": [
+						"The Purpose of the Complete Thief's Handbook",
+						"The Role of the Thief",
+						"Thieves and the Law"
+					]
+				},
+				{
+					"name": "Role-Playing Thieves",
+					"headers": [
+						"Setting",
+						"Social Background",
+						"Motivation",
+						"Sample Archetypes",
+						"Demihumans",
+						"Other Nonhuman Races"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					}
+				},
+				{
+					"name": "Code of the Professional"
+				},
+				{
+					"name": "Proficiencies",
+					"headers": [
+						"New Proficiencies",
+						{
+							"header": "Alertness",
+							"depth": 1
+						},
+						{
+							"header": "Animal Noise",
+							"depth": 1
+						},
+						{
+							"header": "Begging",
+							"depth": 1
+						},
+						{
+							"header": "Boating",
+							"depth": 1
+						},
+						{
+							"header": "Endurance",
+							"depth": 1
+						},
+						{
+							"header": "Fast-Talking",
+							"depth": 1
+						},
+						{
+							"header": "Fortune Telling",
+							"depth": 1
+						},
+						{
+							"header": "Herbalism",
+							"depth": 1
+						},
+						{
+							"header": "Hunting",
+							"depth": 1
+						},
+						{
+							"header": "Information Gathering",
+							"depth": 1
+						},
+						{
+							"header": "Intimidation",
+							"depth": 1
+						},
+						{
+							"header": "Locksmithing",
+							"depth": 1
+						},
+						{
+							"header": "Looting",
+							"depth": 1
+						},
+						{
+							"header": "Navigation",
+							"depth": 1
+						},
+						{
+							"header": "Observation",
+							"depth": 1
+						},
+						{
+							"header": "Reading/Writing",
+							"depth": 1
+						},
+						{
+							"header": "Survival",
+							"depth": 1
+						},
+						{
+							"header": "Tracking",
+							"depth": 1
+						},
+						{
+							"header": "Trailing",
+							"depth": 1
+						},
+						{
+							"header": "Voice Mimicry",
+							"depth": 1
+						},
+						"Demihumans and Nonweapon Proficiencies"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					}
+				},
+				{
+					"name": "Thief Kits",
+					"headers": [
+						"Kits and Thief Types",
+						"Kits and the Thief Classes",
+						"Kits and Character Creation",
+						"The Thief Kits",
+						"Thief Kits and Thieving Skills",
+						"Recording Kits on the Character Sheet",
+						"Thief Types and Multi-Class Characters",
+						"Thief Types and Dual-Class Characters",
+						"Creating New Kits",
+						"The Thief Kit Creation Sheet ",
+						"The \"Lone Wolf\": Unique Thieves",
+						"Thief Kit Creation Sheet",
+						"\"Bluehand\" Ajathar, Lone Wolf",
+						"Adventure Suggestion",
+						"Glossary of Thief Slang"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 3
+					}
+				},
+				{
+					"name": "Thieves' Guild",
+					"headers": [
+						"What is a Thieves' Guild Anyway",
+						"Developing the Thieves' Guild",
+						"Benefits of Guild Membership",
+						"Responsibilities of Guild Membership",
+						"Activities of Thieves' Guilds",
+						"Thieves' Guilds in the Campaign World",
+						"Thieves' Guilds and Other Groups",
+						"Thieves and the Law",
+						"Thieves and Merchants",
+						"Thieves and Other Guilds",
+						"Guildmasters and Guild Structures",
+						"Guild Organizations",
+						"Guild Leaders",
+						"Guild Rulership",
+						"Designing a Thieves' Guild",
+						"Thieves' Guild of Mallain",
+						"Unusual Guilds",
+						"Player-Character Guildmasters",
+						"Blueprint Profiles"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
+					}
+				},
+				{
+					"name": "Tools of the Trade",
+					"headers": [
+						"Equipment for the Thief's Skills",
+						"Skill Modifiers",
+						"Picking Pockets",
+						"Opening Locks",
+						"Finding and Removing Traps",
+						"Moving Silently",
+						"Hiding in Shadows",
+						"Detecting Noise",
+						"Climbing Walls",
+						"Miscellaneous Equipment",
+						"Burglary and Theft",
+						"Evasions",
+						"Self-Protection and Combat",
+						"The Joy of Sticks",
+						"Miscellany",
+						"Cost and Availability of Equipment",
+						"Magical Items for Thieves",
+						"Detection Resistance",
+						"Description of Magical Items",
+						"Misc. Magic: Clothing and Jewelry",
+						"Misc. Magic: Other Sneaky Stuff",
+						"Weapons"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 5
+					}
+				},
+				{
+					"name": "The Arts of Deception: Classic Cons",
+					"headers": [
+						"Short-Change Swindles",
+						"Gambling",
+						"Quackery",
+						"Forgery and Counterfeiting",
+						"Jewelry Swindles",
+						"Robbing the Robbers"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 6
+					}
+				},
+				{
+					"name": "New Rules for Thieves",
+					"headers": [
+						"Advanced Locks and Traps",
+						"Animal Assistants",
+						"Poison and Sedatives",
+						"Mugging—the Thief's KO",
+						"Armor and Acrobatic Proficiencies",
+						"Armor and Thief Skills"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 7
+					}
+				},
+				{
+					"name": "The Thief Campaign",
+					"headers": [
+						"Cultural Considerations",
+						"Social Campaign Environment",
+						"Social Overview of Thieves",
+						"Detailed and Varied Non-Player Characters",
+						"Unique Buildings and Structures",
+						"A Well-Defined Economic System",
+						"Interesting Objects D'Art and Other Treasures",
+						"Well-Defined Legal System",
+						"Counter-Thief Tactics",
+						"Background of Interesting Conflicts",
+						"Challenges To Thief Character Class Abilities",
+						"The Thieves' Guild",
+						"Playing in and Running the Thief Campaign",
+						"Selected Tables"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 8
+					}
+				}
+			]
+		},
+		{
+			"name": "DMGR1 - Campaign Sourcebook and Catacomb Guide",
 			"id": "DMGR1",
 			"source": "DMGR1",
+			"parentSource": "DMGR",
 			"group": "supplement",
 			"author": "Paul Jaquays, William W. Connors",
 			"published": "1990-03-01",
@@ -5497,6 +5769,7 @@
 				"type": "internal",
 				"path": "covers/XDMG.webp"
 			},
+			"storyline": "Dungeon Master's Guide Rules Supplement",
 			"contents": [
 				{
 					"name": "Introduction"

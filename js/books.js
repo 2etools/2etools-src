@@ -1,7 +1,7 @@
-import {AdventuresBooksList} from "./bookslist.js";
+import { AdventuresBooksList } from "./bookslist.js";
 
 class BooksList extends AdventuresBooksList {
-	constructor () {
+	constructor() {
 		super({
 			contentsUrl: "data/books.json",
 			fnSort: AdventuresBooksList._sortAdventuresBooks.bind(AdventuresBooksList),
@@ -16,7 +16,8 @@ class BooksList extends AdventuresBooksList {
 				return `
 					<span class="ve-col-1-3 ve-text-center">${AdventuresBooksList._getGroupHtml(bk)}</span>
 					<span class="ve-col-8-5 bold">${bk.name}</span>
-					<span class="ve-grow ve-text-center code">${AdventuresBooksList._getDateStr(bk)}</span>
+					<span class="ve-col-3-5 mobile__text-clip-ellipsis">${bk.storyline || "\u2014"}</span>
+					<span class="ve-col-1-4 ve-text-center code">${AdventuresBooksList._getDateStr(bk)}</span>
 				`;
 			},
 		});
@@ -25,9 +26,9 @@ class BooksList extends AdventuresBooksList {
 
 const booksList = new BooksList();
 
-function handleBrew (homebrew) {
+function handleBrew(homebrew) {
 	booksList.addData(homebrew);
 	return Promise.resolve();
 }
 
-window.addEventListener("load", () => booksList.pOnPageLoad({handleBrew}));
+window.addEventListener("load", () => booksList.pOnPageLoad({ handleBrew }));
