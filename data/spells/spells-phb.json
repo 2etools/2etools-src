@@ -20,7 +20,7 @@
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "feet",
+					"type": "yards",
 					"amount": 60
 				}
 			},

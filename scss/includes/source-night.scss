@@ -20,6 +20,12 @@
 
 	$rgb-source-PHB: vars-night.$rgb-subclass--night;
 	$rgb-source-DMG: #ba1eba;
+	$rgb-source-XPHB: #d98d2a;
+
+	/*$rgb-source-PHBR: #a32849;
+	$rgb-source-DMGR: #1c77af;
+	$rgb-source-HR: #199e5c;*/
+
 	$rgb-source-SADS: #4f63f5;
 	$rgb-source-CoS: #be11be;
 	$rgb-source-OGA: #b44f18;
@@ -49,7 +55,6 @@
 	$rgb-source-PSI: #7b64b3;
 	$rgb-source-PSX: #cb3631;
 	$rgb-source-XMtS: #be3e8d;
-	$rgb-source-XPHB: #d98d2a;
 
 	// region Categories
 
@@ -96,6 +101,10 @@
 
 		&DMG {
 			@include mix-source-color($rgb-source-DMG);
+		}
+
+		&XPHB {
+			@include mix-source-color($rgb-source-XPHB);
 		}
 
 		&OGA {
@@ -237,9 +246,6 @@
 			@include mix-source-color($rgb-source-DoDk);
 		}
 
-		&XPHB {
-			@include mix-source-color($rgb-source-XPHB);
-		}
 	}
 }
 

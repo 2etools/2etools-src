@@ -1,8 +1,8 @@
-import {EncounterBuilderCacheBestiaryPage} from "./bestiary/bestiary-encounterbuilder-cache.js";
-import {EncounterBuilderComponentBestiary} from "./bestiary/bestiary-encounterbuilder-component.js";
-import {EncounterBuilderUiBestiary} from "./bestiary/bestiary-encounterbuilder-ui.js";
-import {EncounterBuilderSublistPlugin} from "./bestiary/bestiary-encounterbuilder-sublistplugin.js";
-import {RenderBestiary} from "./render-bestiary.js";
+import { EncounterBuilderCacheBestiaryPage } from "./bestiary/bestiary-encounterbuilder-cache.js";
+import { EncounterBuilderComponentBestiary } from "./bestiary/bestiary-encounterbuilder-component.js";
+import { EncounterBuilderUiBestiary } from "./bestiary/bestiary-encounterbuilder-ui.js";
+import { EncounterBuilderSublistPlugin } from "./bestiary/bestiary-encounterbuilder-sublistplugin.js";
+import { RenderBestiary } from "./render-bestiary.js";
 
 class _BestiaryConsts {
 	static PROF_MODE_BONUS = "bonus";
@@ -10,7 +10,7 @@ class _BestiaryConsts {
 }
 
 class _BestiaryUtil {
-	static getUrlSubhashes (mon, {isAddLeadingSep = true} = {}) {
+	static getUrlSubhashes(mon, { isAddLeadingSep = true } = {}) {
 		const subhashesRaw = [
 			mon._isScaledCr ? `${UrlUtil.HASH_START_CREATURE_SCALED}${mon._scaledCr}` : null,
 			mon._summonedBySpell_level ? `${UrlUtil.HASH_START_CREATURE_SCALED_SPELL_SUMMON}${mon._summonedBySpell_level}` : null,
@@ -21,7 +21,7 @@ class _BestiaryUtil {
 		return `${isAddLeadingSep ? HASH_PART_SEP : ""}${subhashesRaw.join(HASH_PART_SEP)}`;
 	}
 
-	static getListDisplayType (mon) {
+	static getListDisplayType(mon) {
 		let type = mon._pTypes.asTextShort.uppercaseFirst();
 		if (mon._pTypes.asTextSidekick) type += `, ${mon._pTypes.asTextSidekick}`;
 		return type;
@@ -29,7 +29,7 @@ class _BestiaryUtil {
 }
 
 class BestiarySublistManager extends SublistManager {
-	constructor () {
+	constructor() {
 		super({
 			sublistListOptions: {
 				fnSort: PageFilterBestiary.sortMonsters,
@@ -42,30 +42,30 @@ class BestiarySublistManager extends SublistManager {
 		this._encounterBuilder = null;
 	}
 
-	set encounterBuilder (val) { this._encounterBuilder = val; }
+	set encounterBuilder(val) { this._encounterBuilder = val; }
 
-	_getCustomHashId ({entity}) {
+	_getCustomHashId({ entity }) {
 		return Renderer.monster.getCustomHashId(entity);
 	}
 
-	_getSerializedPinnedItemData (listItem) {
-		return {l: listItem.data.isLocked ? listItem.data.isLocked : undefined};
+	_getSerializedPinnedItemData(listItem) {
+		return { l: listItem.data.isLocked ? listItem.data.isLocked : undefined };
 	}
 
-	_getDeserializedPinnedItemData (serialData) {
-		return {isLocked: !!serialData.l};
+	_getDeserializedPinnedItemData(serialData) {
+		return { isLocked: !!serialData.l };
 	}
 
-	_onSublistChange () {
+	_onSublistChange() {
 		this._$dispCrTotal = this._$dispCrTotal || $(`#totalcr`);
-		this._encounterBuilder.onSublistChange({$dispCrTotal: this._$dispCrTotal});
+		this._encounterBuilder.onSublistChange({ $dispCrTotal: this._$dispCrTotal });
 	}
 
-	_getSublistFullHash ({entity}) {
-		return `${super._getSublistFullHash({entity})}${_BestiaryUtil.getUrlSubhashes(entity)}`;
+	_getSublistFullHash({ entity }) {
+		return `${super._getSublistFullHash({ entity })}${_BestiaryUtil.getUrlSubhashes(entity)}`;
 	}
 
-	static _getRowTemplate () {
+	static _getRowTemplate() {
 		return [
 			new SublistCellTemplate({
 				name: "Name",
@@ -90,7 +90,7 @@ class BestiarySublistManager extends SublistManager {
 		];
 	}
 
-	async pGetSublistItem (mon, hash, {count = 1, customHashId = null, initialData} = {}) {
+	async pGetSublistItem(mon, hash, { count = 1, customHashId = null, initialData } = {}) {
 		const name = mon._displayName || mon.name;
 		const type = _BestiaryUtil.getListDisplayType(mon);
 		const cr = mon._pCr;
@@ -105,7 +105,7 @@ class BestiarySublistManager extends SublistManager {
 				ele: $hovStatblock[0],
 				source: mon.source,
 				hash: hashBase,
-				customHashId: this._getCustomHashId({entity: mon}),
+				customHashId: this._getCustomHashId({ entity: mon }),
 			}))
 			.mousemove(evt => Renderer.hover.handleLinkMouseMove(evt, $hovStatblock[0]))
 			.mouseleave(evt => Renderer.hover.handleLinkMouseLeave(evt, $hovStatblock[0]));
@@ -117,7 +117,7 @@ class BestiarySublistManager extends SublistManager {
 			.mouseleave(evt => hovTokenMeta.mouseLeave(evt, $hovToken[0]));
 
 		const $hovImage = $(`<span class="ve-col-1-2 best-ecgen__visible help help--hover">Image</span>`);
-		Renderer.monster.hover.bindFluffImageMouseover({mon, $ele: $hovImage});
+		Renderer.monster.hover.bindFluffImageMouseover({ mon, $ele: $hovImage });
 
 		const $ptCr = (() => {
 			if (!ScaleCreature.isCrInScaleRange(mon)) return $(`<span class="ve-col-1-2 ve-text-center">${cr}</span>`);
@@ -154,7 +154,7 @@ class BestiarySublistManager extends SublistManager {
 					UrlUtil.PG_BESTIARY,
 					hashBase,
 				),
-				mdRow: [...cellsText, ({listItem}) => listItem.data.count],
+				mdRow: [...cellsText, ({ listItem }) => listItem.data.count],
 			},
 		);
 
@@ -163,7 +163,7 @@ class BestiarySublistManager extends SublistManager {
 
 		listItem.ele = $$`<div class="lst__row lst__row--sublist ve-flex-col lst__row--bestiary-sublist">
 			<a href="#${hash}" draggable="false" class="best-ecgen__hidden lst__row-border lst__row-inner">
-				${this.constructor._getRowCellsHtml({values: cellsText, templates: this.constructor._ROW_TEMPLATE.slice(0, 3)})}
+				${this.constructor._getRowCellsHtml({ values: cellsText, templates: this.constructor._ROW_TEMPLATE.slice(0, 3) })}
 				${$eleCount1}
 			</a>
 
@@ -183,14 +183,14 @@ class BestiarySublistManager extends SublistManager {
 		return listItem;
 	}
 
-	_handleBestiaryLinkClickSub (evt, listItem) {
+	_handleBestiaryLinkClickSub(evt, listItem) {
 		if (this._encounterBuilder.isActive()) evt.preventDefault();
 		else this._listSub.doSelect(listItem, evt);
 	}
 }
 
 class BestiaryPageBookView extends ListPageBookView {
-	constructor (opts) {
+	constructor(opts) {
 		super({
 			namePlural: "creatures",
 			pageTitle: "Bestiary Printer View",
@@ -198,9 +198,9 @@ class BestiaryPageBookView extends ListPageBookView {
 		});
 	}
 
-	async _$pGetWrpControls ({$wrpContent}) {
-		const out = await super._$pGetWrpControls({$wrpContent});
-		const {$wrpPrint} = out;
+	async _$pGetWrpControls({ $wrpContent }) {
+		const out = await super._$pGetWrpControls({ $wrpContent });
+		const { $wrpPrint } = out;
 
 		// region Markdown
 		// TODO refactor this and spell markdown section
@@ -231,7 +231,7 @@ class BestiaryPageBookView extends ListPageBookView {
 		return out;
 	}
 
-	async _pGetRenderContentMeta ({$wrpContent}) {
+	async _pGetRenderContentMeta({ $wrpContent }) {
 		this._bookViewToShow = this._sublistManager.getPinnedEntities()
 			.sort(this._getSorted.bind(this));
 
@@ -255,28 +255,28 @@ class BestiaryPageBookView extends ListPageBookView {
 		cntSelectedEnts += this._bookViewToShow.length;
 		$wrpContent.append(stack.join(""));
 
-		return {cntSelectedEnts, isAnyEntityRendered};
+		return { cntSelectedEnts, isAnyEntityRendered };
 	}
 
-	_getSorted (a, b) {
+	_getSorted(a, b) {
 		return SortUtil.ascSort(a._displayName || a.name, b._displayName || b.name);
 	}
 }
 
 class BestiaryPage extends ListPageMultiSource {
-	static async _prereleaseBrewDataSource ({brewUtil}) {
+	static async _prereleaseBrewDataSource({ brewUtil }) {
 		const brew = await brewUtil.pGetBrewProcessed();
 		DataUtil.monster.populateMetaReference(brew);
 		return brew;
 	}
 
-	static _tableView_getEntryPropTransform ({mon, fnGet}) {
+	static _tableView_getEntryPropTransform({ mon, fnGet }) {
 		const fnGetSpellTraits = Renderer.monster.getSpellcastingRenderedTraits.bind(Renderer.monster, Renderer.get());
-		const allEntries = fnGet(mon, {fnGetSpellTraits});
+		const allEntries = fnGet(mon, { fnGetSpellTraits });
 		return (allEntries || []).map(it => it.rendered || Renderer.get().render(it, 2)).join("");
 	}
 
-	constructor () {
+	constructor() {
 		const pFnGetFluff = Renderer.monster.pGetFluff.bind(Renderer.monster);
 
 		super({
@@ -291,8 +291,8 @@ class BestiaryPage extends ListPageMultiSource {
 			},
 
 			dataProps: ["monster"],
-			prereleaseDataSource: () => BestiaryPage._prereleaseBrewDataSource({brewUtil: PrereleaseUtil}),
-			brewDataSource: () => BestiaryPage._prereleaseBrewDataSource({brewUtil: BrewUtil2}),
+			prereleaseDataSource: () => BestiaryPage._prereleaseBrewDataSource({ brewUtil: PrereleaseUtil }),
+			brewDataSource: () => BestiaryPage._prereleaseBrewDataSource({ brewUtil: BrewUtil2 }),
 
 			pFnGetFluff,
 
@@ -308,50 +308,50 @@ class BestiaryPage extends ListPageMultiSource {
 					name: UtilsTableview.COL_TRANSFORM_NAME,
 					source: UtilsTableview.COL_TRANSFORM_SOURCE,
 					page: UtilsTableview.COL_TRANSFORM_PAGE,
-					size: {name: "Size", transform: size => Renderer.utils.getRenderedSize(size)},
-					type: {name: "Type", transform: type => Parser.monTypeToFullObj(type).asText},
-					alignment: {name: "Alignment", transform: align => Parser.alignmentListToFull(align)},
-					ac: {name: "AC", transform: ac => ac != null ? Parser.acToFull(ac) : ""},
-					hp: {name: "HP", transform: hp => hp != null ? Renderer.monster.getRenderedHp(hp) : ""},
-					_speed: {name: "Speed", transform: mon => Parser.getSpeedString(mon)},
-					...Parser.ABIL_ABVS.mergeMap(ab => ({[ab]: {name: Parser.attAbvToFull(ab)}})),
-					_save: {name: "Saving Throws", transform: mon => Renderer.monster.getSavesPart(mon)},
-					_skill: {name: "Skills", transform: mon => Renderer.monster.getSkillsString(Renderer.get(), mon)},
-					vulnerable: {name: "Damage Vulnerabilities", transform: it => Parser.getFullImmRes(it)},
-					resist: {name: "Damage Resistances", transform: it => Parser.getFullImmRes(it)},
-					immune: {name: "Damage Immunities", transform: it => Parser.getFullImmRes(it)},
-					conditionImmune: {name: "Condition Immunities", transform: it => Parser.getFullCondImm(it)},
-					_senses: {name: "Senses", transform: mon => Renderer.monster.getSensesPart(mon, {isForcePassive: true})},
-					languages: {name: "Languages", transform: it => Renderer.monster.getRenderedLanguages(it)},
-					_cr: {name: "CR", transform: mon => Renderer.monster.getChallengeRatingPart(mon)},
+					size: { name: "Size", transform: size => Renderer.utils.getRenderedSize(size) },
+					type: { name: "Type", transform: type => Parser.monTypeToFullObj(type).asText },
+					alignment: { name: "Alignment", transform: align => Parser.alignmentListToFull(align) },
+					ac: { name: "AC", transform: ac => ac != null ? Parser.acToFull(ac) : "" },
+					hp: { name: "HP", transform: hp => hp != null ? Renderer.monster.getRenderedHp(hp) : "" },
+					_speed: { name: "Speed", transform: mon => Parser.getSpeedString(mon) },
+					...Parser.ABIL_ABVS.mergeMap(ab => ({ [ab]: { name: Parser.attAbvToFull(ab) } })),
+					_save: { name: "Saving Throws", transform: mon => Renderer.monster.getSavesPart(mon) },
+					_skill: { name: "Skills", transform: mon => Renderer.monster.getSkillsString(Renderer.get(), mon) },
+					vulnerable: { name: "Damage Vulnerabilities", transform: it => Parser.getFullImmRes(it) },
+					resist: { name: "Damage Resistances", transform: it => Parser.getFullImmRes(it) },
+					immune: { name: "Damage Immunities", transform: it => Parser.getFullImmRes(it) },
+					conditionImmune: { name: "Condition Immunities", transform: it => Parser.getFullCondImm(it) },
+					_senses: { name: "Senses", transform: mon => Renderer.monster.getSensesPart(mon, { isForcePassive: true }) },
+					languages: { name: "Languages", transform: it => Renderer.monster.getRenderedLanguages(it) },
+					_cr: { name: "CR", transform: mon => Renderer.monster.getChallengeRatingPart(mon) },
 					_trait: {
 						name: "Traits",
-						transform: mon => BestiaryPage._tableView_getEntryPropTransform({mon, fnGet: Renderer.monster.getOrderedTraits}),
+						transform: mon => BestiaryPage._tableView_getEntryPropTransform({ mon, fnGet: Renderer.monster.getOrderedTraits }),
 						flex: 3,
 					},
 					_action: {
 						name: "Actions",
-						transform: mon => BestiaryPage._tableView_getEntryPropTransform({mon, fnGet: Renderer.monster.getOrderedActions}),
+						transform: mon => BestiaryPage._tableView_getEntryPropTransform({ mon, fnGet: Renderer.monster.getOrderedActions }),
 						flex: 3,
 					},
 					_bonus: {
 						name: "Bonus Actions",
-						transform: mon => BestiaryPage._tableView_getEntryPropTransform({mon, fnGet: Renderer.monster.getOrderedBonusActions}),
+						transform: mon => BestiaryPage._tableView_getEntryPropTransform({ mon, fnGet: Renderer.monster.getOrderedBonusActions }),
 						flex: 3,
 					},
 					_reaction: {
 						name: "Reactions",
-						transform: mon => BestiaryPage._tableView_getEntryPropTransform({mon, fnGet: Renderer.monster.getOrderedReactions}),
+						transform: mon => BestiaryPage._tableView_getEntryPropTransform({ mon, fnGet: Renderer.monster.getOrderedReactions }),
 						flex: 3,
 					},
 					_legendary: {
 						name: "Legendary Actions",
-						transform: mon => BestiaryPage._tableView_getEntryPropTransform({mon, fnGet: Renderer.monster.getOrderedLegendaryActions}),
+						transform: mon => BestiaryPage._tableView_getEntryPropTransform({ mon, fnGet: Renderer.monster.getOrderedLegendaryActions }),
 						flex: 3,
 					},
 					_mythic: {
 						name: "Mythic Actions",
-						transform: mon => BestiaryPage._tableView_getEntryPropTransform({mon, fnGet: Renderer.monster.getOrderedMythicActions}),
+						transform: mon => BestiaryPage._tableView_getEntryPropTransform({ mon, fnGet: Renderer.monster.getOrderedMythicActions }),
 						flex: 3,
 					},
 					_lairActions: {
@@ -359,7 +359,7 @@ class BestiaryPage extends ListPageMultiSource {
 						transform: mon => {
 							const legGroup = DataUtil.monster.getLegendaryGroup(mon);
 							if (!legGroup?.lairActions?.length) return "";
-							return Renderer.get().render({entries: legGroup.lairActions});
+							return Renderer.get().render({ entries: legGroup.lairActions });
 						},
 						flex: 3,
 					},
@@ -368,19 +368,19 @@ class BestiaryPage extends ListPageMultiSource {
 						transform: mon => {
 							const legGroup = DataUtil.monster.getLegendaryGroup(mon);
 							if (!legGroup?.regionalEffects?.length) return "";
-							return Renderer.get().render({entries: legGroup.regionalEffects});
+							return Renderer.get().render({ entries: legGroup.regionalEffects });
 						},
 						flex: 3,
 					},
-					environment: {name: "Environment", transform: it => Renderer.monster.getRenderedEnvironment(it)},
-					treasure: {name: "Treasure", transform: it => Renderer.monster.getRenderedTreasure(it)},
+					environment: { name: "Environment", transform: it => Renderer.monster.getRenderedEnvironment(it) },
+					treasure: { name: "Treasure", transform: it => Renderer.monster.getRenderedTreasure(it) },
 				},
 			},
 			propEntryData: "monster",
 
 			propLoader: "monster",
 
-			listSyntax: new ListSyntaxBestiary({fnGetDataList: () => this._dataList, pFnGetFluff}),
+			listSyntax: new ListSyntaxBestiary({ fnGetDataList: () => this._dataList, pFnGetFluff }),
 		});
 
 		this._$wrpBtnProf = null;
@@ -396,7 +396,7 @@ class BestiaryPage extends ListPageMultiSource {
 		});
 	}
 
-	get _bindOtherButtonsOptions () {
+	get _bindOtherButtonsOptions() {
 		return {
 			upload: {
 				pFnPreLoad: (...args) => this._pPreloadSublistSources(...args),
@@ -410,16 +410,16 @@ class BestiaryPage extends ListPageMultiSource {
 				}),
 			},
 			other: [
-				this._bindOtherButtonsOptions_openAsSinglePage({slugPage: "bestiary", fnGetHash: () => UrlUtil.autoEncodeHash(this._lastRender.entity)}),
+				this._bindOtherButtonsOptions_openAsSinglePage({ slugPage: "bestiary", fnGetHash: () => UrlUtil.autoEncodeHash(this._lastRender.entity) }),
 			].filter(Boolean),
 		};
 	}
 
-	set encounterBuilder (val) { this._encounterBuilder = val; }
+	set encounterBuilder(val) { this._encounterBuilder = val; }
 
-	get list_ () { return this._list; }
+	get list_() { return this._list; }
 
-	getListItem (mon, mI) {
+	getListItem(mon, mI) {
 		const hash = UrlUtil.autoEncodeHash(mon);
 		if (this._seenHashes.has(hash)) return null;
 		this._seenHashes.add(hash);
@@ -446,9 +446,9 @@ class BestiaryPage extends ListPageMultiSource {
 					click: evt => this._handleBestiaryLinkClick(evt),
 					children: [
 						this._encounterBuilder.getButtons(mI),
-						e_({tag: "span", clazz: `best-ecgen__name bold ve-col-4-2 pl-0 pr-1`, text: mon.name}),
-						e_({tag: "span", clazz: `ve-col-4-1 px-1`, text: type}),
-						e_({tag: "span", clazz: `ve-col-1-7 px-1 ve-text-center`, text: cr}),
+						e_({ tag: "span", clazz: `best-ecgen__name bold ve-col-4-2 pl-0 pr-1`, text: mon.name }),
+						e_({ tag: "span", clazz: `ve-col-4-1 px-1`, text: type }),
+						e_({ tag: "span", clazz: `ve-col-1-7 px-1 ve-text-center`, text: cr }),
 						e_({
 							tag: "span",
 							clazz: `ve-col-2 ve-text-center ${Parser.sourceJsonToSourceClassname(mon.source)} pl-1 pr-0`,
@@ -482,22 +482,22 @@ class BestiaryPage extends ListPageMultiSource {
 		return listItem;
 	}
 
-	handleFilterChange () {
+	handleFilterChange() {
 		super.handleFilterChange();
 		this._encounterBuilder.resetCache();
 	}
 
-	async _pDoLoadHash ({id, lockToken}) {
+	async _pDoLoadHash({ id, lockToken }) {
 		const mon = this._dataList[id];
 
 		this._renderStatblock(mon);
 
-		await this._pDoLoadSubHash({sub: [], lockToken});
+		await this._pDoLoadSubHash({ sub: [], lockToken });
 		this._updateSelected();
 	}
 
-	async _pDoLoadSubHash ({sub, lockToken}) {
-		sub = await super._pDoLoadSubHash({sub, lockToken});
+	async _pDoLoadSubHash({ sub, lockToken }) {
+		sub = await super._pDoLoadSubHash({ sub, lockToken });
 
 		const scaledHash = sub.find(it => it.startsWith(UrlUtil.HASH_START_CREATURE_SCALED));
 		const scaledSpellSummonHash = sub.find(it => it.startsWith(UrlUtil.HASH_START_CREATURE_SCALED_SPELL_SUMMON));
@@ -509,40 +509,40 @@ class BestiaryPage extends ListPageMultiSource {
 			const scaleToStr = Parser.numberToCr(scaleTo);
 			if (Parser.isValidCr(scaleToStr) && scaleTo !== Parser.crToNumber(this._lastRender.entity.cr)) {
 				ScaleCreature.scale(mon, scaleTo)
-					.then(monScaled => this._renderStatblock(monScaled, {isScaledCr: true}));
+					.then(monScaled => this._renderStatblock(monScaled, { isScaledCr: true }));
 			}
 		} else if (scaledSpellSummonHash) {
 			const scaleTo = Number(UrlUtil.unpackSubHash(scaledSpellSummonHash)[VeCt.HASH_SCALED_SPELL_SUMMON][0]);
 			if (mon.summonedBySpellLevel != null && scaleTo >= mon.summonedBySpellLevel && scaleTo !== this._lastRender.entity._summonedBySpell_level) {
 				ScaleSpellSummonedCreature.scale(mon, scaleTo)
-					.then(monScaled => this._renderStatblock(monScaled, {isScaledSpellSummon: true}));
+					.then(monScaled => this._renderStatblock(monScaled, { isScaledSpellSummon: true }));
 			}
 		} else if (scaledClassSummonHash) {
 			const scaleTo = Number(UrlUtil.unpackSubHash(scaledClassSummonHash)[VeCt.HASH_SCALED_CLASS_SUMMON][0]);
 			if ((mon.summonedByClass != null || mon.summonedScaleByPlayerLevel) && scaleTo > 0 && scaleTo !== this._lastRender.entity._summonedByClass_level) {
 				ScaleClassSummonedCreature.scale(mon, scaleTo)
-					.then(monScaled => this._renderStatblock(monScaled, {isScaledClassSummon: true}));
+					.then(monScaled => this._renderStatblock(monScaled, { isScaledClassSummon: true }));
 			}
 		}
 
 		this._encounterBuilder.handleSubhash(sub);
 	}
 
-	async _pOnLoad_pPreDataLoad () {
+	async _pOnLoad_pPreDataLoad() {
 		this._encounterBuilder.initUi();
 		await DataUtil.monster.pPreloadLegendaryGroups();
 		this._bindProfDiceHandlers();
 	}
 
-	async _pOnLoad_pPreDataAdd () {
+	async _pOnLoad_pPreDataAdd() {
 		await this._pPageInit_pProfBonusDiceToggle();
 	}
 
-	_pOnLoad_pPostLoad () {
+	_pOnLoad_pPostLoad() {
 		this._encounterBuilder.render();
 	}
 
-	async _pPageInit_pProfBonusDiceToggle () {
+	async _pPageInit_pProfBonusDiceToggle() {
 		const $btnProfBonusDice = $("button#profbonusdice");
 
 		this._profDiceMode = await StorageUtil.pGetForPage("proficiencyDiceMode") || _BestiaryConsts.PROF_MODE_BONUS;
@@ -567,20 +567,20 @@ class BestiaryPage extends ListPageMultiSource {
 		hk();
 	}
 
-	_handleBestiaryLiClick (evt, listItem) {
+	_handleBestiaryLiClick(evt, listItem) {
 		if (this._encounterBuilder.isActive()) Renderer.hover.doPopoutCurPage(evt, this._dataList[listItem.ix]);
 		else this._list.doSelect(listItem, evt);
 	}
 
-	_handleBestiaryLiContext (evt, listItem) {
+	_handleBestiaryLiContext(evt, listItem) {
 		this._openContextMenu(evt, this._list, listItem);
 	}
 
-	_handleBestiaryLinkClick (evt) {
+	_handleBestiaryLinkClick(evt) {
 		if (this._encounterBuilder.isActive()) evt.preventDefault();
 	}
 
-	_bindProfDiceHandlers () {
+	_bindProfDiceHandlers() {
 		this._$pgContent
 			.on(`mousedown`, `[data-roll-prof-type]`, evt => {
 				if (this._profDiceMode !== _BestiaryConsts.PROF_MODE_BONUS) evt.preventDefault();
@@ -623,7 +623,7 @@ class BestiaryPage extends ListPageMultiSource {
 			});
 	}
 
-	_renderStatblock (mon, {isScaledCr = false, isScaledSpellSummon = false, isScaledClassSummon = false} = {}) {
+	_renderStatblock(mon, { isScaledCr = false, isScaledSpellSummon = false, isScaledClassSummon = false } = {}) {
 		this._lastRender.entity = mon;
 		this._lastRender.isScaledCr = isScaledCr;
 		this._lastRender.isScaledSpellSummon = isScaledSpellSummon;
@@ -644,7 +644,7 @@ class BestiaryPage extends ListPageMultiSource {
 				this._$wrpBtnProf.append(this._$btnProf);
 				this._tokenDisplay.doShow();
 			},
-			fnPopulate: () => this._renderStatblock_doBuildStatsTab({mon, isScaledCr, isScaledSpellSummon, isScaledClassSummon}),
+			fnPopulate: () => this._renderStatblock_doBuildStatsTab({ mon, isScaledCr, isScaledSpellSummon, isScaledClassSummon }),
 			isVisible: true,
 		});
 
@@ -672,7 +672,7 @@ class BestiaryPage extends ListPageMultiSource {
 							this._$btnProf = this._$wrpBtnProf.children().length ? this._$wrpBtnProf.children().detach() : this._$btnProf;
 							this._tokenDisplay.doHide();
 						},
-						fnPopulate: () => this._renderStats_doBuildFluffTab({ent: mon}),
+						fnPopulate: () => this._renderStats_doBuildFluffTab({ ent: mon }),
 						isVisible: hasFluffText,
 					}),
 					new Renderer.utils.TabButton({
@@ -681,7 +681,7 @@ class BestiaryPage extends ListPageMultiSource {
 							this._$btnProf = this._$wrpBtnProf.children().length ? this._$wrpBtnProf.children().detach() : this._$btnProf;
 							this._tokenDisplay.doHide();
 						},
-						fnPopulate: () => this._renderStats_doBuildFluffTab({ent: mon, isImageTab: true}),
+						fnPopulate: () => this._renderStats_doBuildFluffTab({ ent: mon, isImageTab: true }),
 						isVisible: hasFluffImages,
 					}),
 				];
@@ -695,7 +695,7 @@ class BestiaryPage extends ListPageMultiSource {
 			});
 	}
 
-	_renderStatblock_doBuildStatsTab (
+	_renderStatblock_doBuildStatsTab(
 		{
 			mon,
 			isScaledCr,
@@ -736,7 +736,7 @@ class BestiaryPage extends ListPageMultiSource {
 					else Hist.setSubhash(VeCt.HASH_SCALED_SPELL_SUMMON, scaleTo);
 				});
 		}
-		if (isScaledSpellSummon) selSummonSpellLevel.val(`${mon._summonedBySpell_level}`, {isSetAttribute: true});
+		if (isScaledSpellSummon) selSummonSpellLevel.val(`${mon._summonedBySpell_level}`, { isSetAttribute: true });
 
 		const selSummonClassLevel = Renderer.monster.getSelSummonClassLevel(mon);
 		if (selSummonClassLevel) {
@@ -748,12 +748,12 @@ class BestiaryPage extends ListPageMultiSource {
 					else Hist.setSubhash(VeCt.HASH_SCALED_CLASS_SUMMON, scaleTo);
 				});
 		}
-		if (isScaledClassSummon) selSummonClassLevel.val(`${mon._summonedByClass_level}`, {isSetAttribute: true});
+		if (isScaledClassSummon) selSummonClassLevel.val(`${mon._summonedByClass_level}`, { isSetAttribute: true });
 
 		// region dice rollers
 		const expectedPB = Parser.crToPb(mon.cr);
 
-		const pluginDc = (commonArgs, {input: {tag, text}}) => {
+		const pluginDc = (commonArgs, { input: { tag, text } }) => {
 			if (isNaN(text) || expectedPB <= 0) return null;
 
 			const withoutPB = Number(text) - expectedPB;
@@ -762,7 +762,7 @@ class BestiaryPage extends ListPageMultiSource {
 			return `DC <span class="rd__dc rd__dc--rollable" data-roll-prof-type="dc" data-roll-prof-dice="${profDiceString.qq()}"><span class="rd__dc--rollable-text">${text}</span><span class="rd__dc--rollable-dice">${profDiceString}</span></span>`;
 		};
 
-		const pluginDice = (commonArgs, {input: entry}) => {
+		const pluginDice = (commonArgs, { input: entry }) => {
 			if (expectedPB <= 0 || entry.subType !== "d20" || entry.context?.type == null) return null;
 
 			const text = Renderer.getEntryDiceDisplayText(entry);
@@ -816,7 +816,7 @@ class BestiaryPage extends ListPageMultiSource {
 			Renderer.get().addPlugin("string_@dc", pluginDc);
 			Renderer.get().addPlugin("dice", pluginDice);
 
-			this._$pgContent.empty().append(RenderBestiary.$getRenderedCreature(mon, {$btnScaleCr, $btnResetScaleCr, selSummonSpellLevel, selSummonClassLevel, classLevelScalerClass: mon.summonedByClass}));
+			this._$pgContent.empty().append(RenderBestiary.$getRenderedCreature(mon, { $btnScaleCr, $btnResetScaleCr, selSummonSpellLevel, selSummonClassLevel, classLevelScalerClass: mon.summonedByClass }));
 		} finally {
 			Renderer.get().removePlugin("dice", pluginDice);
 			Renderer.get().removePlugin("string_@dc", pluginDc);
@@ -826,11 +826,11 @@ class BestiaryPage extends ListPageMultiSource {
 		this._tokenDisplay.render(mon);
 	}
 
-	static _addSpacesToDiceExp (exp) {
+	static _addSpacesToDiceExp(exp) {
 		return exp.replace(/([^0-9d])/gi, " $1 ").replace(/\s+/g, " ").trim().replace(/^([-+])\s*/, "$1");
 	}
 
-	async _pPreloadSublistSources (json) {
+	async _pPreloadSublistSources(json) {
 		if (json.l && json.l.items && json.l.sources) { // if it's an encounter file
 			json.items = json.l.items;
 			json.sources = json.l.sources;
@@ -847,7 +847,7 @@ class BestiaryPage extends ListPageMultiSource {
 		}
 	}
 
-	_pOnLoad_initVisibleItemsDisplay (...args) {
+	_pOnLoad_initVisibleItemsDisplay(...args) {
 		super._pOnLoad_initVisibleItemsDisplay(...arguments);
 
 		this._list.on("updated", () => {
@@ -860,7 +860,7 @@ const bestiaryPage = new BestiaryPage();
 window.bestiaryPage = bestiaryPage;
 const sublistManager = new BestiarySublistManager();
 
-const encounterBuilderCache = new EncounterBuilderCacheBestiaryPage({bestiaryPage});
+const encounterBuilderCache = new EncounterBuilderCacheBestiaryPage({ bestiaryPage });
 const encounterBuilderComp = new EncounterBuilderComponentBestiary();
 const encounterBuilder = new EncounterBuilderUiBestiary({
 	cache: encounterBuilderCache,

@@ -510,7 +510,6 @@ const PROPORDER_BOOK = [
 	"source",
 	"parentSource",
 
-
 	"group",
 
 	"cover",
@@ -519,7 +518,6 @@ const PROPORDER_BOOK = [
 	"publishedOrder",
 	"author",
 	"storyline",
-	"level",
 
 	"contents",
 ];

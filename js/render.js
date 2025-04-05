@@ -1070,7 +1070,7 @@ globalThis.Renderer = function () {
 		const headerClass = `rd__h--${meta.depth + 1}`; // adjust as the CSS is 0..4 rather than -1..3
 		const pluginDataNamePrefix = this._applyPlugins_getAll(`${type}_namePrefix`, { textStack, meta, options }, { input: entry });
 
-		const ptText = `${pluginDataNamePrefix.join("")}${this.render({ type: "inline", entries: [displayName] })}${isAddPeriod ? "." : ""}`;
+		const ptText = `${pluginDataNamePrefix.join("")}${this.render({ type: "inline", entries: [displayName] })}`;
 
 		return `<${headerTag} class="rd__h ${headerClass}" data-title-index="${this._headerIndex++}" ${this._getEnumeratedTitleRel(entry.name)}> <span class="entry-title-inner${!pagePart && entry.source ? ` help-subtle` : ""}"${!pagePart && entry.source ? ` title="Source: ${Parser.sourceJsonToFull(entry.source)}${entry.page ? `, p${entry.page}` : ""}"` : ""}>${ptText}</span>${partPageExpandCollapse}</${headerTag}> `;
 	};
