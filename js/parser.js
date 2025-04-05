@@ -4219,6 +4219,7 @@ Parser.SOURCES_AVAILABLE_DOCS_BOOK = {};
 	Parser.SRC_XSCREEN,
 	Parser.SRC_PHBR1,
 	Parser.SRC_DMGR1,
+	Parser.SRC_HR1,
 	Parser.SRC_SCAG,
 	Parser.SRC_VGM,
 	Parser.SRC_OGA,

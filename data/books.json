@@ -6895,6 +6895,517 @@
 			]
 		},
 		{
+			"name": "Vikings Campaign Sourcebook",
+			"id": "HR1",
+			"source": "HR1",
+			"group": "supplement",
+			"author": "David \"Zeb\" Cook",
+			"published": "1991-04-01",
+			"cover": {
+				"type": "internal",
+				"path": "covers/HR1.webp"
+			},
+			"contents": [
+				{
+					"name": "Introduction",
+					"headers": [
+						"A Few Wrong Thoughts",
+						{
+							"header": "About This Book",
+							"depth": 1
+						},
+						{
+							"header": "How to Get Started",
+							"depth": 1
+						},
+						{
+							"header": "The Viking Campaign Sourcebook and AD&D® 2nd Edition Rules",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "A Mini-Course of Viking History",
+					"headers": [
+						"The Beginning",
+						{
+							"header": "The Raiders",
+							"depth": 1
+						},
+						{
+							"header": "The Conquerors",
+							"depth": 1
+						},
+						{
+							"header": "The Explorers",
+							"depth": 1
+						},
+						{
+							"header": "A Pause",
+							"depth": 1
+						},
+						{
+							"header": "Resurgence",
+							"depth": 1
+						},
+						{
+							"header": "Collapse",
+							"depth": 1
+						},
+						"The Timeline",
+						"Suggested Reading"
+					]
+				},
+				{
+					"name": "Of Characters and Combat",
+					"headers": [
+						"Races in a Viking Campaign",
+						{
+							"header": "Humans",
+							"depth": 1
+						},
+						{
+							"header": "Table 1: Character Gifts",
+							"depth": 1
+						},
+						{
+							"header": "Explanation of Character Gifts",
+							"depth": 1
+						},
+						{
+							"header": "The Trollborn",
+							"depth": 1
+						},
+						"Character Classes",
+						{
+							"header": "Classes from the Players Handbook",
+							"depth": 1
+						},
+						{
+							"header": "New Character Classes",
+							"depth": 1
+						},
+						{
+							"header": "Warriors",
+							"depth": 1
+						},
+						{
+							"header": "Fighters",
+							"depth": 1
+						},
+						{
+							"header": "Table 2: Norse Followers",
+							"depth": 1
+						},
+						{
+							"header": "Paladins",
+							"depth": 1
+						},
+						{
+							"header": "Rangers",
+							"depth": 1
+						},
+						{
+							"header": "Berserkers",
+							"depth": 1
+						},
+						{
+							"header": "Runecasters",
+							"depth": 1
+						},
+						{
+							"header": "Wizard",
+							"depth": 1
+						},
+						{
+							"header": "Priests",
+							"depth": 1
+						},
+						{
+							"header": "Rogues",
+							"depth": 1
+						},
+						{
+							"header": "Thief",
+							"depth": 1
+						},
+						{
+							"header": "Bards",
+							"depth": 1
+						},
+						{
+							"header": "Other Details",
+							"depth": 1
+						},
+						{
+							"header": "Sex",
+							"depth": 1
+						},
+						{
+							"header": "Names",
+							"depth": 1
+						},
+						{
+							"header": "Age",
+							"depth": 1
+						},
+						{
+							"header": "Homeland",
+							"depth": 1
+						},
+						{
+							"header": "Social Class",
+							"depth": 1
+						},
+						{
+							"header": "Proficiencies",
+							"depth": 1
+						},
+						{
+							"header": "Languages",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "Rune Magic",
+					"headers": [
+						"What Are Runes?",
+						{
+							"header": "Magic Runes",
+							"depth": 1
+						},
+						"Learning Runes",
+						"Using Runes",
+						"Rune Descriptions",
+						{
+							"header": "Ale-Runes",
+							"depth": 1
+						},
+						{
+							"header": "Beast-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Berserk-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Catch-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Charge-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Charm-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Dead-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Disease-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Fortune-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Help-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Iron-Can't-Bite-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Limb-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Lore-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Luck-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Nið-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Quench-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Sea-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Shield-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Shout-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Sight-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Speech-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Strength-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Triumph-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Water-Rune",
+							"depth": 1
+						},
+						{
+							"header": "Creating Other Runes",
+							"depth": 1
+						},
+						"Second Sight"
+					]
+				},
+				{
+					"name": "...And Monsters",
+					"headers": [
+						"The Role of Monsters",
+						"Existing Creatures",
+						{
+							"header": "Gengånger",
+							"depth": 1
+						},
+						{
+							"header": "Hamhleypa",
+							"depth": 1
+						},
+						{
+							"header": "Havmand",
+							"depth": 1
+						},
+						{
+							"header": "Linnorm",
+							"depth": 1
+						},
+						{
+							"header": "Nökk",
+							"depth": 1
+						},
+						{
+							"header": "Nisse",
+							"depth": 1
+						},
+						{
+							"header": "Pukje",
+							"depth": 1
+						},
+						{
+							"header": "Sending",
+							"depth": 1
+						},
+						{
+							"header": "Skogsrå",
+							"depth": 1
+						},
+						{
+							"header": "Sjörå",
+							"depth": 1
+						},
+						{
+							"header": "Spöke",
+							"depth": 1
+						},
+						{
+							"header": "Svipa",
+							"depth": 1
+						},
+						"New Monsters",
+						{
+							"header": "Dwarves and Elves",
+							"depth": 1
+						},
+						{
+							"header": "Dverge",
+							"depth": 1
+						},
+						{
+							"header": "Dock-Alfar",
+							"depth": 1
+						},
+						{
+							"header": "Huldre",
+							"depth": 1
+						},
+						{
+							"header": "Maahiset",
+							"depth": 1
+						},
+						"Giants",
+						{
+							"header": "Cliff Giants",
+							"depth": 1
+						},
+						{
+							"header": "Frost Giants",
+							"depth": 1
+						},
+						{
+							"header": "Jöten",
+							"depth": 1
+						},
+						{
+							"header": "Kalevanpojat",
+							"depth": 1
+						},
+						{
+							"header": "Thursir",
+							"depth": 1
+						},
+						{
+							"header": "Sea Giants",
+							"depth": 1
+						},
+						"Trolls",
+						{
+							"header": "Trow",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "Equipment and Treasure",
+					"headers": [
+						"Money",
+						{
+							"header": "Table 3: Viking Weights and Coins",
+							"depth": 1
+						},
+						{
+							"header": "Table 4: Viking Coins",
+							"depth": 1
+						},
+						{
+							"header": "Table 5: Approx. Coin/Weight Conversion",
+							"depth": 1
+						},
+						"Available Equipment",
+						{
+							"header": "Table 6: Equipment Adjustments",
+							"depth": 1
+						},
+						{
+							"header": "Table 7: New Equipment",
+							"depth": 1
+						},
+						{
+							"header": "Equipment Descriptions",
+							"depth": 1
+						},
+						"Treasure",
+						"Magical Items",
+						{
+							"header": "Existing Items",
+							"depth": 1
+						},
+						{
+							"header": "Table 8: Viking Magical Items",
+							"depth": 1
+						},
+						{
+							"header": "Table 9: Unavailable Magical Items",
+							"depth": 1
+						},
+						{
+							"header": "New Magical Items",
+							"depth": 1
+						},
+						{
+							"header": "Magical Item Descriptions",
+							"depth": 1
+						},
+						{
+							"header": "Viking Swords",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "The Viking Culture",
+					"headers": [
+						"Ivar's Year",
+						{
+							"header": "Spring",
+							"depth": 1
+						},
+						{
+							"header": "Summer",
+							"depth": 1
+						},
+						{
+							"header": "Fall",
+							"depth": 1
+						},
+						{
+							"header": "Winter",
+							"depth": 1
+						},
+						"Social Rankings",
+						{
+							"header": "Thrall",
+							"depth": 1
+						},
+						{
+							"header": "Freeman",
+							"depth": 1
+						},
+						{
+							"header": "Nobles",
+							"depth": 1
+						},
+						{
+							"header": "Kings",
+							"depth": 1
+						},
+						"The Warrior's Way",
+						"Viking Women",
+						{
+							"header": "Female Adventurers",
+							"depth": 1
+						},
+						"Houses and Farms",
+						"Food and Drink",
+						"Trade",
+						"Law",
+						"Religion"
+					]
+				},
+				{
+					"name": "A Brief Gazetteer",
+					"headers": [
+						"The Making of the World",
+						"The World According to Rolf",
+						"The Lands of the Vikings",
+						"Imaginary Lands"
+					]
+				}
+			]
+		},
+		{
 			"name": "Sword Coast Adventurer's Guide",
 			"id": "SCAG",
 			"source": "SCAG",
