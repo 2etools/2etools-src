@@ -1,12 +1,12 @@
-import {AdventuresBooksList} from "./bookslist.js";
+import { AdventuresBooksList } from "./bookslist.js";
 
 class AdventuresList extends AdventuresBooksList {
-	static _getLevelsStr (adv) {
+	static _getLevelsStr(adv) {
 		if (adv.level.custom) return adv.level.custom;
 		return `${adv.level.start}\u2013${adv.level.end}`;
 	}
 
-	constructor () {
+	constructor() {
 		super({
 			contentsUrl: "data/adventures.json",
 			fnSort: AdventuresBooksList._sortAdventuresBooks.bind(AdventuresBooksList),
@@ -33,9 +33,9 @@ class AdventuresList extends AdventuresBooksList {
 
 const adventuresList = new AdventuresList();
 
-function handleBrew (homebrew) {
+function handleBrew(homebrew) {
 	adventuresList.addData(homebrew);
 	return Promise.resolve();
 }
 
-window.addEventListener("load", () => adventuresList.pOnPageLoad({handleBrew}));
+window.addEventListener("load", () => adventuresList.pOnPageLoad({ handleBrew }));

@@ -3419,13 +3419,64 @@
 										"col- text-left"
 									],
 									"intro": [
-										"{@b Special Encounters:} Roll on the appropriate table. If the encounter is not suitable, then none occurs.",
-										"{@b Surface Encounters:} Unintelligent monsters are 75% likely to be driven off by flaming oil nearby, 90% if actually burned by it. Large amounts of food thrown overboard are 50% likely to end such an encounter.",
-										"{@b Fish School:} This is a large group of one type of fish, the aquatic version of herd animals. They usually do not attack, unless commanded by magical means. If panicked they might mill about, obstructing vision and movement. If large enough, they might cause buffeting damage (1-2 to 1-8, depending on size).",
-										"{@b Ghost Ship:} This is a lost ship manned by undead. Although it can be seen at any time, it will usually attack only at night, when its masters are at full power. Roll percentile dice once for the crew and once for their leaders. {@i Crew:} 01-40 = 10-40 skeletons; 41-80 = 10-40 zombies; 81-00 = 10-20 juju zombies. {@i Leaders:} 01-30 = 1-4 wights; 31-60 = 1-3 wraiths; 61-80 = 1-2 spectres; 81-95 = 1-2 ghosts; 95-00 = 1 lich.",
-										"{@b Hazard (navigational):} This can ground or damage a vessel that does not have aboard a pilot familiar with the waters. Such hazards as sandbars and submerged logs often change position.",
-										"{@b Seaweed:} This includes both floating masses of weed and beds on the bottom. The former slows ships by 50%. The latter are 30-300' high and reduce vision to 10 feet. Both provide a 40% chance for another encounter if moved through or investigated.",
-										"{@b Special Encounters:} These can include morkoth, mottled worms, shipwreck survivors, an eye of the deep, pearl beds, sudden storms, seaweed that allows underwater breathing when eaten, giant clams, aquatic versions of carnivorous plants, storm giants, and so on."
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"columns": 0,
+											"page": 378,
+											"name": "",
+											"items": [
+												{
+													"type": "item",
+													"name": "Special Encounters:",
+													"entries": [
+														"Roll on the appropriate table. If the encounter is not suitable, then none occurs."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Surface Encounters:",
+													"entries": [
+														"Unintelligent monsters are 75% likely to be driven off by flaming oil nearby, 90% if actually burned by it. Large amounts of food thrown overboard are 50% likely to end such an encounter."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Fish School:",
+													"entries": [
+														"This is a large group of one type of fish, the aquatic version of herd animals. They usually do not attack, unless commanded by magical means. If panicked they might mill about, obstructing vision and movement. If large enough, they might cause buffeting damage (1-2 to 1-8, depending on size)."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Ghost Ship:",
+													"entries": [
+														"This is a lost ship manned by undead. Although it can be seen at any time, it will usually attack only at night, when its masters are at full power. Roll percentile dice once for the crew and once for their leaders. {@i Crew:} 01-40 = 10-40 skeletons; 41-80 = 10-40 zombies; 81-00 = 10-20 juju zombies. {@i Leaders:} 01-30 = 1-4 wights; 31-60 = 1-3 wraiths; 61-80 = 1-2 spectres; 81-95 = 1-2 ghosts; 95-00 = 1 lich."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Hazard (navigational):",
+													"entries": [
+														"This can ground or damage a vessel that does not have aboard a pilot familiar with the waters. Such hazards as sandbars and submerged logs often change position."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Seaweed:",
+													"entries": [
+														"This includes both floating masses of weed and beds on the bottom. The former slows ships by 50%. The latter are 30-300' high and reduce vision to 10 feet. Both provide a 40% chance for another encounter if moved through or investigated."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Special Encounters:",
+													"entries": [
+														"These can include morkoth, mottled worms, shipwreck survivors, an eye of the deep, pearl beds, sudden storms, seaweed that allows underwater breathing when eaten, giant clams, aquatic versions of carnivorous plants, storm giants, and so on."
+													]
+												}
+											]
+										}
 									],
 									"rows": [
 										[
@@ -3719,53 +3770,108 @@
 												"col- text-center"
 											],
 											"colLabels": [
-												"Dice Score",
+												"{@dice 1d100|Dice Score}",
 												"Character Type*",
 												"Maximum Number in Party"
 											],
 											"rows": [
 												[
-													"01-17",
+													{
+														"type": "cell",
+														"roll": {
+															"min": 1,
+															"max": 17,
+															"pad": true
+														}
+													},
 													"Cleric",
 													"3"
 												],
 												[
-													"18-20",
+													{
+														"type": "cell",
+														"roll": {
+															"min": 18,
+															"max": 20
+														}
+													},
 													"{@i Druid}",
 													"2"
 												],
 												[
-													"21-60",
+													{
+														"type": "cell",
+														"roll": {
+															"min": 21,
+															"max": 60
+														}
+													},
 													"Fighter",
 													"5"
 												],
 												[
-													"61-62",
+													{
+														"type": "cell",
+														"roll": {
+															"min": 61,
+															"max": 62
+														}
+													},
 													"{@i Paladin}",
 													"2"
 												],
 												[
-													"63-65",
+													{
+														"type": "cell",
+														"roll": {
+															"min": 63,
+															"max": 65
+														}
+													},
 													"{@i Ranger}",
 													"2"
 												],
 												[
-													"66-86",
+													{
+														"type": "cell",
+														"roll": {
+															"min": 66,
+															"max": 86
+														}
+													},
 													"Wizard",
 													"3"
 												],
 												[
-													"87-88",
+													{
+														"type": "cell",
+														"roll": {
+															"min": 66,
+															"max": 86
+														}
+													},
 													"{@i Specialist}",
 													"1"
 												],
 												[
-													"89-98",
+													{
+														"type": "cell",
+														"roll": {
+															"min": 89,
+															"max": 98
+														}
+													},
 													"Thief",
 													"4"
 												],
 												[
-													"99-00",
+													{
+														"type": "cell",
+														"roll": {
+															"min": 99,
+															"max": 100
+														}
+													},
 													"{@i Bard}",
 													"1"
 												]
@@ -3784,33 +3890,64 @@
 												"col- text-center"
 											],
 											"colLabels": [
-												"Dice Score",
+												"{@dice 1d100|Dice Score}",
 												"Race",
 												"% of Multiclass"
 											],
 											"rows": [
 												[
-													"01-30",
+													{
+														"type": "cell",
+														"roll": {
+															"min": 1,
+															"max": 30,
+															"pad": true
+														}
+													},
 													"Dwarves*",
 													"15%"
 												],
 												[
-													"31-55",
+													{
+														"type": "cell",
+														"roll": {
+															"min": 31,
+															"max": 55
+														}
+													},
 													"Elf",
 													"85%**"
 												],
 												[
-													"56-65",
+													{
+														"type": "cell",
+														"roll": {
+															"min": 56,
+															"max": 65
+														}
+													},
 													"Gnomes*",
 													"25%"
 												],
 												[
-													"66-90",
+													{
+														"type": "cell",
+														"roll": {
+															"min": 66,
+															"max": 90
+														}
+													},
 													"Half-Elf*",
 													"85%**"
 												],
 												[
-													"91-00",
+													{
+														"type": "cell",
+														"roll": {
+															"min": 91,
+															"max": 100
+														}
+													},
 													"Halflings*",
 													"10%"
 												]
@@ -4289,88 +4426,188 @@
 												"col- text-left"
 											],
 											"colLabels": [
-												"Die",
-												"Item ({@dice d20})"
+												"{@dice 1d20|Die}",
+												"Item (d20)"
 											],
 											"rows": [
 												[
-													"1",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 1
+														}
+													},
 													"1 Ring: djinni summoning"
 												],
 												[
-													"2",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 2
+														}
+													},
 													"1 Ring: human influence"
 												],
 												[
-													"3",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 3
+														}
+													},
 													"1 Ring: spell turning"
 												],
 												[
-													"4",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 4
+														}
+													},
 													"1 Rod: smiting"
 												],
 												[
-													"5",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 5
+														}
+													},
 													"1 Rod: terror"
 												],
 												[
-													"6",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 6
+														}
+													},
 													"1 Wand: lightning or fire"
 												],
 												[
-													"7",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 7
+														}
+													},
 													"1 Wand: lightning or fire"
 												],
 												[
-													"8",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 9
+														}
+													},
 													"1 Staff: thunder & lightning"
 												],
 												[
-													"9",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 9
+														}
+													},
 													"1 amulet of life protection"
 												],
 												[
-													"10",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 10
+														}
+													},
 													"1 cube of force"
 												],
 												[
-													"11",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 11
+														}
+													},
 													"1 deck of illusions"
 												],
 												[
-													"12",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 12
+														}
+													},
 													"1 eyes of charming"
 												],
 												[
-													"13",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 13
+														}
+													},
 													"1 helm of teleportation"
 												],
 												[
-													"14",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 14
+														}
+													},
 													"1 helm of teleportation"
 												],
 												[
-													"15",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 15
+														}
+													},
 													"1 robe of blending"
 												],
 												[
-													"16",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 16
+														}
+													},
 													"1 stone of good luck"
 												],
 												[
-													"17",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 17
+														}
+													},
 													"1 set: plate mail +3, shield +4"
 												],
 												[
-													"18",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 18
+														}
+													},
 													"1 Sword: +4 (or +3 with abilities*)"
 												],
 												[
-													"19",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 19
+														}
+													},
 													"1 Arrow: of slaying (character class)"
 												],
 												[
-													"20",
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 20
+														}
+													},
 													"1 Net: of entrapment"
 												]
 											],

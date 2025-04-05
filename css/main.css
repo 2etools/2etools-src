@@ -4836,7 +4836,10 @@ input[type=range] {
 /* Header 3 */
 .rd__h--3 {
     color: #1068a3;
-    font-weight: bold
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
 }
 
 .rd__h--4 {
@@ -5200,7 +5203,7 @@ td>.rd__b:last-child {
 }
 
 .ve-night-mode .rd__h--4 {
-    color: #c2c2c2
+    color: rgb(194, 194, 194)
 }
 
 /* Header 3 */
@@ -5214,7 +5217,7 @@ td>.rd__b:last-child {
 }
 
 .ve-night-mode .rd__b-inset {
-    background-color: #1c3a4e
+    background-color: #313747
 }
 
 .ve-night-mode .rd__b-inset--readaloud {
@@ -5571,15 +5574,15 @@ html.is-faux-print .rd__h--1 {
 }
 
 .source__PHB {
-    color: #db4c3c !important;
-    border-color: #db4c3c !important;
-    text-decoration-color: #db4c3c !important
+    color: #e75160 !important;
+    border-color: #e75160 !important;
+    text-decoration-color: #e75160 !important
 }
 
 .source__DMG {
-    color: #2e6198 !important;
-    border-color: #2e6198 !important;
-    text-decoration-color: #2e6198 !important
+    color: #3c7ba5 !important;
+    border-color: #3c7ba5 !important;
+    text-decoration-color: #3c7ba5 !important
 }
 
 .source__MM {
@@ -5588,11 +5591,22 @@ html.is-faux-print .rd__h--1 {
     text-decoration-color: green !important
 }
 
+.source__XPHB {
+    color: #ee273c !important;
+    border-color: #ee273c !important;
+    text-decoration-color: #ee273c !important
+}
+
+.source__XDMG {
+    color: #1169a3 !important;
+    border-color: #1169a3 !important;
+    text-decoration-color: #1169a3 !important
+}
 
 .source__PHBR {
-    color: #701c32 !important;
-    border-color: #701c32 !important;
-    text-decoration-color: #701c32 !important
+    color: #8f0445 !important;
+    border-color: #8f0445 !important;
+    text-decoration-color: #8f0445 !important
 }
 
 .source__PHBR1,
@@ -5610,15 +5624,15 @@ html.is-faux-print .rd__h--1 {
 .source__PHBR13,
 .source__PHBR14,
 .source__PHBR15 {
-    color: #701c32 !important;
-    border-color: #701c32 !important;
-    text-decoration-color: #701c32 !important
+    color: #8f0445 !important;
+    border-color: #8f0445 !important;
+    text-decoration-color: #8f0445 !important
 }
 
 .source__DMGR {
-    color: #1c4b69 !important;
-    border-color: #1c4b69 !important;
-    text-decoration-color: #1c4b69 !important
+    color: #0451a8 !important;
+    border-color: #0451a8 !important;
+    text-decoration-color: #0451a8 !important
 }
 
 .source__DMGR1,
@@ -5630,9 +5644,9 @@ html.is-faux-print .rd__h--1 {
 .source__DMGR7,
 .source__DMGR8,
 .source__DMGR9 {
-    color: #1c4b69 !important;
-    border-color: #1c4b69 !important;
-    text-decoration-color: #1c4b69 !important
+    color: #0451a8 !important;
+    border-color: #0451a8 !important;
+    text-decoration-color: #0451a8 !important
 }
 
 .source__HR {
@@ -6166,17 +6180,6 @@ html.is-faux-print .rd__h--1 {
     text-decoration-color: #5d7993 !important
 }
 
-.source__XPHB {
-    color: #ef1946 !important;
-    border-color: #ef1946 !important;
-    text-decoration-color: #ef1946 !important
-}
-
-.source__XDMG {
-    color: #812a91 !important;
-    border-color: #812a91 !important;
-    text-decoration-color: #812a91 !important
-}
 
 .source__HFDoMM {
     color: #00817f !important;
@@ -6338,7 +6341,7 @@ html.is-faux-print .rd__h--1 {
     text-decoration-color: #60c52f !important
 }
 
-.ve-night-mode .source__PHB {
+/*.ve-night-mode .source__PHB {
     color: #db4c3c !important;
     border-color: #db4c3c !important;
     text-decoration-color: #db4c3c !important
@@ -6349,6 +6352,18 @@ html.is-faux-print .rd__h--1 {
     border-color: #2e6198 !important;
     text-decoration-color: #2e6198 !important
 }
+
+.ve-night-mode .source__XPHB {
+    color: #ef1946 !important;
+    border-color: #ef1946 !important;
+    text-decoration-color: #ef1946 !important
+}
+
+.ve-night-mode .source__PHBR {
+    color: #701c32 !important;
+    border-color: #701c32 !important;
+    text-decoration-color: #701c32 !important
+}*/
 
 .ve-night-mode .source__OGA {
     color: #b44f18 !important;
@@ -6549,11 +6564,6 @@ html.is-faux-print .rd__h--1 {
     text-decoration-color: #9661ab !important
 }
 
-.ve-night-mode .source__XPHB {
-    color: #ef1946 !important;
-    border-color: #ef1946 !important;
-    text-decoration-color: #ef1946 !important
-}
 
 .ve-night-mode .itm__rarity-alt-common {
     color: #959595

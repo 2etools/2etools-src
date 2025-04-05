@@ -2885,7 +2885,7 @@ Parser.SKL_ENC = "Enchantment";
 Parser.SKL_ILL = "Illusion";
 Parser.SKL_DIV = "Divination";
 Parser.SKL_NEC = "Necromancy";
-Parser.SKL_TRA = "Transmutation";
+Parser.SKL_TRA = "Alteration";
 Parser.SKL_CON = "Conjuration";
 Parser.SKL_PSI = "Psionic";
 
@@ -2907,7 +2907,7 @@ Parser.SP_SCHOOL_ABV_TO_SHORT[Parser.SKL_ABV_ENC] = "Ench.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[Parser.SKL_ABV_ILL] = "Illu.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[Parser.SKL_ABV_DIV] = "Divin.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[Parser.SKL_ABV_NEC] = "Necro.";
-Parser.SP_SCHOOL_ABV_TO_SHORT[Parser.SKL_ABV_TRA] = "Trans.";
+Parser.SP_SCHOOL_ABV_TO_SHORT[Parser.SKL_ABV_TRA] = "Alt.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[Parser.SKL_ABV_CON] = "Conj.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[Parser.SKL_ABV_PSI] = "Psi.";
 
@@ -2974,6 +2974,7 @@ Parser.SIZE_ABV_TO_FULL[Parser.SZ_GARGANTUAN] = "Gargantuan";
 Parser.SIZE_ABV_TO_FULL[Parser.SZ_COLOSSAL] = "Colossal";
 Parser.SIZE_ABV_TO_FULL[Parser.SZ_VARIES] = "Varies";
 
+// 5e-ism
 Parser.XP_CHART_ALT = {
 	"0": 10,
 	"1/8": 25,
@@ -3018,6 +3019,7 @@ Parser.ARMOR_ABV_TO_FULL = {
 	"s.": "shield",
 };
 
+// 5e-ism
 Parser.WEAPON_ABV_TO_FULL = {
 	"s.": "simple",
 	"m.": "martial",
@@ -4474,7 +4476,7 @@ Parser.metric = {
 	 * @param {string} originalUnit
 	 * @param {?boolean} toFixed
 	 */
-	getMetricNumber ({ originalValue, originalUnit, toFixed = null }) {
+	getMetricNumber({ originalValue, originalUnit, toFixed = null }) {
 		if (originalValue == null || isNaN(originalValue)) return originalValue;
 
 		originalValue = Number(originalValue);
@@ -4499,7 +4501,7 @@ Parser.metric = {
 	 * @param {boolean} isShortForm
 	 * @param {isPlural} isShortForm
 	 */
-	getMetricUnit ({ originalUnit, isShortForm = false, isPlural = true }) {
+	getMetricUnit({ originalUnit, isShortForm = false, isPlural = true }) {
 		switch (Parser.getNormalizedUnit(originalUnit)) {
 			case Parser.UNT_INCHES: return isShortForm ? "cm" : `centimeter`[isPlural ? "toPlural" : "toString"]();
 			case Parser.UNT_FEET: return isShortForm ? "m" : `meter`[isPlural ? "toPlural" : "toString"]();

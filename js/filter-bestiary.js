@@ -9,13 +9,13 @@ class PageFilterBestiary extends PageFilterBase {
 	static _DRAGON_AGES = ["wyrmling", "young", "adult", "ancient", "greatwyrm", "aspect"];
 
 	// region static
-	static sortMonsters (a, b, o) {
+	static sortMonsters(a, b, o) {
 		if (o.sortBy === "count") return SortUtil.ascSort(a.data.count, b.data.count) || SortUtil.compareListNames(a, b);
 		if (o.sortBy === "cr") return SortUtil.ascSortCr(a.values.cr, b.values.cr) || SortUtil.compareListNames(a, b);
 		return SortUtil.listSort(a, b, o);
 	}
 
-	static ascSortMiscFilter (a, b) {
+	static ascSortMiscFilter(a, b) {
 		a = a.item;
 		b = b.item;
 		if (a.includes(PageFilterBestiary.MISC_FILTER_SPELLCASTER) && b.includes(PageFilterBestiary.MISC_FILTER_SPELLCASTER)) {
@@ -29,7 +29,7 @@ class PageFilterBestiary extends PageFilterBase {
 		}
 	}
 
-	static _ascSortDragonAgeFilter (a, b) {
+	static _ascSortDragonAgeFilter(a, b) {
 		a = a.item;
 		b = b.item;
 		const ixA = PageFilterBestiary._DRAGON_AGES.indexOf(a);
@@ -40,12 +40,12 @@ class PageFilterBestiary extends PageFilterBase {
 		return SortUtil.ascSortLower(a, b);
 	}
 
-	static _getDamageTagDisplayText (tag) { return Parser.dmgTypeToFull(tag).toTitleCase(); }
-	static _getConditionDisplayText (uid) { return uid.split("|")[0].toTitleCase(); }
-	static _getAbilitySaveDisplayText (abl) { return `${abl.uppercaseFirst()} Save`; }
+	static _getDamageTagDisplayText(tag) { return Parser.dmgTypeToFull(tag).toTitleCase(); }
+	static _getConditionDisplayText(uid) { return uid.split("|")[0].toTitleCase(); }
+	static _getAbilitySaveDisplayText(abl) { return `${abl.uppercaseFirst()} Save`; }
 	// endregion
 
-	constructor (opts) {
+	constructor(opts) {
 		super(opts);
 
 		const styleHint = VetoolsConfig.get("styleSwitcher", "style");
@@ -71,35 +71,35 @@ class PageFilterBestiary extends PageFilterBase {
 			displayFn: Parser.sizeAbvToFull,
 			itemSortFn: null,
 		});
-		this._speedFilter = new RangeFilter({header: "Speed", min: 30, max: 30, suffix: " ft"});
-		this._speedTypeFilter = new Filter({header: "Speed Type", items: [...Parser.SPEED_MODES, "hover"], displayFn: StrUtil.uppercaseFirst});
-		this._strengthFilter = new RangeFilter({header: "Strength", min: 1, max: 30});
-		this._dexterityFilter = new RangeFilter({header: "Dexterity", min: 1, max: 30});
-		this._constitutionFilter = new RangeFilter({header: "Constitution", min: 1, max: 30});
-		this._intelligenceFilter = new RangeFilter({header: "Intelligence", min: 1, max: 30});
-		this._wisdomFilter = new RangeFilter({header: "Wisdom", min: 1, max: 30});
-		this._charismaFilter = new RangeFilter({header: "Charisma", min: 1, max: 30});
+		this._speedFilter = new RangeFilter({ header: "Speed", min: 30, max: 30, suffix: " ft" });
+		this._speedTypeFilter = new Filter({ header: "Speed Type", items: [...Parser.SPEED_MODES, "hover"], displayFn: StrUtil.uppercaseFirst });
+		this._strengthFilter = new RangeFilter({ header: "Strength", min: 1, max: 30 });
+		this._dexterityFilter = new RangeFilter({ header: "Dexterity", min: 1, max: 30 });
+		this._constitutionFilter = new RangeFilter({ header: "Constitution", min: 1, max: 30 });
+		this._intelligenceFilter = new RangeFilter({ header: "Intelligence", min: 1, max: 30 });
+		this._wisdomFilter = new RangeFilter({ header: "Wisdom", min: 1, max: 30 });
+		this._charismaFilter = new RangeFilter({ header: "Charisma", min: 1, max: 30 });
 		this._abilityScoreFilter = new MultiFilter({
 			header: "Ability Scores",
 			filters: [this._strengthFilter, this._dexterityFilter, this._constitutionFilter, this._intelligenceFilter, this._wisdomFilter, this._charismaFilter],
 			isAddDropdownToggle: true,
 		});
-		this._acFilter = new RangeFilter({header: "Armor Class"});
-		this._averageHpFilter = new RangeFilter({header: "Average Hit Points"});
+		this._acFilter = new RangeFilter({ header: "Armor Class" });
+		this._averageHpFilter = new RangeFilter({ header: "Average Hit Points" });
 		this._typeFilter = new Filter({
 			header: "Type",
 			items: [...Parser.MON_TYPES],
 			displayFn: StrUtil.toTitleCase.bind(StrUtil),
 			itemSortFn: SortUtil.ascSortLower,
 		});
-		this._tagFilter = new Filter({header: "Tag", displayFn: StrUtil.toTitleCase.bind(StrUtil)});
+		this._tagFilter = new Filter({ header: "Tag", displayFn: StrUtil.toTitleCase.bind(StrUtil) });
 		this._sidekickTypeFilter = new Filter({
 			header: "Sidekick Type",
 			items: ["expert", "spellcaster", "warrior"],
 			displayFn: StrUtil.toTitleCase.bind(StrUtil),
 			itemSortFn: SortUtil.ascSortLower,
 		});
-		this._sidekickTagFilter = new Filter({header: "Sidekick Tag", displayFn: StrUtil.toTitleCase.bind(StrUtil)});
+		this._sidekickTagFilter = new Filter({ header: "Sidekick Tag", displayFn: StrUtil.toTitleCase.bind(StrUtil) });
 		this._alignmentFilter = new Filter({
 			header: "Alignment",
 			items: ["L", "NX", "C", "G", "NY", "E", "N", "U", "A", "No Alignment"],
@@ -130,7 +130,7 @@ class PageFilterBestiary extends PageFilterBase {
 			displayFnMini: tag => `Deals ${this.constructor._getDamageTagDisplayText(tag)} (Spell)`,
 			items: Object.keys(Parser.DMGTYPE_JSON_TO_FULL),
 		});
-		this._damageTypeFilter = new MultiFilter({header: "Damage Inflicted", filters: [this._damageTypeFilterBase, this._damageTypeFilterLegendary, this._damageTypeFilterSpells]});
+		this._damageTypeFilter = new MultiFilter({ header: "Damage Inflicted", filters: [this._damageTypeFilterBase, this._damageTypeFilterLegendary, this._damageTypeFilterSpells] });
 		this._conditionsInflictedFilterBase = new Filter({
 			header: "Conditions Inflicted by Traits/Actions",
 			displayFn: this.constructor._getConditionDisplayText,
@@ -149,7 +149,7 @@ class PageFilterBestiary extends PageFilterBase {
 			displayFnMini: uid => `Inflicts ${this.constructor._getConditionDisplayText(uid)} (Spell)`,
 			items: [...Parser.CONDITIONS],
 		});
-		this._conditionsInflictedFilter = new MultiFilter({header: "Conditions Inflicted", filters: [this._conditionsInflictedFilterBase, this._conditionsInflictedFilterLegendary, this._conditionsInflictedFilterSpells]});
+		this._conditionsInflictedFilter = new MultiFilter({ header: "Conditions Inflicted", filters: [this._conditionsInflictedFilterBase, this._conditionsInflictedFilterLegendary, this._conditionsInflictedFilterSpells] });
 		this._savingThrowForcedFilterBase = new Filter({
 			header: "Saving Throws Required by Traits/Actions",
 			displayFn: this.constructor._getAbilitySaveDisplayText,
@@ -171,14 +171,14 @@ class PageFilterBestiary extends PageFilterBase {
 			items: Parser.ABIL_ABVS.map(abl => Parser.attAbvToFull(abl).toLowerCase()),
 			itemSortFn: null,
 		});
-		this._savingThrowForcedFilter = new MultiFilter({header: "Saving Throw Required", filters: [this._savingThrowForcedFilterBase, this._savingThrowForcedFilterLegendary, this._savingThrowForcedFilterSpells]});
+		this._savingThrowForcedFilter = new MultiFilter({ header: "Saving Throw Required", filters: [this._savingThrowForcedFilterBase, this._savingThrowForcedFilterLegendary, this._savingThrowForcedFilterSpells] });
 		this._senseFilter = new Filter({
 			header: "Senses",
 			displayFn: (it) => Parser.monSenseTagToFull(it).toTitleCase(),
 			items: ["B", "D", "SD", "T", "U"],
 			itemSortFn: SortUtil.ascSortLower,
 		});
-		this._passivePerceptionFilter = new RangeFilter({header: "Passive Perception", min: 10, max: 10});
+		this._passivePerceptionFilter = new RangeFilter({ header: "Passive Perception", min: 10, max: 10 });
 		this._skillFilter = new Filter({
 			header: "Skills",
 			displayFn: (it) => it.toTitleCase(),
@@ -199,7 +199,7 @@ class PageFilterBestiary extends PageFilterBase {
 		this._vulnerableFilter = FilterCommon.getDamageVulnerableFilter();
 		this._resistFilter = FilterCommon.getDamageResistFilter();
 		this._immuneFilter = FilterCommon.getDamageImmuneFilter();
-		this._defenseFilter = new MultiFilter({header: "Damage", filters: [this._vulnerableFilter, this._resistFilter, this._immuneFilter]});
+		this._defenseFilter = new MultiFilter({ header: "Damage", filters: [this._vulnerableFilter, this._resistFilter, this._immuneFilter] });
 		this._conditionImmuneFilter = FilterCommon.getConditionImmuneFilter();
 		this._traitFilter = new Filter({
 			header: "Traits",
@@ -232,8 +232,8 @@ class PageFilterBestiary extends PageFilterBase {
 			max: 9,
 			displayFn: it => Parser.getOrdinalForm(it),
 		});
-		this._spellKnownFilter = new SearchableFilter({header: "Spells Known", displayFn: (it) => it.toTitleCase(), itemSortFn: SortUtil.ascSortLower});
-		this._equipmentFilter = new SearchableFilter({header: "Equipment", displayFn: (it) => it.toTitleCase(), itemSortFn: SortUtil.ascSortLower});
+		this._spellKnownFilter = new SearchableFilter({ header: "Spells Known", displayFn: (it) => it.toTitleCase(), itemSortFn: SortUtil.ascSortLower });
+		this._equipmentFilter = new SearchableFilter({ header: "Equipment", displayFn: (it) => it.toTitleCase(), itemSortFn: SortUtil.ascSortLower });
 		this._dragonAgeFilter = new Filter({
 			header: "Dragon Age",
 			items: [...PageFilterBestiary._DRAGON_AGES],
@@ -256,7 +256,7 @@ class PageFilterBestiary extends PageFilterBase {
 		});
 	}
 
-	static mutateForFilters (mon) {
+	static mutateForFilters(mon) {
 		Renderer.monster.initParsed(mon);
 
 		this._mutateForFilters_commonSources(mon);
@@ -331,7 +331,7 @@ class PageFilterBestiary extends PageFilterBase {
 		if (mon._versionBase_isVersion) mon._fMisc.push("Is Variant");
 		if (mon.summonedBySpell) mon._fMisc.push("Summoned by Spell");
 		if (mon.summonedByClass) mon._fMisc.push("Summoned by Class");
-		if (mon._copy_templates?.some(({name, source}) => name === "Reduced Threat" && source === Parser.SRC_TYP)) mon._fMisc.push("Reduced Threat");
+		if (mon._copy_templates?.some(({ name, source }) => name === "Reduced Threat" && source === Parser.SRC_TYP)) mon._fMisc.push("Reduced Threat");
 
 		const spellcasterMeta = this._getSpellcasterMeta(mon);
 		if (spellcasterMeta) {
@@ -345,7 +345,7 @@ class PageFilterBestiary extends PageFilterBase {
 		mon._fEquipment = this._getEquipmentList(mon);
 	}
 
-	static _mutateForFilters_speed (mon) {
+	static _mutateForFilters_speed(mon) {
 		if (mon.speed == null) {
 			mon._fSpeedType = [];
 			mon._fSpeed = null;
@@ -364,7 +364,7 @@ class PageFilterBestiary extends PageFilterBase {
 		if (mon.speed.canHover) mon._fSpeedType.push("hover");
 	}
 
-	static _mutateForFilters_environment (mon) {
+	static _mutateForFilters_environment(mon) {
 		if (!mon.environment) return mon._fEnvironment = ["none"];
 		mon._fEnvironment = mon.environment
 			.flatMap(env => Parser.getExpandedEnvironments(env));
@@ -372,13 +372,13 @@ class PageFilterBestiary extends PageFilterBase {
 
 	/* -------------------------------------------- */
 
-	static _getInitWalker () {
-		return PageFilterBestiary._WALKER ||= MiscUtil.getWalker({isNoModification: true});
+	static _getInitWalker() {
+		return PageFilterBestiary._WALKER ||= MiscUtil.getWalker({ isNoModification: true });
 	}
 
 	/* -------------------------------------------- */
 
-	static _getSpellcasterMeta (mon) {
+	static _getSpellcasterMeta(mon) {
 		if (!mon.spellcasting?.length) return null;
 
 		const walker = this._getInitWalker();
@@ -399,12 +399,12 @@ class PageFilterBestiary extends PageFilterBase {
 			);
 		}
 
-		return {spellLevels, spellSet};
+		return { spellLevels, spellSet };
 	}
 
-	static _getSpellcasterMeta_stringHandler (spellSet, str) {
+	static _getSpellcasterMeta_stringHandler(spellSet, str) {
 		str.replace(PageFilterBestiary._RE_SPELL_TAG, (...m) => {
-			spellSet.add(DataUtil.proxy.unpackUid("spell", m[1], "spell", {isLower: true}).name);
+			spellSet.add(DataUtil.proxy.unpackUid("spell", m[1], "spell", { isLower: true }).name);
 			return "";
 		});
 	}
@@ -420,7 +420,7 @@ class PageFilterBestiary extends PageFilterBase {
 		"mythic",
 	];
 
-	static _hasRecharge (mon) {
+	static _hasRecharge(mon) {
 		if (mon.spellcasting?.some(ent => ent.recharge)) return true;
 		for (const prop of PageFilterBestiary._RECHARGE_ENTRY_PROPS) {
 			if (!mon[prop]) continue;
@@ -435,7 +435,7 @@ class PageFilterBestiary extends PageFilterBase {
 	/* -------------------------------------------- */
 
 	// TODO(ESM) switch to using `UtilsEntityCreature.getEquipmentUids`
-	static _getEquipmentList (mon) {
+	static _getEquipmentList(mon) {
 		if (mon.gear) {
 			return mon.gear
 				.map(ref => (ref.item || ref).toLowerCase());
@@ -464,17 +464,17 @@ class PageFilterBestiary extends PageFilterBase {
 		return [...itemSet];
 	}
 
-	static _getEquipmentList_stringHandler (itemSet, str) {
+	static _getEquipmentList_stringHandler(itemSet, str) {
 		str
 			.replace(PageFilterBestiary._RE_ITEM_TAG, (...m) => {
-				itemSet.add(DataUtil.proxy.unpackUid("item", m[1], "item", {isLower: true}).name);
+				itemSet.add(DataUtil.proxy.unpackUid("item", m[1], "item", { isLower: true }).name);
 				return "";
 			});
 	}
 
 	/* -------------------------------------------- */
 
-	addToFilters (mon, isExcluded) {
+	addToFilters(mon, isExcluded) {
 		if (isExcluded) return;
 
 		this._sourceFilter.addItem(mon._fSources);
@@ -519,7 +519,7 @@ class PageFilterBestiary extends PageFilterBase {
 		this._groupFilter.addItem(mon.group);
 	}
 
-	async _pPopulateBoxOptions (opts) {
+	async _pPopulateBoxOptions(opts) {
 		Object.entries(Parser.MON_LANGUAGE_TAG_TO_FULL)
 			.sort(([, vA], [, vB]) => SortUtil.ascSortLower(vA, vB))
 			.forEach(([k]) => this._languageFilter.addItem(k));
@@ -564,7 +564,7 @@ class PageFilterBestiary extends PageFilterBase {
 		];
 	}
 
-	toDisplay (values, m) {
+	toDisplay(values, m) {
 		return this._filterBox.toDisplay(
 			values,
 			m._fSources,
@@ -638,7 +638,7 @@ class ModalFilterBestiary extends ModalFilterBase {
 	 * @param [opts.isRadio]
 	 * @param [opts.allData]
 	 */
-	constructor (opts) {
+	constructor(opts) {
 		opts = opts || {};
 		super({
 			...opts,
@@ -648,17 +648,17 @@ class ModalFilterBestiary extends ModalFilterBase {
 		});
 	}
 
-	_$getColumnHeaders () {
+	_$getColumnHeaders() {
 		const btnMeta = [
-			{sort: "name", text: "Name", width: "4"},
-			{sort: "type", text: "Type", width: "4"},
-			{sort: "cr", text: "CR", width: "2"},
-			{sort: "source", text: "Source", width: "1"},
+			{ sort: "name", text: "Name", width: "4" },
+			{ sort: "type", text: "Type", width: "4" },
+			{ sort: "cr", text: "CR", width: "2" },
+			{ sort: "source", text: "Source", width: "1" },
 		];
 		return ModalFilterBase._$getFilterColumnHeaders(btnMeta);
 	}
 
-	async _pLoadAllData () {
+	async _pLoadAllData() {
 		return [
 			...(await DataUtil.monster.pLoadAll()),
 			...((await PrereleaseUtil.pGetBrewProcessed()).monster || []),
@@ -666,7 +666,7 @@ class ModalFilterBestiary extends ModalFilterBase {
 		];
 	}
 
-	_getListItem (pageFilter, mon, itI) {
+	_getListItem(pageFilter, mon, itI) {
 		Renderer.monster.initParsed(mon);
 		pageFilter.mutateAndAddToFilters(mon);
 
@@ -736,10 +736,10 @@ class ListSyntaxBestiary extends ListUiUtil.ListSyntax {
 		"mythicEncounter",
 	];
 
-	_getSearchCacheStats (entity) {
+	_getSearchCacheStats(entity) {
 		const legGroup = DataUtil.monster.getLegendaryGroup(entity);
 		if (!legGroup && this.constructor._INDEXABLE_PROPS_ENTRIES.every(it => !entity[it])) return "";
-		const ptrOut = {_: ""};
+		const ptrOut = { _: "" };
 		this.constructor._INDEXABLE_PROPS_ENTRIES.forEach(it => this._getSearchCache_handleEntryProp(entity, it, ptrOut));
 		if (legGroup) this.constructor._INDEXABLE_PROPS_LEG_GROUP.forEach(it => this._getSearchCache_handleEntryProp(legGroup, it, ptrOut));
 		return ptrOut._;

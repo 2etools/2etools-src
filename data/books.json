@@ -3237,7 +3237,7 @@
 				"type": "internal",
 				"path": "covers/XDMG.webp"
 			},
-			"published": "1995-04-01",
+			"published": "1995-04-02",
 			"author": "David \"Zeb\" Cook",
 			"contents": [
 				{
@@ -5646,7 +5646,7 @@
 				{
 					"name": "Thieves' Guild",
 					"headers": [
-						"What is a Thieves' Guild Anyway",
+						"What is a Thieves' Guild anyway?",
 						"Developing the Thieves' Guild",
 						"Benefits of Guild Membership",
 						"Responsibilities of Guild Membership",
@@ -5660,7 +5660,7 @@
 						"Guild Organizations",
 						"Guild Leaders",
 						"Guild Rulership",
-						"Designing a Thieves' Guild",
+						"Designing a Thieves’ Guild",
 						"Thieves' Guild of Mallain",
 						"Unusual Guilds",
 						"Player-Character Guildmasters",
@@ -5723,7 +5723,7 @@
 						"Advanced Locks and Traps",
 						"Animal Assistants",
 						"Poison and Sedatives",
-						"Mugging—the Thief's KO",
+						"Mugging\u2014the Thief's KO",
 						"Armor and Acrobatic Proficiencies",
 						"Armor and Thief Skills"
 					],
