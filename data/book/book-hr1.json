@@ -2,78 +2,72 @@
 	"data": [
 		{
 			"type": "section",
-			"page": 2,
 			"name": "Introduction",
+			"page": 2,
 			"entries": [
 				{
 					"type": "entries",
-					"page": 2,
+					"name": "Vikings Campaign Sourcebook",
+					"page": 1,
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Vikings Campaign Sourcebook",
+							"name": "by David \"Zebb\" Cook",
 							"page": 1,
 							"entries": [
-								{
-									"type": "entries",
-									"name": "by David \"Zebb\" Cook",
-									"page": 1,
-									"entries": [
-										""
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Credits:",
-									"page": 1,
-									"entries": [
-										"  ",
-										"{@b Editing:} Newton Ewell",
-										"{@b Illustrations:} Ned Dameron",
-										"{@b Typography:} Angelika Lokotz, Tracey Zamagne",
-										"{@b Cartography:} David C. Sutherland III",
-										"ADVANCED DUNGEONS & DRAGONS, AD&D, FORGOTTEN REALMS, GREYHAWK and DRAGONLANCE are registered trademarks owned by TSR, Inc.",
-										"The TSR logo is a trademark owned by TSR Inc.",
-										"©1991 TSR Inc. All rights reserved. Printed in the U.S.A.",
-										"Distributed to the book trade in the United States by Random House Inc. and in Canada by Random House of Canada, Ltd.",
-										"Distributed to the toy and hobby trade by regional distributors. Distributed to the book trade in the United Kingdom by Random Century Group.",
-										"Distributed to the book, game and hobby trade in the United Kingdom by TSR Ltd.",
-										"This book is protected under the copyright laws of the United States of America. Any reproduction or other unauthorized use of the material contained herein is prohibited without the express written permission of TSR Inc.",
-										"Second Printing: April 1991",
-										"ISBN 1-56076-128-8",
-										{
-											"type": "list",
-											"style": "list-no-bullets",
-											"columns": 2,
-											"page": 3,
-											"name": "",
-											"items": [
-												"TSR, Inc.",
-												"POB 756",
-												"Lake Geneva,",
-												"WI 53147 U.S.A.",
-												"TSR Ltd.",
-												"120 Church End, Cherry Hinton",
-												"Cambridge CB1 3LB",
-												"United Kingdom"
-											]
-										}
-									]
-								}
+								""
 							]
 						},
 						{
 							"type": "entries",
-							"name": "A Few Wrong Thoughts",
-							"page": 2,
+							"name": "Credits:",
+							"page": 1,
 							"entries": [
-								"Most of us are raised believing a lurid, though quite colorful, picture of the fierce Viking. This is primarily thanks to Wagner, comics, Hollywood, and Bullfinchs Mythology. While rooted somewhere in a grain of truth, our popular image of Vikings has become little more than a cartoon-literally so through such strips as {@i Hagar the Horrible}, {@i Prince Valiant}, and {@i Bugs Bunny} forays into opera. Before going any further, it is best to put to rest some of the misconceptions:",
-								"{@i Vikings loot and pillage}. No one can deny the Vikings did loot and pillage, but not every Norseman was a ravening warrior who lived to kill and destroy. The people of Scandinavia included lungs, earls, farmers, shipwrights, poets, smiths, priests, merchants, and artists. In fact, the word \"Viking\" only applies to those Northmen who made a habit of raiding-to \"go a-Viking\" was an expression that described their voyages. For this book, Viking refers to all the people of Scandinavia.",
-								"{@i Vikings are bloodthirsty pagans}. At the start of the great Vilung age (around A.D. SOO), there is no question the Vikings were a pagan people. Before the end of their time, however, the Viking nations had converted to Christianity. The pagan ways were repressed or, in some cases, added to the Christian tradition. Bloodthirsty, well . . .",
-								"{@i Vikings are ignorant savages}. While those victims of the Viking raids saw them as savage, the Vikings developed an impressive culture. Sagas and poems still remind us of their achievements. They were among the first to practice fledgling democracy. Their ships were built with an eye for beauty and were technologically superior to anything on the seas at the time. They founded cities, ruled in foreign lands and undertook dangerous sea voyages few others would dare.",
-								"{@i Vikings wear horned helmets}. Sorry, they never did."
+								"  ",
+								"{@b Editing:} Newton Ewell",
+								"{@b Illustrations:} Ned Dameron",
+								"{@b Typography:} Angelika Lokotz, Tracey Zamagne",
+								"{@b Cartography:} David C. Sutherland III",
+								"ADVANCED DUNGEONS & DRAGONS, AD&D, FORGOTTEN REALMS, GREYHAWK and DRAGONLANCE are registered trademarks owned by TSR, Inc.",
+								"The TSR logo is a trademark owned by TSR Inc.",
+								"©1991 TSR Inc. All rights reserved. Printed in the U.S.A.",
+								"Distributed to the book trade in the United States by Random House Inc. and in Canada by Random House of Canada, Ltd.",
+								"Distributed to the toy and hobby trade by regional distributors. Distributed to the book trade in the United Kingdom by Random Century Group.",
+								"Distributed to the book, game and hobby trade in the United Kingdom by TSR Ltd.",
+								"This book is protected under the copyright laws of the United States of America. Any reproduction or other unauthorized use of the material contained herein is prohibited without the express written permission of TSR Inc.",
+								"Second Printing: April 1991",
+								"ISBN 1-56076-128-8",
+								{
+									"type": "list",
+									"style": "list-no-bullets",
+									"columns": 2,
+									"page": 3,
+									"name": "",
+									"items": [
+										"TSR, Inc.",
+										"POB 756",
+										"Lake Geneva,",
+										"WI 53147 U.S.A.",
+										"TSR Ltd.",
+										"120 Church End, Cherry Hinton",
+										"Cambridge CB1 3LB",
+										"United Kingdom"
+									]
+								}
 							]
-						},
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "A Few Wrong Thoughts",
+					"page": 2,
+					"entries": [
+						"Most of us are raised believing a lurid, though quite colorful, picture of the fierce Viking. This is primarily thanks to Wagner, comics, Hollywood, and Bullfinchs Mythology. While rooted somewhere in a grain of truth, our popular image of Vikings has become little more than a cartoon-literally so through such strips as {@i Hagar the Horrible}, {@i Prince Valiant}, and {@i Bugs Bunny} forays into opera. Before going any further, it is best to put to rest some of the misconceptions:",
+						"{@i Vikings loot and pillage}. No one can deny the Vikings did loot and pillage, but not every Norseman was a ravening warrior who lived to kill and destroy. The people of Scandinavia included lungs, earls, farmers, shipwrights, poets, smiths, priests, merchants, and artists. In fact, the word \"Viking\" only applies to those Northmen who made a habit of raiding-to \"go a-Viking\" was an expression that described their voyages. For this book, Viking refers to all the people of Scandinavia.",
+						"{@i Vikings are bloodthirsty pagans}. At the start of the great Vilung age (around A.D. SOO), there is no question the Vikings were a pagan people. Before the end of their time, however, the Viking nations had converted to Christianity. The pagan ways were repressed or, in some cases, added to the Christian tradition. Bloodthirsty, well . . .",
+						"{@i Vikings are ignorant savages}. While those victims of the Viking raids saw them as savage, the Vikings developed an impressive culture. Sagas and poems still remind us of their achievements. They were among the first to practice fledgling democracy. Their ships were built with an eye for beauty and were technologically superior to anything on the seas at the time. They founded cities, ruled in foreign lands and undertook dangerous sea voyages few others would dare.",
+						"{@i Vikings wear horned helmets}. Sorry, they never did.",
 						{
 							"type": "entries",
 							"name": "About This Book",
@@ -112,15 +106,15 @@
 								"type": "internal",
 								"path": "book/HR1/001.webp"
 							}
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/HR1/002.webp"
-							}
 						}
 					]
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/HR1/002.webp"
+					}
 				}
 			]
 		},
@@ -168,106 +162,106 @@
 							}
 						},
 						"Far to the south were the lands of Byzantium. Once the greatest empire of the world, the lords of Constantinople had lost much of their lands to the expanding Moslem nations to the south. Africa and much of the Middle East had been lost to the Arabs. Slavs threatened Byzantium from the north. Efforts were made to regain the old borders of the empire and mercenaries were always needed to fight in places like the Balkans, Italy, and the Persian borders. The Vikings filled this need quite nicely.",
-						"Lastly, there were the Arabs. The collected Moslem states stretched from Spain to the Caucasus, and were by far one of the most dynamic empires of the age. Although separated by vast gulfs of land and culture, even the caliphates and emirates of the south heard the accents of Viking travelers."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Raiders",
-					"page": 7,
-					"entries": [
-						"After making their first bloody raids on the coasts of England, Scotland, and Ireland, the Vikings lapsed into a period of relative quiet that lasted for several decades, The Danes launched a few attempts on Charlemagne's lands, only to be defeated and driven back. Occasional raids were launched against England and the Frankish lands, but these were small and isolated. Only Ireland experienced what lay in store when Norse Vikings invaded their lands. The Irish kings were split, some siding with the invaders, others taking arms against them. In a short while, however, the N~~~~f ounded Dublin and proclaimed their own king.",
-						"Then, beginning in the 830s, the situation changed for the rest of the north. Raiders suddenly started appearing along the coasts of the north every year. Dorestad, Sheppey, Connaught, Kent, Antwerp, Rouen, Pans, Hamburg, and a host of other cities and villages were pillaged annually. The words of a Frankish monk, \"From the wrath of the Northmen, O Lord, deliver us,\" became a familiar plea. By 860, the Vking raiders often wintered over at towns they had seized from their enemies",
+						"Lastly, there were the Arabs. The collected Moslem states stretched from Spain to the Caucasus, and were by far one of the most dynamic empires of the age. Although separated by vast gulfs of land and culture, even the caliphates and emirates of the south heard the accents of Viking travelers.",
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/HR1/007.webp"
-							}
-						},
-						"In 865, the Viking terror entered a new stage. That year, the Viking warlords Halfdan, Uni, and the intriguingly named Ivar the Boneless landed in England at East Anglia. According to legend they came to seek revenge for the death of their father, Ragnar Lodbrok (Hairy-Breeks), who was cast into a pit of vipers by the king of Northumbria. Whatever their reason, the three brothers did more than just raid; after looting the region, the Vikings captured York and conquered Northumbria and Mercia. The Norsemen were there to stay."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Conquerors",
-					"page": 8,
-					"entries": [
-						"During the last half of the 9th Century, raiding was steadily being replaced by conquest. For the Danes, England was the prime target. Northumbria and East Anglia remained under Viking rule to become the Danelaw. (Traces of this conquest, particularly in names, still remain in Great Britain today.) The kings of Wessex, though slowly uniting the rest of England, were unable to drive out the invaders. Indeed, the Wessex kings were forced to pay vast sums to the Vikings simply to keep their own lands safe. This extortion became known as the {@i Danegeld}, and with each year the price grew. The English kings had the choice to pay or suffer. Most chose to pay.",
-						"England was not the only target of conquest, however. Norse Vikings continued their claims in Ireland and even expanded into parts of Wales and Scotland. In the Frankish lands, the Danes sailed up rivers to capture Paris and other cities. Gradually they came to control the lower Seine valley—Rouen, Bayeux, and other towns in the region. Finally, in 911, the Frankish emperors ceded these areas to a Viking called Rollo (possibly a Norse named Gange-Rolf) and Normandy was founded.",
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/HR1/008.webp"
-							}
-						},
-						"Meanwhile, in the east, Swedish Vikings were not just seizing lands, they were founding new empires. The first settlements were along the coasts of Finland and the Baltic, but the adventurous sailors soon turned their ships up the great rivers Of Gardariki (as the lands of Russia were called). From Staraja Lagoda (near Leningrad) and passing through a series Of rivers and lakes, the Vikings reached Novgorod. Here they set themselves up as rulers. Others sailed down the Dvina' then hauled their ships to the Dneiper to install themselves at Kiev. With time, these merchants-turned-conquerors became known as the Rus (from which comes the name \"Russia\"). Their ships sailed on the Baltic and Black Seas. Traveling down the great Volga river, the Rus even sailed the Caspian Sea, there to trade with Arab lands. They grew so powerful and bold as to sail to the Bosphorus and threaten the once-invincible empire of Byzantium!"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Explorers",
-					"page": 9,
-					"entries": [
-						"",
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/HR1/009.webp"
-							}
-						},
-						""
-					]
-				},
-				{
-					"type": "entries",
-					"name": "A Pause",
-					"page": 10,
-					"entries": [
-						"Sometime around the middle of the 10th century, relative peace settled over the north. The Norsemen seemed satisfied with what they held. The great conquests and fearful raids slackened as the Vikings concentrated on ruling their new lands. New ideas, particularly Christianity, were beginning to take hold on the pagan Scandinavian shores. This peacefulness did not last, however. and in the latter part of the century, from about 980 or so, life once again grew exciting"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Resurgence",
-					"page": 10,
-					"entries": [
-						"It was almost as if the Vikings, having paused to catch their breath, were now refreshed and ready to strike out again. New waves of invaders struggled for control of England. At the same time, the Irish, under the leadership of the formidable High King Brian Boru, began the long struggle to drive out the Norse invaders. Although the grip of the Vikings would be broken at the Battle of Clontarf (1014), the task would not be complete for over 100 years.",
-						"In England, the struggle went the opposite way. First Harald Bluetooth, King ;(Denmark, then his son Svien Forkbeard secured the Scandinavian grip over the Danelaw. Finally, Svien's son Cnute seized the ultimate prize at the battle of Ashingdon and became the King of England. Shortly thereafter Cnute added Denmark, then Norway to his list of possessions. It seemed that all of Scandinavia and England would be united in a single empire.",
-						"Meanwhile, the hardy Icelanders surged outward once more. Banished from Iceland for three years, Eirik the Red sailed for a new land that a sailor named Gunn-bjorn had found by accident over 60 years before. He named the place Greenland, since \". . . men would be much more tempted to go there if it had an attractive name:\" By the mid 980s settlers were arriving on this new shore.",
-						"It was one of these settlers who made the next discovery of a land even further to the west. Blown off course, Bjarni Herjolfsson sighted a strange shore. Realizing it wasn't Greenland (his true destination), he turned away and never went ashore. That task was left to Leif Ericsson, a.k.a. Leif the Lucky. Like his father Eirik before him, Leif assembled a group of settlers and set out for this new world. There he discovered and may have settled Vinland, battling the Skraelings (Indians) for a foothold in the new world."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Collapse",
-					"page": 11,
-					"entries": [
-						"By this time, though, the Vilung age was drawing to a close. With his death, King Cnute’s Scandinavian empire crumbled, once again dividing into separate countries. Christianity was taking hold in the North. Christian slaughtered Christian in the ruins of the Frankish Empire; the Normans forsook their Viking ancestry and denied harbor and safety to the raiders. The colonies of Greenland and Vinland proved to be too far, too isolated. The tiny Viking colony in Vinland died out, but the settlements in Greenland stubbornly clung on to the present day",
-						"Finally, in 1066, the last great act rang down the close of the Viking age. In that year, the Norwegian king Harald Hardradi (Hardruler) mustered up an army to reclaim the English throne. Once again Viking invaders landed in Northumbria to stake their claim to England. This time, however, the Saxons were prepared. King Harold II assembled an army and met his Norwegian counterpart at the little village of Stamford Bridge outside York.",
-						"{@i \"'King Harold has already declared how much of England he is prepared to grant him (Harald Hardradi): seven feet of ground or as much more as he is taller than other men.\"'}",
-						"Or so says King Haralds Saga.",
-						"The battle was fought, but did not go as Harald Hardradi hoped. Arnor the Earl's-Poet had this to say:",
-						{
-							"type": "list",
-							"style": "list-hang",
-							"columns": 0,
-							"page": 12,
-							"items": [
-								"{@i It was an evil moment}",
-								"{@i When Norway's king lay fallen;}",
-								"{@i Gold inlaid weapons}",
-								"{@i Brought death to Norway's leader.}",
-								"{@i All King Harald's warriors}",
-								"{@i Preferred to die beside him,}",
-								"{@i Sharing their brave king's fate}",
-								"{@i Rather than beg for mercy.}"
+							"type": "entries",
+							"name": "The Raiders",
+							"page": 7,
+							"entries": [
+								"After making their first bloody raids on the coasts of England, Scotland, and Ireland, the Vikings lapsed into a period of relative quiet that lasted for several decades, The Danes launched a few attempts on Charlemagne's lands, only to be defeated and driven back. Occasional raids were launched against England and the Frankish lands, but these were small and isolated. Only Ireland experienced what lay in store when Norse Vikings invaded their lands. The Irish kings were split, some siding with the invaders, others taking arms against them. In a short while, however, the N~~~~f ounded Dublin and proclaimed their own king.",
+								"Then, beginning in the 830s, the situation changed for the rest of the north. Raiders suddenly started appearing along the coasts of the north every year. Dorestad, Sheppey, Connaught, Kent, Antwerp, Rouen, Pans, Hamburg, and a host of other cities and villages were pillaged annually. The words of a Frankish monk, \"From the wrath of the Northmen, O Lord, deliver us,\" became a familiar plea. By 860, the Vking raiders often wintered over at towns they had seized from their enemies",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/HR1/006.webp"
+									}
+								},
+								"In 865, the Viking terror entered a new stage. That year, the Viking warlords Halfdan, Uni, and the intriguingly named Ivar the Boneless landed in England at East Anglia. According to legend they came to seek revenge for the death of their father, Ragnar Lodbrok (Hairy-Breeks), who was cast into a pit of vipers by the king of Northumbria. Whatever their reason, the three brothers did more than just raid; after looting the region, the Vikings captured York and conquered Northumbria and Mercia. The Norsemen were there to stay."
 							]
 						},
-						"Harald Hardradi had lost and the Vikings would threaten England no more.",
-						"In a final ironic touch, King Harold of England would soon meet his own death on the battlefield at Hastings, brought down by Duke William of Normandy. With the last of the Saxon kings gone, William the Conqueror was proclaimed King of the English. Thus, the descendants of the Vikings succeeded where the Vikings themselves had failed."
+						{
+							"type": "entries",
+							"name": "The Conquerors",
+							"page": 8,
+							"entries": [
+								"During the last half of the 9th Century, raiding was steadily being replaced by conquest. For the Danes, England was the prime target. Northumbria and East Anglia remained under Viking rule to become the Danelaw. (Traces of this conquest, particularly in names, still remain in Great Britain today.) The kings of Wessex, though slowly uniting the rest of England, were unable to drive out the invaders. Indeed, the Wessex kings were forced to pay vast sums to the Vikings simply to keep their own lands safe. This extortion became known as the {@i Danegeld}, and with each year the price grew. The English kings had the choice to pay or suffer. Most chose to pay.",
+								"England was not the only target of conquest, however. Norse Vikings continued their claims in Ireland and even expanded into parts of Wales and Scotland. In the Frankish lands, the Danes sailed up rivers to capture Paris and other cities. Gradually they came to control the lower Seine valley—Rouen, Bayeux, and other towns in the region. Finally, in 911, the Frankish emperors ceded these areas to a Viking called Rollo (possibly a Norse named Gange-Rolf) and Normandy was founded.",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/HR1/007.webp"
+									}
+								},
+								"Meanwhile, in the east, Swedish Vikings were not just seizing lands, they were founding new empires. The first settlements were along the coasts of Finland and the Baltic, but the adventurous sailors soon turned their ships up the great rivers Of Gardariki (as the lands of Russia were called). From Staraja Lagoda (near Leningrad) and passing through a series Of rivers and lakes, the Vikings reached Novgorod. Here they set themselves up as rulers. Others sailed down the Dvina' then hauled their ships to the Dneiper to install themselves at Kiev. With time, these merchants-turned-conquerors became known as the Rus (from which comes the name \"Russia\"). Their ships sailed on the Baltic and Black Seas. Traveling down the great Volga river, the Rus even sailed the Caspian Sea, there to trade with Arab lands. They grew so powerful and bold as to sail to the Bosphorus and threaten the once-invincible empire of Byzantium!"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "The Explorers",
+							"page": 9,
+							"entries": [
+								"While some took land through conquest, other Vikings discovered new lands to settle. North of Scotland, longships beached at the Orkney and Shetland Islands. Further out, the Vikings settled the bleak Faeroes, displacing the few Irish monks they found there, Then around 860, the Norse stumbled across a large island far out in the ocean. Forced to winter over in this land, one settler named it Iceland, a name it has born ever since. For a decade or more, there was little interest in this new island.",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/HR1/008.webp"
+									}
+								},
+								"Around 870, the situation changed and settlement of Iceland began in earnest. It might have been nobles disgruntled with King Harald Finehair's relentless unification of Norway. Perhaps it was overcrowded farmers searching for new pastures. Whatever the reasons, ship after ship of settlers from Norway, the Orkneys, Shetland, Scotland and Ireland sailed to the Icelandic shore, there to create a new nation without kings or princes."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "A Pause",
+							"page": 10,
+							"entries": [
+								"Sometime around the middle of the 10th century, relative peace settled over the north. The Norsemen seemed satisfied with what they held. The great conquests and fearful raids slackened as the Vikings concentrated on ruling their new lands. New ideas, particularly Christianity, were beginning to take hold on the pagan Scandinavian shores. This peacefulness did not last, however. and in the latter part of the century, from about 980 or so, life once again grew exciting"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Resurgence",
+							"page": 10,
+							"entries": [
+								"It was almost as if the Vikings, having paused to catch their breath, were now refreshed and ready to strike out again. New waves of invaders struggled for control of England. At the same time, the Irish, under the leadership of the formidable High King Brian Boru, began the long struggle to drive out the Norse invaders. Although the grip of the Vikings would be broken at the Battle of Clontarf (1014), the task would not be complete for over 100 years.",
+								"In England, the struggle went the opposite way. First Harald Bluetooth, King ;(Denmark, then his son Svien Forkbeard secured the Scandinavian grip over the Danelaw. Finally, Svien's son Cnute seized the ultimate prize at the battle of Ashingdon and became the King of England. Shortly thereafter Cnute added Denmark, then Norway to his list of possessions. It seemed that all of Scandinavia and England would be united in a single empire.",
+								"Meanwhile, the hardy Icelanders surged outward once more. Banished from Iceland for three years, Eirik the Red sailed for a new land that a sailor named Gunn-bjorn had found by accident over 60 years before. He named the place Greenland, since \". . . men would be much more tempted to go there if it had an attractive name:\" By the mid 980s settlers were arriving on this new shore.",
+								"It was one of these settlers who made the next discovery of a land even further to the west. Blown off course, Bjarni Herjolfsson sighted a strange shore. Realizing it wasn't Greenland (his true destination), he turned away and never went ashore. That task was left to Leif Ericsson, a.k.a. Leif the Lucky. Like his father Eirik before him, Leif assembled a group of settlers and set out for this new world. There he discovered and may have settled Vinland, battling the Skraelings (Indians) for a foothold in the new world."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Collapse",
+							"page": 11,
+							"entries": [
+								"By this time, though, the Vilung age was drawing to a close. With his death, King Cnute’s Scandinavian empire crumbled, once again dividing into separate countries. Christianity was taking hold in the North. Christian slaughtered Christian in the ruins of the Frankish Empire; the Normans forsook their Viking ancestry and denied harbor and safety to the raiders. The colonies of Greenland and Vinland proved to be too far, too isolated. The tiny Viking colony in Vinland died out, but the settlements in Greenland stubbornly clung on to the present day",
+								"Finally, in 1066, the last great act rang down the close of the Viking age. In that year, the Norwegian king Harald Hardradi (Hardruler) mustered up an army to reclaim the English throne. Once again Viking invaders landed in Northumbria to stake their claim to England. This time, however, the Saxons were prepared. King Harold II assembled an army and met his Norwegian counterpart at the little village of Stamford Bridge outside York.",
+								"{@i \"'King Harold has already declared how much of England he is prepared to grant him (Harald Hardradi): seven feet of ground or as much more as he is taller than other men.\"'}",
+								"Or so says King Haralds Saga.",
+								"The battle was fought, but did not go as Harald Hardradi hoped. Arnor the Earl's-Poet had this to say:",
+								{
+									"type": "list",
+									"style": "list-hang",
+									"columns": 0,
+									"page": 12,
+									"items": [
+										"{@i It was an evil moment}",
+										"{@i When Norway's king lay fallen;}",
+										"{@i Gold inlaid weapons}",
+										"{@i Brought death to Norway's leader.}",
+										"{@i All King Harald's warriors}",
+										"{@i Preferred to die beside him,}",
+										"{@i Sharing their brave king's fate}",
+										"{@i Rather than beg for mercy.}"
+									]
+								},
+								"Harald Hardradi had lost and the Vikings would threaten England no more.",
+								"In a final ironic touch, King Harold of England would soon meet his own death on the battlefield at Hastings, brought down by Duke William of Normandy. With the last of the Saxon kings gone, William the Conqueror was proclaimed King of the English. Thus, the descendants of the Vikings succeeded where the Vikings themselves had failed."
+							]
+						}
 					]
 				},
 				{
@@ -305,158 +299,338 @@
 						"In addition to these titles, there are numerous other sagas translated into English. Some may be easily found, others are more difficult. These titles include the {@i Laxdaela Saga, Orkneyinga Saga, The Saga of the Jomsvikings, Hrafknel's Saga, Eyrbyggja Saga,} and {@i Grettir's Saga}.",
 						"Finally, those interested in the mythology of Scandinavia might want to read {@i Gods and Myths of the Viking Age} or the slim {@i Prose Edda of Snorri Sturluson}."
 					]
-				},
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Of Characters and Combat",
+			"page": 14,
+			"entries": [
+				"",
+				"",
+				"",
 				{
-					"type": "section",
-					"page": 13,
-					"name": "Of Characters and Combat",
+					"type": "entries",
+					"name": "Races in a Viking Campaign",
+					"page": 14,
 					"entries": [
+						"",
+						"",
 						{
 							"type": "entries",
-							"page": 13,
+							"name": "Humans",
+							"page": 14,
+							"entries": [
+								"",
+								"",
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Table 1: Character Gifts",
+							"page": 14,
 							"entries": [
 								{
-									"type": "entries",
-									"name": "Races in a Viking Campaign",
-									"page": 2,
-									"entries": [
-										""
+									"type": "table",
+									"page": 85,
+									"colLabels": [
+										"Die Roll",
+										"Gift"
+									],
+									"colStyles": [
+										"col- text-center",
+										"col- text-left"
+									],
+									"isStriped": false,
+									"rows": [
+										[
+											"1",
+											"Bad Luck"
+										],
+										[
+											"2",
+											"Blood Feud"
+										],
+										[
+											"3",
+											"Family Outlawed"
+										],
+										[
+											"4",
+											"Ugly"
+										],
+										[
+											"5-12",
+											"No Gift"
+										],
+										[
+											"13",
+											"Courage"
+										],
+										[
+											"14",
+											"Good Luck"
+										],
+										[
+											"15",
+											"Handsome"
+										],
+										[
+											"16",
+											"Inheritance"
+										],
+										[
+											"17",
+											"Rune Lore"
+										],
+										[
+											"18",
+											"Second Sight"
+										],
+										[
+											"19",
+											"Seer"
+										],
+										[
+											"20",
+											"Title"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Explanation of Character Gifts",
+							"page": 15,
+							"entries": [
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "The Trollborn",
+							"page": 16,
+							"entries": [
+								"",
+								"",
+								"",
+								"",
+								""
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Character Classes",
+					"page": 16,
+					"entries": [
+						"",
+						{
+							"type": "entries",
+							"name": "Classes from the Players Handbook",
+							"page": 16,
+							"entries": [
+								"",
+								"",
+								{
+									"type": "table",
+									"page": 85,
+									"colLabels": [
+										"Classes Allowed",
+										"Classes Not Allowed"
+									],
+									"colStyles": [
+										"col- text-left",
+										"col- text-left"
+									],
+									"isStriped": false,
+									"rows": [
+										[
+											"Fighter",
+											"Paladin"
+										],
+										[
+											"Ranger",
+											"Cleric"
+										],
+										[
+											"Thief",
+											"Druid"
+										],
+										[
+											"Bard",
+											"Wizard"
+										],
+										[
+											"Specialist Mage",
+											""
+										]
 									]
 								}
 							]
 						}
 					]
-				},
-				
-				" ",
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/009.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/010.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/011.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/012.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/013.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/014.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/015.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/016.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/017.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/018.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/019.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/020.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/021.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/022.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/023.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/024.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/025.webp"
-					}
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/HR1/026.webp"
-					}
-				},
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Rune Magic",
+			"page": 33,
+			"entries": [
+				"",
+				"",
+				"",
+				"",
 				""
 			]
-		}
+		},
+		" ",
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/009.webp"
+			}
+		},
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/010.webp"
+			}
+		},
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/011.webp"
+			}
+		},
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/012.webp"
+			}
+		},
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/013.webp"
+			}
+		},
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/014.webp"
+			}
+		},
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/015.webp"
+			}
+		},
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/016.webp"
+			}
+		},
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/017.webp"
+			}
+		},
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/018.webp"
+			}
+		},
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/019.webp"
+			}
+		},
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/020.webp"
+			}
+		},
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/021.webp"
+			}
+		},
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/022.webp"
+			}
+		},
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/023.webp"
+			}
+		},
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/024.webp"
+			}
+		},
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/025.webp"
+			}
+		},
+		{
+			"type": "image",
+			"href": {
+				"type": "internal",
+				"path": "book/HR1/026.webp"
+			}
+		},
+		""
 			]
 }
