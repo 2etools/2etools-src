@@ -487,6 +487,217 @@
 									]
 								}
 							]
+						},
+						{
+							"type": "entries",
+							"name": "New Character Classes",
+							"page": 17,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Warriors",
+							"page": 17,
+							"entries": [
+								"",
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Fighters",
+							"page": 17,
+							"entries": [
+								"",
+								"",
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Table 2: Norse Followers",
+							"page": 17,
+							"entries": [
+								"",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/HR1/009.webp"
+									}
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Paladins",
+							"page": 18,
+							"entries": [
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								"",
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Rangers",
+							"page": 19,
+							"entries": [
+								"",
+								"",
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Berserkers",
+							"page": 19,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Runecasters",
+							"page": 23,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Wizard",
+							"page": 24,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Priests",
+							"page": 24,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Rogues",
+							"page": 25,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Thief",
+							"page": 25,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Bards",
+							"page": 25,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Other Details",
+							"page": 26,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Sex",
+							"page": 26,
+							"entries": [
+								"",
+								"",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/HR1/010.webp"
+									}
+								},
+								"",
+								"",
+								"",
+								"",
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Names",
+							"page": 28,
+							"entries": [
+								"",
+								"",
+								"",
+								"",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/HR1/011.webp"
+									}
+								},
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Age",
+							"page": 29,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Homeland",
+							"page": 29,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Social Class",
+							"page": 32,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Proficiencies",
+							"page": 32,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Languages",
+							"page": 32,
+							"entries": [
+								""
+							]
 						}
 					]
 				}
@@ -497,76 +708,606 @@
 			"name": "Rune Magic",
 			"page": 33,
 			"entries": [
+				"{@i He who would read the sacred runes}",
+				"{@i given by the gods,}",
+				"{@i that Odin set down}",
+				"{@i and the sage stained with color,}",
+				"{@i is well advised to waste no words.}",
+				"{@i — Sayings of the High One}",
+				"Nordic magic can be roughly divided into two different groups. There is the normal type of magic, reflected by the wizards and spells of the AD&D® game system, practiced by or learned from foreigners. The second type is rune magic, peculiar to the Nordic lands. Rune magic is vastly different from the normal AD&D game system of memorization and spells.",
+				{
+					"type": "entries",
+					"name": "What Are Runes?",
+					"page": 33,
+					"entries": [
+						"",
+						"",
+						{
+							"type": "entries",
+							"name": "Magic Runes",
+							"page": 33,
+							"entries": [
+								"",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/HR1/012.webp"
+									}
+								},
+								"{@i I know that I hung on a high windy tree for nine long nights;}",
+								"{@i I had a spear wound—that was my work—I struck myself . . .}",
+								"{@i They brought me no bread, no horn to drink from . . .}",
+								"{@i Crying aloud, I seized the runes; finally I fell . . .}",
+								"{@i Thus I learned the secret lore, prospered and waxed in wisdom . . .}",
+								"{@i Sayings of the High One}",
+								"",
+								"",
+								""
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Learning Runes",
+					"page": 34,
+					"entries": [
+						""
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Using Runes",
+					"page": 34,
+					"entries": [
+						""
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rune Descriptions",
+					"page": 35,
+					"entries": [
+						"",
+						{
+							"type": "entries",
+							"name": "Ale-Runes",
+							"page": 35,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Beast-Rune",
+							"page": 35,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Berserk-Rune",
+							"page": 35,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Catch-Rune",
+							"page": 35,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Charge-Rune",
+							"page": 36,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Charm-Rune",
+							"page": 36,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dead-Rune",
+							"page": 36,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Disease-Rune",
+							"page": 36,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Fortune-Rune",
+							"page": 37,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Help-Rune",
+							"page": 37,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Iron-Can't-Bite-Rune",
+							"page": 37,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Limb-Rune",
+							"page": 37,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Lore-Rune",
+							"page": 38,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Luck-Rune",
+							"page": 38,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Nið-Rune",
+							"page": 38,
+							"entries": [
+								"",
+								"",
+								"",
+								"",
+								"",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/HR1/013.webp"
+									}
+								},
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Quench-Rune",
+							"page": 40,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Sea-Rune",
+							"page": 40,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Shield-Rune",
+							"page": 40,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Shout-Rune",
+							"page": 40,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Sight-Rune",
+							"page": 41,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Speech-Rune",
+							"page": 41,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Strength-Rune",
+							"page": 41,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Triumph-Rune",
+							"page": 41,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Water-Rune",
+							"page": 41,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating Other Runes",
+							"page": 42,
+							"entries": [
+								""
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Second Sight",
+					"page": 42,
+					"entries": [
+						""
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "...And Monsters",
+			"page": 43,
+			"entries": [
+				"{@i From Ymir's blood fell drops of poison which grew and formed into a giant.}",
+				"{@i All our kinsmen were so created and that's why we're far too fierce.}",
+				"{@i The Lay of Vathrudnir}",
 				"",
-				"",
-				"",
-				"",
+				{
+					"type": "entries",
+					"name": "The Role of Monsters",
+					"page": 57,
+					"entries": [
+						"",
+						"",
+						"",
+						"",
+						""
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Existing Creatures",
+					"page": 57,
+					"entries": [
+						"",
+						"",
+						"",
+						"",
+						{
+							"type": "entries",
+							"name": "Gast",
+							"page": 44,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Gengånger",
+							"page": 44,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Hamhleypa",
+							"page": 44,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Havmand",
+							"page": 45,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Linnorm",
+							"page": 45,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Nökk",
+							"page": 45,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/HR1/014.webp"
+							}
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "book/HR1/015.webp"
+							}
+						},
+						{
+							"type": "entries",
+							"name": "Nisse",
+							"page": 48,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Pukje",
+							"page": 48,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Sending",
+							"page": 48,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Skogsrå",
+							"page": 49,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Sjörå",
+							"page": 49,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Spöke",
+							"page": 49,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Svipa",
+							"page": 49,
+							"entries": [
+								""
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "New Monsters",
+					"page": 49,
+					"entries": [
+						"",
+						{
+							"type": "entries",
+							"name": "Dwarves and Elves",
+							"page": 50,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dverge",
+							"page": 50,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dock-Alfar",
+							"page": 51,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Huldre",
+							"page": 51,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Maahiset",
+							"page": 52,
+							"entries": [
+								""
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Giants",
+					"page": 52,
+					"entries": [
+						"",
+						{
+							"type": "entries",
+							"name": "Cliff Giants",
+							"page": 53,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Frost Giants",
+							"page": 53,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Jöten",
+							"page": 53,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Kalevanpojat",
+							"page": 54,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Thursir",
+							"page": 54,
+							"entries": [
+								""
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Sea Giants",
+							"page": 54,
+							"entries": [
+								""
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Trolls",
+					"page": 54,
+					"entries": [
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						{
+							"type": "entries",
+							"name": "Trow",
+							"page": 55,
+							"entries": [
+								"",
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/HR1/016.webp"
+									}
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "book/HR1/017.webp"
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Equipment and Treasure",
+			"page": 57,
+			"entries": [
 				""
 			]
 		},
-		" ",
 		{
-			"type": "image",
-			"href": {
-				"type": "internal",
-				"path": "book/HR1/009.webp"
-			}
+			"type": "section",
+			"name": "The Viking Culture",
+			"page": 69,
+			"entries": [
+				""
+			]
 		},
 		{
-			"type": "image",
-			"href": {
-				"type": "internal",
-				"path": "book/HR1/010.webp"
-			}
-		},
-		{
-			"type": "image",
-			"href": {
-				"type": "internal",
-				"path": "book/HR1/011.webp"
-			}
-		},
-		{
-			"type": "image",
-			"href": {
-				"type": "internal",
-				"path": "book/HR1/012.webp"
-			}
-		},
-		{
-			"type": "image",
-			"href": {
-				"type": "internal",
-				"path": "book/HR1/013.webp"
-			}
-		},
-		{
-			"type": "image",
-			"href": {
-				"type": "internal",
-				"path": "book/HR1/014.webp"
-			}
-		},
-		{
-			"type": "image",
-			"href": {
-				"type": "internal",
-				"path": "book/HR1/015.webp"
-			}
-		},
-		{
-			"type": "image",
-			"href": {
-				"type": "internal",
-				"path": "book/HR1/016.webp"
-			}
-		},
-		{
-			"type": "image",
-			"href": {
-				"type": "internal",
-				"path": "book/HR1/017.webp"
-			}
+			"type": "section",
+			"name": "A Brief Gazetteer",
+			"page": 88,
+			"entries": [
+				""
+			]
 		},
 		{
 			"type": "image",
