@@ -7187,6 +7187,10 @@
 						"The Role of Monsters",
 						"Existing Creatures",
 						{
+							"header": "Gast",
+							"depth": 1
+						},
+						{
 							"header": "Gengånger",
 							"depth": 1
 						},
