@@ -1411,7 +1411,7 @@ globalThis.Renderer = function () {
 		const len = entry.entries.length;
 		for (let i = 0; i < len; ++i) {
 			textStack[0] += `<p class="rd__quote-line ${i === len - 1 && entry.by ? `rd__quote-line--last` : ""}">${i === 0 && !entry.skipMarks ? "&ldquo;" : ""}`;
-			this._recursiveRender(entry.entries[i], textStack, meta, { prefix: entry.skipItalics ? "" : "<i>", suffix: entry.skipItalics ? "" : "</i>" });
+			this._recursiveRender(entry.entries[i], textStack, meta, {prefix: entry.skipItalics ? "" : "<i>", suffix: entry.skipItalics ? "" : "</i>"});
 			textStack[0] += `${i === len - 1 && !entry.skipMarks ? "&rdquo;" : ""}</p>`;
 		}
 

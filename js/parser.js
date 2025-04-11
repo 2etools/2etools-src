@@ -4120,6 +4120,7 @@ Parser.SOURCES_VANILLA = new Set([
 	// Parser.SRC_PHB, // "Legacy" source, removed in favor of XPHB
 	Parser.SRC_PHBR,
 	Parser.SRC_PHBR1,
+	Parser.SRC_PHBR2,
 	Parser.SRC_DMGR,
 	Parser.SRC_DMGR1,
 	Parser.SRC_VGM,
@@ -4212,14 +4213,6 @@ Parser.SOURCES_AVAILABLE_DOCS_BOOK = {};
 [
 	Parser.SRC_PHB,
 	Parser.SRC_DMG,
-	Parser.SRC_MM,
-	Parser.SRC_XPHB,
-	Parser.SRC_XDMG,
-	Parser.SRC_SCREEN,
-	Parser.SRC_XSCREEN,
-	Parser.SRC_PHBR1,
-	Parser.SRC_DMGR1,
-	Parser.SRC_HR1,
 	Parser.SRC_SCAG,
 	Parser.SRC_VGM,
 	Parser.SRC_OGA,
