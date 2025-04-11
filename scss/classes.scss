@@ -33,7 +33,7 @@
 	&btn-cf {
 		&--active {
 			color: #fff;
-			background: vars.$rgb-name-red;
+			background: vars.$rgb-name-blue;
 
 			&:active,
 			&:focus,
@@ -41,7 +41,7 @@
 			&:active:focus,
 			&:active:hover {
 				color: #fff;
-				background: color.adjust(vars.$rgb-name-red, $lightness: - vars.$pct-darken-active);
+				background: color.adjust(vars.$rgb-name-blue, $lightness: - vars.$pct-darken-active);
 			}
 		}
 	}
@@ -147,12 +147,14 @@
 			}
 		}
 	}
+
 	// endregion
 
 	// region Header coloring
 	// `feature-<variant>-<ua|brew>-<subclass>-<reprint>`
 	// See: `_getColorStyleClasses`
 	&feature-variant-subclass {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -162,6 +164,7 @@
 	}
 
 	&feature-variant-ua-subclass {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -171,6 +174,7 @@
 	}
 
 	&feature-variant-brew-subclass {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -180,6 +184,7 @@
 	}
 
 	&feature-subclass-reprint {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -189,6 +194,7 @@
 	}
 
 	&feature-ua-subclass-reprint {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -198,6 +204,7 @@
 	}
 
 	&feature-brew-subclass-reprint {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -207,6 +214,7 @@
 	}
 
 	&feature-subclass {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -216,6 +224,7 @@
 	}
 
 	&feature-ua-subclass {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -225,6 +234,7 @@
 	}
 
 	&feature-brew-subclass {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -234,6 +244,7 @@
 	}
 
 	&feature-variant {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -243,6 +254,7 @@
 	}
 
 	&feature-variant-ua {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -252,6 +264,7 @@
 	}
 
 	&feature-variant-brew {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -261,6 +274,7 @@
 	}
 
 	&feature-ua {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -270,6 +284,7 @@
 	}
 
 	&feature-brew {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -277,6 +292,7 @@
 			border-bottom-color: vars.$rgb-class-brew;
 		}
 	}
+
 	// endregion
 }
 
@@ -289,7 +305,7 @@
 	&btn-cf {
 		&--active {
 			color: vars.$rgb-off-black;
-			background: vars-night.$rgb-name-red--night;
+			background: vars-night.$rgb-name-blue--night;
 
 			&:active,
 			&:focus,
@@ -297,7 +313,7 @@
 			&:active:focus,
 			&:active:hover {
 				color: vars.$rgb-off-black;
-				background: color.adjust(vars-night.$rgb-name-red--night, $lightness: - vars.$pct-darken-active);
+				background: color.adjust(vars-night.$rgb-name-blue--night, $lightness: - vars.$pct-darken-active);
 			}
 		}
 	}
@@ -403,11 +419,13 @@
 			}
 		}
 	}
+
 	// endregion
 
 	// region Header coloring
 	// `feature-<variant>-<ua|brew>-<subclass>-<reprint>`
 	&feature-variant-subclass {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -417,6 +435,7 @@
 	}
 
 	&feature-variant-ua-subclass {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -426,6 +445,7 @@
 	}
 
 	&feature-subclass-reprint {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -435,6 +455,7 @@
 	}
 
 	&feature-ua-subclass-reprint {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -444,6 +465,7 @@
 	}
 
 	&feature-subclass {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -453,6 +475,7 @@
 	}
 
 	&feature-ua-subclass {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -462,6 +485,7 @@
 	}
 
 	&feature-brew-subclass {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -471,6 +495,7 @@
 	}
 
 	&feature-brew-subclass-reprint {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -480,6 +505,7 @@
 	}
 
 	&feature-variant-brew-subclass {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -489,6 +515,7 @@
 	}
 
 	&feature-variant {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -498,6 +525,7 @@
 	}
 
 	&feature-variant-ua {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -507,6 +535,7 @@
 	}
 
 	&feature-variant-brew {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -516,6 +545,7 @@
 	}
 
 	&feature-ua {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -525,6 +555,7 @@
 	}
 
 	&feature-brew {
+
 		.rd__h--0,
 		.rd__h--1,
 		.rd__h--2 {
@@ -532,8 +563,10 @@
 			border-bottom-color: vars-night.$rgb-class-brew--night;
 		}
 	}
+
 	// endregion
 }
+
 // endregion
 
 // region sidebar
@@ -573,6 +606,7 @@
 		}
 	}
 }
+
 // endregion
 
 // region subclass tabs
@@ -580,7 +614,7 @@
 	&wrp {
 		align-items: baseline;
 
-		@media screen and (width <= #{vars.$width-screen-md}) {
+		@media screen and (width <=#{vars.$width-screen-md}) {
 			flex-direction: column !important;
 		}
 	}
@@ -593,13 +627,14 @@
 		width: 80px;
 	}
 }
+
 // endregion
 
 // region main text
 .cls-main__ {
 	&msg-no-content {
 		height: 40px;
-		color: vars.$rgb-name-red;
+		color: vars.$rgb-name-blue;
 		font-family: "Times New Roman", serif;
 		font-variant: small-caps;
 		font-weight: 500;
@@ -611,7 +646,7 @@
 	&linked-titles {
 		@include vars.linked-titles-base;
 
-		> td > * > .rd__h .entry-title-inner {
+		>td>*>.rd__h .entry-title-inner {
 			@include vars.linked-titles-base-inner;
 		}
 	}
@@ -619,9 +654,10 @@
 
 .ve-night-mode .cls-main__ {
 	&msg-no-content {
-		color: vars-night.$rgb-name-red--night;
+		color: vars-night.$rgb-name-blue--night;
 	}
 }
+
 // endregion
 
 // region comparison view
@@ -629,6 +665,7 @@
 	width: 400px;
 	max-width: calc(100vw - #{2 * vars.$spacer});
 }
+
 // endregion
 
 // region class book view
@@ -689,6 +726,7 @@
 	&btn-tab.active.refreshing-brew {
 		border-color: color.adjust(vars.$rgb-class-brew, $lightness: - vars.$pct-darken-border);
 	}
+
 	// endregion
 }
 
@@ -706,6 +744,7 @@
 		background: vars-night.$rgb-bg--alt-night;
 	}
 }
+
 // endregion
 
 // region outline
@@ -764,7 +803,7 @@
 			cursor: pointer;
 			user-select: none;
 			max-height: 20px;
-			color: vars.$rgb-name-red;
+			color: vars.$rgb-name-blue;
 
 			&:hover {
 				background: #d3d3d3;
@@ -831,6 +870,7 @@
 			&--feature-brew {
 				color: vars.$rgb-class-brew;
 			}
+
 			// endregion
 
 			// Section name
@@ -861,7 +901,7 @@
 	}
 
 	&item {
-		color: vars-night.$rgb-name-red--night;
+		color: vars-night.$rgb-name-blue--night;
 
 		&:hover {
 			background: vars.$rgb-off-black;
@@ -936,7 +976,9 @@
 		&--feature-brew {
 			color: vars-night.$rgb-class-brew--night;
 		}
+
 		// endregion
 	}
 }
+
 // endregion

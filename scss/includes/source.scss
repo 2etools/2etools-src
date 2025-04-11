@@ -101,7 +101,6 @@
 	$rgb-source-TD: #bb9528;
 	$rgb-source-PaF: #5d7993;
 
-
 	$rgb-source-HFDoMM: #00817f;
 
 	// region Categories
@@ -200,7 +199,7 @@
 			&HR5,
 			&HR6,
 			&HR7 {
-				@include mix-source-color($rgb-source-HR)
+				@include mix-source-color($rgb-source-HR);
 			}
 		}
 

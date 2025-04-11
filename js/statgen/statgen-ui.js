@@ -1,10 +1,10 @@
-import { StatGenUiCompAsi } from "./statgen-ui-comp-asi.js";
-import { StatGenUiRenderLevelOneBackground } from "./statgen-ui-comp-levelone-background.js";
-import { StatGenUiRenderLevelOneRace } from "./statgen-ui-comp-levelone-race.js";
-import { StatGenUiRenderableCollectionPbRules } from "./statgen-ui-comp-pbrules.js";
-import { MAX_CUSTOM_FEATS, MODE_NONE } from "./statgen-ui-consts.js";
-import { VetoolsConfig } from "../utils-config/utils-config-config.js";
-import { SITE_STYLE__ONE } from "../consts.js";
+import {StatGenUiCompAsi} from "./statgen-ui-comp-asi.js";
+import {StatGenUiRenderLevelOneBackground} from "./statgen-ui-comp-levelone-background.js";
+import {StatGenUiRenderLevelOneRace} from "./statgen-ui-comp-levelone-race.js";
+import {StatGenUiRenderableCollectionPbRules} from "./statgen-ui-comp-pbrules.js";
+import {MAX_CUSTOM_FEATS, MODE_NONE} from "./statgen-ui-consts.js";
+import {VetoolsConfig} from "../utils-config/utils-config-config.js";
+import {SITE_STYLE__ONE} from "../consts.js";
 
 export class StatGenUi extends BaseComponent {
 	static _STANDARD_ARRAY = [15, 14, 13, 12, 10, 8];
@@ -46,7 +46,7 @@ export class StatGenUi extends BaseComponent {
 		super();
 		opts = opts || {};
 
-		TabUiUtilSide.decorate(this, { isInitMeta: true });
+		TabUiUtilSide.decorate(this, {isInitMeta: true});
 
 		this._races = opts.races;
 		this._backgrounds = opts.backgrounds;
@@ -72,9 +72,9 @@ export class StatGenUi extends BaseComponent {
 			this._IX_TAB_MANUAL = cnt;
 		}
 
-		this._modalFilterRaces = opts.modalFilterRaces || new ModalFilterRaces({ namespace: "statgen.races", isRadio: true, allData: this._races });
-		this._modalFilterBackgrounds = opts.modalFilterBackgrounds || new ModalFilterBackgrounds({ namespace: "statgen.backgrounds", isRadio: true, allData: this._backgrounds });
-		this._modalFilterFeats = opts.modalFilterFeats || new ModalFilterFeats({ namespace: "statgen.feats", isRadio: true, allData: this._feats });
+		this._modalFilterRaces = opts.modalFilterRaces || new ModalFilterRaces({namespace: "statgen.races", isRadio: true, allData: this._races});
+		this._modalFilterBackgrounds = opts.modalFilterBackgrounds || new ModalFilterBackgrounds({namespace: "statgen.backgrounds", isRadio: true, allData: this._backgrounds});
+		this._modalFilterFeats = opts.modalFilterFeats || new ModalFilterFeats({namespace: "statgen.feats", isRadio: true, allData: this._feats});
 
 		this._isLevelUp = !!opts.existingScores;
 		this._existingScores = opts.existingScores;
@@ -84,14 +84,14 @@ export class StatGenUi extends BaseComponent {
 		// endregion
 
 		// region Point buy
-		this._compAsi = new StatGenUiCompAsi({ parent: this });
+		this._compAsi = new StatGenUiCompAsi({parent: this});
 		// endregion
 	}
 
 	get MODES () { return this._MODES; }
 
 	get ixActiveTab () { return this._getIxActiveTab(); }
-	set ixActiveTab (ix) { this._setIxActiveTab({ ixActiveTab: ix }); }
+	set ixActiveTab (ix) { this._setIxActiveTab({ixActiveTab: ix}); }
 
 	// region Expose for external use
 	addHookPointBuyCustom (hook) { this.constructor._PROPS_POINT_BUY_CUSTOM.forEach(prop => this._addHookBase(prop, hook)); }
@@ -101,12 +101,12 @@ export class StatGenUi extends BaseComponent {
 	getFormDataAsi () { return this._compAsi.getFormData(); }
 
 	getMode (ix, namespace) {
-		const { propMode } = this.getPropsAsi(ix, namespace);
+		const {propMode} = this.getPropsAsi(ix, namespace);
 		return this._state[propMode];
 	}
 
 	setIxFeat (ix, namespace, ixFeat) {
-		const { propMode, propIxFeat } = this.getPropsAsi(ix, namespace);
+		const {propMode, propIxFeat} = this.getPropsAsi(ix, namespace);
 
 		if (ixFeat == null && (this._state[propMode] === "asi" || this._state[propMode] == null)) {
 			this._state[propIxFeat] = null;
@@ -118,14 +118,14 @@ export class StatGenUi extends BaseComponent {
 	}
 
 	setIxFeatSet (namespace, ixSet) {
-		const { propIxSel } = this.getPropsAdditionalFeats_(namespace);
+		const {propIxSel} = this.getPropsAdditionalFeats_(namespace);
 		this._state[propIxSel] = ixSet;
 	}
 
 	setIxFeatSetIxFeats (namespace, featsAdditionType, metaFeats) {
 		const nxtState = {};
-		metaFeats.forEach(({ ix, ixFeat }) => {
-			const { propIxFeat } = this.getPropsAdditionalFeatsFeatSet_(namespace, featsAdditionType, ix);
+		metaFeats.forEach(({ix, ixFeat}) => {
+			const {propIxFeat} = this.getPropsAdditionalFeatsFeatSet_(namespace, featsAdditionType, ix);
 			nxtState[propIxFeat] = ixFeat;
 		});
 		this._proxyAssignSimple("state", nxtState);
@@ -179,11 +179,11 @@ export class StatGenUi extends BaseComponent {
 		};
 	}
 
-	_getTotals_rolled () { return Parser.ABIL_ABVS.mergeMap(ab => ({ [ab]: this._rolled_getTotalScore(ab) })); }
-	_getTotals_array () { return Parser.ABIL_ABVS.mergeMap(ab => ({ [ab]: this._array_getTotalScore(ab) })); }
-	_getTotals_pb () { return Parser.ABIL_ABVS.mergeMap(ab => ({ [ab]: this._pb_getTotalScore(ab) })); }
-	_getTotals_manual () { return Parser.ABIL_ABVS.mergeMap(ab => ({ [ab]: this._manual_getTotalScore(ab) })); }
-	_getTotals_levelUp () { return Parser.ABIL_ABVS.mergeMap(ab => ({ [ab]: this._levelUp_getTotalScore(ab) })); }
+	_getTotals_rolled () { return Parser.ABIL_ABVS.mergeMap(ab => ({[ab]: this._rolled_getTotalScore(ab)})); }
+	_getTotals_array () { return Parser.ABIL_ABVS.mergeMap(ab => ({[ab]: this._array_getTotalScore(ab)})); }
+	_getTotals_pb () { return Parser.ABIL_ABVS.mergeMap(ab => ({[ab]: this._pb_getTotalScore(ab)})); }
+	_getTotals_manual () { return Parser.ABIL_ABVS.mergeMap(ab => ({[ab]: this._manual_getTotalScore(ab)})); }
+	_getTotals_levelUp () { return Parser.ABIL_ABVS.mergeMap(ab => ({[ab]: this._levelUp_getTotalScore(ab)})); }
 
 	addHook (hookProp, prop, hook) { return this._addHook(hookProp, prop, hook); }
 	addHookAll (hookProp, hook) {
@@ -245,7 +245,7 @@ export class StatGenUi extends BaseComponent {
 		}
 		rolls.sort((a, b) => SortUtil.ascSort(b.total, a.total));
 
-		return rolls.map(r => ({ total: r.total, text: (r.text || []).join("") }));
+		return rolls.map(r => ({total: r.total, text: (r.text || []).join("")}));
 	}
 
 	render ($parent) {
@@ -253,22 +253,22 @@ export class StatGenUi extends BaseComponent {
 
 		const iptTabMetas = this._isLevelUp
 			? [
-				new TabUiUtil.TabMeta({ name: "Existing", icon: this._isFvttMode ? `fas fa-fw fa-user` : `far fa-fw fa-user`, hasBorder: true }),
+				new TabUiUtil.TabMeta({name: "Existing", icon: this._isFvttMode ? `fas fa-fw fa-user` : `far fa-fw fa-user`, hasBorder: true}),
 				...this._tabMetasAdditional || [],
 			]
 			: [
-				this._isFvttMode ? new TabUiUtil.TabMeta({ name: "Select...", icon: this._isFvttMode ? `fas fa-fw fa-square` : `far fa-fw fa-square`, hasBorder: true, isNoPadding: this._isFvttMode }) : null,
-				new TabUiUtil.TabMeta({ name: "Roll", icon: this._isFvttMode ? `fas fa-fw fa-dice` : `far fa-fw fa-dice`, hasBorder: true, isNoPadding: this._isFvttMode }),
-				new TabUiUtil.TabMeta({ name: "Standard Array", icon: this._isFvttMode ? `fas fa-fw fa-signal` : `far fa-fw fa-signal-bars`, hasBorder: true, isNoPadding: this._isFvttMode }),
-				new TabUiUtil.TabMeta({ name: "Point Buy", icon: this._isFvttMode ? `fas fa-fw fa-chart-bar` : `far fa-fw fa-chart-bar`, hasBorder: true, isNoPadding: this._isFvttMode }),
-				new TabUiUtil.TabMeta({ name: "Manual", icon: this._isFvttMode ? `fas fa-fw fa-screwdriver-wrench` : `far fa-fw fa-screwdriver-wrench`, hasBorder: true, isNoPadding: this._isFvttMode }),
+				this._isFvttMode ? new TabUiUtil.TabMeta({name: "Select...", icon: this._isFvttMode ? `fas fa-fw fa-square` : `far fa-fw fa-square`, hasBorder: true, isNoPadding: this._isFvttMode}) : null,
+				new TabUiUtil.TabMeta({name: "Roll", icon: this._isFvttMode ? `fas fa-fw fa-dice` : `far fa-fw fa-dice`, hasBorder: true, isNoPadding: this._isFvttMode}),
+				new TabUiUtil.TabMeta({name: "Standard Array", icon: this._isFvttMode ? `fas fa-fw fa-signal` : `far fa-fw fa-signal-bars`, hasBorder: true, isNoPadding: this._isFvttMode}),
+				new TabUiUtil.TabMeta({name: "Point Buy", icon: this._isFvttMode ? `fas fa-fw fa-chart-bar` : `far fa-fw fa-chart-bar`, hasBorder: true, isNoPadding: this._isFvttMode}),
+				new TabUiUtil.TabMeta({name: "Manual", icon: this._isFvttMode ? `fas fa-fw fa-screwdriver-wrench` : `far fa-fw fa-screwdriver-wrench`, hasBorder: true, isNoPadding: this._isFvttMode}),
 				...this._tabMetasAdditional || [],
 			].filter(Boolean);
 
-		const tabMetas = this._renderTabs(iptTabMetas, { $parent: this._isFvttMode ? null : $parent });
+		const tabMetas = this._renderTabs(iptTabMetas, {$parent: this._isFvttMode ? null : $parent});
 		if (this._isFvttMode) {
 			if (!this._isLevelUp) {
-				const { propActive: propActiveTab, propProxy: propProxyTabs } = this._getTabProps();
+				const {propActive: propActiveTab, propProxy: propProxyTabs} = this._getTabProps();
 				const $selMode = ComponentUiUtil.$getSelEnum(
 					this,
 					propActiveTab,
@@ -310,7 +310,7 @@ export class StatGenUi extends BaseComponent {
 			})
 			.change(() => this._$rollIptFormula.removeClass("form-control--error"));
 
-		const $iptRollCount = this._isCharacterMode ? null : ComponentUiUtil.$getIptInt(this, "rolled_rollCount", 1, { min: 1, fallbackOnNaN: 1, html: `<input type="text" class="form-control input-xs form-control--minimal ve-text-center max-w-100p">` })
+		const $iptRollCount = this._isCharacterMode ? null : ComponentUiUtil.$getIptInt(this, "rolled_rollCount", 1, {min: 1, fallbackOnNaN: 1, html: `<input type="text" class="form-control input-xs form-control--minimal ve-text-center max-w-100p">`})
 			.keydown(evt => {
 				if (evt.key === "Enter") setTimeout(() => $btnRoll.click()); // Defer to allow `.change` to fire first
 			})
@@ -332,7 +332,7 @@ export class StatGenUi extends BaseComponent {
 			.click(() => {
 				const abs = [...Parser.ABIL_ABVS].shuffle();
 				abs.forEach((ab, i) => {
-					const { propAbilSelectedRollIx } = this.constructor._rolled_getProps(ab);
+					const {propAbilSelectedRollIx} = this.constructor._rolled_getProps(ab);
 					this._state[propAbilSelectedRollIx] = i;
 				});
 			});
@@ -378,7 +378,7 @@ export class StatGenUi extends BaseComponent {
 			.click(() => {
 				const abs = [...Parser.ABIL_ABVS].shuffle();
 				abs.forEach((ab, i) => {
-					const { propAbilSelectedScoreIx } = this.constructor._array_getProps(ab);
+					const {propAbilSelectedScoreIx} = this.constructor._array_getProps(ab);
 					this._state[propAbilSelectedScoreIx] = i;
 				});
 			});
@@ -459,7 +459,7 @@ export class StatGenUi extends BaseComponent {
 				this._doReset();
 
 				let canIncrease = Parser.ABIL_ABVS.map(it => `pb_${it}`);
-				const cpyBaseState = canIncrease.mergeMap(it => ({ [it]: this._state[it] }));
+				const cpyBaseState = canIncrease.mergeMap(it => ({[it]: this._state[it]}));
 				const cntRemaining = this._pb_getPointsRemaining(cpyBaseState);
 				if (cntRemaining <= 0) return;
 
@@ -550,12 +550,12 @@ export class StatGenUi extends BaseComponent {
 			new ContextUtil.Action(
 				"Import from Code",
 				async () => {
-					const raw = await InputUiUtil.pGetUserString({ title: "Enter Code", isCode: true });
+					const raw = await InputUiUtil.pGetUserString({title: "Enter Code", isCode: true});
 					if (raw == null) return;
 					const parsed = this._deserialize_pb_rules(raw);
 					if (parsed == null) return;
 
-					const { pb_rules, pb_budget } = parsed;
+					const {pb_rules, pb_budget} = parsed;
 					this._proxyAssignSimple(
 						"state",
 						{
@@ -590,7 +590,7 @@ export class StatGenUi extends BaseComponent {
 			renderableCollectionRules.render();
 
 			// region Clamp values between new min/max scores
-			const { min: minScore, max: maxScore } = this._pb_getMinMaxScores();
+			const {min: minScore, max: maxScore} = this._pb_getMinMaxScores();
 			Parser.ABIL_ABVS.forEach(it => {
 				const prop = `pb_${it}`;
 				this._state[prop] = Math.min(maxScore, Math.max(minScore, this._state[prop]));
@@ -657,20 +657,20 @@ export class StatGenUi extends BaseComponent {
 		try {
 			json = JSON.parse(raw);
 		} catch (e) {
-			JqueryUtil.doToast({ type: "danger", content: `Failed to decode JSON! ${e.message}` });
+			JqueryUtil.doToast({type: "danger", content: `Failed to decode JSON! ${e.message}`});
 			return null;
 		}
 
-		if (!(json instanceof Array)) return void JqueryUtil.doToast({ type: "danger", content: this.constructor._DESERIALIZE_MSG_INVALID });
+		if (!(json instanceof Array)) return void JqueryUtil.doToast({type: "danger", content: this.constructor._DESERIALIZE_MSG_INVALID});
 
 		const [budget, ...rules] = json;
 
-		if (isNaN(budget)) return void JqueryUtil.doToast({ type: "danger", content: this.constructor._DESERIALIZE_MSG_INVALID });
+		if (isNaN(budget)) return void JqueryUtil.doToast({type: "danger", content: this.constructor._DESERIALIZE_MSG_INVALID});
 
 		if (
 			!rules
 				.every(it => it instanceof Array && it[0] != null && !isNaN(it[0]) && it[1] != null && !isNaN(it[1]))
-		) return void JqueryUtil.doToast({ type: "danger", content: this.constructor._DESERIALIZE_MSG_INVALID });
+		) return void JqueryUtil.doToast({type: "danger", content: this.constructor._DESERIALIZE_MSG_INVALID});
 
 		return {
 			pb_budget: budget,
@@ -748,7 +748,7 @@ export class StatGenUi extends BaseComponent {
 
 		const $wrpsBase = Parser.ABIL_ABVS.map(ab => {
 			// region Rolled
-			const { propAbilSelectedRollIx } = this.constructor._rolled_getProps(ab);
+			const {propAbilSelectedRollIx} = this.constructor._rolled_getProps(ab);
 
 			const $selRolled = $(`<select class="form-control input-xs form-control--minimal statgen-shared__ipt statgen-shared__ipt--sel"></select>`)
 				.change(() => {
@@ -758,12 +758,12 @@ export class StatGenUi extends BaseComponent {
 						...Parser.ABIL_ABVS
 							.map(ab => this.constructor._rolled_getProps(ab).propAbilSelectedRollIx)
 							.filter(prop => ix != null && this._state[prop] === ix)
-							.mergeMap(prop => ({ [prop]: null })),
+							.mergeMap(prop => ({[prop]: null})),
 						[propAbilSelectedRollIx]: ~ix ? ix : null,
 					};
 					this._proxyAssignSimple("state", nxtState);
 				});
-			$(`<option></option>`, { value: -1, text: "\u2014" }).appendTo($selRolled);
+			$(`<option></option>`, {value: -1, text: "\u2014"}).appendTo($selRolled);
 
 			let $optionsRolled = [];
 			const hkRolls = () => {
@@ -771,7 +771,7 @@ export class StatGenUi extends BaseComponent {
 
 				this._state.rolled_rolls.forEach((it, i) => {
 					const cntPrevRolls = this._state.rolled_rolls.slice(0, i).filter(r => r.total === it.total).length;
-					const $opt = $(`<option></option>`, { value: i, text: `${it.total}${cntPrevRolls ? Parser.numberToSubscript(cntPrevRolls) : ""}` }).appendTo($selRolled);
+					const $opt = $(`<option></option>`, {value: i, text: `${it.total}${cntPrevRolls ? Parser.numberToSubscript(cntPrevRolls) : ""}`}).appendTo($selRolled);
 					$optionsRolled.push($opt);
 				});
 
@@ -794,7 +794,7 @@ export class StatGenUi extends BaseComponent {
 			// endregion
 
 			// region Array
-			const { propAbilSelectedScoreIx } = this.constructor._array_getProps(ab);
+			const {propAbilSelectedScoreIx} = this.constructor._array_getProps(ab);
 
 			const $selArray = $(`<select class="form-control input-xs form-control--minimal statgen-shared__ipt statgen-shared__ipt--sel"></select>`)
 				.change(() => {
@@ -804,14 +804,14 @@ export class StatGenUi extends BaseComponent {
 						...Parser.ABIL_ABVS
 							.map(ab => this.constructor._array_getProps(ab).propAbilSelectedScoreIx)
 							.filter(prop => ix != null && this._state[prop] === ix)
-							.mergeMap(prop => ({ [prop]: null })),
+							.mergeMap(prop => ({[prop]: null})),
 						[propAbilSelectedScoreIx]: ~ix ? ix : null,
 					};
 					this._proxyAssignSimple("state", nxtState);
 				});
-			$(`<option></option>`, { value: -1, text: "\u2014" }).appendTo($selArray);
+			$(`<option></option>`, {value: -1, text: "\u2014"}).appendTo($selArray);
 
-			StatGenUi._STANDARD_ARRAY.forEach((it, i) => $(`<option></option>`, { value: i, text: it }).appendTo($selArray));
+			StatGenUi._STANDARD_ARRAY.forEach((it, i) => $(`<option></option>`, {value: i, text: it}).appendTo($selArray));
 
 			const hookIxArray = () => {
 				const ix = this._state[propAbilSelectedScoreIx] == null ? -1 : this._state[propAbilSelectedScoreIx];
@@ -837,7 +837,7 @@ export class StatGenUi extends BaseComponent {
 			);
 
 			const hkPb = () => {
-				const { min: minScore, max: maxScore } = this._pb_getMinMaxScores();
+				const {min: minScore, max: maxScore} = this._pb_getMinMaxScores();
 				this._state[propPb] = Math.min(maxScore, Math.max(minScore, this._state[propPb]));
 			};
 			this._addHookBase(propPb, hkPb);
@@ -847,7 +847,7 @@ export class StatGenUi extends BaseComponent {
 			// endregion
 
 			// region Manual
-			const { propAbilValue } = this.constructor._manual_getProps(ab);
+			const {propAbilValue} = this.constructor._manual_getProps(ab);
 			const $iptManual = ComponentUiUtil.$getIptInt(
 				this,
 				propAbilValue,
@@ -952,7 +952,7 @@ export class StatGenUi extends BaseComponent {
 			<hr class="hr-3">
 
 			${$dispPreviewBackground}
-
+			
 			${$hrPreviewBackground}
 
 			${$dispPreviewRace}
@@ -969,9 +969,9 @@ export class StatGenUi extends BaseComponent {
 			.append($stgNone);
 	}
 
-	_renderLevelOneRace = new StatGenUiRenderLevelOneRace({ parent: this });
+	_renderLevelOneRace = new StatGenUiRenderLevelOneRace({parent: this});
 
-	_renderLevelOneBackground = new StatGenUiRenderLevelOneBackground({ parent: this });
+	_renderLevelOneBackground = new StatGenUiRenderLevelOneBackground({parent: this});
 
 	_render_isLevelUp ($wrpTab) {
 		const $wrpsExisting = Parser.ABIL_ABVS.map(ab => {
@@ -1030,7 +1030,7 @@ export class StatGenUi extends BaseComponent {
 
 	_render_$getWrpsUser () {
 		return Parser.ABIL_ABVS.map(ab => {
-			const { propUserBonus } = this.constructor._common_getProps(ab);
+			const {propUserBonus} = this.constructor._common_getProps(ab);
 			const $ipt = ComponentUiUtil.$getIptInt(
 				this,
 				propUserBonus,
@@ -1187,31 +1187,31 @@ export class StatGenUi extends BaseComponent {
 	}
 
 	_rolled_getTotalScore (ab) {
-		const { propAbilSelectedRollIx } = this.constructor._rolled_getProps(ab);
-		const { propUserBonus } = this.constructor._common_getProps(ab);
-		return (this._state.rolled_rolls[this._state[propAbilSelectedRollIx]] || { total: 0 }).total + this._state[propUserBonus] + this._getTotalScore_getBonuses(ab);
+		const {propAbilSelectedRollIx} = this.constructor._rolled_getProps(ab);
+		const {propUserBonus} = this.constructor._common_getProps(ab);
+		return (this._state.rolled_rolls[this._state[propAbilSelectedRollIx]] || {total: 0}).total + this._state[propUserBonus] + this._getTotalScore_getBonuses(ab);
 	}
 
 	_array_getTotalScore (ab) {
-		const { propAbilSelectedScoreIx } = this.constructor._array_getProps(ab);
-		const { propUserBonus } = this.constructor._common_getProps(ab);
+		const {propAbilSelectedScoreIx} = this.constructor._array_getProps(ab);
+		const {propUserBonus} = this.constructor._common_getProps(ab);
 		return (StatGenUi._STANDARD_ARRAY[this._state[propAbilSelectedScoreIx]] || 0) + this._state[propUserBonus] + this._getTotalScore_getBonuses(ab);
 	}
 
 	_pb_getTotalScore (ab) {
 		const prop = `pb_${ab}`;
-		const { propUserBonus } = this.constructor._common_getProps(ab);
+		const {propUserBonus} = this.constructor._common_getProps(ab);
 		return this._state[prop] + this._state[propUserBonus] + this._getTotalScore_getBonuses(ab);
 	}
 
 	_manual_getTotalScore (ab) {
-		const { propAbilValue } = this.constructor._manual_getProps(ab);
-		const { propUserBonus } = this.constructor._common_getProps(ab);
+		const {propAbilValue} = this.constructor._manual_getProps(ab);
+		const {propUserBonus} = this.constructor._common_getProps(ab);
 		return (this._state[propAbilValue] || 0) + this._state[propUserBonus] + this._getTotalScore_getBonuses(ab);
 	}
 
 	_levelUp_getTotalScore (ab) {
-		const { propUserBonus } = this.constructor._common_getProps(ab);
+		const {propUserBonus} = this.constructor._common_getProps(ab);
 		return (this._existingScores[ab] || 0) + this._state[propUserBonus] + this._getTotalScore_getBonuses(ab);
 	}
 
@@ -1219,7 +1219,7 @@ export class StatGenUi extends BaseComponent {
 		let total = 0;
 
 		if (!this._isLevelUp) {
-			const handleEntityAbility = ({ fromEntity, propChoiceMetasFrom, propChoiceWeighted }) => {
+			const handleEntityAbility = ({fromEntity, propChoiceMetasFrom, propChoiceWeighted}) => {
 				if (fromEntity) {
 					if (fromEntity[ab]) total += fromEntity[ab];
 
@@ -1261,7 +1261,7 @@ export class StatGenUi extends BaseComponent {
 	getSaveableState () {
 		const out = super.getSaveableState();
 
-		const handleEntity = ({ propIxEntity, page, propData, propHash }) => {
+		const handleEntity = ({propIxEntity, page, propData, propHash}) => {
 			if (out.state[propIxEntity] == null || !~this._state[propIxEntity]) return;
 
 			out.state[propHash] = UrlUtil.URL_TO_HASH_BUILDER[page](this[propData][out.state[propIxEntity]]);
@@ -1283,7 +1283,7 @@ export class StatGenUi extends BaseComponent {
 		});
 
 		for (let i = 0; i < (out.state.common_cntFeatsCustom || 0); ++i) {
-			const { propIxFeat, propSaveLoadFeatHash } = this.getPropsAsi(i, "custom");
+			const {propIxFeat, propSaveLoadFeatHash} = this.getPropsAsi(i, "custom");
 
 			if (out.state[propIxFeat] == null || !~this._state[propIxFeat]) continue;
 
@@ -1298,7 +1298,7 @@ export class StatGenUi extends BaseComponent {
 	getSaveableStatePointBuyCustom () {
 		const base = this.getSaveableState();
 		return {
-			state: this.constructor._PROPS_POINT_BUY_CUSTOM.mergeMap(k => ({ [k]: base.state[k] })),
+			state: this.constructor._PROPS_POINT_BUY_CUSTOM.mergeMap(k => ({[k]: base.state[k]})),
 		};
 	}
 	// endregion
@@ -1310,7 +1310,7 @@ export class StatGenUi extends BaseComponent {
 
 		saved.state.common_isAllowTashasRules = VetoolsConfig.get("styleSwitcher", "style") !== SITE_STYLE__ONE;
 
-		const handleEntityHash = ({ propHash, page, propData, propIxEntity }) => {
+		const handleEntityHash = ({propHash, page, propData, propIxEntity}) => {
 			if (!saved.state?.[propHash]) return;
 
 			const ixEntity = this[propData].findIndex(ent => {
@@ -1335,7 +1335,7 @@ export class StatGenUi extends BaseComponent {
 		});
 
 		for (let i = 0; i < (saved.state.common_cntFeatsCustom || 0); ++i) {
-			const { propIxFeat, propSaveLoadFeatHash } = this.getPropsAsi(i, "custom");
+			const {propIxFeat, propSaveLoadFeatHash} = this.getPropsAsi(i, "custom");
 
 			if (!saved.state?.[propSaveLoadFeatHash]) continue;
 
@@ -1358,12 +1358,12 @@ export class StatGenUi extends BaseComponent {
 
 		// region Trim the ASI/feat state to the max count of ASIs/feats
 		for (let i = saved.state.common_cntAsi || 0; i < 1000; ++i) {
-			const { propMode, prefix } = this.getPropsAsi(i, "ability");
+			const {propMode, prefix} = this.getPropsAsi(i, "ability");
 			if (saved.state[propMode]) Object.keys(saved.state).filter(k => k.startsWith(prefix)).forEach(k => delete saved.state[k]);
 		}
 
 		for (let i = saved.state.common_cntFeatsCustom || 0; i < 1000; ++i) {
-			const { propMode, prefix } = this.getPropsAsi(i, "custom");
+			const {propMode, prefix} = this.getPropsAsi(i, "custom");
 			if (saved.state[propMode]) Object.keys(saved.state).filter(k => k.startsWith(prefix)).forEach(k => delete saved.state[k]);
 		}
 		// endregion
@@ -1380,7 +1380,7 @@ export class StatGenUi extends BaseComponent {
 
 	_getDefaultStateCommonResettable () {
 		return {
-			...Parser.ABIL_ABVS.mergeMap(ab => ({ [this.constructor._common_getProps(ab).propUserBonus]: 0 })),
+			...Parser.ABIL_ABVS.mergeMap(ab => ({[this.constructor._common_getProps(ab).propUserBonus]: 0})),
 
 			common_raceChoiceMetasFrom: [],
 			common_raceChoiceMetasWeighted: [],
@@ -1394,13 +1394,13 @@ export class StatGenUi extends BaseComponent {
 
 	_getDefaultStateRolledResettable () {
 		return {
-			...Parser.ABIL_ABVS.mergeMap(ab => ({ [this.constructor._rolled_getProps(ab).propAbilSelectedRollIx]: null })),
+			...Parser.ABIL_ABVS.mergeMap(ab => ({[this.constructor._rolled_getProps(ab).propAbilSelectedRollIx]: null})),
 		};
 	}
 
 	_getDefaultStateArrayResettable () {
 		return {
-			...Parser.ABIL_ABVS.mergeMap(ab => ({ [this.constructor._array_getProps(ab).propAbilSelectedScoreIx]: null })),
+			...Parser.ABIL_ABVS.mergeMap(ab => ({[this.constructor._array_getProps(ab).propAbilSelectedScoreIx]: null})),
 		};
 	}
 
@@ -1418,15 +1418,15 @@ export class StatGenUi extends BaseComponent {
 	_getDefaultStatePointBuyCosts () {
 		return {
 			pb_rules: [
-				{ score: 8, cost: 0 },
-				{ score: 9, cost: 1 },
-				{ score: 10, cost: 2 },
-				{ score: 11, cost: 3 },
-				{ score: 12, cost: 4 },
-				{ score: 13, cost: 5 },
-				{ score: 14, cost: 7 },
-				{ score: 15, cost: 9 },
-			].map(({ score, cost }) => this._getDefaultState_pb_rule(score, cost)),
+				{score: 8, cost: 0},
+				{score: 9, cost: 1},
+				{score: 10, cost: 2},
+				{score: 11, cost: 3},
+				{score: 12, cost: 4},
+				{score: 13, cost: 5},
+				{score: 14, cost: 7},
+				{score: 15, cost: 9},
+			].map(({score, cost}) => this._getDefaultState_pb_rule(score, cost)),
 		};
 	}
 
@@ -1442,7 +1442,7 @@ export class StatGenUi extends BaseComponent {
 
 	_getDefaultStateManualResettable () {
 		return {
-			...Parser.ABIL_ABVS.mergeMap(ab => ({ [this.constructor._manual_getProps(ab).propAbilValue]: null })),
+			...Parser.ABIL_ABVS.mergeMap(ab => ({[this.constructor._manual_getProps(ab).propAbilValue]: null})),
 		};
 	}
 

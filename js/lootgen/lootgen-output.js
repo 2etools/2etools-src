@@ -1,4 +1,4 @@
-import { TOOLTIP_NOTHING } from "./lootgen-const.js";
+import {TOOLTIP_NOTHING} from "./lootgen-const.js";
 
 export class LootGenOutput {
 	static _TIERS = ["other", "minor", "major"];
@@ -28,7 +28,7 @@ export class LootGenOutput {
 	_$getEleTitleSplit () {
 		const $btnRivet = !globalThis.IS_VTT && ExtensionUtil.ACTIVE
 			? $(`<button title="Send to Foundry (SHIFT for Temporary Import)" class="ve-btn ve-btn-xs ve-btn-default"><span class="glyphicon glyphicon-send"></span></button>`)
-				.click(evt => this._pDoSendToFoundry({ isTemp: !!evt.shiftKey }))
+				.click(evt => this._pDoSendToFoundry({isTemp: !!evt.shiftKey}))
 			: null;
 
 		const $btnDownload = $(`<button title="Download JSON" class="ve-btn ve-btn-xs ve-btn-default"><span class="glyphicon glyphicon-download glyphicon--top-2p"></span></button>`)
@@ -51,8 +51,8 @@ export class LootGenOutput {
 		const $parts = [
 			this._render_$getPtValueSummary(),
 			this._render_$getPtCoins(),
-			...this._render_$getPtGemsArtObjects({ loot: this._gems, name: "gemstones" }),
-			...this._render_$getPtGemsArtObjects({ loot: this._artObjects, name: "art objects" }),
+			...this._render_$getPtGemsArtObjects({loot: this._gems, name: "gemstones"}),
+			...this._render_$getPtGemsArtObjects({loot: this._artObjects, name: "art objects"}),
 			this._render_$getPtDragonMundaneItems(),
 			...this._render_$getPtMagicItems(),
 		].filter(Boolean);
@@ -80,11 +80,11 @@ export class LootGenOutput {
 		this._pGetFoundryForm().then(it => dropData = it);
 	}
 
-	async _pDoSendToFoundry ({ isTemp } = {}) {
+	async _pDoSendToFoundry ({isTemp} = {}) {
 		const toSend = await this._pGetFoundryForm();
 		if (isTemp) toSend.isTemp = isTemp;
-		if (toSend.currency || toSend.entityInfos) return ExtensionUtil.pDoSend({ type: "5etools.lootgen.loot", data: toSend });
-		JqueryUtil.doToast({ content: `Nothing to send!`, type: "warning" });
+		if (toSend.currency || toSend.entityInfos) return ExtensionUtil.pDoSend({type: "5etools.lootgen.loot", data: toSend});
+		JqueryUtil.doToast({content: `Nothing to send!`, type: "warning"});
 	}
 
 	async _pDoSaveAsJson () {
@@ -93,20 +93,20 @@ export class LootGenOutput {
 	}
 
 	async _pGetFoundryForm () {
-		const toSend = { name: this._name, type: this._type, dateTimeGenerated: this._datetimeGenerated };
+		const toSend = {name: this._name, type: this._type, dateTimeGenerated: this._datetimeGenerated};
 
 		if (this._coins) toSend.currency = this._coins;
 
 		const entityInfos = [];
-		if (this._gems?.length) entityInfos.push(...await this._pDoSendToFoundry_getGemsArtObjectsMetas({ loot: this._gems }));
-		if (this._artObjects?.length) entityInfos.push(...await this._pDoSendToFoundry_getGemsArtObjectsMetas({ loot: this._artObjects }));
+		if (this._gems?.length) entityInfos.push(...await this._pDoSendToFoundry_getGemsArtObjectsMetas({loot: this._gems}));
+		if (this._artObjects?.length) entityInfos.push(...await this._pDoSendToFoundry_getGemsArtObjectsMetas({loot: this._artObjects}));
 
 		if (this._magicItemsByTable?.length) {
 			for (const magicItemsByTable of this._magicItemsByTable) {
 				for (const lootItem of magicItemsByTable.breakdown) {
 					const exportMeta = lootItem.getExtensionExportMeta();
 					if (!exportMeta) continue;
-					const { page, entity, options } = exportMeta;
+					const {page, entity, options} = exportMeta;
 					entityInfos.push({
 						page,
 						entity,
@@ -135,7 +135,7 @@ export class LootGenOutput {
 		return toSend;
 	}
 
-	async _pDoSendToFoundry_getGemsArtObjectsMetas ({ loot }) {
+	async _pDoSendToFoundry_getGemsArtObjectsMetas ({loot}) {
 		const uidToCount = {};
 		const specialItemMetas = {}; // For any rows which don't actually map to an item
 
@@ -173,7 +173,7 @@ export class LootGenOutput {
 		const out = [];
 		for (const [uid, count] of Object.entries(uidToCount)) {
 			const [name, source] = uid.split("|");
-			const item = await DataLoader.pCacheAndGet(UrlUtil.PG_ITEMS, source, UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS]({ name, source }));
+			const item = await DataLoader.pCacheAndGet(UrlUtil.PG_ITEMS, source, UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS]({name, source}));
 			out.push({
 				page: UrlUtil.PG_ITEMS,
 				entity: item,
@@ -183,7 +183,7 @@ export class LootGenOutput {
 			});
 		}
 
-		for (const { count, item } of Object.values(specialItemMetas)) {
+		for (const {count, item} of Object.values(specialItemMetas)) {
 			out.push({
 				page: UrlUtil.PG_ITEMS,
 				entity: item,
@@ -236,7 +236,7 @@ export class LootGenOutput {
 		`;
 	}
 
-	_render_$getPtGemsArtObjects ({ loot, name }) {
+	_render_$getPtGemsArtObjects ({loot, name}) {
 		if (!loot?.length) return [];
 
 		return loot.map(lt => {
@@ -253,7 +253,7 @@ export class LootGenOutput {
 		if (!this._magicItemsByTable?.length) return [];
 
 		return [...this._magicItemsByTable]
-			.sort(({ tier: tierA, type: typeA }, { tier: tierB, type: typeB }) => this.constructor._ascSortTier(tierB, tierA) || SortUtil.ascSortLower(typeA || "", typeB || ""))
+			.sort(({tier: tierA, type: typeA}, {tier: tierB, type: typeB}) => this.constructor._ascSortTier(tierB, tierA) || SortUtil.ascSortLower(typeA || "", typeB || ""))
 			.map(magicItems => {
 				// If we're in "tier" mode, sort the items into groups by rarity
 				if (magicItems.tier) {

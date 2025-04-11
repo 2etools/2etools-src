@@ -24,10 +24,9 @@ $rgb-inset-border: #656565;
 }
 
 @mixin rd__h--large () {
-	color: vars.$rgb-name-red;
-	font-family: "Times New Roman", serif;
-	font-variant: small-caps;
-	font-weight: 500;
+	color: vars.$rgb-name-blue;
+	font-family: "Friz Quadrata Std", sans-serif;
+	font-weight: bold;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -62,7 +61,7 @@ $rgb-inset-border: #656565;
 				margin-bottom: 0;
 			}
 
-			> *:last-child {
+			>*:last-child {
 				margin-bottom: 0;
 			}
 		}
@@ -81,11 +80,11 @@ $rgb-inset-border: #656565;
 			margin-bottom: var(--h-mb-p);
 			padding-left: var(--w-pl-list);
 
-			> .rd__list:last-child {
+			>.rd__list:last-child {
 				margin-bottom: 0;
 			}
 
-			> .rd__list-name {
+			>.rd__list-name {
 				margin-left: calc(-1 * var(--w-pl-list));
 			}
 		}
@@ -127,7 +126,7 @@ $rgb-inset-border: #656565;
 				background: vars.$rgb-off-black;
 			}
 
-			> a {
+			>a {
 				display: block;
 			}
 		}
@@ -159,7 +158,7 @@ $rgb-inset-border: #656565;
 			padding: 0 10px 10px;
 			width: 33%;
 
-			@media screen and (width <= #{vars.$width-screen-md}) {
+			@media screen and (width <=#{vars.$width-screen-md}) {
 				width: 50%;
 			}
 		}
@@ -262,11 +261,11 @@ $rgb-inset-border: #656565;
 			padding: 0;
 			list-style: none;
 
-			> .rd__list-name {
+			>.rd__list-name {
 				margin-left: 0;
 			}
 
-			> .rd__li {
+			>.rd__li {
 				margin-bottom: var(--h-mb-li);
 				text-indent: var(--w-text-indent-li-hang--inv);
 				margin-left: var(--w-text-indent-li-hang);
@@ -276,19 +275,19 @@ $rgb-inset-border: #656565;
 					text-indent: initial;
 				}
 
-				> * {
+				>* {
 					margin: 0 0 var(--h-mb-li);
 				}
 
 				// fixme?
-				> ul {
+				>ul {
 					text-indent: initial;
 				}
 			}
 		}
 
 		&list-caption {
-			> .rd__list-name {
+			>.rd__list-name {
 				font-variant: small-caps;
 				font-weight: bold;
 				font-size: 1.08em;
@@ -298,12 +297,12 @@ $rgb-inset-border: #656565;
 		&list-hang {
 			list-style: none;
 
-			> .rd__list-name {
+			>.rd__list-name {
 				margin-left: calc(-1 * var(--w-pl-list));
 			}
 
 			// Firefox workaround; list bullets are pseudo-elements "::marker"
-			> li > *:not(::marker) {
+			>li>*:not(::marker) {
 				text-indent: var(--w-text-indent-li-hang--inv);
 				margin-left: var(--w-text-indent-li-hang);
 			}
@@ -325,7 +324,7 @@ $rgb-inset-border: #656565;
 			list-style: none;
 			padding: 0 0 0 var(--w-pl-list-no-bullets);
 
-			> .rd__list-name {
+			>.rd__list-name {
 				margin-left: calc(-1 * var(--w-pl-list-no-bullets));
 			}
 		}
@@ -353,6 +352,8 @@ $rgb-inset-border: #656565;
 			@include rd__h--large;
 
 			font-size: var(--sz-font-h0);
+			border-bottom: 5px solid vars.$rgb-off-black;
+			margin: 0 0 0.2em;
 		}
 
 		// underline headers
@@ -361,8 +362,6 @@ $rgb-inset-border: #656565;
 			@include rd__h--large;
 
 			font-size: var(--sz-font-h1);
-			border-bottom: 1px solid vars.$rgb-name-red;
-			margin: 0 0 0.2em;
 		}
 
 		// basic headers
@@ -396,8 +395,8 @@ $rgb-inset-border: #656565;
 			text-align: center;
 		}
 
-		&h--2-inset > h4,
-		&h--2-flow-block > h4 {
+		&h--2-inset>h4,
+		&h--2-flow-block>h4 {
 			font-size: inherit;
 			font-weight: inherit;
 			line-height: vars.$font-line-height;
@@ -409,6 +408,7 @@ $rgb-inset-border: #656565;
 		&h--3 {
 			font-weight: bold;
 			font-style: italic;
+			display: flex;
 		}
 
 		// sub-inline headers (only seen in monster variant)
@@ -428,13 +428,13 @@ $rgb-inset-border: #656565;
 			display: none !important;
 		}
 
-		&b--3 > p,
-		&b--4 > p {
+		&b--3>p,
+		&b--4>p {
 			margin-bottom: var(--h-mb-p-inline);
 		}
 
-		&b--3 > p + p,
-		&b-inset > p + p {
+		&b--3>p+p,
+		&b-inset>p+p {
 			text-indent: var(--w-text-indent-inline-p);
 		}
 
@@ -448,7 +448,7 @@ $rgb-inset-border: #656565;
 			background-color: #e9ecda;
 			text-indent: initial;
 
-			> *:last-child {
+			>*:last-child {
 				margin-bottom: 0;
 			}
 
@@ -491,14 +491,14 @@ $rgb-inset-border: #656565;
 				max-width: 600px;
 				margin: 15px auto;
 
-				@media screen and (width <= #{vars.$width-screen-sm}) {
+				@media screen and (width <=#{vars.$width-screen-sm}) {
 					max-width: initial;
 					margin: 15px 5px;
 				}
 			}
 		}
 
-		&li > .rd__b-data {
+		&li>.rd__b-data {
 			margin: 0;
 		}
 
@@ -549,7 +549,7 @@ $rgb-inset-border: #656565;
 			// Avoid outer `white-space: pre` inflating cells when embedded in e.g. a Markdown render
 			white-space: initial;
 
-			> caption {
+			>caption {
 				text-align: left;
 				margin-left: 5px;
 				padding: 0;
@@ -650,7 +650,7 @@ $rgb-inset-border: #656565;
 			border-bottom: 2px solid $rgb-inset-border;
 			background-color: #ece4da;
 
-			> *:last-child {
+			>*:last-child {
 				margin-bottom: 0;
 			}
 		}
@@ -741,7 +741,7 @@ $rgb-inset-border: #656565;
 }
 
 // Entries embedded in tables
-td > .rd__b:last-child {
+td>.rd__b:last-child {
 	margin-bottom: 0;
 }
 
@@ -762,13 +762,13 @@ td > .rd__b:last-child {
 				font-variant: small-caps;
 			}
 
-			.rd__b--3 > p,
-			.rd__b--4 > p {
+			.rd__b--3>p,
+			.rd__b--4>p {
 				margin-bottom: 10px;
 			}
 
-			.rd__b--3 > p:nth-of-type(2),
-			.rd__b--4 > p:nth-of-type(2) {
+			.rd__b--3>p:nth-of-type(2),
+			.rd__b--4>p:nth-of-type(2) {
 				margin-top: 10px;
 			}
 		}
@@ -778,7 +778,7 @@ td > .rd__b:last-child {
 				font-size: 1em;
 				font-family: Roboto, Helvetica, sans-serif;
 				color: inherit;
-				font-weight: bold;
+				font-weight: 500;
 			}
 
 			.rd__b p {
@@ -787,4 +787,5 @@ td > .rd__b:last-child {
 		}
 	}
 }
+
 // endregion

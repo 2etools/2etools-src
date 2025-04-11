@@ -3760,7 +3760,7 @@
 					],
 					"data": {
 						"genTables": {
-							"tableInclude": false
+							"tableInclude": true
 						}
 					}
 				}

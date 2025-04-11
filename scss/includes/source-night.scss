@@ -18,13 +18,25 @@
 	$rgb-source-category-homebrew--local: #514bff;
 	$rgb-source-category-homebrew--partnered: #b44051;
 
+	/*
 	$rgb-source-PHB: vars-night.$rgb-subclass--night;
 	$rgb-source-DMG: #ba1eba;
 	$rgb-source-XPHB: #d98d2a;
 
-	/*$rgb-source-PHBR: #a32849;
+
+	$rgb-source-PHBR: #a32849;
 	$rgb-source-DMGR: #1c77af;
-	$rgb-source-HR: #199e5c;*/
+	$rgb-source-HR: #199e5c;
+	*/
+
+	$rgb-source-PHB: #e75160;
+	$rgb-source-DMG: #3c7ba5;
+	$rgb-source-MM: #008000;
+	$rgb-source-XPHB: #ee273c;
+	$rgb-source-XDMG: #1169a3;
+	$rgb-source-PHBR: #8f0445;
+	$rgb-source-DMGR: #0451a8;
+	$rgb-source-HR: #0c6438;
 
 	$rgb-source-SADS: #4f63f5;
 	$rgb-source-CoS: #be11be;
@@ -103,8 +115,60 @@
 			@include mix-source-color($rgb-source-DMG);
 		}
 
-		&XPHB {
-			@include mix-source-color($rgb-source-XPHB);
+		&PHBR {
+			@include mix-source-color($rgb-source-PHBR);
+
+			&PHBR1,
+			&PHBR2,
+			&PHBR3,
+			&PHBR4,
+			&PHBR5,
+			&PHBR6,
+			&PHBR7,
+			&PHBR8,
+			&PHBR9,
+			&PHBR10,
+			&PHBR11,
+			&PHBR12,
+			&PHBR13,
+			&PHBR14,
+			&PHBR15 {
+				@include mix-source-color($rgb-source-PHBR);
+			}
+		}
+
+		&DMGR {
+			@include mix-source-color($rgb-source-DMGR);
+
+			&DMGR1,
+			&DMGR2,
+			&DMGR3,
+			&DMGR4,
+			&DMGR5,
+			&DMGR6,
+			&DMGR7,
+			&DMGR8,
+			&DMGR9 {
+				@include mix-source-color($rgb-source-DMGR);
+			}
+		}
+
+		&HR {
+			@include mix-source-color($rgb-source-HR);
+
+			&HR1,
+			&HR2,
+			&HR3,
+			&HR4,
+			&HR5,
+			&HR6,
+			&HR7 {
+				@include mix-source-color($rgb-source-HR);
+			}
+		}
+
+		&MM {
+			@include mix-source-color($rgb-source-MM);
 		}
 
 		&OGA {
@@ -245,7 +309,6 @@
 		&DoDk {
 			@include mix-source-color($rgb-source-DoDk);
 		}
-
 	}
 }
 

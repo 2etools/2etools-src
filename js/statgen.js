@@ -1,7 +1,7 @@
-import { StatGenUi } from "./statgen/statgen-ui.js";
-import { VetoolsConfig } from "./utils-config/utils-config-config.js";
-import { UtilsEntityBackground } from "./utils/utils-entity-background.js";
-import { UtilsEntityRace } from "./utils/utils-entity-race.js";
+import {StatGenUi} from "./statgen/statgen-ui.js";
+import {VetoolsConfig} from "./utils-config/utils-config-config.js";
+import {UtilsEntityBackground} from "./utils/utils-entity-background.js";
+import {UtilsEntityRace} from "./utils/utils-entity-race.js";
 
 class StatGenPage {
 	constructor () {
@@ -54,7 +54,7 @@ class StatGenPage {
 						html: `<span class="glyphicon glyphicon-download"></span>`,
 						title: "Save to File",
 						pFnClick: () => {
-							DataUtil.userDownload("statgen", this._statGenUi.getSaveableState(), { fileType: "statgen" });
+							DataUtil.userDownload("statgen", this._statGenUi.getSaveableState(), {fileType: "statgen"});
 						},
 					},
 				],
@@ -66,7 +66,7 @@ class StatGenPage {
 						html: `<span class="glyphicon glyphicon-upload"></span>`,
 						title: "Load from File",
 						pFnClick: async () => {
-							const { jsons, errors } = await InputUiUtil.pGetUserUploadJson({ expectedFileTypes: ["statgen"] });
+							const {jsons, errors} = await InputUiUtil.pGetUserUploadJson({expectedFileTypes: ["statgen"]});
 
 							DataUtil.doHandleFileLoadErrorsGeneric(errors);
 
@@ -130,7 +130,7 @@ class StatGenPage {
 		);
 
 		const styleHint = VetoolsConfig.get("styleSwitcher", "style");
-		cpyRaces.forEach(ent => UtilsEntityRace.mutMigrateForVersion(ent, { styleHint }));
+		cpyRaces.forEach(ent => UtilsEntityRace.mutMigrateForVersion(ent, {styleHint}));
 
 		return cpyRaces;
 	}
@@ -149,7 +149,7 @@ class StatGenPage {
 		);
 
 		const styleHint = VetoolsConfig.get("styleSwitcher", "style");
-		cpyBackgrounds.forEach(ent => UtilsEntityBackground.mutMigrateForVersion(ent, { styleHint }));
+		cpyBackgrounds.forEach(ent => UtilsEntityBackground.mutMigrateForVersion(ent, {styleHint}));
 
 		return cpyBackgrounds;
 	}
@@ -205,7 +205,7 @@ class StatGenPage {
 			this._statGenUi.setStateFrom(saved);
 			return true;
 		} catch (e) {
-			JqueryUtil.doToast({ type: "danger", content: `Failed to load state from URL!` });
+			JqueryUtil.doToast({type: "danger", content: `Failed to load state from URL!`});
 			setTimeout(() => { throw e; });
 			return false;
 		}

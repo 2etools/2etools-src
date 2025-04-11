@@ -16,6 +16,7 @@
 	}
 
 	&__ {
+
 		&btn-name-pronounce,
 		&btn-stats-name {
 			vertical-align: top;
@@ -39,7 +40,7 @@
 		&h-name {
 			font-size: unset;
 			line-height: unset;
-			color: vars.$rgb-name-red;
+			color: vars.$rgb-name-blue;
 		}
 
 		&wrp-h-source {
@@ -180,12 +181,12 @@
 			margin-top: 3px;
 			margin-bottom: -1px;
 			font-weight: 100;
-			color: vars.$rgb-name-red;
+			color: vars.$rgb-name-blue;
 			font-size: 17px;
 			line-height: 18px;
 			font-family: Convergence, Arial, sans-serif;
 			font-variant: small-caps;
-			border-bottom: 1px solid vars.$rgb-name-red;
+			border-bottom: 1px solid vars.$rgb-name-blue;
 
 			&--non-statblock {
 				font-size: 18px;
@@ -196,7 +197,7 @@
 		&sect-row-inner {
 			padding-top: (vars.$spacer * 0.5);
 
-			> *:last-of-type {
+			>*:last-of-type {
 				margin-bottom: (vars.$spacer * 0.5);
 			}
 		}
@@ -234,7 +235,7 @@
 
 	&__ {
 		&h-name {
-			color: vars-night.$rgb-name-red--night;
+			color: vars-night.$rgb-name-blue--night;
 		}
 
 		&btn-token-cycle {
@@ -275,8 +276,8 @@
 		}
 
 		&sect-header-inner {
-			color: vars-night.$rgb-name-red--night;
-			border-bottom-color: vars-night.$rgb-name-red--night;
+			color: vars-night.$rgb-name-blue--night;
+			border-bottom-color: vars-night.$rgb-name-blue--night;
 		}
 	}
 }
@@ -284,6 +285,7 @@
 /* -------------------------------------------- */
 
 .mon__ {
+
 	&btn-reset-cr,
 	&btn-scale-cr {
 		padding: 0 5px;
@@ -321,7 +323,9 @@
 .stats--book {
 	@include vars.mix-shadow-1;
 
-	font-family: Roboto, Helvetica, sans-serif;
+	font-family: "ITC Bookman", Roboto, sans-serif;
+	font-weight: 300;
+	font-style: normal;
 	background: #fff;
 
 	::selection {
@@ -351,8 +355,8 @@
 // Book mode adjustments
 .stats--book-large {
 	--sz-font-h0: 2.5em;
-	--sz-font-h1: 1.9em;
-	--sz-font-h2: 1.6em;
+	--sz-font-h1: 2em;
+	--sz-font-h2: 1.5em;
 
 	// FIXME this doesn't affect e.g. lists
 	//  Also, affects e.g. nested tables (bad!)
@@ -367,8 +371,8 @@
 	font-size: 1em;
 
 	.rd__list-hang-notitle {
-		> .rd__li {
-			> .rd__p-list-item {
+		>.rd__li {
+			>.rd__p-list-item {
 				text-indent: -1.1em;
 			}
 		}

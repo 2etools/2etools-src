@@ -74,8 +74,8 @@
 							"page": 2,
 							"entries": [
 								"This sourcebook is more than just a setting for Vikings in a fantasy campaign; it is a passport into the real world of the Vikings. With the material here, DMs and players have a unique opportunity to try a new iole-playing experience-historical fantasy adventuring.",
-								"Historical fantasy adventuring is just that—an opportunity for campaigns and adventurers to role-play in the real worlds and lands of history. In this sourcebook, players are carried back to tenth century Scandinavia. There players can assume roles as Norsemen of various stripes-fighting men, explorers, and {@i skalds}, or bards. With the {@i Vikings} sourcebook, players can adventure in a \"real\" fantasy world-the world as the Vikings themselves believed it.",
-								"In addition to warriors and skalds, players can become rune-casters, berserkers, or one of the ominous troll-born. Their encounters will range beyond history to include clever giants, magical dwarves, beautiful valkyries, murderous berserkers, foul sea ogresses, treacherous sorcerers, and mythic dragons. They can sail to lands beyond the real world—Mirkwood, that separates the world of men from the gods; Jotunheim, home of the giants; or even to the lands of the gods themselves. Wondrous treasures might be theirs for the taking.",
+								"Historical fantasy adventuring is just that\u2014an opportunity for campaigns and adventurers to role-play in the real worlds and lands of history. In this sourcebook, players are carried back to tenth century Scandinavia. There players can assume roles as Norsemen of various stripes-fighting men, explorers, and {@i skalds}, or bards. With the {@i Vikings} sourcebook, players can adventure in a \"real\" fantasy world-the world as the Vikings themselves believed it.",
+								"In addition to warriors and skalds, players can become rune-casters, berserkers, or one of the ominous troll-born. Their encounters will range beyond history to include clever giants, magical dwarves, beautiful valkyries, murderous berserkers, foul sea ogresses, treacherous sorcerers, and mythic dragons. They can sail to lands beyond the real world\u2014Mirkwood, that separates the world of men from the gods; Jotunheim, home of the giants; or even to the lands of the gods themselves. Wondrous treasures might be theirs for the taking.",
 								"Finally, the Vikings sourcebook can be used to recreate a Viking setting in other campaign worlds. Details on placing and adapting Viking culture and beliefs to the FORGOTTEN REALMS®, GREYHAWK®, and DRAGONLANCE® campaigns is given. Instructions on adapting the Vikings sourcebook to the DMs personal campaign is also provided."
 							]
 						},
@@ -85,7 +85,7 @@
 							"page": 3,
 							"entries": [
 								"For those unfamiliar with Viking history (approximately from A.D. 800 to A.D. 1100), a brief overview of the time period, describing major personalities, events, and trends is given in the first chapter, {@i A Mini-Course in Viking History}. Players already familiar with the time period can skip this section if they want. This section is not intended to create experts in the Viking age, only provide a general background of the period.",
-								"Before proceeding further, the DM should decide what type of campaign he wishes to play. The material in this book is written with a historical fantasy campaign in mind — a campaign set in Scandinavia but filled with magic, giants, ogres and trolls. If the DM intends to use the setting in his own campaign world, he should make notes or changes as needed when he reads.",
+								"Before proceeding further, the DM should decide what type of campaign he wishes to play. The material in this book is written with a historical fantasy campaign in mind\u2014a campaign set in Scandinavia but filled with magic, giants, ogres and trolls. If the DM intends to use the setting in his own campaign world, he should make notes or changes as needed when he reads.",
 								"After choosing his campaign, the DM can read through the remaining material. The chapters can be read in whatever order the DM desires. Player character information and most game rules are in the first part of the book. Facts and details about the Viking way of life and their world, both real and legendary, form the second section of the book. Some players may want to learn about the character classes immediately; others may want first to gain more background on the Viking age. Players are encouraged to read the sections that most interest them in whatever order they desire.",
 								"There is a pull-out map to be used by the players, showing a stylized (and in places incorrect) Viking view of the world.",
 								"Before beginning a Viking campaign, the DM should read through all the material presented here at least once. When he is ready to begin a campaign, he should use this book as a resource, just as he would any other rulebook or gazetteer. The maps pcovided in the book provide the campaign base and larger area maps of the true world. The DM can expand on these as the campaign grows."
@@ -293,7 +293,7 @@
 						"{@i Egil's Saga}; This is the story of Egil Skallagrimsson, warrior-poet, and his family's bloody feud with the king of Norway. It is filled with battles, revenge, politics, and magic, and presents a rich picture of life at the height of the Viking age.",
 						"{@i Gongu-Hrolf's Saga}; Although it may be difficult to find, this slim book is filled with ideas for adventures. Helpful dwarfs, vicious berserkers, troll-born, ghosts, magical swords, healing salves, and powerful spells are all found in its pages.",
 						"{@i King Harald's Saga}; Telling the story of Harald Hardradi, the last great warrior-king of Norway, this saga ranges from his flight from Norway through his years as a general in Constantinople and Sicily to the defeat of the Norse at Stamford Bridge in England.",
-						"{@i Njal's Saga}; This saga of Iceland describes the course of a 50 year blood-feud to its tragic end—the burning of Njal and his family, trapped in their house.",
+						"{@i Njal's Saga}; This saga of Iceland describes the course of a 50 year blood-feud to its tragic end\u2014the burning of Njal and his family, trapped in their house.",
 						"{@i Seven Viking Romances}; In a change from historical sagas, these seven short tales are filled with magic and wonder. Characters like Arrow-Odd, Thorstein Mansion-Might, Ufkel the Wizard, Stunt-Bosi, and Asmund Berserks-Killer adventure as far as Hunland, Permia, and Giantland.",
 						"{@i The Vinland Sagas}; These short sagas tell the stories of Eirik the Red and Leif the Lucky and their discoveries and settlements of Greenland and Vinland in North America.",
 						"In addition to these titles, there are numerous other sagas translated into English. Some may be easily found, others are more difficult. These titles include the {@i Laxdaela Saga, Orkneyinga Saga, The Saga of the Jomsvikings, Hrafknel's Saga, Eyrbyggja Saga,} and {@i Grettir's Saga}.",
@@ -1373,5 +1373,5 @@
 			}
 		},
 		""
-			]
+	]
 }

@@ -1,5 +1,5 @@
-import { ArrayKey, IgnoredKey, ObjectKey } from "./utils-proporder/utils-proporder-models.js";
-import { PROPORDER_PROP_TO_LIST, PROPORDER_ROOT } from "./utils-proporder/utils-proporder-config.js";
+import {ArrayKey, IgnoredKey, ObjectKey} from "./utils-proporder/utils-proporder-models.js";
+import {PROPORDER_PROP_TO_LIST, PROPORDER_ROOT} from "./utils-proporder/utils-proporder-config.js";
 
 export class PropOrder {
 	static _getKeyProp (keyInfo) {
@@ -44,7 +44,7 @@ export class PropOrder {
 		return this._getOrdered(obj, order, opts, dataProp);
 	}
 
-	static _getModifiedProp ({ keyInfo, isFoundryPrefixProps }) {
+	static _getModifiedProp ({keyInfo, isFoundryPrefixProps}) {
 		const prop = this._getKeyProp(keyInfo);
 
 		if (!isFoundryPrefixProps || prop.startsWith("_")) return prop;
@@ -60,7 +60,7 @@ export class PropOrder {
 		order
 			.forEach(keyInfo => {
 				const prop = this._getKeyProp(keyInfo);
-				const propMod = this._getModifiedProp({ keyInfo, isFoundryPrefixProps: opts.isFoundryPrefixProps });
+				const propMod = this._getModifiedProp({keyInfo, isFoundryPrefixProps: opts.isFoundryPrefixProps});
 
 				if (opts.isFoundryPrefixProps && !prop.startsWith("_") && !prop.startsWith("foundry")) return;
 
