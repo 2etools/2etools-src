@@ -342,19 +342,29 @@
 					"page": 12,
 					"entries": [
 						{
-							"type": "insetReadaloud",
+							"type": "entries",
 							"name": "Scenario One:",
 							"page": 12,
 							"entries": [
-								"{@i It couldn't be helped. Until an hour before the guys are supposed to show, you were involved in a kill-or-be-kilied table tennis game with your room mate. Now you're gonna have to throw something together fast. But hey, you know the sniff, didn't you just look at it, like, just last week? Maybe you can just use that module you bought at the hobby store last week. Great stuff! No need to reread that, its all ready to go. Anyway, you've gotta run out and grab a bunch of munchies and soda pop before everyone shows up. I mean, priorities first, right?}"
+								{
+									"type": "quote",
+									"entries": [
+										"It couldn't be helped. Until an hour before the guys are supposed to show, you were involved in a kill-or-be-kilied table tennis game with your room mate. Now you're gonna have to throw something together fast. But hey, you know the sniff, didn't you just look at it, like, just last week? Maybe you can just use that module you bought at the hobby store last week. Great stuff! No need to reread that, its all ready to go. Anyway, you've gotta run out and grab a bunch of munchies and soda pop before everyone shows up. I mean, priorities first, right?"
+									]
+								}
 							]
 						},
 						{
-							"type": "insetReadaloud",
+							"type": "entries",
 							"name": "Scenario Two:",
 							"page": 13,
 							"entries": [
-								"{@i You can't remember when you've operated on this little sleep (but hey, you're so tired that remembering anything right now is beyond your capability). But it's worth it\u2014your campaign is ready for the big game today. You've spent over 100 hours devising the penultimate encounter between good and evil (the ultimate battle takes place next week). There'll be mayhem and carnage galore tonight! You've prepared for every possible alternative...except one. Your players decide that they really aren't ready for the penultimate encounter with evil and just want to bash a few more orcs or harass a dragon or two. You hadn't prepared for that option and your befogged brain has difficulty even deciphering a monster manual let alone coming up with an adventure on the fly. Sometime during the game you fall asleep face down in the chip dip, burbling out your world's darkest secrets between onion-scented snores. Out of respect for you, the players keep the volume on the TV turned down.}"
+								{
+									"type": "quote",
+									"entries": [
+										"You can't remember when you've operated on this little sleep (but hey, you're so tired that remembering anything right now is beyond your capability). But it's worth it\u2014your campaign is ready for the big game today. You've spent over 100 hours devising the penultimate encounter between good and evil (the ultimate battle takes place next week). There'll be mayhem and carnage galore tonight! You've prepared for every possible alternative...except one. Your players decide that they really aren't ready for the penultimate encounter with evil and just want to bash a few more orcs or harass a dragon or two. You hadn't prepared for that option and your befogged brain has difficulty even deciphering a monster manual let alone coming up with an adventure on the fly. Sometime during the game you fall asleep face down in the chip dip, burbling out your world's darkest secrets between onion-scented snores. Out of respect for you, the players keep the volume on the TV turned down."
+									]
+								}
 							]
 						},
 						"Successful gaming is more than an impromptu perfomance in. a fabricated world for a group of individuals who just happen to be available and interested in the AD&D® game. Good gaming experiences require creative preparation (and it is possible to over prepare!). While most of this burden falls on the DM's shoulders, advance preparation by the players will help the adventure run smoother. In short, the more details that can be resolved ahead of time, the less often the game will have to be interrupted.",
@@ -435,7 +445,6 @@
 								"Regardless of how the DM puts his material together, he needs to put it in a ready-to-use form. DMs can save endless flipping through notes by following these organizational tips:",
 								{
 									"type": "list",
-									"style": "list-hang",
 									"columns": 0,
 									"page": 14,
 									"items": [
@@ -537,27 +546,42 @@
 						"While the goal of a game may be to have the players on the edge of their seats, when the tension seems too high, or the sighs of frustration become too great, it might be time for a break.",
 						"When examining his own style of play, the DM may wish to consider the following scenarios:",
 						{
-							"type": "insetReadaloud",
+							"type": "entries",
 							"name": "Scenario One",
 							"page": 18,
 							"entries": [
-								"{@i Imagine listening to a speaker who drones on and on in a monotone voice, never varying the pitch of his voice or the rate at which he speaks. Though the content of his speech may be of great importance, one by one, his audience drops off into slumber.}"
+								{
+									"type": "quote",
+									"entries": [
+										"Imagine listening to a speaker who drones on and on in a monotone voice, never varying the pitch of his voice or the rate at which he speaks. Though the content of his speech may be of great importance, one by one, his audience drops off into slumber."
+									]
+								}
 							]
 						},
 						{
-							"type": "insetReadaloud",
+							"type": "entries",
 							"name": "Scenario Two",
 							"page": 18,
 							"entries": [
-								"{@i Picture a fast-action horror movie. Bodies gruesomely splatter left and right faster than the watcher can keep track. The level of terror builds relentlessly with no relief; until finally, the movie ends. Yet somewhere, back in the middle, the audience lapsed into a stunned overload mode where they could no longer be shocked by what they saw and could feel no relief when it ended.}"
+								{
+									"type": "quote",
+									"entries": [
+										"Picture a fast-action horror movie. Bodies gruesomely splatter left and right faster than the watcher can keep track. The level of terror builds relentlessly with no relief; until finally, the movie ends. Yet somewhere, back in the middle, the audience lapsed into a stunned overload mode where they could no longer be shocked by what they saw and could feel no relief when it ended."
+									]
+								}
 							]
 						},
 						{
-							"type": "insetReadaloud",
+							"type": "entries",
 							"name": "Scenario Three",
 							"page": 18,
 							"entries": [
-								"{@i Visualize an artsy foreign film with constant and visually confusing changes of scenery, point of view, pace of the action and such. Things change so rapidly, that its hard to get a handle on what's going on. The action speeds up and slows down in what seems an almost random manner, leaving the viewer lost and confused.}"
+								{
+									"type": "quote",
+									"entries": [
+										"Visualize an artsy foreign film with constant and visually confusing changes of scenery, point of view, pace of the action and such. Things change so rapidly, that its hard to get a handle on what's going on. The action speeds up and slows down in what seems an almost random manner, leaving the viewer lost and confused."
+									]
+								}
 							]
 						},
 						{
@@ -565,7 +589,7 @@
 							"name": "Get the players moving",
 							"page": 18,
 							"entries": [
-								"If the players discussion about their next move has deteriorated to a petty quarrel, or has gotten off the subject onto idle chatter, {@i make something happen}. Sometimes, it may be enough to cast a couple dice and make a quick (meaningless) note on paper. This is especially useful if, at least once in a while, a wandering monster or other event actually occurs. Another way is to ask for immediate action. Turn to one of your players and ask  \"What is your character doing right now?\""
+								"If the players discussion about their next move has deteriorated to a petty quarrel, or has gotten off the subject onto idle chatter, {@i make something happen}. Sometimes, it may be enough to cast a couple dice and make a quick (meaningless) note on paper. This is especially useful if, at least once in a while, a wandering monster or other event actually occurs. Another way is to ask for immediate action. Turn to one of your players and askquote\"What is your character doing right now?\""
 							]
 						},
 						{
@@ -608,7 +632,6 @@
 								"Create a rich game environment with colorful descriptions and vivid NPCs. Give the players room to role-play. Don't force them to act without thinking, but on the other hand don't let them dawdle over game decisions. Try the following rapid play techniques:",
 								{
 									"type": "list",
-									"style": "list-hang",
 									"columns": 0,
 									"page": 19,
 									"items": [
@@ -692,7 +715,6 @@
 								"Props are not necessary to the adventure, but their inclusion adds to the flavor of the game. A prop is essentially any physical object or visual aid that can be used during a game to evoke a mood, enhance play, or aid the players in solving problems. The following are suggestions for props, many of which are readily available to players:",
 								{
 									"type": "list",
-									"style": "list-hang",
 									"columns": 0,
 									"page": 21,
 									"items": [
@@ -910,35 +932,55 @@
 							"entries": [
 								"Establishing the setting for encounters, whether they take place in a wind-whipped mountain pass or a dimly-lit underground chamber, is an important part of the DM's responsibilities. When all a DM does is to draw room dimensions on a battle map and says \"This is what you see,\" chances are, that is all the players (and their characters) will see: outlines on paper. The effective DM will take his descriptions of an area beyond mere room dimensions and make it live for the players. The following are examples of ineffective and effective descriptions of encounter areas:",
 								{
-									"type": "insetReadaloud",
+									"type": "entries",
 									"name": "Ineffective Setting",
 									"page": 27,
 									"entries": [
-										"{@i The room is 20 by 20 feet and has a couple cots and a table in it.}"
+										{
+											"type": "quote",
+											"entries": [
+												"The room is 20 by 20 feet and has a couple cots and a table in it."
+											]
+										}
 									]
 								},
 								{
-									"type": "insetReadaloud",
+									"type": "entries",
 									"name": "Effective Setting",
 									"page": 27,
 									"entries": [
-										"{@i The door sticks and opens only with effort, scraping the mold and moss that carpets the floor beyond. Even the beds and table are encrusted with the stuff. The walls remind you of leprous sores, with gangrenous wounds where scabs of plaster have fallen away. Even as you stand here, a mottled chunk falls silently to the padded HOOT.}"
+										{
+											"type": "quote",
+											"entries": [
+												"The door sticks and opens only with effort, scraping the mold and moss that carpets the floor beyond. Even the beds and table are encrusted with the stuff. The walls remind you of leprous sores, with gangrenous wounds where scabs of plaster have fallen away. Even as you stand here, a mottled chunk falls silently to the padded HOOT."
+											]
+										}
 									]
 								},
 								{
-									"type": "insetReadaloud",
+									"type": "entries",
 									"name": "Ineffective Setting",
 									"page": 27,
 									"entries": [
-										"{@i You come to a clearing in the woods with some ruins near the center. It's getting dark.}"
+										{
+											"type": "quote",
+											"entries": [
+												"You come to a clearing in the woods with some ruins near the center. It's getting dark."
+											]
+										}
 									]
 								},
 								{
-									"type": "insetReadaloud",
+									"type": "entries",
 									"name": "Effective Setting",
 									"page": 27,
 									"entries": [
-										"{@i The path through the forest abruptly opens onto a grassy clearing. Tumbledown remnants of an ancient building hulk in the center of the glade. Rows of fallen columns, like broken teeth, mark a path to the gaping entrance of the ruin. Even from here, you can see numerous statues filling wall niches and unpleasant sculptures looming gargoyle-like near the collapsed roof. Several leaning towers thrust up out of the ruins as if to catch the last light of the day. Even now, long shadows from the surrounding trees darken the glade, almost visibly creeping forward to make the darkness complete.}"
+										{
+											"type": "quote",
+											"entries": [
+												"The path through the forest abruptly opens onto a grassy clearing. Tumbledown remnants of an ancient building hulk in the center of the glade. Rows of fallen columns, like broken teeth, mark a path to the gaping entrance of the ruin. Even from here, you can see numerous statues filling wall niches and unpleasant sculptures looming gargoyle-like near the collapsed roof. Several leaning towers thrust up out of the ruins as if to catch the last light of the day. Even now, long shadows from the surrounding trees darken the glade, almost visibly creeping forward to make the darkness complete."
+											]
+										}
 									]
 								},
 								"In each of these situations, the DM's effective description (even though a bit heavy on the prose) both describes what the characters see and establishes a mood. A once-generic part of the DM's world has taken on specific and even menacing form. Will the characters enter the area as it is described, now knowing, or at least feeling, that potential danger lies therein? Without motivation, probably not."
@@ -960,25 +1002,22 @@
 					"page": 27,
 					"entries": [
 						{
-							"type": "insetReadaloud",
-							"page": 27,
+							"type": "quote",
 							"entries": [
-								"{@i The statue you were fiddling around with animates and swings its fist at you.}"
+								"The statue you were fiddling around with animates and swings its fist at you."
 							]
 						},
 						"Described like this, the eerie magics that breathe life into an eight-foot-tall being of cold stone seem somehow mundane, as if it happened every day. Think how much more exciting it would be for the players if they were told:",
 						{
-							"type": "insetReadaloud",
-							"page": 27,
+							"type": "quote",
 							"entries": [
-								"{@i As you attempt to remove the gems from the statue, the blood red ruby sinks inward as if it were a button being pressed. With a sharp snapping sound the statue's eyelids slide up to reveal jewels that glow like lanterns through green glass. Its cold stone flesh suddenly becomes almost hot, like a sunbaked rock and a hiss of vapor escapes its mouth. Its limbs move with unnatural speed as it swings a mallet-like fist at your character.}"
+								"As you attempt to remove the gems from the statue, the blood red ruby sinks inward as if it were a button being pressed. With a sharp snapping sound the statue's eyelids slide up to reveal jewels that glow like lanterns through green glass. Its cold stone flesh suddenly becomes almost hot, like a sunbaked rock and a hiss of vapor escapes its mouth. Its limbs move with unnatural speed as it swings a mallet-like fist at your character."
 							]
 						},
 						"Notice how the second description focuses on what the characters see and feel. If the DM emphasizes the sudden movement of the eyes and punctuates it with a sharp sound, he may catch the players off guard. Like their characters, they too have been caught off guard and now share the character's apprehensions.",
 						"The key to making encounters dramatic is to focus on what makes them fantastic:",
 						{
 							"type": "list",
-							"style": "list-hang",
 							"columns": 0,
 							"page": 28,
 							"items": [
@@ -1009,39 +1048,37 @@
 					"entries": [
 						"There exists a tendency in adventure gaming for both the DM and the players to sacrifice the color and richness of roleplaying for the expedience of advancing the game. The DM forgets that he is a storyteller and becomes a rules judge. The players forget that they are characters in a drama and behave like board garners calling out combat results. Instead of talking descriptively about actions and their outcolnes, the participants refer to dice rolls and game statistics. An exchange might go:",
 						{
-							"type": "insetReadaloud",
-							"page": 29,
+							"type": "quote",
 							"entries": [
-								"{@i DM: \"The orcs see you and advance 20 feet to attack. Somebody give me an initiative roll.\"}",
-								"{@i Player one: (rolls dice) \"Drat, only a three.\"}",
-								"{@i DM: \"Still beats my one. What's going on now?\"}",
-								"{@i Player one: \"My fighter Bruno attacks with his +1 sword.\"}",
-								"{@i DM: \"OK, he needs a 13 or better to hit, and the magic user needs a 16 if she uses her weapons.\" Player two: \"No way! Wanda zaps with her magic missiles. Aw, only six points of damage from both missiles.\"}",
-								"{@i Player two: \"No way! Wanda zaps with her magic missiles. Aw, only six points of damage from both missiles.\"}",
-								"{@i Player one: \"Bruno rolls a 16 and does seven points of damage, plus one for the sword and another one for Strength, for a total of nine. Since ores only take eight points of damage max, one of them is aced!\"}",
-								"{@i DM: \"OK one ore {@sup [sic]} is down from Wanda's missiles, but the one Bruno hit takes his points and keeps on coming and does 11 points to Bruno.\"}",
-								"{@i Player One: \"Let's get outta here! Bruno's only got one hit point left.\"}",
-								"{@i Player Two: \"Tough break, Bruno. Wanda whips out her wand of fear while Bruno makes for the door.\"}"
+								"DM: \"The orcs see you and advance 20 feet to attack. Somebody give me an initiative roll.\"",
+								"Player one: (rolls dice) \"Drat, only a three.\"",
+								"DM: \"Still beats my one. What's going on now?\"",
+								"Player one: \"My fighter Bruno attacks with his +1 sword.\"",
+								"DM: \"OK, he needs a 13 or better to hit, and the magic user needs a 16 if she uses her weapons.\" Player two: \"No way! Wanda zaps with her magic missiles. Aw, only six points of damage from both missiles.\"",
+								"Player two: \"No way! Wanda zaps with her magic missiles. Aw, only six points of damage from both missiles.\"",
+								"Player one: \"Bruno rolls a 16 and does seven points of damage, plus one for the sword and another one for Strength, for a total of nine. Since ores only take eight points of damage max, one of them is aced!\"",
+								"DM: \"OK one orc is down from Wanda's missiles, but the one Bruno hit takes his points and keeps on coming and does 11 points to Bruno.\"",
+								"Player One: \"Let's get outta here! Bruno's only got one hit point left.\"",
+								"Player Two: \"Tough break, Bruno. Wanda whips out her wand of fear while Bruno makes for the door.\""
 							]
 						},
 						"The action comes across, but without any particular emphasis on the setting, the characters, or their foes. Wanda and Bruno are played as generic characters who encounter a band of equally generic monsters. One set of numerical statistics has met another and exchanged a round of randomly generated numbers. Now try the same encounter with a little color and role-play.",
 						{
-							"type": "insetReadaloud",
-							"page": 29,
+							"type": "quote",
 							"entries": [
-								"{@i DM: \"A pair of heavily armored, low-browed humanoids round the comer. They see Wanda and Bruno and they don't look happy to see them here. The big one growls out something that sounds like orcish to Wanda.\"}",
-								"{@i Player two: \"What did it say? Wanda knows the are language enough to make out basic words.\"}",
-								"{@i Player one: \"Yeah, what?\"}",
-								"{@i DM: \"'Surrender or there'll be trouble if is all you can make out.\"}",
-								"{@i Player two: \"Wanda drops to her knees and starts to plead for mercy, wringing her hands together. She tries to get Bruno to do the same.\"}",
-								"{@i Player one: \"Bruno will never surrender to are scum! He charges the largest are, swinging the mighty Calabash over his headin a deadly arc!\"}",
-								"{@i Player two: (sighing) \"Wanda was also trying to disguise the somatic part of her} {@spell Sleep} {@i spell like she did with the gnolls.\"}",
-								"{@i DM: \"The big fellow charges Bruno while the little one warily approaches Wanda He seems to be indicating that any attempt to aid her companion will end badly. Bruno's attack roll must beat least 13 to effect his foe. If Wanda wants to attack her opponent, she must roll a 16 or better.\"}",
-								"{@i Player one: \"The glowing blade of Calabash slices through the air and connects solidly with the are for a mighty blow. Bruno's opponent loses nine hit points!\"}",
-								"{@i Player two: \"Wanda stays on her knees and continues to wring her hands and cry, but she has changed over to her magic missile spell. When she releases it, the missiles inflict six points of damage on her foe.\"}",
-								"{@i DM: \"Wanda's missiles strike the smaller humanoid, flinging him backwards like a rag doll until he strikes the passage wall and collapses. Meanwhile the larger creature seems to shrug off the damage done by Bruno. Its own hideous weapon crushes the fighter, reducing Bruno's hit points by 11 and forcing him to his knees.\"}",
-								"{@i Player One: \"Even though Bruno is nearly done in, he drags himself towards the exit. He knows that Brother Albert can heal his wounds.\"}",
-								"{@i Player Two: \"While the monster's attention is still focused on Bruno, Wanda readies her wand of fear and prepares to speak the words that will unleash its powers.\"}"
+								"DM: \"A pair of heavily armored, low-browed humanoids round the comer. They see Wanda and Bruno and they don't look happy to see them here. The big one growls out something that sounds like orcish to Wanda.\"",
+								"Player two: \"What did it say? Wanda knows the are language enough to make out basic words.\"",
+								"Player one: \"Yeah, what?\"",
+								"DM: \"'Surrender or there'll be trouble if is all you can make out.\"",
+								"Player two: \"Wanda drops to her knees and starts to plead for mercy, wringing her hands together. She tries to get Bruno to do the same.\"",
+								"Player one: \"Bruno will never surrender to are scum! He charges the largest are, swinging the mighty Calabash over his headin a deadly arc!\"",
+								"Player two: (sighing) \"Wanda was also trying to disguise the somatic part of her {@spell Sleep} spell like she did with the gnolls.\"",
+								"DM: \"The big fellow charges Bruno while the little one warily approaches Wanda He seems to be indicating that any attempt to aid her companion will end badly. Bruno's attack roll must beat least 13 to effect his foe. If Wanda wants to attack her opponent, she must roll a 16 or better.\"",
+								"Player one: \"The glowing blade of Calabash slices through the air and connects solidly with the are for a mighty blow. Bruno's opponent loses nine hit points!\"",
+								"Player two: \"Wanda stays on her knees and continues to wring her hands and cry, but she has changed over to her magic missile spell. When she releases it, the missiles inflict six points of damage on her foe.\"",
+								"DM: \"Wanda's missiles strike the smaller humanoid, flinging him backwards like a rag doll until he strikes the passage wall and collapses. Meanwhile the larger creature seems to shrug off the damage done by Bruno. Its own hideous weapon crushes the fighter, reducing Bruno's hit points by 11 and forcing him to his knees.\"",
+								"Player One: \"Even though Bruno is nearly done in, he drags himself towards the exit. He knows that Brother Albert can heal his wounds.\"",
+								"Player Two: \"While the monster's attention is still focused on Bruno, Wanda readies her wand of fear and prepares to speak the words that will unleash its powers.\""
 							]
 						},
 						"Again, the second passage emphasizes the descriptive, or storytelling, nature of the game. Die results, statements of intent and tum instructions are woven into the story that the DM and his two players are mutually creating, but the story takes pre-eminence.",
@@ -1080,7 +1117,6 @@
 								"The DM might help a character cheat death in one of the following ways:",
 								{
 									"type": "list",
-									"style": "list-hang",
 									"columns": 0,
 									"page": 31,
 									"items": [
@@ -1094,7 +1130,6 @@
 								"If the DM has to intervene to save a character, he may wish to balance his act of mercy by penalizing the character who should have died. Consider the following possibilities:",
 								{
 									"type": "list",
-									"style": "list-hang",
 									"columns": 0,
 									"page": 31,
 									"items": [
@@ -1166,21 +1201,20 @@
 						"The bandits scream in terror and flee the tower. Their fellows in the woods presume the worst and they, too, run. Meanwhile, back in the tower a muffled voice grunts \"will somebody get this lousy minotaur off me, I can hardly breathe!\"",
 						"Similarly, the DM may find himself in situations where the player's must make a skill test to discover something in his game. If they fail the test, the characters miss out on what the DM has in store for thein. Rather than rely on the dice, the DM simply allows the characters to fimd the door. Yet, if he does it right, the situation adds more to the game than the rolling of dice.",
 						{
-							"type": "insetReadaloud",
-							"page": 35,
+							"type": "quote",
 							"entries": [
-								"{@i DM: \"The blood trail ends near the south wall.\"}",
-								"{@i Player: \"We check the wall for secret doors.\"}",
-								"{@i DM: \"You don't find anything that looks like a door, secret or otherwise. But the elf hears someone fumbling with the lock on the north door.\"}",
-								"{@i Player: \"Quick, what's the south wall look like?\"}",
-								"{@i DM: \"Lots of detailed pain tings, mostly landscapes. Most of 'em are pretty big.\"}",
-								"{@i Player: \"I move the one closest to the trail.\"}",
-								"{@i DM: \"Doesn't move. Hey, that sounded like a key in the lock.\"}",
-								"{@i Player: \"Uh, um. Uh, what's that painting look like?\"}",
-								"{@i DM: \"It's a winter scene. It looks like footprints in the snow, trailing off into the distance. Every so often, you can see a splotch of bright crimson amongst the footprints. In the distance you see what looks like a warrior. The door's starting to open.\"}",
-								"{@i Player: \"I, we, um, guys, everybody follow Thuenor. He's climbing into the winter wonderland picture.\"}",
-								"A third area where leaving the rules behind can help the DM create a world of wonder is that of magic. The AD8d3®{@sup [sic]} game magic system allows for a great variety of magical powers. Nevertheless, the DM may find that his imagination can create magical devices, artifacts, and environments that defy description within the bounds of the magic rules.",
-								"{@i DM: \"The door opens and the wizard enters. He doesn't seem to notice that one of his paintings now contains portraits of a bunch of adventurers.\"}"
+								"DM: \"The blood trail ends near the south wall.\"",
+								"Player: \"We check the wall for secret doors.\"",
+								"DM: \"You don't find anything that looks like a door, secret or otherwise. But the elf hears someone fumbling with the lock on the north door.\"",
+								"Player: \"Quick, what's the south wall look like?\"",
+								"DM: \"Lots of detailed pain tings, mostly landscapes. Most of 'em are pretty big.\"",
+								"Player: \"I move the one closest to the trail.\"",
+								"DM: \"Doesn't move. Hey, that sounded like a key in the lock.\"",
+								"Player: \"Uh, um. Uh, what's that painting look like?\"",
+								"DM: \"It's a winter scene. It looks like footprints in the snow, trailing off into the distance. Every so often, you can see a splotch of bright crimson amongst the footprints. In the distance you see what looks like a warrior. The door's starting to open.\"",
+								"Player: \"I, we, um, guys, everybody follow Thuenor. He's climbing into the winter wonderland picture.\"",
+								"A third area where leaving the rules behind can help the DM create a world of wonder is that of magic. The AD&D® game magic system allows for a great variety of magical powers. Nevertheless, the DM may find that his imagination can create magical devices, artifacts, and environments that defy description within the bounds of the magic rules.",
+								"DM: \"The door opens and the wizard enters. He doesn't seem to notice that one of his paintings now contains portraits of a bunch of adventurers.\""
 							]
 						},
 						"Suppose that the DM creates a scenario that involves living beings encased within stasis cocoons of transparent crystal. Based on the magic rules for creating magical items, no spell or spells exist for making this work. The DM is then faced with a choice: use this creation of his imagination and present it as an object of wonder, or throw it out because it doesn't fit the rules. The DM probably knows our recommendation already."
@@ -1196,27 +1230,25 @@
 						"Combat is probably foremost among these situations. During combat, follow the rules and make dice rolls for hits and damage. Reserve any stretching of the rules for those activities that do not directly affect the health and well being of the characters (or their foes!). It's one thing to let a character make heroic jumps and perform acrobatics during a melee. It's quite another to let him make attacks without requiring a combat or damage die roll.",
 						"Magic use is another sensitive area. Stick to the rules for both sides of an encounter. As shown below, the players may not appreciate the DM's creativity:",
 						{
-							"type": "insetReadaloud",
-							"page": 36,
+							"type": "quote",
 							"entries": [
-								"{@i DM: \"Waldemar glares at you from his perch atop the statue. He waves his hands in a dizzying pattern over his head and casts his spell. You are all encircled in sparkling lights and suddenly realize that Waldemar is your friend.\"}",
-								"{@i Player: \"Hey, just what kind of spell was that? If it's charm person then my elf gets a saving throw. And what's with the sparkles. None of our spells do that.\"}",
-								"{@i DM: \"Uh, its{@sup [sic]} a special form of charm person. Nobody gets a saving throw.\"}",
-								"{@i Player: \"Well the elf wants either a saving throw or a chance to break free.\"}",
-								"{@i DM: \"Well, he tries to break free, but he can't.\"}",
-								"{@i Player: \"C'mon! You didn't even roll the dice.\"}"
+								"DM: \"Waldemar glares at you from his perch atop the statue. He waves his hands in a dizzying pattern over his head and casts his spell. You are all encircled in sparkling lights and suddenly realize that Waldemar is your friend.\"",
+								"Player: \"Hey, just what kind of spell was that? If it's charm person then my elf gets a saving throw. And what's with the sparkles. None of our spells do that.\"",
+								"DM: \"Uh, it's a special form of charm person. Nobody gets a saving throw.\"",
+								"Player: \"Well the elf wants either a saving throw or a chance to break free.\"",
+								"DM: \"Well, he tries to break free, but he can't.\"",
+								"Player: \"C'mon! You didn't even roll the dice.\""
 							]
 						},
 						"Proficiency and attribute check rolls are another area of ambiguity. If the DM has gotten in the habit of overlooking them during play in favor of his storytelling, he may have a hard time asking the players to make them in life-or-death situations.",
 						{
-							"type": "insetReadaloud",
-							"page": 36,
+							"type": "quote",
 							"entries": [
-								"{@i DM: \"Thuenor, if you're going to cross the rope bridge, make a Dexterity check for me.\"}",
-								"{@i Player: \"Huh? He didn't have to make one going the other way. Why should he now?\"}",
-								"{@i DM: \"Because he has to, OK?\"}",
-								"{@i Player: \"Let's just say he made it\"}",
-								"{@i DM: \"MAKE THE DIE ROLL!\"}"
+								"DM: \"Thuenor, if you're going to cross the rope bridge, make a Dexterity check for me.\"",
+								"Player: \"Huh? He didn't have to make one going the other way. Why should he now?\"",
+								"DM: \"Because he has to, OK?\"",
+								"Player: \"Let's just say he made it\"",
+								"DM: \"MAKE THE DIE ROLL!\""
 							]
 						},
 						"Be sure that whenever a player action could lead to harm, the player makes dice roll. They need to realize that their misfortune is the result of either their own bad judgements or the chance failure to perform a task, and not the arbitrary whims of the DM. If the DM doesn't follow a procedure like this the players will become suspicious every time something goes against them. They may even accuse the DM of cheating.",
@@ -1262,10 +1294,9 @@
 							"page": 37,
 							"entries": [
 								{
-									"type": "insetReadaloud",
-									"page": 37,
+									"type": "quote",
 									"entries": [
-										"\"After Daniella slays all J 2 of the kobolds with her multi-barrel wand of megadeath the rest of the party finds about 100,000 gold pieces, 33 potions, about 243 gems, 900 pieces of jewelry, a sword that glows almost as brightly as Daring Dirk's frost brand, a suit of well-maintained power armor with markings of the old Imperium and two mounted projectile throwers on it, about four cases-full of short range rockets, a rod of lordly might, and a shadow box hanging on the wall that contains about 20 different figurines of wondrous power.\"",
+										"\"After Daniella slays all 2 of the kobolds with her multi-barrel wand of megadeath the rest of the party finds about 100,000 gold pieces, 33 potions, about 243 gems, 900 pieces of jewelry, a sword that glows almost as brightly as Daring Dirk's frost brand, a suit of well-maintained power armor with markings of the old Imperium and two mounted projectile throwers on it, about four cases-full of short range rockets, a rod of lordly might, and a shadow box hanging on the wall that contains about 20 different figurines of wondrous power.\"",
 										"\"Oh boy, we grab all the magical loot and stick it in our portable holes. The wizards begin setting up the transmat box that teleports all the gold back to Castle Pardo.\"",
 										"\"Well, as you do that, the south wall glows and a humongous bat-winged creature steps through, oozing pink goo from huge warts and dragging a huge bag of treasure.\""
 									]
@@ -1289,11 +1320,10 @@
 							"page": 38,
 							"entries": [
 								{
-									"type": "insetReadaloud",
-									"page": 38,
+									"type": "quote",
 									"entries": [
-										"{@i \"Both ancient dragons rear back and spew fire at Clarissa the Mighty. That's 192 points of fiery megadeath.\"}",
-										"{@i \"Well, with her {@item cloak of displacement}and {@item ring of fire resistance}, Clarissa automatically makes her saving roll. Between the ring of fire resistance, the potion of fire resistance and her special ability to make her body immune to heat, that reduces the damage down to 18 points, only a slight singeing. Clarissa slurps down a potion of extra healing and then blasts both dragons into Hinders with the photon cannon wand she found in the metallic ruins.\"}"
+										"\"Both ancient dragons rear back and spew fire at Clarissa the Mighty. That's 192 points of fiery megadeath.\"",
+										"\"Well, with her {@item cloak of displacement}and {@item ring of fire resistance}, Clarissa automatically makes her saving roll. Between the ring of fire resistance, the potion of fire resistance and her special ability to make her body immune to heat, that reduces the damage down to 18 points, only a slight singeing. Clarissa slurps down a potion of extra healing and then blasts both dragons into Hinders with the photon cannon wand she found in the metallic ruins.\""
 									]
 								},
 								"A common by-product of Monty Haul gaming is the super character. The DM may know the type by now, faster than a speeding arrow, more powerful than a loco hill giant, able to leap tall dungeons in a single bound. Most of their attributes appear to have been rolled on d100's. They have more magical gizmos than a college of wizardry and their hit point totals resemble a modest lotto jackpot. In most senses of the word, they are unbeatable\u2014and they are the DM's fault. He made them what they are and he now must deal with them.",
@@ -1303,7 +1333,6 @@
 								"If that fails, feel free to set up situations that either take the super characters down a few pegs, even to kill them outright. Need examples?",
 								{
 									"type": "list",
-									"style": "list-hang",
 									"columns": 0,
 									"page": 39,
 									"items": [
@@ -1324,11 +1353,10 @@
 							"page": 39,
 							"entries": [
 								{
-									"type": "insetReadaloud",
-									"page": 39,
+									"type": "quote",
 									"entries": [
-										"{@i \"OK, before we get going, I want to let you know that I've given some thought to how Jenny's fighter used her {@item ring of fire resistance} last week and I've decided to modify the way we play invisibility from now on. When a character is invisible, anybody near him gets a chance to sense his presence, regardless of monster level.\"}",
-										"{@i \"What? Oh just great! My character bought an invisibility scroll last game and now it's basically worthless.\"}"
+										"\"OK, before we get going, I want to let you know that I've given some thought to how Jenny's fighter used her {@item ring of fire resistance} last week and I've decided to modify the way we play invisibility from now on. When a character is invisible, anybody near him gets a chance to sense his presence, regardless of monster level.\"",
+										"\"What? Oh just great! My character bought an invisibility scroll last game and now it's basically worthless.\""
 									]
 								},
 								"Game worlds, like living creatures, are constantly changing. Most of these changes are minor, but every so often, the DM decides to make a major change, either to his world itself or to the rules used to run the game. Sometimes these changes will affect the way that the players make decisions about their characters and their actions.",
@@ -1344,10 +1372,9 @@
 					"page": 39,
 					"entries": [
 						{
-							"type": "insetReadaloud",
-							"page": 39,
+							"type": "quote",
 							"entries": [
-								"{@i \"I don't care if you think it should work that way, that's not the way the rules say it works. Look right there on page 112 of the Player's Manual.\"}"
+								"\"I don't care if you think it should work that way, that's not the way the rules say it works. Look right there on page 112 of the Player's Manual.\""
 							]
 						},
 						"Rulius Magistarius, the rules lawyer, can be the bane of both DMs and players alike and can be either a DM or a player. He's the fellow who demands that anything that occurs or could possibly occur in the game be covered by rules and be followed exactly to the letter of those rules. He is also willing to argue endlessly about some minor point of rules until the DM or the other players are ready to concede the point, if only to shut him up. Chances are he may only be comfortable in a situation where he knows exactly how things will be. Ambiguity scares him. The Wargamer style of play (see Styles of Play) suits this fellow just fine.",
@@ -1361,10 +1388,9 @@
 					"page": 40,
 					"entries": [
 						{
-							"type": "insetReadaloud",
-							"page": 40,
+							"type": "quote",
 							"entries": [
-								"{@i \"Hey, can I have a little of your attention people? Kevin, finish painting the miniatures for the next game, OK? That was real good Mark, but I'm not certain I want to see how close you can put your roundhouse kick to my nose again tonight. Ron, Randy, if you need the stuff in those mere'magazines, you can get them out later. Uh, Lawrence, my wife was saving that gelatin dessert for a dinner party tomorrow. I'd prefer we used a miniature for the green slime instead.\"}"
+								"\"Hey, can I have a little of your attention people? Kevin, finish painting the miniatures for the next game, OK? That was real good Mark, but I'm not certain I want to see how close you can put your roundhouse kick to my nose again tonight. Ron, Randy, if you need the stuff in those mere'magazines, you can get them out later. Uh, Lawrence, my wife was saving that gelatin dessert for a dinner party tomorrow. I'd prefer we used a miniature for the green slime instead.\""
 							]
 						},
 						"Adventure gaming attracts\u2014how shall we say it?\u2014a unique type of person as a player. Anyone who prefers to spend a Friday night pretending to slay dragons and sling mighty magics is not the type who fits the so-called \"normal\" mold. More often than not, these people, often the DM's friends, have other unusual interests, hobbies and personalities. Strong, unusual personalities tend to exert themselves in gaming and readily find ways to come into conflict with other strong, unusual personalities.",
@@ -1377,13 +1403,12 @@
 					"page": 41,
 					"entries": [
 						{
-							"type": "insetReadaloud",
-							"page": 41,
+							"type": "quote",
 							"entries": [
-								"{@i \"Look, I'm running this game! If I say your stupid dwarf is dead, then he's dead.\"}",
-								"{@i \"But Thuenor should have been able to detect that trap. He made his detect trap roll just before you opened that pit up beneath him. Anyway, 6d6 is way too much damage for a 10-foot-deep pit.\"}",
-								"{@i \"Then it was 40 feet deep and had spikes in the bottom. Same difference\u2014he's dead!\"}",
-								"{@i \"But...forget it, I'll see what's on the tube. Let me know when everyone else dies.\"}"
+								"\"Look, I'm running this game! If I say your stupid dwarf is dead, then he's dead.\"",
+								"\"But Thuenor should have been able to detect that trap. He made his detect trap roll just before you opened that pit up beneath him. Anyway, 6d6 is way too much damage for a 10-foot-deep pit.\"",
+								"\"Then it was 40 feet deep and had spikes in the bottom. Same difference\u2014he's dead!\"",
+								"\"But...forget it, I'll see what's on the tube. Let me know when everyone else dies.\""
 							]
 						},
 						"What does it take to make a DM go sour? A rotten day at the office or school? Missed sleep? Family problems? A messed-up romance? The onset of pneumonia? Maybe even too much MSG in his Chinese takeout? Everyone has an off day sometime. Unfortunately, when the DM's turn takes place before a game session, everybody suffers.",
@@ -1397,12 +1422,11 @@
 					"page": 41,
 					"entries": [
 						{
-							"type": "insetReadaloud",
-							"page": 41,
+							"type": "quote",
 							"entries": [
-								"{@i \"You round the corner, following Lychor. Suddenly, you are surrounded by gnoll warriors. Your 'friend' Lychor is nowhere to be seen.\"}",
-								"{@i \"Grrrrr, that rat! We attack!\"}",
-								"{@i \"Before your group can do anything, Thuenor is struck by a dart, one of Lychor's black ones. As he feels its poison course through his veins, the dwarf hears 'that's for selling my spell book to the gnomes, you little wart'.\"}"
+								"\"You round the corner, following Lychor. Suddenly, you are surrounded by gnoll warriors. Your 'friend' Lychor is nowhere to be seen.\"",
+								"\"Grrrrr, that rat! We attack!\"",
+								"\"Before your group can do anything, Thuenor is struck by a dart, one of Lychor's black ones. As he feels its poison course through his veins, the dwarf hears 'that's for selling my spell book to the gnomes, you little wart'.\""
 							]
 						},
 						"Playing adventurers \"in character\" often leads to situations where the motivations and personality of one character lead him into direct conflict with another. If so, the DM may find himself Inoderating a tit for tat encounter which readily escalates to an all-out war between the characters (and quite possibly their players, too).",
@@ -1415,11 +1439,10 @@
 					"page": 41,
 					"entries": [
 						{
-							"type": "insetReadaloud",
-							"page": 41,
+							"type": "quote",
 							"entries": [
-								"{@i \"Cindy, will you tell that piece of shit over there that if his retarded dwarf ever tries that stunt again, he's fuckin' toast.\"}",
-								"{@i \"Oh yeah? Cindy, you tell hoser there that he can just forget his ride home tonight.\"}"
+								"\"Cindy, will you tell that piece of shit over there that if his retarded dwarf ever tries that stunt again, he's fuckin' toast.\"",
+								"\"Oh yeah? Cindy, you tell hoser there that he can just forget his ride home tonight.\""
 							]
 						},
 						"Always remember that this is a game and that characters in the DM's worlds exist free and clear of any personal problems that the players have with each other. If the DM suspects that intra-party treachery is occurring because player A dislikes player B, stop the activity immediately. Suggest that the players either behave themselves or find something else to do for the rest of the game session."
@@ -1431,13 +1454,12 @@
 					"page": 41,
 					"entries": [
 						{
-							"type": "insetReadaloud",
-							"page": 41,
+							"type": "quote",
 							"entries": [
-								"{@i \"The orcs attack the party while the fire giant goes after Sherimar.\"}",
-								"{@i \"Hey, what is this, bash the halfling thief night? How come all the nasties head straight for my character? And what's a fire giant doing here? You said the ceiling was only nine feet high.\"}",
-								"{@i \"He's standing in a low area that leads right to your character.\"}",
-								"{@i \"Yeah, sure. You're still upset that your dumb trap won't work 'cause I found out that a magic missile didn't work that way, aren't you? Guys, I need some help here...\"}"
+								"\"The orcs attack the party while the fire giant goes after Sherimar.\"",
+								"\"Hey, what is this, bash the halfling thief night? How come all the nasties head straight for my character? And what's a fire giant doing here? You said the ceiling was only nine feet high.\"",
+								"\"He's standing in a low area that leads right to your character.\"",
+								"\"Yeah, sure. You're still upset that your dumb trap won't work 'cause I found out that a magic missile didn't work that way, aren't you? Guys, I need some help here...\""
 							]
 						},
 						"Ever notice that sometimes the DM singles out a player's character for special punishment? Often that player did something to irritate the DM, like constantly arguing or disagreeing with the DM's judgment calls (rules lawyers beware!). So in turn, the DM goes out of the way to make life miserable (or succinctly short) for that character.",
@@ -1451,11 +1473,10 @@
 					"page": 43,
 					"entries": [
 						{
-							"type": "insetReadaloud",
-							"page": 43,
+							"type": "quote",
 							"entries": [
-								"{@i \"OK, so you trash the high priest and his pals. <Well{@sup [sic]}, just as the old guy is dying from Thuenor's sword thrust, he pulls on a hidden cord. The loud gong summons every priest in the castle, and they all appear in were-beast form. Meanwhile, an 18 inch thick steel plate blocks the exit.\"}",
-								"{@i \"I think she's mad at us, Frank, what do think?\"}"
+								"\"OK, so you trash the high priest and his pals. Well, just as the old guy is dying from Thuenor's sword thrust, he pulls on a hidden cord. The loud gong summons every priest in the castle, and they all appear in were-beast form. Meanwhile, an 18 inch thick steel plate blocks the exit.\"",
+								"\"I think she's mad at us, Frank, what do think?\""
 							]
 						},
 						"This is an extension {@i en masse} of DM pettiness. Maybe the players ganged up on the DM, foiling his best plans or backing up a fellow player's disagreement with a judgement call. So the DM retaliates. Neutrality is cast aside and the game becomes a shooting match, one that the DM can always win.",
@@ -1468,11 +1489,11 @@
 					"page": 43,
 					"entries": [
 						{
-							"type": "insetReadaloud",
+							"type": "quote",
 							"page": 43,
 							"entries": [
-								"{@i \"The martial artist leaps up at the three fighters, does a spinning side kick and knocks two of you down. B'rolfs hit points are reduced by twelve and Eyegor's by nine. He then...\"}",
-								"{@i \"No way, that's just not possible. A real martial artist would have to use two kicks and the fighters could have avoided them easily. I'm a brown belt in Tae Kwan Do and I know this stuff. Be real, and replay his attack the way it should be.\"}"
+								"\"The martial artist leaps up at the three fighters, does a spinning side kick and knocks two of you down. B'rolfs hit points are reduced by twelve and Eyegor's by nine. He then...\"",
+								"\"No way, that's just not possible. A real martial artist would have to use two kicks and the fighters could have avoided them easily. I'm a brown belt in Tae Kwan Do and I know this stuff. Be real, and replay his attack the way it should be.\""
 							]
 						},
 						"Assuming the player is a karate student (and the DM is not) he probably does know more about the martial arts than the DM. He could just as easily be an archery enthusiast challenging the DM on the realism of a barrage of arrows or an architect correcting the DM in his design of a castle. The point IS that the player is better informed on the subject than the DM and as an \"expert,\" he expects his special knowledge to both countermand one or more of the DM's game actions and allow his character to act as if he too possessed the same knowledge.",
@@ -1489,10 +1510,10 @@
 					"page": 43,
 					"entries": [
 						{
-							"type": "insetReadaloud",
+							"type": "quote",
 							"page": 43,
 							"entries": [
-								"{@i Four times during the game session, Rudy has informed the DM that the rules either don't reflect reality or that if the DM knew what he knew on the subject, the DM would obviously make a different decision. Each time, the subject was different and the player felt obliged to clarify the subject matter for all involved.}"
+								"Four times during the game session, Rudy has informed the DM that the rules either don't reflect reality or that if the DM knew what he knew on the subject, the DM would obviously make a different decision. Each time, the subject was different and the player felt obliged to clarify the subject matter for all involved."
 							]
 						},
 						"The expert (which we discussed above) and the know-it-all are two very closely related species of gamer. Chances are that the latter type of player does know his material, but the difference between them is that this fellow, the know-it-all, is very interested in letting people know that he knows more than they do and delights in the attention he gets when all eyes are focused on him.",
@@ -1507,10 +1528,9 @@
 					"page": 44,
 					"entries": [
 						{
-							"type": "insetReadaloud",
-							"page": 44,
+							"type": "quote",
 							"entries": [
-								"{@i \"Allright, Grimbor hits again and does 12 points of damage. You want to see my roll? Um, I think I knocked the dice over just after I rolled them...uh, yeah that's the ticket.\"}"
+								"\"Allright, Grimbor hits again and does 12 points of damage. You want to see my roll? Um, I think I knocked the dice over just after I rolled them...uh, yeah that's the ticket.\""
 							]
 						},
 						"Somehow, for some reason, some players think that it's OK to make up their own dice results. Yes, it improves the game outcome for their character, but is a character who always wins, who always does what he needs to do as wen as it could be done, as fun to playas one who occasionally messes up? What about the drama involved in missing a die roll and then knowing that the next one has to be made or it's all over, and the glorious relief and excitement when that next roll succeeds. Character creation is often where the cheating begins. Instead of rolling dice for character stats (or using some other method generally approved of by the group), the player makes sure that his favorite character attributes and money or background rolls are loaded with the best possible results.",
@@ -1524,10 +1544,9 @@
 					"page": 44,
 					"entries": [
 						{
-							"type": "insetReadaloud",
-							"page": 44,
+							"type": "quote",
 							"entries": [
-								"{@i The dice fall-sixteen, eighteen, and twenty-one, uh oh. The DM looks at his notes and back to the dice again. If he uses those results, half the party is dead. Still, they are the results of a fair dice roll. So close, yet so far. Still, instead of killing the characters outright, he could throw something else at them, something equally deadly, but which will give them a chance to survive\u2014if they're clever.}"
+								"The dice fall-sixteen, eighteen, and twenty-one, uh oh. The DM looks at his notes and back to the dice again. If he uses those results, half the party is dead. Still, they are the results of a fair dice roll. So close, yet so far. Still, instead of killing the characters outright, he could throw something else at them, something equally deadly, but which will give them a chance to survive\u2014if they're clever."
 							]
 						},
 						"In our earlier section on Pacing & Theatrics we talked about constructive cheating, or fudging. There, we suggested it as a way to improve the quality of the game. So now we have established a double standard: it's OK for DMs to cheat, but not players.",
@@ -1545,13 +1564,12 @@
 					"page": 45,
 					"entries": [
 						{
-							"type": "insetReadaloud",
-							"page": 45,
+							"type": "quote",
 							"entries": [
-								"{@i Randy: \"Herb, wait until it's your turn.\"}",
-								"{@i Herb: \"Oh, stuff it, dickbreath, my character's doing something more important than yours right now anyway.\"}",
-								"{@i Rita: \"Guys, where's the last beer I left in the fridge? I can't find it.\"}",
-								"{@i Herb: \"Hey, URRRRP!!, I'm sorry, OK? How was I to know that was your last bottle.\"}"
+								"Randy: \"Herb, wait until it's your turn.\"",
+								"Herb: \"Oh, stuff it, dickbreath, my character's doing something more important than yours right now anyway.\"",
+								"Rita: \"Guys, where's the last beer I left in the fridge? I can't find it.\"",
+								"Herb: \"Hey, URRRRP!!, I'm sorry, OK? How was I to know that was your last bottle.\""
 							]
 						},
 						"Grumpiness, grouchiness, bad manners, interrupting players during their turns, eating food that wasn't intended to be shared\u2014whatever\u2014the end result is that one player (or more) is acting in a way that insults or annoys his fellow players and the DM. This type of behavior encompasses a lot, from the guy who openly insults someone else (even a joke can hurt) to the fellow who presumes that the food in the host's fridge was provided for his benefit. Most people have enough tact to keep unpleasantries to themselves or to behave within the boundaries of common courtesy. When they don't, tension and bad feelings rapidly increase.",
@@ -1565,11 +1583,11 @@
 					"page": 45,
 					"entries": [
 						{
-							"type": "insetReadaloud",
+							"type": "quote",
 							"page": 45,
 							"entries": [
-								"{@i \"Yikes, it's eight o'clock! I was supposed to be home at 7:30! I'm in for it now. See you next week, guys.\"}",
-								"{@i \"What happens to Frank's dwarf? Thuenor was the only fighter we had lift.\"}"
+								"\"Yikes, it's eight o'clock! I was supposed to be home at 7:30! I'm in for it now. See you next week, guys.\"",
+								"\"What happens to Frank's dwarf? Thuenor was the only fighter we had lift.\""
 							]
 						},
 						"It would be nice if the outside world could be kept from intruding on the DM's carefully ordered game world. However, players are people (it's really true!) and people often have commitments that take them away from the gaming table. The fact that Thuenor is the party's only fighter means little to a player's wife if he was supposed to be home an hour before. Likewise, a player's urgent need to \"pay rent\" on the two litres of soda pop he's ingested since the game began may not wait for a convenient rest break. Either way, a player character disappears from the game, often at an inopportune moment.",
@@ -1621,7 +1639,7 @@
 							"entries": [
 								"Control of the character shifts to another player until his original player's return. The new player treats the character just like one of his own. Unfortunately, any secret information recorded on the character sheet is revealed to the new player. Furthermore, any special knowledge known only to the original player and the DM is usually not shared.",
 								"The solution really depends on the playing style of the group and how long the player expects to be gone and possibly even his reason for leaving. Zapping the character of a player who has to make a mad dash for the bathroom is grossly unfair, but the same cannot be said for the player who becomes engrossed in a movie showing on television.",
-								"All in all, we have found that the last two solutions, polymorphing into an NPC and changing hands, work well in almost every situation. Most of the other, more dramatic solutions, should be used sparingly (if at all) for they tend to disturb the \"suspension{@sup [sic]} of disbelief which is integral to any roleplaying game.",
+								"All in all, we have found that the last two solutions, polymorphing into an NPC and changing hands, work well in almost every situation. Most of the other, more dramatic solutions, should be used sparingly (if at all) for they tend to disturb the \"suspension of disbelief\" which is integral to any roleplaying game.",
 								"Whatever the choice, remember this: chances are that the DM may find himself a player in campaign run by that very same player. Revenge is often fatal, final and unpleasantly sweet."
 							]
 						}
@@ -1633,14 +1651,14 @@
 					"page": 46,
 					"entries": [
 						{
-							"type": "insetReadaloud",
+							"type": "quote",
 							"page": 46,
 							"entries": [
-								"{@i \"Sandy, have Clarissa the mighty open the left side of the box first.\"}",
-								"{@i \"Sandy, I'm afraid you can't act on that. Dave's character is dead and he's not fuckin' here right now, are you Dave?\"}",
-								"{@i \"Uh, no, I guess not, but I think she should also eckchay for apstray before opening the box.\"}",
-								"{@i \"Yeah, Clarissa checks for traps before opening the left side of the box.\"}",
-								"{@i \"Arrrrghh. Dave, get out of here and roll your next character\u2014and put him about a million experience points in the hole, too!\"}"
+								"\"Sandy, have Clarissa the mighty open the left side of the box first.\"",
+								"\"Sandy, I'm afraid you can't act on that. Dave's character is dead and he's not fuckin' here right now, are you Dave?\"",
+								"\"Uh, no, I guess not, but I think she should also eckchay for apstray before opening the box.\"",
+								"\"Yeah, Clarissa checks for traps before opening the left side of the box.\"",
+								"\"Arrrrghh. Dave, get out of here and roll your next character\u2014and put him about a million experience points in the hole, too!\""
 							]
 						},
 						"Is the DM going to allow communication between players whose characters are either dead or separated by a sound-stifling distance? The situation is bound to arise. The character who takes independent actions may try to pass on what he has learned to his compatriots to help them catch up (or, more likely, rescue him from some predicament) or the sole survivor of a party gets lots of help from his deceased buddies when he tries to solve the puzzle that stands between himself and freedom (and, coincidentally, the opportunity to resurrect their characters).",
@@ -1654,11 +1672,11 @@
 					"page": 46,
 					"entries": [
 						{
-							"type": "insetReadaloud",
+							"type": "quote",
 							"page": 46,
 							"entries": [
-								"{@i \"My Dwarf fighter, Thuenor, throws his mattock so it lands on top of the wall, steps back, and. with a short run, leaps up to grab the top of the wall. He gets his weapon, dives into the water, and swims to the far shore.\"}",
-								"{@i \"Six impossible things before breakfast, eh, Frank? (Sigh.) You sure that he doesn't want to walk on the water instead? OK, I'm gonna need some die rolls.\"}"
+								"\"My Dwarf fighter, Thuenor, throws his mattock so it lands on top of the wall, steps back, and. with a short run, leaps up to grab the top of the wall. He gets his weapon, dives into the water, and swims to the far shore.\"",
+								"\"Six impossible things before breakfast, eh, Frank? (Sigh.) You sure that he doesn't want to walk on the water instead? OK, I'm gonna need some die rolls.\""
 							]
 						},
 						"Players want their characters to do the darndest things. They're heroes, right? Heroes do heroic things. Yet, reality (often in the form of immutable physical or magical laws) has to be considered.",
@@ -1674,17 +1692,17 @@
 					"page": 47,
 					"entries": [
 						{
-							"type": "insetReadaloud",
+							"type": "quote",
 							"page": 47,
 							"entries": [
-								"{@i \"OK, Gary, the three fighters Hank around to the left, Sherimar the thief works her way across the wall above the door, and the wizard, Lychor, walks up the middle as if he suspected nothing.\"}",
-								"{@i \"Fine. Except that Lychor doesn't seem to be here anymore.\"}",
-								"{@i \"What?\"}",
-								"{@i \"Where'd he go?\"}",
-								"{@i \"Grrrrr!\"}",
-								"{@i \"I'm going to get that sneak.\"}",
-								"{@i \"Quit snickering Dave, where's that mage of yours gotten off to?\"}",
-								"{@i \"Waitaminit guys. Change of plans, Gary. We're gonna leave the ogres for later. Let's go nuke us a wizard!\"}"
+								"\"OK, Gary, the three fighters Hank around to the left, Sherimar the thief works her way across the wall above the door, and the wizard, Lychor, walks up the middle as if he suspected nothing.\"",
+								"\"Fine. Except that Lychor doesn't seem to be here anymore.\"",
+								"\"What?\"",
+								"\"Where'd he go?\"",
+								"\"Grrrrr!\"",
+								"\"I'm going to get that sneak.\"",
+								"\"Quit snickering Dave, where's that mage of yours gotten off to?\"",
+								"\"Waitaminit guys. Change of plans, Gary. We're gonna leave the ogres for later. Let's go nuke us a wizard!\""
 							]
 						},
 						"Successful adventuring parties survive and thrive because of teamwork. Yet not every player feels that his character's best interests are served by continually going along with the group's actions. More often than n04 these are the players whose characters are not the leader types. Their characters hang near the back while the party's movers and shakers plot the team's next action. Notes passed to the DM from these players describe activities to be performed (secretly if possible) by the player's character. When the group goes one way, the independent PC goes the other.",
@@ -1700,12 +1718,12 @@
 					"page": 47,
 					"entries": [
 						{
-							"type": "insetReadaloud",
+							"type": "quote",
 							"page": 47,
 							"entries": [
-								"{@i \"Bruno says 'Go eat sjelkunga berries, scroggly face' to the old man.\"}",
-								"{@i \"OK, Bruno, you've just insulted N'gojorogo, the high chief of all the J'garta barbarian tribes. He is unimpressed by your manners and orders the young chieftain, the one you thought was in charge here, to have you pierced through with poisoned spears.\"}",
-								"{@i \"No, wait, that's not what Bruno says... what he really said was...\"}"
+								"\"Bruno says 'Go eat sjelkunga berries, scroggly face' to the old man.\"",
+								"\"OK, Bruno, you've just insulted N'gojorogo, the high chief of all the J'garta barbarian tribes. He is unimpressed by your manners and orders the young chieftain, the one you thought was in charge here, to have you pierced through with poisoned spears.\"",
+								"\"No, wait, that's not what Bruno says... what he really said was...\""
 							]
 						},
 						"Bruno's player seems to have neglected to think about the consequences of his player's actions. He has committed a wrong, and now that he has to pay the price, he wants to recall his action, to make it as if it bad never happened. One can bet that if the DM had said, \"the old man quivers in fear and offers you 100 gold coins in tribute\" that player wouldn't want to change his mind.",
@@ -1720,10 +1738,10 @@
 					"page": 48,
 					"entries": [
 						{
-							"type": "insetReadaloud",
+							"type": "quote",
 							"page": 48,
 							"entries": [
-								"{@i Dear John: Think back When did we last spend a Saturday together? Can't remember? Well, all your Saturdays are free from now on. My lawyer will call next week. With regrets, your soon-to-be-ex-wife, Sharon.}"
+								"Dear John: Think back When did we last spend a Saturday together? Can't remember? Well, all your Saturdays are free from now on. My lawyer will call next week. With regrets, your soon-to-be-ex-wife, Sharon."
 							]
 						},
 						"Dear John: Think back When did we last spend a Saturday together? Can't remember? Well, all your Saturdays are free from now on. My lawyer will call next week. With regrets, your soon-to-be-ex-wife, Sharon."
@@ -1735,10 +1753,10 @@
 					"page": 48,
 					"entries": [
 						{
-							"type": "insetReadaloud",
+							"type": "quote",
 							"page": 48,
 							"entries": [
-								"{@i \"Shouldn't they have all been here by now?...If we don't start soon, there won't be enough time to do anything...I doubt if Clarissa the mighty and Whandar can take on this quest by themselves tonight...I've tried calling, but nobody's home... I'm certain they knew there was a game tonight. \"}"
+								"\"Shouldn't they have all been here by now?...If we don't start soon, there won't be enough time to do anything...I doubt if Clarissa the mighty and Whandar can take on this quest by themselves tonight...I've tried calling, but nobody's home... I'm certain they knew there was a game tonight.\""
 							]
 						},
 						"It happens\u2014at the last minute nearly everybody cancels out, leaving the DM and one or two other players sitting alone in a room trying to decide how to proceed. Unfortunately, the campaign often depends on having all the PCs and the creativity of those who didn't show up. If the DM lets the players who did show run a herd of NPCs, much of the plot value of the galne is gone. If he lets them run the other players' characters, he either has to enforce the 'reality' and 'pennanence' of any datnage or death that occurs or treat the whole play session as a dream seq uence that never really happened. Although this cheats the actual players out of experiencing this part of the adventure, they are the ones who chose not to show up.",
@@ -1754,10 +1772,10 @@
 					"page": 49,
 					"entries": [
 						{
-							"type": "insetReadaloud",
+							"type": "quote",
 							"page": 49,
 							"entries": [
-								"{@i \"Table number three, I'll take the statements of intent from your characters now. Please be quick, I'd like to get in at least three rounds of com bat tonight. And now for the RPGA scoring...\"}"
+								"\"Table number three, I'll take the statements of intent from your characters now. Please be quick, I'd like to get in at least three rounds of com bat tonight. And now for the RPGA scoring...\""
 							]
 						},
 						"For every group that can't get enough players, there's always one that has too many. Often, the reason is a popular DM. He runs a good game and players want to play in his campaign. He only has time for one group, so everyone plays together.",
@@ -1766,14 +1784,14 @@
 				},
 				{
 					"type": "entries",
-					"name": "DM Bumout",
+					"name": "DM Burnout",
 					"page": 49,
 					"entries": [
 						{
-							"type": "insetReadaloud",
+							"type": "quote",
 							"page": 49,
 							"entries": [
-								"{@i The DM sat staring at his game notes. Before him lay a sheet of note paper, blank except for an aimless doodle. For nearly an hour, no inspiration had come for Saturday's game, making tonight a dismal repeat of last night. In fact even running the game seemed like a terminal chore.}"
+								"The DM sat staring at his game notes. Before him lay a sheet of note paper, blank except for an aimless doodle. For nearly an hour, no inspiration had come for Saturday's game, making tonight a dismal repeat of last night. In fact even running the game seemed like a terminal chore."
 							]
 						},
 						"Authors call it \"writer's block.\" It Business executives call it \"burn out\". Whatever the name, it can affect DMs, too. The general symptoms include a lack of inspiration for new game material, a loss of enthusiasm about running games, and the dismal feeling after a game that you didn't do a good job.",
@@ -1814,7 +1832,7 @@
 						"Asking the DM to even attempt to handle every aspect of game world creation is similar to asking the architect of a major construction project to do the plumbing and wiring himself. Chances are he can do it sooner or later, but meanwhile, the building goes unfinished. In a like manner, the DM can take forever and try to cover every detail of his world himself, but why do it? Why not involve the players? Let them do some of the work of creating cultures, religions, and area maps for parts of the world. Great idea, but how?",
 						"Let the players come from parts of the world other than where the campaign will initially take place. If a player wants to play a seafaring barbarian, give him a coastal or island area from which his people originate. Give him a peek at what has been roughed out for that area. Encourage the player to make notes about what goes on in his comer of the world. Much of this can come from his character background. Who are his people's gods? Do they have any peculiar customs? What are the major cities? Encourage the player to draw the regional maps for his homeland. The more the player details his character's culture and homeland, the more he designs that portion of the DMs world.",
 						"In a similar manner, the players of priests and paladins can expand upon the nature of gods and religions in the DM's world. Thief characters may be both the basis for a thieves' guild and an overview of the laws of the land (particularly as they relate to larceny).",
-						"Now this doesn't mean that everything that the player says has to be law. In fact, the creative DM will take what the player gives him, and modify it ever so slightly to reflect what the DM knows to be true of his world (things the player's character wouldn't or couldn't know). Does it matter that the player knows what part of the   world map looks like? Not particularly. It is his character's homeland.",
+						"Now this doesn't mean that everything that the player says has to be law. In fact, the creative DM will take what the player gives him, and modify it ever so slightly to reflect what the DM knows to be true of his world (things the player's character wouldn't or couldn't know). Does it matter that the player knows what part of thequote world map looks like? Not particularly. It is his character's homeland.",
 						"Listen to the players. Although much of the core design and development falls on the DM's shoulders, don't design the world without listening to the players. What do they want to do? What kind of adventures do they seek? What interests them? Design the core area and the first adventure to meet these desires. It would be folly to design a campaign around political intrigue or a grand mystery when what the players really want are monster hunts and dungeon crawls. As the players become involved in the DM's world, the DM can rely upon them for inspiration."
 					]
 				}
@@ -1847,9 +1865,7 @@
 						"The decision to make \"the plunge\" has been made. The experienced or novice DM has decided to make a new world. He accepts the challenges that lie before him and understands that it is no small project he undertakes. Since a large task is always easier when partitioned into smaller, easier-to-handle chunks, it is best to divide the work into stages. For world creation, those stages are outlined below:",
 						{
 							"type": "list",
-							"style": "list-hang",
 							"columns": 0,
-							"page": 54,
 							"items": [
 								"World Building: Its geology & ecology",
 								"Filling with Fauna: Its beasts",
@@ -1875,7 +1891,6 @@
 						"Along with any ideas that spring to mind, the DM should know (and have written down) at least some information on the following topics regarding his world-to-be:",
 						{
 							"type": "list",
-							"style": "list-hang",
 							"columns": 0,
 							"page": 54,
 							"items": [
@@ -2316,26 +2331,121 @@
 								"The following is a list of government types which may be found in a typical AD&D® game.",
 								{
 									"type": "list",
-									"style": "list-hang",
 									"columns": 0,
 									"page": 68,
 									"items": [
-										"{@b Autocracy:} Government which rests in self-derived, absolute power, typified by a hereditary king or emperor.",
-										"{@b Bureaucracy:} Government by department, ruled by the heads of those departments and conducted through layers and layers of lesser administrators.",
-										"{@b Confederacy:} Government by an alliance or league of lesser governmental bodies or social organizations.",
-										"{@b Democracy:} Government by the people, that is an established body of citizens, either directly or through elected representatives.",
-										"{@b Dictatorship:} A nonhereditary government whose final authority rests in the hands of a supreme ruler, who is often of a tyrannical nature.",
-										"{@b Feudality:} Government of a feudal nature, in which each successive layer of authority derives its power from the layer above and pledges allegiance in return.",
-										"{@b Hierarchy:} A typically religious government similar in nature to Feudality.",
-										"{@b Magiocracy:} A government of wizards.",
-										"{@b Matriarchy:} Government by the eldest or wisest females.",
-										"{@b Militocracy:} Government by the leaders of the military and enforced by military might.",
-										"{@b Monarchy:} Rule by a single sovereign, usually hereditary. May be an absolute ruler (see Autocracy) or with power limited and delegated in some form, such as through a council of lords.",
-										"{@b Oligarchy:} Government by a few (and usually absolute) rulers who each have equal authority. Patriarchy: Government by the eldest and wisest males.",
-										"{@b Pedocracy:} Government by the learned, the sages, and scholars.",
-										"{@b Plutocracy:} Government by the wealthy.",
-										"{@b Theocracy:} Government based exclusively on religious teachings, usually headed by the most powerful clerics of a specific deity.",
-										"{@b Syndicracy:} Government by a body of syndics, that is, representatives of various business interests. Such a state may, in fact, be a confederacy of criminal cartels working together to provide for their own interests."
+										{
+											"type": "item",
+											"name": "{@i Autocracy:}",
+											"entries": [
+												"Government which rests in self-derived, absolute power, typified by a hereditary king or emperor."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Bureaucracy:}",
+											"entries": [
+												"Government by department, ruled by the heads of those departments and conducted through layers and layers of lesser administrators."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Confederacy:}",
+											"entries": [
+												"Government by an alliance or league of lesser governmental bodies or social organizations."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Democracy:}",
+											"entries": [
+												"Government by the people, that is an established body of citizens, either directly or through elected representatives."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Dictatorship:}",
+											"entries": [
+												"A nonhereditary government whose final authority rests in the hands of a supreme ruler, who is often of a tyrannical nature."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Feudality:}",
+											"entries": [
+												" Government of a feudal nature, in which each successive layer of authority derives its power from the layer above and pledges allegiance in return."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Hierarchy:}",
+											"entries": [
+												"A typically religious government similar in nature to Feudality."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Magiocracy:}",
+											"entries": [
+												"A government of wizards."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Matriarchy:}",
+											"entries": [
+												"Government by the eldest or wisest females."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Militocracy:}",
+											"entries": [
+												"Government by the leaders of the military and enforced by military might."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Monarchy:}",
+											"entries": [
+												"Rule by a single sovereign, usually hereditary. May be an absolute ruler (see Autocracy) or with power limited and delegated in some form, such as through a council of lords."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Oligarchy:}",
+											"entries": [
+												"Government by a few (and usually absolute) rulers who each have equal authority. Patriarchy: Government by the eldest and wisest males."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Pedocracy:}",
+											"entries": [
+												"Government by the learned, the sages, and scholars."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Plutocracy:}",
+											"entries": [
+												"Government by the wealthy."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Theocracy:}",
+											"entries": [
+												"Government based exclusively on religious teachings, usually headed by the most powerful clerics of a specific deity."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Syndicracy:}",
+											"entries": [
+												"Government by a body of syndics, that is, representatives of various business interests. Such a state may, in fact, be a confederacy of criminal cartels working together to provide for their own interests."
+											]
+										}
 									]
 								},
 								"It is important to keep in mind that these governments are not mutually exclusive. If one considers the current state of affairs in the United States of America, we find that it contains many of the features typical to a democracy and a bureaucracy. Further, there are those who might claim that is also something of a plutocracy. As you can see, there is room for debate and an endless variety of potential combinations."
@@ -2396,7 +2506,6 @@
 								"Regardless of whether the DM decides to create the world's mythology all at once, or develop small sections as needed, the process is the same. Read the sections that follow, making notes to answer these questions:",
 								{
 									"type": "list",
-									"style": "list-hang",
 									"columns": 0,
 									"page": 69,
 									"items": [
@@ -2722,7 +2831,7 @@
 						"The first step in map creation is to decide how much of the world is going to be shown on a single map page. At the DM's choice, a single map (regardless of paper size) can show an entire world, a continent, a kingdom, a barony, a castle, or just a few rooms in an underground dungeon. The deciding factor is map scale-the relationship between a measurelnent on the map and its corresponding measurement in the real world (which is also called full scale).",
 						"To show a great deal of the world, the scale relationship of the map to the actual world must be quite large. Each unit of measurement on the map must represent many miles. While such a map gives an overview of the world and its major features, it is noticeably Jacking in fine detail. The DM must also create smaller scale regional maps as they are needed Regional maps reveal the locations of villages, streams, castles, ruins and so forth.",
 						"Even smaller scale maps are used for encounter areas. They are often floor plans for castles, towers, ruins, dungeons, and buildings. Such small scale maps are blowups of specific areas. The scale is measured in feet, not miles.",
-						"Choose a scale for the map that best suits the needs of the map. A regional Inap drawn at a scale of one inch or one hex equaling 1,000 feet gives too much detail and not enough overview of the region (and also Inakes much more work for the DM, who must draw an incredible number of such maps to depict even a single barony). Likewise, a dungeon map drawn with each  1⁄8th inch square equalling 100 feet is great for plotting large cavern complexes that stretch on for thousands of feet, but does not show enough detail to depict doors, traps, and stairs in a castle or dungeon.",
+						"Choose a scale for the map that best suits the needs of the map. A regional Inap drawn at a scale of one inch or one hex equaling 1,000 feet gives too much detail and not enough overview of the region (and also Inakes much more work for the DM, who must draw an incredible number of such maps to depict even a single barony). Likewise, a dungeon map drawn with eachquote1⁄8th inch square equalling 100 feet is great for plotting large cavern complexes that stretch on for thousands of feet, but does not show enough detail to depict doors, traps, and stairs in a castle or dungeon.",
 						"Remember to mark the map scale on each map\u2014it saves trying to remember what was intended when one looks at a map three months or three years after it was drawn."
 					]
 				},
@@ -2788,7 +2897,7 @@
 							"page": 79,
 							"entries": [
 								"More often than not, this map will be an interior space\u2014the floorplan of a building, cavern, or dungeon. It also may represent the layout of a village, ruin, or a monster encampment. It can also be used for ships, forest clearings, or ambush sites. As the DM draws the plan he needs, special consideration must be given to how it might look and function if it were real. If the encounter takes place in a \"made\" area then it was economically feasible for someone to have built it.",
-								"The DM needs to ask himself if a building based upon his floor plan could stand by itself. What supports the r.oof?{@sup [sic]} Are the walls thick enough to actually be made out of stone? How are any secret passageways or doors hidden in the construction? Is there any provision for heat, light, or sanitation?",
+								"The DM needs to ask himself if a building based upon his floor plan could stand by itself. What supports the roof? Are the walls thick enough to actually be made out of stone? How are any secret passageways or doors hidden in the construction? Is there any provision for heat, light, or sanitation?",
 								"Next he needs to consider the game aspects of the map and the ways it can enhance play. Does it guide or restrict movement in a desirable manner? Does it provide opportunities for strategic maneuvering by the PCs and their foes? Is it an interesting backdrop for the action? If the answer is \"no\" to any of the above, the DM should get out his eraser and make modifications as needed."
 							]
 						}
@@ -3023,7 +3132,6 @@
 				"There is no One True Way to design a good adventure. Every DM has his own style, methods, and procedures to accomplish the same end. Even the elements that make for an exciting adventure vary and often are nothing more than a matter of personal opinion. Yet for those who play regularly, the difference between good adventures and even mediocre ones is clear. The former grabs the players' attention and draw them into a world of mystery, action and intrigue, the latter merely provides a few hours of mild diversion. Opinion aside, truly gripping adventures shares many common features:",
 				{
 					"type": "list",
-					"style": "list-hang",
 					"columns": 0,
 					"page": 84,
 					"items": [
@@ -3043,7 +3151,7 @@
 					"page": 85,
 					"entries": [
 						"Start the adventure design process by evaluating the players in the Campaign and deciding what kind of adventures will satisfy their playing styles (novice DMs can skip this step until they know their regular players better).",
-						"Most players fit into one of three general types: Adventures{@sup [sic]} , Probiem Solvers or Role-players. Each type brings a different attitude to a roleplay game.",
+						"Most players fit into one of three general types: Adventurers, Probiem Solvers or Role-players. Each type brings a different attitude to a roleplay game.",
 						"A mismatch of adventure to playing style often results in reduced enjoyment for all concerned. Since most groups will contain one or more of each type, a good adventure is balanced between the various styles of play.",
 						{
 							"type": "entries",
@@ -3119,10 +3227,34 @@
 									"columns": 0,
 									"page": 87,
 									"items": [
-										"{@b {@i Episode one:}} The PCs scout the area. They encounter several hideous monsters in the area.",
-										"{@b {@i Episode two:}} The monsters organize a return ambush in an empty village.",
-										"{@b {@i Episode three:}} The lone surviving resident of the village is dying and frightened. If healed and befriended, he tells of the temple where the monsters dwell.",
-										"{@b {@i Climax:}} The adventurers try to ambush the monsters in their lair."
+										{
+											"type": "item",
+											"name": "{@i Episode one:}",
+											"entries": [
+												"The PCs scout the area. They encounter several hideous monsters in the area."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Episode two:}",
+											"entries": [
+												"The monsters organize a return ambush in an empty village."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Episode three:}",
+											"entries": [
+												"The lone surviving resident of the village is dying and frightened. If healed and befriended, he tells of the temple where the monsters dwell."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Climax:}",
+											"entries": [
+												"The adventurers try to ambush the monsters in their lair."
+											]
+										}
 									]
 								},
 								"This is a simple, straightforward plot, with much physical conflict and a bit of role-playing to make it successful. It's also a dull plot. Missing are the complications that add depth to the story, the subplots that weave in and out of the main tale and often personally involve the PCs.",
@@ -3134,11 +3266,41 @@
 									"columns": 0,
 									"page": 87,
 									"items": [
-										"{@b {@i Episode two:}} At night, the PCs are challenged by angry villagers who do riot want them here. Many villagers are strange-looking, even ugly, but in the firelight its difficult to say why. The encounter may end in a fight.",
-										"{@b {@i Episode three:}} A frightened villager seeks shelter in the PCs camp, but disappears during the night.",
-										"{@b {@i Episode four:}} If the PCs track the villager, they discover an abandoned temple with odd riddles and fierce magical guardians. Trails indicate that the monsters live here. The villager from episode two warns them to leave. He looks different now.",
-										"{@b {@i Episode five:}} The PCs solve the puzzles of the temple and defeat the guardians. They press on into the monster lairs and discover the sleeping bodies of villagers with monster-like attributes.",
-										"{@b {@i Climax:}} The PCs attempt to destroy the thing that changes villagers into monsters, despite the villagers' actions to stop them. If they spend too long here, the PCs undergo minor, monstrous changes."
+										{
+											"type": "item",
+											"name": "{@i Episode two:}",
+											"entries": [
+												"At night, the PCs are challenged by angry villagers who do riot want them here. Many villagers are strange-looking, even ugly, but in the firelight its difficult to say why. The encounter may end in a fight."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Episode three:}",
+											"entries": [
+												"A frightened villager seeks shelter in the PCs camp, but disappears during the night."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Episode four:}",
+											"entries": [
+												"If the PCs track the villager, they discover an abandoned temple with odd riddles and fierce magical guardians. Trails indicate that the monsters live here. The villager from episode two warns them to leave. He looks different now."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Episode five:}",
+											"entries": [
+												"The PCs solve the puzzles of the temple and defeat the guardians. They press on into the monster lairs and discover the sleeping bodies of villagers with monster-like attributes."
+											]
+										},
+										{
+											"type": "item",
+											"name": "{@i Climax:}",
+											"entries": [
+												"The PCs attempt to destroy the thing that changes villagers into monsters, despite the villagers' actions to stop them. If they spend too long here, the PCs undergo minor, monstrous changes."
+											]
+										}
 									]
 								},
 								"The story can be further complicated by having one of the empty villages be the home of one of the PCs or by having the baron and his guards show up to deal with the weakened PCs, thus tying up his own loose ends. The climactic end may not be the battle with monsters, but the running battle with the corrupt nobleman's henchmen.",
@@ -3166,7 +3328,6 @@
 								"Complicated plots are more exciting than simple ones-ask anyone who reads for enjoyment. The same holds true for gaming. Most plot twists involve incorrect or insufficient infomation supplied to the PCs or someone working at cross purposes to them. These are the little (or big) surprises for which even the best of problem solvers cannot plan ahead. The following are suggestions, but with a little ilnagination the creative DM can go beyond them. Fiction and film are wonderful sources for these little gems.",
 								{
 									"type": "list",
-									"style": "list-hang",
 									"columns": 0,
 									"page": 88,
 									"items": [
@@ -3642,7 +3803,7 @@
 							"entries": [
 								"Castles, and other above ground structures, can, as a rule, be attacked from a number of sides. Even structures which are built on lakes, beside mountains, or in other secluded or protected areas are not wholly inaccessible. As such, the defenders are forced to split their forces along every possible exposed surface lest the attackers overwhelm their defenses in some area.",
 								"Underground structures, even those with more than one entrance, can still expect attacks to come from only one direction: above. The net result is that fewer defenders are required to keep an area secure. On the other hand if you choose to maintain the same number of defenders, you can greatly increase their effectiveness. Underground fortifications require a would-be attacker to expend far more troops in any attempt to overrun a defending force.",
-								"Some may point out that there are a number of burrowing creatures, like {@creature Xorn|MC2|xorns}  or {@creature Purple Worm|MC@|purple worms}, which pose threats to all sides of a catacomb complex. While this is true, it is important to remember that these creatures are, fortunately, few and far between. Further, they are seldom if ever marshalled into a coherent fighting force. In fact, even if this was not the case and someone managed to assemble an army of xorn warriors, they would be just as dangerous (if not more so) to an above ground fortification."
+								"Some may point out that there are a number of burrowing creatures, like {@creature Xorn|MC2|xorns}quoteor {@creature Purple Worm|MC@|purple worms}, which pose threats to all sides of a catacomb complex. While this is true, it is important to remember that these creatures are, fortunately, few and far between. Further, they are seldom if ever marshalled into a coherent fighting force. In fact, even if this was not the case and someone managed to assemble an army of xorn warriors, they would be just as dangerous (if not more so) to an above ground fortification."
 							]
 						},
 						{
@@ -3719,16 +3880,60 @@
 							"entries": [
 								"The examples presented above are intended to provide a dungeon master who is planning to run an underground campaign with a variety of settings which will be more or less familiar to the players. One drawback to such dungeons, however, is that they can become trite. After all, characters who spend most of their time in sea caves and limestone caverns will probably long for a change of scenery from time to time. The following section is meant to provide a referee with some ideas for a change of pace.",
 								"The basic premise which we have followed so far assumes that a dungeon complex is formed either by man, nature, or animals as an underground structure. But what happens if we take a building which was intended to stand on the surface, and then tum it into a dungeon? Here are a number of ways in which otherwise normal buildings can be converted into subterranean complexes just begging to be explored by adventurers.",
-								"{@b Sand Storms:} In the myths and legends of many cultures dwelling near or amid the sands of a great desert, there are tales of mighty sandstorms. In regions of the world where the desert is particularly prone to such tempests whole cities have been known to vanish from the face of the earth.",
-								"The cultures in and around the Sahara Desert in North Africa are filled with stories of cities \"swallowed up\" by the blowing sands.",
-								"{@b Silting:} On the opposite end of the spectrum, we have silting. In order to have a dungeon created by silting, a region must be flooded by rising waters and left submerged for an extended period of time. As the years pass, sediment carried in the water begins to collect around the structures and, eventually, they will be completely covered by mud and debris. Then, as the climate changes or is altered, the water recedes or is drawn away. If enough time has passed, the silt covered buildings will look like nothing more than mounds of earth. Anyone who takes the time to dig a little deeper, however, will learn the truth.",
-								"{@b Volcanism:} Volcanism is a wonderful tool for transforming above ground structures into underground dungeons. Perhaps the mightiest natural force known to man, a volcanic eruption can send sheets of lava boiling across a region, instantly covering it in rock as it cools. In addition to lava, of course, volcanoes are known to unleash rivers of mud which, when it dries, can also encase cities or villages in stone or hard earth. Even volcanic ash, powdered stone created by the mighty living mountain, can entomb whole cities. Over the years, it too will harden into stone.",
-								"Perhaps the most well known example of volcanic entombment is the buried city of Pompeii.",
-								"{@b Overgrowing:} Far less dramatic than volcanism, overgrowing is a natural process found in many parts of the world. It takes place when a building or village. in a heavy forest or jungle region is abandoned by its owners for some reason. Over the years, the jungle vines and plants, which were kept at bay only by the actions of the inhabitants, return to the area. In a fairly short period of time, the jungle may become so thick that it is almost impossible to pass through it. Dungeons formed in this manner are still above the surface of the earth, but are so cloaked in vegetation as to be unreachable by all but a few means. Once inside a structure which has been overgrown, adventurers will find themselves able to exit only by those few openings which remain in the foliage around the building.",
-								"Examples of overgrown structures in our own history which might make superb dungeons are the Aztec and Mayan cities found in South and Central America.",
-								"{@b Magic:} Of course, the thing which makes the AD&D® game world more than just a history lesson IS the introduction of magic into an otherwise fairly common medieval setting. Just as magic can make many common things wondrous, so too can it make ordinary settings into exciting dungeons to test the metal of your bravest knights and most pious priests.",
-								"Powerful magicks can be used to create dungeons of unusual nature or serve to guard them with unnatural defenders. Of course, the magical powers of priests and druids should not be discounted here. Consider, for example, the section on overgrown jungles above and then imagine a druid's hand in the background. What was once a simple patch of brambles might grow into a deadly labyrinth guarding some ancient druidic secret.",
-								"{@b Above Ground Dungeons:} While this may seem to be a contradiction in terms to the novice referee or player, it is not. In our own history there are numerous structures which make excellent dungeon settings just as they are. For example, we don't need magic or volcanic eruptions to tum the Great Pyramids of Egypt into dungeons. The myriad tunnels and chambers built within these ancient structures are as challenging to explore as any underground complex.",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"columns": 0,
+									"page": 105,
+									"items": [
+										{
+											"type": "item",
+											"name": "Sand Storms:",
+											"entries": [
+												"In the myths and legends of many cultures dwelling near or amid the sands of a great desert, there are tales of mighty sandstorms. In regions of the world where the desert is particularly prone to such tempests whole cities have been known to vanish from the face of the earth.",
+												"The cultures in and around the Sahara Desert in North Africa are filled with stories of cities \"swallowed up\" by the blowing sands."
+											]
+										},
+										{
+											"type": "item",
+											"name": "Silting:",
+											"entries": [
+												"On the opposite end of the spectrum, we have silting. In order to have a dungeon created by silting, a region must be flooded by rising waters and left submerged for an extended period of time. As the years pass, sediment carried in the water begins to collect around the structures and, eventually, they will be completely covered by mud and debris. Then, as the climate changes or is altered, the water recedes or is drawn away. If enough time has passed, the silt covered buildings will look like nothing more than mounds of earth. Anyone who takes the time to dig a little deeper, however, will learn the truth."
+											]
+										},
+										{
+											"type": "item",
+											"name": "Volcanism:",
+											"entries": [
+												"Volcanism is a wonderful tool for transforming above ground structures into underground dungeons. Perhaps the mightiest natural force known to man, a volcanic eruption can send sheets of lava boiling across a region, instantly covering it in rock as it cools. In addition to lava, of course, volcanoes are known to unleash rivers of mud which, when it dries, can also encase cities or villages in stone or hard earth. Even volcanic ash, powdered stone created by the mighty living mountain, can entomb whole cities. Over the years, it too will harden into stone.",
+												"Perhaps the most well known example of volcanic entombment is the buried city of Pompeii."
+											]
+										},
+										{
+											"type": "item",
+											"name": "Overgrowing:",
+											"entries": [
+												"Far less dramatic than volcanism, overgrowing is a natural process found in many parts of the world. It takes place when a building or village. in a heavy forest or jungle region is abandoned by its owners for some reason. Over the years, the jungle vines and plants, which were kept at bay only by the actions of the inhabitants, return to the area. In a fairly short period of time, the jungle may become so thick that it is almost impossible to pass through it. Dungeons formed in this manner are still above the surface of the earth, but are so cloaked in vegetation as to be unreachable by all but a few means. Once inside a structure which has been overgrown, adventurers will find themselves able to exit only by those few openings which remain in the foliage around the building.",
+												"Examples of overgrown structures in our own history which might make superb dungeons are the Aztec and Mayan cities found in South and Central America."
+											]
+										},
+										{
+											"type": "item",
+											"name": "Magic:",
+											"entries": [
+												"Of course, the thing which makes the AD&D® game world more than just a history lesson IS the introduction of magic into an otherwise fairly common medieval setting. Just as magic can make many common things wondrous, so too can it make ordinary settings into exciting dungeons to test the metal of your bravest knights and most pious priests.",
+												"Powerful magicks can be used to create dungeons of unusual nature or serve to guard them with unnatural defenders. Of course, the magical powers of priests and druids should not be discounted here. Consider, for example, the section on overgrown jungles above and then imagine a druid's hand in the background. What was once a simple patch of brambles might grow into a deadly labyrinth guarding some ancient druidic secret."
+											]
+										},
+										{
+											"type": "item",
+											"name": "Above Ground Dungeons:",
+											"entries": [
+												"While this may seem to be a contradiction in terms to the novice referee or player, it is not. In our own history there are numerous structures which make excellent dungeon settings just as they are. For example, we don't need magic or volcanic eruptions to tum the Great Pyramids of Egypt into dungeons. The myriad tunnels and chambers built within these ancient structures are as challenging to explore as any underground complex."
+											]
+										}
+									]
+								},
 								"There are other examples from our own history which might be classed as dungeons. The pueblo cities of many American Indian tribes might make good dungeons, as would any number of monasteries or similar structures built for isolation."
 							]
 						}
@@ -3945,7 +4150,7 @@
 								"The first section of each generic dungeon's description is its origin. Here, we give you a little bit of background about the dungeon and tell you why or how it was built or formed in the first place. Obviously, this information is fairly open so that you should have no trouble finding a way to fit the dungeons into your own campaign.",
 								"After that comes the section entitled transformation. In here, we present you with a possible means for converting a structure which might not seem like a dungeon (such as the primitive temple) into an underground complex. Once again, these descriptions are not specific so that you should have no trouble finding a place in your campaign world into which you can fit them.",
 								"The final section of the dungeon description is the map key. Here, we go into some detail about the dungeon's original construction and uses. None of the chambers are described in great detail, so you can add or delete anything you like without worrying about upsetting the balance of play.",
-								"In addition, we have not \"aged\" the dungeons. We have left out any mention of the monsters which have now moved into them or the spirits which roam their halls in search of living spirits to feed on. Each dungeon master will be able to set up his own unique encounters when he uses the generic complexes we have provided here. Thus, even if two dungeon master's{@sup [sic]} make use of, say, {@book the great pyramid map|DMGR1|12|The Great Pyramid}, you can bet that their dungeons will be greatly different."
+								"In addition, we have not \"aged\" the dungeons. We have left out any mention of the monsters which have now moved into them or the spirits which roam their halls in search of living spirits to feed on. Each dungeon master will be able to set up his own unique encounters when he uses the generic complexes we have provided here. Thus, even if two dungeon masterss make use of, say, {@book the great pyramid map|DMGR1|12|The Great Pyramid}, you can bet that their dungeons will be greatly different."
 							]
 						},
 						{
@@ -4010,16 +4215,76 @@
 											"columns": 0,
 											"page": 115,
 											"items": [
-												"{@b Mastabas:} The Great Pyramid is surrounded by a small city of lesser tombs known as mastabas. These low, flat structures served to house the bodies of the workers who built the pyramid. More often than not, these were slaves or prisoners of war. Because they knew the secrets of the pyramid's internal layout, they were ritually slaughtered after it was completed. The mastabas might make excellent locations for encounters with low level undead creatures.",
-												"{@b Lesser Pyramids:} A number of lesser pyramids were also built adjacent to the main structure. These served as tombs for the officials who oversaw the construction of the pyramid. Once the slaves were killed, so too were their task masters. Like the mastabas, these areas make excellent locations for encounters with undead, although they are likely to be more powerful than those found in the former area.",
-												"{@b Funeral Temple:} The only outside entrance to the pyramid is through this chamber. The door to the outside world is well concealed to protect the king's final resting place from grave robbers and vandals. This temple is lavishly decorated and contains much that is of great monetary value\u2014everything from gold idols to ornate figures and valuable incense.",
-												"{@b Corridor:} The inner halls and stairwells in the pyramid are very low and cramped. On the average, they have a ceiling height of only four feet and are about a yard wide. While dwarves, halflings, and gnomes may not find that this presents them with too great a problem, other races will find moving from room to room to be very uncomfortable.",
-												"{@b First Burial Chamber:} The first part of the pyramid to be built, this chamber is actually located below the surface of the earth in the foundation of the building. If the pharaoh died before the completion of the second burial chamber, his body would be placed here.",
-												"{@b Second Burial Chamber:} Like the first burial chamber, this was meant to house the body of the king in the event that he should die before the completion of the main burial chamber. There are usually some trappings here of reasonable value.",
-												"{@b Crypts:} Once the priests who had overseen the assembly of the pyramid and performed the religious rites required to make it pleasing to the gods had completed their tasks, they too were slain. Unlike the workers, however, they committed ritual suicide and were entombed in the pyramid with their king. These rooms are ornate temples in their own right, having many valuable items used in the practice of their religious beliefs.",
-												"{@b Funeral Barge:} The last room before the main burial chamber, this area houses a most unusual thing for a dungeon\u2014a boat. Intended to act as the king's vessel on his voyage to the next life, it is rich with the trappings of nobility and carries everything that the king will need to survive in the next world. In addition to money and weapons, the boat is likely to carry food and other provisions.",
-												"{@b Grand Hallway:} Unlike the other passages in the Great Pyramid which require explorers to walk bent over (unless they are halflings or some similar race), this corridor has a high arched ceiling. It is painted in bright colors and has numerous images engraved on its walls. As this is the final entry way into the main burial chamber, referee's may want to consider the use of a wide array of deadly traps being set here as a last line of defense against intruders.",
-												"{@b Main Burial Chamber:} This is the last resting place of the pharaoh. The entire chamber is lavishly decorated and appointed with items so valuable as to be beyond the belief of even the most greedy of thieves. The sarcophagus which holds the body of the departed king is often made of a valuable metal like gold or silver. The trappings of this chamber are worth more than the treasuries of many small countries."
+												{
+													"type": "item",
+													"name": "Mastabas:",
+													"entries": [
+														"The Great Pyramid is surrounded by a small city of lesser tombs known as mastabas. These low, flat structures served to house the bodies of the workers who built the pyramid. More often than not, these were slaves or prisoners of war. Because they knew the secrets of the pyramid's internal layout, they were ritually slaughtered after it was completed. The mastabas might make excellent locations for encounters with low level undead creatures."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Lesser Pyramids:",
+													"entries": [
+														"A number of lesser pyramids were also built adjacent to the main structure. These served as tombs for the officials who oversaw the construction of the pyramid. Once the slaves were killed, so too were their task masters. Like the mastabas, these areas make excellent locations for encounters with undead, although they are likely to be more powerful than those found in the former area."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Funeral Temple:",
+													"entries": [
+														"The only outside entrance to the pyramid is through this chamber. The door to the outside world is well concealed to protect the king's final resting place from grave robbers and vandals. This temple is lavishly decorated and contains much that is of great monetary value\u2014everything from gold idols to ornate figures and valuable incense."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Corridor:",
+													"entries": [
+														"The inner halls and stairwells in the pyramid are very low and cramped. On the average, they have a ceiling height of only four feet and are about a yard wide. While dwarves, halflings, and gnomes may not find that this presents them with too great a problem, other races will find moving from room to room to be very uncomfortable."
+													]
+												},
+												{
+													"type": "item",
+													"name": "First Burial Chamber:",
+													"entries": [
+														"The first part of the pyramid to be built, this chamber is actually located below the surface of the earth in the foundation of the building. If the pharaoh died before the completion of the second burial chamber, his body would be placed here."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Second Burial Chamber:",
+													"entries": [
+														"Like the first burial chamber, this was meant to house the body of the king in the event that he should die before the completion of the main burial chamber. There are usually some trappings here of reasonable value."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Crypts:",
+													"entries": [
+														"Once the priests who had overseen the assembly of the pyramid and performed the religious rites required to make it pleasing to the gods had completed their tasks, they too were slain. Unlike the workers, however, they committed ritual suicide and were entombed in the pyramid with their king. These rooms are ornate temples in their own right, having many valuable items used in the practice of their religious beliefs."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Funeral Barge:",
+													"entries": [
+														"The last room before the main burial chamber, this area houses a most unusual thing for a dungeon\u2014a boat. Intended to act as the king's vessel on his voyage to the next life, it is rich with the trappings of nobility and carries everything that the king will need to survive in the next world. In addition to money and weapons, the boat is likely to carry food and other provisions."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Grand Hallway:",
+													"entries": [
+														"Unlike the other passages in the Great Pyramid which require explorers to walk bent over (unless they are halflings or some similar race), this corridor has a high arched ceiling. It is painted in bright colors and has numerous images engraved on its walls. As this is the final entry way into the main burial chamber, referee's may want to consider the use of a wide array of deadly traps being set here as a last line of defense against intruders."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Main Burial Chamber:",
+													"entries": [
+														"This is the last resting place of the pharaoh. The entire chamber is lavishly decorated and appointed with items so valuable as to be beyond the belief of even the most greedy of thieves. The sarcophagus which holds the body of the departed king is often made of a valuable metal like gold or silver. The trappings of this chamber are worth more than the treasuries of many small countries."
+													]
+												}
 											]
 										}
 									]
@@ -4073,15 +4338,69 @@
 											"columns": 0,
 											"page": 117,
 											"items": [
-												"{@b Courtyard:} Just outside the archway which admits the faithful to the temple was an area which had been cleared and landscaped to some extent. Six statues were erected here, one for each of the deities sacred to the temple builders.",
-												"{@b Temple of Earth:} The first shrine which those entering the temple encountered was this one. It was devoted to a primitive earth spirit which was symbolized by a figure of a large, pregnant goddess. Carvings and paintings in this room celebrated the earth as a source of life and power.",
-												"{@b Storage:} This chamber was used to keep various items required for religious services in the temple. It contained a number of bowls and pots which would have been filled with herbs, berries, and similar materials. If the chamber has not been used in a long time, many of the organic items stored in here will have decayed totally.",
-												"{@b Gallery:} The center of the temple is an open area with a number of benches scattered around it for the faithful to sit on as they awaited the beginning of a service. The walls, floors, and ceilings were covered in engravings which depict the various important events and beliefs of the mythology of the temple builders.",
-												"{@b Temple of the Dead:} The statue in this room is gaunt and skeletal, looking much like some form of undead creature. The walls are covered with bones and similar trappings of the grave.",
-												"{@b Temple of Fire:} Stone braziers with burning coals and oil lamps celebrated the value of fire to a primitive culture in this temple. The engravings on the walls showed fire being used to make the life of the tribe better: a cooking fire, a bonfire for warmth, a camp fire keeping animals at bay, and so forth. The god in this chamber holds a burning torch in each hand. Of course, by the time the temple is uncovered and explored, all of these fires will have long since burned out\u2014unless the dungeon master has something unusual up his sleeve.",
-												"{@b Temple of War:} This chamber was a temple sacred to the god of war. The deity himself had an almost animalistic look, conveying an impression of savage fury. The walls were decorated with a variety of weapons. Engravings in this chamber depicted battles and fights, often showing the god himself as leading the faithful into combat.",
-												"{@b Temple of Water:} Just as these primitive people recognized the earth and soil as vital to life, so too did they understand the importance of water. A number of ornate barrels or cisterns once adorned this room, each of which would have been filled with fresh water. Depending on the wishes of the dungeon master, this may or may not have been holy water. In any event, the engravings and paintings in this chamber depicted water in its many forms: rain, a lake, a gentle stream, a raging river, and so on.",
-												"{@b Temple of the Sky:} The sky and weather are very important to a primitive culture. If the gods frown on the actions of a people, they may withhold the rain or send deadly storms to destroy them. In either case, the end result is often the utter destruction of a people. In order to keep the gods of the sky happy, the primitives built this shrine. Its walls were covered with engravings of clouds, storms, and so on."
+												{
+													"type": "item",
+													"name": "Courtyard:",
+													"entries": [
+														"Just outside the archway which admits the faithful to the temple was an area which had been cleared and landscaped to some extent. Six statues were erected here, one for each of the deities sacred to the temple builders."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Temple of Earth:",
+													"entries": [
+														"The first shrine which those entering the temple encountered was this one. It was devoted to a primitive earth spirit which was symbolized by a figure of a large, pregnant goddess. Carvings and paintings in this room celebrated the earth as a source of life and power."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Storage:",
+													"entries": [
+														"This chamber was used to keep various items required for religious services in the temple. It contained a number of bowls and pots which would have been filled with herbs, berries, and similar materials. If the chamber has not been used in a long time, many of the organic items stored in here will have decayed totally."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Gallery:",
+													"entries": [
+														"The center of the temple is an open area with a number of benches scattered around it for the faithful to sit on as they awaited the beginning of a service. The walls, floors, and ceilings were covered in engravings which depict the various important events and beliefs of the mythology of the temple builders."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Temple of the Dead:",
+													"entries": [
+														"The statue in this room is gaunt and skeletal, looking much like some form of undead creature. The walls are covered with bones and similar trappings of the grave."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Temple of Fire:",
+													"entries": [
+														"Stone braziers with burning coals and oil lamps celebrated the value of fire to a primitive culture in this temple. The engravings on the walls showed fire being used to make the life of the tribe better: a cooking fire, a bonfire for warmth, a camp fire keeping animals at bay, and so forth. The god in this chamber holds a burning torch in each hand. Of course, by the time the temple is uncovered and explored, all of these fires will have long since burned out\u2014unless the dungeon master has something unusual up his sleeve."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Temple of War:",
+													"entries": [
+														"This chamber was a temple sacred to the god of war. The deity himself had an almost animalistic look, conveying an impression of savage fury. The walls were decorated with a variety of weapons. Engravings in this chamber depicted battles and fights, often showing the god himself as leading the faithful into combat."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Temple of Water:",
+													"entries": [
+														"Just as these primitive people recognized the earth and soil as vital to life, so too did they understand the importance of water. A number of ornate barrels or cisterns once adorned this room, each of which would have been filled with fresh water. Depending on the wishes of the dungeon master, this may or may not have been holy water. In any event, the engravings and paintings in this chamber depicted water in its many forms: rain, a lake, a gentle stream, a raging river, and so on."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Temple of the Sky:",
+													"entries": [
+														"The sky and weather are very important to a primitive culture. If the gods frown on the actions of a people, they may withhold the rain or send deadly storms to destroy them. In either case, the end result is often the utter destruction of a people. In order to keep the gods of the sky happy, the primitives built this shrine. Its walls were covered with engravings of clouds, storms, and so on."
+													]
+												}
 											]
 										}
 									]
@@ -4134,22 +4453,118 @@
 											"columns": 0,
 											"page": 119,
 											"items": [
-												"{@b Temple Offices:} These chambers were the business offices of the temple. A number of desks, scroll racks, book cases, and similar office equipment were found here. Of course, depending on the amount of time which has passed since the shrine was entombed, these may be noting more than piles of dust and rotting wood. A secret door allows easy entrance to or escape from the office area in the event of an emergency.",
-												"{@b Library:} This served as both a filing area and a book depository. The numerous shelves and racks here were filled with books, scrolls, maps, and similar documents. Depending on the condition of this room, it could be a sage's dream come true.",
-												"{@b Wardrobe:} As with many religions, the priests of this temple wore special garb when they performed their services. In this chamber, which resembles a modern walk-in closet, were hung the many ritual garments they employed.",
-												"{@b Dressing Room:} This room was used by the temple priests to dress and ready themselves for a religious service. Depending on the nature of the religion, any number of things might be found here including various pigments or makeups, incense burners, or unusual foods which must be eaten to purify the spirit.",
-												"{@b Main Hall:} This huge chamber was ornate and magnificent. Rows of pillars served to support it high ceiling and also served as works of art, being covered with bas-reliefs of the religion's major tenets. Banners, tapestries, or other decorative fabrics were draped from the rafters and supported by long shafts of polished wood. Its main function was to impress those walking into the temple from the main entrance.",
-												"{@b The Main Temple:} Like the main hall, this chamber was built to inspire awe among the faithful. It's high domed ceiling is covered with a beautiful mosaic which was crafted by the most skilled artisans of the religion.",
-												"{@b Grounds Keeper's Storage:} This small room and closet were nothing more than a tool shed kept for the purposes of landscaping the area around the temple.",
-												"{@b Gallery:} This wide hallway had a very high, arched ceiling and was used to display paintings, sculptures, and other works of art made by or donated to, the temple and its deity. Some of the relics in here might be quite valuable.",
-												"{@b Storage:} This storage area was used by the temple priests for everything from janitorial supplies to extra candles or lamp oil.",
-												"{@b Priest's Chambers:}These living quarters may have been quite spartan or lavishly decorated, depending on the beliefs and practices of the faithful. A secret door in the outer wall provided a means of covert access to the outside world from these rooms.",
-												"{@b Vault:} Some items, like silver holy symbols or perhaps even blessed and magical objects, were too important to be stored in the main area off the main hall. For them, this room was built. It has a door with a very advanced lock, thick walls, and may even have been sealed with some form of magic.",
-												"{@b Lounge:} This room was decorated with style and taste. It is here that the priests ate their meals and entertained guests. Informal business was often conducted here, as was light entertainment.",
-												"{@b Meeting Room:} More formal than the lounge, this chamber was used for business meetings and official transactions.",
-												"{@b Lesser Temple:} This temple, while much less impressive than the main dome, is still a wonder to behold.",
-												"{@b Kitchen:} A large stove and an assortment of cooking supplies dominated this room.",
-												"{@b Pantry:} A variety of pots, jars, and kegs held the temple's foodstuffs here until needed. A trapdoor in the floor leads down to a small, but well stocked wine cellar. It may well be that the passing of the years has turned some of the bottles in this area into priceless collector's vintages."
+												{
+													"type": "item",
+													"name": "Temple Offices:",
+													"entries": [
+														"These chambers were the business offices of the temple. A number of desks, scroll racks, book cases, and similar office equipment were found here. Of course, depending on the amount of time which has passed since the shrine was entombed, these may be noting more than piles of dust and rotting wood. A secret door allows easy entrance to or escape from the office area in the event of an emergency."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Library:",
+													"entries": [
+														"This served as both a filing area and a book depository. The numerous shelves and racks here were filled with books, scrolls, maps, and similar documents. Depending on the condition of this room, it could be a sage's dream come true."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Wardrobe:",
+													"entries": [
+														"As with many religions, the priests of this temple wore special garb when they performed their services. In this chamber, which resembles a modern walk-in closet, were hung the many ritual garments they employed."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Dressing Room:",
+													"entries": [
+														"This room was used by the temple priests to dress and ready themselves for a religious service. Depending on the nature of the religion, any number of things might be found here including various pigments or makeups, incense burners, or unusual foods which must be eaten to purify the spirit."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Main Hall:",
+													"entries": [
+														"This huge chamber was ornate and magnificent. Rows of pillars served to support it high ceiling and also served as works of art, being covered with bas-reliefs of the religion's major tenets. Banners, tapestries, or other decorative fabrics were draped from the rafters and supported by long shafts of polished wood. Its main function was to impress those walking into the temple from the main entrance."
+													]
+												},
+												{
+													"type": "item",
+													"name": "The Main Temple:",
+													"entries": [
+														"Like the main hall, this chamber was built to inspire awe among the faithful. It's high domed ceiling is covered with a beautiful mosaic which was crafted by the most skilled artisans of the religion."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Grounds Keeper's Storage:",
+													"entries": [
+														"This small room and closet were nothing more than a tool shed kept for the purposes of landscaping the area around the temple."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Gallery:",
+													"entries": [
+														"This wide hallway had a very high, arched ceiling and was used to display paintings, sculptures, and other works of art made by or donated to, the temple and its deity. Some of the relics in here might be quite valuable."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Storage:",
+													"entries": [
+														"This storage area was used by the temple priests for everything from janitorial supplies to extra candles or lamp oil."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Priest's Chambers:",
+													"entries": [
+														"These living quarters may have been quite spartan or lavishly decorated, depending on the beliefs and practices of the faithful. A secret door in the outer wall provided a means of covert access to the outside world from these rooms."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Vault:",
+													"entries": [
+														"Some items, like silver holy symbols or perhaps even blessed and magical objects, were too important to be stored in the main area off the main hall. For them, this room was built. It has a door with a very advanced lock, thick walls, and may even have been sealed with some form of magic."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Lounge:",
+													"entries": [
+														"This room was decorated with style and taste. It is here that the priests ate their meals and entertained guests. Informal business was often conducted here, as was light entertainment."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Meeting Room:",
+													"entries": [
+														"More formal than the lounge, this chamber was used for business meetings and official transactions."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Lesser Temple:",
+													"entries": [
+														"This temple, while much less impressive than the main dome, is still a wonder to behold."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Kitchen:",
+													"entries": [
+														"A large stove and an assortment of cooking supplies dominated this room."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Pantry:",
+													"entries": [
+														"A variety of pots, jars, and kegs held the temple's foodstuffs here until needed. A trapdoor in the floor leads down to a small, but well stocked wine cellar. It may well be that the passing of the years has turned some of the bottles in this area into priceless collector's vintages."
+													]
+												}
 											]
 										}
 									]
@@ -4203,16 +4618,76 @@
 											"columns": 0,
 											"page": 121,
 											"items": [
-												"{@b Entrance:} This chamber is notable for its high, arched ceiling and the numerous stalactites which dangle from it. The walls have all been worn smooth through ages of natural erosion by the river. A thin band of shore (about 1 yard wide) runs along each side of the water, making walking possible, but very difficult. The water runs very quickly through this region, but can still be navigated by a raft or boat.",
-												"{@b Upper Lake:} A secondary stream curves around from the main river to form a large lake in this room. The ceiling is a high, domed affair with a number of stalactites visible on it. A wide shore surrounds the lake which has a slight whirlpool visible in its currents. The whirlpool is not so swift as to be hazardous to boats, but swimmers may be at risk.",
-												"{@b Lower Lake:} A slender cascade of water pours from a series of fissures in the ceiling of this cavern to form a broad lake. A number of natural stone pillars provide support for this chamber and the walls glisten with mineral deposits. A fast moving stream flows into the lake through a fairly wide passage while a second stream flows away from the pool down a fairly wide tunnel.",
-												"{@b Grotto:} This is a region where the cavern around a length of stream has been widened by natural erosion to form a large chamber. Stalagmites and stalactites are common and the entire area glistens and sparkles with mineral deposits.",
-												"{@b Upper Cascade:} At this point, the river enters the top level of long atrium and plunges over a sheer cliff. The roaring of the cascade is intense, and the natural acoustics of the cavern carry the vibrations throughout the area. The river turns into dangerous rapids before it topples over the cliffs and into the darkness below. There is a great deal of shore area atop the waterfall and enough space in the cavern that it might be possible to climb down beside the waterfall, although this is certainly risky.",
-												"{@b Dead Pool:} A slow moving stream feeds this pond which has little, if any, current in it. Because of the natural environment of the cave, however, the water has not become stagnant as it would in a swamp. Thus, although it is unmoving, it has remained fairly fresh.",
-												"{@b Balcony:} The atrium around the cascade widens at this point, producing a natural balcony around the waterfall. Explorers might reach this region by climbing to it from below or above. It is possible to climb down or up from this area, but the presence of the cascade makes it dangerous to do so.",
-												"{@b Upper Pool:} This region is much like the upper lake, but the waterway which feeds it is much less intense. A small pool has formed here which empties through a split in the rock underneath it. A minor whirlpool swirls these waters, but it is dangerous only to swimmers.",
-												"{@b Lower Pool:} The water which falls from the upper pool pours into this room through a split in the ceiling. In addition, a slow moving stream enters on one side of the pool and exits on the other. A minor creek, almost a trickle, flows away to form two large dead pools.",
-												"{@b Great Pool:} Although a minor stream flows into this chamber, carrying a fair amount of water to the great pool, the majority of it comes from the grand cascade. Pouring down through a wide chimney which stretches out of sight overhead is a gigantic waterfall. It thunders down from high above to form this great body of water. The entire chamber vibrates with its intensity. The water roars out two exits to plunge over a sheer cliff face and vanish into the mists of the valley below."
+												{
+													"type": "item",
+													"name": "Entrance:",
+													"entries": [
+														"This chamber is notable for its high, arched ceiling and the numerous stalactites which dangle from it. The walls have all been worn smooth through ages of natural erosion by the river. A thin band of shore (about 1 yard wide) runs along each side of the water, making walking possible, but very difficult. The water runs very quickly through this region, but can still be navigated by a raft or boat."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Upper Lake:",
+													"entries": [
+														"A secondary stream curves around from the main river to form a large lake in this room. The ceiling is a high, domed affair with a number of stalactites visible on it. A wide shore surrounds the lake which has a slight whirlpool visible in its currents. The whirlpool is not so swift as to be hazardous to boats, but swimmers may be at risk."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Lower Lake:",
+													"entries": [
+														"A slender cascade of water pours from a series of fissures in the ceiling of this cavern to form a broad lake. A number of natural stone pillars provide support for this chamber and the walls glisten with mineral deposits. A fast moving stream flows into the lake through a fairly wide passage while a second stream flows away from the pool down a fairly wide tunnel."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Grotto:",
+													"entries": [
+														"This is a region where the cavern around a length of stream has been widened by natural erosion to form a large chamber. Stalagmites and stalactites are common and the entire area glistens and sparkles with mineral deposits."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Upper Cascade:",
+													"entries": [
+														"At this point, the river enters the top level of long atrium and plunges over a sheer cliff. The roaring of the cascade is intense, and the natural acoustics of the cavern carry the vibrations throughout the area. The river turns into dangerous rapids before it topples over the cliffs and into the darkness below. There is a great deal of shore area atop the waterfall and enough space in the cavern that it might be possible to climb down beside the waterfall, although this is certainly risky."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Dead Pool:",
+													"entries": [
+														"A slow moving stream feeds this pond which has little, if any, current in it. Because of the natural environment of the cave, however, the water has not become stagnant as it would in a swamp. Thus, although it is unmoving, it has remained fairly fresh."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Balcony:",
+													"entries": [
+														"The atrium around the cascade widens at this point, producing a natural balcony around the waterfall. Explorers might reach this region by climbing to it from below or above. It is possible to climb down or up from this area, but the presence of the cascade makes it dangerous to do so."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Upper Pool:",
+													"entries": [
+														"This region is much like the upper lake, but the waterway which feeds it is much less intense. A small pool has formed here which empties through a split in the rock underneath it. A minor whirlpool swirls these waters, but it is dangerous only to swimmers."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Lower Pool:",
+													"entries": [
+														"The water which falls from the upper pool pours into this room through a split in the ceiling. In addition, a slow moving stream enters on one side of the pool and exits on the other. A minor creek, almost a trickle, flows away to form two large dead pools."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Great Pool:",
+													"entries": [
+														"Although a minor stream flows into this chamber, carrying a fair amount of water to the great pool, the majority of it comes from the grand cascade. Pouring down through a wide chimney which stretches out of sight overhead is a gigantic waterfall. It thunders down from high above to form this great body of water. The entire chamber vibrates with its intensity. The water roars out two exits to plunge over a sheer cliff face and vanish into the mists of the valley below."
+													]
+												}
 											]
 										}
 									]
@@ -4267,14 +4742,62 @@
 											"columns": 0,
 											"page": 123,
 											"items": [
-												"{@b Family Chambers:} This portion of the city housed the farmers and their loved ones. Each chamber was home to an extended family, ranging in size from 7 to 12 persons. Raised platforms around the perimeter served as both beds and sofas. In many cultures, the dead were buried beneath the floor of the chamber they had once lived in.",
-												"{@b Barracks:} Single men and members of the guard lived in these chambers which were very much like the military barracks one might expect to find in a modern fort. There was little provision for comfort, and almost no chance for individual privacy.",
-												"{@b Temples:} The people of the beehive city were faithful to their gods. As proof of this, they scattered a number of temples and altars throughout the complex. Each of these was richly decorated (in comparison to the rest of the city) and served as a cultural nexus for the people living here.",
-												"{@b Governor's Home:} This living area served the ruler of the city and his family. It was well equipped and decorated, a tribute to the status accorded the popular leader of these people.",
-												"{@b Officers' Barracks:} Although much more spacious and better appointed than the barracks assigned to the rest of the soldiers, these quarters are very spartan and focus on utility more than comfort.",
-												"{@b Granaries:} As various crops became ready for harvest they were stored in the city's many granaries. Of course, the passing of time may have utterly destroyed these foodstuffs, but some evidence of their passing may well remain.",
-												"{@b Kiln:} A look around at the various chambers on the map of the beehive city will make it obvious to the reader that those who lived here made great use of pottery. This kiln, which was fired with a variety of organic material, was somewhat primitive, but still very functional. There may be remnants of pottery items here when the area is explored.",
-												"{@b Courtyards:} In the event of a siege or raid on the city, an assortment of livestock could be transferred to these protected areas to provision the inhabitants for a time. When the city was not under attack, they served as parks or play areas for children and adults alike."
+												{
+													"type": "item",
+													"name": "Family Chambers:",
+													"entries": [
+														"This portion of the city housed the farmers and their loved ones. Each chamber was home to an extended family, ranging in size from 7 to 12 persons. Raised platforms around the perimeter served as both beds and sofas. In many cultures, the dead were buried beneath the floor of the chamber they had once lived in."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Barracks:",
+													"entries": [
+														"Single men and members of the guard lived in these chambers which were very much like the military barracks one might expect to find in a modern fort. There was little provision for comfort, and almost no chance for individual privacy."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Temples:",
+													"entries": [
+														"The people of the beehive city were faithful to their gods. As proof of this, they scattered a number of temples and altars throughout the complex. Each of these was richly decorated (in comparison to the rest of the city) and served as a cultural nexus for the people living here."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Governor's Home:",
+													"entries": [
+														"This living area served the ruler of the city and his family. It was well equipped and decorated, a tribute to the status accorded the popular leader of these people."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Officers' Barracks:",
+													"entries": [
+														"Although much more spacious and better appointed than the barracks assigned to the rest of the soldiers, these quarters are very spartan and focus on utility more than comfort."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Granaries:",
+													"entries": [
+														"As various crops became ready for harvest they were stored in the city's many granaries. Of course, the passing of time may have utterly destroyed these foodstuffs, but some evidence of their passing may well remain."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Kiln:",
+													"entries": [
+														"A look around at the various chambers on the map of the beehive city will make it obvious to the reader that those who lived here made great use of pottery. This kiln, which was fired with a variety of organic material, was somewhat primitive, but still very functional. There may be remnants of pottery items here when the area is explored."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Courtyards:",
+													"entries": [
+														"In the event of a siege or raid on the city, an assortment of livestock could be transferred to these protected areas to provision the inhabitants for a time. When the city was not under attack, they served as parks or play areas for children and adults alike."
+													]
+												}
 											]
 										}
 									]
@@ -4328,15 +4851,69 @@
 											"columns": 0,
 											"page": 125,
 											"items": [
-												"{@b Storage:} Located on the lowest level of the castle, this large chamber was used to house great quantities of goods and materials for use by the structure's inhabitants. Kegs of ale, bottles of wine, wheels of cheese, and many other supplies were kept here, although the passing of the years has almost certainly ruined them.",
-												"{@b Kitchen:} This cooking room was home to any number of cooking utensils and devices. A large oven and stove occupied a large portion of the area and there was more than enough space to prepare a feast for dozens of guests in the great hall.",
-												"{@b Great Hall:} This huge chamber was the focus of social life at the Castle on the Moors. Its walls were hung with elaborate tapestries and banners. It was here that the lord of the manor held his parties and entertained his guests. Great feasts could be sent up from the kitchen below and performers could entertain the guests while they relaxed and ate.",
-												"{@b Office:} This room was used by the lord's seneschal in the course of his administrative duties. Every aspect of the castle's economic and political affairs was controlled from this area. As one might expect, it was once filled with files, records, and a work desk.",
-												"{@b Bedrooms:} These comfortable living quarters were used by the lord and his family. They were richly appointed and their decorations reflect the owner's religious and political affiliations.",
-												"{@b Day Room:} This room was well appointed and provided the lord and his family with a pleasant place for light entertaining and socializing. It's furnishings were both comfortable and functional.",
-												"{@b Knights' Chambers:} Each of these rooms served as the living quarters for one of the lord's most faithful warriors. If they were married, then their wives shared their rooms with them. If not, they had a live-in squire who tended to their needs and hoped to learn something of the warrior's trade from his master.",
-												"{@b Workrooms:} Although these rooms were used by the castle staff for spinning, weaving, and other light work, they were more than just areas for light industry. At the close of each day, the looms and such were put away and bedrolls covered the floor. While these seeping accommodations for the castle staff were far from luxurious, they were better than those available to most of the local peasants.",
-												"{@b Towers:} Each corner of the Castle on the Moors was anchored to a strong stone tower. From the tops of these battlements, archers could fire volley after volley of lethal arrows onto attacking armies. In addition, each of the towers had its own catapult for hurling large projectiles at invaders."
+												{
+													"type": "item",
+													"name": "Storage:",
+													"entries": [
+														"Located on the lowest level of the castle, this large chamber was used to house great quantities of goods and materials for use by the structure's inhabitants. Kegs of ale, bottles of wine, wheels of cheese, and many other supplies were kept here, although the passing of the years has almost certainly ruined them."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Kitchen:",
+													"entries": [
+														"This cooking room was home to any number of cooking utensils and devices. A large oven and stove occupied a large portion of the area and there was more than enough space to prepare a feast for dozens of guests in the great hall."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Great Hall:",
+													"entries": [
+														"This huge chamber was the focus of social life at the Castle on the Moors. Its walls were hung with elaborate tapestries and banners. It was here that the lord of the manor held his parties and entertained his guests. Great feasts could be sent up from the kitchen below and performers could entertain the guests while they relaxed and ate."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Office:",
+													"entries": [
+														"This room was used by the lord's seneschal in the course of his administrative duties. Every aspect of the castle's economic and political affairs was controlled from this area. As one might expect, it was once filled with files, records, and a work desk."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Bedrooms:",
+													"entries": [
+														"These comfortable living quarters were used by the lord and his family. They were richly appointed and their decorations reflect the owner's religious and political affiliations."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Day Room:",
+													"entries": [
+														"This room was well appointed and provided the lord and his family with a pleasant place for light entertaining and socializing. It's furnishings were both comfortable and functional."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Knights' Chambers:",
+													"entries": [
+														"Each of these rooms served as the living quarters for one of the lord's most faithful warriors. If they were married, then their wives shared their rooms with them. If not, they had a live-in squire who tended to their needs and hoped to learn something of the warrior's trade from his master."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Workrooms:",
+													"entries": [
+														"Although these rooms were used by the castle staff for spinning, weaving, and other light work, they were more than just areas for light industry. At the close of each day, the looms and such were put away and bedrolls covered the floor. While these seeping accommodations for the castle staff were far from luxurious, they were better than those available to most of the local peasants."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Towers:",
+													"entries": [
+														"Each corner of the Castle on the Moors was anchored to a strong stone tower. From the tops of these battlements, archers could fire volley after volley of lethal arrows onto attacking armies. In addition, each of the towers had its own catapult for hurling large projectiles at invaders."
+													]
+												}
 											]
 										}
 									]

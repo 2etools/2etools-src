@@ -15,6 +15,7 @@
 
 	&--minified {
 		.hoverborder {
+
 			&__resize-n,
 			&__resize-ne,
 			&__resize-e,
@@ -38,7 +39,7 @@
 		max-height: initial;
 	}
 
-	@media screen and (width <= #{vars.$width-screen-md}) {
+	@media screen and (width <=#{vars.$width-screen-md}) {
 		max-width: 95vw;
 	}
 
@@ -68,7 +69,7 @@
 
 	td div.border {
 		height: 2px;
-		background-color: vars.$rgb-name-red;
+		background-color: vars.$rgb-name-blue;
 		margin: 0 3px;
 		padding: 0;
 		border-right: 5px transparent;
@@ -186,7 +187,7 @@
 	}
 }
 
-.hoverborder[data-display-title="true"] ~ .hwin__wrp-table,
-.hoverborder[data-display-title="true"] ~ .hoverborder {
+.hoverborder[data-display-title="true"]~.hwin__wrp-table,
+.hoverborder[data-display-title="true"]~.hoverborder {
 	display: none;
 }
