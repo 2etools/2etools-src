@@ -35,8 +35,8 @@
 							"page": 3,
 							"entries": [
 								"Each monster is described fully, with entries that describe behavior, combat modes, and so on. These are explained in the following text.",
-								"{@color CLIMATE/TERRAIN|1169a3} defines where the creature is most often found. Climates include arctic, sub-arctic, temperate, and tropical. Typical terrain includes plain/scrub, forest, rough/hill, mountain, swamp, and desert. In some cases, a range is given; for instance, \"cold\" implies arctic, sub-arctic, and colder temperate regions.",
-								"{@color FREQUENCY|1169a3} is the likelihood of encountering a creature in an area. Chances can be adjusted for special areas.",
+								"{@color CLIMATE/TERRAIN|#1169a3} defines where the creature is most often found. Climates include arctic, sub-arctic, temperate, and tropical. Typical terrain includes plain/scrub, forest, rough/hill, mountain, swamp, and desert. In some cases, a range is given; for instance, \"cold\" implies arctic, sub-arctic, and colder temperate regions.",
+								"{@color FREQUENCY|#1169a3} is the likelihood of encountering a creature in an area. Chances can be adjusted for special areas.",
 								{
 									"type": "table",
 									"page": 3,
@@ -64,10 +64,10 @@
 										]
 									]
 								},
-								"{@color ORGANIZATION|1169a3} is the general social structure the monster adopts. \"Solitary\" includes small family groups.",
-								"{@color ACTIVITY CYCLE|1169a3} is the time of day when the monster is most active. Those active at night can be active at any time in subterranean settings. These are general guidelines and exceptions are fairly common.",
-								"{@color DIET|1169a3} shows what the creature usually eats. Carnivores eat meat, herbivores eat plants, and omnivores eat either. Scavengers primarily eat carrion. If a monster does not fit any of these categories, the substances it does eat are described in the entry or in the text.",
-								"{@color INTELLIGENCE|1169a3} is the equivalent of human \"IQ.\" Certain monsters are instinctively cunning; these are noted in the monster descriptions. Ratings correspond roughly to the following Intelligence ability scores:",
+								"{@color ORGANIZATION|#1169a3} is the general social structure the monster adopts. \"Solitary\" includes small family groups.",
+								"{@color ACTIVITY CYCLE|#1169a3} is the time of day when the monster is most active. Those active at night can be active at any time in subterranean settings. These are general guidelines and exceptions are fairly common.",
+								"{@color DIET|#1169a3} shows what the creature usually eats. Carnivores eat meat, herbivores eat plants, and omnivores eat either. Scavengers primarily eat carrion. If a monster does not fit any of these categories, the substances it does eat are described in the entry or in the text.",
+								"{@color INTELLIGENCE|#1169a3} is the equivalent of human \"IQ.\" Certain monsters are instinctively cunning; these are noted in the monster descriptions. Ratings correspond roughly to the following Intelligence ability scores:",
 								{
 									"type": "table",
 									"page": 3,
@@ -3067,19 +3067,71 @@
 					"page": 378,
 					"entries": [
 						{
+							"type": "list",
+							"style": "list-hang",
+							"items": [
+								{
+									"type": "item",
+									"name": "Special Encounters:",
+									"entries": [
+										"Roll on the appropriate table. If the encounter is not suitable, then none occurs."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Surface Encounters:",
+									"entries": [
+										"Unintelligent monsters are 75% likely to be driven off by flaming oil nearby, 90% if actually burned by it. Large amounts of food thrown overboard are 50% likely to end such an encounter."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Fish School:",
+									"entries": [
+										"This is a large group of one type of fish, the aquatic version of herd animals. They usually do not attack unless commanded by magical means. If panicked, they might mill about, obstructing vision and movement. If large enough, they might cause buffeting damage (1-2 to 1-8, depending on size)."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Ghost Ship:",
+									"entries": [
+										"This is a lost ship manned by undead. Although it can be seen at any time, it usually attacks only at night, when its masters are at full power. Roll percentile dice once for the crew and once for their leaders. {@i Crew:} 01-40 = 10-40 skeletons; 41-80 = 10-40 zombies; 81-00 = 10-20 ju-ju zombies. {@i Leaders:} 01-30 = 1-4 wights; 31-60 = 1-3 wraiths; 61-80 = 1-2 spectres; 81-95 = 1-2 ghosts; 95-00 = 1 lich."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Hazard (ice):",
+									"entries": [
+										"This can be a single huge ice mountain or 10-20 smaller, grinding floes. Hard contact with ice reduces seaworthiness by 5% and is 10% likely to require a seaworthiness check to avoid sinking."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Seaweed:",
+									"entries": [
+										"This includes both floating masses of weed and beds on the bottom. The former slows ships by 50%. The latter are 30-300' high and reduce vision to 10 feet. Both provide a 40% chance for another encounter if moved through or investigated."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Sunken Ship:",
+									"entries": [
+										"This is a victim of a storm, ice, or hostile action. Sometimes these have their original cargo, and may be inhabited. Roll percentile dice: 01-10 = Has merchant treasure (see Men, merchant ); 11-20 = No treasure; 21-60 = 2-24 lacedons (original crew); 61-00 = Monster (roll on appropriate encounter table)."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Special Encounters:",
+									"entries": [
+										"These can include morkoth, mottled worms, shipwreck survivors, an eye of the deep, sudden storms, seaweed that allows underwater breathing when eaten, giant clams, aquatic versions of carnivorous plants, storm giants, and so on."
+									]
+								}
+							]
+						},
+						{
 							"type": "tableGroup",
 							"name": "Aquatic Monster Summoning, Salt Water",
 							"page": 378,
-							"intro": [
-								"{@b Special Encounters:} Roll on the appropriate table. If the encounter is not suitable, then none occurs.",
-								"{@b Surface Encounters:} Unintelligent monsters are 75% likely to be driven off by flaming oil nearby, 90% if actually burned by it. Large amounts of food thrown overboard are 50% likely to end such an encounter.",
-								"{@b Fish School:} This is a large group of one type of fish, the aquatic version of herd animals. They usually do not attack unless commanded by magical means. If panicked, they might mill about, obstructing vision and movement. If large enough, they might cause buffeting damage (1-2 to 1-8, depending on size).",
-								"{@b Ghost Ship:} This is a lost ship manned by undead. Although it can be seen at any time, it usually attacks only at night, when its masters are at full power. Roll percentile dice once for the crew and once for their leaders. {@i Crew:} 01-40 = 10-40 skeletons; 41-80 = 10-40 zombies; 81-00 = 10-20 ju-ju zombies. {@i Leaders:} 01-30 = 1-4 wights; 31-60 = 1-3 wraiths; 61-80 = 1-2 spectres; 81-95 = 1-2 ghosts; 95-00 = 1 lich.",
-								"{@b Hazard (ice):} This can be a single huge ice mountain or 10-20 smaller, grinding floes. Hard contact with ice reduces seaworthiness by 5% and is 10% likely to require a seaworthiness check to avoid sinking.",
-								"{@b Seaweed:} This includes both floating masses of weed and beds on the bottom. The former slows ships by 50%. The latter are 30-300' high and reduce vision to 10 feet. Both provide a 40% chance for another encounter if moved through or investigated.",
-								"{@b Sunken Ship:} This is a victim of a storm, ice, or hostile action. Sometimes these have their original cargo, and may be inhabited. Roll percentile dice: 01-10 = Has merchant treasure (see Men, merchant ); 11-20 = No treasure; 21-60 = 2-24 lacedons (original crew); 61-00 = Monster (roll on appropriate encounter table).",
-								"{@b Special Encounters:} These can include morkoth, mottled worms, shipwreck survivors, an eye of the deep, sudden storms, seaweed that allows underwater breathing when eaten, giant clams, aquatic versions of carnivorous plants, storm giants, and so on."
-							],
 							"tables": [
 								{
 									"type": "table",
@@ -3406,6 +3458,61 @@
 					"page": 378,
 					"entries": [
 						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Special Encounters:",
+									"entries": [
+										"Roll on the appropriate table. If the encounter is not suitable, then none occurs."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Surface Encounters:",
+									"entries": [
+										"Unintelligent monsters are 75% likely to be driven off by flaming oil nearby, 90% if actually burned by it. Large amounts of food thrown overboard are 50% likely to end such an encounter."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Fish School:",
+									"entries": [
+										"This is a large group of one type of fish, the aquatic version of herd animals. They usually do not attack, unless commanded by magical means. If panicked they might mill about, obstructing vision and movement. If large enough, they might cause buffeting damage (1-2 to 1-8, depending on size)."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Ghost Ship:",
+									"entries": [
+										"This is a lost ship manned by undead. Although it can be seen at any time, it will usually attack only at night, when its masters are at full power. Roll percentile dice once for the crew and once for their leaders. {@i Crew:} 01-40 = 10-40 skeletons; 41-80 = 10-40 zombies; 81-00 = 10-20 juju zombies. {@i Leaders:} 01-30 = 1-4 wights; 31-60 = 1-3 wraiths; 61-80 = 1-2 spectres; 81-95 = 1-2 ghosts; 95-00 = 1 lich."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Hazard (navigational):",
+									"entries": [
+										"This can ground or damage a vessel that does not have aboard a pilot familiar with the waters. Such hazards as sandbars and submerged logs often change position."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Seaweed:",
+									"entries": [
+										"This includes both floating masses of weed and beds on the bottom. The former slows ships by 50%. The latter are 30-300' high and reduce vision to 10 feet. Both provide a 40% chance for another encounter if moved through or investigated."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Special Encounters:",
+									"entries": [
+										"These can include morkoth, mottled worms, shipwreck survivors, an eye of the deep, pearl beds, sudden storms, seaweed that allows underwater breathing when eaten, giant clams, aquatic versions of carnivorous plants, storm giants, and so on."
+									]
+								}
+							]
+						},
+						{
 							"type": "tableGroup",
 							"name": "Aquatic Monster Summoning, Fresh Water",
 							"page": 378,
@@ -3417,66 +3524,6 @@
 									"colStyles": [
 										"col- text-center",
 										"col- text-left"
-									],
-									"intro": [
-										{
-											"type": "list",
-											"style": "list-hang-notitle",
-											"columns": 0,
-											"page": 378,
-											"name": "",
-											"items": [
-												{
-													"type": "item",
-													"name": "Special Encounters:",
-													"entries": [
-														"Roll on the appropriate table. If the encounter is not suitable, then none occurs."
-													]
-												},
-												{
-													"type": "item",
-													"name": "Surface Encounters:",
-													"entries": [
-														"Unintelligent monsters are 75% likely to be driven off by flaming oil nearby, 90% if actually burned by it. Large amounts of food thrown overboard are 50% likely to end such an encounter."
-													]
-												},
-												{
-													"type": "item",
-													"name": "Fish School:",
-													"entries": [
-														"This is a large group of one type of fish, the aquatic version of herd animals. They usually do not attack, unless commanded by magical means. If panicked they might mill about, obstructing vision and movement. If large enough, they might cause buffeting damage (1-2 to 1-8, depending on size)."
-													]
-												},
-												{
-													"type": "item",
-													"name": "Ghost Ship:",
-													"entries": [
-														"This is a lost ship manned by undead. Although it can be seen at any time, it will usually attack only at night, when its masters are at full power. Roll percentile dice once for the crew and once for their leaders. {@i Crew:} 01-40 = 10-40 skeletons; 41-80 = 10-40 zombies; 81-00 = 10-20 juju zombies. {@i Leaders:} 01-30 = 1-4 wights; 31-60 = 1-3 wraiths; 61-80 = 1-2 spectres; 81-95 = 1-2 ghosts; 95-00 = 1 lich."
-													]
-												},
-												{
-													"type": "item",
-													"name": "Hazard (navigational):",
-													"entries": [
-														"This can ground or damage a vessel that does not have aboard a pilot familiar with the waters. Such hazards as sandbars and submerged logs often change position."
-													]
-												},
-												{
-													"type": "item",
-													"name": "Seaweed:",
-													"entries": [
-														"This includes both floating masses of weed and beds on the bottom. The former slows ships by 50%. The latter are 30-300' high and reduce vision to 10 feet. Both provide a 40% chance for another encounter if moved through or investigated."
-													]
-												},
-												{
-													"type": "item",
-													"name": "Special Encounters:",
-													"entries": [
-														"These can include morkoth, mottled worms, shipwreck survivors, an eye of the deep, pearl beds, sudden storms, seaweed that allows underwater breathing when eaten, giant clams, aquatic versions of carnivorous plants, storm giants, and so on."
-													]
-												}
-											]
-										}
 									],
 									"rows": [
 										[

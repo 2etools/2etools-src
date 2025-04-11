@@ -50,7 +50,7 @@ any file request:
  * @param {() => Promise<any>} asyncFn the function to pass to waitUntil
  * @returns {Promise<any>}
  */
-function waitUntil(
+function waitUntil (
 	event,
 	asyncFn,
 ) {
@@ -61,13 +61,13 @@ function waitUntil(
 
 const offlineAlert = async (url) => {
 	console.log(`Fetch failure. We are offline, and cannot access URL "${url}"`);
-	const clients = await self.clients.matchAll({ type: "window" });
+	const clients = await self.clients.matchAll({type: "window"});
 	let payload = "generic";
 	if (/\.(?:png|gif|webm|jpg|webp|jpeg|svg)$/m.test(url)) payload = "image";
 	else if (/\.json$/m.test(url)) payload = "json";
 
 	for (const client of clients) {
-		client.postMessage({ type: "FETCH_ERROR", payload });
+		client.postMessage({type: "FETCH_ERROR", payload});
 	}
 };
 
@@ -83,7 +83,7 @@ const resetAll = async () => {
 		await caches.delete(cacheName);
 
 		// See: https://github.com/GoogleChrome/workbox/issues/2234
-		const cacheExpiration = new CacheExpiration(cacheName, { maxEntries: 1 });
+		const cacheExpiration = new CacheExpiration(cacheName, {maxEntries: 1});
 		await cacheExpiration.delete();
 
 		console.log(`deleted cache "${cacheName}"`);
@@ -116,10 +116,10 @@ precacheAndRoute(self.__WB_PRECACHE_MANIFEST);
 class RevisionCacheFirst extends Strategy {
 	// explicitly set `credentials` option as a workaround to enable basic auth in third-party installs
 	// See: 5ET-BUG-115
-	static _FETCH_OPTIONS_VET = { credentials: "same-origin" };
+	static _FETCH_OPTIONS_VET = {credentials: "same-origin"};
 
 	cacheRoutesAbortController = null;
-	constructor() {
+	constructor () {
 		super({ cacheName: "runtime-revision" });
 
 		// bind this for activate method
@@ -148,7 +148,7 @@ class RevisionCacheFirst extends Strategy {
    * @param {StrategyHandler} handler
    * @returns {Promise<Response | undefined>}
    */
-	async _handle(request, handler) {
+	async _handle (request, handler) {
 		/** the full url of the request, https://example.com/slug/ */
 		const url = request.url;
 		/**
@@ -156,7 +156,7 @@ class RevisionCacheFirst extends Strategy {
 		 *
 		 * this way, we can invalidate the cache entry if the revision is wrong
 		 */
-		const cacheKey = createCacheKey({ url, revision: runtimeManifest.get(url) }).cacheKey;
+		const cacheKey = createCacheKey({url, revision: runtimeManifest.get(url)}).cacheKey;
 
 		console.log(`Trying to resolve URL "${url}" with key "${cacheKey}"`);
 
@@ -188,12 +188,12 @@ class RevisionCacheFirst extends Strategy {
 	 * @param {ExtendableEvent} event
 	 * @returns {Promise}
 	 */
-	activate(event) {
+	activate (event) {
 		return waitUntil(event, async () => {
 			const cache = await caches.open(this.cacheName);
 
 			const currentCacheKeys = (await cache.keys()).map(request => request.url);
-			const validCacheKeys = new Set(Array.from(runtimeManifest).map(([url, revision]) => createCacheKey({ url, revision }).cacheKey));
+			const validCacheKeys = new Set(Array.from(runtimeManifest).map(([url, revision]) => createCacheKey({url, revision}).cacheKey));
 
 			// queue up all the deletions
 			await Promise.allSettled(
@@ -225,7 +225,7 @@ class RevisionCacheFirst extends Strategy {
 	 * @param {{payload: {routeRegex: RegExp}}} data the data sent with the request
 	 * @param {AbortSignal} signal signal to abort the operation
 	 */
-	async cacheRoutes(data, signal) {
+	async cacheRoutes (data, signal) {
 		const cache = await caches.open(this.cacheName);
 
 		// Hack around `failed to execute 'keys' on 'Cache': Operation too large`
@@ -241,7 +241,7 @@ class RevisionCacheFirst extends Strategy {
 			isTooManyKeys = true;
 			console.error("Failed to load cache keys due to error; falling back on per-request check...", e);
 		}
-		const validCacheKeys = Array.from(runtimeManifest).map(([url, revision]) => createCacheKey({ url, revision }).cacheKey);
+		const validCacheKeys = Array.from(runtimeManifest).map(([url, revision]) => createCacheKey({url, revision}).cacheKey);
 		console.log(`Found ${validCacheKeys.length} valid cache keys`);
 
 		const routeRegex = data.payload.routeRegex;
@@ -258,15 +258,15 @@ class RevisionCacheFirst extends Strategy {
 		 * This is an async function to let clients know the status of route caching.
 		 * It can take up to 1 ms, so it can be called without an await to let it resolve in downtime.
 		 */
-		const postProgress = async ({ frozenFetched }) => {
-			const clients = await self.clients.matchAll({ type: "window" });
+		const postProgress = async ({frozenFetched}) => {
+			const clients = await self.clients.matchAll({type: "window"});
 			for (const client of clients) {
-				client.postMessage({ type: "CACHE_ROUTES_PROGRESS", payload: { fetched: frozenFetched, fetchTotal } });
+				client.postMessage({type: "CACHE_ROUTES_PROGRESS", payload: {fetched: frozenFetched, fetchTotal}});
 			}
 		};
 
 		// First call, and awaited, so that pages show a loading bar to indicate fetching has started
-		await postProgress({ frozenFetched: fetched });
+		await postProgress({frozenFetched: fetched});
 
 		// early escape if there is no work to do.
 		if (fetchTotal === 0) return;
@@ -291,7 +291,7 @@ class RevisionCacheFirst extends Strategy {
 				if (isTooManyKeys && keysForUrl.length) {
 					console.log(`Skipping ${cleanUrl} (too many keys and already in cache)`);
 					fetched++;
-					postProgress({ frozenFetched: fetched });
+					postProgress({frozenFetched: fetched});
 					continue;
 				}
 
@@ -299,7 +299,7 @@ class RevisionCacheFirst extends Strategy {
 				// this await could be omitted to further speed up fetching at risk of failure during error
 				await cache.put(url, response);
 				fetched++;
-				postProgress({ frozenFetched: fetched });
+				postProgress({frozenFetched: fetched});
 			}
 		};
 
@@ -315,8 +315,8 @@ class RevisionCacheFirst extends Strategy {
 		// determine if any functions died and report them
 		const errorResults = fetchResults.filter(fetchResult => fetchResult.status === "rejected");
 		if (errorResults.length > 0) {
-			const clients = await self.clients.matchAll({ type: "window" });
-			for (const client of clients) client.postMessage({ type: "CACHE_ROUTES_ERROR", payload: { errors: errorResults } });
+			const clients = await self.clients.matchAll({type: "window"});
+			for (const client of clients) client.postMessage({type: "CACHE_ROUTES_ERROR", payload: { errors: errorResults }});
 		}
 	}
 }
@@ -340,7 +340,7 @@ const runtimeManifest = new Map(self.__WB_RUNTIME_MANIFEST.map(
 const revisionCacheFirst = new RevisionCacheFirst();
 
 registerRoute(
-	({ request }) => runtimeManifest.has(request.url),
+	({request}) => runtimeManifest.has(request.url),
 	revisionCacheFirst,
 );
 
@@ -351,7 +351,7 @@ addEventListener("activate", revisionCacheFirst.activate);
 this tells workbox to cache fonts, and serve them cache first after first load
 this works on the assumption that fonts are static assets and won't change
  */
-registerRoute(({ request }) => request.destination === "font", new CacheFirst({
+registerRoute(({request}) => request.destination === "font", new CacheFirst({
 	cacheName: "font-cache",
 }));
 
@@ -359,11 +359,11 @@ registerRoute(({ request }) => request.destination === "font", new CacheFirst({
 the base case route - for images that have fallen through every other route
 this is external images, for homebrew as an example
 */
-registerRoute(({ request }) => request.destination === "image", new NetworkFirst({
+registerRoute(({request}) => request.destination === "image", new NetworkFirst({
 	cacheName: "external-image-cache",
 	plugins: [
 		// this is a safeguard against an utterly massive cache - these numbers may need tweaking
-		new ExpirationPlugin({ maxAgeSeconds: 7 /* days */ * 24 * 60 * 60, maxEntries: 100, purgeOnQuotaError: true }),
+		new ExpirationPlugin({maxAgeSeconds: 7 /* days */ * 24 * 60 * 60, maxEntries: 100, purgeOnQuotaError: true}),
 	],
 }));
 

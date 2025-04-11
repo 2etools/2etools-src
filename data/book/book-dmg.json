@@ -802,19 +802,12 @@
 						"Given their numerous advantages, demihumans would be the most attractive races--no one would play a human. Again, this isn't necessarily bad, but it's very different. The resulting game will be completely unlike the standard sword-and-sorcery milieu. You might need to set the campaign in an ancient age, before the ascendance of men (though given the situation, it's unlikely that men would ever become dominant).",
 						{
 							"type": "inset",
-							"name": "",
+							"name": "Slow Advancement (Optional Rule)",
 							"page": 14,
 							"entries": [
-								{
-									"type": "entries",
-									"name": "Slow Advancement (Optional Rule)",
-									"page": 14,
-									"entries": [
-										"If you decide to allow demihumans unlimited advancement, consider this option: To counteract the demihumans' long life, slow down their advancement. Require demihumans to earn two, three, or even four times as many experience points as a human to advance a level.",
-										"This allows the short-lived humans to advance more quickly than their long-lived comrades, who will eventually catch up after the humans' demise. If this solution, though logical, is unacceptable to your players, a compromise may be called for.",
-										"The best compromise is to allow demihumans normal (or double-cost) advancement to their \"maximum\" levels. Then require them to earn triple or quadruple experience points to advance beyond that point. They will advance very slowly, but the players will still have a goal and the sense of accomplishment that comes with rising a level."
-									]
-								}
+								"If you decide to allow demihumans unlimited advancement, consider this option: To counteract the demihumans' long life, slow down their advancement. Require demihumans to earn two, three, or even four times as many experience points as a human to advance a level.",
+								"This allows the short-lived humans to advance more quickly than their long-lived comrades, who will eventually catch up after the humans' demise. If this solution, though logical, is unacceptable to your players, a compromise may be called for.",
+								"The best compromise is to allow demihumans normal (or double-cost) advancement to their \"maximum\" levels. Then require them to earn triple or quadruple experience points to advance beyond that point. They will advance very slowly, but the players will still have a goal and the sense of accomplishment that comes with rising a level."
 							]
 						},
 						{
@@ -827,14 +820,25 @@
 									"type": "table",
 									"caption": "Table 7: Racial Class and Level Limits",
 									"page": 15,
-									"colLabels": [
-										"Character Class",
-										"",
-										"",
-										"Character Race",
-										"",
-										"",
-										""
+									"colLabelRows": [
+										[
+											"Character Class",
+											{
+												"type": "cellHeader",
+												"width": 6,
+												"entry": "Character Race",
+												"style": "th-skewer"
+											}
+										],
+										[
+											"",
+											"Human",
+											"Dwarf",
+											"Elf",
+											"Gnome",
+											"Half-Elf",
+											"Halfling"
+										]
 									],
 									"colStyles": [
 										"col- text-left",
@@ -842,23 +846,10 @@
 										"col- text-center",
 										"col- text-center",
 										"col- text-center",
+										"col- text-center",
 										"col- text-center"
 									],
-									"outro": [
-										"U A player character can advance to the maxiumum possible level in a given class. The {@i {@book Player's Handbook|PHB|chapter|heading}} gives rules for advancing the player characters to 20th level.",
-										"\u2014A player character belong to the listed class.",
-										"✝ Player characters with less than exceptional prime requisites cannot advance beyond the listed level."
-									],
 									"rows": [
-										[
-											"\u2014",
-											"{@b Human}",
-											"{@b Dwarf}",
-											"{@b Elf}",
-											"{@b Gnome}",
-											"{@b Half-Elf}",
-											"{@b Halfling}"
-										],
 										[
 											"Bard*",
 											"U",
@@ -942,18 +933,20 @@
 										]
 									],
 									"footnotes": [
-										"* These character classes are optional."
+										"* These character classes are optional.",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												"U A player character can advance to the maxiumum possible level in a given class. The {@i {@book Player's Handbook|PHB|chapter|heading}} gives rules for advancing the player characters to 20th level.",
+												"\u2014A player character belong to the listed class.",
+												"✝ Player characters with less than exceptional prime requisites cannot advance beyond the listed level."
+											]
+										}
 									]
-								}
-							]
-						},
-						{
-							"type": "inset",
-							"name": "",
-							"page": 15,
-							"entries": [
+								},
 								{
-									"type": "entries",
+									"type": "inset",
 									"name": "Exceeding Level Limits (Optional Rule)",
 									"page": 15,
 									"entries": [
@@ -11947,7 +11940,7 @@
 							"page": 114,
 							"entries": [
 								"There are several shortcut methods that can be used when role-playing NPCs who only have brief appearances\u2014the \"walk-ons'' and \"cameos'' of a role-playing adventure.",
-								"{@b Character Traits:}The DM can choose some particular character trait\u2014cowardice, greed, optimism, precision, or whatever\u2014and exaggerate it, take it to an extreme. This is most effective for creating comical (or frustrating) situations.",
+								"{@b Character Traits:} The DM can choose some particular character trait\u2014cowardice, greed, optimism, precision, or whatever\u2014and exaggerate it, take it to an extreme. This is most effective for creating comical (or frustrating) situations.",
 								"{@b Physical Traits:} A particular physical trait\u2014baldness, potbellied, bad teeth, wheezy, and more\u2014can be stressed. This helps fix the appearance of the NPC in the players' minds, especially useful if the characters must describe or find the NPC again.",
 								"{@b Habits:} Like physical traits, simple habits\u2014scratches his head, tugs on his beard, stares at the sky when talking, or mumbles\u2014can be used. The DM can actually act out these simple habits at the table, adding a visual element to the roleplaying experience."
 							]
@@ -11955,7 +11948,7 @@
 						{
 							"type": "entries",
 							"name": "Significant NPCs",
-							"page": 115,
+							"page": 114,
 							"entries": [
 								"For very important NPCs, hirelings, and henchmen, the DM is going to need more than just a single character feature. Saying that a hireling is greedy is not enough. It doesn't make him any different from all the other greedy NPCs the player characters have met.",
 								"Perhaps he struggles to control his natural greediness out of loyalty. He may break into cold sweats and become nervous when the player character accidentally tempts him (\"Here, hold my horse while I go see what's making that noise.\"). Will he remain loyal or will his baser nature get the best of him? The answer to this question should come out through role-playing.",
@@ -11965,1564 +11958,1445 @@
 								"To aid in the process of creating NPCs, Table 70 lists different types of attitudes, tendencies, and habits. These are organized into major traits, with similar characteristics grouped under each.",
 								"The DM can choose a major trait and any appropriate characteristics; he can randomly determine the major trait (rolling {@dice 1d20}) and select appropriate characteristics; or he can randomly determine everything ({@dice 1d20} for a major trait, percentile dice for characteristics).",
 								"For example, the DM randomly determines a hireling is careless, selects thoughtless from that sub-group and then rolls for an additional characteristic, getting cheerful. The end result is somewhat scatter-brained, happy-go-lucky person.",
-								"though it can be used to create completely random personalities. However, random methods often lead to confusing and seemingly impossible combinations! If a result seems totally impossible or unplayable, don't use it simply because that's how the dice rolls came up. Whenever possible, the DM should decide the personality of the NPC!",
+								"This table is used to spur the imagination of the DM, although it can be used to create completely random personalities. However, random methods often lead to confusing and seemingly impossible combinations! If a result seems totally impossible or unplayable, don't use it simply because that's how the dice rolls came up. Whenever possible, the DM should decide the personality of the NPC!",
 								{
 									"type": "tableGroup",
 									"name": "Table 70: General Traits",
-									"source": "etc",
+									"page": 114,
 									"tables": [
 										{
-											"type": "list",
-											"style": "list-hang",
-											"columns": 2,
-											"items": [
-												{
-													"type": "table",
-													"caption": "",
-													"colLabels": [
-														"Die Roll 1 ({@dice D20})",
-														"General Trait"
-													],
-													"colStyles": [
-														"col- text-left",
-														"col- text-left"
-													],
-													"rows": [
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 1,
-																	"pad": false
-																}
-															},
-															"Argumentative"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 2,
-																	"pad": false
-																}
-															},
-															"Arrogant"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 3,
-																	"pad": false
-																}
-															},
-															"Capricious"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 4,
-																	"pad": false
-																}
-															},
-															"Careless"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 5,
-																	"pad": false
-																}
-															},
-															"Courage"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 6,
-																	"pad": false
-																}
-															},
-															"Curious"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 7,
-																	"pad": false
-																}
-															},
-															"Exacting"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 8,
-																	"pad": false
-																}
-															},
-															"Friendly"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 9,
-																	"pad": false
-																}
-															},
-															"Greedy"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 10,
-																	"pad": false
-																}
-															},
-															"Generous"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 11,
-																	"pad": false
-																}
-															},
-															"Moody"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 12,
-																	"pad": false
-																}
-															},
-															"Naive"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 13,
-																	"pad": false
-																}
-															},
-															"Opinonated"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 14,
-																	"pad": false
-																}
-															},
-															"Optimistic"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 15,
-																	"pad": false
-																}
-															},
-															"Pessimistic"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 16,
-																	"pad": false
-																}
-															},
-															"Quiet"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 17,
-																	"pad": false
-																}
-															},
-															"Sober"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 18,
-																	"pad": false
-																}
-															},
-															"Suspicious"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 19,
-																	"pad": false
-																}
-															},
-															"Uncivilized"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 20,
-																	"pad": false
-																}
-															},
-															"Violent"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														],
-														[
-															"-",
-															"-"
-														]
-													]
-												},
-												{
-													"type": "table",
-													"colLabels": [
-														"Die Roll 2 ({@dice D100})",
-														"Specific Trait"
-													],
-													"colStyles": [
-														"col- text-left",
-														"col- text-left"
-													],
-													"rows": [
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 1,
-																	"pad": true
-																}
-															},
-															"Garrulous"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 2,
-																	"pad": true
-																}
-															},
-															"Hot-tempered"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 3,
-																	"pad": true
-																}
-															},
-															"Overbearing"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 4,
-																	"pad": true
-																}
-															},
-															"Articulate"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 5,
-																	"pad": true
-																}
-															},
-															"Antagonistic"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 6,
-																	"pad": true
-																}
-															},
-															"Haughty"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 7,
-																	"pad": true
-																}
-															},
-															"Elitist"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 8,
-																	"pad": true
-																}
-															},
-															"Proud"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 9,
-																	"pad": true
-																}
-															},
-															"Rude"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 10,
-																	"pad": true
-																}
-															},
-															"Aloof"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 11,
-																	"pad": true
-																}
-															},
-															"Mischievous"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 12,
-																	"pad": true
-																}
-															},
-															"Impulsive"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 13,
-																	"pad": true
-																}
-															},
-															"Lusty"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 14,
-																	"pad": true
-																}
-															},
-															"Irreverent"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 15,
-																	"pad": true
-																}
-															},
-															"Madcap"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 16,
-																	"pad": true
-																}
-															},
-															"Thoughtless"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 17,
-																	"pad": true
-																}
-															},
-															"Absent-minded"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 18,
-																	"pad": true
-																}
-															},
-															"Dreamy"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 19,
-																	"pad": true
-																}
-															},
-															"No common sense"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 20,
-																	"pad": true
-																}
-															},
-															"Insensitive"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 21,
-																	"pad": true
-																}
-															},
-															"Brave"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 22,
-																	"pad": true
-																}
-															},
-															"Craven"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 23,
-																	"pad": true
-																}
-															},
-															"Shy"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 24,
-																	"pad": true
-																}
-															},
-															"Fearless"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 25,
-																	"pad": true
-																}
-															},
-															"Obsequious"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 26,
-																	"pad": true
-																}
-															},
-															"Inquisitive"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 27,
-																	"pad": true
-																}
-															},
-															"Prying"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 28,
-																	"pad": true
-																}
-															},
-															"Intellectual"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 29,
-																	"pad": true
-																}
-															},
-															"Perceptive"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 30,
-																	"pad": true
-																}
-															},
-															"Keen"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 31,
-																	"pad": true
-																}
-															},
-															"Perfectionist"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 32,
-																	"pad": true
-																}
-															},
-															"Stern"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 33,
-																	"pad": true
-																}
-															},
-															"Harsh"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 34,
-																	"pad": true
-																}
-															},
-															"Punctual"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 35,
-																	"pad": true
-																}
-															},
-															"Driven"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 36,
-																	"pad": true
-																}
-															},
-															"Trusting"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 37,
-																	"pad": true
-																}
-															},
-															"Kind-hearted"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 38,
-																	"pad": true
-																}
-															},
-															"Forgiving"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 39,
-																	"pad": true
-																}
-															},
-															"Easy-going"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 40,
-																	"pad": true
-																}
-															},
-															"Compassionate"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 41,
-																	"pad": true
-																}
-															},
-															"Miserly"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 42,
-																	"pad": true
-																}
-															},
-															"Hard-hearted"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 43,
-																	"pad": true
-																}
-															},
-															"Covetous"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 44,
-																	"pad": true
-																}
-															},
-															"Avaricious"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 45,
-																	"pad": true
-																}
-															},
-															"Thrifty"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 46,
-																	"pad": true
-																}
-															},
-															"Wastrel"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 47,
-																	"pad": true
-																}
-															},
-															"Spendthrift"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 48,
-																	"pad": true
-																}
-															},
-															"Extravagant"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 49,
-																	"pad": true
-																}
-															},
-															"Kind"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 50,
-																	"pad": true
-																}
-															},
-															"Charitable"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 51,
-																	"pad": true
-																}
-															},
-															"Gloomy"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 52,
-																	"pad": true
-																}
-															},
-															"Morose"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 53,
-																	"pad": true
-																}
-															},
-															"Compulsive"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 54,
-																	"pad": true
-																}
-															},
-															"Irritable"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 55,
-																	"pad": true
-																}
-															},
-															"Vengeful"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 56,
-																	"pad": true
-																}
-															},
-															"Honest"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 57,
-																	"pad": true
-																}
-															},
-															"Truthful"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 58,
-																	"pad": true
-																}
-															},
-															"Innocent"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 59,
-																	"pad": true
-																}
-															},
-															"Gullible"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 60,
-																	"pad": true
-																}
-															},
-															"Hick"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 61,
-																	"pad": true
-																}
-															},
-															"Bigoted"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 62,
-																	"pad": true
-																}
-															},
-															"Biased"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 63,
-																	"pad": true
-																}
-															},
-															"Narrow-minded"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 64,
-																	"pad": true
-																}
-															},
-															"Blustering"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 65,
-																	"pad": true
-																}
-															},
-															"Hide-bound"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 66,
-																	"pad": true
-																}
-															},
-															"Cheerful"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 67,
-																	"pad": true
-																}
-															},
-															"Happy"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 68,
-																	"pad": true
-																}
-															},
-															"Diplomatic"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 69,
-																	"pad": true
-																}
-															},
-															"Pleasant"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 70,
-																	"pad": true
-																}
-															},
-															"Foolhardy"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 71,
-																	"pad": true
-																}
-															},
-															"Fatalistic"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 72,
-																	"pad": true
-																}
-															},
-															"Depressing"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 73,
-																	"pad": true
-																}
-															},
-															"Cynical"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 74,
-																	"pad": true
-																}
-															},
-															"Sarcastic"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 75,
-																	"pad": true
-																}
-															},
-															"Realistic"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 76,
-																	"pad": true
-																}
-															},
-															"Laconic"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 77,
-																	"pad": true
-																}
-															},
-															"Soft-spoken"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 78,
-																	"pad": true
-																}
-															},
-															"Secretive"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 79,
-																	"pad": true
-																}
-															},
-															"Retiring"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 80,
-																	"pad": true
-																}
-															},
-															"Mousy"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 81,
-																	"pad": true
-																}
-															},
-															"Practical"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 82,
-																	"pad": true
-																}
-															},
-															"Level-headed"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 83,
-																	"pad": true
-																}
-															},
-															"Dull"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 84,
-																	"pad": true
-																}
-															},
-															"Reverent"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 85,
-																	"pad": true
-																}
-															},
-															"Ponderous"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 86,
-																	"pad": true
-																}
-															},
-															"Scheming"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 87,
-																	"pad": true
-																}
-															},
-															"Paranoid"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 88,
-																	"pad": true
-																}
-															},
-															"Cautious"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 89,
-																	"pad": true
-																}
-															},
-															"Deceitful"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 90,
-																	"pad": true
-																}
-															},
-															"Nervous"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 91,
-																	"pad": true
-																}
-															},
-															"Uncultured"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 92,
-																	"pad": true
-																}
-															},
-															"Boorish"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 93,
-																	"pad": true
-																}
-															},
-															"Barbaric"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 94,
-																	"pad": true
-																}
-															},
-															"Graceless"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 95,
-																	"pad": true
-																}
-															},
-															"Crude"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 96,
-																	"pad": true
-																}
-															},
-															"Cruel"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 97,
-																	"pad": true
-																}
-															},
-															"Sadistic"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 98,
-																	"pad": true
-																}
-															},
-															"Immoral"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 99,
-																	"pad": true
-																}
-															},
-															"Jealous"
-														],
-														[
-															{
-																"type": "cell",
-																"roll": {
-																	"exact": 100,
-																	"pad": false
-																}
-															},
-															"Warlike"
-														]
-													]
-												}
+											"type": "table",
+											"colLabels": [
+												"Die Roll 1 ({@dice D20})",
+												"General Trait"
+											],
+											"colStyles": [
+												"col- text-left",
+												"col- text-left"
+											],
+											"rows": [
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 1
+														}
+													},
+													"Argumentative"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 2
+														}
+													},
+													"Arrogant"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 3
+														}
+													},
+													"Capricious"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 4
+														}
+													},
+													"Careless"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 5
+														}
+													},
+													"Courage"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 6
+														}
+													},
+													"Curious"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 7
+														}
+													},
+													"Exacting"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 8
+														}
+													},
+													"Friendly"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 9
+														}
+													},
+													"Greedy"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 10
+														}
+													},
+													"Generous"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 11
+														}
+													},
+													"Moody"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 12
+														}
+													},
+													"Naive"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 13
+														}
+													},
+													"Opinonated"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 14
+														}
+													},
+													"Optimistic"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 15
+														}
+													},
+													"Pessimistic"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 16
+														}
+													},
+													"Quiet"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 17
+														}
+													},
+													"Sober"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 18
+														}
+													},
+													"Suspicious"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 19
+														}
+													},
+													"Uncivilized"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 20
+														}
+													},
+													"Violent"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												],
+												[
+													"-",
+													"-"
+												]
+											]
+										},
+										{
+											"type": "table",
+											"colLabels": [
+												"Die Roll 2 ({@dice D100})",
+												"Specific Trait"
+											],
+											"colStyles": [
+												"col- text-left",
+												"col- text-left"
+											],
+											"rows": [
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 1,
+															"pad": true
+														}
+													},
+													"Garrulous"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 2,
+															"pad": true
+														}
+													},
+													"Hot-tempered"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 3,
+															"pad": true
+														}
+													},
+													"Overbearing"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 4,
+															"pad": true
+														}
+													},
+													"Articulate"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 5,
+															"pad": true
+														}
+													},
+													"Antagonistic"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 6,
+															"pad": true
+														}
+													},
+													"Haughty"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 7,
+															"pad": true
+														}
+													},
+													"Elitist"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 8,
+															"pad": true
+														}
+													},
+													"Proud"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 9,
+															"pad": true
+														}
+													},
+													"Rude"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 10
+														}
+													},
+													"Aloof"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 11
+														}
+													},
+													"Mischievous"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 12
+														}
+													},
+													"Impulsive"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 13
+														}
+													},
+													"Lusty"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 14
+														}
+													},
+													"Irreverent"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 15
+														}
+													},
+													"Madcap"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 16
+														}
+													},
+													"Thoughtless"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 17
+														}
+													},
+													"Absent-minded"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 18
+														}
+													},
+													"Dreamy"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 19
+														}
+													},
+													"No common sense"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 20
+														}
+													},
+													"Insensitive"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 21
+														}
+													},
+													"Brave"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 22
+														}
+													},
+													"Craven"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 23
+														}
+													},
+													"Shy"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 24
+														}
+													},
+													"Fearless"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 25
+														}
+													},
+													"Obsequious"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 26
+														}
+													},
+													"Inquisitive"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 27
+														}
+													},
+													"Prying"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 28
+														}
+													},
+													"Intellectual"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 29
+														}
+													},
+													"Perceptive"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 30
+														}
+													},
+													"Keen"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 31
+														}
+													},
+													"Perfectionist"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 32
+														}
+													},
+													"Stern"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 33
+														}
+													},
+													"Harsh"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 34
+														}
+													},
+													"Punctual"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 35
+														}
+													},
+													"Driven"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 36
+														}
+													},
+													"Trusting"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 37
+														}
+													},
+													"Kind-hearted"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 38
+														}
+													},
+													"Forgiving"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 39
+														}
+													},
+													"Easy-going"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 40
+														}
+													},
+													"Compassionate"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 41
+														}
+													},
+													"Miserly"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 42
+														}
+													},
+													"Hard-hearted"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 43
+														}
+													},
+													"Covetous"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 44
+														}
+													},
+													"Avaricious"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 45
+														}
+													},
+													"Thrifty"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 46
+														}
+													},
+													"Wastrel"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 47
+														}
+													},
+													"Spendthrift"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 48
+														}
+													},
+													"Extravagant"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 49
+														}
+													},
+													"Kind"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 50
+														}
+													},
+													"Charitable"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 51
+														}
+													},
+													"Gloomy"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 52
+														}
+													},
+													"Morose"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 53
+														}
+													},
+													"Compulsive"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 54
+														}
+													},
+													"Irritable"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 55
+														}
+													},
+													"Vengeful"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 56
+														}
+													},
+													"Honest"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 57
+														}
+													},
+													"Truthful"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 58
+														}
+													},
+													"Innocent"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 59
+														}
+													},
+													"Gullible"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 60
+														}
+													},
+													"Hick"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 61
+														}
+													},
+													"Bigoted"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 62
+														}
+													},
+													"Biased"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 63
+														}
+													},
+													"Narrow-minded"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 64
+														}
+													},
+													"Blustering"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 65
+														}
+													},
+													"Hide-bound"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 66
+														}
+													},
+													"Cheerful"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 67
+														}
+													},
+													"Happy"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 68
+														}
+													},
+													"Diplomatic"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 69
+														}
+													},
+													"Pleasant"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 70
+														}
+													},
+													"Foolhardy"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 71
+														}
+													},
+													"Fatalistic"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 72
+														}
+													},
+													"Depressing"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 73
+														}
+													},
+													"Cynical"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 74
+														}
+													},
+													"Sarcastic"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 75
+														}
+													},
+													"Realistic"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 76
+														}
+													},
+													"Laconic"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 77
+														}
+													},
+													"Soft-spoken"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 78
+														}
+													},
+													"Secretive"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 79
+														}
+													},
+													"Retiring"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 80
+														}
+													},
+													"Mousy"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 81
+														}
+													},
+													"Practical"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 82
+														}
+													},
+													"Level-headed"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 83
+														}
+													},
+													"Dull"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 84
+														}
+													},
+													"Reverent"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 85
+														}
+													},
+													"Ponderous"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 86
+														}
+													},
+													"Scheming"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 87
+														}
+													},
+													"Paranoid"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 88
+														}
+													},
+													"Cautious"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 89
+														}
+													},
+													"Deceitful"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 90
+														}
+													},
+													"Nervous"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 91
+														}
+													},
+													"Uncultured"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 92
+														}
+													},
+													"Boorish"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 93
+														}
+													},
+													"Barbaric"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 94
+														}
+													},
+													"Graceless"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 95
+														}
+													},
+													"Crude"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 96
+														}
+													},
+													"Cruel"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 97
+														}
+													},
+													"Sadistic"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 98
+														}
+													},
+													"Immoral"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 99
+														}
+													},
+													"Jealous"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 0
+														}
+													},
+													"Warlike"
+												]
 											]
 										}
 									]
@@ -14369,29 +14243,6 @@
 										"col- text-center",
 										"col- text-center"
 									],
-									"outro": [
-										{
-											"type": "list",
-											"style": "list-hang-notitle",
-											"items": [
-												{
-													"type": "item",
-													"entries": [
-														"{@b Base move per hour} is the average speed of the vessel under good conditions. Where two numbers are separated by a slash, the first is the speed under sail and the second is the rowing speed.",
-														"To determine the movement of a ship per round (in rare occasions where this is necessary), multiply the current speed times 30. This is the yards traveled per round."
-													]
-												},
-												"{@b Emergency move} is the top speed of the vessel in emergency or combat situations. For sailing ships, emergency speed is gained by putting on every yard of sail possible. Galleys and other oared ships rely on the strength of their rowers. This speed can only be maintained for short periods of time. Too long and rowers will collapse; masts, yards, and sails will break.",
-												{
-													"type": "item",
-													"entries": [
-														"{@b Seaworthiness} rates the vessel's ability to remain afloat in dangerous situations, notably storms, hidden shoals, extended voyages, huge monster attacks, and rams. Any time the DM rules that there is a chance of sinking, he rolls percentile dice. If the roll is equal to or less than the seaworthiness rating of the ship, it remains afloat, though bailing or repairs may be necessary. If the roll is higher than the seaworthiness rating, the ship sinks.",
-														"Ports and anchorages give a seaworthiness bonus of +50%. Thus, vessels at anchor are in little or no danger from a normal storm."
-													]
-												}
-											]
-										}
-									],
 									"rows": [
 										[
 											"Caravel",
@@ -14453,6 +14304,27 @@
 											"13",
 											"60%"
 										]
+									]
+								},
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"entries": [
+												"{@b Base move per hour} is the average speed of the vessel under good conditions. Where two numbers are separated by a slash, the first is the speed under sail and the second is the rowing speed.",
+												"To determine the movement of a ship per round (in rare occasions where this is necessary), multiply the current speed times 30. This is the yards traveled per round."
+											]
+										},
+										"{@b Emergency move} is the top speed of the vessel in emergency or combat situations. For sailing ships, emergency speed is gained by putting on every yard of sail possible. Galleys and other oared ships rely on the strength of their rowers. This speed can only be maintained for short periods of time. Too long and rowers will collapse; masts, yards, and sails will break.",
+										{
+											"type": "item",
+											"entries": [
+												"{@b Seaworthiness} rates the vessel's ability to remain afloat in dangerous situations, notably storms, hidden shoals, extended voyages, huge monster attacks, and rams. Any time the DM rules that there is a chance of sinking, he rolls percentile dice. If the roll is equal to or less than the seaworthiness rating of the ship, it remains afloat, though bailing or repairs may be necessary. If the roll is higher than the seaworthiness rating, the ship sinks.",
+												"Ports and anchorages give a seaworthiness bonus of +50%. Thus, vessels at anchor are in little or no danger from a normal storm."
+											]
+										}
 									]
 								}
 							]
@@ -15017,9 +14889,7 @@
 						{
 							"type": "list",
 							"style": "list-hang",
-							"columns": 0,
 							"page": 132,
-							"name": "",
 							"items": [
 								"A carefully researched campaign set in late-Medieval Italy where characters can meet famous rulers and artists of the age.",
 								"One set in a world similar to the Far East, with oriental characters, creatures, and beliefs.",
@@ -15081,9 +14951,7 @@
 								{
 									"type": "list",
 									"style": "list-hang",
-									"columns": 0,
 									"page": 132,
-									"name": "",
 									"items": [
 										"Mechanus",
 										"Arcadia",
@@ -15119,30 +14987,37 @@
 			"page": 133,
 			"entries": [
 				{
-					"type": "tableGroup",
+					"type": "list",
+					"style": "list-hang",
 					"name": "Table 84: Treasure Types",
-					"page": 133,
-					"tables": [
+					"items": [
 						{
-							"type": "list",
-							"style": "list-hang",
-							"columns": 0,
-							"page": 133,
+							"type": "tableGroup",
 							"name": "Table 84: Treasure Types",
-							"items": [
+							"page": 133,
+							"tables": [
 								{
 									"type": "table",
-									"caption": "LAIR TREASURES",
 									"page": 133,
-									"colLabels": [
-										"Treasure Type",
-										"Copper",
-										"Silver",
-										"Gold",
-										"Platinum or Electrum*",
-										"Gems",
-										"Art Objects",
-										"Magical Item"
+									"colLabelRows": [
+										[
+											{
+												"type": "cellHeader",
+												"width": 8,
+												"entry": "LAIR TREASURES",
+												"style": "th-skewer"
+											}
+										],
+										[
+											"Treasure Type",
+											"Copper",
+											"Silver",
+											"Gold",
+											"Platinum or Electrum*",
+											"Gems",
+											"Art Objects",
+											"Magical Item"
+										]
 									],
 									"colStyles": [
 										"col- text-center",
@@ -15339,17 +15214,26 @@
 								},
 								{
 									"type": "table",
-									"caption": "INDIVIDUAL AND SMALL LAIR TREASURES",
 									"page": 133,
-									"colLabels": [
-										"Treasure Type",
-										"Copper",
-										"Silver",
-										"Gold",
-										"Platinum or Electrum*",
-										"Gems",
-										"Art Objects",
-										"Magical Item"
+									"colLabelRows": [
+										[
+											{
+												"type": "cellHeader",
+												"width": 8,
+												"entry": "INDIVIDUAL AND SMALL LAIR TREASURES",
+												"style": "th-skewer"
+											}
+										],
+										[
+											"Treasure Type",
+											"Copper",
+											"Silver",
+											"Gold",
+											"Platinum or Electrum*",
+											"Gems",
+											"Art Objects",
+											"Magical Item"
+										]
 									],
 									"colStyles": [
 										"col- text-center",
@@ -16187,16 +16071,15 @@
 						"Once the general category is determined, the DM can choose a specific item from the tables below. (Each item on the tables is given a die roll number so that the DM can select items randomly, if he chooses.) Some tables have several subtables. Each subtable has a range of numbers in parentheses at the top. To select the appropriate subtable, check the die listed after the table's title. Roll the listed die and find the result in the number range at the top of one of the subtables. This is the subtable you read to determine which item in the list has been found.",
 						"For example, the Potions and Oils table has \"({@dice D6})'' after the title. That means you roll a 6-sided die to determine which Subtable (A, B, or C) to read. If you roll a 2, for example, you check subtable A (which has \"1\u20132'' at the top); if you roll a 6, you read subtable C (which has \"5\u20136'' at the top). Roll {@dice 1d20} on the appropriate subtable to determine the specific item found. Then turn to the descriptions following the tables to find out what each item does.",
 						{
-							"type": "tableGroup",
+							"type": "list",
+							"style": "list-hang",
+							"page": 135,
 							"name": "Table 89: Potions and Oils",
-							"tables": [
+							"items": [
 								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 3,
-									"page": 135,
+									"type": "tableGroup",
 									"name": "Table 89: Potions and Oils",
-									"items": [
+									"tables": [
 										{
 											"type": "table",
 											"caption": "Suitable A (1-2)",
@@ -16827,16 +16710,16 @@
 							]
 						},
 						{
-							"type": "tableGroup",
+							"type": "list",
+							"style": "list-hang",
+							"columns": 0,
+							"page": 136,
 							"name": "Table 90: Scrolls (D6)",
-							"tables": [
+							"items": [
 								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 2,
-									"page": 136,
+									"type": "tableGroup",
 									"name": "Table 90: Scrolls (D6)",
-									"items": [
+									"tables": [
 										{
 											"type": "table",
 											"caption": "Suitable A (1-4)",
@@ -17251,16 +17134,16 @@
 							]
 						},
 						{
-							"type": "tableGroup",
+							"type": "list",
+							"style": "list-hang",
+							"columns": 0,
+							"page": 136,
 							"name": "Table 91: Rings (D6)",
-							"tables": [
+							"items": [
 								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 2,
-									"page": 136,
+									"type": "tableGroup",
 									"name": "Table 91: Rings (D6)",
-									"items": [
+									"tables": [
 										{
 											"type": "table",
 											"caption": "Suitable A (1-4)",
@@ -18467,16 +18350,17 @@
 							]
 						},
 						{
-							"type": "tableGroup",
+							"type": "list",
+							"style": "list-hang",
+							"columns": 0,
+							"page": 137,
 							"name": "Table 96: Miscellaneous Magic: Jewels, Jewelry, Phylacteries (D6)",
-							"tables": [
+							"items": [
 								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 2,
-									"page": 137,
+									"type": "tableGroup",
 									"name": "Table 96: Miscellaneous Magic: Jewels, Jewelry, Phylacteries (D6)",
-									"items": [
+									"page": 137,
+									"tables": [
 										{
 											"type": "table",
 											"caption": "Suitable A (1-3)",
@@ -20369,16 +20253,17 @@
 							]
 						},
 						{
-							"type": "tableGroup",
+							"type": "list",
+							"style": "list-hang",
+							"columns": 0,
 							"name": "Table 104: Miscellaneous Magic: The Weird Stuff (D6)",
-							"tables": [
+							"page": 139,
+							"items": [
 								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 2,
-									"page": 139,
+									"type": "tableGroup",
 									"name": "Table 104: Miscellaneous Magic: The Weird Stuff (D6)",
-									"items": [
+									"page": 139,
+									"tables": [
 										{
 											"type": "table",
 											"caption": "Suitable A (1-3)",
@@ -21147,17 +21032,17 @@
 							"entries": [
 								"To determine the type of magical weapon found, roll once on Table 108 for a weapon type. Then roll on Table 109 to determine the plus (or minus) of the weapon. If a Special result is rolled, roll on Table 110 to determine the exact weapon found. A range of numbers in parentheses is the number of items found.",
 								{
-									"type": "tableGroup",
+									"type": "list",
+									"style": "list-hang",
+									"columns": 0,
 									"name": "Table 108: Weapon Type (D6)",
-									"source": "etc",
-									"tables": [
+									"page": 140,
+									"items": [
 										{
-											"type": "list",
-											"style": "list-hang",
-											"columns": 2,
-											"page": 140,
+											"type": "tableGroup",
 											"name": "Table 108: Weapon Type (D6)",
-											"items": [
+											"page": 140,
+											"tables": [
 												{
 													"type": "table",
 													"caption": "Subtable A (1\u20132)",
@@ -21538,17 +21423,17 @@
 									]
 								},
 								{
-									"type": "tableGroup",
+									"type": "list",
+									"style": "list-hang",
+									"columns": 0,
 									"name": "Table 110: Special Weapons (D10)",
-									"source": "etc",
-									"tables": [
+									"page": 140,
+									"items": [
 										{
-											"type": "list",
-											"style": "list-hang",
-											"columns": 2,
-											"page": 140,
+											"type": "tableGroup",
 											"name": "Table 110: Special Weapons (D10)",
-											"items": [
+											"page": 140,
+											"tables": [
 												{
 													"type": "table",
 													"caption": "Subtable A (1\u20133)",
@@ -23870,20 +23755,36 @@
 									]
 								},
 								{
-									"type": "tableGroup",
+									"type": "list",
+									"style": "list-hang",
+									"columns": 0,
 									"name": "Table 117: Special Purpose Weapons",
 									"page": 187,
-									"tables": [
+									"items": [
 										{
-											"type": "list",
-											"style": "list-hang",
-											"columns": 0,
-											"page": 187,
+											"type": "tableGroup",
 											"name": "Table 117: Special Purpose Weapons",
-											"items": [
+											"page": 187,
+											"tables": [
 												{
 													"type": "table",
-													"caption": "A. Purpose",
+													"colLabelRows": [
+														[
+															"A. Purpose"
+														]
+													],
+													"colStyles": [
+														"col- text-center"
+													],
+													"isStriped": false,
+													"rows": [
+														[
+															"Purpose must suit the type and alignment of the weapon in question. Killing is always restricted to evil when the weapon is of good alignment. Weapons dedicated to slaying monsters will always be either good and slay neutral or evil monsters, or evil and slay neutral or good monsters."
+														]
+													]
+												},
+												{
+													"type": "table",
 													"page": 187,
 													"colLabels": [
 														"{@dice D100} Roll",
@@ -23892,9 +23793,6 @@
 													"colStyles": [
 														"col- text-center",
 														"col- text-left"
-													],
-													"intro": [
-														"Purpose must suit the type and alignment of the weapon in question. Killing is always restricted to evil when the weapon is of good alignment. Weapons dedicated to slaying monsters will always be either good and slay neutral or evil monsters, or evil and slay neutral or good monsters."
 													],
 													"rows": [
 														[
@@ -23999,12 +23897,28 @@
 														]
 													],
 													"footnotes": [
-														"* The purpose of the true neutral version of this weapon is to preserve the balance (see \"Alignment'') by defeating/slaying powerful beings of the extreme alignments (lawful good, lawful evil, chaotic good, chaotic evil)."
+														"* The purpose of the true neutral version of this weapon is to preserve the balance (see \"Alignment\") by defeating/slaying powerful beings of the extreme alignments (lawful good, lawful evil, chaotic good, chaotic evil)."
 													]
 												},
 												{
 													"type": "table",
-													"caption": "B. Special Purpose Power",
+													"colLabelRows": [
+														[
+															"B. Special Purpose Power"
+														]
+													],
+													"colStyles": [
+														"col- text-center"
+													],
+													"isStriped": false,
+													"rows": [
+														[
+															"The power will operate only in pursuit of the special purpose."
+														]
+													]
+												},
+												{
+													"type": "table",
 													"page": 187,
 													"colLabels": [
 														"{@dice D100} Roll",
@@ -24013,9 +23927,6 @@
 													"colStyles": [
 														"col- text-center",
 														"col- text-left"
-													],
-													"intro": [
-														"The power will operate only in pursuit of the special purpose."
 													],
 													"rows": [
 														[
@@ -24098,80 +24009,98 @@
 									]
 								},
 								{
-									"type": "table",
-									"caption": "Table 118: Languages Spoken by Weapon",
+									"type": "tableGroup",
+									"name": "Table 118: Languages Spoken by Weapon",
 									"page": 187,
-									"colLabels": [
-										"{@dice D100} Roll",
-										"Power"
-									],
-									"colStyles": [
-										"col- text-center",
-										"col- text-center"
-									],
-									"rows": [
-										[
-											{
-												"type": "cell",
-												"roll": {
-													"min": 1,
-													"max": 40
-												}
-											},
-											"1"
-										],
-										[
-											{
-												"type": "cell",
-												"roll": {
-													"min": 41,
-													"max": 70
-												}
-											},
-											"2"
-										],
-										[
-											{
-												"type": "cell",
-												"roll": {
-													"min": 71,
-													"max": 85
-												}
-											},
-											"3"
-										],
-										[
-											{
-												"type": "cell",
-												"roll": {
-													"min": 86,
-													"max": 95
-												}
-											},
-											"4"
-										],
-										[
-											{
-												"type": "cell",
-												"roll": {
-													"min": 96,
-													"max": 99
-												}
-											},
-											"5"
-										],
-										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 100
-												}
-											},
-											"6*"
-										]
-									],
-									"footnotes": [
-										"* Or the result of 2 additional rolls ignoring a score of 00, whichever is the greater."
+									"tables": [
+										{
+											"type": "table",
+											"caption": "Table 118: Languages Spoken by Weapon",
+											"colStyles": [
+												"col- text-left"
+											],
+											"isStriped": false,
+											"rows": [
+												[
+													"The DM should determine languages spoken by the weapon based on his campaign and the history of the weapon. Thus, an intelligent warhammer fashioned by the dwarves would certainly understand dwarven as one of its powers."
+												]
+											]
+										},
+										{
+											"type": "table",
+											"colLabels": [
+												"{@dice D100} Roll",
+												"Power"
+											],
+											"colStyles": [
+												"col- text-center",
+												"col- text-center"
+											],
+											"rows": [
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"min": 1,
+															"max": 40
+														}
+													},
+													"1"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"min": 41,
+															"max": 70
+														}
+													},
+													"2"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"min": 71,
+															"max": 85
+														}
+													},
+													"3"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"min": 86,
+															"max": 95
+														}
+													},
+													"4"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"min": 96,
+															"max": 99
+														}
+													},
+													"5"
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 100
+														}
+													},
+													"6*"
+												]
+											],
+											"footnotes": [
+												"* Or the result of 2 additional rolls ignoring a score of 00, whichever is the greater."
+											]
+										}
 									]
 								}
 							]

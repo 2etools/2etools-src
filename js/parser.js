@@ -1565,7 +1565,9 @@ Parser.spRangeToShortHtml._getAreaStyleString = function (range) {
 	return `<span class="fas fa-fw ${Parser.spRangeTypeToIcon(range.type)} help-subtle" title="${Parser.spRangeTypeToFull(range.type)}"></span>`;
 };
 
-Parser.spRangeToFull = function (range) {
+Parser.spRangeToFull = function (range, { styleHint, isDisplaySelfArea = false } = {}) {
+	styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
+
 	switch (range.type) {
 		case Parser.RNG_SPECIAL: return Parser.spRangeTypeToFull(range.type);
 		case Parser.RNG_POINT: return Parser.spRangeToFull._renderPoint(range);
@@ -1577,7 +1579,7 @@ Parser.spRangeToFull = function (range) {
 		case Parser.RNG_SPHERE:
 		case Parser.RNG_HEMISPHERE:
 		case Parser.RNG_CYLINDER:
-			return Parser.spRangeToFull._renderArea(range);
+			return Parser.spRangeToFull._renderArea({ range, styleHint, isDisplaySelfArea });
 	}
 };
 Parser.spRangeToFull._renderPoint = function (range) {
@@ -1597,7 +1599,8 @@ Parser.spRangeToFull._renderPoint = function (range) {
 			return `${dist.amount} ${dist.amount === 1 ? Parser.getSingletonUnit(dist.type) : dist.type}`;
 	}
 };
-Parser.spRangeToFull._renderArea = function (range) {
+Parser.spRangeToFull._renderArea = function ({ range, styleHint, isDisplaySelfArea = false }) {
+	if (styleHint !== "classic" && !isDisplaySelfArea) return "Self";
 	const size = range.distance;
 	return `Self (${size.amount}-${Parser.getSingletonUnit(size.type)}${Parser.spRangeToFull._getAreaStyleString(range)}${range.type === Parser.RNG_CYLINDER ? `${size.amountSecondary != null && size.typeSecondary != null ? `, ${size.amountSecondary}-${Parser.getSingletonUnit(size.typeSecondary)}-high` : ""} cylinder` : ""})`;
 };
@@ -2885,7 +2888,7 @@ Parser.SKL_ENC = "Enchantment";
 Parser.SKL_ILL = "Illusion";
 Parser.SKL_DIV = "Divination";
 Parser.SKL_NEC = "Necromancy";
-Parser.SKL_TRA = "Alteration";
+Parser.SKL_TRA = "Transmutation";
 Parser.SKL_CON = "Conjuration";
 Parser.SKL_PSI = "Psionic";
 
@@ -2907,7 +2910,7 @@ Parser.SP_SCHOOL_ABV_TO_SHORT[Parser.SKL_ABV_ENC] = "Ench.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[Parser.SKL_ABV_ILL] = "Illu.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[Parser.SKL_ABV_DIV] = "Divin.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[Parser.SKL_ABV_NEC] = "Necro.";
-Parser.SP_SCHOOL_ABV_TO_SHORT[Parser.SKL_ABV_TRA] = "Alt.";
+Parser.SP_SCHOOL_ABV_TO_SHORT[Parser.SKL_ABV_TRA] = "Trans.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[Parser.SKL_ABV_CON] = "Conj.";
 Parser.SP_SCHOOL_ABV_TO_SHORT[Parser.SKL_ABV_PSI] = "Psi.";
 
@@ -2974,7 +2977,6 @@ Parser.SIZE_ABV_TO_FULL[Parser.SZ_GARGANTUAN] = "Gargantuan";
 Parser.SIZE_ABV_TO_FULL[Parser.SZ_COLOSSAL] = "Colossal";
 Parser.SIZE_ABV_TO_FULL[Parser.SZ_VARIES] = "Varies";
 
-// 5e-ism
 Parser.XP_CHART_ALT = {
 	"0": 10,
 	"1/8": 25,
@@ -3019,7 +3021,6 @@ Parser.ARMOR_ABV_TO_FULL = {
 	"s.": "shield",
 };
 
-// 5e-ism
 Parser.WEAPON_ABV_TO_FULL = {
 	"s.": "simple",
 	"m.": "martial",
@@ -4213,6 +4214,14 @@ Parser.SOURCES_AVAILABLE_DOCS_BOOK = {};
 [
 	Parser.SRC_PHB,
 	Parser.SRC_DMG,
+	Parser.SRC_MM,
+	Parser.SRC_XPHB,
+	Parser.SRC_XDMG,
+	Parser.SRC_SCREEN,
+	Parser.SRC_XSCREEN,
+	Parser.SRC_PHBR1,
+	Parser.SRC_DMGR1,
+	Parser.SRC_HR1,
 	Parser.SRC_SCAG,
 	Parser.SRC_VGM,
 	Parser.SRC_OGA,
@@ -4443,12 +4452,22 @@ Parser.DMGTYPE_JSON_TO_FULL = {
 Parser.DMG_TYPES = ["acid", "bludgeoning", "cold", "fire", "force", "lightning", "necrotic", "piercing", "poison", "psychic", "radiant", "slashing", "thunder"];
 Parser.CONDITIONS = ["blinded", "charmed", "deafened", "exhaustion", "frightened", "grappled", "incapacitated", "invisible", "paralyzed", "petrified", "poisoned", "prone", "restrained", "stunned", "unconscious"];
 
-Parser.SENSES = [
+Parser._SENSES_LEGACY = [
 	{ "name": "blindsight", "source": Parser.SRC_PHB },
 	{ "name": "darkvision", "source": Parser.SRC_PHB },
 	{ "name": "tremorsense", "source": Parser.SRC_MM },
 	{ "name": "truesight", "source": Parser.SRC_PHB },
 ];
+Parser._SENSES_MODERN = [
+	{ "name": "blindsight", "source": Parser.SRC_XPHB },
+	{ "name": "darkvision", "source": Parser.SRC_XPHB },
+	{ "name": "tremorsense", "source": Parser.SRC_XPHB },
+	{ "name": "truesight", "source": Parser.SRC_XPHB },
+];
+Parser.getSenses = function ({ styleHint = null } = {}) {
+	styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
+	return styleHint === "classic" ? Parser._SENSES_LEGACY : Parser._SENSES_MODERN;
+};
 
 Parser.NUMBERS_ONES = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
 Parser.NUMBERS_TENS = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];

@@ -2744,6 +2744,7 @@
 								"In addition to regular men-at-arms, the 9th-level fighter also attracts an elite bodyguard (his \"household guards\"). Although these soldiers are still mercenaries, they have greater loyalty to their Lord than do common soldiers. In return, they expect better treatment and more pay than the common soldier receives. Although the elite unit can be chosen randomly, it is better to ask your DM what unit your fighter attracts. This allows him to choose a troop consistent with the campaign.",
 								"The DM may design other tables that are more appropriate to his campaign. Check with your DM upon reaching 9th level.",
 								"A fighter can hold property, including a castle or stronghold, long before he reaches 9th level. However, it is only when he reaches this level that his name is so widely known that he attracts the loyalty of other warriors.",
+								"{@b Roll percentile dice on each of the following subtables of Table 16: once for the leader of the troops, once for troops, and once for a bodyguard (household guards) unit.}",
 								{
 									"type": "tableGroup",
 									"name": "Table 16: Fighter's Followers",
@@ -2752,7 +2753,6 @@
 										{
 											"type": "table",
 											"caption": "Table 16: Fighter's Followers",
-											"page": 27,
 											"colLabels": [
 												"Die Roll",
 												"Leader (and suggested magical items)"
@@ -2760,9 +2760,6 @@
 											"colStyles": [
 												"col- text-center",
 												"col- text-left"
-											],
-											"intro": [
-												"{@b Roll percentile dice on each of the following subtables of Table 16: once for the leader of the troops, once for troops, and once for a bodyguard (household guards) unit.}"
 											],
 											"rows": [
 												[
@@ -2789,7 +2786,6 @@
 										},
 										{
 											"type": "table",
-											"page": 27,
 											"colLabels": [
 												"Die Roll",
 												"Troops/Follower (all 0th-level)"
@@ -2826,7 +2822,6 @@
 										},
 										{
 											"type": "table",
-											"page": 27,
 											"colLabels": [
 												"Die Roll",
 												"Elite Units"
@@ -3880,17 +3875,6 @@
 										"col- text-left",
 										"col- text-left"
 									],
-									"outro": [
-										{
-											"type": "list",
-											"style": "list-hang-notitle",
-											"items": [
-												"{@b Race} lists those races that, either through a natural tendency or a quirk of fate, are allowed to specialize in that art. Note that the gnome, though unable to be a regular mage, can specialize in illusions.",
-												"{@b Minimum Ability Score} lists the ability minimums needed to study intensively in that school. All schools require at least the minimum Intelligence demanded of a mage and an additional prime requisite, as listed.",
-												"{@b Opposition School(s)} always includes the school directly opposite the character's school of study in the diagram. In addition, the schools to either side of this one may also be disallowed due to the nature of the character's school. For example, an invoker cannot learn enchantment/charm or conjuration/summoning spells and cannot use magical items that duplicate spells from these schools."
-											]
-										}
-									],
 									"rows": [
 										[
 											"Abjurer",
@@ -3948,6 +3932,17 @@
 											"15 Dex",
 											"Abjuration & Necromancy"
 										]
+									],
+									"footnotes": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												"{@b Race} lists those races that, either through a natural tendency or a quirk of fate, are allowed to specialize in that art. Note that the gnome, though unable to be a regular mage, can specialize in illusions.",
+												"{@b Minimum Ability Score} lists the ability minimums needed to study intensively in that school. All schools require at least the minimum Intelligence demanded of a mage and an additional prime requisite, as listed.",
+												"{@b Opposition School(s)} always includes the school directly opposite the character's school of study in the diagram. In addition, the schools to either side of this one may also be disallowed due to the nature of the character's school. For example, an invoker cannot learn enchantment/charm or conjuration/summoning spells and cannot use magical items that duplicate spells from these schools."
+											]
+										}
 									]
 								},
 								"Being a specialist does have significant advantages to balance the trade-offs the character must make. These are listed here:",
@@ -7574,2647 +7569,2717 @@
 						"Many of the uncommon items in these lists are explained in the following pages.",
 						"The price given for each item in the lists is its average price, the amount you can expect the item to cost in a normal economy. However, large cities, barren wildernesses, and places with brave adventurers carrying bags full of gold are not normal economies. In these places you may find yourself paying more (very rarely less) than the amount listed. You can also haggle with merchants over prices, although to speed up the game it's recommended that you save this for your important purchases. If you wind up haggling over the cost of every tankard of ale, your character is going to spend more time being a pennypincher than an adventurer!",
 						{
-							"type": "tableGroup",
+							"type": "list",
+							"style": "list-hang",
 							"name": "Table 44: Equipment",
 							"page": 66,
-							"tables": [
+							"items": [
 								{
-									"type": "table",
-									"caption": "Table 44: Equipment",
+									"type": "tableGroup",
+									"name": "Table 44: Equipment",
 									"page": 66,
-									"rows": [
-										[
-											""
-										]
-									]
-								},
-								{
-									"type": "table",
-									"caption": "Clothing",
-									"page": 66,
-									"colStyles": [
-										"col- text-left",
-										"col- text-right"
-									],
-									"rows": [
-										[
-											"Belt",
-											"3 sp"
-										],
-										[
-											"Boots",
-											"\u2014"
-										],
+									"tables": [
 										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Riding",
-												"3 gp"
+											"type": "table",
+											"colStyles": [
+												"col- text-left",
+												"col- text-right"
+											],
+											"colLabelRows": [
+												[
+													{
+														"type": "cellHeader",
+														"entry": "Clothing",
+														"style": "th-skewer"
+													}
+												]
+											],
+											"rows": [
+												[
+													"Belt",
+													"3 sp"
+												],
+												[
+													"Boots",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Riding",
+														"3 gp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Soft",
+														"1 gp"
+													]
+												},
+												[
+													"Breeches",
+													"2 gp"
+												],
+												[
+													"Cap, hat",
+													"1 sp"
+												],
+												[
+													"Cloak",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Good cloth",
+														"8 sp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Fine fur",
+														"50 gp"
+													]
+												},
+												[
+													"Girdle",
+													"3 gp"
+												],
+												[
+													"Gloves",
+													"1 gp"
+												],
+												[
+													"Gown, common",
+													"12 sp"
+												],
+												[
+													"Hose",
+													"2 gp"
+												],
+												[
+													"Knife sheath",
+													"3 cp"
+												],
+												[
+													"Mittens",
+													"3 sp"
+												],
+												[
+													"Pin",
+													"6 gp"
+												],
+												[
+													"Plain brooch",
+													"10 gp"
+												],
+												[
+													"Robe",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Common",
+														"9 sp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Embroidered",
+														"20 gp"
+													]
+												},
+												[
+													"Sandals",
+													"5 cp"
+												],
+												[
+													"Sash",
+													"2 sp"
+												],
+												[
+													"Shoes",
+													"1 gp"
+												],
+												[
+													"Silk jacket",
+													"80 gp"
+												],
+												[
+													"Surcoat",
+													"6 sp"
+												],
+												[
+													"Sword scabbard, hanger,baldric",
+													"4 gp"
+												],
+												[
+													"Tabard",
+													"6 sp"
+												],
+												[
+													"Toga, coarse",
+													"8 cp"
+												],
+												[
+													"Tunic",
+													"8 sp"
+												],
+												[
+													"Vest",
+													"6 sp"
+												]
 											]
 										},
 										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Soft",
-												"1 gp"
-											]
-										},
-										[
-											"Breeches",
-											"2 gp"
-										],
-										[
-											"Cap, hat",
-											"1 sp"
-										],
-										[
-											"Cloak",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Good cloth",
-												"8 sp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Fine fur",
-												"50 gp"
-											]
-										},
-										[
-											"Girdle",
-											"3 gp"
-										],
-										[
-											"Gloves",
-											"1 gp"
-										],
-										[
-											"Gown, common",
-											"12 sp"
-										],
-										[
-											"Hose",
-											"2 gp"
-										],
-										[
-											"Knife sheath",
-											"3 cp"
-										],
-										[
-											"Mittens",
-											"3 sp"
-										],
-										[
-											"Pin",
-											"6 gp"
-										],
-										[
-											"Plain brooch",
-											"10 gp"
-										],
-										[
-											"Robe",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Common",
-												"9 sp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Embroidered",
-												"20 gp"
-											]
-										},
-										[
-											"Sandals",
-											"5 cp"
-										],
-										[
-											"Sash",
-											"2 sp"
-										],
-										[
-											"Shoes",
-											"1 gp"
-										],
-										[
-											"Silk jacket",
-											"80 gp"
-										],
-										[
-											"Surcoat",
-											"6 sp"
-										],
-										[
-											"Sword scabbard, hanger,baldric",
-											"4 gp"
-										],
-										[
-											"Tabard",
-											"6 sp"
-										],
-										[
-											"Toga, coarse",
-											"8 cp"
-										],
-										[
-											"Tunic",
-											"8 sp"
-										],
-										[
-											"Vest",
-											"6 sp"
-										]
-									]
-								},
-								{
-									"type": "table",
-									"caption": "Daily Food and Lodging",
-									"page": 67,
-									"colStyles": [
-										"col- text-left",
-										"col- text-right"
-									],
-									"rows": [
-										[
-											"Ale (per gallon)",
-											"2 sp"
-										],
-										[
-											"Banquet (per person)",
-											"10 gp"
-										],
-										[
-											"Bread",
-											"5 cp"
-										],
-										[
-											"Cheese",
-											"4 sp"
-										],
-										[
-											"City rooms (per month)",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Common",
-												"20 gp"
+											"type": "table",
+											"page": 67,
+											"colStyles": [
+												"col- text-left",
+												"col- text-right"
+											],
+											"colLabelRows": [
+												[
+													{
+														"type": "cellHeader",
+														"entry": "Daily Food and Lodging",
+														"style": "th-skewer"
+													}
+												]
+											],
+											"rows": [
+												[
+													"Ale (per gallon)",
+													"2 sp"
+												],
+												[
+													"Banquet (per person)",
+													"10 gp"
+												],
+												[
+													"Bread",
+													"5 cp"
+												],
+												[
+													"Cheese",
+													"4 sp"
+												],
+												[
+													"City rooms (per month)",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Common",
+														"20 gp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Poor",
+														"6 sp"
+													]
+												},
+												[
+													"Common wine (pitcher)",
+													"2 sp"
+												],
+												[
+													"Egg or fresh vegetable",
+													"1 cp"
+												],
+												[
+													"Grain and stabling for horse (daily)",
+													"5 sp"
+												],
+												[
+													"Honey",
+													"5 sp"
+												],
+												[
+													"Inn lodging (per day/week)",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Common",
+														"5 sp/3 gp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Poor",
+														"5 cp/2 sp"
+													]
+												},
+												[
+													"Meat for one meal",
+													"1 sp"
+												],
+												[
+													"Meals (per day)",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Good",
+														"5 sp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Commmon",
+														"3 sp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Poor",
+														"1 sp"
+													]
+												},
+												[
+													"Separate latrine for rooms (per month)",
+													"2 gp"
+												],
+												[
+													"Small beer (per gallon)",
+													"5 cp"
+												],
+												[
+													"Soup",
+													"5 cp"
+												]
 											]
 										},
 										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Poor",
-												"6 sp"
-											]
-										},
-										[
-											"Common wine (pitcher)",
-											"2 sp"
-										],
-										[
-											"Egg or fresh vegetable",
-											"1 cp"
-										],
-										[
-											"Grain and stabling for horse (daily)",
-											"5 sp"
-										],
-										[
-											"Honey",
-											"5 sp"
-										],
-										[
-											"Inn lodging (per day/week)",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Common",
-												"5 sp/3 gp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Poor",
-												"5 cp/2 sp"
-											]
-										},
-										[
-											"Meat for one meal",
-											"1 sp"
-										],
-										[
-											"Meals (per day)",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Good",
-												"5 sp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Commmon",
-												"3 sp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Poor",
-												"1 sp"
-											]
-										},
-										[
-											"Separate latrine for rooms (per month)",
-											"2 gp"
-										],
-										[
-											"Small beer (per gallon)",
-											"5 cp"
-										],
-										[
-											"Soup",
-											"5 cp"
-										]
-									]
-								},
-								{
-									"type": "table",
-									"caption": "Household Provisioning",
-									"page": 67,
-									"colStyles": [
-										"col- text-left",
-										"col- text-right"
-									],
-									"rows": [
-										[
-											"Barrel of pickled fish",
-											"3 gp"
-										],
-										[
-											"Butter (per lb.)",
-											"2 sp"
-										],
-										[
-											"Coarse sugar (per lb.)",
-											"1 gp"
-										],
-										[
-											"Dry rations (per week)",
-											"10 gp"
-										],
-										[
-											"Eggs (per 100)",
-											"8 sp"
-										],
-										[
-											"(per two dozen)",
-											"2 sp"
-										],
-										[
-											"Figs (per lb.)",
-											"3 sp"
-										],
-										[
-											"Firewood (per day)",
-											"1 cp"
-										],
-										[
-											"Herbs (per lb.)",
-											"5 cp"
-										],
-										[
-											"Nuts (per lb.)",
-											"1 gp"
-										],
-										[
-											"Raisins (per lb.)",
-											"2 sp"
-										],
-										[
-											"Rations, standard (1 wk)",
-											"3 gp"
-										],
-										[
-											"Rations, iron (1 wk)",
-											"5 gp"
-										],
-										[
-											"Rice (per lb.)",
-											"2 sp"
-										],
-										[
-											"Salt (per lb.)",
-											"1 sp"
-										],
-										[
-											"Salted herring (per 100)",
-											"1 gp"
-										],
-										[
-											"Spice (per lb.)",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Exotic (saffron, clove)",
-												"15 gp"
+											"type": "table",
+											"colStyles": [
+												"col- text-left",
+												"col- text-right"
+											],
+											"colLabelRows": [
+												[
+													{
+														"type": "cellHeader",
+														"entry": "Household Provisioning",
+														"style": "th-skewer"
+													}
+												]
+											],
+											"rows": [
+												[
+													"Barrel of pickled fish",
+													"3 gp"
+												],
+												[
+													"Butter (per lb.)",
+													"2 sp"
+												],
+												[
+													"Coarse sugar (per lb.)",
+													"1 gp"
+												],
+												[
+													"Dry rations (per week)",
+													"10 gp"
+												],
+												[
+													"Eggs (per 100)",
+													"8 sp"
+												],
+												[
+													"(per two dozen)",
+													"2 sp"
+												],
+												[
+													"Figs (per lb.)",
+													"3 sp"
+												],
+												[
+													"Firewood (per day)",
+													"1 cp"
+												],
+												[
+													"Herbs (per lb.)",
+													"5 cp"
+												],
+												[
+													"Nuts (per lb.)",
+													"1 gp"
+												],
+												[
+													"Raisins (per lb.)",
+													"2 sp"
+												],
+												[
+													"Rations, standard (1 wk)",
+													"3 gp"
+												],
+												[
+													"Rations, iron (1 wk)",
+													"5 gp"
+												],
+												[
+													"Rice (per lb.)",
+													"2 sp"
+												],
+												[
+													"Salt (per lb.)",
+													"1 sp"
+												],
+												[
+													"Salted herring (per 100)",
+													"1 gp"
+												],
+												[
+													"Spice (per lb.)",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Exotic (saffron, clove)",
+														"15 gp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Rare (pepper, ginger)",
+														"2 gp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Uncommmon (cinnamon)",
+														"1 gp"
+													]
+												},
+												[
+													"Tun of cider (250 gal.)",
+													"8 gp"
+												],
+												[
+													"Tun of good wine (250 gal.)",
+													"20 gp"
+												]
 											]
 										},
 										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Rare (pepper, ginger)",
-												"2 gp"
+											"type": "table",
+											"page": 67,
+											"colLabelRows": [
+												[
+													{
+														"type": "cellHeader",
+														"entry": "Tack and Harness",
+														"style": "th-skewer"
+													}
+												]
+											],
+											"colStyles": [
+												"col- text-left",
+												"col- text-right",
+												"col- text-right"
+											],
+											"rows": [
+												[
+													"Barding",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Chain",
+														"500 gp",
+														"70 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Full plate",
+														"500 gp",
+														"70 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Full scale",
+														"2,000 gp",
+														"85 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Half brigandine",
+														"500 gp",
+														"45 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Half padded",
+														"100 gp",
+														"25 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Half scale",
+														"500 gp",
+														"50 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Leather or padded",
+														"500 gp",
+														"50 lbs."
+													]
+												},
+												[
+													"Bit and bridle",
+													"15 sp",
+													"3 lbs."
+												],
+												[
+													"Cart harness",
+													"2 gp",
+													"10 lbs."
+												],
+												[
+													"Halter",
+													"5 cp",
+													"*"
+												],
+												[
+													"Horseshoes & shoeing",
+													"1 gp",
+													"10 lbs."
+												],
+												[
+													"Saddle",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Pack",
+														"5 gp",
+														"15 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Riding",
+														"10 gp",
+														"35 lbs."
+													]
+												},
+												[
+													"Saddle bags",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Large",
+														"4 gp",
+														"8 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Small",
+														"3 gp",
+														"5 lbs."
+													]
+												},
+												[
+													"Saddle blanket",
+													"3 sp",
+													"4 lbs."
+												],
+												[
+													"Yoke",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Horse",
+														"5 gp",
+														"15 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Ox",
+														"3 gp",
+														"20 lbs."
+													]
+												}
 											]
 										},
 										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Uncommmon (cinnamon)",
-												"1 gp"
-											]
-										},
-										[
-											"Tun of cider (250 gal.)",
-											"8 gp"
-										],
-										[
-											"Tun of good wine (250 gal.)",
-											"20 gp"
-										]
-									]
-								},
-								{
-									"type": "table",
-									"caption": "Tack and Harness",
-									"page": 67,
-									"colStyles": [
-										"col- text-left",
-										"col- text-right",
-										"col- text-right"
-									],
-									"rows": [
-										[
-											"Barding",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Chain",
-												"500 gp",
-												"70 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Full plate",
-												"500 gp",
-												"70 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Full scale",
-												"2,000 gp",
-												"85 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Half brigandine",
-												"500 gp",
-												"45 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Half padded",
-												"100 gp",
-												"25 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Half scale",
-												"500 gp",
-												"50 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Leather or padded",
-												"500 gp",
-												"50 lbs."
-											]
-										},
-										[
-											"Bit and bridle",
-											"15 sp",
-											"3 lbs."
-										],
-										[
-											"Cart harness",
-											"2 gp",
-											"10 lbs."
-										],
-										[
-											"Halter",
-											"5 cp",
-											"*"
-										],
-										[
-											"Horseshoes & shoeing",
-											"1 gp",
-											"10 lbs."
-										],
-										[
-											"Saddle",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Pack",
-												"5 gp",
-												"15 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Riding",
-												"10 gp",
-												"35 lbs."
-											]
-										},
-										[
-											"Saddle bags",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Large",
-												"4 gp",
-												"8 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Small",
-												"3 gp",
-												"5 lbs."
-											]
-										},
-										[
-											"Saddle blanket",
-											"3 sp",
-											"4 lbs."
-										],
-										[
-											"Yoke",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Horse",
-												"5 gp",
-												"15 lbs."
+											"type": "table",
+											"colLabelRows": [
+												[
+													{
+														"type": "cellHeader",
+														"entry": "Transport *",
+														"style": "th-skewer"
+													}
+												]
+											],
+											"colStyles": [
+												"col- text-left",
+												"col- text-right"
+											],
+											"rows": [
+												[
+													"Barge",
+													"500 gp"
+												],
+												[
+													"Canoe",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Small",
+														"30 gp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"War",
+														"50 gp"
+													]
+												},
+												[
+													"Caravel",
+													"10,000 gp"
+												],
+												[
+													"Carriage",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Common",
+														"150 gp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Coach, ornamented",
+														"7,000 gp"
+													]
+												},
+												[
+													"Chariot",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Riding",
+														"200 gp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"War",
+														"500 gp"
+													]
+												},
+												[
+													"Coaster",
+													"5,000 gp"
+												],
+												[
+													"Cog",
+													"10,000 gp"
+												],
+												[
+													"Curragh",
+													"500 gp"
+												],
+												[
+													"Drakkar",
+													"25,000 gp"
+												],
+												[
+													"Dromond",
+													"15,000 gp"
+												],
+												[
+													"Galleon",
+													"50,000 gp"
+												],
+												[
+													"Great galley",
+													"30,000 gp"
+												],
+												[
+													"Knarr",
+													"3,000 gp"
+												],
+												[
+													"Longship",
+													"10,000 gp"
+												],
+												[
+													"Oar",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Common",
+														"2 gp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Galley",
+														"10 gp"
+													]
+												},
+												[
+													"Raft or small keelboat",
+													"100 gp"
+												],
+												[
+													"Sail",
+													"20 gp"
+												],
+												[
+													"Sedan chair",
+													"100 gp"
+												],
+												[
+													"Wagon or cart wheel",
+													"5 gp"
+												]
+											],
+											"footnotes": [
+												"* Movement rates for this equipment are given in the DMG."
 											]
 										},
 										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Ox",
-												"3 gp",
-												"20 lbs."
+											"type": "table",
+											"colStyles": [
+												"col- text-left",
+												"col- text-right",
+												"col- text-right"
+											],
+											"colLabelRows": [
+												[
+													{
+														"type": "cellHeader",
+														"entry": "Miscellaneous Equipment",
+														"style": "th-skewer"
+													}
+												]
+											],
+											"rows": [
+												[
+													"Backpack",
+													"2 gp",
+													"2 lbs"
+												],
+												[
+													"Barrel, small",
+													"2 gp",
+													"30 lbs."
+												],
+												[
+													"Basket",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Large",
+														"3 sp",
+														"1 lb."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Small",
+														"5 cp",
+														"*"
+													]
+												},
+												[
+													"Bell",
+													"1 gp",
+													"\u2014"
+												],
+												[
+													"Belt pouch",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Large",
+														"3 sp",
+														"1 lb."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Small",
+														"5 cp",
+														"*"
+													]
+												},
+												[
+													"Block and tackle",
+													"5 gp",
+													"5 lbs."
+												],
+												[
+													"Bolt case",
+													"1 gp",
+													"1 lb."
+												],
+												[
+													"Bucket",
+													"5 sp",
+													"3 lbs."
+												],
+												[
+													"Chain (per ft.)",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Heavy",
+														"4 gp",
+														"3 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Light",
+														"3 gp",
+														"1 lb."
+													]
+												},
+												[
+													"Chest",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Large",
+														"2 gp",
+														"25 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Small",
+														"1 gp",
+														"10 lbs."
+													]
+												},
+												[
+													"Cloth (per 10 sq. yds.)",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Common",
+														"7 gp",
+														"10 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Fine",
+														"50 gp",
+														"10 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Rich",
+														"100 gp",
+														"10 lbs."
+													]
+												},
+												[
+													"Candle",
+													"1 cp",
+													"*"
+												],
+												[
+													"Canvas (per sq. yard)",
+													"4 sp",
+													"1 lb."
+												],
+												[
+													"Chalk",
+													"1 cp",
+													"*"
+												],
+												[
+													"Crampons",
+													"4 gp",
+													"2 lbs."
+												],
+												[
+													"Fishhook",
+													"1 sp",
+													"**"
+												],
+												[
+													"Fishing net, 10 ft. sq.",
+													"4 gp",
+													"5 lbs."
+												],
+												[
+													"Flint and steel",
+													"5 sp",
+													"*"
+												],
+												[
+													"Glass bottle",
+													"10 gp",
+													"*"
+												],
+												[
+													"Grappling hook",
+													"8 sp",
+													"4 lbs."
+												],
+												[
+													"Holy item (symbol, water, etc.)",
+													"25 gp",
+													"*"
+												],
+												[
+													"Hourglass",
+													"25 gp",
+													"1 lb."
+												],
+												[
+													"Iron pot",
+													"5 sp",
+													"2 lbs."
+												],
+												[
+													"Ladder, 10 ft.",
+													"5 cp",
+													"20 lbs."
+												],
+												[
+													"Lantern",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Beacon",
+														"150 gp",
+														"50 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Bullseye",
+														"12 gp",
+														"3 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Hooded",
+														"7 gp",
+														"2 lbs."
+													]
+												},
+												[
+													"Lock",
+													"\u2014",
+													"*"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Good",
+														"100 gp",
+														"1 lb."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Poor",
+														"20 gp",
+														"1 lb."
+													]
+												},
+												[
+													"Magnifying glass",
+													"100 gp",
+													"*"
+												],
+												[
+													"Map or scroll case",
+													"\u2014",
+													"*"
+												],
+												[
+													"Map or scroll case",
+													"8 sp",
+													"1⁄2 lb."
+												],
+												[
+													"Merchant's scale",
+													"2 gp",
+													"1 lb."
+												],
+												[
+													"Mirror, small metal",
+													"10 gp",
+													"*"
+												],
+												[
+													"Musical instrument",
+													"5\u2013100 gp",
+													"1⁄2-3 lbs."
+												],
+												[
+													"Oil (per flask)",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Greek fire",
+														"10 gp",
+														"2 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Lamp",
+														"6 cp",
+														"1 lb."
+													]
+												},
+												[
+													"Paper (per sheet)",
+													"2 gp",
+													"**"
+												],
+												[
+													"Papyrus (per sheet)",
+													"8 sp",
+													"**"
+												],
+												[
+													"Parchment (per sheet)",
+													"1 gp",
+													"**"
+												],
+												[
+													"Perfume (per vial)",
+													"5 gp",
+													"*"
+												],
+												[
+													"Piton",
+													"3 cp",
+													"1⁄2 lb."
+												],
+												[
+													"Rope (per 50 ft.)",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Hemp",
+														"1 gp",
+														"20 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Silk",
+														"10 gp",
+														"8 lbs."
+													]
+												},
+												[
+													"Sack",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Large",
+														"2 sp",
+														"1⁄2 lb."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Small",
+														"5 cp",
+														"*"
+													]
+												},
+												[
+													"Sealing/candle wax (per lb.)",
+													"1 gp",
+													"1 lb."
+												],
+												[
+													"Sewing needle",
+													"5 sp",
+													"**"
+												],
+												[
+													"Signal whistle",
+													"8 sp",
+													"*"
+												],
+												[
+													"Signet ring or personal seal",
+													"5 gp",
+													"*"
+												],
+												[
+													"Soap (per lb.)",
+													"5 sp",
+													"1 lb."
+												],
+												[
+													"Spyglass",
+													"1,000 gp",
+													"1 lb."
+												],
+												[
+													"Tent",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Large",
+														"25 gp",
+														"20 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Pavilion",
+														"100 gp",
+														"50 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Small",
+														"5 gp",
+														"10 lbs."
+													]
+												},
+												[
+													"Thieves' picks",
+													"30 gp",
+													"1 lb."
+												],
+												[
+													"Torch",
+													"1 cp",
+													"1 lb."
+												],
+												[
+													"Water clock",
+													"1,000 gp",
+													"200 lbs."
+												],
+												[
+													"Whetstone",
+													"2 cp",
+													"1 lb."
+												],
+												[
+													"Wineskin",
+													"8 sp",
+													"1 lb."
+												],
+												[
+													"Winter blanket",
+													"5 sp",
+													"3 lbs."
+												],
+												[
+													"Writing ink (per vial)",
+													"8 gp",
+													"*"
+												]
+											],
+											"footnotes": [
+												"* These items weigh little individually. Ten of these items weigh one pound.",
+												"** These items have no appreciable weight and should not be considered for encumbrance unless hundreds are carried."
+											]
+										},
+										{
+											"type": "table",
+											"colStyles": [
+												"col- text-left",
+												"col- text-right"
+											],
+											"colLabelRows": [
+												[
+													{
+														"type": "cellHeader",
+														"entry": "Animals",
+														"style": "th-skewer"
+													}
+												]
+											],
+											"rows": [
+												[
+													"Boar",
+													"10 gp"
+												],
+												[
+													"Bull",
+													"20 gp"
+												],
+												[
+													"Calf",
+													"5 gp"
+												],
+												[
+													"Camel",
+													"50 gp"
+												],
+												[
+													"Capon",
+													"3 cp"
+												],
+												[
+													"Cat",
+													"1 sp"
+												],
+												[
+													"Chicken",
+													"2 cp"
+												],
+												[
+													"Cow",
+													"10 gp"
+												],
+												[
+													"Dog",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Guard",
+														"25 gp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Hunting",
+														"17 gp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"War",
+														"20 gp"
+													]
+												},
+												[
+													"Donkey, mule, or ass",
+													"8 gp"
+												],
+												[
+													"Elephant",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Labor",
+														"200 gp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"War",
+														"500 gp"
+													]
+												},
+												[
+													"Falcon (trained)",
+													"1,000 gp"
+												],
+												[
+													"Goat",
+													"1 gp"
+												],
+												[
+													"Goose",
+													"5 cp"
+												],
+												[
+													"Guinea hen",
+													"2 cp"
+												],
+												[
+													"Horse",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Draft",
+														"200 gp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Heavy war",
+														"400 gp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Light war",
+														"150 gp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Medium war",
+														"225 gp"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Riding",
+														"75 gp"
+													]
+												},
+												[
+													"Hunting cat (jaguar, etc.)",
+													"5,000 gp"
+												],
+												[
+													"Ox",
+													"15 gp"
+												],
+												[
+													"Partridge",
+													"5 cp"
+												],
+												[
+													"Peacock",
+													"5 sp"
+												],
+												[
+													"Pig",
+													"3 gp"
+												],
+												[
+													"Pigeon",
+													"1 cp"
+												],
+												[
+													"Pigeon, homing",
+													"100 gp"
+												],
+												[
+													"Pony",
+													"30 gp"
+												],
+												[
+													"Ram",
+													"4 gp"
+												],
+												[
+													"Sheep",
+													"2 gp"
+												],
+												[
+													"Songbird",
+													"10 sp"
+												],
+												[
+													"Swan",
+													"5 sp"
+												]
+											]
+										},
+										{
+											"type": "table",
+											"colStyles": [
+												"col- text-left",
+												"col- text-right"
+											],
+											"colLabelRows": [
+												[
+													{
+														"type": "cellHeader",
+														"entry": "Services",
+														"style": "th-skewer"
+													}
+												]
+											],
+											"rows": [
+												[
+													"Bath",
+													"3 cp"
+												],
+												[
+													"Clerk (per letter)",
+													"2 sp"
+												],
+												[
+													"Doctor, leech, or bleeding",
+													"3 gp"
+												],
+												[
+													"Guide, in city (per day)",
+													"2 sp"
+												],
+												[
+													"Lantern or torchbearer (per night)",
+													"1 sp"
+												],
+												[
+													"Laundry (by load)",
+													"1 cp"
+												],
+												[
+													"Messenger, in city (per message)",
+													"1 sp"
+												],
+												[
+													"Minstrel (per performance)",
+													"3 gp"
+												],
+												[
+													"Mourner (per funeral)",
+													"2 sp"
+												],
+												[
+													"Teamster w/wagon",
+													"1 sp/mile"
+												]
+											]
+										},
+										{
+											"type": "table",
+											"colLabelRows": [
+												[
+													{
+														"type": "cellHeader",
+														"entry": "Weapons",
+														"style": "th-skewer"
+													},
+													"",
+													"",
+													"",
+													"",
+													"",
+													{
+														"type": "cellHeader",
+														"width": 2,
+														"entry": "Damage"
+													}
+												],
+												[
+													"Item",
+													"Cost",
+													"Weight (lb.)",
+													"Size",
+													"Type†",
+													"Speed Factor",
+													"S\u2013M",
+													"L"
+												]
+											],
+											"colStyles": [
+												"col- text-left",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center"
+											],
+											"rows": [
+												[
+													"Arquebus ***",
+													"500 gp",
+													"10",
+													"M",
+													"P",
+													"15",
+													"{@dice 1d10}",
+													"{@dice 1d10}"
+												],
+												[
+													"Battle axe",
+													"5 gp",
+													"7",
+													"M",
+													"S",
+													"7",
+													"{@dice 1d8}",
+													"{@dice 1d8}"
+												],
+												[
+													"Blowgun",
+													"5 gp",
+													"2",
+													"L",
+													"\u2014",
+													"5",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Barbed Dart",
+														"1 sp",
+														"‡",
+														"S",
+														"P",
+														"*",
+														"{@dice 1d3}",
+														"{@dice 1d2}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Needle",
+														"2 cp",
+														"‡",
+														"S",
+														"P",
+														"\u2014",
+														"1",
+														"1"
+													]
+												},
+												[
+													"Bow",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Short bow",
+														"30 gp",
+														"2",
+														"M",
+														"\u2014",
+														"7",
+														"\u2014",
+														"\u2014"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Composite short bow",
+														"75 gp",
+														"2",
+														"M",
+														"\u2014",
+														"6",
+														"\u2014",
+														"\u2014"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Composite long bow",
+														"100 gp",
+														"3",
+														"L",
+														"\u2014",
+														"7",
+														"\u2014",
+														"\u2014"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Flight arrow",
+														"3 sp/12",
+														"*",
+														"S",
+														"P",
+														"\u2014",
+														"{@dice 1d6}",
+														"{@dice 1d6}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Sheaf arrow",
+														"3 sp/6",
+														"*",
+														"S",
+														"P",
+														"\u2014",
+														"{@dice 1d8}",
+														"{@dice 1d8}"
+													]
+												},
+												[
+													"Club",
+													"\u2014",
+													"3",
+													"M",
+													"B",
+													"4",
+													"{@dice 1d6}",
+													"{@dice 1d3}"
+												],
+												[
+													"Crossbow",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Hand quarrel",
+														"1 gp",
+														"‡",
+														"S",
+														"P",
+														"\u2014",
+														"{@dice 1d3}",
+														"{@dice 1d2}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Hand crossbow",
+														"300 gp",
+														"3",
+														"S",
+														"\u2014",
+														"5",
+														"\u2014",
+														"\u2014"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Heavy quarrel",
+														"2 sp",
+														"‡",
+														"S",
+														"P",
+														"\u2014",
+														"{@dice 1d4+1}",
+														"{@dice 1d6+1}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Heavy crossbow",
+														"50 gp",
+														"14",
+														"M",
+														"\u2014",
+														"10",
+														"\u2014",
+														"\u2014"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Light quarrel",
+														"1 sp",
+														"‡",
+														"S",
+														"P",
+														"*",
+														"{@dice 1d4}",
+														"{@dice 1d4}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Light crossbow",
+														"35 gp",
+														"7",
+														"M",
+														"\u2014",
+														"7",
+														"\u2014",
+														"\u2014"
+													]
+												},
+												[
+													"Dagger or dirk",
+													"2 gp",
+													"1",
+													"S",
+													"P",
+													"2",
+													"{@dice 1d4}",
+													"{@dice 1d3}"
+												],
+												[
+													"Dart",
+													"5 sp",
+													"½",
+													"S",
+													"P",
+													"2",
+													"{@dice 1d3}",
+													"{@dice 1d2}"
+												],
+												[
+													"Footman's flail",
+													"15 gp",
+													"15",
+													"M",
+													"B",
+													"7",
+													"{@dice 1d6+1}",
+													"{@dice 2d4}"
+												],
+												[
+													"Footman's mace",
+													"8 gp",
+													"10",
+													"M",
+													"B",
+													"7",
+													"{@dice 1d6+1}",
+													"{@dice 1d6}"
+												],
+												[
+													"Footman's pick",
+													"8 gp",
+													"6",
+													"M",
+													"P",
+													"7",
+													"{@dice 1d6+1}",
+													"{@dice 2d4}"
+												],
+												[
+													"Hand or throwing axe",
+													"1 gp",
+													"5",
+													"M",
+													"S",
+													"4",
+													"{@dice 1d6}",
+													"{@dice 1d4}"
+												],
+												[
+													"Harpoon",
+													"20 gp",
+													"6",
+													"L",
+													"P",
+													"7",
+													"{@dice 2d4}",
+													"{@dice 2d6}"
+												],
+												[
+													"Horseman's flail",
+													"8 gp",
+													"5",
+													"M",
+													"B",
+													"6",
+													"{@dice 1d4+1}",
+													"{@dice 1d4+1}"
+												],
+												[
+													"Horseman's mace",
+													"5 gp",
+													"6",
+													"M",
+													"B",
+													"6",
+													"{@dice 1d6}",
+													"{@dice 1d4}"
+												],
+												[
+													"Horseman's pick",
+													"7 gp",
+													"4",
+													"M",
+													"P",
+													"5",
+													"{@dice 1d4+1}",
+													"{@dice 1d4}"
+												],
+												[
+													"Javelin",
+													"5 sp",
+													"2",
+													"M",
+													"P",
+													"4",
+													"{@dice 1d6}",
+													"{@dice 1d6}"
+												],
+												[
+													"Knife",
+													"5 sp",
+													"½",
+													"S",
+													"P/S",
+													"2",
+													"{@dice 1d3}",
+													"{@dice 1d2}"
+												],
+												[
+													"Lance @",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Heavy horse lance",
+														"15 gp",
+														"15",
+														"L",
+														"P",
+														"8",
+														"{@dice 1d8+1}",
+														"{@dice 3d6}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Light horse lance",
+														"6 gp",
+														"5",
+														"L",
+														"P",
+														"6",
+														"{@dice 1d6}",
+														"{@dice 1d8}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Jousting lance",
+														"20 gp",
+														"20",
+														"L",
+														"P",
+														"10",
+														"{@dice 1d3-1}",
+														"{@dice 1d2-1}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Medium horse lance",
+														"10 gp",
+														"10",
+														"L",
+														"P",
+														"7",
+														"{@dice 1d6+1}",
+														"{@dice 2d6}"
+													]
+												},
+												[
+													"Mancatcher **",
+													"30 gp",
+													"8",
+													"L",
+													"\u2014",
+													"7",
+													"\u2014",
+													"\u2014"
+												],
+												[
+													"Morning star",
+													"10 gp",
+													"12",
+													"M",
+													"P/B",
+													"7",
+													"{@dice 2d4}",
+													"{@dice 1d6+1}"
+												],
+												[
+													"Polearm",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Awl pike #",
+														"5 gp",
+														"12",
+														"L",
+														"P",
+														"13",
+														"{@dice 1d6}",
+														"{@dice 1d12}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Bardiche",
+														"7 gp",
+														"12",
+														"L",
+														"S",
+														"9",
+														"{@dice 2d4}",
+														"{@dice 2d6}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Bec de corbin",
+														"8 gp",
+														"10",
+														"L",
+														"P/B",
+														"9",
+														"{@dice 1d8}",
+														"{@dice 1d6}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Bill-guisarme",
+														"7 gp",
+														"15",
+														"L",
+														"P/S",
+														"10",
+														"{@dice 2d4}",
+														"{@dice 1d10}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Fauchard",
+														"5 gp",
+														"7",
+														"L",
+														"P/S",
+														"8",
+														"{@dice 1d6}",
+														"{@dice 1d8}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Fauchard-fork",
+														"8 gp",
+														"9",
+														"L",
+														"P/S",
+														"8",
+														"{@dice 1d8}",
+														"{@dice 1d10}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Glaive *",
+														"6 gp",
+														"8",
+														"L",
+														"S",
+														"8",
+														"{@dice 1d6}",
+														"{@dice 1d10}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Glaive-guisarme *",
+														"10 gp",
+														"10",
+														"L",
+														"P/S",
+														"9",
+														"{@dice 2d4}",
+														"{@dice 2d6}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Guisarme",
+														"5 gp",
+														"8",
+														"L",
+														"S",
+														"8",
+														"{@dice 2d4}",
+														"{@dice 1d8}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Guisarme-voulge",
+														"8 gp",
+														"15",
+														"L",
+														"P/S",
+														"10",
+														"{@dice 2d4}",
+														"{@dice 2d4}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Halberd",
+														"10 gp",
+														"15",
+														"L",
+														"P/S",
+														"9",
+														"{@dice 1d10}",
+														"{@dice 2d6}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Hook fauchard",
+														"10 gp",
+														"8",
+														"L",
+														"P/S",
+														"9",
+														"{@dice 1d4}",
+														"{@dice 1d4}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Lucern hammer #",
+														"7 gp",
+														"15",
+														"L",
+														"P/B",
+														"9",
+														"{@dice 2d4}",
+														"{@dice 1d6}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Military fork *",
+														"5 gp",
+														"7",
+														"L",
+														"P",
+														"7",
+														"{@dice 1d8}",
+														"{@dice 2d4}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Partisan #",
+														"10 gp",
+														"8",
+														"L",
+														"P",
+														"9",
+														"{@dice 1d6}",
+														"{@dice 1d6+1}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Ranseur #",
+														"6 gp",
+														"7",
+														"L",
+														"P",
+														"8",
+														"{@dice 2d4}",
+														"{@dice 2d4}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Spetum #",
+														"5 gp",
+														"7",
+														"L",
+														"P",
+														"8",
+														"{@dice 1d6+1}",
+														"{@dice 2d6}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Voulge #",
+														"5 gp",
+														"12",
+														"L",
+														"S",
+														"10",
+														"{@dice 2d4}",
+														"{@dice 2d4}"
+													]
+												},
+												[
+													"Quarterstaff",
+													"\u2014",
+													"4",
+													"L",
+													"B",
+													"4",
+													"{@dice 1d6}",
+													"{@dice 1d6}"
+												],
+												[
+													"Scourge",
+													"1 gp",
+													"2",
+													"S",
+													"\u2014",
+													"5",
+													"{@dice 1d4}",
+													"{@dice 1d2}"
+												],
+												[
+													"Sickle",
+													"6 sp",
+													"3",
+													"S",
+													"S",
+													"4",
+													"{@dice 1d4+1}",
+													"{@dice 1d4}"
+												],
+												[
+													"Sling",
+													"5 cp",
+													"*",
+													"S",
+													"\u2014",
+													"6",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Sling bullet",
+														"1 cp",
+														"*",
+														"S",
+														"B",
+														"\u2014",
+														"{@dice 1d4+1}",
+														"{@dice 1d6+1}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Sling stone",
+														"\u2014",
+														"*",
+														"S",
+														"B",
+														"\u2014",
+														"{@dice 1d4}",
+														"{@dice 1d4}"
+													]
+												},
+												[
+													"Spear",
+													"8 sp",
+													"5",
+													"M",
+													"P",
+													"6",
+													"{@dice 1d6}",
+													"{@dice 1d6}"
+												],
+												[
+													"Staff sling",
+													"2 sp",
+													"2",
+													"M",
+													"\u2014",
+													"11",
+													"\u2014",
+													"\u2014"
+												],
+												[
+													"Sword",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014",
+													"\u2014"
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Bastard sword",
+														"25 gp",
+														"10",
+														"M",
+														"S",
+														"\u2014",
+														"\u2014",
+														"\u2014"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"\tOne-handed",
+														"\u2014",
+														"\u2014",
+														"\u2014",
+														"\u2014",
+														"6",
+														"{@dice 1d8}",
+														"{@dice 1d12}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"\tTwo-handed",
+														"\u2014",
+														"\u2014",
+														"\u2014",
+														"\u2014",
+														"8",
+														"{@dice 2d4}",
+														"{@dice 2d8}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Broad sword",
+														"10 gp",
+														"4",
+														"M",
+														"S",
+														"5",
+														"{@dice 2d4}",
+														"{@dice 1d6+1}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Khopesh",
+														"10 gp",
+														"7",
+														"M",
+														"S",
+														"9",
+														"{@dice 2d4}",
+														"{@dice 1d6}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Long sword",
+														"15 gp",
+														"4",
+														"M",
+														"S",
+														"5",
+														"{@dice 1d8}",
+														"{@dice 1d12}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Scimitar",
+														"15 gp",
+														"4",
+														"M",
+														"S",
+														"5",
+														"{@dice 1d8}",
+														"{@dice 1d8}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Short sword",
+														"10 gp",
+														"3",
+														"S",
+														"P",
+														"3",
+														"{@dice 1d6}",
+														"{@dice 1d8}"
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Two-handed sword",
+														"50 gp",
+														"15",
+														"L",
+														"S",
+														"10",
+														"{@dice 1d10}",
+														"{@dice 3d6}"
+													]
+												},
+												[
+													"Trident",
+													"15 gp",
+													"5",
+													"L",
+													"P",
+													"7",
+													"{@dice 1d6+1}",
+													"{@dice 3d4}"
+												],
+												[
+													"Warhammer",
+													"2 gp",
+													"6",
+													"M",
+													"B",
+													"4",
+													"{@dice 1d4+1}",
+													"{@dice 1d4}"
+												],
+												[
+													"Whip",
+													"1 sp",
+													"2",
+													"M",
+													"\u2014",
+													"8",
+													"{@dice 1d2}",
+													"1"
+												]
+											],
+											"footnotes": [
+												"* This weapon inflicts double damage against charging creatures of L or greater size.",
+												"** This weapon can dismount a rider on a successful hit.",
+												"*** This weapon available only if allowed by DM. One charge costs 5 sp.",
+												"@ This weapon inflicts double damage when used from the back of a charging mount.",
+												"# This weapon inflicts double damage when firmly set to receive a charge.",
+												"† The \"Type\" category is divided into Bludgeoning (B), Piercing (P), and Slashing (S). This indicates the type of attack made, which may alter the weapon's effectiveness against different types of armor. See the optional Weapon Type vs. Armor rule in chapter 9.",
+												"‡ These items weigh little individually. Ten of these weigh one pound."
+											]
+										},
+										{
+											"type": "table",
+											"colStyles": [
+												"col- text-left",
+												"col- text-right",
+												"col- text-right"
+											],
+											"colLabelRows": [
+												[
+													{
+														"type": "cellHeader",
+														"entry": "Armor*",
+														"style": "th-skewer"
+													}
+												]
+											],
+											"rows": [
+												[
+													"Banded mail",
+													"200 gp",
+													"35 lbs."
+												],
+												[
+													"Brigandine",
+													"120 gp",
+													"35 lbs."
+												],
+												[
+													"Bronze plate mail",
+													"400 gp",
+													"45 lbs."
+												],
+												[
+													"Chain mail",
+													"75 gp",
+													"40 lbs."
+												],
+												[
+													"Field plate",
+													"2000 gp",
+													"60 lbs."
+												],
+												[
+													"Full plate",
+													"4,000\u201310,000 gp",
+													"70 lbs."
+												],
+												[
+													"Helmet",
+													"\u2014",
+													"\u2014"
+												],
+												[
+													"Great helm",
+													"30 gp",
+													"10 lbs."
+												],
+												[
+													"Basinet",
+													"8 gp",
+													"5 lbs."
+												],
+												[
+													"Hide",
+													"15 gp",
+													"30 lbs."
+												],
+												[
+													"Leather",
+													"5 gp",
+													"15 lbs."
+												],
+												[
+													"Padded",
+													"4 gp",
+													"10 lbs."
+												],
+												[
+													"Plate mail",
+													"600 gp",
+													"50 lbs."
+												],
+												[
+													"Ring mail",
+													"100 gp",
+													"30 lbs."
+												],
+												[
+													"Scale mail",
+													"120 gp",
+													"40 lbs."
+												],
+												[
+													"Shield",
+													"\u2014",
+													"\u2014"
+												],
+												[
+													"Body",
+													"10 gp",
+													"15 lbs."
+												],
+												[
+													"Buckler",
+													"1 gp",
+													"3 lbs."
+												],
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Medium",
+														"7 gp",
+														"10 lbs."
+													]
+												},
+												{
+													"type": "row",
+													"style": "row-indent-first",
+													"row": [
+														"Small",
+														"3 gp",
+														"5 lbs."
+													]
+												},
+												[
+													"Splint mail",
+													"80 gp",
+													"40 lbs."
+												],
+												[
+													"Studded leather",
+													"20 gp",
+													"25 lbs."
+												]
+											],
+											"footnotes": [
+												"* See table 46 for the Armor Class ratings of various armor types."
 											]
 										}
-									]
-								},
-								{
-									"type": "table",
-									"caption": "Transport *",
-									"page": 67,
-									"colStyles": [
-										"col- text-left",
-										"col- text-right"
-									],
-									"rows": [
-										[
-											"Barge",
-											"500 gp"
-										],
-										[
-											"Canoe",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Small",
-												"30 gp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"War",
-												"50 gp"
-											]
-										},
-										[
-											"Caravel",
-											"10,000 gp"
-										],
-										[
-											"Carriage",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Common",
-												"150 gp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Coach, ornamented",
-												"7,000 gp"
-											]
-										},
-										[
-											"Chariot",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Riding",
-												"200 gp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"War",
-												"500 gp"
-											]
-										},
-										[
-											"Coaster",
-											"5,000 gp"
-										],
-										[
-											"Cog",
-											"10,000 gp"
-										],
-										[
-											"Curragh",
-											"500 gp"
-										],
-										[
-											"Drakkar",
-											"25,000 gp"
-										],
-										[
-											"Dromond",
-											"15,000 gp"
-										],
-										[
-											"Galleon",
-											"50,000 gp"
-										],
-										[
-											"Great galley",
-											"30,000 gp"
-										],
-										[
-											"Knarr",
-											"3,000 gp"
-										],
-										[
-											"Longship",
-											"10,000 gp"
-										],
-										[
-											"Oar",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Common",
-												"2 gp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Galley",
-												"10 gp"
-											]
-										},
-										[
-											"Raft or small keelboat",
-											"100 gp"
-										],
-										[
-											"Sail",
-											"20 gp"
-										],
-										[
-											"Sedan chair",
-											"100 gp"
-										],
-										[
-											"Wagon or cart wheel",
-											"5 gp"
-										]
-									],
-									"footnotes": [
-										"* Movement rates for this equipment are given in the DMG."
-									]
-								},
-								{
-									"type": "table",
-									"caption": "Miscellaneous Equipment",
-									"page": 67,
-									"colStyles": [
-										"col- text-left",
-										"col- text-right",
-										"col- text-right"
-									],
-									"rows": [
-										[
-											"Backpack",
-											"2 gp",
-											"2 lbs"
-										],
-										[
-											"Barrel, small",
-											"2 gp",
-											"30 lbs."
-										],
-										[
-											"Basket",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Large",
-												"3 sp",
-												"1 lb."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Small",
-												"5 cp",
-												"*"
-											]
-										},
-										[
-											"Bell",
-											"1 gp",
-											"\u2014"
-										],
-										[
-											"Belt pouch",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Large",
-												"3 sp",
-												"1 lb."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Small",
-												"5 cp",
-												"*"
-											]
-										},
-										[
-											"Block and tackle",
-											"5 gp",
-											"5 lbs."
-										],
-										[
-											"Bolt case",
-											"1 gp",
-											"1 lb."
-										],
-										[
-											"Bucket",
-											"5 sp",
-											"3 lbs."
-										],
-										[
-											"Chain (per ft.)",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Heavy",
-												"4 gp",
-												"3 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Light",
-												"3 gp",
-												"1 lb."
-											]
-										},
-										[
-											"Chest",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Large",
-												"2 gp",
-												"25 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Small",
-												"1 gp",
-												"10 lbs."
-											]
-										},
-										[
-											"Cloth (per 10 sq. yds.)",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Common",
-												"7 gp",
-												"10 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Fine",
-												"50 gp",
-												"10 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Rich",
-												"100 gp",
-												"10 lbs."
-											]
-										},
-										[
-											"Candle",
-											"1 cp",
-											"*"
-										],
-										[
-											"Canvas (per sq. yard)",
-											"4 sp",
-											"1 lb."
-										],
-										[
-											"Chalk",
-											"1 cp",
-											"*"
-										],
-										[
-											"Crampons",
-											"4 gp",
-											"2 lbs."
-										],
-										[
-											"Fishhook",
-											"1 sp",
-											"**"
-										],
-										[
-											"Fishing net, 10 ft. sq.",
-											"4 gp",
-											"5 lbs."
-										],
-										[
-											"Flint and steel",
-											"5 sp",
-											"*"
-										],
-										[
-											"Glass bottle",
-											"10 gp",
-											"*"
-										],
-										[
-											"Grappling hook",
-											"8 sp",
-											"4 lbs."
-										],
-										[
-											"Holy item (symbol, water, etc.)",
-											"25 gp",
-											"*"
-										],
-										[
-											"Hourglass",
-											"25 gp",
-											"1 lb."
-										],
-										[
-											"Iron pot",
-											"5 sp",
-											"2 lbs."
-										],
-										[
-											"Ladder, 10 ft.",
-											"5 cp",
-											"20 lbs."
-										],
-										[
-											"Lantern",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Beacon",
-												"150 gp",
-												"50 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Bullseye",
-												"12 gp",
-												"3 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Hooded",
-												"7 gp",
-												"2 lbs."
-											]
-										},
-										[
-											"Lock",
-											"\u2014",
-											"*"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Good",
-												"100 gp",
-												"1 lb."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Poor",
-												"20 gp",
-												"1 lb."
-											]
-										},
-										[
-											"Magnifying glass",
-											"100 gp",
-											"*"
-										],
-										[
-											"Map or scroll case",
-											"\u2014",
-											"*"
-										],
-										[
-											"Map or scroll case",
-											"8 sp",
-											"1⁄2 lb."
-										],
-										[
-											"Merchant's scale",
-											"2 gp",
-											"1 lb."
-										],
-										[
-											"Mirror, small metal",
-											"10 gp",
-											"*"
-										],
-										[
-											"Musical instrument",
-											"5\u2013100 gp",
-											"1⁄2-3 lbs."
-										],
-										[
-											"Oil (per flask)",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Greek fire",
-												"10 gp",
-												"2 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Lamp",
-												"6 cp",
-												"1 lb."
-											]
-										},
-										[
-											"Paper (per sheet)",
-											"2 gp",
-											"**"
-										],
-										[
-											"Papyrus (per sheet)",
-											"8 sp",
-											"**"
-										],
-										[
-											"Parchment (per sheet)",
-											"1 gp",
-											"**"
-										],
-										[
-											"Perfume (per vial)",
-											"5 gp",
-											"*"
-										],
-										[
-											"Piton",
-											"3 cp",
-											"1⁄2 lb."
-										],
-										[
-											"Rope (per 50 ft.)",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Hemp",
-												"1 gp",
-												"20 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Silk",
-												"10 gp",
-												"8 lbs."
-											]
-										},
-										[
-											"Sack",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Large",
-												"2 sp",
-												"1⁄2 lb."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Small",
-												"5 cp",
-												"*"
-											]
-										},
-										[
-											"Sealing/candle wax (per lb.)",
-											"1 gp",
-											"1 lb."
-										],
-										[
-											"Sewing needle",
-											"5 sp",
-											"**"
-										],
-										[
-											"Signal whistle",
-											"8 sp",
-											"*"
-										],
-										[
-											"Signet ring or personal seal",
-											"5 gp",
-											"*"
-										],
-										[
-											"Soap (per lb.)",
-											"5 sp",
-											"1 lb."
-										],
-										[
-											"Spyglass",
-											"1,000 gp",
-											"1 lb."
-										],
-										[
-											"Tent",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Large",
-												"25 gp",
-												"20 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Pavilion",
-												"100 gp",
-												"50 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Small",
-												"5 gp",
-												"10 lbs."
-											]
-										},
-										[
-											"Thieves' picks",
-											"30 gp",
-											"1 lb."
-										],
-										[
-											"Torch",
-											"1 cp",
-											"1 lb."
-										],
-										[
-											"Water clock",
-											"1,000 gp",
-											"200 lbs."
-										],
-										[
-											"Whetstone",
-											"2 cp",
-											"1 lb."
-										],
-										[
-											"Wineskin",
-											"8 sp",
-											"1 lb."
-										],
-										[
-											"Winter blanket",
-											"5 sp",
-											"3 lbs."
-										],
-										[
-											"Writing ink (per vial)",
-											"8 gp",
-											"*"
-										]
-									],
-									"footnotes": [
-										"* These items weigh little individually. Ten of these items weigh one pound.",
-										"** These items have no appreciable weight and should not be considered for encumbrance unless hundreds are carried."
-									]
-								},
-								{
-									"type": "table",
-									"caption": "Animals",
-									"page": 68,
-									"colStyles": [
-										"col- text-left",
-										"col- text-right"
-									],
-									"rows": [
-										[
-											"Boar",
-											"10 gp"
-										],
-										[
-											"Bull",
-											"20 gp"
-										],
-										[
-											"Calf",
-											"5 gp"
-										],
-										[
-											"Camel",
-											"50 gp"
-										],
-										[
-											"Capon",
-											"3 cp"
-										],
-										[
-											"Cat",
-											"1 sp"
-										],
-										[
-											"Chicken",
-											"2 cp"
-										],
-										[
-											"Cow",
-											"10 gp"
-										],
-										[
-											"Dog",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Guard",
-												"25 gp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Hunting",
-												"17 gp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"War",
-												"20 gp"
-											]
-										},
-										[
-											"Donkey, mule, or ass",
-											"8 gp"
-										],
-										[
-											"Elephant",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Labor",
-												"200 gp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"War",
-												"500 gp"
-											]
-										},
-										[
-											"Falcon (trained)",
-											"1,000 gp"
-										],
-										[
-											"Goat",
-											"1 gp"
-										],
-										[
-											"Goose",
-											"5 cp"
-										],
-										[
-											"Guinea hen",
-											"2 cp"
-										],
-										[
-											"Horse",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Draft",
-												"200 gp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Heavy war",
-												"400 gp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Light war",
-												"150 gp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Medium war",
-												"225 gp"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Riding",
-												"75 gp"
-											]
-										},
-										[
-											"Hunting cat (jaguar, etc.)",
-											"5,000 gp"
-										],
-										[
-											"Ox",
-											"15 gp"
-										],
-										[
-											"Partridge",
-											"5 cp"
-										],
-										[
-											"Peacock",
-											"5 sp"
-										],
-										[
-											"Pig",
-											"3 gp"
-										],
-										[
-											"Pigeon",
-											"1 cp"
-										],
-										[
-											"Pigeon, homing",
-											"100 gp"
-										],
-										[
-											"Pony",
-											"30 gp"
-										],
-										[
-											"Ram",
-											"4 gp"
-										],
-										[
-											"Sheep",
-											"2 gp"
-										],
-										[
-											"Songbird",
-											"10 sp"
-										],
-										[
-											"Swan",
-											"5 sp"
-										]
-									]
-								},
-								{
-									"type": "table",
-									"caption": "Services",
-									"page": 68,
-									"colStyles": [
-										"col- text-left",
-										"col- text-right"
-									],
-									"rows": [
-										[
-											"Bath",
-											"3 cp"
-										],
-										[
-											"Clerk (per letter)",
-											"2 sp"
-										],
-										[
-											"Doctor, leech, or bleeding",
-											"3 gp"
-										],
-										[
-											"Guide, in city (per day)",
-											"2 sp"
-										],
-										[
-											"Lantern or torchbearer (per night)",
-											"1 sp"
-										],
-										[
-											"Laundry (by load)",
-											"1 cp"
-										],
-										[
-											"Messenger, in city (per message)",
-											"1 sp"
-										],
-										[
-											"Minstrel (per performance)",
-											"3 gp"
-										],
-										[
-											"Mourner (per funeral)",
-											"2 sp"
-										],
-										[
-											"Teamster w/wagon",
-											"1 sp/mile"
-										]
-									]
-								},
-								{
-									"type": "table",
-									"caption": "Weapons",
-									"page": 68,
-									"colLabels": [
-										"",
-										"",
-										"",
-										"",
-										"",
-										"",
-										"Damage",
-										""
-									],
-									"colStyles": [
-										"col- text-left",
-										"col- text-center",
-										"col- text-center",
-										"col- text-center",
-										"col- text-center",
-										"col- text-center",
-										"col- text-center",
-										"col- text-center"
-									],
-									"rows": [
-										[
-											"{@b Item}",
-											"{@b Cost}",
-											"{@b Weight (lb.)}",
-											"{@b Size}",
-											"{@b Type†}",
-											"{@b Speed Factor}",
-											"{@b S\u2013M}",
-											"{@b L}"
-										],
-										[
-											"Arquebus ***",
-											"500 gp",
-											"10",
-											"M",
-											"P",
-											"15",
-											"{@dice 1d10}",
-											"{@dice 1d10}"
-										],
-										[
-											"Battle axe",
-											"5 gp",
-											"7",
-											"M",
-											"S",
-											"7",
-											"{@dice 1d8}",
-											"{@dice 1d8}"
-										],
-										[
-											"Blowgun",
-											"5 gp",
-											"2",
-											"L",
-											"\u2014",
-											"5",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Barbed Dart",
-												"1 sp",
-												"‡",
-												"S",
-												"P",
-												"*",
-												"{@dice 1d3}",
-												"{@dice 1d2}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Needle",
-												"2 cp",
-												"‡",
-												"S",
-												"P",
-												"\u2014",
-												"1",
-												"1"
-											]
-										},
-										[
-											"Bow",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Short bow",
-												"30 gp",
-												"2",
-												"M",
-												"\u2014",
-												"7",
-												"\u2014",
-												"\u2014"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Composite short bow",
-												"75 gp",
-												"2",
-												"M",
-												"\u2014",
-												"6",
-												"\u2014",
-												"\u2014"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Composite long bow",
-												"100 gp",
-												"3",
-												"L",
-												"\u2014",
-												"7",
-												"\u2014",
-												"\u2014"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Flight arrow",
-												"3 sp/12",
-												"*",
-												"S",
-												"P",
-												"\u2014",
-												"{@dice 1d6}",
-												"{@dice 1d6}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Sheaf arrow",
-												"3 sp/6",
-												"*",
-												"S",
-												"P",
-												"\u2014",
-												"{@dice 1d8}",
-												"{@dice 1d8}"
-											]
-										},
-										[
-											"Club",
-											"\u2014",
-											"3",
-											"M",
-											"B",
-											"4",
-											"{@dice 1d6}",
-											"{@dice 1d3}"
-										],
-										[
-											"Crossbow",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Hand quarrel",
-												"1 gp",
-												"‡",
-												"S",
-												"P",
-												"\u2014",
-												"{@dice 1d3}",
-												"{@dice 1d2}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Hand crossbow",
-												"300 gp",
-												"3",
-												"S",
-												"\u2014",
-												"5",
-												"\u2014",
-												"\u2014"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Heavy quarrel",
-												"2 sp",
-												"‡",
-												"S",
-												"P",
-												"\u2014",
-												"{@dice 1d4+1}",
-												"{@dice 1d6+1}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Heavy crossbow",
-												"50 gp",
-												"14",
-												"M",
-												"\u2014",
-												"10",
-												"\u2014",
-												"\u2014"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Light quarrel",
-												"1 sp",
-												"‡",
-												"S",
-												"P",
-												"*",
-												"{@dice 1d4}",
-												"{@dice 1d4}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Light crossbow",
-												"35 gp",
-												"7",
-												"M",
-												"\u2014",
-												"7",
-												"\u2014",
-												"\u2014"
-											]
-										},
-										[
-											"Dagger or dirk",
-											"2 gp",
-											"1",
-											"S",
-											"P",
-											"2",
-											"{@dice 1d4}",
-											"{@dice 1d3}"
-										],
-										[
-											"Dart",
-											"5 sp",
-											"½",
-											"S",
-											"P",
-											"2",
-											"{@dice 1d3}",
-											"{@dice 1d2}"
-										],
-										[
-											"Footman's flail",
-											"15 gp",
-											"15",
-											"M",
-											"B",
-											"7",
-											"{@dice 1d6+1}",
-											"{@dice 2d4}"
-										],
-										[
-											"Footman's mace",
-											"8 gp",
-											"10",
-											"M",
-											"B",
-											"7",
-											"{@dice 1d6+1}",
-											"{@dice 1d6}"
-										],
-										[
-											"Footman's pick",
-											"8 gp",
-											"6",
-											"M",
-											"P",
-											"7",
-											"{@dice 1d6+1}",
-											"{@dice 2d4}"
-										],
-										[
-											"Hand or throwing axe",
-											"1 gp",
-											"5",
-											"M",
-											"S",
-											"4",
-											"{@dice 1d6}",
-											"{@dice 1d4}"
-										],
-										[
-											"Harpoon",
-											"20 gp",
-											"6",
-											"L",
-											"P",
-											"7",
-											"{@dice 2d4}",
-											"{@dice 2d6}"
-										],
-										[
-											"Horseman's flail",
-											"8 gp",
-											"5",
-											"M",
-											"B",
-											"6",
-											"{@dice 1d4+1}",
-											"{@dice 1d4+1}"
-										],
-										[
-											"Horseman's mace",
-											"5 gp",
-											"6",
-											"M",
-											"B",
-											"6",
-											"{@dice 1d6}",
-											"{@dice 1d4}"
-										],
-										[
-											"Horseman's pick",
-											"7 gp",
-											"4",
-											"M",
-											"P",
-											"5",
-											"{@dice 1d4+1}",
-											"{@dice 1d4}"
-										],
-										[
-											"Javelin",
-											"5 sp",
-											"2",
-											"M",
-											"P",
-											"4",
-											"{@dice 1d6}",
-											"{@dice 1d6}"
-										],
-										[
-											"Knife",
-											"5 sp",
-											"½",
-											"S",
-											"P/S",
-											"2",
-											"{@dice 1d3}",
-											"{@dice 1d2}"
-										],
-										[
-											"Lance @",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Heavy horse lance",
-												"15 gp",
-												"15",
-												"L",
-												"P",
-												"8",
-												"{@dice 1d8+1}",
-												"{@dice 3d6}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Light horse lance",
-												"6 gp",
-												"5",
-												"L",
-												"P",
-												"6",
-												"{@dice 1d6}",
-												"{@dice 1d8}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Jousting lance",
-												"20 gp",
-												"20",
-												"L",
-												"P",
-												"10",
-												"{@dice 1d3-1}",
-												"{@dice 1d2-1}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Medium horse lance",
-												"10 gp",
-												"10",
-												"L",
-												"P",
-												"7",
-												"{@dice 1d6+1}",
-												"{@dice 2d6}"
-											]
-										},
-										[
-											"Mancatcher **",
-											"30 gp",
-											"8",
-											"L",
-											"\u2014",
-											"7",
-											"\u2014",
-											"\u2014"
-										],
-										[
-											"Morning star",
-											"10 gp",
-											"12",
-											"M",
-											"P/B",
-											"7",
-											"{@dice 2d4}",
-											"{@dice 1d6+1}"
-										],
-										[
-											"Polearm",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Awl pike #",
-												"5 gp",
-												"12",
-												"L",
-												"P",
-												"13",
-												"{@dice 1d6}",
-												"{@dice 1d12}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Bardiche",
-												"7 gp",
-												"12",
-												"L",
-												"S",
-												"9",
-												"{@dice 2d4}",
-												"{@dice 2d6}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Bec de corbin",
-												"8 gp",
-												"10",
-												"L",
-												"P/B",
-												"9",
-												"{@dice 1d8}",
-												"{@dice 1d6}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Bill-guisarme",
-												"7 gp",
-												"15",
-												"L",
-												"P/S",
-												"10",
-												"{@dice 2d4}",
-												"{@dice 1d10}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Fauchard",
-												"5 gp",
-												"7",
-												"L",
-												"P/S",
-												"8",
-												"{@dice 1d6}",
-												"{@dice 1d8}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Fauchard-fork",
-												"8 gp",
-												"9",
-												"L",
-												"P/S",
-												"8",
-												"{@dice 1d8}",
-												"{@dice 1d10}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Glaive *",
-												"6 gp",
-												"8",
-												"L",
-												"S",
-												"8",
-												"{@dice 1d6}",
-												"{@dice 1d10}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Glaive-guisarme *",
-												"10 gp",
-												"10",
-												"L",
-												"P/S",
-												"9",
-												"{@dice 2d4}",
-												"{@dice 2d6}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Guisarme",
-												"5 gp",
-												"8",
-												"L",
-												"S",
-												"8",
-												"{@dice 2d4}",
-												"{@dice 1d8}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Guisarme-voulge",
-												"8 gp",
-												"15",
-												"L",
-												"P/S",
-												"10",
-												"{@dice 2d4}",
-												"{@dice 2d4}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Halberd",
-												"10 gp",
-												"15",
-												"L",
-												"P/S",
-												"9",
-												"{@dice 1d10}",
-												"{@dice 2d6}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Hook fauchard",
-												"10 gp",
-												"8",
-												"L",
-												"P/S",
-												"9",
-												"{@dice 1d4}",
-												"{@dice 1d4}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Lucern hammer #",
-												"7 gp",
-												"15",
-												"L",
-												"P/B",
-												"9",
-												"{@dice 2d4}",
-												"{@dice 1d6}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Military fork *",
-												"5 gp",
-												"7",
-												"L",
-												"P",
-												"7",
-												"{@dice 1d8}",
-												"{@dice 2d4}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Partisan #",
-												"10 gp",
-												"8",
-												"L",
-												"P",
-												"9",
-												"{@dice 1d6}",
-												"{@dice 1d6+1}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Ranseur #",
-												"6 gp",
-												"7",
-												"L",
-												"P",
-												"8",
-												"{@dice 2d4}",
-												"{@dice 2d4}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Spetum #",
-												"5 gp",
-												"7",
-												"L",
-												"P",
-												"8",
-												"{@dice 1d6+1}",
-												"{@dice 2d6}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Voulge #",
-												"5 gp",
-												"12",
-												"L",
-												"S",
-												"10",
-												"{@dice 2d4}",
-												"{@dice 2d4}"
-											]
-										},
-										[
-											"Quarterstaff",
-											"\u2014",
-											"4",
-											"L",
-											"B",
-											"4",
-											"{@dice 1d6}",
-											"{@dice 1d6}"
-										],
-										[
-											"Scourge",
-											"1 gp",
-											"2",
-											"S",
-											"\u2014",
-											"5",
-											"{@dice 1d4}",
-											"{@dice 1d2}"
-										],
-										[
-											"Sickle",
-											"6 sp",
-											"3",
-											"S",
-											"S",
-											"4",
-											"{@dice 1d4+1}",
-											"{@dice 1d4}"
-										],
-										[
-											"Sling",
-											"5 cp",
-											"*",
-											"S",
-											"\u2014",
-											"6",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Sling bullet",
-												"1 cp",
-												"*",
-												"S",
-												"B",
-												"\u2014",
-												"{@dice 1d4+1}",
-												"{@dice 1d6+1}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Sling stone",
-												"\u2014",
-												"*",
-												"S",
-												"B",
-												"\u2014",
-												"{@dice 1d4}",
-												"{@dice 1d4}"
-											]
-										},
-										[
-											"Spear",
-											"8 sp",
-											"5",
-											"M",
-											"P",
-											"6",
-											"{@dice 1d6}",
-											"{@dice 1d6}"
-										],
-										[
-											"Staff sling",
-											"2 sp",
-											"2",
-											"M",
-											"\u2014",
-											"11",
-											"\u2014",
-											"\u2014"
-										],
-										[
-											"Sword",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014",
-											"\u2014"
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Bastard sword",
-												"25 gp",
-												"10",
-												"M",
-												"S",
-												"\u2014",
-												"\u2014",
-												"\u2014"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"\tOne-handed",
-												"\u2014",
-												"\u2014",
-												"\u2014",
-												"\u2014",
-												"6",
-												"{@dice 1d8}",
-												"{@dice 1d12}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"\tTwo-handed",
-												"\u2014",
-												"\u2014",
-												"\u2014",
-												"\u2014",
-												"8",
-												"{@dice 2d4}",
-												"{@dice 2d8}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Broad sword",
-												"10 gp",
-												"4",
-												"M",
-												"S",
-												"5",
-												"{@dice 2d4}",
-												"{@dice 1d6+1}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Khopesh",
-												"10 gp",
-												"7",
-												"M",
-												"S",
-												"9",
-												"{@dice 2d4}",
-												"{@dice 1d6}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Long sword",
-												"15 gp",
-												"4",
-												"M",
-												"S",
-												"5",
-												"{@dice 1d8}",
-												"{@dice 1d12}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Scimitar",
-												"15 gp",
-												"4",
-												"M",
-												"S",
-												"5",
-												"{@dice 1d8}",
-												"{@dice 1d8}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Short sword",
-												"10 gp",
-												"3",
-												"S",
-												"P",
-												"3",
-												"{@dice 1d6}",
-												"{@dice 1d8}"
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Two-handed sword",
-												"50 gp",
-												"15",
-												"L",
-												"S",
-												"10",
-												"{@dice 1d10}",
-												"{@dice 3d6}"
-											]
-										},
-										[
-											"Trident",
-											"15 gp",
-											"5",
-											"L",
-											"P",
-											"7",
-											"{@dice 1d6+1}",
-											"{@dice 3d4}"
-										],
-										[
-											"Warhammer",
-											"2 gp",
-											"6",
-											"M",
-											"B",
-											"4",
-											"{@dice 1d4+1}",
-											"{@dice 1d4}"
-										],
-										[
-											"Whip",
-											"1 sp",
-											"2",
-											"M",
-											"\u2014",
-											"8",
-											"{@dice 1d2}",
-											"1"
-										]
-									],
-									"footnotes": [
-										"* This weapon inflicts double damage against charging creatures of L or greater size.",
-										"** This weapon can dismount a rider on a successful hit.",
-										"*** This weapon available only if allowed by DM. One charge costs 5 sp.",
-										"@ This weapon inflicts double damage when used from the back of a charging mount.",
-										"# This weapon inflicts double damage when firmly set to receive a charge.",
-										"† The \"Type\" category is divided into Bludgeoning (B), Piercing (P), and Slashing (S). This indicates the type of attack made, which may alter the weapon's effectiveness against different types of armor. See the optional Weapon Type vs. Armor rule in chapter 9.",
-										"‡ These items weigh little individually. Ten of these weigh one pound."
-									]
-								},
-								{
-									"type": "table",
-									"caption": "Armor",
-									"page": 69,
-									"colStyles": [
-										"col- text-left",
-										"col- text-right",
-										"col- text-right"
-									],
-									"rows": [
-										[
-											"Banded mail",
-											"200 gp",
-											"35 lbs."
-										],
-										[
-											"Brigandine",
-											"120 gp",
-											"35 lbs."
-										],
-										[
-											"Bronze plate mail",
-											"400 gp",
-											"45 lbs."
-										],
-										[
-											"Chain mail",
-											"75 gp",
-											"40 lbs."
-										],
-										[
-											"Field plate",
-											"2000 gp",
-											"60 lbs."
-										],
-										[
-											"Full plate",
-											"4,000\u201310,000 gp",
-											"70 lbs."
-										],
-										[
-											"Helmet",
-											"\u2014",
-											"\u2014"
-										],
-										[
-											"Great helm",
-											"30 gp",
-											"10 lbs."
-										],
-										[
-											"Basinet",
-											"8 gp",
-											"5 lbs."
-										],
-										[
-											"Hide",
-											"15 gp",
-											"30 lbs."
-										],
-										[
-											"Leather",
-											"5 gp",
-											"15 lbs."
-										],
-										[
-											"Padded",
-											"4 gp",
-											"10 lbs."
-										],
-										[
-											"Plate mail",
-											"600 gp",
-											"50 lbs."
-										],
-										[
-											"Ring mail",
-											"100 gp",
-											"30 lbs."
-										],
-										[
-											"Scale mail",
-											"120 gp",
-											"40 lbs."
-										],
-										[
-											"Shield",
-											"\u2014",
-											"\u2014"
-										],
-										[
-											"Body",
-											"10 gp",
-											"15 lbs."
-										],
-										[
-											"Buckler",
-											"1 gp",
-											"3 lbs."
-										],
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Medium",
-												"7 gp",
-												"10 lbs."
-											]
-										},
-										{
-											"type": "row",
-											"style": "row-indent-first",
-											"row": [
-												"Small",
-												"3 gp",
-												"5 lbs."
-											]
-										},
-										[
-											"Splint mail",
-											"80 gp",
-											"40 lbs."
-										],
-										[
-											"Studded leather",
-											"20 gp",
-											"25 lbs."
-										]
-									],
-									"footnotes": [
-										"* See table 46 for the Armor Class ratings of various armor types."
 									]
 								}
 							]
@@ -10223,12 +10288,23 @@
 							"type": "table",
 							"caption": "Table 45: Missile Weapon Ranges",
 							"page": 69,
-							"colLabels": [
-								"",
-								"",
-								"",
-								"Range (yards)",
-								""
+							"colLabelRows": [
+								[
+									"",
+									"",
+									{
+										"type": "cellHeader",
+										"width": 3,
+										"entry": "Range (yards)"
+									}
+								],
+								[
+									"Weapon",
+									"ROF",
+									"S",
+									"M",
+									"L"
+								]
 							],
 							"colStyles": [
 								"col- text-left",
@@ -10237,20 +10313,7 @@
 								"col- text-center",
 								"col- text-center"
 							],
-							"outro": [
-								"\"ROF\" is the rate of fire\u2014how many shots that weapon can fire off in one round. This is independent of the number of melee attacks a character can make in a round.",
-								"Each range category (Short, Medium, or Long) includes attacks from distances equal to or less than the given range. Thus, a heavy crossbow fired at a target 136 yards away uses the medium range modifier.",
-								"{@b The attack roll modifiers for range are -2 for medium range and -5 for long range.}",
-								"Arquebuses (if allowed) double all range modifiers."
-							],
 							"rows": [
-								[
-									"{@b Weapon}",
-									"{@b ROF}",
-									"{@b S}",
-									"{@b M}",
-									"{@b L}"
-								],
 								[
 									"Arquebus",
 									"1/3",
@@ -10420,7 +10483,11 @@
 									"90"
 								]
 							]
-						}
+						},
+						"\"ROF\" is the rate of fire\u2014how many shots that weapon can fire off in one round. This is independent of the number of melee attacks a character can make in a round.",
+						"Each range category (Short, Medium, or Long) includes attacks from distances equal to or less than the given range. Thus, a heavy crossbow fired at a target 136 yards away uses the medium range modifier.",
+						"{@b The attack roll modifiers for range are -2 for medium range and -5 for long range.}",
+						"Arquebuses (if allowed) double all range modifiers."
 					]
 				},
 				{
@@ -10434,11 +10501,29 @@
 							"name": "Tack and Harness",
 							"page": 71,
 							"entries": [
-								"{@b Barding:} A war horse, or any animal trained for combat, is a considerable investment for the average warrior. Therefore, it behooves the owner to see that his mount is as well protected as possible. Other than avoiding risks, the best nonmagical protection is horse armor or barding. Barding is simply some type of armor fitted to be worn by the mount. Full barding covers the neck, chest, and body of the beast, while half barding covers the head, neck, chest, and front quarters. Barding can be made from many different materials; stouter types provide increasing protection according to the Armor Class of the construction. All of this, however, is at the expense of increased weight and lowered maneuverability of the mount. Plate barding, for example, is the equivalent of a warrior's field plate and is made of carefully interlocked plates and joints. It provides an Armor Class of 2 to the mount. It weighs at least 80 to 100 pounds at the lightest and thus, a fully equipped war horse with this armor can manage little more than a steady trot at top speed.",
-								"Barded animals also require special attention. Care must be taken to prevent chafing and sores. The mount cannot wear the armor indefinitely. It must be removed at night and ideally should not be worn except in preparation for a battle or tournament. Removing horse barding takes 15 minutes for leather and 30 minutes for metal armors. Fitting it on takes twice as long. The weight of barding is carefully distributed to account for the weight of the armor and the rider, so barded animals cannot be used as pack animals! It is normal practice to have a second mount for carrying gear and supplies.",
-								"When barding is fitted over a mount whose natural Armor Class is better than the barding, some protection is still gained. This is explained under \"Armor\" later in this chapter.",
-								"In addition to horses and elephants, it may be possible to fit barding on more fantastic mounts. Flying steeds can wear only leather or magical barding. Aquatic creatures cannot wear normal barding although extremely rare magical pieces may exist. Other land creatures can certainly be barded, provided your DM rules that they are sturdy enough to carry the weight of armor and rider. Camels, for instance, are seldom barded for this reason. A huge ostrich would not be able to carry barding, since its legs would not support the weight.",
-								"{@b Saddles:} There are two basic saddles\u2014riding and pack. Riding saddles take many forms, but their basic purpose is to carry a person. If your DM has set his campaign in an ancient or early Medieval setting, saddles may be without stirrups. Ask your DM to be sure. Pack saddles are special frames designed to carry supplies and equipment. The only practical limit to how much a well-stowed pack saddle can carry is the carrying ability of the animal."
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Barding:",
+											"entries": [
+												"A war horse, or any animal trained for combat, is a considerable investment for the average warrior. Therefore, it behooves the owner to see that his mount is as well protected as possible. Other than avoiding risks, the best nonmagical protection is horse armor or barding. Barding is simply some type of armor fitted to be worn by the mount. Full barding covers the neck, chest, and body of the beast, while half barding covers the head, neck, chest, and front quarters. Barding can be made from many different materials; stouter types provide increasing protection according to the Armor Class of the construction. All of this, however, is at the expense of increased weight and lowered maneuverability of the mount. Plate barding, for example, is the equivalent of a warrior's field plate and is made of carefully interlocked plates and joints. It provides an Armor Class of 2 to the mount. It weighs at least 80 to 100 pounds at the lightest and thus, a fully equipped war horse with this armor can manage little more than a steady trot at top speed.",
+												"Barded animals also require special attention. Care must be taken to prevent chafing and sores. The mount cannot wear the armor indefinitely. It must be removed at night and ideally should not be worn except in preparation for a battle or tournament. Removing horse barding takes 15 minutes for leather and 30 minutes for metal armors. Fitting it on takes twice as long. The weight of barding is carefully distributed to account for the weight of the armor and the rider, so barded animals cannot be used as pack animals! It is normal practice to have a second mount for carrying gear and supplies.",
+												"When barding is fitted over a mount whose natural Armor Class is better than the barding, some protection is still gained. This is explained under \"Armor\" later in this chapter.",
+												"In addition to horses and elephants, it may be possible to fit barding on more fantastic mounts. Flying steeds can wear only leather or magical barding. Aquatic creatures cannot wear normal barding although extremely rare magical pieces may exist. Other land creatures can certainly be barded, provided your DM rules that they are sturdy enough to carry the weight of armor and rider. Camels, for instance, are seldom barded for this reason. A huge ostrich would not be able to carry barding, since its legs would not support the weight."
+											]
+										},
+										{
+											"type": "item",
+											"name": "Saddles:",
+											"entries": [
+												"There are two basic saddles\u2014riding and pack. Riding saddles take many forms, but their basic purpose is to carry a person. If your DM has set his campaign in an ancient or early Medieval setting, saddles may be without stirrups. Ask your DM to be sure. Pack saddles are special frames designed to carry supplies and equipment. The only practical limit to how much a well-stowed pack saddle can carry is the carrying ability of the animal."
+											]
+										}
+									]
+								}
 							]
 						},
 						{
@@ -10485,12 +10570,7 @@
 								"The Weapons Table lists more than just the price of each item. It also gives other game information. Since each weapon is different, you should note this information separately for each weapon your character purchases or finds.",
 								"{@b Weapon Size:} All weapons are classed according to a size category\u2014S, M, L, G, or H. Small (S) weapons are approximately two feet or less in size; medium (M) weapons are two to five feet long; large (L) weapons are generally six feet or greater in length. Giant (G) and huge (H) weapons are not found on the lists, since these are items normally used by ogres, giants, and even greater creatures. They are not items of equipment a PC can normally buy!",
 								"A character can always wield a weapon equal to his own size or less. Normally this requires only one hand, except for some missile weapons (bows and crossbows in particular). A character can also use a weapon one size greater than himself although it must be gripped with two hands. Beyond this size limit, the weapon is not usable without special means (most often magical).",
-								{
-									"type": "insetReadaloud",
-									"entries": [
-										"{@i Drelb the halfling (size S) can use a short sword with no difficulty (a size S weapon), or a long sword with two hands (a size M weapon), but a glaive (size L) is just too large for him to wield. Likewise, he can use a short bow but is unable to handle a long bow.}"
-									]
-								},
+								"Drelb the halfling (size S) can use a short sword with no difficulty (a size S weapon), or a long sword with two hands (a size M weapon), but a glaive (size L) is just too large for him to wield. Likewise, he can use a short bow but is unable to handle a long bow.",
 								"{@b Type:} Weapons are classified according to types\u2014bludgeoning (B), piercing (P), and slashing (S). These types are used to determine armor type modifiers (if these are used). Weapons vs. Armor Type is explained in Chapter 9: Combat.",
 								"{@b Speed Factor:} Weapon speed is a relative measure of the clumsiness of the weapon. The lower the number, the quicker and easier the weapon is to use. Weapon speed is explained in Chapter 9: Combat.",
 								"{@b Damage:} All weapons are rated for the amount of damage they can cause to small- and medium-sized creatures (S\u2013M) and larger-than-man-sized creatures (L).",
@@ -11186,9 +11266,6 @@
 												"col- text-center",
 												"col- text-center"
 											],
-											"outro": [
-												"Aside from knowing the weight limits, your character needs to have ways to hold all his gear. The capacities of different containers are given in Table 50."
-											],
 											"rows": [
 												[
 													"Camel",
@@ -11256,6 +11333,9 @@
 													"221\u2013330 lbs.",
 													"331\u2013440 lbs."
 												]
+											],
+											"footnotes": [
+												"Aside from knowing the weight limits, your character needs to have ways to hold all his gear. The capacities of different containers are given in Table 50."
 											]
 										},
 										"The values listed in Table 50 are for standard-sized items. It is certainly possible for sacks, chests, and backpacks to be larger or smaller than the sizes listed. The weight capacity, however, lists the maximum weight the item can carry, regardless of size. Beyond this point, the material used to construct the item will fail, sooner or later. The volume gives the length, width, and height or depth of the item. Items that exceed the capacity of a container cannot be stored in it.",
@@ -17052,7 +17132,7 @@
 								},
 								{
 									"type": "row",
-									"styleW": "row-indent-first",
+									"style": "row-indent-first",
 									"row": [
 										"while casting spell",
 										"85"

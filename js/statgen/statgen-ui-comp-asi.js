@@ -1,14 +1,14 @@
-import { StatGenUtilAdditionalFeats } from "./statgen-util-additionalfeats.js";
-import { MAX_CUSTOM_FEATS } from "./statgen-ui-consts.js";
-import { VetoolsConfig } from "../utils-config/utils-config-config.js";
-import { SITE_STYLE__CLASSIC } from "../consts.js";
+import {StatGenUtilAdditionalFeats} from "./statgen-util-additionalfeats.js";
+import {MAX_CUSTOM_FEATS} from "./statgen-ui-consts.js";
+import {VetoolsConfig} from "../utils-config/utils-config-config.js";
+import {SITE_STYLE__CLASSIC} from "../consts.js";
 
 export class StatGenUiCompAsi extends BaseComponent {
-	constructor ({ parent }) {
+	constructor ({parent}) {
 		super();
 		this._parent = parent;
 
-		this._metasAsi = { ability: [], race: [], background: [], custom: [] };
+		this._metasAsi = {ability: [], race: [], background: [], custom: []};
 
 		this._doPulseThrottled = MiscUtil.throttle(this._doPulse_.bind(this), 50);
 	}
@@ -24,7 +24,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 
 			for (; ix < this._parent.state[propCnt]; ++ix) {
 				const ix_ = ix;
-				const { propMode, propIxFeat, propIxAsiPointOne, propIxAsiPointTwo, propIxFeatAbility, propFeatAbilityChooseFrom } = this._parent.getPropsAsi(ix_, namespace);
+				const {propMode, propIxFeat, propIxAsiPointOne, propIxAsiPointTwo, propIxFeatAbility, propFeatAbilityChooseFrom} = this._parent.getPropsAsi(ix_, namespace);
 
 				if (!this._metasAsi[namespace][ix_]) {
 					this._parent.state[propMode] = this._parent.state[propMode] || (namespace === "ability" ? "asi" : "feat");
@@ -60,7 +60,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 										this._parent.proxyAssignSimple(
 											"state",
 											{
-												...activeProps.mergeMap(prop => ({ [prop]: null })),
+												...activeProps.mergeMap(prop => ({[prop]: null})),
 											},
 										);
 										updateDisplay();
@@ -117,7 +117,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 					// endregion
 
 					// region Feat
-					const { $stgFeat, $btnChooseFeat, hkIxFeat } = this._render_getMetaFeat({ propIxFeat, propIxFeatAbility, propFeatAbilityChooseFrom });
+					const {$stgFeat, $btnChooseFeat, hkIxFeat} = this._render_getMetaFeat({propIxFeat, propIxFeatAbility, propFeatAbilityChooseFrom});
 					// endregion
 
 					const hkMode = () => {
@@ -163,16 +163,16 @@ export class StatGenUiCompAsi extends BaseComponent {
 		hk();
 	}
 
-	_render_renderAdditionalFeatSection ({ namespace, $wrpRows, propEntity }) {
+	_render_renderAdditionalFeatSection ({namespace, $wrpRows, propEntity}) {
 		const fnsCleanupEnt = [];
 		const fnsCleanupGroup = [];
 
-		const { propIxSel, propPrefix } = this._parent.getPropsAdditionalFeats_(namespace);
+		const {propIxSel, propPrefix} = this._parent.getPropsAdditionalFeats_(namespace);
 
 		const resetGroupState = () => {
 			const nxtState = Object.keys(this._parent.state)
 				.filter(k => k.startsWith(propPrefix) && k !== propIxSel)
-				.mergeMap(k => ({ [k]: null }));
+				.mergeMap(k => ({[k]: null}));
 			this._parent.proxyAssignSimple("state", nxtState);
 		};
 
@@ -186,7 +186,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 			const ent = this._parent[namespace]; // e.g. `this._parent.race`
 
 			if ((ent?.feats?.length || 0) > 1) {
-				const { $sel: $selGroup, unhook: unhookIxGroup } = StatGenUtilAdditionalFeats.getSelIxSetMeta({ comp: this._parent, prop: propIxSel, available: ent.feats });
+				const {$sel: $selGroup, unhook: unhookIxGroup} = StatGenUtilAdditionalFeats.getSelIxSetMeta({comp: this._parent, prop: propIxSel, available: ent.feats});
 				fnsCleanupEnt.push(unhookIxGroup);
 				$$`<div class="ve-flex-col mb-2">
 					<div class="ve-flex-v-center mb-2">
@@ -213,10 +213,10 @@ export class StatGenUiCompAsi extends BaseComponent {
 				const $rows = [];
 
 				uidsStatic.map((uid, ix) => {
-					const { propIxFeatAbility, propFeatAbilityChooseFrom } = this._parent.getPropsAdditionalFeatsFeatSet_(namespace, "static", ix);
-					const { name, source } = DataUtil.proxy.unpackUid("feat", uid, "feat", { isLower: true });
+					const {propIxFeatAbility, propFeatAbilityChooseFrom} = this._parent.getPropsAdditionalFeatsFeatSet_(namespace, "static", ix);
+					const {name, source} = DataUtil.proxy.unpackUid("feat", uid, "feat", {isLower: true});
 					const feat = this._parent.feats.find(it => it.name.toLowerCase() === name && it.source.toLowerCase() === source);
-					const { $stgFeat, hkIxFeat, cleanup } = this._render_getMetaFeat({ featStatic: feat, propIxFeatAbility, propFeatAbilityChooseFrom });
+					const {$stgFeat, hkIxFeat, cleanup} = this._render_getMetaFeat({featStatic: feat, propIxFeatAbility, propFeatAbilityChooseFrom});
 					fnsCleanupGroup.push(cleanup);
 					hkIxFeat();
 
@@ -229,8 +229,8 @@ export class StatGenUiCompAsi extends BaseComponent {
 				});
 
 				[...new Array(featSet?.any || 0)].map((_, ix) => {
-					const { propIxFeat, propIxFeatAbility, propFeatAbilityChooseFrom } = this._parent.getPropsAdditionalFeatsFeatSet_(namespace, "choose", ix);
-					const { $stgFeat, hkIxFeat, cleanup } = this._render_getMetaFeat({ propIxFeat, propIxFeatAbility, propFeatAbilityChooseFrom });
+					const {propIxFeat, propIxFeatAbility, propFeatAbilityChooseFrom} = this._parent.getPropsAdditionalFeatsFeatSet_(namespace, "choose", ix);
+					const {$stgFeat, hkIxFeat, cleanup} = this._render_getMetaFeat({propIxFeat, propIxFeatAbility, propFeatAbilityChooseFrom});
 					fnsCleanupGroup.push(cleanup);
 					hkIxFeat();
 
@@ -243,8 +243,8 @@ export class StatGenUiCompAsi extends BaseComponent {
 				});
 
 				[...new Array(featSet?.anyFromCategory?.count || 0)].map((_, ix) => {
-					const { propIxFeat, propIxFeatAbility, propFeatAbilityChooseFrom } = this._parent.getPropsAdditionalFeatsFeatSet_(namespace, "chooseCategory", ix);
-					const { $stgFeat, hkIxFeat, cleanup } = this._render_getMetaFeat({ propIxFeat, propIxFeatAbility, propFeatAbilityChooseFrom, category: featSet.anyFromCategory.category });
+					const {propIxFeat, propIxFeatAbility, propFeatAbilityChooseFrom} = this._parent.getPropsAdditionalFeatsFeatSet_(namespace, "chooseCategory", ix);
+					const {$stgFeat, hkIxFeat, cleanup} = this._render_getMetaFeat({propIxFeat, propIxFeatAbility, propFeatAbilityChooseFrom, category: featSet.anyFromCategory.category});
 					fnsCleanupGroup.push(cleanup);
 					hkIxFeat();
 
@@ -278,7 +278,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 	 * @param {?string} category Category feat is to be chosen from, e.g. `O` ("Origin").
 	 * @private
 	 */
-	_render_getMetaFeat ({ featStatic = null, propIxFeat = null, propIxFeatAbility, propFeatAbilityChooseFrom, category = null }) {
+	_render_getMetaFeat ({featStatic = null, propIxFeat = null, propIxFeatAbility, propFeatAbilityChooseFrom, category = null}) {
 		if (featStatic && propIxFeat) throw new Error(`Cannot combine static feat and feat property!`);
 		if (featStatic == null && propIxFeat == null) throw new Error(`Either a static feat or a feat property must be specified!`);
 
@@ -322,7 +322,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 			fnsCleanupFeatAbility.splice(0, fnsCleanupFeatAbility.length).forEach(fn => fn());
 
 			if (isNotFirstRun) {
-				const nxtState = Object.keys(this._parent.state).filter(it => it.startsWith(propFeatAbilityChooseFrom)).mergeMap(it => ({ [it]: null }));
+				const nxtState = Object.keys(this._parent.state).filter(it => it.startsWith(propFeatAbilityChooseFrom)).mergeMap(it => ({[it]: null}));
 				this._parent.proxyAssignSimple("state", nxtState);
 			}
 
@@ -367,7 +367,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 					const abilitySet = feat.ability[this._parent.state[propIxFeatAbility]];
 
 					// region Static/no choices
-					const ptsNoChoose = Parser.ABIL_ABVS.filter(ab => abilitySet[ab]).map(ab => `${Parser.attAbvToFull(ab)} ${UiUtil.intToBonus(abilitySet[ab], { isPretty: true })}`);
+					const ptsNoChoose = Parser.ABIL_ABVS.filter(ab => abilitySet[ab]).map(ab => `${Parser.attAbvToFull(ab)} ${UiUtil.intToBonus(abilitySet[ab], {isPretty: true})}`);
 					$stgFeatNoChoice.empty().toggleVe(ptsNoChoose.length).html(`<div><span class="mr-2">\u2014</span>${ptsNoChoose.join(", ")}</div>`);
 					// endregion
 
@@ -380,18 +380,18 @@ export class StatGenUiCompAsi extends BaseComponent {
 						const count = abilitySet.choose.count || 1;
 						const amount = abilitySet.choose.amount || 1;
 
-						const { rowMetas, cleanup: cleanupAsiPicker } = ComponentUiUtil.getMetaWrpMultipleChoice(
+						const {rowMetas, cleanup: cleanupAsiPicker} = ComponentUiUtil.getMetaWrpMultipleChoice(
 							this._parent,
 							propFeatAbilityChooseFrom,
 							{
 								values: abilitySet.choose.from,
-								fnDisplay: v => `${Parser.attAbvToFull(v)} ${UiUtil.intToBonus(amount, { isPretty: true })}`,
+								fnDisplay: v => `${Parser.attAbvToFull(v)} ${UiUtil.intToBonus(amount, {isPretty: true})}`,
 								count,
 							},
 						);
 						fnsCleanupFeatAbility.push(() => cleanupAsiPicker());
 
-						$stgFeatChooseAsiFrom.append(`<div><span class="mr-2">\u2014</span>choose ${count > 1 ? `${count} ` : ""}${UiUtil.intToBonus(amount, { isPretty: true })}</div>`);
+						$stgFeatChooseAsiFrom.append(`<div><span class="mr-2">\u2014</span>choose ${count > 1 ? `${count} ` : ""}${UiUtil.intToBonus(amount, {isPretty: true})}</div>`);
 
 						rowMetas.forEach(meta => {
 							meta.$cb.change(() => this._doPulseThrottled());
@@ -436,7 +436,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 			fnsCleanupFeatAbility.splice(0, fnsCleanupFeatAbility.length).forEach(fn => fn());
 		};
 
-		return { $btnChooseFeat, $stgFeat, hkIxFeat, cleanup };
+		return {$btnChooseFeat, $stgFeat, hkIxFeat, cleanup};
 	}
 
 	render ($wrpAsi) {
@@ -447,10 +447,10 @@ export class StatGenUiCompAsi extends BaseComponent {
 
 		this._render_renderAsiFeatSection("common_cntAsi", "ability", $wrpRowsAsi);
 		this._render_renderAsiFeatSection("common_cntFeatsCustom", "custom", $wrpRowsCustom);
-		this._render_renderAdditionalFeatSection({ propEntity: "common_ixRace", namespace: "race", $wrpRows: $wrpRowsRace });
-		this._render_renderAdditionalFeatSection({ propEntity: "common_ixBackground", namespace: "background", $wrpRows: $wrpRowsBackground });
+		this._render_renderAdditionalFeatSection({propEntity: "common_ixRace", namespace: "race", $wrpRows: $wrpRowsRace});
+		this._render_renderAdditionalFeatSection({propEntity: "common_ixBackground", namespace: "background", $wrpRows: $wrpRowsBackground});
 
-		const $getStgEntity = ({ title, $wrpRows, propEntity, propIxEntity }) => {
+		const $getStgEntity = ({title, $wrpRows, propEntity, propIxEntity}) => {
 			const $stg = $$`<div class="ve-flex-col">
 				<hr class="hr-3 hr--dotted">
 				<h4 class="my-2 bold">${title} Feats</h4>
@@ -467,12 +467,13 @@ export class StatGenUiCompAsi extends BaseComponent {
 			return $stg;
 		};
 
-		const $stgRace = $getStgEntity({ title: "Species", $wrpRows: $wrpRowsRace, propEntity: "race", propIxEntity: "common_ixRace" });
+		const $stgRace = $getStgEntity({title: "Species", $wrpRows: $wrpRowsRace, propEntity: "race", propIxEntity: "common_ixRace"});
 
-		const $stgBackground = $getStgEntity({ title: "Background", $wrpRows: $wrpRowsBackground, propEntity: "background", propIxEntity: "common_ixBackground" });
+		const $stgBackground = $getStgEntity({title: "Background", $wrpRows: $wrpRowsBackground, propEntity: "background", propIxEntity: "common_ixBackground"});
 
-		const $iptCountFeatsCustom = ComponentUiUtil.$getIptInt(this._parent, "common_cntFeatsCustom", 0, { min: 0, max: MAX_CUSTOM_FEATS })
-			.addClass("w-100p ve-text-center");
+		const {ipt: iptCountFeatsCustom, wrp: wrpCountFeatsCustom} = ComponentUiUtil.getIptInt(this._parent, "common_cntFeatsCustom", 0, {min: 0, max: MAX_CUSTOM_FEATS, asMeta: true, decorationLeft: "spacer", decorationRight: "ticker"});
+		iptCountFeatsCustom.removeClass("ve-text-right").addClass("ve-text-center");
+		wrpCountFeatsCustom.addClass("w-100p");
 
 		$$($wrpAsi)`
 			<h4 class="my-2 bold">Ability Score Increases</h4>
@@ -486,7 +487,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 			<hr class="hr-3 hr--dotted">
 			<h4 class="my-2 bold">Additional Feats</h4>
 			<label class="w-100 ve-flex-v-center mb-2">
-				<div class="mr-2 no-shrink">Number of additional feats:</div>${$iptCountFeatsCustom}
+				<div class="mr-2 no-shrink">Number of additional feats:</div>${wrpCountFeatsCustom}
 			</label>
 			${$wrpRowsCustom}
 		`;
@@ -494,9 +495,10 @@ export class StatGenUiCompAsi extends BaseComponent {
 
 	_render_$getStageCntAsi () {
 		if (!this._parent.isCharacterMode) {
-			const $iptCountAsi = ComponentUiUtil.$getIptInt(this._parent, "common_cntAsi", 0, { min: 0, max: 20 })
-				.addClass("w-100p ve-text-center");
-			return $$`<label class="w-100 ve-flex-v-center mb-2"><div class="mr-2 no-shrink">Number of Ability Score Increases to apply:</div>${$iptCountAsi}</label>`;
+			const {ipt: iptCountAsi, wrp: wrpCountAsi} = ComponentUiUtil.getIptInt(this._parent, "common_cntAsi", 0, {min: 0, max: 20, asMeta: true, decorationLeft: "spacer", decorationRight: "ticker"});
+			iptCountAsi.removeClass("ve-text-right").addClass("ve-text-center");
+			wrpCountAsi.addClass("w-100p");
+			return $$`<label class="w-100 ve-flex-v-center mb-2"><div class="mr-2 no-shrink">Number of Ability Score Increases to apply:</div>${wrpCountAsi}</label>`;
 		}
 
 		const $out = $$`<div class="w-100 ve-flex-v-center mb-2 italic ve-muted">No ability score increases available.</div>`;
@@ -508,7 +510,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 
 	_getFormData_getForNamespace_basic (outs, outIsFormCompletes, outFeats, propCnt, namespace) {
 		for (let i = 0; i < this._parent.state[propCnt]; ++i) {
-			const { propMode, propIxFeat, propIxAsiPointOne, propIxAsiPointTwo, propIxFeatAbility, propFeatAbilityChooseFrom } = this._parent.getPropsAsi(i, namespace);
+			const {propMode, propIxFeat, propIxAsiPointOne, propIxAsiPointTwo, propIxFeatAbility, propFeatAbilityChooseFrom} = this._parent.getPropsAsi(i, namespace);
 
 			if (this._parent.state[propMode] === "asi") {
 				const out = {};
@@ -528,7 +530,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 				outs.push(out);
 				outIsFormCompletes.push(isFormComplete);
 			} else if (this._parent.state[propMode] === "feat") {
-				const { isFormComplete, out } = this._getFormData_doAddFeatMeta({
+				const {isFormComplete, out} = this._getFormData_doAddFeatMeta({
 					namespace,
 					outFeats,
 					propIxFeat,
@@ -546,7 +548,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 		const ent = this._parent[namespace]; // e.g. `this._parent.race`
 		if (!ent?.feats?.length) return;
 
-		const { propIxSel } = this._parent.getPropsAdditionalFeats_(namespace);
+		const {propIxSel} = this._parent.getPropsAdditionalFeats_(namespace);
 
 		const featSet = ent.feats[this._parent.state[propIxSel]];
 		if (!featSet) {
@@ -557,11 +559,11 @@ export class StatGenUiCompAsi extends BaseComponent {
 		const uidsStatic = StatGenUtilAdditionalFeats.getUidsStatic(featSet);
 
 		uidsStatic.map((uid, ix) => {
-			const { propIxFeatAbility, propFeatAbilityChooseFrom } = this._parent.getPropsAdditionalFeatsFeatSet_(namespace, "static", ix);
-			const { name, source } = DataUtil.proxy.unpackUid("feat", uid, "feat", { isLower: true });
+			const {propIxFeatAbility, propFeatAbilityChooseFrom} = this._parent.getPropsAdditionalFeatsFeatSet_(namespace, "static", ix);
+			const {name, source} = DataUtil.proxy.unpackUid("feat", uid, "feat", {isLower: true});
 			const feat = this._parent.feats.find(it => it.name.toLowerCase() === name && it.source.toLowerCase() === source);
 
-			const { isFormComplete, out } = this._getFormData_doAddFeatMeta({
+			const {isFormComplete, out} = this._getFormData_doAddFeatMeta({
 				namespace,
 				outFeats,
 				featStatic: feat,
@@ -575,9 +577,9 @@ export class StatGenUiCompAsi extends BaseComponent {
 		});
 
 		[...new Array(featSet.any || 0)].map((_, ix) => {
-			const { propIxFeat, propIxFeatAbility, propFeatAbilityChooseFrom } = this._parent.getPropsAdditionalFeatsFeatSet_(namespace, "choose", ix);
+			const {propIxFeat, propIxFeatAbility, propFeatAbilityChooseFrom} = this._parent.getPropsAdditionalFeatsFeatSet_(namespace, "choose", ix);
 
-			const { isFormComplete, out } = this._getFormData_doAddFeatMeta({
+			const {isFormComplete, out} = this._getFormData_doAddFeatMeta({
 				namespace,
 				outFeats,
 				propIxFeat,
@@ -591,9 +593,9 @@ export class StatGenUiCompAsi extends BaseComponent {
 		});
 
 		[...new Array(featSet?.anyFromCategory?.count || 0)].map((_, ix) => {
-			const { propIxFeat, propIxFeatAbility, propFeatAbilityChooseFrom } = this._parent.getPropsAdditionalFeatsFeatSet_(namespace, "chooseCategory", ix);
+			const {propIxFeat, propIxFeatAbility, propFeatAbilityChooseFrom} = this._parent.getPropsAdditionalFeatsFeatSet_(namespace, "chooseCategory", ix);
 
-			const { isFormComplete, out } = this._getFormData_doAddFeatMeta({
+			const {isFormComplete, out} = this._getFormData_doAddFeatMeta({
 				namespace,
 				outFeats,
 				propIxFeat,
@@ -607,7 +609,7 @@ export class StatGenUiCompAsi extends BaseComponent {
 		});
 	}
 
-	_getFormData_doAddFeatMeta ({ namespace, outFeats, propIxFeat = null, featStatic = null, propIxFeatAbility, propFeatAbilityChooseFrom, featsAdditionType }) {
+	_getFormData_doAddFeatMeta ({namespace, outFeats, propIxFeat = null, featStatic = null, propIxFeatAbility, propFeatAbilityChooseFrom, featsAdditionType}) {
 		if (featStatic && propIxFeat) throw new Error(`Cannot combine static feat and feat property!`);
 		if (featStatic == null && propIxFeat == null) throw new Error(`Either a static feat or a feat property must be specified!`);
 
@@ -616,19 +618,19 @@ export class StatGenUiCompAsi extends BaseComponent {
 		const feat = featStatic || this._parent.feats[this._parent.state[propIxFeat]];
 
 		const featMeta = feat
-			? { ix: this._parent.state[propIxFeat], uid: `${feat.name}|${feat.source}`, featsAdditionType }
-			: { ix: -1, uid: null, featsAdditionType };
+			? {ix: this._parent.state[propIxFeat], uid: `${feat.name}|${feat.source}`, featsAdditionType}
+			: {ix: -1, uid: null, featsAdditionType};
 		outFeats[namespace].push(featMeta);
 
-		if (!~featMeta.ix) return { isFormComplete: false, out };
-		if (!feat.ability) return { isFormComplete: true, out };
+		if (!~featMeta.ix) return {isFormComplete: false, out};
+		if (!feat.ability) return {isFormComplete: true, out};
 
 		const abilitySet = feat.ability[this._parent.state[propIxFeatAbility] || 0];
 
 		// Add static values
 		Parser.ABIL_ABVS.forEach(ab => { if (abilitySet[ab]) out[ab] = abilitySet[ab]; });
 
-		if (!abilitySet.choose) return { isFormComplete: true, out };
+		if (!abilitySet.choose) return {isFormComplete: true, out};
 
 		let isFormComplete = true;
 
@@ -646,13 +648,13 @@ export class StatGenUiCompAsi extends BaseComponent {
 			});
 		}
 
-		return { isFormComplete, out };
+		return {isFormComplete, out};
 	}
 
 	getFormData () {
 		const outs = [];
 		const isFormCompletes = [];
-		const feats = { ability: [], race: [], background: [], custom: [] };
+		const feats = {ability: [], race: [], background: [], custom: []};
 
 		this._getFormData_getForNamespace_basic(outs, isFormCompletes, feats, "common_cntAsi", "ability");
 		this._getFormData_getForNamespace_basic(outs, isFormCompletes, feats, "common_cntFeatsCustom", "custom");

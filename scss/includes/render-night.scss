@@ -15,11 +15,12 @@
 		&h--0,
 		&h--1,
 		&h--2 {
-			color: vars-night.$rgb-name-red--night;
+			color: vars-night.$rgb-name-blue--night;
 		}
 
-		&h--1 {
-			border-bottom-color: vars-night.$rgb-name-red--night;
+		&h--0 {
+			border-bottom-color: vars-night.$rgb-name-alt--night;
+
 		}
 
 		&h--4 {

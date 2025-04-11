@@ -30,7 +30,7 @@
 	height: 100vh;
 	width: 100vw;
 
-	@media screen and (width <= #{vars.$width-screen-md}) {
+	@media screen and (width <=#{vars.$width-screen-md}) {
 		bottom: auto;
 		height: initial;
 		min-height: 100vh;
@@ -57,7 +57,7 @@
 		}
 	}
 
-	@media screen and (width <= #{vars.$width-screen-md}) {
+	@media screen and (width <=#{vars.$width-screen-md}) {
 		flex-direction: column;
 		max-height: none;
 		height: initial;
@@ -115,7 +115,7 @@
 	overflow-x: hidden;
 	margin-bottom: 5px;
 
-	> *:not(.wrp-stats-table) {
+	>*:not(.wrp-stats-table) {
 		flex-shrink: 0;
 	}
 }
@@ -132,7 +132,7 @@
 		border-bottom-color: #c0c0c0;
 	}
 
-	@media screen and (width <= #{vars.$width-screen-md}) {
+	@media screen and (width <=#{vars.$width-screen-md}) {
 		overflow-y: initial;
 	}
 }
@@ -167,7 +167,7 @@
 		}
 	}
 
-	@media screen and (width <= #{vars.$width-screen-md}) {
+	@media screen and (width <=#{vars.$width-screen-md}) {
 		max-height: 40vh;
 	}
 }
@@ -203,28 +203,28 @@ th {
 		display: flex;
 		flex-shrink: 0;
 
-		> * {
+		>* {
 			min-width: 0;
 		}
 
-		> button {
+		>button {
 			flex-shrink: 0;
 		}
 
-		> *:first-child {
+		>*:first-child {
 			border-bottom-left-radius: 0;
 			border-top-right-radius: 0;
 			border-bottom-right-radius: 0;
 			border-right: 0;
 		}
 
-		> *:last-child {
+		>*:last-child {
 			border-bottom-right-radius: 0;
 			border-top-left-radius: 0;
 			border-bottom-left-radius: 0;
 		}
 
-		> *:not(:first-child, :last-child) {
+		>*:not(:first-child, :last-child) {
 			border-radius: 0;
 			border-right: 0;
 		}
@@ -252,7 +252,7 @@ th {
 	}
 }
 
-*:first-child > input.lst__search--no-border-h {
+*:first-child>input.lst__search--no-border-h {
 	border-top-left-radius: 4px;
 }
 
@@ -299,7 +299,7 @@ th {
 		min-height: 75px;
 		max-height: 80%;
 
-		@media screen and (width <= #{vars.$width-screen-md}) {
+		@media screen and (width <=#{vars.$width-screen-md}) {
 			max-height: 40vh;
 			height: initial;
 		}
@@ -309,7 +309,7 @@ th {
 		&wrp-cols {
 			display: flex;
 
-			> *:last-child {
+			>*:last-child {
 				flex-grow: 1;
 			}
 		}
@@ -333,11 +333,12 @@ th {
 // region Table View
 .tview__ {
 	&row {
-		> td {
+		>td {
 			min-width: 100px;
 		}
 	}
 }
+
 // endregion
 
 /* Book/Adventure Pages */
@@ -386,7 +387,7 @@ th {
 /* -------------------------------------------- */
 
 .initial-message {
-	color: vars.$rgb-name-red;
+	color: vars.$rgb-name-blue;
 	font-family: "Times New Roman", serif;
 	font-variant: small-caps;
 	font-weight: 500;
@@ -405,7 +406,7 @@ th {
 
 .ve-night-mode {
 	.initial-message {
-		color: vars-night.$rgb-name-red--night;
+		color: vars-night.$rgb-name-blue--night;
 	}
 }
 
@@ -420,35 +421,35 @@ th {
 	padding: 0 20px;
 }
 
-@media screen and (width <= #{vars.$width-screen-lg}) {
+@media screen and (width <=#{vars.$width-screen-lg}) {
 	.f-all-wrapper {
 		right: calc((50vw - (970px / 2)) + 1.5em);
 		left: calc(((100vw - (970px * (4 / 6))) / 2) + 1.5em);
 	}
 }
 
-@media screen and (width <= #{vars.$width-screen-md}) {
+@media screen and (width <=#{vars.$width-screen-md}) {
 	.f-all-wrapper {
 		right: calc(((100vw - 750px) / 2) + 1.5em);
 		left: calc(((100vw - 750px) / 2) + 1.5em);
 	}
 }
 
-@media screen and (width <= #{vars.$width-screen-sm}) {
+@media screen and (width <=#{vars.$width-screen-sm}) {
 	.f-all-wrapper {
 		right: calc(((100vw - 750px) / 2) + 1.5em);
 		left: calc(((100vw - 750px) / 2) + 1.5em);
 	}
 }
 
-@media screen and (width <= #{vars.$width-screen-xs}) {
+@media screen and (width <=#{vars.$width-screen-xs}) {
 	.f-all-wrapper {
 		right: calc(3.5em);
 		left: calc(3.5em);
 	}
 }
 
-.f-all-wrapper > input {
+.f-all-wrapper>input {
 	width: 100%;
 }
 
@@ -471,7 +472,7 @@ th {
 	padding: 5px 0;
 }
 
-.f-result > span {
+.f-result>span {
 	display: inline-block;
 }
 
@@ -524,23 +525,23 @@ th {
 			column-gap: 7px;
 			break-inside: avoid-column;
 
-			@media screen and (width <= 2160px) {
+			@media screen and (width <=2160px) {
 				column-count: 5;
 			}
 
-			@media screen and (width <= 1800px) {
+			@media screen and (width <=1800px) {
 				column-count: 4;
 			}
 
-			@media screen and (width <= 1440px) {
+			@media screen and (width <=1440px) {
 				column-count: 3;
 			}
 
-			@media screen and (width <= 1080px) {
+			@media screen and (width <=1080px) {
 				column-count: 2;
 			}
 
-			@media screen and (width <= 720px) {
+			@media screen and (width <=720px) {
 				column-count: 1;
 			}
 		}
@@ -571,8 +572,8 @@ th {
 
 .stripe-odd:nth-child(odd),
 .stripe-even:nth-child(even),
-.stripe-odd-table > tbody > tr:nth-child(odd),
-.stripe-even-table > tbody > tr:nth-child(even) {
+.stripe-odd-table>tbody>tr:nth-child(odd),
+.stripe-even-table>tbody>tr:nth-child(even) {
 	background: #c0c0c060;
 }
 
@@ -604,14 +605,14 @@ th {
 /* -------------------------------------------- */
 
 .ve-tbl-divider {
-	background: vars.$rgb-name-red;
+	background: vars.$rgb-name-blue;
 	height: 2px;
 	margin: (vars.$spacer * 0.5) 0;
 }
 
 .ve-night-mode {
 	.ve-tbl-divider {
-		background-color: vars-night.$rgb-name-red--night;
+		background-color: vars-night.$rgb-name-blue--night;
 	}
 }
 
@@ -673,7 +674,7 @@ th {
 			right: 10px;
 			padding: 2px 0;
 
-			@media screen and (width <= #{vars.$width-screen-sm}) {
+			@media screen and (width <=#{vars.$width-screen-sm}) {
 				display: none;
 			}
 		}
@@ -747,6 +748,7 @@ th {
 }
 
 .ve-night-mode .bks__ {
+
 	&wrp-bookshelf-item,
 	&wrp-bookshelf-item:hover {
 		background: vars-night.$rgb-bg--night;
@@ -760,12 +762,12 @@ th {
 	background: #fff;
 }
 
-.f-all-out > p:nth-child(odd) {
+.f-all-out>p:nth-child(odd) {
 	background: #f4f4f4;
 }
 
 .hwin .hoverborder .window-title {
-	color: vars.$rgb-name-red;
+	color: vars.$rgb-name-blue;
 }
 
 .form-control--error,
@@ -936,9 +938,10 @@ th {
 		box-shadow: 0 6px 12px rgb(0 0 0 / 56%);
 	}
 
-	.ve-dropdown-menu > li {
-		> a,
-		> span {
+	.ve-dropdown-menu>li {
+
+		>a,
+		>span {
 			color: vars-night.$rgb-font--night;
 
 			&:focus,
@@ -949,8 +952,9 @@ th {
 		}
 
 		&.ctx-danger {
-			> a,
-			> span {
+
+			>a,
+			>span {
 				color: #fff;
 				background-color: vars-night.$rgb-btn-danger-bg-red--night;
 
@@ -963,15 +967,17 @@ th {
 		}
 
 		&.active {
-			> a,
-			> span {
+
+			>a,
+			>span {
 				color: #fff;
 			}
 		}
 
 		&.disabled {
-			> a,
-			> span {
+
+			>a,
+			>span {
 				color: vars.$rgb-ctx-item-text-disabled;
 
 				&:focus,
@@ -1003,7 +1009,7 @@ th {
 	}
 
 	/* Bootstrap overrides */
-	.table-striped > tbody > tr:nth-of-type(odd) {
+	.table-striped>tbody>tr:nth-of-type(odd) {
 		background-color: #444;
 	}
 
@@ -1108,6 +1114,7 @@ th {
 	}
 
 	.bk__ {
+
 		&head-chapter--active,
 		&head-section--active {
 			background: vars-night.$rgb-bg--alt-night;
@@ -1145,17 +1152,17 @@ th {
 		color: vars-night.$rgb-font--night !important;
 	}
 
-	.f-all-wrapper > input,
+	.f-all-wrapper>input,
 	.f-all-out {
 		background: #303030;
 	}
 
-	.f-all-out > p:nth-child(odd) {
+	.f-all-out>p:nth-child(odd) {
 		background: #202020;
 	}
 
-	.stripe-odd-table > tbody > tr:nth-child(odd),
-	.stripe-even-table > tbody > tr:nth-child(even) {
+	.stripe-odd-table>tbody>tr:nth-child(odd),
+	.stripe-even-table>tbody>tr:nth-child(even) {
 		background-color: vars-night.$rgb-stripe-grey--night;
 	}
 
@@ -1192,6 +1199,7 @@ th {
 
 	/* *** */
 }
+
 /* Night Mode End */
 
 /****************************************
@@ -1240,6 +1248,7 @@ th {
 	.roller {
 		color: #000 !important;
 	}
+
 	// endregion
 
 	// region stats
@@ -1270,6 +1279,7 @@ th {
 	}
 
 	.stats--book-large {
+
 		.rd__b--3,
 		table,
 		p {
@@ -1280,6 +1290,7 @@ th {
 	.stats--book {
 		box-shadow: none !important;
 	}
+
 	// endregion
 
 	// region list pages
@@ -1293,6 +1304,7 @@ th {
 		border-top: 0 !important;
 		border-bottom: 0 !important;
 	}
+
 	// endregion
 
 	// region classes.html
@@ -1303,6 +1315,7 @@ th {
 	#classtable table tr:nth-child(odd) td {
 		background: #d3d3d3 !important;
 	}
+
 	// endregion
 
 	// region bestiary.html
@@ -1314,9 +1327,10 @@ th {
 		border-bottom: 1px solid #000 !important;
 		color: #000 !important;
 	}
+
 	// endregion
 
-	.bkmv-active > *:not(.bkmv) {
+	.bkmv-active>*:not(.bkmv) {
 		display: none !important;
 	}
 

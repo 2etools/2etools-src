@@ -789,12 +789,23 @@
 								{
 									"type": "table",
 									"page": 11,
-									"colLabels": [
-										"",
-										"",
-										"Time to Construct",
-										"",
-										""
+									"colLabelRows": [
+										[
+											"",
+											"",
+											{
+												"type": "cellHeader",
+												"width": 2,
+												"entry": "Time to Construct"
+											}
+										],
+										[
+											"Weapon Type",
+											"Poor",
+											"Average",
+											"Fine",
+											"Exceptional"
+										]
 									],
 									"colStyles": [
 										"col- text-left",
@@ -804,13 +815,6 @@
 										"col- text-center"
 									],
 									"rows": [
-										[
-											"{@b Weapon Type}",
-											"{@b Poor}",
-											"{@b Average}",
-											"{@b Fine}",
-											"{@b Exceptional}"
-										],
 										[
 											"Arrowhead",
 											"20/day",
@@ -893,12 +897,22 @@
 								{
 									"type": "table",
 									"page": 11,
-									"colLabels": [
-										"",
-										"Effects on Performance",
-										"",
-										"",
-										""
+									"colLabelRows": [
+										[
+											"",
+											{
+												"type": "cellHeader",
+												"width": 2,
+												"entry": "Effects on Performance"
+											}
+										],
+										[
+											"Weapon Quality",
+											"Attack",
+											"Damage",
+											"Breaks",
+											"Mod. to Prof Check to Craft"
+										]
 									],
 									"colStyles": [
 										"col- text-left",
@@ -908,13 +922,6 @@
 										"col- text-center"
 									],
 									"rows": [
-										[
-											"{@b Weapon Quality}",
-											"{@b Attack}",
-											"{@b Damage}",
-											"{@b Breaks}",
-											"{@b Mod. to Prof Check to Craft}"
-										],
 										[
 											"Poor",
 											"\u22121",
@@ -1170,7 +1177,7 @@
 						"For each Warrior Kit, the DM has to choose:",
 						{
 							"type": "list",
-							"style": "list-hang",
+							"style": "list-no-bullets",
 							"columns": 0,
 							"page": 14,
 							"items": [
@@ -1189,7 +1196,6 @@
 							"style": "list-hang",
 							"columns": 3,
 							"page": 14,
-							"name": "",
 							"items": [
 								"Amazon",
 								"Barbarian",
@@ -2239,204 +2245,212 @@
 								{
 									"type": "list",
 									"style": "list-hang",
-									"columns": 0,
-									"page": 59,
-									"name": "Axes:",
+									"columns": 4,
+									"page": 0,
 									"items": [
-										"Battle axe,",
-										"Hand/throwing axe."
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
-									"page": 59,
-									"name": "Bows:",
-									"items": [
-										"Composite long bow,",
-										"Composite short bow,",
-										"Daikyu*,",
-										"Long bow,",
-										"Short bow."
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
-									"page": 59,
-									"name": "Clubbing Weapons:",
-									"items": [
-										"Belaying pin*,",
-										"Club,",
-										"Footman's mace,",
-										"Horseman's mace,",
-										"Morning star,",
-										"Warhammer."
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
-									"page": 59,
-									"name": "Crossbows:",
-									"items": [
-										"Hand crossbow,",
-										"Heavy crossbow,",
-										"Light crossbow."
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
-									"page": 59,
-									"name": "Fencing Blades:",
-									"items": [
-										"Dagger/Dirk,",
-										"Knife/Stiletto*,",
-										"Main-gauche*,",
-										"Rapier*,",
-										"Sabre*."
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
-									"page": 59,
-									"name": "Flails:",
-									"items": [
-										"Footman's flail,",
-										"Horseman's flail."
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
-									"page": 59,
-									"name": "Lances:",
-									"items": [
-										"Heavy horse lance,",
-										"Light horse lance,",
-										"Jousting lance,",
-										"Medium horse lance."
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
-									"page": 59,
-									"name": "Medium Blades:",
-									"items": [
-										"Cutlass*,",
-										"Khopesh,",
-										"Wakizashi*."
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
-									"page": 59,
-									"name": "Picks:",
-									"items": [
-										"Footman's pick,",
-										"Horseman's pick."
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
-									"page": 59,
-									"name": "Polearms:",
-									"items": [
-										"Awl pike,",
-										"Bardiche,",
-										"Bec de corbin,",
-										"Bill-guisarme,",
-										"Fauchard,",
-										"Fauchard-fork,",
-										"Glaive,",
-										"Glaive-guisarme,",
-										"Guisarme,",
-										"Guisarme-voulge,",
-										"Halberd,",
-										"Hook fauchard,",
-										"Lucern hammer,",
-										"Mancatcher,",
-										"Military fork,",
-										"Naginata*,",
-										"Partisan,",
-										"Ranseur,",
-										"Spetum,",
-										"Tetsubo*,",
-										"Voulge."
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
-									"page": 59,
-									"name": "Short Blades:",
-									"items": [
-										"Dagger/Dirk,",
-										"Knife/Stiletto*,",
-										"Main-gauche*,",
-										"Short sword/Drusus*."
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
-									"page": 59,
-									"name": "Sickles:",
-									"items": [
-										"Sickle",
-										"Scythe"
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
-									"page": 59,
-									"name": "Slings:",
-									"items": [
-										"Sling,",
-										"Staff Sling."
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
-									"page": 59,
-									"name": "Spears:",
-									"items": [
-										"Harpoon,",
-										"Javelin,",
-										"Long Spear*,",
-										"Spear,",
-										"Trident."
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
-									"page": 59,
-									"name": "Whips:",
-									"items": [
-										"Scourge.",
-										"Whip."
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 59,
+											"name": "Axes:",
+											"items": [
+												"Battle axe,",
+												"Hand/throwing axe."
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 59,
+											"name": "Bows:",
+											"items": [
+												"Composite long bow,",
+												"Composite short bow,",
+												"Daikyu*,",
+												"Long bow,",
+												"Short bow."
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 59,
+											"name": "Clubbing Weapons:",
+											"items": [
+												"Belaying pin*,",
+												"Club,",
+												"Footman's mace,",
+												"Horseman's mace,",
+												"Morning star,",
+												"Warhammer."
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 59,
+											"name": "Crossbows:",
+											"items": [
+												"Hand crossbow,",
+												"Heavy crossbow,",
+												"Light crossbow."
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 59,
+											"name": "Fencing Blades:",
+											"items": [
+												"Dagger/Dirk,",
+												"Knife/Stiletto*,",
+												"Main-gauche*,",
+												"Rapier*,",
+												"Sabre*."
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 59,
+											"name": "Flails:",
+											"items": [
+												"Footman's flail,",
+												"Horseman's flail."
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 59,
+											"name": "Lances:",
+											"items": [
+												"Heavy horse lance,",
+												"Light horse lance,",
+												"Jousting lance,",
+												"Medium horse lance."
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 59,
+											"name": "Medium Blades:",
+											"items": [
+												"Cutlass*,",
+												"Khopesh,",
+												"Wakizashi*."
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 59,
+											"name": "Picks:",
+											"items": [
+												"Footman's pick,",
+												"Horseman's pick."
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 59,
+											"name": "Polearms:",
+											"items": [
+												"Awl pike,",
+												"Bardiche,",
+												"Bec de corbin,",
+												"Bill-guisarme,",
+												"Fauchard,",
+												"Fauchard-fork,",
+												"Glaive,",
+												"Glaive-guisarme,",
+												"Guisarme,",
+												"Guisarme-voulge,",
+												"Halberd,",
+												"Hook fauchard,",
+												"Lucern hammer,",
+												"Mancatcher,",
+												"Military fork,",
+												"Naginata*,",
+												"Partisan,",
+												"Ranseur,",
+												"Spetum,",
+												"Tetsubo*,",
+												"Voulge."
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 59,
+											"name": "Short Blades:",
+											"items": [
+												"Dagger/Dirk,",
+												"Knife/Stiletto*,",
+												"Main-gauche*,",
+												"Short sword/Drusus*."
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 59,
+											"name": "Sickles:",
+											"items": [
+												"Sickle",
+												"Scythe"
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 59,
+											"name": "Slings:",
+											"items": [
+												"Sling,",
+												"Staff Sling."
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 59,
+											"name": "Spears:",
+											"items": [
+												"Harpoon,",
+												"Javelin,",
+												"Long Spear*,",
+												"Spear,",
+												"Trident."
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 59,
+											"name": "Whips:",
+											"items": [
+												"Scourge.",
+												"Whip."
+											]
+										}
 									]
 								},
 								"You'll notice there's a little overlap between the Fencing Blades and Short Blades group; some weapons are common to both groups.",
@@ -2455,92 +2469,100 @@
 								{
 									"type": "list",
 									"style": "list-hang",
-									"columns": 0,
-									"page": 59,
-									"name": "Blades:",
-									"items": [
-										"Bastard sword,",
-										"Cutlass*,",
-										"Dagger/Dirk,",
-										"Katana*,",
-										"Khopesh,",
-										"Knife/Stiletto*,",
-										"Long sword,",
-										"Main-gauche*,",
-										"Rapier*,",
-										"Sabre*,",
-										"Scimitar,",
-										"Short sword/Drusus*,",
-										"Two-handed sword,",
-										"Wakizashi*."
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
+									"columns": 3,
 									"page": 60,
-									"name": "Cleaving/Crushing Weapons:",
 									"items": [
-										"Battle axe,",
-										"Belaying Pin*,",
-										"Club,",
-										"Footman's mace,",
-										"Footman's pick,",
-										"Hand/throwing axe,",
-										"Horseman's mace,",
-										"Horseman's pick,",
-										"Morning star,",
-										"Warhammer."
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
-									"page": 60,
-									"name": "Pole Weapons:",
-									"items": [
-										"Awl pike,",
-										"Bardiche,",
-										"Bec de corbin,",
-										"Bill-guisarme,",
-										"Fauchard,",
-										"Fauchard-fork,",
-										"Glaive,",
-										"Glaive-guisarme,",
-										"Guisarme,",
-										"Guisarme-voulge,",
-										"Halberd,",
-										"Harpoon",
-										"Hook fauchard,",
-										"Javelin",
-										"Lucern hammer,",
-										"Long Spear*,",
-										"Mancatcher,",
-										"Military fork,",
-										"Naginata*,",
-										"Partisan,",
-										"Ranseur,",
-										"Spear,",
-										"Spetum,",
-										"Tetsubo*,",
-										"Trident,",
-										"Voulge."
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
-									"page": 60,
-									"name": "Small Throwing Weapons:",
-									"items": [
-										"Dagger/Dirk,",
-										"Dart,",
-										"Hand/throwing axe,",
-										"Knife/stiletto*,",
-										"Shuriken*."
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 59,
+											"name": "Blades:",
+											"items": [
+												"Bastard sword,",
+												"Cutlass*,",
+												"Dagger/Dirk,",
+												"Katana*,",
+												"Khopesh,",
+												"Knife/Stiletto*,",
+												"Long sword,",
+												"Main-gauche*,",
+												"Rapier*,",
+												"Sabre*,",
+												"Scimitar,",
+												"Short sword/Drusus*,",
+												"Two-handed sword,",
+												"Wakizashi*."
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 60,
+											"name": "Cleaving/Crushing Weapons:",
+											"items": [
+												"Battle axe,",
+												"Belaying Pin*,",
+												"Club,",
+												"Footman's mace,",
+												"Footman's pick,",
+												"Hand/throwing axe,",
+												"Horseman's mace,",
+												"Horseman's pick,",
+												"Morning star,",
+												"Warhammer."
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 60,
+											"name": "Pole Weapons:",
+											"items": [
+												"Awl pike,",
+												"Bardiche,",
+												"Bec de corbin,",
+												"Bill-guisarme,",
+												"Fauchard,",
+												"Fauchard-fork,",
+												"Glaive,",
+												"Glaive-guisarme,",
+												"Guisarme,",
+												"Guisarme-voulge,",
+												"Halberd,",
+												"Harpoon",
+												"Hook fauchard,",
+												"Javelin",
+												"Lucern hammer,",
+												"Long Spear*,",
+												"Mancatcher,",
+												"Military fork,",
+												"Naginata*,",
+												"Partisan,",
+												"Ranseur,",
+												"Spear,",
+												"Spetum,",
+												"Tetsubo*,",
+												"Trident,",
+												"Voulge."
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"columns": 0,
+											"page": 60,
+											"name": "Small Throwing Weapons:",
+											"items": [
+												"Dagger/Dirk,",
+												"Dart,",
+												"Hand/throwing axe,",
+												"Knife/stiletto*,",
+												"Shuriken*."
+											]
+										}
 									]
 								},
 								"Again, you'll see some overlap between the Small Throwing Weapons group and other groups.",
@@ -2896,27 +2918,31 @@
 								{
 									"type": "list",
 									"style": "list-hang",
-									"columns": 0,
+									"columns": 2,
 									"page": 64,
-									"name": "Special Abilities and Restrictions:",
 									"items": [
-										"+1 to hit",
-										"+2 damage Bastard Sword,",
-										"+1 AC used Single-Hand,",
-										"Speed Factor 5 used Two-Handed"
-									]
-								},
-								{
-									"type": "list",
-									"style": "list-hang",
-									"columns": 0,
-									"page": 64,
-									"name": "Weapon Proficiency Slots Available: 4",
-									"items": [
-										"Prof w/Bastard Swd: 1",
-										"Spec w/Bastard Swd: 1",
-										"Single-Weapon Style: 1",
-										"Two-Hander Style: 1"
+										{
+											"type": "list",
+											"style": "list-hang",
+											"name": "Special Abilities and Restrictions:",
+											"items": [
+												"+1 to hit",
+												"+2 damage Bastard Sword,",
+												"+1 AC used Single-Hand,",
+												"Speed Factor 5 used Two-Handed"
+											]
+										},
+										{
+											"type": "list",
+											"style": "list-hang",
+											"name": "Weapon Proficiency Slots Available: 4",
+											"items": [
+												"Prof w/Bastard Swd: 1",
+												"Spec w/Bastard Swd: 1",
+												"Single-Weapon Style: 1",
+												"Two-Hander Style: 1"
+											]
+										}
 									]
 								}
 							]
@@ -3521,7 +3547,7 @@
 									"caption": "Martial Arts Results Table",
 									"page": 76,
 									"colLabels": [
-										"{@dice 1d20|Attack Roll}",
+										"{@dice d20|Attack Roll}",
 										"Martial Arts Maneuver",
 										"Dmg",
 										"% KO"
@@ -3546,199 +3572,109 @@
 											"15"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 19
-												}
-											},
+											"19",
 											"High Kick",
 											"2",
 											"10"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 18
-												}
-											},
+											"18",
 											"Vitals-Kick",
 											"2",
 											"8"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 17
-												}
-											},
+											"17",
 											"Vitals-Punch",
 											"2",
 											"5"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 16
-												}
-											},
+											"16",
 											"Head Bash",
 											"2",
 											"5"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 15
-												}
-											},
+											"15",
 											"Side Kick",
 											"1",
 											"3"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 14
-												}
-											},
+											"14",
 											"Elbow Shot",
 											"1",
 											"1"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 13
-												}
-											},
+											"13",
 											"Body-Punch",
 											"1",
 											"2"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 12
-												}
-											},
+											"12",
 											"Low Kick",
 											"1",
 											"1"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 11
-												}
-											},
+											"11",
 											"Graze",
 											"0",
 											"1"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 10
-												}
-											},
+											"10",
 											"Body-Punch",
 											"1",
 											"2"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 9
-												}
-											},
+											"9",
 											"Low Kick",
 											"1",
 											"1"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 8
-												}
-											},
+											"8",
 											"Body-Punch",
 											"1",
 											"2"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 7
-												}
-											},
+											"7",
 											"Elbow Shot",
 											"1",
 											"3"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 6
-												}
-											},
+											"6",
 											"Side Kick",
 											"1",
 											"5"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 5
-												}
-											},
+											"5",
 											"Head Bash",
 											"2",
 											"10"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 4
-												}
-											},
+											"4",
 											"Vitals-Punch",
 											"2",
 											"10"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 3
-												}
-											},
+											"3",
 											"Vitals-Kick",
 											"2",
 											"15"
 										],
 										[
-											{
-												"type": "cell",
-												"roll": {
-													"exact": 2
-												}
-											},
+											"2",
 											"High Kick",
 											"2",
 											"20"
@@ -4342,7 +4278,7 @@
 								"Let's add one line to that chart: Total Blackness. In Total Blackness, all Visibility Ranges are 0.",
 								{
 									"type": "table",
-									"caption": "Combat Modifiers for Darkness and Blinnesss",
+									"caption": "Combat Modifiers for Darkness and Blindness",
 									"page": 83,
 									"colLabels": [
 										"Condition",
@@ -5034,16 +4970,31 @@
 										{
 											"type": "table",
 											"page": 93,
-											"caption": "One-Handed or Two,Handed Weapons",
-											"colLabels": [
-												"",
-												"",
-												"",
-												"",
-												"",
-												"",
-												"Damage",
-												""
+											"caption": "One-Handed or Two-Handed Weapons",
+											"colLabelRows": [
+												[
+													"",
+													"",
+													"",
+													"",
+													"",
+													"",
+													{
+														"type": "cellHeader",
+														"width": 2,
+														"entry": "Damage"
+													}
+												],
+												[
+													"Item",
+													"Cost",
+													"Weight (lbs.)",
+													"Size",
+													"Type†",
+													"Factor",
+													"S-M",
+													"L"
+												]
 											],
 											"colStyles": [
 												"col- text-left",
@@ -5056,16 +5007,6 @@
 												"col- text-center"
 											],
 											"rows": [
-												[
-													"{@b Item}",
-													"{@b Cost}",
-													"{@b Weight (lbs.)}",
-													"{@b Size}",
-													"{@b Type†}",
-													"{@b Factor}",
-													"{@b S-M}",
-													"{@b L}"
-												],
 												[
 													"Harpoon%",
 													"",
@@ -5294,10 +5235,6 @@
 								"col- text-center",
 								"col- text-center"
 							],
-							"outro": [
-								"The chain, lasso and net are included in the table above because their use, in combat, is much like a missile weapon. They have ranges related to the length of the chain, the lasso or the net's trailing rope.",
-								"The \"*\" means the weapon doesn't precisely have a rate of fire; it may be used as often as the character's level (and perhaps specialization) dictates for a melee weapon."
-							],
 							"rows": [
 								[
 									"Bolas",
@@ -5411,19 +5348,36 @@
 								"In short, acquisition of this type of equipment is left as an exercise in role-playing and adventure, in played-out game sessions, not as something as simple as dropping some gold pieces off your character sheet."
 							]
 						},
+						"The chain, lasso and net are included in the table above because their use, in combat, is much like a missile weapon. They have ranges related to the length of the chain, the lasso or the net's trailing rope.",
+						"The \"*\" means the weapon doesn't precisely have a rate of fire; it may be used as often as the character's level (and perhaps specialization) dictates for a melee weapon.",
 						{
 							"type": "table",
 							"caption": "New Weapons List",
 							"page": 95,
-							"colLabels": [
-								"",
-								"",
-								"",
-								"",
-								"",
-								"",
-								"Damage",
-								""
+							"colLabelRows": [
+								[
+									"",
+									"",
+									"",
+									"",
+									"",
+									"",
+									{
+										"type": "cellHeader",
+										"width": 2,
+										"entry": "Damage"
+									}
+								],
+								[
+									"Item",
+									"Cost",
+									"Weight (lbs.)",
+									"Size",
+									"Type†",
+									"Factor",
+									"S-M",
+									"L"
+								]
 							],
 							"colStyles": [
 								"col- text-left",
@@ -5436,16 +5390,6 @@
 								"col- text-center"
 							],
 							"rows": [
-								[
-									"{@b Item}",
-									"{@b Cost}",
-									"{@b Weight (lbs.)}",
-									"{@b Size}",
-									"{@b Type†}",
-									"{@b Factor}",
-									"{@b S-M}",
-									"{@b L}"
-								],
 								[
 									"Arrows, Stone",
 									"",
@@ -6985,14 +6929,26 @@
 								{
 									"type": "table",
 									"page": 109,
-									"colLabels": [
-										"Race Trying to",
-										"Race",
-										"For",
-										"Which",
-										"Armor",
-										"Was",
-										"Built:"
+									"colLabelRows": [
+										[
+											"Race Trying to",
+											"",
+											"",
+											{
+												"type": "cellHeader",
+												"width": 2,
+												"entry": "Race For Which Armor Was Built:"
+											}
+										],
+										[
+											"",
+											"Dwf",
+											"Elf",
+											"Gnm",
+											"1/2 El",
+											"1/2-lg",
+											"Hum"
+										]
 									],
 									"colStyles": [
 										"col- text-left",
@@ -7005,28 +6961,19 @@
 									],
 									"rows": [
 										[
-											"{@b Wear Armor:}",
-											"{@b Dwf}",
-											"{@b Elf}",
-											"{@b Gnm}",
-											"{@b 1/2 El}",
-											"{@b 1/2-lg}",
-											"{@b Hum}"
-										],
-										[
 											"Dwarf",
 											"80%",
-											"0%\u2013",
-											"10%\u2013",
-											"10%\u2013",
-											"35%\u2013",
+											"0% \u2013",
+											"10% \u2013",
+											"10% \u2013",
+											"35% \u2013",
 											"40%"
 										],
 										[
 											"Elf",
 											"10% +",
 											"90%",
-											"50%\u2013",
+											"50% \u2013",
 											"70% +",
 											"35% +",
 											"50% +"
@@ -7046,25 +6993,25 @@
 											"45%",
 											"10% +",
 											"70%",
-											"35% +",
+											"35%",
 											"50%"
 										],
 										[
 											"Halfling",
 											"75% +",
-											"30%\u2013",
-											"35%\u2013",
+											"30% \u2013",
+											"35% \u2013",
 											"35% +",
 											"70%",
 											"20% +"
 										],
 										[
 											"Human",
-											"50%\u2013",
-											"20%\u2013",
-											"5%\u2013",
-											"30%\u2013",
-											"10%\u2013",
+											"50% \u2013",
+											"20% \u2013",
+											"5% \u2013",
+											"30% \u2013",
+											"10% \u2013",
 											"65%"
 										]
 									]
@@ -7162,14 +7109,26 @@
 								{
 									"type": "table",
 									"page": 111,
-									"colLabels": [
-										"",
-										"",
-										"Bonus to AC",
-										"Per Type",
-										"of Piece:",
-										"",
-										""
+									"colLabelRows": [
+										[
+											"",
+											"",
+											"",
+											{
+												"type": "cellHeader",
+												"width": 2,
+												"entry": "Bonus to AC Per Type of Piece:"
+											}
+										],
+										[
+											"Armor Type",
+											"Full Suit",
+											"Breast-Plate",
+											"Two Arms",
+											"One Arm",
+											"Two Legs",
+											"One Leg"
+										]
 									],
 									"colStyles": [
 										"col- text-left",
@@ -7181,15 +7140,6 @@
 										"col- text-center"
 									],
 									"rows": [
-										[
-											"{@b Armor Type}",
-											"{@b Full Suit}",
-											"{@b Breast-Plate}",
-											"{@b Two Arms}",
-											"{@b One Arm}",
-											"{@b Two Legs}",
-											"{@b One Leg}"
-										],
 										[
 											"Banded Mail",
 											"6",

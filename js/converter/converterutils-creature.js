@@ -1,15 +1,15 @@
-import { AlignmentUtil } from "./converterutils-utils-alignment.js";
-import { TagCondition, TaggerUtils, TagUtil } from "./converterutils-tags.js";
-import { ConverterConst } from "./converterutils-const.js";
-import { ItemTag, SpellTag } from "./converterutils-entries.js";
-import { VetoolsConfig } from "../utils-config/utils-config-config.js";
-import { SITE_STYLE__CLASSIC } from "../consts.js";
+import {AlignmentUtil} from "./converterutils-utils-alignment.js";
+import {TagCondition, TaggerUtils, TagUtil} from "./converterutils-tags.js";
+import {ConverterConst} from "./converterutils-const.js";
+import {ItemTag, SpellTag} from "./converterutils-entries.js";
+import {VetoolsConfig} from "../utils-config/utils-config-config.js";
+import {SITE_STYLE__CLASSIC} from "../consts.js";
 
 export class AcConvert {
 	static _ITEM_LOOKUP = null;
 	static _ITEM_LOOKUP_CLASSIC = null;
 
-	static tryPostProcessAc ({ mon, cbMan, cbErr, styleHint }) {
+	static tryPostProcessAc ({mon, cbMan, cbErr, styleHint}) {
 		const traitNames = new Set(
 			(mon.trait || [])
 				.map(it => it.name ? it.name.toLowerCase() : null)
@@ -39,7 +39,7 @@ export class AcConvert {
 			if (!fromRaw) return nuAc.push(acNum);
 
 			const nuAcTail = [];
-			const cur = { ac: acNum };
+			const cur = {ac: acNum};
 			const froms = [];
 
 			let fromClean = fromRaw;
@@ -52,7 +52,7 @@ export class AcConvert {
 			//   - `shield; ac 12 without shield`
 			fromClean = fromClean
 				.replace(/^(?:(?<from>.+); )?(?:(?:ac )?(?<nxtVal>\d+) (?<nxtCond>in .*? form|while .*?|when .*?|includes .*?|without .*?|with .*?))$/i, (...m) => {
-					const { from, nxtVal, nxtCond } = m.at(-1);
+					const {from, nxtVal, nxtCond} = m.at(-1);
 					nuAcTail.push({
 						ac: Number(nxtVal),
 						condition: nxtCond,
@@ -130,14 +130,14 @@ export class AcConvert {
 
 						// everything else
 						default: {
-							const simpleFrom = this._getSimpleFrom({ fromLow, traitNames, styleHint });
+							const simpleFrom = this._getSimpleFrom({fromLow, traitNames, styleHint});
 							if (simpleFrom) return froms.push(simpleFrom);
 
 							// Special parsing for barding, as the pre-barding armor type might not exactly match our known
 							//   barding names (e.g. "chainmail barding")
 							const mWithBarding = /^(?<ac>\d+) with (?<name>(?<type>.*?) barding)$/.exec(fromLow);
 							if (mWithBarding) {
-								let simpleFromBarding = this._getSimpleFrom({ fromLow: mWithBarding.groups.type, traitNames, styleHint });
+								let simpleFromBarding = this._getSimpleFrom({fromLow: mWithBarding.groups.type, traitNames, styleHint});
 								if (simpleFromBarding) {
 									simpleFromBarding = simpleFromBarding
 										.replace(/{@item ([^}]+)}/, (...m) => {
@@ -212,14 +212,14 @@ export class AcConvert {
 
 		const mPlusSpecial = /^(\d+) (plus|\+) (?:PB|the level of the spell|the spell's level|your [^ ]+ modifier|\d+ per spell level)(?: (\+\s*\d )?\([^)]+\))?$/i.exec(mon.ac);
 		if (mPlusSpecial) {
-			mon.ac = [{ special: mon.ac }];
+			mon.ac = [{special: mon.ac}];
 			return true;
 		}
 
 		return false;
 	}
 
-	static _getSimpleFrom ({ fromLow, traitNames, styleHint }) {
+	static _getSimpleFrom ({fromLow, traitNames, styleHint}) {
 		const lookup = styleHint === SITE_STYLE__CLASSIC ? AcConvert._ITEM_LOOKUP_CLASSIC : AcConvert._ITEM_LOOKUP;
 
 		switch (fromLow) {
@@ -275,7 +275,7 @@ export class AcConvert {
 				return fromLow;
 
 			case "plate armor of bhaal": return "plate armor of Bhaal";
-			// endregion
+				// endregion
 
 			// region homebrew
 			// "Flee, Mortals!" retainers
@@ -361,25 +361,25 @@ export class AcConvert {
 	}
 
 	static init (items) {
-		const handleBaseName = ({ item, lowName, isClassicSource }) => {
-			AcConvert._ITEM_LOOKUP[lowName] = { source: item.source, isExact: true };
+		const handleBaseName = ({item, lowName, isClassicSource}) => {
+			AcConvert._ITEM_LOOKUP[lowName] = {source: item.source, isExact: true};
 			if (isClassicSource) AcConvert._ITEM_LOOKUP_CLASSIC[lowName] = AcConvert._ITEM_LOOKUP[lowName];
 
 			const noArmorName = lowName.replace(/(^|\s)(?:armor|mail)(\s|$)/g, "$1$2").trim().replace(/\s+/g, " ");
 			if (noArmorName !== lowName) {
-				AcConvert._ITEM_LOOKUP[noArmorName] = { source: item.source, name: lowName };
+				AcConvert._ITEM_LOOKUP[noArmorName] = {source: item.source, name: lowName};
 				if (isClassicSource) AcConvert._ITEM_LOOKUP_CLASSIC[noArmorName] = AcConvert._ITEM_LOOKUP[noArmorName];
 			}
 
 			return noArmorName;
 		};
 
-		const handlePlusName = ({ item, lowName, isClassicSource }) => {
+		const handlePlusName = ({item, lowName, isClassicSource}) => {
 			const mBonus = /^(.+) (\+\d+)$/.exec(lowName);
 			if (!mBonus) return;
 
 			const plusFirstName = `${mBonus[2]} ${mBonus[1]}`;
-			AcConvert._ITEM_LOOKUP[plusFirstName] = { source: item.source, name: lowName };
+			AcConvert._ITEM_LOOKUP[plusFirstName] = {source: item.source, name: lowName};
 			if (isClassicSource) AcConvert._ITEM_LOOKUP_CLASSIC[plusFirstName] = AcConvert._ITEM_LOOKUP[plusFirstName];
 		};
 
@@ -388,7 +388,7 @@ export class AcConvert {
 		items
 			.filter(ent => {
 				if (!ent.type) return false;
-				const { abbreviation } = DataUtil.itemType.unpackUid(ent.type);
+				const {abbreviation} = DataUtil.itemType.unpackUid(ent.type);
 				return [
 					Parser.ITM_TYP_ABV__HEAVY_ARMOR,
 					Parser.ITM_TYP_ABV__MEDIUM_ARMOR,
@@ -400,10 +400,10 @@ export class AcConvert {
 				const lowName = item.name.toLowerCase();
 				const isClassicSource = SourceUtil.isClassicSource(item.source);
 
-				const noArmorName = handleBaseName({ item, lowName, isClassicSource });
+				const noArmorName = handleBaseName({item, lowName, isClassicSource});
 
-				handlePlusName({ item, lowName, isClassicSource });
-				handlePlusName({ item, lowName: noArmorName, isClassicSource });
+				handlePlusName({item, lowName, isClassicSource});
+				handlePlusName({item, lowName: noArmorName, isClassicSource});
 			});
 	}
 }
@@ -412,7 +412,7 @@ export class AcConvert {
 class _CreatureImmunityResistanceVulnerabilityConverterBase {
 	static _modProp;
 
-	static _getCleanIpt ({ ipt }) {
+	static _getCleanIpt ({ipt}) {
 		return ipt
 			.replace(/^none\b/i, "") // Thanks.
 			.replace(/\.+\s*$/, "")
@@ -420,7 +420,7 @@ class _CreatureImmunityResistanceVulnerabilityConverterBase {
 		;
 	}
 
-	static _getSplitInput ({ ipt }) {
+	static _getSplitInput ({ipt}) {
 		return ipt
 			// Split e.g.
 			// "Bludgeoning and Piercing from nonmagical attacks, Acid, Fire, Lightning"
@@ -440,14 +440,14 @@ class _CreatureImmunityResistanceVulnerabilityConverterBase {
 	 * @abstract
 	 * @return {?object}
 	 */
-	static _getSpecialFromPart ({ pt }) { throw new Error("Unimplemented!"); }
+	static _getSpecialFromPart ({pt}) { throw new Error("Unimplemented!"); }
 
-	static _getIxPreNote ({ pt }) { return -1; }
+	static _getIxPreNote ({pt}) { return -1; }
 
 	static _getUid (name) { return name.toLowerCase(); }
 
 	static getParsed (ipt, opts) {
-		ipt = this._getCleanIpt({ ipt });
+		ipt = this._getCleanIpt({ipt});
 		if (!ipt) return null;
 
 		let noteAll = null;
@@ -461,7 +461,7 @@ class _CreatureImmunityResistanceVulnerabilityConverterBase {
 				});
 		}
 
-		const spl = this._getSplitInput({ ipt });
+		const spl = this._getSplitInput({ipt});
 
 		const out = [];
 
@@ -476,7 +476,7 @@ class _CreatureImmunityResistanceVulnerabilityConverterBase {
 					.forEach(pt => {
 						pt = pt.trim().replace(/^and /i, "").trim();
 
-						const special = this._getSpecialFromPart({ pt });
+						const special = this._getSpecialFromPart({pt});
 						if (special) return out.push(special);
 
 						pt = pt.replace(/\((?:from|with|except) [^)]+\)$/i, (...m) => {
@@ -497,7 +497,7 @@ class _CreatureImmunityResistanceVulnerabilityConverterBase {
 							return "";
 						}).trim();
 
-						const ixPreNote = this._getIxPreNote({ pt });
+						const ixPreNote = this._getIxPreNote({pt});
 						if (ixPreNote > 0) {
 							preNote = pt.slice(0, ixPreNote).trim();
 							pt = pt.slice(ixPreNote).trim();
@@ -516,11 +516,11 @@ class _CreatureImmunityResistanceVulnerabilityConverterBase {
 
 				if (note || preNote) {
 					if (!newGroupOut.length) {
-						out.push({ special: [preNote, note].filter(Boolean).join(" ") });
+						out.push({special: [preNote, note].filter(Boolean).join(" ")});
 						return;
 					}
 
-					const toAdd = { [this._modProp]: newGroupOut };
+					const toAdd = {[this._modProp]: newGroupOut};
 					if (preNote) toAdd.preNote = preNote;
 					if (note) toAdd.note = note;
 					out.push(toAdd);
@@ -536,8 +536,8 @@ class _CreatureImmunityResistanceVulnerabilityConverterBase {
 }
 
 class _CreatureDamageImmunityResistanceVulnerabilityConverter extends _CreatureImmunityResistanceVulnerabilityConverterBase {
-	static _getCleanIpt ({ ipt }) {
-		return super._getCleanIpt({ ipt })
+	static _getCleanIpt ({ipt}) {
+		return super._getCleanIpt({ipt})
 			// Handle parens used instead of commas (e.g. "Hobgoblin Smokebinder" from Flee, Mortals!)
 			.replace(/(?:^|,? )\(([^)]+ in [^)]+ form)\)/gi, ", $1")
 			// handle the case where a comma is mistakenly used instead of a semicolon
@@ -545,14 +545,14 @@ class _CreatureDamageImmunityResistanceVulnerabilityConverter extends _CreatureI
 		;
 	}
 
-	static _getSpecialFromPart ({ pt }) {
+	static _getSpecialFromPart ({pt}) {
 		// region `"damage from spells"`
 		const mDamageFromThing = /^damage from .*$/i.exec(pt);
-		if (mDamageFromThing) return { special: pt };
+		if (mDamageFromThing) return {special: pt};
 		// endregion
 	}
 
-	static _getIxPreNote ({ pt }) {
+	static _getIxPreNote ({pt}) {
 		return Math.min(...Parser.DMG_TYPES.map(it => pt.toLowerCase().indexOf(it)).filter(ix => ~ix));
 	}
 }
@@ -572,7 +572,7 @@ export class CreatureDamageImmunityConverter extends _CreatureDamageImmunityResi
 export class CreatureConditionImmunityConverter extends _CreatureImmunityResistanceVulnerabilityConverterBase {
 	static _modProp = "conditionImmune";
 
-	static _getSpecialFromPart ({ pt }) { return null; }
+	static _getSpecialFromPart ({pt}) { return null; }
 
 	static _getUid (name) {
 		return TagCondition.getConditionUid(name);
@@ -604,13 +604,13 @@ export class TagCreatureSubEntryInto {
 	static _WALKER = null;
 
 	static tryRun (m, cbMan) {
-		this._PROPS.forEach(prop => this._handleProp({ m, prop, cbMan }));
+		this._PROPS.forEach(prop => this._handleProp({m, prop, cbMan}));
 	}
 
-	static _handleProp ({ m, prop, cbMan }) {
+	static _handleProp ({m, prop, cbMan}) {
 		if (!m[prop]) return;
 
-		this._WALKER ||= MiscUtil.getWalker({ keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST });
+		this._WALKER ||= MiscUtil.getWalker({keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST});
 
 		m[prop]
 			.forEach(it => {
@@ -630,7 +630,7 @@ export class TagCreatureSubEntryInto {
 								// "Melee Weapon Attack: ..."
 								// "Melee Attack Roll: ..."
 								.replace(/^(?<text>(?:(?:[A-Z][a-z]*|or) )*Attack(?: Roll)?:)(?= )/g, (...m) => {
-									const { text } = m.at(-1);
+									const {text} = m.at(-1);
 									const lower = text.toLowerCase();
 
 									if (this._MAP[lower]) return this._MAP[lower];
@@ -641,7 +641,7 @@ export class TagCreatureSubEntryInto {
 								})
 								// "Strength Saving Throw: ..."
 								.replace(/((?<abil>Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma) Saving Throw:)(?= )/g, (...m) => {
-									const { abil } = m.at(-1);
+									const {abil} = m.at(-1);
 									return `{@actSave ${abil.toLowerCase().slice(0, 3)}}`;
 								})
 								// "Failure or Success: ..."
@@ -664,10 +664,10 @@ export class TagCreatureSubEntryInto {
 
 export class TagHit {
 	static tryTagHits (m) {
-		TagHit._PROPS.forEach(prop => this._handleProp({ m, prop }));
+		TagHit._PROPS.forEach(prop => this._handleProp({m, prop}));
 	}
 
-	static _handleProp ({ m, prop }) {
+	static _handleProp ({m, prop}) {
 		if (!m[prop]) return;
 
 		m[prop]
@@ -680,7 +680,7 @@ export class TagHit {
 					.replace(/Miss or Hit: /g, "{@hom}")
 					.replace(/Hit: /g, "{@h}")
 					.replace(/Miss: /g, "{@m}")
-					;
+				;
 				it.entries = JSON.parse(out);
 			});
 	}
@@ -689,10 +689,10 @@ TagHit._PROPS = ["action", "reaction", "bonus", "trait", "legendary", "mythic", 
 
 export class TagDc {
 	static tryTagDcs (m) {
-		TagDc._PROPS.forEach(prop => this._handleProp({ m, prop }));
+		TagDc._PROPS.forEach(prop => this._handleProp({m, prop}));
 	}
 
-	static _handleProp ({ m, prop }) {
+	static _handleProp ({m, prop}) {
 		if (!m[prop]) return;
 
 		m[prop] = m[prop]
@@ -707,7 +707,7 @@ TagDc._PROPS = ["action", "reaction", "bonus", "trait", "legendary", "mythic", "
 
 export class AlignmentConvert {
 	static tryConvertAlignment (stats, cbMan) {
-		const { alignmentPrefix, alignment } = AlignmentUtil.tryGetConvertedAlignment(stats.alignment, { cbMan });
+		const {alignmentPrefix, alignment} = AlignmentUtil.tryGetConvertedAlignment(stats.alignment, {cbMan});
 
 		stats.alignment = alignment;
 		if (!stats.alignment) delete stats.alignment;
@@ -831,12 +831,12 @@ export class TraitActionTag {
 		},
 	};
 
-	static _doAdd ({ tags, tag, allowlist }) {
+	static _doAdd ({tags, tag, allowlist}) {
 		if (allowlist && !allowlist.has(tag)) return;
 		tags.add(tag);
 	}
 
-	static _doTag ({ m, cbMan, prop, tags, allowlist }) {
+	static _doTag ({m, cbMan, prop, tags, allowlist}) {
 		if (!m[prop]) return;
 
 		const lookup = this._TAGS[prop] || this._TAGS._other;
@@ -853,25 +853,25 @@ export class TraitActionTag {
 
 				const mapped = lookup[cleanName];
 				if (mapped) {
-					if (mapped === true) return this._doAdd({ tags, tag: t.name, allowlist });
-					return this._doAdd({ tags, tag: mapped, allowlist });
+					if (mapped === true) return this._doAdd({tags, tag: t.name, allowlist});
+					return this._doAdd({tags, tag: mapped, allowlist});
 				}
 
 				if (this._isTraits(prop)) {
-					if (cleanName.startsWith("keen ")) return this._doAdd({ tags, tag: "Keen Senses", allowlist });
-					if (cleanName.endsWith(" absorption")) return this._doAdd({ tags, tag: "Damage Absorption", allowlist });
-					if (cleanName.endsWith(" camouflage")) return this._doAdd({ tags, tag: "Camouflage", allowlist });
+					if (cleanName.startsWith("keen ")) return this._doAdd({tags, tag: "Keen Senses", allowlist});
+					if (cleanName.endsWith(" absorption")) return this._doAdd({tags, tag: "Damage Absorption", allowlist});
+					if (cleanName.endsWith(" camouflage")) return this._doAdd({tags, tag: "Camouflage", allowlist});
 				}
 
 				if (this._isActions(prop)) {
-					if (/\bbreath\b/.test(cleanName)) return this._doAdd({ tags, tag: "Breath Weapon", allowlist });
+					if (/\bbreath\b/.test(cleanName)) return this._doAdd({tags, tag: "Breath Weapon", allowlist});
 				}
 
 				if (cbMan) cbMan(prop, tags, cleanName);
 			});
 	}
 
-	static _doTagDeep ({ m, prop, tags, allowlist }) {
+	static _doTagDeep ({m, prop, tags, allowlist}) {
 		if (!m[prop]) return;
 
 		const lookup = this._TAGS_DEEP[prop] || this._TAGS_DEEP._other;
@@ -882,30 +882,30 @@ export class TraitActionTag {
 
 			Object.entries(lookup)
 				.forEach(([tagName, fnShouldTag]) => {
-					if (fnShouldTag(strEntries)) this._doAdd({ tags, tag: tagName, allowlist });
+					if (fnShouldTag(strEntries)) this._doAdd({tags, tag: tagName, allowlist});
 				});
 		});
 	}
 
-	static _doTagDeepRoot_trait ({ m, tags, allowlist }) {
-		if (m.senses?.some(s => /\bunimpeded by magical darkness\b/i.test(Renderer.stripTags(s)))) return this._doAdd({ tags, tag: "Devil's Sight", allowlist });
+	static _doTagDeepRoot_trait ({m, tags, allowlist}) {
+		if (m.senses?.some(s => /\bunimpeded by magical darkness\b/i.test(Renderer.stripTags(s)))) return this._doAdd({tags, tag: "Devil's Sight", allowlist});
 	}
 
 	static _isTraits (prop) { return prop === "trait"; }
 	static _isActions (prop) { return prop === "action"; }
 
-	static tryRun (m, { cbMan, allowlistTraitTags, allowlistActionTags } = {}) {
+	static tryRun (m, {cbMan, allowlistTraitTags, allowlistActionTags} = {}) {
 		const traitTags = new Set(m.traitTags || []);
 		const actionTags = new Set(m.actionTags || []);
 
-		this._doTag({ m, cbMan, prop: "trait", tags: traitTags, allowlist: allowlistTraitTags });
-		this._doTag({ m, cbMan, prop: "action", tags: actionTags, allowlist: allowlistActionTags });
-		this._doTag({ m, cbMan, prop: "reaction", tags: actionTags, allowlist: allowlistActionTags });
-		this._doTag({ m, cbMan, prop: "bonus", tags: actionTags, allowlist: allowlistActionTags });
+		this._doTag({m, cbMan, prop: "trait", tags: traitTags, allowlist: allowlistTraitTags});
+		this._doTag({m, cbMan, prop: "action", tags: actionTags, allowlist: allowlistActionTags});
+		this._doTag({m, cbMan, prop: "reaction", tags: actionTags, allowlist: allowlistActionTags});
+		this._doTag({m, cbMan, prop: "bonus", tags: actionTags, allowlist: allowlistActionTags});
 
-		this._doTagDeep({ m, prop: "action", tags: actionTags, allowlist: allowlistActionTags });
+		this._doTagDeep({m, prop: "action", tags: actionTags, allowlist: allowlistActionTags});
 
-		this._doTagDeepRoot_trait({ m, tags: traitTags, allowlist: allowlistTraitTags });
+		this._doTagDeepRoot_trait({m, tags: traitTags, allowlist: allowlistTraitTags});
 
 		if (traitTags.size) m.traitTags = [...traitTags].sort(SortUtil.ascSortLower);
 		if (actionTags.size) m.actionTags = [...actionTags].sort(SortUtil.ascSortLower);
@@ -1139,7 +1139,7 @@ class _PrimaryLegendarySpellsTaggerBase {
 	static _init () {
 		if (this._IS_INIT) return true;
 		this._IS_INIT = true;
-		this._WALKER = MiscUtil.getWalker({ isNoModification: true, keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST });
+		this._WALKER = MiscUtil.getWalker({isNoModification: true, keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST});
 		return false;
 	}
 
@@ -1147,20 +1147,20 @@ class _PrimaryLegendarySpellsTaggerBase {
 	 * @abstract
 	 * @return void
 	 */
-	static _handleString ({ m = null, str, outSet }) {
+	static _handleString ({m = null, str, outSet}) {
 		throw new Error("Unimplemented!");
 	}
 
-	static _handleEntries ({ m = null, entries, outSet }) {
+	static _handleEntries ({m = null, entries, outSet}) {
 		this._WALKER.walk(
 			entries,
 			{
-				string: (str) => this._handleString({ m, str, outSet }),
+				string: (str) => this._handleString({m, str, outSet}),
 			},
 		);
 	}
 
-	static _handleProp ({ m, prop, outSet }) {
+	static _handleProp ({m, prop, outSet}) {
 		if (!m[prop]) return;
 
 		m[prop].forEach(it => {
@@ -1172,7 +1172,7 @@ class _PrimaryLegendarySpellsTaggerBase {
 
 			if (!it.entries) return;
 
-			this._handleEntries({ m, entries: it.entries, outSet });
+			this._handleEntries({m, entries: it.entries, outSet});
 		});
 	}
 
@@ -1189,56 +1189,56 @@ class _PrimaryLegendarySpellsTaggerBase {
 		m[propOut] = [...outSet].sort(SortUtil.ascSortLower);
 	}
 
-	static tryRun (m, { isAppendOnly = false } = {}) {
+	static tryRun (m, {isAppendOnly = false} = {}) {
 		this._init();
 
 		const outSet = new Set();
 		Renderer.monster.CHILD_PROPS
 			.filter(prop => prop !== "spellcasting")
-			.forEach(prop => this._handleProp({ m, prop, outSet }));
+			.forEach(prop => this._handleProp({m, prop, outSet}));
 
-		this._setPropOut({ outSet, m, propOut: this._PROP_PRIMARY, isAppendOnly });
+		this._setPropOut({outSet, m, propOut: this._PROP_PRIMARY, isAppendOnly});
 	}
 
 	/**
 	 * @abstract
 	 * @return void
 	 */
-	static _handleSpell ({ spell, outSet }) {
+	static _handleSpell ({spell, outSet}) {
 		throw new Error("Unimplemented!");
 	}
 
-	static tryRunSpells (m, { cbMan, isAppendOnly = false } = {}) {
+	static tryRunSpells (m, {cbMan, isAppendOnly = false} = {}) {
 		if (!m.spellcasting) return;
 
 		this._init();
 
 		const outSet = new Set();
 
-		const spells = TaggerUtils.getSpellsFromString(JSON.stringify(m.spellcasting), { cbMan });
+		const spells = TaggerUtils.getSpellsFromString(JSON.stringify(m.spellcasting), {cbMan});
 
-		spells.forEach(spell => this._handleSpell({ spell, outSet }));
+		spells.forEach(spell => this._handleSpell({spell, outSet}));
 
-		this._setPropOut({ outSet, m, propOut: this._PROP_SPELLS, isAppendOnly });
+		this._setPropOut({outSet, m, propOut: this._PROP_SPELLS, isAppendOnly});
 	}
 
-	static tryRunRegionalsLairs (m, { cbMan, isAppendOnly = false } = {}) {
+	static tryRunRegionalsLairs (m, {cbMan, isAppendOnly = false} = {}) {
 		if (!m.legendaryGroup) return;
 
 		this._init();
 
-		const meta = TaggerUtils.findLegendaryGroup({ name: m.legendaryGroup.name, source: m.legendaryGroup.source });
+		const meta = TaggerUtils.findLegendaryGroup({name: m.legendaryGroup.name, source: m.legendaryGroup.source});
 		if (!meta) return;
 
 		const outSet = new Set();
-		this._handleEntries({ entries: meta, outSet });
+		this._handleEntries({entries: meta, outSet});
 
 		// region Also add from spells contained in the legendary group
-		const spells = TaggerUtils.getSpellsFromString(JSON.stringify(meta), { cbMan });
-		spells.forEach(spell => this._handleSpell({ spell, outSet }));
+		const spells = TaggerUtils.getSpellsFromString(JSON.stringify(meta), {cbMan});
+		spells.forEach(spell => this._handleSpell({spell, outSet}));
 		// endregion
 
-		this._setPropOut({ outSet, m, propOut: this._PROP_LEGENDARY, isAppendOnly });
+		this._setPropOut({outSet, m, propOut: this._PROP_LEGENDARY, isAppendOnly});
 	}
 
 	/** Attempt to detect an e.g. TCE summon creature. */
@@ -1289,7 +1289,7 @@ export class DamageTypeTag extends _PrimaryLegendarySpellsTaggerBase {
 		Object.entries(Parser.DMGTYPE_JSON_TO_FULL).forEach(([k, v]) => this._TYPE_LOOKUP[v] = k);
 	}
 
-	static _handleString ({ m = null, str, outSet }) {
+	static _handleString ({m = null, str, outSet}) {
 		str.replace(RollerUtil.REGEX_DAMAGE_DICE, (m0, average, prefix, diceExp, suffix) => {
 			suffix.replace(ConverterConst.RE_DAMAGE_TYPE, (m0, type) => outSet.add(this._TYPE_LOOKUP[type.toLowerCase()]));
 		});
@@ -1315,7 +1315,7 @@ export class DamageTypeTag extends _PrimaryLegendarySpellsTaggerBase {
 		}
 	}
 
-	static _handleSpell ({ spell, outSet }) {
+	static _handleSpell ({spell, outSet}) {
 		if (!spell.damageInflict) return;
 		spell.damageInflict.forEach(it => outSet.add(DamageTypeTag._TYPE_LOOKUP[it]));
 	}
@@ -1333,11 +1333,11 @@ export class MiscTag {
 	static _IS_INIT = false;
 	static _WALKER = null;
 
-	static init ({ items }) {
+	static init ({items}) {
 		if (this._IS_INIT) return;
 		this._IS_INIT = true;
 
-		this._WALKER = MiscUtil.getWalker({ isNoModification: true, keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST });
+		this._WALKER = MiscUtil.getWalker({isNoModification: true, keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST});
 
 		const weaponsBase = items
 			.filter(it => it._category === "Basic" && it.type && [Parser.ITM_TYP_ABV__MELEE_WEAPON, Parser.ITM_TYP_ABV__RANGED_WEAPON].includes(DataUtil.itemType.unpackUid(it.type).abbreviation));
@@ -1358,7 +1358,7 @@ export class MiscTag {
 	/* -------------------------------------------- */
 
 	/** @return empty string for easy use in `.replace` */
-	static _addTag ({ tagSet, allowlistTags, tag }) {
+	static _addTag ({tagSet, allowlistTags, tag}) {
 		if (allowlistTags != null && !allowlistTags.has(tag)) return "";
 		tagSet.add(tag);
 		return "";
@@ -1366,14 +1366,14 @@ export class MiscTag {
 
 	/* -------------------------------------------- */
 
-	static _handleProp ({ m, prop, tagSet, allowlistTags }) {
+	static _handleProp ({m, prop, tagSet, allowlistTags}) {
 		if (!m[prop]) return;
 
 		m[prop].forEach(subEntry => {
-			this._handleProp_attacks({ subEntry, tagSet, allowlistTags });
-			this._handleProp_curse({ subEntry, tagSet, allowlistTags });
-			this._handleProp_disease({ subEntry, tagSet, allowlistTags });
-			this._handleProp_other({ subEntry, tagSet, allowlistTags });
+			this._handleProp_attacks({subEntry, tagSet, allowlistTags});
+			this._handleProp_curse({subEntry, tagSet, allowlistTags});
+			this._handleProp_disease({subEntry, tagSet, allowlistTags});
+			this._handleProp_other({subEntry, tagSet, allowlistTags});
 		});
 	}
 
@@ -1396,25 +1396,25 @@ export class MiscTag {
 					// - any melee/ranged attack
 					str
 						.replace(/{@(?<tag>atkr?) (?<text>[^}]+)}/g, (...mx) => {
-							const { tag, text } = mx.at(-1);
+							const {tag, text} = mx.at(-1);
 							const spl = text.split(",");
 
 							if (spl.includes("rw")) {
-								this._addTag({ tagSet, allowlistTags, tag: "RW" });
+								this._addTag({tagSet, allowlistTags, tag: "RW"});
 								hasRangedAttack = true;
 							} else if (spl.some(it => it.includes("r"))) {
-								this._addTag({ tagSet, allowlistTags, tag: "RA" });
+								this._addTag({tagSet, allowlistTags, tag: "RA"});
 								hasRangedAttack = true;
 							}
 
-							if (spl.includes("mw")) this._addTag({ tagSet, allowlistTags, tag: "MW" });
-							else if (spl.some(it => it.includes("m"))) this._addTag({ tagSet, allowlistTags, tag: "MA" });
+							if (spl.includes("mw")) this._addTag({tagSet, allowlistTags, tag: "MW"});
+							else if (spl.some(it => it.includes("m"))) this._addTag({tagSet, allowlistTags, tag: "MA"});
 						});
 
 					// - reach
 					str
 						.replace(/reach (\d+) ft\./g, (...m) => {
-							if (Number(m[1]) > 5) this._addTag({ tagSet, allowlistTags, tag: "RCH" });
+							if (Number(m[1]) > 5) this._addTag({tagSet, allowlistTags, tag: "RCH"});
 						});
 				},
 			},
@@ -1425,10 +1425,10 @@ export class MiscTag {
 		// Melee weapons
 		// Ranged weapon
 		[
-			{ res: this._MELEE_WEAPON_MATCHERS, tag: "MLW" },
-			{ res: this._RANGED_WEAPON_MATCHERS, tag: "RNG" },
+			{res: this._MELEE_WEAPON_MATCHERS, tag: "MLW"},
+			{res: this._RANGED_WEAPON_MATCHERS, tag: "RNG"},
 		]
-			.forEach(({ res, tag }) => {
+			.forEach(({res, tag}) => {
 				res
 					.forEach(re => {
 						if (!re.test(subEntry.name)) return;
@@ -1443,7 +1443,7 @@ export class MiscTag {
 										// Avoid adding the "ranged attack" tag for spell attacks
 										if (spl.includes("rs")) return "";
 									}
-									this._addTag({ tagSet, allowlistTags, tag });
+									this._addTag({tagSet, allowlistTags, tag});
 									return "";
 								},
 							},
@@ -1452,7 +1452,7 @@ export class MiscTag {
 			});
 
 		// Thrown weapon
-		if (hasRangedAttack) this._THROWN_WEAPON_MATCHERS.forEach(r => subEntry.name.replace(r, () => this._addTag({ tagSet, allowlistTags, tag: "THW" })));
+		if (hasRangedAttack) this._THROWN_WEAPON_MATCHERS.forEach(r => subEntry.name.replace(r, () => this._addTag({tagSet, allowlistTags, tag: "THW"})));
 	}
 
 	/* --------------------- */
@@ -1470,11 +1470,11 @@ export class MiscTag {
 				string: (str) => {
 					const strClean = str
 						.replace(/{@spell bestow curse[^}]+}/gi, " - ") // Ignore the spell; it already has a dedicated filter
-						;
+					;
 
 					const isCurseLine = /\bbe(?:comes)? cursed\b/.test(strClean)
 						|| /\bis cursed\b/.test(strClean)
-						;
+					;
 
 					if (!isCurseLine) return;
 
@@ -1482,11 +1482,11 @@ export class MiscTag {
 					const isLimitedDuration = /\bfor \d+ (turn|round|minute)s?\b/i.test(strClean)
 						|| /\bfor 1 hour\b/i.test(strClean) // Consider e.g. "24 hours" sufficient time
 						|| /\bnext turn\b/i.test(strClean)
-						;
+					;
 
 					if (isLimitedDuration) return false;
 
-					this._addTag({ tagSet, allowlistTags, tag: "CUR" });
+					this._addTag({tagSet, allowlistTags, tag: "CUR"});
 				},
 			},
 		);
@@ -1522,7 +1522,7 @@ export class MiscTag {
 			subEntry.entries,
 			{
 				string: (str) => {
-					if (this._RES_DISEASE.some(re => re.test(str))) this._addTag({ tagSet, allowlistTags, tag: "DIS" });
+					if (this._RES_DISEASE.some(re => re.test(str))) this._addTag({tagSet, allowlistTags, tag: "DIS"});
 				},
 			},
 		);
@@ -1542,11 +1542,11 @@ export class MiscTag {
 			{
 				string: (str) => {
 					// AoE effects
-					str.replace(/\d+-foot[- ](line|cube|cone|emanation|radius|sphere|hemisphere|cylinder)/g, () => this._addTag({ tagSet, allowlistTags, tag: "AOE" }));
-					str.replace(/each creature within \d+ feet/gi, () => this._addTag({ tagSet, allowlistTags, tag: "AOE" }));
+					str.replace(/\d+-foot[- ](line|cube|cone|emanation|radius|sphere|hemisphere|cylinder)/g, () => this._addTag({tagSet, allowlistTags, tag: "AOE"}));
+					str.replace(/each creature within \d+ feet/gi, () => this._addTag({tagSet, allowlistTags, tag: "AOE"}));
 
 					// Hit point max reduction
-					str.replace(/\bhit point maximum is reduced\b/gi, () => this._addTag({ tagSet, allowlistTags, tag: "HPR" }));
+					str.replace(/\bhit point maximum is reduced\b/gi, () => this._addTag({tagSet, allowlistTags, tag: "HPR"}));
 				},
 			},
 		);
@@ -1554,14 +1554,14 @@ export class MiscTag {
 
 	/* -------------------------------------------- */
 
-	static tryRun (m, { isAdditiveOnly = false, allowlistTags = null } = {}) {
+	static tryRun (m, {isAdditiveOnly = false, allowlistTags = null} = {}) {
 		const tagSet = new Set(isAdditiveOnly ? m.miscTags || [] : []);
-		MiscTag._handleProp({ m, prop: "action", tagSet, allowlistTags });
-		MiscTag._handleProp({ m, prop: "trait", tagSet, allowlistTags });
-		MiscTag._handleProp({ m, prop: "reaction", tagSet, allowlistTags });
-		MiscTag._handleProp({ m, prop: "bonus", tagSet, allowlistTags });
-		MiscTag._handleProp({ m, prop: "legendary", tagSet, allowlistTags });
-		MiscTag._handleProp({ m, prop: "mythic", tagSet, allowlistTags });
+		MiscTag._handleProp({m, prop: "action", tagSet, allowlistTags});
+		MiscTag._handleProp({m, prop: "trait", tagSet, allowlistTags});
+		MiscTag._handleProp({m, prop: "reaction", tagSet, allowlistTags});
+		MiscTag._handleProp({m, prop: "bonus", tagSet, allowlistTags});
+		MiscTag._handleProp({m, prop: "legendary", tagSet, allowlistTags});
+		MiscTag._handleProp({m, prop: "mythic", tagSet, allowlistTags});
 		if (tagSet.size) m.miscTags = [...tagSet];
 		else if (!isAdditiveOnly) delete m.miscTags;
 	}
@@ -1582,7 +1582,7 @@ export class SpellcastingTraitConvert {
 		});
 	}
 
-	static tryParseSpellcasting (ent, { isMarkdown, cbMan, cbErr, prop, displayAs, actions, reactions, styleHint }) {
+	static tryParseSpellcasting (ent, {isMarkdown, cbMan, cbErr, prop, displayAs, actions, reactions, styleHint}) {
 		const spellcastingEntry = {
 			"name": ent.name,
 			"type": "spellcasting",
@@ -1592,7 +1592,7 @@ export class SpellcastingTraitConvert {
 		const [entHeaderInput, ...entsRestInput] = ent.entries;
 
 		spellcastingEntry.headerEntries.push(
-			this._getFirstHeaderEntry({ entName: ent.name, entHeaderInput, cbMan, prop, spellcastingEntry, styleHint }),
+			this._getFirstHeaderEntry({entName: ent.name, entHeaderInput, cbMan, prop, spellcastingEntry, styleHint}),
 		);
 
 		let hasAnyHeader = false;
@@ -1600,12 +1600,12 @@ export class SpellcastingTraitConvert {
 			.forEach(line => {
 				line = line.replace(/,\s*\*/g, ",*"); // put asterisks on the correct side of commas
 
-				const entFaux = { entries: [line] };
-				const propPathUsage = this.getMutUsagePropPath({ entry: entFaux, prop });
+				const entFaux = {entries: [line]};
+				const propPathUsage = this.getMutUsagePropPath({entry: entFaux, prop});
 				if (propPathUsage) {
 					line = entFaux.entries[0];
 
-					const value = this._getParsedSpells({ line, styleHint });
+					const value = this._getParsedSpells({line, styleHint});
 
 					MiscUtil.getOrSet(spellcastingEntry, ...propPathUsage, value);
 
@@ -1614,20 +1614,20 @@ export class SpellcastingTraitConvert {
 
 				if (/^Constant(?::| -) /.test(line)) {
 					hasAnyHeader = true;
-					spellcastingEntry.constant = this._getParsedSpells({ line, isMarkdown, styleHint });
+					spellcastingEntry.constant = this._getParsedSpells({line, isMarkdown, styleHint});
 					return;
 				}
 
 				if (/^At[- ][Ww]ill(?::| -) /.test(line)) {
 					hasAnyHeader = true;
-					spellcastingEntry.will = this._getParsedSpells({ line, isMarkdown, styleHint });
+					spellcastingEntry.will = this._getParsedSpells({line, isMarkdown, styleHint});
 					return;
 				}
 
 				if (line.includes("Cantrip")) {
 					hasAnyHeader = true;
-					const value = this._getParsedSpells({ line, isMarkdown, styleHint });
-					if (!spellcastingEntry.spells) spellcastingEntry.spells = { "0": { "spells": [] } };
+					const value = this._getParsedSpells({line, isMarkdown, styleHint});
+					if (!spellcastingEntry.spells) spellcastingEntry.spells = {"0": {"spells": []}};
 					spellcastingEntry.spells["0"].spells = value;
 					return;
 				}
@@ -1635,7 +1635,7 @@ export class SpellcastingTraitConvert {
 				if (/[- ][Ll]evel/.test(line) && /(?::| -) /.test(line)) {
 					hasAnyHeader = true;
 					let property = line.substring(0, 1);
-					const allSpells = this._getParsedSpells({ line, isMarkdown, styleHint });
+					const allSpells = this._getParsedSpells({line, isMarkdown, styleHint});
 					spellcastingEntry.spells = spellcastingEntry.spells || {};
 
 					const out = {};
@@ -1668,20 +1668,20 @@ export class SpellcastingTraitConvert {
 		SpellcastingTraitConvert.mutSpellcastingAbility(spellcastingEntry);
 		SpellcastingTraitConvert._mutDisplayAs(spellcastingEntry, displayAs);
 
-		this._addSplitOutSpells({ spellcastingEntry, arrayOther: actions, styleHint });
-		this._addSplitOutSpells({ spellcastingEntry, arrayOther: reactions, styleHint });
+		this._addSplitOutSpells({spellcastingEntry, arrayOther: actions, styleHint});
+		this._addSplitOutSpells({spellcastingEntry, arrayOther: reactions, styleHint});
 
 		return spellcastingEntry;
 	}
 
-	static _getFirstHeaderEntry ({ entName, entHeaderInput, cbMan, prop, spellcastingEntry, styleHint }) {
-		const entFaux = { name: entName, type: "entries", entries: [entHeaderInput] };
+	static _getFirstHeaderEntry ({entName, entHeaderInput, cbMan, prop, spellcastingEntry, styleHint}) {
+		const entFaux = {name: entName, type: "entries", entries: [entHeaderInput]};
 
-		const usagePath = this.getMutUsagePropPath({ entry: entFaux, prop })
-			|| this.getMutUsagePropPath({ entry: entFaux, prop });
+		const usagePath = this.getMutUsagePropPath({entry: entFaux, prop})
+			|| this.getMutUsagePropPath({entry: entFaux, prop});
 		const usagePathRoot = usagePath?.[0];
 
-		SpellTag.tryRunStrictCapsWords(entFaux, { styleHint });
+		SpellTag.tryRunStrictCapsWords(entFaux, {styleHint});
 
 		const [entHeaderInputTaggedCapsWords] = entFaux.entries;
 
@@ -1708,7 +1708,7 @@ export class SpellcastingTraitConvert {
 
 		line = line
 			.replace(/(?<ptPre>casts? (?:the )?)(?<ptSpellsRaw>[^.,?!:]+)(?<ptPost>\.| spell |at[ -]will)/g, (...m) => {
-				const { ptPre, ptSpellsRaw, ptPost } = m.at(-1);
+				const {ptPre, ptSpellsRaw, ptPost} = m.at(-1);
 
 				const isWill = ptPost.toLowerCase().replace(/-/g, " ") === "at will";
 
@@ -1720,7 +1720,7 @@ export class SpellcastingTraitConvert {
 				const ptSpellsOut = ptSpellsRaw
 					.split(" and ")
 					.map(sp => {
-						const value = this._getParsedSpells({ line: sp, styleHint });
+						const value = this._getParsedSpells({line: sp, styleHint});
 						const hidden = MiscUtil.getOrSet(spellcastingEntry, "hidden", []);
 
 						if (isWill) {
@@ -1754,20 +1754,20 @@ export class SpellcastingTraitConvert {
 	/* -------------------------------------------- */
 
 	static _USES_RE_INFOS_NAME = [
-		{ re: /(?<cnt>\d+)\/rest(?<ptEach> each)?/i, prop: "rest" },
-		{ re: /(?<cnt>\d+)\/day(?<ptEach> each)?/i, prop: "daily" },
-		{ re: /(?<cnt>\d+)\/week(?<ptEach> each)?/i, prop: "weekly" },
-		{ re: /(?<cnt>\d+)\/month(?<ptEach> each)?/i, prop: "monthly" },
-		{ re: /(?<cnt>\d+)\/year(?<ptEach> each)?/i, prop: "yearly" },
+		{re: /(?<cnt>\d+)\/rest(?<ptEach> each)?/i, prop: "rest"},
+		{re: /(?<cnt>\d+)\/day(?<ptEach> each)?/i, prop: "daily"},
+		{re: /(?<cnt>\d+)\/week(?<ptEach> each)?/i, prop: "weekly"},
+		{re: /(?<cnt>\d+)\/month(?<ptEach> each)?/i, prop: "monthly"},
+		{re: /(?<cnt>\d+)\/year(?<ptEach> each)?/i, prop: "yearly"},
 	];
 
 	static _USES_RE_INFOS_ENTRY = this._USES_RE_INFOS_NAME
-		.map(({ re, prop }) => ({ re: new RegExp(`^${re.source}`, "i"), prop }));
+		.map(({re, prop}) => ({re: new RegExp(`^${re.source}`, "i"), prop}));
 
-	static _getReFrequencyMatchMeta ({ res, str }) {
+	static _getReFrequencyMatchMeta ({res, str}) {
 		const metasPerDurationName = res
-			.map(({ re, prop }) => ({ m: re.exec(str), prop }))
-			.filter(({ m }) => !!m);
+			.map(({re, prop}) => ({m: re.exec(str), prop}))
+			.filter(({m}) => !!m);
 
 		if (metasPerDurationName.length) {
 			// Arbitrarily pick the first
@@ -1775,21 +1775,21 @@ export class SpellcastingTraitConvert {
 
 			const propPer = `${metaPerDuration.m.groups.cnt}${metaPerDuration.m.groups.ptEach ? "e" : ""}`;
 
-			return { propPath: [metaPerDuration.prop, propPer], length: metaPerDuration.m.length };
+			return {propPath: [metaPerDuration.prop, propPer], length: metaPerDuration.m.length};
 		}
 
 		return null;
 	}
 
-	static getMutUsagePropPath ({ entry, prop }) {
-		return this._getMutUsagePropPath_fromName({ entry, prop })
-			|| this._getMutUsagePropPath_fromEntries({ entry, prop });
+	static getMutUsagePropPath ({entry, prop}) {
+		return this._getMutUsagePropPath_fromName({entry, prop})
+			|| this._getMutUsagePropPath_fromEntries({entry, prop});
 	}
 
-	static _getMutUsagePropPath_fromName ({ entry, prop }) {
+	static _getMutUsagePropPath_fromName ({entry, prop}) {
 		if (!entry.name) return null;
 
-		const frequencyMeta = this._getReFrequencyMatchMeta({ res: this._USES_RE_INFOS_NAME, str: entry.name });
+		const frequencyMeta = this._getReFrequencyMatchMeta({res: this._USES_RE_INFOS_NAME, str: entry.name});
 		if (frequencyMeta) return frequencyMeta.propPath;
 
 		const mRecharge = /{@recharge( (?<val>\d))?}/.exec(entry.name);
@@ -1805,37 +1805,35 @@ export class SpellcastingTraitConvert {
 		}
 	}
 
-	static _getMutUsagePropPath_fromEntries ({ entry, prop }) {
+	static _getMutUsagePropPath_fromEntries ({entry, prop}) {
 		if (!entry.entries?.length) return null;
 
 		const walker = MiscUtil.getWalker();
 
 		let outWalker = null;
-		entry.entries = walker.walk(entry.entries, {
-			string: str => {
-				if (outWalker) return str;
+		entry.entries = walker.walk(entry.entries, {string: str => {
+			if (outWalker) return str;
 
-				const frequencyMeta = this._getReFrequencyMatchMeta({ res: this._USES_RE_INFOS_ENTRY, str });
-				if (frequencyMeta) {
-					outWalker = frequencyMeta.propPath;
-					return str.slice(frequencyMeta.length);
-				}
+			const frequencyMeta = this._getReFrequencyMatchMeta({res: this._USES_RE_INFOS_ENTRY, str});
+			if (frequencyMeta) {
+				outWalker = frequencyMeta.propPath;
+				return str.slice(frequencyMeta.length);
+			}
 
-				if (/finish a (?<ptRestLong>{@variantrule Long Rest\|XPHB}|Long Rest)/.test(str)) {
-					outWalker = ["restLong", "1"];
-					return str;
-				}
-
+			if (/finish a (?<ptRestLong>{@variantrule Long Rest\|XPHB}|Long Rest)/.test(str)) {
+				outWalker = ["restLong", "1"];
 				return str;
-			},
-		});
+			}
+
+			return str;
+		}});
 
 		return outWalker;
 	}
 
 	/* -------------------------------------------- */
 
-	static _getParsedSpells ({ line, isMarkdown, styleHint }) {
+	static _getParsedSpells ({line, isMarkdown, styleHint}) {
 		const mLabelSep = /(?::| -) /.exec(line);
 		let spellPart = line.substring((mLabelSep?.index || 0) + (mLabelSep?.[0]?.length || 0)).trim();
 
@@ -1859,10 +1857,10 @@ export class SpellcastingTraitConvert {
 		// move asterisks before commas (e.g. "chaos bolt,*" -> "chaos bolt*,")
 		spellPart = spellPart.replace(/,\s*\*/g, "*,");
 
-		return spellPart.split(StrUtil.COMMAS_NOT_IN_PARENTHESES_REGEX).map(it => this._parseSpell(it, { styleHint }));
+		return spellPart.split(StrUtil.COMMAS_NOT_IN_PARENTHESES_REGEX).map(it => this._parseSpell(it, {styleHint}));
 	}
 
-	static _parseSpell (str, { styleHint }) {
+	static _parseSpell (str, {styleHint}) {
 		str = str.trim();
 
 		const ptsSuffix = [];
@@ -1892,7 +1890,7 @@ export class SpellcastingTraitConvert {
 		str = this._parseSpell_getNonSrdSpellName(str);
 
 		return [
-			`{@spell ${str}${this._parseSpell_getSourcePart(str, { styleHint })}}`,
+			`{@spell ${str}${this._parseSpell_getSourcePart(str, {styleHint})}}`,
 			ptsSuffix.join(" "),
 		]
 			.filter(Boolean)
@@ -1909,15 +1907,15 @@ export class SpellcastingTraitConvert {
 		return spellName;
 	}
 
-	static _parseSpell_getSourcePart (spellName, { styleHint }) {
-		const source = SpellcastingTraitConvert._getSpellSource(spellName, { styleHint });
+	static _parseSpell_getSourcePart (spellName, {styleHint}) {
+		const source = SpellcastingTraitConvert._getSpellSource(spellName, {styleHint});
 		return `${source && source !== Parser.SRC_PHB ? `|${source}` : ""}`;
 	}
 
 	static _parseToHit (line) {
 		return line
 			.replace(/ (?<op>[-+])(?<num>\d+)(?<suffix> to hit with spell)/g, (...m) => {
-				const { op, num, suffix } = m.at(-1);
+				const {op, num, suffix} = m.at(-1);
 				return ` {@hit ${op === "-" ? "-" : ""}${num}}${suffix}`;
 			})
 		;
@@ -1935,7 +1933,7 @@ export class SpellcastingTraitConvert {
 		spellcastingEntry.displayAs = displayAs;
 	}
 
-	static _getSpellSource (spellName, { styleHint }) {
+	static _getSpellSource (spellName, {styleHint}) {
 		const lookup = styleHint === SITE_STYLE__CLASSIC ? this._SPELL_SRC_MAP_CLASSIC : this._SPELL_SRC_MAP;
 		if (spellName && lookup[spellName.toLowerCase()]) return lookup[spellName.toLowerCase()];
 		return null;
@@ -1947,7 +1945,7 @@ export class SpellcastingTraitConvert {
 	 * - "Shocking Grasp (Cantrip)"
 	 * - "Shield (1st-Level Spell; 3/Day)"
 	 * as hidden spells (if they don't already exist). */
-	static _addSplitOutSpells ({ spellcastingEntry, arrayOther, styleHint }) {
+	static _addSplitOutSpells ({spellcastingEntry, arrayOther, styleHint}) {
 		if (!arrayOther?.length) return;
 		arrayOther.forEach(ent => {
 			if (!ent.name) return;
@@ -1956,13 +1954,13 @@ export class SpellcastingTraitConvert {
 
 			const [, spellName, spellLevelRecharge, spellRecharge] = mName;
 
-			const spellTag = this._parseSpell(spellName, { styleHint });
+			const spellTag = this._parseSpell(spellName, {styleHint});
 			const uids = this._getSpellUids(spellTag);
 
 			if (spellLevelRecharge.toLowerCase() === "cantrip") {
 				spellcastingEntry.will = spellcastingEntry.will || [];
 				if (this._isExistingSpell(spellcastingEntry.will, uids)) return;
-				spellcastingEntry.will.push({ entry: spellTag, hidden: true });
+				spellcastingEntry.will.push({entry: spellTag, hidden: true});
 				return;
 			}
 
@@ -1972,7 +1970,7 @@ export class SpellcastingTraitConvert {
 					const chargeKey = `${numCharges}e`;
 					const tgt = MiscUtil.getOrSet(spellcastingEntry, "daily", chargeKey, []);
 					if (this._isExistingSpell(tgt, uids)) return;
-					tgt.push({ entry: spellTag, hidden: true });
+					tgt.push({entry: spellTag, hidden: true});
 					break;
 				}
 
@@ -2006,75 +2004,67 @@ export class SpellcastingTraitHiddenConvert {
 	static _RE_SPELL = /{@spell (?<text>[^}]+)}(?<ptLevel> \(level \d+ version\))?/g;
 
 	static _getSpellUid (text) {
-		const unpacked = DataUtil.proxy.unpackUid("spell", text, "spell", { isLower: true });
+		const unpacked = DataUtil.proxy.unpackUid("spell", text, "spell", {isLower: true});
 		return DataUtil.proxy.getUid("spell", unpacked);
 	}
 
-	static _getSpellUidsExisting ({ stats }) {
+	static _getSpellUidsExisting ({stats}) {
 		const spellUidsExisting = new Set();
 		if (!stats.spellcasting?.length) return spellUidsExisting;
 
-		this._WALKER.walk(stats.spellcasting, {
-			string: str => {
-				[...str.matchAll(this._RE_SPELL)]
-					.forEach(m => spellUidsExisting.add(this._getSpellUid(m.groups.text)));
-			},
-		});
+		this._WALKER.walk(stats.spellcasting, {string: str => {
+			[...str.matchAll(this._RE_SPELL)]
+				.forEach(m => spellUidsExisting.add(this._getSpellUid(m.groups.text)));
+		}});
 
 		return spellUidsExisting;
 	}
 
-	static _mutStatblockProp_getSpellcastingSameAbility ({ stats, entSub }) {
+	static _mutStatblockProp_getSpellcastingSameAbility ({stats, entSub}) {
 		let spellcastingTraitNameLower = null;
-		this._WALKER.walk(entSub.entries, {
-			string: str => {
-				const mUsesTheSame = /using the same spellcasting ability as (?<name>[^.!?]+)/i.exec(str);
-				if (mUsesTheSame) return spellcastingTraitNameLower = mUsesTheSame.groups.name.trim().toLowerCase();
-			},
-		});
+		this._WALKER.walk(entSub.entries, {string: str => {
+			const mUsesTheSame = /using the same spellcasting ability as (?<name>[^.!?]+)/i.exec(str);
+			if (mUsesTheSame) return spellcastingTraitNameLower = mUsesTheSame.groups.name.trim().toLowerCase();
+		}});
 		if (!spellcastingTraitNameLower) return null;
 
 		return stats.spellcasting?.find(entExisting => entExisting.name.toLowerCase().trim() === spellcastingTraitNameLower);
 	}
 
-	static _mutStatblockProp_getOtherAbility ({ stats, entSub }) {
+	static _mutStatblockProp_getOtherAbility ({stats, entSub}) {
 		let abil = null;
-		this._WALKER.walk(entSub.entries, {
-			string: str => {
-				const mUsing = /using (?<abilRaw>\w+) as the spellcasting ability/i.exec(str);
-				if (!mUsing) return;
+		this._WALKER.walk(entSub.entries, {string: str => {
+			const mUsing = /using (?<abilRaw>\w+) as the spellcasting ability/i.exec(str);
+			if (!mUsing) return;
 
-				return abil = mUsing.groups.abilRaw.toLowerCase().slice(0, 3);
-			},
-		});
+			return abil = mUsing.groups.abilRaw.toLowerCase().slice(0, 3);
+		}});
 		return abil;
 	}
 
-	static _mutStatblockProp ({ stats, prop, spellUidsExisting }) {
+	static _mutStatblockProp ({stats, prop, spellUidsExisting}) {
 		stats[prop] = stats[prop]
 			.map(entSub => {
 				if (!entSub.name || !entSub.entries?.length) return entSub;
 
-				const entSpellcastingTraitAbility = this._mutStatblockProp_getSpellcastingSameAbility({ stats, entSub });
-				const abilityOther = this._mutStatblockProp_getOtherAbility({ stats, entSub });
+				const entSpellcastingTraitAbility = this._mutStatblockProp_getSpellcastingSameAbility({stats, entSub});
+				const abilityOther = this._mutStatblockProp_getOtherAbility({stats, entSub});
 
 				if (!entSpellcastingTraitAbility && !abilityOther) return entSub;
 				const ability = entSpellcastingTraitAbility?.ability || abilityOther;
 
 				const spellTags = [];
 
-				this._WALKER.walk(entSub.entries, {
-					string: str => {
-						[...str.matchAll(this._RE_SPELL)]
-							.forEach(m => {
-								const { text, ptLevel } = m.groups;
-								if (spellUidsExisting.has(this._getSpellUid(text))) return;
+				this._WALKER.walk(entSub.entries, {string: str => {
+					[...str.matchAll(this._RE_SPELL)]
+						.forEach(m => {
+							const {text, ptLevel} = m.groups;
+							if (spellUidsExisting.has(this._getSpellUid(text))) return;
 
-								const { name, source } = DataUtil.proxy.unpackUid("spell", text, "spell");
-								spellTags.push(`{@spell ${name}|${source}}${ptLevel || ""}`);
-							});
-					},
-				});
+							const {name, source} = DataUtil.proxy.unpackUid("spell", text, "spell");
+							spellTags.push(`{@spell ${name}|${source}}${ptLevel || ""}`);
+						});
+				}});
 
 				if (!spellTags.length) return entSub;
 
@@ -2086,7 +2076,7 @@ export class SpellcastingTraitHiddenConvert {
 					displayAs: prop,
 				};
 
-				const usagePath = SpellcastingTraitConvert.getMutUsagePropPath({ entry: entSub, prop }) || ["will"];
+				const usagePath = SpellcastingTraitConvert.getMutUsagePropPath({entry: entSub, prop}) || ["will"];
 
 				entSpellcasting.hidden = [usagePath[0]];
 				MiscUtil.set(entSpellcasting, ...usagePath, spellTags.unique());
@@ -2098,17 +2088,17 @@ export class SpellcastingTraitHiddenConvert {
 			.filter(Boolean);
 	}
 
-	static mutStatblock ({ stats, props, styleHint }) {
+	static mutStatblock ({stats, props, styleHint}) {
 		if (styleHint === SITE_STYLE__CLASSIC && !stats.spellcasting?.length) return;
 
-		this._WALKER ||= MiscUtil.getWalker({ isNoModification: true, isBreakOnReturn: true });
+		this._WALKER ||= MiscUtil.getWalker({isNoModification: true, isBreakOnReturn: true});
 
-		const spellUidsExisting = this._getSpellUidsExisting({ stats });
+		const spellUidsExisting = this._getSpellUidsExisting({stats});
 
 		props
 			.filter(prop => !["variant", "spellcasting"].includes(prop))
 			.filter(prop => stats[prop])
-			.forEach(prop => this._mutStatblockProp({ stats, prop, spellUidsExisting }));
+			.forEach(prop => this._mutStatblockProp({stats, prop, spellUidsExisting}));
 	}
 }
 
@@ -2188,7 +2178,7 @@ export class SpeedConvert {
 		this._splitSpeed(line).map(it => it.trim()).forEach(s => {
 			// For e.g. shapechanger speeds, store them behind a "condition" on the previous speed
 			if (prevSpeed && /^\((\w+?\s+)?(\d+)\s*ft\.?( .*)?\)$/i.test(s)) {
-				if (typeof out[prevSpeed] === "number") out[prevSpeed] = { number: out[prevSpeed], condition: s };
+				if (typeof out[prevSpeed] === "number") out[prevSpeed] = {number: out[prevSpeed], condition: s};
 				else out[prevSpeed].condition = s;
 				prevSpeed = null;
 				return;
@@ -2197,7 +2187,7 @@ export class SpeedConvert {
 			// E.g. "20 ft., Climb or Fly 20 ft. (DM's choice)"
 			const mOrDmsChoice = /^(?<mode1>\w+) or (?<mode2>\w+) (?<feet>\d+) ft\. (?<note>\(DM's choice\))$/i.exec(s);
 			if (mOrDmsChoice) {
-				let { mode1, mode2, feet, note } = mOrDmsChoice.groups;
+				let {mode1, mode2, feet, note} = mOrDmsChoice.groups;
 
 				mode1 = mode1.trim().toLowerCase();
 				if (!this._SPEED_TYPES.has(mode1)) return setByHand();
@@ -2218,7 +2208,7 @@ export class SpeedConvert {
 			const mBasic = /^(?<mode>\w+?\s+)?(?<feet>\d+)\s*ft\.?(?<condition> .*)?$/i.exec(s);
 			if (!mBasic) return setByHand();
 
-			let { mode, feet, condition } = mBasic.groups;
+			let {mode, feet, condition} = mBasic.groups;
 			feet = Number(feet);
 
 			mode = mode ? mode.trim().toLowerCase() : "walk";
@@ -2287,7 +2277,7 @@ export class DetectNamedCreature {
 	}
 
 	static _tryRun_heuristic (mon) {
-		const totals = { yes: 0, no: 0 };
+		const totals = {yes: 0, no: 0};
 
 		this._doCheckProp(mon, totals, "trait");
 		this._doCheckProp(mon, totals, "spellcasting");
@@ -2373,7 +2363,7 @@ export class DragonAgeTag {
 export class AttachedItemTag {
 	static _WEAPON_DETAIL_CACHE;
 
-	static init ({ items }) {
+	static init ({items}) {
 		this._WEAPON_DETAIL_CACHE ||= {};
 
 		for (const item of items) {
@@ -2425,7 +2415,7 @@ export class AttachedItemTag {
 	//   - for creatures with a known "book" source, never use items from a known "adventure" source
 	//   - for creatures with a known "adventure" source, never use items from a *different* "adventure" source
 	//   - for a creature from a known source, never tag items from a more recent known source
-	static tryRun (mon, { cbNotFound = null, isAddOnly = false } = {}) {
+	static tryRun (mon, {cbNotFound = null, isAddOnly = false} = {}) {
 		if (!this._WEAPON_DETAIL_CACHE) throw new Error(`Attached item cache was not initialized!`);
 
 		if (!mon.action?.length) return;
@@ -2456,7 +2446,7 @@ export class CreatureSavingThrowTagger extends _PrimaryLegendarySpellsTaggerBase
 	static _PROP_SPELLS = "savingThrowForcedSpell";
 	static _PROP_LEGENDARY = "savingThrowForcedLegendary";
 
-	static _handleString ({ m = null, str, outSet }) {
+	static _handleString ({m = null, str, outSet}) {
 		str
 			.replace(/{@dc (?<save>[^|}]+)(?:\|[^}]+)?}\s+(?<abil>Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma) saving throw/i, (...m) => {
 				outSet.add(m.last().abil.toLowerCase());
@@ -2468,7 +2458,7 @@ export class CreatureSavingThrowTagger extends _PrimaryLegendarySpellsTaggerBase
 		;
 	}
 
-	static _handleSpell ({ spell, outSet }) {
+	static _handleSpell ({spell, outSet}) {
 		if (!spell.savingThrow) return;
 		spell.savingThrow.forEach(it => outSet.add(it));
 	}
@@ -2479,7 +2469,7 @@ export class CreatureSpecialEquipmentTagger {
 	 * @param mon
 	 * @param {"classic" | "one" | null} styleHint
 	 */
-	static tryRun (mon, { styleHint = null } = {}) {
+	static tryRun (mon, {styleHint = null} = {}) {
 		if (!mon.trait) return;
 
 		styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
@@ -2487,7 +2477,7 @@ export class CreatureSpecialEquipmentTagger {
 		mon.trait = mon.trait
 			.map(ent => {
 				if (!/\bEquipment\b/.test(ent.name || "")) return ent;
-				return ItemTag.tryRun(ent, { styleHint });
+				return ItemTag.tryRun(ent, {styleHint});
 			});
 	}
 }
