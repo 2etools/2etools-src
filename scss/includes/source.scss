@@ -154,21 +154,21 @@
 		&PHBR {
 			@include mix-source-color($rgb-source-PHBR);
 
-			&PHBR1,
-			&PHBR2,
-			&PHBR3,
-			&PHBR4,
-			&PHBR5,
-			&PHBR6,
-			&PHBR7,
-			&PHBR8,
-			&PHBR9,
-			&PHBR10,
-			&PHBR11,
-			&PHBR12,
-			&PHBR13,
-			&PHBR14,
-			&PHBR15 {
+			&1,
+			&2,
+			&3,
+			&4,
+			&5,
+			&6,
+			&7,
+			&8,
+			&9,
+			&10,
+			&11,
+			&12,
+			&13,
+			&14,
+			&15 {
 				@include mix-source-color($rgb-source-PHBR);
 			}
 		}
@@ -176,15 +176,15 @@
 		&DMGR {
 			@include mix-source-color($rgb-source-DMGR);
 
-			&DMGR1,
-			&DMGR2,
-			&DMGR3,
-			&DMGR4,
-			&DMGR5,
-			&DMGR6,
-			&DMGR7,
-			&DMGR8,
-			&DMGR9 {
+			&1,
+			&2,
+			&3,
+			&4,
+			&5,
+			&6,
+			&7,
+			&8,
+			&9 {
 				@include mix-source-color($rgb-source-DMGR);
 			}
 		}
@@ -192,13 +192,13 @@
 		&HR {
 			@include mix-source-color($rgb-source-HR);
 
-			&HR1,
-			&HR2,
-			&HR3,
-			&HR4,
-			&HR5,
-			&HR6,
-			&HR7 {
+			&1,
+			&2,
+			&3,
+			&4,
+			&5,
+			&6,
+			&7 {
 				@include mix-source-color($rgb-source-HR);
 			}
 		}

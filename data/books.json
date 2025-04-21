@@ -306,7 +306,15 @@
 						},
 						{
 							"depth": 1,
-							"header": "Transport"
+							"header": "Tack and Harness"
+						},
+						{
+							"depth": 1,
+							"header": "Transport *"
+						},
+						{
+							"depth": 1,
+							"header": "Miscellaneous Equipment"
 						},
 						{
 							"depth": 1,
@@ -318,19 +326,11 @@
 						},
 						{
 							"depth": 1,
-							"header": "Tack and Harness"
-						},
-						{
-							"depth": 1,
-							"header": "Miscellaneous Equipment"
-						},
-						{
-							"depth": 1,
-							"header": "Armor"
-						},
-						{
-							"depth": 1,
 							"header": "Weapons"
+						},
+						{
+							"depth": 1,
+							"header": "Armor*"
 						},
 						"Equipment Descriptions",
 						{
@@ -368,15 +368,15 @@
 						"Encumbrance (Optional Rule)",
 						{
 							"depth": 1,
-							"header": "Basic Encumbrance"
+							"header": "Basic Encumbrance (Tournament Rule)"
 						},
 						{
 							"depth": 1,
-							"header": "Specific Encumbrance"
+							"header": "Specific Encumbrance (Optional Rule)"
 						},
 						{
 							"depth": 1,
-							"header": "Encumbrance and Mounts"
+							"header": "Encumbrance and Mounts (Tournament Rule)"
 						},
 						{
 							"depth": 1,
@@ -1943,7 +1943,7 @@
 						},
 						{
 							"depth": 1,
-							"header": "Henchmen Bookkeeping"
+							"header": "Henchman Bookkeeping"
 						},
 						"Officials and Social Rank",
 						{
@@ -1957,7 +1957,7 @@
 						},
 						{
 							"depth": 1,
-							"header": "Convincing an NPC to Help"
+							"header": "Convincing the NPC to Help"
 						},
 						{
 							"depth": 1,
@@ -7039,7 +7039,7 @@
 						},
 						{
 							"depth": 1,
-							"header": "Henchmen Bookkeeping"
+							"header": "Henchman Bookkeeping"
 						},
 						"Officials and Social Rank",
 						{
@@ -7053,7 +7053,7 @@
 						},
 						{
 							"depth": 1,
-							"header": "Convincing an NPC to Help"
+							"header": "Convincing the NPC to Help"
 						},
 						{
 							"depth": 1,
@@ -7558,59 +7558,158 @@
 			]
 		},
 		{
-			"name": "Plane Shift: Innistrad",
-			"id": "PS-I",
-			"source": "PSI",
-			"group": "supplement-alt",
+			"name": "Tome of Magic",
+			"id": "TM",
+			"source": "TM",
+			"group": "supplement",
 			"cover": {
 				"type": "internal",
 				"path": "covers/PSI.webp"
 			},
-			"published": "2016-07-12",
-			"author": "Wizards RPG Team",
+			"published": "1991-04-01",
+			"author": "David Cook, Nigel Findley, Anthony Herring, Christopher Kubasik, Carl Sargent, Rick Swan",
 			"contents": [
 				{
-					"name": "Introduction"
+					"name": "Foreword"
 				},
 				{
-					"name": "The World of Innistrad",
+					"name": "How to Use Tome of Magic",
 					"headers": [
-						"Horrors of the Night",
-						"Defenders of Humanity"
-					]
+						"How to Use This Book",
+						"Wizards",
+						"Priests",
+						"Magical Items",
+						"New Rules for Wizards",
+						{
+							"depth": 1,
+							"header": "Wild Magic"
+						},
+						{
+							"depth": 1,
+							"header": "Wild Mages"
+						},
+						{
+							"depth": 1,
+							"header": "Elemental Wizards"
+						},
+						{
+							"depth": 1,
+							"header": "Metamagic"
+						},
+						"New Rules for Priests",
+						{
+							"depth": 1,
+							"header": "Quest Spells"
+						},
+						{
+							"depth": 1,
+							"header": "Faith Magic"
+						},
+						{
+							"depth": 1,
+							"header": "Cooperative Magic"
+						},
+						"New Spheres",
+						{
+							"depth": 1,
+							"header": "Chaos"
+						},
+						{
+							"depth": 1,
+							"header": "Law"
+						},
+						{
+							"depth": 1,
+							"header": "Numbers"
+						},
+						{
+							"depth": 1,
+							"header": "Thought"
+						},
+						{
+							"depth": 1,
+							"header": "Time"
+						},
+						{
+							"depth": 1,
+							"header": "Travelers"
+						},
+						{
+							"depth": 1,
+							"header": "War"
+						},
+						{
+							"depth": 1,
+							"header": "Wards"
+						}
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					}
 				},
 				{
-					"name": "Life on Innistrad",
+					"name": "Wizard Spells",
 					"headers": [
-						"People of Innistrad",
-						"The Church of Avacyn",
-						"Inquisitor Background"
-					]
+						"First-Level Spells",
+						"Second-Level Spells",
+						"Third-Level Spells",
+						"Fourth-Level Spells",
+						"Fifth-Level Spells",
+						"Sixth-Level Spells",
+						"Seventh-Level Spells",
+						"Eighth-Level Spells",
+						"Ninth-Level Spells"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					}
 				},
 				{
-					"name": "Creatures of the Night"
-				},
-				{
-					"name": "The Coming of Emrakul",
+					"name": "Priest Spells",
 					"headers": [
-						"Rise of Emrakul",
-						"Emrakul's Madness"
-					]
+						"First-Level Spells",
+						"Second-Level Spells",
+						"Third-Level Spells",
+						"Fourth-Level Spells",
+						"Fifth-Level Spells",
+						"Sixth-Level Spells",
+						"Seventh-Level Spells",
+						"Quest Spells"
+					],
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 3
+					}
 				},
 				{
-					"name": "Curse of Innistrad",
-					"headers": [
-						"Lands of Barovia\u2014Outland Valleys",
-						"Village of Barovia\u2014Shadowgrange",
-						"Argynvostholt\u2014Heron's Light Hold",
-						"Krezk",
-						"The Ruins of Berez",
-						"Van Richten's Tower\u2014Rem Karolus's Tower",
-						"The Wizard of Wines and Wereravens",
-						"Yester Hill",
-						"Werewolf Den",
-						"Adventure Hooks"
-					]
+					"name": "Magical Items",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
+					}
+				},
+				{
+					"name": "Wizard Spells by Sphere",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": 1
+					}
+				},
+				{
+					"name": "Priest Spells by Sphere",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": 2
+					}
+				},
+				{
+					"name": "Alphabetical Index of Spells",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": 3
+					}
 				},
 				{
 					"name": "Credits"

@@ -344,7 +344,7 @@ $rgb-inset-border: #656565;
 		// section headers
 		&h {
 			margin: 0;
-			line-height: inherit;
+			line-height: 2;
 		}
 
 		// statsBlockSectionHead
@@ -375,12 +375,13 @@ $rgb-inset-border: #656565;
 		// inset headers
 		// statsBlockInset and statsBlockInsetReadaloud
 		&h--2-inset {
-			font-variant: small-caps;
-			font-weight: bolder;
-			font-size: 1.1em;
+			color: vars.$rgb-name-blue;
+			font-weight: bold;
+			font-size: 1.5em;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			font-family: "Friz Quadrata Std", sans-serif;
 
 			&-no-name {
 				justify-content: flex-end;
@@ -551,7 +552,7 @@ $rgb-inset-border: #656565;
 
 			>caption {
 				text-align: left;
-				margin-left: 5px;
+				/* margin-left: 5px; */
 				padding: 0;
 				font-weight: bold;
 				font-size: 1.08em;

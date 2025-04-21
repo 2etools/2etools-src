@@ -170,7 +170,7 @@
 							"name": "Hosting One Shots",
 							"page": 7,
 							"entries": [
-								"What does a OM do when cousin Bob shows up and wants to play in his campaign world, but the DMs regular group is in the middle of a quest to save the world from the icy clutches of Kreplock, magefiend of the frozen north? The answer is what is known as a oneshot adventure. Invite cousin Bob to bring his favorite character from his group in Muncie, and ask those among the DM's \"regulars\" who can make it on an off gaming night to show up with either their favorite dead characters (allowing them to resurrect dear-departed adventurers for one special playing session) or with characters not currently involved in the ongoing campaign quest",
+								"What does a DM do when cousin Bob shows up and wants to play in his campaign world, but the DMs regular group is in the middle of a quest to save the world from the icy clutches of Kreplock, magefiend of the frozen north? The answer is what is known as a oneshot adventure. Invite cousin Bob to bring his favorite character from his group in Muncie, and ask those among the DM's \"regulars\" who can make it on an off gaming night to show up with either their favorite dead characters (allowing them to resurrect dear-departed adventurers for one special playing session) or with characters not currently involved in the ongoing campaign quest",
 								"The DM should design a short adventure that can be played to completion in one game session. A \"game tournament\" style approach, with a definite goal, is probably the best way to go. The player characters mysteriously appear together and must find out what they have to do. Contrary to the recommendation that the players' actions have a real and measurable effect on the world, this adventure should take place on the DMs world, but not be a part of any major story or plot line."
 							]
 						}
@@ -191,14 +191,14 @@
 					"name": "General Delivery",
 					"page": 8,
 					"entries": [
-						"Developing the rut of a masterful delivery requires both patience and experience. As a OM's playing skills mature, he learns what fails and what works as he slowly acquires new tricks from other OMs and from his own players. One of the most difficult challenges facing the DM will be that of maintaining neutrality, walking that fine line between being either the enemy or a benevolent guide. Each DM's ultilnate style, approach, and technique will be highly personal. More often than not a OM's style will be SOlnewhere to the left or right of perfect neutrality. It's a hard path to follow, yet there exist general rules that most successful OMs follow, whether they realize it or not.",
+						"Developing the rut of a masterful delivery requires both patience and experience. As a DM's playing skills mature, he learns what fails and what works as he slowly acquires new tricks from other DMs and from his own players. One of the most difficult challenges facing the DM will be that of maintaining neutrality, walking that fine line between being either the enemy or a benevolent guide. Each DM's ultilnate style, approach, and technique will be highly personal. More often than not a DM's style will be somewhere to the left or right of perfect neutrality. It's a hard path to follow, yet there exist general rules that most successful DMs follow, whether they realize it or not.",
 						{
 							"type": "entries",
 							"name": "Don't Manipulate!",
 							"page": 8,
 							"entries": [
-								"One of the reasons the players have gathered to play an AD&D5 game is to experience the thrill of being a hero in another time and place. They want to be the masters' of their own fates, not the pawns of higher powers (which definitely includes the OM). In simple terms, let the players decide how their characters will act and where they will go. A good DM will not force his players to make decisions that match his goals and desires. Even if the sequencing of scenarios is primarily preplanned, arrange events so that the players believe that they are choosing their character's actions and directions.",
-								"OM manipulation most commonly OCClITS when the players adamantly avoid involvement in a scenario that the DM has spent much time preparing or when the players are bound and determined to do something stupidsomething that will either kill their characters outright or cause a major' world-changing catastrophe (the particularly annoying kind where a continent sinks or the entire political structure of a major land must be recreated).",
+								"One of the reasons the players have gathered to play an AD&D® game is to experience the thrill of being a hero in another time and place. They want to be the masters' of their own fates, not the pawns of higher powers (which definitely includes the DM). In simple terms, let the players decide how their characters will act and where they will go. A good DM will not force his players to make decisions that match his goals and desires. Even if the sequencing of scenarios is primarily preplanned, arrange events so that the players believe that they are choosing their character's actions and directions.",
+								"DM manipulation most commonly occurs when the players adamantly avoid involvement in a scenario that the DM has spent much time preparing or when the players are bound and determined to do something stupidsomething that will either kill their characters outright or cause a major' world-changing catastrophe (the particularly annoying kind where a continent sinks or the entire political structure of a major land must be recreated).",
 								"In such situations it is better to improvise (also called \"winging it\") than manipulate. Heavyhandedness is usually resented and even the \"mysterious voice from on high\" type warning to 8 keep players out of mischief gets old after a while. When a DM wants the players to act in a desired way, he should do what he can to either make his preferred choices more attractive, or manipulate events (not player characters) to give the players another opportunity to choose \"correctly.\""
 							]
 						},
@@ -207,7 +207,7 @@
 							"name": "Never Favor Characters",
 							"page": 8,
 							"entries": [
-								"Often, in extended campaigns, favorite personalities will emerge among the characters. It's a great temptation for the DM to favor such characters. Such a character may never die (or at least is always resurrected) and always gets the choice treasure. The job of the OM is to fairly administer the results of characters' actions. Playing favorites is not appropriate and can only lead to unhappiness. If a character dies in battle or chooses the cursed sword instead of the magical armor, then the DM should not alter the situation. He should only give the results of actions, not change the scenario to favor one character.",
+								"Often, in extended campaigns, favorite personalities will emerge among the characters. It's a great temptation for the DM to favor such characters. Such a character may never die (or at least is always resurrected) and always gets the choice treasure. The job of the DM is to fairly administer the results of characters' actions. Playing favorites is not appropriate and can only lead to unhappiness. If a character dies in battle or chooses the cursed sword instead of the magical armor, then the DM should not alter the situation. He should only give the results of actions, not change the scenario to favor one character.",
 								"Character favoritism also applies to the creation of adventures. Try not to build a quest around a single character. [f that character dies, then the quest is over for the entire party and all the time invested is wasted."
 							]
 						},
@@ -216,7 +216,7 @@
 							"name": "Never Punish Characters",
 							"page": 8,
 							"entries": [
-								"This is the other side of favoritism. A OM may dislike a player or a character in his campaign. It happens. Avoid the temptation to single out disliked characters for special unpleasantness unless the character (not the player!) has done something to warrant punishment and the outcome would advance the story line in a campaign."
+								"This is the other side of favoritism. A DM may dislike a player or a character in his campaign. It happens. Avoid the temptation to single out disliked characters for special unpleasantness unless the character (not the player!) has done something to warrant punishment and the outcome would advance the story line in a campaign."
 							]
 						},
 						{
@@ -243,7 +243,7 @@
 					"name": "Styles of Play",
 					"page": 9,
 					"entries": [
-						"Once the OM has established his neutrality (or is at least aware of his shortcomings), he should work on his awareness ofhis own playing style and possibly determine what style of delivery he will use. Style encompasses a variety of features: the pace of game play (fast or slow), the way a OM interacts with his players, the ratio of combat to puzzle-solving or role-play, how problems are solved, the humor level in the game, the ratio of dangers to rewards, and so on. *",
+						"Once the DM has established his neutrality (or is at least aware of his shortcomings), he should work on his awareness ofhis own playing style and possibly determine what style of delivery he will use. Style encompasses a variety of features: the pace of game play (fast or slow), the way a DM interacts with his players, the ratio of combat to puzzle-solving or role-play, how problems are solved, the humor level in the game, the ratio of dangers to rewards, and so on. *",
 						"Play styles are as varied as the people who play the game, though most will fall into one of the styles listed below. Much as an author must choose the way he will present his story (be it a mystery, historical fiction, horror, or epic tale), a DM must choose a method he is comfortable with when presenting information to the group. While no style is inherently bad or good, right or wrong, it's important to match play style with the overall personality and desires of the group, otherwise one may not be able to say \"...and a good time was had by all.\"",
 						{
 							"type": "entries",
@@ -293,7 +293,7 @@
 							"page": 11,
 							"entries": [
 								"The relationship between risk and reward can influence the style of play more powerfully than almost any other factor. In the \"Monty Haul\" giveaway campaign, the players gain treasures and experience points in a disproportionate ratio to the dangers overcome.",
-								"With little personal risk, the characters greedily accumulate magic items, gems, and gold. They quickly attain uncontrollably high experience levels, rapidly advancing beyond the OMs ability to handle them. To accommodate such characters, the OM may find himself hopelessly sacrificing armies of ores and dragons by the dozens, only to realize that this just gives these ridiculous characters even more ill-earned experience points! Treasure, even wondrous magical treasure, becomes meaningless and valueless. How can finding a magic wand have any meaning when the character already has more than he can carry?",
+								"With little personal risk, the characters greedily accumulate magic items, gems, and gold. They quickly attain uncontrollably high experience levels, rapidly advancing beyond the DMs ability to handle them. To accommodate such characters, the DM may find himself hopelessly sacrificing armies of ores and dragons by the dozens, only to realize that this just gives these ridiculous characters even more ill-earned experience points! Treasure, even wondrous magical treasure, becomes meaningless and valueless. How can finding a magic wand have any meaning when the character already has more than he can carry?",
 								"Warning!: Once this style of play takes hold in a campaign, it is {@i next} to impossible to dislodge it without stripping the player characters of their experience levels and magical items."
 							]
 						},
@@ -322,7 +322,7 @@
 								"This style of play involves the characters in a web of intrigue as the players side with one or more rival factions in a political struggle. These factions can be rival guilds, political candidates, barons, towns, even countries. Thegoals of these factions (whether good, evil, or neutral) are to increase their own spheres of power to the exclusion of all others. Political factions within a town, dungeon or country can be a reservoir of potential problems for a group to solve.",
 								"Everything the player characters do affects the politics of the area, maybe only locally or perhaps, worldwide. For example, the characters kill a sheep-eating dragon (or just convince it to change its diet), it might unbalance the tenuous relations of the sheepherders and the cattlemen. The townspeople may in return, eject one of the characters mayor, order the return of all the treasures found in the dragon's lair to the proper owners, or the dragon might have been the pet of a prominent wizard...",
 								"Wars are an aspect of political gaming, along with the diplomatic missions to avoid them. Politics give the DM a lot of latitude in the direction of an adventure.",
-								"To use this style successfully, great care must be taken to make the players influential in the political situations and not just pawns. There are often a mirage of subplots, and treachery is the ever present danger. Players and OMs are attracted to the mystery and intrigue created when characters enter the murky world of the quest for power. Players seldom know who they can trust or which side is the right side. When faced with an army, the choices are easy. When faced with diplomats and politicians grappling for more power, the choices are more difficult."
+								"To use this style successfully, great care must be taken to make the players influential in the political situations and not just pawns. There are often a mirage of subplots, and treachery is the ever present danger. Players and DMs are attracted to the mystery and intrigue created when characters enter the murky world of the quest for power. Players seldom know who they can trust or which side is the right side. When faced with an army, the choices are easy. When faced with diplomats and politicians grappling for more power, the choices are more difficult."
 							]
 						},
 						{
@@ -331,7 +331,7 @@
 							"page": 12,
 							"entries": [
 								"Eclectic games borrow elements from a number of diverse sources. In a sense, this is the best style of play since at various times it partakes of all the styles mentioned. Since any particular style can become tedious, the wise DM will constantly adapt and change his style to fit the needs of his adventuring group.",
-								"Regardless of which style a DM initially chooses, he may eventually find that his tastes and the tastes of his players wil1 change. While change is normally good, the OM should occasionally check his style of play for the negative elements that have been mentioned. Chances are that any real problems in play style will become apparent to either the DM or the players before too much damage is done."
+								"Regardless of which style a DM initially chooses, he may eventually find that his tastes and the tastes of his players wil1 change. While change is normally good, the DM should occasionally check his style of play for the negative elements that have been mentioned. Chances are that any real problems in play style will become apparent to either the DM or the players before too much damage is done."
 							]
 						}
 					]
@@ -347,7 +347,8 @@
 							"page": 12,
 							"entries": [
 								{
-									"type": "quote",
+									"type": "entries",
+									"style": "italic",
 									"entries": [
 										"It couldn't be helped. Until an hour before the guys are supposed to show, you were involved in a kill-or-be-kilied table tennis game with your room mate. Now you're gonna have to throw something together fast. But hey, you know the sniff, didn't you just look at it, like, just last week? Maybe you can just use that module you bought at the hobby store last week. Great stuff! No need to reread that, its all ready to go. Anyway, you've gotta run out and grab a bunch of munchies and soda pop before everyone shows up. I mean, priorities first, right?"
 									]
@@ -360,7 +361,8 @@
 							"page": 13,
 							"entries": [
 								{
-									"type": "quote",
+									"type": "entries",
+									"style": "italic",
 									"entries": [
 										"You can't remember when you've operated on this little sleep (but hey, you're so tired that remembering anything right now is beyond your capability). But it's worth it\u2014your campaign is ready for the big game today. You've spent over 100 hours devising the penultimate encounter between good and evil (the ultimate battle takes place next week). There'll be mayhem and carnage galore tonight! You've prepared for every possible alternative...except one. Your players decide that they really aren't ready for the penultimate encounter with evil and just want to bash a few more orcs or harass a dragon or two. You hadn't prepared for that option and your befogged brain has difficulty even deciphering a monster manual let alone coming up with an adventure on the fly. Sometime during the game you fall asleep face down in the chip dip, burbling out your world's darkest secrets between onion-scented snores. Out of respect for you, the players keep the volume on the TV turned down."
 									]
@@ -542,7 +544,7 @@
 					"page": 17,
 					"entries": [
 						"The ideal adventure game session plays like a good book reads. There are times when it moves slowly while the players soak up the rich atmosphere of the DM's world of wonder. Suddenly the action builds to a furious climax as swords swing and spells zing in pulse-pounding excitement with little time for complicated planning. Then the rate of play relaxes and once again, the players can take their time to plot and plan and prepare. As a storyteller, the DM must actively control the pace at which events and actions take place in his game. Pace of play is an intangible sort of thing that partakes of the speed, variety, intensity, and continuity of game play in an adventure. Speed refers to how fast the action in a game takes place. Variety suggests a selection of play styles and encounters, including combat, puzzle solving, and roleplay. Intensity has to do with the level of suspense the DM has created in the game\u2014from a peaceful or even silly \"none at all\" level to the \"nail biting fear and frenzy\" often associated with movies where undefeatable alien monsters eat everyone but the heroine and the kid. Continuity then, is the way that events logically and believably fall together in an acceptable or at least reasonable manner.",
-						"Controlling the pace of play may well be one of the most important steps toward becoming a master DM. In the same way that he designs his world and scenarios for maximum enjoyment, he must learn to orchestrate the components of game pacing. He must know when to speed up or slow down the play, throw out the rules for more enjoyment, or call a break for his fatigued players. Just as importantly, he must know when NOT to interrupt play. The OM must learn to be aware of nonverbal feedback from his players and be able to understand what they are telling him. Such feedback might come in the form of yawns, interplayer chatter, or shortened tempers.",
+						"Controlling the pace of play may well be one of the most important steps toward becoming a master DM. In the same way that he designs his world and scenarios for maximum enjoyment, he must learn to orchestrate the components of game pacing. He must know when to speed up or slow down the play, throw out the rules for more enjoyment, or call a break for his fatigued players. Just as importantly, he must know when NOT to interrupt play. The DM must learn to be aware of nonverbal feedback from his players and be able to understand what they are telling him. Such feedback might come in the form of yawns, interplayer chatter, or shortened tempers.",
 						"While the goal of a game may be to have the players on the edge of their seats, when the tension seems too high, or the sighs of frustration become too great, it might be time for a break.",
 						"When examining his own style of play, the DM may wish to consider the following scenarios:",
 						{
@@ -551,7 +553,8 @@
 							"page": 18,
 							"entries": [
 								{
-									"type": "quote",
+									"type": "entries",
+									"style": "italic",
 									"entries": [
 										"Imagine listening to a speaker who drones on and on in a monotone voice, never varying the pitch of his voice or the rate at which he speaks. Though the content of his speech may be of great importance, one by one, his audience drops off into slumber."
 									]
@@ -564,7 +567,8 @@
 							"page": 18,
 							"entries": [
 								{
-									"type": "quote",
+									"type": "entries",
+									"style": "italic",
 									"entries": [
 										"Picture a fast-action horror movie. Bodies gruesomely splatter left and right faster than the watcher can keep track. The level of terror builds relentlessly with no relief; until finally, the movie ends. Yet somewhere, back in the middle, the audience lapsed into a stunned overload mode where they could no longer be shocked by what they saw and could feel no relief when it ended."
 									]
@@ -577,7 +581,8 @@
 							"page": 18,
 							"entries": [
 								{
-									"type": "quote",
+									"type": "entries",
+									"style": "italic",
 									"entries": [
 										"Visualize an artsy foreign film with constant and visually confusing changes of scenery, point of view, pace of the action and such. Things change so rapidly, that its hard to get a handle on what's going on. The action speeds up and slows down in what seems an almost random manner, leaving the viewer lost and confused."
 									]
@@ -589,7 +594,7 @@
 							"name": "Get the players moving",
 							"page": 18,
 							"entries": [
-								"If the players discussion about their next move has deteriorated to a petty quarrel, or has gotten off the subject onto idle chatter, {@i make something happen}. Sometimes, it may be enough to cast a couple dice and make a quick (meaningless) note on paper. This is especially useful if, at least once in a while, a wandering monster or other event actually occurs. Another way is to ask for immediate action. Turn to one of your players and askquote\"What is your character doing right now?\""
+								"If the players discussion about their next move has deteriorated to a petty quarrel, or has gotten off the subject onto idle chatter, {@i make something happen}. Sometimes, it may be enough to cast a couple dice and make a quick (meaningless) note on paper. This is especially useful if, at least once in a while, a wandering monster or other event actually occurs. Another way is to ask for immediate action. Turn to one of your players and ask \"What is your character doing right now?\""
 							]
 						},
 						{
@@ -597,7 +602,7 @@
 							"name": "Create Unusual Puzzles",
 							"page": 19,
 							"entries": [
-								"Counterbalance a hack-andslash tendency, by setting up situations devoid of monsters that require innovative solutions."
+								"Counterbalance a hack-and-slash tendency, by setting up situations devoid of monsters that require innovative solutions."
 							]
 						},
 						{
@@ -640,7 +645,7 @@
 										"Discourage unnecessary chatter during a game. Establish a what you say is what you do atmosphere. If a player says it, his character says it.",
 										"Have a predetermined order in which players take their turns. During this time, keep discussion to a minimum.",
 										"Make sure all needed dice are on the table. If possible, encourage players to bring their own dice.",
-										"Be willing to make rules up. No OM can know every rule. Rather than look up obscure rules, make an on the spot judgement call. Use common sense and take situational factors into account. Make sure penalties for failure are fairly balanced by the potential reward for success (and vice versa).",
+										"Be willing to make rules up. No DM can know every rule. Rather than look up obscure rules, make an on the spot judgement call. Use common sense and take situational factors into account. Make sure penalties for failure are fairly balanced by the potential reward for success (and vice versa).",
 										"Be willing to fudge a die roll or overlook an obscure rule if it would damage the pace of play."
 									]
 								}
@@ -660,7 +665,7 @@
 							"page": 19,
 							"entries": [
 								"After a particularly intense period of gaming, a short break helps the players recuperate. Usually a 10 or 15 minute break every two hours of play is enough. Plan breaks at natural stopping points, such as an interlude between encounters, or at a cliff-hanger, just when something exciting is about to happen (which usually involves personal peril to the player characters).",
-								"Encourage the players to get up, walk around and take care of necessities. This is also a good time for refreshments if the group is so inclined. Otherwise, let the players use the time for open chatter about recent events or to plan their next action. The OM can use this time to catch up on any bookkeeping that might be necessary or to simply catch his breathl Rolling up new characters to replace those who have passed away can also be done at this time."
+								"Encourage the players to get up, walk around and take care of necessities. This is also a good time for refreshments if the group is so inclined. Otherwise, let the players use the time for open chatter about recent events or to plan their next action. The DM can use this time to catch up on any bookkeeping that might be necessary or to simply catch his breathl Rolling up new characters to replace those who have passed away can also be done at this time."
 							]
 						},
 						{
@@ -668,7 +673,7 @@
 							"name": "Know When To Quit",
 							"page": 19,
 							"entries": [
-								"It's generally a good idea to have an agreed-on stopping time. Like a runner, a DM needs to conserve enough energy (both emotional and physical) to make the last halfhour of game playas enjoyable as the first. Games without end arerarely enjoyable by all parties involved. As the ending time draws near, the DM needs to watch for an obvious stopping point (again, interludes and cliff-hangers are best). As a warning though, the OM who sets up a cliff-hanger ending for his game session will find hilTIself under immediate pressure to resolve the situation. Everyone wants to know what happens next. It is better to quit while the players are still interested and excited, than to continue gaming past reasonable endurance."
+								"It's generally a good idea to have an agreed-on stopping time. Like a runner, a DM needs to conserve enough energy (both emotional and physical) to make the last halfhour of game playas enjoyable as the first. Games without end arerarely enjoyable by all parties involved. As the ending time draws near, the DM needs to watch for an obvious stopping point (again, interludes and cliff-hangers are best). As a warning though, the DM who sets up a cliff-hanger ending for his game session will find hilTIself under immediate pressure to resolve the situation. Everyone wants to know what happens next. It is better to quit while the players are still interested and excited, than to continue gaming past reasonable endurance."
 							]
 						},
 						{
@@ -937,7 +942,8 @@
 									"page": 27,
 									"entries": [
 										{
-											"type": "quote",
+											"type": "entries",
+											"style": "italic",
 											"entries": [
 												"The room is 20 by 20 feet and has a couple cots and a table in it."
 											]
@@ -950,7 +956,8 @@
 									"page": 27,
 									"entries": [
 										{
-											"type": "quote",
+											"type": "entries",
+											"style": "italic",
 											"entries": [
 												"The door sticks and opens only with effort, scraping the mold and moss that carpets the floor beyond. Even the beds and table are encrusted with the stuff. The walls remind you of leprous sores, with gangrenous wounds where scabs of plaster have fallen away. Even as you stand here, a mottled chunk falls silently to the padded HOOT."
 											]
@@ -963,7 +970,8 @@
 									"page": 27,
 									"entries": [
 										{
-											"type": "quote",
+											"type": "entries",
+											"style": "italic",
 											"entries": [
 												"You come to a clearing in the woods with some ruins near the center. It's getting dark."
 											]
@@ -976,12 +984,16 @@
 									"page": 27,
 									"entries": [
 										{
-											"type": "quote",
+											"type": "entries",
+											"style": "italic",
 											"entries": [
 												"The path through the forest abruptly opens onto a grassy clearing. Tumbledown remnants of an ancient building hulk in the center of the glade. Rows of fallen columns, like broken teeth, mark a path to the gaping entrance of the ruin. Even from here, you can see numerous statues filling wall niches and unpleasant sculptures looming gargoyle-like near the collapsed roof. Several leaning towers thrust up out of the ruins as if to catch the last light of the day. Even now, long shadows from the surrounding trees darken the glade, almost visibly creeping forward to make the darkness complete."
 											]
 										}
 									]
+								},
+								{
+									"type": "hr"
 								},
 								"In each of these situations, the DM's effective description (even though a bit heavy on the prose) both describes what the characters see and establishes a mood. A once-generic part of the DM's world has taken on specific and even menacing form. Will the characters enter the area as it is described, now knowing, or at least feeling, that potential danger lies therein? Without motivation, probably not."
 							]
@@ -1002,17 +1014,25 @@
 					"page": 27,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"The statue you were fiddling around with animates and swings its fist at you."
 							]
 						},
+						{
+							"type": "hr"
+						},
 						"Described like this, the eerie magics that breathe life into an eight-foot-tall being of cold stone seem somehow mundane, as if it happened every day. Think how much more exciting it would be for the players if they were told:",
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"As you attempt to remove the gems from the statue, the blood red ruby sinks inward as if it were a button being pressed. With a sharp snapping sound the statue's eyelids slide up to reveal jewels that glow like lanterns through green glass. Its cold stone flesh suddenly becomes almost hot, like a sunbaked rock and a hiss of vapor escapes its mouth. Its limbs move with unnatural speed as it swings a mallet-like fist at your character."
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"Notice how the second description focuses on what the characters see and feel. If the DM emphasizes the sudden movement of the eyes and punctuates it with a sharp sound, he may catch the players off guard. Like their characters, they too have been caught off guard and now share the character's apprehensions.",
 						"The key to making encounters dramatic is to focus on what makes them fantastic:",
@@ -1048,7 +1068,8 @@
 					"entries": [
 						"There exists a tendency in adventure gaming for both the DM and the players to sacrifice the color and richness of roleplaying for the expedience of advancing the game. The DM forgets that he is a storyteller and becomes a rules judge. The players forget that they are characters in a drama and behave like board garners calling out combat results. Instead of talking descriptively about actions and their outcolnes, the participants refer to dice rolls and game statistics. An exchange might go:",
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"DM: \"The orcs see you and advance 20 feet to attack. Somebody give me an initiative roll.\"",
 								"Player one: (rolls dice) \"Drat, only a three.\"",
@@ -1062,9 +1083,16 @@
 								"Player Two: \"Tough break, Bruno. Wanda whips out her wand of fear while Bruno makes for the door.\""
 							]
 						},
+						{
+							"type": "hr"
+						},
 						"The action comes across, but without any particular emphasis on the setting, the characters, or their foes. Wanda and Bruno are played as generic characters who encounter a band of equally generic monsters. One set of numerical statistics has met another and exchanged a round of randomly generated numbers. Now try the same encounter with a little color and role-play.",
 						{
-							"type": "quote",
+							"type": "hr"
+						},
+						{
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"DM: \"A pair of heavily armored, low-browed humanoids round the comer. They see Wanda and Bruno and they don't look happy to see them here. The big one growls out something that sounds like orcish to Wanda.\"",
 								"Player two: \"What did it say? Wanda knows the are language enough to make out basic words.\"",
@@ -1080,6 +1108,9 @@
 								"Player One: \"Even though Bruno is nearly done in, he drags himself towards the exit. He knows that Brother Albert can heal his wounds.\"",
 								"Player Two: \"While the monster's attention is still focused on Bruno, Wanda readies her wand of fear and prepares to speak the words that will unleash its powers.\""
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"Again, the second passage emphasizes the descriptive, or storytelling, nature of the game. Die results, statements of intent and tum instructions are woven into the story that the DM and his two players are mutually creating, but the story takes pre-eminence.",
 						"Although both the DM and the players share the responsibility of telling the story and avoiding the crutch of gamespeak, the DM must shoulder an unequal portion of the burden. As the DM he must encourage his players to speak in character and take part in the tale's telling. The more the DM makes use of descriptive phrases the more the players will also. The words he chooses sets the tone for the game. If the DM speaks in technical jargon, the players will also."
@@ -1201,7 +1232,11 @@
 						"The bandits scream in terror and flee the tower. Their fellows in the woods presume the worst and they, too, run. Meanwhile, back in the tower a muffled voice grunts \"will somebody get this lousy minotaur off me, I can hardly breathe!\"",
 						"Similarly, the DM may find himself in situations where the player's must make a skill test to discover something in his game. If they fail the test, the characters miss out on what the DM has in store for thein. Rather than rely on the dice, the DM simply allows the characters to fimd the door. Yet, if he does it right, the situation adds more to the game than the rolling of dice.",
 						{
-							"type": "quote",
+							"type": "hr"
+						},
+						{
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"DM: \"The blood trail ends near the south wall.\"",
 								"Player: \"We check the wall for secret doors.\"",
@@ -1217,6 +1252,9 @@
 								"DM: \"The door opens and the wizard enters. He doesn't seem to notice that one of his paintings now contains portraits of a bunch of adventurers.\""
 							]
 						},
+						{
+							"type": "hr"
+						},
 						"Suppose that the DM creates a scenario that involves living beings encased within stasis cocoons of transparent crystal. Based on the magic rules for creating magical items, no spell or spells exist for making this work. The DM is then faced with a choice: use this creation of his imagination and present it as an object of wonder, or throw it out because it doesn't fit the rules. The DM probably knows our recommendation already."
 					]
 				},
@@ -1230,7 +1268,8 @@
 						"Combat is probably foremost among these situations. During combat, follow the rules and make dice rolls for hits and damage. Reserve any stretching of the rules for those activities that do not directly affect the health and well being of the characters (or their foes!). It's one thing to let a character make heroic jumps and perform acrobatics during a melee. It's quite another to let him make attacks without requiring a combat or damage die roll.",
 						"Magic use is another sensitive area. Stick to the rules for both sides of an encounter. As shown below, the players may not appreciate the DM's creativity:",
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"DM: \"Waldemar glares at you from his perch atop the statue. He waves his hands in a dizzying pattern over his head and casts his spell. You are all encircled in sparkling lights and suddenly realize that Waldemar is your friend.\"",
 								"Player: \"Hey, just what kind of spell was that? If it's charm person then my elf gets a saving throw. And what's with the sparkles. None of our spells do that.\"",
@@ -1240,9 +1279,13 @@
 								"Player: \"C'mon! You didn't even roll the dice.\""
 							]
 						},
+						{
+							"type": "hr"
+						},
 						"Proficiency and attribute check rolls are another area of ambiguity. If the DM has gotten in the habit of overlooking them during play in favor of his storytelling, he may have a hard time asking the players to make them in life-or-death situations.",
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"DM: \"Thuenor, if you're going to cross the rope bridge, make a Dexterity check for me.\"",
 								"Player: \"Huh? He didn't have to make one going the other way. Why should he now?\"",
@@ -1250,6 +1293,9 @@
 								"Player: \"Let's just say he made it\"",
 								"DM: \"MAKE THE DIE ROLL!\""
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"Be sure that whenever a player action could lead to harm, the player makes dice roll. They need to realize that their misfortune is the result of either their own bad judgements or the chance failure to perform a task, and not the arbitrary whims of the DM. If the DM doesn't follow a procedure like this the players will become suspicious every time something goes against them. They may even accuse the DM of cheating.",
 						"And cheating is something that the DM should worry about when he's running loosely. Fudging the rules a bit to either preserve a good game or enhance the players' enjoyment is not only approved behavior, but comes highly recommended However, there comes with it the opportunity to ignore rules or results that conflict with the DM's desires for his adventure.",
@@ -1294,7 +1340,8 @@
 							"page": 37,
 							"entries": [
 								{
-									"type": "quote",
+									"type": "entries",
+									"style": "italic",
 									"entries": [
 										"\"After Daniella slays all 2 of the kobolds with her multi-barrel wand of megadeath the rest of the party finds about 100,000 gold pieces, 33 potions, about 243 gems, 900 pieces of jewelry, a sword that glows almost as brightly as Daring Dirk's frost brand, a suit of well-maintained power armor with markings of the old Imperium and two mounted projectile throwers on it, about four cases-full of short range rockets, a rod of lordly might, and a shadow box hanging on the wall that contains about 20 different figurines of wondrous power.\"",
 										"\"Oh boy, we grab all the magical loot and stick it in our portable holes. The wizards begin setting up the transmat box that teleports all the gold back to Castle Pardo.\"",
@@ -1320,11 +1367,15 @@
 							"page": 38,
 							"entries": [
 								{
-									"type": "quote",
+									"type": "entries",
+									"style": "italic",
 									"entries": [
 										"\"Both ancient dragons rear back and spew fire at Clarissa the Mighty. That's 192 points of fiery megadeath.\"",
 										"\"Well, with her {@item cloak of displacement}and {@item ring of fire resistance}, Clarissa automatically makes her saving roll. Between the ring of fire resistance, the potion of fire resistance and her special ability to make her body immune to heat, that reduces the damage down to 18 points, only a slight singeing. Clarissa slurps down a potion of extra healing and then blasts both dragons into Hinders with the photon cannon wand she found in the metallic ruins.\""
 									]
+								},
+								{
+									"type": "hr"
 								},
 								"A common by-product of Monty Haul gaming is the super character. The DM may know the type by now, faster than a speeding arrow, more powerful than a loco hill giant, able to leap tall dungeons in a single bound. Most of their attributes appear to have been rolled on d100's. They have more magical gizmos than a college of wizardry and their hit point totals resemble a modest lotto jackpot. In most senses of the word, they are unbeatable\u2014and they are the DM's fault. He made them what they are and he now must deal with them.",
 								"Getting rid of super characters requires more than a visit from an exterminator, but that is generally the best solution. Toning them down (i.e., taking away some of their power) is a bit more difficult.",
@@ -1353,11 +1404,15 @@
 							"page": 39,
 							"entries": [
 								{
-									"type": "quote",
+									"type": "entries",
+									"style": "italic",
 									"entries": [
 										"\"OK, before we get going, I want to let you know that I've given some thought to how Jenny's fighter used her {@item ring of fire resistance} last week and I've decided to modify the way we play invisibility from now on. When a character is invisible, anybody near him gets a chance to sense his presence, regardless of monster level.\"",
 										"\"What? Oh just great! My character bought an invisibility scroll last game and now it's basically worthless.\""
 									]
+								},
+								{
+									"type": "hr"
 								},
 								"Game worlds, like living creatures, are constantly changing. Most of these changes are minor, but every so often, the DM decides to make a major change, either to his world itself or to the rules used to run the game. Sometimes these changes will affect the way that the players make decisions about their characters and their actions.",
 								"If the DM decides to add a new continent to his world, the after effects are usually minor. However, if the DM chooses to reduce the purchasing power of gold, change the way a particularly irritating spell works, or require wizards to wear pointy hats, his players may object.",
@@ -1372,10 +1427,14 @@
 					"page": 39,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"\"I don't care if you think it should work that way, that's not the way the rules say it works. Look right there on page 112 of the Player's Manual.\""
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"Rulius Magistarius, the rules lawyer, can be the bane of both DMs and players alike and can be either a DM or a player. He's the fellow who demands that anything that occurs or could possibly occur in the game be covered by rules and be followed exactly to the letter of those rules. He is also willing to argue endlessly about some minor point of rules until the DM or the other players are ready to concede the point, if only to shut him up. Chances are he may only be comfortable in a situation where he knows exactly how things will be. Ambiguity scares him. The Wargamer style of play (see Styles of Play) suits this fellow just fine.",
 						"Dealing with the rules lawyer as a DM requires both creativity and patience. He is the reason why the DM must both establish his own word as the final authority in games played in his world and record any major variations to those rules. Make it clear to the rules lawyer and the other players that the rules of the game are used as guidelines for play and are not designed to cover every situation. The DM must be willing to hear the rules lawyer's opening arguments, and to explain the logic of his own decision. Stand firm on a decision, but offer to discuss the situation after the game.",
@@ -1388,10 +1447,14 @@
 					"page": 40,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"\"Hey, can I have a little of your attention people? Kevin, finish painting the miniatures for the next game, OK? That was real good Mark, but I'm not certain I want to see how close you can put your roundhouse kick to my nose again tonight. Ron, Randy, if you need the stuff in those mere'magazines, you can get them out later. Uh, Lawrence, my wife was saving that gelatin dessert for a dinner party tomorrow. I'd prefer we used a miniature for the green slime instead.\""
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"Adventure gaming attracts\u2014how shall we say it?\u2014a unique type of person as a player. Anyone who prefers to spend a Friday night pretending to slay dragons and sling mighty magics is not the type who fits the so-called \"normal\" mold. More often than not, these people, often the DM's friends, have other unusual interests, hobbies and personalities. Strong, unusual personalities tend to exert themselves in gaming and readily find ways to come into conflict with other strong, unusual personalities.",
 						"Try to keep the emphasis of the game on gaming. Privately encourage players to avoid discussing outside topics that will bring them into conflict. Be tolerant, even when pelted with dice Gust don't let it get out of hand). Be a peacemaker. Remember, these are friends."
@@ -1403,13 +1466,17 @@
 					"page": 41,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"\"Look, I'm running this game! If I say your stupid dwarf is dead, then he's dead.\"",
 								"\"But Thuenor should have been able to detect that trap. He made his detect trap roll just before you opened that pit up beneath him. Anyway, 6d6 is way too much damage for a 10-foot-deep pit.\"",
 								"\"Then it was 40 feet deep and had spikes in the bottom. Same difference\u2014he's dead!\"",
 								"\"But...forget it, I'll see what's on the tube. Let me know when everyone else dies.\""
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"What does it take to make a DM go sour? A rotten day at the office or school? Missed sleep? Family problems? A messed-up romance? The onset of pneumonia? Maybe even too much MSG in his Chinese takeout? Everyone has an off day sometime. Unfortunately, when the DM's turn takes place before a game session, everybody suffers.",
 						"When a DM feels that he is not in good enough shape to run a game, it may be a good idea to postpone it. Give players adequate warning though. No one likes to drive for an hour to find no game.",
@@ -1422,12 +1489,16 @@
 					"page": 41,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"\"You round the corner, following Lychor. Suddenly, you are surrounded by gnoll warriors. Your 'friend' Lychor is nowhere to be seen.\"",
 								"\"Grrrrr, that rat! We attack!\"",
 								"\"Before your group can do anything, Thuenor is struck by a dart, one of Lychor's black ones. As he feels its poison course through his veins, the dwarf hears 'that's for selling my spell book to the gnomes, you little wart'.\""
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"Playing adventurers \"in character\" often leads to situations where the motivations and personality of one character lead him into direct conflict with another. If so, the DM may find himself Inoderating a tit for tat encounter which readily escalates to an all-out war between the characters (and quite possibly their players, too).",
 						"Although team play is best for successful adventuring, don't entirely discourage small squabbles between characters. They are a part of role-playing and really do add to the game's richness and complexity by offering an occasional interesting twist. However, when these little pranks escalate to situations where bodily harm may occur to a character, step in and stop them. Take the involved parties aside and suggest that this behavior stop. If that doesn't work, use some element of the game to end the treachery."
@@ -1439,11 +1510,15 @@
 					"page": 41,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"\"Cindy, will you tell that piece of shit over there that if his retarded dwarf ever tries that stunt again, he's fuckin' toast.\"",
 								"\"Oh yeah? Cindy, you tell hoser there that he can just forget his ride home tonight.\""
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"Always remember that this is a game and that characters in the DM's worlds exist free and clear of any personal problems that the players have with each other. If the DM suspects that intra-party treachery is occurring because player A dislikes player B, stop the activity immediately. Suggest that the players either behave themselves or find something else to do for the rest of the game session."
 					]
@@ -1454,13 +1529,17 @@
 					"page": 41,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"\"The orcs attack the party while the fire giant goes after Sherimar.\"",
 								"\"Hey, what is this, bash the halfling thief night? How come all the nasties head straight for my character? And what's a fire giant doing here? You said the ceiling was only nine feet high.\"",
 								"\"He's standing in a low area that leads right to your character.\"",
 								"\"Yeah, sure. You're still upset that your dumb trap won't work 'cause I found out that a magic missile didn't work that way, aren't you? Guys, I need some help here...\""
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"Ever notice that sometimes the DM singles out a player's character for special punishment? Often that player did something to irritate the DM, like constantly arguing or disagreeing with the DM's judgment calls (rules lawyers beware!). So in turn, the DM goes out of the way to make life miserable (or succinctly short) for that character.",
 						"Ever notice that sometimes the DM singles out a player's character for special punishment? Often that player did something to irritate the DM, like constantly arguing or disagreeing with the DM's judgment calls (rules lawyers beware!). So in turn, the DM goes out of the way to make life miserable (or succinctly short) for that character.",
@@ -1473,11 +1552,15 @@
 					"page": 43,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"\"OK, so you trash the high priest and his pals. Well, just as the old guy is dying from Thuenor's sword thrust, he pulls on a hidden cord. The loud gong summons every priest in the castle, and they all appear in were-beast form. Meanwhile, an 18 inch thick steel plate blocks the exit.\"",
-								"\"I think she's mad at us, Frank, what do think?\""
+								"\"I think she's mad at us, Frank, what do you think?\""
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"This is an extension {@i en masse} of DM pettiness. Maybe the players ganged up on the DM, foiling his best plans or backing up a fellow player's disagreement with a judgement call. So the DM retaliates. Neutrality is cast aside and the game becomes a shooting match, one that the DM can always win.",
 						"When someone realizes what's going on, either DM or player, they should speak up and stop the madness! Take a break, NOW! During the break, re-establish a policy of fair and informed decision making and mutually discussed disagreements. Consider replaying events that occurred after things got out of hand, allowing the DM some leeway to account for player knowledge of the situation."
@@ -1489,12 +1572,16 @@
 					"page": 43,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"page": 43,
 							"entries": [
 								"\"The martial artist leaps up at the three fighters, does a spinning side kick and knocks two of you down. B'rolfs hit points are reduced by twelve and Eyegor's by nine. He then...\"",
 								"\"No way, that's just not possible. A real martial artist would have to use two kicks and the fighters could have avoided them easily. I'm a brown belt in Tae Kwan Do and I know this stuff. Be real, and replay his attack the way it should be.\""
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"Assuming the player is a karate student (and the DM is not) he probably does know more about the martial arts than the DM. He could just as easily be an archery enthusiast challenging the DM on the realism of a barrage of arrows or an architect correcting the DM in his design of a castle. The point IS that the player is better informed on the subject than the DM and as an \"expert,\" he expects his special knowledge to both countermand one or more of the DM's game actions and allow his character to act as if he too possessed the same knowledge.",
 						"From the DM's point of view, his game has just been interrupted, his authority has been challenged, and more importantly, he has been made to look foolish because he apparently does not know his material. A less-principled DM may follow up on the urge to take a pay-back on the players character later in the game. Yet there are other ways to more effectively deal with experts.",
@@ -1510,11 +1597,15 @@
 					"page": 43,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"page": 43,
 							"entries": [
 								"Four times during the game session, Rudy has informed the DM that the rules either don't reflect reality or that if the DM knew what he knew on the subject, the DM would obviously make a different decision. Each time, the subject was different and the player felt obliged to clarify the subject matter for all involved."
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"The expert (which we discussed above) and the know-it-all are two very closely related species of gamer. Chances are that the latter type of player does know his material, but the difference between them is that this fellow, the know-it-all, is very interested in letting people know that he knows more than they do and delights in the attention he gets when all eyes are focused on him.",
 						"The know-it-all is more a problem than the expert, since he has an opinion on everything. While he may not directly challenge the DM's authority, he often wants to play his character in light of his own knowledge.",
@@ -1528,10 +1619,14 @@
 					"page": 44,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"\"Allright, Grimbor hits again and does 12 points of damage. You want to see my roll? Um, I think I knocked the dice over just after I rolled them...uh, yeah that's the ticket.\""
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"Somehow, for some reason, some players think that it's OK to make up their own dice results. Yes, it improves the game outcome for their character, but is a character who always wins, who always does what he needs to do as wen as it could be done, as fun to playas one who occasionally messes up? What about the drama involved in missing a die roll and then knowing that the next one has to be made or it's all over, and the glorious relief and excitement when that next roll succeeds. Character creation is often where the cheating begins. Instead of rolling dice for character stats (or using some other method generally approved of by the group), the player makes sure that his favorite character attributes and money or background rolls are loaded with the best possible results.",
 						"A player who fudges dice rolls in order to make things go better for his character only ruins the game for himself From that point on, he never knows whether or not he really could have won through on his own merits. Lacking such confidence, he may feel that cheating is the only way he can succeed, both in the game and in life. And if that player is caught cheating, can his friends ever trust him again?",
@@ -1544,10 +1639,14 @@
 					"page": 44,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"The dice fall-sixteen, eighteen, and twenty-one, uh oh. The DM looks at his notes and back to the dice again. If he uses those results, half the party is dead. Still, they are the results of a fair dice roll. So close, yet so far. Still, instead of killing the characters outright, he could throw something else at them, something equally deadly, but which will give them a chance to survive\u2014if they're clever."
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"In our earlier section on Pacing & Theatrics we talked about constructive cheating, or fudging. There, we suggested it as a way to improve the quality of the game. So now we have established a double standard: it's OK for DMs to cheat, but not players.",
 						"DM cheating, or 'fudging' should always be a last resort. Often, it serves as a way to get the party around a flaw in the design of an adventure-either something too deadly or an overemphasis placed on the outcome of a single die roll. DM fudging should never favor the monsters, a single character (or even all the players for that matter), or his desired plot outcome. Instead, the DM should only cheat when the outcome of a DM-controlled action would totally and pointlessly destroy the adventure. Unlike a computer adventure game, it's not always possible to restart a failed game from a saved game.",
@@ -1564,13 +1663,17 @@
 					"page": 45,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"Randy: \"Herb, wait until it's your turn.\"",
 								"Herb: \"Oh, stuff it, dickbreath, my character's doing something more important than yours right now anyway.\"",
 								"Rita: \"Guys, where's the last beer I left in the fridge? I can't find it.\"",
 								"Herb: \"Hey, URRRRP!!, I'm sorry, OK? How was I to know that was your last bottle.\""
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"Grumpiness, grouchiness, bad manners, interrupting players during their turns, eating food that wasn't intended to be shared\u2014whatever\u2014the end result is that one player (or more) is acting in a way that insults or annoys his fellow players and the DM. This type of behavior encompasses a lot, from the guy who openly insults someone else (even a joke can hurt) to the fellow who presumes that the food in the host's fridge was provided for his benefit. Most people have enough tact to keep unpleasantries to themselves or to behave within the boundaries of common courtesy. When they don't, tension and bad feelings rapidly increase.",
 						"When it does happen, the DM needs to respond quickly and gently, but firmly. Ask the players to be civil to each other. Stress the need for team play. If necessary, set down some common courtesy rules.",
@@ -1583,12 +1686,16 @@
 					"page": 45,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"page": 45,
 							"entries": [
 								"\"Yikes, it's eight o'clock! I was supposed to be home at 7:30! I'm in for it now. See you next week, guys.\"",
 								"\"What happens to Frank's dwarf? Thuenor was the only fighter we had lift.\""
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"It would be nice if the outside world could be kept from intruding on the DM's carefully ordered game world. However, players are people (it's really true!) and people often have commitments that take them away from the gaming table. The fact that Thuenor is the party's only fighter means little to a player's wife if he was supposed to be home an hour before. Likewise, a player's urgent need to \"pay rent\" on the two litres of soda pop he's ingested since the game began may not wait for a convenient rest break. Either way, a player character disappears from the game, often at an inopportune moment.",
 						"So what's a DM to do? Consider the following options:",
@@ -1651,7 +1758,8 @@
 					"page": 46,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"page": 46,
 							"entries": [
 								"\"Sandy, have Clarissa the mighty open the left side of the box first.\"",
@@ -1660,6 +1768,9 @@
 								"\"Yeah, Clarissa checks for traps before opening the left side of the box.\"",
 								"\"Arrrrghh. Dave, get out of here and roll your next character\u2014and put him about a million experience points in the hole, too!\""
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"Is the DM going to allow communication between players whose characters are either dead or separated by a sound-stifling distance? The situation is bound to arise. The character who takes independent actions may try to pass on what he has learned to his compatriots to help them catch up (or, more likely, rescue him from some predicament) or the sole survivor of a party gets lots of help from his deceased buddies when he tries to solve the puzzle that stands between himself and freedom (and, coincidentally, the opportunity to resurrect their characters).",
 						"While some DMs may not care, after all the point is to have fun, others may find having their best trap foiled by a character acting on 'spirit voice' tips from a the corpse of a recent companion.",
@@ -1672,12 +1783,16 @@
 					"page": 46,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"page": 46,
 							"entries": [
 								"\"My Dwarf fighter, Thuenor, throws his mattock so it lands on top of the wall, steps back, and. with a short run, leaps up to grab the top of the wall. He gets his weapon, dives into the water, and swims to the far shore.\"",
 								"\"Six impossible things before breakfast, eh, Frank? (Sigh.) You sure that he doesn't want to walk on the water instead? OK, I'm gonna need some die rolls.\""
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"Players want their characters to do the darndest things. They're heroes, right? Heroes do heroic things. Yet, reality (often in the form of immutable physical or magical laws) has to be considered.",
 						"Don't tell a player that he can't do something. If the task is at all possible (even if hideously difficult) allow the character a chance at it, say a 1 in 100 chance for something that's darn near impossible. If the task is impossible, let the player know it by the dice roll he is asked to make. For example, \"Go ahead, Frank, Thuenor needs an unmodified roll of 21 on a d20 to swim with his armor on.\"",
@@ -1692,7 +1807,8 @@
 					"page": 47,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"page": 47,
 							"entries": [
 								"\"OK, Gary, the three fighters Hank around to the left, Sherimar the thief works her way across the wall above the door, and the wizard, Lychor, walks up the middle as if he suspected nothing.\"",
@@ -1704,6 +1820,9 @@
 								"\"Quit snickering Dave, where's that mage of yours gotten off to?\"",
 								"\"Waitaminit guys. Change of plans, Gary. We're gonna leave the ogres for later. Let's go nuke us a wizard!\""
 							]
+						},
+						{
+							"type": "hr"
 						},
 						"Successful adventuring parties survive and thrive because of teamwork. Yet not every player feels that his character's best interests are served by continually going along with the group's actions. More often than n04 these are the players whose characters are not the leader types. Their characters hang near the back while the party's movers and shakers plot the team's next action. Notes passed to the DM from these players describe activities to be performed (secretly if possible) by the player's character. When the group goes one way, the independent PC goes the other.",
 						"Such independent ventures are risky, since the DM has often designed his world to accommodate a group, and can easily result in a swift doom for the character. However, because the character often relies on guile and stealth, he may succeed at something where the full party might otherwise fail. Should he succeed, he has his pick of rewards, ones that he may wish to keep to himself and not share with his fenows.",
@@ -1718,7 +1837,8 @@
 					"page": 47,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"page": 47,
 							"entries": [
 								"\"Bruno says 'Go eat sjelkunga berries, scroggly face' to the old man.\"",
@@ -1738,7 +1858,8 @@
 					"page": 48,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"page": 48,
 							"entries": [
 								"Dear John: Think back When did we last spend a Saturday together? Can't remember? Well, all your Saturdays are free from now on. My lawyer will call next week. With regrets, your soon-to-be-ex-wife, Sharon."
@@ -1753,7 +1874,8 @@
 					"page": 48,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"page": 48,
 							"entries": [
 								"\"Shouldn't they have all been here by now?...If we don't start soon, there won't be enough time to do anything...I doubt if Clarissa the mighty and Whandar can take on this quest by themselves tonight...I've tried calling, but nobody's home... I'm certain they knew there was a game tonight.\""
@@ -1772,10 +1894,11 @@
 					"page": 49,
 					"entries": [
 						{
-							"type": "quote",
+							"type": "entries",
+							"style": "italic",
 							"page": 49,
 							"entries": [
-								"\"Table number three, I'll take the statements of intent from your characters now. Please be quick, I'd like to get in at least three rounds of com bat tonight. And now for the RPGA scoring...\""
+								"Table number three, I'll take the statements of intent from your characters now. Please be quick, I'd like to get in at least three rounds of com bat tonight. And now for the RPGA scoring..."
 							]
 						},
 						"For every group that can't get enough players, there's always one that has too many. Often, the reason is a popular DM. He runs a good game and players want to play in his campaign. He only has time for one group, so everyone plays together.",
@@ -1788,8 +1911,8 @@
 					"page": 49,
 					"entries": [
 						{
-							"type": "quote",
-							"page": 49,
+							"type": "entries",
+							"style": "italic",
 							"entries": [
 								"The DM sat staring at his game notes. Before him lay a sheet of note paper, blank except for an aimless doodle. For nearly an hour, no inspiration had come for Saturday's game, making tonight a dismal repeat of last night. In fact even running the game seemed like a terminal chore."
 							]
@@ -1832,7 +1955,7 @@
 						"Asking the DM to even attempt to handle every aspect of game world creation is similar to asking the architect of a major construction project to do the plumbing and wiring himself. Chances are he can do it sooner or later, but meanwhile, the building goes unfinished. In a like manner, the DM can take forever and try to cover every detail of his world himself, but why do it? Why not involve the players? Let them do some of the work of creating cultures, religions, and area maps for parts of the world. Great idea, but how?",
 						"Let the players come from parts of the world other than where the campaign will initially take place. If a player wants to play a seafaring barbarian, give him a coastal or island area from which his people originate. Give him a peek at what has been roughed out for that area. Encourage the player to make notes about what goes on in his comer of the world. Much of this can come from his character background. Who are his people's gods? Do they have any peculiar customs? What are the major cities? Encourage the player to draw the regional maps for his homeland. The more the player details his character's culture and homeland, the more he designs that portion of the DMs world.",
 						"In a similar manner, the players of priests and paladins can expand upon the nature of gods and religions in the DM's world. Thief characters may be both the basis for a thieves' guild and an overview of the laws of the land (particularly as they relate to larceny).",
-						"Now this doesn't mean that everything that the player says has to be law. In fact, the creative DM will take what the player gives him, and modify it ever so slightly to reflect what the DM knows to be true of his world (things the player's character wouldn't or couldn't know). Does it matter that the player knows what part of thequote world map looks like? Not particularly. It is his character's homeland.",
+						"Now this doesn't mean that everything that the player says has to be law. In fact, the creative DM will take what the player gives him, and modify it ever so slightly to reflect what the DM knows to be true of his world (things the player's character wouldn't or couldn't know). Does it matter that the player knows what part of the world map looks like? Not particularly. It is his character's homeland.",
 						"Listen to the players. Although much of the core design and development falls on the DM's shoulders, don't design the world without listening to the players. What do they want to do? What kind of adventures do they seek? What interests them? Design the core area and the first adventure to meet these desires. It would be folly to design a campaign around political intrigue or a grand mystery when what the players really want are monster hunts and dungeon crawls. As the players become involved in the DM's world, the DM can rely upon them for inspiration."
 					]
 				}
@@ -2245,7 +2368,7 @@
 					"page": 65,
 					"entries": [
 						"The ruins that adventurers are so fond of looting were once the homes, temples, castles, and strongholds of folk from long ago. While we will go into more detail about such places later in the book, and even provide you with a few samples to base your own dungeons on, take a few minutes now to consider the subject. Answering how, when, and why the worlds ruins came to be in this sate tells the history of the world.",
-						"This is a relatively advanced step and can be saved until the OM is more familiar with his world. History is a wonderful tool for justifying the existence of lost cities, mysterious ruins, abandoned temples, and haunted battlefields. It can be used to explain the relationship between character races, the creation or reappearance of monsters, the disappearance of civilizations, and the establishment of new ones.",
+						"This is a relatively advanced step and can be saved until the DM is more familiar with his world. History is a wonderful tool for justifying the existence of lost cities, mysterious ruins, abandoned temples, and haunted battlefields. It can be used to explain the relationship between character races, the creation or reappearance of monsters, the disappearance of civilizations, and the establishment of new ones.",
 						"The basic rule for creating a history is to recognize that entire civilizations do not appear overnight, but grow slowly, ascending through the culture levels. As they develop and sometimes fail, they leave behind the debris of their growth in the form of tombs, temples and abandoned dwellings. Unless utterly eradicated, the folk of failed civilizations migrate or merge with their successors to form new peoples. New cities rise up from the ruins and living cities build over the foundations of their past, leaving bits of history to be discovered.",
 						"Work up a time-line for the world (or region), essentially a general sequence of events. Exact dates are not important. Ask the questions \"Where did it all come from?\" and \"What has happened to and be cause of man ill the past?\" Focus on local history. Don't worry about neighboring realms yet, or leaving out major events, or describing something that may have to be changed later. History is flexible. The 'truth' grows and changes as more evidence of the past is uncovered. What is accepted as fact by one generation is proven folly by the next.",
 						"First, examine the world's distant any races long ago that predate the appearance of humanity and demi-humanity? What artifacts did they leave behind? Have any beasts from ancient times survived into the ClllTent age? Where can they be found? Is there a divine or magical reason for the evolution, appearance, or creation of the major character races? Was there any interference from elementals or other interplanar beings that significantly affected the nature of the world? Also consider the role of dragons in the world, since they are among the most powerful of all the AD&D® game system monsters.",
@@ -2831,7 +2954,7 @@
 						"The first step in map creation is to decide how much of the world is going to be shown on a single map page. At the DM's choice, a single map (regardless of paper size) can show an entire world, a continent, a kingdom, a barony, a castle, or just a few rooms in an underground dungeon. The deciding factor is map scale-the relationship between a measurelnent on the map and its corresponding measurement in the real world (which is also called full scale).",
 						"To show a great deal of the world, the scale relationship of the map to the actual world must be quite large. Each unit of measurement on the map must represent many miles. While such a map gives an overview of the world and its major features, it is noticeably Jacking in fine detail. The DM must also create smaller scale regional maps as they are needed Regional maps reveal the locations of villages, streams, castles, ruins and so forth.",
 						"Even smaller scale maps are used for encounter areas. They are often floor plans for castles, towers, ruins, dungeons, and buildings. Such small scale maps are blowups of specific areas. The scale is measured in feet, not miles.",
-						"Choose a scale for the map that best suits the needs of the map. A regional Inap drawn at a scale of one inch or one hex equaling 1,000 feet gives too much detail and not enough overview of the region (and also Inakes much more work for the DM, who must draw an incredible number of such maps to depict even a single barony). Likewise, a dungeon map drawn with eachquote1⁄8th inch square equalling 100 feet is great for plotting large cavern complexes that stretch on for thousands of feet, but does not show enough detail to depict doors, traps, and stairs in a castle or dungeon.",
+						"Choose a scale for the map that best suits the needs of the map. A regional Inap drawn at a scale of one inch or one hex equaling 1,000 feet gives too much detail and not enough overview of the region (and also Inakes much more work for the DM, who must draw an incredible number of such maps to depict even a single barony). Likewise, a dungeon map drawn with each 1⁄8th inch square equalling 100 feet is great for plotting large cavern complexes that stretch on for thousands of feet, but does not show enough detail to depict doors, traps, and stairs in a castle or dungeon.",
 						"Remember to mark the map scale on each map\u2014it saves trying to remember what was intended when one looks at a map three months or three years after it was drawn."
 					]
 				},
@@ -3609,7 +3732,12 @@
 							"page": 97,
 							"entries": [
 								"There may be a tendency for the DM to role-play his \"everyday\" folk as if they were all adventurers, or at least ex-adventurers. They seem oblivious to the fact that they live in a world of monsters and magic and take the exotic in stride:",
-								"{@i \"Dang dragon's in the backyard again Maw, go call us an adventurer ta get 'im outa the cabbages. Do it m 'self? Lissen woman, I'm sortin' out spell components for market, I cain't be bothered! Git yor ass back in tha outhouse and clean me scrubbages\"}",
+								{
+									"type": "quote",
+									"entries": [
+										"Dang dragon's in the backyard again Maw, go call us an adventurer ta get 'im outa the cabbages. Do it m 'self? Lissen woman, I'm sortin' out spell components for market, I cain't be bothered! Git yor ass back in tha outhouse and clean me scrubbages."
+									]
+								},
 								"Mundane folk are the way they are because the fantastic is not a part of their everyday life (if it was, it wouldn't be fantastic). It's hard to make monsters frightening or have great magics seem awe-inspiring if farm folk and townspeople treat such things as commonplace.",
 								"As a rule, make everyday folk in the world either suspicious, fearful, or unbelieving of the fantastic. Magic and monsters are the province of far away lands, ancient legends, or princes and wizards. Such things should be outside their normal experience and therefore something that they cannot deal with (otherwise there would be little need for heroes)."
 							]
@@ -3803,7 +3931,7 @@
 							"entries": [
 								"Castles, and other above ground structures, can, as a rule, be attacked from a number of sides. Even structures which are built on lakes, beside mountains, or in other secluded or protected areas are not wholly inaccessible. As such, the defenders are forced to split their forces along every possible exposed surface lest the attackers overwhelm their defenses in some area.",
 								"Underground structures, even those with more than one entrance, can still expect attacks to come from only one direction: above. The net result is that fewer defenders are required to keep an area secure. On the other hand if you choose to maintain the same number of defenders, you can greatly increase their effectiveness. Underground fortifications require a would-be attacker to expend far more troops in any attempt to overrun a defending force.",
-								"Some may point out that there are a number of burrowing creatures, like {@creature Xorn|MC2|xorns}quoteor {@creature Purple Worm|MC@|purple worms}, which pose threats to all sides of a catacomb complex. While this is true, it is important to remember that these creatures are, fortunately, few and far between. Further, they are seldom if ever marshalled into a coherent fighting force. In fact, even if this was not the case and someone managed to assemble an army of xorn warriors, they would be just as dangerous (if not more so) to an above ground fortification."
+								"Some may point out that there are a number of burrowing creatures, like {@creature Xorn|MC2|xorns} or {@creature Purple Worm|MC2|purple worms}, which pose threats to all sides of a catacomb complex. While this is true, it is important to remember that these creatures are, fortunately, few and far between. Further, they are seldom if ever marshalled into a coherent fighting force. In fact, even if this was not the case and someone managed to assemble an army of xorn warriors, they would be just as dangerous (if not more so) to an above ground fortification."
 							]
 						},
 						{

@@ -3091,7 +3091,6 @@ Parser.SRC_XPHB = "XPHB";
 Parser.SRC_XDMG = "XDMG";
 
 Parser.SRC_PHBR = "PHBR";
-Parser.SRC_PHBR_PREFIX = `${Parser.SRC_PHBR}`;
 
 Parser.SRC_PHBR1 = `${Parser.SRC_PHBR}1`;
 Parser.SRC_PHBR2 = `${Parser.SRC_PHBR}2`;
@@ -3110,14 +3109,12 @@ Parser.SRC_PHBR14 = `${Parser.SRC_PHBR}14`;
 Parser.SRC_PHBR15 = `${Parser.SRC_PHBR}15`;
 
 Parser.SRC_CGR = "CRG";
-Parser.SRC_CGR_PREFIX = `${Parser.SRC_CGR}`;
 
 Parser.SRC_CGR1 = `${Parser.SRC_CGR}1`;
 Parser.SRC_CGR2 = `${Parser.SRC_CGR}2`;
 Parser.SRC_CGR3 = `${Parser.SRC_CGR}3`;
 
 Parser.SRC_DMGR = "DMGR";
-Parser.SRC_DMGR_PREFIX = `${Parser.SRC_DMGR}`;
 
 Parser.SRC_DMGR1 = `${Parser.SRC_DMGR}1`;
 Parser.SRC_DMGR2 = `${Parser.SRC_DMGR}2`;
@@ -3139,7 +3136,6 @@ Parser.SRC_MCV3MC = `${Parser.SRC_MCVX_PREFIX}3MC`;
 Parser.SRC_MCV4EC = `${Parser.SRC_MCVX_PREFIX}4EC`;
 
 Parser.SRC_HR = "HR";
-Parser.SRC_HR_PREFIX = `${Parser.SRC_HR}`;
 
 Parser.SRC_HR1 = `${Parser.SRC_HR}1`;
 Parser.SRC_HR2 = `${Parser.SRC_HR}2`;
@@ -3545,46 +3541,46 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_XDMG] = "DMG'95";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN] = "Scr'89";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_XSCREEN] = "Scr'95";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR] = "PHBR";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR1] = "TCFH";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR2] = "TCTH";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR3] = "TCPrH";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR4] = "TCWH";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR5] = "TCPsH";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR6] = "TCBoD";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR7] = "TCBardH";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR8] = "TCBoE";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR9] = "TCBoG&H";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR10] = "TCBH";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR11] = "TCRH";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR12] = "TCPaH";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR13] = "TCDH";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR14] = "TCBarbH";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR15] = "TCNH";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR1] = "CFigH";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR2] = "CThiH";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR3] = "CPriH";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR4] = "CWizH";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR5] = "CPsiH";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR6] = "CBoDwa";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR7] = "CBardH";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR8] = "CBoElv";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR9] = "CBoG&H";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR10] = "CBoHum";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR11] = "CRanH";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR12] = "CPalH";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR13] = "CDruH";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR14] = "CBarbH";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHBR15] = "CNinH";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CGR] = `CGR`;
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CGR1] = `TCSH`;
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CGR2] = `TCGH`;
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CGR3] = `TCShH`;
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CGR1] = `CSpaH`;
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CGR2] = `CGlaH`;
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CGR3] = `CShaH`;
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR] = "DMGR";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR1] = "CS&CG";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR2] = "TCG";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR3] = "A&EG";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR4] = "MMy";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR5] = "CC";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR6] = "TCBoV";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR7] = "TCBoN";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR6] = "CBoVil";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR7] = "CBoNec";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR8] = "S&S";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMGR9] = "OS&TS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_LL] = "L&L";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_TM] = "TM";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_BA] = "BA";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_TM] = "ToM";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_BA] = "BoA";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR] = "HR";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR1] = "VCS";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR2] = "CeCS";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR1] = "VikCS";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR2] = "CelCS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR3] = "CPCS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR4] = "AMFCS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR5] = "GoRCS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR6] = "AoHCS";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR7] = "CrCS";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HR7] = "CruCS";
 // 5e abbreviations
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CoS] = "CoS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_EEPC] = "EEPC";
@@ -4220,6 +4216,7 @@ Parser.SOURCES_AVAILABLE_DOCS_BOOK = {};
 	Parser.SRC_SCREEN,
 	Parser.SRC_XSCREEN,
 	Parser.SRC_PHBR1,
+	Parser.SRC_PHBR2,
 	Parser.SRC_DMGR1,
 	Parser.SRC_HR1,
 	Parser.SRC_SCAG,
