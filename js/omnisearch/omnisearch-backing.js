@@ -1,6 +1,6 @@
-import { OmnisearchState } from "./omnisearch-state.js";
-import { VetoolsConfig } from "../utils-config/utils-config-config.js";
-import { SITE_STYLE__CLASSIC } from "../consts.js";
+import {OmnisearchState} from "./omnisearch-state.js";
+import {VetoolsConfig} from "../utils-config/utils-config-config.js";
+import {SITE_STYLE__CLASSIC} from "../consts.js";
 
 export class OmnisearchBacking {
 	static _CATEGORY_COUNTS = {};
@@ -9,12 +9,12 @@ export class OmnisearchBacking {
 	static _adventureBookLookup = null; // A map of `<sourceLower>: (adventureCatId|bookCatId)`
 	static _pLoadSearch = null;
 
-	static async _pInit() {
+	static async _pInit () {
 		this._pLoadSearch ||= this._pDoSearchLoad();
 		await this._pLoadSearch;
 	}
 
-	static async _pDoSearchLoad() {
+	static async _pDoSearchLoad () {
 		elasticlunr.clearStopWords();
 		this._searchIndex = elasticlunr(function () {
 			this.addField("n");
@@ -27,10 +27,10 @@ export class OmnisearchBacking {
 		const siteIndex = Omnidexer.decompressIndex(await DataUtil.loadJSON(`${Renderer.get().baseUrl}search/index.json`));
 		siteIndex.forEach(it => this._addToIndex(it));
 
-		const prereleaseIndex = await PrereleaseUtil.pGetSearchIndex({ id: this._maxId + 1 });
+		const prereleaseIndex = await PrereleaseUtil.pGetSearchIndex({id: this._maxId + 1});
 		prereleaseIndex.forEach(it => this._addToIndex(it));
 
-		const brewIndex = await BrewUtil2.pGetSearchIndex({ id: this._maxId + 1 });
+		const brewIndex = await BrewUtil2.pGetSearchIndex({id: this._maxId + 1});
 		brewIndex.forEach(it => this._addToIndex(it));
 
 		// region Partnered homebrew
@@ -63,7 +63,7 @@ export class OmnisearchBacking {
 
 	static _maxId = null;
 
-	static _addToIndex(d) {
+	static _addToIndex (d) {
 		this._maxId = d.id;
 		d.cf = Parser.pageCategoryToFull(d.c);
 		if (!this._CATEGORY_COUNTS[d.cf]) this._CATEGORY_COUNTS[d.cf] = 1;
@@ -75,7 +75,7 @@ export class OmnisearchBacking {
 	static _IN_CATEGORY_ALIAS_SHORT = null;
 	static _RE_SYNTAX__IN_CATEGORY = null;
 
-	static _initReInCategory() {
+	static _initReInCategory () {
 		if (this._RE_SYNTAX__IN_CATEGORY) return;
 
 		const inCategoryAlias = {
@@ -140,47 +140,51 @@ export class OmnisearchBacking {
 
 	/* -------------------------------------------- */
 
-	static async pGetFilteredResults(results, { isApplyPartneredFilter = false } = {}) {
+	static async pGetFilteredResults (results, {isApplySrdFilter = false, isApplyPartneredFilter = false} = {}) {
+		if (isApplySrdFilter && OmnisearchState.isSrdOnly) {
+			results = results.filter(res => res.doc.r || res.doc.r2);
+		}
+
 		if (isApplyPartneredFilter && !OmnisearchState.isShowPartnered) {
-			results = results.filter(r => !r.doc.s || !r.doc.dP);
+			results = results.filter(res => !res.doc.s || !res.doc.dP);
 		}
 
 		if (!OmnisearchState.isShowBrew) {
 			// Always filter in partnered, as these are handled by the more specific filter, above
-			results = results.filter(r => !r.doc.s || r.doc.dP || !BrewUtil2.hasSourceJson(r.doc.s));
+			results = results.filter(res => !res.doc.s || res.doc.dP || !BrewUtil2.hasSourceJson(res.doc.s));
 		}
 
 		if (!OmnisearchState.isShowUa) {
-			results = results.filter(r => !r.doc.s || !SourceUtil.isNonstandardSourceWotc(r.doc.s));
+			results = results.filter(res => !res.doc.s || !SourceUtil.isNonstandardSourceWotc(res.doc.s));
 		}
 
 		if (!OmnisearchState.isShowLegacy) {
-			results = results.filter(r => !r.doc.s || !SourceUtil.isLegacySourceWotc(r.doc.s));
+			results = results.filter(res => !res.doc.s || !SourceUtil.isLegacySourceWotc(res.doc.s));
 		}
 
 		if (!OmnisearchState.isShowBlocklisted && ExcludeUtil.getList().length) {
 			const resultsNxt = [];
-			for (const r of results) {
-				if (r.doc.c === Parser.CAT_ID_QUICKREF || r.doc.c === Parser.CAT_ID_PAGE) {
-					resultsNxt.push(r);
+			for (const res of results) {
+				if (res.doc.c === Parser.CAT_ID_QUICKREF || res.doc.c === Parser.CAT_ID_PAGE) {
+					resultsNxt.push(res);
 					continue;
 				}
 
-				const bCat = Parser.pageCategoryToProp(r.doc.c);
+				const bCat = Parser.pageCategoryToProp(res.doc.c);
 				if (bCat !== "item") {
-					if (!ExcludeUtil.isExcluded(r.doc.u, bCat, r.doc.s, { isNoCount: true })) resultsNxt.push(r);
+					if (!ExcludeUtil.isExcluded(res.doc.u, bCat, res.doc.s, {isNoCount: true})) resultsNxt.push(res);
 					continue;
 				}
 
-				const item = await DataLoader.pCacheAndGetHash(UrlUtil.PG_ITEMS, r.doc.u);
-				if (!Renderer.item.isExcluded(item, { hash: r.doc.u })) resultsNxt.push(r);
+				const item = await DataLoader.pCacheAndGetHash(UrlUtil.PG_ITEMS, res.doc.u);
+				if (!Renderer.item.isExcluded(item, {hash: res.doc.u})) resultsNxt.push(res);
 			}
 			results = resultsNxt;
 		}
 
 		const styleHint = VetoolsConfig.get("styleSwitcher", "style");
 		results
-			.forEach(result => this._mutResultScores({ result, styleHint }));
+			.forEach(result => this._mutResultScores({result, styleHint}));
 		results.sort((a, b) => SortUtil.ascSort(b.score, a.score));
 
 		return results;
@@ -191,7 +195,7 @@ export class OmnisearchBacking {
 	static _RE_SYNTAX__SOURCE = /\bsource:(?<source>.*)\b/i;
 	static _RE_SYNTAX__PAGE = /\bpage:\s*(?<pageStart>\d+)\s*(?:-\s*(?<pageEnd>\d+)\s*)?\b/i;
 
-	static async pGetResults(searchTerm) {
+	static async pGetResults (searchTerm) {
 		await this._pInit();
 
 		searchTerm = (searchTerm || "").toAscii();
@@ -202,14 +206,14 @@ export class OmnisearchBacking {
 
 		searchTerm = searchTerm
 			.replace(this._RE_SYNTAX__SOURCE, (...m) => {
-				const { source } = m.at(-1);
+				const {source} = m.at(-1);
 				syntaxMetasSource.push({
 					source: source.trim().toLowerCase(),
 				});
 				return "";
 			})
 			.replace(this._RE_SYNTAX__PAGE, (...m) => {
-				const { pageStart, pageEnd } = m.at(-1);
+				const {pageStart, pageEnd} = m.at(-1);
 				syntaxMetasPageRange.push({
 					pageRange: [
 						Number(pageStart),
@@ -219,7 +223,7 @@ export class OmnisearchBacking {
 				return "";
 			})
 			.replace(this._RE_SYNTAX__IN_CATEGORY, (...m) => {
-				let { category } = m.at(-1);
+				let {category} = m.at(-1);
 				category = category.toLowerCase().trim();
 
 				const categories = (
@@ -229,7 +233,7 @@ export class OmnisearchBacking {
 				)
 					.map(it => it.toLowerCase());
 
-				syntaxMetasCategory.push({ categories });
+				syntaxMetasCategory.push({categories});
 				return "";
 			})
 			.replace(/\s+/g, " ")
@@ -242,10 +246,10 @@ export class OmnisearchBacking {
 			syntaxMetasPageRange,
 		});
 
-		return this.pGetFilteredResults(results, { isApplyPartneredFilter: true });
+		return this.pGetFilteredResults(results, {isApplySrdFilter: true, isApplyPartneredFilter: true});
 	}
 
-	static _pGetResults_pGetBaseResults(
+	static _pGetResults_pGetBaseResults (
 		{
 			searchTerm,
 			syntaxMetasCategory,
@@ -262,8 +266,8 @@ export class OmnisearchBacking {
 				searchTerm,
 				{
 					fields: {
-						n: { boost: 5, expand: true },
-						s: { expand: true },
+						n: {boost: 5, expand: true},
+						s: {expand: true},
 					},
 					bool: "AND",
 					expand: true,
@@ -281,19 +285,19 @@ export class OmnisearchBacking {
 					searchTerm,
 					{
 						fields: {
-							n: { boost: 5, expand: true },
-							s: { expand: true },
+							n: {boost: 5, expand: true},
+							s: {expand: true},
 						},
 						bool: "AND",
 						expand: true,
 					},
 				)
-			: Object.values(this._searchIndex.documentStore.docs).map(it => ({ doc: it }));
+			: Object.values(this._searchIndex.documentStore.docs).map(it => ({doc: it}));
 
 		return resultsUnfiltered
-			.filter(r => !categoryTerms.length || (categoryTerms.includes(r.doc.cf.toLowerCase())))
-			.filter(r => !sourceTerms.length || (r.doc.s && sourceTerms.includes(Parser.sourceJsonToAbv(r.doc.s).toLowerCase())))
-			.filter(r => !pageRanges.length || (r.doc.p && pageRanges.some(range => r.doc.p >= range[0] && r.doc.p <= range[1])));
+			.filter(res => !categoryTerms.length || (categoryTerms.includes(res.doc.cf.toLowerCase())))
+			.filter(res => !sourceTerms.length || (res.doc.s && sourceTerms.includes(Parser.sourceJsonToAbv(res.doc.s).toLowerCase())))
+			.filter(res => !pageRanges.length || (res.doc.p && pageRanges.some(range => res.doc.p >= range[0] && res.doc.p <= range[1])));
 	}
 
 	/* -------------------------------------------- */
@@ -301,11 +305,13 @@ export class OmnisearchBacking {
 	static _SOURCES_CORE_MODERN = new Set([
 		Parser.SRC_XPHB,
 		Parser.SRC_XDMG,
+		Parser.SRC_XMM,
 	]);
 
 	static _SOURCES_CORE_LEGACY = new Set([
 		Parser.SRC_PHB,
 		Parser.SRC_DMG,
+		Parser.SRC_MM,
 	]);
 
 	static _CATEGORIES_DEPRIORITIZED = new Set([
@@ -318,7 +324,7 @@ export class OmnisearchBacking {
 		Parser.CAT_ID_QUICKREF,
 	]);
 
-	static _mutResultScores({ result, styleHint }) {
+	static _mutResultScores ({result, styleHint}) {
 		if ((styleHint !== SITE_STYLE__CLASSIC ? this._SOURCES_CORE_MODERN : this._SOURCES_CORE_LEGACY).has(result.doc.s)) result.score *= 1.1;
 		if (SourceUtil.isNonstandardSource(result.doc.s)) result.score *= 0.66;
 		if (styleHint !== SITE_STYLE__CLASSIC && SourceUtil.isLegacySourceWotc(result.doc.s)) result.score *= 0.75;
@@ -329,7 +335,7 @@ export class OmnisearchBacking {
 
 	/* -------------------------------------------- */
 
-	static getCategoryAliasesShort() {
+	static getCategoryAliasesShort () {
 		this._initReInCategory();
 
 		return this._IN_CATEGORY_ALIAS_SHORT;

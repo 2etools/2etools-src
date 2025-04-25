@@ -35,7 +35,7 @@ const baseSitemapData = (() => {
 	return out;
 })();
 
-const getTemplate = ({ page, name, source, hash, img, textStyle, isFluff }) => `<!DOCTYPE html><html lang="en"><head>
+const getTemplate = ({page, name, source, hash, img, textStyle, isFluff}) => `<!DOCTYPE html><html lang="en"><head>
 <!--5ETOOLS_CMP-->
 <!--5ETOOLS_ANALYTICS-->
 <!--5ETOOLS_ADCODE-->
@@ -107,9 +107,9 @@ const toGenerate = [
 		page: "spells",
 		pGetEntityMetas: async () => {
 			const entities = (await DataUtil.spell.pLoadAll())
-				.filter(({ source }) => !isSkipUaEtc || !SourceUtil.isNonstandardSourceWotc(source))
-				.filter(({ source }) => !isOnlyVanilla || Parser.SOURCES_VANILLA.has(source));
-			return entities.pSerialAwaitMap(async ent => ({ entity: ent, fluff: await Renderer.spell.pGetFluff(ent) }));
+				.filter(({source}) => !isSkipUaEtc || !SourceUtil.isNonstandardSourceWotc(source))
+				.filter(({source}) => !isOnlyVanilla || Parser.SOURCES_VANILLA.has(source));
+			return entities.pSerialAwaitMap(async ent => ({entity: ent, fluff: await Renderer.spell.pGetFluff(ent)}));
 		},
 		style: 1,
 		isFluff: 1,
@@ -118,8 +118,8 @@ const toGenerate = [
 		page: "bestiary",
 		pGetEntityMetas: async () => {
 			const entities = (await DataUtil.monster.pLoadAll())
-				.filter(({ source }) => !isSkipUaEtc || !SourceUtil.isNonstandardSourceWotc(source))
-				.filter(({ source }) => !isOnlyVanilla || Parser.SOURCES_VANILLA.has(source));
+				.filter(({source}) => !isSkipUaEtc || !SourceUtil.isNonstandardSourceWotc(source))
+				.filter(({source}) => !isOnlyVanilla || Parser.SOURCES_VANILLA.has(source));
 			return entities.pSerialAwaitMap(async ent => ({
 				entity: ent,
 				fluff: await Renderer.monster.pGetFluff(ent),
@@ -135,7 +135,7 @@ const toGenerate = [
 			const entities = (await Renderer.item.pBuildList()).filter(it => !it._isItemGroup)
 				.filter(it => !isSkipUaEtc || !SourceUtil.isNonstandardSourceWotc(it.source))
 				.filter(it => !isOnlyVanilla || Parser.SOURCES_VANILLA.has(it.source));
-			return entities.pSerialAwaitMap(async ent => ({ entity: ent, fluff: await Renderer.item.pGetFluff(ent) }));
+			return entities.pSerialAwaitMap(async ent => ({entity: ent, fluff: await Renderer.item.pGetFluff(ent)}));
 		},
 		style: 1,
 		isFluff: 1,
@@ -160,7 +160,7 @@ async function main () {
 
 		const entityMetas = await meta.pGetEntityMetas();
 		const builder = UrlUtil.URL_TO_HASH_BUILDER[`${meta.page}.html`];
-		entityMetas.forEach(({ entity, fluff, img }) => {
+		entityMetas.forEach(({entity, fluff, img}) => {
 			let offset = 0;
 			let html;
 			let path;

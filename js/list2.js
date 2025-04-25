@@ -54,7 +54,7 @@ class _ListSearch {
 	#fn = null;
 	#items = null;
 
-	constructor ({ term, fn, items }) {
+	constructor ({term, fn, items}) {
 		this.#term = term;
 		this.#fn = fn;
 		this.#items = [...items];
@@ -68,7 +68,7 @@ class _ListSearch {
 			if (this.#isInterrupted) break;
 			if (await this.#fn(item, this.#term)) out.push(item);
 		}
-		return { isInterrupted: this.#isInterrupted, searchedItems: out };
+		return {isInterrupted: this.#isInterrupted, searchedItems: out};
 	}
 }
 
@@ -142,7 +142,7 @@ class List {
 		this._isDirty = true;
 	}
 
-	init ({ isLazySearch = false } = {}) {
+	init ({isLazySearch = false} = {}) {
 		if (this._isInit) return;
 
 		// This should only be run after all the elements are ready from page load
@@ -159,8 +159,8 @@ class List {
 			const helpText = [
 				...(this._helpText || []),
 				...Object.values(this._syntax || {})
-					.filter(({ help }) => help)
-					.map(({ help }) => help),
+					.filter(({help}) => help)
+					.map(({help}) => help),
 			];
 
 			if (helpText.length) this._$iptSearch.title(helpText.join(" "));
@@ -220,7 +220,7 @@ class List {
 		SearchUtil.removeStemmer(this._fuzzySearch);
 	}
 
-	update ({ isForce = false } = {}) {
+	update ({isForce = false} = {}) {
 		if (!this._isInit || !this._isDirty || isForce) return false;
 		this._doSearch();
 		return true;
@@ -273,7 +273,7 @@ class List {
 	_doSearch_getMatchingSyntax () {
 		const [command, term] = this._searchTerm.split(/^([a-z]+):/).filter(Boolean);
 		if (!command || !term || !this._syntax?.[command]) return null;
-		return { term: this._doSearch_getSyntaxSearchTerm(term), syntax: this._syntax[command] };
+		return {term: this._doSearch_getSyntaxSearchTerm(term), syntax: this._syntax[command]};
 	}
 
 	_doSearch_getSyntaxSearchTerm (term) {
@@ -285,14 +285,14 @@ class List {
 		}
 	}
 
-	_doSearch_doSearchTerm_syntax ({ term, syntax: { fn, isAsync } }) {
+	_doSearch_doSearchTerm_syntax ({term, syntax: {fn, isAsync}}) {
 		if (isAsync) return false;
 
 		this._searchedItems = this._items.filter(it => fn(it, term));
 		return true;
 	}
 
-	async _doSearch_doSearchTerm_pSyntax ({ term, syntax: { fn, isAsync } }) {
+	async _doSearch_doSearchTerm_pSyntax ({term, syntax: {fn, isAsync}}) {
 		if (!isAsync) return false;
 
 		this.#activeSearch = new _ListSearch({
@@ -300,7 +300,7 @@ class List {
 			fn,
 			items: this._items,
 		});
-		const { isInterrupted, searchedItems } = await this.#activeSearch.pRun();
+		const {isInterrupted, searchedItems} = await this.#activeSearch.pRun();
 
 		if (isInterrupted) return false;
 		this._searchedItems = searchedItems;
@@ -315,7 +315,7 @@ class List {
 				this._searchTerm,
 				{
 					fields: {
-						s: { expand: true },
+						s: {expand: true},
 					},
 					bool: "AND",
 					expand: true,
@@ -332,7 +332,7 @@ class List {
 		this._doFilter();
 	}
 
-	getFilteredItems ({ items = null, fnFilter } = {}) {
+	getFilteredItems ({items = null, fnFilter} = {}) {
 		items = items || this._searchedItems;
 		fnFilter = fnFilter || this._fnFilter;
 
@@ -346,7 +346,7 @@ class List {
 		this._doSort();
 	}
 
-	getSortedItems ({ items = null } = {}) {
+	getSortedItems ({items = null} = {}) {
 		items = items || [...this._filteredItems];
 
 		const opts = {
@@ -418,7 +418,7 @@ class List {
 		this._isDirty = true;
 		this._items.push(listItem);
 
-		if (this._isFuzzy) this._fuzzySearch.addDoc({ ix: listItem.ix, s: listItem.searchText });
+		if (this._isFuzzy) this._fuzzySearch.addDoc({ix: listItem.ix, s: listItem.searchText});
 	}
 
 	removeItem (listItem) {

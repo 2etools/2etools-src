@@ -1,21 +1,21 @@
-import { UtilsFoundryItem } from "./foundry/foundry-utils.js";
+import {UtilsFoundryItem} from "./foundry/foundry-utils.js";
 
 class FoundryOmnidexerUtils {
-	static getPackedFoundryExtras ({ prop, ent }) {
+	static getPackedFoundryExtras ({prop, ent}) {
 		switch (prop) {
-			case "spell": return this._getPackedFoundryExtras_spell({ ent });
+			case "spell": return this._getPackedFoundryExtras_spell({ent});
 
 			case "item":
-			case "baseitem": return this._getPackedFoundryExtras_item({ ent });
+			case "baseitem": return this._getPackedFoundryExtras_item({ent});
 		}
 	}
 
-	static _getPackedFoundryExtras_spell ({ ent }) {
-		return { l: ent.level };
+	static _getPackedFoundryExtras_spell ({ent}) {
+		return {l: ent.level};
 	}
 
-	static _getPackedFoundryExtras_item ({ ent }) {
-		return { ft: UtilsFoundryItem.getFoundryItemType(ent) };
+	static _getPackedFoundryExtras_item ({ent}) {
+		return {ft: UtilsFoundryItem.getFoundryItemType(ent)};
 	}
 
 	/* -------------------------------------------- */
@@ -73,7 +73,7 @@ class Omnidexer {
 	}
 
 	static decompressIndex (indexGroup) {
-		const { x: index, m: metadata } = indexGroup;
+		const {x: index, m: metadata} = indexGroup;
 
 		const props = new Set();
 
@@ -117,7 +117,7 @@ class Omnidexer {
 		const dataArr = Omnidexer.getProperty(json, arbiter.listProp);
 		if (!dataArr) return;
 
-		const state = { arbiter, index, options };
+		const state = {arbiter, index, options};
 
 		let ixOffset = 0;
 		for (let ix = 0; ix < dataArr.length; ++ix) {
@@ -125,6 +125,16 @@ class Omnidexer {
 
 			const name = Omnidexer.getProperty(it, arbiter.primary || "name");
 			await this._pAddToIndex_pHandleItem(state, it, ix + ixOffset, name);
+
+			if (typeof it.srd === "string") {
+				ixOffset++;
+				await this._pAddToIndex_pHandleItem(state, it, ix + ixOffset, it.srd);
+			}
+
+			if (typeof it.srd52 === "string") {
+				ixOffset++;
+				await this._pAddToIndex_pHandleItem(state, it, ix + ixOffset, it.srd52);
+			}
 
 			if (it.alias?.length) {
 				for (const a of it.alias) {
@@ -138,16 +148,16 @@ class Omnidexer {
 	async _pAddToIndex_pHandleItem (state, ent, ix, name) {
 		if (ent.noDisplay) return;
 
-		const { arbiter, index, options } = state;
+		const {arbiter, index, options} = state;
 
 		if (name) name = name.toAscii();
 
-		const toAdd = await this._pAddToIndex_pGetToAdd(state, ent, { n: name }, ix);
+		const toAdd = await this._pAddToIndex_pGetToAdd(state, ent, {n: name}, ix);
 
 		if ((options.isNoFilter || (!arbiter.include && !(arbiter.filter && arbiter.filter(ent))) || (!arbiter.filter && (!arbiter.include || arbiter.include(ent)))) && !arbiter.isOnlyDeep) index.push(toAdd);
 
-		const primary = { it: ent, ix: ix, parentName: name };
-		const deepItems = await arbiter.pGetDeepIndex(this, primary, ent, { name });
+		const primary = {it: ent, ix: ix, parentName: name};
+		const deepItems = await arbiter.pGetDeepIndex(this, primary, ent, {name});
 		for (const item of deepItems) {
 			const toAdd = await this._pAddToIndex_pGetToAdd(state, ent, item);
 			if (!arbiter.filter || !arbiter.filter(ent)) index.push(toAdd);
@@ -155,7 +165,7 @@ class Omnidexer {
 	}
 
 	async _pAddToIndex_pGetToAdd (state, ent, toMerge, i) {
-		const { arbiter, options } = state;
+		const {arbiter, options} = state;
 
 		const src = Omnidexer.getProperty(ent, arbiter.source || "source");
 
@@ -174,6 +184,8 @@ class Omnidexer {
 		if (src != null) indexDoc.s = this.getMetaId("s", src);
 		if (arbiter.isHover) indexDoc.h = 1;
 		if (arbiter.isFauxPage) indexDoc.hx = 1;
+		if (ent.srd) indexDoc.r = 1;
+		if (ent.srd52) indexDoc.r2 = 1;
 
 		if (src) {
 			if (SourceUtil.isPartneredSourceWotc(src)) indexDoc.dP = 1;
@@ -195,7 +207,10 @@ class Omnidexer {
 				}
 
 				if (!indexDoc.m) {
-					const fluff = await Renderer.hover.pGetHoverableFluff(arbiter.fluffBaseListProp || arbiter.listProp, src, hash, { isSilent: true });
+					const fluff = await Renderer.utils.pGetProxyFluff({
+						entity: ent,
+						prop: arbiter.fluffBaseListProp || arbiter.listProp,
+					});
 					if (fluff?.images?.length) {
 						indexDoc.m = Renderer.utils.getEntryMediaUrl(fluff.images[0], "href", "img");
 					}
@@ -216,7 +231,7 @@ class Omnidexer {
 			}
 
 			if (options.isIncludeFoundryExtras) {
-				const extras = FoundryOmnidexerUtils.getPackedFoundryExtras({ prop: arbiter.listProp, ent });
+				const extras = FoundryOmnidexerUtils.getPackedFoundryExtras({prop: arbiter.listProp, ent});
 				if (extras) indexDoc.xF = extras;
 			}
 		}
@@ -357,7 +372,7 @@ class IndexableDirectorySubclass extends IndexableDirectory {
 		});
 	}
 
-	pGetDeepIndex (indexer, primary, sc, { name }) {
+	pGetDeepIndex (indexer, primary, sc, {name}) {
 		name ||= sc.name;
 
 		return [
@@ -365,7 +380,7 @@ class IndexableDirectorySubclass extends IndexableDirectory {
 				b: name,
 				n: `${name} (${sc.className})`,
 				s: indexer.getMetaId("s", sc.source),
-				u: `${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({ name: sc.className, source: sc.classSource })}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart({ subclass: sc })}`,
+				u: `${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({name: sc.className, source: sc.classSource})}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart({subclass: sc})}`,
 				p: sc.page,
 			},
 		];
@@ -389,7 +404,7 @@ class IndexableDirectoryClassFeature extends IndexableDirectory {
 	async pGetDeepIndex (indexer, primary, it) {
 		// TODO(Future) this could pull in the class data to get an accurate feature index; default to 0 for now
 		const ixFeature = 0;
-		const classPageHash = `${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({ name: it.className, source: it.classSource })}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart({ feature: { ixLevel: it.level - 1, ixFeature } })}`;
+		const classPageHash = `${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({name: it.className, source: it.classSource})}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart({feature: {ixLevel: it.level - 1, ixFeature}})}`;
 		return [
 			{
 				n: `${it.className} ${it.level}; ${it.name}`,
@@ -419,10 +434,10 @@ class IndexableDirectorySubclassFeature extends IndexableDirectory {
 	async pGetDeepIndex (indexer, primary, it) {
 		const ixFeature = 0;
 		const pageStateOpts = {
-			subclass: { shortName: it.subclassShortName, source: it.source },
-			feature: { ixLevel: it.level - 1, ixFeature },
+			subclass: {shortName: it.subclassShortName, source: it.source},
+			feature: {ixLevel: it.level - 1, ixFeature},
 		};
-		const classPageHash = `${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({ name: it.className, source: it.classSource })}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart(pageStateOpts)}`;
+		const classPageHash = `${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({name: it.className, source: it.classSource})}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart(pageStateOpts)}`;
 		return [
 			{
 				n: `${it.subclassShortName} ${it.className} ${it.level}; ${it.name}`,
@@ -577,7 +592,7 @@ class IndexableFileMagicVariants extends IndexableFile {
 				item: async (indexer, rawVariants) => {
 					const specVars = await (async () => {
 						const baseItemJson = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/items-base.json`);
-						const rawBaseItems = { ...baseItemJson, baseitem: [...baseItemJson.baseitem] };
+						const rawBaseItems = {...baseItemJson, baseitem: [...baseItemJson.baseitem]};
 
 						const prerelease = typeof PrereleaseUtil !== "undefined" ? await PrereleaseUtil.pGetBrewProcessed() : {};
 						if (prerelease.baseitem) rawBaseItems.baseitem.push(...prerelease.baseitem);
@@ -860,7 +875,7 @@ class IndexableFilePsionics extends IndexableFile {
 
 	pGetDeepIndex (indexer, primary, it) {
 		if (!it.modes) return [];
-		return it.modes.map(m => ({ d: 1, n: `${primary.parentName}; ${m.name}` }));
+		return it.modes.map(m => ({d: 1, n: `${primary.parentName}; ${m.name}`}));
 	}
 }
 
@@ -873,14 +888,14 @@ class IndexableFileRaces extends IndexableFile {
 			baseUrl: "races.html",
 			isHover: true,
 			postLoad: data => {
-				return DataUtil.race.getPostProcessedSiteJson(data, { isAddBaseRaces: true });
+				return DataUtil.race.getPostProcessedSiteJson(data, {isAddBaseRaces: true});
 			},
 			pFnPreProcBrew: async prereleaseBrew => {
 				if (!prereleaseBrew.race?.length && !prereleaseBrew.subrace?.length) return prereleaseBrew;
 
 				const site = await DataUtil.race.loadRawJSON();
 
-				return DataUtil.race.getPostProcessedPrereleaseBrewJson(site, prereleaseBrew, { isAddBaseRaces: true });
+				return DataUtil.race.getPostProcessedPrereleaseBrewJson(site, prereleaseBrew, {isAddBaseRaces: true});
 			},
 		});
 	}
@@ -961,9 +976,9 @@ class IndexableFileQuickReference extends IndexableFile {
 		this._walker = MiscUtil.getWalker();
 	}
 
-	static getChapterNameMetas (it, { isRequireQuickrefFlag = true } = {}) {
+	static getChapterNameMetas (it, {isRequireQuickrefFlag = true} = {}) {
 		const trackedNames = [];
-		Renderer.get().withDepthTracker(trackedNames, ({ renderer }) => renderer.render(it));
+		Renderer.get().withDepthTracker(trackedNames, ({renderer}) => renderer.render(it));
 
 		const nameCounts = {};
 		trackedNames.forEach(meta => {
@@ -1385,7 +1400,10 @@ class IndexableSpecialPages extends IndexableSpecial {
 				n: name,
 				c: Parser.CAT_ID_PAGE,
 				u: page,
-				r: 1, // Consider basic pages to be "SRD friendly"
+				// region Consider basic pages to be "SRD friendly"
+				r: 1,
+				r2: 1,
+				// endregion
 			}));
 	}
 }

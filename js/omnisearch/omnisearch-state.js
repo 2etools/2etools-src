@@ -7,6 +7,7 @@ export class OmnisearchState extends BaseComponent {
 		isShowUa: true,
 		isShowBlocklisted: false,
 		isShowLegacy: false,
+		isSrdOnly: false,
 	};
 
 	static _COMP = null;
@@ -34,22 +35,26 @@ export class OmnisearchState extends BaseComponent {
 	static addHookUa (hk) { return this._getComp()._addHookBase("isShowUa", hk); }
 	static addHookBlocklisted (hk) { return this._getComp()._addHookBase("isShowBlocklisted", hk); }
 	static addHookLegacy (hk) { return this._getComp()._addHookBase("isShowLegacy", hk); }
+	static addHookSrdOnly (hk) { return this._getComp()._addHookBase("isSrdOnly", hk); }
 
 	static doTogglePartnered () { this._getComp()._state.isShowPartnered = !this._getComp()._state.isShowPartnered; }
 	static doToggleBrew () { this._getComp()._state.isShowBrew = !this._getComp()._state.isShowBrew; }
 	static doToggleUa () { this._getComp()._state.isShowUa = !this._getComp()._state.isShowUa; }
 	static doToggleBlocklisted () { this._getComp()._state.isShowBlocklisted = !this._getComp()._state.isShowBlocklisted; }
 	static doToggleLegacy () { this._getComp()._state.isShowLegacy = !this._getComp()._state.isShowLegacy; }
+	static doToggleSrdOnly () { this._getComp()._state.isSrdOnly = !this._getComp()._state.isSrdOnly; }
 
 	static get isShowPartnered () { return this._getComp()._state.isShowPartnered; }
 	static get isShowBrew () { return this._getComp()._state.isShowBrew; }
 	static get isShowUa () { return this._getComp()._state.isShowUa; }
 	static get isShowBlocklisted () { return this._getComp()._state.isShowBlocklisted; }
 	static get isShowLegacy () { return this._getComp()._state.isShowLegacy; }
+	static get isSrdOnly () { return this._getComp()._state.isSrdOnly; }
 
 	static set isShowPartnered (val) { this._getComp()._state.isShowPartnered = !!val; }
 	static set isShowBrew (val) { this._getComp()._state.isShowBrew = !!val; }
 	static set isShowUa (val) { this._getComp()._state.isShowUa = !!val; }
 	static set isShowBlocklisted (val) { this._getComp()._state.isShowBlocklisted = !!val; }
 	static set isShowLegacy (val) { this._getComp()._state.isShowLegacy = !!val; }
+	static set isSrdOnly (val) { this._getComp()._state.isSrdOnly = !!val; }
 }

@@ -1,14 +1,14 @@
-import { EncounterBuilderUi } from "../encounterbuilder/encounterbuilder-ui.js";
-import { EncounterBuilderCreatureMeta } from "../encounterbuilder/encounterbuilder-models.js";
-import { EncounterBuilderHelpers } from "../utils-list-bestiary.js";
+import {EncounterBuilderUi} from "../encounterbuilder/encounterbuilder-ui.js";
+import {EncounterBuilderCreatureMeta} from "../encounterbuilder/encounterbuilder-models.js";
+import {EncounterBuilderHelpers} from "../utils-list-bestiary.js";
 
 export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 	static _HASH_KEY = "encounterbuilder";
 
 	_isSuspendSyncToSublist = false;
 
-	constructor({ cache, comp, bestiaryPage, sublistManager }) {
-		super({ cache, comp });
+	constructor ({cache, comp, bestiaryPage, sublistManager}) {
+		super({cache, comp});
 
 		this._bestiaryPage = bestiaryPage;
 		this._sublistManager = sublistManager;
@@ -18,7 +18,7 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 		this._cachedTitle = null;
 	}
 
-	initUi() {
+	initUi () {
 		document.getElementById("stat-tabs").classList.add("best-ecgen__hidden");
 		document.getElementById("float-token").classList.add("best-ecgen__hidden");
 		document.getElementById("wrp-pagecontent").classList.add("best-ecgen__hidden");
@@ -26,7 +26,7 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 		$(`#btn-encounterbuild`).click(() => Hist.setSubhash(this.constructor._HASH_KEY, true));
 	}
 
-	render() {
+	render () {
 		super.render({
 			$parentRandomAndAdjust: $("#wrp-encounterbuild-random-and-adjust"),
 			$parentGroupAndDifficulty: $("#wrp-encounterbuild-group-and-difficulty"),
@@ -34,7 +34,7 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 		this._render_saveLoad();
 	}
 
-	_render_saveLoad() {
+	_render_saveLoad () {
 		const $btnSave = $(`<button class="ve-btn ve-btn-default ve-btn-xs">Save Encounter</button>`)
 			.click(evt => this._sublistManager.pHandleClick_save(evt));
 
@@ -49,7 +49,7 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 		</div>`;
 	}
 
-	_handleClickCopyAsText(evt) {
+	_handleClickCopyAsText (evt) {
 		let xpTotal = 0;
 		const ptsCreature = this._sublistManager.sublistItems
 			.sort((a, b) => SortUtil.ascSortLower(a.name, b.name))
@@ -67,19 +67,19 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 		JqueryUtil.showCopiedEffect(evt.currentTarget);
 	}
 
-	_handleClickBackToStatblocks() {
+	_handleClickBackToStatblocks () {
 		Hist.setSubhash(this.constructor._HASH_KEY, null);
 	}
 
-	_render_groupAndDifficulty({ rdState, $parentGroupAndDifficulty }) {
-		super._render_groupAndDifficulty({ rdState, $parentGroupAndDifficulty });
+	_render_groupAndDifficulty ({rdState, $parentGroupAndDifficulty}) {
+		super._render_groupAndDifficulty({rdState, $parentGroupAndDifficulty});
 
 		const $btnSaveToUrl = $(`<button class="ve-btn ve-btn-default ve-btn-xs mr-2">Save to URL</button>`)
-			.click(() => this._sublistManager.pHandleClick_download({ isUrl: true, $eleCopyEffect: $btnSaveToUrl }));
+			.click(() => this._sublistManager.pHandleClick_download({isUrl: true, $eleCopyEffect: $btnSaveToUrl}));
 		const $btnSaveToFile = $(`<button class="ve-btn ve-btn-default ve-btn-xs">Save to File</button>`)
 			.click(() => this._sublistManager.pHandleClick_download());
 		const $btnLoadFromFile = $(`<button class="ve-btn ve-btn-default ve-btn-xs">Load from File</button>`)
-			.click(evt => this._sublistManager.pHandleClick_upload({ isAdditive: evt.shiftKey }));
+			.click(evt => this._sublistManager.pHandleClick_upload({isAdditive: evt.shiftKey}));
 		const $btnCopyAsText = $(`<button class="ve-btn ve-btn-default ve-btn-xs mr-2" title="SHIFT for Multi-Line Format">Copy as Text</button>`).click((evt) => this._handleClickCopyAsText(evt));
 		const $btnReset = $(`<button class="ve-btn ve-btn-danger ve-btn-xs" title="SHIFT to Reset Players">Reset</button>`)
 			.click((evt) => this._sublistManager.pHandleClick_new(evt));
@@ -98,7 +98,7 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 				${$btnCopyAsText}
 				${$btnReset}
 			</div>
-
+	
 			<div class="ve-flex">
 				${$btnBackToStatblocks}
 			</div>
@@ -108,7 +108,7 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 
 	/* -------------------------------------------- */
 
-	withSublistSyncSuppressed(fn) {
+	withSublistSyncSuppressed (fn) {
 		try {
 			this._isSuspendSyncToSublist = true;
 			fn();
@@ -120,12 +120,12 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 	/**
 	 * On encounter builder state change, save to the sublist
 	 */
-	_render_hk_doUpdateExternalStates() {
+	_render_hk_doUpdateExternalStates () {
 		if (this._isSuspendSyncToSublist) return;
 		this._render_hk_pDoUpdateExternalStates().then(null);
 	}
 
-	async _render_hk_pDoUpdateExternalStates() {
+	async _render_hk_pDoUpdateExternalStates () {
 		try {
 			await this._lock.pLock();
 			await this._render_hk_pDoUpdateExternalStates_();
@@ -134,15 +134,15 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 		}
 	}
 
-	async _render_hk_pDoUpdateExternalStates_() {
-		const nxtState = await this._sublistManager.pGetExportableSublist({ isMemoryOnly: true });
+	async _render_hk_pDoUpdateExternalStates_ () {
+		const nxtState = await this._sublistManager.pGetExportableSublist({isMemoryOnly: true});
 		Object.assign(nxtState, this._comp.getSublistPluginState());
-		await this._sublistManager.pDoLoadExportedSublist(nxtState, { isMemoryOnly: true });
+		await this._sublistManager.pDoLoadExportedSublist(nxtState, {isMemoryOnly: true});
 	}
 
 	/* -------------------------------------------- */
 
-	onSublistChange({ $dispCrTotal }) {
+	onSublistChange ({$dispCrTotal}) {
 		const encounterXpInfo = EncounterBuilderCreatureMeta.getEncounterXpInfo(this._comp.creatureMetas, this._getPartyMeta());
 
 		const monCount = this._sublistManager.sublistItems.map(it => it.data.count).sum();
@@ -151,21 +151,21 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 
 	/* -------------------------------------------- */
 
-	resetCache() { this._cache.reset(); }
+	resetCache () { this._cache.reset(); }
 
-	isActive() {
+	isActive () {
 		return Hist.getSubHash(this.constructor._HASH_KEY) === "true";
 	}
 
-	_showBuilder() {
+	_showBuilder () {
 		this._cachedTitle = this._cachedTitle || document.title;
-		document.title = "Encounter Builder - 2etools";
+		document.title = "Encounter Builder - 5etools";
 		$(document.body).addClass("best__ecgen-active");
 		this._bestiaryPage.doDeselectAll();
 		this._sublistManager.doSublistDeselectAll();
 	}
 
-	_hideBuilder() {
+	_hideBuilder () {
 		if (this._cachedTitle) {
 			document.title = this._cachedTitle;
 			this._cachedTitle = null;
@@ -173,25 +173,25 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 		$(document.body).removeClass("best__ecgen-active");
 	}
 
-	_handleClick({ evt, mode, entity }) {
+	_handleClick ({evt, mode, entity}) {
 		if (mode === "add") {
-			return this._sublistManager.pDoSublistAdd({ entity, doFinalize: true, addCount: evt.shiftKey ? 5 : 1 });
+			return this._sublistManager.pDoSublistAdd({entity, doFinalize: true, addCount: evt.shiftKey ? 5 : 1});
 		}
 
-		return this._sublistManager.pDoSublistSubtract({ entity, subtractCount: evt.shiftKey ? 5 : 1 });
+		return this._sublistManager.pDoSublistSubtract({entity, subtractCount: evt.shiftKey ? 5 : 1});
 	}
 
-	async _pHandleShuffleClick({ evt, sublistItem }) {
-		const creatureMeta = EncounterBuilderHelpers.getSublistedCreatureMeta({ sublistItem });
-		this._doShuffle({ creatureMeta });
+	async _pHandleShuffleClick ({evt, sublistItem}) {
+		const creatureMeta = EncounterBuilderHelpers.getSublistedCreatureMeta({sublistItem});
+		this._doShuffle({creatureMeta});
 	}
 
-	handleSubhash() {
+	handleSubhash () {
 		if (Hist.getSubHash(this.constructor._HASH_KEY) === "true") this._showBuilder();
 		else this._hideBuilder();
 	}
 
-	async doStatblockMouseOver({ evt, ele, source, hash, customHashId }) {
+	async doStatblockMouseOver ({evt, ele, source, hash, customHashId}) {
 		return Renderer.hover.pHandleLinkMouseOver(
 			evt,
 			ele,
@@ -204,7 +204,7 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 		);
 	}
 
-	static getTokenHoverMeta(mon) {
+	static getTokenHoverMeta (mon) {
 		if (!Renderer.monster.hasToken(mon)) return null;
 
 		return Renderer.hover.getMakePredefinedHover(
@@ -218,26 +218,26 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 					hoverTitle: `Token \u2014 ${mon.name}`,
 				},
 			},
-			{ isBookContent: true },
+			{isBookContent: true},
 		);
 	}
 
-	static _getFauxMon(name, source, scaledTo) {
-		return { name, source, _isScaledCr: scaledTo != null, _scaledCr: scaledTo };
+	static _getFauxMon (name, source, scaledTo) {
+		return {name, source, _isScaledCr: scaledTo != null, _scaledCr: scaledTo};
 	}
 
-	async pDoCrChange($iptCr, monScaled, scaledTo) {
+	async pDoCrChange ($iptCr, monScaled, scaledTo) {
 		if (!$iptCr) return; // Should never occur, but if the creature has a non-adjustable CR, this field will not exist
 
 		try {
 			await this._lock.pLock();
-			await this._pDoCrChange({ $iptCr, monScaled, scaledTo });
+			await this._pDoCrChange({$iptCr, monScaled, scaledTo});
 		} finally {
 			this._lock.unlock();
 		}
 	}
 
-	async _pDoCrChange({ $iptCr, monScaled, scaledTo }) {
+	async _pDoCrChange ({$iptCr, monScaled, scaledTo}) {
 		// Fetch original
 		const mon = await DataLoader.pCacheAndGetHash(
 			UrlUtil.PG_BESTIARY,
@@ -262,7 +262,7 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 
 		if (targetCrNum === scaledTo) return;
 
-		const state = await this._sublistManager.pGetExportableSublist({ isForceIncludePlugins: true, isMemoryOnly: true });
+		const state = await this._sublistManager.pGetExportableSublist({isForceIncludePlugins: true, isMemoryOnly: true});
 		const toFindHash = UrlUtil.autoEncodeHash(mon);
 
 		const toFindUid = !(scaledTo == null || baseCrNum === scaledTo) ? Renderer.monster.getCustomHashId(this.constructor._getFauxMon(mon.name, mon.source, scaledTo)) : null;
@@ -289,10 +289,10 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 			else state.items[ixCurrItem].customHashId = Renderer.monster.getCustomHashId(this.constructor._getFauxMon(mon.name, mon.source, targetCrNum));
 		}
 
-		await this._sublistManager.pDoLoadExportedSublist(state, { isMemoryOnly: true });
+		await this._sublistManager.pDoLoadExportedSublist(state, {isMemoryOnly: true});
 	}
 
-	getButtons(monId) {
+	getButtons (monId) {
 		return e_({
 			tag: "span",
 			clazz: `best-ecgen__visible ve-col-1 no-wrap pl-0 ve-btn-group`,
@@ -305,7 +305,7 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 					tag: "button",
 					title: `Add (SHIFT for 5)`,
 					clazz: `ve-btn ve-btn-success ve-btn-xs best-ecgen__btn-list`,
-					click: evt => this._handleClick({ evt, entity: this._bestiaryPage.dataList_[monId], mode: "add" }),
+					click: evt => this._handleClick({evt, entity: this._bestiaryPage.dataList_[monId], mode: "add"}),
 					children: [
 						e_({
 							tag: "span",
@@ -317,7 +317,7 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 					tag: "button",
 					title: `Subtract (SHIFT for 5)`,
 					clazz: `ve-btn ve-btn-danger ve-btn-xs best-ecgen__btn-list`,
-					click: evt => this._handleClick({ evt, entity: this._bestiaryPage.dataList_[monId], mode: "subtract" }),
+					click: evt => this._handleClick({evt, entity: this._bestiaryPage.dataList_[monId], mode: "subtract"}),
 					children: [
 						e_({
 							tag: "span",
@@ -329,18 +329,18 @@ export class EncounterBuilderUiBestiary extends EncounterBuilderUi {
 		});
 	}
 
-	getSublistButtonsMeta(sublistItem) {
+	getSublistButtonsMeta (sublistItem) {
 		const $btnAdd = $(`<button title="Add (SHIFT for 5)" class="ve-btn ve-btn-success ve-btn-xs best-ecgen__btn-list"><span class="glyphicon glyphicon-plus"></span></button>`)
-			.click(evt => this._handleClick({ evt, entity: sublistItem.data.entity, mode: "add" }));
+			.click(evt => this._handleClick({evt, entity: sublistItem.data.entity, mode: "add"}));
 
 		const $btnSub = $(`<button title="Subtract (SHIFT for 5)" class="ve-btn ve-btn-danger ve-btn-xs best-ecgen__btn-list"><span class="glyphicon glyphicon-minus"></span></button>`)
-			.click(evt => this._handleClick({ evt, entity: sublistItem.data.entity, mode: "subtract" }));
+			.click(evt => this._handleClick({evt, entity: sublistItem.data.entity, mode: "subtract"}));
 
 		const $btnRandomize = $(`<button title="Randomize Monster" class="ve-btn ve-btn-default ve-btn-xs best-ecgen__btn-list"><span class="glyphicon glyphicon-random"></span></button>`)
-			.click(evt => this._pHandleShuffleClick({ evt, sublistItem }));
+			.click(evt => this._pHandleShuffleClick({evt, sublistItem}));
 
 		const $btnLock = $(`<button title="Lock Monster against Randomizing/Adjusting" class="ve-btn ve-btn-default ve-btn-xs best-ecgen__btn-list"><span class="glyphicon glyphicon-lock"></span></button>`)
-			.click(() => this._sublistManager.pSetDataEntry({ sublistItem, key: "isLocked", value: !sublistItem.data.isLocked }))
+			.click(() => this._sublistManager.pSetDataEntry({sublistItem, key: "isLocked", value: !sublistItem.data.isLocked}))
 			.toggleClass("active", sublistItem.data.isLocked);
 
 		const $wrp = $$`<span class="best-ecgen__visible ve-col-1-5 no-wrap pl-0 ve-btn-group">

@@ -1,6 +1,6 @@
 import {FilterItem} from "../filter-item.js";
 import {FilterBase} from "./filter-filter-base.js";
-import {MISC_FILTER_VALUE__BASIC_RULES_2014, MISC_FILTER_VALUE__FREE_RULES_2024, PILL_STATE__IGNORE, PILL_STATE__NO, PILL_STATE__YES, PILL_STATES} from "../filter-constants.js";
+import {MISC_FILTER_VALUE__BASIC_RULES_2014, MISC_FILTER_VALUE__BASIC_RULES_2024, MISC_FILTER_VALUE__SRD_5_1, MISC_FILTER_VALUE__SRD_5_2, PILL_STATE__IGNORE, PILL_STATE__NO, PILL_STATE__YES, PILL_STATES} from "../filter-constants.js";
 
 class FilterTransientOptions {
 	/**
@@ -77,7 +77,8 @@ export class Filter extends FilterBase {
 		this._isSortByDisplayItems = !!opts.isSortByDisplayItems;
 		this._pFnOnChange = opts.pFnOnChange;
 		this._isReprintedFilter = !!opts.isMiscFilter && this._items.some(it => it.item === "Reprinted");
-		this._isBasicRulesFilter = !!opts.isMiscFilter && this._items.some(it => it.item === MISC_FILTER_VALUE__BASIC_RULES_2014 || it.item === MISC_FILTER_VALUE__FREE_RULES_2024);
+		this._isSrdFilter = !!opts.isMiscFilter && this._items.some(it => it.item === MISC_FILTER_VALUE__SRD_5_1 || it.item === MISC_FILTER_VALUE__SRD_5_2);
+		this._isBasicRulesFilter = !!opts.isMiscFilter && this._items.some(it => it.item === MISC_FILTER_VALUE__BASIC_RULES_2014 || it.item === MISC_FILTER_VALUE__BASIC_RULES_2024);
 
 		Filter._validateItemNests(this._items, this._nests);
 
@@ -96,6 +97,7 @@ export class Filter extends FilterBase {
 	}
 
 	get isReprintedFilter () { return this._isReprintedFilter; }
+	get isSrdFilter () { return this._isSrdFilter; }
 	get isBasicRulesFilter () { return this._isBasicRulesFilter; }
 
 	getSaveableState () {

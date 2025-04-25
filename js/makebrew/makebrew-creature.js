@@ -87,8 +87,10 @@ export class CreatureBuilder extends BuilderBase {
 		}
 
 		delete creature.otherSources;
+		delete creature.srd;
+		delete creature.srd52;
 		delete creature.basicRules;
-		delete creature.freeRules2024;
+		delete creature.basicRules2024;
 		delete creature.altArt;
 		delete creature.hasToken;
 		delete creature.uniqueId;
@@ -1992,7 +1994,7 @@ export class CreatureBuilder extends BuilderBase {
 		if (this._state.senses && this._state.senses.length) $iptSenses.val(this._state.senses.join(", "));
 
 		const menu = ContextUtil.getMenu(
-			Parser.SENSES
+			Parser.getSenses()
 				.map(({name: sense}) => {
 					return new ContextUtil.Action(
 						sense.uppercaseFirst(),

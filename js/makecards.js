@@ -20,13 +20,13 @@ class MakeCards extends BaseComponent {
 
 		this._list = null;
 
-		this._modalFilterItems = new ModalFilterItems({ namespace: "makecards.items" });
-		this._modalFilterBestiary = new ModalFilterBestiary({ namespace: "makecards.bestiary" });
-		this._modalFilterSpells = new ModalFilterSpells({ namespace: "makecards.spells" });
-		this._modalFilterRaces = new ModalFilterRaces({ namespace: "makecards.race" });
-		this._modalFilterBackgrounds = new ModalFilterBackgrounds({ namespace: "makecards.background" });
-		this._modalFilterFeats = new ModalFilterFeats({ namespace: "makecards.feat" });
-		this._modalFilterOptionalFeatures = new ModalFilterOptionalFeatures({ namespace: "makecards.optionalfeatures" });
+		this._modalFilterItems = new ModalFilterItems({namespace: "makecards.items"});
+		this._modalFilterBestiary = new ModalFilterBestiary({namespace: "makecards.bestiary"});
+		this._modalFilterSpells = new ModalFilterSpells({namespace: "makecards.spells"});
+		this._modalFilterRaces = new ModalFilterRaces({namespace: "makecards.race"});
+		this._modalFilterBackgrounds = new ModalFilterBackgrounds({namespace: "makecards.background"});
+		this._modalFilterFeats = new ModalFilterFeats({namespace: "makecards.feat"});
+		this._modalFilterOptionalFeatures = new ModalFilterOptionalFeatures({namespace: "makecards.optionalfeatures"});
 
 		this._doSaveStateDebounced = MiscUtil.debounce(() => this._pDoSaveState(), 50);
 	}
@@ -105,7 +105,7 @@ class MakeCards extends BaseComponent {
 			.click(evt => ContextUtil.pOpenMenu(evt, menuSearch));
 		const $btnReset = $(`<button class="ve-btn ve-btn-danger mr-2"><span class="glyphicon glyphicon-trash"></span> Reset</button>`)
 			.click(async () => {
-				if (!await InputUiUtil.pGetUserBoolean({ title: "Reset", htmlDescription: "Are you sure?", textYes: "Yes", textNo: "Cancel" })) return;
+				if (!await InputUiUtil.pGetUserBoolean({title: "Reset", htmlDescription: "Are you sure?", textYes: "Yes", textNo: "Cancel"})) return;
 				this._list.removeAllItems();
 				this._list.update();
 				this._doSaveStateDebounced();
@@ -124,7 +124,7 @@ class MakeCards extends BaseComponent {
 						tags: entityMeta.fnGetTags(it.values.entity),
 					};
 				});
-				DataUtil.userDownload("rpg-cards", toDownload, { isSkipAdditionalMetadata: true });
+				DataUtil.userDownload("rpg-cards", toDownload, {isSkipAdditionalMetadata: true});
 			});
 		$$`<div class="w-100 no-shrink ve-flex-v-center mb-3">${$iptSearch}${$btnAdd}${$btnReset}${$btnExport}</div>`.appendTo($wrpContainer);
 		// endregion
@@ -133,7 +133,7 @@ class MakeCards extends BaseComponent {
 		const getSelCards = () => {
 			const out = this._list.visibleItems.filter(it => it.data.$cbSel.prop("checked"));
 			if (!out.length) {
-				JqueryUtil.doToast({ content: "Please select some cards first!", type: "warning" });
+				JqueryUtil.doToast({content: "Please select some cards first!", type: "warning"});
 				return null;
 			}
 			return out;
@@ -145,7 +145,7 @@ class MakeCards extends BaseComponent {
 				async () => {
 					const sel = getSelCards();
 					if (!sel) return;
-					const rgb = await InputUiUtil.pGetUserColor({ default: MiscUtil.randomColor() });
+					const rgb = await InputUiUtil.pGetUserColor({default: MiscUtil.randomColor()});
 					if (rgb) sel.forEach(it => it.data.setColor(rgb));
 				},
 			),
@@ -196,7 +196,7 @@ class MakeCards extends BaseComponent {
 		const $wrpList = $(`<div class="w-100 h-100"></div>`);
 		$$`<div class="ve-flex-col h-100 w-100 ve-overflow-y-auto mt-2 ve-overflow-x-hidden">${$wrpList}</div>`.appendTo($wrpContainer);
 
-		this._list = new List({ $iptSearch, $wrpList, isUseJquery: true });
+		this._list = new List({$iptSearch, $wrpList, isUseJquery: true});
 		this._list.init();
 		// endregion
 	}
@@ -225,7 +225,7 @@ class MakeCards extends BaseComponent {
 					return this._doSaveStateDebounced();
 				}
 
-				const listItem = await this._pGetListItem({ page: fromSearch.page, source: fromSearch.source, hash: fromSearch.hash, entityType }, true);
+				const listItem = await this._pGetListItem({page: fromSearch.page, source: fromSearch.source, hash: fromSearch.hash, entityType}, true);
 				this._list.addItem(listItem);
 				this._list.update();
 				this._doSaveStateDebounced();
@@ -256,7 +256,7 @@ class MakeCards extends BaseComponent {
 				const len = selected.length;
 				for (let i = 0; i < len; ++i) {
 					const filterListItem = selected[i];
-					const listItem = await this._pGetListItem({ page: type.page, source: filterListItem.values.sourceJson, hash: filterListItem.values.hash, entityType }, true);
+					const listItem = await this._pGetListItem({page: type.page, source: filterListItem.values.sourceJson, hash: filterListItem.values.hash, entityType}, true);
 					this._list.addItem(listItem);
 				}
 				this._list.update();
@@ -273,12 +273,12 @@ class MakeCards extends BaseComponent {
 				const pinnedList = await StorageUtil.pGet(storageKey);
 
 				if (!(pinnedList && pinnedList.items && pinnedList.items.length)) {
-					return JqueryUtil.doToast({ content: "Nothing to add! Please visit the page and add/pin some data first.", type: "warning" });
+					return JqueryUtil.doToast({content: "Nothing to add! Please visit the page and add/pin some data first.", type: "warning"});
 				}
 
 				const listItems = await Promise.all(pinnedList.items.map(it => {
 					const [_, source] = it.h.split(HASH_PART_SEP)[0].split(HASH_LIST_SEP);
-					return this._pGetListItem({ page: type.page, source, hash: it.h, entityType }, true);
+					return this._pGetListItem({page: type.page, source, hash: it.h, entityType}, true);
 				}));
 
 				listItems.forEach(it => this._list.addItem(it));
@@ -293,14 +293,14 @@ class MakeCards extends BaseComponent {
 		const kIcon = `icon_${entityType}`;
 		const color = this._state[kColor];
 		const icon = this._state[kIcon];
-		return { color, icon };
+		return {color, icon};
 	}
 
 	async _pGetListItem (cardMeta, isNewCard) {
 		const uid = CryptUtil.uid();
 
 		if (isNewCard) {
-			const { color, icon } = this._getStateForType(cardMeta.entityType);
+			const {color, icon} = this._getStateForType(cardMeta.entityType);
 			cardMeta.color = cardMeta.color || color;
 			cardMeta.icon = cardMeta.icon || icon;
 		}
@@ -334,7 +334,7 @@ class MakeCards extends BaseComponent {
 
 		const $iptCount = $(`<input class="form-control form-control--minimal input-xs ve-text-center">`)
 			.change(() => {
-				const asNum = UiUtil.strToInt($iptCount.val(), 1, { min: 1, fallbackOnNaN: 1 });
+				const asNum = UiUtil.strToInt($iptCount.val(), 1, {min: 1, fallbackOnNaN: 1});
 				listItem.values.count = asNum;
 				$iptCount.val(asNum);
 				this._doSaveStateDebounced();
@@ -380,7 +380,7 @@ class MakeCards extends BaseComponent {
 
 		const $ele = $$`<label class="ve-flex-v-center my-1 w-100 lst__row lst__row-border lst__row-inner">
 			<div class="ve-col-1 mr-2 ve-flex-vh-center">${$cbSel}</div>
-			<div class="ve-col-3 mr-2 ve-flex-v-center">${Renderer.get().render(`{@${Parser.getPropTag(cardMeta.entityType)} ${DataUtil.proxy.getUid(loaded.__prop, loaded, { isMaintainCase: true })}}`)}</div>
+			<div class="ve-col-3 mr-2 ve-flex-v-center">${Renderer.get().render(`{@${Parser.getPropTag(cardMeta.entityType)} ${DataUtil.proxy.getUid(loaded.__prop, loaded, {isMaintainCase: true})}}`)}</div>
 			<div class="ve-col-1-5 mr-2 ve-flex-vh-center ${Parser.sourceJsonToSourceClassname(loaded.source)}" title="${Parser.sourceJsonToFull(loaded.source)}" ${Parser.sourceJsonToStyle(loaded.source)}>${Parser.sourceJsonToAbv(loaded.source)}</div>
 			<div class="ve-col-1-5 mr-2 ve-flex-vh-center">${Parser.getPropDisplayName(cardMeta.entityType)}</div>
 			<div class="ve-col-1-1 mr-2 ve-flex-vh-center">${$iptRgb}</div>
@@ -448,7 +448,7 @@ class MakeCards extends BaseComponent {
 			entsReaction,
 			entsLegendaryAction,
 			entsMythicAction,
-		} = Renderer.monster.getSubEntries(mon, { renderer });
+		} = Renderer.monster.getSubEntries(mon, {renderer});
 
 		return [
 			this._ct_subtitle(Renderer.monster.getTypeAlignmentPart(mon)),
@@ -467,7 +467,7 @@ class MakeCards extends BaseComponent {
 			mon.resist ? this._ct_property("Damage Resistances", this._ct_htmlToText(Parser.getFullImmRes(mon.resist))) : null,
 			mon.immune ? this._ct_property("Damage Immunities", this._ct_htmlToText(Parser.getFullImmRes(mon.immune))) : null,
 			mon.conditionImmune ? this._ct_property("Condition Immunities", this._ct_htmlToText(Parser.getFullCondImm(mon.conditionImmune))) : null,
-			this._ct_property("Senses", this._ct_htmlToText(Renderer.monster.getSensesPart(mon, { isForcePassive: true }))),
+			this._ct_property("Senses", this._ct_htmlToText(Renderer.monster.getSensesPart(mon, {isForcePassive: true}))),
 			this._ct_property("Languages", this._ct_htmlToText(Renderer.monster.getRenderedLanguages(mon.languages))),
 			this._ct_property("Challenge", this._ct_htmlToText(Renderer.monster.getChallengeRatingPart(mon))),
 			this._ct_rule(),
@@ -479,10 +479,10 @@ class MakeCards extends BaseComponent {
 			entsReaction?.length ? this._ct_section("Reactions") : null,
 			...(entsReaction?.length ? this._ct_renderEntries(entsReaction, 2) : []),
 			entsLegendaryAction?.length ? this._ct_section("Legendary Actions") : null,
-			entsLegendaryAction?.length ? this._ct_text(this._ct_htmlToText(Renderer.monster.getLegendaryActionIntro(mon, { renderer }))) : null,
+			entsLegendaryAction?.length ? this._ct_text(this._ct_htmlToText(Renderer.monster.getLegendaryActionIntro(mon, {renderer}))) : null,
 			...(entsLegendaryAction?.length ? this._ct_renderEntries(entsLegendaryAction, 2) : []),
 			entsMythicAction?.length ? this._ct_section("Mythic Actions") : null,
-			entsMythicAction ? this._ct_text(this._ct_htmlToText(Renderer.monster.getSectionIntro(mon, { renderer, prop: "mythic" }))) : null,
+			entsMythicAction ? this._ct_text(this._ct_htmlToText(Renderer.monster.getSectionIntro(mon, {renderer, prop: "mythic"}))) : null,
 			...(entsMythicAction?.length ? this._ct_renderEntries(entsMythicAction, 2) : []),
 		].filter(Boolean);
 	}
@@ -504,8 +504,8 @@ class MakeCards extends BaseComponent {
 			this._ct_rule(),
 			this._ct_property("Casting Time", Parser.spTimeListToFull(sp.time, sp.meta)),
 			this._ct_property("Range", Parser.spRangeToFull(sp.range)),
-			this._ct_property("Components", Parser.spComponentsToFull(sp.components, sp.level, { isPlainText: true })),
-			this._ct_property("Duration", Parser.spDurationToFull(sp.duration, { isPlainText: true })),
+			this._ct_property("Components", Parser.spComponentsToFull(sp.components, sp.level, {isPlainText: true})),
+			this._ct_property("Duration", Parser.spDurationToFull(sp.duration, {isPlainText: true})),
 			this._ct_rule(),
 			...this._ct_renderEntries(sp.entries, 2),
 			...(higherLevel || []),
@@ -517,7 +517,7 @@ class MakeCards extends BaseComponent {
 
 		const [typeRarityText, subTypeText, tierText] = Renderer.item.getTypeRarityAndAttunementText(item);
 		const [ptDamage, ptProperties] = Renderer.item.getRenderedDamageAndProperties(item);
-		const ptMastery = Renderer.item.getRenderedMastery(item, { isSkipPrefix: true });
+		const ptMastery = Renderer.item.getRenderedMastery(item, {isSkipPrefix: true});
 		const ptWeight = Parser.itemWeightToFull(item);
 		const ptValue = Parser.itemValueToFullMultiCurrency(item);
 		const ptDamageCt = this._ct_htmlToText(ptDamage);
@@ -566,9 +566,9 @@ class MakeCards extends BaseComponent {
 	static _getCardContents_feat (feat) {
 		const prerequisite = Renderer.feat.getJoinedCategoryPrerequisites(
 			feat.category,
-			Renderer.utils.prerequisite.getHtml(feat.prerequisite, { isListMode: true }),
+			Renderer.utils.prerequisite.getHtml(feat.prerequisite, {isListMode: true}),
 		);
-		const ptRepeatable = Renderer.utils.getRepeatableHtml(feat, { isListMode: true });
+		const ptRepeatable = Renderer.utils.getRepeatableHtml(feat, {isListMode: true});
 		Renderer.feat.initFullEntries(feat);
 		return [
 			(prerequisite && prerequisite !== "\u2014") ? this._ct_property("Type/Prerequisites", prerequisite) : null,
@@ -579,7 +579,7 @@ class MakeCards extends BaseComponent {
 	}
 
 	static _getCardContents_optionalfeature (optfeat) {
-		const prerequisite = Renderer.utils.prerequisite.getHtml(optfeat.prerequisite, { isListMode: true });
+		const prerequisite = Renderer.utils.prerequisite.getHtml(optfeat.prerequisite, {isListMode: true});
 		Renderer.feat.initFullEntries(optfeat);
 		return [
 			prerequisite ? this._ct_property("Prerequisites", prerequisite) : null,
@@ -647,7 +647,7 @@ class MakeCards extends BaseComponent {
 
 			const $btnOk = $(`<button class="ve-btn ve-btn-default">Confirm</button>`)
 				.click(() => doClose(true));
-			const { $modalInner, doClose } = UiUtil.getShowModal({
+			const {$modalInner, doClose} = UiUtil.getShowModal({
 				title: "Enter Icon",
 				isMinHeight0: true,
 				cbClose: (isDataEntered) => {
@@ -882,7 +882,7 @@ MakeCards.utils = class {
 		delete item._fullEntries;
 
 		if (item.type) {
-			const { abbreviation, source } = DataUtil.itemType.unpackUid(item.type, { isLower: true });
+			const {abbreviation, source} = DataUtil.itemType.unpackUid(item.type, {isLower: true});
 			const fromCustom = MiscUtil.get(MakeCards.utils._itemTypeMap, source, abbreviation);
 			if (fromCustom || Renderer.item.getType(item.type)) {
 				Renderer.item._initFullEntries(item);
@@ -893,7 +893,7 @@ MakeCards.utils = class {
 		if (item.property) {
 			item.property.forEach(p => {
 				const uid = p?.uid || p;
-				const { abbreviation, source } = DataUtil.itemProperty.unpackUid(uid, { isLower: true });
+				const {abbreviation, source} = DataUtil.itemProperty.unpackUid(uid, {isLower: true});
 
 				const fromCustom = MiscUtil.get(MakeCards.utils._itemPropertyMap, source, abbreviation);
 				if (fromCustom) {

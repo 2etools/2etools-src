@@ -20,7 +20,7 @@
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "yards",
+					"type": "feet",
 					"amount": 60
 				}
 			},
@@ -8005,6 +8005,9 @@
 		},
 		{
 			"name": "Fire Bolt",
+			"alias": [
+				"Firebolt"
+			],
 			"source": "PHB",
 			"page": 242,
 			"srd": true,

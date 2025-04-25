@@ -104,6 +104,9 @@
 				"MA",
 				"RA"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluffImages": true,
 			"_versions": [
@@ -289,7 +292,7 @@
 				{
 					"name": "Slam",
 					"entries": [
-						"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}Force damage equal to {@damage 1d4 + 3} + your spellcasting ability modifier (Medium or smaller), {@damage 2d6 + 3} + your spellcasting ability modifier (Large), or {@damage 2d12 + 3} + your spellcasting ability modifier (Huge)."
+						"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}Force damage equal to {@damage 1d4 + 3}, {@damage 2d6 + 3} + your spellcasting ability modifier (Large), or {@damage 2d12 + 3} + your spellcasting ability modifier (Huge)."
 					]
 				}
 			],
@@ -991,6 +994,9 @@
 			"miscTags": [
 				"MA"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluffImages": true,
 			"_versions": [
@@ -1149,6 +1155,9 @@
 			],
 			"miscTags": [
 				"MA"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -1539,6 +1548,9 @@
 			"conditionInflict": [
 				"charmed"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluffImages": true,
 			"_versions": [
@@ -1653,7 +1665,7 @@
 				{
 					"name": "Magic Resistance",
 					"entries": [
-						"The spirit has Advantage on saving throws against spells and other magical eff ects."
+						"The spirit has Advantage on saving throws against spells and other magical effects."
 					]
 				}
 			],
@@ -1699,6 +1711,9 @@
 			"miscTags": [
 				"MA",
 				"RA"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluffImages": true,
@@ -1850,6 +1865,7 @@
 			"name": "Giant Insect",
 			"source": "XPHB",
 			"page": 279,
+			"srd52": true,
 			"summonedBySpell": "Giant Insect|XPHB",
 			"summonedBySpellLevel": 4,
 			"size": [
@@ -1942,6 +1958,9 @@
 			],
 			"conditionInflict": [
 				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluffImages": true,
@@ -2098,6 +2117,9 @@
 			"conditionInflict": [
 				"frightened"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluffImages": true
 		},
@@ -2216,6 +2238,9 @@
 				"frightened",
 				"paralyzed",
 				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluffImages": true,

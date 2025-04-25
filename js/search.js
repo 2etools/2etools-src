@@ -73,6 +73,7 @@ class SearchPage {
 			btnToggleUa,
 			btnToggleBlocklisted,
 			btnToggleLegacy,
+			btnToggleSrd,
 		] = OmnisearchConsts.BTN_METAS
 			.map(btnMeta => this._render_$getBtnToggleFilter({btnMeta}));
 
@@ -109,6 +110,9 @@ class SearchPage {
 					<div class="ve-flex-v-center ve-btn-group mr-2 mobile__mb-2 mobile__mr-0">
 						${btnToggleBlocklisted}
 						${btnToggleLegacy}
+					</div>
+					<div class="ve-flex-v-center mr-2 mobile__mb-2 mobile__mr-0">
+						${btnToggleSrd}
 					</div>
 					<div class="ve-btn-group ve-flex-v-center">
 						${$btnCollapseAll}
@@ -179,6 +183,8 @@ class SearchPage {
 						isHoverable,
 						category,
 						hash,
+						isSrd,
+						isSrd52,
 
 						ptStyle,
 						sourceAbv,
@@ -191,8 +197,11 @@ class SearchPage {
 						? `<a href="${adventureBookSourceHref}">${ptPageInner}</a>`
 						: ptPageInner;
 
+					const ptSrd = isSrd ? `<span class="ve-muted relative help-subtle pg-search__disp-srd" title="Available in the Systems Reference Document (5.1)">[SRD]</span>` : "";
+					const ptSrd52 = isSrd52 ? `<span class="ve-muted relative help-subtle pg-search__disp-srd" title="Available in the Systems Reference Document (5.2)">[SRD]</span>` : "";
+
 					const ptSourceInner = source
-						? `<i>${sourceFull}</i> (<span class="${Parser.sourceJsonToSourceClassname(source)}" ${ptStyle}>${sourceAbv}</span>)${Parser.sourceJsonToMarkerHtml(source, {isList: false, additionalStyles: "pg-search__disp-source-marker"})}`
+						? `<i>${sourceFull}</i> (<span class="${Parser.sourceJsonToSourceClassname(source)}" ${ptStyle}>${sourceAbv}</span>)${ptSrd}${ptSrd52}${Parser.sourceJsonToMarkerHtml(source, {isList: false, additionalStyles: "pg-search__disp-source-marker"})}`
 						: `<span></span>`;
 					const ptSource = ptPage || !adventureBookSourceHref
 						? ptSourceInner

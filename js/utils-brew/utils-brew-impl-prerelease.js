@@ -1,4 +1,4 @@
-import { BrewUtil2Base } from "./utils-brew-base.js";
+import {BrewUtil2Base} from "./utils-brew-base.js";
 
 export class PrereleaseUtil_ extends BrewUtil2Base {
 	_STORAGE_KEY_LEGACY = null;
@@ -51,15 +51,15 @@ export class PrereleaseUtil_ extends BrewUtil2Base {
 	pGetEditableBrewDoc (brew) { return super.pGetEditableBrewDoc(brew); }
 	pGetOrCreateEditableBrewDoc () { return super.pGetOrCreateEditableBrewDoc(); }
 	pSetEditableBrewDoc () { return super.pSetEditableBrewDoc(); }
-	pGetEditableBrewEntity (prop, uniqueId, { isDuplicate = false } = {}) { return super.pGetEditableBrewEntity(prop, uniqueId, { isDuplicate }); }
+	pGetEditableBrewEntity (prop, uniqueId, {isDuplicate = false} = {}) { return super.pGetEditableBrewEntity(prop, uniqueId, {isDuplicate}); }
 	pPersistEditableBrewEntity (prop, ent) { return super.pPersistEditableBrewEntity(prop, ent); }
 	pRemoveEditableBrewEntity (prop, uniqueId) { return super.pRemoveEditableBrewEntity(prop, uniqueId); }
 	pAddSource (sourceObj) { return super.pAddSource(sourceObj); }
 	pEditSource (sourceObj) { return super.pEditSource(sourceObj); }
 	pIsEditableSourceJson (sourceJson) { return super.pIsEditableSourceJson(sourceJson); }
 	pMoveOrCopyToEditableBySourceJson (sourceJson) { return super.pMoveOrCopyToEditableBySourceJson(sourceJson); }
-	pMoveToEditable ({ brews }) { return super.pMoveToEditable({ brews }); }
-	pCopyToEditable ({ brews }) { return super.pCopyToEditable({ brews }); }
+	pMoveToEditable ({brews}) { return super.pMoveToEditable({brews}); }
+	pCopyToEditable ({brews}) { return super.pCopyToEditable({brews}); }
 	async pHasEditableSourceJson () { return false; }
 
 	// endregion

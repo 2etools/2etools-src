@@ -155,7 +155,7 @@ export class BrewDocContentMigrator {
 				const [scfRefsLowLevel, scfRefsOther] = (sc.subclassFeatures || [])
 					.segregate(scfRef => {
 						const uid = scfRef.subclassFeature || scfRef;
-						const unpacked = DataUtil.class.unpackUidSubclassFeature(uid, { isLower: true });
+						const unpacked = DataUtil.class.unpackUidSubclassFeature(uid, {isLower: true});
 						return unpacked.level < this._MIN_SUBCLASS_FEATURE_LEVEL && unpacked.classSource !== VeCt.STR_GENERIC.toLowerCase();
 					});
 
@@ -230,9 +230,9 @@ export class BrewDocContentMigrator {
 			.filter(uid => typeof uid === "string")
 			.map(it => it.trim())
 			.filter(Boolean)
-			.map(uid => DataUtil.proxy.unpackUid("spell", uid, "spell", { isLower: true }))
+			.map(uid => DataUtil.proxy.unpackUid("spell", uid, "spell", {isLower: true}))
 			.filter(unpacked => unpacked.source === Parser.SRC_PHB.toLowerCase())
-			.map(unpacked => DataUtil.proxy.getUid("spell", { ...unpacked, source: Parser.SRC_XPHB }));
+			.map(unpacked => DataUtil.proxy.getUid("spell", {...unpacked, source: Parser.SRC_XPHB}));
 	}
 
 	/**
@@ -281,11 +281,11 @@ export class BrewDocContentMigrator {
 	static _mutMakeCompatible_spell (json) {
 		if (!json.spell) return false;
 
-		this._mutMakeCompatible_spell_classProp({ json, prop: "fromClassList" });
-		this._mutMakeCompatible_spell_classProp({ json, prop: "fromClassListVariant" });
+		this._mutMakeCompatible_spell_classProp({json, prop: "fromClassList"});
+		this._mutMakeCompatible_spell_classProp({json, prop: "fromClassListVariant"});
 	}
 
-	static _mutMakeCompatible_spell_classProp ({ json, prop }) {
+	static _mutMakeCompatible_spell_classProp ({json, prop}) {
 		json.spell
 			.forEach(ent => {
 				if (!ent?.classes?.[prop]?.length) return;
@@ -302,7 +302,7 @@ export class BrewDocContentMigrator {
 				Object.keys(xphbNames).forEach(name => delete xphbNames[name]);
 
 				Object.values(phbNames)
-					.forEach(classMeta => ent.classes[prop].push({ ...classMeta, source: Parser.SRC_XPHB }));
+					.forEach(classMeta => ent.classes[prop].push({...classMeta, source: Parser.SRC_XPHB}));
 			});
 	}
 }

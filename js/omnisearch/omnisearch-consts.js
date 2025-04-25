@@ -34,11 +34,19 @@ export class OmnisearchConsts {
 		title: "Include legacy content results",
 		text: "Legacy",
 	};
+	static BTN_META_SRD_ONLY = {
+		propOmnisearch: "isSrdOnly",
+		fnAddHookOmnisearch: "addHookSrdOnly",
+		fnDoToggleOmnisearch: "doToggleSrdOnly",
+		title: "Exclude non- Systems Reference Document results",
+		text: "SRD",
+	};
 	static BTN_METAS = [
 		this.BTN_META_PARTNERED,
 		this.BTN_META_BREW,
 		this.BTN_META_UA,
 		this.BTN_META_BLOCKLISTED,
 		this.BTN_META_LEGACY,
+		this.BTN_META_SRD_ONLY,
 	];
 }

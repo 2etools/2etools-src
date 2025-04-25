@@ -71,7 +71,7 @@ function listFiles (opts) {
 		.map(file => `${opts.dir}/${file}`);
 
 	return dirContent.reduce((acc, file) => {
-		if (isDirectory(file)) acc.push(...listFiles({ ...opts, dir: file }));
+		if (isDirectory(file)) acc.push(...listFiles({...opts, dir: file}));
 		else acc.push(file);
 		return acc;
 	}, []);
@@ -133,7 +133,7 @@ class PatchLoadJson {
 			if (!loadJsonCache[url]) {
 				loadJsonCache[url] = (async () => {
 					const data = await this._pLoadUrl(url);
-					await DataUtil.pDoMetaMerge(url, data, { isSkipMetaMergeCache: true });
+					await DataUtil.pDoMetaMerge(url, data, {isSkipMetaMergeCache: true});
 					return data;
 				})();
 			}
@@ -161,7 +161,7 @@ class Timer {
 		return id;
 	}
 
-	static stop (id, { isFormat = true } = {}) {
+	static stop (id, {isFormat = true} = {}) {
 		const out = this._getSecs() - this._RUNNING[id];
 		delete this._RUNNING[id];
 		return isFormat ? `${out.toFixed(3)}s` : out;

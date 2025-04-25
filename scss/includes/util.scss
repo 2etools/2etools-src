@@ -10,7 +10,6 @@
 	font-variant: small-caps;
 	font-weight: 500;
 }
-
 // endregion
 
 // region Font size
@@ -31,7 +30,6 @@
 .font-size-24p {
 	font-size: 24px !important;
 }
-
 // endregion
 
 // region Font style
@@ -56,7 +54,7 @@
 	font-style: italic !important;
 }
 
-i>i {
+i > i {
 	font-style: initial;
 }
 
@@ -102,7 +100,6 @@ i>i {
 .ve-highlight {
 	background-color: vars.$rgb-bg-highlight !important;
 }
-
 // endregion
 
 // region Font misc
@@ -161,7 +158,6 @@ i>i {
 .text-rtl {
 	direction: rtl;
 }
-
 // endregion
 
 // region Transforms
@@ -176,7 +172,6 @@ i>i {
 .trans-z-flip {
 	transform: scaleZ(-1) !important;
 }
-
 // endregion
 
 // region Cursor
@@ -195,7 +190,6 @@ i>i {
 .ve-draggable {
 	cursor: grab;
 }
-
 // endregion
 
 // region Events
@@ -218,7 +212,6 @@ i>i {
 .user-select-all {
 	user-select: all !important;
 }
-
 // endregion
 
 // region Scrolling
@@ -274,7 +267,6 @@ i>i {
 	overflow: auto;
 	overflow: overlay;
 }
-
 // endregion
 
 // region Resizing
@@ -285,7 +277,6 @@ i>i {
 .resize-none {
 	resize: none;
 }
-
 // endregion
 
 // region Width
@@ -485,7 +476,6 @@ i>i {
 .max-w-640p {
 	max-width: 640px !important;
 }
-
 // endregion
 
 // region Height
@@ -565,7 +555,6 @@ i>i {
 .max-h-unset {
 	max-height: unset !important;
 }
-
 // endregion
 
 // region Position
@@ -580,7 +569,6 @@ i>i {
 .sticky {
 	position: sticky !important;
 }
-
 // endregion
 
 // region Display
@@ -800,7 +788,6 @@ i>i {
 .split-column--inline {
 	display: inline-flex;
 }
-
 // endregion
 
 // region Columns
@@ -809,11 +796,11 @@ i>i {
 	break-inside: avoid-column;
 	column-gap: 1.75rem;
 
-	>* {
+	> * {
 		break-inside: avoid-column;
 	}
 
-	@media screen and (width <=#{vars.$width-screen-sm}) {
+	@media screen and (width <= #{vars.$width-screen-sm}) {
 		column-count: 1;
 	}
 }
@@ -823,15 +810,15 @@ i>i {
 	break-inside: avoid-column;
 	column-gap: 1.75rem;
 
-	>* {
+	> * {
 		break-inside: avoid-column;
 	}
 
-	@media screen and (width <=#{vars.$width-screen-sm}) {
+	@media screen and (width <= #{vars.$width-screen-sm}) {
 		column-count: 2;
 	}
 
-	@media screen and (width <=#{vars.$width-screen-xs}) {
+	@media screen and (width <= #{vars.$width-screen-xs}) {
 		column-count: 1;
 	}
 }
@@ -841,15 +828,15 @@ i>i {
 	break-inside: avoid-column;
 	column-gap: 1.75rem;
 
-	>* {
+	> * {
 		break-inside: avoid-column;
 	}
 
-	@media screen and (width <=#{vars.$width-screen-sm}) {
+	@media screen and (width <= #{vars.$width-screen-sm}) {
 		column-count: 3;
 	}
 
-	@media screen and (width <=#{vars.$width-screen-xs}) {
+	@media screen and (width <= #{vars.$width-screen-xs}) {
 		column-count: 2;
 	}
 }
@@ -859,15 +846,15 @@ i>i {
 	break-inside: avoid-column;
 	column-gap: 1.75rem;
 
-	>* {
+	> * {
 		break-inside: avoid-column;
 	}
 
-	@media screen and (width <=#{vars.$width-screen-sm}) {
+	@media screen and (width <= #{vars.$width-screen-sm}) {
 		column-count: 3;
 	}
 
-	@media screen and (width <=#{vars.$width-screen-xs}) {
+	@media screen and (width <= #{vars.$width-screen-xs}) {
 		column-count: 2;
 	}
 }
@@ -877,26 +864,24 @@ i>i {
 	break-inside: avoid-column;
 	column-gap: 1.75rem;
 
-	>* {
+	> * {
 		break-inside: avoid-column;
 	}
 
-	@media screen and (width <=#{vars.$width-screen-sm}) {
+	@media screen and (width <= #{vars.$width-screen-sm}) {
 		column-count: 3;
 	}
 
-	@media screen and (width <=#{vars.$width-screen-xs}) {
+	@media screen and (width <= #{vars.$width-screen-xs}) {
 		column-count: 2;
 	}
 }
-
 // endregion
 
 // region Tables
 .table-layout-fixed {
 	table-layout: fixed !important;
 }
-
 // endregion
 
 // region HRs/borders
@@ -915,14 +900,12 @@ i>i {
 .border-dotted {
 	border-style: dotted !important;
 }
-
 // endregion
 
 // region Opacity
 .opacity-50 {
 	opacity: 0.5 !important;
 }
-
 // endregion
 
 // redefine this here to ensure it overrides all the important display types above

@@ -1,7 +1,7 @@
-import { ArrayKey, IgnoredKey, ObjectKey } from "./utils-proporder-models.js";
-import { PROPS_FOUNDRY_DATA_INLINE } from "../foundry/foundry-consts.js";
-import { getFnRootPropListSort } from "./utils-proporder-sort.js";
-import { PROPORDER_ENTRY_DATA_OBJECT, PROPORDER_FOUNDRY_ACTIVITIES, PROPORDER_FOUNDRY_EFFECTS } from "./utils-proporder-config-shared.js";
+import {ArrayKey, IgnoredKey, ObjectKey} from "./utils-proporder-models.js";
+import {PROPS_FOUNDRY_DATA_INLINE} from "../foundry/foundry-consts.js";
+import {getFnRootPropListSort} from "./utils-proporder-sort.js";
+import {PROPORDER_ENTRY_DATA_OBJECT, PROPORDER_FOUNDRY_ACTIVITIES, PROPORDER_FOUNDRY_EFFECTS} from "./utils-proporder-config-shared.js";
 
 const PROPORDER_META = [
 	"sources",
@@ -64,6 +64,8 @@ const PROPORDER_FOUNDRY_GENERIC_FEATURE = [
 	"img",
 
 	"isIgnored",
+	"ignoreSrdActivities",
+	"ignoreSrdEffects",
 
 	"entries",
 
@@ -92,8 +94,10 @@ const PROPORDER_MONSTER = [
 	"sourceSub",
 	"page",
 
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"additionalSources",
 	"otherSources",
 	"reprintedAs",
@@ -104,7 +108,7 @@ const PROPORDER_MONSTER = [
 	"summonedScaleByPlayerLevel",
 
 	"_isCopy",
-	ObjectKey.getCopyKey({ fnGetModOrder: () => PROPORDER_MONSTER__COPY_MOD }),
+	ObjectKey.getCopyKey({fnGetModOrder: () => PROPORDER_MONSTER__COPY_MOD}),
 
 	"level",
 	"size",
@@ -208,22 +212,22 @@ const PROPORDER_MONSTER = [
 
 	"altArt",
 
-	new ArrayKey("attachedItems", { fnSort: SortUtil.ascSortLower }),
-	new ArrayKey("traitTags", { fnSort: SortUtil.ascSortLower }),
-	new ArrayKey("senseTags", { fnSort: SortUtil.ascSortLower }),
-	new ArrayKey("actionTags", { fnSort: SortUtil.ascSortLower }),
-	new ArrayKey("languageTags", { fnSort: SortUtil.ascSortLower }),
-	new ArrayKey("damageTags", { fnSort: SortUtil.ascSortLower }),
-	new ArrayKey("damageTagsLegendary", { fnSort: SortUtil.ascSortLower }),
-	new ArrayKey("damageTagsSpell", { fnSort: SortUtil.ascSortLower }),
-	new ArrayKey("spellcastingTags", { fnSort: SortUtil.ascSortLower }),
-	new ArrayKey("miscTags", { fnSort: SortUtil.ascSortLower }),
-	new ArrayKey("conditionInflict", { fnSort: SortUtil.ascSortLower }),
-	new ArrayKey("conditionInflictLegendary", { fnSort: SortUtil.ascSortLower }),
-	new ArrayKey("conditionInflictSpell", { fnSort: SortUtil.ascSortLower }),
-	new ArrayKey("savingThrowForced", { fnSort: SortUtil.ascSortLower }),
-	new ArrayKey("savingThrowForcedLegendary", { fnSort: SortUtil.ascSortLower }),
-	new ArrayKey("savingThrowForcedSpell", { fnSort: SortUtil.ascSortLower }),
+	new ArrayKey("attachedItems", {fnSort: SortUtil.ascSortLower}),
+	new ArrayKey("traitTags", {fnSort: SortUtil.ascSortLower}),
+	new ArrayKey("senseTags", {fnSort: SortUtil.ascSortLower}),
+	new ArrayKey("actionTags", {fnSort: SortUtil.ascSortLower}),
+	new ArrayKey("languageTags", {fnSort: SortUtil.ascSortLower}),
+	new ArrayKey("damageTags", {fnSort: SortUtil.ascSortLower}),
+	new ArrayKey("damageTagsLegendary", {fnSort: SortUtil.ascSortLower}),
+	new ArrayKey("damageTagsSpell", {fnSort: SortUtil.ascSortLower}),
+	new ArrayKey("spellcastingTags", {fnSort: SortUtil.ascSortLower}),
+	new ArrayKey("miscTags", {fnSort: SortUtil.ascSortLower}),
+	new ArrayKey("conditionInflict", {fnSort: SortUtil.ascSortLower}),
+	new ArrayKey("conditionInflictLegendary", {fnSort: SortUtil.ascSortLower}),
+	new ArrayKey("conditionInflictSpell", {fnSort: SortUtil.ascSortLower}),
+	new ArrayKey("savingThrowForced", {fnSort: SortUtil.ascSortLower}),
+	new ArrayKey("savingThrowForcedLegendary", {fnSort: SortUtil.ascSortLower}),
+	new ArrayKey("savingThrowForcedSpell", {fnSort: SortUtil.ascSortLower}),
 
 	"hasToken",
 	"hasFluff",
@@ -269,7 +273,7 @@ const PROPORDER_MONSTER_TEMPLATE = [
 
 	"ref",
 
-	ObjectKey.getCopyKey({ fnGetModOrder: () => PROPORDER_MONSTER_TEMPLATE__COPY_MOD }),
+	ObjectKey.getCopyKey({fnGetModOrder: () => PROPORDER_MONSTER_TEMPLATE__COPY_MOD}),
 
 	"crMin",
 	"crMax",
@@ -369,14 +373,15 @@ const PROPORDER_SPELL = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"additionalSources",
 	"otherSources",
 	"reprintedAs",
 
-	ObjectKey.getCopyKey({ fnGetModOrder: () => PROPORDER_SPELL__COPY_MOD }),
+	ObjectKey.getCopyKey({fnGetModOrder: () => PROPORDER_SPELL__COPY_MOD}),
 
 	"level",
 	"school",
@@ -419,8 +424,8 @@ const PROPORDER_SPELL = [
 
 	"affectsCreatureType",
 
-	new ArrayKey("miscTags", { fnSort: SortUtil.ascSortLower }),
-	new ArrayKey("areaTags", { fnSort: SortUtil.ascSortLower }),
+	new ArrayKey("miscTags", {fnSort: SortUtil.ascSortLower}),
+	new ArrayKey("areaTags", {fnSort: SortUtil.ascSortLower}),
 
 	"hasFluff",
 	"hasFluffImages",
@@ -456,9 +461,10 @@ const PROPORDER_ACTION = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 	"reprintedAs",
 
@@ -508,16 +514,13 @@ const PROPORDER_BOOK = [
 
 	"id",
 	"source",
-	"parentSource",
 
 	"group",
 
 	"cover",
 	"coverUrl",
 	"published",
-	"publishedOrder",
 	"author",
-	"storyline",
 
 	"contents",
 ];
@@ -535,16 +538,17 @@ const PROPORDER_BACKGROUND = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"additionalSources",
 	"otherSources",
 	"reprintedAs",
 
 	"edition",
 
-	ObjectKey.getCopyKey({ fnGetModOrder: () => PROPORDER_BACKGROUND__COPY_MOD }),
+	ObjectKey.getCopyKey({fnGetModOrder: () => PROPORDER_BACKGROUND__COPY_MOD}),
 
 	"prerequisite",
 	"ability",
@@ -593,7 +597,7 @@ const PROPORDER_LEGENDARY_GROUP = [
 
 	"additionalSources",
 
-	ObjectKey.getCopyKey({ fnGetModOrder: () => PROPORDER_LEGENDARY_GROUP__COPY_MOD }),
+	ObjectKey.getCopyKey({fnGetModOrder: () => PROPORDER_LEGENDARY_GROUP__COPY_MOD}),
 
 	"lairActions",
 	"regionalEffects",
@@ -610,9 +614,10 @@ const PROPORDER_CLASS = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 	"isReprinted",
 	"reprintedAs",
@@ -687,7 +692,8 @@ const PROPORDER_FOUNDRY_CLASS = [
 	"isChooseSystemRenderEntries",
 	"isChooseFlagsRenderEntries",
 	"isIgnored",
-
+	"ignoreSrdActivities",
+	"ignoreSrdEffects",
 	"actorDataMod",
 	"actorTokenMod",
 
@@ -702,9 +708,10 @@ const PROPORDER_SUBCLASS = [
 	"classSource",
 
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 	"isReprinted",
 	"reprintedAs",
@@ -790,7 +797,8 @@ const PROPORDER_FOUNDRY_SUBCLASS = [
 	"isChooseSystemRenderEntries",
 	"isChooseFlagsRenderEntries",
 	"isIgnored",
-
+	"ignoreSrdActivities",
+	"ignoreSrdEffects",
 	"actorDataMod",
 	"actorTokenMod",
 
@@ -802,9 +810,10 @@ const PROPORDER_CLASS_FEATURE = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 
 	"className",
@@ -849,9 +858,10 @@ const PROPORDER_SUBCLASS_FEATURE = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 
 	"className",
@@ -920,7 +930,8 @@ const PROPORDER_FOUNDRY_CLASS_FEATURE = [
 	"isChooseSystemRenderEntries",
 	"isChooseFlagsRenderEntries",
 	"isIgnored",
-
+	"ignoreSrdActivities",
+	"ignoreSrdEffects",
 	"actorDataMod",
 	"actorTokenMod",
 
@@ -956,7 +967,8 @@ const PROPORDER_FOUNDRY_SUBCLASS_FEATURE = [
 	"isChooseSystemRenderEntries",
 	"isChooseFlagsRenderEntries",
 	"isIgnored",
-
+	"ignoreSrdActivities",
+	"ignoreSrdEffects",
 	"actorDataMod",
 	"actorTokenMod",
 
@@ -974,9 +986,10 @@ const PROPORDER_LANGUAGE = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"additionalSources",
 	"otherSources",
 	"reprintedAs",
@@ -1016,9 +1029,10 @@ const PROPORDER_CONDITION = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 	"reprintedAs",
 
@@ -1037,9 +1051,10 @@ const PROPORDER_DISEASE = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 	"reprintedAs",
 
@@ -1062,9 +1077,10 @@ const PROPORDER_STATUS = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 	"reprintedAs",
 
@@ -1083,9 +1099,10 @@ const PROPORDER_CULT = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"additionalSources",
 	"otherSources",
 	"reprintedAs",
@@ -1104,9 +1121,10 @@ const PROPORDER_BOON = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"additionalSources",
 	"otherSources",
 	"reprintedAs",
@@ -1129,9 +1147,10 @@ const PROPORDER_DEITY = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"additionalSources",
 	"otherSources",
 
@@ -1185,14 +1204,15 @@ const PROPORDER_FEAT = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"additionalSources",
 	"otherSources",
 	"reprintedAs",
 
-	ObjectKey.getCopyKey({ fnGetModOrder: () => PROPORDER_FEAT__COPY_MOD }),
+	ObjectKey.getCopyKey({fnGetModOrder: () => PROPORDER_FEAT__COPY_MOD}),
 
 	"category",
 	"prerequisite",
@@ -1203,7 +1223,7 @@ const PROPORDER_FEAT = [
 
 	"ability",
 
-	new ArrayKey("traitTags", { fnSort: SortUtil.ascSortLower }),
+	new ArrayKey("traitTags", {fnSort: SortUtil.ascSortLower}),
 	"skillProficiencies",
 	"languageProficiencies",
 	"toolProficiencies",
@@ -1261,9 +1281,10 @@ const PROPORDER_VEHICLE = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 	"reprintedAs",
 
@@ -1334,9 +1355,10 @@ const PROPORDER_VEHICLE_UPGRADE = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 
 	"upgradeType",
@@ -1364,14 +1386,15 @@ const PROPORDER_ITEM = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"additionalSources",
 	"otherSources",
 	"reprintedAs",
 
-	ObjectKey.getCopyKey({ fnGetModOrder: () => PROPORDER_ITEM__COPY_MOD }),
+	ObjectKey.getCopyKey({fnGetModOrder: () => PROPORDER_ITEM__COPY_MOD}),
 
 	"baseItem",
 
@@ -1529,7 +1552,7 @@ const PROPORDER_ITEM = [
 		fnGetOrder: obj => Object.keys(obj).sort(SortUtil.ascSortLower),
 	}),
 
-	new ArrayKey("miscTags", { fnSort: SortUtil.ascSortLower }),
+	new ArrayKey("miscTags", {fnSort: SortUtil.ascSortLower}),
 
 	"hasFluff",
 	"hasFluffImages",
@@ -1575,9 +1598,10 @@ const PROPORDER_ITEM_MASTERY = [
 	"source",
 
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 
 	"prerequisite",
 
@@ -1589,9 +1613,10 @@ const PROPORDER_ITEM_PROPERTY = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"reprintedAs",
 
 	ObjectKey.getCopyKey({
@@ -1621,9 +1646,10 @@ const PROPORDER_ITEM_TYPE = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"reprintedAs",
 
 	ObjectKey.getCopyKey({
@@ -1672,9 +1698,10 @@ const PROPORDER_OBJECT = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 	"reprintedAs",
 
@@ -1724,13 +1751,14 @@ const PROPORDER_OPTIONALFEATURE = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 	"reprintedAs",
 
-	ObjectKey.getCopyKey({ fnGetModOrder: () => PROPORDER_OPTIONALFEATURE__COPY_MOD }),
+	ObjectKey.getCopyKey({fnGetModOrder: () => PROPORDER_OPTIONALFEATURE__COPY_MOD}),
 
 	"isClassFeatureVariant",
 	"previousVersion",
@@ -1820,9 +1848,10 @@ const PROPORDER_VARIANTRULE = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"additionalSources",
 	"otherSources",
 	"reprintedAs",
@@ -1836,9 +1865,10 @@ const PROPORDER_VARIANTRULE = [
 ];
 const PROPORDER_RACE_SUBRACE = [
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"additionalSources",
 	"otherSources",
 	"reprintedAs",
@@ -1859,7 +1889,7 @@ const PROPORDER_RACE_SUBRACE = [
 	"creatureTypes",
 	"creatureTypeTags",
 
-	new ArrayKey("size", { fnSort: SortUtil.ascSortSize }),
+	new ArrayKey("size", {fnSort: SortUtil.ascSortSize}),
 	"speed",
 	"ability",
 
@@ -1870,7 +1900,7 @@ const PROPORDER_RACE_SUBRACE = [
 	"blindsight",
 	"feats",
 
-	new ArrayKey("traitTags", { fnSort: SortUtil.ascSortLower }),
+	new ArrayKey("traitTags", {fnSort: SortUtil.ascSortLower}),
 	"skillProficiencies",
 	"languageProficiencies",
 	"toolProficiencies",
@@ -1984,9 +2014,10 @@ const PROPORDER_TABLE = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 
 	"type",
@@ -2018,9 +2049,10 @@ const PROPORDER_TRAP = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 	"reprintedAs",
 
@@ -2057,9 +2089,10 @@ const PROPORDER_HAZARD = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"additionalSources",
 	"otherSources",
 	"reprintedAs",
@@ -2098,7 +2131,7 @@ const PROPORDER_RECIPE = [
 	"instructions",
 	"noteCook",
 
-	new ArrayKey("miscTags", { fnSort: SortUtil.ascSortLower }),
+	new ArrayKey("miscTags", {fnSort: SortUtil.ascSortLower}),
 
 	"fluff",
 
@@ -2133,9 +2166,10 @@ const PROPORDER_SKILL = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 	"reprintedAs",
 
@@ -2149,9 +2183,10 @@ const PROPORDER_SENSE = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 	"reprintedAs",
 
@@ -2163,12 +2198,13 @@ const PROPORDER_DECK = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 
-	ObjectKey.getCopyKey({ fnGetModOrder: () => PROPORDER_DECK__COPY_MOD }),
+	ObjectKey.getCopyKey({fnGetModOrder: () => PROPORDER_DECK__COPY_MOD}),
 
 	"cards",
 	"back",
@@ -2190,9 +2226,10 @@ const PROPORDER_CARD = [
 	"source",
 	"set",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 
 	"suit",
@@ -2253,9 +2290,10 @@ const PROPORDER_FACILITY = [
 
 	"source",
 	"page",
-
+	"srd",
+	"srd52",
 	"basicRules",
-	"freeRules2024",
+	"basicRules2024",
 	"otherSources",
 	"reprintedAs",
 

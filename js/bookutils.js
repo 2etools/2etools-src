@@ -1,12 +1,12 @@
-import { RenderMap } from "./render-map.js";
-import { OmnisearchUtilsUi } from "./omnisearch/omnisearch-utils-ui.js";
+import {RenderMap} from "./render-map.js";
+import {OmnisearchUtilsUi} from "./omnisearch/omnisearch-utils-ui.js";
 
 export class BookUtil {
-	static getHeaderText(header) {
+	static getHeaderText (header) {
 		return header.header || header;
 	}
 
-	static scrollClick(ixChapter, headerText, headerNumber) {
+	static scrollClick (ixChapter, headerText, headerNumber) {
 		headerText = headerText.toLowerCase().trim();
 
 		// When handling a non-full-book header in full-book mode, map the header to the appropriate position
@@ -40,13 +40,13 @@ export class BookUtil {
 			return;
 		}
 
-		const trackedTitlesInverse = BookUtil._renderer.getTrackedTitlesInverted({ isStripTags: true });
+		const trackedTitlesInverse = BookUtil._renderer.getTrackedTitlesInverted({isStripTags: true});
 
 		const ixTitle = (trackedTitlesInverse[headerText] || [])[headerNumber || 0];
 		if (ixTitle != null) $(`[data-title-index="${ixTitle}"]`)[0].scrollIntoView();
 	}
 
-	static scrollPageTop(ixChapter) {
+	static scrollPageTop (ixChapter) {
 		// In full-book view, find the Xth section
 		if (ixChapter != null && !~BookUtil.curRender.chapter) {
 			const ixTitle = BookUtil.curRender.allViewFirstTitleIndexes[ixChapter];
@@ -57,7 +57,7 @@ export class BookUtil {
 		document.getElementById(`pagecontent`).scrollIntoView();
 	}
 
-	static sectToggle(evt, $btnToggleExpand, $headersBlock) {
+	static sectToggle (evt, $btnToggleExpand, $headersBlock) {
 		if (evt) {
 			evt.stopPropagation();
 			evt.preventDefault();
@@ -67,7 +67,7 @@ export class BookUtil {
 		$headersBlock.toggleVe();
 	}
 
-	static _showBookContent(data, fromIndex, bookId, hashParts) {
+	static _showBookContent (data, fromIndex, bookId, hashParts) {
 		const ixChapterPrev = BookUtil.curRender.chapter;
 		const bookIdPrev = BookUtil.curRender.curBookId;
 
@@ -90,7 +90,7 @@ export class BookUtil {
 			}
 
 			if (BookUtil.referenceId && !isRenderingNewChapterOrNewBook) {
-				const isHandledScroll = this._showBookContent_handleQuickReferenceShow({ sectionHeader: scrollToHeaderText });
+				const isHandledScroll = this._showBookContent_handleQuickReferenceShow({sectionHeader: scrollToHeaderText});
 				if (isHandledScroll) {
 					isForceScroll = false;
 					scrollToHeaderText = null;
@@ -111,11 +111,11 @@ export class BookUtil {
 			BookUtil.$dispBook.html("");
 
 			const chapterTitle = (fromIndex.contents[ixChapter] || {}).name;
-			document.title = `${chapterTitle ? `${chapterTitle} - ` : ""}${fromIndex.name} - 2etools`;
+			document.title = `${chapterTitle ? `${chapterTitle} - ` : ""}${fromIndex.name} - 5etools`;
 
 			BookUtil.curRender.controls = {};
 			BookUtil.$dispBook.append(Renderer.utils.getBorderTr());
-			this._showBookContent_renderNavButtons({ isTop: true, ixChapter, bookId, data });
+			this._showBookContent_renderNavButtons({isTop: true, ixChapter, bookId, data});
 			const textStack = [];
 			BookUtil._renderer
 				.setFirstSection(true)
@@ -131,19 +131,19 @@ export class BookUtil {
 				});
 			} else BookUtil._renderer.recursiveRender(data[ixChapter], textStack);
 			// If there is no source, we're probably in the Quick Reference, so avoid adding the "Excluded" text, as this is a composite source.
-			BookUtil.$dispBook.append(`<tr><td colspan="6" class="py-2 px-5">${fromIndex.source ? Renderer.utils.getExcludedHtml({ entity: fromIndex, dataProp: BookUtil.contentType, page: UrlUtil.getCurrentPage() }) : ""}${textStack.join("")}</td></tr>`);
+			BookUtil.$dispBook.append(`<tr><td colspan="6" class="py-2 px-5">${fromIndex.source ? Renderer.utils.getExcludedHtml({entity: fromIndex, dataProp: BookUtil.contentType, page: UrlUtil.getCurrentPage()}) : ""}${textStack.join("")}</td></tr>`);
 			Renderer.initLazyImageLoaders();
 			BookUtil._renderer
 				.setLazyImages(false)
 				.setHeaderIndexTableCaptions(false)
 				.setHeaderIndexImageTitles(false);
-			this._showBookContent_renderNavButtons({ ixChapter, bookId, data });
+			this._showBookContent_renderNavButtons({ixChapter, bookId, data});
 
 			BookUtil.$dispBook.append(Renderer.utils.getBorderTr());
 
 			if (scrollToHeaderText) {
 				let handled = false;
-				if (BookUtil.referenceId) handled = this._showBookContent_handleQuickReferenceShow({ sectionHeader: scrollToHeaderText });
+				if (BookUtil.referenceId) handled = this._showBookContent_handleQuickReferenceShow({sectionHeader: scrollToHeaderText});
 				if (!handled) {
 					setTimeout(() => {
 						BookUtil.scrollClick(ixChapter, scrollToHeaderText, scrollToHeaderNumber);
@@ -183,9 +183,9 @@ export class BookUtil {
 			}
 		}
 
-		this._showBookContent_updateSidebar({ ixChapter, ixChapterPrev, bookIdPrev, bookId });
+		this._showBookContent_updateSidebar({ixChapter, ixChapterPrev, bookIdPrev, bookId});
 
-		this._showBookContent_updateControls({ ixChapter, data });
+		this._showBookContent_updateControls({ixChapter, data});
 
 		$(`.bk__overlay-loading`).remove();
 
@@ -196,7 +196,7 @@ export class BookUtil {
 		}
 	}
 
-	static _showBookContent_handleQuickReferenceShowAll() {
+	static _showBookContent_handleQuickReferenceShowAll () {
 		$(`.${Renderer.HEAD_NEG_1}`).show();
 		$(`.rd__hr--section`).show();
 	}
@@ -205,7 +205,7 @@ export class BookUtil {
 	 * @param sectionHeader Section header to scroll to.
 	 * @return {boolean} True if the scroll happened, false otherwise.
 	 */
-	static _showBookContent_handleQuickReferenceShow({ sectionHeader }) {
+	static _showBookContent_handleQuickReferenceShow ({sectionHeader}) {
 		this._showBookContent_handleQuickReferenceShowAll();
 
 		if (sectionHeader && ~BookUtil.curRender.chapter) {
@@ -228,7 +228,7 @@ export class BookUtil {
 		}
 	}
 
-	static _showBookContent_goToPage({ mod, isGetHref, bookId, ixChapter }) {
+	static _showBookContent_goToPage ({mod, isGetHref, bookId, ixChapter}) {
 		const getHashPart = () => {
 			const newHashParts = [bookId, ixChapter + mod];
 			return newHashParts.join(HASH_PART_SEP);
@@ -259,7 +259,7 @@ export class BookUtil {
 		} else changeChapter();
 	}
 
-	static _showBookContent_renderNavButtons({ isTop, ixChapter, bookId, data }) {
+	static _showBookContent_renderNavButtons ({isTop, ixChapter, bookId, data}) {
 		const tdStyle = `padding-${isTop ? "top" : "bottom"}: 6px; padding-left: 9px; padding-right: 9px;`;
 		const $wrpControls = $(`<div class="split"></div>`).appendTo($(`<td colspan="6" style="${tdStyle}"></td>`).appendTo($(`<tr></tr>`).appendTo(BookUtil.$dispBook)));
 
@@ -268,9 +268,9 @@ export class BookUtil {
 		let $btnPrev;
 		if (BookUtil.referenceId) {
 			$btnPrev = $(`<button class="ve-btn ve-btn-xs ve-btn-default bk__nav-head-foot-item no-print"><span class="glyphicon glyphicon-chevron-left"></span>Previous</button>`)
-				.click(() => this._showBookContent_goToPage({ mod: -1, bookId, ixChapter }));
+				.click(() => this._showBookContent_goToPage({mod: -1, bookId, ixChapter}));
 		} else {
-			$btnPrev = $(`<a href="#${this._showBookContent_goToPage({ mod: -1, isGetHref: true, bookId, ixChapter })}" class="ve-btn ve-btn-xs ve-btn-default bk__nav-head-foot-item no-print"><span class="glyphicon glyphicon-chevron-left"></span>Previous</a>`)
+			$btnPrev = $(`<a href="#${this._showBookContent_goToPage({mod: -1, isGetHref: true, bookId, ixChapter})}" class="ve-btn ve-btn-xs ve-btn-default bk__nav-head-foot-item no-print"><span class="glyphicon glyphicon-chevron-left"></span>Previous</a>`)
 				.click(() => MiscUtil.scrollPageTop());
 		}
 		$btnPrev
@@ -283,17 +283,17 @@ export class BookUtil {
 				.toggle(!showPrev)
 				.appendTo($wrpControls));
 
-		if (isTop) this._showBookContent_renderNavButtons_top({ bookId, $wrpControls });
-		else this._showBookContent_renderNavButtons_bottom({ bookId, $wrpControls });
+		if (isTop) this._showBookContent_renderNavButtons_top({bookId, $wrpControls});
+		else this._showBookContent_renderNavButtons_bottom({bookId, $wrpControls});
 
 		const showNxt = ~ixChapter && ixChapter < data.length - 1;
 		BookUtil.curRender.controls.$btnsNxt = BookUtil.curRender.controls.$btnsNxt || [];
 		let $btnNext;
 		if (BookUtil.referenceId) {
 			$btnNext = $(`<button class="ve-btn ve-btn-xs ve-btn-default bk__nav-head-foot-item no-print">Next<span class="glyphicon glyphicon-chevron-right"></span></button>`)
-				.click(() => this._showBookContent_goToPage({ mod: 1, bookId, ixChapter }));
+				.click(() => this._showBookContent_goToPage({mod: 1, bookId, ixChapter}));
 		} else {
-			$btnNext = $(`<a href="#${this._showBookContent_goToPage({ mod: 1, isGetHref: true, bookId, ixChapter })}" class="ve-btn ve-btn-xs ve-btn-default bk__nav-head-foot-item no-print">Next<span class="glyphicon glyphicon-chevron-right"></span></a>`)
+			$btnNext = $(`<a href="#${this._showBookContent_goToPage({mod: 1, isGetHref: true, bookId, ixChapter})}" class="ve-btn ve-btn-xs ve-btn-default bk__nav-head-foot-item no-print">Next<span class="glyphicon glyphicon-chevron-right"></span></a>`)
 				.click(() => MiscUtil.scrollPageTop());
 		}
 		$btnNext
@@ -312,9 +312,9 @@ export class BookUtil {
 			let $btnPrev;
 			if (BookUtil.referenceId) {
 				$btnPrev = $(`<button class="ve-btn ve-btn-xxs ve-btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button>`)
-					.click(() => this._showBookContent_goToPage({ mod: -1, bookId, ixChapter }));
+					.click(() => this._showBookContent_goToPage({mod: -1, bookId, ixChapter}));
 			} else {
-				$btnPrev = $(`<a href="#${this._showBookContent_goToPage({ mod: -1, isGetHref: true, bookId, ixChapter })}" class="ve-btn ve-btn-xxs ve-btn-default"><span class="glyphicon glyphicon-chevron-left"></span></a>`)
+				$btnPrev = $(`<a href="#${this._showBookContent_goToPage({mod: -1, isGetHref: true, bookId, ixChapter})}" class="ve-btn ve-btn-xxs ve-btn-default"><span class="glyphicon glyphicon-chevron-left"></span></a>`)
 					.click(() => MiscUtil.scrollPageTop());
 			}
 			$btnPrev
@@ -326,9 +326,9 @@ export class BookUtil {
 			let $btnNext;
 			if (BookUtil.referenceId) {
 				$btnNext = $(`<button class="ve-btn ve-btn-xxs ve-btn-default"><span class="glyphicon glyphicon-chevron-right"></span></button>`)
-					.click(() => this._showBookContent_goToPage({ mod: 1, bookId, ixChapter }));
+					.click(() => this._showBookContent_goToPage({mod: 1, bookId, ixChapter}));
 			} else {
-				$btnNext = $(`<a href="#${this._showBookContent_goToPage({ mod: 1, isGetHref: true, bookId, ixChapter })}" class="ve-btn ve-btn-xxs ve-btn-default"><span class="glyphicon glyphicon-chevron-right"></span></a>`)
+				$btnNext = $(`<a href="#${this._showBookContent_goToPage({mod: 1, isGetHref: true, bookId, ixChapter})}" class="ve-btn ve-btn-xxs ve-btn-default"><span class="glyphicon glyphicon-chevron-right"></span></a>`)
 					.click(() => MiscUtil.scrollPageTop());
 			}
 			$btnNext
@@ -344,7 +344,7 @@ export class BookUtil {
 
 	static _TOP_MENU = null;
 
-	static _showBookContent_renderNavButtons_top({ bookId, $wrpControls }) {
+	static _showBookContent_renderNavButtons_top ({bookId, $wrpControls}) {
 		const href = ~this.curRender.chapter
 			? this._getHrefShowAll(bookId)
 			: `#${UrlUtil.encodeForHash(bookId)}`;
@@ -386,7 +386,7 @@ export class BookUtil {
 
 						const contentsInfo = this.curRender.fromIndex.contents[this.curRender.chapter];
 						DataUtil.userDownloadText(
-							`${this.curRender.fromIndex.name} - ${Parser.bookOrdinalToAbv(contentsInfo.ordinal, { isPlainText: true }).replace(/:/g, "")}${contentsInfo.name}.md`,
+							`${this.curRender.fromIndex.name} - ${Parser.bookOrdinalToAbv(contentsInfo.ordinal, {isPlainText: true}).replace(/:/g, "")}${contentsInfo.name}.md`,
 							RendererMarkdown.get().render(this.curRender.data[this.curRender.chapter]),
 						);
 					},
@@ -406,11 +406,11 @@ export class BookUtil {
 		$$`<div class="no-print ve-flex-v-center ve-btn-group">${$btnEntireBook}${$btnToggleNarrow}${$btnMenu}</div>`.appendTo($wrpControls);
 	}
 
-	static _showBookContent_renderNavButtons_bottom({ bookId, $wrpControls }) {
+	static _showBookContent_renderNavButtons_bottom ({bookId, $wrpControls}) {
 		$(`<button class="ve-btn ve-btn-xs ve-btn-default no-print">Back to Top</button>`).click(() => MiscUtil.scrollPageTop()).appendTo($wrpControls);
 	}
 
-	static _showBookContent_updateSidebar({ ixChapter, ixChapterPrev, bookIdPrev, bookId }) {
+	static _showBookContent_updateSidebar ({ixChapter, ixChapterPrev, bookIdPrev, bookId}) {
 		if (ixChapter === ixChapterPrev && bookIdPrev === bookId) return;
 
 		// region Add highlight to current section
@@ -450,7 +450,7 @@ export class BookUtil {
 	/**
 	 * Update the Previous/Next/To Top buttons at the top/bottom of the page
 	 */
-	static _showBookContent_updateControls({ ixChapter, data }) {
+	static _showBookContent_updateControls ({ixChapter, data}) {
 		if (BookUtil.referenceId) {
 			const cnt = BookUtil.curRender.controls;
 
@@ -472,7 +472,7 @@ export class BookUtil {
 		}
 	}
 
-	static initLinkGrabbers() {
+	static initLinkGrabbers () {
 		const $body = $(`body`);
 		$body.on(`mousedown`, `.entry-title-inner`, function (evt) {
 			evt.preventDefault();
@@ -493,20 +493,20 @@ export class BookUtil {
 		});
 	}
 
-	static initScrollTopFloat() {
+	static initScrollTopFloat () {
 		const wrpScrollTop = OmnisearchUtilsUi.addScrollTopFloat();
 		BookUtil.$wrpFloatControls = $(`<div class="ve-flex-vh-center w-100 mb-2 ve-btn-group"></div>`).prependTo(wrpScrollTop);
 	}
 
 	// custom loading to serve multiple sources
-	static async booksHashChange() {
+	static async booksHashChange () {
 		const $contents = $(".contents");
 
-		const [bookIdRaw, ...hashParts] = Hist.util.getHashParts(window.location.hash, { isReturnEncoded: true });
+		const [bookIdRaw, ...hashParts] = Hist.util.getHashParts(window.location.hash, {isReturnEncoded: true});
 		const bookId = decodeURIComponent(bookIdRaw);
 
 		if (!bookId) {
-			this._booksHashChange_noContent({ $contents });
+			this._booksHashChange_noContent({$contents});
 			return;
 		}
 
@@ -559,28 +559,28 @@ export class BookUtil {
 
 		const fromIndex = BookUtil.bookIndex.find(bk => UrlUtil.encodeForHash(bk.id) === UrlUtil.encodeForHash(bookId));
 		if (fromIndex) {
-			return this._booksHashChange_pHandleFound({ fromIndex, bookId, hashParts, $contents, isNewBook });
+			return this._booksHashChange_pHandleFound({fromIndex, bookId, hashParts, $contents, isNewBook});
 		}
 
 		// if it's prerelease/homebrew
-		if (await this._booksHashChange_pDoLoadPrerelease({ bookId, $contents, hashParts, isNewBook })) return;
-		if (await this._booksHashChange_pDoLoadBrew({ bookId, $contents, hashParts, isNewBook })) return;
+		if (await this._booksHashChange_pDoLoadPrerelease({bookId, $contents, hashParts, isNewBook})) return;
+		if (await this._booksHashChange_pDoLoadBrew({bookId, $contents, hashParts, isNewBook})) return;
 
 		// if it's prerelease/homebrew but hasn't been loaded
-		if (await this._booksHashChange_pDoFetchPrereleaseBrew({ bookId, $contents, hashParts, isNewBook })) return;
+		if (await this._booksHashChange_pDoFetchPrereleaseBrew({bookId, $contents, hashParts, isNewBook})) return;
 
-		return this._booksHashChange_handleNotFound({ $contents, bookId });
+		return this._booksHashChange_handleNotFound({$contents, bookId});
 	}
 
-	static async _booksHashChange_pDoLoadPrerelease({ bookId, $contents, hashParts, isNewBook }) {
-		return this._booksHashChange_pDoLoadPrereleaseBrew({ bookId, $contents, hashParts, isNewBook, brewUtil: PrereleaseUtil, propIndex: "bookIndexPrerelease" });
+	static async _booksHashChange_pDoLoadPrerelease ({bookId, $contents, hashParts, isNewBook}) {
+		return this._booksHashChange_pDoLoadPrereleaseBrew({bookId, $contents, hashParts, isNewBook, brewUtil: PrereleaseUtil, propIndex: "bookIndexPrerelease"});
 	}
 
-	static async _booksHashChange_pDoLoadBrew({ bookId, $contents, hashParts, isNewBook }) {
-		return this._booksHashChange_pDoLoadPrereleaseBrew({ bookId, $contents, hashParts, isNewBook, brewUtil: BrewUtil2, propIndex: "bookIndexBrew" });
+	static async _booksHashChange_pDoLoadBrew ({bookId, $contents, hashParts, isNewBook}) {
+		return this._booksHashChange_pDoLoadPrereleaseBrew({bookId, $contents, hashParts, isNewBook, brewUtil: BrewUtil2, propIndex: "bookIndexBrew"});
 	}
 
-	static async _booksHashChange_pDoLoadPrereleaseBrew({ bookId, $contents, hashParts, isNewBook, brewUtil, propIndex }) {
+	static async _booksHashChange_pDoLoadPrereleaseBrew ({bookId, $contents, hashParts, isNewBook, brewUtil, propIndex}) {
 		const fromIndexBrew = BookUtil[propIndex].find(bk => UrlUtil.encodeForHash(bk.id) === UrlUtil.encodeForHash(bookId));
 		if (!fromIndexBrew) return false;
 
@@ -591,18 +591,18 @@ export class BookUtil {
 			.find(bk => UrlUtil.encodeForHash(bk.id) === UrlUtil.encodeForHash(bookId));
 
 		if (!bookData) {
-			this._booksHashChange_handleNotFound({ $contents, bookId });
+			this._booksHashChange_handleNotFound({$contents, bookId});
 			return true; // We found the book, just not its data
 		}
 
-		await this._booksHashChange_pHandleFound({ fromIndex: fromIndexBrew, homebrewData: bookData, bookId, hashParts, $contents, isNewBook });
+		await this._booksHashChange_pHandleFound({fromIndex: fromIndexBrew, homebrewData: bookData, bookId, hashParts, $contents, isNewBook});
 		return true;
 	}
 
-	static async _booksHashChange_pDoFetchPrereleaseBrew({ bookId, $contents, hashParts, isNewBook }) {
-		const { source } = await UrlUtil.pAutoDecodeHash(bookId);
+	static async _booksHashChange_pDoFetchPrereleaseBrew ({bookId, $contents, hashParts, isNewBook}) {
+		const {source} = await UrlUtil.pAutoDecodeHash(bookId);
 
-		const loaded = await DataLoader.pCacheAndGetHash(UrlUtil.getCurrentPage(), bookId, { isSilent: true });
+		const loaded = await DataLoader.pCacheAndGetHash(UrlUtil.getCurrentPage(), bookId, {isSilent: true});
 		if (!loaded) return false;
 
 		return [
@@ -614,13 +614,13 @@ export class BookUtil {
 					brewUtil.hasSourceJson(source)
 					&& brewUtil.isReloadRequired()
 				) {
-					brewUtil.doLocationReload({ isRetainHash: true });
+					brewUtil.doLocationReload({isRetainHash: true});
 					return true;
 				}
 			});
 	}
 
-	static _booksHashChange_getCleanName(fromIndex) {
+	static _booksHashChange_getCleanName (fromIndex) {
 		if (fromIndex.parentSource) {
 			const fullParentSource = Parser.sourceJsonToFull(fromIndex.parentSource);
 			return fromIndex.name.replace(new RegExp(`^${fullParentSource.escapeRegexp()}: `, "i"), `<span title="${Parser.sourceJsonToFull(fromIndex.parentSource).qq()}">${Parser.sourceJsonToAbv(fromIndex.parentSource).qq()}</span>: `);
@@ -628,8 +628,8 @@ export class BookUtil {
 		return fromIndex.name;
 	}
 
-	static async _booksHashChange_pHandleFound({ fromIndex, homebrewData, bookId, hashParts, $contents, isNewBook }) {
-		document.title = `${fromIndex.name} - 2etools`;
+	static async _booksHashChange_pHandleFound ({fromIndex, homebrewData, bookId, hashParts, $contents, isNewBook}) {
+		document.title = `${fromIndex.name} - 5etools`;
 		$(`#page__title`).html(this._booksHashChange_getCleanName(fromIndex));
 		$(`#page__subtitle`).html("Browse content. Press F to find, and G to go to page.");
 		await this._pLoadChapter(fromIndex, bookId, hashParts, homebrewData, $contents);
@@ -637,8 +637,8 @@ export class BookUtil {
 		if (isNewBook) MiscUtil.scrollPageTop();
 	}
 
-	static _booksHashChange_noContent({ $contents }) {
-		this._doPopulateContents({ $contents });
+	static _booksHashChange_noContent ({$contents}) {
+		this._doPopulateContents({$contents});
 
 		BookUtil.$dispBook.empty().html(`<tr><th class="ve-tbl-border" colspan="6"></th></tr>
 			<tr><td colspan="6" class="initial-message initial-message--med book-loading-message">Please select ${Parser.getArticle(BookUtil.contentType)} ${BookUtil.contentType} to view!</td></tr><tr><th class="ve-tbl-border" colspan="6"></th></tr>`);
@@ -646,7 +646,7 @@ export class BookUtil {
 		$(`.bk__overlay-loading`).remove();
 	}
 
-	static _booksHashChange_handleNotFound({ $contents, bookId }) {
+	static _booksHashChange_handleNotFound ({$contents, bookId}) {
 		if (!window.location.hash) return window.history.back();
 
 		$contents.empty();
@@ -658,7 +658,7 @@ export class BookUtil {
 		throw new Error(`No book with ID: ${bookId}`);
 	}
 
-	static _handlePageFromHash(pageTerm) {
+	static _handlePageFromHash (pageTerm) {
 		// Find the first result, and jump to it if it exists
 		const found = BookUtil.Search.doSearch(pageTerm, true);
 		if (found.length) {
@@ -667,29 +667,29 @@ export class BookUtil {
 			Hist.replaceHistoryHash(nxtHash);
 			return BookUtil.booksHashChange();
 		} else {
-			JqueryUtil.doToast({ type: "warning", content: `Could not find page ${pageTerm}!` });
+			JqueryUtil.doToast({type: "warning", content: `Could not find page ${pageTerm}!`});
 		}
 	}
 
-	static async _pLoadChapter(fromIndex, bookId, hashParts, homebrewData, $contents) {
+	static async _pLoadChapter (fromIndex, bookId, hashParts, homebrewData, $contents) {
 		const data = homebrewData || (await DataUtil.loadJSON(`${BookUtil.baseDataUrl}${bookId.toLowerCase()}.json`));
 
 		const isInitialLoad = BookUtil.curRender.curBookId !== bookId;
 
-		if (isInitialLoad) this._doPopulateContents({ $contents, book: fromIndex });
+		if (isInitialLoad) this._doPopulateContents({$contents, book: fromIndex});
 
 		BookUtil._showBookContent(BookUtil.referenceId ? data.data[BookUtil.referenceId] : data.data, fromIndex, bookId, hashParts);
 
 		if (isInitialLoad) BookUtil._addSearch(fromIndex, bookId);
 	}
 
-	static _doPopulateContents({ $contents, book }) {
+	static _doPopulateContents ({$contents, book}) {
 		$contents.html(BookUtil.allPageUrl ? `<div><a href="${BookUtil.allPageUrl}" class="lst__row-border lst__row-inner"><span class="bold">\u21FD ${this._getAllTitle()}</span></a></div>` : "");
 
-		if (book) BookUtil._$getRenderedContents({ book }).appendTo($contents);
+		if (book) BookUtil._$getRenderedContents({book}).appendTo($contents);
 	}
 
-	static _getAllTitle() {
+	static _getAllTitle () {
 		switch (BookUtil.contentType) {
 			case "adventure": return "All Adventures";
 			case "book": return "All Books";
@@ -697,7 +697,7 @@ export class BookUtil {
 		}
 	}
 
-	static handleReNav(ele) {
+	static handleReNav (ele) {
 		const hash = window.location.hash.slice(1).toLowerCase();
 		const linkHash = ($(ele).attr("href").split("#")[1] || "").toLowerCase();
 		if (hash === linkHash) {
@@ -706,7 +706,7 @@ export class BookUtil {
 		}
 	}
 
-	static _addSearch(indexData, bookId) {
+	static _addSearch (indexData, bookId) {
 		$(document.body).on("click", () => {
 			if (BookUtil._$findAll) BookUtil._$findAll.remove();
 		});
@@ -744,7 +744,7 @@ export class BookUtil {
 		</div>`.appendTo(document.body);
 	}
 
-	static _showSearchBox(indexData, bookId, isPageMode) {
+	static _showSearchBox (indexData, bookId, isPageMode) {
 		$(`span.temp`).contents().unwrap();
 		BookUtil._lastHighlight = null;
 		if (BookUtil._$findAll) BookUtil._$findAll.remove();
@@ -837,7 +837,7 @@ export class BookUtil {
 		$srch.focus();
 	}
 
-	static _$getRenderedContents(options) {
+	static _$getRenderedContents (options) {
 		const book = options.book;
 
 		BookUtil.curRender.$btnsToggleExpand = [];
@@ -897,14 +897,14 @@ export class BookUtil {
 		</div>`;
 	}
 
-	static getContentsSectionHeader(header) {
+	static getContentsSectionHeader (header) {
 		// handle entries with depth
 		if (header.depth) return `<span class="bk-contents__sub_spacer--1">\u2013</span>${header.header}`;
 		if (header.header) return header.header;
 		return header;
 	}
 
-	static $getContentsChapterBlock(bookId, ixChapter, chapter, addPrefix) {
+	static $getContentsChapterBlock (bookId, ixChapter, chapter, addPrefix) {
 		const headerCounts = {};
 
 		const $eles = [];
@@ -943,7 +943,7 @@ export class BookUtil {
 		return $out;
 	}
 
-	static _handleCheckReNav(evt) {
+	static _handleCheckReNav (evt) {
 		const lnk = evt.currentTarget;
 		let $lnk = $(lnk);
 		while ($lnk.length && !$lnk.is("a")) $lnk = $lnk.parent();
@@ -952,7 +952,7 @@ export class BookUtil {
 		if (`#${$lnk.attr("href").split("#")[1] || ""}` === window.location.hash) BookUtil.handleReNav(lnk);
 	}
 
-	static _getHrefShowAll(bookId) { return `#${UrlUtil.encodeForHash(bookId)},-1`; }
+	static _getHrefShowAll (bookId) { return `#${UrlUtil.encodeForHash(bookId)},-1`; }
 }
 // region Last render/etc
 BookUtil.curRender = {
@@ -998,11 +998,11 @@ BookUtil._headerCounts = null;
 BookUtil._lastHighlight = null;
 
 BookUtil.Search = class {
-	static getResultHash(bookId, found) {
+	static getResultHash (bookId, found) {
 		return `${UrlUtil.encodeForHash(bookId)}${HASH_PART_SEP}${~BookUtil.curRender.chapter ? found.ch : -1}${found.header ? `${HASH_PART_SEP}${UrlUtil.encodeForHash(found.header)}${HASH_PART_SEP}${found.headerIndex}` : ""}`;
 	}
 
-	static doSearch(term, isPageMode) {
+	static doSearch (term, isPageMode) {
 		if (term == null) return;
 		term = term.trim();
 
@@ -1034,7 +1034,7 @@ BookUtil.Search = class {
 		return out;
 	}
 
-	static _searchEntriesFor(chapterIndex, appendTo, term, obj, isPageMode) {
+	static _searchEntriesFor (chapterIndex, appendTo, term, obj, isPageMode) {
 		BookUtil._headerCounts = {};
 
 		const cleanTerm = isPageMode ? term : term.toLowerCase();
@@ -1042,7 +1042,7 @@ BookUtil.Search = class {
 		BookUtil.Search._searchEntriesForRecursive(chapterIndex, "", appendTo, term, cleanTerm, obj, isPageMode);
 	}
 
-	static _searchEntriesForRecursive(chapterIndex, prevLastName, appendTo, term, cleanTerm, obj, isPageMode) {
+	static _searchEntriesForRecursive (chapterIndex, prevLastName, appendTo, term, cleanTerm, obj, isPageMode) {
 		if (BookUtil.Search._isNamedEntry(obj)) {
 			const cleanName = Renderer.stripTags(obj.name);
 			if (BookUtil._headerCounts[cleanName] === undefined) BookUtil._headerCounts[cleanName] = 0;
@@ -1119,7 +1119,7 @@ BookUtil.Search = class {
 			}
 		}
 
-		function getSubstring(rendered, first, last) {
+		function getSubstring (rendered, first, last) {
 			let spaceCount = 0;
 			let braceCount = 0;
 			let pre = "";
@@ -1161,15 +1161,15 @@ BookUtil.Search = class {
 		}
 	}
 
-	static _isNamedEntry(obj) {
+	static _isNamedEntry (obj) {
 		return obj.name && (obj.type === "entries" || obj.type === "inset" || obj.type === "section");
 	}
 
-	static _getClosestPages(toSearch, targetPage) {
+	static _getClosestPages (toSearch, targetPage) {
 		let closestBelow = Number.MIN_SAFE_INTEGER;
 		let closestAbove = Number.MAX_SAFE_INTEGER;
 
-		const walker = MiscUtil.getWalker({ keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST });
+		const walker = MiscUtil.getWalker({keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST});
 		walker.walk(
 			toSearch,
 			{

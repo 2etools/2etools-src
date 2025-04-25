@@ -1,4 +1,4 @@
-import { getFnRootPropListSort } from "./utils-proporder-sort.js";
+import {getFnRootPropListSort} from "./utils-proporder-sort.js";
 
 export class ObjectKey {
 	/**
@@ -20,7 +20,7 @@ export class ObjectKey {
 	 * @param {?Array<string>} identKeys
 	 * @param {function} fnGetModOrder
 	 */
-	static getCopyKey ({ identKeys = null, fnGetModOrder }) {
+	static getCopyKey ({identKeys = null, fnGetModOrder}) {
 		return new this("_copy", {
 			order: [
 				...(

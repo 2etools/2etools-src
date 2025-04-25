@@ -1,19 +1,19 @@
 "use strict";
 
 class NavBar {
-	static init() {
+	static init () {
 		this._initInstallPrompt();
 		// render the visible elements ASAP
 		window.addEventListener("DOMContentLoaded", NavBar._onDomContentLoaded);
 		window.addEventListener("load", NavBar._onLoad);
 	}
 
-	static _onDomContentLoaded() {
+	static _onDomContentLoaded () {
 		NavBar._initElements();
 		NavBar.highlightCurrentPage();
 	}
 
-	static _onLoad() {
+	static _onLoad () {
 		NavBar._dropdowns = [...NavBar._navbar.querySelectorAll(`li.dropdown--navbar`)];
 		document.addEventListener("click", () => NavBar._closeAllDropdowns());
 
@@ -22,12 +22,12 @@ class NavBar {
 		NavBar._initAdventureBookElements().then(null);
 	}
 
-	static _initInstallPrompt() {
+	static _initInstallPrompt () {
 		NavBar._cachedInstallEvent = null;
 		window.addEventListener("beforeinstallprompt", e => NavBar._cachedInstallEvent = e);
 	}
 
-	static _initElements() {
+	static _initElements () {
 		NavBar._navbar = document.getElementById("navbar");
 		NavBar._tree = new NavBar.Node({
 			body: NavBar._navbar,
@@ -43,13 +43,13 @@ class NavBar {
 		};
 		document.getElementById("navigation").prepend(btnShowHide);
 
-		this._addElement_li(null, "index.html", "Home", { isRoot: true });
+		this._addElement_li(null, "index.html", "Home", {isRoot: true});
 
 		this._addElement_dropdown(null, NavBar._CAT_RULES);
 		this._addElement_li(NavBar._CAT_RULES, "variantrules.html", "Rules Glossary");
 		this._addElement_li(NavBar._CAT_RULES, "tables.html", "Tables");
 		this._addElement_divider(NavBar._CAT_RULES);
-		this._addElement_dropdown(NavBar._CAT_RULES, NavBar._CAT_BOOKS, { isSide: true, page: "books.html" });
+		this._addElement_dropdown(NavBar._CAT_RULES, NavBar._CAT_BOOKS, {isSide: true, page: "books.html"});
 		this._addElement_li(NavBar._CAT_BOOKS, "books.html", "View All/Homebrew");
 		this._addElement_divider(NavBar._CAT_RULES);
 		this._addElement_li(NavBar._CAT_RULES, "quickreference.html", "Quick Reference (2014)");
@@ -70,7 +70,7 @@ class NavBar {
 		this._addElement_dropdown(null, NavBar._CAT_DUNGEON_MASTER);
 		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "dmscreen.html", "DM Screen");
 		this._addElement_divider(NavBar._CAT_DUNGEON_MASTER);
-		this._addElement_dropdown(NavBar._CAT_DUNGEON_MASTER, NavBar._CAT_ADVENTURES, { isSide: true, page: "adventures.html" });
+		this._addElement_dropdown(NavBar._CAT_DUNGEON_MASTER, NavBar._CAT_ADVENTURES, {isSide: true, page: "adventures.html"});
 		this._addElement_li(NavBar._CAT_ADVENTURES, "adventures.html", "View All/Homebrew");
 		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "cultsboons.html", "Cults & Supernatural Boons");
 		this._addElement_li(NavBar._CAT_DUNGEON_MASTER, "objects.html", "Objects");
@@ -113,7 +113,7 @@ class NavBar {
 						click: async evt => {
 							evt.stopPropagation();
 							evt.preventDefault();
-							const { ManageBrewUi } = await import("./utils-brew/utils-brew-ui-manage.js");
+							const {ManageBrewUi} = await import("./utils-brew/utils-brew-ui-manage.js");
 							await ManageBrewUi.pOnClickBtnLoadAllPartnered();
 						},
 					},
@@ -124,8 +124,8 @@ class NavBar {
 							evt.stopPropagation();
 							evt.preventDefault();
 							const ele = evt.currentTarget;
-							const { ManageBrewUi } = await import("./utils-brew/utils-brew-ui-manage.js");
-							await ManageBrewUi.pOnClickBtnExportListAsUrl({ ele });
+							const {ManageBrewUi} = await import("./utils-brew/utils-brew-ui-manage.js");
+							await ManageBrewUi.pOnClickBtnExportListAsUrl({ele});
 						},
 					},
 				],
@@ -141,10 +141,10 @@ class NavBar {
 		this._addElement_divider(NavBar._CAT_UTILITIES);
 		this._addElement_li(NavBar._CAT_UTILITIES, "plutonium.html", "Plutonium (Foundry Module) Features");
 		this._addElement_divider(NavBar._CAT_UTILITIES);
-		this._addElement_li(NavBar._CAT_UTILITIES, "https://wiki.tercept.net/en/betteR20", "Roll20 Script Help", { isExternal: true });
+		this._addElement_li(NavBar._CAT_UTILITIES, "https://wiki.tercept.net/en/betteR20", "Roll20 Script Help", {isExternal: true});
 		this._addElement_divider(NavBar._CAT_UTILITIES);
 		this._addElement_li(NavBar._CAT_UTILITIES, "changelog.html", "Changelog");
-		this._addElement_li(NavBar._CAT_UTILITIES, NavBar._getCurrentWikiHelpPage(), "Help", { isExternal: true });
+		this._addElement_li(NavBar._CAT_UTILITIES, NavBar._getCurrentWikiHelpPage(), "Help", {isExternal: true});
 		this._addElement_divider(NavBar._CAT_UTILITIES);
 		this._addElement_li(NavBar._CAT_UTILITIES, "privacy-policy.html", "Privacy Policy");
 
@@ -185,13 +185,13 @@ class NavBar {
 				title: "Add the site to your home screen. When used in conjunction with the Preload Offline Data option, this can create a functional offline copy of the site.",
 			},
 		);
-		this._addElement_dropdown(NavBar._CAT_SETTINGS, NavBar._CAT_CACHE, { isSide: true });
+		this._addElement_dropdown(NavBar._CAT_SETTINGS, NavBar._CAT_CACHE, {isSide: true});
 		this._addElement_label(NavBar._CAT_CACHE, `<p>Preload data for offline use.</p><p>Note that visiting a page will automatically preload data for that page.</p><p>Note that data which is already preloaded will not be overwritten, unless it is out of date.</p>`);
 		this._addElement_button(
 			NavBar._CAT_CACHE,
 			{
 				html: "Preload Adventure Text <small>(50MB+)</small>",
-				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, { route: /data\/adventure/ }),
+				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, {route: /data\/adventure/}),
 				title: "Preload adventure text for offline use.",
 			},
 		);
@@ -199,7 +199,7 @@ class NavBar {
 			NavBar._CAT_CACHE,
 			{
 				html: "Preload Book Images <small>(1GB+)</small>",
-				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, { route: /img\/book/, isRequireImages: true }),
+				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, {route: /img\/book/, isRequireImages: true}),
 				title: "Preload book images offline use. Note that book text is preloaded automatically.",
 			},
 		);
@@ -207,7 +207,7 @@ class NavBar {
 			NavBar._CAT_CACHE,
 			{
 				html: "Preload Adventure Text and Images <small>(2GB+)</small>",
-				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, { route: /(?:data|img)\/adventure/, isRequireImages: true }),
+				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, {route: /(?:data|img)\/adventure/, isRequireImages: true}),
 				title: "Preload adventure text and images for offline use.",
 			},
 		);
@@ -215,7 +215,7 @@ class NavBar {
 			NavBar._CAT_CACHE,
 			{
 				html: "Preload All Images <small>(4GB+)</small>",
-				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, { route: /img/, isRequireImages: true }),
+				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, {route: /img/, isRequireImages: true}),
 				title: "Preload all images for offline use.",
 			},
 		);
@@ -223,7 +223,7 @@ class NavBar {
 			NavBar._CAT_CACHE,
 			{
 				html: "Preload All <small>(5GB+)</small>",
-				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, { route: /./, isRequireImages: true }),
+				click: (evt) => NavBar.InteractionManager._pOnClick_button_preloadOffline(evt, {route: /./, isRequireImages: true}),
 				title: "Preload everything for offline use.",
 			},
 		);
@@ -238,7 +238,7 @@ class NavBar {
 		);
 	}
 
-	static _getNode(category) {
+	static _getNode (category) {
 		if (category == null) return NavBar._tree;
 
 		const _getNodeInner = (level) => {
@@ -258,7 +258,7 @@ class NavBar {
 	 * - An index JSON file.
 	 * - The user's Blocklist.
 	 */
-	static async _initAdventureBookElements() {
+	static async _initAdventureBookElements () {
 		await Promise.all([
 			PrereleaseUtil.pInit(),
 			BrewUtil2.pInit(),
@@ -285,7 +285,7 @@ class NavBar {
 				parentCategory: NavBar._CAT_ADVENTURES,
 				fnSort: SortUtil.ascSortAdventure.bind(SortUtil),
 			},
-		].forEach(({ prop, parentCategory, page, fnSort }) => {
+		].forEach(({prop, parentCategory, page, fnSort}) => {
 			const fromPrerelease = MiscUtil.copyFast(prerelease?.[prop] || []);
 			const fromBrew = MiscUtil.copyFast(brew?.[prop] || []);
 
@@ -297,17 +297,17 @@ class NavBar {
 			fromBrew.forEach(mutParentName);
 
 			const metas = [...adventureBookIndex[prop], ...fromPrerelease, ...fromBrew]
-				.filter(it => !ExcludeUtil.isExcluded(UrlUtil.encodeForHash(it.id), prop, it.source, { isNoCount: true }));
+				.filter(it => !ExcludeUtil.isExcluded(UrlUtil.encodeForHash(it.id), prop, it.source, {isNoCount: true}));
 
 			if (!metas.length) return;
 
 			SourceUtil.ADV_BOOK_GROUPS
-				.forEach(({ group, displayName }) => {
+				.forEach(({group, displayName}) => {
 					const inGroup = metas.filter(it => (it.group || "other") === group);
 					if (!inGroup.length) return;
 
 					this._addElement_divider(parentCategory);
-					this._addElement_label(parentCategory, displayName, { isAddDateSpacer: true });
+					this._addElement_label(parentCategory, displayName, {isAddDateSpacer: true});
 
 					const seenYears = new Set();
 
@@ -384,7 +384,7 @@ class NavBar {
 	 * @param [opts.isInAccordion] - True if this item is inside an accordion.
 	 *        FIXME(Future) this is a bodge; refactor the navbar CSS to avoid using Bootstrap.
 	 */
-	static _addElement_li(parentCategory, page, aText, opts) {
+	static _addElement_li (parentCategory, page, aText, opts) {
 		opts = opts || {};
 
 		const parentNode = this._getNode(parentCategory);
@@ -408,7 +408,7 @@ class NavBar {
 
 		const a = document.createElement("a");
 		a.href = href;
-		a.innerHTML = `${this._addElement_getDatePrefix({ date: opts.date, isAddDateSpacer: opts.isAddDateSpacer })}${this._addElement_getSourcePrefix({ source: opts.source })}${aText}${this._addElement_getSourceSuffix({ source: opts.source })}`;
+		a.innerHTML = `${this._addElement_getDatePrefix({date: opts.date, isAddDateSpacer: opts.isAddDateSpacer})}${this._addElement_getSourcePrefix({source: opts.source})}${aText}${this._addElement_getSourceSuffix({source: opts.source})}`;
 		a.classList.add("nav__link");
 		if (opts.isInAccordion) a.classList.add(`nav2-accord__lnk-item`, `inline-block`, `w-100`);
 
@@ -430,7 +430,7 @@ class NavBar {
 		});
 	}
 
-	static _addElement_accordion(
+	static _addElement_accordion (
 		parentCategory,
 		category,
 		{
@@ -455,7 +455,7 @@ class NavBar {
 		};
 
 		const dispText = document.createElement("div");
-		dispText.innerHTML = `${this._addElement_getDatePrefix({ date, isAddDateSpacer })}${this._addElement_getSourcePrefix({ source })}${category}`;
+		dispText.innerHTML = `${this._addElement_getDatePrefix({date, isAddDateSpacer})}${this._addElement_getSourcePrefix({source})}${category}`;
 
 		const dispToggle = document.createElement("div");
 		dispToggle.textContent = NavBar.NodeAccordion.getDispToggleDisplayHtml(false);
@@ -483,15 +483,15 @@ class NavBar {
 		parentNode.children[category] = node;
 	}
 
-	static _addElement_getDatePrefix({ date, isAddDateSpacer }) { return `${(date != null || isAddDateSpacer) ? `<div class="ve-small mr-2 page__nav-date inline-block ve-text-right inline-block" aria-hidden="true">${date || ""}</div>` : ""}`; }
-	static _addElement_getSourcePrefix({ source }) { return `${source != null ? `<div class="nav2-list__disp-source ${Parser.sourceJsonToSourceClassname(source)}" ${Parser.sourceJsonToStyle(source)}></div>` : ""}`; }
+	static _addElement_getDatePrefix ({date, isAddDateSpacer}) { return `${(date != null || isAddDateSpacer) ? `<div class="ve-small mr-2 page__nav-date inline-block ve-text-right inline-block" aria-hidden="true">${date || ""}</div>` : ""}`; }
+	static _addElement_getSourcePrefix ({source}) { return `${source != null ? `<div class="nav2-list__disp-source ${Parser.sourceJsonToSourceClassname(source)}" ${Parser.sourceJsonToStyle(source)}></div>` : ""}`; }
 
-	static _addElement_getSourceSuffix({ source }) {
+	static _addElement_getSourceSuffix ({source}) {
 		if (source == null) return "";
-		return Parser.sourceJsonToMarkerHtml(source, { isList: false, additionalStyles: "ml-1 nav2-list__disp-legacy-marker" });
+		return Parser.sourceJsonToMarkerHtml(source, {isList: false, additionalStyles: "ml-1 nav2-list__disp-legacy-marker"});
 	}
 
-	static _addElement_divider(parentCategory) {
+	static _addElement_divider (parentCategory) {
 		const parentNode = this._getNode(parentCategory);
 
 		const li = document.createElement("li");
@@ -501,13 +501,13 @@ class NavBar {
 		parentNode.body.appendChild(li);
 	}
 
-	static _addElement_label(parentCategory, html, { date, isAddDateSpacer } = {}) {
+	static _addElement_label (parentCategory, html, {date, isAddDateSpacer} = {}) {
 		const parentNode = this._getNode(parentCategory);
 
 		const li = document.createElement("li");
 		li.setAttribute("role", "presentation");
 		li.className = "italic ve-muted ve-small nav2-list__label";
-		li.innerHTML = `${this._addElement_getDatePrefix({ date, isAddDateSpacer })}${html}`;
+		li.innerHTML = `${this._addElement_getDatePrefix({date, isAddDateSpacer})}${html}`;
 
 		parentNode.body.appendChild(li);
 	}
@@ -519,7 +519,7 @@ class NavBar {
 	 * @param {boolean} [isSide=false] - If this is a sideways dropdown.
 	 * @param {String} [page=null] - The page this dropdown is associated with.
 	 */
-	static _addElement_dropdown(parentCategory, category, { isSide = false, page = null } = {}) {
+	static _addElement_dropdown (parentCategory, category, {isSide = false, page = null} = {}) {
 		const parentNode = this._getNode(parentCategory);
 
 		const li = document.createElement("li");
@@ -578,7 +578,7 @@ class NavBar {
 	 * @param options.title Button title.
 	 * @param options.className Additional button classes.
 	 */
-	static _addElement_button(parentCategory, options) {
+	static _addElement_button (parentCategory, options) {
 		const parentNode = this._getNode(parentCategory);
 
 		const li = document.createElement("li");
@@ -604,7 +604,7 @@ class NavBar {
 	 * @param options.html
 	 * @param options.metas
 	 */
-	static _addElement_buttonSplit(parentCategory, options) {
+	static _addElement_buttonSplit (parentCategory, options) {
 		const parentNode = this._getNode(parentCategory);
 
 		const li = document.createElement("li");
@@ -612,7 +612,7 @@ class NavBar {
 		li.className = "ve-flex-v-center";
 
 		options.metas
-			.forEach(({ className, click, html, title }, i) => {
+			.forEach(({className, click, html, title}, i) => {
 				const eleSpan = document.createElement("span");
 
 				eleSpan.className = [
@@ -634,7 +634,7 @@ class NavBar {
 		parentNode.body.appendChild(li);
 	}
 
-	static _getCurrentPage() {
+	static _getCurrentPage () {
 		let currentPage = window.location.pathname;
 		currentPage = currentPage.substr(currentPage.lastIndexOf("/") + 1);
 
@@ -642,12 +642,12 @@ class NavBar {
 		return currentPage.trim();
 	}
 
-	static _getCurrentWikiHelpPage() {
+	static _getCurrentWikiHelpPage () {
 		const slug = NavBar._getCurrentPage().replace(/.html$/i, "");
 		return `https://wiki.tercept.net/en/5eTools/HelpPages/${slug === "index" ? "" : slug}`;
 	}
 
-	static highlightCurrentPage() {
+	static highlightCurrentPage () {
 		let currentPage = NavBar._getCurrentPage();
 		let hash = "";
 
@@ -671,7 +671,7 @@ class NavBar {
 		node.isActive = true;
 	}
 
-	static _doRemoveAllPageHighlights() {
+	static _doRemoveAllPageHighlights () {
 		const _doRemoveAllPageHighlightsInner = (level) => {
 			for (const node of Object.values(level)) {
 				node.isActive = false;
@@ -682,7 +682,7 @@ class NavBar {
 		_doRemoveAllPageHighlightsInner(NavBar._tree.children);
 	}
 
-	static _handleDropdownClick(ele, event, isSide) {
+	static _handleDropdownClick (ele, event, isSide) {
 		event.preventDefault();
 		event.stopPropagation();
 		if (isSide) return;
@@ -693,28 +693,28 @@ class NavBar {
 
 	/* -------------------------------------------- */
 
-	static _isDropdownOpen(ele) {
+	static _isDropdownOpen (ele) {
 		return ele.parentNode.classList.contains("open");
 	}
 
 	/* -------------------------------------------- */
 
-	static _closeDropdown(ele) {
+	static _closeDropdown (ele) {
 		this._closeDropdownElement(ele.parentNode);
 	}
 
-	static _closeDropdownElement(ele) {
+	static _closeDropdownElement (ele) {
 		ele.classList.remove("open");
 		ele.firstChild.setAttribute("aria-expanded", "false");
 	}
 
-	static _closeAllDropdowns() {
+	static _closeAllDropdowns () {
 		NavBar._dropdowns.forEach(ele => NavBar._closeDropdownElement(ele));
 	}
 
 	/* -------------------------------------------- */
 
-	static _openDropdown(ele) {
+	static _openDropdown (ele) {
 		const lisOpen = [];
 
 		let parent = ele.parentNode;
@@ -731,10 +731,10 @@ class NavBar {
 
 		NavBar._dropdowns.filter(ele => !lisOpen.includes(ele)).forEach(ele => NavBar._closeDropdownElement(ele));
 
-		this._openDropdown_mutAlignment({ liNavbar: lisOpen.slice(-1)[0] });
+		this._openDropdown_mutAlignment({liNavbar: lisOpen.slice(-1)[0]});
 	}
 
-	static _openDropdownElement(ele) {
+	static _openDropdownElement (ele) {
 		ele.classList.add("open");
 		ele.firstChild.setAttribute("aria-expanded", "true");
 	}
@@ -744,7 +744,7 @@ class NavBar {
 	 * @param liNavbar
 	 * @private
 	 */
-	static _openDropdown_mutAlignment({ liNavbar }) {
+	static _openDropdown_mutAlignment ({liNavbar}) {
 		const uls = [...liNavbar.querySelectorAll("ul.ve-dropdown-menu")];
 		const widthRequired = window.innerWidth < 1200
 			? Math.max(...uls.map(ul => ul.getBoundingClientRect().width))
@@ -759,10 +759,10 @@ class NavBar {
 
 	/* -------------------------------------------- */
 
-	static _handleItemMouseEnter(ele) {
+	static _handleItemMouseEnter (ele) {
 		const $ele = $(ele);
-		const timerIds = $ele.siblings("[data-timer-id]").map((i, e) => ({ $ele: $(e), timerId: $(e).data("timer-id") })).get();
-		timerIds.forEach(({ $ele, timerId }) => {
+		const timerIds = $ele.siblings("[data-timer-id]").map((i, e) => ({$ele: $(e), timerId: $(e).data("timer-id")})).get();
+		timerIds.forEach(({$ele, timerId}) => {
 			if (NavBar._timersOpen[timerId]) {
 				clearTimeout(NavBar._timersOpen[timerId]);
 				delete NavBar._timersOpen[timerId];
@@ -793,7 +793,7 @@ class NavBar {
 		});
 	}
 
-	static _handleSideItemMouseEnter(ele) {
+	static _handleSideItemMouseEnter (ele) {
 		const timerId = $(ele).closest(`li.dropdown`).data("timer-id");
 		if (NavBar._timersClose[timerId]) {
 			clearTimeout(NavBar._timersClose[timerId]);
@@ -802,7 +802,7 @@ class NavBar {
 		}
 	}
 
-	static _handleSideDropdownMouseEnter(ele) {
+	static _handleSideDropdownMouseEnter (ele) {
 		const $ele = $(ele);
 		const timerId = $ele.parent().data("timer-id") || NavBar._timerId++;
 		$ele.parent().attr("data-timer-id", timerId);
@@ -821,7 +821,7 @@ class NavBar {
 		}
 	}
 
-	static _handleSideDropdownMouseLeave(ele) {
+	static _handleSideDropdownMouseLeave (ele) {
 		const $ele = $(ele);
 		if (!$ele.parent().data("timer-id")) return;
 		const timerId = $ele.parent().data("timer-id");
@@ -829,7 +829,7 @@ class NavBar {
 		delete NavBar._timersOpen[timerId];
 	}
 
-	static _clearAllTimers() {
+	static _clearAllTimers () {
 		Object.entries(NavBar._timersOpen).forEach(([k, v]) => {
 			clearTimeout(v);
 			delete NavBar._timersOpen[k];
@@ -863,32 +863,32 @@ NavBar._timerMousePos = {};
 NavBar._cachedInstallEvent = null;
 
 NavBar.InteractionManager = class {
-	static _onClick_button_dayNight(evt) {
+	static _onClick_button_dayNight (evt) {
 		evt.preventDefault();
 		styleSwitcher.cycleDayNightMode();
 	}
 
-	static _onContext_button_dayNight(evt) {
+	static _onContext_button_dayNight (evt) {
 		evt.preventDefault();
 		styleSwitcher.cycleDayNightMode(-1);
 	}
 
-	static _onClick_button_wideMode(evt) {
+	static _onClick_button_wideMode (evt) {
 		evt.preventDefault();
 		styleSwitcher.toggleWide();
 	}
 
-	static async _pOnClick_button_saveStateFile(evt) {
+	static async _pOnClick_button_saveStateFile (evt) {
 		evt.preventDefault();
 		const sync = StorageUtil.syncGetDump();
 		const async = await StorageUtil.pGetDump();
-		const dump = { sync, async };
-		DataUtil.userDownload("5etools", dump, { fileType: "5etools" });
+		const dump = {sync, async};
+		DataUtil.userDownload("5etools", dump, {fileType: "5etools"});
 	}
 
-	static async _pOnClick_button_loadStateFile(evt) {
+	static async _pOnClick_button_loadStateFile (evt) {
 		evt.preventDefault();
-		const { jsons, errors } = await InputUiUtil.pGetUserUploadJson({ expectedFileTypes: ["5etools"] });
+		const {jsons, errors} = await InputUiUtil.pGetUserUploadJson({expectedFileTypes: ["5etools"]});
 
 		DataUtil.doHandleFileLoadErrorsGeneric(errors);
 
@@ -900,12 +900,12 @@ NavBar.InteractionManager = class {
 			await StorageUtil.pSetFromDump(dump.async);
 			location.reload();
 		} catch (e) {
-			JqueryUtil.doToast({ type: "danger", content: `Failed to load state! ${VeCt.STR_SEE_CONSOLE}` });
+			JqueryUtil.doToast({type: "danger", content: `Failed to load state! ${VeCt.STR_SEE_CONSOLE}`});
 			throw e;
 		}
 	}
 
-	static async _pOnClick_button_addApp(evt) {
+	static async _pOnClick_button_addApp (evt) {
 		evt.preventDefault();
 		try {
 			NavBar._cachedInstallEvent.prompt();
@@ -914,7 +914,7 @@ NavBar.InteractionManager = class {
 		}
 	}
 
-	static async _pOnClick_button_preloadOffline(evt, { route, isRequireImages = false }) {
+	static async _pOnClick_button_preloadOffline (evt, {route, isRequireImages = false}) {
 		evt.preventDefault();
 
 		if (globalThis.swCacheRoutes === undefined) {
@@ -933,7 +933,7 @@ NavBar.InteractionManager = class {
 		globalThis.swCacheRoutes(route);
 	}
 
-	static async _pOnClick_button_clearOffline(evt) {
+	static async _pOnClick_button_clearOffline (evt) {
 		evt.preventDefault();
 
 		if (globalThis.swResetAll === undefined) {
@@ -946,7 +946,7 @@ NavBar.InteractionManager = class {
 };
 
 NavBar.Node = class {
-	constructor({ parent, head, body }) {
+	constructor ({parent, head, body}) {
 		this.parent = parent;
 		this.head = head;
 		this.body = body;
@@ -955,25 +955,25 @@ NavBar.Node = class {
 		this._isActive = false;
 	}
 
-	set isActive(val) {
+	set isActive (val) {
 		this._isActive = !!val;
 		this?.head?.classList?.toggle("active", this._isActive);
 		if (this.parent) this.parent.isActive = this._isActive;
 	}
 
-	get isActive() {
+	get isActive () {
 		return this._isActive;
 	}
 };
 
 NavBar.NodeLink = class extends NavBar.Node {
-	constructor({ isInAccordion, lnk, ...rest }) {
+	constructor ({isInAccordion, lnk, ...rest}) {
 		super(rest);
 		this._isInAccordion = !!isInAccordion;
 		this._lnk = lnk;
 	}
 
-	set isActive(val) {
+	set isActive (val) {
 		if (!this._isInAccordion) {
 			super.isActive = val;
 			return;
@@ -984,38 +984,38 @@ NavBar.NodeLink = class extends NavBar.Node {
 		if (this.parent) this.parent.isActive = this._isActive;
 	}
 
-	get isActive() { // Overriding the setter clobbers the getter, so, re-make it
+	get isActive () { // Overriding the setter clobbers the getter, so, re-make it
 		return super.isActive;
 	}
 };
 
 NavBar.NodeAccordion = class extends NavBar.Node {
-	static getDispToggleDisplayHtml(val) { return val ? `[\u2212]` : `[+]`; }
+	static getDispToggleDisplayHtml (val) { return val ? `[\u2212]` : `[+]`; }
 
-	constructor({ dispToggle, ...rest }) {
+	constructor ({dispToggle, ...rest}) {
 		super(rest);
 		this._dispToggle = dispToggle;
 		this._isExpanded = false;
 	}
 
-	set isActive(val) {
+	set isActive (val) {
 		this._isActive = !!val;
 		this?.head?.classList?.toggle("nav2-accord__head--active", this._isActive);
 		if (val && !this._isExpanded) this.isExpanded = true;
 		if (this.parent) this.parent.isActive = this._isActive;
 	}
 
-	get isActive() { // Overriding the setter clobbers the getter, so, re-make it
+	get isActive () { // Overriding the setter clobbers the getter, so, re-make it
 		return super.isActive;
 	}
 
-	set isExpanded(val) {
+	set isExpanded (val) {
 		this._isExpanded = val;
 		this?.body?.classList?.toggle("ve-hidden", !val);
 		this._dispToggle.textContent = NavBar.NodeAccordion.getDispToggleDisplayHtml(val);
 	}
 
-	get isExpanded() {
+	get isExpanded () {
 		return this._isExpanded;
 	}
 };

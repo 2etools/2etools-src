@@ -1,5 +1,5 @@
 import {FilterItemClassSubclass} from "./filter-item.js";
-import {MISC_FILTER_VALUE__BASIC_RULES_2014, MISC_FILTER_VALUE__FREE_RULES_2024} from "./filter-constants.js";
+import {MISC_FILTER_VALUE__BASIC_RULES_2014, MISC_FILTER_VALUE__BASIC_RULES_2024, MISC_FILTER_VALUE__SRD_5_1, MISC_FILTER_VALUE__SRD_5_2} from "./filter-constants.js";
 
 /** @abstract */
 export class PageFilterBase {
@@ -130,9 +130,11 @@ export class PageFilterBase {
 	static _mutateForFilters_commonMisc (ent) {
 		ent._fMisc = [];
 
+		if (ent.srd) ent._fMisc.push(MISC_FILTER_VALUE__SRD_5_1);
 		if (ent.basicRules) ent._fMisc.push(MISC_FILTER_VALUE__BASIC_RULES_2014);
 
-		if (ent.freeRules2024) ent._fMisc.push(MISC_FILTER_VALUE__FREE_RULES_2024);
+		if (ent.srd52) ent._fMisc.push(MISC_FILTER_VALUE__SRD_5_2);
+		if (ent.basicRules2024) ent._fMisc.push(MISC_FILTER_VALUE__BASIC_RULES_2024);
 
 		if (SourceUtil.isLegacySourceWotc(ent.source)) ent._fMisc.push("Legacy");
 

@@ -1,7 +1,7 @@
-import { RenderItems } from "./render-items.js";
+import {RenderItems} from "./render-items.js";
 
 class ItemsSublistManager extends SublistManager {
-	constructor() {
+	constructor () {
 		super({
 			sublistListOptions: {
 				fnSort: PageFilterItems.sortItems,
@@ -17,7 +17,7 @@ class ItemsSublistManager extends SublistManager {
 		this._$totalItems = null;
 	}
 
-	async pCreateSublist() {
+	async pCreateSublist () {
 		[this._sublistCurrencyConversion, this._sublistCurrencyDisplayMode] = await Promise.all([
 			StorageUtil.pGetForPage("sublistCurrencyConversion"),
 			StorageUtil.pGetForPage("sublistCurrencyDisplayMode"),
@@ -26,7 +26,7 @@ class ItemsSublistManager extends SublistManager {
 		return super.pCreateSublist();
 	}
 
-	static _getRowTemplate() {
+	static _getRowTemplate () {
 		return [
 			new SublistCellTemplate({
 				name: "Name",
@@ -51,7 +51,7 @@ class ItemsSublistManager extends SublistManager {
 		];
 	}
 
-	pGetSublistItem(item, hash, { count = 1 } = {}) {
+	pGetSublistItem (item, hash, {count = 1} = {}) {
 		const cellsText = [
 			item.name,
 			item._l_weight || "\u2014",
@@ -61,7 +61,7 @@ class ItemsSublistManager extends SublistManager {
 		const $dispCount = $(`<span class="ve-text-center ve-col-2 pr-0">${count}</span>`);
 		const $ele = $$`<div class="lst__row lst__row--sublist ve-flex-col">
 			<a href="#${hash}" class="lst__row-border lst__row-inner">
-				${this.constructor._getRowCellsHtml({ values: cellsText, templates: this.constructor._ROW_TEMPLATE.slice(0, 3) })}
+				${this.constructor._getRowCellsHtml({values: cellsText, templates: this.constructor._ROW_TEMPLATE.slice(0, 3)})}
 				${$dispCount}
 			</a>
 		</div>`
@@ -83,13 +83,13 @@ class ItemsSublistManager extends SublistManager {
 				count,
 				$elesCount: [$dispCount],
 				entity: item,
-				mdRow: [...cellsText, ({ listItem }) => listItem.data.count],
+				mdRow: [...cellsText, ({listItem}) => listItem.data.count],
 			},
 		);
 		return listItem;
 	}
 
-	_onSublistChange() {
+	_onSublistChange () {
 		this._$totalWeight = this._$totalWeight || $(`#totalweight`);
 		this._$totalValue = this._$totalValue || $(`#totalvalue`);
 		this._$totalItems = this._$totalItems || $(`#totalitems`);
@@ -100,7 +100,7 @@ class ItemsSublistManager extends SublistManager {
 
 		const availConversions = new Set();
 		this._listSub.items.forEach(it => {
-			const { data: { entity: item } } = it;
+			const {data: {entity: item}} = it;
 			if (item.currencyConversion) availConversions.add(item.currencyConversion);
 			const count = it.data.count;
 			cntItems += it.data.count;
@@ -108,12 +108,12 @@ class ItemsSublistManager extends SublistManager {
 			if (item.value) value += item.value * count;
 		});
 
-		this._$totalWeight.text(Parser.itemWeightToFull({ weight }, true));
+		this._$totalWeight.text(Parser.itemWeightToFull({weight}, true));
 		this._$totalItems.text(cntItems);
 
 		if (availConversions.size) {
 			this._$totalValue
-				.text(Parser.itemValueToFullMultiCurrency({ value, currencyConversion: this._sublistCurrencyConversion }))
+				.text(Parser.itemValueToFullMultiCurrency({value, currencyConversion: this._sublistCurrencyConversion}))
 				.off("click")
 				.click(async () => {
 					const values = ["(Default)", ...[...availConversions].sort(SortUtil.ascSortLower)];
@@ -134,7 +134,7 @@ class ItemsSublistManager extends SublistManager {
 		}
 
 		this._$totalValue
-			.text(this._getTotalValueText({ value }) || "\u2014")
+			.text(this._getTotalValueText({value}) || "\u2014")
 			.off("click")
 			.click(async () => {
 				const defaultSel = this.constructor._TOTAL_VALUE_MODES.indexOf(this._sublistCurrencyDisplayMode);
@@ -160,9 +160,9 @@ class ItemsSublistManager extends SublistManager {
 		this._TOTAL_VALUE_MODE_LOWEST_COMMON,
 		this._TOTAL_VALUE_MODE_GOLD,
 	];
-	_getTotalValueText({ value }) {
+	_getTotalValueText ({value}) {
 		switch (this._sublistCurrencyDisplayMode) {
-			case this.constructor._TOTAL_VALUE_MODE_LOWEST_COMMON: return Parser.itemValueToFull({ value });
+			case this.constructor._TOTAL_VALUE_MODE_LOWEST_COMMON: return Parser.itemValueToFull({value});
 
 			case this.constructor._TOTAL_VALUE_MODE_GOLD: {
 				return value ? `${Number((Parser.DEFAULT_CURRENCY_CONVERSION_TABLE.find(it => it.coin === "gp").mult * value).toFixed(2))} gp` : "";
@@ -170,16 +170,16 @@ class ItemsSublistManager extends SublistManager {
 
 			default: {
 				const CURRENCIES = ["gp", "sp", "cp"];
-				const coins = { cp: value };
+				const coins = {cp: value};
 				CurrencyUtil.doSimplifyCoins(coins);
-				return CURRENCIES.filter(it => coins[it]).map(it => `${coins[it].toLocaleString(undefined, { maximumFractionDigits: 5 })} ${it}`).join(", ");
+				return CURRENCIES.filter(it => coins[it]).map(it => `${coins[it].toLocaleString(undefined, {maximumFractionDigits: 5})} ${it}`).join(", ");
 			}
 		}
 	}
 }
 
 class ItemsPage extends ListPage {
-	constructor() {
+	constructor () {
 		const pFnGetFluff = Renderer.item.pGetFluff.bind(Renderer.item);
 
 		super({
@@ -205,40 +205,40 @@ class ItemsPage extends ListPage {
 					name: UtilsTableview.COL_TRANSFORM_NAME,
 					source: UtilsTableview.COL_TRANSFORM_SOURCE,
 					page: UtilsTableview.COL_TRANSFORM_PAGE,
-					rarity: { name: "Rarity" },
-					_type: { name: "Type", transform: it => [it._typeHtml || "", it._subTypeHtml || ""].filter(Boolean).join(", ") },
-					_attunement: { name: "Attunement", transform: it => it._attunement ? it._attunement.slice(1, it._attunement.length - 1) : "" },
-					_damage: { name: "Damage", transform: it => Renderer.item.getRenderedDamageAndProperties(it)[0] },
-					_properties: { name: "Properties", transform: it => Renderer.item.getRenderedDamageAndProperties(it)[1] },
-					_mastery: { name: "Mastery", transform: it => Renderer.item.getRenderedMastery(it) },
-					_weight: { name: "Weight", transform: it => Parser.itemWeightToFull(it) },
-					_value: { name: "Value", transform: it => Parser.itemValueToFullMultiCurrency(it) },
-					_entries: { name: "Text", transform: (it) => Renderer.item.getRenderedEntries(it, { isCompact: true }), flex: 3 },
+					rarity: {name: "Rarity"},
+					_type: {name: "Type", transform: it => [it._typeHtml || "", it._subTypeHtml || ""].filter(Boolean).join(", ")},
+					_attunement: {name: "Attunement", transform: it => it._attunement ? it._attunement.slice(1, it._attunement.length - 1) : ""},
+					_damage: {name: "Damage", transform: it => Renderer.item.getRenderedDamageAndProperties(it)[0]},
+					_properties: {name: "Properties", transform: it => Renderer.item.getRenderedDamageAndProperties(it)[1]},
+					_mastery: {name: "Mastery", transform: it => Renderer.item.getRenderedMastery(it)},
+					_weight: {name: "Weight", transform: it => Parser.itemWeightToFull(it)},
+					_value: {name: "Value", transform: it => Parser.itemValueToFullMultiCurrency(it)},
+					_entries: {name: "Text", transform: (it) => Renderer.item.getRenderedEntries(it, {isCompact: true}), flex: 3},
 				},
 			},
 			propEntryData: "item",
 
-			listSyntax: new ListSyntaxItems({ fnGetDataList: () => this._dataList, pFnGetFluff }),
+			listSyntax: new ListSyntaxItems({fnGetDataList: () => this._dataList, pFnGetFluff}),
 		});
 
 		this._mundaneList = null;
 		this._magicList = null;
 	}
 
-	get _bindOtherButtonsOptions() {
+	get _bindOtherButtonsOptions () {
 		return {
 			other: [
-				this._bindOtherButtonsOptions_openAsSinglePage({ slugPage: "items", fnGetHash: () => Hist.getHashParts()[0] }),
+				this._bindOtherButtonsOptions_openAsSinglePage({slugPage: "items", fnGetHash: () => Hist.getHashParts()[0]}),
 			].filter(Boolean),
 		};
 	}
 
-	get primaryLists() { return [this._mundaneList, this._magicList]; }
+	get primaryLists () { return [this._mundaneList, this._magicList]; }
 
-	getListItem(item, itI, isExcluded) {
+	getListItem (item, itI, isExcluded) {
 		const hash = UrlUtil.autoEncodeHash(item);
 
-		if (Renderer.item.isExcluded(item, { hash })) return null;
+		if (Renderer.item.isExcluded(item, {hash})) return null;
 		if (item.noDisplay) return null;
 		Renderer.item.enhanceItem(item);
 
@@ -259,10 +259,10 @@ class ItemsPage extends ListPage {
 						href: `#${hash}`,
 						clazz: "lst__row-border lst__row-inner",
 						children: [
-							e_({ tag: "span", clazz: `ve-col-3-5 pl-0 pr-1 bold`, text: item.name }),
-							e_({ tag: "span", clazz: `ve-col-4-5 px-1`, text: type }),
-							e_({ tag: "span", clazz: `ve-col-1-5 px-1 ve-text-center`, text: item._l_value }),
-							e_({ tag: "span", clazz: `ve-col-1-5 px-1 ve-text-center`, text: item._l_weight }),
+							e_({tag: "span", clazz: `ve-col-3-5 pl-0 pr-1 bold`, text: item.name}),
+							e_({tag: "span", clazz: `ve-col-4-5 px-1`, text: type}),
+							e_({tag: "span", clazz: `ve-col-1-5 px-1 ve-text-center`, text: item._l_value}),
+							e_({tag: "span", clazz: `ve-col-1-5 px-1 ve-text-center`, text: item._l_weight}),
 							e_({
 								tag: "span",
 								clazz: `ve-col-1 ve-text-center ${Parser.sourceJsonToSourceClassname(item.source)} pl-1 pr-0`,
@@ -292,7 +292,7 @@ class ItemsPage extends ListPage {
 				},
 			);
 
-			return { mundane: listItem };
+			return {mundane: listItem};
 		} else {
 			const eleLi = e_({
 				tag: "div",
@@ -305,10 +305,10 @@ class ItemsPage extends ListPage {
 						href: `#${hash}`,
 						clazz: "lst__row-border lst__row-inner",
 						children: [
-							e_({ tag: "span", clazz: `ve-col-3-5 pl-0 bold`, text: item.name }),
-							e_({ tag: "span", clazz: `ve-col-4`, text: type }),
-							e_({ tag: "span", clazz: `ve-col-1-5 ve-text-center`, text: item._l_weight }),
-							e_({ tag: "span", clazz: `ve-col-0-6 ve-text-center`, text: item._attunementCategory !== VeCt.STR_NO_ATTUNEMENT ? "×" : "" }),
+							e_({tag: "span", clazz: `ve-col-3-5 pl-0 bold`, text: item.name}),
+							e_({tag: "span", clazz: `ve-col-4`, text: type}),
+							e_({tag: "span", clazz: `ve-col-1-5 ve-text-center`, text: item._l_weight}),
+							e_({tag: "span", clazz: `ve-col-0-6 ve-text-center`, text: item._attunementCategory !== VeCt.STR_NO_ATTUNEMENT ? "×" : ""}),
 							e_({
 								tag: "span",
 								clazz: `ve-col-1-4 ve-text-center ${item.rarity ? `itm__rarity-${item.rarity}` : ""}`,
@@ -342,11 +342,11 @@ class ItemsPage extends ListPage {
 				},
 			);
 
-			return { magic: listItem };
+			return {magic: listItem};
 		}
 	}
 
-	handleFilterChange() {
+	handleFilterChange () {
 		const f = this._pageFilter.filterBox.getValues();
 		const listFilter = li => this._pageFilter.toDisplay(f, this._dataList[li.ix]);
 		this._mundaneList.filter(listFilter);
@@ -356,11 +356,11 @@ class ItemsPage extends ListPage {
 
 	_tabTitleStats = "Item";
 
-	_renderStats_doBuildStatsTab({ ent }) {
+	_renderStats_doBuildStatsTab ({ent}) {
 		this._$pgContent.empty().append(RenderItems.$getRenderedItem(ent));
 	}
 
-	async _pOnLoad_pInitPrimaryLists() {
+	async _pOnLoad_pInitPrimaryLists () {
 		const $iptSearch = $("#lst__search");
 		const $btnReset = $("#reset");
 		const $btnClear = $(`#lst__search-glass`);
@@ -400,7 +400,7 @@ class ItemsPage extends ListPage {
 		});
 	}
 
-	_pOnLoad_initVisibleItemsDisplay() {
+	_pOnLoad_initVisibleItemsDisplay () {
 		const $elesMundaneAndMagic = $(`.ele-mundane-and-magic`);
 		$(`.side-label--mundane`).click(() => {
 			const filterValues = this._pageFilter.filterBox.getValues();
@@ -456,7 +456,7 @@ class ItemsPage extends ListPage {
 		});
 	}
 
-	_addData(data) {
+	_addData (data) {
 		super._addData(data);
 
 		// populate table labels
@@ -464,7 +464,7 @@ class ItemsPage extends ListPage {
 		$(`h3.ele-magic span.side-label`).text("Magic");
 	}
 
-	_addListItem(listItem) {
+	_addListItem (listItem) {
 		if (listItem.mundane) this._mundaneList.addItem(listItem.mundane);
 		if (listItem.magic) this._magicList.addItem(listItem.magic);
 	}

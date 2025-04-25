@@ -3,7 +3,7 @@
 	"author": "El Dourado",
 	"version": "0.1",
 	"license": "MIT",
-	"description": "A site dedicated to making playing games of AD&D 2nd Edition with your friends as easy as possible.",
+	"description": "A site dedicated to making playing games with your friends as easy as possible.",
 	"type": "module",
 	"private": true,
 	"scripts": {
@@ -45,10 +45,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/2etools/2etools-src"
+		"url": "git+https://github.com/5etools-mirror-3/5etools-src"
 	},
 	"devDependencies": {
-		"5etools-utils": "^0.13.10",
+		"5etools-utils": "^0.13.13",
 		"ajv": "^8.12.0",
 		"ajv-formats": "^2.1.1",
 		"commander": "^12.0.0",
@@ -69,9 +69,9 @@
 		"workbox-cli": "^7.1.0"
 	},
 	"bugs": {
-		"url": "https://github.com/2etools/2etools-src/issues"
+		"url": "https://github.com/5etools-mirror-3/5etools-src/issues"
 	},
-	"homepage": "https://github.com/2etools/2etools-src#readme",
+	"homepage": "https://github.com/5etools-mirror-3/5etools-src#readme",
 	"directories": {
 		"lib": "lib",
 		"test": "test"

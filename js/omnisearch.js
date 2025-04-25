@@ -1,8 +1,8 @@
-import { UtilsOmnisearch } from "./utils-omnisearch.js";
-import { OmnisearchConsts } from "./omnisearch/omnisearch-consts.js";
-import { OmnisearchState } from "./omnisearch/omnisearch-state.js";
-import { OmnisearchBacking } from "./omnisearch/omnisearch-backing.js";
-import { OmnisearchUtilsUi } from "./omnisearch/omnisearch-utils-ui.js";
+import {UtilsOmnisearch} from "./utils-omnisearch.js";
+import {OmnisearchConsts} from "./omnisearch/omnisearch-consts.js";
+import {OmnisearchState} from "./omnisearch/omnisearch-state.js";
+import {OmnisearchBacking} from "./omnisearch/omnisearch-backing.js";
+import {OmnisearchUtilsUi} from "./omnisearch/omnisearch-utils-ui.js";
 
 class OmnisearchUi {
 	static _PLACEHOLDER_TEXT = "Search everywhere...";
@@ -56,9 +56,9 @@ class OmnisearchUi {
 		if (globalThis.IS_VTT) return;
 
 		const rdState = this._render_getElements();
-		this._render_doBindElementListeners({ rdState });
-		this._render_doBindScrollHandler({ rdState });
-		this._render_doBindBodyListeners({ rdState });
+		this._render_doBindElementListeners({rdState});
+		this._render_doBindScrollHandler({rdState});
+		this._render_doBindBodyListeners({rdState});
 	}
 
 	static _render_getElements () {
@@ -88,7 +88,7 @@ class OmnisearchUi {
 			clazz: "ve-btn ve-btn-default omni__submit",
 			tabindex: -1,
 			html: `<span class="glyphicon glyphicon-search"></span>`,
-			click: evt => this._handleClick_pSubmit({ evt, rdState }),
+			click: evt => this._handleClick_pSubmit({evt, rdState}),
 		});
 
 		const wrpSearchInput = e_({
@@ -133,7 +133,7 @@ class OmnisearchUi {
 		return rdState;
 	}
 
-	static _render_doBindElementListeners ({ rdState }) {
+	static _render_doBindElementListeners ({rdState}) {
 		rdState.dispSearchOutput
 			.onClick(evt => {
 				evt.stopPropagation();
@@ -152,7 +152,7 @@ class OmnisearchUi {
 						}
 
 						rdState.clickFirst = true;
-						this._handleClick_pSubmit({ evt, rdState }).then(null);
+						this._handleClick_pSubmit({evt, rdState}).then(null);
 						break;
 					case "ArrowUp":
 						evt.preventDefault();
@@ -164,13 +164,13 @@ class OmnisearchUi {
 					case "PageUp": {
 						evt.preventDefault();
 						if (!rdState.lastRender || !this._hasPagePrev(rdState.lastRender)) break;
-						this._pDoSearch_renderLinks({ rdState, results: rdState.lastRender.results, ixPage: rdState.lastRender.ixPage - 1 });
+						this._pDoSearch_renderLinks({rdState, results: rdState.lastRender.results, ixPage: rdState.lastRender.ixPage - 1});
 						break;
 					}
 					case "PageDown": {
 						evt.preventDefault();
 						if (!rdState.lastRender || !this._hasPageNext(rdState.lastRender)) break;
-						this._pDoSearch_renderLinks({ rdState, results: rdState.lastRender.results, ixPage: rdState.lastRender.ixPage + 1 });
+						this._pDoSearch_renderLinks({rdState, results: rdState.lastRender.results, ixPage: rdState.lastRender.ixPage + 1});
 						break;
 					}
 					case "Escape":
@@ -185,7 +185,7 @@ class OmnisearchUi {
 				rdState.clickFirst = false;
 				if (this._IPT_SEARCH_SPECIAL_KEYS.has(evt.key)) return;
 				clearTimeout(typeTimer);
-				typeTimer = setTimeout(() => this._handleClick_pSubmit({ rdState }), this._TYPE_TIMEOUT_MS);
+				typeTimer = setTimeout(() => this._handleClick_pSubmit({rdState}), this._TYPE_TIMEOUT_MS);
 			});
 		rdState.iptSearch
 			.onKeydown(() => clearTimeout(typeTimer));
@@ -193,11 +193,11 @@ class OmnisearchUi {
 			.onClick(evt => {
 				evt.stopPropagation();
 				Renderer.hover.cleanTempWindows();
-				if (rdState.iptSearch.val() && rdState.iptSearch.val().trim().length) this._handleClick_pSubmit({ rdState }).then(null);
+				if (rdState.iptSearch.val() && rdState.iptSearch.val().trim().length) this._handleClick_pSubmit({rdState}).then(null);
 			});
 	}
 
-	static _render_doBindScrollHandler ({ rdState }) {
+	static _render_doBindScrollHandler ({rdState}) {
 		window.addEventListener("scroll", evt => {
 			if (Renderer.hover.isSmallScreen(evt)) {
 				rdState.iptSearch.attr("placeholder", this._PLACEHOLDER_TEXT);
@@ -219,10 +219,10 @@ class OmnisearchUi {
 		});
 	}
 
-	static _render_doBindBodyListeners ({ rdState }) {
+	static _render_doBindBodyListeners ({rdState}) {
 		document.body.addEventListener(
 			"click",
-			() => this._doCleanup({ rdState }),
+			() => this._doCleanup({rdState}),
 		);
 
 		document.body.addEventListener(
@@ -239,36 +239,36 @@ class OmnisearchUi {
 
 	/* -------------------------------------------- */
 
-	static _hasPagePrev ({ results, ixPage }) {
+	static _hasPagePrev ({results, ixPage}) {
 		return ixPage > 0;
 	}
 
-	static _hasPageNext ({ results, ixPage }) {
+	static _hasPageNext ({results, ixPage}) {
 		return (results.length - (ixPage * this._MAX_RESULTS) > this._MAX_RESULTS);
 	}
 
-	static _getNumPages ({ results }) {
+	static _getNumPages ({results}) {
 		return Math.ceil(results.length / this._MAX_RESULTS);
 	}
 
 	/* -------------------------------------------- */
 
-	static async _handleClick_pSubmit ({ evt, rdState }) {
+	static async _handleClick_pSubmit ({evt, rdState}) {
 		if (evt) evt.stopPropagation();
-		await this._pDoSearch({ rdState });
+		await this._pDoSearch({rdState});
 		Renderer.hover.cleanTempWindows();
 	}
 
 	/* -------------------------------------------- */
 
-	static _handleKeydown_link ({ rdState, evt, results, ixPage, rowMetas, ixInPage }) {
+	static _handleKeydown_link ({rdState, evt, results, ixPage, rowMetas, ixInPage}) {
 		Renderer.hover.cleanTempWindows();
 		switch (evt.key) {
 			case "ArrowLeft":
 			case "PageUp": {
 				evt.preventDefault();
-				if (this._hasPagePrev({ results, ixPage })) {
-					const renderedMeta = this._pDoSearch_renderLinks({ rdState, results: results, ixPage: ixPage - 1 });
+				if (this._hasPagePrev({results, ixPage})) {
+					const renderedMeta = this._pDoSearch_renderLinks({rdState, results: results, ixPage: ixPage - 1});
 					renderedMeta.rowMetas[ixInPage].lnk.focus();
 				}
 				break;
@@ -277,8 +277,8 @@ class OmnisearchUi {
 				evt.preventDefault();
 				if (ixInPage) {
 					rowMetas[ixInPage - 1].lnk.focus();
-				} else if (this._hasPagePrev({ results, ixPage })) {
-					const renderedMeta = this._pDoSearch_renderLinks({ rdState, results: results, ixPage: ixPage - 1 });
+				} else if (this._hasPagePrev({results, ixPage})) {
+					const renderedMeta = this._pDoSearch_renderLinks({rdState, results: results, ixPage: ixPage - 1});
 					renderedMeta.rowMetas.at(-1).lnk.focus();
 				} else {
 					rdState.iptSearch.focus();
@@ -288,8 +288,8 @@ class OmnisearchUi {
 			case "ArrowRight":
 			case "PageDown": {
 				evt.preventDefault();
-				if (this._hasPageNext({ results, ixPage })) {
-					const renderedMeta = this._pDoSearch_renderLinks({ rdState, results: results, ixPage: ixPage + 1 });
+				if (this._hasPageNext({results, ixPage})) {
+					const renderedMeta = this._pDoSearch_renderLinks({rdState, results: results, ixPage: ixPage + 1});
 					(renderedMeta.rowMetas[ixInPage] || renderedMeta.rowMetas.at(-1)).lnk.focus();
 				}
 				break;
@@ -298,8 +298,8 @@ class OmnisearchUi {
 				evt.preventDefault();
 				if (rowMetas[ixInPage + 1]) {
 					rowMetas[ixInPage + 1].lnk.focus();
-				} else if (this._hasPageNext({ results, ixPage })) {
-					const renderedMeta = this._pDoSearch_renderLinks({ rdState, results: results, ixPage: ixPage + 1 });
+				} else if (this._hasPageNext({results, ixPage})) {
+					const renderedMeta = this._pDoSearch_renderLinks({rdState, results: results, ixPage: ixPage + 1});
 					renderedMeta.rowMetas[0].lnk.focus();
 				} else {
 					rdState.iptSearch.focus();
@@ -308,20 +308,20 @@ class OmnisearchUi {
 			}
 			case "Home": {
 				evt.preventDefault();
-				const renderedMeta = this._pDoSearch_renderLinks({ rdState, results: results, ixPage: 0 });
+				const renderedMeta = this._pDoSearch_renderLinks({rdState, results: results, ixPage: 0});
 				renderedMeta.rowMetas[0].lnk.focus();
 				break;
 			}
 			case "End": {
 				evt.preventDefault();
-				const renderedMeta = this._pDoSearch_renderLinks({ rdState, results: results, ixPage: this._getNumPages({ results }) - 1 });
+				const renderedMeta = this._pDoSearch_renderLinks({rdState, results: results, ixPage: this._getNumPages({results}) - 1});
 				renderedMeta.rowMetas.at(-1).lnk.focus();
 				break;
 			}
 		}
 	}
 
-	static _doCleanup ({ rdState }) {
+	static _doCleanup ({rdState}) {
 		rdState.lastRender = null;
 		rdState.wrpSearchOutput.hideVe();
 	}
@@ -329,38 +329,39 @@ class OmnisearchUi {
 	/* -------------------------------------------- */
 
 	// region Search
-	static async _pDoSearch ({ rdState }) {
+	static async _pDoSearch ({rdState}) {
 		const results = await OmnisearchBacking.pGetResults(CleanUtil.getCleanString(rdState.iptSearch.val()));
-		this._pDoSearch_renderLinks({ rdState, results });
+		this._pDoSearch_renderLinks({rdState, results});
 	}
 
-	static _getBtnToggleFilter ({ rdState, btnMeta }) {
+	static _getBtnToggleFilter ({rdState, btnMeta}) {
 		const btn = ee`<button class="ve-btn ve-btn-default ve-btn-xs" tabindex="-1" title="${btnMeta.title.qq()}">${btnMeta.text.qq()}</button>`
 			.onn("click", () => OmnisearchState[btnMeta.propOmnisearch] = !OmnisearchState[btnMeta.propOmnisearch]);
 
 		OmnisearchState[btnMeta.fnAddHookOmnisearch]((val) => {
 			btn.toggleClass("active", OmnisearchState[btnMeta.propOmnisearch]);
-			if (val != null) this._pDoSearch({ rdState }).then(null);
+			if (val != null) this._pDoSearch({rdState}).then(null);
 		})();
 
 		return btn;
 	}
 
-	static _pDoSearch_renderLinks ({ rdState, results, ixPage = 0 }) {
-		const out = this._pDoSearch_renderLinks_({ rdState, results, ixPage });
+	static _pDoSearch_renderLinks ({rdState, results, ixPage = 0}) {
+		const out = this._pDoSearch_renderLinks_({rdState, results, ixPage});
 		rdState.lastRender = out;
 		return out;
 	}
 
-	static _pDoSearch_renderLinks_ ({ rdState, results, ixPage }) {
+	static _pDoSearch_renderLinks_ ({rdState, results, ixPage}) {
 		const [
 			btnTogglePartnered,
 			btnToggleBrew,
 			btnToggleUa,
 			btnToggleBlocklisted,
 			btnToggleLegacy,
+			btnToggleSrd,
 		] = OmnisearchConsts.BTN_METAS
-			.map(btnMeta => this._getBtnToggleFilter({ rdState, btnMeta }));
+			.map(btnMeta => this._getBtnToggleFilter({rdState, btnMeta}));
 
 		rdState.dispSearchOutput.empty();
 
@@ -369,7 +370,7 @@ class OmnisearchUi {
 			clazz: "ve-btn ve-btn-default ve-btn-xs ml-2",
 			title: "Help",
 			html: `<span class="glyphicon glyphicon-info-sign"></span>`,
-			click: () => OmnisearchUtilsUi.doShowHelp({ isIncludeHotkeys: true }),
+			click: () => OmnisearchUtilsUi.doShowHelp({isIncludeHotkeys: true}),
 		});
 
 		ee(rdState.dispSearchOutput)`<div class="ve-flex-h-right ve-flex-v-center mb-2">
@@ -383,35 +384,38 @@ class OmnisearchUi {
 				${btnToggleBlocklisted}
 				${btnToggleLegacy}
 			</div>
+			${btnToggleSrd}
 			${btnHelp}
 		</div>`;
 
 		if (!results.length) {
 			$(rdState.dispSearchOutput).append(`<div class="ve-muted"><i>No results found.</i></div>`);
 			rdState.wrpSearchOutput.showVe();
-			return { rowMetas: [], results, ixPage };
+			return {rowMetas: [], results, ixPage};
 		}
 
 		// add pagination if there are many results
-		const wrpPagination = this._pDoSearch_renderLinks_getWrpPagination({ rdState, results, ixPage });
+		const wrpPagination = this._pDoSearch_renderLinks_getWrpPagination({rdState, results, ixPage});
 
 		const ixSliceStart = ixPage * this._MAX_RESULTS;
 		const rowMetas = results
 			.slice(ixSliceStart, ixSliceStart + this._MAX_RESULTS)
 			.map((result, ixInPage) => {
-				const r = result.doc;
+				const resultDoc = result.doc;
 
-				const lnk = OmnisearchUtilsUi.getResultLink(r)
-					.onn("keydown", evt => this._handleKeydown_link({ rdState, evt, results, ixPage, rowMetas, ixInPage }));
+				const lnk = OmnisearchUtilsUi.getResultLink(resultDoc)
+					.onn("keydown", evt => this._handleKeydown_link({rdState, evt, results, ixPage, rowMetas, ixInPage}));
 
 				const {
 					source,
 					page,
+					isSrd,
+					isSrd52,
 
 					ptStyle,
 					sourceAbv,
 					sourceFull,
-				} = UtilsOmnisearch.getUnpackedSearchResult(r);
+				} = UtilsOmnisearch.getUnpackedSearchResult(resultDoc);
 
 				const ptPageInner = page ? `p${page}` : "";
 				const adventureBookSourceHref = SourceUtil.getAdventureBookSourceHref(source, page);
@@ -430,12 +434,14 @@ class OmnisearchUi {
 					${lnk}
 					<div class="ve-flex-v-center">
 						${ptSource}
-						${Parser.sourceJsonToMarkerHtml(source, { isList: false, additionalStyles: "omni__disp-source-marker" })}
+						${isSrd ? `<span class="ve-muted omni__disp-srd help-subtle relative" title="Available in the Systems Reference Document (5.1)">[SRD]</span>` : ""}
+						${isSrd52 ? `<span class="ve-muted omni__disp-srd help-subtle relative" title="Available in the Systems Reference Document (5.2)">[SRD]</span>` : ""}
+						${Parser.sourceJsonToMarkerHtml(source, {isList: false, additionalStyles: "omni__disp-source-marker"})}
 						${ptPage ? `<span class="omni__wrp-page small-caps">${ptPage}</span>` : ""}
 					</div>
 				</div>`.appendTo(rdState.dispSearchOutput);
 
-				return { lnk };
+				return {lnk};
 			});
 
 		if (wrpPagination) rdState.dispSearchOutput.appendChild(wrpPagination);
@@ -446,7 +452,7 @@ class OmnisearchUi {
 			rowMetas[0].lnk.click();
 		}
 
-		return { rowMetas, results, ixPage };
+		return {rowMetas, results, ixPage};
 	}
 
 	static _pDoSearch_renderLinks_getWrpPagination (
@@ -458,19 +464,19 @@ class OmnisearchUi {
 	) {
 		if (results.length <= this._MAX_RESULTS) return null;
 
-		const elePagePrev = this._hasPagePrev({ results, ixPage })
+		const elePagePrev = this._hasPagePrev({results, ixPage})
 			? ee`<span class="omni__paginate-left has-results-left omni__paginate-ctrl"><span class="glyphicon glyphicon-chevron-left"></span></span>`
-				.onn("click", () => this._pDoSearch_renderLinks({ rdState, results, ixPage: ixPage - 1 }))
+				.onn("click", () => this._pDoSearch_renderLinks({rdState, results, ixPage: ixPage - 1}))
 			: ee`<span class="omni__paginate-left">`;
 
-		const elePageNext = this._hasPageNext({ results, ixPage })
+		const elePageNext = this._hasPageNext({results, ixPage})
 			? ee`<span class="omni__paginate-right has-results-right omni__paginate-ctrl"><span class="glyphicon glyphicon-chevron-right"></span></span>`
-				.onn("click", () => this._pDoSearch_renderLinks({ rdState, results, ixPage: ixPage + 1 }))
+				.onn("click", () => this._pDoSearch_renderLinks({rdState, results, ixPage: ixPage + 1}))
 			: ee`<span class="omni__paginate-right omni__paginate-ctrl">`;
 
 		return ee`<div class="omni__wrp-paginate">
 			${elePagePrev}
-			<span class="paginate-count">Page ${ixPage + 1}/${this._getNumPages({ results })} (${results.length} results)</span>
+			<span class="paginate-count">Page ${ixPage + 1}/${this._getNumPages({results})} (${results.length} results)</span>
 			${elePageNext}
 		</div>`;
 	}
