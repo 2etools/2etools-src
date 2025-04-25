@@ -779,10 +779,16 @@
 							"page": 10,
 							"entries": [
 								"It is possible to construct weapons of different quality than just average.",
-								"{@i Poor} quality weapons are shabbily made. They look bad, and like the flawed weapons described above, they break on a natural attack roll of 1 to 5. They don't hit as well (this is a penalty to the attack roll) or do as much damage (penalty to the damage) as their average-quality equivalents.",
-								"{@i Average} quality weapons are not especially notable; they get the job done, they're reliable, and they're inexpensive. Unless otherwise noted, all (non-magical) weapons listed on charts in the {@i AD&D®} game are of average quality.",
-								"{@i Fine} quality weapons are very well-made. Each will have one specific bonus: Either a +1 to attack rolls or a +1 to damage. This bonus is not magical; it comes from improved balance, sharpness, etc. (The weaponsmith determines, when he's making the weapon, whether he's trying to make it more accurate or make it hit harder.) They also cost a lot more than average weapons. Enchantments are typically made on weapons of at least Fine quality.",
-								"{@i Exceptional} quality weapons are like fine weapons, but have both bonuses: They're +1 to attack rolls and +1 to damage. They're also very expensive.",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										"{@i Poor} quality weapons are shabbily made. They look bad, and like the flawed weapons described above, they break on a natural attack roll of 1 to 5. They don't hit as well (this is a penalty to the attack roll) or do as much damage (penalty to the damage) as their average-quality equivalents.",
+										"{@i Average} quality weapons are not especially notable; they get the job done, they're reliable, and they're inexpensive. Unless otherwise noted, all (non-magical) weapons listed on charts in the {@i AD&D®} game are of average quality.",
+										"{@i Fine} quality weapons are very well-made. Each will have one specific bonus: Either a +1 to attack rolls or a +1 to damage. This bonus is not magical; it comes from improved balance, sharpness, etc. (The weaponsmith determines, when he's making the weapon, whether he's trying to make it more accurate or make it hit harder.) They also cost a lot more than average weapons. Enchantments are typically made on weapons of at least Fine quality.",
+										"{@i Exceptional} quality weapons are like fine weapons, but have both bonuses: They're +1 to attack rolls and +1 to damage. They're also very expensive."
+									]
+								},
 								"The following list, adapted from the list on page 65, shows the differences in cost and time to create weapons of these different levels of quality.",
 								{
 									"type": "table",
@@ -1175,7 +1181,7 @@
 						"For each Warrior Kit, the DM has to choose:",
 						{
 							"type": "list",
-							"style": "list-no-bullets",
+							"style": "list-hang",
 							"columns": 0,
 							"page": 14,
 							"items": [
@@ -2729,6 +2735,9 @@
 							"page": 62,
 							"entries": [
 								"A single-class Warrior can take more than one Style Specialization. Weapons such as Bastard Sword, Javelin, and Spear, which can be used one-handed or two-handed, with or without a shield, can have up to four different Style Specializations taken for them.",
+								{
+									"type": "hr"
+								},
 								"{@i Example: A single-class Warrior has Proficiency with Bastard Sword. He could theoretically take Single-Weapon Style Specialization, Two-Hander Style Specialization, Weapon and Shield Style Specialization, and Two-Weapon Style Specialization with it. Between fights, or even in the course of the fight, he could change the way he uses his weapon in order to gain different advantages in the course of a combat.}"
 							]
 						},
@@ -2900,10 +2909,19 @@
 							"page": 64,
 							"entries": [
 								"Here's an example of how a character can use the weapon proficiencies, weapon specialization, and style specialization rules to become very dangerous and very versatile indeed.",
-								"{@i Berris is a 1st level fighter, but he's already very accomplished with his weapon of choice, the Bastard Sword. He has taken Weapon Specialization with the Bastard Sword (two slots), Two-Hander Style Specialization with the Bastard Sword (one slot), and Single-Weapon Style Specialization with the Bastard Sword (one slot).}",
-								"{@i From his weapon specialization, he receives a +1 to attack rolls and +2 to damage whenever using a Bastard Sword, regardless of the technique he uses.}",
-								"{@i When using the weapon in Single-Weapon Style, one-handed, he gets a +1 to AC.}",
-								"{@i When using the weapon in Two-Hander Style, his weapon's speed factor drops from an 8 (normal two-handed speed factor for the Bastard Sword) to a 5, making it a very quick weapon in his hands.}"
+								{
+									"type": "hr"
+								},
+								{
+									"type": "entries",
+									"style": "italic",
+									"entries": [
+										"Berris is a 1st level fighter, but he's already very accomplished with his weapon of choice, the Bastard Sword. He has taken Weapon Specialization with the Bastard Sword (two slots), Two-Hander Style Specialization with the Bastard Sword (one slot), and Single-Weapon Style Specialization with the Bastard Sword (one slot).",
+										"From his weapon specialization, he receives a +1 to attack rolls and +2 to damage whenever using a Bastard Sword, regardless of the technique he uses.",
+										"When using the weapon in Single-Weapon Style, one-handed, he gets a +1 to AC.",
+										"When using the weapon in Two-Hander Style, his weapon's speed factor drops from an 8 (normal two-handed speed factor for the Bastard Sword) to a 5, making it a very quick weapon in his hands."
+									]
+								}
 							]
 						},
 						{
@@ -2996,7 +3014,13 @@
 								"No, the Bypassing Armor option is used when the DM has introduced a monster or enemy which can't be beaten any way except through the discovery and exploitation of its \"weak spot.\" Like Talos, the invulnerable bronze man of Greek myth, these monsters are impossible to damage (this is usually expressed as a monstrous AC and an invulnerability to any but the most powerful of magical weapons\u2014+4 or better); however, each one has a weak spot.",
 								"These weak spots are always visible to the eye, if the hero thinks to look for it and can see the body part where it is. (For example, a dragon might not want to fly; this is so that it can keep its wings folded down over its unarmored spots.) A clever warrior will realize that it's covering up for something and try to trick it into moving its wings.",
 								"If a hero is bright enough to look for the weak spot, and perhaps trick a monster into showing the weak spot, the warrior can then take a Called Shot and hit it. He'll do the monster great damage (or perhaps kill it outright; that's for the DM to determine).",
+								{
+									"type": "hr"
+								},
 								"{@i Examples: A dragon which has invulnerable hide (but which, suspiciously, never opens its mouth to breathe flame...because its inner mouth is not armored); a mechanical man with a small, nearly-invisible slot used by the inventor to open it up (but which a hero with a knife can use to damage its internal machinery); a warrior with armored skin but an unarmored ankle; a mummy which keeps one arm crossed over its chest to protect its otherwise undefended heart; a 9' high golem whose weak spot is the unseen top of its head.}",
+								{
+									"type": "hr"
+								},
 								"Again, this only works when the DM has created a monster which can (or must) be defeated in this very way. If a fight isn't going the characters' way but the characters are gradually doing damage to the monster, then the monster probably isn't one of these invulnerable-beasts-with-weak-spots, and it's pointless to take lots of called shots at random body parts \"just in case.\""
 							]
 						},
@@ -3008,7 +3032,7 @@
 								"Finally, the Called Shot can be used for a variety of special results, especially neat and interesting results such as the ones you see in movies and fiction. Examples:",
 								{
 									"type": "list",
-									"style": "list-no-bullets",
+									"style": "list-hang-notitle",
 									"items": [
 										{
 											"type": "item",
@@ -3083,6 +3107,9 @@
 								"Disarm does not work nearly so well against two-handed weapons. If you perform a Disarm against a wielder of a two-handed weapon (including magical staves), it merely knocks the weapon out of alignment briefly; the weapon's wielder automatically loses initiative on the next round. However, two Disarms made against the wielder {@i in the same round} will knock the weapon free; roll only {@dice 1d6} to see how many feet it flies, and {@dice 1d6} to see which direction it goes.",
 								"Naturally, the two Disarm maneuvers don't have to come from the same character. Two characters can work together to disarm the two-handed wielder; or, one character with multiple attacks in a round can do the job himself.",
 								"If a character finds his two-handed weapon partially disarmed, and he still has at least one attack to perform this round, he can elect to forget about his next attack and may use that attack to recover his weapon instead.",
+								{
+									"type": "hr"
+								},
 								"{@i Example: Torreth and Amstard are fighting, Torreth with long sword and shield, Amstard with two-handed sword. Both characters have two attacks per round. Torreth has initiative. He successfully Disarms Amstard, drawing his weapon out of line. Amstard now has his first attack of the round. He can either punch Torreth with his gauntleted fist, in which case his sword will still be out of line, or he can recover from the Disarm. He chooses to recover. He swings the weapon back into line and is ready for the next exchange. He suffers no initiative penalty on the next turn.}"
 							]
 						},
@@ -3094,6 +3121,9 @@
 								"Disarm is only of partial usefulness when struck against a shield. It won't tear the shield loose from the wielder's arm. However, it will draw it out (knock it out of alignment, so that the wielder is not protected by it). For the rest of the round, the shield-wielder loses the AC bonus of the shield (and any magical benefits, too). At the start of the next combat round, even before initiative is rolled, the character regains his shield's AC bonus.",
 								"If a shield has other properties, those stay in effect, even when the shield is Disarmed out of alignment. For example, let's say a shield radiates a {@i {@spell Protection From Evil|PHB|protection from evil}} spell. If it's Disarmed, and drawn out of alignment, its wielder still gets the benefits of that {@i {@spell Protection From Evil|PHB|protection from evil}} protection from evil spell. Only when he drops the shield or has it forcibly wrested away from him does he lose that benefit.",
 								"As with the Disarming of two-handed weapons, if a character finds his shield disarmed, and he still has at least one attack to perform this round, he can elect to forget about his next attack and may use that attack to recover his weapon instead.",
+								{
+									"type": "hr"
+								},
 								"{@i Example: At the start of the next round, Amstard's ally Jeter, carrying a halberd, joins the fight. Torreth wins initiative again. He takes an ordinary strike at Amstard and misses. Jeter chooses to Disarm Torreth's shield +4. He successfully Disarms it. Now, Amstard takes his shot, his chances greatly improved because Torreth's shield bonus to AC doesn't come into play. He smites Torreth with a mighty blow. Torreth has another attack this round: Realizing that he's going to get hurt if he doesn't have his shield up, he forgets about a second attack and uses that time to bring his shield back up.}"
 							]
 						},
@@ -3129,9 +3159,21 @@
 								"In the same round that you performed the grab, roll {@dice 1d20}. Your opponent will do the same.",
 								"Compare the number you rolled to your Strength ability score. Whichever one of you rolled better against his score won the tug-of-war contest.",
 								"For purposes of the Grab, all 18 scores (01\u201350, 51\u201375, etc.) are just 18. However, in case of a tie, a higher-percentile 18 beats a lower-percentile 18. (For instance, an 18/40 beats an 18/30, an 18/00 beats an 18/99, etc.)",
-								"{@i Example: Rathnar the Barbarian tries to grab the Ruby Orb of Blassendom from the hands of his enemy. He successfully rolls to attack rolls and gets his free hand on the Orb.}",
-								"{@i Rathnar is Strength 17. His enemy is Strength 15. Both roll 1d20.}",
-								"{@i Rathnar rolls a 10. He's made his roll by 7. His enemy rolls a 9. He's made his roll by 6. Rathnar snatches the Orb away.}",
+								{
+									"type": "hr"
+								},
+								{
+									"type": "entries",
+									"style": "italic",
+									"entries": [
+										"Example: Rathnar the Barbarian tries to grab the Ruby Orb of Blassendom from the hands of his enemy. He successfully rolls to attack rolls and gets his free hand on the Orb.",
+										"Rathnar is Strength 17. His enemy is Strength 15. Both roll 1d20.",
+										"Rathnar rolls a 10. He's made his roll by 7. His enemy rolls a 9. He's made his roll by 6. Rathnar snatches the Orb away."
+									]
+								},
+								{
+									"type": "hr"
+								},
 								"If you grab something and then fail your Strength ability roll, then you've lost: Your enemy has snatched the object back out of your hand.",
 								"A tie (for instance, if both of you made your roll by 5, or both missed it by 2, or came up with any other identical answer) means that you re-roll, during the same round. Treat this second roll as if it were a second attack in the same round for determining when in the round it takes place (in other words, it will take place {@i after} all other characters have performed their first maneuvers for the round).",
 								"However, all these Strength rolls resulting from a single Grab maneuver are counted as one \"attack;\" if a character can make two attacks in a round, and his first attack is a Grab, and the grab leads to two or three Strength rolls due to struggling, that's all still only one attack. The character still gets his second attack later in the round."
@@ -3172,6 +3214,9 @@
 												"Add 8 to the number if the monster is an animal known for its ability to carry weight (horses, pegasi, camels) or contains parts of such a monster (as the hippogriff does).",
 												"The DM may further adjust this number as he desires.",
 												"The result is a rough measure of the monster's Strength.",
+												{
+													"type": "hr"
+												},
 												"{@i Example: The Nightmare has attacks of 2\u20138/4\u201310/4\u201310. Its largest possible attack is 10 (our starting number); it has two extra attacks per round (for a +2 to that starting number); it's a horse-like animal (for a +8). Final Strength score: 20.}"
 											]
 										},
@@ -3203,11 +3248,20 @@
 									"page": 70,
 									"entries": [
 										"If a character already has multiple attacks in a round, he can still perform the Hold Attack maneuver with any or all of his attacks. This can make things a little complicated, but it's not a lot of trouble.",
-										"{@i Example: In this fight, Rathnar the Barbarian (who has one attack per round), Drusilla the Spear-Maiden (who has two per round), and Lacksley the Archer (who has three per two, and has two this round) are fighting a jungle warrior (two attacks per round) and his monstrous jaguar ally (three attacks per round).}",
-										"{@i This round, Lacksley wants to shoot the jaguar; but he's still caught in a spring-loaded animal trap, and Drusilla is between him and the jaguar.}",
-										"{@i The player-characters win initiative. Drusilla uses her first attack to spear the jungle warrior. Rathnar uses his sole attack to swing his axe at the jaguar monster. Lacksley announces that he's holding his maneuver. Now it's time for the monsters to respond; the jungle warrior attacks Drusilla with his own spear, and the jaguar-monster jumps on Rathnar and uses one of its two paw hits.}",
-										"{@i It's time for secondary maneuvers. Drusilla misses her second strike. Rathnar has no second strike. It's time for Lacksley to act. He asks the DM if Drusilla has moved out of position yet, and the DM rules that she has. He fires, scoring a hit on the jaguar monster. The jungle warrior stabs Drusilla again with his second strike, and the jaguar latches hold of Rathnar with his second paw strike.}",
-										"{@i It's time for tertiary maneuvers. Lacksley, because of his Hold Attack maneuver, now takes what would have been his secondary maneuver. He shoots the jaguar again, killing it; it rolls off Rathnar before it can inflict its third attack, a deadly bite or an even more deadly rake.}"
+										{
+											"type": "hr"
+										},
+										{
+											"type": "entries",
+											"style": "italic",
+											"entries": [
+												"Example: In this fight, Rathnar the Barbarian (who has one attack per round), Drusilla the Spear-Maiden (who has two per round), and Lacksley the Archer (who has three per two, and has two this round) are fighting a jungle warrior (two attacks per round) and his monstrous jaguar ally (three attacks per round).",
+												"This round, Lacksley wants to shoot the jaguar; but he's still caught in a spring-loaded animal trap, and Drusilla is between him and the jaguar.",
+												"The player-characters win initiative. Drusilla uses her first attack to spear the jungle warrior. Rathnar uses his sole attack to swing his axe at the jaguar monster. Lacksley announces that he's holding his maneuver. Now it's time for the monsters to respond; the jungle warrior attacks Drusilla with his own spear, and the jaguar-monster jumps on Rathnar and uses one of its two paw hits.",
+												"It's time for secondary maneuvers. Drusilla misses her second strike. Rathnar has no second strike. It's time for Lacksley to act. He asks the DM if Drusilla has moved out of position yet, and the DM rules that she has. He fires, scoring a hit on the jaguar monster. The jungle warrior stabs Drusilla again with his second strike, and the jaguar latches hold of Rathnar with his second paw strike.",
+												"It's time for tertiary maneuvers. Lacksley, because of his Hold Attack maneuver, now takes what would have been his secondary maneuver. He shoots the jaguar again, killing it; it rolls off Rathnar before it can inflict its third attack, a deadly bite or an even more deadly rake."
+											]
+										}
 									]
 								}
 							]
@@ -3240,6 +3294,9 @@
 									"page": 70,
 									"entries": [
 										"If you're wielding a polearm, you can parry an attack from another character wielding a polearm, even if that character is attacking someone else. To do this, you must be within range either of that attacker or his intended victim.",
+										{
+											"type": "hr"
+										},
 										"{@i Example: Amstard is wielding a halberd from behind the shield-wall his friends are holding. Amstard announces, before initiative, that he'll use one of his attacks for a Parry and the other for an attack. After initiative, an NPC with a glaive takes a swing at Drusilla. Though the glaive-wielder is out of Amstard's range, Drusilla is right in front of Amstard, easily within his range. Amstard rolls his Parry, rolling against the glaive-wielder's AC, and hits; he parries the attack. When it's time for the PCs to attack, Drusilla puts the glaive-wielder down and Amstard swings his halberd against another enemy.}"
 									]
 								},
@@ -3316,7 +3373,13 @@
 								"Sapping someone\u2014i.e., hitting him over the head in order to knock him out\u2014is a maneuver you undertake when you wish to capture an enemy alive (or just incapacitate him without killing him).",
 								"To do this, the attacking character makes a Called Shot at an additional \u22124 to attack rolls (so it's\u20138 total, plus the usual Called Shot penalties of having to announce your maneuver before initiative and suffering a +1 to initiative).",
 								"If the attack hits, the character rolls ordinary damage for the weapon. He gets a 5% chance of knockout (as per the Punching and Wrestling rules) for every point of damage he does, up to a maximum of 40%.",
+								{
+									"type": "hr"
+								},
 								"{@i Example: Sir Amstard wants to knock out a noble opponent rather than kill him. He attacks to Sap the opponent. Luckily, even with the \u22128 to attack rolls, he successfully hits his foe. With his sword, he rolls 6 points of damage. This gives him a (6×5%) 30% chance of an instant knockout. On his percentile dice, he rolls 42; he has failed this time. He'll try again.}",
+								{
+									"type": "hr"
+								},
 								"The damage done by Sap attacks is the same as that done by Punching; in other words, only 25% is normal, or \"permanent,\" damage. The other 75% is temporary, and wears off after a short while, as we'll discuss later in this chapter.",
 								"When using a special or magical weapon to perform the Sap, {@i you do not count the weapon's attack or damage bonus.} You're not using the weapon the way it is meant to be used; you're hitting your target with the flat of the blade, with the hilt or pommel of the weapon, etc. Therefore, those bonuses don't count for anything.",
 								"When performed on a character who is asleep or magically held, the Sap maneuver automatically hits. The chance for knockout goes up to 10% per point of damage done, up to 80%. However, if the subsequent percentile die-roll is 81 or higher, the victim is not knocked out\u2014he's been awakened by the attack. (Why try a Sap maneuver on an already-asleep target? Because you may want to kidnap him or smuggling him out of a cell and can't risk him waking up and alerting the guards.)",
@@ -3346,7 +3409,7 @@
 								"If he hits, he does damage equal to the Shield-Punch, and the target must make a 1d20 roll against Dexterity to stay on his feet. The target applies these modifiers to his Dexterity:",
 								{
 									"type": "list",
-									"style": "list-no-bullets",
+									"style": "list-hang",
 									"columns": 0,
 									"page": 72,
 									"name": "",
@@ -3380,23 +3443,35 @@
 							"entries": [
 								"All of these maneuvers, and the many possibilities they provide for characters to customize their fighting styles, should give you the idea that the DM should be encouraging wild, extravagant, interesting maneuvers and styles in combat. This is a lot more entertaining than ordinary, plodding swing vs. swing combat.",
 								"Therefore, the DM should reward intelligent, creative efforts in combat by granting them bonuses to attack rolls and damage.",
-								"{@i Examples:}",
 								{
-									"type": "list",
-									"style": "list-no-bullets",
-									"columns": 0,
-									"page": 73,
-									"name": "",
-									"items": [
-										"{@i A lightly-armored hero with the Acrobatics nonweapon proficiency could charge a foe, then use his Acrobatics to flip over him and strike him from the rear; the DM might give him a bonus to attack rolls in addition to striking at a part of the target's body that is unprotected by a shield.}",
-										"{@i A crossbowman could use a Called Shot against the rope holding the chandelier, causing the chandelier to come crashing down onto the villain's head; instead of suffering a massive attack penalty for such a preposterous shot, the DM might give the player an attack bonus for the surprise value of the attack, plus a percentage change for knockout, as per the Attacking Without Killing section of the Player's Handbook.}",
-										"{@i A swashbuckler running up a flight of stairs with guardsmen in hot pursuit could tumble a stack of casks down the stairs behind him; the DM could give him a Pull/Trip maneuver against each one of those guardsmen, and even an improved chance to attack rolls, for attempting this classic move.}"
+									"type": "hr"
+								},
+								{
+									"type": "entries",
+									"style": "italic",
+									"entries": [
+										"Examples:",
+										"A lightly-armored hero with the Acrobatics nonweapon proficiency could charge a foe, then use his Acrobatics to flip over him and strike him from the rear; the DM might give him a bonus to attack rolls in addition to striking at a part of the target's body that is unprotected by a shield.",
+										"A crossbowman could use a Called Shot against the rope holding the chandelier, causing the chandelier to come crashing down onto the villain's head; instead of suffering a massive attack penalty for such a preposterous shot, the DM might give the player an attack bonus for the surprise value of the attack, plus a percentage change for knockout, as per the Attacking Without Killing section of the Player's Handbook.",
+										"A swashbuckler running up a flight of stairs with guardsmen in hot pursuit could tumble a stack of casks down the stairs behind him; the DM could give him a Pull/Trip maneuver against each one of those guardsmen, and even an improved chance to attack rolls, for attempting this classic move."
 									]
 								},
+								{
+									"type": "hr"
+								},
 								"On the other hand, a player might come up with a plan or maneuver that is merely foolish or abusive to the campaign. The DM can assign such a maneuver minuses to attack rolls and damage.",
-								"{@i Examples:}",
-								"{@i Rathnar's player decides that if Rathnar makes faces at an orc he is fighting, then the orc will become spooked and run away. When Rathnar attempts this, the orc proceeds to make faces right back at him, then begins the process of cutting Rathnar to ribbons.}",
-								"{@i Later, after some time at the healer's guild, Rathnar is in better armor and is in dire combat with another orc. Rathnar decides that he'll tuck and roll between the orc's legs, stand up behind him, and cleave him in twain from behind. However, his player has failed to consider that Rathnar is in bulky plate mail and knows nothing about acrobatics. The DM assigns Rathnar a stiff penalty to his Dexterity roll when Rathnar tries the maneuver. Rathnar ends up flat on his back, banging against the orc's legs with the orc looming over him, and the DM assigns the orc a bonus to attack rolls Rathnar because of the hero's clumsy position.}"
+								{
+									"type": "hr"
+								},
+								{
+									"type": "entries",
+									"style": "italic",
+									"entries": [
+										"Examples:",
+										"Rathnar's player decides that if Rathnar makes faces at an orc he is fighting, then the orc will become spooked and run away. When Rathnar attempts this, the orc proceeds to make faces right back at him, then begins the process of cutting Rathnar to ribbons.",
+										"Later, after some time at the healer's guild, Rathnar is in better armor and is in dire combat with another orc. Rathnar decides that he'll tuck and roll between the orc's legs, stand up behind him, and cleave him in twain from behind. However, his player has failed to consider that Rathnar is in bulky plate mail and knows nothing about acrobatics. The DM assigns Rathnar a stiff penalty to his Dexterity roll when Rathnar tries the maneuver. Rathnar ends up flat on his back, banging against the orc's legs with the orc looming over him, and the DM assigns the orc a bonus to attack rolls Rathnar because of the hero's clumsy position."
+									]
+								}
 							]
 						}
 					]
@@ -3408,14 +3483,38 @@
 					"entries": [
 						"A good rule of thumb to use, when a player-character tries something strange or daring in combat, is this: Don't say no to his proposal; just determine the difficulty of the maneuver in your head, give him a general idea of that difficulty, and let him try it.",
 						"An easy way to do that is arbitrarily to assign a \"difficulty number\" of 1 to 10 to any special maneuver. Then, have the character roll against whichever of his abilities (Strength, Dexterity, etc.) that seems most closely to pertain to the task... and subtract that difficulty number from his ability. If he succeeds in rolling equal to or less than his modified ability, he has succeeded in his task.",
-						"{@i Example: Drusilla wants to try the same maneuver Rathnar was going to pull. She, too, has no acrobatic training, but is in light leather armor. The DM thinks that this will be pretty difficult for her (though not as difficult as it was for Rathnar), and assigns the maneuver a difficulty factor of 5 if she leaves her spear behind. It'll be an 8, if she tries to take her spear along on the maneuver. He tells Drusilla's player that it is difficult but possible, though it will be nearly impossible if she uses her spear. Reluctantly, she drops the spear and pulls out a short sword before attempting the maneuver.}",
-						"{@i Her Dexterity score is 13; with the \u22125 penalty, it's modified to an 8. On her combat action, she attempts the maneuver, and rolls 1d20 against her modified Dex. She rolls an 8, and achieves it exactly; Drusilla rolls between the orc's legs, stands up behind him, and drives the short sword home before he knows what hit him. The DM gives her an arbitrary +4 to attack rolls for the surprise value of the maneuver.}",
-						"{@i Someone with Acrobatics nonweapon proficiency might be able to perform that same tuck-and-roll with no penalty, or with a penalty dictated only by the type of armor he is wearing. See the \"Armor Modifiers for Wrestling Table\" on page 97 of the Player's Handbook; those modifiers would work equally well in this situation.}",
+						{
+							"type": "hr"
+						},
+						{
+							"type": "entries",
+							"style": "italic",
+							"entries": [
+								"Example: Drusilla wants to try the same maneuver Rathnar was going to pull. She, too, has no acrobatic training, but is in light leather armor. The DM thinks that this will be pretty difficult for her (though not as difficult as it was for Rathnar), and assigns the maneuver a difficulty factor of 5 if she leaves her spear behind. It'll be an 8, if she tries to take her spear along on the maneuver. He tells Drusilla's player that it is difficult but possible, though it will be nearly impossible if she uses her spear. Reluctantly, she drops the spear and pulls out a short sword before attempting the maneuver.",
+								"Her Dexterity score is 13; with the \u22125 penalty, it's modified to an 8. On her combat action, she attempts the maneuver, and rolls 1d20 against her modified Dex. She rolls an 8, and achieves it exactly; Drusilla rolls between the orc's legs, stands up behind him, and drives the short sword home before he knows what hit him. The DM gives her an arbitrary +4 to attack rolls for the surprise value of the maneuver.",
+								"Someone with Acrobatics nonweapon proficiency might be able to perform that same tuck-and-roll with no penalty, or with a penalty dictated only by the type of armor he is wearing. See the \"Armor Modifiers for Wrestling Table\" on page 97 of the Player's Handbook; those modifiers would work equally well in this situation."
+							]
+						},
+						{
+							"type": "hr"
+						},
 						"Another thing to do when a maneuver will probably work automatically if the intended target doesn't see it coming, is to assign a difficulty number to the target's chance of seeing it. This difficulty could be a penalty or a bonus, depending on how obvious the maneuver is, and so could be from 1 to 10 in either direction. The DM would have the intended target roll {@dice 1d20} against his modified Intelligence, and if he rolled equal to or less than that number, he'd see the maneuver coming and be able to avoid it. If he failed, the DM could give the attacker ordinary chances of success, or even make the attack an automatic success.",
-						"{@i Example: Amstard is in a street brawl with a big brute of a warrior; they've been punching the daylights out of one another, and Amstard has just been knocked down. His player announces that he's trying a classic trick: He'll inconspicuously pick up a handful of sand and, as he's rising to return to the fight, he'll dash the sand into his opponent's face, blinding him.}",
-						"{@i That's a reasonable trick to try. The DM decides that the brute's chance to figure out Amstard's maneuver is directly proportional to Amstard's finesse in scooping up the sand. He tells Amstard to roll against his Dexterity, unmodified, when picking up the sand\u2014and the number he makes his roll by will be the brute's difficulty number in seeing it coming.}",
-						"{@i Amstard's Dexterity is 13. He rolls a 10 on 1d20, making it by 3. The brute's Intelligence is 10; with the difficulty of 3, his modified Intelligence is 7. Secretly, the DM rolls 1d20 for the brute, achieving an 8; the brute doesn't see the maneuver coming. But Amstard's player can't be told that until Amstard is committed to his maneuver.}",
-						"{@i Amstard now throws the sand; this counts as an attack. The DM gives him an ordinary attack roll to succeed. Amstard successfully hits vs. the brute's AC, and now the brute is temporarily blinded...}",
+						{
+							"type": "hr"
+						},
+						{
+							"type": "entries",
+							"style": "italic",
+							"entries": [
+								"Example: Amstard is in a street brawl with a big brute of a warrior; they've been punching the daylights out of one another, and Amstard has just been knocked down. His player announces that he's trying a classic trick: He'll inconspicuously pick up a handful of sand and, as he's rising to return to the fight, he'll dash the sand into his opponent's face, blinding him.",
+								"That's a reasonable trick to try. The DM decides that the brute's chance to figure out Amstard's maneuver is directly proportional to Amstard's finesse in scooping up the sand. He tells Amstard to roll against his Dexterity, unmodified, when picking up the sand\u2014and the number he makes his roll by will be the brute's difficulty number in seeing it coming.",
+								"Amstard's Dexterity is 13. He rolls a 10 on 1d20, making it by 3. The brute's Intelligence is 10; with the difficulty of 3, his modified Intelligence is 7. Secretly, the DM rolls 1d20 for the brute, achieving an 8; the brute doesn't see the maneuver coming. But Amstard's player can't be told that until Amstard is committed to his maneuver.",
+								"Amstard now throws the sand; this counts as an attack. The DM gives him an ordinary attack roll to succeed. Amstard successfully hits vs. the brute's AC, and now the brute is temporarily blinded..."
+							]
+						},
+						{
+							"type": "hr"
+						},
 						"That's how the thought process works, anyway. The players should have the opportunity to try just about any maneuver or approach they can imagine, and the DM should figure out how likely each try is of success. {@i Nothing should be impossible to try just because it isn't specifically covered in the rules.}",
 						{
 							"type": "entries",
@@ -3477,7 +3576,19 @@
 								},
 								"The chart bonus is a reflection of the character's superior accuracy with punching. As you already know, when the character successfully hits, the roll itself determines which maneuver was made; you use the chart on page 97 in the Player's Handbook, and the attack roll also determines the maneuver used.",
 								"But on a successful hit, the punching specialist can modify that result. If he has a {@i chart bonus} of +1, he can choose the maneuver one higher or one lower on the chart.",
-								"{@i Example: Sir Amstard punches a troll. (He's recklessly brave, after all.) He rolls a 12 to attack rolls, and this turns out to be a successful hit. On the \"Punching and Wrestling Results\" chart, we see that this is a Kidney Punch, doing 1 point of damage, with a 5% chance for knockout. But Amstard is a Punching Specialist with a chart bonus of +1. He can choose instead for the result to be an 11-Hook (doing 2 points of damage and with a 9% chance for knockout), or a 13-Hook (doing 2 points of damage and with a 10% chance for a knockout). He changes the maneuver from a Kidney Punch to a 13-Hook.}",
+								{
+									"type": "hr"
+								},
+								{
+									"type": "entries",
+									"style": "italic",
+									"entries": [
+										"Example: Sir Amstard punches a troll. (He's recklessly brave, after all.) He rolls a 12 to attack rolls, and this turns out to be a successful hit. On the \"Punching and Wrestling Results\" chart, we see that this is a Kidney Punch, doing 1 point of damage, with a 5% chance for knockout. But Amstard is a Punching Specialist with a chart bonus of +1. He can choose instead for the result to be an 11-Hook (doing 2 points of damage and with a 9% chance for knockout), or a 13-Hook (doing 2 points of damage and with a 10% chance for a knockout). He changes the maneuver from a Kidney Punch to a 13-Hook."
+									]
+								},
+								{
+									"type": "hr"
+								},
 								"Only if a character specializes in punching and thus has a chart bonus can he affect his punch results in this manner.",
 								"A character using a Cestus does get to add the bonuses to attack rolls and damage from Punching Specialization to his Cestus damage. If he has specialized in Cestus too, he can decide from round to round which of his bonuses he will apply this round. Additionally, you may use the Cestus attack's attack roll to determine which Punching maneuver was used with the attack; you still use the damage for the Cestus instead of the maneuver, but now also have the possibility of a knockout. This can make combats with cesti a little more complicated, so the DM may disallow this rule if he chooses.",
 								"It is possible for a Warrior to continue to improve his Punching abilities: See \"Continuing Specialization,\" below."
@@ -3838,10 +3949,19 @@
 										"He gains a +1 chart bonus with all attacks in that combat style. With chart bonuses of +2 or more, the character can choose any maneuver within the range of maneuvers covered by his chart bonus (see the example below)."
 									]
 								},
-								"{@i Example: Cassius the Gladiator is a Punching Specialist. He Specialized in Punching at first level, put another Weapon Proficiency slot into it at third level, another at sixth, and still another at ninth.}",
-								"{@i At ninth level, he has a +3 bonus to attack rolls with Punching, a +3 to damage rolls with Punching, and a +3 chart bonus.}",
-								"{@i Let's say he rolls a 16 to hit someone, and that the attack does hit. This would normally be a Glancing Blow. But he has a +3 chart bonus. He can choose for the maneuver, instead of just being a rolled result of 16, to be anywhere from 19 to 13. He can choose for the maneuver to be a Wild Swing, a Rabbit Punch, a Kidney Punch, a Glancing Blow (as rolled), a Jab, an Uppercut, or a Hook.}",
-								"{@i Of these seven maneuvers, Jab and Hook do the most damage, and Hook has a slightly higher chance of knockout success, so he chooses it. With his punch, he will do a basic 2 points for the maneuver, +3 points from the damage bonus he gets for specializing, and any bonus his Strength gives him.}"
+								{
+									"type": "hr"
+								},
+								{
+									"type": "entries",
+									"style": "italic",
+									"entries": [
+										"Example: Cassius the Gladiator is a Punching Specialist. He Specialized in Punching at first level, put another Weapon Proficiency slot into it at third level, another at sixth, and still another at ninth.",
+										"At ninth level, he has a +3 bonus to attack rolls with Punching, a +3 to damage rolls with Punching, and a +3 chart bonus.",
+										"Let's say he rolls a 16 to hit someone, and that the attack does hit. This would normally be a Glancing Blow. But he has a +3 chart bonus. He can choose for the maneuver, instead of just being a rolled result of 16, to be anywhere from 19 to 13. He can choose for the maneuver to be a Wild Swing, a Rabbit Punch, a Kidney Punch, a Glancing Blow (as rolled), a Jab, an Uppercut, or a Hook.",
+										"Of these seven maneuvers, Jab and Hook do the most damage, and Hook has a slightly higher chance of knockout success, so he chooses it. With his punch, he will do a basic 2 points for the maneuver, +3 points from the damage bonus he gets for specializing, and any bonus his Strength gives him."
+									]
+								}
 							]
 						},
 						{
@@ -3892,7 +4012,16 @@
 							"page": 79,
 							"entries": [
 								"A Wrestler can take a Called Shot in order to choose the specific Wrestle maneuver result he wants. If he succeeds, he does not randomly roll the wrestle maneuver which takes place; he chooses it. This is of special usefulness when he's trying to achieve a hold result.",
-								"{@i Example: A wrestler decides to take a Called Shot. Before initiative is rolled, he announces that he's taking a Called Shot to achieve the result of Arm Lock. He suffers the usual +1 to initiative; when his turn comes up, he suffers a \u22124 to attack rolls. If he hits, the maneuver result is Arm Lock, regardless of the roll.}",
+								{
+									"type": "hr"
+								},
+								{
+									"type": "entries",
+									"style": "italic",
+									"entries": [
+										"Example: A wrestler decides to take a Called Shot. Before initiative is rolled, he announces that he's taking a Called Shot to achieve the result of Arm Lock. He suffers the usual +1 to initiative; when his turn comes up, he suffers a \u22124 to attack rolls. If he hits, the maneuver result is Arm Lock, regardless of the roll."
+									]
+								},
 								"Also, when a fighter is wrestling another character, he might find it to his advantage to make a Called Shot to pull the enemy's helmet down over his enemy's eyes, blinding him for a combat round or two.",
 								"But, obviously, such successes depend heavily on the good-will of the DM. If he thinks such maneuvers are more bother than color, don't try to perform them."
 							]
@@ -4001,6 +4130,9 @@
 								"Calculate 25% (one-fourth) of your character's hit point total (don't count current injuries; this is his starting hit point total). Round up if the fraction is .5 or higher. On your character sheet, near the hit point listing, write down \"Numbed\" and that number. (You can also use the Combat Sheet included at the end of this book.) If the result was 0, write down 1 instead.",
 								"Then, calculate 50% (one-half) of your character's hit point total. Round up if the fraction is .5 or higher. On your character sheet, also near the hit point listing (or on this chapter's Combat Sheet), write down \"Useless\" and that number. If the result was 1, write down 2 instead.",
 								"Whenever you go up a level and gain new hit points, recalculate those numbers.",
+								{
+									"type": "hr"
+								},
 								"{@i Example: Zaross has 27 hit points. His Numbed number is 6.75 (rounds up to 7), and his Useless number is 13.5 (rounds up to 14).}"
 							]
 						},
@@ -4098,15 +4230,15 @@
 											"type": "item",
 											"name": "Head:",
 											"entries": [
-												"{@b}: When a character takes a Numbed or Useless result to his head, one of the following effects can take place. The DM, not the player, chooses which one. He can random-roll on {@dice 1d6}, or just choose the one that he fancies most.",
+												"When a character takes a Numbed or Useless result to his head, one of the following effects can take place. The DM, not the player, chooses which one. He can random-roll on {@dice 1d6}, or just choose the one that he fancies most.",
 												{
 													"type": "list",
 													"style": "list-no-bullets",
 													"items": [
-														"{@i (1) Blindness:} The character is blinded (from the pain, not injury to his eyes) until the Numbness or Uselessness ends. When a character is blind but still trying to defend himself, anyone attacking him gets a bonus of +4 to attack rolls. (If, for some reason, he is also kneeling, sitting or flat on his back, the bonuses to attack rolls are cumulative).",
-														"{@i (2) Deafness:} The character hears ringing in his ears until the Numbness or Uselessness ends. The character suffers no combat penalty, but cannot hear orders or warnings shouted at him.",
-														"{@i (3) Dizziness:} The character is concussed and dizzy. He performs any Dexterity ability rolls with a penalty of\u20134 until the Numbness or Uselessness ends. Anytime he is hit in combat for more than 2 points of damage, he must make a Dexterity ability check to avoid falling down.",
-														"{@i (4) Knockdown:} The character is knocked flat on his backside by the blow, but does not suffer any additional ill effect. His head is not really Numbed or Useless; as soon as he stands up again, the disadvantage for the Knockdown goes away.",
+														"(1) {@i Blindness:} The character is blinded (from the pain, not injury to his eyes) until the Numbness or Uselessness ends. When a character is blind but still trying to defend himself, anyone attacking him gets a bonus of +4 to attack rolls. (If, for some reason, he is also kneeling, sitting or flat on his back, the bonuses to attack rolls are cumulative).",
+														"(2) {@i Deafness:} The character hears ringing in his ears until the Numbness or Uselessness ends. The character suffers no combat penalty, but cannot hear orders or warnings shouted at him.",
+														"(3) {@i Dizziness:} The character is concussed and dizzy. He performs any Dexterity ability rolls with a penalty of\u20134 until the Numbness or Uselessness ends. Anytime he is hit in combat for more than 2 points of damage, he must make a Dexterity ability check to avoid falling down.",
+														"(4) {@i Knockdown:} The character is knocked flat on his backside by the blow, but does not suffer any additional ill effect. His head is not really Numbed or Useless; as soon as he stands up again, the disadvantage for the Knockdown goes away.",
 														"(5) Blindness {@i and} Deafness.",
 														"(6) Dizziness {@i and} Knockdown."
 													]
@@ -4206,8 +4338,17 @@
 							"page": 82,
 							"entries": [
 								"Usually, it's too much trouble to calculate proportions on every attack you sustain. Instead, keep a separate track of all damage you receive in a single combat from Punching, Martial Arts, and Sap attacks. When the combat is over, divide them up into Normal and Temporary damage. When you have a fraction of .5 (or less) on the Normal Damage result, round down; all the rest of the damage is Temporary damage.",
-								"{@i Example: Sir Amstard is in a boxing match with the devastating Cassius, and is getting the worst of it. He takes one shot for 5 points of damage, another for 6, and another for 3, and on this third shot Cassius successfully rolls his Knockout percentage. Amstard is knocked out.}",
-								"{@i Amstard has sustained a total of 14 points of damage. One-fourth, or 25%, of that is Normal Damage. That's 3.5, which we round down to 3. He's taken 3 points of Normal Damage. The remaining 11 points are Temporary damage.}"
+								{
+									"type": "hr"
+								},
+								{
+									"type": "entries",
+									"style": "italic",
+									"entries": [
+										"Example: Sir Amstard is in a boxing match with the devastating Cassius, and is getting the worst of it. He takes one shot for 5 points of damage, another for 6, and another for 3, and on this third shot Cassius successfully rolls his Knockout percentage. Amstard is knocked out.",
+										"Amstard has sustained a total of 14 points of damage. One-fourth, or 25%, of that is Normal Damage. That's 3.5, which we round down to 3. He's taken 3 points of Normal Damage. The remaining 11 points are Temporary damage."
+									]
+								}
 							]
 						},
 						{
@@ -4225,7 +4366,16 @@
 							"page": 83,
 							"entries": [
 								"When a character who has sustained both Normal and Temporary damage receives magical healing, the healing spell {@i first} heals the Normal (real) Damage. If it heals all the Normal Damage, it then goes to work on the Temporary Damage.",
-								"{@i Example: Let us say Amstard receives a cure light wounds spell immediately after being knocked out. The priest rolls a 6 on {@dice 1d8}. The first three points of healing cure his three points of Normal Damage. The remaining three are applied to his Temporary Damage. When that's all done, Amstard is down 0 points of Normal Damage and 8 points of Temporary Damage.}"
+								{
+									"type": "hr"
+								},
+								{
+									"type": "entries",
+									"style": "italic",
+									"entries": [
+										"Example: Let us say Amstard receives a cure light wounds spell immediately after being knocked out. The priest rolls a 6 on {@dice 1d8}. The first three points of healing cure his three points of Normal Damage. The remaining three are applied to his Temporary Damage. When that's all done, Amstard is down 0 points of Normal Damage and 8 points of Temporary Damage."
+									]
+								}
 							]
 						},
 						{
@@ -4243,9 +4393,18 @@
 							"page": 83,
 							"entries": [
 								"If a character sustained enough Temporary Damage to render him unconscious in the same blow as he suffered a Knockout, he doesn't wake up until conditions for recovery of both the Temporary Damage and the Knockout are met.",
-								"{@i Example: In a rematch, Amstard pounds Cassius silly until his last blow knocks him out. That last blow reduced him to \u22123 hit points, rendering him unconscious, and Amstard also successfully rolled for Knockout on percentile dice. So, when does Cassius wake up?}",
-								"{@i It will take Cassius 20 minutes to recover 4 points of Temporary Damage, which will put him at 1 hp and let him wake up. Cassius rolls his System Shock roll and is successful, meaning that he will wake up from Knockout after 2d6 minutes. He rolls a 7, so he would wake up in 7 minutes.}",
-								"{@i But both recoveries have to finish for him to wake up. After 7 minutes, he's still unconscious, and will stay that way until 20 minutes are up.}"
+								{
+									"type": "hr"
+								},
+								{
+									"type": "entries",
+									"style": "italic",
+									"entries": [
+										"Example: In a rematch, Amstard pounds Cassius silly until his last blow knocks him out. That last blow reduced him to \u22123 hit points, rendering him unconscious, and Amstard also successfully rolled for Knockout on percentile dice. So, when does Cassius wake up?",
+										"It will take Cassius 20 minutes to recover 4 points of Temporary Damage, which will put him at 1 hp and let him wake up. Cassius rolls his System Shock roll and is successful, meaning that he will wake up from Knockout after 2d6 minutes. He rolls a 7, so he would wake up in 7 minutes.",
+										"But both recoveries have to finish for him to wake up. After 7 minutes, he's still unconscious, and will stay that way until 20 minutes are up."
+									]
+								}
 							]
 						},
 						{
@@ -4253,7 +4412,7 @@
 							"name": "Magical Healing and Knockout",
 							"page": 83,
 							"entries": [
-								"If a character who has been Knocked Out receives healing magic (a {@i {@spell cure light wounds|PHB}} spell or any more powerful healing spell, excluding irrelevant spells such as {@i {@spell cure disease|PHB}} or {@i {@spell neutralize poison|PHB}}), and he successfully made his System Shock roll, he'll wake up immediately (provided, as usual, that he's above 0 hit points).",
+								"If a character who has been Knocked Out receives healing magic {@spell cure light wounds|PHB}} spell or any more powerful healing spell, excluding irrelevant spells such as {@i {@spell cure disease|PHB}} or {@i {@spell neutralize poison|PHB}}), and he successfully made his System Shock roll, he'll wake up immediately (provided, as usual, that he's above 0 hit points).",
 								"If he receives healing magic but {@i failed} his System Shock Roll, the magic still helps him: He may now calculate his recovery as though he successfully made his System Shock roll."
 							]
 						}
@@ -4357,11 +4516,20 @@
 									"page": 84,
 									"entries": [
 										"When a character is in a situation where he suffers a penalty to attack rolls in melee combat, he's obviously in some dark area. He, and everyone else with similar vision, suffers the penalties to attack rolls in melee and missile combat.",
-										"{@i Example: Rathnar is in a fight in pea-soup fog. He can barely see his hand in front of his face. An enemy looms up in the fog. Rathnar strikes at it\u2014but suffers a \u22123 to attack rolls. The fog is so thick that it's difficult to strike exactly the right place. He rolls an attack that would barely have hit his foe in ordinary circumstances; in these circumstances, his blow is a clean miss.}",
-										"The missile penalty gets worse and worse the further away the attacker is from his target.",
-										"{@i Example: Sir Amstard, at the head of an army, is firing at the oncoming army of orcs, which is half-way across the plain. The orcs are at 200 yards, barely in range of the heroes' long bows. The weather, however, is drizzly and rainy, considered to be Mist on the chart above.}",
-										"{@i The chart says that Amstard and allies take a \u22121 to attack rolls\u2014at each range step. That's \u22121 at short range, another \u22121 at medium, and a last \u22121 at long range. Amstard and friends take a \u22123 to attack rolls when firing at the orcs.}",
-										"{@i Suddenly, the cloud breaks and a heavy rain falls on everyone. The DM rules that it's the equivalent of light fog or snow. The orcs haven't yet gotten within 140 yards, so they're still at long range. Amstard and friends fire again. Now, they're at \u22122 to attack rolls per range step, or \u22126 total to attack rolls their enemies.}"
+										{
+											"type": "hr"
+										},
+										{
+											"type": "entries",
+											"style": "italic",
+											"entries": [
+												"Example: Rathnar is in a fight in pea-soup fog. He can barely see his hand in front of his face. An enemy looms up in the fog. Rathnar strikes at it\u2014but suffers a \u22123 to attack rolls. The fog is so thick that it's difficult to strike exactly the right place. He rolls an attack that would barely have hit his foe in ordinary circumstances; in these circumstances, his blow is a clean miss.",
+												"The missile penalty gets worse and worse the further away the attacker is from his target.",
+												"Example: Sir Amstard, at the head of an army, is firing at the oncoming army of orcs, which is half-way across the plain. The orcs are at 200 yards, barely in range of the heroes' long bows. The weather, however, is drizzly and rainy, considered to be Mist on the chart above.",
+												"The chart says that Amstard and allies take a \u22121 to attack rolls\u2014at each range step. That's \u22121 at short range, another \u22121 at medium, and a last \u22121 at long range. Amstard and friends take a \u22123 to attack rolls when firing at the orcs.",
+												"Suddenly, the cloud breaks and a heavy rain falls on everyone. The DM rules that it's the equivalent of light fog or snow. The orcs haven't yet gotten within 140 yards, so they're still at long range. Amstard and friends fire again. Now, they're at \u22122 to attack rolls per range step, or \u22126 total to attack rolls their enemies."
+											]
+										}
 									]
 								},
 								{
@@ -4380,11 +4548,29 @@
 										"If you prefer more realism and complexity, then Infravision is a help, but it's still not quite as good as being in broad daylight.",
 										"With these optional rules, Infravision can be a big help in times of darkness. A character with Infravision isn't as disadvantaged by poor lighting conditions.",
 										"First, in melee combat, in any condition of darkness where one person has better vision than the other, he gets a bonus to attack rolls. This bonus is equal to the other fellow's attack penalty. (The character with infravision is still subject to the normal penalty\u2014in effect, this bonus cancels the character's own penalty.)",
-										"{@i Example: It's dark and moonless outside, and Rathnar is fighting Aspendale the Elf. Rathnar doesn't have Infravision; Aspendale does. Rathnar, because it's dark and moonless, is taking a \u22123 penalty to attack rolls Aspendale in melee. Aspendale, therefore, has a +3 when striking at Rathnar. (\u22123 for bad lighting, +3 for Rathnar's handicap, +3 for infravision bonus).}",
+										{
+											"type": "entries",
+											"style": "italic",
+											"entries": [
+												"Example: It's dark and moonless outside, and Rathnar is fighting Aspendale the Elf. Rathnar doesn't have Infravision; Aspendale does. Rathnar, because it's dark and moonless, is taking a \u22123 penalty to attack rolls Aspendale in melee. Aspendale, therefore, has a +3 when striking at Rathnar. (\u22123 for bad lighting, +3 for Rathnar's handicap, +3 for infravision bonus)."
+											]
+										},
 										"Second, in missile combat, in similar conditions, the character with the better vision gets a bonus to hit his target. This, also, is equal to the other fellow's melee, not missile, penalty to attack rolls.",
-										"{@i Example: Taking a beating, Rathnar runs off into the darkness and gets to his bow. Aspendale accommodates him. Firing at Medium Range, Rathnar is at a \u221212 to attack rolls! That's \u22126 each at Short and Medium ranges, according to the chart above.}",
+										{
+											"type": "entries",
+											"style": "italic",
+											"entries": [
+												"Example: Taking a beating, Rathnar runs off into the darkness and gets to his bow. Aspendale accommodates him. Firing at Medium Range, Rathnar is at a \u221212 to attack rolls! That's \u22126 each at Short and Medium ranges, according to the chart above."
+											]
+										},
 										"Third, the third column of the chart above gives a bonus for Infravision. This is applied to the character's penalty for melee combat, and to his penalty for missile combat at each range step.",
-										"{@i Example: Aspendale returns fire. He would be at a \u22126 per each range step, too, but he has Infravision. He gets a \u22126 at Short and at Medium Range, but that's offset by a +3 at Short and a +3 at Medium Range. His penalty: \u22126. And because he can see better in the dark than Rathnar anyway, he gets a bonus equal to Rathnar's melee penalty: +3. His final penalty: A mere \u22123. He shoots back at Rathnar, hitting him clean on.}"
+										{
+											"type": "entries",
+											"style": "italic",
+											"entries": [
+												"Example: Aspendale returns fire. He would be at a \u22126 per each range step, too, but he has Infravision. He gets a \u22126 at Short and at Medium Range, but that's offset by a +3 at Short and a +3 at Medium Range. His penalty: \u22126. And because he can see better in the dark than Rathnar anyway, he gets a bonus equal to Rathnar's melee penalty: +3. His final penalty: A mere \u22123. He shoots back at Rathnar, hitting him clean on."
+											]
+										}
 									]
 								}
 							]
@@ -6835,10 +7021,22 @@
 								"If a character chooses to wear no head protection at all, he suffers no Vision or Hearing check penalties.",
 								"However, the character has one hindrance, if you're using the optional hit location rules from the Combat Rules chapter.",
 								"If a character is wearing no head protection, an attacker can make a Called Shot against his head and thereby ignore the character's AC benefits from armor. (All bonuses from shields, high Dexterity scores, and magical items still count, however.) Since this is a very difficult shot (a total\u20138 to attack rolls, remember), this doesn't do the attacker much good, unless the victim is otherwise heavily armored.",
-								"{@i Example: Halway the archer has two possible targets, Territor and Bosque, two brutal guards. Territor is wearing leather armor and no headgear; this puts him at AC 8, and with his Dexterity bonus he's AC 6. Bosque is wearing full plate +2, no headgear, and body shield; this puts him at AC \u20132.}",
-								"{@i Halway, after all modifiers for range, his Dexterity, and other factors, is THAC0 16. (He's a 6th-level warrior, with a Dexterity of 16, and is firing at Medium Range.)}",
-								"{@i If he shoots at Territor, AC 6, he needs only a (16\u20136) 10 or better to hit him. If he shoots at Territor's unprotected head, the shot becomes much harder; he's shooting at AC 8 (AC 10, \u20132 for Territor's Dexterity), and so would normlly need a (16\u20138) 8; but with the \u20138 to attack rolls for a head shot, he's back to a roll of 16 or better. It's easier for him to hit Territor with a normal, non-specific shot.}",
-								"{@i If he shoots at Bosque, AC \u22122, he needs to roll an (16\u2212{\u22122}) 18 or better to hit him. If he shoots at Bosque's unprotected head, the shot becomes somewhat easier; he's shooting at AC 9 (AC 10, modified by Bosque's shield), and so would normally need a (16\u22129) 7; with the \u22128 to attack rolls for a head shot, he's up to a roll of 15 or better. This makes it slightly easier to hit Bosque, and may give him the special effects of the head location shot if he succeeds, so that's the shot he attempts.}",
+								{
+									"type": "hr"
+								},
+								{
+									"type": "entries",
+									"style": "italic",
+									"entries": [
+										"Example: Halway the archer has two possible targets, Territor and Bosque, two brutal guards. Territor is wearing leather armor and no headgear; this puts him at AC 8, and with his Dexterity bonus he's AC 6. Bosque is wearing full plate +2, no headgear, and body shield; this puts him at AC \u20132.",
+										"Halway, after all modifiers for range, his Dexterity, and other factors, is THAC0 16. (He's a 6th-level warrior, with a Dexterity of 16, and is firing at Medium Range.)",
+										"If he shoots at Territor, AC 6, he needs only a (16\u20136) 10 or better to hit him. If he shoots at Territor's unprotected head, the shot becomes much harder; he's shooting at AC 8 (AC 10, \u20132 for Territor's Dexterity), and so would normlly need a (16\u20138) 8; but with the \u20138 to attack rolls for a head shot, he's back to a roll of 16 or better. It's easier for him to hit Territor with a normal, non-specific shot.",
+										"If he shoots at Bosque, AC \u22122, he needs to roll an (16\u2212{\u22122) 18 or better to hit him. If he shoots at Bosque's unprotected head, the shot becomes somewhat easier; he's shooting at AC 9 (AC 10, modified by Bosque's shield), and so would normally need a (16\u22129) 7; with the \u22128 to attack rolls for a head shot, he's up to a roll of 15 or better. This makes it slightly easier to hit Bosque, and may give him the special effects of the head location shot if he succeeds, so that's the shot he attempts."
+									]
+								},
+								{
+									"type": "hr"
+								},
 								"The lower (better) a target's AC is, the better an option it is to try a head shot, if his head is unprotected and the rest of his body is armored. Characters interested in this option should calculate the math of both shots and compare the results, if they know all the relative ACs and modifiers; if they don't, they should ask the DM, in general terms, if it's even worth their time to try such a shot.",
 								{
 									"type": "entries",
@@ -7016,12 +7214,21 @@
 								"However, the DM may allow the difference in sex to {@i help} sometimes\u2014in cases where the armor is not likely to fit a male human because it is too small in the shoulders and chest. A human woman trying to put on a male half-elf's armor might be at no modifier, and find herself at a +10% modifier to wear a male elf's armor.",
 								"Remember that full plate has its own modifiers for chances to fit; it has only a 20% chance to fit another member of the same race (10% if the new wearer is of the other sex). A character {@i cannot} wear full plate made for a character of another race, period.",
 								"The DM can allow previously role-played determinations of a character's height and build to affect the chances from the chart below. For instance, if one player has always said that his human character was short and stocky, say 5'4'' and powerfully built, so that many people joked about him having a dwarvish ancestor, the DM can give him a +15% chance to wear dwarvish armor; this raises his chance from 50% to 65%, as if he were a human trying to wear armor of his own kind. The DM should, however, subtract that same modifier from the character's chance to wear armor built for humans; that chance would go down from 65% to 50%.",
-								"{@i Example: An adventuring party kills a beholder in its lair and finds the armor worn by previous victims. The adventurers include a huge human male barbarian, a slender human female warrior, a dwarf axeman, and a female gnome. The dead victims include an elf male in enchanted chain mail and a halfling male in enchanted leather. The heroes see who can wear the captured armor.}",
-								"{@i The DM decides arbitrarily that the human barbarian cannot even roll. He's always described himself as being massive, with enormous rippling muscles and a bodybuilder's physique. In this campaign, that often helps him with the ladies, but this time it disqualifies him from wearing any of the treasure.}",
-								"{@i The slender human warrioress tries the elf's chain mail. A human trying on elf armor, on the chart above, has a 20% to wear it successfully. The DM raises her chance 10% because she is a female human trying to fit into male elf armor; her build is at an advantage here. He raises it 10% further because in the campaign she has always described herself as of delicate build, very slender. This raises her chance to 40%. She rolls 38 on percentile dice; she can wear the chain. She also tries the enchanted leather. A human woman trying to wear male halfling armor is at 10%, and the DM again assigns her the +20% from the two modifiers mentioned. She has a 30% chance, but rolls a 79; she cannot wear it.}",
-								"{@i The dwarf axeman tries the elvish chain. A dwarf trying to wear elf armor has a 0% chance to wear it. He can't. He has a 35% chance to wear the halfling's armor; the DM lowers that to 25% because this character has always described himself as especially burly for a dwarf. But he rolls 03 on percentile dice; he can wear the enchanted leather.}",
-								"{@i The female gnome tries the elvish chain. She has a base 40% chance to wear it. The DM does not modify it for her sex. She rolls a 51 and fails. She tries the leather; she has a base 60% chance with it,\u201310% for different gender equals 50%. She rolls a 33 and can wear it.}",
-								"{@i So the human warrioress gets the chain mail, and the dwarf and gnome must choose or gamble to decide who gets the leathers.}"
+								{
+									"type": "hr"
+								},
+								{
+									"type": "entries",
+									"style": "italic",
+									"entries": [
+										"Example: An adventuring party kills a beholder in its lair and finds the armor worn by previous victims. The adventurers include a huge human male barbarian, a slender human female warrior, a dwarf axeman, and a female gnome. The dead victims include an elf male in enchanted chain mail and a halfling male in enchanted leather. The heroes see who can wear the captured armor.",
+										"The DM decides arbitrarily that the human barbarian cannot even roll. He's always described himself as being massive, with enormous rippling muscles and a bodybuilder's physique. In this campaign, that often helps him with the ladies, but this time it disqualifies him from wearing any of the treasure.",
+										"The slender human warrioress tries the elf's chain mail. A human trying on elf armor, on the chart above, has a 20% to wear it successfully. The DM raises her chance 10% because she is a female human trying to fit into male elf armor; her build is at an advantage here. He raises it 10% further because in the campaign she has always described herself as of delicate build, very slender. This raises her chance to 40%. She rolls 38 on percentile dice; she can wear the chain. She also tries the enchanted leather. A human woman trying to wear male halfling armor is at 10%, and the DM again assigns her the +20% from the two modifiers mentioned. She has a 30% chance, but rolls a 79; she cannot wear it.",
+										"The dwarf axeman tries the elvish chain. A dwarf trying to wear elf armor has a 0% chance to wear it. He can't. He has a 35% chance to wear the halfling's armor; the DM lowers that to 25% because this character has always described himself as especially burly for a dwarf. But he rolls 03 on percentile dice; he can wear the enchanted leather.",
+										"The female gnome tries the elvish chain. She has a base 40% chance to wear it. The DM does not modify it for her sex. She rolls a 51 and fails. She tries the leather; she has a base 60% chance with it,\u201310% for different gender equals 50%. She rolls a 33 and can wear it.",
+										"So the human warrioress gets the chain mail, and the dwarf and gnome must choose or gamble to decide who gets the leathers."
+									]
+								}
 							]
 						},
 						{
@@ -7265,9 +7472,19 @@
 										]
 									]
 								},
-								"{@i Example: A character is robbed of all his worldly goods. Later, he finds the aftermath of a battle, with a couple of dead warriors still in their armor. One body wears a badly battered set of field plate (of which the breastplate is intact), while the other wears a full suit of chain mail (of which the chest is riddled with holes and one leg is destroyed).}",
-								"{@i He tries to piece this together into a suit for him. He takes the field-plate's breastplate. Looking at the chart, we see it grants an AC bonus of 4. He also takes the field-plate's two arms. Looking at the chart, we see they grant an AC bonus of 2. He takes the surviving chain mail leg. Looking at the chart, we see that it grants an AC bonus of 0. (He'll also take the surviving helm or helmet from one of these warriors, so that he'll have some armor on his head in case of a Called Shot to the Head.)}",
-								"{@i His AC bonus is 6, so his AC now is 4\u2014not too bad. If there's a shield, he'll have an AC of 3. If someone takes a Called Shot to his unarmored leg, he'll be at AC 10 (or 9 with the shield), as per the Combat Rules chapter, but that attacker will take a\u20134 penalty to attack rolls for the Called Shot maneuver.}"
+								{
+									"type": "hr"
+								},
+								{
+									"type": "entries",
+									"style": "italic",
+									"page": 111,
+									"entries": [
+										"Example: A character is robbed of all his worldly goods. Later, he finds the aftermath of a battle, with a couple of dead warriors still in their armor. One body wears a badly battered set of field plate (of which the breastplate is intact), while the other wears a full suit of chain mail (of which the chest is riddled with holes and one leg is destroyed).",
+										"He tries to piece this together into a suit for him. He takes the field-plate's breastplate. Looking at the chart, we see it grants an AC bonus of 4. He also takes the field-plate's two arms. Looking at the chart, we see they grant an AC bonus of 2. He takes the surviving chain mail leg. Looking at the chart, we see that it grants an AC bonus of 0. (He'll also take the surviving helm or helmet from one of these warriors, so that he'll have some armor on his head in case of a Called Shot to the Head.)",
+										"His AC bonus is 6, so his AC now is 4\u2014not too bad. If there's a shield, he'll have an AC of 3. If someone takes a Called Shot to his unarmored leg, he'll be at AC 10 (or 9 with the shield), as per the Combat Rules chapter, but that attacker will take a\u20134 penalty to attack rolls for the Called Shot maneuver."
+									]
+								}
 							]
 						},
 						{
@@ -7620,7 +7837,7 @@
 						"Following are some new types of magical treasures, magic especially suited to fighting characters.",
 						{
 							"type": "list",
-							"style": "list-no-bullets",
+							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
@@ -7827,7 +8044,7 @@
 						"The following pieces of equipment are of some use to warriors and other characters.",
 						{
 							"type": "list",
-							"style": "list-no-bullets",
+							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",

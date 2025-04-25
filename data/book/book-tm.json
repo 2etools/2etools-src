@@ -1,1148 +1,2277 @@
 {
 	"data": [
 		{
-			"type": "entries",
-			"name": "Introduction",
-			"page": 3,
+			"type": "section",
+			"name": "Foreword",
+			"page": 2,
 			"entries": [
-				{
-					"type": "gallery",
-					"images": [
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/PSI/000.webp"
-							},
-							"width": 1229,
-							"height": 1589
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/PSI/018.webp"
-							},
-							"title": "Humble the Brute",
-							"credit": "Daarken",
-							"width": 1224,
-							"height": 1584
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/PSI/019.webp"
-							},
-							"title": "Humble the Brute",
-							"credit": "Daarken",
-							"width": 610,
-							"height": 1584
-						}
-					]
-				},
-				{
-					"type": "entries",
-					"style": "italic",
-					"entries": [
-						"Clouds of purple and red shroud the sky above the forbidding mountains of the Geier Reach, never allowing the sun's full light to shine on the ground below. The jagged spires of Maurer Estate jut up from the peaks, keeping silent watch over the isolated valley. Stoic and enduring, the people of Stensia huddle in their stone-crafted villages\u2014Shadowgrange, Krezk, Lammas\u2014built against the mountainsides. Wisps of thick fog twine amid the trunks of black pines in the Somberwald, thick bogs suck dead trees slowly down into their murky depths, and dusky pastureland provides scant sustenance to flocks of scrawny sheep.",
-						"The lord of this bleak, remote part of Stensia's outland valleys is Strefan Maurer, who drank angel's blood alongside Edgar Markov and Olivia Voldaren centuries ago. His bloodline is small and mostly irrelevant to the larger world, but in the outland valleys of Stensia, he is the ultimate master. Avacyn and Sigarda offer scant hope to his grim subjects. Abandoned by their angels and hunted by vampires, all the Stensians can do is endure the unending dusk."
-					],
-					"id": "039"
-				},
-				{
-					"type": "hr"
-				},
 				{
 					"type": "quote",
 					"skipItalics": true,
 					"skipMarks": true,
 					"entries": [
-						"By the time {@i Plane Shift: Zendikar} saw the light of day, the game and story of {@i Magic: The Gathering} had moved on from Zendikar and started the tale of {@i Shadows over Innistrad}. I had already finished writing {@i The Art of Magic: The Gathering\u2014Innistrad}, at the same time that {@i Curse of Strahd}, a horror-themed adventure for Dungeons & Dragons, was on the shelves. All this meant that I turned my attention pretty quickly to the next installment, {@i Plane Shift: Innistrad}!",
-						"The starting point for this document was {@i The Art of Magic: The Gathering\u2014Innistrad}. Consider that book to be a useful resource in creating your Innistrad campaign, but not strictly necessary. An abundance of lore about Innistrad can be found on the Magic website. This document is designed to help you turn the book's adventure hooks and story seeds into a resource for your campaign with a minimum of changes to the fifth edition D&D rules.",
-						"This document also contains guidelines for adapting the {@i Curse of Strahd} adventure to set it in Innistrad. With a bit of creative improvisation, these tips should get you on your way."
+						"Whew, another big project behind me! Never did I realize when I started work on the Tome of Magic that it would become such an undertaking. After all, it seemed so simple. At that point, I should have known better.",
+						"It all started with a seemingly innocent comment, something like, \"There are a lot of gaps in the spell lists for wizards and priests. Maybe we should do something about it.\" I don't know if I said that, or if it was someone else's idea, but whoever said it was right. I knew they were right because I could see them clearly by the time the AD&D® 2nd Edition {@i Player's Handbook} was finished.",
+						"These gaps were not yawning chasms in the game system. They were little things, like, \"Gee, it would be nice to have a spell that did X—or Y, or Z, or whatever.\" Sometimes they were things to help explain the weirdness people were always putting in adventures or little touches that would smooth things out for players and DMs alike. The {@i Tome of Magic} could be just the place to get some of these ideas into the AD&D® game system. Months later (because months always pass between the idea and actually doing the work), it was time to make all this real.",
+						"That's when I discovered the warts on the great idea—two in particular. First, filling a book with a mis-matched collection of spells was not enough. How many variations on {@i fireball, lightning bolt,} and {@i confusion} did you really need? Second, a book of odds and ends didn't sound exciting for either a game designer or for the players. The Tome of Magic needed something—a hook—to make it interesting.",
+						"As a result, the {@i Tome of Magic} is much more than just a collection of spells. There are many new ideas about the types and uses of magic in these pages—wild magic, cooperative magic, focuses, elementalists, and more. In the end, the {@i Tome of Magic} offers more than just spells—it gives breadth and range to wizards and priests. In many ways, it is a peek inside the Pandora's box of magic.",
+						"On top of these concerns was a problem of mental health. If I alone had to fill all these pages with spells and magical items, I'd be writing from the nut-house by now. There was no way I could create all these new spells and remain sane. That's why there is a host of designers listed in the credits. Taking often the barest of my ideas and suggestions, these creative conspirators produced a wide variety of spells and items. After weeding out spells too similar in form and function, I can offer you the cleverness and diversity of six different designers, not just one! For myself and the other designers, we hope you find the Tome of Magic both entertaining and useful. Let it be your guide to just how much further wizards and priests can go in the AD&D game."
 					],
-					"by": "James Wyatt"
+					"by": [
+						"James Wyatt",
+						"February, 1991"
+					]
 				},
-				"The game mechanics in this supplement are usable in your D&D campaign but are not fully tempered by playtests and design iterations. For these reasons, material in this supplement is not legal in D&D Organized Play events."
-			],
-			"id": "000"
+				{
+					"type": "entries",
+					"caption": "Credits",
+					"entries": [
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"entries": [
+										"Design:",
+										"David Cook (Wild Magic, Faith Magic)",
+										"Nigel Findley (Numbers, Thought, War)",
+										"Anthony Herring (Elementalists, additional spells)",
+										"Christopher Kubasik (Chaos, Law)",
+										"Carl Sargent (Quest Spells, Metamagic)",
+										"Rick Swan (Time, Travel, Wards)"
+									]
+								},
+								"Supervision and Development: David Cook",
+								"Editing and Additional Development: Anne Brown",
+								"Proofreading: Anne Brown, Rob King, Dori Watry",
+								{
+									"type": "hr"
+								},
+								"Sixth printing: February, 1995"
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"type": "section",
-			"name": "The World of Innistrad",
+			"name": "How to Use Tome of Magic",
 			"page": 5,
 			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSI/020.webp"
-					},
-					"title": "Ghost Quarter",
-					"credit": "Peter Mohrbacher",
-					"width": 1225,
-					"height": 1585
-				},
 				"On the plane of Innistrad, horrors stalk the shadows and scratch at doors in the night. Humanity is beset on all sides: vampires thirst for human blood, werewolves live for the thrill of the hunt, the restless spirits of the dead haunt the living, and no corpse is safe from reanimation at the hands of cruel necromancers or cunning scientists. Only their grim determination\u2014and their staunch faith in the protection of their patron archangel, Avacyn\u2014has allowed humans to survive in this nightmarish realm.",
 				{
 					"type": "entries",
-					"name": "Horrors of the Night",
-					"page": 5,
+					"style": "italic",
+					"page": 3,
 					"entries": [
-						"The people of Innistrad are surrounded by monsters. Almost without exception, anything that is not human, whether it's a rat or an angel, is a potential enemy. Even the traditional allies of humanity\u2014from angels and gryffs to herons and hounds\u2014are unreliable at best, as the madness that grips the angels seems to seep into every living thing. And at the same time, humanity's age-old enemies grow ever more dangerous.",
-						"The specific horrors that the people of Innistrad fear most are all reflections of humanity's darker nature. Werewolves are a living embodiment of the secret rage and violence that hide in the human heart. Vampires are the bodily manifestation of carnal desire, hedonistic cravings, and bloodlust. Zombies and geists\u2014the restless spirits of the dead\u2014paint the eventual future of all people in the starkest terms, underlining the grim truths of human mortality. Demons are the unholy inversion of humanity's spiritual longings\u2014the shadow side of the angels' brightness.",
-						"Still, the most dreadful creatures of Innistrad lurk within human towns and cities, pursuing their twisted schemes and unholy desires in the heart of civilization. These are the humans that have been consumed by Innistrad's darkness. Sinister cultists give themselves over to demons and other dark forces. Depraved necromancers raise the dead to do their bidding. Obsessive scholars pry into secrets best left hidden. Crazed scientists toy with forces of life and death in their effort to create artificial life or harness the energy that remains in the spirits of the dead. And even among the common folk\u2014on Innistrad as on every plane\u2014some simply give in to selfish desires and violent rage, killing with knife and garrote rather than sorcery."
-					],
-					"id": "002"
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSI/001.webp"
-					},
-					"title": "Demonic Taskmaster",
-					"credit": "Chris Rahn",
-					"width": 1229,
-					"height": 810
+						"An apprentice stands in the laboratory of his ancient wizard master. The youth's eyes stray across tables cluttered with alembics, retorts, beakers, bat wings, and phials, and beyond to shelves of scrolls and books. A musty old volume, bound in cracked green leather with glittering silver hinges, catches his attention. His master is elsewhere, so the curious student pulls the heavy volume from the shelf and, with a puff of breath, blows away a thick layer of dust. \"Tome of Magic\" it reads, spelled out in silver leaf on the brittle cover.",
+						"The apprentice can't believe his discovery. He's never seen this book before. What secrets has his master been keeping from him? What secrets will he discover inside? With trembling fingers, the apprentice opens the creaking cover.",
+						"\"Ahem, O callow youth! Perhaps you are dissatisfied with my training and would like to seek another master!\" booms the master's voice from behind the apprentice. The youth startles and guiltily slams the cover shut. Turning, he smiles sheepishly at his master.",
+						"The old wizard, bald and portly, takes the book from his apprentice's hands. \"Before you can learn secrets like these, you must first master the basics, which I sometimes doubt you ever will. Now tell me, what are the three Greater Gesticulations used in casting a light spell?\" The wizard deftly slides the tome back into place on the shelf as he speaks.",
+						"Flustered, the apprentice stammers out what feels like an elementary reply. But in his heart, he knows that someday he will read the secrets of that tome.",
+						"{@b Someday is now!}"
+					]
 				},
 				{
 					"type": "entries",
-					"name": "Defenders of Humanity",
-					"page": 6,
+					"name": "How to Use This Book",
+					"page": 3,
 					"entries": [
-						"Humanity is not without protectors in this nightmare land, and the foremost of those have always been the angels. Led by the glorious archangel Avacyn, the hosts of angels is few in number but has long stood with the people of Innistrad to face the horrors of the night.",
-						"Except in rare cases where the angels directly involve themselves in combat with monsters, their power is mediated through the Church of Avacyn, which serves as both spiritual and temporal authority in the four provinces of Innistrad. The priests of the church perform ritual blessings on the faithful and their homes to ward off evil, and the church's soldiers and inquisitors have long hunted vampires and werewolves that prey on the people in their charge.",
-						"But that was before Avacyn went mad. Without warning, the searing fury of the archangel\u2014usually reserved for the greatest foes of humanity\u2014was turned on villages full of seemingly innocent people. Angels under Avacyn's leadership impaled the innocent on their spears and scoured the earth with celestial fire. Convinced that the sins of humanity had brought down Avacyn's wrath, the church took up the archangel's cause and sought to purge all sin through inquisition and execution.",
-						"With even the angels and the church turned against humanity, few were left to take up arms against Innistrad's evils. Here and there, renegade cathars disobeyed the mandate of the church and continued to hunt vampires and werewolves instead of punishing the innocent. But increasingly, the common folk\u2014farmers with their pitchforks, smiths with their hammers, and retired soldiers taking battle-worn swords down from above the mantle\u2014discovered new reserves of strength and resiliency to stand against the horrors of the darkness, even when those horrors were parish priests and holy knights."
-					],
-					"id": "003"
+						"With over two hundred new spells for wizards and priests and a host of new magical items, the question of how to use this book may seem fairly obvious to most players. It appears to be a simple matter of opening the pages, selecting spells and magical items, and tossing these into a campaign.",
+						"Of course, it can be done that way, but players and DMs who take this route will miss many of the new possibilities and expansions the Tome of Magic has to offer. On the surface, the {@i Tome of Magic} may appear to be just a collection of spells and magical items. But it contains new game rules and information that goes much deeper.",
+						"This volume introduces a new type of wizard magic, expanded specializations, new priest spheres, and new variations on priest magic. These rules have the potential to impact a campaign in a way greater than a first glance might suggest. To benefit the most from these expansions, the DM should carefully consider how to introduce and use the new rules."
+					]
 				},
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSI/002.webp"
-					},
-					"title": "Goldnight Commander",
-					"credit": "Chris Rahn",
-					"width": 1225,
-					"height": 948
+					"type": "entries",
+					"name": "Who Is It For?",
+					"page": 3,
+					"entries": [
+						"The {@i Tome of Magic} is written with both the DM and player in mind. Dungeon Masters who keep this book out the hands of their players are doing their game a disservice. Likewise, players who want this book only to learn about the new magical items are missing the point. Both player and DM can use this book to improve and expand the game."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wizards",
+					"page": 3,
+					"entries": [
+						"In the game world of wizards, there are two significant additions—wild magic and elementalists. Wild magic is a strange, new type of magical power, just being explored and discovered for the first time. Wild mages are rare and exotic. Long before encountering such a wizard, characters may hear tell of a new type of magic in reports from travelers to distant lands. Of course, every adventurer knows that these reports tend to be exaggerated—more fiction than fact.",
+						"The first appearance of a wild mage is best presented by the DM as a mysterious NPC. The wild mage may join the party briefly or may be the springboard for an adventure. He should not be a henchman or hireling, but someone who is the characters' equal or superior. This gives players the opportunity to experience the wonders (and terrors) of wild magic before immersing themselves in this new art. After the characters have learned something of this strange magic, wild mage player characters may be introduced, perhaps as apprentices of the same NPC. Gradually, these new mages will become accepted members of the campaign world.",
+						"Elementalists can be introduced in a similar fashion, although their arrival is likely to be less mysterious. The first appearance of the specialization could be a small school or guild in a nearby town, established by an elementalist from distant lands (where such magic is common). The newly established wizard is likely to be looking for an apprentice; new characters are eligible to join the school. Of course, established mages may take an interest (both positive and negative) in his activities."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Priests",
+					"page": 4,
+					"entries": [
+						"The introduction of new priest spheres can pose a logical problem in some campaigns—if an existing Power has influence in a certain sphere, why did his priests never have these spells before? Why do they wake up one morning and suddenly have access to spells never before seen?",
+						"The DM can use several solutions to this question. The first is most effective for such esoteric spheres as Thought and Numbers. In this case, few (if any) existing Powers have access to these spheres. Instead, priests arrive (as did wild mages) from distant lands, spreading the word of their god. These NPC priests have strange powers never before seen. In some locations, they may be accepted, while in others, they may be driven out with vengeance. As new player characters are created, this \"new\" faith with all its advantages and disadvantages becomes an option.",
+						"Another explanation, particularly useful for the spheres of War and Wards, is that the Power always had access to these spells, but never had the need to grant them. A deity of war could reasonably withhold spells of the War sphere until the threat of war exists. To introduce the War sphere into the campaign, the DM need only create a little border tension and massing of troops — the perfect background for many adventures.",
+						"Certain deities may be too aloof or remote to become involved in the affairs of men until the need arises. This is particularly appropriate for the spheres of Law and Chaos. A shift in the \"harmony of the universe\" might warrant the attention of these Powers to \"set things right.\"",
+						"The introduction of subdivisions in the elemental sphere can be effected in a similar manner. Foreign priests may enter the campaign region and introduce the concept, or existing priests might discover their own deities suddenly taking a more active interest in their spells. Conflict or rivalry on the elemental planes can be used to justify rigid adherence to a particular element. A fire god, feeling the rising power of a sea god, may enforce strict elemental selection to bolster the devotion of his priests.",
+						"Of all the new priest material, quest spells are the easiest to introduce. These are given by the DM only when special conditions warrant. It is easy to justify that conditions have never yet warranted the need for quest spells."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Magical Items",
+					"page": 4,
+					"entries": [
+						"Of all the new material in this book, magical items require the least effort to introduce. Many are simply treasures that can be discovered in a newly-won hoard. In this case, DMs are encouraged not to reveal all the powers of a newly-found item. Rather, the player should be forced to puzzle out an item's powers. For example, the characters find a magical quill. What does it do? How is it used? Answering these questions is a goal that players can set for their characters. After spending time, spells, and money on research and possibly more adventures, the characters may discover that they own a {@i quill of law}.",
+						"Another effective and logical method for introducing never-before-seen magical items is for NPCs to possess these fascinating new devices. Thus, a wild mage might own a {@i rod of disruption} or an elementalist a {@i wand of corridors}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Patience, Patience, Patience",
+					"page": 4,
+					"entries": [
+						"An important thing for both the DM and players to remember is that the existence of {@i Tome of Magic} does not mean that everything in it needs to be rushed into play. If the need for a particular spell does not exist right away, don't worry. Sooner or later, a player or DM will discover that it suits his needs perfectly. Properly used, the {@i Tome of Magic} will become a source of surprises and inspiration for many adventures to come."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "New Rules for Wizards",
+					"page": 4,
+					"entries": [
+						"Mages and magic, great and small, are a key element of a fantasy campaign. While endowed with considerable powers, there are still vast horizons for mages to explore. Just a small portion of these possibilities is explored in the Tome of Magic—wild magic, elemental specialists, and metamagic.",
+						{
+							"type": "entries",
+							"name": "Wild Magic",
+							"page": 4,
+							"entries": [
+								"One of the newest discoveries from the great lands of the Forgotten Realms is wild magic. Originally considered little more than the unfortunate by-product of an epic struggle among the gods of that world, the strange effects of the wild lands (as those areas affected by wild magic are known) have attracted the attention of many a curious or scholarly wizard.",
+								"In general, two types of wizards are drawn to these strange areas. The first are the researchers: wizards devoted to the study of the theoretical underpinnings of magic. For them, the wild areas expose long-hidden secrets of the magical universe and give new insights into how magical energy functions. From their work have evolved the beginnings of a theory of random magic—one that defies the traditional schools.",
+								"The second type of wizard drawn to the wild lands is far less rigorous and methodical. These spellcasters are attracted by the sheer randomness and uncertainty of the wild lands. Such mages seek to incorporate wild magic into their spells by combining traditional magic with the new theories of random magic, throwing in a dose of their own chaotic natures as an extra measure. These wizards are the true wild mages who have been seen recently in various lands.",
+								"Although initially discovered and researched on Toril, the FORGOTTEN REALMS® campaign world, the art of wild magic has quickly spread to other places. Wild mages, through teleporting, spelljamming, planar hopping, and even walking, have carried the precepts of wild magic to lands and worlds far removed from Toril."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Wild Mages",
+							"page": 5,
+							"entries": [
+								"With the discovery of wild magic has come the appearance of wizards devoted to its study. Like their traditional specialist brethren, wild mages have thrown themselves into the intense study of a single aspect of magic. This has given them unique benefits and restrictions on their powers. Wild magic is so different from traditional magic that only those devoted to its study may cast wild magic; no wizard other than a wild mage may attempt to use the spells of wild magic.",
+								"Wild mages are by no means specialist wizards—at least not in the traditional sense. Wild mages do not study within the confines of schools. Instead, their research into new theories of wild magic carries them into all different fields. Wild magic has strengths in some areas (particularly divination and evocation), but it is not confined to any single school of magic. The proponents of wild magic proudly trumpet their art's broad base and flexibility as its great advantages.",
+								"Of course, these same advocates are quick to downplay wild magic's drawbacks. First and foremost, it is {@i wild} magic. On rare occasions, any spell can have dangerously unpredictable results, including backfiring or creating an entirely different effect from what was desired. More commonly, the magnitude of a spell—range, duration, area of effect, or even damage—may fluctuate from casting to casting. Spells cast by wild mages are inherently unpredictable.",
+								"Only characters with Intelligence of 16 or greater are qualified to become wild mages. The theories of wild magic are breaking new ground, and only characters of high intelligence are able to decipher the arcane convolutions of its meta-mathematical theory. Although wild magic is chaotic on the surface, study in this field requires diligence and discipline.",
+								"There are no restrictions to the alignment of a wild mage. The race of a wild mage is limited to those races with competency at magic; thus, only humans, elves, and half-elves can be wild mages. Gnomes have some magical talent, but lack the broad base of skills and knowledge necessary to master this new field.",
+								"Wild mages must abide by the normal restrictions for all wizards concerning weapons and armor. They use the same THAC0 and saving throw values of traditional wizards. They progress in level according to the Wizard Experience Levels and Wizard Spell Progression tables (Tables 20 and 21 in the {@i Player's Handbook}).",
+								"Wild mages have several abilities and restrictions. Like specialists, wild mages are able to memorize one extra spell per spell level. This spell must be a wild magic spell, although it can be from any school; wild mages have no opposition schools as do specialists.",
+								"Wild mages receive a bonus of +10% when learning new wild magic spells and a -5% penalty when learning other spells. Because wild magic is somewhat \"fast and loose,\" wild mages can research new spells as if they were one level less difficult, decreasing the amount of time and money needed to create new spells.",
+								"Certain magical items behave differently in the hands of a wild mage. This is due to his understanding of the random processes that power them. Most notable of these is the {@i wand of wonder}. The wild mage has a 50% chance of controlling the wand, allowing him to use charges from the wand to cast any spell he already knows (but does not need to have memorized). The number of charges used by the wand is equal to the number of levels of the spell desired. If the attempt fails, only one charge is used and a random effect is generated.",
+								"The wild mage can control the following items 50% of the time, thereby allowing him to select the result or item instead of relying on chance: {@i amulet of the planes, bag of beans, bag of tricks, deck of illusions, deck of many things,} and the {@i well of many worlds.}",
+								{
+									"type": "entries",
+									"name": "Level Variation",
+									"page": 6,
+									"entries": [
+										"The most broad-reaching aspect of the wild mage's powers is his approach to spells. The wild mage's work with the principles of uncertainty affects all spells that have a level variable for range, duration, area of effect, or damage. Each time a wild mage uses a spell with a level variable, he randomly determines the resulting casting level of the spell. The spell may function at lesser, equal, or greater effect than normal. The degree of variation depends on the true level of the caster, as shown in Table 1: Level Variation.",
+										"To determine the level at which the spell is cast, the player must roll {@dice 1d20} at the moment the spell is cast. The variation from the caster's actual level is found at the point where the character's true level and the die roll intersect. (True level refers to the current experience level of the wild mage.) If the result is a positive number, that many levels are added to the caster's true level for purposes of casting the spell. If the result is a negative number, that many levels are subtracted from the caster's true level. If the result is 0, the spell is cast normally. The variation of a spell's power has no permanent effect on the mage's experience level or casting ability.",
+										"For example, Theos, a 7th-level wild mage, casts a {@i fireball}. He wishes it to take effect 70 yards away at the site of a band of advancing orcs. {@i Fireball} has level variables for range (10 yds.+10 yds./level) and damage (1d6/level). A die roll is made on the Level Variation Table with a result of 19, indicating a level variation of +3. The {@i fireball} functions as if cast by a 10th-level wizard (7+3) and easily reaches its target, causing 10d6 points of damage. If the level variation had been -3 (die roll of 2), the spell would have operated as if it were 4th level. In this case, the {@i fireball} would have fallen short since its maximum range would have been 50 yards (10 yds+ 10 yds 1d4).",
+										"One additional effect can occur when casting level-variable spells. If the result from Table 1 is boldfaced, the caster has inadvertently created a {@i wild surge} in the spell in addition to the spell's effects. A wild surge briefly opens a doorway through which raw magical energy pours. The energy is incompletely controlled by the actions of the spellcaster. The result, often spectacular, is seldom what the caster intended and is sometimes a smaller or greater version of the desired spell. At other times, wildly improbable results occur. Songs may fill the air, people might appear out of nowhere, or the floor may become a pool of grease. Whatever happens, it is the essence of wildness.",
+										"When a wild surge occurs, the DM must roll on Table 2. Unlike many other instances in the AD&D® game in which the DM is encouraged to choose a suitable result, wild surges are best resolved by random chance. Actively choosing a result biases the nature of wild magic. DMs are encouraged to be random and have fun.",
+										{
+											"type": "table",
+											"caption": "Table 1: Level Variations",
+											"page": 6,
+											"colLabelRows": [
+												[
+													"True Level",
+													{
+														"type": "cellHeader",
+														"width": 20,
+														"style": "th-skewer",
+														"entry": "Die Roll ({@dice d20})"
+													}
+												],
+												[
+													"",
+													"1",
+													"2",
+													"3",
+													"4",
+													"5",
+													"6",
+													"7",
+													"8",
+													"9",
+													"10",
+													"11",
+													"12",
+													"13",
+													"14",
+													"15",
+													"16",
+													"17",
+													"18",
+													"19",
+													"20"
+												]
+											],
+											"colStyles": [
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center",
+												"col- text-center"
+											],
+											"isStriped": false,
+											"rows": [
+												[
+													"1",
+													"-1",
+													"-1",
+													"-1",
+													"-1",
+													"-1",
+													"0",
+													"0",
+													"0",
+													"0",
+													"0",
+													"0",
+													"0",
+													"0",
+													"0",
+													"0",
+													"+1",
+													"+1",
+													"+1",
+													"+1",
+													"{@b +1}"
+												],
+												[
+													"2",
+													"-1",
+													"-1",
+													"-1",
+													"-1",
+													"-1",
+													"-1",
+													"0",
+													"0",
+													"0",
+													"0",
+													"0",
+													"0",
+													"{@b 0}",
+													"0",
+													"+1",
+													"+1",
+													"+1",
+													"+1",
+													"+1",
+													"+1"
+												],
+												[
+													"3",
+													"-2",
+													"-1",
+													"-1",
+													"-1",
+													"-1",
+													"-1",
+													"-1",
+													"0",
+													"0",
+													"0",
+													"0",
+													"{@b 0}",
+													"0",
+													"+1",
+													"+1",
+													"+1",
+													"+1",
+													"+1",
+													"+1",
+													"+2"
+												],
+												[
+													"4",
+													"-2",
+													"-2",
+													"-1",
+													"-1",
+													"-1",
+													"-1",
+													"-1",
+													"-1",
+													"0",
+													"0",
+													"0",
+													"0",
+													"+1",
+													"+1",
+													"+1",
+													"+1",
+													"+1",
+													"+1",
+													"{@b +2}",
+													"+2"
+												],
+												[
+													"5",
+													"-3",
+													"-2",
+													"-2",
+													"-1",
+													"-1",
+													"-1",
+													"-1",
+													"{@b -1}",
+													"-1",
+													"0",
+													"0",
+													"+1",
+													"+1",
+													"+1",
+													"+1",
+													"+1",
+													"+1",
+													"+2",
+													"+2",
+													"+3"
+												],
+												[
+													"6",
+													"-3",
+													"-3",
+													"-2",
+													"-2",
+													"{@b -1}",
+													"-1",
+													"-1",
+													"-1",
+													"-1",
+													"0",
+													"0",
+													"+1",
+													"+1",
+													"+1",
+													"+1",
+													"+1",
+													"+2",
+													"+2",
+													"+3",
+													"+3"
+												],
+												[
+													"7",
+													"-4",
+													"-3",
+													"-3",
+													"-2",
+													"-2",
+													"-1",
+													"-1",
+													"-1",
+													"-1",
+													"0",
+													"{@b 0}",
+													"+1",
+													"+1",
+													"+1",
+													"+1",
+													"+2",
+													"+2",
+													"+3",
+													"+3",
+													"+4"
+												],
+												[
+													"8",
+													"-4",
+													"-4",
+													"-3",
+													"-3",
+													"-2",
+													"-2",
+													"-1",
+													"-1",
+													"-1",
+													"0",
+													"0",
+													"+1",
+													"+1",
+													"+1",
+													"{@b +2}",
+													"+2",
+													"+3",
+													"+3",
+													"+4",
+													"+4"
+												],
+												[
+													"9 +",
+													"-5",
+													"-4",
+													"-4",
+													"-3",
+													"-3",
+													"-2",
+													"-2",
+													"-1",
+													"{@b -1}",
+													"0",
+													"0",
+													"+1",
+													"+1",
+													"+2",
+													"+2",
+													"+3",
+													"+3",
+													"+4",
+													"+4",
+													"+5"
+												]
+											],
+											"footnotes": [
+												"{@b Boldface} results indicate a {@i wild surge}; consult Table 2; Wild Surge Results."
+											]
+										},
+										{
+											"type": "table",
+											"caption": "Table 2: Wild Surge Results",
+											"page": 7,
+											"colLabels": [
+												"{@dice d100|D100 Roll|Result}",
+												"Result"
+											],
+											"colStyles": [
+												"col- text-center",
+												"col- text-left"
+											],
+											"isStriped": false,
+											"rows": [
+												[
+													"01",
+													"{@i Wall of force} appears in front of caster"
+												],
+												[
+													"02",
+													"Caster smells like a skunk for spell duration"
+												],
+												[
+													"03",
+													"Caster shoots forth eight non-poisonous snakes from fingertips. Snakes do not attack."
+												],
+												[
+													"04",
+													"Caster's clothes itch (+2 to initiative)"
+												],
+												[
+													"05",
+													"Caster glows as per a {@i light} spell"
+												],
+												[
+													"06",
+													"Spell effect has 60' radius centered on caster"
+												],
+												[
+													"07",
+													"Next phrase spoken by caster becomes true, lasting for 1 turn"
+												],
+												[
+													"08",
+													"Caster's hair grows one foot in length"
+												],
+												[
+													"09",
+													"Caster pivots 180 degrees"
+												],
+												[
+													"10",
+													"Caster's face is blackened by small explosion"
+												],
+												[
+													"11",
+													"Caster develops allergy to his magical items. Character cannot control sneezing until all magical items are removed. Allergy lasts {@dice 1d6} turns."
+												],
+												[
+													"12",
+													"Caster's head enlarges for {@dice 1d3} turns"
+												],
+												[
+													"13",
+													"Caster {@i reduces} (reversed {@i enlarge}) for {@dice 1d3} turns"
+												],
+												[
+													"14",
+													"Caster falls madly in love with target until a {@i remove curse} is cast"
+												],
+												[
+													"15",
+													"Spell cannot be canceled at will by caster"
+												],
+												[
+													"16",
+													"Caster {@i polymorphs} randomly"
+												],
+												[
+													"17",
+													"Colorful bubbles come out of caster's mouth instead of words. Words are released when bubbles pop. Spells with verbal components cannot be cast for 1 turn."
+												],
+												[
+													"18",
+													"Reversed {@i tongues} affects all within 60 feet of caster"
+												],
+												[
+													"19",
+													"{@i Wall of fire} encircles caster"
+												],
+												[
+													"20",
+													"Caster's feet enlarge, reducing movement to half normal and adding +4 to initiative rolls for 1d3 turns"
+												],
+												[
+													"21",
+													"Caster suffers same spell effect as target"
+												],
+												[
+													"22",
+													"Caster levitates 20' for {@dice 1d4} turns"
+												],
+												[
+													"23",
+													"{@i Cause fear} with 60' radius centered on caster. All within radius except the caster must make a saving throw."
+												],
+												[
+													"24",
+													"Caster speaks in a squeaky voice for {@dice 1d6} days"
+												],
+												[
+													"25",
+													"Caster gains X-ray vision for {@dice 1d6} rounds"
+												],
+												[
+													"26",
+													"Caster ages 10 years"
+												],
+												[
+													"27",
+													"{@i Silence, 15' radius} centers on caster"
+												],
+												[
+													"28",
+													"10'×10' pit appears immediately in front of caster, 5' deep per level of the caster"
+												],
+												[
+													"29",
+													"{@i Reverse gravity} beneath caster's feet for 1 round"
+												],
+												[
+													"30",
+													"Colored streamers pour from caster's fingertips"
+												],
+												[
+													"31",
+													"Spell effect rebounds on caster"
+												],
+												[
+													"32",
+													"Caster becomes {@i invisible}"
+												],
+												[
+													"33",
+													"{@i Color spray} from caster's fingertips"
+												],
+												[
+													"34",
+													"Stream of butterflies pours from caster's mouth"
+												],
+												[
+													"35",
+													"Caster leaves monster-shaped footprints instead of his own until a {@i dispel magic} is cast"
+												],
+												[
+													"36",
+													"3-30 gems shoot from caster's fingertips. Each gem is worth {@dice 1d6 × 10} gp."
+												],
+												[
+													"37",
+													"Music fills the air"
+												],
+												[
+													"38",
+													"{@i Create food and water}"
+												],
+												[
+													"39",
+													"All normal fires within 60' of caster are extinguished"
+												],
+												[
+													"40",
+													"One magical item within 30' of caster (randomly chosen) is permanently drained"
+												],
+												[
+													"41",
+													"One normal item within 30' of caster (randomly chosen) becomes permanently magical"
+												],
+												[
+													"42",
+													"All magical weapons within 30' of caster are increased by +2 for 1 turn"
+												],
+												[
+													"43",
+													"Smoke trickles from the ears of all creatures within 60' of caster for 1 turn"
+												],
+												[
+													"44",
+													"{@i Dancing lights}"
+												],
+												[
+													"45",
+													"All creatures within 30' of caster begin to hiccup (+1 to casting times, -1 to THAC0"
+												],
+												[
+													"46",
+													"All normal doors, secret doors, portcullises, etc. (including those locked or barred) within 60' of caster swing open"
+												],
+												[
+													"47",
+													"Caster and target exchange places"
+												],
+												[
+													"48",
+													"Spell affects random target within 60' of the caster"
+												],
+												[
+													"49",
+													"Spell fails but is not wiped from caster's mind"
+												],
+												[
+													"50",
+													"{@i Monster summoning II}"
+												],
+												[
+													"51",
+													"Sudden change in weather (temperature rise, snow, rain, etc.) lasting {@dice 1d6} turns"
+												],
+												[
+													"52",
+													"Deafening bang affects everyone within 60'. All those who can hear must save vs. spell or be stunned for {@i 1d3} rounds"
+												],
+												[
+													"53",
+													"Caster and target exchange voices until a {@i remove curse} is cast"
+												],
+												[
+													"54",
+													"Gate opens to randomly chosen outer plane; 50% chance for extra-planar creature to appear."
+												],
+												[
+													"55",
+													"Spell functions but shrieks like a shrieker"
+												],
+												[
+													"56",
+													"Spell effectiveness (range, duration, area of effect, damage, etc.) decreases 50%"
+												],
+												[
+													"57",
+													"Spell reversed, if reverse is possible"
+												],
+												[
+													"58",
+													"Spell takes physical form of free-willed elemental and cannot be controlled by caster. Elemental remains for duration of spell. Touch of the elemental causes spell effect (THAC0 equal to caster's)."
+												],
+												[
+													"59",
+													"All weapons within 60' of caster glow for {@i 1d4} rounds"
+												],
+												[
+													"60",
+													"Spell functions; any applicable saving throw is not allowed"
+												],
+												[
+													"61",
+													"Spell appears to fail when cast, but occurs 1-4 rounds later"
+												],
+												[
+													"62",
+													"All magical items within 60' of caster glow for {@dice 2d8} days"
+												],
+												[
+													"63",
+													"Caster and target switch personalities for {@dice 2d10} rounds"
+												],
+												[
+													"64",
+													"{@i Slow} spell centered on target"
+												],
+												[
+													"65",
+													"Target {@i deluded}"
+												],
+												[
+													"66",
+													"{@i Lightning bolt} shoots toward target"
+												],
+												[
+													"67",
+													"Target {@i enlarged}"
+												],
+												[
+													"68",
+													"{@i Darkness} centered on target"
+												],
+												[
+													"69",
+													"{@i Plant growth} centered on target"
+												],
+												[
+													"70",
+													"1,000 lbs. of non-living matter within 10' of target {@i vanishes}"
+												],
+												[
+													"71",
+													"{@i Fireball} centers on target"
+												],
+												[
+													"72",
+													"Target turns to stone"
+												],
+												[
+													"73",
+													"Spell is cast; material components and memory of spell are retained"
+												],
+												[
+													"74",
+													"Everyone within 10' of caster receives the benefits of a {@i heal}"
+												],
+												[
+													"75",
+													"Target becomes dizzy (-4 AC and THAC0, cannot cast spells) for {@dice 2d4} rounds"
+												],
+												[
+													"76",
+													"{@i Wall of fire} encircles target"
+												],
+												[
+													"77",
+													"Target levitates 20' for {@dice 1d3} turns"
+												],
+												[
+													"78",
+													"Target suffers {@i blindness}"
+												],
+												[
+													"79",
+													"Target is charmed as per {@i charm monster}"
+												],
+												[
+													"80",
+													"Target {@i forgets}"
+												],
+												[
+													"81",
+													"Target's feet enlarge, reducing movement to half normal and adding +4 to all initiative rolls for 1-3 turns"
+												],
+												[
+													"82",
+													"Rust monster appears in front of target"
+												],
+												[
+													"83",
+													"Target {@i polymorphs} randomly"
+												],
+												[
+													"84",
+													"Target falls madly in love with caster until a {@i dispel magic} is cast."
+												],
+												[
+													"85",
+													"Target changes sex"
+												],
+												[
+													"86",
+													"Small, black raincloud forms over target"
+												],
+												[
+													"87",
+													"{@i Stinking cloud} centers on target"
+												],
+												[
+													"88",
+													"Heavy object (boulder, anvil, safe, etc.) appears over target and falls for{@dice 2d20} points of damage"
+												],
+												[
+													"89",
+													"Target begins sneezing. No spells can be cast until fit passes (1d6 rounds)."
+												],
+												[
+													"90",
+													"Spell effect has 60' radius centered on target (all within radius suffer the effect)"
+												],
+												[
+													"91",
+													"Target's clothes itch (+2 to initiative for {@dice 1d10} rounds)"
+												],
+												[
+													"92",
+													"Target's race randomly changes until canceled by {@i dispel magic}"
+												],
+												[
+													"93",
+													"Target turns ethereal for {@dice 2d4} rounds"
+												],
+												[
+													"94",
+													"Target {@i hastened}"
+												],
+												[
+													"95",
+													"All cloth on target crumbles to dust"
+												],
+												[
+													"96",
+													"Target sprouts leaves (no damage caused, can be pruned without harm)"
+												],
+												[
+													"97",
+													"Target sprouts new useless appendage (wings, arm, ear, etc.) which remains until {@i dispel magic} is cast"
+												],
+												[
+													"98",
+													"Target changes color (canceled by {@i dispel magic})"
+												],
+												[
+													"99",
+													"Spell has a minimum duration of 1 turn (i.e., a fireball creates a ball of flame that remains for 1 turn, a {@i lightning bolt} bounces and continues, possibly rebounding, for 1 turn, etc.)"
+												],
+												[
+													"100",
+													"Spell effectiveness (range, duration, area of effect, damage, etc.) increases 200%"
+												]
+											]
+										},
+										"Unless otherwise noted, all spells created by a wild surge occur at the designated target point and function normally (appropriate saving throws are allowed). The caster's true level is used when calculating range, duration, area of effect, etc. of these spells.",
+										"The above list, while long, is only a small fraction of the possible results of a wild surge. The DM is free to create his own tables for wild surges.",
+										"Tables like the one above cannot take into account the situation at the instant of casting. It is not feasible to create tailored effects for every spell used in every possible way. Therefore, it is quite likely that some wild magic results will make no sense, be impossible, or have no visible effect. In these cases, the wild surge has no effect. For example, if a mage were casting a wizard lock on a door and triggered a wild surge with the result \"Target changes sex,\" no effect would be visible, since doors do not have a sex (at least as far as we know). Likewise, a rock might be {@i hastened} or a snake might have its feet {@i enlarged}. In these cases, nothing happens—at least nothing that affects play. When determining the result of wild magic, the DM must use his best judgment.",
+										"Finally, not even the randomness of wild surges should be allowed to ruin the story of an adventure. As ultimate storyteller and arbiter of the game, the DM can overrule any wild surge he deems too destructive to the adventure. If this happens, reroll the dice to get a new result. In a case such as this, do not treat a wild surge as having no effect.",
+										"Clearly, wild mages are a risky proposition. Not every player will want to play a wild mage; not every party will want a wild mage. The DM should not add benefits to the wild mage, hoping to the make the class more \"attractive\" to his players. Players who like wild mages will play them without bribery. They will find the uncertainty and randomness of wild mages irresistible; these are the players for whom the wild mage was created."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Elemental Wizards",
+							"page": 9,
+							"entries": [
+								"The elemental wizard is a new variety of specialist mage beginning to appear throughout the lands. These wizards scorn the \"accepted\" theories of magical classification (the rigid school structure) in favor of a holistic, natural understanding of magic. The result is elementalism.",
+								"Elementalism is not a school in itself; it is an area of specialization focusing on spells involving the four prime elements of air, earth, fire, and water. These spells may be from any of the nine schools of magic. The {@i fireball} spell, for example, belongs to the evocation school, but according to elementalists, it is also a spell of elemental fire.",
+								"Unlike other specialists, an elementalist does not specialize in a single school of magic, but may learn and cast spells belonging to any school. Although this may seem to be a great advantage, elementalists suffer considerable penalties when learning and casting spells that do not relate directly to the elements. The exception to this penalty is the spells of the school of lesser divination, which every wizard may learn.",
+								"Each element has a diametrical opposite: air opposes earth, fire opposes water, and vice versa. Every elementalist must choose one element as his specialty. He may learn and cast any spells relating to his chosen element and gains advantages when doing so. He may also cast spells of the two elements which do not oppose his specialty, for which he receives no bonuses or penalties. Consequently, he may not learn or cast any spells associated with the element that opposes his element of specialty. For example, a fire elementalist may cast spells relating to fire, air, or earth, but may not cast spells of elemental water. A specialist is also prohibited from using magical items that duplicate spell effects of his oppositional element.",
+								{
+									"type": "entries",
+									"style": "text-center",
+									"page": 9,
+									"entries": [
+										"{@color Fire|#1169a3}",
+										"|",
+										"{@color Air|#1169a3} — opposes — {@color Earth|#1169a3}",
+										"|",
+										"{@color Water|#1169a3}"
+									]
+								},
+								"Although their repertoire of spells is small, elementalists are potent wizards, for they gain the following advantages when involved with spells of their chosen element:",
+								{
+									"type": "list",
+									"page": 9,
+									"items": [
+										"Elementalists receive a bonus of +25% when attempting to learn spells of their element and a bonus of +15% when learning other elemental spells. They suffer a penalty of -25% when trying to learn spells that do not relate to the elements.",
+										"An elementalist may memorize one extra spell per level, providing that at least one of the memorized spells is from his element of specialty.",
+										"Because elementalists have an enhanced understanding of spells within their element, they receive a +2 bonus when making saving throws against those spells. Other creatures suffer a -2 penalty when making saving throws against an elementalist casting spells from his specialty.",
+										"Once per day, an elementalist may choose to cast one memorized spell from his element of specialty as if he were {@dice 1d4} levels higher. He must declare his decision to do this immediately prior to casting the spell. This affects range, duration, area of effect, and damage; it does not allow the wizard to cast a spell from a level which he normally could not use.",
+										"When an elementalist attempts to create a new spell relating to his specialty element, the DM should count the new spell as one level less (for determining difficulty).",
+										"Upon reaching 15th level, an elementalist does not need to concentrate when controlling elementals of his specialty element summoned by the 5th-level spell {@i conjure elemental}. The normal 5% chance of the elemental turning upon its summoner remains in effect.",
+										"At 20th level, there is no chance of a summoned elemental turning upon an elementalist if the creature is of the wizard's specialty element."
+									]
+								},
+								"A complete listing of elemental spells arranged by each element can be found in Appendix 1."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Metamagic",
+							"page": 10,
+							"entries": [
+								"Metamagic is a special term used by erudite and educated wizards to describe a single class of spells and magical items--those powers that alter or affect other magical spells and items. Met a magic spells do not directly affect people, objects, or events. Instead, the powers of metamagic are used to alter the fabric of spells themselves. Through metamagic spells, such as {@i far reaching} or {@i squaring the circle}, the once inviolable limits of a spell can be altered. Range, duration, casting time, area of effect, and even sound and color can be tailored through the use of metamagical spells.",
+								"Although the concept of metamagic has existed since the beginning of magical study, it has generally been ignored by most wizards, who have been far more interested in spectacular effects and immediate results. However, a few independent researchers have continued to explore and expand this esoteric field of study."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "New Rules for Priests",
+					"page": 10,
+					"entries": [
+						"Priests are hardly the unglamorous and weak adventurers that they are sometimes portrayed to be. They are an important part of any society, serving as more than just handy doctors. Priests have great responsibilities for the defense, guidance, welfare, and protection of a community. Because of this, their spells reflect more diversity and application when compared with wizard spells. The {@i Tome of Magic} provides priests with more tools to help them achieve their goals.",
+						{
+							"type": "entries",
+							"name": "Quest Spells",
+							"page": 10,
+							"entries": [
+								"Priests and clerics are the servants of Powers--immortal entities with abilities far beyond those of mere mortals. Yet these servants do not wield magical forces equal to those of wizards; priests have nothing to compare with the wish spell, for example. Circumstances will arise when a priest should be able to call upon the magical energies controlled by his Power to achieve something extraordinary in serving a sacred duty. Quest spells are designed to satisfy these extremes and allow the priest to wield high-powered magic without drastically altering the scope of his magic.",
+								"Quest spells are a category of powerful spells without an assigned level. They should not be confused with the 5th-level spell quest, which is a specific single spell.",
+								"While quest spells are powerful, they are not as powerful as the energies used by Powers. If a god chose to flatten a mountain or raise an island, he could probably do so. Priests cannot achieve such huge effects; they are still mortal beings. But quest spells do provide a priest with magic more powerful than any other priestly magic; a quest spell could easily mean the difference between success or failure in a mission. Quest spells are capable of affecting large areas or numbers of creatures and allow the shaping of great energies; they are often difficult or impossible to resist or dispel.",
+								"Quest spells are not part of a priest's normal repertoire. These spells are granted powers, bestowed directly by one's deity to achieve special goals.",
+								{
+									"type": "entries",
+									"name": "Why Quest Spells?",
+									"page": 10,
+									"entries": [
+										"Two circumstances are most likely to warrant the granting of a quest spell to a priest. First, a Power may contact the priest in a dream or omen, or by sending a servant or avatar. In this case, the Power requests that the priest perform a vital service on behalf of the Power (the nature of such a request is discussed later). The priest is effectively commanded to go on a quest--hence, the generic title of quest spell.",
+										"A second case for the granting of a quest spell may occur if a priest were to discover something of fundamental importance to the faith which the Power must be appraised of (not all powers are omniscient). A priest contacting the Power (with a commune spell or by prayer) might beseech the Power to grant him some exceptional magic to address the situation. The request for a quest spell must never be motivated by selfish considerations on the priest's part (such hubris is grossly offensive to any Power), and circumstances must be truly exceptional. The Power then considers the priest's request and responds accordingly.",
+										"In game terms, the first condition translates to the DM using a quest spell as a plot device to spice up a quest for the priest and his party. The second condition translates to a player requesting exceptional aid for his priest PC followed by the DM's decision whether to allow this."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Conditions for Quest Spells",
+									"page": 11,
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"columns": 0,
+											"items": [
+												{
+													"type": "itemSub",
+													"name": "The circumstances which prompt a Power or priest to seek the use of a quest spell are usually related to a major sphere of concern of the Power.",
+													"entry": "A god of druids is not likely to grant a quest spell to address a matter of warfare, commerce, politics, knightly virtue, or other irrelevance (as this Power would view them). However, destruction of a huge swathe of forest by fire is entirely different. To protect or regenerate a great natural resource, a druidic Power would surely consider dispatching his most powerful servants with awesome magic. A major challenge demands a major response."
+												},
+												{
+													"type": "itemSub",
+													"name": "A Power may choose to equip followers with a quest spell in preparation for a major conflict with servants of a hostile Power.",
+													"entry": "This may be true for both sides in the conflict; the NPCs as well as the PCS might be equipped with quest spells. In this manner, two Powers avoid fighting each other directly; their servants carry out the warfare instead. This will be a major event in any campaign setting! Milder variations on this theme would include the razing of a major temple of the enemy Power or the destruction of a major resource belonging to the Power's servants."
+												},
+												"This is a situation in which a DM must exercise caution. This kind of conflict can easily swerve out of control and threaten the destruction of the game world; no Power wants this. Only if a Power has stepped out of line is the retribution by a rival Power tolerable among the community of Powers. If an evil temple has stood in the capital of an evil land for centuries, it is unacceptable for a good deity to strike at it. If an evil temple is hidden in nonevil lands, it is reasonable for a good Power to strike it down. It is important that game balance and the status quo are maintained.",
+												{
+													"type": "itemSub",
+													"name": "A Power is likely to grant a quest spell when there is a major threat to his followers, church, consecrated grounds, or territories.",
+													"entry": "These situations may become considerably extended; a Power of healing may extend the use of quest magic to help his priests cure a virulent plague affecting ordinary folk. For such a Power, the welfare of the common man is important. In cases such as this, game balance must be maintained by granting quest spells only in true catastrophes."
+												},
+												{
+													"type": "itemSub",
+													"name": "Exceptional and unique circumstances will arise which will draw quest magic into the game.",
+													"entry": "This may include racial interests (for elves, dwarves, etc.) such as defense of the homelands or protection of great fortresses, or it may include communities of exceptional artisans wishing to draw quest magic from Powers. The discovery of an intensely magical artifact or place important to the Power may necessitate the use of quest magic to secure it. Establishing and developing a major sacred location may justify the use of quest magic (especially with spheres such as Creation, Guardian, Protection, and Wards). Such cases will be individually determined by the DM as major elements of a campaign story line."
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Situations Unworthy of Quest Spells",
+									"page": 11,
+									"entries": [
+										"What types of requests do not warrant a Power granting a quest spell? Generally, a quest spell is not needed for events which affect only a minor sphere of interest for the deity and events that are part of normal Prime Material conflict; a senior priest being killed by an agent of an evil Power isn't enough to justify the use of a quest spell. Any problem that has limited scale or should resolve itself in time through the normal efforts of priests does not need quest magic.",
+										"The DM must consider whether a problem is out of the ordinary. Only under extraordinary circumstances should a quest spell be granted. If the DM is in doubt, a simple question may provide the answer: Could the problem have a fair chance of resolution through the use of upper-level priest spells if wisely used? Only if the answer is \"no\" should quest magic be considered."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Which Priests Recieve Quest Spells?",
+									"page": 11,
+									"entries": [
+										"",
+										"",
+										""
+									]
+								},
+								{
+									"type": "entries",
+									"name": "How Is the Quest Spell Granted?",
+									"page": 12,
+									"entries": [
+										"A priest must undergo specific preparations to receive a quest spell. Isolated prayer and meditation for 24 hours are required (double this if he has Wisdom of only 17 or is below 12th level). If this period is interrupted, the priest must begin anew. Following this period, the priest needs one hour to establish and maintain a direct mental link with his deity and receive the spell into his mind. During this communion, the priest is in a state of exultation and is oblivious to the outside world. He cannot be roused from this reverie.",
+										"The DM may rule that specific ceremonies be carried out by the priest during the time of meditation and the time of the granting of the spell. These ceremonies should be determined in accordance with the nature of the religion. The priest may be required to be in a major church or temple for the ceremony. The presence of junior priests and acolytes, perhaps united in mass prayer, may also be needed. However, these are only suggestions and should not be rigidly enforced--a god of travelers would not require a quest spell to be granted in a temple, for example."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Introducing the Quest Spell",
+									"page": 12,
+									"entries": [
+										"Bringing a quest spell into a campaign should be a major event. It should create a powerful atmosphere that includes elements of pageantry, solemnity, and ceremony to make the event come alive in the game. Such considerations of staging and flavor are left to DM discretion and the demands of the campaign."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Cost of Quest Spells",
+									"page": 12,
+									"entries": [
+										"Quest spells are not granted without a price. A priest receiving a quest spell is unable to memorize spells of the highest level which he is allowed. He loses any memorized spells of that level (e.g., a 13th-level cleric is unable to use 6th-level spells).",
+										"Once a cleric has been granted a quest spell, he does not gain the ability to automatically cast it again. Each time a priest wishes to use a quest spell, he must repeat the described procedures."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Adjudicating Quest Spells",
+									"page": 12,
+									"entries": [
+										"The rules which follow apply to all quest spells. The DM should avoid altering these rules in order to use quest spells consistently and fairly.",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"columns": 0,
+											"page": 12,
+											"items": [
+												{
+													"type": "item",
+													"name": "Components:",
+													"entries": [
+														"Material components are never needed for a quest spell. All quest spells use verbal and somatic components. Since this is invariant, components are therefore not included in the spell descriptions."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Duration:",
+													"entries": [
+														"In the spell descriptions, the term \"day\" is often used. Day means \"until the next dawn\" if the spellcaster casts the spell during daylight hours and \"until the next dusk\" if he casts the spell during nighttime hours."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Countering Quest Spells:",
+													"entries": [
+														"Most quest spells cannot be dispelled. Because of their semidivine origin, mortal {@i dispel magic} spells simply do not affect them. In most cases, only other quest magic will directly counter quest magic.",
+														"This also applies to attempts to counter specific elements of quest spells. For example, certain quest spells include the effect of a {@i prayer} spell in the area of effect of the quest spell. Such a {@i prayer} effect cannot be countered by the use of a mortal {@i prayer} spell. The quest prayer overrides the ordinary {@i prayer} spell."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Saving Throws:",
+													"entries": [
+														"Target creatures at whom quest spells are cast are usually allowed no saving throws. Magical items which would normally protect them against the type of effect (e.g., a ring of free action against a hold/paralysis effect) allow a weakened saving throw of 18. Magic resistance functions, but at only one-half normal. If a quest spell has multiple magical effects, magic resistance checks must be made for each effect."
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Faith Magic",
+							"page": 13,
+							"entries": [
+								"A unique feature of clerical magic is faith magic. Using this special category of priest spells, clerics can create semipermanent wards, sanctify ground, ensure good harvests, or even improve the health of followers. In short, this amplified magic allows certain clerical spells to be increased and intensified through the combined efforts of priests and worshipers. Range, area of effect, duration, and even damage can be altered through devotion and combined spellcasting.",
+								"To gain this ability, priests and their worshipers form groups to create faith magic. Clerics of nearly all religions seek out worshipers, establish temples, retire to monasteries, and establish seminaries. While there are many mundane reasons to form such groups, priests' attitudes are also shaped by this important difference between clerical and wizardly magic -- the ability to combine magical power. Wizard spells lack this property--even a large number of wizards cannot combine their spells into a whole. Thus, wizards gain no magical benefits from founding monasteries or attracting followers.",
+								{
+									"type": "entries",
+									"name": "Devotional Power",
+									"page": 13,
+									"entries": [
+										"The core of faith magic is devotional power. This power comes from the dedication of ardent followers and priests. It is not something that can be manipulated directly (like a spell), although it is the source of power for spells. Unlike magical energy, devotional energy is not tied to a particular character class. Ordinary people are as much a source of this power as are adventurers. Only priests are significantly different, their lifelong dedication to their god being the wellspring for even greater power.",
+										"Not everyone is a source of devotional energy. Almost every character generates a small amount of power, but only those persons dedicated in their beliefs provide the amounts needed for faith magic. Even at this level, the total energy provided by each person is very small. Thus, faith magic can be used only when large numbers of sincere worshipers gather, such as particularly devout congregations, monasteries, seminaries, and universities operated by a religious order. Sincere belief is the most important factor. While persons attending a service may be numerous, casual followers do not contribute to the effect.",
+										"Before its power can be harnessed, the devotional energy of a group must be gathered and concentrated toward a single effect. This is known as focusing the effect. Once focused, the devotional energy provides power needed to maintain a spell effect, increase its area of effect, or create a number of other different results. A focus is created by means of the spell {@i focus}.",
+										"Once the devotional energy has been focused, the cleric or clerics can cast the spell to be amplified. Using the devotional energy gathered by the {@i focus}, the spell's effect is increased in area of effect and duration. The exact increase depends on the level of the priest who casts the {@i focus}. Such amplified spells typically affect a building (such as a church or hospital), group of buildings, or even an estate.",
+										"The spell remains in effect as long as the {@i focus} exists. This requires a minimum number of worshipers and periodic renewals of the spell. Since the duration of a {@i focus} is long, these renewals often coincide with important festivals of the religion, when numerous worshipers are present to provide devotional energy."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Cooperative Magic",
+							"page": 13,
+							"entries": [
+								"Cooperative spells are unique to priests. These spells allow several priests to combine their abilities to create a greater effect. {@i Combine} is one type of cooperative spell.",
+								"Cooperative spells do not require a focus or devotional energy; all that is required are two or more clerics of sufficient level to cast any cooperative spell. Casting times for cooperative spells are not excessive and their results are spectacular, making cooperative magic practical and useful to adventuring priests.",
+								"All priests who attempt cooperative magic must know the spell to be cast and must be of the same ethos. Generally, only priests of the same religion can use cooperative magic. However, priests of deities known to work in close harmony are sometimes able to use cooperative magic with each other. The decision lies with the DM, since the relations between different deities vary greatly from campaign to campaign."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "New Spheres",
+					"page": 14,
+					"entries": [
+						"In addition to the new types of clerical magic, a number of new spheres are introduced in {@i Tome of Magic}. These spheres help to round out and complete the priest class.",
+						{
+							"type": "entries",
+							"name": "Chaos",
+							"page": 14,
+							"entries": [
+								"Most of the spells in the Sphere of Chaos give the spellcaster the ability to add randomness and confusion to the world around him. Some of the spells change the probability of the outcomes of events, while others offer protection against Lawful influences.",
+								"Many of the spells of this sphere are tricky; while they usually help the spellcaster, there are times when the spell might harm the priest. Such is the way of Chaos--anyone who draws upon chaotic energy knows that nothing is certain, not even the influences of his god.",
+								"Powers that operate in this sphere are deities of mischief, trickery, ill luck, and those gods devoted to the power of the individual."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Law",
+							"page": 14,
+							"entries": [
+								"The Sphere of Law is based on two principles. The first is that the group is more powerful than the sum of the individuals who make up the group. The second is that the individual must obey established rules whether or not he personally thinks they are good rules. In both cases, the idea of order is exploited, sometimes beneficially, sometimes harmfully.",
+								"The beneficial spells of the Sphere of Law draw upon the first principle. Such spells coordinate the power of a group of characters. By using spells of this sphere, individuals who work closely together can become focused into a strong, united force.",
+								"The harmful spells of the sphere draw upon the second principle; they take the concept of law one step too far and prevent the individual from operating with a free will. These spells limit a person's choices and obliterate spontaneity and individual thought and action. Whereas beneficial spells draw a group together, harmful spells isolate the individual or even subjugate him to the commands of another person.",
+								"Deities of rulership, kingship, community, and culture are likely to act in this sphere."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Numbers",
+							"page": 14,
+							"entries": [
+								"The Sphere of Numbers revolves around the concept that numbers and mathematical relationships between numbers represent the \"core truths\" of reality or the \"secrets of the universe.\" By studying numbers and their relationships, some scholars believe they can learn truths otherwise inaccessible; by manipulating numbers, they believe they can actually alter the fabric of reality.",
+								"This sphere uses spells that allow a priest to comprehend and use the mysteries of numbers. Since many of these spells are incredibly intricate and depend on very esoteric concepts in mathematics and hypermathematics, only priests with relatively high intelligence (13 or higher) are allowed access to these spells.",
+								"Spells from this sphere are most likely to be granted by deities of knowledge (particularly arcane or hidden knowledge).",
+								"Many of the philosophies central to this sphere sound unusual, illogical, or even insane -- things one might expect to hear from the lips of a senile \"prophet\" who has discovered the \"truth of All\" in the pseudomathematical scratchings he makes in his notebooks. There are many cranks and charlatans claiming to predict the future who are often mistaken for true practitioners of this sphere and vice versa. A priest who is granted spells from the Sphere of Numbers may sound like a crank when he claims the birth dates of kings predict the date of Doomsday, but there is one fundamental difference between him and the charlatan: The priest's spells work."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Thought",
+							"page": 14,
+							"entries": [
+								"The Sphere of Thought is rooted in the philosophy of mentation and the effects of mental acts and structures on reality. Priests of this sphere believe that the common conception of the thought (i.e., a more-or-less objective analysis of sensory input which is in turn an objective perception of reality) is fallacious and misleading. These philosophers maintain that thought is and must be tied closely to reality. In effect, they believe that the thinker, the thought, and the subject of that thought somehow interact. Thus, thinking about an object or condition can sometimes cause a physical change in that object or condition.",
+								"Philosophers of this sphere also believe that once a thought has been created (\"once a thought is thought\"), it exists as a \"freestanding mental object.\" This \"thought object\" can sometimes be detected and manipulated.",
+								"This sphere uses spells related to these philosophical beliefs. Like the Sphere of Numbers, these spells are intricate and are based on some esoteric concepts of philosophy. It is suggested that only priests with relatively high intelligence (13 or higher) be allowed access to these spells.",
+								"Spells of this sphere are most likely to be granted by deities of thought or knowledge (especially arcane or hidden knowledge). This sphere might have as its patrons certain deities who rule and exist in the abstract realms of thought. Certain isolated philosophers discuss the existence of a deity of solipsism (the philosophical belief that only the self exists). Since such a deity would believe that it exists alone in the universe, it would have no worshipers."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Time",
+							"page": 15,
+							"entries": [
+								"The spells of the Sphere of Time explore ways in which time can be altered and perceived. These spells manipulate the effects of the passage of time on objects and creatures and can also affect the passage of time itself. Such spells are often the province of deities associated with nature, philosophy, divination, and trickery."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Travelers",
+							"page": 15,
+							"entries": [
+								"Spells of this sphere provide aid and comfort to travelers, making their journeys safer, easier, and more enjoyable. Deities sympathetic to the well-being of explorers, nomads, and other wayfarers often allow access to this sphere."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "War",
+							"page": 15,
+							"entries": [
+								"The Sphere of War involves magic specifically for use on the battlefield--in mass combat between large units. Usually, these spells are granted by deities of war: those Powers who believe that victory and courage in battle are the ultimate goals for mortals.",
+								"Priests who follow these gods are sometimes generals or leaders of armies. For these priests, tactical and strategic brilliance are as important as personal skill in combat.",
+								"There are significant differences between the spheres of War and Combat. Combat spells are those the priest can use in personal altercations. These spells inflict physical damage on an opponent or improve the combat abilities of the priest and several comrades. War spells, on the other hand, are concerned with aspects of large-scale battles other than direct infliction of damage: observation, identification, movement, morale, and the like. Few spells of this sphere inflict physical damage on the enemy.",
+								"Unlike spells of other spheres, most War spells can be cast only on a single military \"unit.\" The definition of a \"unit\" is that which is used in the BATTLESYSTEM™ rules; however, the DM may rule that any large group of troops accompanied by PCS may qualify as a unit. Units can be infantry or cavalry (ground or airborne), human or non-human, of regular or irregular formation. In general, they must be organized as a single unit and must be at least five individuals in number. These spells are generally useless in individual combat.",
+								"Spells from the Sphere of War are designed to be used in large-scale battles like those played using BATTLESYSTEM™ rules; thus, these spells refer to concepts from this game system. Distances are referred to in linear inches (not game inches) and times are referred to in BATTLESYSTEM turns, but the DM is free to modify these statistics to suit combat outside the BATTLESYSTEM rules.",
+								"The deities who preside over the Sphere of War are careful when granting these spells to their priests. They will generally grant such spells only when a priest is about to enter battle. In the case of the more militant war gods, a priest who petitions for these spells inappropriately or misuses them may suffer dire consequences."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Wards",
+							"page": 15,
+							"entries": [
+								"This sphere includes spells that provide protection of clearly defined areas, ranging from small objects to entire villages. The magical boundaries established by these spells prevent entry or negate the effects of specific creatures, energies, or conditions. Many of the spells take advantage of cooperative magic, involving the casting of a spell by a number of assembled priests to enchant exceptionally large areas (refer to specific spells and the sections in this book on Faith Magic, Devotional Power, and Cooperative Magic for more information). Deities of war and protection, as well as those associated with benevolence and mercy, might bestow these spells."
+							]
+						}
+					]
 				}
-			],
-			"id": "001"
+			]
 		},
 		{
 			"type": "section",
-			"name": "People of Innistrad",
+			"name": "Wizard Spells",
 			"page": 8,
 			"entries": [
 				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSI/021.webp"
-					},
-					"title": "Gavony Township",
-					"credit": "Peter Mohrbacher",
-					"width": 1226,
-					"height": 1586
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSI/003.webp"
-					},
-					"title": "Diregraf Escort",
-					"credit": "Ryan Pancoast",
-					"width": 617,
-					"height": 673
-				},
-				"Innistrad's population is mostly human, and player characters in an Innistrad campaign should be human in most circumstances. However, the humans of Kessig are different in many respects from those of Gavony, and Nephalia's urban culture is very distinct from the shadow-draped land of Stensia. Diversity among player characters comes not from race, but from each character's home province.",
-				{
 					"type": "list",
+					"style": "list-hang",
 					"columns": 3,
+					"page": 0,
+					"name": "Wizard Spells",
 					"items": [
-						"{@race Human (Innistrad)|PSI}",
-						"{@race Human (Innistrad; Gavony)|PSI}",
-						"{@race Human (Innistrad; Kessig)|PSI}",
-						"{@race Human (Innistrad; Nephalia)|PSI}",
-						"{@race Human (Innistrad; Stensia)|PSI}"
-					]
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "races/PSI/Innistrad3.webp"
-					},
-					"title": "Lunar Mystic",
-					"credit": "Wesley Burt",
-					"width": 807,
-					"height": 575
-				},
-				{
-					"type": "entries",
-					"name": "Classes Overview",
-					"page": 9,
-					"entries": [
-						"Characters of any class can be found in Innistrad, though some classes are rarer than others. The organizations and character types noted below are described in more detail on the following pages.",
-						"{@class Barbarian||Barbarians} are not a common sight in Innistrad. Some cathars draw on the power of divine fury (see the Lightning Mauler card in Avacyn Restored). The remotest regions of the Somberwald, the Ulvenwald, and the Geier Reach might also be home to more traditional barbarians.",
-						"{@class Bard||Bards} are also rare on Innistrad. A springsage\u2014an Avacynian archmage dedicated to healing and renewal\u2014could conceivably be a bard.",
-						"{@class Cleric||Clerics} populate the ranks of the church hierarchy and many cathar orders.",
-						"{@class Druid||Druids} can be found as springsages or as the \"witches\" known as forcemages, who make pacts with nature spirits.",
-						"{@class Fighter||Fighters} fill all the usual roles on Innistrad, as soldiers, cathars, militia captains, town guards, and so on.",
-						"{@class Monk||Monks} are rare. A monk is probably a member of the church hierarchy, and in fact is most likely to be a monk in the church's definition\u2014a wandering priest.",
-						"{@class Paladin||Paladins} fill many of the cathar orders. As the angels' madness and Emrakul's rise change the face of Innistrad, the Order of Saint Traft becomes the home of many \"heretic\" cathars who choose to follow their own conscience rather than the increasingly insane dictates of the church.",
-						"{@class Ranger||Rangers} are particularly common in Kessig, where they operate as hunters, trappers, or guides in the Ulvenwald, or as cathar members of the Quiver of Kessig.",
-						"{@class Rogue||Rogues} are most common in Thraben and the cities of Nephalia, engaging in smuggling, thievery, corpse trading, and other unsavory lines of work.",
-						"{@class Sorcerer||Sorcerers} are rare. A spearsage (one of the archmages of Goldnight) could be a sorcerer, especially if you use the favored soul variant presented in Unearthed {@skill Arcana}. A sorcerer might also be a necro-alchemist or a cultist of some sort.",
-						"{@class Warlock||Warlocks} are found primarily in cults of madness (with a Great Old One as patron), demon cults such as the Skirsdag, or witches' covens. A warlock who belongs to the Skirsdag might be a respected member of the church hierarchy, feigning the blessings of Avacynian clergy.",
-						"{@class Wizard||Wizards} are often Avacynian archmages, but can also take up more sinister vocations\u2014ghoulcallers, skaberen, necro-alchemists, mad scientists, and cultists."
-					],
-					"id": "005"
-				},
-				{
-					"type": "entries",
-					"name": "Languages",
-					"page": 9,
-					"entries": [
-						"Innistrad is not a world with a variety of languages, unlike most D&D settings. The people who inhabit the world all speak the same tongue, and the most common monsters\u2014including vampires, werewolves, and geists\u2014speak it as well, since they were once human.",
-						"Ordinarily, all humans learn an additional language, and many backgrounds give access to languages as well\u2014so the easiest way to deal with these extra languages is to ignore them. Humans speak only {@language Common|PSI}. If a background gives access to a language, the character can choose a tool proficiency instead.",
-						"Alternatively, you can diversify the languages of Innistrad. Perhaps the {@language Common|PSI} tongue is the language of the church, used to facilitate communication among people in different provinces, even as each province has its own language or dialect. Characters might also be able to learn {@language Demonic|PSI} (spoken by demons and devils), {@language Draconic|PSI} (spoken by dragons), or {@language Primordial|PSI} (spoken by elementals)."
-					],
-					"id": "006"
-				},
-				{
-					"type": "section",
-					"name": "The Church of Avacyn",
-					"page": 10,
-					"entries": [
-						"The Avacynian faith is a complex system of beliefs and magical practices intended to protect the humans of Innistrad from the predations of the plane's monsters. Over the centuries, layers of belief and ritual have accreted to this basic core, but as long as Avacyn remained present and sane in the world, the wards of the church remained strong, preventing the utter extinction of the human race.",
-						"Player characters in an Innistrad campaign are likely to be associated with the Church of Avacyn in some capacity. Clerics, druids, fighters, paladins, rangers, and wizards might serve as cathars, inquisitors, or archmages within the broad organization of the church.",
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/PSI/004.webp"
-							},
-							"title": "Silverblade Paladin",
-							"credit": "Jason Chan",
-							"width": 865,
-							"height": 624
-						},
-						{
-							"type": "entries",
-							"name": "Church Hierarchy",
-							"page": 10,
-							"entries": [
-								"The church is headed by the Lunarch Council. Consisting of bishops and cathars of the highest ranks, the council continues to struggle to come to terms with the madness of Avacyn and her angels.",
-								"Bishops are the leaders of the spiritual and temporal affairs of the church. Elders govern the parishes that make up each province, combining the administrative responsibilities of a mayor with the religious authority of a minor bishop. Priests attend to the needs of the people at parish churches, village chapels, and crossway altars. All priests have the ability to perform magic, though some are more powerful than others. Most of them focus on the protective blessings that make up the rituals of the church.",
-								"Monks are wandering priests, not connected to a specific location. Some feel called to minister to those isolated people living beyond the reach of a parish priest, but others take up the life of a monk because they disagree with their superiors in the hierarchy. Some are wild-eyed fanatics or heretical teachers, but many are quiet, peaceful souls with firm convictions that set them apart from the church.",
-								"A player character cleric is probably referred to as a monk in the church hierarchy, having the freedom to move around with no responsibility to any congregation. The {@background acolyte} background is ideal for such a character. A cleric's choice of domain might reflect a connection to one of the archangels subservient to Avacyn. The Knowledge domain is particularly associated with Bruna and Flight Alabaster, the Life domain is strongly connected to Sigarda and the Host of Herons, and the War domain is tied to Gisela and Flight Goldnight."
-							],
-							"id": "008"
-						},
-						{
-							"type": "entries",
-							"name": "Cathars",
-							"page": 10,
-							"entries": [
-								"Cathars are the soldiers of the Avacynian church, but \"soldiers\" is a broad term encompassing everything from crime-solving investigators to mounted paladins. Some cathar orders are so independent as to be virtually separate sects of the church, while others are tightly bound to the hierarchy of the faith:",
-								{
-									"type": "list",
-									"items": [
-										"The elite cavalry of Innistrad, the Gavony Riders, are extensively trained in mounted combat with swords and lances.",
-										"The mausoleum guards are the rank-and-file soldiers of the cathars, wielding little magic but making up for it with their numbers.",
-										"Midnight duelists patrol the streets, particularly at night, on the lookout for thieves, vampires, and corpse traders.",
-										"Moor chaplains are battlefield faithful who wield magic and weapons with equal skill. Their magic focuses on healing and protection, so they don't usually fight on the front lines.",
-										"Cathars of the parish-blades serve as escorts along the crossways and protect the cathedral in Thraben. They are an elite military force that assembles at the bishops' command.",
-										"The Quiver of Kessig is an order recently split off from the parish-blades. Its members specialize in archery and long-range defense, and often guard town walls and church roofs against spirits, vampires, specters, demons, and other flying attackers."
-									]
-								},
-								"Cathar characters might be clerics (especially moor chaplains), fighters or paladins (especially Gavony Riders, mausoleum guards, midnight duelists, or parish-blades), or rangers (in the Quiver of Kessig). The {@background soldier} background works well for cathars."
-							],
-							"id": "009"
-						},
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/PSI/022.webp"
-							},
-							"title": "Demolish",
-							"credit": "Raymond Swanland",
-							"width": 1130,
-							"height": 832
-						},
-						{
-							"type": "entries",
-							"name": "Avacynian Archmages",
-							"page": 11,
-							"entries": [
-								"The Avacynian archmages are gifted spellcasters with the inborn ability to channel some of the divine power of the archangels. Each lineage of the archmages practices unique techniques passed down from master to student for generations, ultimately tracing back to the archangels and Avacyn herself.",
-								"Spearsages, the archmages of Goldnight, use powerful and aggressive spells associated with the sun, channeling blinding rays of holy light and powerful prayers to bolster their allies' speed and courage.",
-								"Moonsages, the archmages of Alabaster, are concerned with preserving the Blessed Rest, preventing humans from returning as zombies. They use preventative and warding spells, banishing the undead to the void and making sure graves remain sealed.",
-								"Springsages, the archmages of Herons, are healers who use their magic to aid individuals, whole villages, and even the land itself. They act much like wandering priests or monks, traveling the remote reaches to minister to the people and heal the sick.",
-								"Avacynian archmages might be clerics, wizards, or (in the case of the springsages) druids. The favored soul sorcerer presented in Unearthed Arcana could also work for an archmage {@note (see also the {@class Sorcerer|PHB|divine soul sorcerer released in XGE|Divine Soul|XGE})}, and the {@background sage} background is ideal for such characters."
-							],
-							"id": "00a"
-						}
-					],
-					"id": "007"
-				},
-				{
-					"type": "section",
-					"name": "Inquisitor Background",
-					"page": 12,
-					"entries": [
-						"Historically, {@background Inquisitor|PSI|inquisitors} were cathar detectives who investigated crimes both mundane and supernatural. They were known for traveling to remote parishes plagued by unexplained murders, and for exposing werewolves living among normal humans. During Avacyn's absence, when the archangel was trapped within the demonic prison known as the Helvault, the inquisitors led a series of brutal forays into Kessig and the Gavony Moorland. They executed suspected lycanthropes with little or no proof, and punished accused heretics in unsanctioned trials. With Avacyn's madness, this savage form of inquisition has become the norm, and inquisitors who still pry into dark mysteries have become a minority.",
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/PSI/005.webp"
-							},
-							"title": "Moorland Inquisitor",
-							"credit": "David Palumbo",
-							"width": 617,
-							"height": 919
-						}
-					],
-					"id": "00b"
-				}
-			],
-			"id": "004"
-		},
-		{
-			"type": "entries",
-			"name": "Creatures of the Night",
-			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSI/023.webp"
-					},
-					"title": "Moonrise Intruder",
-					"credit": "Daarken",
-					"width": 1224,
-					"height": 1585
-				},
-				{
-					"type": "list",
-					"columns": 3,
-					"items": [
-						"{@creature Creepy Doll|PSI}",
-						"{@creature Demonlord of Ashmouth|PSI}",
-						"{@creature Flight Alabaster Angel|PSI}",
-						"{@creature Flight Goldnight Angel|PSI}",
-						"{@creature Flight of Moonsilver Angel|PSI}",
-						"{@creature Geist|PSI}",
-						"{@creature Host of Herons Angel|PSI}",
-						"{@creature Keeper of the Feather|PSI}",
-						"{@creature Necro-Alchemist|PSI}",
-						"{@creature Skaab|PSI}",
-						"{@creature Vampire Neonate|PSI}",
-						"{@creature Werewolf (Krallenhorde)|PSI}",
-						"{@creature Zombie Cat|PSI}",
-						"{@creature Zombie Rat|PSI}",
-						"{@creature Zombie Snake|PSI}"
-					]
-				},
-				{
-					"type": "hr"
-				},
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Liches",
-							"page": 21,
-							"entries": [
-								"Liches are powerful necromancers who fuse the magic of the ghoulcaller with the arcane science of necro-alchemy, preserving themselves in hideous unlife while retaining their sentience and magical power. One lich is known to reside in the Nephalian town of Havengul, but others might exist that are more skilled at hiding their presence. The {@creature lich} in the {@i Monster Manual} can represent these undead necromancers."
-							],
-							"id": "03b"
-						}
-					],
-					"id": "03a"
-				},
-				{
-					"type": "entries",
-					"name": "Demons",
-					"page": 22,
-					"entries": [
-						"Demons are the dark counterparts of angels\u2014malevolent creatures of raw black mana. Some were once humans who sold their souls for power, and all are utterly corrupt and evil. As creatures of pure mana, demons can never be truly destroyed. When a demon dies, its essence is scattered for a time, but that essence eventually coalesces into a new form. The power of Avacynian magic keeps the essence of slain demons from creating new demonic forms as quickly as was common in Avacyn's early days. To fight against such magic and extend their influence into the mortal world while keeping out of easy reach of the angels, demons make pacts with cultists and witches, bending those humans to their sinister will.",
-						"As it did during Avacyn's absence, the most prominent demon cult on Innistrad exists within the highest levels of the hierarchy of Avacyn's church. The influence of the Skirsdag Cult is strong within the Lunarch Council, and that influence has whipped the church into a murderous frenzy in response to the angels' madness. The terrible inquisition that has arisen as a result has proven as great a threat to Innistrad as the angels themselves. Throughout it all, the demons remain hidden, but their reach is greater than it has ever been.",
-						"Virtually any {@filter demon, devil, or yugoloth in the Monster Manual|bestiary|source=mm|tag=demon;devil;yugoloth|miscellaneous=} can stand in for a demon of Innistrad. The greatest demons, such as Griselbrand, Ormendahl, and Withengar, are mighty beings on par with the demon princes described in the {@adventure Out of the Abyss adventure|OotA}. When any demon is destroyed, it gains a new body after somewhere between ninety-nine days and ninety-nine years.",
-						{
-							"type": "entries",
-							"name": "Devils",
-							"page": 22,
-							"entries": [
-								"Devils are infernal perpetrators of malicious mischief. They make up the personal armies and entourages of the demons\u2014those creatures' selfish desires and urges made flesh. Cruel and gleefully sadistic, devils have no regard for the safety of themselves or others. They delight in destruction, mayhem, and pain.",
-								"Devils stand about three or four feet tall and have faces full of needlelike teeth. Most have ruddy or deep red skin, one or two back-sweeping horns, and long, whiplike tails. However, their morphology varies from individual to individual. Devils are agile and make passable fighters, but they do their best destructive work by sabotaging things of value and inciting violence in others.",
-								"Devils are best represented by the smaller demons and devils presented in the Monster Manual\u2014{@creature dretch|MM|dretches}, {@creature imp|MM|imps}, {@creature lemure|MM|lemures}, {@creature manes}, {@creature quasit|MM|quasits}, and {@creature spined devil|MM|spined devils}.",
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/PSI/024.webp"
-									},
-									"title": "Reaper from the Abyss",
-									"credit": "Matt Stewart",
-									"width": 1224,
-									"height": 710
-								}
-							],
-							"id": "03d"
-						}
-					],
-					"id": "03c"
-				},
-				{
-					"type": "entries",
-					"name": "Cults and Witches",
-					"page": 23,
-					"entries": [
-						"With the madness of the angels, a variety of new cults sprang up across Innistrad. Some were direct continuations of the demon cults that had proliferated during Avacyn's absence, but others were entirely new\u2014centered on madness and revering monsters that had arisen in response to the angels' madness. Many such cults can be traced to the activity of Nahiri\u2014the stoneforging Planeswalker known as the Lithomancer.",
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/PSI/025.webp"
-							},
-							"title": "Welcome to the Fold",
-							"credit": "David Palumbo",
-							"width": 835,
-							"height": 657
-						},
-						{
-							"type": "entries",
-							"name": "Cults of Madness",
-							"page": 23,
-							"entries": [
-								"Many of the cults that once followed demons saw their patrons destroyed when Avacyn emerged from the Helvault. The people who belonged to those cults were not so quickly restored to church and community, and many of them remain disgruntled, rebellious, or insane. Nahiri has played on their discontent and given them new masters to serve. Some revere her, especially in Stensia, believing that she is an ancient vampire. Others offer sacrifices to the monsters of the world\u2014including those in Nephalia who worship the monstrous kraken-like Kralmar.",
-								"Many of these cults gather around spires of twisted stone (called cryptoliths) that Nahiri has raised from the ground across the provinces. The true purpose of these stones\u2014redirecting the ley lines of mana flowing through the plane\u2014is lost on the cultists, but the redirection of mana has caused the madness of the angels, who are formed of raw mana. Whether this was Nahiri's intent or simply a side effect of some greater plan remains a mystery. Many cultists view the angels' madness as a sign of the dawning of a new age, believing that the angels are purging those who are unworthy to be present when some unknown apocalypse occurs.",
-								"be present when some unknown apocalypse occurs. Followers of Nahiri's cults are physically as well as mentally warped. Their features twist into bestial or fishlike forms, as if they might be regressing through millions of years of evolution. Some even grow tentacles or tails, transforming into slimy horrors resembling octopuses or amphibians."
-							],
-							"id": "03f"
-						},
-						{
-							"type": "entries",
-							"name": "Demon Cults and Witches",
-							"page": 23,
-							"entries": [
-								"Not all the demons were killed when Avacyn escaped the Helvault, and some of their cults remain intact. The most important of these is the Skirsdag, which hides within the very hierarchy of the church in Thraben. Once dedicated to the archdemon Griselbrand, the Skirsdag is now led by Ormendahl the Reaper, a demon who survived the angelic purge by hiding in caverns deep beneath the cathedral. With the madness of Avacyn, the Skirsdag gains increasing influence over the Lunarch Council, adding violent zeal to the church's inquisition.",
-								"The distinction between a demon cult and a witch's coven is subtle. Cultists worship demons, but witches derive actual magical power from them, forging contracts similar to those that gave the Planeswalker Liliana Vess her magical power.",
-								"These cultists can be represented in the game using the statistics for {@creature cultist|MM|cultists} or {@creature cult fanatic|MM|cult fanatics}. The cults of madness might include {@creature yuan-ti pureblood|MM|yuan-ti purebloods} or {@creature kuo-toa} (in the most advanced cases of corruption). Demon cultists could be {@creature acolyte|MM|acolytes} or {@creature priest|MM|priests}, and witches could be {@creature mage|MM|mages} or {@creature druid|MM|druids} (particularly in the case of the forcemages, who derive their power from nature spirits rather than demons)."
-							],
-							"id": "040"
-						}
-					],
-					"id": "03e"
-				},
-				{
-					"type": "entries",
-					"name": "Dragons and Wurms",
-					"page": 24,
-					"entries": [
-						"Dragons are extremely rare on Innistrad, mostly confined to the remotest parts of the Geier Reach in Stensia. Most of these dragons are brutal fire-breathers that prey on any creature that strays into their territories, making them best represented by the {@filter red dragons in the Monster Manual|bestiary|source=mm|miscellaneous=|dragon casting color=red}.",
-						"A few dragons are known to favor more monstrous prey, hunting vampires and flying into Kessig to feast on werewolves. Known as moonveil dragons, these extremely rare creatures have shimmering, transparent wings that gleam in the moonlight as they hunt. The sight of one is considered an inspiring good omen by those who fight the evils of the world. Use the {@filter brass dragon statistics|bestiary|source=mm|miscellaneous=|dragon casting color=brass} for a moonveil dragon.",
-						"{@creature Wurm|PSZ|Wurms} are enormous serpentine creatures that burrow through the ground, consuming corpses. Fortunately quite rare, they are thought to be physical manifestations of corrupted green mana. The {@creature purple worm} in the Monster Manual can represent these monstrosities.",
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/PSI/026.webp"
-							},
-							"title": "Balefire Dragon",
-							"credit": "Eric Deschamps",
-							"width": 1229,
-							"height": 1155
-						}
-					],
-					"id": "041"
-				},
-				{
-					"type": "entries",
-					"name": "Elementals",
-					"page": 25,
-					"entries": [
-						"Elementals are manifestations of the forces of nature, and on Innistrad that generally means sinister forces. They arise from the twisted woods\u2014the Ulvenwald and the Somberwald\u2014that hide some of Innistrad's most fearsome monsters, or spawn from the fiery chasms that seethe like cauldrons of hate in the midst of the land. Like geists, elementals are closely associated with specific colors of mana.",
-						"Green-aligned elementals usually take on gnarled humanoid shapes made up of wood stalks and twisting vines, best represented as {@creature treant|MM|treants}, {@b blights}, {@creature shambling mound|MM|shambling mounds}, or {@creature awakened tree|MM|awakened trees} and {@creature awakened shrub|MM|awakened shrubs}. Others are nature spirits and spirit animals. Some of these are relatively benign, including beautiful nature spirits ({@creature dryad|MM|dryads}) wrapped in vine and thorn. Cold-burning geistflames made of unnatural fire ({@creature will-o'-wisp|MM|will-o'-wisps}) seem unconcerned with human life, but often lead travelers through the woods and bogs into danger. Malign kindercatches ({@creature green hag|MM|green hags}) steal children from the forest villages of Kessig.",
-						"Red-aligned elementals are fiery beasts ({@creature hell hound|MM|hell hounds}) or spirits ({@creature fire elemental|MM|fire elementals}) that haunt places like Ashmouth or Devil's Breach."
-					],
-					"id": "042"
-				}
-			],
-			"id": "00c"
-		},
-		{
-			"type": "section",
-			"name": "Rise of Emrakul",
-			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSI/027.webp"
-					},
-					"title": "Stromkirk Occultist",
-					"credit": "Magali Villanueve",
-					"width": 1225,
-					"height": 1584
-				},
-				"Emrakul is the largest and most fearsome of the three Eldrazi titans imprisoned on Zendikar. She causes silent horror wherever she soars, embodying desolation, emotional and physical distance, the chill of the void, and the terror of being alone. Thus, in many ways, she is perfectly at home on Innistrad.",
-				"Emrakul's initial approach to Innistrad pressed on the minds of that plane's inhabitants, straining their sanity. Her full manifestation then amplified that effect. Cultists who bordered on mad obsession descended into gibbering adulation of their Eldrazi idol, and scholars who pried into dark secrets fell catatonic with the full realization of the alien horror they studied.",
-				"Emrakul arrived on Innistrad without her brood of drones and other spawn, so she immediately began warping the native creatures of the plane\u2014both natural and unnatural\u2014in her own monstrous image. Beings transformed into Emrakul's spawn manifested fleshy lattice structures, distorted symmetry, and tentacles ending in knobby, vestigial digits. Those who had already begun their descent into corruption before the Eldrazi's arrival were warped almost beyond recognition, but even those who fought against the madness during her approach were susceptible to the life-warping affects of her presence.",
-				"Emrakul's arrival set a new series of horrific events in motion, as humans and monsters alike found their very existence threatened by this blasphemous horror.",
-				{
-					"type": "entries",
-					"name": "Emrakul's Madness",
-					"page": 29,
-					"entries": [
-						"The story of Shadows over Innistrad and Eldritch Moon is shaped by Emrakul's arrival and the madness that spreads across the plane around the Eldrazi titan. A D&D campaign set on Innistrad can ignore this aspect of the story and focus instead on the themes of more traditional Gothic horror. But if you do want to add elements of Emrakul's madness to your campaign, use the {@variantrule New Ability Scores: Honor and Sanity||Sanity score} rules in chapter 9 of the Dungeon Master's Guide. Allow characters to make Sanity checks to interpret the effects of Emrakul's corruption, and Sanity saving throws to resist the effects of the spreading madness.",
-						"Mental corruption is not the only effect of Emrakul's presence on Innistrad, however. Particularly after the Eldrazi titan fully emerges into the plane, the madness she brings is accompanied by physical mutation as well. Rather than unleashing hordes of spawn upon the world as the Eldrazi did on Zendikar, Emrakul causes the living creatures of Innistrad to transform into her spawn, becoming warped and horrible fusions of normal and Eldrazi flesh. This physical transformation first takes hold of humans whose minds have already been touched by the Eldrazi's approach, with mental obsession often manifesting in physical expression. But Emrakul's physical presence affects every living thing nearby.",
-						"A creature or character whose {@variantrule New Ability Scores: Honor and Sanity||Sanity score} is below 10 can begin to manifest signs of physical corruption, which progresses in stages.",
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/PSI/006.webp"
-							},
-							"title": "Emrakul, the Promised End",
-							"credit": "Jaime Jones",
-							"width": 818,
-							"height": 939
-						},
-						{
-							"type": "entries",
-							"entries": [
-								{
-									"type": "entries",
-									"name": "Distorted (Sanity 8\u20139)",
-									"page": 30,
-									"entries": [
-										"Even before Emrakul's arrival, some cultists and those who pried too deep into dark secrets begin to change. In this early stage, physical proportions shift, with one or more of the creature's limbs or some part of the face growing larger, almost always asymmetrically. Noticeable skin blemishes can also appear, most often as boils or clumps of cauliflower-like growths (though these do not yet resemble the lattice of Emrakul's flesh). Creature statistics are unchanged."
-									],
-									"id": "010"
-								},
-								{
-									"type": "entries",
-									"name": "Deformed (Sanity 6\u20137)",
-									"page": 30,
-									"entries": [
-										"In the second stage, a creature can develop a dead or bulging eye, huge tumorous growths, curled hands or feet, violent palsy, oozing secretions from the skin or eyes, raw red patches on the skin, and similar deformities. Patches of lattice-like growths often appear on the skin. In some cases, particularly in Nephalia, cultists begin to manifest distinctly fishlike features\u2014goggling eyes, scaled or slimy skin, webbing between the fingers or toes, or gill-like flaps on the face or neck. Creature statistics remain unchanged."
-									],
-									"id": "011"
-								},
-								{
-									"type": "entries",
-									"name": "Disfigured (Sanity 4\u20135)",
-									"page": 30,
-									"entries": [
-										"In the third stage, the lips shrink away from the teeth, which can rot and fall out. Fingers and toes sometimes fuse together or start transforming into tentacles. Bleeding sores erupt on the skin, or bulbous growths can appear under the skin. Cultists in Nephalia often grow finlike protrusions or pincerlike hands. At this stage, creatures might manifest improved natural armor or weapons, or simple benefits such as the Amphibious trait of a {@creature bullywug}, the Blind Senses of a {@creature grimlock}, Chameleon Skin like a {@creature troglodyte}, the Slippery trait of a {@creature kuo-toa}, or the Spider Climb trait of an {@creature ettercap}."
-									],
-									"id": "012"
-								},
-								{
-									"type": "entries",
-									"name": "Misshapen (Sanity 2\u20133)",
-									"page": 30,
-									"entries": [
-										"In the fourth stage, a creature's flesh often rots away or grows out of control, either leaving muscle and bone visible beneath or concealing features beneath masses of fleshy lattice or bulbous growths. Bone structure can alter radically, creating additional limbs or turning existing limbs into bizarrely jointed tentacles. Extra eyes can appear in unexpected places, or the head can transform into something resembling a fish or octopus.",
-										"At this stage, a corrupted creature might begin to transform into an entirely different creature. A human could effectively become any of the creatures mentioned above, or some other vaguely humanoid monster such as a {@creature kenku}, a {@creature lizardfolk}, a {@creature sahuagin}, or a {@filter yuan-ti|bestiary|search=yuan-ti}."
-									],
-									"id": "013"
-								},
-								{
-									"type": "entries",
-									"name": "Monstrous (Sanity 1)",
-									"page": 30,
-									"entries": [
-										"The most warped creatures are barely even recognizable. Some become little more than a mass of writhing tentacles, or lose their physical coherence entirely. Two or more creatures can fuse together, joined by fleshy lattice. The \"lucky\" ones retain a basically humanoid shape, but otherwise appear completely monstrous, with twisted faces, extra limbs, horny growths, jointed tentacle extrusions, and so on. Such a creature might effectively become an Eldrazilike monster such as an {@creature aboleth}, a {@creature chuul}, a {@creature cloaker}, a {@creature gibbering mouther}, or a {@creature mind flayer}.",
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "book/PSI/007.webp"
-											},
-											"title": "It That Rides as One",
-											"credit": "Daarken",
-											"width": 617,
-											"height": 1179
-										}
-									],
-									"id": "014"
-								}
-							],
-							"id": "00f"
-						}
-					],
-					"id": "00e"
-				}
-			],
-			"id": "00d"
-		},
-		{
-			"type": "section",
-			"name": "Curse of Innistrad",
-			"page": 32,
-			"entries": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSI/028.webp"
-					},
-					"title": "Curse of Strahd",
-					"credit": "Ben Oliver",
-					"width": 1225,
-					"height": 1585
-				},
-				"Innistrad's ancient history speaks of a human alchemist and healer named Edgar Markov, who sought to preserve his own life and the lives of his family. As old age began to claim him, he despaired of finding an alchemical solution and turned to black magic. Not long after, the demon Shilgengar appeared to Markov and revealed a means by which he could achieve immortality: a dark ritual that involved drinking an angel's blood.",
-				"The vampires of Innistrad are all descended from twelve ancient sires\u2014the congregation that participated in Markov's blasphemous ritual. Of these twelve bloodlines, four constitute the vast majority of Innistrad's vampires: Markov, Voldaren, Falkenrath, and Stromkirk. Three of the others have died out completely, while five are so few in number as to be irrelevant. One of those nearly irrelevant lines is that of Strefan Maurer, who rules a remote region in Stensia's outland valleys.",
-				"This chapter offers suggestions for situating the region of Barovia, which is detailed in the Ravenloft adventure {@adventure Curse of Strahd|CoS}, within the plane of Innistrad. The changes range from the merely cosmetic (changing the Balinok Mountains to the Geier Reach, for example) to more thorough reimaginings of Ravenloft elements foreign to Innistrad, such as dusk elves, wereravens, and the enigmatic Vistani.",
-				"Much of the description of Barovia presented in {@adventure chapter 2 of Curse of Strahd|CoS|3} applies to Innistrad generally and to the outland valleys of Stensia in particular. Some elements do not apply, including the mists of Ravenloft. No magical barrier imprisons people in the outland valleys, or even on Innistrad as a whole. Planeswalkers, at least, can leave the plane, and high-level spellcasters native to Innistrad might be able to glimpse realms beyond the Blind Eternities through their magic.",
-				"The description of the dour people of Barovia applies to Stensians as a rule. However, all Stensians have souls, and those souls are not trapped on Innistrad.",
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "book/PSI/008.webp"
-					},
-					"title": "Forest",
-					"credit": "James Paick",
-					"width": 1229,
-					"height": 878
-				},
-				{
-					"type": "entries",
-					"name": "Strahd von Zarovich\u2014Strefan Maurer",
-					"page": 33,
-					"entries": [
-						"The history of Strefan Maurer runs parallel to that of Strahd von Zarovich. After his father's death, Strefan studied magic and forged a pact with the demon Shilgengar in return for the promise of immortality. After murdering his brother Sergei and drinking his blood, Strefan journeyed to Markov Manor and consulted with Edgar Markov. Together, they worked with Shilgengar to create the twelve bloodlines of vampires on Innistrad. Maurer Estate (Castle Ravenloft) was not spirited away to a demiplane\u2014it was already on Innistrad, itself a place of nightmares. And Strefan is not trapped here, so he is not seeking a successor in hopes of escaping. Newcomers to his domain do attract his attention, though, as the possibility of meeting a new consort is always on Strefan's mind.",
-						"Strefan's statistics are unchanged from the statistics of Strahd in the Curse of Strahd adventure, except that he lacks the Vampire Weaknesses feature. Instead, Strefan has the weaknesses shared by Innistrad vampires (see that earlier section).",
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/PSI/009.webp"
-							},
-							"title": "Falkenrath Noble",
-							"credit": "Slawomir Maniak",
-							"width": 1227,
-							"height": 823
-						}
-					],
-					"id": "016"
-				},
-				{
-					"type": "entries",
-					"name": "Lands of Barovia\u2014Outland Valleys",
-					"page": 33,
-					"entries": [
-						"The region shown on the map in the Curse of Strahd adventure covers most of the outland valleys, the dales of the Geier Reach that are farthest from Gavony and Kessig. Only place names within the region need updating; the rest of the region's geography is unchanged. The Balinok Mountains are the Geier Reach, the Svalich Woods are the Somberwald, Lake Zarovich is Maurer Lake, and the Old Svalich Road is Somber Road.",
-						"Two passes cross the Geier Reach to connect the outland valleys with the wider world. Hofsaddel is the more often used, a wide and well-trodden pass mostly ignored by the vampires. The Somber Road runs through this pass, but it is a long and circuitous route. By contrast, Needle's Eye is a narrow, treacherous, and deadly path haunted by vengeful geists. It is a more direct path, but it runs perilously close to the demonic gateway known as Ashmouth, so humans use this pass only in the most dire need.",
-						"The lore known to the people of Stensia is different in detail but similar in substance to what is presented in the {@i Curse of Strahd} adventure.",
-						{
-							"type": "entries",
-							"name": "Strefan the Fiend",
-							"page": 34,
-							"entries": [
-								"The people of Stensia and the outland valleys know the following about Strefan Maurer and vampires in general:",
-								{
-									"type": "list",
-									"items": [
-										"Strefan Maurer is a vampire, and he dwells in Maurer Estate. No one is welcome at the estate.",
-										"Strefan the fiend is a curse placed on the land because of some forgotten sin committed by the ancestors of the people of Shadowgrange. (This is untrue, but the people of the outland valleys believe it.)",
-										"Vampires have three supernatural characteristics that are shared across all bloodlines: agelessness, superhuman strength (mostly an exaggeration), and an aura of silence that emanates from them at will to a radius of two feet. Elder vampires can learn powerful magic of many different kinds, such as flight, a hypnotic gaze, or the ability to transform into other forms such as that of a bat or a mist.",
-										"Weapons cut from living wood are particularly effective against vampires, though any weapon can harm or kill them. A vampire can't cross running water that shows the reflection of the moon, and water blessed by Avacyn burns vampire flesh like acid. The holy symbols of Avacyn, blessed in the proper rituals of the church, can fill a vampire with a paralyzing fear and a desire to flee."
-									]
-								}
-							],
-							"id": "018"
-						},
-						{
-							"type": "entries",
-							"name": "The Outland Valleys",
-							"page": 34,
-							"entries": [
-								"The people of the outland valleys know the following facts about their homeland:",
-								{
-									"type": "list",
-									"items": [
-										"Many strangers have been drawn to the outland valleys over the years, but they all die or disappear eventually.",
-										"Wolves, dire wolves, and werewolves prowl the Somberwald, and hungry bats fill the skies at night.",
-										"The village of Shadowgrange sits at the east end of the valley. Its burgomaster is Kolyan Indirovich.",
-										"The town of Lammas lies at the heart of the outland valleys. Its nominal leader is Baroness Lydia Petrovna, but the town is presently controlled by the inquisitor Seeta.",
-										"The fortified village of Krezk lies at the west end of the outland valleys and is built around an old abbey. The village burgomaster is named Dmitri Krezkov.",
-										"Wine is the lifeblood of the outland valleys\u2014for some, it is the only reason to keep living. Taverns here get their wine from the Wizard of Wines winery near Krezk.",
-										"A mad wizard of great power haunts the foothills of Mount Baratok. He is an outsider and no friend of the vampire's."
-									]
-								},
-								{
-									"type": "image",
-									"href": {
-										"type": "internal",
-										"path": "book/PSI/010.webp"
-									},
-									"title": "Mountain",
-									"credit": "Andreas Rocha",
-									"width": 1225,
-									"height": 671
-								}
-							],
-							"id": "019"
-						},
-						{
-							"type": "entries",
-							"name": "Beliefs and Superstitions",
-							"page": 35,
-							"entries": [
-								"The people of the outland valleys have deep-rooted religious beliefs and superstitions that they pass down from one generation to the next:",
-								{
-									"type": "list",
-									"items": [
-										"Avacyn and her angels watch over the people of Stensia just as they do over the rest of Innistrad. But Sigarda and the Host of Herons have a special love for Stensia.",
-										"Spirits drift along the Old Somber Road toward the Maurer Estate in the dead of night. These phantoms are all that remain of Strefan's enemies, and this damnable fate awaits anyone who opposes him.",
-										"The Bitterhearts (Innistrad's version of Ravenloft's Vistani) serve Strefan the fiend.",
-										"Never harm a raven, lest ill fortune befall you!"
-									]
-								}
-							],
-							"id": "01a"
-						}
-					],
-					"id": "017"
-				},
-				{
-					"type": "entries",
-					"name": "Village of Barovia\u2014Shadowgrange",
-					"page": 35,
-					"entries": [
-						"Little changes about this peaceful village as it is described in the {@i Curse of Strahd} adventure, except that the religious trappings found in the church use the iconography of the church of Avacyn and the archangel Sigarda. The holy symbol seen in the office is not a sunburst but Avacyn's Y-shaped collar, looking slightly distorted because of the angels' madness. The priest Donavich prays to the angels, not the gods.",
-						"The books found in the church office are called {@i Hymns to the Heron} (chants to Sigarda) and {@i The Blade of Truth: The Uses of Logic in the War Against Demonic Heresies, as Fought by the Lunarch Andreas}."
-					],
-					"id": "01b"
-				},
-				{
-					"type": "entries",
-					"name": "Vistani\u2014Bitterhearts",
-					"entries": [
-						"Madam Eva's people are the Bitterhearts, represented on cards like {@link Bitterheart Witch|https://gatherer.wizards.com/pages/card/Details.aspx?multiverseid=222205} (from the original Innistrad set) and {@link Wakedancer|https://gatherer.wizards.com/pages/card/details.aspx?multiverseid=262836} (from Dark Ascension). They are descended from a people whose village was swallowed up in the chasm of Ashmouth. To ensure their survival, they made a pact with a demon and took up a nomadic existence. Of course, not all Bitterhearts are witches. Some have taken up a life of banditry, some serve Strefan directly, and some remember their people's ancient devotion to the Demonlord of Ashmouth.",
-						"As with the other people of the outland valleys, the lore known by the Bitterhearts is mostly the same as that known by the Vistani in {@i Curse of Strahd}.",
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/PSI/011.webp"
-							},
-							"title": "Bitterheart Witch",
-							"credit": "Karl Kopinski",
-							"width": 1229,
-							"height": 860
-						},
-						{
-							"type": "entries",
-							"name": "Bitterheart Lore\u2014Strefan",
-							"page": 36,
-							"entries": [
-								"The Bitterhearts have their own beliefs about Strefan, their world, and their place in it:",
-								{
-									"type": "list",
-									"items": [
-										"Strefan comes from a royal bloodline. He died centuries ago yet endures as one of the undead, feasting on the blood of the living. The people of the outland valleys refer to him as \"Strefan the fiend.\"",
-										"Strefan has taken many consorts, but he has known only one true love: a peasant girl named Tatyana. (The Bitterhearts don't know what happened to her.)",
-										"Strangers aren't welcome at Maurer Estate without an invitation."
-									]
-								}
-							],
-							"id": "01d"
-						},
-						{
-							"type": "entries",
-							"name": "Bitterheart Lore\u2014The Outland Valleys",
-							"page": 36,
-							"entries": [
-								{
-									"type": "list",
-									"items": [
-										"Strefan conquered this land centuries ago. He uses wolves, bats, and other creatures to spy on all of his realm.",
-										"The Stensians are a simple, frightened people.",
-										"The Old Somber Road passes through Strefan's domain. Three settlements lie on the road like beads on a string: Krezk to the west, Lammas in the heart of the valley, and Shadowgrange to the east. Strefan has spies in each settlement.",
-										"An old windmill stands along the road between the village of Shadowgrange and the town of Lammas. It should be avoided at all costs. (The Bitterhearts refuse to say more.)",
-										"It is wise to stick to the road. Wild druids, wayward geists, and packs of wolves and werewolves haunt the Somberwald."
-									]
-								}
-							],
-							"id": "01e"
-						},
-						{
-							"type": "entries",
-							"name": "Bitterheart Lore\u2014Beliefs and Superstitions",
-							"page": 36,
-							"entries": [
-								{
-									"type": "list",
-									"items": [
-										"Some Bitterheart women are blessed with prescience. Of all the great Bitterheart fortune-tellers, none compares to Madam Eva. If knowledge of the future is what you seek, Madam Eva will tell you your fate.",
-										"A prescient Bitterheart can't see her own future or the future of another Bitterheart. It is the burden of the Bitterhearts' great gift that their own fates can't be divined.",
-										"Bitterheart curses are potent, but they are invoked with great caution. Bitterhearts know that to curse one who is undeserving of such punishment can have grave consequences for the one who utters such a curse.",
-										"Ravens carry lost souls within them, so killing one is bad luck. (There is no truth to this legend.)"
-									]
-								}
-							],
-							"id": "01f"
-						}
-					],
-					"id": "01c"
-				},
-				{
-					"type": "entries",
-					"name": "Vallaki\u2014Lammas",
-					"page": 36,
-					"entries": [
-						"In this town on the shores of Maurer Lake, the Lunarch Inquisition has taken fierce hold. A half-crazed inquisitor named Seeta has come from Thraben to the remote reaches of Stensia to root out evil and cultivate the happiness that should come from faithful devotion to Avacyn. A small demon cult does hide in the shadows of the town, led by Lady Fiona Wachter. No one in the village harbors any notion of escaping Innistrad, but they are desperate to stave off the anger of the angels.",
-						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/PSI/012.webp"
-							},
-							"title": "Lunarch Inquisitors",
-							"credit": "Wayne Reynolds",
-							"width": 721,
-							"height": 505
-						},
-						"Lammas also harbors the rebellious Blade of the Inquisitors, Rem Karolus, who is staying at the Blue Water Inn and goes by the name Rictavio. (People speaking of him do not describe pointed ears, since he is and appears fully human.) Rather than a saber-toothed tiger, he has a captive nettle swine (a {@creature giant boar}). Rictavio's journal describes \"oddities\" that can be attributed to the approach of Emrakul:",
 						{
 							"type": "list",
+							"style": "list-hang",
+							"name": "1st Level",
 							"items": [
-								"A woman in Wollebank whose mouth has grown large and powerful enough that she can chew through iron chains.",
-								"A giant carnivorous plant with a remarkable singing voice.",
-								"A pair of twins in Silbern who had grown so close that they actually fused together, with lattice-like flesh binding them to each other.",
-								"A woman, seen only from afar, who wore strange clothes and had ears like a rabbit's."
+								"Conjure Spell Component",
+								"Fire Burst",
+								"Fist of Stone",
+								"Hornung's Guess",
+								"Lasting Breath",
+								"Metamorphose Liquids",
+								"Murdock's Feathery Flyer",
+								"Nahal's Reckless Dweomer",
+								"Patternweave"
 							]
 						},
-						"Local lore about Heron's Light Hold (Argynvostholt) is that an angel died there long ago.",
-						"Saint Andral's Church is dedicated to Avacyn. The inquisitor Seeta has taken up residence in the church, demanding hospitality from Father Lucien, but she spends most of her time in the town square. There, several guillotines are set up for the punishment of heretics. Use the description of baron Vargas Vallakovich in Curse of Strahd to guide your roleplaying of Seeta. Baroness Lydia Petrovna is the nominal ruler of the town, but she has effectively ceded her authority to Seeta and the Lunarch Inquisition.",
-						"The wereravens in the Blue Water Inn are members of the Keepers of the Feather\u2014an order of witches tied to a benevolent raven spirit. The dusk elves among the Bitterhearts are vampires of the Dusken family line."
-					],
-					"id": "020"
-				},
-				{
-					"type": "entries",
-					"name": "Argynvostholt\u2014Heron's Light Hold",
-					"page": 37,
-					"entries": [
-						"This ancient hold was constructed by a group of knights called the Order of Heron's Light (replacing the adventure's Order of the Silver Dragon), led by the archangel Sigarda herself. Sigarda was not slain in the ancient confrontation with Strefan, but after her knights were all killed, she abandoned the valleys. Though she does not physically appear, she does try to influence the adventurers to help the knights find peace. Rather than a silver dragon, the hold uses imagery of herons.",
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/PSI/013.webp"
-							},
-							"title": "Sigarda, Host of Herons",
-							"credit": "Chris Rahn",
-							"width": 724,
-							"height": 505
-						}
-					],
-					"id": "021"
-				},
-				{
-					"type": "entries",
-					"name": "Krezk",
-					"page": 37,
-					"entries": [
-						"This fortified village is dominated by the Abbey of Saint Traft (replacing Saint Markovia), which is a madhouse. The abbey is named for an ancient saint who fought demons alongside the host of Avacyn. For all his bravery and zeal, Traft was betrayed by a demon and slain, and his spirit never entered the Blessed Sleep.",
-						"The approach of Emrakul has filled the abbey to overflowing, and physical corruption commensurate with the growing madness has transformed unfortunate victims into creatures akin to the mongrelfolk of the {@i Curse of Strahd} adventure. The abbess of the madhouse is an angel who once fought alongside Saint Traft, and who has descended into utter madness since the ancient saint's death."
-					],
-					"id": "022"
-				},
-				{
-					"type": "entries",
-					"name": "Tsolenka Pass\u2014The Needle's Eye",
-					"page": 37,
-					"entries": [
-						"The Needle's Eye traverses the Midland Range to connect Stensia's outland valleys and inland valleys. Its proximity to Ashmouth means it is haunted by demons, including the {@creature vrock|MM|vrocks} atop the gatehouse wall. Far worse, replacing the roc of Mount Ghakis, is the {@creature Demonlord of Ashmouth|PSI}, a terrible and ancient fiend. It uses the statistics of a horned devil, except that it uses a battleaxe instead of a fork."
-					],
-					"id": "023"
-				},
-				{
-					"type": "entries",
-					"name": "The Ruins of Berez",
-					"page": 37,
-					"entries": [
-						"An ancient crone here is dedicated to destroying the Keepers of the Feather, the witches that inhabit the Wizard of Wines."
-					],
-					"id": "024"
-				},
-				{
-					"type": "entries",
-					"name": "Van Richten's Tower\u2014Rem Karolus's Tower",
-					"page": 37,
-					"entries": [
-						"The legendary monster hunter Rem Karolus, called the Blade of the Inquisitors, has become more interested in hunting angels than werewolves. But his protégé Kastinne (replacing the adventure's Ezmerelda) carries on his work while she searches for her mentor. After a demon killed her children and imprisoned their souls, Kastinne left her home among the Bitterhearts and adopted the lifestyle of a wandering monk. Swearing a vow that most called mad, she descended into the ghastly network of caves below Stensia, bent on killing the demon and liberating her children's souls. Against all odds, she emerged triumphant from the caverns to take up a life of demon hunting. She has trained and worked with Rem Karolus ever since.",
-						"The dragon that appears if characters fail to correctly open the door to Karolus's tower is a balefire dragon, but with the statistics of a {@creature young blue dragon}."
-					],
-					"id": "025"
-				},
-				{
-					"type": "entries",
-					"name": "The Wizard of Wines and Wereravens",
-					"page": 38,
-					"entries": [
-						"The Martikov family who run this winery made a pact with a raven spirit of the Somberwald and became forcemages, forming the nucleus of the Keepers of the Feather. These witches stand on the side of humanity against the horrors of Innistrad, and against Strefan Maurer specifically. Their pact gives them magical power, supplemented by their extensive knowledge of herbalism.",
-						"The {@creature druid||druids} and {@filter blights|bestiary|search=blight} here come from Yester Hill."
-					],
-					"id": "026"
-				},
-				{
-					"type": "entries",
-					"name": "The Amber Temple\u2014The Moonsilver Temple",
-					"page": 38,
-					"entries": [
-						"This ancient structure predates any of the known peoples and cultures of Innistrad. The good-aligned wizards who built it anticipated the Helvault by entrapping semidivine evil forces in silver-lined prisons. Everywhere in the temple that amber is described, use silver instead. Both the {@creature arcanaloth} and the {@creature death slaad} here are various forms of Innistrad demons."
-					],
-					"id": "027"
-				},
-				{
-					"type": "entries",
-					"name": "Yester Hill",
-					"page": 38,
-					"entries": [
-						"Led by an elder named Rimheit, a group of druids and berserkers dwells atop this hill, revering an ancient yew spirit that inhabits a Gulthias tree. These people dwelled in Stensia long before the current inhabitants came across the mountains and built their villages. The yew spirit is the source of the blights (including the tree blights sometimes called lumberknots) that plague the valleys."
-					],
-					"id": "028"
-				},
-				{
-					"type": "entries",
-					"name": "Werewolf Den",
-					"page": 38,
-					"entries": [
-						"The werewolves are a branch of the Mondronen howlpack, who practice dark forms of blood magic.",
+							"type": "list",
+							"style": "list-hang",
+							"name": "2nd Level",
+							"items": [
+								"Chaos Shield",
+								"Hornung's Baneful Deflector*",
+								"Insatiable Thirst",
+								"Maximilian's Earthen Grasp",
+								"Nahal's Nonsensical Nullifier*",
+								"Past Life",
+								"Protection From Paralysis",
+								"Ride the Wind",
+								"Sense Shifting"
+							]
+						},
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/PSI/029.webp"
-							},
-							"title": "Tovolar's Magehunter",
-							"credit": "Anthony Palumbo",
-							"width": 799,
-							"height": 661
-						}
-					],
-					"id": "029"
-				},
-				{
-					"type": "entries",
-					"name": "Rahadin and the Dusk Elves\u2014The Dusken Line",
-					"page": 38,
-					"entries": [
-						"Innistrad has no dusk elves, so their role in the adventure is played by a line of vampires called the Duskens, named after their longlost progenitor Irska Dusken. Strefan killed Irska centuries ago and scattered the Duskens. Some were subjugated, while others went to live among the Bitterhearts.",
-						"Rahadin has been serving the Maurer family for many years, and even helped Strefan subjugate the rest of his line. He appears human rather than elflike, and dresses in red finery rather than wearing black armor.",
+							"type": "list",
+							"style": "list-hang",
+							"name": "3rd Level",
+							"items": [
+								"Alacrity",
+								"Alamir's Fundemental Breakdown",
+								"Alternate Reality*",
+								"Augmentation I",
+								"Far Reaching I",
+								"Fireflow*",
+								"Fool's Speech*",
+								"Lorloveim's Creeping Shadow",
+								"Maximilian's Stoney Grasp",
+								"Minor Malison",
+								"Spirit Armor",
+								"Squaring the Circle",
+								"Watery Double",
+								"Wizard Sight"
+							]
+						},
 						{
-							"type": "image",
-							"href": {
-								"type": "internal",
-								"path": "book/PSI/014.webp"
-							},
-							"title": "Nearheath Stalker",
-							"credit": "Michael C. Hayes",
-							"width": 533,
-							"height": 565
-						}
-					],
-					"id": "02a"
-				},
-				{
-					"type": "entries",
-					"name": "Adventure Hooks",
-					"page": 39,
-					"entries": [
-						"You can adapt the adventure hooks found in {@i Curse of Strahd} as follows.",
+							"type": "list",
+							"style": "list-hang",
+							"name": "4th Level",
+							"items": [
+								"Dilation I",
+								"Divination Enhancement",
+								"Far Reaching II",
+								"Greater Malison",
+								"Locate Creature",
+								"Mask of Death",
+								"Minor Spell Turning",
+								"Mordinkainen's Celerity",
+								"Summon Lycanthrope",
+								"There/Not There*",
+								"Thunder Staff",
+								"Turn Pebble to Boulder",
+								"Unluck*"
+							]
+						},
 						{
-							"type": "entries",
-							"entries": [
-								{
-									"type": "entries",
-									"name": "Plea for Help",
-									"page": 39,
-									"entries": [
-										"Arrigal is one of the Bitterhearts, and neither his clothing nor his accent are particularly outlandish. He comes to the adventurers when they are in the inland valleys of Stensia, perhaps in Silbern or Wollebank. The people there know that these Bitterhearts come from the outland valleys. The hook is otherwise unchanged."
-									],
-									"id": "02d"
-								},
-								{
-									"type": "entries",
-									"name": "Mysterious Visitors",
-									"page": 39,
-									"entries": [
-										"The scene described here takes place in Wollebank in the inland valleys. Instead of Lady Morwen, the characters dine with Deigenhard, the mayor of Wollebank. Deigenhard is familiar with the Bitterhearts and believes they are little more than bandits, so he asks the player characters to get them moving on their way. If the adventurers follow the Bitterhearts to the outland valleys, they travel northwest along the Somber Road, through the pass of Hofsaddel."
-									],
-									"id": "02e"
-								},
-								{
-									"type": "entries",
-									"name": "Werewolves in the Mist",
-									"page": 39,
-									"entries": [
-										"Werewolves are spilling out of the Somberwald into the inland valleys and threatening the shepherds and farmers there. The adventurers get information based on their affiliations with organizations on Innistrad (as opposed to the player factions of the D&D Adventurers League). If the characters are closely associated with any of these organizations, they can gain the information and benefits associated with the corresponding player factions:",
-										{
-											"type": "list",
-											"items": [
-												"In place of the Harpers, use the parish-blades\u2014specifically the Stensian branch, casually called the roadwatchers.",
-												"Instead of the Order of the Gauntlet, use the knight-inquisitors of Saint Raban. Taking their name from the legendary investigator and slayer of werewolves, this order of cathars serves as inquisitors in the classic sense\u2014not slaughtering the populace, but investigating mysteries and secrets. They are detectives, investigators, and delvers into enigmas best left untouched.",
-												"Rather than the Emerald Enclave, use a group of springsages, the archmages of Herons, which includes a number of druids.",
-												"Instead of the Lords' Alliance, use the Quiver of Kessig, who are experts at hunting werewolves. Eravien (a human Kessiger, not a half-elf as in {@i Curse of Strahd}) tells the adventurers that the werewolves are a branch of the Mondronen howlpack, which practices dark forms of blood magic.",
-												"In place of the Zhentarim, use a criminal syndicate connected with Lord Mayor Herzag of Havengul, a corrupt merchant who allows the illicit underground to flourish for his own personal gain."
-											]
-										},
-										"The characters' travels in pursuit of the werewolves lead them through the Hofsaddel pass. No fog engulfs them, but they emerge in the outland valleys.",
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "book/PSI/015.webp"
-											},
-											"title": "Harrowing Journey",
-											"credit": "James Paick",
-											"width": 772,
-											"height": 551
-										}
-									],
-									"id": "02f"
-								},
-								{
-									"type": "entries",
-									"name": "Creeping Fog",
-									"page": 39,
-									"entries": [
-										"Since there are no mists to transport characters to Stensia's outland valleys, this hook doesn't apply if you are running {@i Curse of Strahd} in Innistrad."
-									],
-									"id": "030"
-								}
-							],
-							"id": "02c"
-						}
-					],
-					"id": "02b"
-				},
-				{
-					"type": "entries",
-					"name": "Creatures and Encounters",
-					"page": 39,
-					"entries": [
-						"Use these guidelines to adapt creatures and encounters throughout the adventure.",
+							"type": "list",
+							"style": "list-hang",
+							"name": "5th Level",
+							"items": [
+								"Far Reaching III",
+								"Khazid's Procurement",
+								"Lower Resistance",
+								"Magic Staff",
+								"Mind Fog",
+								"Safeguarding",
+								"Von Gasik's Refusal",
+								"Vortex*",
+								"Waveform*"
+							]
+						},
 						{
-							"type": "entries",
-							"entries": [
-								{
-									"type": "entries",
-									"name": "Barovian Scouts",
-									"page": 39,
-									"entries": [
-										"The first time the player characters encounter these Somberwald trappers, the group is led by a man named Paulin (whom the players might recognize from flavor text on a handful of cards in the original Innistrad block). He leaves them with some words of wisdom: \"Bury your dead deep. The boars are hungriest while the corpse is still warm.\" (At your discretion, you can also replace {@creature berserker||berserkers} with a like number of {@creature giant boar||giant boars} in a random encounter.)"
-									],
-									"id": "033"
-								},
-								{
-									"type": "entries",
-									"name": "Bluto",
-									"page": 40,
-									"entries": [
-										"Found on Maurer Lake, Bluto has gone mad under the influence of the approach of Emrakul. He has devoted himself to an aquatic being he believes lives in the depths of the lake\u2014something akin to the Gitrog monster or the squidlike Kralmar worshiped by coastal cults in Nephalia. Bluto has gill-like flaps on his neck. At your discretion, you could introduce an encounter with the creature he worships, which might be something like a {@creature giant crocodile}.",
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "book/PSI/030.webp"
-											},
-											"title": "Wayward Disciple",
-											"credit": "Kev Walker",
-											"width": 613,
-											"height": 600
-										}
-									],
-									"id": "034"
-								},
-								{
-									"type": "entries",
-									"name": "Mad Mage of Mount Baratok",
-									"page": 40,
-									"entries": [
-										"You can use Mordenkainen as written in {@i Curse of Strahd}. Or, in a twisted nod to the storyline of {@i Shadows over Innistrad}, this mad planeswalking mage could be Jace Beleren. Create a different list of spells for Jace, focusing on mind-altering and illusion magic."
-									],
-									"id": "035"
-								},
-								{
-									"type": "entries",
-									"name": "Mongrelfolk",
-									"page": 40,
-									"entries": [
-										"The statistics of these misshapen creatures are the same, but in appearance, they resemble the corrupted, malformed creatures warped by the influence of Emrakul. Rather than claws, they might attack with tentacles (dealing bludgeoning damage) or extra mouths (dealing piercing damage). No magic can restore a mongrelfolk to its previous form."
-									],
-									"id": "036"
-								},
-								{
-									"type": "entries",
-									"name": "Vampire Spawn",
-									"page": 40,
-									"entries": [
-										"Use the {@creature vampire neonate|PSI} statistics in this document whenever the adventurers encounter vampire spawn, rather than the {@creature vampire spawn} statistics in the {@i Monster Manual}. The first time the adventurers encounter exactly two vampire spawn, they meet the infamous twins of Maurer Estate, two young girls named Ruby and Carmine. The two enjoy pretending to be helpless young girls, lost and alone, in order to get close to their prey.",
-										{
-											"type": "image",
-											"href": {
-												"type": "internal",
-												"path": "book/PSI/016.webp"
-											},
-											"title": "Twins of Maurer Estate",
-											"credit": "Darek Zabrocki",
-											"width": 1076,
-											"height": 699
-										}
-									],
-									"id": "037"
-								},
-								{
-									"type": "entries",
-									"name": "Wereravens",
-									"page": 40,
-									"entries": [
-										"Use the {@creature Young Wereraven|CoS|wereraven} statistics in the adventure, except that the beak attack cannot transmit lycanthropy (since the witches of the Keeper of the Feather are not lycanthropes). Wereravens also have the spellcasting ability of the {@creature druid} presented in the {@i Monster Manual}."
-									],
-									"id": "038"
-								}
-							],
-							"id": "032"
-						}
-					],
-					"id": "031"
+							"type": "list",
+							"style": "list-hang",
+							"name": "6th Level",
+							"items": [
+								"Augmentation II",
+								"Bloddstone's Spectral Steed",
+								"Claws of the Umber Hulk",
+								"Dilation II",
+								"Forest's Fiery Constrictor",
+								"Lorloveim's Shadowy Transformation",
+								"Wildshield*",
+								"Wildstrike*"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang",
+							"name": "7th Level",
+							"items": [
+								"Acid Storm",
+								"Bloodstone's Frightful Joining",
+								"Hatch the Stone from the Egg",
+								"Hornung's Surge Selector*",
+								"Intensify Summoning",
+								"Malec-Keth's Flame Fist",
+								"Shadowcat",
+								"Spell Shape*",
+								"Steal Enchantment",
+								"Suffocate"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang",
+							"name": "8th Level",
+							"items": [
+								"Abi-Dalzim's Horrid Wilting",
+								"Air Boat",
+								"Gunther's Kaleidoscopic Strike",
+								"Homunculus Shield",
+								"Hornung's Random Dispatcher*",
+								"Wildzone*"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang",
+							"name": "9th Level",
+							"items": [
+								"Chain Contingency",
+								"Elemental Aura",
+								"Estate Transference",
+								"Glorious Tranmutation",
+								"Wail of the Banshee",
+								"Wildfire*",
+								"Wildwind*"
+							]
+						},
+						"{@i Italicized} spell is reversible.",
+						"An Asterix (*) indicates a wild magic spell."
+					]
 				}
-			],
-			"id": "015"
+			]
 		},
 		{
 			"type": "entries",
-			"name": "Credits",
+			"name": "Priest Spells",
+			"page": 49,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang",
+					"columns": 3,
+					"page": 0,
+					"name": "Priest Spells",
+					"items": [
+						{
+							"type": "list",
+							"style": "list-hang",
+							"name": "1st Level",
+							"items": [
+								"Analyze Balance",
+								"Anti-Vermin Barrier",
+								"Call Upon Faith",
+								"Courage",
+								"Emotion Read",
+								"Know Age",
+								"Know Direction",
+								"Know Time",
+								"Log of Everburning",
+								"Mistake Missive",
+								"Morale",
+								"Personal Reading",
+								"Ring of Hands",
+								"Sacred Guardian",
+								"Speak With Astral Traveler",
+								"Thought Capture",
+								"Weighty Chest"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang",
+							"name": "2nd Level",
+							"items": [
+								"Aura of Comfort",
+								"Calm Chaos",
+								"Create Holy Symbol",
+								"Dissension's Feast",
+								"Draw Upon Holy Might",
+								"Emotion Perception",
+								"Frisky Chest",
+								"Hesitation",
+								"Idea",
+								"Lighten Load",
+								"Mind Read",
+								"Moment",
+								"Music of the Spheres",
+								"Mystic Transfer",
+								"Nap",
+								"Rally",
+								"Sanctify",
+								"Zone of Truth"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang",
+							"name": "3rd Level",
+							"items": [
+								"Acclerate Healing",
+								"Adaptation",
+								"Astral Window",
+								"Caltrops",
+								"Choose Future",
+								"Create Campsite",
+								"Efficacious Monster Ward",
+								"Emotion Control",
+								"Extradimensional Detection",
+								"Helping Hand",
+								"Invisibility Purge",
+								"Know Customs",
+								"Line of Protection",
+								"Memory Read",
+								"Miscast Magic",
+								"Moment Reading",
+								"Random Causality",
+								"Rigid Thinking",
+								"Slow Rot",
+								"Squeaking Floors",
+								"Strength of One",
+								"Telepathy",
+								"Telethaumaturgy",
+								"Thief's Lament",
+								"Unearthly Choir",
+								"Zone of Sweet Air"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang",
+							"name": "4th Level",
+							"items": [
+								"Addition",
+								"Age Plant",
+								"Blessed Warmth",
+								"Body Clock",
+								"Chaotic Combat",
+								"Chaotic Sleep",
+								"Circle of Privacy",
+								"Compulsive Order",
+								"Defensive Harmony",
+								"Dimensional Folding",
+								"Fire Purge",
+								"Focus",
+								"Fortify",
+								"Genius",
+								"Inverted Ethics",
+								"Join With Astral Traveler",
+								"Leadership",
+								"Mental Domination",
+								"Modify Memory",
+								"Rapport",
+								"Probability Control",
+								"Solipsism",
+								"Tanglefoot",
+								"Thought Broadcast",
+								"Tree Steed",
+								"Uplift",
+								"Weather Stasis"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang",
+							"name": "5th Level",
+							"items": [
+								"Age Object",
+								"Barrier of Retention",
+								"Blessed Abundance",
+								"Champion's Strength",
+								"Chaotic Command",
+								"Clear Path",
+								"Cloud of Purification",
+								"Consequence",
+								"Disguise",
+								"Easy March",
+								"Elemental Forbiddance",
+								"Extradimensional Manipulation",
+								"Extradimensional Pocket",
+								"Grounding",
+								"Illusory Artillery",
+								"Impeding Permission",
+								"Meld",
+								"Memory Wrack",
+								"Mindshatter",
+								"Repeat Action",
+								"Shrieking Walls",
+								"Thoughtwave",
+								"Time Pool",
+								"Unceasing Vigilance of the Holly Sentinel",
+								"Undead Ward"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang",
+							"name": "6th Level",
+							"items": [
+								"Age Creature",
+								"Crushing Walls",
+								"Disbelief",
+								"Dragonbane",
+								"Gravity Variation",
+								"The Great Circle",
+								"Group Mind",
+								"Land of Stability",
+								"Legal Thoughts",
+								"Monster Mount",
+								"Physical Mirror",
+								"Reverse Time",
+								"Seclusion",
+								"Skip Day",
+								"Sol's Searing Orb",
+								"Spiritual Wrath"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang",
+							"name": "7th Level",
+							"items": [
+								"Age Dragon",
+								"Breath of Life",
+								"Divine Inspiration",
+								"Hovering Road",
+								"Illusory Fortification",
+								"Mind Tracker",
+								"Shadow Engines",
+								"Spacewarp",
+								"Spirit of Power",
+								"Tentacle Walls",
+								"Timelessness",
+								"Uncontrolled Weather"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-hang",
+							"name": "Quest Spells",
+							"items": [
+								"Abundance",
+								"Animal Horde",
+								"Circle of Sunmotes",
+								"Conformance",
+								"Elemental Swarm",
+								"Etherwalk",
+								"Fear Contagion",
+								"Health Blessing",
+								"Imago Interrogation",
+								"Highway",
+								"Implosion/Inversion",
+								"Interdiction",
+								"Mindnet",
+								"Planar Quest",
+								"Preservation",
+								"Revelation",
+								"Reversion",
+								"Robe of Healing",
+								"Siege Wall",
+								"Shooting Stars",
+								"Sphere of Security",
+								"Spiral of Degeneration",
+								"Stalker",
+								"Storm of Vengeance",
+								"Transformation",
+								"Undead Plague",
+								"Warband Quest",
+								"Ward Matrix",
+								"Wolf Spirits"
+							]
+						},
+						"{@i Italicized} spell is reversible.",
+						"An Asterix (*) indicates a wild magic spell."
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Magical Items",
+			"page": 123,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang",
+					"columns": 2,
+					"page": 123,
+					"items": [
+						{
+							"type": "table",
+							"caption": "Table 4: POTIONS AND OILS",
+							"page": 123,
+							"colLabels": [
+								"{@dice d20|D20 Roll}",
+								"Item",
+								"XP Value"
+							],
+							"colStyles": [
+								"col- text-center",
+								"col- text-left",
+								"col- text-right"
+							],
+							"rows": [
+								[
+									"1-4",
+									"Aroma of Dreams",
+									"300"
+								],
+								[
+									"5-6",
+									"Curdled Death",
+									"750"
+								],
+								[
+									"7-12",
+									"Murdock's Insect Ward",
+									"200"
+								],
+								[
+									"13",
+									"Oil of Elemental Plane Invulnerability",
+									"5,000"
+								],
+								[
+									"14-15",
+									"Oil of Preservation",
+									"750"
+								],
+								[
+									"16-17",
+									"Potion of Elemental Control",
+									"600"
+								],
+								[
+									"18-20",
+									"Starella's Aphrodisiac",
+									"250"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Table 5: RINGS",
+							"page": 123,
+							"colLabels": [
+								"{@dice d20|D20 Roll}",
+								"Item",
+								"XP Value"
+							],
+							"colStyles": [
+								"col- text-center",
+								"col- text-left",
+								"col- text-right"
+							],
+							"rows": [
+								[
+									"1-3",
+									"Ring of Affliction",
+									"—"
+								],
+								[
+									"4-6",
+									"Ring of Armoring (W)",
+									"2,000"
+								],
+								[
+									"7-8",
+									"Ring of Bureacractic Wizardry (W)",
+									"—"
+								],
+								[
+									"9-11",
+									"Ring of Elemental Metamorphosis",
+									"3,000"
+								],
+								[
+									"12-14",
+									"Ring of Fortitude",
+									"1,000"
+								],
+								[
+									"15-17",
+									"Ring of Randomness (P)",
+									"—"
+								],
+								[
+									"18-20",
+									"Ring of Resistance (W)",
+									"1,000"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Table 6: RODS, STAVES, WANDS",
+							"page": 123,
+							"colLabels": [
+								"{@dice d20|D20 Roll}",
+								"Item",
+								"XP Value"
+							],
+							"colStyles": [
+								"col- text-center",
+								"col- text-left",
+								"col- text-right"
+							],
+							"rows": [
+								[
+									"1-4",
+									"Rod of Distortion",
+									"5,000"
+								],
+								[
+									"5-6",
+									"Staff of the Elements (W)",
+									"10,000"
+								],
+								[
+									"7-12",
+									"Wand of Corridors",
+									"4,000"
+								],
+								[
+									"13-14",
+									"Wand of Element Transmogrification",
+									"2,000"
+								],
+								[
+									"15-17",
+									"Wand of Misplaced Objects",
+									"2,000"
+								],
+								[
+									"18-20",
+									"Wand of Prime Material Pockets",
+									"5,000"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Table 7: MISCELLANEOUS MAGIC: Books, Librams, Manuals, Tomes",
+							"page": 123,
+							"colLabels": [
+								"{@dice d20|D20 Roll}",
+								"Item",
+								"XP Value"
+							],
+							"colStyles": [
+								"col- text-center",
+								"col- text-left",
+								"col- text-right"
+							],
+							"rows": [
+								[
+									"1-7",
+									"Manual of Dogmatic Methods",
+									"—"
+								],
+								[
+									"8-16",
+									"Tome of Mystical Equations (P)",
+									"1,000"
+								],
+								[
+									"17-20",
+									"Trimia's Catalogue of Outer Plane Artifacts (W)",
+									"12,000"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Table 8: MISCELLANEOUS MAGIC: Jewels, Jewelry, Phylacteries",
+							"page": 123,
+							"colLabels": [
+								"{@dice d20|D20 Roll}",
+								"Item",
+								"XP Value"
+							],
+							"colStyles": [
+								"col- text-center",
+								"col- text-left",
+								"col- text-right"
+							],
+							"rows": [
+								[
+									"1-2",
+									"Amulet of Extension (W)",
+									"1,000"
+								],
+								[
+									"3-4",
+									"Amulet of Far Reaching (W)",
+									"1,000"
+								],
+								[
+									"5-6",
+									"Amulet of Leadership",
+									"5,000"
+								],
+								[
+									"7",
+									"Amulet of Magic Resistance",
+									"5,000"
+								],
+								[
+									"8",
+									"Amulet of Metaspell Influence (W)",
+									"3,000"
+								],
+								[
+									"9-10",
+									"Amulet of Perpetual Youth",
+									"2,000"
+								],
+								[
+									"11",
+									"Brooch of Number Numbering",
+									"4,000"
+								],
+								[
+									"12",
+									"Gem of Retaliation",
+									"2,000"
+								],
+								[
+									"13-14",
+									"Medallion of Spell Exchange (W)",
+									"3,000"
+								],
+								[
+									"15-16",
+									"Necklace of Memory Enhancement",
+									"1,000"
+								],
+								[
+									"17-18",
+									"Scarab of Uncertainty",
+									"1,000"
+								],
+								[
+									"19-20",
+									"Talisman of Memorization (W)",
+									"1,000"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Table 9: MISCELLANEOUS MAGIC: Bracers, Gloves, Hats, Robes",
+							"page": 123,
+							"colLabels": [
+								"{@dice d20|D20 Roll}",
+								"Item",
+								"XP Value"
+							],
+							"colStyles": [
+								"col- text-center",
+								"col- text-left",
+								"col- text-right"
+							],
+							"rows": [
+								[
+									"1-4",
+									"Bracers of Brandishing",
+									"3,000"
+								],
+								[
+									"5-8",
+									"Fur of Warmth",
+									"5,000"
+								],
+								[
+									"9-12",
+									"Reglar's Gloves of Freedom",
+									"3,000"
+								],
+								[
+									"13-16",
+									"Robe of Repetition (P,W)",
+									"6,000"
+								],
+								[
+									"17-20",
+									"School Cap (W)",
+									"2,000"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Table 10: MISCELLANEOUS MAGIC: Bags, Bottles, Pouches, Containers",
+							"page": 123,
+							"colLabels": [
+								"{@dice d20|D20 Roll}",
+								"Item",
+								"XP Value"
+							],
+							"colStyles": [
+								"col- text-center",
+								"col- text-left",
+								"col- text-right"
+							],
+							"rows": [
+								[
+									"1-3",
+									"Bag of Bones (P)",
+									"3,000"
+								],
+								[
+									"4-8",
+									"Flatbox",
+									"5,000"
+								],
+								[
+									"9-13",
+									"Jar of Preserving",
+									"500"
+								],
+								[
+									"14-15",
+									"Nefradina's Indentifier (W)",
+									"1,000"
+								],
+								[
+									"16",
+									"Tenser's Portmanteau of Frugality (W)",
+									"6,000"
+								],
+								[
+									"17-20",
+									"Thought Bottle",
+									"1,000"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Table 11: MISCELLANEOUS MAGIC: Candles, Dusts, Ointments, Stones",
+							"page": 123,
+							"colLabels": [
+								"{@dice d20|D20 Roll}",
+								"Item",
+								"XP Value"
+							],
+							"colStyles": [
+								"col- text-center",
+								"col- text-left",
+								"col- text-right"
+							],
+							"rows": [
+								[
+									"1-3",
+									"Candle of Propitiousness",
+									"750"
+								],
+								[
+									"4-5",
+									"Dust of Mind Dulling",
+									"1,000"
+								],
+								[
+									"6-7",
+									"Powder of the Black Veil",
+									"1,000"
+								],
+								[
+									"8-9",
+									"Powder of Coagulation",
+									"500"
+								],
+								[
+									"10-11",
+									"Powder of the Hero's Heart",
+									"750"
+								],
+								[
+									"12-13",
+									"Powder of Magic Detection",
+									"1,000"
+								],
+								[
+									"14-15",
+									"Puchezma's Powder of Edible Objects",
+									"1,000"
+								],
+								[
+									"16-19",
+									"Salves of Far Seeing",
+									"1,000"
+								],
+								[
+									"20",
+									"Warp Marble",
+									"5,000"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Table 12: MISCELLANEOUS MAGIC: Household Items, Tools, Musical Instruments",
+							"page": 124,
+							"colLabels": [
+								"{@dice d20|D20 Roll}",
+								"Item",
+								"XP Value"
+							],
+							"colStyles": [
+								"col- text-center",
+								"col- text-left",
+								"col- text-right"
+							],
+							"rows": [
+								[
+									"1",
+									"Crucible of Melting (W)",
+									"1,000"
+								],
+								[
+									"2-3",
+									"Everbountiful Soup Kettle",
+									"1,000"
+								],
+								[
+									"4",
+									"Forge of Metal Protection",
+									"10,000"
+								],
+								[
+									"5",
+									"Glass of Preserved Words",
+									"2,000"
+								],
+								[
+									"6",
+									"Horn of Valor",
+									"5,000"
+								],
+								[
+									"7",
+									"Hourglass of Fire and Ice (W)",
+									"2,000"
+								],
+								[
+									"8",
+									"Lens of Speed Reading",
+									"500"
+								],
+								[
+									"9-10",
+									"Lorloveim's Obsidian Mortar and Pestle",
+									"500"
+								],
+								[
+									"11",
+									"Mirror of Retention",
+									"1,200"
+								],
+								[
+									"12",
+									"Mirror of Simple Order",
+									"—"
+								],
+								[
+									"13",
+									"Mordom's Cauldron of Air",
+									"3,000"
+								],
+								[
+									"14",
+									"Philosopher's Egg (W)",
+									"1,000"
+								],
+								[
+									"15",
+									"Pick of Earth Parting",
+									"5,000"
+								],
+								[
+									"16-17",
+									"Skie's Locks and Bolts",
+									"1,000"
+								],
+								[
+									"18-19",
+									"Tapestry of Disease Warding",
+									"2,000"
+								],
+								[
+									"20",
+									"Zwann's Watering Can (P)",
+									"1,000"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Table 13: MISCELLANEOUS MAGIC: The Weird Stuff",
+							"page": 124,
+							"colLabels": [
+								"{@dice d20|D20 Roll}",
+								"Item",
+								"XP Value"
+							],
+							"colStyles": [
+								"col- text-center",
+								"col- text-left",
+								"col- text-right"
+							],
+							"rows": [
+								[
+									"1",
+									"Air Spores",
+									"500"
+								],
+								[
+									"2",
+									"Bell's Palette of Identity",
+									"1,000"
+								],
+								[
+									"3",
+									"Claw of Magic Stealing (W)",
+									"3,500"
+								],
+								[
+									"4",
+									"Contracts of Nepthas",
+									"1,000"
+								],
+								[
+									"5",
+									"Crystal Parrot",
+									"1,500"
+								],
+								[
+									"6",
+									"Dimensional Mine",
+									"—"
+								],
+								[
+									"7",
+									"Disintegration Chamber",
+									"5,000"
+								],
+								[
+									"8",
+									"Elemental Compass",
+									"10,000"
+								],
+								[
+									"9",
+									"Globe of Purification (P)",
+									"500"
+								],
+								[
+									"10",
+									"Globe of Serenity (P)",
+									"500"
+								],
+								[
+									"11",
+									"Law's Banner (Wr)",
+									"5,000"
+								],
+								[
+									"12",
+									"Liquid Road",
+									"500"
+								],
+								[
+									"13",
+									"Mist Tent",
+									"2,000"
+								],
+								[
+									"14",
+									"Mouse Cart",
+									"3,500"
+								],
+								[
+									"15",
+									"Portable Canoe",
+									"2,000"
+								],
+								[
+									"16",
+									"Prism of Light Splitting",
+									"1,500"
+								],
+								[
+									"17",
+									"Quill of Law",
+									"7,000"
+								],
+								[
+									"18",
+									"Saddle of Flying",
+									"4,000"
+								],
+								[
+									"19",
+									"Teleportation Chamber",
+									"10,000"
+								],
+								[
+									"20",
+									"Time Bomb",
+									"1,000"
+								]
+							]
+						},
+						"Items followed by a letter in parentheses are usable only by specific classes: P = Priest, W = Wizard, Wr = Warrior."
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Wizard Spells by School",
+			"page": 149,
+			"entries": []
+		},
+		{
+			"type": "section",
+			"name": "Priest Spells by Sphere",
+			"page": 152,
+			"entries": []
+		},
+		{
+			"type": "section",
+			"name": "Alphabetical Index of Spells",
+			"page": 155,
 			"entries": [
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
-					"items": [
-						"Written by James Wyatt",
-						"Cover art by Adam Paquette"
-					]
+					"items": []
 				}
-			],
-			"id": "043"
+			]
 		}
 	]
 }
